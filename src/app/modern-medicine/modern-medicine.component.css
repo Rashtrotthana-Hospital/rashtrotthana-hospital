@@ -1,0 +1,113 @@
+.container-facility{
+
+    gap: 10px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    justify-content: space-around;
+    padding: 4rem;
+    row-gap: 50px;
+    background-color: #FBFFF5;
+}
+
+
+.gm_poster{
+    margin-top: 6rem;
+    background-image: url('../../assets/modern-medicine-bg.png');
+    background-size: cover;
+    height: 56vh;
+   
+}
+
+.box-card{
+    width: 86%;
+
+}
+.o_heading{
+    color: #FFFFFF;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    padding: 250px 0 0 100px;
+    font-family: Poppins;
+    font-weight: 600;
+}
+
+.o_info{
+    font-size: 20px;
+    padding:2rem 0rem 2rem 6rem;
+    font-family: Inter;
+    font-weight: 300;
+    color: #FFFFFF;
+}
+@media only screen and (max-width:1390px){
+.gm_poster{height: 64vh;}
+}
+@media only screen and (max-width:1030px){
+    .container-facility{
+        grid-template-columns: 33% 33% 33%;
+        padding: 2rem;
+    }
+    .gm_poster{height: 70vh;}
+}
+@media only screen and (max-width:900px){
+    .container-facility{
+        grid-template-columns: 50% 50%;
+        padding-left: 4rem;
+    }
+    .o_heading{
+        padding:114px 0 0 100px;
+    }
+    .gm_poster{
+        height: 40%;
+    }
+}
+@media only screen and (max-width: 600px){
+    .gm_poster{
+        margin-top: 7rem;
+        background-image: url('../../assets/modern-medicine-bg-res.png');
+        background-size: cover;
+        height: 30vh;
+        width: 100%;
+        background-repeat: no-repeat;
+       
+       
+    }
+    .o_heading{
+        color: #FFFFFF;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: uppercase;
+        padding: 3rem 1rem 1rem 2rem;
+        font-family: Poppins;
+        font-weight: 600;
+    }
+    
+    .o_info{
+        font-size: 14px;
+        padding:0rem 0rem 1rem 2rem;
+        font-family: Inter;
+        font-weight: 300;
+        color: #FFFFFF;
+    }
+    .container-facility{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 10px;
+        padding: 20px 30px;
+    }
+    .facility{
+        padding-left: 2rem;
+    }
+    .heading{
+        font-size: 24px;
+    }
+    .content{
+        width: 90%;
+        font-size: 14px;
+    }
+
+}

@@ -1,0 +1,409 @@
+<div>
+    <video class="video" controls autoplay muted poster="../../assets/video-thumbnail.png">
+        <source src="../../assets/Rastrotthana_Hospital.mp4" type="video/mp4">
+    </video>
+
+</div>
+<div class="second-container">
+    <div class="container">
+        <div class="icons">
+            <ng-container *ngFor="let feature of features">
+                <div [class]="'icon ' + feature.className" class="bg-features">
+                    <img [src]="'../../assets/' + feature.icon" alt="best multispeciality hospital in bangalore"
+                        class="primary" (mouseover)="onMouseOver(feature.key)" (mouseleave)="onMouseOut()"
+                        (click)="navigateTo(feature.url)">
+                    <img [src]="'../../assets/' + feature.image" alt="best multispeciality hospital in bangalore"
+                        class="secondary" (mouseover)="onMouseOver(feature.key)" (mouseleave)="onMouseOut()"
+                        (click)="navigateTo(feature.url)">
+                </div>
+            </ng-container>
+        </div>
+        <div class="text-container">
+            <div class="number-one">
+                <img class="sheild" [src]="image[showImage]"  alt="best multispeciality hospital in bangalore">
+            </div>
+            <div class="title">{{title[showTitle]}}</div>
+            <div class="content">{{ content[showContent] }}</div>
+        </div>
+    </div>
+</div>
+<!-- <div class="third-container">
+    <div class="form-container">
+        <form #filterForm="ngForm" (ngSubmit)="onSubmit(filterForm)">
+            <select
+              class="form-input custom-select"
+              name="specialty"
+              [(ngModel)]="selectedSpecialty"
+              (change)="onSpecialtyChange()"
+              required
+            >
+              <option value="" disabled selected>Select Specialties</option>
+              <option value="generalMedicine">General Medicine</option>
+              <option value="yoga">Yoga</option>
+              <option value="ayurveda">Ayurveda</option>
+            </select>
+          
+            <select
+              class="form-input custom-select"
+              name="department"
+              [(ngModel)]="selectedDepartment"
+              [disabled]="isDepartmentDisabled"
+              required
+            >
+              <option value="" disabled selected>Select Department</option>
+              <option value="generalSurgery" *ngIf="selectedSpecialty === 'generalMedicine'">General Surgery</option>
+              <option value="gynaecology" *ngIf="selectedSpecialty === 'generalMedicine'">Gynaecology</option>
+            </select>
+            <div type="submit" class="submit-button-form">
+                <app-read-more-btn [text]="'Submit'"></app-read-more-btn>
+            </div>
+          </form>
+          
+    </div>
+</div> -->
+<div class="fourth-container">
+    <p-card class="card">
+        <div class="card-header">Specialty OPD - Mon to Sun</div>
+        <p class="m-0">
+            <span class="morning">Morning : 10:00 am to 05:00 pm </span><br><span class="morning">Evening : 05:30 pm to
+                07:30 pm</span>
+        </p>
+    </p-card>
+    <p-card class="card">
+        <div class="card-header">Ward / Room Visiting Hours</div>
+        <p class="m-0">
+            <span class="morning">Morning : 11:00 am to 12:30 pm </span><br><span class="morning">Evening : 04:00 pm to
+                06:00 pm</span>
+        </p>
+    </p-card>
+    <p-card class="card">
+        <div class="card-header">ICU Visiting Hours</div>
+        <p class="m-0">
+            <span class="morning">Morning : 11:30 am to 12:30 pm </span><br><span class="morning">Evening : 04:00 pm to
+                05:00 pm</span>
+        </p>
+    </p-card>
+</div>
+<div class="fifth-container">
+    <h1 class="service-header">
+        We Provide 24/7 Services in Rashtrotthana Hospital
+    </h1>
+    <div class="service-container">
+        <div class="bg-service" (click)="emergency()">
+            <img class="primary" src="../../assets/emergency.png" alt="best multispeciality hospital in bangalore">
+            <img class="secondary" src="../../assets/Emergency-1.png" alt="best multispeciality hospital in bangalore">
+        </div>
+        <div class="bg-service" (click)="lab()">
+            <img class="primary" src="../../assets/laboratory.png" alt="best multispeciality hospital in bangalore">
+            <img class="secondary" src="../../assets/Laboratory-1.png">
+        </div>
+        <div class="bg-service" (click)="radiology()">
+            <img class="primary" src="../../assets/Radiology.png" alt="best multispeciality hospital in bangalore">
+            <img class="secondary" src="../../assets/Radiology-1.png" alt="best multispeciality hospital in bangalore">
+        </div>
+        <div class="bg-service" (click)="pharmacy()">
+            <img class="primary" src="../../assets/Pharmacy.png" alt="best multispeciality hospital in bangalore">
+            <img class="secondary" src="../../assets/Pharmacy-1.png" alt="best multispeciality hospital in bangalore">
+        </div>
+        <div class="bg-service" (click)="dialysis()">
+            <img class="primary third" src="../../assets/Dialysis.png" alt="best multispeciality hospital in bangalore">
+            <img class="secondary third" src="../../assets/Dialysis-1.png"  alt="best multispeciality hospital in bangalore">
+        </div>
+    </div>
+</div>
+<div class="doctor-view-all">
+    <div class="doctor-section">
+        <div class="doctor-container">
+            <img class="doctor-image" src="../../assets/doctor-7.png" alt="best multispeciality hospital in bangalore">
+            <div class="doctor-content">
+                <div class="doctor-name">
+                    Dr. (Col)Anand Shankar
+                </div>
+                <div class="doctor-desgination">
+                    Medical Director
+                </div>
+            </div>
+        </div>
+        <div class="doctor-container">
+            <img class="doctor-image" src="../../assets/doctor-8.png" alt="best multispeciality hospital in bangalore">
+            <div class="doctor-content">
+                <div class="doctor-name">
+                    Dr. H. N. Shyla
+                </div>
+                <div class="doctor-desgination">
+                    Medical Administrator
+                </div>
+            </div>
+        </div>
+        <div class="doctor-container">
+            <img class="doctor-image" src="../../assets/doctor-2.png" alt="best multispeciality hospital in bangalore">
+            <div class="doctor-content">
+                <div class="doctor-name">
+                    Dr. Latha Venkataram
+                </div>
+                <div class="doctor-desgination">
+                    Senior Gynaecologist
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="read-more-btn">
+        <app-arrow-btn></app-arrow-btn>
+    </div>
+</div>
+<div class="sixth-container">
+    <div class="about-content-div">
+        <div class="about-div">
+            <div class="about-text"></div>
+            <div class="about">About Us</div>
+        </div><br>
+        <h1 class="about-us-heading">
+            Human Health Care Services<br>with State-Of-The-Art-<br>Infrastructure at the Best <br>Multispeciality Hospital in Bangalore.
+        </h1>
+        <div class="about-us-content">
+            Jayadev Memorial Rashtrotthana Hospital & Research Centre, a 162-bed Integrated Multi-Specialty Tertiary
+            Care Hospital, is recognized as<b> the best multispeciality hospital in Bangalore</b>, offering world-class
+            healthcare facilities. As part of the Rashtrotthana Trust, we provide expert, holistic care in <a style="text-decoration: none; margin:0;padding: 0;" href="https://www.rashtrotthanahospital.com/specialities/best-general-medicine-hospital-in-bangalore">Modern Medicine</a>, <a style="text-decoration: none; margin:0;padding: 0;" href="https://www.rashtrotthanahospital.com/specialities/ayurvedic-treatment-bangalore">Ayurveda</a>, <a style="text-decoration: none; margin:0;padding: 0;" href="https://www.rashtrotthanahospital.com/specialities/homeopathy-treatment-bangalore">Homeopathy</a>, <a style="text-decoration: none; margin:0;padding: 0;" href="https://www.rashtrotthanahospital.com/specialities/yoga-therapy-bangalore">Yoga</a> and <a style="text-decoration: none; margin:0;padding: 0;" href="http://localhost:53618/specialities/lifestyle-medicine-bangalore">Naturopathy</a>. Our renowned doctors and specialists ensure
+            comprehensive, patient-centered treatment while maintaining affordability and advanced care solutions.
+        </div>
+        <div class="read-button">
+            <app-read-more-btn [text]="'Read More'" (click)="navigateToPage()"></app-read-more-btn>
+        </div>
+    </div>
+    <div class="about-image-container">
+        <img class="about-image" src="../../assets/about-img.png" alt="best multispeciality hospital in bangalore">
+        <div class="about-image-content">
+            <img src="../../assets/curly-arrow.png"  alt="best multispeciality hospital in bangalore">
+            The guiding force behind Rashtrotthana Parishat, Sri M. C Jayadev, envisioned, nurtured and mentored the
+            organization from its inception. As the embodiment of duty and nationalism, his life-long commitment to 'One
+            Life, One Mission' was unparalleled. <a style="text-decoration: none; margin:0;padding: 0;" href="https://rashtrotthana.org/">Rashtrotthana Parishat</a> continues to work towards building a prosperous
+            and healthy society, founded on the strong, enduring principles laid by him. Today, the hospital stands as
+            one of <b> the best multispeciality hospital in Bangalore</b>, contributing to society's well-being through
+            world-class healthcare.
+        </div>
+    </div>
+</div>
+<div style="background-color: #fbfff4;">
+    <div class="seventh-container" #counterSection>
+        <!-- <img class="count" src="../../assets/100.png">
+    <img class="count"src="../../assets/20000.png">
+    <img class="count"src="../../assets/2022.png">
+    <img class="count"src="../../assets/150.png">
+    <img class="count"src="../../assets/25.png"> -->
+        <div class="box" *ngFor="let box of box">
+            <div class="count-image">
+                <img [src]="'../../assets/'+ box.icon" alt="best multispeciality hospital in bangalore">
+            </div>
+            <div class="count-text">
+                <div class="number">{{box.number}}<span *ngIf="box.showPlus">+</span></div>
+                <div class="statement">{{box.statement}}</div>
+            </div>
+            <!-- <iframe src="https://f6af4034b85c499390712afdeb6dc728.elf.site" width="100%" height="300px"></iframe> -->
+            <!-- <iframe src="https://a9c97b49dfbe4e78afda169a3f6298e6.elf.site" class="box-animation"></iframe> -->
+        </div>
+
+    </div>
+    <div class="eight-container">
+        <div class="achieve-content">
+            <div class="achieve-heading">
+                Achievements
+            </div>
+            <div class="acheive-points">
+                <ul style="list-style-type: disc;">
+                    <li>In the very first month of the inauguration of hospital we catered our services to 2500+
+                        patients.
+                    </li>
+                    <li>We started our IP services from the month of January 2023 within 1 month we crossed 100+
+                        In-Patient's Admissions.</li>
+                    <li>Our hospital has performed 1000+ Surgeries till date.</li>
+                    <li>Specialty Clinics like Ano-rectal, Hernia & Liver clinics once a week</li>
+                    <li>Sunday Clinics to benefit the community</li>
+                    <li>Insurance empanelment with corporate & TPA's.</li>
+                    <li>School Health Program launched and has been continuously conducting awareness sessions.</li>
+                    <li class="last-li">As the part of Social Responsibility we are continuously catering free medical
+                        camps
+                        in different localities benefitting nearly 18,000+ needy people so far that includes orphanages,
+                        old
+                        age homes & schools.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="achieve-image">
+            <img class="NABH" src="../../assets/NABH.png" alt="best multispeciality hospital in bangalore">
+        </div>
+    </div>
+    <div class="department">
+        <div class="title-container">
+            <app-title-button text='Our Departments'></app-title-button>
+        </div>
+        <div class="ninth-container">
+
+            <div class="specialities">
+                <h1 class="about-us-heading">
+                    Our Specialities: Patient-Centered Integrated Approach at Bangalore’s Best Multispeciality Hospital,
+                    all under one roof!
+                </h1>
+                <div class="care-image">
+                    <div class="bg-care">
+                        <div class="meno">
+                            <img class="meno-img" src="../../assets/meno.png"
+                                alt="best multispeciality hospital in bangalore">
+                            <div class="meno-content">Integrated Menopause Care</div>
+                            <div class="meno-arrow">
+
+                            </div>
+                        </div>
+                        <div class="meno"
+                            routerLink="/blog/integrated-diabetic-clinic-at-rashtrotthana-hospital-where-comfort-meets-diabetes-care">
+                            <img class="meno-img" src="../../assets/diabetic.png"
+                                alt="best multispeciality hospital in bangalore">
+                            <div class="meno-content">Integrated Diabetic Care</div>
+                            <div class="meno-arrow">
+
+                            </div>
+                        </div>
+                        <div class="meno maternity-package" routerLink="/maternity-care"
+                            alt="best multispeciality hospital in bangalore">
+                            <img class="meno-img" src="../../assets/mater.png">
+                            <div class="meno-content">Integrated Maternity Care
+                                <div class="meno-content-2">
+                                    At Rashtrotthana Hospital, we offer high-quality maternity services with...
+                                </div>
+                            </div>
+
+                            <div class="meno-arrow">
+
+                            </div>
+                        </div>
+                        <div class="meno surgery-package">
+                            <img class="meno-img" src="../../assets/surgery.png"
+                                alt="best multispeciality hospital in bangalore">
+                            <div class="meno-content">Surgery Packages
+                                <ol type="1" class="Surgey_Packages_list">
+                                    <a (click)="tkr()">
+                                        <li class="surgery">Total Knee Replacement</li>
+                                    </a>
+                                    <a (click)="hernia()">
+                                        <li class="surgery proctology">Hernia</li>
+                                    </a>
+                                    <a (click)="proctology()">
+                                        <li class="surgery proctology">Proctology</li>
+                                    </a>
+                                </ol>
+                            </div>
+                            <div class="meno-arrow">
+                                <!--  -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="four">
+                <div>
+                    <img class="four-image" src="../../assets/four.png"
+                        alt="best multispeciality hospital in bangalore">
+                </div>
+                <div class="hospital">
+                    <img src="../../assets/hospital-1.png" alt="best multispeciality hospital in bangalore">
+                    <img src="../../assets/hospital-2.png" alt="best multispeciality hospital in bangalore">
+                    <img src="../../assets/hospital-3.png" alt="best multispeciality hospital in bangalore">
+                    <img src="../../assets/hospital-1.png" alt="best multispeciality hospital in bangalore">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="free-div free">
+    <div class="free-text"></div>
+    <div class="free-1">Testinomial</div>
+</div>
+<div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div *ngFor="let slide of slidearray; let i = index" [ngClass]="{'carousel-item': true, 'active': i === 0}">
+        <div class="card_item">
+          <img src="{{ slide.img }}" alt="" class="testinomial_image" />
+          <p class="review">
+            {{ slide.review }}
+          </p>
+          <p class="name">{{ slide.name }}</p>
+          <p class="place">{{ slide.place }}</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+<app-programms></app-programms> -->
+    <div class="tenth-container">
+        <div class="empty">
+
+        </div>
+        <div class="free-div free">
+            <div class="free-text"></div>
+            <div class="free-1">Our Free Service</div>
+        </div>
+        <div class="corporate">
+            Corporate Social Responsibility
+        </div>
+        <div class="hope">
+            "Give Hope, Donate to Heal: Supporting<br> Our Hospital, Saving Lives!"
+        </div>
+        <div class="benefit">
+            50+<br>
+            <p class="text-benefit">DONORS</p>
+        </div>
+        <div class="button">
+            <div class="donate-button" (click)="donate()">
+                <div class="donate-text">DONATE HERE</div>
+                <div class="donate-arrow">
+                    <div class="arrow">></div>
+                </div>
+            </div>
+        </div>
+        <div class="empty-1">
+
+        </div>
+    </div>
+    <div class="title-container testimonials">
+        <app-title-button text='TESTIMONIALS'></app-title-button>
+    </div>
+    <div class="google_review_container">
+        <iframe src="https://d3b43396dc844f559faebed585e37bc8.elf.site" frameborder="0" class="google_reviews"></iframe>
+    </div>
+
+    <div class="youtube">
+        <iframe src="https://01019128cd434f25869e8bb9b3b06235.elf.site" frameborder="0"
+            class="youtube_testimonials"></iframe>
+    </div>
+
+    <div class="title-container">
+        <app-title-button text='Our Latest Programs'></app-title-button>
+    </div>
+
+    <div class="news_and_events">
+        <iframe src="https://ddeeb78ffe67464983baceadb8286b07.elf.site" frameborder="0" class="instagram_feed"></iframe>
+    </div>
+
+    <div class="title-container">
+        <app-title-button text='PATIENT EDUCATION'></app-title-button>
+    </div>
+
+    <div class="youtube_patient_education">
+        <iframe src="https://1006ff263f3441d6975aef4f33090faf.elf.site" frameborder="0"
+            class="youtube_testimonials"></iframe>
+    </div>
+    <!-- 
+    <iframe src="https://b23775e614f14d8aa75be2d0f9ec08dc.elf.site" frameborder="0" class="whatsapp"></iframe> -->
+
+    <!-- <a href="https://wa.me/918904943673"><img class="whatsapp-chat " src="../../assets/whatsapp.png"></a> -->
+    <!-- <iframe
+src="https://www.chatbase.co/chatbot-iframe/XFFXsh4SdQ5O9S2RnNu9O"
+width="100%"
+style="height: 100%; min-height: 700px"
+frameborder="0"
+></iframe> -->

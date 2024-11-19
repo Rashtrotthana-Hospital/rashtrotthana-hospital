@@ -1,0 +1,386 @@
+.insurance-pdf{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    padding: 4rem;
+    row-gap: 50px;
+    background-color: #FBFFF5;
+    justify-content: center;
+    align-items:center;
+    padding-left: 9rem;
+}
+.insurance{
+    width: 280px;
+}
+.pdf-heading{
+background-color: #FBFFF5;
+    color: #008080;
+font-family: Poppins;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-transform: uppercase;
+
+}
+.pdf{
+    padding-left: 4rem;
+}
+
+::ng-deep .p-accordion .p-accordion-header .p-accordion-header-text {
+    color: #000;
+    font-family: Inder;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-color:#008080;
+  }
+  ::ng-deep .p-accordion .p-accordion-header {
+    border: 3px solid #008080; 
+    background-color: white;
+  }
+  
+.step{
+    color: #008080;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 36px; /* 180% */
+
+}
+p{
+    color: #000;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 36px; /* 225% */
+
+}
+.insurance-facility{
+    display: flex;
+    width:100%;
+    padding-top: 17vh;
+    justify-content: center;
+    background-color: #FBFFF5;
+    /* padding-left: 4rem; */
+}
+.facility{
+    background-color: #FBFFF5;
+    margin-top: -2rem;
+}
+.insurance-content{
+    width: 80%;
+    /* padding: 0 6rem; */
+
+}
+.o_menu{
+    width: 20%;
+    height: 100%;
+    border-radius: 10px;
+    padding: 0;
+    
+    margin-left: 50px;
+    background-color: #ffffff;
+    /* box-shadow: 1px 1px 10px rgb(161, 160, 160); */
+    margin-top: 4rem;
+}
+.menu_list_box{
+    display: flex;
+    justify-content: space-between;
+   
+}
+.more_specs{
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+.menu_contents{
+    padding: 8px 15px;
+    font-family: "inter";
+    font-weight: 700;
+}
+.menu_list_box .menu_list:hover{
+    color:  #FBCA51;
+    cursor: pointer;
+}
+.gm_m_heading{
+    text-align: center;
+    background-color: #008080;
+    color: white;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 20px;
+    font-family: "poppins";
+    text-transform: capitalize;
+}
+.arrow{
+    position: relative;
+    top: 0px;
+}
+.facility-container{
+    background: url('../../assets/facilities-bg.png')  no-repeat;
+}
+.heading{
+position: relative;
+bottom:184px;
+left:6rem;
+width: 80%;
+color: #008080;
+ font-size: 40px;
+ font-family: Poppins;
+ font-weight: 700;
+ text-transform: uppercase;
+ word-wrap: break-word;
+ 
+}
+.accordion-heading{
+    color: #008080;
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+
+padding-top: 2rem;
+}
+.facility{
+    display: flex;
+    width:100%;
+    justify-content: space-evenly;
+ 
+}
+a {
+    color: #008080;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 180%;
+
+text-decoration: none;
+  }
+  
+  ::ng-deep p-accordion .p-accordion-tab {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+  }
+.reimbursement{
+    color: #000;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 180%; /* 25.2px */
+
+padding-top: 2rem;
+}
+.facility-content{
+width: 50%;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: start;
+}
+.heading-container{
+color: #008080;
+ font-size: 24px;
+ font-family: Poppins;
+ font-weight: 700;
+ text-transform: uppercase;
+ word-wrap: break-word;
+ position: relative;
+ right: 3rem;
+ padding: 3rem 0;
+}
+.content-container{
+    color: black;
+ font-size: 16px;
+ font-family: Inter;
+ font-weight: 500;
+ 
+ line-height: 36px;
+ word-wrap: break-word;
+ text-align: justify;
+ position: relative;
+ right: 3rem;
+ padding-bottom:3rem;
+}
+.image-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 34px;
+}
+.image{
+    width: 400px;
+    height: 400px;
+}
+.o_menu{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    padding: 0;
+    
+    margin-left: 50px;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 10px rgb(161, 160, 160);
+}
+.menu_list_box{
+    display: flex;
+    justify-content: space-between;
+   
+}
+.more_specs{
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+.menu_contents{
+    padding: 8px 15px;
+    font-family: "inter";
+    font-weight: 700;
+}
+.menu_list_box .menu_list:hover{
+    color:  #FBCA51;
+    cursor: pointer;
+}
+.gm_m_heading{
+    text-align: center;
+    background-color: #008080;
+    color: white;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 20px;
+    font-family: "poppins";
+}
+.arrow{
+    position: relative;
+    top: 15px;
+}
+
+.menu_list_box.active {
+    color:  #FBCA51; /* Highlight the active menu item */
+  }
+.content{
+    color: #000;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px;
+    
+}
+.side-heading{
+    color: #000;
+
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 36px; /* 225% */
+
+}
+.banner-image{
+    width: 100%;
+    height: 100%;
+}
+li{
+    font-family: Inter;
+    padding-bottom: 1rem;
+}
+ol{
+    padding-top: 1rem;
+}
+@media only screen and (max-width:1030px){
+    .o_menu{
+        display: none;
+    }   
+    .insurance-pdf{
+        grid-template-columns: 33% 33% 33%;
+        padding-left: 4rem;
+    }
+    .facility-content{
+        width: 100%;
+        padding: 0 6rem;
+    }
+    .pdf{
+        padding-right: 4rem;
+    }
+    .banner-image{
+        width: 100%;
+        height: 82vh;
+    }
+    .heading{
+        width: 50%;
+        line-height: 41px;
+    }
+}
+@media only screen and (max-width:900px){
+    .banner-image{
+        height: 42vh;
+    }
+    .heading{
+        font-size: 32px;
+        top:-151px;
+    }
+    .insurance-pdf{
+        grid-template-columns: 50% 50%;
+        padding-left: 4rem;
+    }
+}
+@media only screen and (max-width: 600px){
+    .banner-image{
+        width: 100%;
+        height: 300px;
+    }
+    .o_menu{
+        display: none;
+    }
+    .heading{
+        top: -141px;
+        font-size: 20px;
+        left: 26px;
+        width:213px;
+    }
+    .image-container{
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+    }
+    .image{
+        width: 100%;
+        height: 100%;
+    }
+    .facility-content{
+        width: 100%;
+        padding: 0 2rem;
+
+    }
+    .heading-container,.content-container{
+        padding-left: 5rem;
+    }
+    .insurance-pdf{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        row-gap: 50px;
+        background-color: #FBFFF5;
+        justify-content: center;
+        align-items:center;
+        padding:1rem;
+        gap:1rem
+    }
+    .insurance-content{
+        padding-left: 2rem;
+    }
+    .pdf{
+        padding:1rem
+    }
+    .pdf-heading{
+        font-size: 14px;
+    }
+    }

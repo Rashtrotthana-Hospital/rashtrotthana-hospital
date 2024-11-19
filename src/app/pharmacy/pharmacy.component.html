@@ -1,0 +1,5 @@
+<ng-container *ngFor="let facility of facilities">
+    <app-facility-content [image_1]="facility.image_1" [image_2]="facility.image_2"
+        [main_heading]="facility.main_heading" [heading]="facility.heading"
+        [subFacilities]="facility.subFacilities" [bg_image]="facility.bg_image"></app-facility-content>
+</ng-container>

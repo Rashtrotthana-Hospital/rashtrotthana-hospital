@@ -1,0 +1,136 @@
+<div class="root_container">
+    <!-- container 1 -->
+    <div class="container_1">
+        <!-- contaoner 1 left side image-->
+        <div class="con_1_lft_img">
+            <img src="../../assets/yoga/con_1_img.png" alt="" />
+        </div>
+        <!-- container 1 right side image -->
+        <div class="con_1_right">
+            <div class="con_1_head">
+                <img src="../../assets/yoga/con_1_icon.png" alt="" />
+                <p class="con_1_head_txt"> YOGA</p>
+            </div>
+            <div class="con_1_para">
+                <p class="con_1_para_txt">
+                    The word Yoga comes from a Sanskrit word Yuj which means union, to
+                    join. Regular practice of yoga promotes strength, endurance,
+                    flexibility and facilitates characteristics of friendliness,
+                    compassion and greater self control. Today many people identify yoga only with asana, the
+                    physical practice of yoga, but asana is just one of the many limits of yoga. Evidence shows that stress
+                    contributes to the aetiology of heart disease, cancer and stroke
+                    as well as other chronic conditions. As a holistic stress
+                    management technique, yoga produces a physiological sequence of
+                    events in the body reducing the stress response. Yoga therapy
+                    involves instruction in yogic practices and teachings to prevent
+                    or reduce structural, physiological, emotional and spiritual pain
+                    or suffering
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- container 2 -->
+
+    <div class="container_2">
+        <div class="con_2_lft">
+            <p class="con_2_head">
+                BENEFITS OF  YOGA
+            </p>
+            <ul class="con_2_content">
+                <li class="con_2_list_item">
+                    Enhance muscular strength and body flexibility
+                </li>
+                <li class="con_2_list_item">
+                    Promote and improve respiratory and cardiovascular function
+                </li>
+                <li class="con_2_list_item">
+                    Reduce stress, anxiety, depression and chronic pain
+                </li>
+                <li class="con_2_list_item">
+                    Improve sleep patterns and enhance overall well being.
+                </li>
+            </ul>
+        </div>
+        <div class="con_2_right">
+            <img src="../../assets/yoga/con_2_img.png" alt="" class="con_2_img" />
+            <img src="../../assets/yoga/con_2_responsive_img.png" class="con_2_responsive_img" />
+        </div>
+    </div>
+
+    <!-- container 3 -->
+
+    <div class="container_3">
+        <div class="con_3_right">
+            <img src="../../assets/yoga/con_3_img.png" alt="" class="con_3_img" />
+            <img src="../../assets/yoga/conatiner_3_responsive.png" alt="" class="con_3_responsive_img" />
+        </div>
+        <div class="con_3_lft">
+            <p class="con_3_head">
+                BENEFITS OF YOGA IN PREGNANCY
+            </p>
+            <p class="con_3_para">
+                Prenatal Yoga are the Yogic practices done during the pregnancy.
+            </p>
+            <ul class="con_3_content">
+                <li class="con_3_list_item">
+                    It improves mood and sleep, increases strength and flexibility
+                </li>
+                <li class="con_3_list_item">
+                    Decreases lower back pain and other common symptoms of pregnancy.
+                </li>
+                <li class="con_3_list_item">
+                    It brings about flexibility of pelvic muscles thereby eases
+                    delivery.
+                </li>
+                <li class="con_3_list_item">
+                    It relieves stress, anxiety and depression during pregnancy and
+                    brings about positiveness in the mother.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- container 4 -->
+
+    <div class="container_4">
+        <p class="con_4_para">
+            Here in Rashtrotthana hospital we have an expert team of Doctors to
+            conduct  Yoga classes as well as Yoga for the pregnant
+            women.
+        </p>
+        <p class="con_4_para">
+            You can consult and talk to our experts regarding your conditions,
+            based on which our Doctors will prescribe as well as teach you the
+            suitable Yoga practices.
+        </p>
+    </div>
+
+    <!-- doctor details -->
+
+    <div class="heading">
+        <p class="doctor_heading">MEET OUR MEDICAL TEAM</p>
+    </div>
+
+    <div class="doc_container">
+        <div class="doctors_flex">
+          <div class="doc_details" *ngFor="let slide of doctors; let i = index" [ngClass]="{ active: i === 0 }">
+            <div class="doc_1">
+              <img [src]="slide.image" alt="{{ slide.name }}" />
+              <p class="doc_name">{{ slide.name }}</p>
+              <p class="section">{{ slide.section }}</p>
+              <p class="designation">{{ slide.designation }}</p>
+              <p class="exp">Years of Experience: {{slide.experience}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    <!-- view all button -->
+
+    <div class="view_all">
+        <app-arrow-btn></app-arrow-btn>
+    </div>
+
+    
+</div>

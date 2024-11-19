@@ -1,0 +1,23 @@
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+
+import { IcuComponent } from './icu.component';
+
+describe('IcuComponent', () => {
+  let component: IcuComponent;
+  let fixture: ComponentFixture<IcuComponent>;
+
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      declarations: [IcuComponent]
+    })
+    .compileComponents();
+    
+    fixture = TestBed.createComponent(IcuComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});

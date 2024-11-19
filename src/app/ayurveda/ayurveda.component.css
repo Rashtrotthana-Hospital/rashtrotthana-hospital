@@ -1,0 +1,1924 @@
+.root-container {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.container_1 {
+    background-image: url('../../assets/ayurveda/container_1_bg.png');
+    background-size: cover;
+    display: flex;
+    padding: 50px 0;
+    margin-top: 18vh;
+}
+
+.con_1_lft_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+}
+
+.con_1_head {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    width: 739px;
+
+}
+
+.con_1_right_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 40%;
+}
+
+.con_1_lft_box img {
+    width: 100px;
+    height: 100px;
+}
+
+.con_1_heading {
+    color: #008080;
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    
+}
+
+.con_1_para {
+    color: #000;
+    text-align: justify;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    /* 177.778% */
+    
+    width: 739px;
+}
+
+.con_1_right_box img {
+    width: 528px;
+    height: 392px;
+}
+
+.con_1_content {
+    color: #FFF;
+    font-family: Hind;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    border-radius: 8px;
+    border: 2px solid #FFF;
+    background: #008080;
+    box-shadow: 0px 0px 60px 0px rgba(3, 146, 206, 0.30);
+    padding: 20px;
+}
+
+/* container 2 */
+.container_2_head img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.container_2_head {
+    display: flex;
+    justify-content: center;
+}
+
+.con_3_img_head {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    width: 1223px;
+}
+
+.container_2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.container_2_head .con_2_head_txt {
+    color: #222;
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    
+}
+
+.container_2 .con_2_para_1_txt {
+    color: #848484;
+    text-align: justify;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    width: 1223px;
+    margin-bottom: 0;
+}
+
+.container_2 .con_2_para_2_txt {
+    width: 496px;
+    height: 393px;
+    flex-shrink: 0;
+    font-family: Inter;
+    font-size: 18px;
+    color: #848484;
+    
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+
+.container_2 .con_2_para_3_txt {
+    color: #848484;
+    
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    width: 1223px;
+    margin-top: 0;
+}
+
+.con_2_flex {
+    display: flex;
+    width: 1223px;
+}
+
+.con_2_flex_right img {
+    width: 727px;
+    height: 363px;
+}
+
+/* container_3*/
+.container_3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.con_3_head {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.con_3_head img {
+    width: 100px;
+    height: 100px;
+}
+
+.con_3_head .con_3_head_txt {
+    color: #222;
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    
+}
+
+.con_3_des {
+    color: #222;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 40px;
+}
+
+.con_3_content {
+    background-image: url('../../assets/ayurveda/container_3_bg.png');
+    background-size: cover;
+    padding: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    width: 941px;
+    height: 500px;
+}
+
+.con_3_content .con_3_content_head {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 40px;
+}
+
+.con_3_content .panchakarma_list {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 25px;
+}
+
+.con_3_content .pachakarma_description {
+    width: 651px;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 50px;
+}
+
+/* container 4 */
+.container_4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.con_4_row_2 {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: relative;
+    margin-bottom: -42px;
+    opacity: 50%;
+}
+
+.circle_1 {
+    background-color: #88A800;
+    ;
+    margin-left: 110px;
+}
+
+.circle_2 {
+    background-color: #FF8A00;
+    margin-left: 153px;
+}
+
+.circle_3 {
+    background-color: #008080;
+    margin-left: 100px;
+}
+
+.circle_4 {
+    background-color: #C4953B;
+    margin-left: 95px;
+}
+
+.circle_5 {
+    background-color: #4D72D0;
+    margin-left: 250px;
+}
+
+.content_head {
+    color: #008080;
+    
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.content_paragraph {
+    width: 295px;
+    color: #848484;
+    text-align: justify;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    /* 137.5% */
+    margin-top: 20px;
+}
+
+.content_box_1 {
+    width: 345px;
+    height: 333px;
+
+}
+
+.con_4_des {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.con_4_des .con_4_des_txt {
+    color: #000;
+    
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    /* 150% */
+    width: 1232px;
+}
+
+/* container 5 */
+.con_5_heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0 50px 0;
+}
+
+.container_5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.con_5_content {
+    width: 672px;
+    height: 410px;
+    background-image: url('../../assets/ayurveda/container_5_bg.png');
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+}
+
+.con_5_heading img {
+    width: 100px;
+    height: 100px;
+}
+
+.con_5_heading .con_5_heading_txt {
+    color: #008080;
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    
+}
+
+/* container 6 */
+
+.container_6{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 100px;
+}
+
+.con_6_lft_side{
+    width: 100%;
+}
+
+.con_6_lft_side img{
+    width: 100%;
+    height: 100%;
+}
+
+.con_6_right_side{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.con_6_head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.con_6_head img{
+    width: 80px;
+    height: 80px;
+}
+
+.con_6_head_txt{
+    color: #222;
+    font-family: Poppins;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.con_6_para_txt{
+    width: 90%;
+    font-family: Inter;
+    color: #848484;
+    text-align: justify;
+    line-height: 30px;
+    font-size: 18px;
+    padding: 5% 0 0 0;
+    margin-left: 5%;
+    background-image: url('../../assets/ayurveda/con_6_bg.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* container 7 */
+
+.con_7_scroll_1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    animation: marquee infinite linear 20s;
+}
+
+@keyframes marquee{
+    0% {
+        left: 0;
+      }
+      25% {
+        left: 100%;
+        transform: translateX(-30%);
+      }
+      75% {
+        right: 100%;
+        transform: translateX(30%);
+      }
+      100% {
+        left: 0;
+      }
+}
+
+.con_7_scroll_2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    animation: marquee_2 infinite linear 20s;
+}
+
+@keyframes marquee_2{
+    0% {
+        right: 0;
+      }
+      25% {
+        right: 100%;
+        transform: translateX(30%);
+      }
+      75% {
+        left: 100%;
+        transform: translateX(-30%);
+      }
+      100% {
+        left: 0;
+      }
+}
+
+.con_7_scroll_1 img {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 10px;
+}
+
+.con_7_scroll_2 img {
+    width: 70px;
+    height: 70px;
+}
+
+.scroll_1_box {
+    margin-left: 50px;
+    width: 170px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px #a1a1a1;
+    padding: 10px;
+}
+
+.scroll_1_head {
+    color: #1E0B9B;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+.scroll_info {
+    color: #013243;
+    text-align: center;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 120px;
+}
+
+.container_8{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 80px;
+}
+.con_8_ltf_side{
+    background-color: #008080;
+    padding-bottom: 20px;
+}
+.con_8_img{
+    display: flex;
+    justify-content: space-between;
+}
+
+.con_8_img .con_8_logo{
+    width: 100px;
+    height: 100px;
+    margin: 3% 0 0 5.5%;
+}
+
+.con_8_img .con_8_image{
+    width: 220px;
+    height: 150px;
+}
+
+.logo_name{
+    display: flex;
+    justify-content: space-between;
+}
+
+.con_8_logo_name{
+    width: 150px;
+    font-size: 16px;
+    text-align: center;
+    margin-left: 2%;
+    font-weight: 700;
+    font-family: inter;
+    color: #ffffff;
+}
+.con_8_age{
+    font-size: 20px;
+    font-family: inter;
+    margin-top: 10px;
+    color: #ffffff;
+    padding-right: 2%;
+}
+
+.con_8_contents{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.con_8_para_txt{
+    text-align: center;
+    width: 100%;
+    padding: 5% 10%;
+    font-size: 16px;
+    font-family: inter;
+    color: #ffffff;
+}
+
+.con_8_ls_info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.con_8_fees_details{
+    border: 2px solid #ffffff;
+    border-radius: 30px;
+    padding: 15px 20px;
+    font-size: 18px;
+    font-family: inter;
+    color: #ffffff;
+}
+
+.appointment_txt, .phone_number{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: inter;
+    color: #ffffff;
+}
+
+.con_8_rs_head{
+    color: #008080;
+    text-align: center;
+    font-size: 24px;
+    font-family: poppins;
+    text-transform: capitalize ;
+    font-weight: 700;
+}
+
+.con_8_row_1{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.con_8_box_1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10% 5%;
+    gap: 20px;
+    border-bottom: 2px solid #000000;
+}
+
+.con_8_box_1_row_2{
+    border-left: 2px solid #000000;
+}
+
+
+.con_8_box_1 img{
+    width: 60px;
+    height: 60px
+}
+
+.con_8_head{
+    color: #222;
+    font-family: poppins;
+    font-size: 18px;
+}
+
+.con_8_info{
+    font-size: 16px;
+    font-family: inter;
+    padding: 0 10%;
+    
+    color: #7D7D7D;
+}
+
+.doctors_heading{
+    font-size: 30px;
+    color: #222;
+    text-align: center;
+    margin: 60px 0;
+    font-weight: 700;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0; 
+}
+
+@media (max-width: 1200px){
+
+    /* container 1 */
+
+    .con_1_head{
+        width: 100%;
+        margin-left: 30px;
+    }
+    .con_1_lft_box .con_1_para {
+        width: 100%;
+        padding: 5%;
+    }
+
+    .con_1_right_box img{
+        width: 428px;
+        height: 300px;
+    }
+
+    /* container 2 */
+
+    .con_2_para_1_txt{
+        width: 100%;
+        padding:0 10%;
+    }
+    .con_2_flex .con_2_para_2_txt{
+        width: 100%;;
+        padding:0 0 0 20%;
+        height: 100%;
+    }
+
+    .con_2_flex_lft{
+        width: 100%;
+    }
+    .con_2_para_3_txt{
+        padding: 0 0 0 10%;
+    }
+    .con_2_flex_right{
+        width: 100%;
+    }
+    .con_2_flex_right img{
+        width: 500px;
+        height: 250px;
+    }
+
+    /* container 3 */
+
+    .con_3_des{
+        width: 100%;
+        padding: 0 3%;
+    }
+
+    /* container 4 */
+
+    .content_box_1{
+        width: 310px;
+    }
+
+    .content_box_1 .content_paragraph {
+        width: 290px;
+        padding: 2%;
+    }
+
+    .con_4_des .con_4_des_txt{
+        width: 100%;
+        padding: 5%;
+    }
+
+    /* container 6 */
+
+    .con_6_lft_side img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .con_6_para_txt{
+        line-height: 23px;
+    }
+}
+
+
+
+@media (max-width: 780px) {
+
+    /* container 1 */
+
+    .root-container {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    .container_1 {
+        flex-direction: row;
+    }
+
+    .con_1_right_box {
+        width: 100%;
+        flex-direction: column;
+
+    }
+
+    .con_1_right_box img {
+        width: 280px;
+        height: 205px;
+    }
+
+    .con_1_right_box .con_1_content {
+        width: 157px;
+        height: 15px;
+        display: flex;
+        margin-right: 2%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .con_1_content .con_1_content_1 {
+        font-size: 10px;
+        width: 175px;
+    }
+
+    .container_1 .con_1_lft_box {
+        width: 100%;
+    }
+
+    .container_1 .con_1_head {
+        width: 100%;
+    }
+
+    .con_1_right_box .con_1_content{
+        width: 184px;
+        height: 79px;
+    }
+
+    .con_1_head img {
+        width: 26.364px;
+        height: 26.364px;
+        margin-left: 10px;
+    }
+
+    .con_1_head .con_1_heading {
+        color: #008080;
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        
+    }
+
+    .con_1_lft_box .con_1_para {
+        color: #000;
+        
+        font-family: Inter;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 14px;
+        /* 140% */
+        
+        width: 349px;
+        padding: 0;
+        margin-right: 0;
+    }
+
+    /* container 2 */
+
+    .container_2 {
+        width: 100%;
+    }
+
+    .con_2_para_1 {
+        width: 100%;
+    }
+
+    .con_3_img_head img {
+        width: 49.364px;
+        height: 49.364px;
+    }
+
+    .con_3_img_head .con_2_head_txt {
+        font-size: 16px;
+    }
+
+    .con_2_flex {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .con_2_flex_right {
+        margin-top: 10px;
+    }
+
+    .con_2_flex_right img {
+        width: 340px;
+        height: 190px;
+        margin-top: 0;
+    }
+
+    .container_2 .con_2_para_1_txt {
+        font-size: 10px;
+        width: 100%;
+        height: 90%;
+        padding: 0 9.7%;
+    }
+
+    .container_2 .con_2_para_2_txt {
+        font-size: 10px;
+        width: 100%;
+        padding: 0 9.7%;
+        height: 90%;
+    }
+
+    .container_2 .con_2_para_3_txt {
+        font-size: 10px;
+        width: 100%;
+        padding: 0 9.7%;
+    }
+
+    /* container 3 */
+
+    .container_3 {
+        width: 100%;
+    }
+
+    .con_3_head img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .con_3_head {
+        margin-bottom: 0;
+    }
+
+    .con_3_head .con_3_head_txt {
+        font-size: 20px;
+        padding: 20px;
+    }
+
+    .container_3 .con_3_des {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-shrink: 0;
+        font-size: 12px;
+        padding: 5px;
+        margin-bottom: 15px;
+    }
+
+    .con_3_content .con_3_content_head {
+        color: #FFF;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+
+    }
+
+    .con_3_content .panchakarma_list {
+        color: #FFF;
+        text-align: center;
+        font-family: Inter;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .con_3_content .pachakarma_description {
+        display: flex;
+        width: 328px;
+        height: 56px;
+        flex-direction: column;
+        justify-content: center;
+        flex-shrink: 0;
+        font-size: 10px;
+    }
+
+    /* container 4 */
+
+    .circle {
+        display: none;
+    }
+
+    .container_4 {
+        width: 100%;
+    }
+
+    .con_4_row_2 {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .content_box_1 {
+        width: 300px;
+        height: 280px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .content_box_1 .content_head {
+        font-size: 20px;
+        text-align: center;
+        color: white;
+        margin-top: 10px;
+    }
+
+    .content_box_1 .content_paragraph {
+        
+        font-family: Inter;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 16px;
+        /* 160% */
+        width: 100%;
+        padding: 10%;
+        color: white;
+        display: flex;
+        margin: 0;
+    }
+
+    .content_box_1_ {
+        border-radius: 20px;
+        background: #88A800;
+    }
+
+    .content_box_2 {
+        border-radius: 20px;
+        background: #FF8A00;
+        margin-left: 5px;
+    }
+
+    .content_box_3 {
+        border-radius: 20px;
+        background: #5BC198;
+        margin-top: 5px;
+    }
+
+    .content_box_4 {
+        border-radius: 20px;
+        background: #C4953B;
+        margin-left: 5px;
+        margin-top: 5px;
+    }
+
+    .content_box_5 {
+        border-radius: 20px;
+        background: #4D72D0;
+        margin-top: 5px;
+    }
+
+    .con_4_des .con_4_des_txt {
+        color: #000;
+        
+        font-family: Inter;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+        /* 200% */
+        width: 100%;
+        padding: 0 10%;
+        margin-top: 30px;
+    }
+
+    /* container 5 */
+
+    .container_5 {
+        width: 100%;
+        height: 240px;
+    }
+
+    .con_5_heading img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .con_5_heading .con_5_heading_txt {
+        font-size: 20px;
+    }
+
+    .con_5_content .content_head_txt {
+        color: #222;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        padding: 0;
+    }
+
+    .kayachikitsa .con_5_list_items {
+        font-size: 12px;
+        margin-top: 0;
+    }
+
+    .prew_nxt_btn {
+        width: 93%;
+    }
+
+    /* container 6 */
+
+    .container_6{
+        display: flex;
+        flex-direction: column;
+       }
+    
+       .con_6_para_txt{
+            font-size: 14px;
+        }
+
+    /* container 7 */
+
+    .container_7 {
+        width: 100%;
+    }
+
+    .con_7_scroll_2 {
+        margin-top: 50px;
+    }
+
+    .scroll_1_box {
+        width: 122px;
+        height: 122 px;
+        margin-left: 10px;
+    }
+
+    .scroll_1_box img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .scroll_1_box .scroll_1_head {
+        color: #1E0B9B;
+        text-align: center;
+        font-family: Inter;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        width: 100%;
+        flex-shrink: 0;
+        margin-bottom: 0
+    }
+
+    .scroll_1_box .scroll_info {
+        color: #013243;
+        text-align: center;
+        font-family: Inter;
+        font-size: 8px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        width: 70px;
+        padding: 5px;
+
+    }
+
+    /* container 8 */
+
+    .container_8{
+        display: flex;
+        flex-direction: column;
+        margin-top: 80px;
+    }
+
+    .con_8_right_side{
+        margin: 50px 0;
+    }
+
+    .con_6_right_side{
+        margin-top: 50px;
+    }
+
+    .container_9 .con_9_head {
+        width: 360px;
+        height: 230px;
+        font-size: 18px;
+    }
+}
+
+
+
+@media (max-width: 430px) {
+
+    /* container 1 */
+
+    .root-container {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    .container_1 {
+        flex-direction: column-reverse;
+    }
+
+    .con_1_right_box{
+        width: 100%;
+        flex-direction: row-reverse;
+    }
+
+    .con_1_right_box img {
+        width: 105px;
+        height: 85px;
+    }
+
+    .con_1_right_box .con_1_content {
+        width: 204px;
+        height: 79px;
+        display: flex;
+        margin-right: 2%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .con_1_content .con_1_content_1 {
+        font-size: 10px;
+        width: 175px;
+    }
+
+    .container_1 .con_1_lft_box {
+        width: 100%;
+    }
+
+    .container_1 .con_1_head {
+        width: 100%;
+    }
+
+    .con_1_head img {
+        width: 26.364px;
+        height: 26.364px;
+        margin-left: 10px;
+    }
+
+    .con_1_head .con_1_heading {
+        color: #008080;
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        
+    }
+
+    .con_1_lft_box .con_1_para {
+        color: #000;
+        
+        font-family: Inter;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 14px;
+        /* 140% */
+        
+        width: 349px;
+        padding: 0;
+        margin-right: 0;
+    }
+
+    /* container 2 */
+
+    /* .container_2 {
+        width: 320px;
+    }
+
+    .con_2_para_1 {
+        width: 320px;
+    }
+
+    .con_3_img_head img {
+        width: 49.364px;
+        height: 49.364px;
+    }
+
+    .con_3_img_head .con_2_head_txt {
+        font-size: 16px;
+    }
+
+    .con_2_flex {
+        flex-direction: column;
+    }
+
+    .con_2_flex_right img {
+        width: 340px;
+        height: 190px;
+    } */
+
+    .container_2 .con_2_para_1_txt {
+        font-size: 10px;
+        width: 100%;
+        padding: 0 8%;
+    }
+
+    .container_2 .con_2_para_2_txt {
+        font-size: 10px;
+        width: 100%;
+        padding: 0 8%;
+        height: 90%;
+    }
+
+    .container_2 .con_2_para_3_txt {
+        font-size: 10px;
+        width: 100%;
+        padding: 0 8%;
+        margin: 0;
+    }
+
+    /* container 3 */
+
+    .container_3 {
+        width: 100%;
+    }
+
+    .con_3_head img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .con_3_head {
+        margin-bottom: 0;
+    }
+
+    .con_3_head .con_3_head_txt {
+        font-size: 20px;
+        padding: 20px;
+    }
+
+    .container_3 .con_3_des {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-shrink: 0;
+        font-size: 12px;
+        padding: 5px;
+        margin-bottom: 15px;
+    }
+
+    .con_3_content .con_3_content_head {
+        color: #FFF;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+
+    }
+
+    .con_3_content .panchakarma_list {
+        color: #FFF;
+        text-align: center;
+        font-family: Inter;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .con_3_content .pachakarma_description {
+        display: flex;
+        width: 328px;
+        height: 56px;
+        flex-direction: column;
+        justify-content: center;
+        flex-shrink: 0;
+        font-size: 10px;
+    }
+
+    /* container 4 */
+
+    .circle {
+        display: none;
+    }
+
+    .container_4 {
+        width: 100%;
+    }
+
+    .con_4_row_2 {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .content_box_1 {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content_box_1 .content_head {
+        font-size: 20px;
+        text-align: center;
+        color: white;
+        margin-top: 10px;
+    }
+
+    .content_box_1 .content_paragraph {
+        
+        font-family: Inter;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 16px;
+        /* 160% */
+        width: 145px;
+        color: white;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+
+    .content_box_1_ {
+        border-radius: 20px;
+        background: #88A800;
+    }
+
+    .content_box_2 {
+        border-radius: 20px;
+        background: #FF8A00;
+        margin-left: 5px;
+    }
+
+    .content_box_3 {
+        border-radius: 20px;
+        background: #5BC198;
+        margin-top: 5px;
+    }
+
+    .content_box_4 {
+        border-radius: 20px;
+        background: #C4953B;
+        margin-left: 5px;
+        margin-top: 5px;
+    }
+
+    .content_box_5 {
+        border-radius: 20px;
+        background: #4D72D0;
+        margin-top: 12px;
+    }
+
+    .con_4_des .con_4_des_txt {
+        color: #000;
+        
+        font-family: Inter;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+        /* 200% */
+        width: 328px;
+        padding: 0 5px;
+    }
+
+    /* container 5 */
+
+    .container_5 {
+        width: 100%;
+        height: 240px;
+    }
+
+    .con_5_heading img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .con_5_heading .con_5_heading_txt {
+        font-size: 20px;
+    }
+
+    .con_5_content .content_head_txt {
+        color: #222;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        padding: 0;
+    }
+
+    .kayachikitsa .con_5_list_items {
+        font-size: 12px;
+        margin-top: 0;
+    }
+
+    .prew_nxt_btn {
+        width: 93%;
+    }
+
+    /* container 6 */
+
+    .con_6_head img{
+        width: 50px;
+        height: 50px;
+    }
+
+    .con_6_head_txt{
+        font-size: 20px;
+    }
+
+    .con_6_para_txt{
+        font-size: 12px;
+    }
+    /* container 7 */
+
+    .container_7 {
+        width: 100%;
+    }
+
+    .con_7_scroll_2 {
+        margin-top: 50px;
+    }
+
+    .scroll_1_box {
+        width: 80px;
+        height: 80px;
+        margin-left: 10px;
+    }
+
+    .scroll_1_box img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .scroll_1_box .scroll_1_head {
+        color: #1E0B9B;
+        text-align: center;
+        font-family: Inter;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        width: 100%;
+        flex-shrink: 0;
+        margin-bottom: 0
+    }
+
+    .scroll_1_box .scroll_info {
+        color: #013243;
+        text-align: center;
+        font-family: Inter;
+        font-size: 8px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        width: 70px;
+        padding: 5px;
+
+    }
+
+    /* container 8 */
+
+    .con_8_img .con_8_logo{
+        width: 50px;
+        height: 50px;
+        margin: 3% 10% 0 10%;
+    }
+
+    .con_8_img .con_8_image{
+        width: 208px;
+        height: 145px;
+    }
+
+    .con_8_logo_name{
+        font-size: 12px;
+        width: 120px;
+        position: relative;
+        bottom: 70px;
+    }
+
+    .con_8_age{
+        font-size: 12px;
+    }
+
+    .con_8_para_txt{
+        font-size: 12px;
+    }
+
+    .con_8_fees_details{
+        font-size: 12px;
+    }
+
+    .appointment_txt, .phone_number{
+        font-size: 12px;
+    }
+    
+    .doctors_heading{
+        font-size: 20px;
+    }
+}
+
+
+
+@media (max-width: 380px) {
+
+    /* container 1 */
+    .root-container {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    .container_1 {
+        flex-direction: column-reverse;
+    }
+
+    .con_1_right_box {
+        width: 100%;
+        flex-direction: row-reverse;
+
+    }
+
+    .con_1_right_box img {
+        width: 105px;
+        height: 85px;
+    }
+
+    .con_1_right_box .con_1_content {
+        width: 204px;
+        height: 79px;
+        display: flex;
+        margin-right: 2%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .con_1_content .con_1_content_1 {
+        font-size: 10px;
+        width: 175px;
+    }
+
+    .container_1 .con_1_lft_box {
+        width: 100%;
+    }
+
+    .container_1 .con_1_head {
+        width: 100%;
+    }
+
+    .con_1_head img {
+        width: 26.364px;
+        height: 26.364px;
+        margin-left: 10px;
+    }
+
+    .con_1_head .con_1_heading {
+        color: #008080;
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        
+    }
+
+    .con_1_lft_box .con_1_para {
+        color: #000;
+        
+        font-family: Inter;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 14px;
+        /* 140% */
+        
+        width: 280px;
+        padding: 0;
+        margin-right: 8%;
+    }
+
+    /* container 2 */
+
+    .container_2 .con_2_para_1_txt {
+        font-size: 10px;
+        width: 100%;
+        padding: 0 8%;
+    }
+
+    .container_2 .con_2_para_2_txt {
+        font-size: 10px;
+        width: 100%;
+        padding: 0 8%;
+    }
+
+    .container_2 .con_2_para_3_txt {
+        font-size: 10px;
+        width: 100%;
+        padding: 0 8%;
+    }
+
+    /* container 3 */
+
+    .container_3 {
+        width: 100%;
+    }
+
+    .con_3_head img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .con_3_head {
+        margin-bottom: 0;
+    }
+
+    .con_3_head .con_3_head_txt {
+        font-size: 20px;
+        padding: 20px;
+    }
+
+    .container_3 .con_3_des {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-shrink: 0;
+        font-size: 12px;
+        padding: 5px;
+        margin-bottom: 15px;
+    }
+
+    .con_3_content .con_3_content_head {
+        color: #FFF;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+
+    }
+
+    .con_3_content .panchakarma_list {
+        color: #FFF;
+        text-align: center;
+        font-family: Inter;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .con_3_content .pachakarma_description {
+        display: flex;
+        width: 328px;
+        height: 56px;
+        flex-direction: column;
+        justify-content: center;
+        flex-shrink: 0;
+        font-size: 10px;
+    }
+
+    /* container 4 */
+
+    .circle {
+        display: none;
+    }
+
+    .container_4 {
+        width: 100%;
+    }
+
+    .con_4_row_2 {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .content_box_1 {
+        width: 100%;
+        height: 280px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content_box_1 .content_head {
+        font-size: 20px;
+        text-align: center;
+        color: white;
+        margin-top: 10px;
+    }
+
+    .content_box_1 .content_paragraph {
+        
+        font-family: Inter;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 16px;
+        /* 160% */
+        width: 145px;
+        color: white;
+        display: flex;
+        margin: 0;
+    }
+
+    .con_4_content{
+        width: 100%;
+        padding: 3%;
+    }
+    .con_4_row_2{
+        width: 100%;
+    }
+    .content_box_1{
+        width: 100%;
+        height: 100%;
+    }
+
+    .content_box_1 .content_head{
+        font-size: 14px;
+    }
+
+    .content_box_5{
+        margin-top: 10px;
+    }
+
+    .con_4_des .con_4_des_txt {
+        color: #000;
+        
+        font-family: Inter;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+        /* 200% */
+        width: 328px;
+        padding: 0 5px;
+    }
+
+    /* container 5 */
+
+    .container_5 {
+        width: 100%;
+        height: 240px;
+    }
+
+    .con_5_heading img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .con_5_heading .con_5_heading_txt {
+        font-size: 20px;
+    }
+
+    .con_5_content .content_head_txt {
+        color: #222;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        padding: 0;
+    }
+
+    .kayachikitsa .con_5_list_items {
+        font-size: 12px;
+        margin-top: 0;
+    }
+
+    .prew_nxt_btn {
+        width: 93%;
+    }
+
+    /* container 6 */
+
+    
+    
+    /* container 7 */
+
+    .container_7 {
+        width: 100%;
+    }
+
+    .con_7_scroll_2 {
+        margin-top: 50px;
+    }
+
+    .scroll_1_box {
+        width: 80px;
+        height: 80px;
+        margin-left: 10px;
+    }
+
+    .scroll_1_box img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .scroll_1_box .scroll_1_head {
+        color: #1E0B9B;
+        text-align: center;
+        font-family: Inter;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        width: 100%;
+        flex-shrink: 0;
+        margin-bottom: 0
+    }
+
+    .scroll_1_box .scroll_info {
+        color: #013243;
+        text-align: center;
+        font-family: Inter;
+        font-size: 8px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        width: 70px;
+        padding: 5px;
+
+    }
+
+    /* container 8 */
+
+    
+}
+

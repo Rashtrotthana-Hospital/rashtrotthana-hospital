@@ -1,0 +1,128 @@
+<div style="background-color: #fbfff5; margin-top: 121px" class="contact-main-div">
+  <div class="appointment">
+    Book an Appointment
+    <img class="arrow-appoint" src="../../assets/appoint-arrow.png" />
+  </div>
+  <div class="contact-details">
+    <div class="contact-form-page">
+      <div class="content">
+        We provide high <a style="text-decoration: none;" href="https://en.wikipedia.org/wiki/Health_care_quality">quality services</a> and <a style="text-decoration: none;" href="https://www.rashtrotthanahospital.com/">best hospital </a>service
+      </div>
+      <div class="contact-info">
+        <div style="margin-bottom: 1rem" class="contact_us_flex">
+          <i class="fa-solid fa-envelope icon"></i>
+          <p class="email">info&#64;rashtrotthanahospital.com</p>
+        </div>
+        <div style="margin-bottom: 1rem" class="contact_us_flex">
+          <i class="fa-solid fa-phone icon"></i>
+          <p class="phone_number">08069239999</p>
+        </div>
+        <div class="address" style="margin-bottom: 1rem"  class="contact_us_flex">
+          <i class="fa-solid fa-location-crosshairs icon"></i>
+          <p class="address">Jayadev Memorial Rastrotthana Hospital & Research Centre,
+          Rajarajeshwari Nagar, BEML 5th Stage, Bengaluru - 560098</p>
+        </div>
+      </div>
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.980268968693!2d77.5109759750038!3d12.908989616248038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3fbc0262558b%3A0xc42f8d9bb8a681dd!2sJayadev%20Memorial%20Rashtrotthana%20Hospital%20and%20Research%20Centre!5e0!3m2!1sen!2sin!4v1719338718455!5m2!1sen!2sin"
+          class="map-iframe" style="border: 0" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+    <div class="contact-form-container">
+      <!-- <div class="card flex justify-content-center form">
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+          <div class="flex flex-column gap-4">
+            <div class="contact-form-field">
+              <i class="fa-solid fa-user form_icon"></i>
+              <label for="username">Name</label><br /><br />
+            </div>
+            <input type="text" class="input" pInputText id="username" formControlName="name" placeholder="Name"
+              required />
+            <div *ngIf="f['name'].touched && f['name'].invalid">
+              <small class="error" *ngIf="f['name'].errors?.['required']">Name is required</small>
+              <small class="error" *ngIf="f['name'].errors?.['minlength']">Name must be at least 2 characters
+                long</small>
+              <small class="error" *ngIf="f['name'].errors?.['pattern']">Name can only contain letters</small>
+            </div>
+            <br /><br />
+
+            <div>
+              <i class="fa-solid fa-envelope form_icon"></i>
+              <label for="email">Email</label><br /><br />
+            </div>
+            <input type="email" class="input" pInputText id="email" formControlName="email" placeholder="Email"
+              required />
+            <div *ngIf="f['email']?.touched && f['email'].invalid">
+              <small class="error" *ngIf="f['email'].errors?.['required']">Valid email is required</small>
+              <small class="error" *ngIf="f['email'].errors?.['email']">Invalid email format</small>
+            </div>
+            <br /><br />
+
+            <div>
+              <i class="fa-solid fa-phone form_icon"></i> 
+              <label for="contactNumber">Contact Number</label><br /><br />
+            </div>
+            <input type="text" class="input" pInputText id="contactNumber" formControlName="contactNumber"
+              placeholder="Contact Number" required />
+            <div *ngIf="f['contactNumber'].touched && f['contactNumber'].invalid">
+              <small class="error" *ngIf="f['contactNumber'].errors?.['required']">Contact Number is required</small>
+              <small class="error" *ngIf="f['contactNumber'].errors?.['pattern']">Contact Number must be digits
+                only</small>
+              <small class="error" *ngIf="f['contactNumber'].errors?.['minlength']">Contact Number must be at least 10
+                digits long</small>
+              <small class="error" *ngIf="f['contactNumber'].errors?.['maxlength']">Contact Number must be no more than
+                15 digits long</small>
+            </div>
+            <br /><br />
+
+            <div>
+              <i class="fa-solid fa-building-user form_icon"></i>
+              <label for="subject">Subject</label><br /><br />
+            </div>
+            <p-dropdown styleClass="dropdown" [options]="subjects" optionLabel="name" formControlName="subject"
+              required></p-dropdown>
+            <div *ngIf="f['subject'].touched && f['subject'].invalid">
+              <small class="error">Subject is required</small>
+            </div>
+            <br /><br />
+
+            <textarea type="text" class="text-area" rows="5" cols="30" placeholder="Your Message..." pInputTextarea
+              formControlName="message" required></textarea>
+            <div *ngIf="f['message'].touched && f['message'].invalid">
+              <small class="error">Message is required</small>
+            </div>
+            <br /><br />
+
+            <div class="privacy-policy">
+              By submitting this form you accept the Privacy Policy.
+            </div>
+
+            <div style="padding-top: 3rem">
+              <button type="submit" class="appoint-button" [disabled]="contactForm.invalid">
+                Make an Appointment <img src="../../assets/contact-arrow.png" />
+              </button>
+            </div>
+          </div>
+          <p-toast />
+        </form>
+      </div> -->
+      <!-- <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+<div class="elfsight-app-523aa52c-1c2e-47fa-86b3-d3de3784a88d" data-elfsight-app-lazy></div> -->
+
+
+<div class="contact-form-elsight">
+  <iframe class="contact-form-elsight" src="https://f6af4034b85c499390712afdeb6dc728.elf.site"></iframe>
+</div>
+    </div>
+  </div>
+  <!-- <div class="parking-map-container">
+    <div class="appointment parking">Parking
+      <img class="arrow-appoint" src="../../assets/appoint-arrow.png" />
+    </div>
+    
+    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3888.4668216157706!2d77.54351747507593!3d12.94195298737069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTLCsDU2JzMxLjAiTiA3N8KwMzInNDUuOSJF!5e0!3m2!1sen!2sin!4v1722927425578!5m2!1sen!2sin" 
+    class="parking-map" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div> -->
+</div>

@@ -1,0 +1,72 @@
+<div class="root_container">
+    <!-- container 1 -->
+    <div class="container_1">
+        <div class="con_1_heading">
+            <img src="../../assets/naturopathy/con_1_icon.png" alt="">
+            <p class="con_1_head_txt">Lifestyle Clinic</p>
+        </div>
+        <div class="con_1_content">
+            <p class="con_1_ocntent_txt">Lifestyle is the way in which a person lives. The day to day activities, food habits, sleeping pattern and all comes under lifestyle. Since this lifestyle, the day to day activity what we do is impacting our health, it is required to have a healthy lifestyle. Now the question is how many of  us now what exactly is required or what is  healthy lifestyle to have a disease free life. What does Ayurveda tell about lifestyle, what are the principles mentioned in Ayurveda to maintain health? Consult our expert team of Doctors to know more about lifestyle.</p>
+        </div>
+    </div>
+
+    <!-- container 2 -->
+    <div class="con_2_bg">
+        <img src="../../assets/naturopathy/con_2_bg.png" alt="">
+    </div>
+    <div class="container_2">
+        <div class="con_2_heading">
+            <p class="con_2_head_txt">The benefits of practicing healthy lifestyle are:</p>
+        </div>
+        <ul class="con_2_list">
+            <li class="con_2_list_items">It reduces the risk of developing diseases.</li>
+            <li class="con_2_list_items">It reduces the complications in the diseased person.</li>
+            <li class="con_2_list_items">It reduces the complications in the diseased person.</li>
+            <li class="con_2_list_items">Reduces depression and brings about happiness.</li>
+            <li class="con_2_list_items">Helps an individual to know how to understand their body nature and the practices required for their body to maintain health.</li>
+        </ul>
+    </div>
+
+    <!-- container 3 -->
+    <div class="container_3">
+        <div class="con_3_lft_side">
+            <img src="../../assets/naturopathy/container_3_bg.png" alt="">
+        </div>   
+        <div class="con_3_right_side">
+            <div class="con_3_head">
+                <p class="con_3_head_txt">"FREE LIFESTYLE CONSULTATION"</p>
+            </div>
+            <div class="con_3_content">
+                <p class="con_3_content_txt">Any disease for that matter will not be cured just by medications, along with that some of the lifestyle changes which include food and daily activities need to be corrected for further management of any condition.</p>
+                <p class="con_3_content_txt">Hence our experts will provide you the necessary guidelines to prevent diseases and also to maintain the health based on Ayurvedic principles only.</p>
+                <p class="con_3_content_txt">Here in Rashtrotthana, we provide "FREE LIFESTYLE CONSULTATION" to all, for them to understand what is a healthy lifestyle and what needs to be followed.</p>
+            </div>
+        </div>
+    </div>
+
+   <!-- doctor details -->
+
+   <div class="heading">
+    <p class="doctor_heading">MEET OUR MEDICAL TEAM</p>
+</div>
+
+<div class="doc_container">
+    <div class="doctors_flex">
+      <div class="doc_details" *ngFor="let slide of doctors; let i = index" [ngClass]="{ active: i === 0 }">
+        <div class="doc_1">
+          <img [src]="slide.image" alt="{{ slide.name }}" />
+          <p class="doc_name">{{ slide.name }}</p>
+          <p class="section">{{ slide.section }}</p>
+          <p class="designation">{{ slide.designation }}</p>
+          <p class="exp">Years of Experience: {{ slide.experience }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- view all btn -->
+
+    <div class="view_all">
+        <app-arrow-btn></app-arrow-btn>
+    </div>
+
+</div> 

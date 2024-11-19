@@ -1,0 +1,20 @@
+<!-- <div *ngIf="post">
+    <h1>{{ post.title.rendered }}</h1>
+    <div [innerHTML]="post.content.rendered"></div>
+  </div> -->
+
+  <div class="blog-post-container" *ngIf="post">
+    <img class="post-image" [src]="post.featured_image_url" alt="{{ post.title.rendered }}">
+    <div class="post-content">
+      <p class="post-date">
+        {{ post.date | date:'mediumDate' }} |
+        <span *ngFor="let category of categories; let last = last">
+          {{ category }}<span *ngIf="!last">, </span>
+        </span>
+      </p>
+      <h1 class="post-title">{{ post.title.rendered }}</h1>
+      <div class="post-body" [innerHTML]="post.content.rendered"></div>
+    </div>
+  </div>
+  
+  

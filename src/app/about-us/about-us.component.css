@@ -1,0 +1,481 @@
+*{
+    /* background: #FBFFF5; */
+}
+.about-us-container{
+    padding-top:8vh;
+    background: url('../../assets/about-bg.png')no-repeat;
+    background-size: cover;
+}
+.about-us-container,.president-container{
+    display: flex;
+    width: 100%;
+    /* background: #FBFFF5; */
+    padding-bottom:6rem;
+    padding-top: 4rem;
+}
+.president-container{
+    background-color: #FBFFF5;;
+}
+.about-img{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.about-content,.president-content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.heading{
+    color: #008080;
+text-align: center;
+font-family: Poppins;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+padding-bottom: 3rem ;
+}
+.content{
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 525px; 
+    text-align: justify;
+}
+.president-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+.president{
+    width: 263px;
+    height: 263px;
+}
+.president-content{
+    color: #000;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 142.857% */
+letter-spacing: 0.28px;
+text-align: justify;
+
+}
+.name{
+    color: #008080;
+text-align: center;
+font-family: Poppins;
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.desgination{
+    color: rgba(0, 128, 128, 0.89);
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.president-content{
+    padding-left: 6rem;
+    overflow-x: hidden;
+}
+.mission-vision{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.about-hospital,.about-vision{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+
+}
+.about-heading{
+    color: #0E3672;
+text-align: center;
+font-family: Poppins;
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+padding-bottom: 35px;
+}
+.about-hospital-content{
+    color: #000;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-align: justify;
+}
+.about-hospital{
+    background: #FFF;
+    padding-left: 6rem;
+    padding-right: 2rem;
+}
+.about-vision{
+    padding-top: 2rem;
+    background: linear-gradient(157deg, #FBCA51 -58.23%, #008080 74.61%);
+    font-style: normal;
+font-weight: 700;
+line-height: normal;
+color: #FFF;
+text-align: center;
+font-family: Inter;
+}
+.vision-heading{
+font-size: 36px;
+padding-top: 2rem;
+}
+.vision-sub-heading{
+    padding-top: 2rem;
+font-size: 24px;
+}
+.about-vision-content{
+    padding-top: 2rem;
+    color: #FFF;
+text-align: center;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.last-content{
+    padding-bottom: 3rem;
+}
+.facilities-heading{
+    color: #008080;
+/* text-align: center; */
+font-family: Poppins;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+padding-bottom:1rem;
+}
+.facilities-content{
+    color: #000;
+font-family: inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-bottom:2rem;
+}
+.content-1{
+    margin-bottom: 1rem;
+}
+.facilities-1{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.facilities-content-1{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+}
+.facilities-image{
+    width: 390px;
+height: 250px;
+flex-shrink: 0;
+}
+.facilities{
+    background: #FBFFF5;
+    padding: 6rem;
+    padding-bottom:2rem;
+}
+.facilities-2{
+   display: grid;
+   grid-template-columns: 33% 33% 33%;
+}
+.facilities-content-image{
+    font-size: 14px;
+    color: #000;
+    font-family: inter;
+    width: 75%;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 20px;
+   }
+   .title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;  
+    width: 100%;
+    margin: 0;
+    font-family: Poppins;
+}
+  .instagram_feed{
+    width: 100%;
+    height: 600px;
+  }
+@media only screen and (max-width:1390px){
+    .about-heading{
+        padding-bottom: 1rem;
+    }
+    .facilities-image{
+        width: 357px;
+    height: 230px;
+    }
+}
+@media only screen and (max-width:1030px){
+    .about-us-container{
+        background-size: contain;
+        padding-bottom: 0;
+    }
+    .heading{
+        padding-bottom: 2rem;
+        padding-left: 6rem;
+    }
+    .content{
+        /* font-size: 16px; */
+    }
+    .about-img{
+        width: 44%;
+    }
+    .jayadev{
+        width: 300px;
+        height: 330px;
+    }
+    .about-hospital{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .facilities-image{
+        width: 251px;
+        height: 179px;
+    }
+}
+@media only screen and (max-width:900px){
+    .jayadev{
+        width: 228px;
+        height: 258px;
+    }
+    .heading{
+        padding-left: 0;
+    }
+    .content{
+        width: 424px;
+    font-size: 11px;
+    }
+    .president-content{
+        padding-left: 3rem;
+        font-size: 11px;
+    }
+    .president{
+        width: 253px;
+        height: 255px;
+    }
+    .name{
+        font-size: 28px;
+    }
+    .desgination{
+        font-size: 18px;
+    }
+    .about-hospital-content{
+        font-size: 12px;
+        
+    }
+    .about-heading{
+        font-size: 28px;
+    }
+    .facilities{
+        padding: 3rem;
+    }
+    .facilities-content{
+        font-size: 12px;
+    }
+    .facilities-image{
+        width: 197px;
+        height: 139px;
+    }
+    .facilities-content-image{
+        font-size: 12px;
+    }
+}
+@media  only screen and (max-width:430px)
+{
+    .about-us-container{
+        padding-top:4vh;
+        background: url('../../assets/about-us-res-bg.png')no-repeat;
+        background-size: contain;
+    }
+   .about-us-container,.mission-vision{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 0;
+   }
+   .president-container{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-bottom: 0;
+    padding-top: 1rem;
+   }
+   .president-img{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 1rem;
+   }
+   .president{
+    width: 106px;
+    height: 106px;
+   }
+   .president-info{
+    padding-left: 1rem;
+   }
+   .name{
+    font-size: 14px;
+   }
+   .desgination{
+    font-size: 12px;
+    width:218px;
+   }
+   .president-content{
+    width: 300px;
+    padding: 0;
+    font-size: 12px;
+   }
+   .about-hospital{
+    padding: 0;
+    padding-top: 1rem;
+   }
+   .about-hospital-content{
+    padding-top: 1rem;
+    width: 150%;
+    font-size: 12px;
+   }
+   .about-heading{
+    width: 170%;
+    font-size: 20px;
+   }
+   .about-vision{
+    width: 100%;
+   }
+   .about-vision-content{
+    font-size: 14px;
+    width: 90%;
+   }
+   .vision-heading,.vision-sub-heading{
+    font-size: 20px;
+   }
+   .facilities{
+    padding: 1rem;
+   }
+   .facilities-2{
+    padding-left: 1.5rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+   
+   }
+   .facilities-content{
+    font-size: 12px;
+    color: #000;
+    
+    font-family: Inter;
+   
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+   }
+   .facilities-content-image{
+    font-size: 10px;
+    color: #000;
+    
+    font-family: Inter;
+   
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+   }
+   .facilities-image{
+    width: 155px;
+    height: 100px;
+
+   }
+   .heading{
+    font-size: 16px;
+    margin-top: 1rem;
+    width: 112%;
+    padding: 0;
+   }
+   .content{
+    padding-top: 1rem;
+    font-size: 10px;
+    width: 300px;
+    padding-bottom: 3rem;
+    font-weight: 400;
+   }
+   .jayadev{
+    width: 139px;
+    height: 163px;
+    flex-shrink: 0;
+   }
+   .facilities-heading{
+    font-size: 34px;
+    margin-bottom: 1rem;
+   }
+}
+@media only screen and (max-width:375px){
+    .content{
+        padding-top: 1rem;
+        font-size: 8px;
+        width: 300px;
+        padding-bottom: 3rem;
+        font-weight: 400;
+       }
+       .jayadev{
+        width: 129px;
+        height: 144px;
+        flex-shrink: 0;
+       }
+       .heading{
+        font-size: 14px;
+        margin-top: 1rem;
+        width: 127%;
+        padding: 0;
+       }
+       .about-hospital-content{
+        
+       }
+       .president {
+        width: 82px;
+        height: 75px;
+       }
+       .facilities-image{
+        width: 128px;
+        height: 82px;
+       }
+       .facilities-2{
+        padding-left: 0.5rem;
+        
+    }
+    .president-content{
+        width: 285px;
+    }
+    .about-hospital-content{
+        width: 174%;
+    }
+}

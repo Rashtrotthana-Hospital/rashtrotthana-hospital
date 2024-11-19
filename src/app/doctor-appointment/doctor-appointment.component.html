@@ -1,0 +1,158 @@
+<div class="contact-form-container">
+    <div class="card flex justify-content-center form">
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+            <button class="close-btn" (click)="closeDialog()">×</button>
+            <div>
+                <div class="appointment-title">
+                    Book an Appointment
+                </div>
+            </div>
+          <div class="flex flex-column gap-4">
+          <div class="doctor">
+            <div class="doctor-name">
+                {{ selectedDoctor.name }}
+            </div>
+            <div class="doctor-qualification">
+              {{ selectedDoctor.qualification }}
+          </div>
+            <div class="doctor-designation">
+                {{ selectedDoctor.desgination }}
+            </div>
+          </div><br><br>
+            <div class="appointment-time-date" >
+                <div class="date" style="flex: 1;">
+                <div>
+                    <i class="fa-solid fa-building-user form_icon"></i>
+                    <label for="subject">Appointment Date</label><br>
+                  </div>
+                <p-calendar  styleClass="dropdown" 
+                [(ngModel)]="date" 
+                [minDate]="minDate"
+                [iconDisplay]="'input'"  
+                placeholder="Choose a Date"
+                [showIcon]="true" 
+                inputId="icondisplay"  
+                formControlName="date_appointment"
+                [disabledDays]="disabledDays"
+                (onSelect)="onDateChange($event)">
+                    <ng-template pTemplate="date" let-date>
+                        <span>
+                            {{ date.day }}
+                        </span>
+                    </ng-template>
+                </p-calendar>
+                <div *ngIf="f['date']?.touched && f['date']?.invalid">
+                    <small class="error">Date is required</small>
+                  </div>
+                <br><br><br>
+            </div>
+            <div class="time" style="flex: 1; ">
+                <div>
+                    <i class="fa-solid fa-building-user form_icon"></i>
+                    <label for="time">Appointment Time</label>
+                  </div>
+                  <p-dropdown styleClass="dropdown" [options]="availableTimes" optionLabel="name" formControlName="time" placeholder="Choose a Time"[disabled]="availableTimes.length === 0"
+                    required></p-dropdown>
+                  <div *ngIf="f['time']?.touched && f['time']?.invalid">
+                    <small class="error">Time is required</small>
+                  </div>
+                  <br /><br /><br>
+                </div>
+            </div>
+            <!-- <br><br><br> -->
+            <!-- <div class="contact-form-field">
+              <i class="fa-solid fa-user form_icon"></i>
+              <label for="username">Patient Name</label>
+            </div>
+            <input type="text" class="input" pInputText id="username" formControlName="name" placeholder="Name"
+              required />
+            <div *ngIf="f['name'].touched && f['name'].invalid">
+              <small class="error" *ngIf="f['name'].errors?.['required']">Name is required</small>
+              <small class="error" *ngIf="f['name'].errors?.['minlength']">Name must be at least 2 characters
+                long</small>
+              <small class="error" *ngIf="f['name'].errors?.['pattern']">Name can only contain letters</small>
+            </div>
+            <br /><br /><br> -->
+            <div class="name" style="">
+              <div style="width: 100%;">
+                <div >
+                  <i class="fa-solid fa-user form_icon"></i>
+                  <label for="firstName">First Name</label>
+                </div>
+                <input type="text" class="input" pInputText id="firstName" formControlName="firstName" placeholder="First Name" required />
+                <div *ngIf="f['firstName'].touched && f['firstName'].invalid">
+                  <small class="error" *ngIf="f['firstName'].errors?.['required']">First name is required</small>
+                  <small class="error" *ngIf="f['firstName'].errors?.['minlength']">First name must be at least 2 characters long</small>
+                  <small class="error" *ngIf="f['firstName'].errors?.['pattern']">First name can only contain letters</small>
+                </div>
+              </div>
+
+              <div style="width: 100%;">
+                <div>
+                  <i class="fa-solid fa-user form_icon"></i>
+                  <label for="lastName">Last Name</label>
+                </div>
+                <input type="text" class="input" pInputText id="lastName" formControlName="lastName" placeholder="Last Name" required />
+                <div *ngIf="f['lastName'].touched && f['lastName'].invalid">
+                  <small class="error" *ngIf="f['lastName'].errors?.['required']">Last name is required</small>
+                  <small class="error" *ngIf="f['lastName'].errors?.['minlength']">Last name must be at least 2 characters long</small>
+                  <small class="error" *ngIf="f['lastName'].errors?.['pattern']">Last name can only contain letters</small>
+                </div>
+              </div>
+              </div>
+
+
+            
+
+            <div>
+              <i class="fa-solid fa-envelope form_icon"></i>
+              <label for="email">Patient Email</label>
+            </div>
+            <input type="email" class="input" pInputText id="email" formControlName="email" placeholder="Email"
+              required />
+            <div *ngIf="f['email']?.touched && f['email'].invalid">
+              <small class="error" *ngIf="f['email'].errors?.['required']">Valid email is required</small>
+              <small class="error" *ngIf="f['email'].errors?.['email']">Invalid email format</small>
+            </div>
+            <br /><br /><br>
+
+            <div>
+              <i class="fa-solid fa-phone form_icon"></i> 
+              <label for="contactNumber">Patient Contact Number</label>
+            </div>
+            <input type="text" class="input" pInputText id="contactNumber" formControlName="contactNumber"
+              placeholder="Enter the 10 digit number" required minlength="10" maxlength="10" />
+            <div *ngIf="f['contactNumber'].touched && f['contactNumber'].invalid">
+              <small class="error" *ngIf="f['contactNumber'].errors?.['required']">Contact Number is required</small>
+              <small class="error" *ngIf="f['contactNumber'].errors?.['pattern']">Contact Number must be digits
+                only</small>
+              <small class="error" *ngIf="f['contactNumber'].errors?.['minlength']">Contact Number must be at least 10
+                digits long</small>
+              <small class="error" *ngIf="f['contactNumber'].errors?.['maxlength']">Contact Number must be no more than
+                10 digits long</small>
+            </div>
+            <br /><br /><br>
+
+
+            <textarea type="text" class="text-area" rows="5" cols="30" placeholder="Your Message..." pInputTextarea
+              formControlName="message" required></textarea>
+            <div *ngIf="f['message'].touched && f['message'].invalid">
+              <small class="error">Message is required</small>
+            </div>
+            <br /><br />
+
+            <div class="privacy-policy">
+              By submitting this form you accept the Privacy Policy.
+            </div>
+
+            <div style="padding-top: 3rem">
+              <button type="submit" class="appoint-button" [disabled]="contactForm.invalid && clicked" >
+                Make an Appointment <img src="../../assets/contact-arrow.png" />
+              </button>
+            </div>
+          </div>
+          
+        </form>
+      </div>
+</div>
+<p-toast position="top-right"></p-toast>

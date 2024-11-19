@@ -1,0 +1,29 @@
+<div class="carousel-container">
+  <!-- <h2 class="carousel-title">SCIENTIFIC ADVISORY BOARD MEMBERS</h2> -->
+  <div class="carousel">
+    <div class="carousel-item" 
+         *ngFor="let member of members; let i = index" 
+         [class]="getPositionClass(i)">
+      <div class="group-parent">
+        <div class="rectangle-parent">
+          <div class="group-child"></div>
+          <img class="group-item" alt="{{member.name}}" [src]="member.photo">
+        </div>
+        <div class="dr-shivarama-varambally-container">
+          <span class="dr-shivarama-varambally-container1">
+            <p class="dr-shivarama-varambally">
+              <b class="dr-shivarama-varambally1">{{member.name}}</b>
+            </p>
+            <b><p class="professor-of-psychiatry">{{member.designation}}</p></b>
+            <p class="professor-of-psychiatry_1">{{member.department}}</p>
+            <b><p class="professor-of-psychiatry">{{member.role}}</p></b>
+            <p class="professor-of-psychiatry_1">{{member.place}}</p>
+            <p class="professor-of-psychiatry">Expertise: {{member.speciality}}</p>
+          </span>
+        </div>   
+      </div>
+    </div>
+    <button class="prev" (click)="prev()">&#10094;</button>
+    <button class="next" (click)="next()">&#10095;</button>
+  </div>
+</div>

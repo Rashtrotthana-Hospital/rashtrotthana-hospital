@@ -1,0 +1,50 @@
+<div class="root_container">
+    <!-- <div class="container_1">
+        <div class="container_1_content">
+            <div class="container_1_heading">Ethics Committee</div>
+            <div class="container_1_para">Our Ethics Committee plays a vital role in upholding the highest standards of moral principles and regulatory compliance. The committee is dedicated to ensuring that all practices within our organization align with ethical guidelines and legal standards. By carefully reviewing policies and providing ethical oversight, the committee fosters a culture of integrity, accountability and trust.</div>
+        </div>
+        <div class="container_1_image">
+            <img src="../../assets/Ethic_commite_container_1.png" alt="">
+        </div>
+    </div> -->
+
+    <!-- container 2 -->
+    <div class="container_2_main">
+        <div class="container_2" *ngFor="let card of members" (click)="popUpInfo(card)">
+            <div class="member_1">
+                <img src = {{card.image}} alt="">
+                <div class="member_name">{{card.name}}</div>
+                <div class="member_qualification">{{card.qualification}}</div>
+                <!-- <div class="member_role">{{card.role_2}}</div> -->
+            </div>
+        </div>
+    </div>
+
+
+    <!-- pop up -->
+
+    <div *ngIf="selectedPopUp" class="pop_up">
+        <div class="popUp_box">
+            <div class="close_icon" (click)="closeInfo()">
+                <i class="fa-solid fa-x"></i>
+            </div>
+            <div class="content">
+                <div class="pop_up_image">
+                    <img [src]=selectedPopUp.image alt="">
+                </div>
+                <div class="pop_info">
+                    <div class="pop_up_member_name">{{selectedPopUp.name}}</div>
+                    <div class="qualification">{{selectedPopUp.qualification}}</div>
+                    <div class="designation">{{selectedPopUp.designation}}</div>
+                    <div class="designation_2">{{selectedPopUp.designation_2}}</div>
+                    <div class="address">{{selectedPopUp.address}}</div>
+                    <div class="role">{{selectedPopUp.role}}</div>
+                    <div class="role_des">{{selectedPopUp.roleDesv}}</div>
+                </div>
+            </div>
+            <div class="poUp_description">{{selectedPopUp.description}}</div>
+        </div>
+    </div>
+</div>
+

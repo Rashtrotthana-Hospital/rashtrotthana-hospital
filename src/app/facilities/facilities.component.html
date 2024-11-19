@@ -1,0 +1,23 @@
+<div *ngIf="!isChildRouteActive()">
+<div class="facility">
+    <div class="heading">Our
+        Facilities</div>
+    <div class="content">
+        At Rashtrotthana Hospital, we strive to provide comprehensive healthcare services beyond the ordinary. Our
+        commitment to excellence extends far beyond the clock, ensuring round-the-clock access to critical medical
+        facilities. Our dedicated team of professionals, with a focus on patient-centric care, seamlessly manages every
+        aspect of your <a style="text-decoration: none; margin:0;padding: 0;" href="https://en.wikipedia.org/wiki/Health_care">healthcare</a> journey. From advanced diagnostic capabilities to specialized treatment options, we
+        offer a wide range of services designed to meet your unique healthcare needs.</div>
+</div>
+<div class="container-facility container-fluid">
+    <ng-container  *ngFor="let box of box; let i = index">
+        <div class="box-card">
+        <app-box-card [image]="activeHoverIndex === i ? hoverBoxes[i].image : box.image" [title]=" box.title"
+            [button_text]="box.button_text"  (mouseover)="onMouseOver(i)" (mouseout)="onMouseOut()"
+            (buttonClick)="onButtonClick(box.route)">
+        </app-box-card>
+    </div>
+    </ng-container>
+</div>
+</div>
+<router-outlet *ngIf="isChildRouteActive()"></router-outlet>

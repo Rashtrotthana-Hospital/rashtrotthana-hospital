@@ -1,0 +1,114 @@
+.iframe-container {
+    position: fixed; /* Or absolute, depending on your layout */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .book-appoint {
+    width: 100%; /* Adjust as needed */
+    height: 100%; /* Adjust as needed */
+    border: none;
+   position: relative;
+   top: 25vh;
+   left: 500px;
+  }
+  .close-btn {
+    position: absolute;
+    top: 30vh;
+    right:60px;
+    background: transparent;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 2;
+  }
+  @media only screen and (max-width:1390px){
+    .book-appoint {
+      width:100%; /* Adjust as needed */
+      height:100%; /* Adjust as needed */
+      border: none;
+     position: relative;
+     top: 20vh;
+     left: 0px;
+    }
+  
+    .close-btn {
+      position: absolute;
+      top: 26vh;
+      right: 33%;
+      background: transparent;
+      border: none;
+      font-size: 30px;
+      cursor: pointer;
+      z-index: 2;
+    }
+  
+  }
+@media only screen and (max-width:1030px){
+    .book-appoint {
+        width:100%; /* Adjust as needed */
+        height:100%; /* Adjust as needed */
+        border: none;
+       position: relative;
+       top: 20vh;
+       left: 0px;
+      }
+      .close-btn {
+        position: absolute;
+        top: 26vh;
+        right: 305px;
+        background: transparent;
+        border: none;
+        font-size: 30px;
+        cursor: pointer;
+        z-index: 2;
+      }
+
+}
+@media only screen and (max-width:900px){
+    .book-appoint {
+        width:100%; /* Adjust as needed */
+        height:100%; /* Adjust as needed */
+        border: none;
+       position: relative;
+       top: 20vh;
+       left: 0px;
+      }
+      .close-btn {
+        position: absolute;
+        top: 26vh;
+        right: 188px;
+        background: transparent;
+        border: none;
+        font-size: 30px;
+        cursor: pointer;
+        z-index: 2;
+      }
+}
+@media only screen and (max-width:600px){
+    .book-appoint {
+        width:100%; /* Adjust as needed */
+        height:100%; /* Adjust as needed */
+        border: none;
+       position: relative;
+       top: 23vh;
+       left: 0px;
+       overflow-y: auto;
+      }
+      .close-btn {
+        position: absolute;
+        top: 28.5vh;
+        right: 10px;
+        background: transparent;
+        border: none;
+        font-size: 30px;
+        cursor: pointer;
+        z-index: 2;
+      }
+}

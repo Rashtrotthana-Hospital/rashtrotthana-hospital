@@ -1,0 +1,18 @@
+<div *ngIf="!isChildRouteActive()">
+<div class="gm_poster">
+    <h2 class="o_heading">Modern Medicine</h2>
+    <P class="o_info">Leading the way with 15+ specialties in modern medicine.</P>
+</div>
+<div class="container-facility container-fluid">
+    <ng-container class="box"  *ngFor="let box of box; let i = index">
+        <div class="box-card">
+        <app-box-card [image]="activeHoverIndex === i ? hoverBoxes[i].image : box.image" [title]=" box.title"
+            [button_text]="box.button_text" (mouseover)="onMouseOver(i)" (mouseout)="onMouseOut()"
+            (buttonClick)="onButtonClick(box.route)"
+            [background]="'rgba(0, 128, 128, 0.50)'">
+        </app-box-card>
+    </div>
+    </ng-container>
+</div>
+</div>
+<router-outlet *ngIf="isChildRouteActive()"></router-outlet>

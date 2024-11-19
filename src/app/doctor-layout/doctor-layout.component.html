@@ -1,0 +1,123 @@
+<div class="doctor-container">
+  <div class="doctor-about">
+    <div class="heading">
+      Expert Care, Experienced Hands: Your Health, Our Priority!
+    </div>
+    <div class="content">Experience expert, compassionate care at <a style="text-decoration: none;" href="https://www.rashtrotthanahospital.com/">best multispeciality hospital bangalore</a>. Our highly
+      skilled team of doctors is dedicated to providing personalized healthcare tailored to your needs, ensuring your
+      well-being every step of the way. With world-class <a style="text-decoration: none;" href="https://en.wikipedia.org/wiki/Medical_specialty">medical</a> expertise and a patient-centered approach, we focus on
+      preserving health and restoring hope.
+    </div>
+  </div>
+  <div class="form-content">
+    <div class="form-card">
+      <div class="form-container">
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit($event)">
+
+          <p-cascadeSelect [(ngModel)]="selectedSubject" (ngModelChange)="onSubjectChange($event)" [options]="subjects"
+            optionLabel="cname" optionGroupLabel="name" formControlName="subject" [optionGroupChildren]="['items']"
+            [style]="{ minWidth: '14rem' }" placeholder="Select a Speciality" />
+          <br /><br />
+          <div style="display: flex;gap:30px">
+            <app-read-more-btn [text]="'Search'" [background]="'linear-gradient(90deg, #1E0B9B 0%, #07CCEC 100%)'"
+              [boxShadow]="'3px 4px 15px 0px rgba(63, 176, 206, 0.65)'" (click)="onSubmit($event)"></app-read-more-btn>
+            <div class="clear" (click)="clear()">
+              Clear All
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="doctor-filter">
+      <div class="form-container-1">
+        <form class="filter-doctor">
+          <input type="text" pInputText [(ngModel)]="nameFilter" name="doctor-name" placeholder="Enter Doctor's Name..."
+            (ngModelChange)="filterDoctors()" />
+          <i class="fa-solid fa-magnifying-glass form-icon"></i>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-doctors container-fluid">
+  <ng-container *ngIf="filteredDoctors.length > 0; else noFilteredDoctors">
+    <ng-container *ngFor="let doctor of filteredDoctors">
+      <div class="doctor-card">
+        <app-doctors [image]="doctor.image" [name]="doctor.name" [desgination]="doctor.desgination"
+          [expertise]="doctor.expertise" (viewProfile)="selectDoctor(doctor)"
+          (bookAppointment)="selectDoctorAppoint(doctor)"></app-doctors>
+      </div>
+    </ng-container>
+  </ng-container>
+  <ng-template #noFilteredDoctors>No doctor Found</ng-template>
+</div>
+
+<div class="doctor-details-overlay" *ngIf="selectedDoctor">
+  <div class="doctors-left">
+    <div *ngFor="let doctor of visibleDoctors" (click)="selectDoctor(doctor)">
+      <div class="doctor-image">
+        <img class="doctor-image" [src]="doctor.image" alt="">
+      </div>
+      <div class="doctor-name-left">
+        {{doctor.name}}
+      </div>
+    </div>
+  </div>
+  <div id="doctor-details" class="doctor-details">
+    <button class="close-btn" (click)="closeDoctorDetails()">×</button>
+    <div class="section-1">
+      <div class="image">
+        <img class="doctor-image-overlay" [src]=" selectedDoctor.image">
+      </div>
+      <div class="doctor-name-desgination">
+        <div class="doctor-name">
+          {{ selectedDoctor.name }}
+        </div>
+        <div class="doctor-qualification">
+          {{ selectedDoctor.qualification }}
+        </div>
+        <div class="doctor-desgination">
+          Department: {{ selectedDoctor.desgination }}
+        </div>
+        <div class="doctor-desgination">
+          {{selectedDoctor.expertise}}
+        </div>
+      </div>
+    </div>
+    <div class="section-2">
+      <div class="doctor-expertise">
+        <div class="area-of-interest">
+          <img class="bene-img" src="../../assets/benefit.png">
+          <div class="doctor-details-content">Areas of Expertise</div>
+        </div>
+        <div>
+          <div class="area-of-interest expertise" *ngFor="let expertise of selectedDoctor.areasOfExpertise">
+            <div>
+              <img src="../../assets/list.png">
+            </div>
+            <div class="areas-expertise-content">{{ expertise }}</div>
+          </div>
+        </div>
+      </div>
+      <div class="breif-profile">
+        <div class="profile-details">
+          <img class="bene-img" src="../../assets/interest.png">
+          <div class="doctor-details-content">Brief Profile</div>
+        </div>
+        <div class="about-doctor">
+          {{ selectedDoctor.about }}
+        </div>
+      </div>
+    </div>
+    <div [ngClass]="{'book-appoint': true, 'special-class': isPramodChinder()}">
+      <app-read-more-btn [text]="'Book an Appointment'"
+        [background]="'linear-gradient(90deg, #1E0B9B 0%, #07CCEC 100%)'"
+        [boxShadow]="'3px 4px 15px 0px rgba(63, 176, 206, 0.65)'" [iconClass]="'fa-regular fa-calendar'"
+        (click)="handleBookAppointmentClick()">
+      </app-read-more-btn>
+    </div>
+  </div>
+
+</div>
+<app-doctor-appointment class="doctor-details-overlay" id="appointment" (close)="closeAppointmentForm()"
+  [selectedDoctor]="selectedDoctorAppoint" *ngIf="selectedDoctorAppoint"></app-doctor-appointment>

@@ -1,0 +1,189 @@
+.programmes-container {
+    width: 100%;
+    overflow-y: hidden;
+    /* height: 100vh; */
+    overflow: hidden;
+    background-color: #fbfff4;
+    padding: 5px;
+}
+
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;  
+    width: 100%;
+    font-family: Poppins;
+}
+
+.sub-title{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Poppins;
+}
+
+.content-container {
+    display: flex;
+    gap: 5%;
+    padding: 0 100px;
+}
+
+.each-content {
+    width: 100%;
+    height: 535px;
+}
+
+.program-img {
+    width: 100%;
+    height: 44%;
+    margin-bottom: 9px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.date-container {
+    height: 10%;
+    padding: 24px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-family: Poppins;
+}
+
+.calender-icon {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.box-contents {
+    height: 50%;
+    border: 1px solid #E9E9E9;
+    background-color: white;
+    border-radius: 3%;
+    padding: 10px;
+}
+
+.program-title {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0;
+    height: 10%;
+    font-family: Poppins;
+}
+
+.program-subtitle{
+    padding: 5% 15%;
+    height: 45%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+    font-family: Poppins;
+}
+
+.readmore-bth {
+    height: 10%;
+    font-size: 15px;
+    color: #1E0B9B;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0px 10%;
+    cursor: pointer;
+    font-family: Poppins;
+}
+
+.readmore-bth span{
+    font-weight: bold;
+    font-size: 30px;
+    padding-left: 10px;
+    font-family: Poppins;
+}
+
+.read-more-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-family: Poppins;
+}
+@media only screen and (max-width:1030px){
+    .each-content{
+        height: 580px;
+    }
+    .box-contents{
+        height: 39%;
+    }
+    .program-title{
+        font-size: 12px;
+        height: 20%;
+    }
+    .program-subtitle{
+        padding: 5% 15%;
+        height: 37%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 10px;
+        line-height: 24px;
+    }
+}
+@media only screen and (max-width:900px){
+    .content-container{
+        padding: 0 30px;
+    }
+    .program-img{
+        height: 34%;
+    }
+    .each-content{
+        height: 400px;
+    }
+    .box-contents{
+        height: 63%;
+    }
+    .program-title{
+        height: 23%;
+        line-height: 24px;
+    }
+
+}
+@media only screen and (max-width: 600px){
+    .content-container{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 0 10px;
+    }
+    .title-container{
+        padding-top: 2rem;
+    }
+    .sub-title{
+        height: 100px;
+    }
+    .date{
+        font-size: 12px;
+    }
+    .program-title{
+        font-size: 14px;
+    }
+    .program-subtitle{
+        font-size: 12px;
+        padding:5% 5%;
+        height: 25%;
+    }
+    .box-contents{
+        height: 35%;
+    }
+    .readmore-bth{
+        padding-top: 2rem;
+    }
+    .each-content{
+        height: 470px;
+    }
+  }

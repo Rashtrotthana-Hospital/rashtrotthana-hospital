@@ -1,0 +1,27 @@
+<div class="doctor-box">
+    <div class="image-box">
+        <img class="doc-image" [src]='image'>
+    </div>
+    <div class="content-box">
+        <div class="name">
+           {{name}}
+        </div>
+        <div class="desgination">
+            {{desgination}}
+        </div>
+        <div class="about">
+            {{expertise}}
+        </div>
+     <div class="button">
+            <div class="yellow-button" (click)="onViewProfile()">
+                <div class="content">View Profile</div>
+            </div>
+            <div>
+                <div class="book-appoint" (click)="onBookAppointment()">
+                    <app-read-more-btn [text]="'Appointment'" [background]="'linear-gradient(90deg, #1E0B9B 0%, #07CCEC 100%)'"
+                    [boxShadow]="'3px 4px 15px 0px rgba(63, 176, 206, 0.65)'"  [iconClass]="'fa-regular fa-calendar'"></app-read-more-btn>
+                  </div>
+            </div>
+        </div>
+    </div>
+</div>

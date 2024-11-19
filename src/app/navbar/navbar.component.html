@@ -1,0 +1,112 @@
+<!-- topbar -->
+<div class="menu-bar">
+  <div class="contact-nav">
+    <div class="d-flex flex-column flex-lg-row contact">
+      <div class="links-container">
+        <div class="each-link">
+          <a href="mailto:info@rashtrotthanahospital.com">
+            <img src="../../assets/mail-logo.png"  alt="best multispeciality hospital in bangalore">
+            info&#64;rashtrotthanahospital.com
+          </a>
+        </div>
+        <div class="each-link">
+          <a href="tel:+91-08069239999">
+            <img class="call-icon" src="../../assets/nav-call-icon.png"  alt="best multispeciality hospital in bangalore">
+            080 6923 9999
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="button d-flex align-items-center">
+      <a href="tel:+91-08069239999">
+      <div class="submit-button me-3 d-flex align-items-center">
+        <div class="submit-text">Emergency</div>
+        <div class="submit-arrow">
+          <div class="arrow">
+            <!-- <img style="margin-top:3px;margin-left:-6px" src="../../assets/Ambulance.png" alt=""> -->  
+            <i class="fa-solid fa-truck-medical"></i>
+          </div>
+        </div>
+      </div>
+      </a>
+     
+      <div class="submit-button d-flex align-items-center" (click)="showDialog()">
+        <div class="submit-text">Enquiry/Appointment</div>
+        <div class="submit-arrow">
+          <!-- <div class="arrow"><img style="margin-top:3px;margin-left:-6px" src="../../assets/Appointment Scheduling.png" alt=""></div> -->
+          <i class="fa-solid fa-user"></i>
+        </div>
+      </div>
+      <app-appoint-form [isVisible]="isIframeVisible"(close)="closeIframe()"></app-appoint-form>
+    </div>
+    <div class="icons d-flex">
+      <!-- <img src="../../assets/fb.png" alt="" (click)="openLink('facebook')" class="me-2" />
+      <img src="../../assets/youtube.png" alt="" (click)="openLink('youtube')" class="me-2" />
+      <img src="../../assets/x.png" alt="" (click)="openLink('twitter')" class="me-2" />
+      <img src="../../assets/ig-menu.png" alt="" (click)="openLink('instagram')" /> -->
+
+      <div class="navbar_icon" (click)="openLink('facebook')">
+        <i class="fa-brands fa-facebook"></i>
+      </div>
+      <div class="navbar_icon" (click)="openLink('youtube')">
+        <i class="fa-brands fa-youtube"></i>
+      </div>
+      <div class="navbar_icon" (click)="openLink('twitter')">
+        <i class="fa-brands fa-square-x-twitter"></i>
+      </div>
+      <div class="navbar_icon" (click)="openLink('instagram')">
+        <i class="fa-brands fa-instagram"></i>
+      </div>
+      <div class="navbar_icon" (click)="openLink('linkedin')">
+        <i class="fa-brands fa-linkedin"></i>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div id="navbar">
+    <a class="navbar-brand logo-width" href="#">
+      <div class="logo">
+        <img class="logo-image" src="../../assets/JMRH Logo.png"  alt="best multispeciality hospital in bangalore" (click)="navigateToHome()">
+      </div>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"><img src="../../assets/Menu.png"  alt="best multispeciality hospital in bangalore"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <div class="links">
+        <ul class="navbar-nav ms-auto" id="menu">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }"(click)="closeMenu()">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/about-us" routerLinkActive="active-link"(click)="closeMenu()">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/specialities" routerLinkActive="active-link"(click)="closeMenu()">Specialities</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/best-doctors-bangalore" routerLinkActive="active-link"(click)="closeMenu()">Doctors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/facility" routerLinkActive="active-link"(click)="closeMenu()">Facilities</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/health-check-up-packages-bangalore" routerLinkActive="active-link"(click)="closeMenu()">Health Check</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/contact-us-bangalore" routerLinkActive="active-link"(click)="closeMenu()">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/donate-to-hospital-bangalore" routerLinkActive="active-link"(click)="closeMenu()">Donation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/blog" routerLinkActive="active-link"(click)="closeMenu()">Blog</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>

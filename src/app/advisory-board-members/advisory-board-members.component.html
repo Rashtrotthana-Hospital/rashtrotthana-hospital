@@ -1,0 +1,74 @@
+<div>
+    <!-- <div class="container_1">
+        <div class="photo-container">
+            <div class="flower">
+                <img class="image_1" src="../../assets/flower.png">
+            </div>
+            <div>
+            <div class="diagonal-photo-grid">
+                <div class="photo" *ngFor="let photo of photos">
+                  <img [src]="photo.url" [alt]="photo.alt" />
+                </div>
+              </div>
+        </div>
+        <div class="flower_2">
+            <img class="image_2" src="../../assets/flower.png">
+        </div>
+        </div>
+        <div class="advisor-content">
+            <div class="advisory-board-members-parent">
+                <b class="advisory-board-members-container">
+                <p class="advisory">Advisory</p>
+                <p class="advisory">Board</p>
+                <p class="advisory">Members</p>
+                </b>
+                <div class="frame-child">
+                </div>
+                <div class="frame-item">
+                </div>
+                <b class="lorem-ipsum-dolor">Our Advisory Board Members offer invaluable strategic guidance and expert insights that shape the direction and success of our organization. With their diverse expertise and extensive industry knowledge, they support informed decision-making and drive our growth. Their contributions are crucial in helping us achieve excellence in patient care and advancing our mission.</b>
+                </div>
+
+        </div>
+    </div> -->
+    <div>
+        <div class="container_2">
+            <div class="advisory-board-members">
+                <div class="advisory-board-member" *ngFor="let member of boardMembers" (click)="showPopup(member)">
+                    <div class="advisory-board-member-photo">
+                        <img class="image_3" [src]="member.photo" [alt]="member.name"  />
+                    </div>
+                    <div class="advisory-board-member-info">
+                        <div>{{ member.name }}</div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div *ngIf="selectedMember" class="popup">
+        <div class="popup-content">
+    <div class="group-parent">
+        <div class="rectangle-parent">
+        <div class="group-child">
+        </div>
+        <img class="group-item" alt="" [src]="selectedMember.photo">
+        </div>
+        <div class="dr-shivarama-varambally-container">
+            <span class="dr-shivarama-varambally-container1">
+            <p class="dr-shivarama-varambally">
+            <b class="dr-shivarama-varambally1">{{selectedMember.name}}</b>
+            </p>
+            <b><p class="professor-of-psychiatry">{{selectedMember.designation}}</p></b>
+            <p class="professor-of-psychiatry_1">{{selectedMember.department}}</p>
+            <b><p class="professor-of-psychiatry">{{selectedMember.role}}</p></b>
+            <p class="professor-of-psychiatry_1">{{selectedMember.place}}</p>
+            <p class="professor-of-psychiatry">Specialty: {{selectedMember.speciality}}</p>
+            </span>
+            </div>   
+        <img class="cancel-icon" alt="" (click)="closePopup()" src="../../assets/cancel.svg" id="cancelIcon">
+        </div>
+
+
+</div>
+</div>

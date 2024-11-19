@@ -1,0 +1,789 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.root_container {
+    overflow-x: hidden;
+    background-color: #FBFFF5;
+    padding: 0;
+    margin: 0;
+}
+
+
+.container_1 {
+    background-image: url('../../assets/naturopathy-bg.png');
+    background-size: cover;
+    padding: 300px 70px 50px 0;
+    display: flex;
+    justify-content: right;
+    align-items: end;
+    flex-direction: column;
+}
+
+.con_1_heading {
+    display: flex;
+    align-items: baseline;
+    justify-content: right;
+}
+
+.con_1_heading img {
+    margin-left: 50px;
+}
+
+.con_1_head_txt {
+    color: #008080;
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    width: 639px;
+    padding: 15px;
+}
+
+.con_1_ocntent_txt {
+    color: #000;
+    text-align: justify;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    
+    width: 739px;
+}
+
+/* container 2 */
+
+.con_2_bg {
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+.container_2 {
+    padding: 50px 70px;
+    position: absolute;
+    margin-top: -450px;
+}
+
+.con_2_heading .con_2_head_txt {
+    color: #008080;
+    text-align: justify;
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    
+}
+
+.con_2_list .con_2_list_items {
+    color: #000;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: justify;
+    margin: 30px 50px;
+
+}
+
+/* container 3 */
+
+.container_3 {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.con_3_lft_side {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.con_3_head {
+    display: flex;
+    justify-content: center;
+}
+
+.con_3_right_side {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.con_3_lft_side img {
+    color: #008080;
+    
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.64px;
+    
+    width: 330px;
+    height: 500px;
+}
+
+.con_3_head .con_3_head_txt {
+    color: #008080;
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.64px;
+    
+    width: 100%;
+}
+
+.con_3_content .con_3_content_txt {
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    /* 187.5% */
+    letter-spacing: 0.32px;
+    
+    width: 783px;
+    margin-top: 50px;
+}
+
+/* doctors details */
+
+.doctor_heading{
+    margin: 80px 0;
+    font-size: 30px;
+    font-family: poppins;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+.doctors_flex{
+    display: flex;
+    gap: 100px;
+    justify-content: center ;
+}
+
+/* .doc_details {
+    display: flex;
+    justify-content: center;
+} */
+
+.doc_1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    margin: 40px 0;
+    box-shadow: -25px 25px 0 rgb(218, 218, 218);
+    width: 250px;
+    background-color: #ffffff;
+}
+
+.doc_1 img {
+    width: 250px;
+    height: 250px;
+}
+
+.doc_name {
+    font-size: 16px;
+    font-family: Poppins, sans-serif;
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+.section, .designation, .department {
+    color: #0392CE;
+    font-family: Inter, sans-serif;
+}
+
+@media (max-width: 500px){
+
+    .doc_name {
+        font-size: 16px;
+    }
+    .doctors_flex{
+        flex-direction: column;
+        gap: 0;
+        align-items: center;
+    }
+
+    .doc_1 {
+        width: 160px;
+    }
+
+    .doc_1 img {
+        width: 160px;
+        height: 160px;
+    }
+
+    .doc_name {
+        font-size: 12px;
+    }
+
+    .section, .designation, .department {
+        font-size: 10px;
+    }
+}
+
+
+
+.view_all{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+
+
+
+@media (max-width:1300px) {
+
+    /* container 1 */
+
+    .con_1_heading .con_1_head_txt {
+        width: 550px;
+    }
+
+    .con_1_content .con_1_ocntent_txt {
+        width: 600px;
+    }
+
+    /* container 3 */
+
+    .con_3_content .con_3_content_txt {
+        width: 580px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width:800px) {
+    .container_1 {
+        background-image: url('../../assets/naturopathy/Naturopathy_tab.jpeg');
+        background-size: cover;
+        padding: 150px 0;
+        height: 700px;
+    }
+
+    .con_1_content .con_1_ocntent_txt {
+        width: 100%;
+        padding: 0 10%;
+    }
+
+    /* containetr 3 */
+
+    .container_3 {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .con_3_lft_side {
+        width: 100%;
+        margin-top: 80px;
+    }
+
+    .con_3_lft_side img {
+        width: 357px;
+        height: 600px;
+        border-radius: 10px;
+    }
+
+    .con_3_right_side {
+        width: 100%;
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        background: linear-gradient(152deg, #FBCA51 -34.84%, #008080 99.04%);
+        padding: 20px 0;
+    }
+
+    .con_3_head .con_3_head_txt {
+        font-size: 16px;
+        text-align: center;
+        width: 100%;
+        color: #ffffff;
+    }
+
+    .con_3_content .con_3_content_txt {
+        width: 360px;
+        font-size: 16px;
+        color: #ffffff;
+    }
+
+    /* container 4 */
+
+    .container_4 {
+        margin-top: 30px;
+    }
+
+    .con_4_heading .con_4_head_txt {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    .doc_1 {
+        width: 200px;
+        height: 290px;
+    }
+
+    .doc_1 img {
+        width: 200px;
+        height: 250px
+    }
+
+    .doc_1 .doc_name {
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+    .doc_1 .bnys {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    .doc_1 .medicine {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .view_all {
+        margin-top: 5px;
+    }
+
+}
+
+@media (max-width:480px) {
+
+    /* container 1 */
+
+    .container_1 {
+        background-image: url('../../assets/naturopathy/responsive_bg.png');
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 0 0 20px 0;
+    }
+
+    .con_1_heading img {
+        width: 41.236px;
+        height: 41.236px;
+    }
+
+    .con_1_heading {
+        margin-top: 180px;
+    }
+
+    .con_1_heading .con_1_head_txt {
+        font-size: 20px;
+        width: 280px;
+    }
+
+    .con_1_content .con_1_ocntent_txt {
+        font-size: 12px;
+        width: 359px;
+        padding: 5%
+    }
+
+    /* container 2 */
+
+    .con_2_heading {
+        padding: 0
+    }
+
+    .con_2_bg img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .con_2_heading .con_2_head_txt {
+        font-size: 20px;
+        width: 290px;
+        margin: 20px;
+    }
+
+    .container_2 {
+        padding: 0;
+        margin-top: -375px;
+
+    }
+
+    .con_2_list .con_2_list_items {
+        margin: 20px 30px;
+        font-size: 12px;
+        width: 340px;
+    }
+
+
+    /* container 3 */
+
+    .container_3 {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .con_3_lft_side {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .con_3_lft_side img {
+        width: 257px;
+        height: 351px;
+        border-radius: 10px;
+    }
+
+    .con_3_right_side {
+        width: 100%;
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        background: linear-gradient(152deg, #FBCA51 -34.84%, #008080 99.04%);
+        padding: 20px 0;
+    }
+
+    .con_3_head .con_3_head_txt {
+        font-size: 16px;
+        text-align: center;
+        width: 100%;
+        color: #ffffff;
+    }
+
+    .con_3_content .con_3_content_txt {
+        width: 360px;
+        font-size: 12px;
+        color: #ffffff;
+    }
+
+    /* container 4 */
+
+    .container_4 {
+        margin-top: 30px;
+    }
+
+    .con_4_heading .con_4_head_txt {
+        font-size: 20px;
+    }
+
+    .con_4_doc_details {
+        flex-direction: column;
+        margin-left: 10%;
+    }
+
+
+    .doc_1 .doc_name {
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+    .doc_1 .bnys {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    .doc_1 .medicine {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .view_all {
+        margin-top: 5px;
+    }
+
+}
+
+@media (max-width:380px) {
+
+    /* container 1 */
+
+    .container_1 {
+        background-image: url('../../assets/naturopathy/responsive_bg.png');
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 0 0 20px 0;
+    }
+
+    .con_1_heading img {
+        width: 41.236px;
+        height: 41.236px;
+    }
+
+    .con_1_heading {
+        margin-top: 180px;
+    }
+
+    .con_1_heading .con_1_head_txt {
+        font-size: 20px;
+        width: 290px
+    }
+
+    .con_1_content .con_1_ocntent_txt {
+        font-size: 12px;
+        width: 330px;
+    }
+
+    /* container 2 */
+
+    .con_2_heading {
+        padding: 0
+    }
+
+    .con_2_bg img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .con_2_heading .con_2_head_txt {
+        font-size: 20px;
+        width: 290px;
+        margin: 20px 10px;
+    }
+
+    .container_2 {
+        padding: 0;
+        margin-top: -375px;
+
+    }
+
+    .con_2_list .con_2_list_items {
+        margin: 20px 30px;
+        font-size: 12px;
+        width: 270px;
+    }
+
+
+    /* container 3 */
+
+    .container_3 {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .con_3_lft_side {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .con_3_lft_side img {
+        width: 157px;
+        height: 241px;
+        border-radius: 10px;
+    }
+
+    .con_3_right_side {
+        width: 100%;
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        background: linear-gradient(152deg, #FBCA51 -34.84%, #008080 99.04%);
+        padding: 20px 0;
+    }
+
+    .con_3_head .con_3_head_txt {
+        font-size: 16px;
+        text-align: center;
+        width: 100%;
+        color: #ffffff;
+    }
+
+    .con_3_content .con_3_content_txt {
+        width: 280px;
+        font-size: 12px;
+        color: #ffffff;
+    }
+
+    /* container 4 */
+
+    .container_4 {
+        margin-top: 30px;
+    }
+
+    .con_4_heading .con_4_head_txt {
+        font-size: 20px;
+    }
+
+    .con_4_doc_details {
+        flex-direction: column;
+    }
+
+    .doc_1 .doc_name {
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+    .doc_1 .bnys {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    .doc_1 .medicine {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .view_all {
+        margin-top: 5px;
+    }
+
+}
+
+@media (max-width:320px) {
+
+    /* container 1 */
+
+    .container_1 {
+        background-image: url('../../assets/naturopathy/responsive_bg.png');
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 0 0 20px 0;
+    }
+
+    .con_1_heading img {
+        width: 41.236px;
+        height: 41.236px;
+    }
+
+    .con_1_heading {
+        margin-top: 180px;
+    }
+
+    .con_1_heading .con_1_head_txt {
+        font-size: 20px;
+        width: 290px
+    }
+
+    .con_1_content .con_1_ocntent_txt {
+        font-size: 12px;
+        width: 280px;
+    }
+
+    /* container 2 */
+
+    .con_2_heading {
+        padding: 0
+    }
+
+    .con_2_bg img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .con_2_heading .con_2_head_txt {
+        font-size: 20px;
+        width: 290px;
+        margin: 20px 10px;
+    }
+
+    .container_2 {
+        padding: 0;
+        margin-top: -375px;
+
+    }
+
+    .container_2 .con_2_list {
+        width: 270px;
+    }
+
+    .con_2_list .con_2_list_items {
+        margin: 20px 30px;
+        font-size: 12px;
+        width: 270px;
+    }
+
+
+    /* container 3 */
+
+    .container_3 {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .con_3_lft_side {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .con_3_lft_side img {
+        width: 157px;
+        height: 241px;
+        border-radius: 10px;
+    }
+
+    .con_3_right_side {
+        width: 100%;
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        background: linear-gradient(152deg, #FBCA51 -34.84%, #008080 99.04%);
+        padding: 20px 0;
+    }
+
+    .con_3_head .con_3_head_txt {
+        font-size: 16px;
+        text-align: center;
+        width: 100%;
+        color: #ffffff;
+    }
+
+    .con_3_content .con_3_content_txt {
+        width: 280px;
+        font-size: 12px;
+        color: #ffffff;
+    }
+
+    /* container 4 */
+
+    .container_4 {
+        margin-top: 30px;
+    }
+
+    .con_4_heading .con_4_head_txt {
+        font-size: 20px;
+    }
+
+    .con_4_doc_details {
+        flex-direction: column;
+    }
+
+    .doc_1 .doc_name {
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+    .doc_1 .bnys {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    .doc_1 .medicine {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .view_all {
+        margin-top: 5px;
+    }
+
+
+
+}

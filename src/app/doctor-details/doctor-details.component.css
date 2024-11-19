@@ -1,0 +1,85 @@
+.doctor-details{
+    border-radius: 30px;
+    border: 4px solid #FFF;
+    background: rgba(0, 128, 128, 0.40);
+    box-shadow: 0px 0px 60px 0px #FFF;
+    backdrop-filter: blur(30px);
+    margin-top: 18vh;
+  }
+  .doctor-name{
+    color: #FFF;
+text-align: center;
+font-family: Poppins;
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+  }
+  .doctor-desgination{
+    color: #1E0B9B;
+font-family: Poppins;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+text-align: center;
+margin-top: 2rem;
+  }
+  .section-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 5rem;
+  }
+  .doctor-name-desgination{
+    width: 50%;
+  }
+  .image{
+    box-shadow: -34px 41px 3px rgba(34, 34, 34, 0.20);
+    border-radius:25px;
+  }
+  .area-of-interest{
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+  .doctor-details-content{
+    color: #E9EAF8;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-bottom: 1rem;
+    position: relative;
+    top: 7px;
+  }
+  .section-2{
+    padding-left: 6rem;
+  }
+  .about-doctor{
+    color: #FFF;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  }
+  .breif-profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+  }
+  .profile{
+    width: 100%;
+    display: flex;
+  }
+  .arrow{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }

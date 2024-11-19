@@ -1,0 +1,40 @@
+
+ <div class="doctor-details">
+  <div class="section-1">
+    <div class="image">
+      <img [src]=" data.image">
+    </div>
+    <div class="doctor-name-desgination">
+      <div class="doctor-name">
+        {{ data.name }}
+      </div>
+      <div class="doctor-desgination">
+        Department: {{ data.desgination }}
+      </div>
+    </div>
+    </div>
+    <div class="section-2">
+      <div class="area-of-interest">
+        <img src="../../assets/benefit.png">
+        <div class="doctor-details-content">Areas of Expertise</div>
+      </div>
+      <div>
+        <div class="area-of-interest" *ngFor="let expertise of data.areasOfExpertise"  >
+          <img src="../../assets/list.png">
+          <div class="doctor-details-content">{{ expertise }}</div>
+        </div>
+      </div>
+    </div>
+    <div class="profile">
+      <div class="arrow">
+        <img src="../../assets/doctor-details-arrow.png">
+      </div>
+      <div class="breif-profile">
+        <div class="area-of-interest">
+          <img src="../../assets/interest.png">
+          <div class="doctor-details-content">Brief Profile</div>
+        </div>
+        <div class="about-doctor">
+            {{ data.about }}
+        </div>
+      </div>

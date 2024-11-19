@@ -1,0 +1,100 @@
+<div class="main_container" *ngIf="closeChatBot === false">
+	<div class="chatbot_container">
+		<!-- header section -->
+		<div class="header">
+			<!-- logo -->
+			<div class="logo_section">
+				<img src="../../assets/logo.svg" alt="">
+				<div class="institute_name">
+					<div class="hospital_name">Rashtrotthana Hospital</div>
+					<div class="product_name">Your Health Support Assistant</div>
+				</div>
+
+			</div>
+			<!-- refresh and cancel button -->
+			<div class="refresh_cancel_button">
+				<i class="fa-solid fa-rotate-right" (click)="refresh()"></i>
+				<i class="fa-solid fa-x" (click)="closeButton()"></i>
+			</div>
+		</div>
+
+		<!-- body -->
+		<div class="body">
+			<!-- chats -->
+			<div class="chats" #bodyWrapper>
+				<!-- user input -->
+				<div class="chatwrapper" *ngFor="let response of responseStructure">
+
+					<div class="user_input">
+						<div class="input_content" [ngClass]="{'hidden' : response.input === ''}">{{response.input}}
+						</div>
+						<img src="../../assets/user.svg" alt="" [ngClass]="{'hidden' : response.input === ''}">
+					</div>
+
+					<!-- bot response -->
+					<div class="response">
+						<img src="../../assets/logo.svg" alt="" [ngClass]="{'hidden' : response.heading === ''}">
+						<div class="response_text">
+							<div class="heading" [ngClass]="{'hidden' : response.heading === ''}">{{response.heading}}
+							</div>
+							<div class="heading" [ngClass]="{'hidden' : response.getmsg === ''}">{{response.getmsg}}
+							</div>
+							<div class="heading" [ngClass]="{'hidden' : response.emergency === ''}"><a href="tel:+91-8904943666">{{response.emergency}}</a>
+							</div>
+                            <div class="heading otp" [ngClass]="{'hidden' : response.rensendOtp === ''}" (click)="resendOtp()">{{response.rensendOtp}}</div>
+							<div class="heading" [ngClass]= "{'hidden' : response.patientName === ''}">
+								<div class="details">
+									<span class="ec_txt key">Patient name :</span>
+									<span class="ec_txt value">{{response.patientName}}</span>
+								</div>
+								<div class="details">
+									<span class="ec_txt key">Doctor Name : </span>
+									<span class="ec_txt value">{{response.doctorName}}</span>
+								</div>
+								<div class="details">
+									<span class="ec_txt key">Department : </span>
+									<span class="ec_txt value">{{response.department}}</span>
+								</div>
+								<div class="details">
+									<span class="ec_txt key">Date : </span>
+									<span class="ec_txt value">{{response.date}}</span>
+								</div>
+								<div class="details">
+									<span class="ec_txt key">Timeslot: </span>
+									<span class="ec_txt value">{{response.timeslot}}</span>
+								</div>
+							</div>
+							<div class="options" *ngFor="let options of response.options ; let i = index"
+								(click)="!disableOptions && handleOptionClick(options, i + 1)"
+                                [class.disabled]="disableOptions"
+								[ngClass]="{'hidden' : response.options === ''}">{{i + 1}}. {{capitalizeName(options)}}
+							</div>
+							<div class="note" [ngClass]="{'hidden' : response.notemsg === ''}">{{response.notemsg}}
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="response_text" [ngClass]="{'hidden': step !== 3}">
+					<input [min]="minDateString" type="date" class="inputdate" [(ngModel)]='date'>
+				</div>
+				<div class="response_text" [ngClass]="{'hidden': step !== 20}">
+					<input type="file" class="inputdate" [(ngModel)]='selectedfile'
+						(change)="this.savaPrescription($event)">
+				</div>
+                </div>
+
+			<!-- input field -->
+			<div class="input_field">
+				<input type="text" placeholder="Message..." [(ngModel)]="userInput" (keyup.enter)="buttonHandler()"
+					[disabled]="isProcessing">
+				<button (click)="buttonHandler()" [disabled]="isProcessing"><img src="../../assets/send.svg"
+						alt=""></button>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<div>{{otp}}</div>
+<div>{{userInfo.firstName}}</div>
+<div>{{userInfo.Lastname}}</div>

@@ -1,0 +1,547 @@
+/* Carousel Container */
+.carousel-container {
+  perspective: 1000px;
+  text-align: center;
+}
+
+/* Carousel Structure */
+.carousel {
+  width: 70%;
+  height: 450px;
+  margin: 0 auto;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.carousel-item {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 1s, opacity 1s;
+  opacity: 0.5;
+  filter: blur(5px);
+  pointer-events: none;
+}
+
+.carousel-item.left, 
+.carousel-item.right {
+  transform: translateX(-250px) scale(0.8);
+  z-index: 1;
+}
+
+.carousel-item.right {
+  transform: translateX(250px) scale(0.8);
+  z-index: 1;
+}
+
+.carousel-item.active {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0) scale(1);
+  z-index: 2;
+  pointer-events: auto;
+}
+
+/* Card Styles */
+.group-parent {
+  width: 900px;
+  position: relative;
+  box-shadow: 0px 0px 60px #fff;
+  backdrop-filter: blur(60px);
+  border-radius: 20px;
+  background-color: rgba(0, 128, 128, 1.48);
+  border: 4px solid #fff;
+  box-sizing: border-box;
+  height: 490px;
+  overflow: hidden;
+  text-align: left;
+  font-size: 16px;
+  color: #fff;
+  font-family: Inter;
+}
+
+.rectangle-parent {
+  position: absolute;
+  top: 45px;
+  left: 45px;
+  width: 310px;
+  height: 360px;
+}
+
+.group-child {
+  position: absolute;
+  top: 23.22px;
+  left: 0px;
+  border-radius: 10px;
+  background-color: rgba(34, 34, 34, 0.2);
+  width: 282.3px;
+  height: 336.8px;
+}
+
+.group-item {
+  position: absolute;
+  top: 0px;
+  left: 27.66px;
+  border-radius: 20px;
+  width: 282.3px;
+  height: 338.2px;
+  object-fit: cover;
+}
+
+.dr-shivarama-varambally-container {
+  position: absolute;
+  top: 65px;
+  left: 385px;
+  display: flex;
+  align-items: center;
+  width: 401px;
+}
+
+.dr-shivarama-varambally-container1 {
+  width: 100%;
+}
+
+.dr-shivarama-varambally {
+  margin: 0;
+  font-size: 32px;
+}
+
+.dr-shivarama-varambally1 {
+  line-height: 35px;
+}
+
+.professor-of-psychiatry {
+  margin: 0;
+  line-height: 37px;
+  font-weight: 600;
+  margin-top: 1rem;
+  font-size: 24px;
+}
+.professor-of-psychiatry_1 {
+margin: 0;
+line-height: 37px;
+font-weight: 400;
+font-size: 18px;
+}
+
+/* Navigation Buttons */
+.prev, 
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  background-color: transparent;
+  border: none;
+  color: #333;
+}
+
+.prev {
+  left: -50px;
+}
+
+.next {
+  right: -50px;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 1024px) {
+  .carousel {
+    width: 85%;
+    height: 400px;
+  }
+
+  .carousel-item {
+    width: 90%;
+    filter: blur(3px);
+    transform: scale(0.9);
+  }
+
+  .carousel-item.active {
+    filter: blur(0);
+    transform: scale(1);
+  }
+
+  .group-parent {
+    width: 800px;
+    height: 490px;
+  }
+
+  .rectangle-parent {
+    top: 40px;
+    left: 40px;
+    width: 270px;
+    height: 320px;
+  }
+
+  .group-item, .group-child {
+    width: 187px;
+    height: 245px;
+  }
+
+  .dr-shivarama-varambally-container {
+    left: 282px;
+    width: 350px;
+    top:41px;
+  }
+
+  .dr-shivarama-varambally {
+    font-size: 28px;
+  }
+
+  .prev, 
+  .next {
+    font-size: 20px;
+    left: -30px;
+    right: -30px;
+  }
+  .professor-of-psychiatry{
+    font-size: 20px;
+  }
+  .professor-of-psychiatry_1{
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .carousel {
+    width: 100%;
+    height: auto;
+  }
+
+  .carousel-item {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(0) scale(0.9);
+    z-index: 1;
+    display: none;
+  }
+
+  .carousel-item.active {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0) scale(1);
+    z-index: 2;
+    display: block;
+  }
+
+  .carousel-item.left,
+  .carousel-item.right {
+    display: none;
+  }
+
+  .prev,
+  .next {
+    display: none;
+  }
+
+  .group-parent {
+    width: 700px;
+    height: 410px;
+  }
+
+  .rectangle-parent {
+    top: 30px;
+    left: 30px;
+    width: 220px;
+    height: 270px;
+  }
+
+  .group-item, .group-child {
+    width: 200px;
+    height: 260px;
+  }
+
+  .dr-shivarama-varambally-container {
+    left: 280px;
+    width: 300px;
+  }
+
+  .dr-shivarama-varambally {
+    font-size: 24px;
+  }
+
+  .professor-of-psychiatry{
+    font-size: 16px;
+    margin-top: 0.5rem;
+  }
+  .professor-of-psychiatry_1{
+    font-size: 12px;
+  }
+  .group-parent{
+    width: 700px;
+}
+.dr-shivarama-varambally-container{
+    width: 300px;
+}
+.dr-shivarama-varambally{
+    font-size: 30px;
+}
+.cancel-icon {
+    position: absolute;
+    top: 24px;
+    left: 642px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+.professor-of-psychiatry{
+    line-height: 33px;
+font-weight: 300;
+margin-top: 1rem;
+}
+.group-parent{
+    font-size: 19px;
+}
+}
+
+@media screen and (max-width: 480px) {
+  .carousel {
+    width: 100%;
+  }
+
+  .group-parent {
+    width: 400px;
+    height: 320px;
+  }
+
+  .rectangle-parent {
+    top: 20px;
+    left: 20px;
+    width: 180px;
+    height: 220px;
+  }
+
+  .group-item, .group-child {
+    width: 160px;
+    height: 200px;
+  }
+
+  .dr-shivarama-varambally-container {
+    /* left: 200px; */
+    left: 62px;
+    width: 234px;
+  }
+
+  .dr-shivarama-varambally {
+    font-size: 20px;
+  }
+
+  .professor-of-psychiatry {
+    font-size: 14px;
+  }
+  .professor-of-psychiatry{
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 300;
+    margin-top: 0.5rem;
+ }
+ .professor-of-psychiatry_1{
+  font-size: 13px;
+  line-height: 30px;
+ }
+}
+
+@media screen and (max-width:430px){
+  .diagonal-photo-grid .photo{
+      width: 95px;
+      height: 104px;
+  }
+  .flower_2{
+      right: -102px;
+  bottom: -168px;
+  }
+  .diagonal-photo-grid{
+      gap:0;
+      margin-left: 8rem;
+      margin-bottom: 2rem;
+      margin-top: 3rem;
+      width: 156px;
+      grid-template-columns: repeat(3, 82px);
+      grid-template-rows: repeat(4, 80px);
+  }
+  .advisory-board-members{
+      grid-template-columns: 100%;
+  }
+  .lorem-ipsum-dolor{
+      left: 112px;
+      font-size: 8px;
+      top:263px;
+      width: 262px;
+  }
+  .advisory-board-members-container{
+      right: 3rem;
+      font-size: 24px;
+      top: 75px;
+  }
+  .frame-child{
+      left: 330px;
+      top: 48px;
+      width: 40px;
+      height: 20px;
+  }
+  .frame-item{
+      width: 255px;
+      top:240px
+  }
+  .advisory-board-members-parent{
+      height:410px
+  }
+  .advisory{
+      margin-top: 1.5rem;
+  }
+ .dr-shivarama-varambally-container{
+  top: 272px;
+  left: 47px;
+  text-align: center;
+ }
+ .group-parent{
+   width:370px;
+   height:593px
+ }
+ .group-item{
+  width: 182px;
+  height: 206px;
+ }
+.group-child{
+  width: 182px;
+  height: 204px;
+}
+.dr-shivarama-varambally{
+  font-size: 20px;
+}
+.professor-of-psychiatry{
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 300;
+  margin-top: 0.5rem;
+}
+.popup{
+  top: 10vh;
+}
+.rectangle-parent{
+  left: 71px;
+}
+.cancel-icon{
+  left: 329px;
+}
+.advisory-board-member-info{
+  bottom: 15px;
+  position: relative;
+  height: 56px;}
+.image_3{
+  height: 255px;
+}
+.image_1{
+  height: 128px;
+  width: 97%;
+}
+.image_2{
+  width: 38px;
+  height: 44px;
+}
+.diagonal-photo-grid .photo:nth-child(2) {
+  margin-top: 6rem;
+}
+.diagonal-photo-grid .photo:nth-child(5) {
+  margin-top: 6rem;
+}
+.diagonal-photo-grid .photo:nth-child(8) {
+  margin-top: 6rem;
+}
+
+}
+@media screen and (max-width:380px){
+  .flower_2{
+      right: -60px;
+      bottom: -109px;
+  }
+  .diagonal-photo-grid .photo{
+      width: 71px;
+      height: 75px;
+  }
+  .diagonal-photo-grid{
+      grid-template-columns: repeat(3, 67px);
+      grid-template-rows: repeat(4, 69px);
+  }
+  .frame-child{
+      left: 282px;
+      top: 56px;
+  }
+  .lorem-ipsum-dolor{
+      left: 66px;
+      width: 262px;
+  }
+  .image_3{
+      width: 228px;
+  }
+  .advisory-board-member-info{
+      width: 228px;
+      font-size: 16px;
+  }
+  .dr-shivarama-varambally-container{
+      top: 288px;
+  }
+}
+@media screen and (max-width:365px){
+  .advisory-board-members-container{
+      right: 2rem;
+  }
+}
+@media screen and (max-width:325px){
+  .flower_2{
+      bottom: -132px;
+      right: -40px;
+  }
+  .diagonal-photo-grid{
+      grid-template-columns: repeat(3, 53px);
+      grid-template-rows: repeat(4, 53px);
+  }
+  .diagonal-photo-grid .photo{
+      width: 59px;
+      height: 64px;
+  }
+  .image_3{
+      height: 200px;
+      width: 185px;
+  }
+  .advisory-board-member-info{
+      width: 185px;
+      bottom: 71px;
+      font-size: 14px;
+  }
+  .advisory-board-members{
+      gap: 0;
+  }
+  .frame-child{
+      left: 248px;
+  }
+  .lorem-ipsum-dolor{
+      left: 28px;
+  }
+  .group-parent{
+      width: 312px;
+  }
+  .rectangle-parent{
+      left: 44px;
+  }
+  .dr-shivarama-varambally-container{
+      left: 8px;
+      width: 290px;
+      top: 284px;
+  }
+  .professor-of-psychiatry{
+      font-size: 12px;
+  }
+  .cancel-icon{
+      left: 273px;
+  }
+
+}

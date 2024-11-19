@@ -1,0 +1,190 @@
+
+
+.con_5_flex{
+    display: flex;
+    justify-content: center;
+}
+
+.con_5_content {
+  width: 672px;
+  height: 410px;
+  background-image: url('../../assets/ayurveda/container_5_bg.png');
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-size: cover;
+  border-radius: 30px;
+}
+
+.content_head_txt {
+  color: #222;
+  font-family: Poppins;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.con_5_list_items {
+  color: #222;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 10px;
+}
+
+.list_flex{
+    display: flex;
+    flex-direction: row;
+}
+
+.list_flex {
+  display: flex;
+}
+
+.carousel-control-prev .carousel-control-prev-icon, .carousel-control-next-icon{
+  background-color: rgb(195, 193, 193);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+
+
+@media (max-width: 2600px){
+  .carousel-item {
+    padding: 0 0 0 29% ;
+  }
+}
+
+@media (max-width: 1460px){
+  .carousel-item {
+    padding: 0 0 0 29%;
+  }
+}
+
+@media (max-width: 1200px){
+  .con_5_content {
+    width: 552px;
+    height: 350px;
+  }
+
+  .carousel-item {
+    padding: 0 0 0 29%;
+  }
+}
+
+@media (max-width: 800px) {
+  .con_5_content {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    border-radius: 30px;
+    margin: 0;
+  }
+
+  .con_5_content .content_head_txt{
+    font-size: 18px;
+    padding-bottom: 0px;
+  }
+
+  .kayachikitsa .con_5_list_items{
+    font-size: 14px;
+    padding: 0;
+  }
+
+  .carousel-item{
+    padding: 0 4%;
+  }
+
+  .carousel-control-prev .carousel-control-prev-icon, .carousel-control-next-icon{
+    background-color: rgb(195, 193, 193);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color: black;
+  }
+
+
+}
+
+@media (max-width: 650px) {
+  .con_5_content {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    border-radius: 30px;
+    margin: 0;
+  }
+
+  .con_5_content .content_head_txt{
+    font-size: 16px;
+    padding-bottom: 0px;
+  }
+
+  .kayachikitsa .con_5_list_items{
+    font-size: 12px;
+    padding: 0;
+  }
+
+  .carousel-item{
+    padding: 0 4%;
+  }
+
+  .carousel-control-prev .carousel-control-prev-icon, .carousel-control-next-icon{
+    background-color: rgb(195, 193, 193);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color: black;
+  }
+
+
+}
+
+@media (max-width: 450px) {
+  .con_5_content {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    border-radius: 30px;
+    margin: 0;
+  }
+
+  .con_5_content .content_head_txt{
+    font-size: 16px;
+    padding-bottom: 0px;
+  }
+
+  .kayachikitsa .con_5_list_items{
+    font-size: 12px;
+    padding: 0;
+  }
+
+  .carousel-item{
+    padding: 0 4%;
+  }
+
+  .carousel-control-prev .carousel-control-prev-icon, .carousel-control-next-icon{
+    background-color: rgb(195, 193, 193);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color: black;
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,42 @@
+<div class="programmes-container">
+    <div class="title-container">
+      <app-title-button text='Our Latest Programs'></app-title-button>
+    </div>
+
+    <div class="sub-title">
+        <h1>News & Event</h1>
+    </div>
+
+    <div class="content-container">
+        <div class="each-content" *ngFor="let program of recentProgrammes">
+            <div class="program-img" [ngStyle]="{'background-image': 'url(' + program.imgUrl + ')'}">
+            </div>
+            <div class="box-contents"> 
+                <div class="date-container">
+                    <div class="calender-icon">
+                        <img src="../../assets/calendar.png" alt="calenter">
+                    </div>
+                    <div class="date">
+                       
+                        {{ program.date }}
+                    </div>
+                </div>
+                <div class="program-title">
+                    {{ program.title }}
+                </div>
+                <div class="program-subtitle">
+                    {{ program.content.length > 100 ? program.content.substring(0, 100) + '...' : program.content }}
+                </div>
+                <div class="readmore-bth">
+                    Read More <span>></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="read-more-btn">
+        <app-arrow-btn></app-arrow-btn>
+    </div>
+
+   
+</div>

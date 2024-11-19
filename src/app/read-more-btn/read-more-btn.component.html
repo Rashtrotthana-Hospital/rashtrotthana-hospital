@@ -1,0 +1,6 @@
+<div class="submit-button" [class.disabled]="disabled" [attr.disabled]="disabled ? true : null" [ngStyle]="{'background': background, 'box-shadow': boxShadow}" (click)="onClick()">
+    <div class="submit-text">{{ text }}</div>
+    <div class="submit-arrow">
+        <div class="arrow"><i [class]="iconClass"></i></div>
+    </div>
+</div>
