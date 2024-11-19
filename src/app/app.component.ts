@@ -21,6 +21,40 @@ export class AppComponent implements OnInit{
     //     } 
     //     window.scrollTo(0, 0) 
     // }); 
+
+   
+
+
+    document.addEventListener('DOMContentLoaded',()=> {
+      const chatBotPopup = document.getElementById('chatBotPopup')
+      const notificationSound = document.getElementById('audio') as HTMLAudioElement
+
+      setTimeout(() => {
+        chatBotPopup?.classList.remove('initial');
+        chatBotPopup?.classList.add('show');
+      
+        if (notificationSound) {
+          notificationSound.play().catch((error) => {
+            console.error("Audio playback failed:", error);
+            console.log("This might be due to autoplay restrictions.");
+          });
+        } else {
+          console.error("Notification sound element not found.");
+        }
+      }, 7000);
+
+      setTimeout(() => {
+        chatBotPopup?.classList.remove('show');
+        chatBotPopup?.classList.add('hide');
+      }, 20000);
+
+      chatBotPopup?.addEventListener('transitionend', () => {
+        if (chatBotPopup.classList.contains('hide')) {
+          chatBotPopup.style.display = 'none';
+        }
+      });
+    })
+
     this.setMetaTags();
     this.router.events.pipe(
       filter((event: Event) => event instanceof NavigationEnd)
@@ -35,6 +69,7 @@ export class AppComponent implements OnInit{
       });
     });
   }
+
   setMetaTags() {
     this.title.setTitle('Rashtrotthana Hospital');
     this.meta.updateTag({ name: 'description', content: 'Rashtrotthana Hospital provides exceptional healthcare services. Visit us for quality medical treatment.' });

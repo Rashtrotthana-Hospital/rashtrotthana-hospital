@@ -18,7 +18,124 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
+    cursor: pointer;
+}
+
+.icon_container{
+    display: flex;
+    align-items: center;
+    position:fixed;
+    bottom: 26px;
+    right: 26px;
+    gap: 10px;
+}
+
+.bot_hand{
+    width: 100px;
+    height: auto;
+    animation: shake 0.5s ease-in-out;
+    animation-iteration-count: 1;
+    animation-delay: 8s;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+  }
+
+.icon_container img{
+    animation: zoomin 2s 10 ease-in 5s;
+    width: 80px;
+    height: 80px;
+}
+
+@keyframes zoomin{
+    0%{
+        transform: scale(0.5);
+    }
+
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0.5);
+    }
+}
+
+.chatbot_logo .popUptext{
+    font-size: 16px;
+    background-color: aliceblue;
+    padding: 8px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: left;
+    text-align: left;
+    gap: 0px;
+    padding: 10px 25px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.initial{
+    transform: translate(500px);
+}
+
+.show{
+    transition: 1s;
+}
+
+.hide{
+    transform: translate(500px);
+    transition: 1s;
+}
+
+.chatBotPopup{
+    width: 250px;
+    text-align: left;
+}
+
+.We_r_here{
+    font-size: 16px;
+}
+
+.We_r_here .vanakkam_img{
+    width: 25px;
+    height: auto;
+}
+
+.chat_with{
+    font-size: 12px;
+    margin: 0;
+}
+
+.chatbot_logo span i{
+    color: red;
+    font-size: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+@media(max-width : 480px){
+    .chatbot{
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 1049;
+    }
+
+    .chatbot_logo img{
+        bottom: 20px;
+        right: 15px;
+    }
+
+    .icon_container img{
+        animation: zoomin 2s 10 ease-in 5s;
+        width: 60px;
+        height: 60px;
+    }
 }
