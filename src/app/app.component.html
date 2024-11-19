@@ -9,9 +9,20 @@
 <!-- <app-committee-carousel></app-committee-carousel> -->
 <p-toast />
 <app-chatbot class="chatbot" [closeChatBot]="closeChatBot"></app-chatbot>
-<div class="chatbot_logo"(click)="toggleChatBot()">
-    <img src="../assets/logo.svg" alt="">
+<div class="chatbot_logo">
+    <div class="icon_container">
+        <div class="popupMsg">
+            <div id="chatBotPopup" class="popUptext initial">
+                <div class="We_r_here">Namaste! <img src="../assets/vanakkam.png" alt="" class="vanakkam_img"></div>
+                <div class="chat_with">We're online and ready to assist you. Let's chat!</div>
+                <!-- <img src="../assets/bot_hii.png" alt="" class="bot_hand"> -->
+            </div>
+        </div>
+        <img src="../assets/bot_icon.svg" alt="" (click)="toggleChatBot()">
+    </div>    
 </div>
+<div id="audio" src="../assets/notification.mp3"></div>
+
 <app-footer>
 
 

@@ -21,7 +21,7 @@
     align-items: center;
     height: 90px;
     border-radius: 15px 15px 0 0;
-    background: #008080;
+    background: #001862;
     box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.15);
 }
 
@@ -243,7 +243,7 @@
 .input_field button{
     border: none;
     outline: none;
-    background-color: #36B8B8;
+    background-color: #001862;
     filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.15));
     height: 45px;
     width: 45px;
@@ -253,4 +253,106 @@
     justify-content: center;
     cursor: pointer;
     font-family: inter;
+}
+
+.poweredBy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.poweredBy p{
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    color: grey;
+    margin-bottom: 5px;
+}
+
+.poweredBy p a{
+    text-decoration: none;
+    cursor: pointer;
+} 
+
+::ng-deep .p-datepicker{
+    width: 290px !important;
+    height: 290px !important;
+    text-align: center;
+}
+
+::ng-deep .p-datepicker td span {
+    width: 20px;
+    height: 20px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+.hide{
+    transform: translateY(300px);
+}
+
+.show{
+    transform: translatey(0);
+}
+  
+@media (max-width : 480px){
+
+    .main_container{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+    }
+
+    .chatbot_container{
+        height : 100vh;
+        width : 100vw;
+        max-width : 480px;
+        border-radius: 0;
+    }
+
+    .header{
+        border-radius: 0;
+        height: 15%;
+    }
+
+    .hospital_name{
+        font-size: 20px;   
+    }
+
+    .logo_section img{
+        width: 50px;
+        height: auto;
+    }
+
+    .refresh_cancel_button i{
+        font-size: 20px;
+    }
+
+    .body{
+        height: 85%;
+    }
+    
+    .heading{
+        max-width: 280px;
+    }
+
+    ::ng-deep .p-datepicker td span {
+        width: 25px;
+        height: 25px; 
+        /* padding: 15px 0; */
+        margin-top: 10px;
+    }
+
+    .input_field{
+        margin-bottom: 20px;
+    }
+
+    .input_field input{
+        width: 260px;
+    }
+    
 }
