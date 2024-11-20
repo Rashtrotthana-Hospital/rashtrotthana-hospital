@@ -1033,7 +1033,7 @@ export class ChatbotComponent implements OnInit {
         heading: `You entered ${this.userInfo.firstName} ${this.userInfo.lastName} as your name. Now  Please enter your delivery address. `,
         getmsg: "How would you like to provide your address? ",
         options: addressType,
-        notemsg: "( Note : Pharmacy delivery is free within a 5km radius of Rashtrotthana Hospital. For locations beyond 5 km, delivery charges will apply)",
+        notemsg: "( Note : Pharmacy delivery is free within a 5km radius of Rashtrotthana Hospital. For locations beyond 5km, delivery charges will apply)",
         input: this.userInput,
         emergency: "",
         patientName: "",
