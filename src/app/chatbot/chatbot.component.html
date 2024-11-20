@@ -75,7 +75,7 @@
 					</div>
 				</div>
 				<div class="response_text" [ngClass]="{'hidden': step !== 3}">
-					<input [min]="minDateString" type="date" class="inputdate" [(ngModel)]='date'>
+					<input [min]="minDateString" type="date" class="inputdate" [(ngModel)]='date' placeholder="Please select date">
 				</div>
 				<div class="response_text" [ngClass]="{'hidden': step !== 20}">
 					<input type="file" class="inputdate" [(ngModel)]='selectedfile'
