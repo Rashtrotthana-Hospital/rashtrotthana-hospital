@@ -773,10 +773,20 @@ export class DoctorLayoutComponent {
         expertise: 'Years of Experience: 10+',
         qualification:' MS ENT, DHM, IFAAM',
         time:'18:30-18:50,18:50-19:10,19:10-19:30',
-        date:'Tuesday,Thursday and Saturday'}
-
-
-
+        date:'Tuesday,Thursday and Saturday'
+      },
+      {
+        name: "Dr ManMohan U. S",
+        image : "assets/doctor-63.png",
+        desgination : "Gastroenterologist",
+        about : "Dr. Man Mohan U.S. is a highly qualified gastroenterologist with extensive experience in managing complex gastrointestinal and hepatology conditions. Currently serving as an Assistant Professor at the Institute of Gastroenterology and Organ Transplant (IGOT), he has a keen interest in clinical research, with multiple publications and presentations at prestigious national and international conferences. He specializes in advanced diagnostic and therapeutic procedures, focusing on patient-centered care and innovative treatments in medical gastroenterology.",
+        speciality : "Medical Gastroenterology and Hepatology",
+        areasOfExpertise : ["Acid reflux/GERD","Gastritis and peptic ulcers","Celiac disease","Crohn's diseaseIrritable Bowel Syndrome (IBS)","Colitis and colon polyps","Fatty liver disease and hepatitis","Cirrhosis and liver fibrosis","Pancreatitis","Gallstones and bile duct infections","Abdominal pain, bloating, and nausea","Rectal bleeding","Chronic constipation/diarrhea"],
+        expertise : "Years of Experience: 8+",
+        qualification : "MBBS, MD in General Medicine, Dr.N.B in Medical Gastroenterology",
+        time : "",
+        date : ""
+      },
   ]
   specialDoctors = ['Dr. Pramod S. Chinder', 'Dr. Meena H. B', 'Brig (Dr) S. Shashivadhanan', 'Dr. Ravishankar. D', 'Dr. Sapna S'];
 
