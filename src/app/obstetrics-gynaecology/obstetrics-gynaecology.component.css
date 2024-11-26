@@ -1,21 +1,23 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    
+
 }
 
-.gm_poster{
+.gm_poster {
     background-image: url('../../assets/images/general_medicine_poster.jfif');
-    background-size: cover;    height: 380px;
+    background-size: cover;
+    height: 380px;
     padding-bottom: 20px;
 }
-.main_container{
+
+.main_container {
     margin: 0;
     padding: 0;
     background-color: #FBFFF5;
 }
 
-.o_heading{
+.o_heading {
     color: #008080;
     font-size: 40px;
     font-style: normal;
@@ -27,7 +29,7 @@
     font-weight: 600;
 }
 
-.o_info{
+.o_info {
     font-size: 20px;
     padding: 20px 0 0 100px;
     font-family: "inter";
@@ -38,7 +40,7 @@
 /* menu */
 
 
-.gm_m_heading{
+.gm_m_heading {
     text-align: center;
     background-color: #008080;
     color: white;
@@ -49,14 +51,15 @@
     text-transform: capitalize;
 }
 
-.menu_n_content{
+.menu_n_content {
     display: flex;
     justify-content: center;
     gap: 80px;
     padding: 50px 0;
     background-color: #FBFFF5;
 }
-.o_menu{
+
+.o_menu {
     width: 320px;
     height: 100%;
     border-radius: 10px;
@@ -65,27 +68,32 @@
     background-color: #ffffff;
     /* box-shadow: 1px 1px 10px rgb(161, 160, 160); */
 }
-.menu_list_box{
+
+.menu_list_box {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
     margin-bottom: 28px;
 }
-.more_specs{
+
+.more_specs {
     font-weight: 600;
     letter-spacing: 1px;
     font-size: 18px;
 }
-.menu_contents{
+
+.menu_contents {
     padding: 8px 15px;
     font-family: "inter";
     font-weight: 700;
 }
-.menu_list_box .menu_list:hover{
-    color:  #FBCA51;
+
+.menu_list_box .menu_list:hover {
+    color: #FBCA51;
     cursor: pointer;
 }
-.con_n_img{
+
+.con_n_img {
     display: flex;
     /* justify-content: space-around; */
     gap: 80px;
@@ -95,12 +103,13 @@
     width: 830px;
     border-radius: 10px;
 }
-.gm_o_image{
+
+.gm_o_image {
     border-radius: 10px;
     margin-top: 5px;
 }
 
-.o_h_heading{
+.o_h_heading {
     color: #008080;
     font-size: 30px;
     font-style: normal;
@@ -112,24 +121,27 @@
     font-weight: 600;
 }
 
-.gm_content{   
+.gm_content {
     font-family: Inter;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    line-height: 30px; /* 225% */
+    line-height: 30px;
+    /* 225% */
     text-transform: none;
     /* margin: 0px 50px 10px 10px; */
     font-family: "inter";
     font-weight: 500;
     text-align: justify;
 }
-.gm_o_image{
+
+.gm_o_image {
     width: 300px;
     height: 300px;
-    
+
 }
-.Meet_Medical_Team{
+
+.Meet_Medical_Team {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -142,7 +154,8 @@
     font-style: normal;
     line-height: normal;
 }
-.doc_details{
+
+.doc_details {
     display: flex;
     width: 254.88px;
     padding: 0px 0.048px 20.404px 0.832px;
@@ -160,29 +173,52 @@
     margin-right: 30px;
     margin-left: 30px;
 }
-.menu_list_box.active {
-    color:  #FBCA51; /* Highlight the active menu item */
-  }
-.doc_common_box{
+
+.mmt_container {
     display: flex;
     justify-content: center;
+    margin-top: 50px;
 }
-.doc_details img{
+
+.mmt_heading {
+    text-align: center;
+}
+
+.menu_list_box.active {
+    color: #FBCA51;
+}
+
+.doccontainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.doc_common_box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.doc_details img {
     width: 254px;
     height: 255px;
     border-radius: 20px;
 }
-.doc_name{
+
+.doc_name {
     margin-top: 15px;
     font-size: 13px
 }
-.view_all_btn_box{
+
+.view_all_btn_box {
     margin-top: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.view_all_btn{
+
+.view_all_btn {
     padding: 15px 25px;
     border-radius: 30px;
     border-radius: 30px;
@@ -193,31 +229,37 @@
     font-size: 20px;
     transition-duration: 0.3s;
 }
-.view_all_btn .fa-angle-right{
+
+.view_all_btn .fa-angle-right {
     border: 1px solid white;
     border-radius: 50%;
     padding: 4px 8.5px;
     font-size: 20px;
     margin-left: 10px;
 }
-.view_all_btn:hover{
+
+.view_all_btn:hover {
     border: 2px solid #279797;
     background: white;
     color: #022B50;
     transition-duration: 0.5s;
 }
-@media only screen and (max-width:1390px){
-    .gm_poster{
+
+@media only screen and (max-width:1390px) {
+    .gm_poster {
         height: 64vh;
-    }   
+    }
 }
-@media only screen and (max-width:1030px){
-    .o_menu{
+
+@media only screen and (max-width:1030px) {
+    .o_menu {
         display: none;
     }
-    .o_heading{
+
+    .o_heading {
         padding: 200px 0 0 100px;
     }
+
     .con_n_img {
         display: flex;
         flex-direction: column;
@@ -230,8 +272,16 @@
         border-radius: 10px;
     }
 }
-@media only screen and (max-width:600px){
-    .gm_poster{
+
+@media (max-width:800px){
+    .doc_common_box{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .gm_poster {
         background-image: url('../../assets/modern-medicine-sub-res-bg.png');
         background-size: cover;
         height: 28vh;
@@ -239,54 +289,66 @@
         padding-bottom: -2px; */
         margin-top: 18vh;
     }
-    .o_container{
+
+    .o_container {
         width: 100%;
     }
-    .o_menu{
+
+    .o_menu {
         display: none;
     }
-    .con_n_img{
+
+    .con_n_img {
         display: flex;
         flex-direction: column;
         width: 100%;
         gap: 30px;
     }
-    .o_heading{
-        padding:3rem 0rem 1rem 2rem;
+
+    .o_heading {
+        padding: 3rem 0rem 1rem 2rem;
         font-size: 20px;
     }
-    .o_info{
+
+    .o_info {
         padding: 1rem 2rem;
         font-size: 14px;
 
     }
-    .o_h_heading{
+
+    .o_h_heading {
         font-size: 20px;
     }
-    .gm_content{
+
+    .gm_content {
         width: 100%;
         font-size: 14px;
         padding-right: 0rem;
         margin: 0 0 10px 10px;
     }
-    .Meet_Medical_Team{
+
+    .Meet_Medical_Team {
         display: flex;
-        align-items:center;
+        align-items: center;
         width: 100%;
     }
-    .doc_common_box{
+
+    .doc_common_box {
         display: flex;
         flex-direction: column;
     }
-    .menu_n_content{
-        padding:40px 35px;
+
+    .menu_n_content {
+        padding: 40px 35px;
     }
 }
-@media only screen and (max-width:365px){
-    .doc_details{
+
+@media only screen and (max-width:365px) {
+    .doc_details {
         margin-right: 0;
     }
-    .gm_o_image{
+
+    .gm_o_image {
         width: 280px;
         height: 280px;
     }
