@@ -36,7 +36,7 @@ export class GastrosciencesComponent {
         },
         {
           doctor_image : '../../assets/doctor-63.png',
-          doctor_name : 'Dr ManMohan U. S',
+          doctor_name : 'Dr ManMohan',
           experience : ''
         }
       ]}];
@@ -47,7 +47,7 @@ export class GastrosciencesComponent {
 }
 
 // {
-//   name: "Dr ManMohan U. S",
+//   name: "Dr ManMohan",
 //   image : "assets/doctor-63.png",
 //   desgination : "Gastroenterologist",
 //   about : "Dr. Man Mohan U.S. is a highly qualified gastroenterologist with extensive experience in managing complex gastrointestinal and hepatology conditions. Currently serving as an Assistant Professor at the Institute of Gastroenterology and Organ Transplant (IGOT), he has a keen interest in clinical research, with multiple publications and presentations at prestigious national and international conferences. He specializes in advanced diagnostic and therapeutic procedures, focusing on patient-centered care and innovative treatments in medical gastroenterology.",
