@@ -37,7 +37,7 @@ export class GastrosciencesComponent {
         {
           doctor_image : '../../assets/doctor-63.png',
           doctor_name : 'Dr ManMohan',
-          experience : ''
+          experience : '8+'
         }
       ]}];
       this.sanitizedContent = this.sanitizer.bypassSecurityTrustHtml(this.specialities[0].content);
