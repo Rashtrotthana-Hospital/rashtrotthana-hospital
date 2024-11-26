@@ -52,16 +52,17 @@
 
 .menu_n_content{
     display: flex;
-    justify-content: space-between;
-    padding: 40px 50px;
+    justify-content: center;
+    gap: 80px;
+    padding: 50px 0;
     background-color: #FBFFF5;
 }
+
 .o_menu{
-    width: 270px;
+    width: 320px;
     height: 100%;
     border-radius: 10px;
     padding: 0;
-    
     margin-left: 50px;
     background-color: #ffffff;
     /* box-shadow: 1px 1px 10px rgb(161, 160, 160); */
@@ -91,7 +92,8 @@
 }
 .con_n_img{
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
+    gap: 80px;
     padding: 0;
     margin-top: 20px;
     margin-right: 50px;
@@ -116,22 +118,28 @@
 }
 
 .gm_content{
-    
     font-family: Inter;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: 30px; /* 225% */
     text-transform: none;
-    margin: 0px 50px 10px 10px;
+    /* margin: 0px 50px 10px 10px; */
     font-family: "inter";
     font-weight: 500;
     text-align: justify;
 }
+
+.speci_content{
+    width: 700px;
+}
+
+.con_n_img
+
 .gm_o_image{
     width: 300px;
     height: 300px;
-    
+    /* object-fit: contain;     */
 }
 .Meet_Medical_Team{
     display: flex;
@@ -219,11 +227,10 @@
     .con_n_img{
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        gap: 30px;
         align-items: center;
         padding: 0;
         margin-top: 20px;
-        /* margin-right: 50px; */
         width: 100%;
         border-radius: 10px;
     }
