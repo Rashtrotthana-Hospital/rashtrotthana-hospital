@@ -405,41 +405,20 @@ export class ChatbotComponent implements OnInit {
   // displaying slots and selecting date
   async loadSlots(doctorId: any, date: string): Promise<void> {
     try {
-      // console.log()
       const selectedDate = new Date(this.date);
       const currentDate = new Date();
 
-      const unavailableDates = await this.chatbotService.getUnavailableDates(doctorId).toPromise();
-      // console.log(unavailableDates)
-      // if (selectedDate === unavailableDates) {
-      //   const newEntry = {
-      // 		heading: ``,
-      // 		getmsg: "",
-      // 		options: this.timeSlots.map((slot) => slot),
-      // 		notemsg: "",
-      // 		input: this.selectedDate,
-      // 		emergency: "",
-      // 		patientName: "",
-      // 		doctorName: "",
-      // 		department: "",
-      // 		date: "",
-      // 		timeslot: "",
-      //     rensendOtp:""
-      // 	};
-      // 	this.responseStructure.push(newEntry);
-      // }
-
-      // console.log(this.formatDate(selectedDate), this.formatDate(currentDate))
-
       if (this.formatDate(selectedDate) >= this.formatDate(currentDate)) {
-       
         this.selectedDate = this.date;
 
         // Fetch available slots and unavailable slots from the backend
         const availableData = await this.chatbotService.getAvailableSlots(doctorId, date).toPromise();
-        const bookedSlots = await this.chatbotService.getBookedSlots(doctorId, date).toPromise();
+        const bookedSlots = (await this.chatbotService.getBookedSlots(doctorId, date).toPromise()) || [];
+
+        // Format booked slots to 12-hour format if needed
+
+
         const unavailableData = await this.chatbotService.getUnavailableSlots(doctorId, date).toPromise();
-       
 
         const availableFrom = availableData.availableFrom; // E.g., "10:00-16:00"
         const slotDuration = parseInt(availableData.slotDuration, 10); // E.g., 30 minutes
@@ -457,20 +436,11 @@ export class ChatbotComponent implements OnInit {
         const endSlotTime = new Date(selectedDate);
         endSlotTime.setHours(endHour, endMin, 0, 0);
 
-        // If the selected date is today, skip past slots
-        // if (selectedDate.toDateString() === currentDate.toDateString()) {
-        // 	if (slotTime <= currentDate) {
-        // 		slotTime.setHours(currentDate.getHours(), currentDate.getMinutes(), 0, 0);
-        // 	}
-        // }
-
         // Generate slots
         while (slotTime < endSlotTime) {
-          const slotStart = this.formatTimeTo24Hour(slotTime);
-         
-          const slotEnd = this.formatTimeTo24Hour(new Date(slotTime.getTime() + slotDuration * 60000));
-          const currentSlot = `${slotStart}-${slotEnd}`;
+          const slotStart = this.formatTimeTo12Hour(slotTime);
 
+          // Skip past slots if the selected date is today
           if (selectedDate.toDateString() === currentDate.toDateString() && slotTime <= currentDate) {
             slotTime.setMinutes(slotTime.getMinutes() + slotDuration); // Skip this slot
             continue;
@@ -478,17 +448,23 @@ export class ChatbotComponent implements OnInit {
 
           // Check if the slot overlaps with any unavailable slot
           const isUnavailable = unavailableSlots.some((unavailableSlot: string) => {
-            const [unStart, unEnd] = unavailableSlot.split('-').map((time: string) => this.toMinutes(time));
-            const [slotStartMinutes, slotEndMinutes] = currentSlot
-              .split('-')
-              .map((time: string) => this.toMinutes(time));
-            return slotStartMinutes < unEnd && slotEndMinutes > unStart; // Overlap condition
+            // const [unStart, unEnd] = unavailableSlot.split('-').map((time: string) => this.toMinutes(time));
+            // const slotStartMinutes = this.toMinutes(this.formatTimeTo24Hour(slotTime));
+            // return slotStartMinutes >= unStart && slotStartMinutes < unEnd; // Overlap condition
+            const formattedUnavailableSlot = this.formatSlotIfNeeded(unavailableSlot.split('-')[0]);
+            return formattedUnavailableSlot === slotStart;
           });
+          const formattedBookedSlots = bookedSlots
+            .filter(slot => !slot.complete)
+            .map(slot => {
+              const startTime = slot.time.split('-')[0]; // Extract the start time only (e.g., "14:00" from "14:00-14:20")
+              return this.formatSlotIfNeeded(startTime); // Convert to 12-hour format if needed
+            });
 
+          console.log('isUnavailable:', isUnavailable, 'bookedSlots:', formattedBookedSlots, 'slotTime:', slotStart);
           // Add the slot if it's not unavailable
-          if (!isUnavailable && !bookedSlots!.includes(currentSlot)) {
-            slots.push(currentSlot);
-
+          if (!isUnavailable && !formattedBookedSlots.includes(slotStart)) {
+            slots.push(slotStart);
           }
 
           // Move to the next slot
@@ -515,8 +491,7 @@ export class ChatbotComponent implements OnInit {
           this.responseStructure.push(newEntry);
           this.date = '';
           return;
-        }
-        else {
+        } else {
           const newEntry = {
             heading: `You entered ${this.selectedDate} as your appointment date.`,
             getmsg: "Now, please select a time slot from the available options.",
@@ -535,28 +510,7 @@ export class ChatbotComponent implements OnInit {
           this.step = 4;
           this.userInput = '';
         }
-
-
-        // const newEntry = {
-        // 	heading: `You entered ${this.selectedDate} as your appointment date.`,
-        // 	getmsg: "Now, please select a time slot from the available options.",
-        // 	options: this.timeSlots.map((slot) => slot),
-        // 	notemsg: "(Note: Please select a time slot by entering its number)",
-        // 	input: this.selectedDate,
-        // 	emergency: "",
-        // 	patientName: "",
-        // 	doctorName: "",
-        // 	department: "",
-        // 	date: "",
-        // 	timeslot: "",
-        //   rensendOtp : ""
-        // };
-        // this.responseStructure.push(newEntry);
-
-        // this.step = 4;
-        // this.userInput = '';
       } else {
-        // If the selected date is in the past
         const newEntry = {
           heading: "Please choose a valid date",
           getmsg: "",
@@ -591,10 +545,41 @@ export class ChatbotComponent implements OnInit {
         rensendOtp: ""
       };
       this.responseStructure.push(newEntry);
-      this.selectedDate = ''
-      this.date = ''
+      this.selectedDate = '';
+      this.date = '';
     }
   }
+  formatSlotIfNeeded = (slot: string): string => {
+    // Determine if the slot is in 12-hour format
+    return slot.includes('AM') || slot.includes('PM') ? slot : this.convertTo12HourFormat(slot);
+  };
+  // Utility function to format time to 12-hour format with AM/PM
+  formatTimeTo12Hour(date: Date): string {
+    let hours = date.getHours();
+    const minutes = date.getMinutes();
+    const ampm = hours >= 12 ? 'PM' : 'AM';
+    hours = hours % 12 || 12; // Convert to 12-hour format, and 0 becomes 12
+    return `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')} ${ampm}`;
+  }
+  
+  convertTo12HourFormat(time: string): string {
+    let [hours, minutes] = time.split(':').map(Number);
+    const period = hours >= 12 ? 'PM' : 'AM';
+  
+    // Convert hours to 12-hour format
+    hours = hours % 12;
+    hours = hours ? hours : 12; // If hour is 0, set to 12 (for 12 AM/PM)
+  
+    return `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')} ${period}`;
+  }
+  
+
+  // Utility function to convert time to minutes
+  // toMinutes(time: string): number {
+  //   const [hours, minutes] = time.split(':').map(Number);
+  //   return hours * 60 + minutes;
+  // }
+
 
   // Utility function to format time to 24-hour format
   formatTimeTo24Hour(date: Date): string {
@@ -775,7 +760,7 @@ export class ChatbotComponent implements OnInit {
         rensendOtp: ""
       }
       this.responseStructure.push(newEntry)
-    
+
       this.step = 8
       this.userInput = ''
     }
@@ -805,7 +790,7 @@ export class ChatbotComponent implements OnInit {
     const userconfirm = this.userInput
 
     if (userconfirm === "1" || userconfirm === "Yes, proceed with the booking." || userconfirm === "yeah" || userconfirm === "yes") {
-     
+
       this.userInput = ''
       const formdata = {
         to: "frontoffice@rashtrotthanahospital.com",
@@ -1620,14 +1605,14 @@ export class ChatbotComponent implements OnInit {
   }
 
   //12 hour time formater
-  formatTimeTo12Hour(date: Date): string {
-    const hours = date.getHours();
-    const minutes = date.getMinutes();
-    const suffix = hours >= 12 ? 'PM' : 'AM';
-    const formattedHour = hours % 12 || 12; // Convert hour to 12-hour format
-    const formattedMinutes = minutes < 10 ? `0${minutes}` : minutes;
-    return `${formattedHour}:${formattedMinutes} ${suffix}`;
-  }
+  // formatTimeTo12Hour(date: Date): string {
+  //   const hours = date.getHours();
+  //   const minutes = date.getMinutes();
+  //   const suffix = hours >= 12 ? 'PM' : 'AM';
+  //   const formattedHour = hours % 12 || 12; // Convert hour to 12-hour format
+  //   const formattedMinutes = minutes < 10 ? `0${minutes}` : minutes;
+  //   return `${formattedHour}:${formattedMinutes} ${suffix}`;
+  // }
 
   //refresh
   refresh(): void {
@@ -1909,3 +1894,156 @@ export class ChatbotComponent implements OnInit {
 //     const [hours, minutes] = time.split(':').map(Number);
 //     return hours * 60 + minutes;
 // }
+
+
+
+
+// async loadSlots(doctorId: any, date: string): Promise<void> {
+//   try {
+//     const selectedDate = new Date(this.date);
+//     const currentDate = new Date();
+
+//     if (this.formatDate(selectedDate) >= this.formatDate(currentDate)) {
+//       this.selectedDate = this.date;
+
+//       // Fetch available slots and unavailable slots from the backend
+//       const availableData = await this.chatbotService.getAvailableSlots(doctorId, date).toPromise();
+//       const bookedSlots = await this.chatbotService.getBookedSlots(doctorId, date).toPromise() || [];
+//       const unavailableData = await this.chatbotService.getUnavailableSlots(doctorId, date).toPromise();
+
+//       const availableFrom = availableData.availableFrom; // E.g., "10:00-16:00"
+//       const slotDuration = parseInt(availableData.slotDuration, 10); // E.g., 30 minutes
+//       const unavailableSlots = unavailableData.map((data: any) => data.time); // Unavailable slots
+
+//       // Parse available time range
+//       const [startTime, endTime] = availableFrom.split('-');
+//       const [startHour, startMin] = startTime.split(':').map(Number);
+//       const [endHour, endMin] = endTime.split(':').map(Number);
+
+//       const slots: string[] = [];
+//       const slotTime = new Date(selectedDate);
+//       slotTime.setHours(startHour, startMin, 0, 0);
+
+//       const endSlotTime = new Date(selectedDate);
+//       endSlotTime.setHours(endHour, endMin, 0, 0);
+
+//       // Generate slots
+//       while (slotTime < endSlotTime) {
+//         const slotStart = this.formatTimeTo12Hour(slotTime);
+
+//         // Skip past slots if the selected date is today
+//         if (selectedDate.toDateString() === currentDate.toDateString() && slotTime <= currentDate) {
+//           slotTime.setMinutes(slotTime.getMinutes() + slotDuration); // Skip this slot
+//           continue;
+//         }
+
+//         // Check if the slot overlaps with any unavailable slot
+//         const isUnavailable = unavailableSlots.some((unavailableSlot: string) => {
+//           const [unStart, unEnd] = unavailableSlot.split('-').map((time: string) => this.toMinutes(time));
+//           const slotStartMinutes = this.toMinutes(this.formatTimeTo24Hour(slotTime));
+//           return slotStartMinutes >= unStart && slotStartMinutes < unEnd; // Overlap condition
+//         });
+
+//         // Add the slot if it's not unavailable
+//         if (!isUnavailable && !bookedSlots.includes(this.formatTimeTo24Hour(slotTime))) {
+//           slots.push(slotStart);
+//         }
+
+//         // Move to the next slot
+//         slotTime.setMinutes(slotTime.getMinutes() + slotDuration);
+//       }
+
+//       this.timeSlots = slots;
+
+//       if (this.timeSlots.length === 0) {
+//         const newEntry = {
+//           heading: `No slots available on ${this.selectedDate}`,
+//           getmsg: "Please select another date.",
+//           options: '',
+//           notemsg: "",
+//           input: this.selectedDate,
+//           emergency: "",
+//           patientName: "",
+//           doctorName: "",
+//           department: "",
+//           date: "",
+//           timeslot: "",
+//           rensendOtp: ""
+//         };
+//         this.responseStructure.push(newEntry);
+//         this.date = '';
+//         return;
+//       } else {
+//         const newEntry = {
+//           heading: `You entered ${this.selectedDate} as your appointment date.`,
+//           getmsg: "Now, please select a time slot from the available options.",
+//           options: this.timeSlots.map((slot) => slot),
+//           notemsg: "(Note: Please select a time slot by entering its number)",
+//           input: this.selectedDate,
+//           emergency: "",
+//           patientName: "",
+//           doctorName: "",
+//           department: "",
+//           date: "",
+//           timeslot: "",
+//           rensendOtp: ""
+//         };
+//         this.responseStructure.push(newEntry);
+//         this.step = 4;
+//         this.userInput = '';
+//       }
+//     } else {
+//       const newEntry = {
+//         heading: "Please choose a valid date",
+//         getmsg: "",
+//         options: "",
+//         notemsg: "(Note: Select a valid date. No previous dates allowed.)",
+//         input: this.date,
+//         emergency: "",
+//         patientName: "",
+//         doctorName: "",
+//         department: "",
+//         date: "",
+//         timeslot: "",
+//         rensendOtp: ""
+//       };
+//       this.responseStructure.push(newEntry);
+//       this.date = '';
+//     }
+//   } catch (error) {
+//     console.error('Error fetching available slots:', error);
+//     const newEntry = {
+//       heading: `You entered ${this.selectedDate} as your appointment date.`,
+//       getmsg: "Doctor is not available on this date. Please select another date.",
+//       options: '',
+//       notemsg: "",
+//       input: this.selectedDate,
+//       emergency: "",
+//       patientName: "",
+//       doctorName: "",
+//       department: "",
+//       date: "",
+//       timeslot: "",
+//       rensendOtp: ""
+//     };
+//     this.responseStructure.push(newEntry);
+//     this.selectedDate = '';
+//     this.date = '';
+//   }
+// }
+
+// // Utility function to format time to 12-hour format with AM/PM
+// formatTimeTo12Hour(date: Date): string {
+//   let hours = date.getHours();
+//   const minutes = date.getMinutes();
+//   const ampm = hours >= 12 ? 'PM' : 'AM';
+//   hours = hours % 12 || 12; // Convert to 12-hour format, and 0 becomes 12
+//   return `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')} ${ampm}`;
+// }
+
+// // Utility function to convert time to minutes
+// // toMinutes(time: string): number {
+// //   const [hours, minutes] = time.split(':').map(Number);
+// //   return hours * 60 + minutes;
+// // }
+

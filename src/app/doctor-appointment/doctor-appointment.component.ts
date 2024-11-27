@@ -117,9 +117,9 @@ export class DoctorAppointmentComponent implements OnInit {
     })
   );
 }
-getBookedSlots(doctorId: number, date: string): Observable<string[]> {
+getBookedSlots(doctorId: number, date: string): Observable<{ time: string; complete: boolean } []> {
   const bookedSlotsUrl = `${this.apiUrl}/doctors/booked-slots?doctorId=${doctorId}&date=${date}`;
-  return this.http.get<string[]>(bookedSlotsUrl);
+  return this.http.get<{ time: string; complete: boolean } []>(bookedSlotsUrl);
 }
 getUnavailableDates(doctorId: number): Observable<{ date: string }[]> {
   return this.http.get<{ date: string }[]>(`${this.apiUrl}/doctors/unavailable-dates?doctorId=${doctorId}`);
@@ -192,27 +192,52 @@ getAvailableSlots(doctorId: number, date: string): Observable<any> {
   //     );
   //   }
   // }
-  generateTimeSlots(startTime: string, endTime: string, slotDuration: number) : { name: string }[] {
+  // generateTimeSlots(startTime: string, endTime: string, slotDuration: number) : { name: string }[] {
 
-    let slots: { name: string }[] = [];
+  //   let slots: { name: string }[] = [];
+  //   let current = new Date(`1970-01-01T${startTime}`);
+  //   const end = new Date(`1970-01-01T${endTime}`);
+
+
+  //   while (current < end) {
+  //     const slotStart = current.toTimeString().substring(0, 5);
+  //     current = new Date(current.getTime() + slotDuration * 60000);
+
+  //     if (current <= end) {
+  //       const slotEnd = current.toTimeString().substring(0, 5);
+  //       slots.push({ name: `${slotStart}-${slotEnd}` });
+
+  //     }
+  //   }
+  //   console.log(slots)
+
+  //   return slots;
+  // }
+  generateTimeSlots(startTime: string, endTime: string, slotDuration: number): { name: string }[] {
+    const slots: { name: string }[] = [];
     let current = new Date(`1970-01-01T${startTime}`);
     const end = new Date(`1970-01-01T${endTime}`);
-
-
+  
     while (current < end) {
-      const slotStart = current.toTimeString().substring(0, 5);
+      const slotStart = this.convertTo12HourFormat(current.toTimeString().substring(0, 5));
+      slots.push({ name: slotStart }); // Only add the start time in 12-hour format
       current = new Date(current.getTime() + slotDuration * 60000);
-
-      if (current <= end) {
-        const slotEnd = current.toTimeString().substring(0, 5);
-        slots.push({ name: `${slotStart}-${slotEnd}` });
-
-      }
     }
-    console.log(slots)
-
+  console.log(slots)
     return slots;
   }
+  
+  convertTo12HourFormat(time: string): string {
+    let [hours, minutes] = time.split(':').map(Number);
+    const period = hours >= 12 ? 'PM' : 'AM';
+  
+    // Convert hours to 12-hour format
+    hours = hours % 12;
+    hours = hours ? hours : 12; // If hour is 0, set to 12 (for 12 AM/PM)
+  
+    return `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')} ${period}`;
+  }
+  
 
   onDateChange(event: any) {
     const selectedDate = new Date(event);
@@ -259,8 +284,22 @@ getAvailableSlots(doctorId: number, date: string): Observable<any> {
 
               // If the doctor is available on the selected date, fetch booked slots
               this.getBookedSlots(doctorId, formattedDate).subscribe({
-                next: (bookedSlots) => {
-                  this.filterAvailableTimes(bookedSlots, selectedDate);
+                // next: (bookedSlots) => {
+                  
+                //   this.filterAvailableTimes(bookedSlots, selectedDate);
+                next: (bookedSlots: { time: string; complete: boolean }[]) => {
+                  // Define the function before using it
+                  const formatSlotIfNeeded = (slot: string): string => {
+                    // Determine if the slot is in 12-hour format
+                    return slot.includes('AM') || slot.includes('PM') ? slot : this.convertTo12HourFormat(slot);
+                  };
+                
+                  // Filter out the incomplete slots and convert them if needed
+                  const nonCompleteBookedSlots = bookedSlots.filter(slot => !slot.complete).map(slot => slot.time);
+                  const formattedBookedSlots = nonCompleteBookedSlots.map((bookedSlot) => formatSlotIfNeeded(bookedSlot.split('-')[0]));
+              
+                  // Use the formatted slots in your filter function
+                  this.filterAvailableTimes(formattedBookedSlots, selectedDate);
                 },
                 error: (error) => {
                   console.error('Error fetching booked slots:', error);
@@ -285,7 +324,15 @@ getAvailableSlots(doctorId: number, date: string): Observable<any> {
           this.getUnavailableSlots(doctorId).subscribe({
             next:(unavailableSlots: { [date: string]: string[] }) => {
               this.unavailableSlotsForDate = unavailableSlots[date] || [];
+              const formatSlotIfNeeded = (slot: string): string => {
+                // Determine if the slot is already in 12-hour format
+                return slot.includes('AM') || slot.includes('PM') ? slot : this.convertTo12HourFormat(slot);
+              };
               // console.log('Unavailable slots:', unavailableSlots);
+              this.unavailableSlotsForDate = this.unavailableSlotsForDate.map(slot => formatSlotIfNeeded(slot));
+
+    console.log('Unavailable slots for date:', formattedDate, this.unavailableSlotsForDate);
+    
             },
             error: (error) => {
               console.error('Error fetching unavailable slots:', error);
@@ -316,32 +363,65 @@ getAvailableSlots(doctorId: number, date: string): Observable<any> {
     // let allTimes = this.selectedDoctor.time.split(',').map((time: string) => ({ name: time }));
 
     if (selectedDate.toDateString() === new Date().toDateString()) {
+      console.log('availableTime',this.availableTimes)
       // Filter past times if the date is today
       this.availableTimes = this.filterPastTimes(this.availableTimes, selectedDate);
+      console.log('availableTime',this.availableTimes)
     }
     // console.log('All times:', allTimes);
     // Filter out the booked times
+    console.log('bookedSlots',bookedSlots)
     this.availableTimes = this.availableTimes.filter(
       (timeObj:any) => ((!bookedSlots.includes(timeObj.name) && !this.unavailableSlotsForDate.includes(timeObj.name)))
     );
+
+    
+    
+    
     console.log('Available times:', this.availableTimes);
 
   }
 
+  // filterPastTimes(times: { name: string }[], selectedDate: Date): { name: string }[] {
+  //   const today = new Date();
+  //   console.log('today',today)
+  //   if (selectedDate.toDateString() === today.toDateString()) {
+  //     const currentTime = today.getHours() * 60 + today.getMinutes();
+  //     return times.filter(timeObj => {
+  //       const [startHour, startMinute] = timeObj.name.split(' - ')[0].split(':');
+  //       const timeInMinutes = parseInt(startHour) * 60 + parseInt(startMinute);
+  //       return timeInMinutes > currentTime;
+  //     });
+  //   }
+  //   console.log('times',times)
+  //   return times;
+  // }
   filterPastTimes(times: { name: string }[], selectedDate: Date): { name: string }[] {
     const today = new Date();
     
     if (selectedDate.toDateString() === today.toDateString()) {
-      const currentTime = today.getHours() * 60 + today.getMinutes();
+      const currentTimeInMinutes = today.getHours() * 60 + today.getMinutes();
+  
       return times.filter(timeObj => {
-        const [startHour, startMinute] = timeObj.name.split(' - ')[0].split(':');
-        const timeInMinutes = parseInt(startHour) * 60 + parseInt(startMinute);
-        return timeInMinutes > currentTime;
+        const [time, period] = timeObj.name.split(' ');
+        let [startHour, startMinute] = time.split(':').map(Number);
+  
+        // Convert 12-hour time to 24-hour equivalent in minutes
+        if (period === 'PM' && startHour !== 12) {
+          startHour += 12;
+        } else if (period === 'AM' && startHour === 12) {
+          startHour = 0; // Handle 12 AM as midnight
+        }
+  
+        const timeInMinutes = startHour * 60 + startMinute;
+  
+        return timeInMinutes > currentTimeInMinutes;
       });
     }
-    
+  
     return times;
   }
+  
 
   formatDate(date: Date): string {
     const day = date.getDate().toString().padStart(2, '0');

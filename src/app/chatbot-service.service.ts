@@ -76,8 +76,8 @@ export class ChatbotServiceService {
   whatsApp(details : any) : Observable<any>{
     return this.http.post<any>(`${this.apiUrl}/api/whatsapp/send-receive-message`, details)
   }
-  getBookedSlots(doctorId: number, date: string): Observable<string[]> {
+  getBookedSlots(doctorId: number, date: string): Observable<{ time: string; complete: boolean }[]> {
     const bookedSlotsUrl = `${this.apiUrl}/api/doctors/booked-slots?doctorId=${doctorId}&date=${date}`;
-    return this.http.get<string[]>(bookedSlotsUrl);
+    return this.http.get<{ time: string; complete: boolean }[]>(bookedSlotsUrl);
   }
 }
