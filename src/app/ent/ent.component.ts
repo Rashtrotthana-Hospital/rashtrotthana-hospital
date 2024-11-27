@@ -14,9 +14,9 @@ export class ENTComponent {
   sanitizedContent1: SafeHtml = '';
   specialities:any[] = [];
   ngOnInit(): void {
-    this.titleService.setTitle("Best Ophthalmology Hospital in Bangalore | Rashtrotthana Hospital");
-    this.metaService.updateTag({ name: 'description', content: 'Rashtrotrhana Hospital is the Best Ophthalmology Hospital in Bangalore, India with renowned top ophthalmologist offer eye care services.' });
-    this.metaService.updateTag({ name: 'keywords', content: 'ophthalmology hospital near me, eye care, cataracts, glaucoma, diabetic retinopathy, macular degeneration, ophthalmologist, optometrists, eye care services, vision care, eye disease, vision health' });
+    this.titleService.setTitle("ENT Specialist In Bangalore | ENT Specialist In R R Nagar - Rashtrotthana Hospital");
+    this.metaService.updateTag({ name: 'description', content: 'Looking for the best ENT Specialist In R R Nagar or Bangalore? Then look no fur and visit us today. We are the best ENT hospital.' });
+    this.metaService.updateTag({ name: 'keywords', content: 'ENT, ear, nose, throat, sinusitis, ear infections, hearing loss, throat infections, tonsillectomy, sinus surgery, adenoids' });
     this.specialities=[
       {
         main_heading:'ENT',

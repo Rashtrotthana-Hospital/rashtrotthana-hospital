@@ -14,9 +14,9 @@ export class NeurosciencesComponent {
   sanitizedContent1: SafeHtml = '';
   specialities:any[] = [];
   ngOnInit(): void {
-    this.titleService.setTitle("Best Ophthalmology Hospital in Bangalore | Rashtrotthana Hospital");
-    this.metaService.updateTag({ name: 'description', content: 'Rashtrotrhana Hospital is the Best Ophthalmology Hospital in Bangalore, India with renowned top ophthalmologist offer eye care services.' });
-    this.metaService.updateTag({ name: 'keywords', content: 'ophthalmology hospital near me, eye care, cataracts, glaucoma, diabetic retinopathy, macular degeneration, ophthalmologist, optometrists, eye care services, vision care, eye disease, vision health' });
+    this.titleService.setTitle("Best Neurology Hospital In Bangalore | Neuro Treatment - Rashtrotthana Hospital");
+    this.metaService.updateTag({ name: 'description', content: 'Rashtrotthana is the best neurology hospital in Bangalore, India with experienced neurologists providing neuro care treatments and surgeries.' });
+    this.metaService.updateTag({ name: 'keywords', content: 'Neurology, nerve problems, nerve hospital near me, neurological disorders, acute stroke and cerebrovascular diseases, paediatric and adult epilepsy, neuromuscular diseases, Parkinson’s disease and related disorder, Alzheimer’s disease and other disorders of cognition, multiple sclerosis and other demyelinating disorders' });
     this.specialities=[
       {
         main_heading:'Neurosciences',
