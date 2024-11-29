@@ -36,7 +36,7 @@ export class GastrosciencesComponent {
         },
         {
           doctor_image : '../../assets/doctor-63.png',
-          doctor_name : 'Dr ManMohan',
+          doctor_name : 'Dr. Man Mohan U. S',
           experience : '8+'
         }
       ]}];

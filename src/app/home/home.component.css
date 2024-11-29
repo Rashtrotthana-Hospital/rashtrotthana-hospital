@@ -1580,7 +1580,8 @@ li {
   }
 
   .service-header {
-    font-size: 32px;
+    font-size: 26px;
+    text-align: center;
   }
 
   .bg-service img {
