@@ -35,6 +35,11 @@ export class NeurosciencesComponent {
             doctor_name:'Brig (Dr) S. Shashivadhanan',
             experience : "30+"
           },
+          {
+            doctor_image:'../../assets/doctor-64.png',
+            doctor_name:'Dr. Kalyani Dilip Karkare',
+            experience : "14+"
+          },
         ]}];
         this.sanitizedContent = this.sanitizer.bypassSecurityTrustHtml(this.specialities[0].content);
           this.sanitizedContent1 = this.sanitizer.bypassSecurityTrustHtml(this.specialities[0].content_1);

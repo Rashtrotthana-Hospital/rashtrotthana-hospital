@@ -629,6 +629,15 @@
     font-weight: 700;
     font-family: inter;
     color: #ffffff;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.phone_number a{
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
 }
 
 .con_8_rs_head{

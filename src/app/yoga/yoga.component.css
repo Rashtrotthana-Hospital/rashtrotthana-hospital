@@ -169,6 +169,7 @@
     font-family: poppins;
     font-weight: 700;
     text-align: center;
+    line-height: 40px;
 }
 
 
@@ -238,9 +239,11 @@
     .section, .designation, .department {
         font-size: 10px;
     }
+
+    .doctor_heading{
+        font-size: 24px;
+    }
 }
-
-
 
 .view_all{
     width: 100%;

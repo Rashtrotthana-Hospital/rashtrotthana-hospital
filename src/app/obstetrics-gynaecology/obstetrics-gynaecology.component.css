@@ -321,14 +321,15 @@
     }
 
     .o_h_heading {
-        font-size: 20px;
+        font-size: 18px;
+        margin-left: 0;
     }
 
     .gm_content {
         width: 100%;
         font-size: 14px;
         padding-right: 0rem;
-        margin: 0 0 10px 10px;
+        margin: 0 0 10px 0px;
     }
 
     .Meet_Medical_Team {
