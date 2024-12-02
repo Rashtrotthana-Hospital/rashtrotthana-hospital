@@ -21,10 +21,10 @@ export class HerniaComponent {
   }
 
   doctors =[
-    {
-      image: 'assets/doctor-5.png',
-      name: 'Dr. Shashi Vadhanan',
-    },
+    // {
+    //   image: 'assets/doctor-5.png',
+    //   name: 'Dr. Shashi Vadhanan',
+    // },
     {
       image: 'assets/doctor-3.png',
       name: 'Dr. Atmaram D. C',
