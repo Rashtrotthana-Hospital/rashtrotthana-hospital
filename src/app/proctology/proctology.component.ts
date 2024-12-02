@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Title, Meta,DomSanitizer,SafeHtml } from '@angular/platform-browser'; 
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-proctology',
@@ -7,7 +8,7 @@ import { Title, Meta,DomSanitizer,SafeHtml } from '@angular/platform-browser';
   styleUrl: './proctology.component.css'
 })
 export class ProctologyComponent {
-  constructor(private titleService: Title, private metaService: Meta, private sanitizer: DomSanitizer) {
+  constructor(private titleService: Title, private metaService: Meta, private sanitizer: DomSanitizer, private router: Router) {
     
   }
   ngOnInit(): void {
@@ -18,5 +19,7 @@ export class ProctologyComponent {
   this.metaService.updateTag({ name: 'keywords', content: 'proctology services, anorectal care, specialist proctology Bangalore' });
 
   }
-
+  contactus(){
+    this.router.navigate(['/contact-us-bangalore']);
+  }
 }

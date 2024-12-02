@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Title, Meta,DomSanitizer,SafeHtml } from '@angular/platform-browser'; 
 import { CommonModule } from '@angular/common'; 
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-hernia',
@@ -8,7 +9,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './hernia.component.css'
 })
 export class HerniaComponent {
-  constructor(private titleService: Title, private metaService: Meta, private sanitizer: DomSanitizer) {
+  constructor(private titleService: Title, private metaService: Meta, private sanitizer: DomSanitizer, private router: Router) {
     
   }
   ngOnInit(): void {
@@ -34,6 +35,9 @@ export class HerniaComponent {
       name: 'Dr. Nishanth Lakshmikanth',
     }
   ]
+  contactus(){
+    this.router.navigate(['/contact-us-bangalore']);
+  }
 
   // doctors =[
   //   {
