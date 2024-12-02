@@ -799,6 +799,18 @@ export class DoctorLayoutComponent {
         time : "",
         date : "Monday"
       },
+      {
+        name: "Dr. Vivekanad",
+        image : "assets/doctor-65.png",
+        desgination: 'Consultant Vascular Surgeon',
+        speciality: 'GENERAL SURGERY',
+        about : "Dr. Vivekanand is a highly experienced vascular surgeon with over two decades of expertise in vascular and endovascular surgery. Currently serving as the Head of the Department at the Jain Institute of Vascular Sciences, Bhagwan Mahaveer Jain Hospital, he has been instrumental in advancing vascular care. He is a recognized leader, having served as the President of the Vascular Surgeons Association of Karnataka and President Elect of the Vascular Society of India. With a strong commitment to education, Dr. Vivekanand has mentored numerous fellows and postgraduates and has authored multiple publications and textbook chapters in vascular surgery and dermatology.",
+        areasOfExpertise : ["Prevention and management of diabetic foot infections and limb preservation.", "Awareness and treatment of Deep Vein Thrombosis (DVT) and thrombotic events.","Advanced wound healing techniques.","Management of thrombosis and hemostasis disorders."],
+        expertise : "Years of Experience: 25+",
+        qualification : "MBBS, MS(General Surgery), FVES",
+        time : "",
+        date : ""
+      }
   ]
   specialDoctors = ['Dr. Pramod S. Chinder', 'Dr. Meena H. B', 'Brig (Dr) S. Shashivadhanan', 'Dr. Ravishankar. D', 'Dr. Sapna S','Dr. Kalyani Dilip Karkare'];
 

@@ -29,10 +29,12 @@ export class HerniaComponent {
     {
       image: 'assets/doctor-3.png',
       name: 'Dr. Atmaram D. C',
+      department : 'GASTROENTEROLOGLIST'
     },
     {
       image: 'assets/doctor-25.png',
       name: 'Dr. Nishanth Lakshmikanth',
+      department : 'SURGERY/GASTROSCIENCES'
     }
   ]
   contactus(){

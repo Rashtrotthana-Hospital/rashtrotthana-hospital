@@ -364,6 +364,13 @@
     font-family: Inter, sans-serif;
 }
 
+.section,
+.designation,
+.department {
+  color: #0392CE;
+  font-family: Inter, sans-serif;
+}
+
 @media only screen and (max-width : 1310px){
     .container_2 .para_txt{
         width: 900px;
