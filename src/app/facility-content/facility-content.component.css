@@ -1,101 +1,115 @@
-.facility-container{
-    background: url('../../assets/facilities-bg.png')  no-repeat;
+.facility-container {
+    background: url('../../assets/facilities-bg.png') no-repeat;
 }
-.main-container{
+
+.main-container {
     background-color: #FBFFF5;
 }
-.heading{
-position: relative;
-top:-130px;
-left:6rem;
-color: #008080;
- font-size: 40px;
- font-family: Poppins;
- font-weight: 700;
- text-transform: uppercase;
- word-wrap: break-word
+
+.heading {
+    position: relative;
+    top: -130px;
+    left: 6rem;
+    color: #008080;
+    font-size: 40px;
+    font-family: Poppins;
+    font-weight: 700;
+    text-transform: uppercase;
+    /* word-wrap: break-word */
 }
-.facility{
+
+.facility {
     display: flex;
-    width:100%;
+    width: 100%;
     justify-content: space-evenly;
     padding-bottom: 3rem;
     background-color: #FBFFF5;
 }
-.facility-content{
-width: 50%;
-display: flex;
-flex-direction: column;
-justify-content: flex-start;
-align-items: start;
+
+.facility-content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
 }
-.heading-container{
-color: #008080;
- font-size: 24px;
- font-family: Poppins;
- font-weight: 700;
- text-transform: uppercase;
- word-wrap: break-word;
- position: relative;
- right: 3rem;
- padding: 3rem 0;
+
+.heading-container {
+    color: #008080;
+    font-size: 24px;
+    font-family: Poppins;
+    font-weight: 700;
+    text-transform: uppercase;
+    word-wrap: break-word;
+    position: relative;
+    right: 3rem;
+    padding: 3rem 0;
 }
-.content-container{
+
+.content-container {
     color: black;
- font-size: 16px;
- font-family: Inter;
- font-weight: 500;
- text-transform: none;
- line-height: 36px;
- word-wrap: break-word;
- text-align: justify;
- position: relative;
- right: 3rem;
- padding-bottom:3rem;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 500;
+    text-transform: none;
+    line-height: 36px;
+    word-wrap: break-word;
+    text-align: justify;
+    position: relative;
+    right: 3rem;
+    padding-bottom: 3rem;
 }
-.image-container{
+
+.image-container {
     display: flex;
     justify-content: center;
     width: 100%;
     gap: 34px;
 }
-.image{
+
+.image {
     width: 400px;
     height: 400px;
     border-radius: 25px;
 }
-.o_menu{
+
+.o_menu {
     width: 100%;
     height: 70%;
     border-radius: 10px;
     padding: 0;
-    
+
     margin-left: 50px;
     background-color: #ffffff;
     /* box-shadow: 1px 1px 10px rgb(161, 160, 160); */
 }
-.menu_list_box{
+
+.menu_list_box {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
     margin-bottom: 28px;
-   
+
 }
-.more_specs{
+
+.more_specs {
     font-weight: 600;
     letter-spacing: 1px;
     font-size: 18px;
 }
-.menu_contents{
+
+.menu_contents {
     padding: 8px 15px;
     font-family: "inter";
     font-weight: 700;
 }
-.menu_list_box .menu_list:hover{
-    color:  #FBCA51;
+
+.menu_list_box .menu_list:hover {
+    color: #FBCA51;
     cursor: pointer;
 }
-.gm_m_heading{
+
+.gm_m_heading {
     text-align: center;
     background-color: #008080;
     color: white;
@@ -105,14 +119,18 @@ color: #008080;
     font-family: "poppins";
     text-transform: capitalize;
 }
-.arrow{
+
+.arrow {
     position: relative;
     top: 0px;
 }
+
 .menu_list_box.active {
-    color:  #FBCA51; /* Highlight the active menu item */
-  }
-.content{
+    color: #FBCA51;
+    /* Highlight the active menu item */
+}
+
+.content {
     color: #000;
     font-family: Inter;
     font-size: 16px;
@@ -121,81 +139,111 @@ color: #008080;
     line-height: 36px;
     text-transform: none;
 }
-.side-heading{
+
+.side-heading {
     color: #000;
-
-font-family: Inter;
-font-size: 16px;
-font-style: normal;
-font-weight: 700;
-line-height: 36px; /* 225% */
-
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
 }
-.banner-image{
+
+.banner-image {
     width: 100%;
     height: 100%;
 }
-@media only screen and (max-width:1030px){
-    .o_menu{
+
+@media only screen and (max-width:1030px) {
+    .o_menu {
         display: none;
-    }  
-    .facility-content{
+    }
+
+    .facility-content {
         width: 100%;
-        padding-left:6rem ;
-    } 
-    .heading{
+        padding-left: 6rem;
+    }
+
+    .heading {
         left: 3rem;
-    width: 50%;
+        width: 50%;
+    }
+
+    .banner-image{
+        width: 100%;
+        height: 402px
     }
 }
-@media only screen and (max-width:900px){
-    .image{
+
+@media only screen and (max-width:900px) {
+    .image {
         width: 300px;
         height: 300px;
     }
-    .facility-content{
-        padding:0rem 0rem;
+
+    .facility-content {
+        padding: 0 4%;
     }
-    .content-container{
+
+    .content-container {
         padding-left: 2rem;
     }
-    .heading-container{
+
+    .heading-container {
         padding: 3rem;
+        /* line-height: 30px; */
     }
-    .heading{
+
+    .heading {
         line-height: 41px;
         font-size: 34px;
     }
-}
-@media only screen and (max-width: 600px){
+
     .banner-image{
-        width: 100%;
-        height: 214px;
+        height: 41vh;
     }
-    .o_menu{
+}
+
+@media only screen and (max-width: 600px) {
+    .banner-image {
+        width: 100%;
+        height: 155px;
+    }
+
+    .o_menu {
         display: none;
     }
-    .heading{
+
+    .heading {
         top: -76px;
-        font-size: 20px;
+        font-size: 16px;
         left: 26px;
-        width:213px;
+        width: 240px;
+        line-height: 20px;
     }
-    .image-container{
+
+    .image-container {
         display: flex;
         flex-direction: column;
         padding: 2rem;
     }
-    .image{
+
+    .image {
         width: 100%;
         height: 100%;
     }
-    .facility-content{
-        width: 100%;
-        padding-left: 0;
 
+    .facility-content {
+        width: 100%;
+        padding-left: 27px;
+        
     }
-    .heading-container,.content-container{
-        padding-left: 5rem;
+
+    .heading-container{
+        padding: 1rem 0 1rem 4rem;
     }
+    .content-container{
+        padding-left: 4rem;
+        padding-top: 2rem;
     }
+}

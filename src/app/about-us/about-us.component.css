@@ -241,7 +241,7 @@ flex-shrink: 0;
 }
 @media only screen and (max-width:1030px){
     .about-us-container{
-        background-size: contain;
+        background-size: cover;
         padding-bottom: 0;
     }
     .heading{
@@ -319,7 +319,7 @@ flex-shrink: 0;
     .about-us-container{
         padding-top:4vh;
         background: url('../../assets/about-us-res-bg.png')no-repeat;
-        background-size: contain;
+        background-size: cover;
     }
    .about-us-container,.mission-vision{
     display: flex;

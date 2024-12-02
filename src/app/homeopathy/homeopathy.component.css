@@ -248,6 +248,7 @@
     font-family: poppins;
     font-weight: 700;
     text-align: center;
+    line-height: 41px;
 }
 
 
@@ -318,6 +319,10 @@
 
     .section, .designation, .department {
         font-size: 10px;
+    }
+
+    .doctor_heading{
+        font-size: 24px;
     }
 }
 
@@ -616,6 +621,10 @@
         font-size: 20px;
     }
 
+    .doc_1{
+        width: 200px
+    }
+
     .doc_1 img {
         width: 200px;
         height: 200px;
@@ -834,6 +843,10 @@
 
     .con_7_head .con_7_head_txt {
         font-size: 20px;
+    }
+
+    .doc_1{
+        width: 200px
     }
 
     .doc_1 img {

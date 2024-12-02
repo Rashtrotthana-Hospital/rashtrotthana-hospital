@@ -1636,6 +1636,12 @@ li {
     padding-left: 2rem;
   }
 
+  .meno-content-2 {
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: 24px;
+  }
+
   .achieve-image {
     padding-top: 9rem;
   }
