@@ -38,7 +38,7 @@ export class FooterComponent {
     this.router.navigate(['/facility']);
   }
   doctor(){
-    this.router.navigate(['/doctor']);
+    this.router.navigate(['/best-doctors-bangalore']);
   }
   health(){
     this.router.navigate(['/health-check-up-packages-bangalore']);
@@ -47,7 +47,7 @@ export class FooterComponent {
     this.router.navigate(['/donate-to-hospital-bangalore']);
   }
   blog(){
-    this.router.navigate(['/']);
+    this.router.navigate(['/blog']);
   }
   insurance(){
     this.router.navigate(['/facility/health-insurance-plans-bangalore']);
