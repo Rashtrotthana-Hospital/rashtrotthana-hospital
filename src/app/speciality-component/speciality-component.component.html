@@ -138,6 +138,13 @@
                         <p class="exp">Years of Experience: {{doctor.experience}}</p>
                     </div>
                 </div>
+                <div class="doc_common_box">                        
+                    <div class="doc_details" *ngFor="let doctor of doctors2">
+                        <img [src]="'../../assets/images/' + doctor.doctor_image"alt="">   <!-- doctor image -->
+                        <p class="doc_name">{{doctor.doctor_name}}</p>
+                        <p class="exp">Years of Experience: {{doctor.experience}}</p>
+                    </div>
+                </div>
                 <!-- view all button -->
                 <div class="view_all_btn_box">
                     <app-arrow-btn></app-arrow-btn>

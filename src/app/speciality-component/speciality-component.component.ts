@@ -13,6 +13,7 @@ export class SpecialityComponentComponent {
 @Input()content_1:SafeHtml='';
 @Input()alt:string='';
 @Input()doctor?:Doctors[];
+@Input()doctors2?:Doctors[];
 @Input()image:string='';
 @Input() activeSpecialty: string = '';
 // @Input() experience: string = '';

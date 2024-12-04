@@ -35,7 +35,16 @@ export class GeneralSurgeryComponent  implements OnInit {
             doctor_name:'Dr. Nishanth Lakshmikanth',
             experience : "5"
           }    
-        ]}];
+        ],
+        Doctors_2:[
+          {
+            doctor_image:'../../assets/doctor-65.png',
+            doctor_name:'Dr. Vivekanand',
+            experience : " 25+"
+          },
+ 
+        ]
+      }];
         this.sanitizedContent = this.sanitizer.bypassSecurityTrustHtml(this.specialities[0].content);
         this.sanitizedContent1 = this.sanitizer.bypassSecurityTrustHtml(this.specialities[0].content_1);  
   }
