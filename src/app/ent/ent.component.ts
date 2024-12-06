@@ -26,15 +26,21 @@ export class ENTComponent {
         image:'ENT.png',
         Doctors:[
           {
-            doctor_image:'../../assets/doctor-44.png',
-            doctor_name:'Dr. Manasa N. A',
-            experience : "7"
+            doctor_image:'../../assets/doctor-62.png',
+            doctor_name:'Dr. Sunil Kumar C',
+            experience : "10+"
           },
           {
             doctor_image:'../../assets/doctor-35.png',
             doctor_name:'Dr. Narendranath A',
             experience : "10"
           },
+          {
+            doctor_image:'../../assets/doctor-44.png',
+            doctor_name:'Dr. Manasa N. A',
+            experience : "7"
+          },
+        
           // {
           //   doctor_image:'../../assets/doctor-34.png',
           //   doctor_name:'Dr. Ashika Bagaria',

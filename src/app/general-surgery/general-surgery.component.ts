@@ -20,11 +20,11 @@ export class GeneralSurgeryComponent  implements OnInit {
         heading:'General Surgery',
         image:'general_surgery.jfif',
         Doctors:[
-          {
-            doctor_image:'../../assets/doctor-5.png',
-            doctor_name:'Dr. Shashi Vadhanan',
-            experience : " 20+"
-          },
+          // {
+          //   doctor_image:'../../assets/doctor-5.png',
+          //   doctor_name:'Dr. Shashi Vadhanan',
+          //   experience : " 20+"
+          // },
           {
             doctor_image:'../../assets/doctor-3.png',
             doctor_name:'Dr. Atmaram D. C',

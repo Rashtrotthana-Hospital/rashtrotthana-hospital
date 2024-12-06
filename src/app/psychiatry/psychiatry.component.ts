@@ -29,10 +29,11 @@ export class PsychiatryComponent {
       heading:'Psychiatry',
       image:'Psychiatry.png',
       Doctors:[
+       
         {
-          doctor_image:'../../assets/doctor-27.png',
-          doctor_name:'Dr. Valli Kiran',
-          experience : "20"
+          doctor_image:'../../assets/doctor-57.png',
+          doctor_name:'Dr. Gopal Das C M',
+          experience : "11"
         },
       ]}];
       this.sanitizedContent = this.sanitizer.bypassSecurityTrustHtml(this.specialities[0].content);

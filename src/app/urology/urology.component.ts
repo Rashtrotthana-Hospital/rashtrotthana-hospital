@@ -30,15 +30,16 @@ export class UrologyComponent {
       image:'Urology.png',
       Doctors:[
         {
+          doctor_image:'Dr. Nagaraj Rao.png',
+          doctor_name:'Dr. Nagaraj Rao',
+          experience : "25"
+        },
+        {
           doctor_image:'Dr.Madhu S N .png',
           doctor_name:'Dr. Madhu S. N',
           experience : "14"
         },
-        {
-          doctor_image:'Dr. Nagaraj Rao.png',
-          doctor_name:'Dr. Nagaraj Rao',
-          experience : "25"
-        }
+        
       ]}];
       this.sanitizedContent = this.sanitizer.bypassSecurityTrustHtml(this.specialities[0].content);
         this.sanitizedContent1 = this.sanitizer.bypassSecurityTrustHtml(this.specialities[0].content_1);  

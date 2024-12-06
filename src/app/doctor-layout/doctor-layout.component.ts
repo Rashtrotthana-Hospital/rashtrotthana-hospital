@@ -642,18 +642,18 @@ export class DoctorLayoutComponent {
     //   time:'10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00',
     //   date:'Tuesday,Thursday and Saturday'
     // },
-    {
-      name: 'Dr. Harshitha R',
-      image: 'assets/doctor-46.png',
-      desgination: 'Consultant Internal Medicine',
-      about: 'Internal medicine specialist. Finished undergraduation from Sri devaraj urs medical college with a university gold medal and postgraduate from JSS University. A strong believer of prevention is better than cure with keen interest in lifestyle diseases , diabetes , obesity , women health and adult vaccination. Good communication skills with efficient patient education skills. Holistic approach towards  patient\'s health and medical conditions.',
-      speciality: 'INTERNAL MEDICINE',
-      areasOfExpertise: ['Diabetes, dyslipidemia and other metabolic diseases','Thyroid disorders',' Hypertension','  Infectious diseases','Adult vaccination','Diabetes and life style patient education'],
-      expertise: 'Years of Experience: 3',
-      qualification:'MBBS, MD',
-      time:'10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00',
-      date:'Sunday'
-    },
+    // {
+    //   name: 'Dr. Harshitha R',
+    //   image: 'assets/doctor-46.png',
+    //   desgination: 'Consultant Internal Medicine',
+    //   about: 'Internal medicine specialist. Finished undergraduation from Sri devaraj urs medical college with a university gold medal and postgraduate from JSS University. A strong believer of prevention is better than cure with keen interest in lifestyle diseases , diabetes , obesity , women health and adult vaccination. Good communication skills with efficient patient education skills. Holistic approach towards  patient\'s health and medical conditions.',
+    //   speciality: 'INTERNAL MEDICINE',
+    //   areasOfExpertise: ['Diabetes, dyslipidemia and other metabolic diseases','Thyroid disorders',' Hypertension','  Infectious diseases','Adult vaccination','Diabetes and life style patient education'],
+    //   expertise: 'Years of Experience: 3',
+    //   qualification:'MBBS, MD',
+    //   time:'10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00',
+    //   date:'Sunday'
+    // },
     {
       name: 'Dr. Bhavya',
       image: 'assets/doctor-47.png',

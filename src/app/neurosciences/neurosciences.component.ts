@@ -26,11 +26,6 @@ export class NeurosciencesComponent {
         image:'Neurosciences.png',
         Doctors:[
           {
-            doctor_image:'../../assets/doctor-38.png',
-            doctor_name:'Dr. Jaidev S',
-            experience : "4"
-          },
-          {
             doctor_image:'../../assets/doctor-5.png',
             doctor_name:'Brig (Dr) S. Shashivadhanan',
             experience : "30+"
@@ -40,6 +35,12 @@ export class NeurosciencesComponent {
             doctor_name:'Dr. Kalyani Dilip Karkare',
             experience : "14+"
           },
+          {
+            doctor_image:'../../assets/doctor-38.png',
+            doctor_name:'Dr. Jaidev S',
+            experience : "4"
+          },
+          
         ]}];
         this.sanitizedContent = this.sanitizer.bypassSecurityTrustHtml(this.specialities[0].content);
           this.sanitizedContent1 = this.sanitizer.bypassSecurityTrustHtml(this.specialities[0].content_1);
