@@ -251,7 +251,7 @@ export class DoctorLayoutComponent {
       desgination: 'CONSULTANT NEPHROLOGIST & TRANSPLANT PHYSICIAN',
       about: 'Dr. Santhosh S is graduated from AJIMS, MANAGALORE in 2008. He completed his post graduation (MD Internal medicine) from KIMS HUBLI.',
       speciality: 'NEPHROLOGY',
-      areasOfExpertise: ['General Dentistry', 'Endodontics'],
+      areasOfExpertise: ['General nephrology,', 'Diabetic kidney disease','Kidney transplantation','Glomerular diseases','Hemodialysis','Resistant hypertension','Pregnancy and kidney disease'],
       expertise: 'Years of Experience: 14',
       qualification:'MBBS, MD, DM(NEPHROLOGY)',
       time:'10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00,16:40-17:00,17:00-17:20,17:20-17:40,17:40-18:00,18:00-18:20,18:20-18:40,18:40-19:00,19:00-19:20,19:20-19:40,19:40-20:00,20:00-20:20,20:20-20:40,20:40-21:00,21:00-21:20,21:20-21:40,21:40-22:00,22:00-22:20,22:20-22:40,22:40-23:00,23:00-23:15,23:15-23:30',
@@ -658,7 +658,7 @@ export class DoctorLayoutComponent {
       name: 'Dr. Bhavya',
       image: 'assets/doctor-47.png',
       desgination: 'Consultant Internal Medicine',
-      about: 'Dr. Bhavya N is a consultant physician and Diabetologist with practicing experience of 7 years in the field of Internal Medicine.She is a gold medallist and state rank holder in MD Internal medicine in RGUHS. She has sound knowledge in her field and practices evidence-based medicine providing patient centred care.Being a female physician she has an extra mile of interest in women and family health care. She has keen interest in research and is updated on newer aspects and recent advancements in treatment modalities.',
+      about: 'Dr. Bhavya N is a consultant physician and Diabetologist with practicing experience of 7 years in the field of Internal Medicine. She is a gold medalist and state rank holder in MD Internal medicine in RGUHS. She has sound knowledge in her field and practices evidence-based medicine providing patient centred care. Being a female physician she has an extra mile of interest in women and family health care. She has keen interest in research and is updated on newer aspects and recent advancements in treatment modalities.',
       speciality: 'INTERNAL MEDICINE',
       areasOfExpertise: ['Diabetes','Diabetes Reversal','Thyroid related illness','Blood related disorders','Critical illness','Hypertension','Infectious disease'],
       expertise: 'Years of Experience: 7',
@@ -767,9 +767,9 @@ export class DoctorLayoutComponent {
         name: 'Dr. Sunil Kumar C',
         image: 'assets/doctor-62.png',
         desgination: 'ENT, Head and Neck',
-        about: 'Dr. G. V Giri graduated with an MBBS from JN Medical College, Belgaum and completed his MD in Internal Medicine from JJM Medical College, Davangere. He further specialized with a DM in Medical Oncology from Kidwai Cancer Institute. With 10 years of experience as an oncologist in the public sector, he is also a published author in national and international journals.',
+        about: 'Dr. Sunil Kumar has extensive experience in ENT and head/neck surgeries, including laser and thyroid procedures. He specializes in anti-aging, hair transplantation and facial trauma treatment. He has led various awareness programs in collaboration with WHO, and his insights on hearing loss have been featured on WHO\'s site.',
         speciality: 'ENT SPECIALITY',
-        areasOfExpertise: ['Breast Cancer','Gastrointestinal Cancer','Genito-Urinary Cancer','Head and Neck Cancer','Lung Cancer'],
+        areasOfExpertise: ['Vertigo treatment','Ear, nose, throat (ENT) and head/neck surgery','Laser surgery','Emergency ENT procedures','Coablation surgery','Vocal cord surgery','Thyroid surgery','Cosmetic ENT surgery','Endoscopic sinus surgery','Microscopic ear surgery'],
         expertise: 'Years of Experience: 10+',
         qualification:' MS ENT, DHM, IFAAM',
         time:'18:30-18:50,18:50-19:10,19:10-19:30',
@@ -781,26 +781,19 @@ export class DoctorLayoutComponent {
         desgination : "Gastroenterologist",
         about : "Dr. Man Mohan U.S. is a highly qualified gastroenterologist with extensive experience in managing complex gastrointestinal and hepatology conditions. Currently serving as an Assistant Professor at the Institute of Gastroenterology and Organ Transplant (IGOT), he has a keen interest in clinical research, with multiple publications and presentations at prestigious national and international conferences. He specializes in advanced diagnostic and therapeutic procedures, focusing on patient-centered care and innovative treatments in medical gastroenterology.",
         speciality : "GASTRO SCIENCES",
-        areasOfExpertise : [ "Acid Reflux / GERD",
-          "Gastritis & Peptic Ulcer Disease",
-          "Celiac Disease",
-          "Ulcerative Colitis & Crohn's Disease",
-          "Inflammatory Bowel Disorders (IBD)",
-          "Irritable Bowel Syndrome (IBS)",
-          "Chronic Constipation",
-          "Diarrhea",
-          "Colitis & Colon Polyps",
-          "Chronic Polyps / Cancer",
-          "Bleeding Per Rectum",
-          "GI-Related Malignancy",
-          "Fatty Liver Disease",
-          "Alcoholic Liver Disease",
-          "Cirrhosis & Liver Fibrosis",
-          "Liver-Related Issues",
-          "Pancreatitis",
-          "Gallstones & Biliary Disorders",
-          "Abdominal Pain, Bloating & Nausea",
-          "Hepatitis & Liver Disorders"],
+        areasOfExpertise: [
+          "Acid Reflux / GERD, Gastritis & Peptic Ulcer Disease",
+          "Celiac Disease, Ulcerative Colitis & Crohn's Disease",
+          "Inflammatory Bowel Disorders (IBD), Irritable Bowel Syndrome (IBS)",
+          "Chronic Constipation, Diarrhea",
+          "Colitis & Colon Polyps, Chronic Polyps / Cancer",
+          "Bleeding Per Rectum, GI-Related Malignancy",
+          "Fatty Liver Disease, Alcoholic Liver Disease",
+          "Cirrhosis & Liver Fibrosis, Liver-Related Issues",
+          "Pancreatitis, Gallstones & Biliary Disorders",
+          "Abdominal Pain, Bloating & Nausea, Hepatitis & Liver Disorders"
+        ],
+        
         expertise : "Years of Experience: 8+",
         qualification : "MBBS, MD in General Medicine, Dr.N.B in Medical Gastroenterology",
         time : "",
@@ -831,7 +824,7 @@ export class DoctorLayoutComponent {
         date : ""
       }
   ]
-  specialDoctors = ['Dr. Pramod S. Chinder', 'Dr. Meena H. B', 'Brig (Dr) S. Shashivadhanan', 'Dr. Ravishankar. D', 'Dr. Sapna S','Dr. Kalyani Dilip Karkare'];
+  specialDoctors = ['Dr. Pramod S. Chinder', 'Dr. Meena H. B', 'Brig (Dr) S. Shashivadhanan', 'Dr. Ravishankar. D', 'Dr. Sapna S','Dr. Kalyani Dilip Karkare','Dr. Man Mohan U. S'];
 
   constructor(private fb: FormBuilder, public dialog: MatDialog,private titleService: Title, private metaService: Meta) {
     // this.subjects = [
