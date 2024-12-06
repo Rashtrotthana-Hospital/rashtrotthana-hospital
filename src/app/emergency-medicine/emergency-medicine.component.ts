@@ -24,9 +24,9 @@ export class EmergencyMedicineComponent {
         image:'emergency medicine.png',
         Doctors:[
           {
-            doctor_image:'',
-            doctor_name:'',
-            experience : ''
+            doctor_image:'../../assets/doctor-7.png',
+            doctor_name:'Dr. (Col)Anand Shankar',
+            experience : '31'
           }
           // {
           //   doctor_image:'Dr.Geethanjali K G.png',
