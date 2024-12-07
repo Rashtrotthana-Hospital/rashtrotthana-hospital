@@ -23,18 +23,20 @@ export class HerniaComponent {
 
   doctors =[
     // {
-    //   image: 'assets/doctor-5.png',
+    //   image: 'assets/Dr-S-Shashivadhanan.png',
     //   name: 'Dr. Shashi Vadhanan',
     // },
     {
-      image: 'assets/doctor-3.png',
+      image: 'assets/Dr-Atmaram-D-C.png',
       name: 'Dr. Atmaram D. C',
-      department : 'GASTROENTEROLOGLIST'
+      department : 'GASTROENTEROLOGLIST',
+      alt : 'Dr. Atmaram D. C | Best laparoscopic Surgeon in Bangalore | Rashtrotthana Hospital'
     },
     {
-      image: 'assets/doctor-25.png',
+      image: 'assets/Dr-Nishanth-Lakshmikantha.png',
       name: 'Dr. Nishanth Lakshmikanth',
-      department : 'SURGERY/GASTROSCIENCES'
+      department : 'SURGERY/GASTROSCIENCES',
+      alt : 'Dr. Nishanth Lakshmikantha | Best General & GI Surgeon in Bangalore | Rashtrotthana Hospital'
     }
   ]
   contactus(){
@@ -43,7 +45,7 @@ export class HerniaComponent {
 
   // doctors =[
   //   {
-  //     image : '../../assets/doctor-14.png',
+  //     image : '../../assets/yoga/Dr-Suvarnini-Konale.png',
   //     name : "Dr. Suvarnini Konale",
   //     section : "BAMS, M.D. (Ayurveda)",
   //     designation : "LIFESTYLE",

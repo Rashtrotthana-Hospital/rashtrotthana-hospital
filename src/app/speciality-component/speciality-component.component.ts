@@ -17,6 +17,7 @@ export class SpecialityComponentComponent {
 @Input()image:string='';
 @Input() activeSpecialty: string = '';
 // @Input() experience: string = '';
+@Input() docalt: any
 
   isActive(specialty: string): boolean {
     return this.activeSpecialty === specialty;

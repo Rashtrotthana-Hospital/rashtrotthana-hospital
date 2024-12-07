@@ -1,26 +1,27 @@
 <div>
-    <video class="video" controls autoplay muted poster="../../assets/video-thumbnail.png">
+    <!-- <video class="video" controls autoplay muted poster="../../assets/video-thumbnail.png">
         <source src="../../assets/Rastrotthana_Hospital.mp4" type="video/mp4">
-    </video>
-
+    </video> -->
+    <img src="../../assets/h_banner.jpeg" alt="" class="home_banner">
 </div>
+
 <div class="second-container">
     <div class="container">
         <div class="icons">
             <ng-container *ngFor="let feature of features">
                 <div [class]="'icon ' + feature.className" class="bg-features">
-                    <img [src]="'../../assets/' + feature.icon" alt="best multispeciality hospital in bangalore"
-                        class="primary" (mouseover)="onMouseOver(feature.key)" (mouseleave)="onMouseOut()"
+                    <img [src]="'../../assets/' + feature.icon" alt={{feature.alt}} class="primary"
+                        (mouseover)="onMouseOver(feature.key)" (mouseleave)="onMouseOut()"
                         (click)="navigateTo(feature.url)">
-                    <img [src]="'../../assets/' + feature.image" alt="best multispeciality hospital in bangalore"
-                        class="secondary" (mouseover)="onMouseOver(feature.key)" (mouseleave)="onMouseOut()"
+                    <img [src]="'../../assets/' + feature.image" alt={{feature.alt}} class="secondary"
+                        (mouseover)="onMouseOver(feature.key)" (mouseleave)="onMouseOut()"
                         (click)="navigateTo(feature.url)">
                 </div>
             </ng-container>
         </div>
         <div class="text-container">
             <div class="number-one">
-                <img class="sheild" [src]="image[showImage]"  alt="best multispeciality hospital in bangalore">
+                <img class="sheild" [src]="image[showImage]" alt="best multispeciality hospital near me">
             </div>
             <div class="title">{{title[showTitle]}}</div>
             <div class="content">{{ content[showContent] }}</div>
@@ -107,14 +108,15 @@
         </div>
         <div class="bg-service" (click)="dialysis()">
             <img class="primary third" src="../../assets/Dialysis.png" alt="best multispeciality hospital in bangalore">
-            <img class="secondary third" src="../../assets/Dialysis-1.png"  alt="best multispeciality hospital in bangalore">
+            <img class="secondary third" src="../../assets/Dialysis-1.png"
+                alt="best multispeciality hospital in bangalore">
         </div>
     </div>
 </div>
 <div class="doctor-view-all">
     <div class="doctor-section">
         <div class="doctor-container">
-            <img class="doctor-image" src="../../assets/doctor-7.png" alt="best multispeciality hospital in bangalore">
+            <img class="doctor-image" src="../../assets/Dr-Anand-Shankar.png" alt="Dr. (Col) Anand Shankar | Best Anesthesiology Doctor in Bangalore | Rashtrotthana Hospital">
             <div class="doctor-content">
                 <div class="doctor-name">
                     Dr. (Col)Anand Shankar
@@ -125,7 +127,7 @@
             </div>
         </div>
         <div class="doctor-container">
-            <img class="doctor-image" src="../../assets/doctor-8.png" alt="best multispeciality hospital in bangalore">
+            <img class="doctor-image" src="../../assets/Dr-H-N-Shyla.png" alt="Dr. H. N. Shyla | Best Dental Doctor in Bangalore | Rashtrotthana Hospital">
             <div class="doctor-content">
                 <div class="doctor-name">
                     Dr. H. N. Shyla
@@ -136,7 +138,7 @@
             </div>
         </div>
         <div class="doctor-container">
-            <img class="doctor-image" src="../../assets/doctor-2.png" alt="best multispeciality hospital in bangalore">
+            <img class="doctor-image" src="../../assets/Dr-Latha-Venkataram.png" alt="Dr. Latha Venkataram | Top Obstetrics & Gynaecologist in banaglore | Rashtrotthana Hospital">
             <div class="doctor-content">
                 <div class="doctor-name">
                     Dr. Latha Venkataram
@@ -158,12 +160,24 @@
             <div class="about">About Us</div>
         </div><br>
         <h1 class="about-us-heading">
-            Human Health Care Services<br>with State-Of-The-Art-<br>Infrastructure at the Best <br>Multispeciality Hospital in Bangalore.
+            Human Health Care Services<br>with State-Of-The-Art-<br>Infrastructure at the Best <br>Multispeciality
+            Hospital in Bangalore.
         </h1>
         <div class="about-us-content">
             Jayadev Memorial Rashtrotthana Hospital & Research Centre, a 162-bed Integrated Multi-Specialty Tertiary
             Care Hospital, is recognized as<b> the best multispeciality hospital in Bangalore</b>, offering world-class
-            healthcare facilities. As part of the Rashtrotthana Trust, we provide expert, holistic care in <a style="text-decoration: none; margin:0;padding: 0;" href="https://www.rashtrotthanahospital.com/specialities/best-general-medicine-hospital-in-bangalore">Modern Medicine</a>, <a style="text-decoration: none; margin:0;padding: 0;" href="https://www.rashtrotthanahospital.com/specialities/ayurvedic-treatment-bangalore">Ayurveda</a>, <a style="text-decoration: none; margin:0;padding: 0;" href="https://www.rashtrotthanahospital.com/specialities/homeopathy-treatment-bangalore">Homeopathy</a>, <a style="text-decoration: none; margin:0;padding: 0;" href="https://www.rashtrotthanahospital.com/specialities/yoga-therapy-bangalore">Yoga</a> and <a style="text-decoration: none; margin:0;padding: 0;" href="http://localhost:53618/specialities/lifestyle-medicine-bangalore">Naturopathy</a>. Our renowned doctors and specialists ensure
+            healthcare facilities. As part of the Rashtrotthana Trust, we provide expert, holistic care in <a
+                style="text-decoration: none; margin:0;padding: 0;"
+                href="https://www.rashtrotthanahospital.com/specialities/best-general-medicine-hospital-in-bangalore">Modern
+                Medicine</a>, <a style="text-decoration: none; margin:0;padding: 0;"
+                href="https://www.rashtrotthanahospital.com/specialities/ayurvedic-treatment-bangalore">Ayurveda</a>, <a
+                style="text-decoration: none; margin:0;padding: 0;"
+                href="https://www.rashtrotthanahospital.com/specialities/homeopathy-treatment-bangalore">Homeopathy</a>,
+            <a style="text-decoration: none; margin:0;padding: 0;"
+                href="https://www.rashtrotthanahospital.com/specialities/yoga-therapy-bangalore">Yoga</a> and <a
+                style="text-decoration: none; margin:0;padding: 0;"
+                href="http://localhost:53618/specialities/lifestyle-medicine-bangalore">Naturopathy</a>. Our renowned
+            doctors and specialists ensure
             comprehensive, patient-centered treatment while maintaining affordability and advanced care solutions.
         </div>
         <div class="read-button">
@@ -171,12 +185,15 @@
         </div>
     </div>
     <div class="about-image-container">
-        <img class="about-image" src="../../assets/about-img.png" alt="best multispeciality hospital in bangalore">
+        <img class="about-image" src="../../assets/best_multispeciality_hospital_in_bangalore.png"
+            alt="best multispeciality hospital in bangalore">
         <div class="about-image-content">
-            <img src="../../assets/curly-arrow.png"  alt="best multispeciality hospital in bangalore">
+            <img src="../../assets/curly-arrow.png" alt="best multispeciality hospital in bangalore">
             The guiding force behind Rashtrotthana Parishat, Sri M. C Jayadev, envisioned, nurtured and mentored the
             organization from its inception. As the embodiment of duty and nationalism, his life-long commitment to 'One
-            Life, One Mission' was unparalleled. <a style="text-decoration: none; margin:0;padding: 0;" href="https://rashtrotthana.org/">Rashtrotthana Parishat</a> continues to work towards building a prosperous
+            Life, One Mission' was unparalleled. <a style="text-decoration: none; margin:0;padding: 0;"
+                href="https://rashtrotthana.org/">Rashtrotthana Parishat</a> continues to work towards building a
+            prosperous
             and healthy society, founded on the strong, enduring principles laid by him. Today, the hospital stands as
             one of <b> the best multispeciality hospital in Bangalore</b>, contributing to society's well-being through
             world-class healthcare.
@@ -304,10 +321,14 @@
                         alt="best multispeciality hospital in bangalore">
                 </div>
                 <div class="hospital">
-                    <img src="../../assets/hospital-1.png" alt="best multispeciality hospital in bangalore">
-                    <img src="../../assets/hospital-2.png" alt="best multispeciality hospital in bangalore">
-                    <img src="../../assets/hospital-3.png" alt="best multispeciality hospital in bangalore">
-                    <img src="../../assets/hospital-1.png" alt="best multispeciality hospital in bangalore">
+                    <img src="../../assets/best_multispeciality_hospital_in_rrnagar.png"
+                        alt="best multispeciality hospital in rrnagar">
+                    <img src="../../assets/affordable_multispeciality_hospital_in_rrnagar.png"
+                        alt="affordable multispeciality hospital in  rrnagar">
+                    <img src="../../assets/top_multispeciality_hospital_in_rrnagar.png"
+                        alt="top multispeciality hospital in rrnagar">
+                    <img src="../../assets/best_multispeciality_hospital_in_rrnagar.png"
+                        alt="best multispeciality hospital in rrnagar">
                 </div>
             </div>
         </div>

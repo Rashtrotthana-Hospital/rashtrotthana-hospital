@@ -31,18 +31,21 @@ export class KneeReplacementComponent implements OnInit {
 
   doctors =[
     {
-      image : 'assets/doctor-52.png',
+      image : 'assets/Dr-Mahesh-Kulkarni.png',
       name : 'Dr. Mahesh Kulkarni',
       designation : 'Orthopaedics',
+      alt : 'Dr. Mahesh Kulkarni | Best Ortho Doctor in Bangalore | Rashtrotthana Hospital'
     },
     {
-      image : 'assets/doctor-21.png',
+      image : 'assets/Dr-Sujayendra-D-M.png',
       name : 'Dr. Sujayendra D. M',
       designation : 'Orthopaedics',
+      alt : 'Dr. Sujayendra D. M | Best Orthopaedic Doctor in Bangalore | Rashtrotthana Hospital'
     },{
-      image : 'assets/doctor-37.png',
+      image : 'assets/Dr-Nikhil-Hegde.png',
       name : 'Dr. Nikhil Hegde',
       designation : 'Orthopaedics',
+      alt: 'Dr. Nikhil Hegde | Best Orthopaedic Consultant in Bangalore | Rashtrotthana Hospital'
     }
   ]
 

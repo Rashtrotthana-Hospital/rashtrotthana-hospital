@@ -28,21 +28,22 @@ export class AyurvedhaDoctorsCarouselComponent {
 
 
     {
-      image: '../../assets/doctor-61.jpg',
+      image: '../../assets/Dr-Venkatesh-H-S.jpg',
       name: "Dr. H. S Venkatesh",
       section: "BSc, BAMS, FAHO, FAGE",
       designation: "Ayurveda Specialist",
       Department: "Agnivesha Institute Of Ayurveda",
-      experience: "25"
+      experience: "25",
+      alt : 'Dr. Venkatesh H. S | Best Ayurveda Endocrinologist in Bangalore | Rashtrotthana Hospital'
     },
     {
-      image: '../../assets/doctor-60.jpg',
+      image: '../../assets/Dr-Sapna-S.jpg',
       name: "Dr. Sapna S",
       section: "MD (Ayu) in Rasa Shastra and Bhaishajya Kalpana, PG Dip (Yoga) Diploma in Medical Astrology",
       designation: "Ayurveda Specialist",
       Department: "Agnivesha Institute Of Ayurveda",
-      experience: "20"
-
+      experience: "20",
+      alt : 'Dr. Sapna S | Best Ayurveda Specialist in Bangalore | Rashtrotthana Hospital'
     },
   ]
 }

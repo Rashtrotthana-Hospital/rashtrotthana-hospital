@@ -30,8 +30,9 @@ export class EndoscopyComponent implements OnInit {
     {
       main_heading:'Endoscopy',
       heading:'Endoscopy',
-      image_1:'endoscopy-service-1.png',
-      image_2:'endoscopy-service-2.png',
+      image_1:'rashtrotthana-hospital-endoscopy-services.png',
+      image_2:'best-Endoscopy-lab-in-bangalore-rashtrotthana-Hospital.png',
+
       subFacilities:[
         {
           subHeading:'Expert Endoscopy Services at Rashtrotthana Hospital:',
@@ -46,7 +47,10 @@ export class EndoscopyComponent implements OnInit {
           subContent:'At Rashtrotthana Hospital, we understand that undergoing an endoscopic procedure can be a source of anxiety for many patients. That is why our team is committed to providing compassionate care and support throughout your experience. From pre-procedure preparation to post-procedure follow-up, we prioritize your comfort and well-being every step of the way. Our goal is to ensure that you feel informed, empowered and confident in your care decisions, allowing you to focus on your health with peace of mind.'
         }
       ],
-      bg_image:'endoscopy-bg.png'
+      bg_image:'rashtrotthana-hospital-advanced-endoscopy-services.png',
+      alt1 : 'Rashtrotthana Hospital Endoscopy Services',
+      alt2 : 'Best Endoscopy Lab in Bangalore - Rashtrotthana Hospital',
+      alt3 : 'Rashtrotthana Hospital Advanced Endoscopy Services',
     }
     ];
       sanitizeSubFacilitiesContent(): void {

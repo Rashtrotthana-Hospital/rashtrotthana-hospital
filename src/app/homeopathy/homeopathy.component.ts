@@ -21,11 +21,12 @@ export class HomeopathyComponent {
 
   doctors =[
     {
-      image : '../../assets/doctor-39.png',
+      image : '../../assets/Dr-Anusha-Mutalik-Desai.png',
       name : "Dr. Anusha Mutalik Desai",
       section : "BHMS, MD(HOM)",
       designation : "HOMEOPATHY",
-      experience : "8"
+      experience : "8",
+      alt : 'Dr. Anusha Mutalik Desai | Best Homeopathy Doctor in Bangalore | Rashtrotthana Hospital'
     }
   ]
 

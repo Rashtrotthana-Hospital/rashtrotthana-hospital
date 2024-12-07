@@ -3,7 +3,7 @@
 }
 .about-us-container{
     padding-top:8vh;
-    background: url('../../assets/about-bg.png')no-repeat;
+    background: url('../../assets/about_rashtrotthana_hospital.png')no-repeat;
     background-size: cover;
 }
 .about-us-container,.president-container{
@@ -318,7 +318,7 @@ flex-shrink: 0;
 {
     .about-us-container{
         padding-top:4vh;
-        background: url('../../assets/about-us-res-bg.png')no-repeat;
+        background: url('../../assets/about_rashtrotthana_hospital_res.png')no-repeat;
         background-size: cover;
     }
    .about-us-container,.mission-vision{

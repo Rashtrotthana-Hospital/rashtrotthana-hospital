@@ -11,6 +11,7 @@ export class DoctorsComponent {
   @Input() desgination: any;
   @Input() about:any;
   @Input() expertise: any;
+  @Input() alt: any
   @Output() viewProfile = new EventEmitter<void>();
   @Output() bookAppointment = new EventEmitter<void>();
 

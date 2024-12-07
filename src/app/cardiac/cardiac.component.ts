@@ -26,12 +26,14 @@ export class CardiacComponent {
       content:`The Cardiac Sciences Department at Rashtrotthana Hospital is committed to delivering specialized care for heart and vascular health. Our team of highly skilled cardiologists and cardiovascular surgeons provides thorough diagnostics, treatment and preventive care for a range of cardiovascular conditions, including <a href="https://simple.wikipedia.org/wiki/Heart_disease">heart disease</a>, hypertension and complex coronary conditions. With access to advanced diagnostic tools such as Echocardiogram (ECHO), Treadmill Test (TMT), Electrocardiogram (ECG) and Holter Monitoring, we ensure precise and timely diagnosis, allowing our specialists to create effective, personalized treatment plans. From managing chronic heart conditions to emergency care for acute cardiac events, we are equipped to support each patient\'s heart health journey.`,
       content_1:'Our comprehensive cardiac care services include medical, interventional and surgical treatments tailored to individual patient needs. Equipped with state-of-the-art technology, our department specializes in minimally invasive and catheter-based interventions, supporting patients through every step of their treatment and recovery. Whether addressing arrhythmias, structural heart issues or preventive cardiology, our Cardiac Sciences Department is dedicated to improving patient outcomes with compassionate and advanced cardiovascular care.',
       heading:'Cardiac Sciences',
-      image:'Cardiac Sciences.png',
+      image:'best_cardiac_sciences_treatment_in_bengaluru.png',
+      alt : "Best Cardiac Sciences Treatment in Bengaluru",
       Doctors:[
         {
-          doctor_image:'../../assets/doctor-22.png',
+          doctor_image:'../../assets/Dr-Suhas-Raj-S.png',
           doctor_name:'Dr. Suhas Raj S',
-          experience : '8'
+          experience : '8',
+          docalt : 'Dr. Suhas Raj S | Best Cardiologist in Bangalore | Rashtrotthana Hospital'
         },
       ]}];
       this.sanitizedContent = this.sanitizer.bypassSecurityTrustHtml(this.specialities[0].content);

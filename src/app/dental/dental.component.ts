@@ -20,7 +20,8 @@ export class DentalComponent {
         content:`The Dental Sciences Department at Rashtrotthana Hospital offers a comprehensive range of services dedicated to restoring and maintaining oral health. Equipped with state-of-the-art technology, our facility provides treatments for everything from routine dental care to advanced procedures. Our skilled team of dentists and specialists covers all aspects of dental care, including preventive, restorative, cosmetic and surgical treatments. Services like cavity restoration, tooth extractions and complex procedures, such as <a href="https://en.wikipedia.org/wiki/Dental_implant">dental implants</a> and oral surgeries, are available at accessible prices, ensuring patients receive top-quality care.`,
         content_1:'We offer sub-specializations within dentistry, including Orthodontics, Pedodontics, Periodontics, Prosthodontics, Endodontics and Implantology. Our in-house Oral & Maxillofacial Surgery team provides 24/7 trauma care for accident-related dental injuries, enhancing our commitment to emergency support. In addition to patient care, we conduct dental health camps with local communities, emphasizing the importance of oral hygiene and preventive care. At Rashtrotthana Hospital, our Dental Sciences Department is dedicated to delivering high-quality, patient-centered dental solutions for a healthier smile.',
         heading:'Dental Sciences',
-        image:'Dental Sciences.png',
+        image:'best_dental_treatment_in_bengaluru.png',
+        alt : "Best Dental Treatment in Bengaluru",
         Doctors:[
           {
             doctor_image:'Dr. H N Shyla.png',
@@ -28,18 +29,19 @@ export class DentalComponent {
             experience : "20"
           },
           {
-            doctor_image:'Dr.Geethanjali K G.png',
+            doctor_image:'../../assets/Dr-Geethanjali-K-G.png',
             doctor_name:'Dr. Geethanjali K. G',
-            experience : "16"
+            experience : "18",
+            docalt : 'Dr. Geethanjali K. G | Best Dental Surgery Doctor in Bangalore | Rashtrotthana Hospital'
           },
           {
-            doctor_image:'../../assets/doctor-36.png',
+            doctor_image:'../../assets/Dr-Vishnuvardhan-V.png',
             doctor_name:'Dr. Vishnuvardhan V',
-            experience : "6"
-          }
+            experience : "6",
+            docalt : 'Dr. Vishnuvardhan V | Best Orthodontics in Bangalore | Rashtrotthana Hospital'
+          },
         ]}];
         this.sanitizedContent = this.sanitizer.bypassSecurityTrustHtml(this.specialities[0].content);
           this.sanitizedContent1 = this.sanitizer.bypassSecurityTrustHtml(this.specialities[0 ].content_1);
   }
-
 }

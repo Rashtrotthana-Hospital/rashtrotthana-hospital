@@ -3,9 +3,12 @@
     <div class="heading">
       Expert Care, Experienced Hands: Your Health, Our Priority!
     </div>
-    <div class="content">Experience expert, compassionate care at <a style="text-decoration: none;" href="https://www.rashtrotthanahospital.com/">best multispeciality hospital bangalore</a>. Our highly
+    <div class="content">Experience expert, compassionate care at <a style="text-decoration: none;"
+        href="https://www.rashtrotthanahospital.com/">best multispeciality hospital bangalore</a>. Our highly
       skilled team of doctors is dedicated to providing personalized healthcare tailored to your needs, ensuring your
-      well-being every step of the way. With world-class <a style="text-decoration: none;" href="https://en.wikipedia.org/wiki/Medical_specialty">medical</a> expertise and a patient-centered approach, we focus on
+      well-being every step of the way. With world-class <a style="text-decoration: none;"
+        href="https://en.wikipedia.org/wiki/Medical_specialty">medical</a> expertise and a patient-centered approach, we
+      focus on
       preserving health and restoring hope.
     </div>
   </div>
@@ -43,7 +46,7 @@
   <ng-container *ngIf="filteredDoctors.length > 0; else noFilteredDoctors">
     <ng-container *ngFor="let doctor of filteredDoctors">
       <div class="doctor-card">
-        <app-doctors [image]="doctor.image" [name]="doctor.name" [desgination]="doctor.desgination"
+        <app-doctors [image]="doctor.image" [alt] = "doctor.alt" [name]="doctor.name" [desgination]="doctor.desgination"
           [expertise]="doctor.expertise" (viewProfile)="selectDoctor(doctor)"
           (bookAppointment)="selectDoctorAppoint(doctor)"></app-doctors>
       </div>
@@ -56,7 +59,7 @@
   <div class="doctors-left">
     <div *ngFor="let doctor of visibleDoctors" (click)="selectDoctor(doctor)">
       <div class="doctor-image">
-        <img class="doctor-image" [src]="doctor.image" alt="">
+        <img class="doctor-image" [src]="doctor.image" [alt]="doctor.alt">
       </div>
       <div class="doctor-name-left">
         {{doctor.name}}
@@ -67,7 +70,7 @@
     <button class="close-btn" (click)="closeDoctorDetails()">×</button>
     <div class="section-1">
       <div class="image">
-        <img class="doctor-image-overlay" [src]=" selectedDoctor.image">
+        <img class="doctor-image-overlay" [src]=" selectedDoctor.image" [alt]="selectedDoctor.alt">
       </div>
       <div class="doctor-name-desgination">
         <div class="doctor-name">

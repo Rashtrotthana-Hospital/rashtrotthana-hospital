@@ -70,44 +70,48 @@ export class HomeComponent implements OnInit {
   features = [
     {
       name: 'Yoga',
-      icon: 'yoga.png',
+      icon: 'best_yoga_hospital_in_rrnagar.png',
       className: 'yoga',
       key: 'yoga',
       image: 'yoga-hover.png',
-      url: 'yoga-therapy-bangalore'
+      url: 'yoga-therapy-bangalore',
+      alt : 'best yoga hospital in rrnagar'
     },
     {
       name: 'Naturopathy',
-      icon: 'naturopathy.png',
+      icon: 'best_naturopathy_hospital_in_rrnagar.png',
       className: 'naturopathy',
       key: 'naturopathy',
       image: 'naturopathy-hover.png',
-      url: 'lifestyle-medicine-bangalore'
+      url: 'lifestyle-medicine-bangalore',
+      alt : 'best naturopathy hospital in rrnagar'
     },
     {
       name: 'Modern Medicine',
-      icon: 'modern medicine.png',
+      icon: 'best_modern_medicine_hospital_in_rrnagar.png',
       className: 'modern-medicine',
       key: 'modern-medicine',
       image: 'modern-medicine-hover.png',
-      url: '/specialities/best-general-medicine-hospital-in-bangalore'
+      url: '/specialities/best-general-medicine-hospital-in-bangalore',
+      alt : 'best modern medicine hospital in rrnagar'
     },
     {
       name: 'Ayurveda',
-      icon: 'ayurveda.png',
+      icon: 'best_ayurveda_hospital_in_rrnagar.png',
       className: 'ayurveda',
       key: 'ayurveda',
       image: 'ayurveda-hover.png',
-      url: 'ayurvedic-treatment-bangalore'
-
+      url: 'ayurvedic-treatment-bangalore',
+      alt : 'best ayurveda hospital in rrnagar'
     },
     {
       name: 'Homeopathy',
-      icon: 'homeopathy.png',
+      icon: 'best_homeopathy_hospital_in_rrnagar.png',
       className: 'homeopathy',
       key: 'homeopathy',
       image: 'Homeopaathy-hover.png',
-      url: 'homeopathy-treatment-bangalore'
+      url: 'homeopathy-treatment-bangalore',
+      alt : 'best homeopathy hospital in rrnagar'
     }
   ];
   navigateTo(url: string) {
@@ -144,7 +148,7 @@ title:any ={
   'homeopathy': 'Homeopathy'
 }
 image:any ={
-  'default': 'assets/sheild_num.png',
+  'default': 'assets/best_multispeciality_hospital_near_me.png',
   'yoga': 'assets/yoga-outline.png',
   'naturopathy': 'assets/naturopathy-outline.png',
   'modern-medicine': 'assets/medicine-outline.png',

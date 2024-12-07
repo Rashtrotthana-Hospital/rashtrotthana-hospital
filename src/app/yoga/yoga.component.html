@@ -3,12 +3,12 @@
     <div class="container_1">
         <!-- contaoner 1 left side image-->
         <div class="con_1_lft_img">
-            <img src="../../assets/yoga/con_1_img.png" alt="" />
+            <img src="../../assets/yoga/rashtrotthana-hospital-prenatal-yoga.png" alt="Rashtrotthana Hospital Prenatal Yoga" />
         </div>
         <!-- container 1 right side image -->
         <div class="con_1_right">
             <div class="con_1_head">
-                <img src="../../assets/yoga/con_1_icon.png" alt="" />
+                <img src="../../assets/yoga/rashtrotthana-hospital-postnatal-yoga.png" alt="Rashtrotthana Hospital Postnatal Yoga" />
                 <p class="con_1_head_txt"> YOGA</p>
             </div>
             <div class="con_1_para">
@@ -53,8 +53,8 @@
             </ul>
         </div>
         <div class="con_2_right">
-            <img src="../../assets/yoga/con_2_img.png" alt="" class="con_2_img" />
-            <img src="../../assets/yoga/con_2_responsive_img.png" class="con_2_responsive_img" />
+            <img src="../../assets/yoga/prenatal-yoga-classes-at-rashtrotthana-hospital.png" alt="Prenatal Yoga Classes at Rashtrotthana Hospital" class="con_2_img" />
+            <img src="../../assets/yoga/rashtrotthana-hospital-pregnancy-yoga-programs.png" alt="Rashtrotthana Hospital Pregnancy Yoga Programs" class="con_2_responsive_img" />
         </div>
     </div>
 
@@ -62,8 +62,8 @@
 
     <div class="container_3">
         <div class="con_3_right">
-            <img src="../../assets/yoga/con_3_img.png" alt="" class="con_3_img" />
-            <img src="../../assets/yoga/conatiner_3_responsive.png" alt="" class="con_3_responsive_img" />
+            <img src="../../assets/yoga/postnatal-yoga-therapy-at-rashtrotthana-hospital.png" alt="Postnatal Yoga Therapy at Rashtrotthana Hospital" class="con_3_img" />
+            <img src="../../assets/yoga/rashtrotthana-hospital-yoga-for-new-mothers.png" alt="Rashtrotthana Hospital Yoga for New Mothers" class="con_3_responsive_img" />
         </div>
         <div class="con_3_lft">
             <p class="con_3_head">
@@ -116,7 +116,7 @@
         <div class="doctors_flex">
           <div class="doc_details" *ngFor="let slide of doctors; let i = index" [ngClass]="{ active: i === 0 }">
             <div class="doc_1">
-              <img [src]="slide.image" alt="{{ slide.name }}" />
+              <img [src]="slide.image" alt="{{ slide.alt }}" />
               <p class="doc_name">{{ slide.name }}</p>
               <p class="section">{{ slide.section }}</p>
               <p class="designation">{{ slide.designation }}</p>

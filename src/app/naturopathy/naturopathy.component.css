@@ -12,13 +12,14 @@
 
 
 .container_1 {
-    background-image: url('../../assets/naturopathy-bg.png');
+    background-image: url('../../assets/natural-therapy-services-at-rashtrotthana-hospital.png');
     background-size: cover;
     padding: 300px 70px 50px 0;
     display: flex;
     justify-content: right;
     align-items: end;
     flex-direction: column;
+    margin-top: 70px;
 }
 
 .con_1_heading {
@@ -279,7 +280,7 @@
 
 @media (max-width:800px) {
     .container_1 {
-        background-image: url('../../assets/naturopathy/Naturopathy_tab.jpeg');
+        background-image: url('../../assets/naturopathy/rashtrotthana-hospital-naturopathy-for-chronic-illnesses.jpeg');
         background-size: cover;
         padding: 150px 0;
         height: 700px;
@@ -382,7 +383,7 @@
     /* container 1 */
 
     .container_1 {
-        background-image: url('../../assets/naturopathy/responsive_bg.png');
+        background-image: url('../../assets/naturopathy/lifestyle-medicine-programs-at-rashtrotthana-hospital.png');
         background-size: cover;
         width: 100%;
         height: 100%;
@@ -527,7 +528,7 @@
     /* container 1 */
 
     .container_1 {
-        background-image: url('../../assets/naturopathy/responsive_bg.png');
+        background-image: url('../../assets/naturopathy/lifestyle-medicine-programs-at-rashtrotthana-hospital.png');
         background-size: cover;
         width: 100%;
         height: 100%;
@@ -665,7 +666,7 @@
     /* container 1 */
 
     .container_1 {
-        background-image: url('../../assets/naturopathy/responsive_bg.png');
+        background-image: url('../../assets/naturopathy/lifestyle-medicine-programs-at-rashtrotthana-hospital.png');
         background-size: cover;
         width: 100%;
         height: 100%;
