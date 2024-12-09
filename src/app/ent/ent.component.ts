@@ -27,21 +27,23 @@ export class ENTComponent {
         alt :'Best ENT Treatment in Bengaluru',
         Doctors:[
           {
-            doctor_image:'../../assets/Dr-Manasa-N-A.png',
-            doctor_name:'Dr. Manasa N. A',
-            experience : "7",
-            docalt : 'Dr. Manasa N. A | Best ENT Consultant in Bangalore | Rashtrotthana Hospital'
+            doctor_image:'../../assets/Dr-Sunil-Kumar-C.png',
+            doctor_name:'Dr. Sunil Kumar C',
+            experience : "10+",
+            docalt:'Dr. Sunil Kumar C | Best  ENT, Head and Neck Surgeon in Bangalore | Rashtrotthana Hospital'
           },
+
           {
             doctor_image:'../../assets/Dr-Narendranath-A.png',
             doctor_name:'Dr. Narendranath A',
             experience : "10",
-            docalt : 'Dr. Narendranath A | Best ENT Doctor in Bangalore | Rashtrotthana Hospita'
+            docalt : 'Dr. Narendranath A | Best ENT Doctor in Bangalore | Rashtrotthana Hospital'
           },
           {
-            doctor_image:'../../assets/doctor-44.png',
+            doctor_image:'../../assets/Dr-Manasa-N-A.png',
             doctor_name:'Dr. Manasa N. A',
-            experience : "7"
+            experience : "7",
+            docalt : 'Dr. Manasa N. A | Best ENT Consultant in Bangalore | Rashtrotthana Hospital'
           },
         
           // {

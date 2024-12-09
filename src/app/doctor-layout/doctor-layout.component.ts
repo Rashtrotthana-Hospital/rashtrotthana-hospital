@@ -804,10 +804,12 @@ export class DoctorLayoutComponent {
       expertise: 'Years of Experience: 25',
       qualification:'BSc, BAMS, FAHO, FAGE',
       time:'10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00',
-      date:'Wednesday and Friday'},
+      date:'Wednesday and Friday',
+      alt:'Dr. Venkatesh H. S | Best Ayurveda Endocrinologist in Bangalore | Rashtrotthana Hospital'
+    },
       {
         name: 'Dr. Sunil Kumar C',
-        image: 'assets/doctor-62.png',
+        image: 'assets/Dr-Sunil-Kumar-C.png',
         desgination: 'ENT, Head and Neck',
         about: 'Dr. Sunil Kumar has extensive experience in ENT and head/neck surgeries, including laser and thyroid procedures. He specializes in anti-aging, hair transplantation and facial trauma treatment. He has led various awareness programs in collaboration with WHO, and his insights on hearing loss have been featured on WHO\'s site.',
         speciality: 'ENT SPECIALITY',
@@ -815,11 +817,13 @@ export class DoctorLayoutComponent {
         expertise: 'Years of Experience: 10+',
         qualification:' MS ENT, DHM, IFAAM',
         time:'18:30-18:50,18:50-19:10,19:10-19:30',
-        date:'Tuesday,Thursday and Saturday'
+        date:'Tuesday,Thursday and Saturday',
+        alt:'Dr. Sunil Kumar C | Best  ENT, Head and Neck Surgeon in Bangalore | Rashtrotthana Hospital'
+
       },
       {
         name: "Dr. Man Mohan U. S",
-        image : "assets/doctor-63.png",
+        image : "assets/Dr-Man-Mohan-U-S.png",
         desgination : "Gastroenterologist",
         about : "Dr. Man Mohan U.S. is a highly qualified gastroenterologist with extensive experience in managing complex gastrointestinal and hepatology conditions. Currently serving as an Assistant Professor at the Institute of Gastroenterology and Organ Transplant (IGOT), he has a keen interest in clinical research, with multiple publications and presentations at prestigious national and international conferences. He specializes in advanced diagnostic and therapeutic procedures, focusing on patient-centered care and innovative treatments in medical gastroenterology.",
         speciality : "GASTRO SCIENCES",
@@ -839,11 +843,12 @@ export class DoctorLayoutComponent {
         expertise : "Years of Experience: 8+",
         qualification : "MBBS, MD in General Medicine, Dr.N.B in Medical Gastroenterology",
         time : "",
-        date : "Monday, Wednesday and Saturday"
+        date : "Monday, Wednesday and Saturday",
+        alt:"Dr. Man Mohan U. S | Best Gastroenterologist in Bangalore | Rashtrotthana Hospital"
       },
       {
         name: "Dr. Kalyani Dilip Karkare",
-        image : "assets/doctor-64.png",
+        image : "assets/Dr-Kalyani-Dilip-Karkare.png",
         desgination: 'Neuro Science',
         speciality: 'NEUROSCIENCES',
         about : "Dr. Kalyani Karkare, a Gold Medalist in DM Neurology from NIMHANS, Bangalore (2010), is an expert in epilepsy and EEG. After gaining experience at Medanta The Medicity Hospital, she pursued a fellowship in EEG at SCTIMST, Thiruvananthapuram (2013). From 2015 to 2018, she worked with the epilepsy surgery team at Nicklaus Children's Hospital, Miami, USA, specializing in advanced techniques like subdural and stereoEEG. She has also set up epilepsy labs in leading hospitals. In addition to epilepsy, she is proficient in acute stroke management, including IV thrombolysis and mechanical thrombectomy, and she emphasizes comprehensive stroke care with rehabilitation. With numerous publications, academic presentations and teaching experience, she combines deep knowledge, empathy and attentive care for her patients.",
@@ -851,11 +856,12 @@ export class DoctorLayoutComponent {
         expertise : "Years of Experience: 14+",
         qualification : "MBBS, DM Neurology, PDF EEG",
         time : "",
-        date : "Monday"
+        date : "Monday",
+        alt:'Dr. Kalyani Dilip Karkare | Best Neurologist in Bangalore | Rashtrotthana Hospital'
       },
       {
         name: "Dr. Vivekanand",
-        image : "assets/doctor-65.png",
+        image : "assets/Dr-Vivekanad.png",
         desgination: 'Consultant Vascular Surgeon',
         speciality: 'GENERAL SURGERY',
         about : "Dr. Vivekanand is a highly experienced vascular surgeon with over two decades of expertise in vascular and endovascular surgery. Currently serving as the Head of the Department at the Jain Institute of Vascular Sciences, Bhagwan Mahaveer Jain Hospital, he has been instrumental in advancing vascular care. He is a recognized leader, having served as the President of the Vascular Surgeons Association of Karnataka and President Elect of the Vascular Society of India. With a strong commitment to education, Dr. Vivekanand has mentored numerous fellows and postgraduates and has authored multiple publications and textbook chapters in vascular surgery and dermatology.",
@@ -863,7 +869,8 @@ export class DoctorLayoutComponent {
         expertise : "Years of Experience: 25+",
         qualification : "MBBS, MS(General Surgery), FVES",
         time : "",
-        date : ""
+        date : "",
+        alt:'Dr. Vivekanand | Consultant Vascular Surgeon in Bangalore | Rashtrotthana Hospital'
       }
   ]
   specialDoctors = ['Dr. Pramod S. Chinder', 'Dr. Meena H. B', 'Brig (Dr) S. Shashivadhanan', 'Dr. Ravishankar. D', 'Dr. Sapna S','Dr. Kalyani Dilip Karkare','Dr. Man Mohan U. S'];

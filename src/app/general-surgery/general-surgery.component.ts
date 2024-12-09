@@ -35,7 +35,8 @@ export class GeneralSurgeryComponent  implements OnInit {
           {
             doctor_image:'../../assets/Dr-Nishanth-Lakshmikantha.png',
             doctor_name:'Dr. Nishanth Lakshmikanth',
-            experience : "5"
+            experience : "5",
+            docalt:'Dr. Nishanth Lakshmikantha | Best General & GI Surgeon in Bangalore | Rashtrotthana Hospital'
           }    
         ],
         Doctors_2:[

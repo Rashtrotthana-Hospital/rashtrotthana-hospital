@@ -26,12 +26,7 @@ export class NeurosciencesComponent {
         image:'best_neurosciences_treatment_in_bengaluru.png',
         alt : 'Best Neurosciences Treatment in Bengaluru',
         Doctors:[
-          {
-            doctor_image:'../../assets/Dr-Jaidev-S.png',
-            doctor_name:'Dr. Jaidev S',
-            experience : "4",
-            docalt : 'Dr. Jaidev S | Best Neurosurgeon in Bangalore | Rashtrotthana Hospital'
-          },
+          
           {
             doctor_image:'../../assets/Dr-S-Shashivadhanan.png',
             doctor_name:'Brig (Dr) S. Shashivadhanan',
@@ -45,9 +40,10 @@ export class NeurosciencesComponent {
             alt : 'Dr. Kalyani Dilip Karkare | Best Neurologist in Bangalore | Rashtrotthana Hospital'
           },
           {
-            doctor_image:'../../assets/doctor-38.png',
+            doctor_image:'../../assets/Dr-Jaidev-S.png',
             doctor_name:'Dr. Jaidev S',
-            experience : "4"
+            experience : "4",
+            docalt : 'Dr. Jaidev S | Best Neurosurgeon in Bangalore | Rashtrotthana Hospital'
           },
           
         ]}];
