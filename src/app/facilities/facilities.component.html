@@ -14,7 +14,7 @@
         <div class="box-card">
         <app-box-card [image]="activeHoverIndex === i ? hoverBoxes[i].image : box.image" [title]=" box.title"
             [button_text]="box.button_text"  (mouseover)="onMouseOver(i)" (mouseout)="onMouseOut()"
-            (buttonClick)="onButtonClick(box.route)">
+            (buttonClick)="onButtonClick(box.route)" [alt]="box.alt"> 
         </app-box-card>
     </div>
     </ng-container>

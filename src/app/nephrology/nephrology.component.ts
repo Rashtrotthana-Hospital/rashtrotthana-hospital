@@ -23,12 +23,14 @@ export class NephrologyComponent {
       content:`The Nephrology Department at Rashtrotthana Hospital offers advanced and compassionate care for a range of kidney-related health issues. Led by certified nephrologists and renal specialists, our department provides expert diagnosis and treatment for chronic kidney diseases, electrolyte disorders, hypertension and conditions requiring renal replacement therapies, including <a href="https://en.wikipedia.org/wiki/Dialysis">dialysis</a> and kidney transplantation. Our 8-bed dialysis unit operates in a clean, safe and fully equipped environment, ensuring patients receive top-quality care across all days of the week. The dialysis center is dedicated to maintaining the highest standards of hygiene and care, catering to patients with both acute and chronic kidney needs. For patients requiring comprehensive renal care, our in-house renal transplant physician ensures safe, standardized protocols, providing exceptional outcomes for transplant patients.  `   ,
       content_1:'Our department emphasizes a patient-centered approach, supporting long-term kidney health through preventative care and continuous monitoring. We offer discounted renal profile packages to assist with early diagnosis and provide ongoing support for managing conditions like diabetic nephropathy and hypertension-related kidney disease. With the backing of a dedicated team and state-of-the-art diagnostic tools, our Nephrology Department is committed to improving the quality of life for patients facing kidney challenges.',
       heading:'Nephrology',
-      image:'Nephrology.png',
+      image:'best_nephrology_treatment_in_bengaluru.png',
+      alt :'Best Nephrology Treatment in Bengaluru',
       Doctors:[
         {
-          doctor_image:'../../assets/doctor-16.png',
+          doctor_image:'../../assets/Dr-Santhosh-S.png',
           doctor_name:'Dr. Santhosh S',
-          experience : "14"
+          experience : "14",
+          docalt : 'Dr. Santhosh S | Best Nephrologist in Bangalore | Rashtrotthana Hospital'
         }
       ]}];
       this.sanitizedContent = this.sanitizer.bypassSecurityTrustHtml(this.specialities[0].content);

@@ -26,162 +26,178 @@ export class ModernMedicineComponent {
   box =[
     {
       name: 'card',
-      image: '../../assets/modern-1.png',
+      image: '../../assets/internal_medicine_hospital_in_bangalore.png',
       title: 'Internal medicine',
       button_text: 'Read More',
-      route: 'internal-medicine-hospital-in-bangalore'
+      route: 'internal-medicine-hospital-in-bangalore',
+      alt : 'Rashtrotthana Hospital | Internal Medicine Hospital in Bangalore'
     },
     {
       name: 'card',
-      image: '../../assets/modern-2.png',
+      image: '../../assets/best_general_surgery_hospital_in_bangalore.png',
       title: 'General Surgery',
       button_text: 'Read More',
-      route: 'best-general-surgery-hospital-in-bangalore'
+      route: 'best-general-surgery-hospital-in-bangalore',
+      alt : 'Rashtrotthana Hospital | Best General Surgery Hospital in Bangalore'
     },
     {
       name: 'card',
-      image: '../../assets/modern-3.png',
+      image: '../../assets/best_obstetrics_and_gynecologist_hospital_in_bangalore.png',
       title: 'Obstetrics & Gynecology',
       button_text: 'Read More',
-      route: 'best-obstetrics-and-gynecologist-hospital-in-bangalore'
+      route: 'best-obstetrics-and-gynecologist-hospital-in-bangalore',
+      alt : 'Rashtrotthana Hospital | Best Obstetrics and Gynecologist Hospital in Bangalore'
     },
     {
       name: 'card',
-      image: '../../assets/modern-4.png',
+      image: '../../assets/best_paediatric_hospital_in_bangalore.png',
       title: 'Paediatrics & Neonatology',
       button_text: 'Read More',
-      route: 'best-paediatric-hospital-in-bangalore'
+      route: 'best-paediatric-hospital-in-bangalore',
+      alt : 'Rashtrotthana Hospital | Best Paediatric Hospital in Bangalore'
     },
     {
       name: 'card',
-      image: '../../assets/modern-5.png',
+      image: '../../assets/best_nephrology_hospital_in_bangalore.png',
       title: 'Nephrology',
       button_text: 'Read More',
-      route: 'best-nephrology-hospital-in-bangalore'
+      route: 'best-nephrology-hospital-in-bangalore',
+      alt : 'Rashtrotthana Hospital | Best Nephrology Hospital in Bangalore'
     },
     {
       name: 'card',
-      image: '../../assets/modern-6.png',
+      image: '../../assets/best_urology_hospital_in_bangalore.png',
       title: 'Urology',
       button_text: 'Read More',
-      route: 'best-urology-hospital-in-bangalore'
+      route: 'best-urology-hospital-in-bangalore',
+      alt : 'Rashtrotthana Hospital | Best Urology Hospital in Bangalore'
 
     },
     {
       name: 'card',
-      image: '../../assets/modern-7.png',
+      image: '../../assets/best_orthopaedics_hospital_in_bangalore.png',
       title: 'Orthopedics',
       button_text: 'Read More',
-      route:'best-orthopaedics-hospital-in-bangalore'
+      route:'best-orthopaedics-hospital-in-bangalore',
+      alt : 'Rashtrotthana Hospital | Best Orthopaedics Hospital in Bangalore'
     },
     {
       name: 'card',
-      image: '../../assets/modern-8.png',
+      image: '../../assets/best_gastroenterology_hospital_in_bangalore.png',
       title: 'Gastro Sciences',
       button_text: 'Read More',
-      route:'best-gastroenterology-hospital-in-bangalore'
+      route:'best-gastroenterology-hospital-in-bangalore',
+      alt : 'Rashtrotthana Hospital | Best Gastroenterology Hospital in Bangalore'
     },
     {
       name: 'card',
-      image: '../../assets/modern-9.png',
+      image: '../../assets/best_cardiology_hospital_in_bangalore.png',
       title: 'Cardiac sciences',
       button_text: 'Read More',
-      route:'best-cardiology-hospital-in-bangalore'
+      route:'best-cardiology-hospital-in-bangalore',
+      alt : 'Rashtrotthana Hospital | Best Cardiology Hospital in Bangalore'
     },
     {
       name: 'card',
-      image: '../../assets/modern-10.png',
+      image: '../../assets/best_pulmonology_hospital_in_bangalore.png',
       title: 'Pulmonology',
       button_text: 'Read More',
-      route:'best-pulmonology-hospital-in-bangalore'
+      route:'best-pulmonology-hospital-in-bangalore',
+      alt : 'Rashtrotthana Hospital | Best Pulmonology Hospital in Bangalore'
     },
     {
       name: 'card',
-      image: '../../assets/modern-11.png',
+      image: '../../assets/best_eye_hospital_in_bangalore.png',
       title: 'Ophthalmology',
       button_text: 'Read More',
-      route:'best-eye-hospital-in-bangalore'
+      route:'best-eye-hospital-in-bangalore',
+      alt : 'Rashtrotthana Hospital | Best Eye Hospital in Bangalore'
     },
     {
       name: 'card',
-      image: '../../assets/modern-12.png',
+      image: '../../assets/best_dental_hospital_in_bangalore.png',
       title: 'Dental Sciences',
       button_text: 'Read More',
-      route:'best-dental-hospital-in-bangalore'
+      route:'best-dental-hospital-in-bangalore',
+      alt : 'Rashtrotthana Hospital | Best Dental Hospital in Bangalore'
     },
     {
       name: 'card',
-      image: '../../assets/modern-13.png',
+      image: '../../assets/best_ent_hospital_in_bangalore.png',
       title: 'ENT Specialty',
       button_text: 'Read More',
-      route:'best-ent-hospital-in-bangalore'
+      route:'best-ent-hospital-in-bangalore',
+      alt : 'Rashtrotthana Hospital | Best ENT Hospital in Bangalore'
     },
     {
       name: 'card',
-      image: '../../assets/modern-14.png',
+      image: '../../assets/best_neurology_hospital_in_bangalore.png',
       title: 'Neurosciences',
       button_text: 'Read More',
-      route:'best-neurology-hospital-in-bangalore'
+      route:'best-neurology-hospital-in-bangalore',
+      alt : 'Rashtrotthana Hospital | Best Neurology Hospital in Bangalore'
     },
     {
       name: 'card',
-      image: '../../assets/modern-15.png',
+      image: '../../assets/best_endocrinology_hospital_in_bangalore.png',
       title: 'Endocrinology',
       button_text: 'Read More',
-      route:'best-endocrinology-hospital-in-bangalore'
+      route:'best-endocrinology-hospital-in-bangalore',
+      alt : 'Rashtrotthana Hospital | Best Endocrinology Hospital in Bangalore'
     },
     {
       name: 'card',
-      image: '../../assets/modern-16.png',
+      image: '../../assets/best_pshychiatry_hospital_in_bangalore.png',
       title: 'Psychiatry',
       button_text: 'Read More',
-      route:'best-pshychiatry-hospital-in-bangalore'
+      route:'best-pshychiatry-hospital-in-bangalore',
+      alt : 'Rashtrotthana Hospital | Best Pshychiatry Hospital in Bangalore'
     },
     {
       name: 'card',
-      image: '../../assets/modern-17.png',
+      image: '../../assets/best_oncology_hospital_in_bangalore.png',
       title: 'Oncology',
       button_text: 'Read More',
-      route:'best-oncology-hospital-in-bangalore'
+      route:'best-oncology-hospital-in-bangalore',
+      alt : 'Rashtrotthana Hospital | Best Oncology Hospital in Bangalore'
     },
     {
       name: 'card',
-      image: '../../assets/modern-18.png',
+      image: '../../assets/best_anesthesiology_hospital_in_bengaluru.png',
       title: 'Anesthesiology',
       button_text: 'Read More',
-      route:'best-anesthesiology-hospital-in-india'
+      route:'best-anesthesiology-hospital-in-india',
+      alt : 'Rashtrotthana Hospital | Best Anesthesiology Hospital in India'
     },
     {
       name: 'card',
-      image: '../../assets/modern-19.png',
+      image: '../../assets/best_emergency_medicine_hospital_in_bangalore.png',
       title: 'Emergency Medicine',
       button_text: 'Read More',
-      route:'best-emergency-medicine-hospital-in-bangalore'
+      route:'best-emergency-medicine-hospital-in-bangalore',
+      alt : 'Rashtrotthana Hospital | Best Emergency Medicine Hospital in Bangalore'
     }
-
-    
   ]
   hoverBoxes = [
-    { image: 'assets/modern-hover-1.png' },
-    { image: 'assets/modern-hover-2.png' },
-    { image: 'assets/modern-hover-3.png' },
-    { image: 'assets/modern-hover-4.png' },
-    { image: 'assets/modern-hover-5.png' },
-    { image: 'assets/modern-hover-6.png' },
-    { image: 'assets/modern-hover-7.png' },
-    { image: 'assets/modern-hover-8.png' },
-    { image: 'assets/modern-hover-9.png' },
-    { image: 'assets/modern-hover-10.png' },
-    { image: 'assets/modern-hover-11.png' },
-    { image: 'assets/modern-hover-12.png' },
-    { image: 'assets/modern-hover-13.png' },
-    { image: 'assets/modern-hover-14.png' },
-    { image: 'assets/modern-hover-15.png' },
-    { image: 'assets/modern-hover-16.png' },
-    { image: 'assets/modern-hover-17.png' },
-    { image: 'assets/modern-hover-18.png' },
-    { image: 'assets/modern-hover-19.png' },
-    
+    { image: 'assets/internal_medicine_hospital_in_rrnagar.png' },
+    { image: 'assets/best_general_surgery_hospital_in_rrnagar.png' },
+    { image: 'assets/best_obstetrics_and_gynecologist_hospital_in_rrnagar.png' },
+    { image: 'assets/best_paediatric_hospital_in_rrnagar.png' },
+    { image: 'assets/best_nephrology_hospital_in_rrnagar.png' },
+    { image: 'assets/best_urology_hospital_in_rrnagar.png' },
+    { image: 'assets/best_orthopaedics_hospital_in_rrnagar.png' },
+    { image: 'assets/best_gastroenterology_hospital_in_rrnagar.png' },
+    { image: 'assets/best_cardiology_hospital_in_rrnagar.png' },
+    { image: 'assets/best_pulmonology_hospital_in_rrnagar.png' },
+    { image: 'assets/best_eye_hospital_in_rrnagar.png' },
+    { image: 'assets/best_dental_hospital_in_rrnagar.png' },
+    { image: 'assets/best_ent_hospital_in_rrnagar.png' },
+    { image: 'assets/best_neurology_hospital_in_rrnagar.png' },
+    { image: 'assets/best_endocrinology_hospital_in_rrnagar.png' },
+    { image: 'assets/best_pshychiatry_hospital_in_rrnagar.png' },
+    { image: 'assets/best_oncology_hospital_in_rrnagar.png' },
+    { image: 'assets/best_anesthesiology_hospital_in_rrnagar.png' },
+    { image: 'assets/best_emergency_medicine_hospital_in_rrnagar.png' },
   ];
   activeHoverIndex: number | null = null;
 

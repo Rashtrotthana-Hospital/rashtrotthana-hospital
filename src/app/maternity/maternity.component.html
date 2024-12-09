@@ -152,7 +152,7 @@
     <div class="doctors_flex">
       <div class="doc_details" *ngFor="let slide of doctors; let i = index" [ngClass]="{ active: i === 0 }">
         <div class="doc_1">
-          <img [src]="slide.image" alt="{{ slide.name }}" />
+          <img [src]="slide.image" alt="{{ slide.name }}" [alt] = "slide.alt" />
           <p class="doc_name">{{ slide.name }}</p>
           <p class="doc_Exp">{{ slide.experience }}</p>
         </div>
@@ -163,7 +163,7 @@
     <div class="doctors_flex">
       <div class="doc_details" *ngFor="let slide of doctors2; let i = index" [ngClass]="{ active: i === 0 }">
         <div class="doc_1">
-          <img [src]="slide.image" alt="{{ slide.name }}" />
+          <img [src]="slide.image" [alt] = "slide.alt" />
           <p class="doc_name">{{ slide.name }}</p>
           <p class="doc_Exp">{{ slide.experience }}</p>
         </div>

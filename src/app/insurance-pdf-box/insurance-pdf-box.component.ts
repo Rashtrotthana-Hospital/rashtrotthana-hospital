@@ -8,6 +8,7 @@ import { Component,Input } from '@angular/core';
 export class InsurancePdfBoxComponent {
 @Input() image:any="";
 @Input() pdfUrl!: string;
+@Input() alt! : string;
 
   downloadPdf() {
     window.open(this.pdfUrl, '_blank');

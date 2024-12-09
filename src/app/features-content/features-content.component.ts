@@ -15,4 +15,7 @@ export class FeaturesContentComponent {
 @Input() content: SafeHtml = ''; // Change type to SafeHtml
 @Input() content_1: SafeHtml = ''; // Change type to SafeHtml
 @Input() bg_image:any;
+@Input() alt1 : any = ''
+@Input() alt2 : any = ''
+@Input() alt3 : any = ''
 }

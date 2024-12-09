@@ -9,7 +9,7 @@
         <app-box-card [image]="activeHoverIndex === i ? hoverBoxes[i].image : box.image" [title]=" box.title"
             [button_text]="box.button_text" (mouseover)="onMouseOver(i)" (mouseout)="onMouseOut()"
             (buttonClick)="onButtonClick(box.route)"
-            [background]="'rgba(0, 128, 128, 0.50)'">
+            [background]="'rgba(0, 128, 128, 0.50)'" [alt]=box.alt>
         </app-box-card>
     </div>
     </ng-container>

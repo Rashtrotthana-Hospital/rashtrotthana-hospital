@@ -27,7 +27,8 @@ export class UrologyComponent {
       content:`The Urology Department at Rashtrotthana Hospital provides comprehensive care for both male and female urological conditions. Specializing in the diagnosis and treatment of urinary tract disorders and male reproductive health, our team is equipped to address issues such as kidney stones, prostate enlargement, bladder and kidney cancers and other complex urological concerns. Our department is staffed with highly trained specialists who utilize advanced techniques, including laparoscopic and laser surgeries, to ensure safe and effective treatments. For prostate issues, we offer Transurethral Resection of the <a href="https://en.wikipedia.org/wiki/Prostate">Prostate</a> (TURP) and other minimally invasive procedures, enhancing patient comfort and recovery.`,
       content_1:'Our facilities include state-of-the-art surgical suites, a dedicated ICU and an 8-bed dialysis unit that caters to patients requiring renal replacement therapies. We emphasize a patient-centered approach, offering preventive screenings, diagnostic tests and personalized treatment plans for each patient. Whether managing complex urological conditions or providing routine care, our Urology Department is committed to delivering exceptional, compassionate care that improves quality of life.',
       heading:'Urology',
-      image:'Urology.png',
+      image:'best_urology_treatment_in_bengaluru.png',
+      alt : "Best Urology Treatment in Bengaluru",
       Doctors:[
         {
           doctor_image:'Dr. Nagaraj Rao.png',

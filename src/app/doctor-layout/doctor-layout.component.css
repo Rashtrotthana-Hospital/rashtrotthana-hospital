@@ -170,7 +170,7 @@ input {
 
 .doctor-image-overlay {
   width: 213px;
-  height: 230px;
+  height: auto;
 }
 
 .area-of-interest {
@@ -314,7 +314,7 @@ line-height: normal;
 }
 .doctor-image {
   width: 200px;
-  height: 204px;
+  height: auto;
   flex-shrink: 0;
   border: 1px solid #fff;
   background: lightgray;

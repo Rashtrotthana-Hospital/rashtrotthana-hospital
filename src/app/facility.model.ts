@@ -8,4 +8,7 @@
     heading: string;
     subFacilities: SubFacility[];
     bg_image:any;
+    alt1 : any;
+    alt2 : any;
+    alt3 : any;
   }

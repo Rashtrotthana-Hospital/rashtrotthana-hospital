@@ -44,122 +44,135 @@ export class FacilitiesComponent implements OnInit{
   box =[
     {
       name: 'card',
-      image: '../../assets/facility-1.png',
+      image: '../../assets/rashtrotthana_hospital_in_patient_Facility_bengaluru.png',
       title: 'In patient facility',
       button_text: 'Read More',
-      route: 'inpatient-facility-bangalore'
+      route: 'inpatient-facility-bangalore',
+      alt : 'Rashtrotthana Hospital | Patient Facility Bengaluru'
     },
     {
       name: 'card',
-      image: '../../assets/facility-2.png',
+      image: '../../assets/rashtrotthana_hospital_emergency_and_trauma_care_bengaluru.png',
       title: 'Emergency & Trauma Care',
       button_text: 'Read More',
-      route: 'best-emergency-trauma-multispeciality-hospital-bangalore'
+      route: 'best-emergency-trauma-multispeciality-hospital-bangalore',
+      alt : 'Rashtrotthana Hospital | Emergency and Trauma Care Bengaluru'
     },
     {
       name: 'card',
-      image: '../../assets/facility-14.png',
+      image: '../../assets/rashtrotthana_hospital_insurance_service_bengaluru.png',
       title: 'Insurance',
       button_text: 'Read More',
-      route:'health-insurance-plans-bangalore'
+      route:'health-insurance-plans-bangalore',
+      alt : 'Rashtrotthana Hospital | Insurance Service Bengaluru'
     },
     {
       name: 'card',
-      image: '../../assets/facility-8.png',
+      image: '../../assets/rashtritthana_hospital_dialysis_facility_bengaluru.png',
       title: 'Dialysis Unit',
       button_text: 'Read More',
-      route:'best-kidney-dialysis-multispeciality-hospital-bangalore'
+      route:'best-kidney-dialysis-multispeciality-hospital-bangalore',
+      alt : 'Rashtrotthana Hospital | Dialysis Facility Bengaluru'
     },
     {
       name: 'card',
-      image: '../../assets/facility-11.png',
+      image: '../../assets/rashtrottha_operation_theater_bengaluru.png',
       title: 'Operation Theatre',
       button_text: 'Read More',
-      route: 'operation-theatre-bangalore'
+      route: 'operation-theatre-bangalore',
+      alt : 'Rashtrotthana Hospital | Best Operation Theater Bengaluru'
     },
     {
       name: 'card',
-      image: '../../assets/facility-12.png',
+      image: '../../assets/rashtrotthana_icu_facility_bengaluru.png',
       title: 'I.C.U',
       button_text: 'Read More',
-      route: 'best-intensive-care-unit-multispeciality-hospital-bangalore'
+      route: 'best-intensive-care-unit-multispeciality-hospital-bangalore',
+      alt : 'Rashtrotthana Hospital | Best ICU Facility Bengaluru'
 
     },
     {
       name: 'card',
-      image: '../../assets/facility-7.png',
+      image: '../../assets/rashtrotthana_radiology_service_bengaluru.png',
       title: 'Radiology Services',
       button_text: 'Read More',
-      route:'top-diagnostics-multi-speciality-hospital-bangalore'
+      route:'top-diagnostics-multi-speciality-hospital-bangalore',
+      alt : 'Rashtrotthana Hospital | Best Radiology Service Bengaluru'
     },
     {
       name: 'card',
-      image: '../../assets/facility-3.png',
+      image: '../../assets/rashtrotthana_pharmacy_facility_bengaluru.png',
       title: 'Pharmacy',
       button_text: 'Read More',
-      route:'24-hours-pharmacy-store-bangalore'
+      route:'24-hours-pharmacy-store-bangalore',
+      alt : 'Rashtrotthana Hospital | Best Pharmacy Facility Bengaluru'
     },
     {
       name: 'card',
-      image: '../../assets/facility-4.png',
+      image: '../../assets/rashtrotthana_hospital_ambulance_service.png',
       title: 'Ambulance Services',
       button_text: 'Read More',
-      route:'best-ambulance-service-rashtrotthana-hospital-bangalore'
+      route:'best-ambulance-service-rashtrotthana-hospital-bangalore',
+      alt : 'Rashtrotthana Hospital | Ambulance Service Bengaluru'
     },
     {
       name: 'card',
-      image: '../../assets/facility-13.png',
+      image: '../../assets/rashtrotthana_hospital_dietary_facility_bengaluru.png',
       title: 'Dietary',
       button_text: 'Read More',
-      route:'dietary-services-bangalore'
+      route:'dietary-services-bangalore',
+      alt : 'Rashtrotthana Hospital | Dietary Facility Bengaluru'
     },
     {
       name: 'card',
-      image: '../../assets/facility-5.png',
+      image: '../../assets/rashtrotthana_hospital_physiotherapy_facility_bengaluru.png',
       title: 'Physiotherapy',
       button_text: 'Read More',
-      route:'physiotherapy-services-bangalore'
+      route:'physiotherapy-services-bangalore',
+      alt : 'Rashtrotthana Hospital | Physiotherapy Facility Bengaluru'
     },
     {
       name: 'card',
-      image: '../../assets/facility-6.png',
+      image: '../../assets/rashtrotthana_hospital_laboratory-services-bangalore.png',
       title: 'Laboratory Services',
       button_text: 'Read More',
-      route:'laboratory-services-bangalore'
+      route:'laboratory-services-bangalore',
+      alt : 'Rashtrotthana Hospital | Best Laboratory Services Bangalore'
     },
     {
       name: 'card',
-      image: '../../assets/facility-9.png',
+      image: '../../assets/rashtrotthana_hospital_endoscopy_services_bangalore.png',
       title: 'Endoscopy',
       button_text: 'Read More',
-      route:'endoscopy-services-bangalore'
+      route:'endoscopy-services-bangalore',
+      alt : 'Rashtrotthana Hospital | Best Endoscopy Services Bengaluru'
     },
     {
       name: 'card',
-      image: '../../assets/facility-10.png',
+      image: '../../assets/rashtrotthana_hospital_nutrition_dietetics-services_bangalore.png',
       title: 'Nutrition & Dietetics',
       button_text: 'Read More',
-      route:'nutrition-dietetics-services-bangalore'
+      route:'nutrition-dietetics-services-bangalore',
+      alt : 'Rashtrotthana Hospital | Best Nutrition Dietetics Services Bangalore'
     },
 
     
   ]
   hoverBoxes = [
-    { image: 'assets/facility-hover-1.png' },
-    { image: 'assets/facility-hover-2.png' },
-    { image: 'assets/facility-hover-14.png' },
-    { image: 'assets/facility-hover-8.png' },
-    { image: 'assets/facility-hover-11.png' },
-    { image: 'assets/facility-hover-12.png' },
-    { image: 'assets/facility-hover-7.png' },
-    { image: 'assets/facility-hover-3.png' },
-    { image: 'assets/facility-hover-4.png' },
-    { image: 'assets/facility-hover-13.png' },
-    { image: 'assets/facility-hover-5.png' },
-    { image: 'assets/facility-hover-6.png' },
-    { image: 'assets/facility-hover-9.png' },
-    { image: 'assets/facility-hover-10.png' },
-    
+    { image: 'assets/inpatient-facility-bangalore.png' },
+    { image: 'assets/best-emergency-trauma-multispeciality-hospital-bangalore.png' },
+    { image: 'assets/health-insurance-plans-bangalore.png' },
+    { image: 'assets/best-kidney-dialysis-multispeciality-hospital-bangalore.png' },
+    { image: 'assets/operation-theatre-bangalore.png' },
+    { image: 'assets/best-intensive-care-unit-multispeciality-hospital-bangalore.png' },
+    { image: 'assets/top-diagnostics-multi-speciality-hospital-bangalore.png' },
+    { image: 'assets/24-hours-pharmacy-store-bangalore.png' },
+    { image: 'assets/best-ambulance-service-rashtrotthana-hospital-bangalore.png' },
+    { image: 'assets/dietary-services-bangalore.png' },
+    { image: 'assets/physiotherapy-services-bangalore.png' },
+    { image: 'assets/endoscopy-services-bangalore.png' },
+    { image: 'assets/laboratory-services-bangalore.png' },
+    { image: 'assets/nutrition-dietetics-services-bangalore.png' },
   ];
   activeHoverIndex: number | null = null;
 
