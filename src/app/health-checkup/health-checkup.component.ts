@@ -73,7 +73,7 @@ export class HealthCheckupComponent {
         },
         {
           title:' SPECIALITY CONSULTATIONS',
-          items: ['Physiotherapy Consultation (if required) (Avail once a year)','Physician / Diabetologist Consultation', 'Lifestyle Consultation', 'Lifestyle Management', 'Nutrition & Dietetics Consultation (Avall 4 times a year)'],
+          items: ['Physiotherapy Consultation (if required) (Avail once a year)','Physician / Diabetologist Consultation', 'Lifestyle Consultation', 'Lifestyle Management', 'Nutrition & Dietetics Consultation (Avail 4 times a year)'],
           icon: 'speciality'
         } 
       ],

@@ -5,7 +5,7 @@
 .first-container {
   width: 110%;
   margin-top: 11vh;
-  background: url("../../assets/knee-replace-bg.png");
+  background: url("../../assets/Knee-Pain-Relief-Rashtrotthana-Hospital.png");
   background-size: cover;
   height: 95vh;
 }
@@ -472,7 +472,7 @@ iframe {
 
 @media only screen and (max-width: 430px) {
   .first-container {
-    background: url("../../assets/tkr-res-bg.png") no-repeat;
+    background: url("../../assets/Orthopedic-Doctor-for-Knee Pain-Rashtrotthana-Hospital.png") no-repeat;
     width: 100%;
     height: 77vh;
     margin-top: 18vh;
