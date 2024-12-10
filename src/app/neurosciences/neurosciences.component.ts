@@ -27,12 +27,12 @@ export class NeurosciencesComponent {
         alt : 'Best Neurosciences Treatment in Bengaluru',
         Doctors:[
           
-          {
-            doctor_image:'../../assets/Dr-S-Shashivadhanan.png',
-            doctor_name:'Brig (Dr) S. Shashivadhanan',
-            experience : "30+",
-            alt : 'Brig (Dr) S. Shashivadhanan | Best Neurospine Surgeon in Bangalore | Rashtrotthana Hospital'
-          },
+          // {
+          //   doctor_image:'../../assets/Dr-S-Shashivadhanan.png',
+          //   doctor_name:'Brig (Dr) S. Shashivadhanan',
+          //   experience : "30+",
+          //   alt : 'Brig (Dr) S. Shashivadhanan | Best Neurospine Surgeon in Bangalore | Rashtrotthana Hospital'
+          // },
           {
             doctor_image:'../../assets/Dr-Kalyani-Dilip-Karkare.png',
             doctor_name:'Dr. Kalyani Dilip Karkare',

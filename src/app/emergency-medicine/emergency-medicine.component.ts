@@ -25,7 +25,7 @@ export class EmergencyMedicineComponent {
         alt : "Best Emergency Medicine Treatment in Bengaluru",
         Doctors:[
           {
-            doctor_image:'../../assets/doctor-7.png',
+            doctor_image:'../../assets/Dr-Anand-Shankar.png',
             doctor_name:'Dr. (Col)Anand Shankar',
             experience : '31'
           }

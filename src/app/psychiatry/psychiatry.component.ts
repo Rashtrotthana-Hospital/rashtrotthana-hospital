@@ -32,7 +32,7 @@ export class PsychiatryComponent {
       Doctors:[
        
         {
-          doctor_image:'../../assets/doctor-57.png',
+          doctor_image:'../../assets/Dr-Gopal-Das-C-M.png',
           doctor_name:'Dr. Gopal Das C M',
           experience : "11"
         },
