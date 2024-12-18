@@ -47,7 +47,13 @@ export class PaediatricsComponent {
           doctor_name:'Dr. Niveditha C',
           experience : "7",
           docalt : 'Dr. Niveditha C | Best Pediatrician in Bangalore | Rashtrotthana Hospital'
-        }    
+        },
+        {
+          doctor_image:'../../assets/Dr-Dhanyatha-Muninarayan.png',
+          doctor_name:'Dr. Dhanyatha Muninarayan',
+          experience : "7",
+          docalt : 'Dr. Dhanyatha Muninarayan | Best Pediatrician in Bangalore | Rashtrotthana Hospital'
+        }
       ]}];
       this.sanitizedContent = this.sanitizer.bypassSecurityTrustHtml(this.specialities[0].content);
         this.sanitizedContent1 = this.sanitizer.bypassSecurityTrustHtml(this.specialities[0].content_1);  

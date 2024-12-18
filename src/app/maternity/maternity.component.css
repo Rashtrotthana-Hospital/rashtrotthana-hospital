@@ -45,6 +45,8 @@
     font-weight: 900;
     line-height: normal;
     letter-spacing: 2px;
+    padding: 0;
+    margin: 0;
 }
 
 .heading_des{
@@ -111,6 +113,7 @@
 }
 
 .pc_para{
+    /* display: inline; */
     color: #000;
     text-align: center;
     font-family: Inter;
@@ -119,6 +122,14 @@
     font-weight: 400;
     line-height: normal;
     margin-top: 30px;
+}
+
+.h2_inline{
+    display: inline;
+}
+
+.bold_para{
+    font-weight: bold;
 }
 
 .pc_description{
