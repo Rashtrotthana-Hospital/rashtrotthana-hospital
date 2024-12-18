@@ -236,7 +236,7 @@
 /* container 3 */
 
 .container_3 {
-    padding: 8%;
+    padding: 4% 8% 3% 8%;
 }
 
 .container_3_contents {
@@ -297,6 +297,18 @@
 .container_4 {
     text-align: center;
     padding: 0 10%;
+    padding-bottom: 4%;
+}
+
+.new_container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container_list{
+    padding: 0;
 }
 
 .container_4_heading {
@@ -306,6 +318,8 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    margin-top: 30px;
+    text-align: center;
 }
 
 .container_4_para {
@@ -319,7 +333,20 @@
 }
 
 .container_4_lists {
-    padding: 0 10%;
+    padding: 0 0%;
+}
+
+.container_4_content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.container_4_image img{
+    width: 350px;
+    height: auto;
+    border-radius: 10px;
 }
 
 .container_4_list_items {
@@ -330,6 +357,7 @@
     font-weight: 700;
     line-height: 28px;
     margin-top: 30px;
+    text-align: justify;
 }
 
 .container_4_description {
@@ -614,6 +642,15 @@
         height: auto;
     }
 
+    .container_4_content{
+        padding: 6%;
+        flex-direction: column;
+    }
+
+    .row-reverse{
+        flex-direction: column-reverse;
+    }
+
     .container_5 img {
         width: 210px;
         height: auto;
@@ -747,6 +784,7 @@
     .container_3_heading,
     .container_4_heading {
         font-size: 20px;
+        text-align: center;
     }
 
     .expertise_list_item,
@@ -784,6 +822,10 @@
 
     .expertise_points{
         width: 290px;
+    }
+
+    .container_4_image img{
+        width: 300px;
     }
 
 }

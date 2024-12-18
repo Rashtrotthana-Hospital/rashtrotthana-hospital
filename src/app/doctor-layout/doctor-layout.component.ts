@@ -254,7 +254,6 @@ export class DoctorLayoutComponent {
       date: 'Monday-Saturday',
       alt: 'Dr. Geethanjali K. G | Best Dental Surgery Doctor in Bangalore | Rashtrotthana Hospital'
     },
-
     {
       name: 'Dr. Santhosh S',
       image: 'assets/Dr-Santhosh-S.png',
@@ -871,7 +870,20 @@ export class DoctorLayoutComponent {
         time : "",
         date : "",
         alt:'Dr. Vivekanand | Consultant Vascular Surgeon in Bangalore | Rashtrotthana Hospital'
-      }
+      },
+      {
+        name: "Dr. Dhanyatha Muninarayan",
+        image : "assets/Dr-Dhanyatha-Muninarayan.png",
+        desgination: 'Consultant Paediatrician',
+        speciality: 'PAEDIATRICS AND NEONATOLOGY',
+        about : "Dr. Dhanyatha Muninarayan is a compassionate and skilled paediatrician with an MD in Paediatrics from Rajarajeswari Medical College, Bengaluru. With extensive experience in General Paediatrics, Neonatology, and Paediatric Haematology-Oncology, she has worked in reputed hospitals including Cloud Nine, St. John’s Medical College, ESI Medical College and Sakra World Hospital. Currently serving as a Consultant at Belanus Champion Hospital, she is proficient in managing neonatal and paediatric cases, performing critical procedures and mentoring medical students. Her research contributions include award-winning presentations and publications on neonatal and paediatric health issues, reflecting her dedication to advancing paediatric care.",
+        areasOfExpertise : ["General Paediatrics and Neonatology", "Managing Outpatients and Inpatients", "Resuscitation of Normal and High-Risk Patients", "Patient Counselling", "Medical Procedures: Intubation, Lumbar Puncture, Bone Marrow Aspirations", "Medical Student Coaching and Interactive Teaching"],
+        expertise : "Years of Experience: 7",
+        qualification : "MBBS, (MD) Paediatrics",
+        time : "",
+        date : "",
+        alt : 'Dr. Dhanyatha Muninarayan'
+      },
   ]
   specialDoctors = ['Dr. Pramod S. Chinder', 'Dr. Meena H. B', 'Brig (Dr) S. Shashivadhanan', 'Dr. Ravishankar. D', 'Dr. Sapna S','Dr. Kalyani Dilip Karkare','Dr. Man Mohan U. S'];
 
@@ -1087,4 +1099,3 @@ export class DoctorLayoutComponent {
   }
 
 }
-
