@@ -69,7 +69,7 @@ export class DoctorLayoutComponent {
       qualification: 'MDS',
       time: '09:00-09:20,09:20-09:40,09:40-10:00,10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,13:00-13:20,13:20-13:40,13:40-14:00,14:00-14:20,14:20-14:40,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00,16:00-16:20,16:20-16:40,16:40-17:00',
       date: 'Monday-Saturday',
-      alt: 'Dr. H. N. Shyla | Best Dental Doctor in Bangalore | Rashtrotthana Hospital'
+      alt: 'Dr. H. N. Shyla | Best Dental Doctor in Bangalore | Rashtrotthana Hospital | RR Nagar Bangalore'
     },
 
     {
@@ -89,7 +89,7 @@ export class DoctorLayoutComponent {
       qualification: 'MBBS, MRCOG(UK), MRCP(I), FRCOG(UK)',
       time: '10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,13:00-13:20,13:20-13:40,13:40-14:00',
       date: 'Tuesday',
-      alt : 'Dr. Latha Venkataram | Top Obstetrics & Gynaecologist in banaglore | Rashtrotthana Hospital'
+      alt : 'Dr. Latha Venkataram | Top Obstetrics & Gynaecologist in banaglore | Rashtrotthana Hospital | RR Nagar Bangalore'
     },
     {
       name: 'Dr. Shekar Patil',
@@ -102,7 +102,7 @@ export class DoctorLayoutComponent {
       qualification: 'MBBS, MD, DM',
       time: '09:00-09:15,09:15-09:30,09:30-09:45,09:45:10:00',
       date: 'Friday',
-      alt: 'Dr. Shekar Patil | Best Medical Oncologist Doctor in Bangalore | Rashtrotthana Hospital'
+      alt: 'Dr. Shekar Patil | Best Medical Oncologist Doctor in Bangalore | Rashtrotthana Hospital | RR Nagar Bangalore'
 
     },
     // {
@@ -135,7 +135,7 @@ export class DoctorLayoutComponent {
       qualification: 'MBBS, MS(ORTHO), FHRM, FMSO',
       time: '09:00-09:20,09:20-09:40,09:40-10:00,10:20-10:40,10:40-11:00',
       date: 'Friday',
-      alt: 'Dr. Pramod S. Chinder | Best Orthopaedic Oncosurgeon in Bangalore | Rashtrotthana Hospital'
+      alt: 'Dr. Pramod S. Chinder | Best Orthopaedic Oncosurgeon in Bangalore | Rashtrotthana Hospital | RR Nagar Bangalore'
     },
     {
       name: 'Dr. Nagaraj Rao',
@@ -148,7 +148,7 @@ export class DoctorLayoutComponent {
       qualification: 'MBBS, MS, MCH',
       time: '12:00-12:20,12:20-12:40,12:40-13:00,13:00-13:20,13:20-13:40,13:40-14:00',
       date: 'Tuesday and Thursday',
-      alt: 'Dr. Nagaraj Rao | Best Urologist in Bangalore | Rashtrotthana Hospital'
+      alt: 'Dr. Nagaraj Rao | Best Urologist in Bangalore | Rashtrotthana Hospital | RR Nagar Bangalore'
     },
     {
       name: 'Dr. H. M. Krishnamurthy',
@@ -161,7 +161,7 @@ export class DoctorLayoutComponent {
       qualification: 'MBBS, MD',
       time: '18:00-18:20,18:20-18:40,18:40-19:00,19:00-19:20,19:20-19:40,19:40-20:00',
       date: 'Monday-Saturday',
-      alt: 'Dr. H. M. Krishnamurthy | Consultant - Internal Medicine in Bangalore | Rashtrotthana Hospital'
+      alt: 'Dr. H. M. Krishnamurthy | Consultant - Internal Medicine in Bangalore | Rashtrotthana Hospital | RR Nagar Bangalore'
     },
     // {
     //   name: 'Brig (Dr) S. Shashivadhanan',
@@ -211,7 +211,7 @@ export class DoctorLayoutComponent {
       qualification: 'MBBS, DNB (Gen Medicine) DNB (Medical Oncology) MRCP (UK)',
       time: '10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00',
       date: 'Monday and Wednesday',
-      alt: 'Dr. Rajeev Vijayakumar | Best Medical Oncologist in Bangalore | Rashtrotthana Hospital'
+      alt: 'Dr. Rajeev Vijayakumar | Best Medical Oncologist in Bangalore | Rashtrotthana Hospital | RR Nagar Bangalore'
     },
     {
       name: 'Dr. Shashidhar',
@@ -224,7 +224,7 @@ export class DoctorLayoutComponent {
       date: 'Monday-Saturday',
       qualification: 'MBBS, DA',
       areasOfExpertise: ['Intensive Care', 'Emergency Care', 'Anesthesiology'],
-      alt: 'Dr. Shashidhar | Best Anesthesiologist in Bangalore | Rashtrotthana Hospital'
+      alt: 'Dr. Shashidhar | Best Anesthesiologist in Bangalore | Rashtrotthana Hospital | RR Nagar Bangalore'
     },
 
     {
@@ -238,7 +238,7 @@ export class DoctorLayoutComponent {
       date: 'Monday-Saturday',
       qualification: 'MS Ortho, DNB Ortho,Fellowship in Arthroplasty/ Arthoscopy/ Spine surgery/  Complex trauma',
       areasOfExpertise: ['Joint preservation', 'Limb preservation', 'Deformity correction', 'Pelviacetabular fractures', 'Sports injuries', 'Spine affections'],
-      alt: 'Dr. Mahesh Kulkarni | Best Ortho Doctor in Bangalore | Rashtrotthana Hospital'
+      alt: 'Dr. Mahesh Kulkarni | Best Ortho Doctor in Bangalore | Rashtrotthana Hospital | RR Nagar Bangalore'
     },
 
     {
@@ -252,7 +252,7 @@ export class DoctorLayoutComponent {
       qualification: 'BDS, PGCE, PGCO',
       time: '10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00',
       date: 'Monday-Saturday',
-      alt: 'Dr. Geethanjali K. G | Best Dental Surgery Doctor in Bangalore | Rashtrotthana Hospital'
+      alt: 'Dr. Geethanjali K. G | Best Dental Surgery Doctor in Bangalore | Rashtrotthana Hospital | RR Nagar Bangalore'
     },
     {
       name: 'Dr. Santhosh S',
@@ -265,7 +265,7 @@ export class DoctorLayoutComponent {
       qualification: 'MBBS, MD, DM(NEPHROLOGY)',
       time: '10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00,16:40-17:00,17:00-17:20,17:20-17:40,17:40-18:00,18:00-18:20,18:20-18:40,18:40-19:00,19:00-19:20,19:20-19:40,19:40-20:00,20:00-20:20,20:20-20:40,20:40-21:00,21:00-21:20,21:20-21:40,21:40-22:00,22:00-22:20,22:20-22:40,22:40-23:00,23:00-23:15,23:15-23:30',
       date: 'Monday-Saturday',
-      alt: 'Dr. Santhosh S | Best Nephrologist in Bangalore | Rashtrotthana Hospital'
+      alt: 'Dr. Santhosh S | Best Nephrologist in Bangalore | Rashtrotthana Hospital | RR Nagar Bangalore'
     },
     {
       name: 'Dr. Sowmya Bhat S',
@@ -278,7 +278,7 @@ export class DoctorLayoutComponent {
       qualification: 'MBBS, DO, DNB, FPR, FICO',
       time: '10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00',
       date: 'Tuesday and Friday',
-      alt: 'Dr. Sowmya Bhat S | Best Ophthalmologist in Bangalore | Rashtrotthana Hospital'
+      alt: 'Dr. Sowmya Bhat S | Best Ophthalmologist in Bangalore | Rashtrotthana Hospital | RR Nagar Bangalore'
     },
     {
       name: 'Dr. Suhas Raj S',
@@ -291,7 +291,7 @@ export class DoctorLayoutComponent {
       qualification: 'MBBS, MD(GEN MEDICINE), DM(CARDIOLOGY)',
       time: '18:00-18:20,18:20-18:40,18:40-19:00',
       date: 'Monday-Saturday',
-      alt: 'Dr. Suhas Raj S | Best Cardiologist in Bangalore | Rashtrotthana Hospital'
+      alt: 'Dr. Suhas Raj S | Best Cardiologist in Bangalore | Rashtrotthana Hospital | RR Nagar Bangalore'
     },
 
     {
@@ -305,7 +305,7 @@ export class DoctorLayoutComponent {
       qualification: 'MBBS, MS',
       time: '16:00-16:20,16:20-16:40,16:40-17:00',
       date: 'Monday-Saturday',
-      alt: 'Dr. Atmaram D. C | Best laparoscopic Surgeon in Bangalore | Rashtrotthana Hospital'
+      alt: 'Dr. Atmaram D. C | Best laparoscopic Surgeon in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore'
     },
     {
       name: 'Dr. Kolla Vinod',
@@ -318,7 +318,7 @@ export class DoctorLayoutComponent {
       qualification: 'MBBS, MD PULMONOLOGY MEDICINE',
       time: '16:30-16:50,16:50-17:10,17:10-17:30,17:30-17:50,17:50-18:10,18:10-18:30',
       date: 'Monday-Saturday',
-      alt: 'Dr. Kolla Vinod | Best Pulmonologist in Bangalore | Rashtrotthana Hospital'
+      alt: 'Dr. Kolla Vinod | Best Pulmonologist in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore'
     },
     {
       name: 'Dr. Meena H. B',
@@ -332,7 +332,7 @@ export class DoctorLayoutComponent {
       time: '18:00:18:15,18:15-18:30,18:30-18:45,18:45-19:00',
       qualification: 'MBBS, MD(DERMATOLOGY)',
       date: 'Tuesday, Thursday and Saturday',
-      alt: 'Dr. Meena H. B | Best Skin Doctor in Bangalore | Rashtrotthana Hospital'
+      alt: 'Dr. Meena H. B | Best Skin Doctor in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore'
     },
 
     {
@@ -346,7 +346,7 @@ export class DoctorLayoutComponent {
       qualification: 'MBBS, MD INTERNAL MEDICINE, IDCCM',
       time: '10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00',
       date: 'Monday-Saturday',
-      alt: 'Dr. Sindhu P. Madanshetty | Best Physician in Bangalore | Rashtrotthana Hospital'
+      alt: 'Dr. Sindhu P. Madanshetty | Best Physician in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore'
     },
 
 
@@ -361,7 +361,7 @@ export class DoctorLayoutComponent {
       qualification: 'MBBS, MS (ORTHO), DNB (Ortho), Diploma SICOT, Fellowship in Arthroplasty',
       time: '10:30-10:50,10:50-11:10,11:10-11:30,11:30-11:50,11:50-12:10,12:10-12:30,12:30-12:50,12:50-13:10,13:10-13:30,13:30-13:50,13:50-14:10,14:10-14:30',
       date: 'Tuesday,Thursday and Saturday',
-      alt: "Dr. Sujayendra D. M | Best Orthopaedic Doctor in Bangalore | Rashtrotthana Hospital"
+      alt: "Dr. Sujayendra D. M | Best Orthopaedic Doctor in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore"
     },
 
 
@@ -376,7 +376,7 @@ export class DoctorLayoutComponent {
       qualification: 'MBBS, DLO, DNB(ENT)',
       time: '10:30-10:50,10:50-11:10,11:10-11:30,11:30-11:50,11:50-12:10,12:10-12:30',
       date: 'Monday,Wednesday,Friday and Saturday',
-      alt: 'Dr. Manasa N. A | Best ENT Consultant in Bangalore | Rashtrotthana Hospital'
+      alt: 'Dr. Manasa N. A | Best ENT Consultant in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore'
     },
 
 
@@ -391,7 +391,7 @@ export class DoctorLayoutComponent {
       qualification: 'MBBS, MS(GEN. SURGERY), MCH(UROLOGY)',
       time: '09:30-09:50,09:50-10:10,10:10-10:30,10:30-10:50,10:50-11:10,11:10-11:30,11:30-11:50,11:50-12:10,12:10-12:30,12:30-12:50,12:50-13:10,13:10-13:30,13:30-13:50,13:50-14:10,14:10-14:30,14:30-14:50,14:50-15:10,15:10-15:30,15:30-15:50,15:50-16:10',
       date: 'Monday-Saturday',
-      alt: 'Dr. Madhu S. N | Best Urologist & Andrologist in Bangalore | Rashtrotthana Hospital'
+      alt: 'Dr. Madhu S. N | Best Urologist & Andrologist in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore'
     },
 
 
@@ -406,7 +406,7 @@ export class DoctorLayoutComponent {
       time: '17:00-17:15,17:15-17:30,17:30-17:45,17:45-18:00',
       qualification: 'MBBS, MS, MCH(NEURO SURGERY)',
       date: 'Monday-Saturday',
-      alt: 'Dr. Jaidev S | Best Neurosurgeon in Bangalore | Rashtrotthana Hospital'
+      alt: 'Dr. Jaidev S | Best Neurosurgeon in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore'
     },
 
     {
@@ -420,7 +420,7 @@ export class DoctorLayoutComponent {
       qualification: 'MBBS, MS, FMAS, FIAGES,FARIS',
       time: '09:30-09:50,09:50-10:10,10:10-10:30,10:30-10:50,10:50-11:10',
       date: 'Monday-Saturday',
-      alt: 'Dr. Nishanth Lakshmikantha | Best General & GI Surgeon in Bangalore | Rashtrotthana Hospital'
+      alt: 'Dr. Nishanth Lakshmikantha | Best General & GI Surgeon in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore'
     },
     {
       name: 'Dr. Sameer M. Halageri',
@@ -438,7 +438,7 @@ export class DoctorLayoutComponent {
       qualification: 'MBBS, MS, MCH',
       time: '10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00',
       date: 'Monday-Saturday',
-      alt: 'Dr. Sameer M. Halageri | Best Consultant Plastic Surgeon in Bangalore | Rashtrotthana Hospital'
+      alt: 'Dr. Sameer M. Halageri | Best Consultant Plastic Surgeon in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore'
     },
     // {
     //   name: 'Dr. Valli Kiran',
@@ -463,7 +463,7 @@ export class DoctorLayoutComponent {
       qualification: 'BDS, MDS',
       time: '15:00-15:20,15:20-15:40,15:40-16:00',
       date: 'Monday-Saturday',
-      alt : 'Dr. Vishnuvardhan V | Best Orthodontics in Bangalore | Rashtrotthana Hospital'
+      alt : 'Dr. Vishnuvardhan V | Best Orthodontics in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore'
     },
     {
       name: 'Dr. Prakruthi',
@@ -476,7 +476,7 @@ export class DoctorLayoutComponent {
       qualification: 'MBBS, DGO, DNB, FELLOWSHIP IN MATERNAL FETAL MEDICINE',
       time: '10:30-10:50,10:50-11:10,11:10-11:30,11:30-11:50,11:50-12:10,12:10-12:30,12:30-12:50,12:50-13:10,13:10-13:30,13:30-13:50,13:50-14:10',
       date: 'Saturday',
-      alt : 'Dr. Prakruthi | Best Gynaec Doctor in Bangalore | Rashtrotthana Hospital'
+      alt : 'Dr. Prakruthi | Best Gynaec Doctor in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore'
     },
     {
       name: 'Dr. Ravi T',
@@ -489,7 +489,7 @@ export class DoctorLayoutComponent {
       qualification: 'MBBS, MD, DM',
       time: '09:00-09:20,09:20-09:40,09:40-10:00,10:20-10:40,10:40-11:00',
       date: 'Friday',
-      alt : 'Dr. Ravi T | Best Cancer Doctor in Bangalore | Rashtrotthana Hospital'
+      alt : 'Dr. Ravi T | Best Cancer Doctor in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore'
     },
     {
       name: 'Dr. Suvarnini Konale',
@@ -502,7 +502,7 @@ export class DoctorLayoutComponent {
       qualification: 'BNYS',
       time: '10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00',
       date: 'Monday-Saturday',
-      alt : 'Dr. Suvarnini Konale | Best Lifestyle Consultant in Bangalore | Rashtrotthana Hospital'
+      alt : 'Dr. Suvarnini Konale | Best Lifestyle Consultant in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore'
     },
     {
       name: 'Dr. Vishwanath Sanagoudar',
@@ -515,7 +515,7 @@ export class DoctorLayoutComponent {
       qualification: 'MBBS, MD, FELLOWSHIP IN PAEDIATRIC INTENSIVE CARE (IGICH)',
       time: '10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00,16:00-16:20,16:20-16:40,16:40-17:00,17:00-17:20,17:20-17:40,17:40-18:00,18:00-18:20,18:20-18:40,18:40-19:00,19:00-19:20,19:20-19:40,19:40-20:00',
       date: 'Monday-Saturday',
-      alt : 'Dr. Vishwanath Sanagoudar | Best Paediatrician and Neonatologist in Bangalore | Rashtrotthana Hospital'
+      alt : 'Dr. Vishwanath Sanagoudar | Best Paediatrician and Neonatologist in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore'
     },
     {
       name: 'Dr. Niveditha C',
@@ -528,7 +528,7 @@ export class DoctorLayoutComponent {
       qualification: 'MBBS, MD, Fellowship in Neonatology (NNFI),Early Nutrition Specialist (ENS),Fellowship in Paediatric Nutrition(ongoing)',
       time: '10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00,16:00-16:20,16:20-16:40,16:40-17:00,17:00-17:20,17:20-17:40,17:40-18:00,18:00-18:20,18:20-18:40,18:40-19:00,19:00-19:20,19:20-19:40,19:40-20:00',
       date: 'Monday-Saturday',
-      alt : 'Dr. Niveditha C | Best Pediatrician in Bangalore | Rashtrotthana Hospital'
+      alt : 'Dr. Niveditha C | Best Pediatrician in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore'
     },
     {
       name: 'Dr. Nikhil Hegde',
@@ -541,7 +541,7 @@ export class DoctorLayoutComponent {
       qualification: 'MBBS, MS Orthopaedicss',
       time: '10:30-10:50,10:50-11:10,11:10-11:30,11:30-11:50,11:50-12:10,12:10-12:30,12:30-12:50,12:50-13:10,13:10-13:30,13:30-13:50,13:50-14:10,14:10-14:30,14:30-14:50,14:50-15:10,15:10-15:30',
       date: 'Monday,Wednesday and Friday',
-      alt : 'Dr. Nikhil Hegde | Best Orthopaedic Consultant in Bangalore | Rashtrotthana Hospital'
+      alt : 'Dr. Nikhil Hegde | Best Orthopaedic Consultant in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore'
     },
     {
       name: 'Dr. Neelam Saraswat',
@@ -554,7 +554,7 @@ export class DoctorLayoutComponent {
       qualification: 'MBBS, DNB, MRCOG(U.K)',
       time: '10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00',
       date: 'Monday-Saturday',
-      alt : 'Dr. Neelam Saraswat | Best Gynaecology Consultant in Bangalore | Rashtrotthana Hospital'
+      alt : 'Dr. Neelam Saraswat | Best Gynaecology Consultant in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore'
     },
     {
       name: 'Dr. Ashwitha Gundmi',
@@ -567,7 +567,7 @@ export class DoctorLayoutComponent {
       qualification: 'MBBS, MS OBG, MRCOG(London)',
       time: '10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00',
       date: 'Monday-Saturday',
-      alt :'Dr. Ashwitha Gundmi | Best Obstetrics & Gynaecologist in Bangalore | Rashtrotthana Hospital'
+      alt :'Dr. Ashwitha Gundmi | Best Obstetrics & Gynaecologist in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore'
     },
     {
       name: 'Dr. Vinita Udupa',
@@ -580,7 +580,7 @@ export class DoctorLayoutComponent {
       qualification: 'MBBS, MS, DNB, FNB, MRCOG(UK)',
       time: '11:30-11:50,11:50-12:10,12:10-12:30,12:30-12:50,12:50-13:10',
       date: 'Tuesday',
-      alt : 'Dr. Vinita Udupa | Best OBG in Bangalore | Rashtrotthana Hospital'
+      alt : 'Dr. Vinita Udupa | Best OBG in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore'
     },
     {
       name: 'Dr. Anusha Mutalik Desai',
@@ -593,7 +593,7 @@ export class DoctorLayoutComponent {
       qualification: 'BHMS, MD (HOM)',
       time: '09:00-09:20,09:20-09:40,09:40-10:00,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,13:00-13:20,13:20-13:40,13:40-14:00,14:00-14:20,14:20-14:40,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00,16:00-16:20,16:20-16:40,16:40-17:00',
       date: 'Monday-Saturday',
-      alt : 'Dr. Anusha Mutalik Desai | Best Homeopathy Doctor in Bangalore | Rashtrotthana Hospital'
+      alt : 'Dr. Anusha Mutalik Desai | Best Homeopathy Doctor in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore'
     },
     {
       name: 'Dr. Ajay N',
@@ -606,7 +606,7 @@ export class DoctorLayoutComponent {
       expertise: 'Years of Experience: 4',
       time: '09:30-09:50,09:50-10:10,10:10-10:30,10:30-10:50,10:50-11:10,11:10-11:30,11:30-11:50,11:50-12:10,12:10-12:30,12:30-12:50,12:50-13:10,13:10-13:30,13:30-13:50,13:50-14:10,14:10-14:30,14:30-14:50,14:50-15:10,15:10-15:30,15:30-15:50,15:50-16:10,16:10-16:30,16:30-16:50,16:50-17:00',
       date: 'Monday-Saturday',
-      alt : 'Dr. Ajay N | Best Gastro Doctor in Bangalore | Rashtrotthana Hospital'
+      alt : 'Dr. Ajay N | Best Gastro Doctor in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore'
     },
     {
       name: 'Dr. Varsha P',
@@ -623,7 +623,7 @@ export class DoctorLayoutComponent {
       expertise: 'Years of Experience: 4',
       time: '09:30-09:50,09:50-10:10,10:10-10:30,10:30-10:50,10:50-11:10,11:10-11:30,11:30-11:50,11:50-12:10,12:10-12:30,12:30-12:50,12:50-13:10,13:10-13:30,13:30-13:50,13:50-14:10,14:10-14:30,14:30-14:50,14:50-15:10,15:10-15:30,15:30-15:50,15:50-16:10,16:10-16:30,16:30-16:50,16:50-17:00',
       date: 'Monday-Saturday',
-      alt : 'Dr. Varsha P | Best Yoga & Lifestyle Consultant in Bangalore | Rashtrotthana Hospital'
+      alt : 'Dr. Varsha P | Best Yoga & Lifestyle Consultant in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore'
     },
 
     {
@@ -637,7 +637,7 @@ export class DoctorLayoutComponent {
       qualification: 'BAMS',
       time: '09:30-09:50,09:50-10:10,10:10-10:30,10:30-10:50,10:50-11:10,11:10-11:30,11:30-11:50,11:50-12:10,12:10-12:30,12:30-12:50,12:50-13:10,13:10-13:30,13:30-13:50,13:50-14:10,14:10-14:30,14:30-14:50,14:50-15:10,15:10-15:30,15:30-15:50,15:50-16:10,16:10-16:30,16:30-16:50,16:50-17:00',
       date: 'Monday-Saturday',
-      alt : 'Dr. Rohith K. R | Ayurveda doctor in Bangalore | Rashtrotthana Hospital'
+      alt : 'Dr. Rohith K. R | Ayurveda doctor in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore'
     },
     // {
     //   name: 'Dr. Alekhya R',
@@ -662,7 +662,7 @@ export class DoctorLayoutComponent {
       qualification: 'MBBS, MS(ENT)',
       time: '13:30-13:50,13:50-14:10,14:10-14:30,14:30-14:50,14:50-15:10,15:10-15:30',
       date: 'Monday,Wednesday,Thursday and Friday',
-      alt : 'Dr. Narendranath A | Best ENT Doctor in Bangalore | Rashtrotthana Hospita'
+      alt : 'Dr. Narendranath A | Best ENT Doctor in Bangalore | Rashtrotthana Hospita | Rajarajeshwari Nagar Bangalore'
     },
     // {
     //   name: 'Dr. Ashika Bagaria',
@@ -699,7 +699,7 @@ export class DoctorLayoutComponent {
       qualification: 'MBBS, MD',
       time: '09:00-09:20,09:20-09:40,09:40-10:00,10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,13:00-13:20,13:20-13:40,13:40-14:00,14:00-14:20,14:20-14:40,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00,16:00-16:20,16:20-16:40,16:40-17:00',
       date: 'Monday-Saturday',
-      alt : 'Dr. Bhavya | Best Diabetologist in Bangalore | Rashtrotthana Hospital'
+      alt : 'Dr. Bhavya | Best Diabetologist in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore'
     },
 
     {
@@ -713,7 +713,7 @@ export class DoctorLayoutComponent {
       expertise: 'Years of Experience: 3',
       time: '10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00',
       date: 'Monday-Saturday',
-      alt : 'Dr. Shamantha S | Lifestyle Specialist in Bangalore | Rashtrotthana Hospita'
+      alt : 'Dr. Shamantha S | Lifestyle Specialist in Bangalore | Rashtrotthana Hospita | Rajarajeshwari Nagar Bangalore'
     },
     {
       name: 'Dr. Kavyashree Kulamarva',
@@ -726,7 +726,7 @@ export class DoctorLayoutComponent {
       expertise: 'Years of Experience: 6',
       time: '09:30-09:50,09:50-10:10,10:10-10:30,10:30-10:50,10:50-11:10,11:10-11:30,11:30-11:50,11:50-12:10,12:10-12:30,12:30-12:50,12:50-13:10,13:10-13:30,14:30-14:50,14:50-15:10,15:10-15:30,15:30-15:50,15:50-16:10,16:10-16:30,16:30-16:50,16:50-17:10',
       date: 'Monday-Saturday',
-      alt : 'Dr. Kavyashree Kulamarva | Ayurvedic Psychiatry Consultant in Bangalore | Rashtrotthana Hospital'
+      alt : 'Dr. Kavyashree Kulamarva | Ayurvedic Psychiatry Consultant in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore'
     },
     {
       name: 'Ms. Archana Karthick ',
@@ -739,7 +739,7 @@ export class DoctorLayoutComponent {
       qualification: ' M.Sc. in Dietetics and Food service management B.sc in Clinical Nutrition and Dietetics PG certificate in Diabetes Education (International Diabetes Federation) MICYAN -Indian Institute of public health-Delhi',
       time: '12:00-12:20,12:20-12:40,12:40-13:00,14:40-15:00,15:00-15:20,15:20-15:30',
       date: 'Monday-Saturday',
-      alt : 'Ms. Archana Karthick | Best Clinical Dietician in Bangalore | Rashtrotthana Hospital'
+      alt : 'Ms. Archana Karthick | Best Clinical Dietician in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore'
     },
     {
       name: 'Dr. Gopal Das C M',
@@ -752,7 +752,7 @@ export class DoctorLayoutComponent {
       qualification: 'MD Psychiatry, MBBS',
       time: '18:00-18:30,18:30-19:00,19:00-19:30',
       date: 'Monday-Saturday',
-      alt : 'Dr. Gopal Das C M | Best Psychiatrist in Bangalore | Rashtrotthana Hospital'
+      alt : 'Dr. Gopal Das C M | Best Psychiatrist in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore'
     },
     {
       name: 'Dr. Nishitha A',
@@ -765,7 +765,7 @@ export class DoctorLayoutComponent {
       qualification: 'MBBS, MD',
       time: '16:30-16:50,16:50-17:10,17:10-17:30,17:30-17:50,17:50-18:00',
       date: 'Monday-Thursday',
-      alt : 'Dr. Nishitha A | Radiologist in Bangalore | Rashtrotthana Hospital'
+      alt : 'Dr. Nishitha A | Radiologist in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore'
     },
     {
       name: 'Dr. Nagesh R',
@@ -778,7 +778,7 @@ export class DoctorLayoutComponent {
       qualification: 'MBBS, DMRD, DNB, FRCR',
       time: '09:30-09:50,09:50-10:10,10:10-10:30,10:30-10:50,10:50-11:00',
       date: 'Monday-Friday',
-      alt : 'Dr. Nagesh R | Radiology Consultant in Bangalore | Rashtrotthana Hospital'
+      alt : 'Dr. Nagesh R | Radiology Consultant in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore'
     },
     {
       name: 'Dr. Sapna S',
@@ -791,7 +791,7 @@ export class DoctorLayoutComponent {
       qualification: 'MD (Ayu) in Rasa Shastra and Bhaishajya Kalpana from SDM College, Udupi PG Dip (Yoga) Diploma in Medical Astrology',
       time: '09:00-09:20,09:20-09:40,09:40-10:00,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,13:00-13:20,13:20-13:40,13:40-14:00,14:00-14:20,14:20-14:40,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00,16:00-16:20,16:20-16:40,16:40-17:00',
       date: 'Monday-Saturday,Sunday',
-      alt : 'Dr. Sapna S | Best Ayurveda Specialist in Bangalore | Rashtrotthana Hospital'
+      alt : 'Dr. Sapna S | Best Ayurveda Specialist in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore'
     },
     {
       name: 'Dr. Venkatesh H. S',
@@ -804,7 +804,7 @@ export class DoctorLayoutComponent {
       qualification:'BSc, BAMS, FAHO, FAGE',
       time:'10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00',
       date:'Wednesday and Friday',
-      alt:'Dr. Venkatesh H. S | Best Ayurveda Endocrinologist in Bangalore | Rashtrotthana Hospital'
+      alt:'Dr. Venkatesh H. S | Best Ayurveda Endocrinologist in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore'
     },
       {
         name: 'Dr. Sunil Kumar C',
@@ -817,7 +817,7 @@ export class DoctorLayoutComponent {
         qualification:' MS ENT, DHM, IFAAM',
         time:'18:30-18:50,18:50-19:10,19:10-19:30',
         date:'Tuesday,Thursday and Saturday',
-        alt:'Dr. Sunil Kumar C | Best  ENT, Head and Neck Surgeon in Bangalore | Rashtrotthana Hospital'
+        alt:'Dr. Sunil Kumar C | Best  ENT, Head and Neck Surgeon in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore'
 
       },
       {
@@ -843,7 +843,7 @@ export class DoctorLayoutComponent {
         qualification : "MBBS, MD in General Medicine, Dr.N.B in Medical Gastroenterology",
         time : "",
         date : "Monday, Wednesday and Saturday",
-        alt:"Dr. Man Mohan U. S | Best Gastroenterologist in Bangalore | Rashtrotthana Hospital"
+        alt:"Dr. Man Mohan U. S | Best Gastroenterologist in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore"
       },
       {
         name: "Dr. Kalyani Dilip Karkare",
@@ -856,7 +856,7 @@ export class DoctorLayoutComponent {
         qualification : "MBBS, DM Neurology, PDF EEG",
         time : "",
         date : "Monday",
-        alt:'Dr. Kalyani Dilip Karkare | Best Neurologist in Bangalore | Rashtrotthana Hospital'
+        alt:'Dr. Kalyani Dilip Karkare | Best Neurologist in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore'
       },
       {
         name: "Dr. Vivekanand",
@@ -869,7 +869,7 @@ export class DoctorLayoutComponent {
         qualification : "MBBS, MS(General Surgery), FVES",
         time : "",
         date : "",
-        alt:'Dr. Vivekanand | Consultant Vascular Surgeon in Bangalore | Rashtrotthana Hospital'
+        alt:'Dr. Vivekanand | Consultant Vascular Surgeon in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore'
       },
       {
         name: "Dr. Dhanyatha Muninarayan",
@@ -882,7 +882,7 @@ export class DoctorLayoutComponent {
         qualification : "MBBS, (MD) Paediatrics",
         time : "",
         date : "",
-        alt : 'Dr. Dhanyatha Muninarayan'
+        alt : 'Dr. Dhanyatha Muninarayan  | Consultant Paediatrician in Bangalore | Rajarajeshwari Nagar Bangalore'
       },
   ]
   specialDoctors = ['Dr. Pramod S. Chinder', 'Dr. Meena H. B', 'Brig (Dr) S. Shashivadhanan', 'Dr. Ravishankar. D', 'Dr. Sapna S','Dr. Kalyani Dilip Karkare','Dr. Man Mohan U. S'];
