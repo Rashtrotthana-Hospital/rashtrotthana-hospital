@@ -110,6 +110,7 @@ import { PopupImageComponent } from './popup-image/popup-image.component';
 import { MaternityComponent } from './maternity/maternity.component';
 import { HttpClient } from '@angular/common/http';
 import { ChatbotComponent } from './chatbot/chatbot.component';
+import { PackageFormComponent } from './package-form/package-form.component';
 
 
 @NgModule({
@@ -193,6 +194,7 @@ import { ChatbotComponent } from './chatbot/chatbot.component';
     PopupImageComponent,
     MaternityComponent,
     ChatbotComponent,
+    PackageFormComponent,
     // ResearchCarouselComponent,
     // ProctologyComponent
   ],
