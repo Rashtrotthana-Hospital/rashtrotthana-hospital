@@ -1,0 +1,146 @@
+@media (min-width : 320px){
+    .package-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 5% 0;
+    }
+    
+    .form-label{
+        color: var(--Neutral-800, #170F49);
+        font-feature-settings: 'liga' off, 'clig' off;
+        font-family: Poppins;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px; /* 111.111% */
+        padding: 0;
+        margin: 0 0 8px 0;
+    }
+    
+    .form-heading {
+        display: flex;
+        justify-content: left;
+    }
+    
+    .heading_text h3{
+        color: var(--Neutral-800, #170F49);
+        font-feature-settings: 'liga' off, 'clig' off;
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 35px; 
+        width: 100%;
+    }
+    
+    .heading_text hr{
+        margin: 20px 0;
+    }
+    
+    .input-fields{
+        margin-top: 15px;
+        width: 100%;
+    }
+    
+    .input-fields input{
+        width: 320px;
+        height: 50px;
+        flex-shrink: 0;
+        border-radius: 8px;
+        border: 1px solid var(--Neutral-300, #EFF0F6);
+        background: var(--Neutral-100, #FFF);
+        box-shadow: 0px 2px 6px 0px rgba(19, 18, 66, 0.07);
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    .input-fields input::placeholder{
+        color: var(--Neutral-600, #6F6C90);
+    }
+    
+    .date input{
+        width : 320px;
+        padding : 0 10px
+    }
+    
+    .form-buttons{
+        display: flex;
+        gap: 40px;
+        justify-content: center;
+    }
+    
+    .form-button{
+        display: inline-flex;
+        height: 44px;
+        padding: 14px 20px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        flex-shrink: 0;
+        border-radius: 8px;
+        color: #FFF;
+        text-align: center;
+        font-family: Inter;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        outline: none;
+        border: none;
+        margin-top: 50px;
+    }
+    
+    
+    .green{
+        background: #008080;
+    }
+    
+    .gray{
+        background: #666F77;
+    }
+}
+
+@media(min-width : 450px){
+    .input-fields input{
+        width: 420px;
+    }
+}
+
+@media(min-width : 780px){
+
+    .form-label{
+        font-size: 18px;
+        margin-left: 8px;
+    }
+
+    .heading_text{
+        font-size: 24px;
+    }
+
+     .name-field{
+        display: flex;
+        gap: 30px;
+    }
+
+    .input-fields{
+        margin-top: 20px;
+    }
+
+    .input-fields input{
+        width: 100%;
+        height: 66px;
+        border-radius: 16px;
+        font-size: 18px;
+    }
+
+    .name-field input{
+        width: 320px;
+    }
+    
+    .date input{
+        width : 320px;
+        padding : 0 10px
+    }
+}

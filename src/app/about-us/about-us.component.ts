@@ -9,7 +9,7 @@ import { Title, Meta,DomSanitizer,SafeHtml } from '@angular/platform-browser';
 export class AboutUsComponent {
   constructor(private titleService: Title, private metaService: Meta, private sanitizer: DomSanitizer) {}
   ngOnInit(): void {
-  this.titleService.setTitle("About Rashtrotthana Hospital, R R Nagar Bangalore India");  
+  this.titleService.setTitle("About Rashtrotthana Hospital, RR Nagar Bangalore India");  
 
   this.metaService.updateTag({ name: 'description', content: ' Rashtrotthana Hospital affiliated with Rashtrotthana Trust, we dedicate ourselves to providing exceptional healthcare services. Within our 162-bed facility, we prioritize holistic care, offering specialized treatments in Modern Medicine, Ayurveda, Homeopathy, Yoga & Naturopathy.' });
 
