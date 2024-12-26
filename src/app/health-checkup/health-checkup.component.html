@@ -37,6 +37,7 @@
                                 <div class="view-btn-container">
                                     <span class="view-all-btn" (click)="toggleTab($event, i)"> {{ activeIndex === i ?
                                         'Close All' : 'View All' }} </span>
+                                    <!-- <span class="view-all-btn" (click)="openBookingForm(package)">Book Now</span> -->
                                 </div>
                             </div>
                         </div>
@@ -62,4 +63,22 @@
         </p-accordion>
 
     </div>
+    <!-- <div class="modal-overlay" *ngIf="showBookingForm">
+        <div class="modal">
+          <button class="close-btn" (click)="closeBookingForm()">×</button>
+          <app-package-form
+            [selectedPackage]="selectedPackage"
+            (closeForm)="closeBookingForm()"
+            (formSubmit)="handleFormSubmission($event)">
+          </app-package-form>
+        </div>
+      </div> -->
+      <div class="modal-overlay" *ngIf="showBookingForm">
+        <app-package-form
+        [selectedPackage]="selectedPackage"
+        (closeForm)="closeBookingForm()"
+        (formSubmit)="handleFormSubmission($event)">
+        </app-package-form>
+      </div>
+
 </div>

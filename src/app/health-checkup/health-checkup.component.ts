@@ -1,6 +1,7 @@
 
 import { Component, OnInit } from '@angular/core';
-import { Title, Meta,DomSanitizer,SafeHtml } from '@angular/platform-browser'; 
+import { Title, Meta,DomSanitizer,SafeHtml } from '@angular/platform-browser';
+import { PackageFormComponent } from "../package-form/package-form.component"; 
 
 interface PackageDetails {
   title: string;
@@ -13,17 +14,22 @@ interface Package {
   price: number;
   package: PackageDetails[];
   test: string;
+  packageId?: number;
 }
 
 @Component({
   selector: 'app-health-checkup',
   templateUrl: './health-checkup.component.html',
-  styleUrl: './health-checkup.component.css'
+  styleUrl: './health-checkup.component.css',
 })
+
 export class HealthCheckupComponent {
+
   constructor(private titleService: Title, private metaService: Meta, private sanitizer: DomSanitizer) {
     
   }
+showBookingForm = false; // Flag to show the booking form
+selectedPackage: Package | null = null; // Selected package
   ngOnInit(): void {
     this.titleService.setTitle("Comprehensive Health Check-Up Packages - Rashtrotthana Hospital");  
 
@@ -55,6 +61,7 @@ export class HealthCheckupComponent {
     {
       title: 'Annual Master Diabetes Care',
       price: 5999,
+      packageId: 1,
       package: [
         {
           title: 'LABORATORY INVESTIGATIONS',
@@ -82,6 +89,7 @@ export class HealthCheckupComponent {
     {
       title: 'Senior Citizen Health (Male)',
       price: 5500,
+      packageId: 2,
       package: [
         {
           title: 'LABORATORY INVESTIGATIONS',
@@ -109,6 +117,7 @@ export class HealthCheckupComponent {
     {
       title: 'Senior Citizen Health Check (Female)',
       price: 5500,
+      packageId: 3,
       package: [
         {
           title: 'LABORATORY Investigations',
@@ -136,6 +145,7 @@ export class HealthCheckupComponent {
     {
       title: 'Basic Health Check Up',
       price: 950,
+      packageId: 4,
       package: [
         {
           title: 'LABORATORY INVESTIGATIONS',
@@ -317,5 +327,21 @@ export class HealthCheckupComponent {
 
   isTabActive(index: number): boolean {
     return this.activeIndex === index;
+  }
+
+  openBookingForm(packageData: any): void {
+    this.selectedPackage = packageData; // Set the selected package
+    this.showBookingForm = true; // Show the booking form
+    console.log(this.showBookingForm)
+  }
+
+  closeBookingForm(): void {
+    this.selectedPackage = null; // Clear selected package
+    this.showBookingForm = false; // Hide the booking form
+  }
+
+  handleFormSubmission(data: any): void {
+    console.log('Form submitted:', data);
+    this.closeBookingForm(); // Close the booking form after submission
   }
 }

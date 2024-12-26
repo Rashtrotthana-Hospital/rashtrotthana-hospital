@@ -80,4 +80,10 @@ export class ChatbotServiceService {
     const bookedSlotsUrl = `${this.apiUrl}/api/doctors/booked-slots?doctorId=${doctorId}&date=${date}`;
     return this.http.get<{ time: string; complete: boolean }[]>(bookedSlotsUrl);
   }
-}
+  createService(service: any): Observable<any> {
+    return this.http.post(`${this.apiUrl}/api/services`, service);
+  }
+  sendWhatsappMessageForService(data: any): Observable<any> {
+    return this.http.post<any>(`${this.apiUrl}/api/whatsapp/send-service-message`, data);
+  }
+  }

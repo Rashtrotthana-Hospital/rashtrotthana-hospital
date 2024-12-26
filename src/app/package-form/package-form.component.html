@@ -1,5 +1,10 @@
 <div class="package-container">
-    <form action="">
+
+
+    <form #form="ngForm" (ngSubmit)="submitForm()" novalidate>
+        <div class="cancel-icon">
+            <div class="close-btn" (click)="cancelForm()">×</div>
+          </div>
         <div class="heading_text">
             <h3>Health Check Request Form</h3>
             <hr>
@@ -7,34 +12,53 @@
         <div class="input-fields name-field">
             <div class="name">
                 <p class="form-label">Frist Name</p>
-                <input type="text" placeholder="Enter Your First Name">
+                <input type="text" name="firstName"  [(ngModel)]="formData.firstName" #firstName="ngModel" required placeholder="Enter Your First Name">
+                <div *ngIf="(firstName.touched || form.submitted) && firstName.invalid" class="error-message">
+                    First Name is required.
+                  </div>
             </div>
             <div class="name">
                 <p class="form-label">Last Name</p>
-                <input type="text" placeholder="Enter Your Last Name">
+                <input type="text"  class="form-input"  [(ngModel)]="formData.lastName" name="lastName"  #lastName="ngModel" placeholder="Enter Your Last Name">
+                <div *ngIf="(lastName.touched || form.submitted) && lastName.invalid" class="error-message">
+                    Last Name is required.
+                  </div>
             </div>
         </div>
         <div class="input-fields name-field">
             <div class="name">
                 <p class="form-label">Phone Number</p>
-                <input type="text" placeholder="Enter Your Number">
+                <input type="text"  [(ngModel)]="formData.phoneNumber" name="phoneNumber" #phoneNumber="ngModel"required
+                pattern="[0-9]{10}" placeholder="Enter Your Number">
+                <div *ngIf="(phoneNumber.touched || form.submitted) && phoneNumber.invalid" class="error-message">
+                    <span *ngIf="phoneNumber.errors?.['required']">Phone Number is required.</span>
+                    <span *ngIf="phoneNumber.errors?.['pattern']">Phone Number must be 10 digits.</span>
+                  </div>
             </div>
             <div class="name">
                 <p class="form-label">Email Id</p>
-                <input type="email" placeholder="Enter Your Email Id">
+                <input type="email"  [(ngModel)]="formData.email" name="email"  #email="ngModel" required placeholder="Enter Your Email Id"  pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+                <div *ngIf="(email.touched || form.submitted) && email.invalid" class="error-message">
+                    <span *ngIf="email.errors?.['required']">Email ID is required.</span>
+                    <span *ngIf="email.errors?.['email']">Enter a valid Email ID.</span>
+                  </div>
             </div>
         </div>
         <div class="input-fields">
             <p class="form-label">Package </p>
-            <input type="text" placeholder="Senior Citizen Health Check (Female)">
+            <input type="text" [value]="selectedPackage?.title" readonly placeholder="Senior Citizen Health Check (Female)">
         </div>
         <div class="input-fields date">
             <p class="form-label">Select Date</p>
-            <input type="date">
+            <input type="date" [(ngModel)]="formData.appointmentDate" name="date"  #appointmentDate="ngModel" [min]="today"
+            required>
+            <div *ngIf="(appointmentDate.touched || form.submitted) && appointmentDate.invalid" class="error-message">
+                Appointment date is required and cannot be in the past.
+              </div>
         </div>
         <div class="form-buttons">
-            <button class="form-button green">Confirm</button>
-            <button class="form-button gray">Cancel</button>
+            <button class="form-button green" [disabled]="form.invalid">Confirm</button>
+            <button class="form-button gray" (click)="cancelForm()">Cancel</button>
         </div>
     </form>
 </div>

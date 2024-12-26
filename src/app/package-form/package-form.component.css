@@ -4,7 +4,32 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        padding: 5% 0;
+        padding: 5% 3rem;
+        background-color: #FFF;
+        /* border-radius: 32px; */
+        height: 100vh;
+        width: 100vw;
+        overflow-y: auto;
+    }
+    .error-message {
+        color: red;
+        font-size: 12px;
+        margin-top: 4px;
+        font-weight: 500;
+        margin-left: 2px;
+      }
+      
+
+    .cancel-icon{
+        display: flex;
+        justify-content: right;
+        /* padding-right : 20px */
+        font-size: 30px;
+        font-weight: bolder;
+    }
+
+    .close-btn{
+        cursor: pointer;
     }
     
     .form-label{
@@ -18,7 +43,6 @@
         padding: 0;
         margin: 0 0 8px 0;
     }
-    
     .form-heading {
         display: flex;
         justify-content: left;
@@ -59,7 +83,20 @@
     .input-fields input::placeholder{
         color: var(--Neutral-600, #6F6C90);
     }
-    
+    .input-fields input:focus{
+        border: 1px solid #007bff;
+        box-shadow: 0 0 3px rgba(0, 123, 255, 0.4);
+        outline: none;
+    }
+    .input-fields.ng-invalid.ng-touched {
+        border: 1px solid #ff4d4d; /* Red border for invalid inputs */
+        box-shadow: 0 0 3px rgba(255, 77, 77, 0.4);
+      }
+      
+      .input-fields.ng-invalid.ng-touched + .form-label {
+        color: #ff4d4d; /* Red label when invalid */
+      }
+
     .date input{
         width : 320px;
         padding : 0 10px
@@ -92,7 +129,13 @@
         margin-top: 50px;
     }
     
-    
+    .green:disabled {
+        background-color: #cccccc; /* Light gray background */
+        color: #666666; /* Darker gray text */
+        cursor: not-allowed; /* Show "not-allowed" cursor */
+        box-shadow: none; /* Remove shadow */
+        opacity: 0.6; /* Reduce visibility */
+      }
     .green{
         background: #008080;
     }
@@ -110,6 +153,18 @@
 
 @media(min-width : 780px){
 
+    .package-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 5% 3rem;
+        background-color: #FFF;
+        border-radius: 32px;
+        height: auto;
+        width: 720px;
+        overflow: hidden;
+    }
     .form-label{
         font-size: 18px;
         margin-left: 8px;
