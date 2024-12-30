@@ -86,4 +86,7 @@ export class ChatbotServiceService {
   sendWhatsappMessageForService(data: any): Observable<any> {
     return this.http.post<any>(`${this.apiUrl}/api/whatsapp/send-service-message`, data);
   }
+  sendSMSMessageForService(data: any): Observable<any> {
+    return this.http.post<any>(`${this.apiUrl}/api/sms/send-sms-package`, data);
+  }
   }
