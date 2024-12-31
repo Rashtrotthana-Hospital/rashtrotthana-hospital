@@ -164,7 +164,24 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  gap: 20px;
 }
+
+
+.tkr-new-img{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.tkr-img{
+  width: 265px;
+  height: auto;
+  border-radius: 20px;
+}
+
 
 .heading-2 {
   color: #008080;
@@ -190,7 +207,7 @@
 
 .knee-image {
   width: 542px;
-  height: 370px;
+  height: auto;
   flex-shrink: 0;
 }
 
@@ -225,6 +242,43 @@
   color: white;
   font-size: 26px;
 }
+
+.conclusion{
+  margin-top: 20px;
+}
+
+.con-list{
+  margin-top: 20px;
+}
+
+.faq_section{
+  padding: 4rem 6rem;
+}
+
+.ques{
+  margin-top: 25px;
+  color: #008080;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: left;
+}
+
+.ans{
+  margin-top: 15px;
+}
+
+.primary{
+  padding: 0;
+  margin: 0;
+}
+
+.content-2.primary-flex {
+  display: inline-block; /* Make the parent container inline */
+  /* white-space: nowrap; Prevent wrapping to the next line */
+}
+
 
 .doctor_heading {
   margin: 80px 0;
@@ -314,7 +368,7 @@ iframe {
 
   .knee-image-1 {
     width: 416px;
-    height: 379px;
+    height: auto;
   }
 
   .what-is-knee-replacement-image {
@@ -342,7 +396,7 @@ iframe {
 
   .knee-image-1 {
     width: 321px;
-    height: 247px;
+    height: auto;
   }
 
   .what-is-knee-replacement-image {
@@ -365,7 +419,7 @@ iframe {
 
   .knee-image {
     width: 431px;
-    height: 341px;
+    height: auto;
   }
 }
 
@@ -405,7 +459,7 @@ iframe {
 
   .knee-image {
     width: 349px;
-    height: 294px;
+    height: auto;
   }
 
   .doc_name {
@@ -487,7 +541,7 @@ iframe {
 
   .knee-image-1 {
     width: 309px;
-    height: 211px;
+    height: auto;
     flex-shrink: 0;
   }
 
@@ -512,7 +566,7 @@ iframe {
 
   .knee-image {
     width: 328px;
-    height: 224px;
+    height: auto;
     flex-shrink: 0;
   }
 
@@ -606,7 +660,7 @@ iframe {
   }
 
   .conclusion {
-    padding-bottom: 2rem;
+    margin-top: 15px;
   }
 
   .arrow {
