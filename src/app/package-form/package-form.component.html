@@ -12,16 +12,17 @@
         <div class="input-fields name-field">
             <div class="name">
                 <p class="form-label">Frist Name</p>
-                <input type="text" name="firstName"  [(ngModel)]="formData.firstName" #firstName="ngModel" required placeholder="Enter Your First Name">
+                <input type="text" name="firstName"  [(ngModel)]="formData.firstName" #firstName="ngModel"  pattern="^[a-zA-Z]*$" required placeholder="Enter Your First Name">
                 <div *ngIf="(firstName.touched || form.submitted) && firstName.invalid" class="error-message">
-                    First Name is required.
+                    <span *ngIf="firstName.errors?.['required']">First Name is required.</span>
+                    <span *ngIf="firstName.errors?.['pattern']">First Name should be valid</span>
                   </div>
             </div>
             <div class="name">
                 <p class="form-label">Last Name</p>
-                <input type="text"  class="form-input"  [(ngModel)]="formData.lastName" name="lastName"  #lastName="ngModel" placeholder="Enter Your Last Name">
+                <input type="text"  class="form-input"  [(ngModel)]="formData.lastName" name="lastName"  #lastName="ngModel"  pattern="^[a-zA-Z ]*$" placeholder="Enter Your Last Name">
                 <div *ngIf="(lastName.touched || form.submitted) && lastName.invalid" class="error-message">
-                    Last Name is required.
+                    <span *ngIf="lastName.errors?.['pattern']">Last Name should be valid</span>
                   </div>
             </div>
         </div>
@@ -37,10 +38,11 @@
             </div>
             <div class="name">
                 <p class="form-label">Email Id</p>
-                <input type="email"  [(ngModel)]="formData.email" name="email"  #email="ngModel" required placeholder="Enter Your Email Id"  pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+                <input type="email"  [(ngModel)]="formData.email" name="email"  #email="ngModel" placeholder="Enter Your Email Id"  pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
                 <div *ngIf="(email.touched || form.submitted) && email.invalid" class="error-message">
                     <span *ngIf="email.errors?.['required']">Email ID is required.</span>
                     <span *ngIf="email.errors?.['email']">Enter a valid Email ID.</span>
+                    <span *ngIf="email.errors?.['pattern']">Email Id should be valid</span>
                   </div>
             </div>
         </div>
