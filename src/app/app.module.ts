@@ -111,6 +111,9 @@ import { MaternityComponent } from './maternity/maternity.component';
 import { HttpClient } from '@angular/common/http';
 import { ChatbotComponent } from './chatbot/chatbot.component';
 import { PackageFormComponent } from './package-form/package-form.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { SpecialityHeaderComponent } from './speciality-header/speciality-header.component';
+import { SpecialityDoctorsComponent } from './speciality-doctors/speciality-doctors.component';
 
 
 @NgModule({
@@ -195,6 +198,9 @@ import { PackageFormComponent } from './package-form/package-form.component';
     MaternityComponent,
     ChatbotComponent,
     PackageFormComponent,
+    SidebarComponent,
+    SpecialityHeaderComponent,
+    SpecialityDoctorsComponent,
     // ResearchCarouselComponent,
     // ProctologyComponent
   ],

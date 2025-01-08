@@ -1,0 +1,153 @@
+.speciality-header{
+    margin-top: 120px;
+}
+
+.container-2{
+    display: flex;
+    padding: 4% 3%;
+    background-color: #FBFFF5;
+    gap: 50px;
+}
+
+
+.s_h1{
+    color: #008080;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.s_para{
+    color: #000;
+    text-align: justify;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px; /* 225% */
+}
+
+.s_subheadings{
+    color: #008080;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 15px 0;
+}
+
+.s_bold{
+    font-weight: bold;
+}
+
+.para_image{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.s_image img{
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.container-margin{
+    margin-top: 40px;
+}
+
+.container-padding{
+    width: 100%;
+    padding: 0 4%;
+}
+
+.container-grid{
+    display: grid;
+    /* grid-template-columns: 50% 50%; */
+    column-gap: 50px;
+}
+
+.doc-heading{
+    color: #222;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.doctors{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.doctor-container{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.faq{
+    padding: 4%;
+}
+
+.faq-heading{
+    color: #008080;
+    font-size: 40px;
+    font-family: poppins;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.ques_ans{
+    margin: 30px 0;
+}
+
+@media (max-width : 1200px){
+    .sidebar{
+        display: none;
+    }
+}
+
+@media (max-width : 600px){
+
+    .s_h1{
+        font-size: 20px;
+    }
+    
+    .s_para{
+        font-size: 14px;/* 225% */
+    }
+    
+    .s_subheadings{
+        font-size: 18px;
+    }
+
+    .para_image{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .row-reverse{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .doc-heading{
+        font-size: 30px;
+    }
+
+    .faq-heading{
+        font-size: 30px;
+    }
+}
