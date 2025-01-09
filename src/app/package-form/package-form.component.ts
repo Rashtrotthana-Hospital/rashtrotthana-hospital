@@ -47,18 +47,19 @@ export class PackageFormComponent {
     this.chatbotService.createService(formDetails).subscribe({
       next: (response) => {
         console.log('Appointment created successfully:', response);
-        this.chatbotService.sendWhatsappMessageForService(payload).subscribe({
-          next: (response) => {
-            console.log('Whatsapp message sent successfully:', response);
-          },
-          error: (error) => {
-            console.error('Failed to send whatsapp message:', error);
-          }
-        });
+        // this.chatbotService.sendWhatsappMessageForService(payload).subscribe({
+        //   next: (response) => {
+        //     console.log('Whatsapp message sent successfully:', response);
+        //   },
+        //   error: (error) => {
+        //     console.error('Failed to send whatsapp message:', error);
+        //   }
+        // });
         const smsPayload ={
           packageName: this.selectedPackage?.title,
           patientName: this.formData.firstName + ' ' + this.formData.lastName,
           patientPhoneNumber: this.formData.phoneNumber,
+          status: 'pending'
         }
         this.chatbotService.sendSMSMessageForService(smsPayload).subscribe({
           next: (response) => {

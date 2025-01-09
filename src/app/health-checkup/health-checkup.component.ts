@@ -44,6 +44,7 @@ selectedPackage: Package | null = null; // Selected package
     {
       title: 'Integrated Diabetic Care',
       price: 599,
+      packageId: 1,
       package: [
         {
           title: 'LABORATORY INVESTIGATIONS',
@@ -61,26 +62,26 @@ selectedPackage: Package | null = null; // Selected package
     {
       title: 'Annual Master Diabetes Care',
       price: 5999,
-      packageId: 1,
+      packageId: 2,
       package: [
         {
           title: 'LABORATORY INVESTIGATIONS',
-          items: ['Complete Blood count with ESR', 'Fasting Blood Sugar', 'Post prandial blood sugar', 'Urine Microalbumin (Avail 4 times a year)',' Lipid profile (Avail 2 times a year)', 'HBA1C', 'TFT','TSH', 'TMT', 'USG Abdomen & Pelvis 2D Echo'],
+          items: ['Complete Blood count with ESR (Avail 2 times a year)', 'Fasting Blood Sugar (Avail 4 times a year)', 'Post prandial blood sugar (Avail 4 times a year)', 'Urine Microalbumin (Avail 4 times a year)',' Lipid profile (Avail 2 times a year)', 'HBA1C (Avail 4 times a year)', 'RFT (Avail 3 times a year)','TSH (Avail 2 times a year)','LFT (Avail 2 times a year)', 'TMT (Avail once a year)', 'USG Abdomen & Pelvis 2D Echo (Avail once a year)'],
           icon: 'blood'
         },
         {
           title: 'RADIOLOGY',
-          items: ['Chest X-Ray'],
+          items: ['Chest X-Ray (Avail once a year)'],
           icon: 'radiology'
         },
         {
           title: 'CARDIAC EVALUATION',
-          items: ['ECG'],
+          items: ['ECG (Avail 2 times a year)'],
           icon: 'cardiac'
         },
         {
           title:' SPECIALITY CONSULTATIONS',
-          items: ['Physiotherapy Consultation (if required) (Avail once a year)','Physician / Diabetologist Consultation', 'Lifestyle Consultation', 'Lifestyle Management', 'Nutrition & Dietetics Consultation (Avail 4 times a year)'],
+          items: ['Physiotherapy Consultation (if required) (Avail once a year)','Physician / Diabetologist Consultation (Avail 4 times a year)', 'Lifestyle Consultation (Avail 4 times a year)', 'Lifestyle Management (Avail 4 times a year)', 'Nutrition & Dietetics Consultation (Avail 4 times a year)'],
           icon: 'speciality'
         } 
       ],
@@ -89,7 +90,7 @@ selectedPackage: Package | null = null; // Selected package
     {
       title: 'Senior Citizen Health (Male)',
       price: 5500,
-      packageId: 2,
+      packageId: 3,
       package: [
         {
           title: 'LABORATORY INVESTIGATIONS',
@@ -117,7 +118,7 @@ selectedPackage: Package | null = null; // Selected package
     {
       title: 'Senior Citizen Health Check (Female)',
       price: 5500,
-      packageId: 3,
+      packageId: 4,
       package: [
         {
           title: 'LABORATORY Investigations',
@@ -145,7 +146,7 @@ selectedPackage: Package | null = null; // Selected package
     {
       title: 'Basic Health Check Up',
       price: 950,
-      packageId: 4,
+      packageId: 5,
       package: [
         {
           title: 'LABORATORY INVESTIGATIONS',
@@ -173,6 +174,7 @@ selectedPackage: Package | null = null; // Selected package
     {
       title: 'Executive Health Check Up (Male)',
       price: 4200,
+      packageId: 6,
       package: [
         {
           title: 'LABORATORY INVESTIGATIONS',
@@ -200,6 +202,7 @@ selectedPackage: Package | null = null; // Selected package
     {
       title: 'Master Health Check Up',
       price: 2600,
+      packageId: 7,
       package: [
         {
           title: 'LABORATORY INVESTIGATIONS',
@@ -227,6 +230,7 @@ selectedPackage: Package | null = null; // Selected package
     {
       title: 'Executive Health Check Up (Female)',
       price: 4500,
+      packageId: 8,
       package: [
         {
           title: 'LABORATORY INVESTIGATIONS',
@@ -254,6 +258,7 @@ selectedPackage: Package | null = null; // Selected package
     {
       title: 'Well Women check up',
       price: 3000,
+      packageId: 9,
       package: [
         {
           title: 'LABORATORY INVESTIGATIONS',
@@ -281,6 +286,7 @@ selectedPackage: Package | null = null; // Selected package
     {
       title: 'Comprehensive Diabetic check',
       price: 4000,
+      packageId: 10,
       package: [
         {
           title: 'LABORATORY INVESTIGATIONS',

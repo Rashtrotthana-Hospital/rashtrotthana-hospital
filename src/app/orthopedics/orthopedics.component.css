@@ -1,6 +1,9 @@
 .speciality-header{
     margin-top: 120px;
 }
+.root-container{
+    background-color: #FBFFF5;
+}
 
 .container-2{
     display: flex;
