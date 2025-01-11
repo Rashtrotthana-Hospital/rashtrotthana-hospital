@@ -201,7 +201,8 @@ button{
 }
 
 .logo img {
-  width: 80%;
+  width: 223px;
+  height: auto;
   cursor: pointer;
 }
 .button{
