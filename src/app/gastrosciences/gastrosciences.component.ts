@@ -41,6 +41,12 @@ export class GastrosciencesComponent {
           doctor_name : 'Dr. Man Mohan U. S',
           experience : '8+',
           docalt : 'Dr. Man Mohan U. S | Best Gastroenterologist in Bangalore | Rashtrotthana Hospital'
+        },
+        {
+          doctor_image : "../../assets/Dr-Sunil-Shenvi.png",
+          doctor_name : 'Dr. Sunil Shenvi',
+          experience : "15+",
+          docalt : "Dr. Sunil Shenvi | Best General Surgery and Gastroenterology doctor in Bngalore | Rajarajeshwari Nagar"
         }
       ]}];
       this.sanitizedContent = this.sanitizer.bypassSecurityTrustHtml(this.specialities[0].content);
