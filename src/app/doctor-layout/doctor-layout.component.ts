@@ -884,6 +884,19 @@ export class DoctorLayoutComponent {
         date : "",
         alt : 'Dr. Dhanyatha Muninarayan  | Consultant Paediatrician in Bangalore | Rajarajeshwari Nagar Bangalore'
       },
+      {
+        name: "Dr. Sunil Shenvi",
+        image : "assets/Dr-Sunil-Shenvi.png",
+        desgination: 'General Sugery',
+        speciality: 'GASTRO SCIENCES',
+        about : "Dr. Sunil Shenvi is a distinguished Senior Consultant in Hepato-Biliary-Pancreatic (HPB) Surgery and Multiorgan Transplantation, offering his expertise at Jayadev Memorial Rashtrotthana Hospital and Research Centre in Bengaluru. With extensive experience, he specializes in liver transplantation, including living and deceased donor transplants, blood group-incompatible transplants and positive cross-match transplants. He is also skilled in pancreas transplantation, surgeries for benign pancreatic conditions like acute and chronic pancreatitis and advanced procedures for cancers of the bile duct and gallbladder. Additionally, he performs complex vascular access surgeries for hemodialysis, providing comprehensive care for patients with organ failure and related complications.",
+        areasOfExpertise : ["Jaundice","Hepatitis","Liver Fibrosis","Acute Liver Failure","Alcoholic Liver Disease","Autoimmune Liver Disease","Blood Vomiting","Ascites (Swelling in Abdomen & Feet)","Portal Hypertension","Wilson’s Disease","Biliary Atresia","Pancreas","Bile Duct Gastro Cancer","Liver Cirrhosis","Liver Cancer"],
+        expertise : "Years of Experience: 15+",
+        qualification : "MBBS, MS - General Sugery, MCh - Surgical Gastroenterology, FASTS (Fellow of American Society of Transplant Surgeons)",
+        time : "",
+        date : "",
+        alt : 'Dr. Sunil Shenvi | Best General Surgery and Gastroenterology doctor in Bngalore | Rajarajeshwari Nagar'
+      },
   ]
   specialDoctors = ['Dr. Pramod S. Chinder', 'Dr. Meena H. B', 'Brig (Dr) S. Shashivadhanan', 'Dr. Ravishankar. D', 'Dr. Sapna S','Dr. Kalyani Dilip Karkare','Dr. Man Mohan U. S'];
 
