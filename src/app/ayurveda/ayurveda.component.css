@@ -714,6 +714,10 @@
     line-height: 24px;
 }
 
+.youtube iframe{
+    width: 100%;
+    height: 500px;
+}
 
 @media (max-width: 1200px){
 
