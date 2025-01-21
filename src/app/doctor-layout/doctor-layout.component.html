@@ -107,8 +107,8 @@
           <img class="bene-img" src="../../assets/interest.png">
           <div class="doctor-details-content">Brief Profile</div>
         </div>
-        <div class="about-doctor">
-          {{ selectedDoctor.about }}
+        <div class="about-doctor" [innerHTML]="selectedDoctor.about">
+          <!-- {{ selectedDoctor.about }} -->
         </div>
       </div>
     </div>
