@@ -114,6 +114,7 @@ import { PackageFormComponent } from './package-form/package-form.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { SpecialityHeaderComponent } from './speciality-header/speciality-header.component';
 import { SpecialityDoctorsComponent } from './speciality-doctors/speciality-doctors.component';
+import { AyurvedaThyroidComponent } from './ayurveda-thyroid/ayurveda-thyroid.component';
 
 
 @NgModule({
@@ -201,6 +202,7 @@ import { SpecialityDoctorsComponent } from './speciality-doctors/speciality-doct
     SidebarComponent,
     SpecialityHeaderComponent,
     SpecialityDoctorsComponent,
+    AyurvedaThyroidComponent,
     // ResearchCarouselComponent,
     // ProctologyComponent
   ],
