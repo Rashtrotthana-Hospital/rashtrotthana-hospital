@@ -38,13 +38,21 @@ export class OrthopedicsComponent {
       doctor_name: 'Dr. Sujayendra D. M',
       experience: "11",
       docalt: 'Dr. Sujayendra D. M | Best Orthopaedic Doctor in Bangalore | Rashtrotthana Hospital'
-    }, {
+    }, 
+    {
 
       doctor_image: '../../assets/Dr-Nikhil-Hegde.png',
       doctor_name: 'Dr. Nikhil Hegde',
       experience: "6",
       docalt: 'Dr. Nikhil Hegde | Best Orthopaedic Consultant in Bangalore | Rashtrotthana Hospital'
-    }
+    },
+    {
+
+      doctor_image: '../../assets/Dr-Hemanth-kumar-Venkatesh.png',
+      doctor_name: "Dr. Hemanth Kumar Venkatesh",
+      experience: "20",
+      docalt: 'Dr. Hemanth Kumar Venkatesh | Best Orthopaedic Consultant in Bangalore | Rashtrotthana Hospital'
+    },
   ]
 
   faqs = [
