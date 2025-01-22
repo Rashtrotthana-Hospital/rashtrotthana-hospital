@@ -900,7 +900,7 @@ export class DoctorLayoutComponent {
       {
         name: "Dr. Hemanth Kumar Venkatesh",
         image : "assets/Dr-Hemanth-kumar-Venkatesh.png",
-        desgination: '',
+        desgination: 'ORTHOPEDICS',
         speciality: 'ORTHOPEDICS',
         about : "<p>With over 20 years of experience in Trauma and Orthopaedics, Dr. Hemanth Kumar Venkatesh is a highly skilled consultant orthopaedic surgeon specializing in hip and knee joint replacement surgeries, robotic arthroplasty, knee sports surgery and joint preservation techniques. He provides comprehensive care for a wide range of musculoskeletal conditions.</p><p>He is adept at managing complex cases, including primary and revision arthroplasty, shoulder and ankle sports injuries, diabetic foot limb salvage and hand and wrist surgeries. His expertise is complemented by contributions to research and leadership roles in healthcare projects.</p><p>Having worked at renowned institutions like University Hospitals of Plymouth NHS Trust and North West Anglia Foundation Trust, he brings advanced knowledge and a patient-centered approach to his practice. His dedication to exceptional care is supported by extensive training and fellowship experience in both the UK and India.</p>",
         areasOfExpertise : ["Hip and Knee Joint Replacement Surgeries","Primary and Revision Arthroplasty Surgeries","Robotic Arthroplasty Techniques","Knee Sports Surgery (Ligament Reconstruction, Cartilage Preservation, Meniscus Repairs)","Joint Preservation Techniques","Shoulder and Ankle Sports Injuries","Elective Foot and Ankle Surgeries","Diabetic Foot Limb Salvage Surgeries","Hand and Wrist Surgeries"],
