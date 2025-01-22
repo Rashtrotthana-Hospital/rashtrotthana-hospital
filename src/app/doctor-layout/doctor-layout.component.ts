@@ -897,6 +897,45 @@ export class DoctorLayoutComponent {
       //   date : "",
       //   alt : 'Dr. Sunil Shenvi | Best General Surgery and Gastroenterology doctor in Bngalore | Rajarajeshwari Nagar'
       // },
+      {
+        name: "Dr. Hemanth Kumar Venkatesh",
+        image : "assets/Dr-Hemanth-kumar-Venkatesh.png",
+        desgination: '',
+        speciality: 'ORTHOPEDICS',
+        about : "<p>With over 20 years of experience in Trauma and Orthopaedics, Dr. Hemanth Kumar Venkatesh is a highly skilled consultant orthopaedic surgeon specializing in hip and knee joint replacement surgeries, robotic arthroplasty, knee sports surgery and joint preservation techniques. He provides comprehensive care for a wide range of musculoskeletal conditions.</p><p>He is adept at managing complex cases, including primary and revision arthroplasty, shoulder and ankle sports injuries, diabetic foot limb salvage and hand and wrist surgeries. His expertise is complemented by contributions to research and leadership roles in healthcare projects.</p><p>Having worked at renowned institutions like University Hospitals of Plymouth NHS Trust and North West Anglia Foundation Trust, he brings advanced knowledge and a patient-centered approach to his practice. His dedication to exceptional care is supported by extensive training and fellowship experience in both the UK and India.</p>",
+        areasOfExpertise : ["Hip and Knee Joint Replacement Surgeries","Primary and Revision Arthroplasty Surgeries","Robotic Arthroplasty Techniques","Knee Sports Surgery (Ligament Reconstruction, Cartilage Preservation, Meniscus Repairs)","Joint Preservation Techniques","Shoulder and Ankle Sports Injuries","Elective Foot and Ankle Surgeries","Diabetic Foot Limb Salvage Surgeries","Hand and Wrist Surgeries"],
+        expertise : "Years of Experience: 20",
+        qualification : "MBBS, DNB Ortho, FRCS Edin T&O, MCh Ortho UK, CCT UK",
+        time : "",
+        date : "",
+        alt : 'Dr. Hemanth Kumar Venkatesh | Best Orthopaedic Consultant in Bangalore | Rashtrotthana Hospital'
+      },
+      {
+        name: "Dr. Matam Sri Anusha",
+        image : "assets/dummy.png",
+        desgination: 'Rheumatology',
+        speciality: 'RHEUMATOLOGY',
+        about : "<p>Dr. Matam Sri Anusha is a compassionate and experienced Rheumatologist specializing in the diagnosis and treatment of a wide range of inflammatory and autoimmune conditions. She provides expert care for conditions such as rheumatoid arthritis, psoriatic arthritis, lupus, spondyloarthritis and osteoporosis, as well as recurrent pregnancy losses and vasculitis.</p<p>She offers personalized treatment plans using the latest advancements in rheumatology to help patients manage chronic pain, joint issues and systemic inflammatory disorders. If you're experiencing symptoms like joint pain, swelling, stiffness, skin rashes, fatigue, or unexplained weight loss, Dr. Anusha is dedicated to providing the care and support you need for improved health and well-being.</p>",
+        areasOfExpertise : ["Inflammatory arthritis","Connective tissue diseases (Lupus, Sjogren's, Systemic sclerosis)","Vasculitis","Recurrent pregnancy losses","Sarcoidosis","Osteoporosis","Gout"],
+        expertise : "Years of Experience: 8",
+        qualification : "Qualification: MBBS, MD (Internal Medicine) DM (Clinical Immunology and Rheumatology) MRCP-SCE (UK) Rheumatology, EULAR Fellow",
+        time : "",
+        date : "",
+        alt : ''
+      },
+      // {
+      //   name: "",
+      //   image : "",
+      //   desgination: '',
+      //   speciality: '',
+      //   about : "",
+      //   areasOfExpertise : [],
+      //   expertise : "Years of Experience: ",
+      //   qualification : "",
+      //   time : "",
+      //   date : "",
+      //   alt : ''
+      // },
   ]
   specialDoctors = ['Dr. Pramod S. Chinder', 'Dr. Meena H. B', 'Brig (Dr) S. Shashivadhanan', 'Dr. Ravishankar. D', 'Dr. Sapna S','Dr. Kalyani Dilip Karkare','Dr. Man Mohan U. S'];
 
@@ -1001,6 +1040,9 @@ export class DoctorLayoutComponent {
           },
           {
             cname: 'DERMATOLOGY', code: 'GM-ON'
+          },
+          {
+            cname : 'RHEUMATOLOGY', code: 'GM-ON'
           }
 
 
