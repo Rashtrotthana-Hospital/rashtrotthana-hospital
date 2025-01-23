@@ -41,7 +41,18 @@ export class DentalComponent {
             docalt : 'Dr. Vishnuvardhan V | Best Orthodontics in Bangalore | Rashtrotthana Hospital'
           },
         ]}];
+
+        
         this.sanitizedContent = this.sanitizer.bypassSecurityTrustHtml(this.specialities[0].content);
           this.sanitizedContent1 = this.sanitizer.bypassSecurityTrustHtml(this.specialities[0 ].content_1);
   }
+
+  doctors = [
+    {
+      doctor_image:'../../assets/Dr-Sushmitha-Raj-R.png',
+      doctor_name:'Dr. Sushmitha Raj R',
+      experience : "3",
+      docalt : 'Dr. Sushmitha Raj R | Best Dental Surgery in Bangalore | Rashtrotthana Hospital'
+    }
+  ]
 }
