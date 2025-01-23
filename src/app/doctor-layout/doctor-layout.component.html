@@ -76,8 +76,8 @@
         <div class="doctor-name">
           {{ selectedDoctor.name }}
         </div>
-        <div class="doctor-qualification">
-          {{ selectedDoctor.qualification }}
+        <div class="doctor-qualification" [innerHTML]="selectedDoctor.qualification">
+          <!-- {{ selectedDoctor.qualification }} -->
         </div>
         <div class="doctor-desgination">
           Department: {{ selectedDoctor.desgination }}
