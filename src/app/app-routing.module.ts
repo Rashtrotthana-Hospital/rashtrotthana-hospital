@@ -55,6 +55,7 @@ import { AdvisoryBoardMembersComponent } from './advisory-board-members/advisory
 import { ResearchComponent } from './research/research.component';
 import { EthicCommitteeComponent } from './ethic-committee/ethic-committee.component';
 import { MaternityComponent } from './maternity/maternity.component';
+import { AyurvedaThyroidComponent } from './ayurveda-thyroid/ayurveda-thyroid.component'
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -133,6 +134,7 @@ children: [
   {path:'hernia-treatment-bangalore',component:HerniaComponent},
   {path:'proctology-services-bangalore',component:ProctologyComponent},
   {path:'maternity-care', component:MaternityComponent},
+  {path:'ayurvedic-thyroid-treatment', component:AyurvedaThyroidComponent},
   
   { path: 'blog', component: BlogComponent },
   { path: 'blog/:slug', component: BlogPostComponent },
