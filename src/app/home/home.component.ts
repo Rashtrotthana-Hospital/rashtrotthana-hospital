@@ -246,7 +246,7 @@ box=[{
 {
   icon:'patient-icon.png',
   number:0,
-  target:25000,
+  target:50000,
   statement:'Happy Patients',
   showPlus: true 
 },

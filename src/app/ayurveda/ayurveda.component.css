@@ -171,6 +171,52 @@
     height: 363px;
 }
 
+.thyroid_img{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding-bottom: 40px;
+}
+
+.content{
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.para{
+    color: #848484;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.para_margin_bottom{
+    /* margin-bottom: 50px; */
+}
+
+.subheading{
+    color: #222;
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+}
+
 /* container_3*/
 .container_3 {
     display: flex;
@@ -1331,6 +1377,25 @@
         width: 100%;
         padding: 0 8%;
         margin-top: 10px;
+    }
+
+    .flex{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .thyroid_img{
+        width: 300px;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .para{
+        font-size: 12px;
+    }
+
+    .subheading{
+        font-size: 18px;
     }
 
     /* container 3 */
