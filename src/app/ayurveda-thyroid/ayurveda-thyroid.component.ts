@@ -1,11 +1,19 @@
 import { Component } from '@angular/core';
-
+import { Title, Meta,DomSanitizer,SafeHtml } from '@angular/platform-browser'; 
 @Component({
   selector: 'app-ayurveda-thyroid',
   templateUrl: './ayurveda-thyroid.component.html',
   styleUrl: './ayurveda-thyroid.component.css'
 })
 export class AyurvedaThyroidComponent {
+  constructor(private titleService: Title, private metaService: Meta, private sanitizer: DomSanitizer) {}
+    ngOnInit(): void {
+    this.titleService.setTitle("Ayurvedic Thyroid Treatment | Rashtrotthana Hospital, RR Nagar Bangalore");  
+  
+    this.metaService.updateTag({ name: 'description', content: 'Discover holistic Ayurvedic treatments for thyroid disorders at Rashtrotthana Hospital RR Nagar Bangalore.' });
+  
+    this.metaService.updateTag({ name: 'keywords', content: 'Ayurvedic Thyroid Treatment in RR nagar Bangalore, thyroid treatment in Bangalore, Ayurveda for thyroid, Ayurvedic cure for thyroid, Ayurveda for hypothyroidism, Ayurvedic treatment for hyperthyroidism, Herbal solutions for thyroid disorders, Thyroid care with Ayurveda, Holistic thyroid treatment, Manage thyroid naturally, Best Ayurvedic remedies for thyroid, Thyroid detox in Ayurveda, Ayurvedic lifestyle for thyroid balance, Healing thyroid disorders with Ayurveda, Ayurvedic thyroid management' });
+  }
   doctors = [
       {
         doctor_image:'../../assets/Dr-Venkatesh-H-S.jpg',
