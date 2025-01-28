@@ -50,10 +50,10 @@ export class HomeComponent implements OnInit {
     this.router.navigate(['/total-knee-replacement-bangalore']);
   }
   hernia(){
-    this.router.navigate(['/hernia-treatment-bangalore']);
+    this.router.navigate(['/hernia-hospital-bangalore']);
   }
   proctology(){
-    this.router.navigate(['/proctology-services-bangalore']);
+    this.router.navigate(['/piles-hospital-bangalore']);
   }
   
   showContent: any = 'default';

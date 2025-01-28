@@ -12,4 +12,5 @@ export class SpecialityDoctorsComponent {
   @Input()experience:string='';
   @Input()image:string='';
   @Input()alt:string='';
+  @Input()department:string=''
 }

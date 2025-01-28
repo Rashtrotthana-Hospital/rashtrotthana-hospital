@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule } from '@angular/forms';
 
@@ -99,7 +100,7 @@ import { HerniaComponent } from './hernia/hernia.component';
 import { ResearchComponent } from './research/research.component';
 import { EthicCommitteeComponent } from './ethic-committee/ethic-committee.component';
 // import { ResearchCarouselComponent } from './research-carousel/research-carousel.component';
-// import { ProctologyComponent } from './proctology/proctology.component';
+import { ProctologyComponent } from './proctology/proctology.component';
 
 // import { GtagModule } from 'angular-gtag';
 import { AdvisoryCarouselComponent } from './advisory-carousel/advisory-carousel.component';
@@ -204,8 +205,9 @@ import { AyurvedaThyroidComponent } from './ayurveda-thyroid/ayurveda-thyroid.co
     SpecialityDoctorsComponent,
     AyurvedaThyroidComponent,
     // ResearchCarouselComponent,
-    // ProctologyComponent
+    ProctologyComponent
   ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   imports: [
     BrowserModule,
     AppRoutingModule,

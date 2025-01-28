@@ -131,8 +131,8 @@ children: [
   {path:'donate-to-hospital-bangalore', component:DonationComponent},
   
   {path:'total-knee-replacement-bangalore',component:KneeReplacementComponent},
-  {path:'hernia-treatment-bangalore',component:HerniaComponent},
-  {path:'proctology-services-bangalore',component:ProctologyComponent},
+  {path:'hernia-hospital-bangalore',component:HerniaComponent},
+  {path:'piles-hospital-bangalore',component:ProctologyComponent},
   {path:'maternity-care', component:MaternityComponent},
   {path:'ayurvedic-thyroid-treatment', component:AyurvedaThyroidComponent},
   
