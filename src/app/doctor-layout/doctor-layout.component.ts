@@ -912,7 +912,7 @@ export class DoctorLayoutComponent {
       },
       {
         name: "Dr. Matam Sri Anusha",
-        image : "assets/dummy.png",
+        image : "assets/Dr-Matam-Sri-Anusha.png",
         desgination: 'Rheumatology',
         speciality: 'RHEUMATOLOGY',
         about : "<p>Dr. Matam Sri Anusha is a compassionate and experienced Rheumatologist specializing in the diagnosis and treatment of a wide range of inflammatory and autoimmune conditions. She provides expert care for conditions such as rheumatoid arthritis, psoriatic arthritis, lupus, spondyloarthritis and osteoporosis, as well as recurrent pregnancy losses and vasculitis.</p<p>She offers personalized treatment plans using the latest advancements in rheumatology to help patients manage chronic pain, joint issues and systemic inflammatory disorders. If you're experiencing symptoms like joint pain, swelling, stiffness, skin rashes, fatigue, or unexplained weight loss, Dr. Anusha is dedicated to providing the care and support you need for improved health and well-being.</p>",
@@ -945,6 +945,19 @@ export class DoctorLayoutComponent {
         areasOfExpertise : ["General Dentistry","Endodontics","Cosmetic Dentistry"],
         expertise : "Years of Experience: 3",
         qualification : "BDS, FRCD",
+        time : "",
+        date : "",
+        alt : ''
+      },
+      {
+        name: "Dr. S K Ranjani",
+        image : "assets/dummy.png",
+        desgination: 'ENT (Ear, Nose, and Throat) ',
+        speciality: 'ENT SPECIALITY',
+        about : "Dr. S K Ranjani specializes in both general and complex ENT conditions, with a particular focus on airway disorders in children. She is committed to providing comprehensive care for a range of airway issues, including allergies, obstructive sleep apnea and voice alterations.",
+        areasOfExpertise : ["Airway disorders, particularly in the pediatric age group","Allergy-related airway issues","Obstructive sleep apnea","Altered voice conditions","General ear, nose and throat complaints (both medical and surgical treatment)"],
+        expertise : "Years of Experience: 2",
+        qualification : "MBBS, MS ENT, Fellowship in Pediatric Otolaryngology (RGUHS)  ",
         time : "",
         date : "",
         alt : ''

@@ -44,6 +44,12 @@ export class ENTComponent {
       experience : "7",
       docalt : 'Dr. Manasa N. A | Best ENT Consultant in Bangalore | Rashtrotthana Hospital'
     },   
+    {
+      doctor_image:'../../assets/dummy.png',
+      doctor_name:'Dr. S K Ranjani',
+      experience : "2",
+      docalt : 'Dr. S K Ranjani| Best ENT Consultant in Bangalore | Rashtrotthana Hospital'
+    },  
   ]
 
   faqs = [

@@ -32,3 +32,9 @@
     margin-right: 30px;
     margin-left: 30px;
 }
+
+@media (max-width : 500px){
+    .doc-container{
+        gap: 30px;
+    }
+}

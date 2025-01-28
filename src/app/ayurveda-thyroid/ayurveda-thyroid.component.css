@@ -27,7 +27,6 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    text-transform: capitalize;
 }
 
 .a_subheadings{
@@ -35,7 +34,6 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    text-transform: capitalize;
 }
 
 .a_para{
@@ -46,7 +44,6 @@
     font-style: normal;
     font-weight: 400;
     line-height: 32px; /* 177.778% */
-    text-transform: capitalize;
 }
 
 .flex{
