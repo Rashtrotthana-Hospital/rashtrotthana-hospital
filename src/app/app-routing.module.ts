@@ -56,6 +56,7 @@ import { ResearchComponent } from './research/research.component';
 import { EthicCommitteeComponent } from './ethic-committee/ethic-committee.component';
 import { MaternityComponent } from './maternity/maternity.component';
 import { AyurvedaThyroidComponent } from './ayurveda-thyroid/ayurveda-thyroid.component'
+import { RheumatologyComponent } from './rheumatology/rheumatology.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -84,6 +85,7 @@ const routes: Routes = [
   {path:'best-anesthesiology-hospital-in-india',component:AnesthesiologyComponent},
   {path:'best-obstetrics-and-gynecologist-hospital-in-bangalore',component:ObstetricsGynaecologyComponent},
   {path:'best-endocrinology-hospital-in-bangalore',component:EndocrinologyComponent},
+  {path:'rheumatology-hospital-bangalore', component:RheumatologyComponent},
 
   
   {path:'yoga-therapy-bangalore',component:YogaComponent},
@@ -117,7 +119,6 @@ children: [
   {path:'24-hours-pharmacy-store-bangalore',component:PharmacyComponent},
   {path:'health-insurance-plans-bangalore',component:InsuranceComponent},
   {path:'best-kidney-dialysis-multispeciality-hospital-bangalore',component:DialysisComponent},
- 
 ]},
 {path:'laboratory-services-bangalore', component:LaboratoryComponent},
 {path:'best-kidney-dialysis-multispeciality-hospital-bangalore',component:DialysisComponent},

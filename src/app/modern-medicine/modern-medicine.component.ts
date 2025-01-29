@@ -176,7 +176,16 @@ export class ModernMedicineComponent {
       button_text: 'Read More',
       route:'best-emergency-medicine-hospital-in-bangalore',
       alt : 'Rashtrotthana Hospital | Best Emergency Medicine Hospital in Bangalore'
-    }
+    },
+    {
+      name: 'card',
+      image: '../../assets/rheumatology-bangalore.png',
+      title: 'Rheumatology',
+      button_text: 'Read More',
+      route:'rheumatology-hospital-bangalore',
+      alt : 'Rashtrotthana Hospital | Best Rheumatology  Hospital in Bangalore'
+    },
+    
   ]
   hoverBoxes = [
     { image: 'assets/internal_medicine_hospital_in_rrnagar.png' },
@@ -198,6 +207,7 @@ export class ModernMedicineComponent {
     { image: 'assets/best_oncology_hospital_in_rrnagar.png' },
     { image: 'assets/best_anesthesiology_hospital_in_rrnagar.png' },
     { image: 'assets/best_emergency_medicine_hospital_in_rrnagar.png' },
+    { image: 'assets/rheumatology-treatment.png'}
   ];
   activeHoverIndex: number | null = null;
 
