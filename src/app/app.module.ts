@@ -116,6 +116,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { SpecialityHeaderComponent } from './speciality-header/speciality-header.component';
 import { SpecialityDoctorsComponent } from './speciality-doctors/speciality-doctors.component';
 import { AyurvedaThyroidComponent } from './ayurveda-thyroid/ayurveda-thyroid.component';
+import { RheumatologyComponent } from './rheumatology/rheumatology.component';
 
 
 @NgModule({
@@ -205,7 +206,8 @@ import { AyurvedaThyroidComponent } from './ayurveda-thyroid/ayurveda-thyroid.co
     SpecialityDoctorsComponent,
     AyurvedaThyroidComponent,
     // ResearchCarouselComponent,
-    ProctologyComponent
+    ProctologyComponent,
+    RheumatologyComponent
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   imports: [
