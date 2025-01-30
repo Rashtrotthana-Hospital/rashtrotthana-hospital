@@ -20,7 +20,7 @@ export class KneeReplacementComponent implements OnInit {
   this.metaService.updateTag({ name: 'description', content: 'Experience pain-free mobility with advanced total knee replacement surgery at Rashtrotthana Hospital, Bangalore\'s leading orthopedic center.' });
 
   // Optionally set other meta tags
-  this.metaService.updateTag({ name: 'keywords', content: 'knee replacement surgery, orthopedic care, best knee surgery Bangaloret' }); 
+  this.metaService.updateTag({ name: 'keywords', content: 'knee replacement surgery, orthopedic care, best knee surgery Bangalore' }); 
         
   }  
   contactus(){
