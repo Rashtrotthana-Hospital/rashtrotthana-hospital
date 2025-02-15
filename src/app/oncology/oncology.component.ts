@@ -47,6 +47,11 @@ export class OncologyComponent {
           doctor_image:'../../assets/Dr-Ravi-T.png',
           doctor_name:'Dr. Ravi T',
           alt : 'Dr. Ravi T | Best Cancer Doctor in Bangalore | Rashtrotthana Hospital'
+        },
+        {
+          doctor_image:'../../assets/Dr-Nagesh-R.png',
+          doctor_name:'Dr. G. V. Giri',
+          alt : 'Dr. G. V. Giri | Best Cancer Doctor in Bangalore | Rashtrotthana Hospital'
         }
       ]}];
       this.sanitizedContent = this.sanitizer.bypassSecurityTrustHtml(this.specialities[0].content);
