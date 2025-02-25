@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Title, Meta,DomSanitizer,SafeHtml } from '@angular/platform-browser'; 
+import { Title, Meta, DomSanitizer, SafeHtml } from '@angular/platform-browser';
 
 
 @Component({
@@ -9,52 +9,93 @@ import { Title, Meta,DomSanitizer,SafeHtml } from '@angular/platform-browser';
 })
 export class PaediatricsComponent {
   constructor(private titleService: Title, private metaService: Meta, private sanitizer: DomSanitizer) {
-    
+
   }
-  sanitizedContent: SafeHtml ='';
+  sanitizedContent: SafeHtml = '';
   sanitizedContent1: SafeHtml = '';
-  specialities:any[] = [];
+  specialities: any[] = [];
   ngOnInit(): void {
-    this.titleService.setTitle("Best Child Hospital in Bangalore | Paediatric Hospital in Bangalore");  
+    this.titleService.setTitle("Best Child Hospital in Bangalore | Paediatric Hospital in Bangalore");
 
-  this.metaService.updateTag({ name: 'description', content: 'Rashtrotthana Hospital is the best paediatric hospital or child speciality hospital in Bangalore with skilled paediatricians.' });
+    this.metaService.updateTag({ name: 'description', content: 'Rashtrotthana Hospital is the best paediatric hospital or child speciality hospital in Bangalore with skilled paediatricians.' });
 
-  this.metaService.updateTag({ name: 'keywords', content: 'best child hospital near me,paediatrician, children, kids, child\'s health, paediatrics, neonatology, baby, newborn' });
+    this.metaService.updateTag({ name: 'keywords', content: 'best child hospital near me,paediatrician, children, kids, child\'s health, paediatrics, neonatology, baby, newborn' });
 
-  
-  this.specialities=[
+    this.sanitizedContent = this.sanitizer.bypassSecurityTrustHtml(this.specialities[0].content);
+    this.sanitizedContent1 = this.sanitizer.bypassSecurityTrustHtml(this.specialities[0].content_1);
+  }
+
+  doctors = [
     {
-      main_heading:'Paediatrics & Neonatology',
-      content:'The Pediatrics & Neonatology Department at Rashtrotthana Hospital is dedicated to comprehensive, compassionate care for infants, children and adolescents. Our skilled paediatricians are available round-the-clock, ensuring that our young patients receive continuous, expert care tailored to their unique needs. We emphasize preventive care, early diagnosis and advanced treatment plans for various paediatric conditions, from common illnesses to complex medical issues. Our department includes a fully equipped 6-bed Pediatric Intensive Care Unit (PICU), providing critical care for children with serious health concerns. Our child-friendly environment, paired with a dedicated team of specialists, ensures that every child feels safe and supported throughout their treatment.',
-      content_1:`Our Neonatology services provide specialized care for newborns, particularly those born prematurely or with high-risk medical needs. With a well-equipped <a href="https://en.wikipedia.org/wiki/Pediatric_intensive_care_unit">Neonatal Intensive Care Unit (NICU)</a> and experienced neonatologists, we manage a wide range of neonatal conditions, offering the highest level of care for our smallest patients. Our neonatal team collaborates with paediatric sub-specialists and utilizes state-of-the-art medical equipment to deliver integrated care for newborns facing critical health challenges. From respiratory support and infection management to advanced nutrition plans, we are committed to providing holistic care that promotes the growth and development of each baby in our care.`,
-      heading:'Paediatrics & Neonatology',
-      image:'best_paediatrics_and_neonatology_in_bengaluru.png',
-      alt : 'Best Paediatrics and Neonatology in Bengaluru',
-      Doctors:[
-        // {
-        //   doctor_image:'../../assets/doctor-11.png',
-        //   doctor_name:'Dr. Savinay S. Kanchibail',
-        //   experience : "20"
-        // },
-        {
-          doctor_image:'../../assets/Dr-Vishwanath-Sanagoudar.png',
-          doctor_name:'Dr. Vishwanath Sanagoudar',
-          experience : "8",
-          docalt : 'Dr. Vishwanath Sanagoudar | Best Paediatrician and Neonatologist in Bangalore | Rashtrotthana Hospital'
-        },
-        {
-          doctor_image:'../../assets/Dr-Niveditha-C.png',
-          doctor_name:'Dr. Niveditha C',
-          experience : "7",
-          docalt : 'Dr. Niveditha C | Best Pediatrician in Bangalore | Rashtrotthana Hospital'
-        },
-        {
-          doctor_image:'../../assets/Dr-Dhanyatha-Muninarayan.png',
-          doctor_name:'Dr. Dhanyatha Muninarayan',
-          experience : "7",
-          docalt : 'Dr. Dhanyatha Muninarayan | Best Pediatrician in Bangalore | Rashtrotthana Hospital'
-        }
-      ]}];
-      this.sanitizedContent = this.sanitizer.bypassSecurityTrustHtml(this.specialities[0].content);
-        this.sanitizedContent1 = this.sanitizer.bypassSecurityTrustHtml(this.specialities[0].content_1);  
-}}
+      doctor_image:'../../assets/Dr-Vishwanath-Sanagoudar.png',
+      doctor_name:'Dr. Vishwanath Sanagoudar',
+      experience : "8",
+      docalt : 'Dr. Vishwanath Sanagoudar | Best Paediatrician and Neonatologist in Bangalore | Rashtrotthana Hospital'
+    },
+    {
+      doctor_image:'../../assets/Dr-Niveditha-C.png',
+      doctor_name:'Dr. Niveditha C',
+      experience : "7",
+      docalt : 'Dr. Niveditha C | Best Pediatrician in Bangalore | Rashtrotthana Hospital'
+    },
+    {
+      doctor_image:'../../assets/Dr-Dhanyatha-Muninarayan.png',
+      doctor_name:'Dr. Dhanyatha Muninarayan',
+      experience : "7",
+      docalt : 'Dr. Dhanyatha Muninarayan | Best Pediatrician in Bangalore | Rashtrotthana Hospital'
+    }
+  ]
+
+  faqs = [
+    {
+      ques : 'Which is the best pediatric hospital in Bangalore?',
+      ans : 'Rashtrotthana Hospital is recognized as one of the best pediatric hospitals in Bangalore, providing expert care for infants, children and adolescents. With a team of experienced pediatricians and neonatologists, we ensure comprehensive treatment for various pediatric conditions'
+    },
+    {
+      ques : 'Who are the best pediatricians in RR Nagar, Bangalore?',
+      ans : 'At Rashtrotthana Hospital, our team includes some of the best pediatricians in RR Nagar, Bangalore, dedicated to providing top-quality child healthcare services. We specialize in preventive care, early diagnosis and advanced treatments for children of all ages.'
+    },
+    {
+      ques : 'What treatments does Rashtrotthana Hospital provide for children?',
+      ans : `<p class = 's_para'>We offer a range of pediatric services, including</p>
+             <ul>
+              <li class = 's_para'>Child health care for newborns, infants and adolescents</li>
+              <li class = 's_para'>Treatment for fever, common cold, cough and stomach pain</li>
+              <li class = 's_para'>Pediatric hospital for diarrhea treatment in RR Nagar</li>
+              <li class = 's_para'>Specialized care for allergies, asthma and respiratory conditions</li>
+              <li class = 's_para'>Neonatal Intensive Care Unit (NICU) for premature and high-risk newborns</li>
+              <li class = 's_para'>Pediatric Intensive Care Unit (PICU) for critically ill children</li>
+             </ul>
+      `
+    },
+    {
+      ques : 'Where can I find the best hospital for kids in Rajarajeshwari Nagar, Bangalore?',
+      ans : 'If you are looking for the best hospital for kids in Rajarajeshwari Nagar, Bangalore, Rashtrotthana Hospital is the preferred choice for pediatric and neonatal care. Our expert team ensures the best treatment for children in a safe and child-friendly environment.'
+    },
+    {
+      ques : 'Who is the best pediatric doctor in Rajarajeshwari Nagar, Bangalore?',
+      ans : 'Our hospital has some of the best pediatric doctors in Rajarajeshwari Nagar, Bangalore, offering personalized care for children’s health and wellness. Whether it’s a routine check-up or specialized treatment, our experienced pediatricians provide compassionate and expert care.'
+    },
+    {
+      ques : 'Which hospital has the best child doctors for cold and cough treatment in RR Nagar?',
+      ans : "Rashtrotthana Hospital is known as a top children's hospital for cold and cough treatment in RR Nagar, providing effective and timely treatment for common pediatric illnesses."
+    },
+    {
+      ques : 'Where can I find expert pediatric doctors for fever and common cold in RR Nagar?',
+      ans : 'Our experienced pediatric doctors for fever and common cold in RR Nagar ensure accurate diagnosis and treatment, helping your child recover quickly.'
+    },
+    {
+      ques : 'Why choose Rashtrotthana Hospital for pediatric and neonatal care?',
+      ans : `
+        <p class = 's_para'>Our experienced pediatric doctors for fever and common cold in RR Nagar ensure accurate diagnosis and treatment, helping your child recover quickly.</p>
+        <ul>
+          <li class = 's_para'>Top pediatric specialists in RR Nagar</li>
+          <li class = 's_para'>Expert child doctors in RR Nagar Bangalore</li>
+          <li class = 's_para'>State-of-the-art NICU and PICU facilities</li>
+          <li class = 's_para'>24/7 emergency pediatric care</li>
+          <li class = 's_para'>Holistic child healthcare services</li>
+        </ul>
+      `
+    },
+  ]
+}
