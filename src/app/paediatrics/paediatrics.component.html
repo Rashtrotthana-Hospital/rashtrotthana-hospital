@@ -1,5 +1,71 @@
+<div class="root-container">
+    <div class="speciality-header">
+        <app-speciality-header main_heading="Paediatrics & Neonatology" />
+    </div>
 
-<ng-container *ngFor="let speciality of specialities">
-    <app-speciality-component [doctor]="speciality.Doctors"[image]="speciality.image"  [main_heading]="speciality.main_heading" [alt] = 'speciality.alt'   [heading]="speciality.heading"  [content]="speciality.content" [content_1]="speciality.content_1"></app-speciality-component>
-</ng-container>
+    <div class="container-2">
+        <div class="sidebar">
+            <app-sidebar />
+        </div>
+        <div class="contents">
+            <div class="s_h1">Best Pediatrics Hospital In Bangalore</div>
 
+            <div class="para_image container-margin">
+                <div class="s_content">
+                    <div class="s_para">The Pediatrics & Neonatology Department at Rashtrotthana Hospital is dedicated to providing comprehensive and compassionate care for infants, children and adolescents. As a specialized pediatric hospital in Bangalore, we ensure expert medical care for a wide range of conditions. Our skilled pediatric doctors for fever and common cold, as well as other childhood illnesses, are available round-the-clock to offer continuous, tailored treatment for young patients.</div>
+                </div>
+                <div class="s_image">
+                    <img src="../../assets/best-pediatrician-bangalore.png" alt="Best Maternity Hospital in Rajarajeshwari Nagar Bangalore">
+                </div>
+            </div>
+
+            <div class="para_image container-margin">
+                <div class="s_image">
+                    <img src="../../assets/best-pediatricians-in-rr-nagar-bangalore.png" alt="Best Maternity Hospital in Rajarajeshwari Nagar Bangalore">
+                </div>
+                <div class="s_content">
+                    <h2 class="s_subheadings">Why Choose Us for Your Child’s Health?</h2>
+                    <div class="s_para">Recognized as the best hospital for kids in Rajarajeshwari Nagar Bangalore, we focus on child health care through preventive measures, early diagnosis and advanced treatment plans. Our team of <h2 class="s_para">best pediatricians in RR Nagar Bangalore</h2> provides expert care for everything from routine checkups to complex medical conditions. The hospital houses a 6-bed <a target="_blank"  href="https://en.wikipedia.org/wiki/Pediatric_intensive_care_unit">Pediatric Intensive Care Unit (PICU)</a> to manage serious health concerns, ensuring critical care for children with respiratory issues, infections, stomach pain and other conditions.</div>
+                </div>
+            </div>
+
+            <div class="para_image container-margin">
+                <div class="s_content">
+                    <h2 class="s_subheadings">Comprehensive Pediatric & Neonatal Care in RR Nagar</h2>
+                    <div class="s_para">Our Neonatology services cater to newborns, especially those born prematurely or with high-risk medical needs. As the best hospital for babies in RR Nagar Bangalore, we provide specialized neonatal care with a fully equipped <a target="_blank" href="https://en.wikipedia.org/wiki/Neonatal_intensive_care_unit">Neonatal Intensive Care Unit (NICU)</a>. Our expert children doctors in RR Nagar Bangalore collaborate with pediatric subspecialists to manage complex newborn health conditions. Whether it's a pediatric hospital for diarrhea treatment in RR Nagar or the top children’s hospital for cold and cough treatment in RR Nagar, we ensure that every child receives exceptional medical attention.</div>
+                </div>
+                <div class="s_image">
+                    <img src="../../assets/images/best-paediatrics-and-neonatology-in-bengaluru.png" alt="Best Maternity Hospital in Rajarajeshwari Nagar Bangalore">
+                </div>
+            </div>
+
+            <div class="para_image container-margin">
+                <div class="s_image">
+                    <img src="../../assets/best-doctors-for-kids-in-rr-Nagar.jpg" alt="Best Maternity Hospital in Rajarajeshwari Nagar Bangalore">
+                </div>
+                <div class="s_content">
+                    <h2 class="s_subheadings">Best Pediatricians in RR Nagar Bangalore</h2>
+                    <div class="s_para">With an experienced team of best pediatric doctors in Rajarajeshwari Nagar Bangalore, advanced medical facilities and a child-friendly environment, Rashtrotthana Hospital is recognized as the top pediatric specialist in RR Nagar Bangalore. Whether you're looking for the best doctors for kids in RR Nagar or an experienced pediatrician in RR Nagar Bangalore, we are committed to delivering expert care that nurtures the health and well-being of every child.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="doctors">
+        <div class="doc-heading">Meet Our Medical Team</div>
+        <div class="doctor-container">
+            <div *ngFor="let doctor of doctors">
+                <app-speciality-doctors [name]="doctor.doctor_name" [experience]="doctor.experience"
+                    [image]="doctor.doctor_image" [alt]="doctor.docalt"></app-speciality-doctors>
+            </div>
+        </div>
+    </div>
+
+    <div class="faq">
+        <div class="faq-heading">FAQs</div>
+        <div class="ques_ans" *ngFor="let faq of faqs; let i = index">
+            <div style="color: #008080;" class="ques s_para"><b>Q{{i+1}}. {{faq.ques}}</b></div>
+            <div class="ans s_para" [innerHTML]="faq.ans"></div>
+        </div>
+    </div>
+</div>

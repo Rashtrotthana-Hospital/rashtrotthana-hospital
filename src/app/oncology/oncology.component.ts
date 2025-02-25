@@ -49,7 +49,7 @@ export class OncologyComponent {
           alt : 'Dr. Ravi T | Best Cancer Doctor in Bangalore | Rashtrotthana Hospital'
         },
         {
-          doctor_image:'../../assets/Dr-Nagesh-R.png',
+          doctor_image:'../../assets/Dr-Giri.png',
           doctor_name:'Dr. G. V. Giri',
           alt : 'Dr. G. V. Giri | Best Cancer Doctor in Bangalore | Rashtrotthana Hospital'
         }
