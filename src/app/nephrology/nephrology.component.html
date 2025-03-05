@@ -1,6 +1,94 @@
+<div class="root-container">
+    <div class="speciality-header">
+        <app-speciality-header main_heading="Nephrology" />
+    </div>
 
-<ng-container *ngFor="let speciality of specialities">
-    <app-speciality-component [doctor]="speciality.Doctors"[image]="speciality.image"  [main_heading]="speciality.main_heading" [alt]="speciality.alt"  [heading]="speciality.heading"  [content]="speciality.content" [content_1]="speciality.content_1"></app-speciality-component>
-</ng-container>
+    <div class="container-2">
+        <div class="sidebar">
+            <app-sidebar />
+        </div>
+        <div class="contents">
+            <h1 class="s_h1">Best Nephrology Hospital in Bangalore</h1>
 
+            <div class="para_image">
+                <div class="s_content">
+                    <div class="s_para">The Nephrology Department at Rashtrotthana Hospital is recognized as the Best Nephrology Hospital in Bangalore, providing expert kidney care for a wide range of conditions. Our Nephrologists in RR Nagar Bangalore specialize in diagnosing and treating Kidney Disease, Kidney Failure, Kidney Transplant, Kidney Stones, Kidney Dialysis, Kidney Health, Kidney Cancer and Kidney Infections.</div>
+                    <div class="s_para">We offer advanced treatment for Kidney Stones in RR Nagar Bangalore, Renal Failure Treatment in Bangalore, and Kidney Failure Treatment in RR Nagar Bangalore. Our Best Kidney Specialists Near Me focus on personalized care, ensuring the highest success rates in treating chronic kidney disease, hypertension-related kidney damage, and diabetic nephropathy.</div>
+                </div>
+                <div class="s_image">
+                    <img src="../../assets/best-doctors-for-kidney-problems-in-rr-nagar-bangalore.jpg" alt="">
+                </div>
+            </div>
+            
+            <div class="para_image row-reverse">
+                <div class="s_image">
+                    <img src="../../assets/best-kidney-care-centers-in-bangalore.jpg" alt="">
+                </div>
+                <div class="s_content">
+                    <h2 class="s_subheadings">Comprehensive Kidney Care at the Best Hospital for Nephrology</h2>
+                    <div class="s_para"><b>Rashtrotthana Hospital is known as the Best Kidney Care Center in Bangalore, offering state-of-the-art services such as:</b></div>
+                    <ul>
+                        <li class="s_para">Kidney Dialysis in our fully equipped 8-bed dialysis unit.</li>
+                        <li class="s_para">Best Hospital for Dialysis Treatment in RR Nagar Bangalore, operating seven days a week.</li>
+                        <li class="s_para">Expert Nephrologists in Rajarajeshwari Nagar Bangalore with years of experience.</li>
+                        <li class="s_para">Affordable Kidney Failure Treatment in Bangalore with specialized renal care plans.</li>
+                        <li class="s_para">Experienced Kidney Specialists for Dialysis, ensuring safe and effective procedures</li>
+                    </ul>
+                </div>
+            </div>
 
+            <div class="s_para">Our hospital is home to Top-rated Nephrologists in Bangalore, providing exceptional care for Kidney Disease, Kidney Transplant, and Kidney Dialysis. Whether you need Kidney Stones Treatment in RR Nagar Bangalore or guidance from the Best Doctors for Kidney Problems in RR Nagar Bangalore, we are here to help.</div>
+
+            <div class="para_image">
+                <div class="s_content">
+                    <h2 class="s_subheadings">Advanced Kidney Transplant & Dialysis Care</h2>
+                    <div class="s_para">Our Best Hospital Kidney Dialysis Hospital in Rajarajeshwari Nagar Bangalore follows strict hygiene protocols and offers comprehensive dialysis services for patients with end-stage renal disease. Our in-house renal transplant physician ensures safe and effective Kidney Transplant procedures.</div>
+                </div>
+                <div class="s_image">
+                    <img src="../../assets/affordable-kidney-failure-treatment-in-bangalore.png" alt="">
+                </div>
+            </div>
+
+            <div class="para_image row-reverse">
+                <div class="s_image">
+                    <img src="../../assets/kidney-failure-treatment-in-rr-nagar-bangalore.png" alt="">
+                </div>
+                <div class="s_content">
+                    <h2 class="s_subheadings">Why Choose Us for Kidney Treatment?</h2>
+                    <div>
+                        <ul>
+                            <li class="s_para">Best Nephrology Hospital in Bangalore with advanced diagnostic tools</li>
+                            <li class="s_para">Best Kidney Specialists Near Me offering expert consultations</li>
+                            <li class="s_para">Best Hospital for Nephrology with a multidisciplinary approach</li>
+                            <li class="s_para">Affordable Kidney Failure Treatment in Bangalore for all patients</li>
+                            <li class="s_para"> Renal Failure Treatment in Bangalore with preventive care strategies</li>
+                        </ul>
+                    </div>
+                    <div class="s_para">For the Best Kidney Care Centers in Bangalore, visit Rashtrotthana Hospital and consult our Expert Nephrologists in Rajarajeshwari Nagar Bangalore today!</div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- doctors -->
+    <div class="doctors">
+        <div class="doc-heading">Meet Our Medical Team</div>
+        <div class="doctor-container">
+            <div *ngFor="let doctor of doctors">
+                <app-speciality-doctors [name]="doctor.doctor_name" [experience]="doctor.experience"
+                    [image]="doctor.doctor_image" [alt]="doctor.docalt"></app-speciality-doctors>
+            </div>
+        </div>
+    </div>
+
+    <!-- faq -->
+
+    <div class="faq">
+        <div class="faq-heading">FAQs</div>
+        <div class="ques_ans" *ngFor="let faq of faqs; let i = index">
+            <div style="color: #008080;" class="ques s_para"><b>Q{{i+1}}. {{faq.ques}}</b></div>
+            <div class="ans s_para" [innerHTML]="faq.ans"></div>
+        </div>
+    </div>
+</div>

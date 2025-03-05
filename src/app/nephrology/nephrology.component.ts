@@ -1,5 +1,5 @@
-import { Component,OnInit } from '@angular/core';
-import { Title, Meta,DomSanitizer,SafeHtml } from '@angular/platform-browser'; 
+import { Component, OnInit } from '@angular/core';
+import { Title, Meta, DomSanitizer, SafeHtml } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-nephrology',
@@ -7,34 +7,82 @@ import { Title, Meta,DomSanitizer,SafeHtml } from '@angular/platform-browser';
   styleUrl: './nephrology.component.css'
 })
 export class NephrologyComponent {
-  constructor(private titleService: Title, private metaService: Meta, private sanitizer: DomSanitizer) {}
-  sanitizedContent: SafeHtml ='';
+  constructor(private titleService: Title, private metaService: Meta, private sanitizer: DomSanitizer) { }
+  sanitizedContent: SafeHtml = '';
   sanitizedContent1: SafeHtml = '';
-  specialities:any[] = [];  
+  specialities: any[] = [];
   ngOnInit(): void {
-    this.titleService.setTitle("Best Kidney/Nephrology Hospital in Bangalore, India | Rashtrotthana Hospitals");  
+    this.titleService.setTitle("Best Kidney/Nephrology Hospital in Bangalore, India | Rashtrotthana Hospitals");
 
-  this.metaService.updateTag({ name: 'description', content: 'Rashtrotthana Hospital is the best kidney Hospital in Bangalore, India with highly experienced kidney specialists/nephrologists performing surgeries and treatments' });
+    this.metaService.updateTag({ name: 'description', content: 'Rashtrotthana Hospital is the best kidney Hospital in Bangalore, India with highly experienced kidney specialists/nephrologists performing surgeries and treatments' });
 
-  this.metaService.updateTag({ name: 'keywords', content: 'nephrology,kidney hospital near me,kidney, kidney pain causes, kidney stones, kidney stone symptoms' });
-  this.specialities=[
+    this.metaService.updateTag({ name: 'keywords', content: 'nephrology,kidney hospital near me,kidney, kidney pain causes, kidney stones, kidney stone symptoms' });
+
+    this.sanitizedContent = this.sanitizer.bypassSecurityTrustHtml(this.specialities[0].content);
+    this.sanitizedContent1 = this.sanitizer.bypassSecurityTrustHtml(this.specialities[0].content_1);
+  }
+
+  doctors = [
     {
-      main_heading:'Nephrology',
-      content:`The Nephrology Department at Rashtrotthana Hospital offers advanced and compassionate care for a range of kidney-related health issues. Led by certified nephrologists and renal specialists, our department provides expert diagnosis and treatment for chronic kidney diseases, electrolyte disorders, hypertension and conditions requiring renal replacement therapies, including <a href="https://en.wikipedia.org/wiki/Dialysis">dialysis</a> and kidney transplantation. Our 8-bed dialysis unit operates in a clean, safe and fully equipped environment, ensuring patients receive top-quality care across all days of the week. The dialysis center is dedicated to maintaining the highest standards of hygiene and care, catering to patients with both acute and chronic kidney needs. For patients requiring comprehensive renal care, our in-house renal transplant physician ensures safe, standardized protocols, providing exceptional outcomes for transplant patients.  `   ,
-      content_1:'Our department emphasizes a patient-centered approach, supporting long-term kidney health through preventative care and continuous monitoring. We offer discounted renal profile packages to assist with early diagnosis and provide ongoing support for managing conditions like diabetic nephropathy and hypertension-related kidney disease. With the backing of a dedicated team and state-of-the-art diagnostic tools, our Nephrology Department is committed to improving the quality of life for patients facing kidney challenges.',
-      heading:'Nephrology',
-      image:'best_nephrology_treatment_in_bengaluru.png',
-      alt :'Best Nephrology Treatment in Bengaluru',
-      Doctors:[
-        {
-          doctor_image:'../../assets/Dr-Santhosh-S.png',
-          doctor_name:'Dr. Santhosh S',
-          experience : "14",
-          docalt : 'Dr. Santhosh S | Best Nephrologist in Bangalore | Rashtrotthana Hospital'
-        }
-      ]}];
-      this.sanitizedContent = this.sanitizer.bypassSecurityTrustHtml(this.specialities[0].content);
-        this.sanitizedContent1 = this.sanitizer.bypassSecurityTrustHtml(this.specialities[0].content_1);  
-}
+      doctor_image:'../../assets/Dr-Santhosh-S.png',
+      doctor_name:'Dr. Santhosh S',
+      experience : "14",
+      docalt : 'Dr. Santhosh S | Best Nephrologist in Bangalore | Rashtrotthana Hospital'
+    }
+  ]
 
+  faqs = [
+    {
+      ques : 'Who is the best nephrologist in RR Nagar Bangalore?',
+      ans : 'If you are looking for the best nephrologist in RR Nagar Bangalore, Dr. Santhosh S at Rashtrotthana Hospital is an experienced specialist with 14 years of expertise in treating Kidney Disease, Kidney Failure, Kidney Stones, and Kidney Transplants.'
+    },
+    {
+      ques : 'What are the common symptoms of kidney disease?',
+      ans : `
+        <div class = 's_para'>Common signs of Kidney Disease include:</div>
+        <ul>
+          <li class = 's_para'>Persistent stomach pain, swelling in the legs, and changes in urination</li>
+          <li class = 's_para'>High blood pressure and fatigue</li>
+          <li class = 's_para'>Recurrent kidney infections or blood in the urine</li>
+        </ul>
+        <div class = 's_para'>If you experience these symptoms, consult Dr. Santhosh S, one of the Best Kidney Specialists Near Me at Rashtrotthana Hospital.</div>
+      `
+    },
+    {
+      ques : 'Where can I get the best kidney dialysis treatment in RR Nagar Bangalore?',
+      ans : 'Rashtrotthana Hospital is known as the Best Hospital for Dialysis Treatment in RR Nagar Bangalore, offering an 8-bed dialysis unit with high safety standards and expert nephrologists.'
+    },
+    {
+      ques : 'Can kidney failure be treated?',
+      ans : `
+        <div class = 's_para'>Yes! Kidney Failure Treatment in RR Nagar Bangalore includes:</div>
+        <ul>
+          <li class = 's_para'>Kidney Dialysis (Hemodialysis or Peritoneal Dialysis)</li>
+          <li class = 's_para'>Kidney Transplant for advanced-stage patients</li>
+          <li class = 's_para'>Medication and lifestyle management to slow progression</li>
+        </ul>
+        <div class = 's_para'>Dr. Santhosh S and our Expert Nephrologists in Rajarajeshwari Nagar Bangalore provide affordable kidney failure treatment with personalized care.</div>
+      `
+    },
+    {
+      ques : 'What is the best hospital for nephrology in Bangalore?',
+      ans : 'Rashtrotthana Hospital is rated as the Best Nephrology Hospital in Bangalore, providing advanced treatment for Kidney Stones in RR Nagar Bangalore, Renal Failure, and Kidney Cancer.  '
+    },
+    {
+      ques : 'How can I prevent kidney disease?',
+      ans : `
+        <div class = 's_para'>To maintain Kidney Health, follow these tips:</div>
+        <ul>
+          <li class = 's_para'>Stay hydrated and maintain a balanced diet</li>
+          <li class = 's_para'>Control blood pressure and diabetes</li>
+          <li class = 's_para'>Avoid excessive painkillers and processed foods</li>
+          <li class = 's_para'>Consult a Top-rated Nephrologist in Bangalore like Dr. Santhosh S for regular check-ups</li>
+        </ul>
+      `
+    },
+    {
+      ques : 'Where can I get affordable kidney failure treatment in Bangalore?',
+      ans : 'Rashtrotthana Hospital offers Affordable Kidney Failure Treatment in Bangalore with expert guidance from Dr. Santhosh S and a dedicated nephrology team.'
+    },
+  ]
 }
