@@ -57,10 +57,12 @@ import { EthicCommitteeComponent } from './ethic-committee/ethic-committee.compo
 import { MaternityComponent } from './maternity/maternity.component';
 import { AyurvedaThyroidComponent } from './ayurveda-thyroid/ayurveda-thyroid.component'
 import { RheumatologyComponent } from './rheumatology/rheumatology.component';
+import { CareerComponent } from './career/career.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'about-us', component: AboutUsComponent },
+  { path:"career", component:CareerComponent},
   { path: 'specialities', component: SpecalitiesComponent,
   children: [
     {path:'best-general-medicine-hospital-in-bangalore', component:ModernMedicineComponent},
@@ -139,7 +141,7 @@ children: [
   
   { path: 'blog', component: BlogComponent },
   { path: 'blog/:slug', component: BlogPostComponent },
-  {path:'**',redirectTo:''}
+  { path:'**',redirectTo:''},
  
 ]; 
 
