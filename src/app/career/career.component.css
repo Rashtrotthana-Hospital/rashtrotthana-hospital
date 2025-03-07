@@ -179,14 +179,14 @@
     }
 
     .hero-section img{
-        height: 150px;
+        height: 200px;
         object-fit: cover;
     }
 
     .button{
         padding: 5px 10px;
         font-size: 12px;
-        margin-top: 10%;
+        margin-top: 15%;
     }
 
     .title{
