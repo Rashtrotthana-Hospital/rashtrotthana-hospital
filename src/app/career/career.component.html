@@ -1,23 +1,29 @@
 <div class="root-container">
     <div class="hero-section">
-        <img src="../../assets/career-hero-min.jpg" alt="rashtrotthana career page">
+        <img src="../../assets/hero-banner.svg" alt="rashtrotthana career page">
         <div class="title">
             <div class="container">
                 <div style=" padding: 1%; border-radius: 10px;">
                     <div class="name">Join Us</div>
-                    <div class="des">Career at Rashtrotthana</div>
-                    <button class="button" routerLink="/contact-us-bangalore">Apply Now</button>
+                    <div class="des">Career at Rashtrotthana Hospital</div>
+                    <div class="buttons">
+                        <button class="button apply" routerLink="/contact-us-bangalore">Apply Now</button>
+                        <button class="button learn" (click)="scrollToNextContainer()">Learn More</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- work with us  -->
-    <div class="work">
+    <div class="work" #nextContainer>
         <div class="heading">Why Work with us?</div>
         <!-- <div style="display: flex; align-items: center; justify-content: space-around; width: 100%; padding: 2%;"> -->
-        <div class="grid">
+        <div class="grid" >
             <div class="flex" *ngFor="let work of works; let i = index">
+                <div class="color-container">
+                    <div class="color" [style.backgroundColor]="work?.color"></div>
+                </div>
                 <div class="box">
                     <div class="subheading">{{i+1}}. {{work.title}}</div>
                     <div class="description">{{work.description}}</div>
@@ -29,13 +35,13 @@
 
     <!-- work with us  -->
     <div class="work">
-        <div class="heading">Career Opportunities : </div>
+        <div class="heading_2">Career Opportunities : </div>
         <!-- <div style="display: flex; align-items: center; justify-content: space-around; width: 100%; padding: 2%;"> -->
-        <div class="grid">
-            <div class="flex"  *ngFor="let work of careers; let i = index">
+        <div class="grid_2">
+            <div class="flex_2"  *ngFor="let work of careers; let i = index">
                 <div class="box_2">
-                    <div class="subheading">{{i+1}}. {{work.title}}</div>
-                    <div class="description">{{work.description}}</div>
+                    <div class="subheading_2">{{i+1}}. {{work.title}}</div>
+                    <div class="description_2">{{work.description}}</div>
                 </div>
             </div>
         </div>

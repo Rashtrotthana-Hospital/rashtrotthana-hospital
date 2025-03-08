@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
 import { tick } from '@angular/core/testing';
 import { Title } from '@angular/platform-browser';
+import { color } from 'html2canvas/dist/types/css/types/color';
 
 @Component({
   selector: 'app-career',
@@ -8,28 +9,43 @@ import { Title } from '@angular/platform-browser';
   styleUrl: './career.component.css'
 })
 export class CareerComponent {
-
+  
+  @ViewChild('nextContainer', { static: false }) nextContainer!: ElementRef; // Add ! here    
+  
+  scrollToNextContainer() {
+    if (this.nextContainer) {
+      this.nextContainer.nativeElement.scrollIntoView({
+        behavior: 'smooth', // Smooth scrolling
+        block: 'start' // Scroll to the top of the container
+      });
+    }
+  }
 
   works : any = [
     {
       title : 'Commitment to Excellence:',
-      description : 'We strive for the highest quality in patient care, continuously improving our services through innovation and education.'
+      description : 'We strive for the highest quality in patient care, continuously improving our services through innovation and education.',
+      color: '#57078D'
     },
     {
       title : 'Collaborative Environment:',
-      description : "Our multidisciplinary team works together to provide comprehensive care. We value each member's contribution and encourage open communication and collaboration."
+      description : "Our multidisciplinary team works together to provide comprehensive care. We value each member's contribution and encourage open communication and collaboration.",
+      color: '#0558BA'
     },
     {
       title : 'Career Growth and Development:',
-      description : 'We support your professional growth through continuous learning opportunities, including workshops, certifications, and advanced training programs. Our mentorship programs help you reach your full potential.'
+      description : 'We support your professional growth through continuous learning opportunities, including workshops, certifications, and advanced training programs. Our mentorship programs help you reach your full potential.',
+      color: '#FAB517'
     },
     {
       title : 'State-of-the-Art Facilities:',
-      description : 'Our hospital is equipped with the latest medical technology and resources, providing an ideal environment for healthcare professionals to thrive and deliver outstanding patient care.'
+      description : 'Our hospital is equipped with the latest medical technology and resources, providing an ideal environment for healthcare professionals to thrive and deliver outstanding patient care.',
+      color: '#F04A06'
     },
     {
       title : 'Inclusive and Supportive Culture:',
-      description : 'We are committed to fostering a diverse and inclusive workplace where every team member is valued and respected. We believe that a supportive work environment leads to better patient outcomes and job satisfaction.'
+      description : 'We are committed to fostering a diverse and inclusive workplace where every team member is valued and respected. We believe that a supportive work environment leads to better patient outcomes and job satisfaction.',
+      color: '#560805'
     },
   ]
 
