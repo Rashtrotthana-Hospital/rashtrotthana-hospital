@@ -51,31 +51,31 @@ export class CareerComponent {
 
   careers:any = [
     {
-      title : 'Nursing : ',
+      title : 'Nursing: ',
       description : "Join our dedicated nursing staff, providing compassionate care and making a difference in patient's lives every day."
     },
     {
-      title : 'Physicians :',
+      title : 'Physicians:',
       description : "Work alongside leading medical experts in a supportive environment, focused on delivering top-notch healthcare."
     },
     {
-      title : 'Allied Health Professionals :',
+      title : 'Allied Health Professionals:',
       description : "Explore opportunities in fields such as radiology, laboratory services, physical therapy and more. Your expertise helps us provide comprehensive care to our patients."
     },
     {
-      title : 'Administrative and Support Staff :',
+      title : 'Administrative and Support Staff:',
       description : 'From human resources to finance, IT and facility management, our support staff plays a crucial role in the smooth operation of our hospital.'
     },
     {
-      title : 'Volunteer Opportunities :',
+      title : 'Volunteer Opportunities:',
       description : 'Give back to the community by volunteering your time and skills. Our volunteers are an integral part of our team, helping us enhance the patient experience.'
     },  
     {
-      title : 'Employee Benefits :',
+      title : 'Employee Benefits:',
       description : "We offer a competitive benefits package designed to support your well-being and work-life balance, including"
     },
     {
-      title : 'Health and Wellness :',
+      title : 'Health and Wellness:',
       description : "Comprehensive health insurance plans, wellness programs and access to our fitness center."
     },
     {
