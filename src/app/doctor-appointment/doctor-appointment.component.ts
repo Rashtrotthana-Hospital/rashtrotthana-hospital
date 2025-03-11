@@ -86,6 +86,9 @@ export class DoctorAppointmentComponent implements OnInit {
     else if (this.selectedDoctor.date === 'Monday-Thursday') {
       this.disabledDays = [0,5,6]; // Disable all days except Tuesday and Thursday
     }
+    else if (this.selectedDoctor.date === 'Sunday-Tuesday') {
+      this.disabledDays = [3,4,5,6]; // Disable all days except Tuesday and Thursday
+    }
     else if (this.selectedDoctor.date === 'Wednesday and Friday') {
       this.disabledDays = [0, 1, 2, 4, 6]; // Disable all days except Tuesday and Thursday
     }
@@ -103,6 +106,10 @@ export class DoctorAppointmentComponent implements OnInit {
     }
     else if( this.selectedDoctor.date === 'Monday'){
       this.disabledDays = [0,2,3,4,5,6];
+    }else if (this.selectedDoctor.date === 'Thursday') {
+      this.disabledDays = [0, 1, 2, 3, 5, 6]; // Disable all days except Wednesday (3)
+    }else if( this.selectedDoctor.date === 'Monday, Wednesday and Friday'){
+      this.disabledDays = [0,2,4,6];
     }
     else {
       this.disabledDays = [];

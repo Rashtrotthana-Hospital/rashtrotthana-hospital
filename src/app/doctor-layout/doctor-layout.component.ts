@@ -881,7 +881,7 @@ export class DoctorLayoutComponent {
         expertise : "Years of Experience: 7",
         qualification : "MBBS, (MD) Paediatrics",
         time : "",
-        date : "",
+        date : 'Monday-Saturday',
         alt : 'Dr. Dhanyatha Muninarayan  | Consultant Paediatrician in Bangalore | Rajarajeshwari Nagar Bangalore'
       },
       // {
@@ -907,7 +907,7 @@ export class DoctorLayoutComponent {
         expertise : "Years of Experience: 20",
         qualification : "MBBS, DNB Ortho, FRCS Edin T&O, MCh Ortho UK, CCT UK",
         time : "",
-        date : "",
+        date : 'Monday-Saturday',
         alt : 'Dr. Hemanth Kumar Venkatesh | Best Orthopaedic Consultant in Bangalore | Rashtrotthana Hospital'
       },
       {
@@ -920,7 +920,7 @@ export class DoctorLayoutComponent {
         expertise : "Years of Experience: 8",
         qualification : "Qualification: MBBS, MD (Internal Medicine) DM (Clinical Immunology and Rheumatology) MRCP-SCE (UK) Rheumatology, EULAR Fellow",
         time : "",
-        date : "",
+        date : "Monday, Wednesday and Friday",
         alt : ''
       },
       {
@@ -933,7 +933,7 @@ export class DoctorLayoutComponent {
         expertise : "Years of Experience: 27",
         qualification : "MD (General Medicine), MBBS, Fellowship in Diabetology, Fellowship in Infectious Diseases  ",
         time : "",
-        date : "",
+        date : "Sunday-Tuesday",
         alt : ''
       },
       {
@@ -946,7 +946,7 @@ export class DoctorLayoutComponent {
         expertise : "Years of Experience: 3",
         qualification : "BDS, FRCD",
         time : "",
-        date : "",
+        date : 'Monday-Saturday',
         alt : ''
       },
       {
@@ -959,7 +959,7 @@ export class DoctorLayoutComponent {
         expertise : "Years of Experience: 2",
         qualification : "MBBS, MS ENT, Fellowship in Pediatric Otolaryngology (RGUHS)  ",
         time : "",
-        date : "",
+        date : "Tuesday,Thursday and Saturday",
         alt : ''
       },
       {
@@ -972,7 +972,7 @@ export class DoctorLayoutComponent {
         expertise : "Years of Experience: 10+",
         qualification : "MBBS, MD, DM",
         time : "",
-        date : "",
+        date : "Monday, Wednesday and Friday",
         alt : ''
       },
       {
@@ -985,7 +985,7 @@ export class DoctorLayoutComponent {
         expertise : "Years of Experience: 15+",
         qualification : "BAMS, MD (Ay), (PhD)",
         time : "",
-        date : "",
+        date : "Thursday",
         alt : ''
       },
       // {
