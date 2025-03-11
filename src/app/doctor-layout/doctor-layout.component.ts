@@ -975,6 +975,19 @@ export class DoctorLayoutComponent {
         date : "",
         alt : ''
       },
+      {
+        name: "Dr. Kavya N ",
+        image : "assets/dummy.png",
+        desgination: 'Ayurveda',
+        speciality: 'AYURVEDA',
+        about : "Dr. Kavya has completed her BAMS and MD in Dravyaguna Vijnana from Government Ayurveda Medical College, Bengaluru. She has garnered rich clinical experience for over 15 years and specialized in treating various metabolic disorders, diseases of the gut, bone and joint disorders, diseases of the spine, skin health and gynecological wellness. Dr. Kavya comes in with 10 years of experience in Ayurveda and Integrative research from the prestigious Central Council for Research in Ayurvedic Sciences, Ministry of Ayush, Govt of India. She has to her credit a number of publications and has been a reviewer for many reputed peer reviewed journals, multiple awards and recognitions and presentations at National and International conferences. She is well known for her oratory skills and has addressed a wide range of both scientific and general audiences at various occasions.",
+        areasOfExpertise : ["Metabolic disorders", "Diseases of the gut", "Skin diseases", "Arthritis", "Diseases of the spine", "Gynecological problems"],
+        expertise : "Years of Experience: 15+",
+        qualification : "BAMS, MD (Ay), (PhD)",
+        time : "",
+        date : "",
+        alt : ''
+      },
       // {
       //   name: "",
       //   image : "",
