@@ -45,6 +45,7 @@
     line-height: 30px; /* 150% */
     letter-spacing: 0.2px;
     margin-top: 4%;
+    
 }
 
 .buttons{
@@ -240,6 +241,10 @@
     line-height: 30px; /* 150% */
 }
 
+.padding-bottom {
+    padding-bottom: 3%;
+}
+
 .description_2{
     color: #000;
     font-feature-settings: 'liga' off, 'clig' off;
@@ -328,21 +333,22 @@
     }
 
     .hero-section img{
-        height: 280px;
+        height: 250px;
         object-fit: cover;
     }
 
     .title{
-        top: 10px;
+        top: 40px;
         padding: 10px;
     }
 
     .name{
         font-size: 24px;
+        line-height: 40px;
     }
 
     .des{
-        font-size: 20px;
+        font-size: 14px;
         margin-top: 0;
         width: 200px;
     }

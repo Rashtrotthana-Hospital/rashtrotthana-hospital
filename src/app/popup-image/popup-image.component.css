@@ -65,12 +65,22 @@
   }
   @media (max-width: 768px) {
    img{
-    max-width: 100%;
+    max-width: 60%;
     height: auto;
    }
    .close-icon{
-    right: 3%;
-    top: 17vh;
+    right: 18%;
+    top: 9vh;
    }
+  }
+  @media(max-width: 500px){
+    img{
+      max-width: 100%;
+      height: auto;
+     }
+     .close-icon{
+      right: 3%;
+      top: 15vh;
+     }
   }
   
