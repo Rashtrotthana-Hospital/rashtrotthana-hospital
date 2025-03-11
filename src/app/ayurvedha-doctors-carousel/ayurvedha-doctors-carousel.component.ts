@@ -9,6 +9,14 @@ import { image } from 'html2canvas/dist/types/css/types/image';
 export class AyurvedhaDoctorsCarouselComponent {
   doctors = [
     {
+      image : '../../assets/dummy.png',
+      name : "Dr. Kavya N",
+      section : "BAMS, MD (Ay), (PhD)",
+      designation : "Resident Medical Officer ",
+      Department : "Ayurveda",
+      experience : "15"
+    },
+    {
       image : '../../assets/Ayurveda-doctors/Dr.RohithKR.png',
       name : "Dr. Rohith K R",
       section : "BAMS",
