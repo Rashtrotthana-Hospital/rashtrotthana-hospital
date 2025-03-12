@@ -322,9 +322,16 @@
 }
 
 .container_6{
+    width: 100vw;
     display: flex;
     justify-content: center;
+    flex-direction: row;
+    gap: 50px;
     margin-top: 50px;
+    flex-wrap: wrap;
+/* 
+    display: grid;
+    grid-template-columns: 33% 33% 33%; */
 }
 
 .member_1{
@@ -434,6 +441,10 @@
     font-style: normal;
     font-weight: 700;
     line-height: 38px; /* 105.556% */
+}
+
+.pointer{
+    cursor: pointer;
 }
 
 .qualification, .address, .role_des{
