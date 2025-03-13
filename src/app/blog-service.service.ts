@@ -11,7 +11,7 @@ export class BlogServiceService {
   constructor(private http: HttpClient) { }
 
   getPosts(): Observable<any> {
-    return this.http.get(`${this.baseUrl}/posts?per_page=20`);
+    return this.http.get(`${this.baseUrl}/posts?per_page=100`);
   }
 
   // getPost(id: number): Observable<any> {
