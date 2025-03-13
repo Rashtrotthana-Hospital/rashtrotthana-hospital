@@ -58,6 +58,7 @@ import { MaternityComponent } from './maternity/maternity.component';
 import { AyurvedaThyroidComponent } from './ayurveda-thyroid/ayurveda-thyroid.component'
 import { RheumatologyComponent } from './rheumatology/rheumatology.component';
 import { CareerComponent } from './career/career.component';
+import { MuthrubhavaComponent } from './muthrubhava/muthrubhava.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -138,6 +139,7 @@ children: [
   {path:'piles-hospital-bangalore',component:ProctologyComponent},
   {path:'maternity-care', component:MaternityComponent},
   {path:'ayurvedic-thyroid-treatment', component:AyurvedaThyroidComponent},
+  {path:'mathrubhava-treatment', component:MuthrubhavaComponent},
   
   { path: 'blog', component: BlogComponent },
   { path: 'blog/:slug', component: BlogPostComponent },
