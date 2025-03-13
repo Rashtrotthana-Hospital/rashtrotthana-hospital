@@ -1,0 +1,496 @@
+.root-container{
+    background-color: #FBFFF5;
+}
+
+.container-1 {
+    background-image: url('../../assets//muthrubhava/best-ayurveda-hospital-in-bangalore.png');
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    margin-top: 120px;
+    height: 85vh;
+    overflow: hidden;
+}
+
+.round{
+    border-radius: 50%;
+    border: 4px solid #FFF;
+    background: linear-gradient(159deg, #008080 13.72%, #CAFFFF 84.41%);
+    width: 700px;
+    height: 700px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    flex-direction: column;
+    overflow: hidden;
+    top: 200px;
+    border: 4px solid #FFF;
+}
+
+.heading{
+    background: linear-gradient(93deg, #FBCA51 0%, #FFE9B4 120.75%);
+    text-transform: capitalize;
+    padding: 10px 20px;
+    border-radius: 50px;
+    margin-top: 80px;
+}
+
+.heading span{
+    font-family: "ADLaM Display";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background: radial-gradient(199.19% 74.33% at 50% 50%, #008080 0%, #60B1B1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.description{
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.mom{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-top: 20px;
+}
+
+.caption{
+    color: #FFF;
+    width: 500px;
+    text-align: center;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 30px;
+}
+
+.s_des{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.rightSide img{
+    width: 500px;
+    height: auto;
+}
+
+/* container 2 */
+
+.container-2{
+    margin-top: 50px;
+}
+
+.headings{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+    text-align: center;
+    background: #00549D;  
+}
+
+.para{
+    color: #000;
+    text-align: justify;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.padding{
+    padding: 0 5%;
+}
+
+.para-margin{
+    margin-top: 20px;
+}
+
+.con_2_images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.container-margin{
+    margin-top: 50px;
+}
+
+.subheading{
+    color: #000;
+    font-family: Poppins;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.r_side img{
+    width: 430px;
+    height: auto;
+}
+
+.flex-2{
+    display: flex;
+}
+
+.flex-2 .l_side img{
+    width: 552px;
+    height: 700px;
+    object-fit: cover;
+}
+
+.box img{
+    width: 40px;
+    height: auto;
+}
+
+.c3-headings {
+    color: #000;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.r_side .r_img_3{
+    width: 500px;
+    height: auto;
+}
+
+.container-6{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: radial-gradient(140.19% 125.74% at 50% -13.93%, #FFE093 0%, #008080 89.85%);
+    padding: 20px 0;
+}
+
+.container-6-images{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.con-6-box{
+    width: 250px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.container_6_heading{
+    font-family: "ADLaM Display";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    border-radius: 80px;
+    border: 4px solid #FBCA51;
+    background: #FFF;
+    padding: 20px;
+}
+
+.img_para{
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.container-7{
+    width: 100%;
+    padding: 4%;
+}
+
+.container-7 img{
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width : 1100px){
+
+    .container-1{
+        height: 70vh;
+    }
+
+    .round{
+        width: 600px;
+        height: 600px;
+        top: 100px;
+
+    }
+
+    .heading{
+        font-size: 40px;
+    }
+
+    .description{
+        font-size: 32px;
+    }
+
+    .mom{
+        font-size: 50px;
+    }
+
+    .s_des{
+        font-size: 24px;
+    }
+
+    .caption{
+        font-size : 18px;
+        width : 300px
+    }
+
+    .rightSide img{
+        width: 400px;
+    }
+}
+
+@media (max-width : 800px){
+
+    .container-1{
+        height: 75vh;
+    }
+
+    .round{
+        width: 400px;
+        height: 400px;
+        justify-content: start;
+    }
+
+    .heading{
+        margin-top: 40px;
+    }
+
+    .heading span{
+        font-size: 32px;
+    }
+
+    .description{
+        font-size: 24px;
+        margin-top: 10px
+    }
+
+    .mom{
+        font-size: 32px;
+    }
+
+    .s_des{
+        font-size: 16px
+    }
+
+    .caption{
+        font-size : 12px    
+    }
+
+    .flex-2{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .flex-2 .l_side img{
+        width: 100vw;
+        height: 700px;
+    }
+
+    .flex{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mob-padding{
+        padding: 2%;
+    }
+
+}
+
+@media (max-width : 480px){
+
+    .round { 
+        height: 390px;
+        width: 390px;
+    }
+
+    .container-1{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: end;
+    }
+
+    .rightSide{
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        position: absolute;
+        top: 150px;
+    }
+
+    .rightSide img{
+        width: 300px;
+    }
+
+    .leftSide{
+        position: relative;
+        z-index: 3;
+        display: flex;
+        justify-content: center;
+    }
+
+    .heading{
+        margin-top: 40px;
+    }
+
+    .heading span{
+        font-size: 30px;
+    }
+
+    .description{
+        font-size: 20px;
+        margin-top: 10px
+    }
+
+    .mom{
+        font-size: 28px;
+        margin-top: 15px;
+    }
+
+    .s_des{
+        font-size: 18px
+    }
+
+    .caption{
+        font-size : 12px;  
+        margin-top : 12px;  
+    }
+
+    .headings {
+        font-size: 24px;
+    }
+
+    .subheading{
+        font-size: 20px;
+    }
+
+    .c3-headings{
+        font-size: 16px;
+    }
+
+    .para{
+        font-size: 12px;
+    }
+
+    .con_2_images img{
+        width: 200px;
+        height: auto;
+    }
+
+    .r_side .con_2_img{
+        width: 300px;
+        height: auto;
+    }
+
+    .r_side .r_img_3{
+        width: 300px;
+        height: auto;
+    }
+}
+
+@media (max-width : 400px){
+    .round { 
+        height: 300px;
+        width: 300px;
+    }
+
+    .rightSide{
+        top: 200px;
+    }
+
+    .heading{
+        margin-top: 40px;
+    }
+
+    .heading span{
+        font-size: 26px;
+    }
+
+    .description{
+        font-size: 16px;
+        margin-top: 10px
+    }
+
+    .mom{
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .s_des{
+        font-size: 12px
+    }
+
+    .caption{
+        font-size : 9px;  
+        margin-top : 5px;  
+    }
+}
