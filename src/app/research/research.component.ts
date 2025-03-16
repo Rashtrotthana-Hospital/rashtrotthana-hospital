@@ -52,17 +52,17 @@ export class ResearchComponent {
   ]
 
   researchTeam = [
-    // {
-    //   image : "../../assets/dummy.png",
-    //   name : "Name: Dr. Kavya N ",
-    //   qualification : "BAMS, MD (Ay), (PhD)",
-    //   designation : "Research Officer",
-    //   address : "Former Senior Resident, NIMHANS, Bengaluru",
-    //   role : "",
-    //   roleDesv : "Former Senior Research Fellow, CCRAS",
-    //   description : "",
-    //   role_2 : "Research Officer"
-    // },
+    {
+      image : "../../assets/Dr-Kavya-Research.png",
+      name : "Name: Dr. Kavya N ",
+      qualification : "BAMS, MD (Ay), (PhD)",
+      designation : "Research Manager",
+      address : "Former Senior research fellow, Central Ayurveda Research Institute, CCRAS, Bengaluru",
+      role : "",
+      roleDesv : "Former Consultant and Head, Centre of Excellence in Research and Clinical services in Diabetes Mellitus, Ministry of AYUSH, Govt of India",
+      description : "",
+      role_2 : "Research Manager"
+    },
     {
       image : "../../assets/member_15.png",
       name : "Dr. Kavyashree Kulamarva",
