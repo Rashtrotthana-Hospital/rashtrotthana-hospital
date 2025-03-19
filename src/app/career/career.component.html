@@ -7,7 +7,7 @@
                     <div class="name">Join Us</div>
                     <div class="des">Career at Rashtrotthana Hospital</div>
                     <div class="buttons">
-                        <button class="button apply" routerLink="/contact-us-bangalore">Apply Now</button>
+                        <button class="button apply" (click)="scrollToAppointmentForm()">Apply Now</button>
                         <button class="button learn" (click)="scrollToNextContainer()">Learn More</button>
                     </div>
                 </div>
@@ -48,7 +48,7 @@
         <!-- </div> -->
     </div>
 
-    <div class="form-container">
+    <div class="form-container" #formContainer>
         <!-- Elfsight Contact Form | Rash Career Form -->
         <!-- <script src="https://static.elfsight.com/platform/platform.js" async></script>
     <div class="elfsight-app-bb8329f5-66bc-4ccb-9533-db30fde50803" data-elfsight-app-lazy></div> -->

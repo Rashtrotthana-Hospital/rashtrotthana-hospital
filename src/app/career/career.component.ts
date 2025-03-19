@@ -10,11 +10,21 @@ import { color } from 'html2canvas/dist/types/css/types/color';
 })
 export class CareerComponent {
   
-  @ViewChild('nextContainer', { static: false }) nextContainer!: ElementRef; // Add ! here    
-  
+  @ViewChild('nextContainer', { static: false }) nextContainer!: ElementRef; // Add ! here      
+  @ViewChild('formContainer', { static: false }) formContainer!: ElementRef; // Add ! here      
+
   scrollToNextContainer() {
     if (this.nextContainer) {
       this.nextContainer.nativeElement.scrollIntoView({
+        behavior: 'smooth', // Smooth scrolling
+        block: 'start' // Scroll to the top of the container
+      });
+    }
+  }
+
+  scrollToAppointmentForm() {
+    if (this.nextContainer) {
+      this.formContainer.nativeElement.scrollIntoView({
         behavior: 'smooth', // Smooth scrolling
         block: 'start' // Scroll to the top of the container
       });
