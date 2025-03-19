@@ -256,6 +256,17 @@
     margin-top: 10px;
 }
 
+.form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container .contact-form-elsight{
+    width: 500px;
+    height: 800px;
+}
+
 @media (max-width : 1200px){
 
     .box{
@@ -411,5 +422,10 @@
         max-width: 300px;
         height: 275px;
         border-radius: 20px;
+    }
+
+    .form-container .contact-form-elsight{
+        width: 330px;
+        height: 930px;
     }
 }

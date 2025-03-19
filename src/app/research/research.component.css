@@ -499,6 +499,11 @@
     border-radius: 50%;
 }
 
+.contact-form-elsight{
+    width: 100%;
+    height: 700px;
+}
+
 @media (max-width : 1500px){
 
     .pop_up{
