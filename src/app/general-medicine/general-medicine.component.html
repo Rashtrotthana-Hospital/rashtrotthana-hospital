@@ -1,213 +1,103 @@
-<div class="main_container">
-    <div class="gm_poster">
-        <h2 class="o_heading">Internal Medicine</h2>
-        <P class="o_info">Leading the way with 15+ specialties in modern medicine.</P>
+<div class="root-container">
+    <div class="speciality-header">
+        <app-speciality-header main_heading="Internal Medicine" />
     </div>
-    <!-- common box or container for menu and content, "dispaly: flex" -->
-    <div class="menu_n_content">
-        <!-- menu -->
-        <div class="o_menu">
-            <!-- menu heading -->
-            <div class="gm_m_heading">
-                <span class="more_specs">More Specialties</span>
+
+    <div class="container-2">
+        <div class="sidebar">
+            <app-sidebar />
+        </div>
+        <div class="contents">
+            <h1 class="s_h1">Best Internal Medicine Hospital in RR Nagar Bangalore | Expert General Physicians</h1>
+
+            <div class="para_image">
+                <div class="s_content">
+                    <div class="s_para">The Internal Medicine Department at Rashtrotthana Hospital is dedicated to delivering comprehensive healthcare solutions, making it the Best Internal Medicine Hospital in RR Nagar Bangalore. Our expert General Medical Specialists in RR Nagar Bangalore focus on diagnosing, treating and managing a wide range of acute and chronic conditions, ensuring that patients receive top-tier medical care.</div>
+                </div>
+                <div class="s_image">
+                    <img src="../../assets/internal-medicine.png" alt="Internal Medicine">
+                </div>
             </div>
-            <!-- menu contents -->
-            <div class="menu_contents">
-                <div class="op_names">
-                    <!-- general medicine -->
-                    <div class="menu_list_box" routerLink="/specialities/internal-medicine-hospital-in-bangalore"
-                        routerLinkActive="active">
-                        <p class="menu_list general_medicine">Internal medicine</p>
-                        <i class="fa-solid fa-angle-down"></i>
-                    </div>
-                    <!-- general Surgery -->
-                    <div class="menu_list_box" routerLink="/specialities/best-general-surgery-hospital-in-bangalore"
-                        routerLinkActive="active">
-                        <p class="menu_list general_Surgery">General Surgery</p>
-                        <i class="fa-solid fa-angle-down"></i>
-                    </div>
-                    <!-- Obstetrics & Gynaecology -->
-                    <div class="menu_list_box"
-                        routerLink="/specialities/best-obstetrics-and-gynecologist-hospital-in-bangalore"
-                        routerLinkActive="active">
-                        <p class="menu_list Obstetrics_Gynaecology">Obstetrics & Gynaecology</p>
-                        <i class="fa-solid fa-angle-down"></i>
-                    </div>
-                    <!-- Paediatrics & Neonatology -->
-                    <div class="menu_list_box" routerLink="/specialities/best-paediatric-hospital-in-bangalore"
-                        routerLinkActive="active">
-                        <p class="menu_list Paediatrics_Neonatology">Paediatrics & Neonatology</p>
-                        <i class="fa-solid fa-angle-down"></i>
-                    </div>
-                    <!-- Nephrology -->
-                    <div class="menu_list_box" routerLink="/specialities/best-nephrology-hospital-in-bangalore"
-                        routerLinkActive="active">
-                        <p class="menu_list Nephrology">Nephrology</p>
-                        <i class="fa-solid fa-angle-down"></i>
-                    </div>
-                    <!-- Urology -->
-                    <div class="menu_list_box" routerLink="/specialities/best-urology-hospital-in-bangalore"
-                        routerLinkActive="active">
-                        <p class="menu_list Urology">Urology</p>
-                        <i class="fa-solid fa-angle-down"></i>
-                    </div>
-                    <!-- Orthopedics -->
-                    <div class="menu_list_box" routerLink="/specialities/best-orthopaedics-hospital-in-bangalore"
-                        routerLinkActive="active">
-                        <p class="menu_list Orthopedics">Orthopaedics</p>
-                        <i class="fa-solid fa-angle-down"></i>
-                    </div>
-                    <!-- Gastrosciences -->
-                    <div class="menu_list_box" routerLink="/specialities/best-gastroenterology-hospital-in-bangalore"
-                        routerLinkActive="active">
-                        <p class="menu_list Gastrosciences">Gastrosciences</p>
-                        <i class="fa-solid fa-angle-down"></i>
-                    </div>
-                    <!-- Cardiac Sciences -->
-                    <div class="menu_list_box" routerLink="/specialities/best-cardiology-hospital-in-bangalore"
-                        routerLinkActive="active">
-                        <p class="menu_list Cardiac_Sciences">Cardiac Sciences</p>
-                        <i class="fa-solid fa-angle-down"></i>
-                    </div>
-                    <!-- Pulmonology -->
-                    <div class="menu_list_box" routerLink="/specialities/best-pulmonology-hospital-in-bangalore"
-                        routerLinkActive="active">
-                        <p class="menu_list Pulmonology">Pulmonology</p>
-                        <i class="fa-solid fa-angle-down"></i>
-                    </div>
-                    <!-- Ophthalmology -->
-                    <div class="menu_list_box" routerLink="/specialities/best-eye-hospital-in-bangalore"
-                        routerLinkActive="active">
-                        <p class="menu_list Ophthalmology">Ophthalmology</p>
-                        <i class="fa-solid fa-angle-down"></i>
-                    </div>
-                    <!-- Dental Sciences -->
-                    <div class="menu_list_box" routerLink="/specialities/best-dental-hospital-in-bangalore"
-                        routerLinkActive="active">
-                        <p class="menu_list Dental_Sciences">Dental Sciences</p>
-                        <i class="fa-solid fa-angle-down"></i>
-                    </div>
-                    <!-- ENT -->
-                    <div class="menu_list_box" routerLink="/specialities/best-ent-hospital-in-bangalore"
-                        routerLinkActive="active">
-                        <p class="menu_list ENT">ENT</p>
-                        <i class="fa-solid fa-angle-down"></i>
-                    </div>
-                    <!-- Neurosciences -->
-                    <div class="menu_list_box" routerLink="/specialities/best-neurology-hospital-in-bangalore"
-                        routerLinkActive="active">
-                        <p class="menu_list Neurosciences">Neurosciences</p>
-                        <i class="fa-solid fa-angle-down"></i>
-                    </div>
-                    <!-- Endocrinology -->
-                    <div class="menu_list_box" routerLink="/specialities/best-endocrinology-hospital-in-bangalore"
-                        routerLinkActive="active">
-                        <p class="menu_list Endocrinology">Endocrinology</p>
-                        <i class="fa-solid fa-angle-down"></i>
-                    </div>
-                    <!-- Psychiatry -->
-                    <div class="menu_list_box" routerLink="/specialities/best-pshychiatry-hospital-in-bangalore"
-                        routerLinkActive="active">
-                        <p class="menu_list Psychiatry">Psychiatry</p>
-                        <i class="fa-solid fa-angle-down"></i>
-                    </div>
-                    <!-- Oncology -->
-                    <div class="menu_list_box" routerLink="/specialities/best-oncology-hospital-in-bangalore"
-                        routerLinkActive="active">
-                        <p class="menu_list Oncology">Oncology</p>
-                        <i class="fa-solid fa-angle-down"></i>
-                    </div>
-                    <!-- Anesthesiology -->
-                    <div class="menu_list_box" routerLink="/specialities/best-anesthesiology-hospital-in-india"
-                        routerLinkActive="active">
-                        <p class="menu_list Anesthesiology">Anesthesiology</p>
-                        <i class="fa-solid fa-angle-down"></i>
-                    </div>
-                    <!-- emergency medicine -->
-                    <div class="menu_list_box" routerLink="/specialities/best-emergency-medicine-hospital-in-bangalore"
-                        routerLinkActive="active">
-                        <p class="menu_list emergency_medicine">Emergency Medicine</p>
-                        <i class="fa-solid fa-angle-down"></i>
-                    </div>
-                    <!-- Rheumatology -->
-                    <div class="menu_list_box" routerLink="/specialities/rheumatology-hospital-bangalore" routerLinkActive="active">
-                        <p class="menu_list emergency_medicine">Rheumatology</p>
-                        <i class="fa-solid fa-angle-down"></i>
-                    </div>
+
+            <div class="para_image row-reverse">
+                <div class="s_image">
+                    <img src="../../assets/best-general-physician-near-me.png" alt="Best General Physician Near Me">
+                </div>
+                <div class="s_content">
+                    <h2 class="s_subheadings">Expert Care for Chronic & Acute Health Conditions</h2>
+                    <div class="s_para">Our Experienced General Physicians in RR Nagar Bangalore specialize in treating diabetes, hypertension, cardiovascular diseases, respiratory disorders and other chronic illnesses. As one of the Best Internal Medicine Hospitals in RR Nagar Bangalore, we also provide top-notch care for infectious diseases, including cold, fever, headache, flu and allergies.</div>
+                </div>
+            </div>
+
+            <div class="para_image">
+                <div class="s_content">
+                    <h2 class="s_subheadings">Advanced Diagnosis & Personalized Treatment</h2>
+                    <div class="s_para">We utilize cutting-edge diagnostic tools, including imaging, blood panels and metabolic testing, ensuring accurate and early diagnosis. Our hospital is known as the Best Hospital in RR Nagar Bangalore for Fever with Cough and Cold, offering 24/7 emergency services to handle urgent health conditions.</div>
+                </div>
+                <div class="s_image">
+                    <img src="../../assets/ceneral-health-doctor.png" alt="Ceneral Health Doctor">
+                </div>
+            </div>
+
+            <div class="para_image row-reverse">
+                <div class="s_image">
+                    <img src="../../assets/family-health-specialist.png" alt="Cold, Headache and Flu Treatment">
+                </div>
+                <div class="s_content">
+                    <h2 class="s_subheadings">Preventive Healthcare & Health Check-ups</h2>
+                    <div class="s_para">At Rashtrotthana Hospital, our team emphasizes preventive healthcare with routine screenings and health assessments. As the Best Hospital for Health Check-ups in Rajarajeshwari Nagar Bangalore, we help patients detect potential health risks early and adopt preventive strategies.</div>
                 </div>
             </div>
         </div>
-        <!-- content -->
-        <div class="o_container">
-            <!-- general medicine heading -->
-            <div class="o_h_general_medicine">
-                <p class="o_h_heading">Internal Medicine</p>
-            </div>
-            <!-- paragraph and image -->
-            <div class="con_n_img">
+    </div>
+    <div class="contents_2">
+
+        <div class="para_image container-padding">
+            <div class="s_content">
+                <h2 class="s_subheadings">Why Choose Us?</h2>
                 <div>
-                    <p class="gm_content">The Internal Medicine Department at Rashtrotthana Hospital is dedicated to
-                        providing comprehensive, patient-focused care for a wide range of adult health concerns. Our
-                        specialists are skilled in diagnosing, treating and managing both acute and chronic conditions,
-                        ensuring patients receive long-term support for their wellness journey. Common conditions
-                        managed by our team include <a href="https://en.wikipedia.org/wiki/Chronic_condition">chronic
-                            illnesses</a> such as diabetes, hypertension, cardiovascular diseases and respiratory
-                        disorders. Our expertise extends to infectious diseases, including respiratory infections and
-                        viral illnesses, as well as preventive care measures like screenings and health assessments to
-                        identify risk factors early and promote preventive healthcare.</p>
-                    <p class="gm_content">Our hospital offers advanced diagnostic and treatment options, utilizing
-                        cutting-edge imaging tools, blood panels and metabolic testing to guarantee accuracy in
-                        diagnosis. We prioritize patient safety with 24/7 emergency services, available for immediate
-                        response to acute health needs and provide preoperative and postoperative care to ensure a
-                        smooth recovery process. Our internal medicine team places great emphasis on empathy and
-                        individualised care, leveraging the latest in medical research and technology to deliver optimal
-                        outcomes for each patient. For those seeking expert guidance in managing chronic conditions or
-                        overall health, scheduling a consultation with our specialists is the first step towards a
-                        healthier life.</p>
-                </div>
-                <img src="../../assets/images/best_general_medicine_treatment_in_bengaluru.png" alt="Best General Medicine Treatment in Bengaluru" class="gm_o_image">
-            </div>
-            <!-- Meet our medical team -->
-            <div class="Meet_Medical_Team">
-                <!-- heading -->
-                <h2 classs="mmt_heading">Meet Our Medical Team</h2>
-                <!-- doctor image and name -->
-                <div class="doc_common_box">
-                    <div class="doc_details">
-                        <img src="../../assets/Dr-H-M-Krishnamurthy.png" alt="Dr. H. M. Krishnamurthy | Consultant - Internal Medicine in Bangalore | Rashtrotthana Hospital"> <!-- doctor image -->
-                        <p class="doc_name">Dr. H. M. Krishnamurthy</p>
-                        <p class="exp">Years of Experience: 36</p>
-                    </div>
-                    <div class="doc_details">
-                        <img src="../../assets/Dr-Sindhu-P-Madanshetty.png" alt="Dr. Sindhu P. Madanshetty | Best Physician in Bangalore | Rashtrotthana Hospital"> <!-- doctor image -->
-                        <p class="doc_name">Dr. Sindhu P. Madanshetty</p>
-                        <p class="exp">Years of Experience: 7</p>
-                    </div>
-                    <!-- <div class="doc_details">
-                        <img src="../../assets/doctor-46.png" alt="">   
-                        <p class="doc_name">Dr. Harshitha R</p>
-                        <p class="exp">Years of Experience: 3</p>
-                    </div> -->
-                </div>
-                <div class="doc_common_box">
-                    <div class="doc_details">
-                        <img src="../../assets/Dr-Bhavya.png" alt="Dr. Bhavya | Best Diabetologist in Bangalore | Rashtrotthana Hospital"> <!-- doctor image -->
-                        <p class="doc_name">Dr. Bhavya</p>
-                        <p class="exp">Years of Experience: 9</p>
-                    </div>
-                    <div class="doc_details">
-                        <img src="../../assets/Dr-Rajendran.png" alt="Dr. Bhavya | Best Diabetologist in Bangalore | Rashtrotthana Hospital"> <!-- doctor image -->
-                        <p class="doc_name">Dr. C Rajendran</p>
-                        <p class="exp">Years of Experience: </p>
-                    </div>
-
-
-                </div>
-                <!-- view all button -->
-                <div class="view_all_btn_box">
-                    <app-arrow-btn></app-arrow-btn>
+                    <ul>
+                        <li class="s_para">Best Physicians in RR Nagar Bangalore for comprehensive healthcare.</li>
+                        <li class="s_para">General Health Doctors with vast experience in treating cold, fever, flu and allergies.</li>
+                        <li class="s_para">Best Health Consultants in Rajarajeshwari Nagar Bangalore for chronic disease management.</li>
+                        <li class="s_para">Top Family Health Specialists for long-term well-being.</li>
+                        <li class="s_para">Best Diabetes Hospital in RR Nagar Bangalore, providing advanced diabetic care solutions.</li>
+                    </ul>
                 </div>
             </div>
+            <div class="s_image" style="width: 30%; display: flex; justify-content: center;">
+                <img src="../../assets/images/best_general_medicine_treatment_in_bengaluru.png" alt="Allergy Specialist in RR Nagar Bangalore">
+            </div>
+        </div>
+
+        <div class="para_image container-padding container-margin" style="margin-bottom: 40px;">
+            <div class="s_image row-reverse">
+                <img src="../../assets/experienced-general-physicians-in -rr-nagar-bangalore.png" alt="Experienced General Physicians in RR Nagar Bangalore">
+            </div>
+            <div class="s_content">
+                <h2 class="s_subheadings">Multispeciality Care with Expert Physicians</h2>
+                <div class="s_para">Being one of the Best Multispeciality Hospitals in Bangalore, we offer specialized services such as diabetes management, allergy treatment and cardiovascular care. Our Allergy Specialists in RR Nagar Bangalore provide effective solutions for seasonal allergies and respiratory issues, ensuring long-term relief.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- doctors -->
+    <div class="doctors">
+        <div class="doc-heading">Meet Our Medical Team</div>
+        <div class="doctor-container">
+            <div *ngFor="let doctor of doctors">
+                <app-speciality-doctors [name]="doctor.name" [experience]="doctor.experience"
+                    [image]="doctor.image" [alt]="doctor.alttext"></app-speciality-doctors>
+            </div>
+        </div>
+    </div>
+
+     <!-- faq -->
+    <div class="faq">
+        <div class="faq-heading">FAQs</div>
+        <div class="ques_ans" *ngFor="let faq of faqs; let i = index">
+            <div style="color: #008080;" class="ques s_para"><b>Q{{i+1}}. {{faq.ques}}</b></div>
+            <div class="ans s_para">{{faq.ans}}</div>
         </div>
     </div>
 </div>
