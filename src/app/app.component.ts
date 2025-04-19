@@ -14,6 +14,7 @@ declare let gtag: Function;
 export class AppComponent implements OnInit{
   constructor(private router: Router, private analyticsService: AnalyticsService, private messageService: MessageService,private meta: Meta, private title: Title) { } 
   // title = 'rashtrotthana_hospital';
+  isCareerPage = false;
   ngOnInit() { 
     // this.router.events.subscribe((event) => { 
     //     if (!(event instanceof NavigationEnd)) { 
@@ -21,7 +22,11 @@ export class AppComponent implements OnInit{
     //     } 
     //     window.scrollTo(0, 0) 
     // }); 
-
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        this.isCareerPage = event.urlAfterRedirects === '/career';
+      }
+    });
    
 
 

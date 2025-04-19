@@ -793,7 +793,7 @@ export class ChatbotComponent implements OnInit {
 
       this.userInput = ''
       const formdata = {
-        to: "frontoffice@rashtrotthanahospital.com",
+        to: "patientservices@rashtrotthanahospital.com",
         status: "frontofficechatbot",
         appointmentDetails: {
           doctorName: this.selectedDoctor.name,

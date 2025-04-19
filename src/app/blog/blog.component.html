@@ -8,7 +8,7 @@
       <img class="featured-image" [src]="featuredPost.featured_image_url" alt="Featured Post">
       <div class="featured-content">
         <p class="post-date">{{ featuredPost.date | date:'mediumDate' }}</p>
-        <h2 class="post-title">{{ featuredPost.title.rendered }}</h2>
+        <h2 class="post-title" [innerHTML]="featuredPost.title.rendered"></h2>
         <p class="post-excerpt" [innerHTML]="featuredPost.excerpt.rendered"></p>
         <a [routerLink]="['/blog', featuredPost.slug]" class="read-more-button">Read More</a>
       </div>
@@ -20,7 +20,7 @@
         <a [routerLink]="['/blog', post.slug]" class="post-link">
           <img class="post-image" [src]="post.featured_image_url" alt="{{ post.title.rendered }}">
           <div class="post-content">
-            <h3 class="post-title-1">{{ post.title.rendered }}</h3>
+            <h3 class="post-title-1" [innerHTML]="post.title.rendered">{{ post.title.rendered }}</h3>
             <p class="post-date">{{ post.date | date:'mediumDate' }}<span *ngFor="let category of categories; let last = last">
               | {{ category }}<span *ngIf="!last">, </span>
             </span></p>

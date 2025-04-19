@@ -587,7 +587,7 @@ getAvailableSlots(doctorId: number, date: string): Observable<any> {
         message: this.contactForm.value.message
       };
       const emailRequest = {
-        to: 'frontoffice@rashtrotthanahospital.com',
+        to: 'patientservices@rashtrotthanahospital.com',
         status: 'frontoffice',
         appointmentDetails: emailParams,
       };

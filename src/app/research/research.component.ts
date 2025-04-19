@@ -54,7 +54,7 @@ export class ResearchComponent {
   researchTeam = [
     {
       image : "../../assets/Dr-Kavya-Research.png",
-      name : "Name: Dr. Kavya N ",
+      name : "Dr. Kavya N ",
       qualification : "BAMS, MD (Ay), (PhD)",
       designation : "Research Manager",
       address : "Former Senior research fellow, Central Ayurveda Research Institute, CCRAS, Bengaluru",

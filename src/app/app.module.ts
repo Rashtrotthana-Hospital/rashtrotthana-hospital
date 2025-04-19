@@ -119,6 +119,7 @@ import { AyurvedaThyroidComponent } from './ayurveda-thyroid/ayurveda-thyroid.co
 import { RheumatologyComponent } from './rheumatology/rheumatology.component';
 import { CareerComponent } from './career/career.component';
 import { MuthrubhavaComponent } from './muthrubhava/muthrubhava.component';
+import { CareerPagePopupComponent } from './career-page-popup/career-page-popup.component';
 
 
 @NgModule({
@@ -211,7 +212,8 @@ import { MuthrubhavaComponent } from './muthrubhava/muthrubhava.component';
     ProctologyComponent,
     RheumatologyComponent,
     CareerComponent,
-    MuthrubhavaComponent
+    MuthrubhavaComponent,
+    CareerPagePopupComponent
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   imports: [

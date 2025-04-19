@@ -1,14 +1,7 @@
 <app-navbar></app-navbar>
-<app-popup-image></app-popup-image>
+<app-popup-image *ngIf="!isCareerPage"></app-popup-image>
+<app-career-page-popup *ngIf="isCareerPage"></app-career-page-popup>
 <router-outlet></router-outlet>
-<!-- <app-ayurveda-thyroid /> -->
- <!-- <app-rheumatology /> -->
- <!-- <app-muthrubhava /> -->
-
-<!-- <app-doctor-details></app-doctor-details> -->
-<!-- <app-doctor-appointment></app-doctor-appointment> -->
-<!-- <app-advisory-carousel></app-advisory-carousel> -->
-<!-- <app-committee-carousel></app-committee-carousel> -->
 <p-toast />
 <app-chatbot class="chatbot" [closeChatBot]="closeChatBot"></app-chatbot>
 <div class="chatbot_logo">
