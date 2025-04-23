@@ -1,175 +1,177 @@
-<div class="main_container">
-    <div class="gm_poster">
-            <h2 class="o_heading">Oncology</h2>
-            <P class="o_info">Leading the way with 15+ specialties in modern medicine.</P>
+<div class="root-container">
+    <div class="speciality-header">
+        <app-speciality-header main_heading="Oncology" />
     </div>
-    <!-- common box or container for menu and content, "dispaly: flex" -->
-    <div class="menu_n_content"> 
-        <!-- menu -->
-        <div class="o_menu">
-            <!-- menu heading -->
-            <div class="gm_m_heading">
-                <span class="more_specs">more Specialties</span>
+
+    <div class="container-2">
+        <div class="sidebar">
+            <app-sidebar />
+        </div>
+        <div class="contents">
+            <h1 class="s_h1">Best Cancer Hospital in RR Nagar Bangalore | Trusted Oncology Care in Rajarajeshwari Nagar</h1>
+            <div class="para_image">
+                <div class="s_content">
+                    <h2 class="s_subheadings">Comprehensive Cancer Diagnosis and Treatment with Compassion</h2>
+                    <div class="s_para">At Rashtrotthana Hospital, we are committed to being the best cancer hospital in RR Nagar Bangalore, delivering expert-led, technology-driven and compassionate <a href = "https://en.wikipedia.org/wiki/Oncology">oncology</a> care. Our Oncology Department offers early cancer diagnosis and treatment services, along with long-term disease management and support. Patients from Rajarajeshwari Nagar, RR Nagar and across Bangalore trust us for a comprehensive and personalized approach to cancer care.</div>
+                    <div class="s_para">Whether you're dealing with breast cancer, blood cancer, lung cancer, or any other form of the disease, we offer accurate evaluation of the tumor, monitoring of cancer stage and detailed analysis of cell growth using advanced tools like imaging and biopsy. As the best cancer hospital in RR Nagar Bangalore, our goal is to provide timely, affordable and effective treatment options for all patients.</div>
+                </div>
+                <div class="s_image">
+                    <img src="../../assets/experienced-cancer-doctors-near-me-in-rr-nagar.png" alt="Best Cancer hospital in RR Nagar Bangalore">
+                </div>
             </div>
-            <!-- menu contents -->
-            <div class="menu_contents">
-                <div class="op_names">
-                    <!-- general medicine -->
-                    <div class="menu_list_box" routerLink="/specialities/internal-medicine-hospital-in-bangalore" routerLinkActive="active">
-                        <p class="menu_list general_medicine">Internal medicine</p>
-                        <i class="fa-solid fa-angle-down"></i>
+
+            <div class="para_image container-margin row-reverse">
+                <div class="s_image">
+                    <img src="../../assets/best-cancer-doctor-rajarajeshwari-nagar-bangalore.png" alt="Best cancer hospital near me">
+                </div>
+                <div class="s_content">
+                    <h2 class="s_subheadings">Expert Oncology Services in RR Nagar</h2>
+                    <div class="s_para"><b>Cancer Types Treated at Our Hospital</b></div>
+                    <div class="s_para">As a leading cancer hospital in RR Nagar, we treat a wide range of cancers including:</div>
+                    <div class="lists">
+                        <ul>
+                            <li class="s_para">Breast Cancer</li>
+                            <li class="s_para">Lung Cancer</li>
+                            <li class="s_para">Cervical Cancer</li>
+                            <li class="s_para">Skin Cancer</li>
+                            <li class="s_para">Blood Cancer</li>
+                        </ul>
+                        <ul>
+                            <li class="s_para">Oral Cancer</li>
+                            <li class="s_para">Liver Cancer</li>
+                            <li class="s_para">Colorectal Cancer</li>
+                            <li class="s_para">Prostate Cancer</li>
+                        </ul>
                     </div>
-                    <!-- general Surgery -->
-                    <div class="menu_list_box"routerLink="/specialities/best-general-surgery-hospital-in-bangalore" routerLinkActive="active">
-                        <p class="menu_list general_Surgery">General Surgery</p>
-                        <i class="fa-solid fa-angle-down"></i>
-                    </div>
-                    <!-- Obstetrics & Gynaecology -->
-                    <div class="menu_list_box"routerLink="/specialities/best-obstetrics-and-gynecologist-hospital-in-bangalore" routerLinkActive="active">
-                        <p class="menu_list Obstetrics_Gynaecology">Obstetrics & Gynaecology</p>
-                        <i class="fa-solid fa-angle-down"></i>
-                    </div>
-                    <!-- Paediatrics & Neonatology -->
-                    <div class="menu_list_box"routerLink="/specialities/best-paediatric-hospital-in-bangalore" routerLinkActive="active">
-                        <p class="menu_list Paediatrics_Neonatology">Paediatrics & Neonatology</p>
-                        <i class="fa-solid fa-angle-down"></i>
-                    </div>
-                    <!-- Nephrology -->
-                    <div class="menu_list_box"routerLink="/specialities/best-nephrology-hospital-in-bangalore" routerLinkActive="active">
-                        <p class="menu_list Nephrology">Nephrology</p>
-                        <i class="fa-solid fa-angle-down"></i>
-                    </div>
-                    <!-- Urology -->
-                    <div class="menu_list_box"routerLink="/specialities/best-urology-hospital-in-bangalore" routerLinkActive="active">
-                        <p class="menu_list Urology">Urology</p>
-                        <i class="fa-solid fa-angle-down"></i>
-                    </div>
-                    <!-- Orthopedics -->
-                    <div class="menu_list_box"routerLink="/specialities/best-orthopaedics-hospital-in-bangalore" routerLinkActive="active">
-                        <p class="menu_list Orthopedics">Orthopedics</p>
-                        <i class="fa-solid fa-angle-down"></i>
-                    </div>
-                    <!-- Gastrosciences -->
-                    <div class="menu_list_box"routerLink="/specialities/best-gastroenterology-hospital-in-bangalore" routerLinkActive="active">
-                        <p class="menu_list Gastrosciences">Gastrosciences</p>
-                        <i class="fa-solid fa-angle-down"></i>
-                    </div>
-                    <!-- Cardiac Sciences -->
-                    <div class="menu_list_box"routerLink="/specialities/best-cardiology-hospital-in-bangalore" routerLinkActive="active">
-                        <p class="menu_list Cardiac_Sciences">Cardiac Sciences</p>
-                        <i class="fa-solid fa-angle-down"></i>
-                    </div>
-                    <!-- Pulmonology -->
-                    <div class="menu_list_box"routerLink="/specialities/best-pulmonology-hospital-in-bangalore" routerLinkActive="active">
-                        <p class="menu_list Pulmonology">Pulmonology</p>
-                        <i class="fa-solid fa-angle-down"></i>
-                    </div>
-                    <!-- Ophthalmology -->
-                    <div class="menu_list_box"routerLink="/specialities/best-eye-hospital-in-bangalore" routerLinkActive="active">
-                        <p class="menu_list Ophthalmology">Ophthalmology</p>
-                        <i class="fa-solid fa-angle-down"></i>
-                    </div>
-                    <!-- Dental Sciences -->
-                    <div class="menu_list_box"routerLink="/specialities/best-dental-hospital-in-bangalore" routerLinkActive="active">
-                        <p class="menu_list Dental_Sciences">Dental Sciences</p>
-                        <i class="fa-solid fa-angle-down"></i>
-                    </div>
-                    <!-- ENT -->
-                    <div class="menu_list_box"routerLink="/specialities/best-ent-hospital-in-bangalore" routerLinkActive="active">
-                        <p class="menu_list ENT">ENT</p>
-                        <i class="fa-solid fa-angle-down"></i>
-                    </div>
-                    <!-- Neurosciences -->
-                    <div class="menu_list_box"routerLink="/specialities/best-neurology-hospital-in-bangalore" routerLinkActive="active">
-                        <p class="menu_list Neurosciences">Neurosciences</p>
-                        <i class="fa-solid fa-angle-down"></i>
-                    </div>
-                    <!-- Endocrinology -->
-                    <div class="menu_list_box"routerLink="/specialities/best-endocrinology-hospital-in-bangalore" routerLinkActive="active">
-                        <p class="menu_list Endocrinology">Endocrinology</p>
-                        <i class="fa-solid fa-angle-down"></i>
-                    </div>
-                    <!-- Psychiatry -->
-                    <div class="menu_list_box"routerLink="/specialities/best-pshychiatry-hospital-in-bangalore" routerLinkActive="active">
-                        <p class="menu_list Psychiatry">Psychiatry</p>
-                        <i class="fa-solid fa-angle-down"></i>
-                    </div>
-                    <!-- Oncology -->
-                    <div class="menu_list_box"routerLink="/specialities/best-oncology-hospital-in-bangalore" routerLinkActive="active">
-                        <p class="menu_list Oncology">Oncology</p>
-                        <i class="fa-solid fa-angle-down"></i>
-                    </div>
-                    <!-- Anesthesiology -->
-                    <div class="menu_list_box"routerLink="/specialities/best-anesthesiology-hospital-in-india" routerLinkActive="active">
-                        <p class="menu_list Anesthesiology">Anesthesiology</p>
-                        <i class="fa-solid fa-angle-down"></i>
-                    </div>
-                    <!-- emergency medicine -->
-                    <div class="menu_list_box"routerLink="/specialities/best-emergency-medicine-hospital-in-bangalore" routerLinkActive="active">
-                        <p class="menu_list emergency_medicine">Emergency Medicine</p>
-                        <i class="fa-solid fa-angle-down"></i>
-                    </div>
-                    <!-- Rheumatology -->
-                    <div class="menu_list_box" routerLink="/specialities/rheumatology-hospital-bangalore" routerLinkActive="active">
-                        <p class="menu_list emergency_medicine">Rheumatology</p>
-                        <i class="fa-solid fa-angle-down"></i>
-                    </div>
+                    <div class="s_para">Each type is managed by our experienced oncology team, ensuring tailored care that considers cancer stage, risk level and patient preferences.</div>
+                </div>
+            </div>
+
+            <div class="para_image container-padding container-margin">
+                <div class="s_content">
+                    <h2 class="s_subheadings">Focus Areas of Treatment</h2>
+                    <div class="s_para para_margin"><b>Breast Cancer</b></div>
+                    <div class="s_para">Recognized as the best <a href="https://en.wikipedia.org/wiki/Cancer">cancer</a> hospital in RR Nagar Bangalore for breast cancer treatment, we provide targeted solutions that address all stages of breast cancer. We prioritize patient education, tumor monitoring and personalized therapy schedules.</div>
+        
+                    <div class="s_para para_margin"><b>Blood Cancer</b></div>
+                    <div class="s_para">As a leading blood cancer specialist hospital in Rajarajeshwari Nagar Bangalore, we offer detailed diagnosis and advanced care for leukemia, lymphoma and myeloma. Treatments are based on cell analysis, genetic profiling and current clinical guidelines.</div>
+        
+                    <div class="s_para para_margin"><b>Oral and Cervical Cancer</b></div>
+                    <div class="s_para">Our team provides early detection and focused care for oral cancer and cervical cancer, including routine screenings and public awareness. These cancers, if caught in early stages, are often highly treatable.</div>
+                </div>
+                <div class="s_image">
+                    <img src="../../assets/affordable-cancer-treatment-in-rr-nagar-bangalore.png" alt="top oncologist near me | RR Nagar Bangalore">
                 </div>
             </div>
         </div>
-        <!-- content -->
-        <div class="o_container">
-            <!-- general medicine heading -->
-            <div class="o_h_general_medicine">
-                <p class="o_h_heading">Oncology</p>
+    </div>
+
+    <div class="para_image container-padding container-margin row-reverse">
+        <div class="s_image">
+            <img src="../../assets/cancer-hospital-in-rr-nagar.png" alt="best cancer treatment Rajarajeshwari Nagar Bangalore">
+        </div>
+        <div class="s_content">
+            <h2 class="s_subheadings">Why Rashtrotthana is the Best Cancer Hospital in RR Nagar Bangalore</h2>
+
+            <div class="s_para para_margin"><b>Top Oncologists and Best Cancer Doctors</b></div>
+            <div class="s_para">Our team includes some of the best oncologists in Bangalore, recognized for their clinical expertise and compassionate care. With a focus on long-term results, our specialists design effective cancer treatment plans that support healing and quality of life.</div>
+
+            <div class="s_para para_margin"><b>Accurate Diagnosis and Early Detection</b></div>
+            <div class="s_para">As a top cancer diagnosis and treatment center in Rajarajeshwari Nagar, we utilize advanced imaging, biopsy techniques and lab diagnostics to detect cancer at an early stage - improving patient outcomes and reducing treatment intensity.</div>
+
+            <div class="s_para para_margin"><b>Individualized Cancer Care Plans</b></div>
+            <div class="s_para">Every patient at the best cancer hospital in RR Nagar Bangalore receives a custom care pathway based on their tumor type, cell behavior and response to previous treatment. We offer therapies aligned with national and global standards.</div>
+
+            <div class="s_para para_margin"><b>Community Education and Prevention Focus</b></div>
+            <div class="s_para">Our department runs awareness drives across RR Nagar and Rajarajeshwari Nagar on tumor risks, signs of abnormal cell growth and the value of early biopsy. By promoting prevention, we reduce the number of late-stage cases.</div>
+            
+            <div class="s_para para_margin"><b>Comfortable Healing Environment</b></div>
+            <div class="s_para">Our facility is designed for patient comfort, offering emotional support along with medical care. As a patient-centered center, we believe healing extends beyond medication - it includes confidence, care and clarity.</div>
+        </div>
+
+    </div>
+
+    <div class="para_image container-padding container-margin">
+        <div class="s_content">
+            <h2 class="s_subheadings">Advanced Facilities for Cancer Diagnosis and Monitoring</h2>
+            <div class="s_para">At Rashtrotthana Hospital, accurate diagnostics are central to our status as the best cancer hospital in RR Nagar Bangalore. We offer:</div>
+            <ul>
+                <li class="s_para">Imaging for tumor detection</li>
+                <li class="s_para">Stage-wise cancer progression tracking</li>
+                <li class="s_para">Biopsy procedures for confirming abnormal cell growth</li>
+                <li class="s_para">Risk profiling based on lifestyle and genetics</li>
+                <li class="s_para">Regular monitoring of treatment response</li>
+            </ul>
+            <div class="s_para">Every patient is guided step-by-step - from screening to treatment to recovery.</div>
+        </div>
+        <div class="s_image">
+            <img src="../../assets/best-cancer-hospital-in-rr-nagar-bangalore.jpg" alt="Best oncologist near me | Rajarajeshwari Nagar Bangalore">
+        </div>
+    </div>
+
+    <div class="para_image container-padding container-margin row-reverse">
+        <div class="s_image">
+            <img src="../../assets/blood-cancer-treatment-in-rr-nagar-bangalore.png" alt="Best cancer doctor near me | Rajarajeshwari Nagar Bangalore">
+        </div>
+        <div class="s_content">
+            <h2 class="s_subheadings">Integrated Oncology Support</h2>
+            <div class="s_para">We believe healing happens best with continuous support. That’s why we offer:</div>
+            <ul>
+                <li class="s_para">Symptom relief for pain, fatigue and tumor-related discomfort</li>
+                <li class="s_para">Counseling services for patients and families dealing with cancer diagnosis</li>
+                <li class="s_para">Nutritional guidance tailored to support cell repair and energy</li>
+                <li class="s_para">Regular follow-ups to assess growth control and long-term health</li>
+            </ul>
+            <div class="s_para">Our empathetic approach is a key reason patients call us the best cancer hospital in RR Nagar Bangalore.</div>
+        </div>
+    </div>
+
+    <div class="para_image container-padding container-margin">
+        <div class="s_content">
+            <h2 class="s_subheadings">Patient-Centered Care Across All Stages</h2>
+            <div class="s_para"><b>Cancer care doesn’t end with treatment - we guide you through:</b></div>
+            <ul>
+                <li class="s_para">Preventive education for high-risk individuals</li>
+                <li class="s_para">Diagnostic checkups for recurring tumors</li>
+                <li class="s_para">Emotional care for patients adjusting to life after cancer</li>
+                <li class="s_para">Early interventions to avoid treatment delays</li>
+            </ul>
+        </div>
+        <div class="s_image">
+            <img src="../../assets/best-oncologist-in-bangalore.png" alt="Cancer Hospital in RR nagar">
+            <img src="../../assets/cancer-diagnosis-and-treatment-near-me.jpg" alt="Cancer treatment RR Nagar Bangalore">
+        </div>
+    </div>
+
+    <div class="para_image container-padding container-margin">
+        <div class="s_content">
+            <h2 class="s_subheadings">Serving RR Nagar and Rajarajeshwari Nagar with Excellence</h2>
+            <div class="s_para">Rashtrotthana Hospital is not only a cancer specialist hospital in Bangalore near Rajarajeshwari Nagar, but a community partner. We engage directly with local patients, schools and workplaces to promote biopsy awareness, routine cancer screenings and reduce stigma around tumor diagnosis.</div>
+            <div class="s_para">Being locally accessible and medically advanced makes us the best cancer hospital in RR Nagar Bangalore, repeatedly chosen by families across the city.</div>
+        </div>
+        <div class="s_image">
+            <img src="../../assets/best-hospital-in-rr-nagar-for-cancer-bangalore.png" alt="experienced cancer doctors near me">
+        </div>
+    </div>
+
+    <!-- doctors -->
+    <div class="doctors">
+        <div class="doc-heading">Meet Our Medical Team</div>
+        <div class="doctor-container">
+            <div *ngFor="let doctor of doctors">
+                <app-speciality-doctors [name]="doctor.doctor_name" [experience]="doctor.experience"
+                    [image]="doctor.doctor_image" [alt]="doctor.docalt"></app-speciality-doctors>
             </div>
-            <!-- paragraph and image -->
-            <div class="con_n_img">
-                <div>
-                    <p class="gm_content">The Oncology Department at Rashtrotthana Hospital is dedicated to providing holistic, patient-centered care for all types of cancers. Our experienced oncologists specialize in early detection, personalized treatment plans and long-term management to ensure each patient receives the best possible outcomes. With access to advanced diagnostic tools and therapeutic options, we support patients through every stage of their journey, from diagnosis to recovery. Emphasizing the importance of awareness and early screening, our team strives to catch and treat cancer at its most manageable stages, improving the quality of life for our patients and their families.                    </p>
-                    <p class="gm_content">Our department actively engages in cancer awareness programs to educate the community on prevention and early diagnosis, helping to reduce the high incidence of late-stage cancers. Our comprehensive approach combines the latest treatments with empathetic care, making us a trusted destination for oncology in Bangalore. Whether through <a href="https://en.wikipedia.org/wiki/Chemotherapy">chemotherapy</a> , targeted therapy, or supportive care, we focus on the whole person, fostering hope and resilience. Book a consultation to learn about our cancer care services and take a proactive step toward health and wellness.</p>
-                </div>
-                <img src="../../assets/images/best_oncology_treatment_in_bengaluru.png" alt="Best Oncology Treatment in Bengaluru" class="gm_o_image">
-            </div>
-            <!-- Meet our medical team -->
-            <div class="Meet_Medical_Team">
-                <!-- heading -->
-                <h2 classs="mmt_heading">Meet Our Medical Team</h2>
-                <!-- doctor image and name -->
-                <div class="doc_common_box">                        
-                    <div class="doc_details">
-                        <img src="../../assets/Dr-Shekar-Patil.png" alt="Dr. Shekar Patil | Best Medical Oncologist Doctor in Bangalore | Rashtrotthana Hospital">   <!-- doctor image -->
-                        <p class="doc_name">Dr. Shekar Patil</p>
-                        <p class="exp">Years of Experience: 35</p>
-                    </div>
-                    <div class="doc_details">
-                        <img src="../../assets/Dr-Pramod-S-Chinder.png" alt="Dr. Pramod S. Chinder | Best Orthopaedic Oncosurgeon in Bangalore | Rashtrotthana Hospital">   <!-- doctor image -->
-                        <p class="doc_name">Dr. Pramod S. Chinder</p>
-                        <p class="exp">Years of Experience: 20</p>
-                    </div>
-                    <div class="doc_details">
-                        <img src="../../assets/Dr-Rajeev-Vijayakumar.png" alt="Dr. Rajeev Vijayakumar | Best Medical Oncologist in Bangalore | Rashtrotthana Hospital">   <!-- doctor image -->
-                        <p class="doc_name">Dr. Rajeev Vijayakumar</p>
-                        <p class="exp">Years of Experience: 20</p>
-                    </div>
-                </div>
-                <div class="doc_common_box">                        
-                    <div class="doc_details">
-                        <img src="../../assets/Dr-Ravi-T.png" alt="Dr. Ravi T | Best Cancer Doctor in Bangalore | Rashtrotthana Hospital">   <!-- doctor image -->
-                        <p class="doc_name">Dr. Ravi T</p>
-                        <p class="exp">Years of Experience: 14</p>
-                    </div>
-                    <div class="doc_details">
-                        <img src="../../assets/Dr-Giri.png" alt="Dr. G. V. Giri | Best Cancer Doctor in Bangalore | Rashtrotthana Hospital">   <!-- doctor image -->
-                        <p class="doc_name">Dr. G. V. Giri</p>
-                        <p class="exp">Years of Experience: 10</p>
-                    </div>
-                </div>
-            </div>
-            <!-- view all button -->
-            <div class="view_all_btn_box">
-                <app-arrow-btn></app-arrow-btn>
-            </div>
+        </div>
+
+    </div>
+
+    <!-- faq -->
+    <div class="faq">
+        <div class="faq-heading">FAQs</div>
+        <div class="ques_ans" *ngFor="let faq of faqs; let i = index">
+            <div style="color: #008080;" class="ques s_para"><b>Q{{i+1}}. {{faq.ques}}</b></div>
+            <div class="ans s_para">{{faq.ans}}</div>
         </div>
     </div>
 </div>
