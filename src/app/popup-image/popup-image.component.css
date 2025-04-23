@@ -25,7 +25,7 @@
   }
   
   img {
-    max-width: 38%;
+    max-width: 30%;
     height: auto;
     margin-bottom: 20px;
   }
@@ -42,7 +42,7 @@
   .close-icon {
     position: absolute;
     top: 11vh;
-    right: 28%;
+    right: 33%;
     font-size: 46px;
     font-weight: 700;
     color: #ff0000;
@@ -55,17 +55,18 @@
   }
   @media (max-width:1370px){
     img{
-        /* width: 31%; */
+        max-width: 39%;
         margin-bottom: 0;
     }
     .close-icon{
         top: 13vh;
+        right: 28%;
     }
 
   }
   @media (max-width: 768px) {
    img{
-    max-width: 60%;
+    max-width: 53%;
     height: auto;
    }
    .close-icon{
@@ -80,7 +81,7 @@
      }
      .close-icon{
       right: 3%;
-      top: 15vh;
+      top: 12vh;
      }
   }
   
