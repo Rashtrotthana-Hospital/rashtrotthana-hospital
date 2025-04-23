@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Title,Meta,DomSanitizer,SafeHtml } from '@angular/platform-browser';
+import { Title, Meta, DomSanitizer, SafeHtml } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-dental',
@@ -10,49 +10,86 @@ export class DentalComponent {
   constructor(private titleService: Title, private metaService: Meta, private sanitizer: DomSanitizer) {
 
   }
-  sanitizedContent: SafeHtml ='';
+  sanitizedContent: SafeHtml = '';
   sanitizedContent1: SafeHtml = '';
-  specialities:any[] = [];
+  specialities: any[] = [];
   ngOnInit(): void {
-    this.specialities=[
+    Doctors: [
       {
-        main_heading:'Dental Sciences',
-        content:`The Dental Sciences Department at Rashtrotthana Hospital offers a comprehensive range of services dedicated to restoring and maintaining oral health. Equipped with state-of-the-art technology, our facility provides treatments for everything from routine dental care to advanced procedures. Our skilled team of dentists and specialists covers all aspects of dental care, including preventive, restorative, cosmetic and surgical treatments. Services like cavity restoration, tooth extractions and complex procedures, such as <a href="https://en.wikipedia.org/wiki/Dental_implant">dental implants</a> and oral surgeries, are available at accessible prices, ensuring patients receive top-quality care.`,
-        content_1:'We offer sub-specializations within dentistry, including Orthodontics, Pedodontics, Periodontics, Prosthodontics, Endodontics and Implantology. Our in-house Oral & Maxillofacial Surgery team provides 24/7 trauma care for accident-related dental injuries, enhancing our commitment to emergency support. In addition to patient care, we conduct dental health camps with local communities, emphasizing the importance of oral hygiene and preventive care. At Rashtrotthana Hospital, our Dental Sciences Department is dedicated to delivering high-quality, patient-centered dental solutions for a healthier smile.',
-        heading:'Dental Sciences',
-        image:'best_dental_treatment_in_bengaluru.png',
-        alt : "Best Dental Treatment in Bengaluru",
-        Doctors:[
-          {
-            doctor_image:'Dr. H N Shyla.png',
-            doctor_name:'Dr. H. N. Shyla',
-            experience : "20"
-          },
-          {
-            doctor_image:'../../assets/Dr-Geethanjali-K-G.png',
-            doctor_name:'Dr. Geethanjali K. G',
-            experience : "18",
-            docalt : 'Dr. Geethanjali K. G | Best Dental Surgery Doctor in Bangalore | Rashtrotthana Hospital'
-          },
-          {
-            doctor_image:'../../assets/Dr-Vishnuvardhan-V.png',
-            doctor_name:'Dr. Vishnuvardhan V',
-            experience : "6",
-            docalt : 'Dr. Vishnuvardhan V | Best Orthodontics in Bangalore | Rashtrotthana Hospital'
-          },
-        ]}];
-
-        
-        this.sanitizedContent = this.sanitizer.bypassSecurityTrustHtml(this.specialities[0].content);
-          this.sanitizedContent1 = this.sanitizer.bypassSecurityTrustHtml(this.specialities[0 ].content_1);
+        doctor_image: 'Dr. H N Shyla.png',
+        doctor_name: 'Dr. H. N. Shyla',
+        experience: "20"
+      },
+      {
+        doctor_image: '../../assets/Dr-Geethanjali-K-G.png',
+        doctor_name: 'Dr. Geethanjali K. G',
+        experience: "18",
+        docalt: 'Dr. Geethanjali K. G | Best Dental Surgery Doctor in Bangalore | Rashtrotthana Hospital'
+      },
+      {
+        doctor_image: '../../assets/Dr-Vishnuvardhan-V.png',
+        doctor_name: 'Dr. Vishnuvardhan V',
+        experience: "6",
+        docalt: 'Dr. Vishnuvardhan V | Best Orthodontics in Bangalore | Rashtrotthana Hospital'
+      },
+    ];
   }
 
-  doctors = [
+  doctors : any = [
     {
-      doctor_image:'../../assets/Dr-Sushmitha-Raj-R.png',
-      doctor_name:'Dr. Sushmitha Raj R',
-      experience : "3",
-      docalt : 'Dr. Sushmitha Raj R | Best Dental Surgery in Bangalore | Rashtrotthana Hospital'
-    }
+      doctor_image: '../../assets/Dr-H-N-Shyla.png',
+      doctor_name: 'Dr. H. N. Shyla',
+      experience: "20",
+      docalt: 'Dr. Sushmitha Raj R | Best Dental Surgery in Bangalore | Rashtrotthana Hospital'
+    },
+    {
+      doctor_image: '../../assets/Dr-Sushmitha-Raj-R.png',
+      doctor_name: 'Dr. Sushmitha Raj R',
+      experience: "3",
+      docalt: 'Dr. Sushmitha Raj R | Best Dental Surgery in Bangalore | Rashtrotthana Hospital'
+    },
+    {
+      doctor_image: '../../assets/Dr-Geethanjali-K-G.png',
+      doctor_name: 'Dr. Geethanjali K. G',
+      experience: "18",
+      docalt: 'Dr. Geethanjali K. G | Best Dental Surgery Doctor in Bangalore | Rashtrotthana Hospital'
+    },
+    {
+      doctor_image: '../../assets/Dr-Vishnuvardhan-V.png',
+      doctor_name: 'Dr. Vishnuvardhan V',
+      experience: "6",
+      docalt: 'Dr. Vishnuvardhan V | Best Orthodontics in Bangalore | Rashtrotthana Hospital'
+    },
+  ]
+
+  faqs = [
+    {
+      ques : 'What causes recurring tooth pain?',
+      ans : 'Decay, infection, or a damaged nerve could be the cause. We offer effective dental cavity treatment, root canal or restoration depending on your condition.'
+    },
+    {
+      ques : 'How often should I get my teeth cleaned?',
+      ans : 'We recommend cleaning every six months. Our team provides professional teeth cleaning and plaque removal in RR Nagar Bangalore with precision.'
+    },
+    {
+      ques : 'What dental clip or braces options do you offer?',
+      ans : 'We offer full dental braces treatment plans, including dental clip treatment for teeth alignment in Bangalore using metal, ceramic or invisible systems.'
+    },
+    {
+      ques : 'Which is the best dental hospital in RR Nagar for root canal and implants?',
+      ans : 'Rashtrotthana Hospital is widely regarded as the best dental hospital in RR Nagar Bangalore, especially for patients seeking ethical, expert-led care for conditions like tooth pain, dental cavities, and root canal infections. Our Dental Sciences Department is known for advanced diagnostic tools, painless dental root canal treatment, and high-quality restorations. While we do not perform surgical dental implants, we provide detailed evaluations, guide you on dental implant cost in RR Nagar Bangalore, and connect you with reliable implantologists when needed.'
+    },
+    {
+      ques : 'Do you offer laser treatment for dental cavities?',
+      ans : 'Yes. Our dental laser treatment for cavities in RR Nagar Bangalore provides a painless and effective solution for deep decay.'
+    },
+    {
+      ques : 'What are the signs of gum problems?',
+      ans : 'Swollen gums, bleeding gums, gum pain and persistent teeth plaque are early signs of periodontal issues. Timely care prevents complications.'
+    },
+    {
+      ques : 'Is Rashtrotthana Hospital good for root canal and dental implants?',
+      ans : 'Yes. Rashtrotthana Hospital is considered the best dental hospital for root canal in RR Nagar Bangalore, known for precision, painless procedures, and excellent outcomes. While we do not perform surgical dental implant placements, we provide accurate pre-implant evaluations and refer patients to trusted specialists. Our team ensures you understand the dental implant cost in RR Nagar Bangalore and guides you on choosing the right treatment pathway.'
+    },
   ]
 }
