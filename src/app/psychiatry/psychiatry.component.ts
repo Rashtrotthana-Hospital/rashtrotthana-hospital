@@ -21,24 +21,56 @@ export class PsychiatryComponent {
 
   this.metaService.updateTag({ name: 'keywords', content: 'psychiatric hospital near me,mental problems, mental disorders, depression, schizophrenia, anxiety, substance use disorder, dementia, ADHD, autism, learning disorders, sleep disorders, behavioral issues, any illness of the mind.' });
 
-  this.specialities=[
-    {
-      main_heading:'Psychiatry',
-      content:'At Rashtrotthana Hospital, our Psychiatry Department is committed to providing an all-encompassing approach to mental health. Mental well-being is a crucial aspect of overall health and we understand the impact that mental disorders can have on individuals and their families. Our team of experienced psychiatrists, therapists and support staff offers compassionate, high-quality care for a wide spectrum of mental health issues, including <a href="https://en.wikipedia.org/wiki/Anxiety">anxiety</a>, depression, bipolar disorder, schizophrenia and other complex conditions. Utilizing advanced diagnostic tools and evidence-based treatment methods, we work to create individualized care plans for each patient, aiming to address their unique needs and promote long-term recovery.Our department places a strong emphasis on early intervention, recognizing that timely support can lead to better outcomes. This is especially important for children and adolescents, who may experience mental health issues due to various factors. Studies have shown that one in five young people globally are affected by mental health disorders, highlighting the need for specialized care.',
-      content_1:' At Rashtrotthana Hospital, we offer programs specifically designed for young individuals, focusing on resilience-building and emotional health. Our services for children and adolescents include personalized counseling sessions, group therapy and family support initiatives that ensure a safe and nurturing environment.In addition to catering to younger patients, we also offer a wide range of services for adults, including crisis intervention, cognitive behavioural therapy (CBT), medication management and holistic therapies. Family involvement is an essential part of our approach; therefore, we provide counselling and guidance for family members to better understand and support their loved ones on the road to recovery. We believe that mental health treatment goes beyond just addressing symptoms-it requires a comprehensive strategy that takes the patient’s personal, social and familial context into account. Whether you\'re seeking support for a specific condition or general mental health guidance, Rashtrotthana Hospital’s Psychiatry Department is here to help you or your loved ones find a path towards mental wellness. With an empathetic and professional approach, we ensure that every patient receives the care and support they need for a healthier, balanced life.',
-      heading:'Psychiatry',
-      image:'best_psychiatry_treatment_in_bengaluru.png',
-      alt : "Best Psychiatry Treatment in Bengaluru",
-      Doctors:[
-       
-        {
-          doctor_image:'../../assets/Dr-Gopal-Das-C-M.png',
-          doctor_name:'Dr. Gopal Das C M',
-          experience : "11"
-        },
-      ]}];
       this.sanitizedContent = this.sanitizer.bypassSecurityTrustHtml(this.specialities[0].content);
-        this.sanitizedContent1 = this.sanitizer.bypassSecurityTrustHtml(this.specialities[0].content_1);
+      this.sanitizedContent1 = this.sanitizer.bypassSecurityTrustHtml(this.specialities[0].content_1);
   }
+
+  doctors:any = [ 
+    {
+      doctor_image:'../../assets/Dr-Gopal-Das-C-M.png',
+      doctor_name:'Dr. Gopal Das C M',
+      experience : "11",
+      docalt : "Best psychiatrist in RR Nagar Bangalore | Dr. Gopal Das C M' | Rashtrotthana Hospital"
+    },
+  ];
+
+  faqs : any = [
+    {
+      ques : "What is mental health?",
+      ans : "Mental health refers to emotional, psychological, and social well-being, affecting how we think, feel, and respond to stress and relationships."
+    },
+    {
+      ques : "How do I know if I need psychiatric help?",
+      ans : "Signs like persistent sadness, anxiety, sleep trouble, or mood swings may suggest the need for help. Visit Rashtrotthana Hospital’s Psychiatry Department for a professional evaluation"
+    },
+    {
+      ques : "What causes mental health problems?",
+      ans : "Genetics, life stress, trauma, chemical imbalances, and environmental triggers are common causes."
+    },
+    {
+      ques : "Can mental health issues be treated?",
+      ans : "Yes, with the right combination of therapy, medication, and support, most mental health conditions can be effectively managed or fully treated."
+    },
+    {
+      ques : "How can I support someone struggling emotionally?",
+      ans : "Be present, listen patiently, and encourage them to seek expert help. Our psychiatrists also offer family counseling sessions."
+    },
+    {
+      ques : "Is therapy really effective?",
+      ans : "Absolutely. Therapies like CBT, offered by our psychiatry team, are highly effective in treating anxiety, depression, and stress-related issues."
+    },
+    {
+      ques : "Will medication be necessary?",
+      ans : "Not always. Treatment is personalized. Some may improve with therapy alone; others may benefit from medication. Our psychiatrist will guide you accordingly."
+    },
+    {
+      ques : "How can I improve my mental health naturally?",
+      ans : "Good sleep, healthy eating, physical activity, and mindfulness practices help. But if symptoms persist, consult our Department of Psychiatry without delay."
+    },
+    {
+      ques : "Who is the best psychiatrist in RR Nagar Bangalore?",
+      ans : "One of the most respected names in the field is Dr. Gopal Das C M, a senior consultant in the Department of Psychiatry at Rashtrotthana Hospital. With over 11 years of experience, he is known for his patient-centered approach, clinical accuracy, and compassionate care. Patients appreciate his expertise in managing conditions like depression, anxiety, stress, and complex mood disorders, making him one of the best psychiatrists in RR Nagar Bangalore."
+    }
+  ]
 
 }
