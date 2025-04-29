@@ -166,9 +166,13 @@
     /* container 1*/
 
     .hernia_poster_desktop{
+        display: none;
+    }
+
+    .hernia_poster_tablet{
         display: block;
-        width: 100%;
-        height: 100%;
+        width: 100vw;
+        height: auto;
     }
 
     .Book_appointment_btn{

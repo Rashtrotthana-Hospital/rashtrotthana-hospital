@@ -1,715 +1,218 @@
-.main-container {
-  background: #fbfff4;
+.rootContainer{
+  background-color: #FBFFF4;
 }
 
-.first-container {
-  width: 110%;
-  margin-top: 11vh;
-  background: url("../../assets/Knee-Pain-Relief-Rashtrotthana-Hospital.png");
-  background-size: cover;
-  height: 95vh;
+.container-1{
+  /* position: relative; */
+  margin-top: 120px;
 }
 
-.baneer-image {
-  width: 100%;
-  height: 85vh;
-}
-
-.container_1 {
-  /* background-image: url('../../assets/Proctology_poster.png'); */
-  background-size: cover;
-  width: 100%;
-  height: 642px;
-  margin-top: 90px;
-}
-
-.container_1 {
-  display: flex;
-  align-items: end;
-  padding: 0 0 20px 0;
-}
-
-.container_1_btn {
-  position: relative;
-  top: 83vh;
-  left: 5rem;
-  display: inline-flex;
-  height: 52px;
-  padding: 10px 20px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  border-radius: 10px;
-  background: #fbca51;
-  color: #ffffff;
-  border: none;
-  margin-left: 50px;
-}
-
-.button {
-  border-radius: 10px;
-  background: #fbca51;
-  display: inline-flex;
-  height: 52px;
-  padding: 10px 20px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  flex-shrink: 0;
-  border-style: none;
-  color: #fff;
-  position: relative;
-  bottom: 70px;
-  left: 9rem;
-  width: 440px;
-}
-
-.book-button {
-  display: flex;
-
-
-}
-
-.second-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 15vh;
-}
-
-.heading {
-  color: #008080;
-  font-family: Poppins;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  margin-bottom: 2rem;
-  text-align: left;
-}
-
-.content {
-  color: #000;
-  text-align: center;
-  font-family: Inter;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  margin-bottom: 2rem;
-  padding: 0 11rem;
-  text-align: justify;
-}
-
-.what-is-knee-replacement {
-  margin-top: 6rem;
-  display: flex;
-  padding-left: 6rem;
-  width: 100%;
-}
-
-.what-is-knee-replacement-content {
-  width: 50%;
-  text-align: justify;
-}
-
-.what-is-knee-replacement-image {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-}
-
-.heading-1 {
-  color: #008080;
-  font-family: Poppins;
-  font-size: 34px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  margin-bottom: 2rem;
-}
-
-.content-1 {
-
-  width: 100%;
-  color: #000;
-  font-family: Inter;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 140.6%;
-  /* 25.308px */
-}
-
-.why-choose-knee-replacement {
-  margin-top: 6rem;
-  display: flex;
-  /* padding-left: 6rem; */
-  width: 100%;
-  flex-direction: row-reverse;
-}
-
-.why-choose-knee-replacement-content {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding-right: 6rem;
-  text-align: justify;
-}
-
-.why-choose-knee-replacement-image {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 20px;
-}
-
-
-.tkr-new-img{
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 15px;
-}
-
-.tkr-img{
-  width: 265px;
+.bannerIMage img{
+  width: 100vw;
   height: auto;
-  border-radius: 20px;
+  object-fit: cover;
+}
+
+.tabBanner{
+  display: none;
+}
+
+.mobileBanner{
+  display: none;
 }
 
 
-.heading-2 {
+.bannerButton{
+  position: relative;
+  bottom: 60px;
+  margin-left: 3%;
+}
+
+.container_1_btn{
+  border-radius: 8px;
+  background: #FBCA51;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border: none;
+  padding: 10px 20px;
+  height: 40px;
+}
+
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.heading{
   color: #008080;
+  text-align: center;
   font-family: Poppins;
-  text-align: left;
-  font-size: 24px;
+  font-size: 32px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  margin-bottom: 2rem;
+  margin-bottom: 30px;
 }
 
-.content-2 {
+.para{
   color: #000;
-
+  text-align: justify;
   font-family: Inter;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
-  /* 27px */
-}
-
-.knee-image {
-  width: 542px;
-  height: auto;
-  flex-shrink: 0;
-}
-
-.success {
-  padding-top: 4rem;
-  padding-left: 6rem;
-  padding-bottom: 2rem;
-  padding-right: 6rem;
-}
-
-.link {
-  color: #0392ce;
-  font-family: Inter;
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 170%;
-  /* 37.4px */
-  text-decoration-line: underline;
-  text-align: center;
-}
-
-.link-content {
-  margin-bottom: 2rem;
-
-}
-
-.arrow {
-  position: relative;
-  bottom: 63px;
-  left: 6rem;
-  color: white;
-  font-size: 26px;
-}
-
-.conclusion{
-  margin-top: 20px;
-}
-
-.con-list{
-  margin-top: 20px;
-}
-
-.faq_section{
-  padding: 4rem 6rem;
-}
-
-.ques{
-  margin-top: 25px;
-  color: #008080;
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  text-align: left;
-}
-
-.ans{
   margin-top: 15px;
 }
 
-.primary{
-  padding: 0;
-  margin: 0;
-}
-
-.content-2.primary-flex {
-  display: inline-block; /* Make the parent container inline */
-  /* white-space: nowrap; Prevent wrapping to the next line */
-}
-
-
-.doctor_heading {
-  margin: 80px 0;
-  font-size: 30px;
-  font-family: poppins;
-  font-weight: 700;
+.link{
+  color: #008080;
   text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  width: 100%;
 }
 
+.containerMargin{
+  margin-top: 50px;
+  padding: 0 5%;
+}
 
-.doctors_flex {
+.s_image{
   display: flex;
-  gap: 100px;
-  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
 }
 
-.doc_1 {
+.s_image img{
+  width: 350px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.doc-heading{
+  color: #222;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.doctors{
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-radius: 20px;
-  margin: 40px 0;
-  box-shadow: -25px 25px 0 rgb(218, 218, 218);
-  width: 250px;
-  background-color: #ffffff;
+  margin: 30px 0;
 }
 
-.doc_1 img {
-  width: 250px;
-  height: 250px;
-  height: 250px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-}
-
-.doc_name {
-  font-size: 16px;
-  font-family: Poppins, sans-serif;
-  margin-top: 20px;
-  font-weight: 700;
-}
-
-.section,
-.designation,
-.department {
-  color: #0392CE;
-  font-family: Inter, sans-serif;
-}
-
-.youtube {
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
-}
-
-.testimonials {
-  margin-top: 50px;
-}
-
-.title-container {
+.doctor-container{
   display: flex;
+  gap: 50px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.youtube{
+  display: flex;
+  gap: 100px;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  font-family: Poppins;
+  flex-wrap: wrap;
 }
 
-.video {
-  width: 100%;
-  height: auto;
-  padding: 30px;
-}
-
-iframe {
-  width: 100%;
-}
-
-
-
-@media only screen and (max-width:1380px) {
-  .first-container {
-    width: 101%;
-    margin-top: 11vh;
-
-    background-size: cover;
-    height: 80vh;
-  }
-
-  .knee-image-1 {
-    width: 416px;
-    height: auto;
-  }
-
-  .what-is-knee-replacement-image {
-    align-items: center;
-  }
-
-  .container_1_btn {
-    top: 61vh;
-    left: 4rem;
-  }
-}
-
-@media only screen and (max-width:1030px) {
-  .first-container {
-    width: 100%;
-    margin-top: 17vh;
-    background-size: cover;
-    height: 72vh;
-  }
-
-  .container_1_btn {
-    top: 62vh;
-    left: 2rem;
-  }
-
-  .knee-image-1 {
-    width: 321px;
-    height: auto;
-  }
-
-  .what-is-knee-replacement-image {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .heading {
-    color: #008080;
-    font-family: Poppins;
-    font-size: 35px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-bottom: 2rem;
-    text-align: center;
-  }
-
-  .knee-image {
-    width: 431px;
-    height: auto;
-  }
-}
-
-@media only screen and (max-width:900px) {
-  .first-container {
-    width: 100%;
-    margin-top: 17vh;
-    background-size: cover;
-    height: 53vh;
-  }
-
-  .container_1_btn {
-    top: 44vh;
-    left: 1rem;
-    width: 30%;
-  }
-
-  .heading,
-  .heading-1,
-  .heading-2 {
-    font-size: 28px;
-  }
-
-  .content,
-  .content-1,
-  .content-2 {
-    font-size: 16px;
-  }
-
-  .what-is-knee-replacement {
-    padding-left: 2rem;
-  }
-
-  .why-choose-knee-replacement-content {
-    padding-right: 2rem;
-  }
-
-  .knee-image {
-    width: 349px;
-    height: auto;
-  }
-
-  .doc_name {
-    font-size: 16px;
-  }
-
-  .doctors_flex {
-    flex-direction: row;
-    gap: 50px;
-    align-items: center;
-  }
-
-  .doc_1 {
-    width: 160px;
-  }
-
-  .doc_1 img {
-    width: 160px;
-    height: 160px;
-  }
-
-  .doc_name {
-    font-size: 12px;
-  }
-
-  .section,
-  .designation,
-  .department {
-    font-size: 10px;
-  }
-}
-
-@media (max-width: 500px) {
-
-  .doc_name {
-    font-size: 16px;
-  }
-
-  .doctors_flex {
-    flex-direction: column;
-    gap: 0;
-    align-items: center;
-  }
-
-  .doc_1 {
-    width: 160px;
-  }
-
-  .doc_1 img {
-    width: 160px;
-    height: 160px;
-  }
-
-  .doc_name {
-    font-size: 12px;
-  }
-
-  .section,
-  .designation,
-  .department {
-    font-size: 10px;
-  }
-}
-
-@media only screen and (max-width: 430px) {
-  .first-container {
-    background: url("../../assets/Orthopedic-Doctor-for-Knee Pain-Rashtrotthana-Hospital.png") no-repeat;
-    width: 100%;
-    height: 77vh;
-    margin-top: 18vh;
-    background-size: cover;
-  }
-
-  .container_1_btn {
-    top: 68vh;
-    left: -2rem;
-    width: 61%;
-  }
-
-  .knee-image-1 {
-    width: 309px;
-    height: auto;
-    flex-shrink: 0;
-  }
-
-  .what-is-knee-replacement {
-    margin-top: 2rem;
-    display: flex;
-    flex-direction: column;
-    padding-left: 1rem;
-    width: 100%;
-  }
-
-  .what-is-knee-replacement-image {
-    width: 100%;
-    margin-top: 2rem;
-  }
-
-  .why-choose-knee-replacement {
-    display: flex;
-    flex-direction: column;
-    margin-top: 2rem;
-  }
-
-  .knee-image {
-    width: 328px;
-    height: auto;
-    flex-shrink: 0;
-  }
-
-  .button {
-    border-radius: 10px;
-    background: #fbca51;
-    display: inline-flex;
-
-    padding: 14px 20px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    flex-shrink: 0;
-    left: 1rem;
-    height: 48px;
-    width: 219px;
-  }
-
-  .content {
-    padding: 0rem;
-    color: #000;
-    text-align: center;
-    font-family: Inter;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin-bottom: 0;
-  }
-
-  .heading {
-    color: #008080;
-    text-align: center;
-    font-family: Poppins;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-  }
-
-  .heading-1 {
-    color: #008080;
-    text-align: center;
-    font-family: Poppins;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-  }
-
-  .content-1,
-  .content-2 {
-    color: #000;
-    /* text-align: center; */
-    font-family: Inter;
+@media (max-width : 1100px){
+  .container_1_btn{
     font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 140.6%;
-    /* 19.684px */
+  }
+}
+
+@media (max-width : 800px){
+  .tabBanner{
+    display: block;
+  }
+  
+  .mobileBanner{
+    display: none;
   }
 
-  .what-is-knee-replacement-content {
-    width: 100%;
-    padding-right: 1rem;
+  .desktopBanner{
+    display: none;
   }
 
-  .why-choose-knee-replacement-content {
-    width: 100%;
-    padding-right: 1rem;
-    padding-left: 1rem;
+  .container_1_btn{
+    font-size: 14px;
   }
 
-  .why-choose-knee-replacement-image {
-    width: 100%;
-  }
-
-  .success {
-    padding-top: 2rem;
-    padding-left: 2rem;
-    padding-bottom: 0rem;
-    padding-right: 2rem;
-  }
-
-  .link {
-    font-size: 16px;
-  }
-
-  .link-content {
-    margin-bottom: 1rem;
-  }
-
-  .conclusion {
-    margin-top: 15px;
-  }
-
-  .arrow {
-    position: relative;
-    bottom: 70px;
-    left: 0rem;
-  }
-
-  .youtube {
-    display: flex;
+  .flex{
     flex-direction: column;
   }
-}
 
-@media only screen and (max-width:380px) {
-  .first-container {
-    width: 100%;
-    height: 70vh;
+  .column_reverse{
+    display: flex;
+    flex-direction: column-reverse;
   }
 
-  .container_1_btn {
-    top: 60vh;
-    left: -2rem;
-    width: 65%;
+  .doc-heading{
+    font-size: 32px;
   }
 }
 
-@media only screen and (max-width:365px) {
-  .first-container {
-    width: 100%;
-    height: 70vh;
+@media (max-width : 480px){
+  .tabBanner{
+    display: none;
   }
 
-  .container_1_btn {
-    top: 60vh;
-    left: -2rem;
-    width: 65%;
-  }
-}
-
-@media only screen and (max-width:325px) {
-  .first-container {
-    width: 100%;
-    height: 65vh;
+  .flex{
+    gap: 40px;
   }
 
-  .container_1_btn {
-    top: 55vh;
-    left: -2rem;
-    width: 65%;
+  .heading{
+    font-size: 24px;
+  }
+
+  .para{
+    font-size: 14px;
+  }
+  
+  .mobileBanner{
+    display: block;
+  }
+
+  .desktopBanner{
+    display: none;
+  }
+
+  .container_1_btn{
+    font-size: 12px;
+  }
+
+  .bannerButton{
+    bottom: 50px;
+  }
+
+  .s_image img{
+    width: 300px;
+    height: auto;
+  }
+
+  .doc-heading{
+    font-size: 24px;
+  }
+
+  .youtube{
+    gap: 50px;
   }
 }
