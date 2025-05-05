@@ -949,19 +949,19 @@ export class DoctorLayoutComponent {
         date : 'Monday-Saturday',
         alt : ''
       },
-      {
-        name: "Dr. S K Ranjani",
-        image : "assets/dummy.png",
-        desgination: 'ENT (Ear, Nose, and Throat) ',
-        speciality: 'ENT SPECIALITY',
-        about : "Dr. S K Ranjani specializes in both general and complex ENT conditions, with a particular focus on airway disorders in children. She is committed to providing comprehensive care for a range of airway issues, including allergies, obstructive sleep apnea and voice alterations.",
-        areasOfExpertise : ["Airway disorders, particularly in the pediatric age group","Allergy-related airway issues","Obstructive sleep apnea","Altered voice conditions","General ear, nose and throat complaints (both medical and surgical treatment)"],
-        expertise : "Years of Experience: 2",
-        qualification : "MBBS, MS ENT, Fellowship in Pediatric Otolaryngology (RGUHS)  ",
-        time : "",
-        date : "Tuesday,Thursday and Saturday",
-        alt : ''
-      },
+      // {
+      //   name: "Dr. S K Ranjani",
+      //   image : "assets/dummy.png",
+      //   desgination: 'ENT (Ear, Nose, and Throat) ',
+      //   speciality: 'ENT SPECIALITY',
+      //   about : "Dr. S K Ranjani specializes in both general and complex ENT conditions, with a particular focus on airway disorders in children. She is committed to providing comprehensive care for a range of airway issues, including allergies, obstructive sleep apnea and voice alterations.",
+      //   areasOfExpertise : ["Airway disorders, particularly in the pediatric age group","Allergy-related airway issues","Obstructive sleep apnea","Altered voice conditions","General ear, nose and throat complaints (both medical and surgical treatment)"],
+      //   expertise : "Years of Experience: 2",
+      //   qualification : "MBBS, MS ENT, Fellowship in Pediatric Otolaryngology (RGUHS)  ",
+      //   time : "",
+      //   date : "Tuesday,Thursday and Saturday",
+      //   alt : ''
+      // },
       {
         name: "Dr. G. V. Giri",
         image : "assets/Dr-Giri.png",

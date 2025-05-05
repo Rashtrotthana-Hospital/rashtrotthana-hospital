@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { BlogServiceService } from '../blog-service.service';
 import { ActivatedRoute } from '@angular/router';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
+import { Renderer2, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-blog-post',
@@ -11,34 +12,40 @@ import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 export class BlogPostComponent {
   post: any;
   categories: string[] = [];
-  sanitizedYouTubeContent : SafeHtml | null = null
+  sanitizedYouTubeContent: SafeHtml | null = null;
+  sanitizedContent: SafeHtml | null = null;
 
   constructor(
     private route: ActivatedRoute,
     private blogService: BlogServiceService,
-    private sanitizer : DomSanitizer
+    private sanitizer: DomSanitizer,
+    private renderer: Renderer2,
+    private el: ElementRef
   ) { }
 
   ngOnInit(): void {
-  //   const idParam = this.route.snapshot.paramMap.get('id');
-  //   if (idParam) {
-  //     const id = +idParam;
-  //     this.blogService.getPost(id).subscribe((data: any) => {
-  //       this.post = data;
-  //     });
-  //   } else {
-  //     console.error('No ID provided in route.');
-  //   }
-  // }
-  // const id = +this.route.snapshot.paramMap.get('id')!;
-  //   this.blogService.getPost(id).subscribe(async (data: any) => {
-  //     this.post = data;
-  const slug = this.route.snapshot.paramMap.get('slug')!;
-  this.blogService.getPostBySlug(slug).subscribe(async (data: any) => {
-    this.post = data[0];
+    // this.sanitizedContent = this.sanitizer.bypassSecurityTrustHtml(this.post.content.rendered);
 
-    const youtubeContent = this.extractYouTubeIframes(this.post.content.rendered);
-    this.sanitizedYouTubeContent = this.sanitizer.bypassSecurityTrustHtml(youtubeContent);
+    //   const idParam = this.route.snapshot.paramMap.get('id');
+    //   if (idParam) {
+    //     const id = +idParam;
+    //     this.blogService.getPost(id).subscribe((data: any) => {
+    //       this.post = data;
+    //     });
+    //   } else {
+    //     console.error('No ID provided in route.');
+    //   }
+    // }
+    // const id = +this.route.snapshot.paramMap.get('id')!;
+    //   this.blogService.getPost(id).subscribe(async (data: any) => {
+    //     this.post = data;
+    const slug = this.route.snapshot.paramMap.get('slug')!;
+    this.blogService.getPostBySlug(slug).subscribe(async (data: any) => {
+      this.post = data[0];
+      console.log(this.post.content.rendered);
+
+      const youtubeContent = this.extractYouTubeIframes(this.post.content.rendered);
+      this.sanitizedYouTubeContent = this.sanitizer.bypassSecurityTrustHtml(youtubeContent);
       // Fetch categories
       const categoryPromises = this.post.categories.map((categoryId: number) =>
         this.blogService.getCategory(categoryId).toPromise()
@@ -75,6 +82,55 @@ export class BlogPostComponent {
 
     return wrapperDiv.innerHTML; // Return the sanitized content with YouTube videos
   }
-  
+  ngAfterViewInit() {
+    const style = this.renderer.createElement('style');
+    style.textContent = `
+      .wp-block-table table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      .wp-block-table th,
+      .wp-block-table td {
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-align: left;
+      }
+       .wp-block-image {
+        display: flex;
+        justify-content: center;
+        margin: 1.5rem 0;
+      }
+      .wp-block-image img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 6px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      }
+    h1, h2, h3, h4, h5, h6 {
+      color: teal !important;
+    }
+       ul li::marker {
+      color: teal !important;
+    }
+
+     .wp-block-columns {
+     display: flex;
+      flex: 1 !important;
+      min-width: 280px;
+    }
+    .wp-block-column{
+      flex: 1 !important;
+      min-width: 280px;
+    }
+    .wp-block-column img {
+      max-width: 80%;
+      height: auto;
+      border-radius: 6px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin-top: -1rem
+    }
+    `;
+    this.renderer.appendChild(this.el.nativeElement, style);
+  }
 }
 
