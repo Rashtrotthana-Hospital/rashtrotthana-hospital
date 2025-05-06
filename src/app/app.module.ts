@@ -120,6 +120,7 @@ import { RheumatologyComponent } from './rheumatology/rheumatology.component';
 import { CareerComponent } from './career/career.component';
 import { MuthrubhavaComponent } from './muthrubhava/muthrubhava.component';
 import { CareerPagePopupComponent } from './career-page-popup/career-page-popup.component';
+import { NewDocPageComponent } from './new-doc-page/new-doc-page.component';
 
 
 @NgModule({
@@ -213,7 +214,8 @@ import { CareerPagePopupComponent } from './career-page-popup/career-page-popup.
     RheumatologyComponent,
     CareerComponent,
     MuthrubhavaComponent,
-    CareerPagePopupComponent
+    CareerPagePopupComponent,
+    NewDocPageComponent
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   imports: [

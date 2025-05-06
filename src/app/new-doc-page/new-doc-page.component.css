@@ -1,0 +1,588 @@
+.root-container{
+    margin-top: 120px;
+}
+
+.content {
+    position: absolute;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 600px;
+}
+
+.docname {
+    color: #1C1B1F;
+    font-family: Poppins;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.qualification {
+    color: #1C1B1F;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 1.6%;
+}
+
+.department {
+    color: #1E0B9B;
+    font-family: Poppins;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 4%;
+}
+
+.experience {
+    color: #1E0B9B;
+    font-family: Poppins;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 1%;
+}
+
+.marginLeft {
+    margin-left: 16%;
+}
+
+.image {
+    position: absolute;
+}
+
+.image .desktop_bg {
+    width: 100vw;
+    height: 600px;
+}
+
+.doctor_image {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    position: relative;
+    z-index: 2;
+}
+
+.image_wrapper {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+}
+
+.image_wrapper img {
+    width: 535px;
+    height: auto;
+    object-fit: cover;
+}
+
+.mobileBg {
+    display: none;
+}
+
+.appointment_button {
+    position: relative;
+    bottom: 150px;
+    z-index: 10;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.appointment_button button {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 8px 5px 8px 15px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    background: linear-gradient(90deg, #1E0B9B 0%, #07CCEC 100%);
+    box-shadow: 3px 4px 15px 0px rgba(63, 176, 206, 0.65);
+    cursor: pointer;
+    margin-left: 8%;
+}
+
+.btn_text {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    /* 100% */
+}
+
+.arrow {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.28);
+}
+
+.profile_content {
+    padding: 0 8%;
+    display: flex;
+    gap: 100px;
+}
+
+.briefProfile,
+.areaOfExpertise {
+    width: 50%;
+}
+
+.profileHeading {
+    color: #008080;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.briefProfilePara {
+    margin-top: 30px;
+    color: #0E3672;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px;
+    /* 180% */
+}
+
+.profileHeading img {
+    width: 30px;
+    height: 30px;
+}
+
+.list-wrapper {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.lists {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: #000;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 15px;
+    display: flex;
+    align-items: start;
+}
+
+.lists img {
+    width: 24px;
+    height: 24px;
+}
+
+.list1 {
+    width: 50%;
+}
+
+/* appointment form */
+
+.form {
+    padding: 4% 8%;
+}
+
+.formWrapper {
+    background: rgba(0, 128, 128, 0.80);
+    padding: 3%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    border: 4px solid #FFF;
+    box-shadow: 0px 0px 60px 0px #FFF;
+    backdrop-filter: blur(30px);
+}
+
+.formHeading {
+    color: #FBCA51;
+    font-family: Poppins;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+}
+
+form {
+    width: 70%;
+}
+
+.row-1 {
+    display: flex;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.inputField {
+    width: 50%;
+}
+
+.inputField input {
+    width: 99%;
+    border: 1px solid #000;
+    height: 50px;
+    padding: 0 10px;
+    outline: none;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.formHeading {
+    font-size: 40px;
+}
+
+.heading {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.heading img {
+    width: 24px;
+    height: 24px;
+}
+
+textarea {
+    width: 100%;
+    margin-top: 30px;
+    height: 130px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    padding: 10px;
+}
+
+input::placeholder,
+textarea::placeholder,
+input,
+textarea,
+.dummybava {
+    color: #666F77;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+select:invalid,
+select option.placeholder-option {
+    color: #666F77;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+select:valid,
+select option:not(.placeholder-option) {
+    color: #000;
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 1px solid #000;
+    border-radius: 4px;
+    background: url("data:image/svg+xml;utf8,<svg fill='gray' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>") no-repeat right 8px center;
+    background-color: white;
+    color: #666F77;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    width: 99%;
+    border: 1px solid #000;
+    height: 50px;
+    padding: 0 10px;
+    outline: none;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+:host ::ng-deep.date {
+    width: 100%;
+    border: 1px solid #000;
+    height: 50px;
+    border-radius: 6px;
+    margin-top: 10px;
+    
+}
+
+.p-inputtext::placeholder {
+    color: #666F77;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.tabsize {
+    display: none;
+}
+
+@media (max-width : 1200px) {
+    .image_wrapper img {
+        width: 390px;
+    }
+}
+
+@media (max-width : 800px) {
+    .root-container{
+        margin-top: 110px;
+    }
+    
+    .profile_content {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .desktop_bg {
+        display: none;
+    }
+
+    .tabsize {
+        display: block;
+        width: 100vw;
+        height: 510px;
+    }
+
+    .doctor_image {
+        height: 510px;
+    }
+
+    /* .image{
+        height: 700px;
+    } */
+
+    .image_wrapper {
+        justify-content: start;
+    }
+
+    .image_wrapper img {
+        width: 335px;
+    }
+
+    .docname {
+        font-size: 24px;
+    }
+
+    .qualification {
+        font-size: 18px;
+    }
+
+    .department {
+        font-size: 16px;
+    }
+
+    .experience {
+        font-size: 16px;
+    }
+
+    .marginLeft {
+        margin-left: 8%;
+    }
+
+    .content {
+        height: 510px;
+    }
+
+    .appointment_button button {
+        margin-left: 4%;
+    }
+
+    .briefProfile,
+    .areaOfExpertise {
+        width: 100%;
+    }
+
+    .heading {
+        font-size: 20px;
+    }
+
+    .formHeading {
+        font-size: 32px;
+    }
+
+    .row-1 {
+        flex-direction: column;
+    }
+
+    .inputField {
+        width: 100%;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    input::placeholder,
+    textarea::placeholder,
+    input,
+    textarea {
+        font-size: 12px;
+    }
+}
+
+@media (max-width : 768px) {
+
+    .image_wrapper img {
+        width: 310px;
+    }
+}
+
+
+@media (max-width : 700px) {
+
+    .root-container{
+        margin-top: 130px;
+    }
+
+    .content {
+        position: relative;
+        width: 100%;
+        height: 165px;
+    }
+
+    .docname {
+        font-size: 24px;
+    }
+
+    .qualification {
+        font-size: 12px;
+    }
+
+    .department {
+        font-size: 14px;
+    }
+
+    .experience {
+        font-size: 14px;
+    }
+
+    .marginLeft {
+        margin-left: 8%;
+    }
+
+    .tabsize {
+        display: none;
+    }
+
+    .image {
+        position: absolute;
+    }
+
+    .doctor_image {
+        position: absolute;
+        height: 241px;
+    }
+
+    .image_wrapper img {
+        width: 210px;
+        height: 218px;
+        object-fit: cover;
+        height: auto;
+    }
+
+    .desktop_bg {
+        display: none;
+    }
+
+    .mobileBg {
+        display: block;
+        width: 100vw;
+        height: 245px;
+    }
+
+    .image_wrapper {
+        width: 55%;
+        height: 241px;
+    }
+
+    .appointment_button {
+        margin-top: 241px;
+        bottom: 60px;
+    }
+
+    .profileHeading {
+        font-size: 18px;
+    }
+
+    /* profile content */
+
+    .briefProfilePara {
+        font-size: 14px;
+        line-height: 28px;
+    }
+
+    .lists {
+        font-size: 12px;
+    }
+
+    .heading {
+        font-size: 16px;
+    }
+
+    .formHeading {
+        font-size: 24px;
+    }
+
+    input::placeholder,
+    textarea::placeholder,
+    input,
+    textarea, select {
+        font-size: 12px;
+    }
+
+    select:invalid,
+    select option.placeholder-option{
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width : 390px) {
+    .image_wrapper {
+        width: 65%;
+    }
+}
