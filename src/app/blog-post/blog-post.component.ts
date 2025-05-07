@@ -13,7 +13,6 @@ export class BlogPostComponent {
   post: any;
   categories: string[] = [];
   sanitizedYouTubeContent: SafeHtml | null = null;
-  sanitizedContent: SafeHtml | null = null;
 
   constructor(
     private route: ActivatedRoute,
@@ -24,29 +23,17 @@ export class BlogPostComponent {
   ) { }
 
   ngOnInit(): void {
-    // this.sanitizedContent = this.sanitizer.bypassSecurityTrustHtml(this.post.content.rendered);
+    const importedslug = this.route.snapshot.paramMap.get('slug')!;
+    const slug = this.removeSpecialChar(importedslug);
 
-    //   const idParam = this.route.snapshot.paramMap.get('id');
-    //   if (idParam) {
-    //     const id = +idParam;
-    //     this.blogService.getPost(id).subscribe((data: any) => {
-    //       this.post = data;
-    //     });
-    //   } else {
-    //     console.error('No ID provided in route.');
-    //   }
-    // }
-    // const id = +this.route.snapshot.paramMap.get('id')!;
-    //   this.blogService.getPost(id).subscribe(async (data: any) => {
-    //     this.post = data;
-    const slug = this.route.snapshot.paramMap.get('slug')!;
+    console.log(slug)
+
     this.blogService.getPostBySlug(slug).subscribe(async (data: any) => {
       this.post = data[0];
-      console.log(this.post.content.rendered);
 
       const youtubeContent = this.extractYouTubeIframes(this.post.content.rendered);
       this.sanitizedYouTubeContent = this.sanitizer.bypassSecurityTrustHtml(youtubeContent);
-      // Fetch categories
+
       const categoryPromises = this.post.categories.map((categoryId: number) =>
         this.blogService.getCategory(categoryId).toPromise()
       );
@@ -59,29 +46,26 @@ export class BlogPostComponent {
   private extractYouTubeIframes(content: string): string {
     const div = document.createElement('div');
     div.innerHTML = content;
-
-    // Find all iframe elements
     const iframes = div.querySelectorAll('iframe');
 
-    // Filter only YouTube iframe elements
     const youtubeIframes = Array.from(iframes).filter((iframe) => {
       const src = iframe.getAttribute('src');
       return src && src.includes('youtube.com');
     });
 
-    // Wrap YouTube iframes in a responsive container
     const wrapperDiv = document.createElement('div');
-    wrapperDiv.classList.add('youtube-videos-container'); // Add a class for styling
+    wrapperDiv.classList.add('youtube-videos-container');
 
     youtubeIframes.forEach((iframe) => {
       const responsiveWrapper = document.createElement('div');
-      responsiveWrapper.className = 'responsive-iframe'; // Class for responsive styling
-      responsiveWrapper.appendChild(iframe.cloneNode(true)); // Clone the iframe
+      responsiveWrapper.className = 'responsive-iframe';
+      responsiveWrapper.appendChild(iframe.cloneNode(true));
       wrapperDiv.appendChild(responsiveWrapper);
     });
 
-    return wrapperDiv.innerHTML; // Return the sanitized content with YouTube videos
+    return wrapperDiv.innerHTML;
   }
+
   ngAfterViewInit() {
     const style = this.renderer.createElement('style');
     style.textContent = `
@@ -95,7 +79,7 @@ export class BlogPostComponent {
         padding: 10px;
         text-align: left;
       }
-       .wp-block-image {
+      .wp-block-image {
         display: flex;
         justify-content: center;
         margin: 1.5rem 0;
@@ -106,31 +90,45 @@ export class BlogPostComponent {
         border-radius: 6px;
         box-shadow: 0 2px 8px rgba(0,0,0,0.1);
       }
-    h1, h2, h3, h4, h5, h6 {
-      color: teal !important;
-    }
-       ul li::marker {
-      color: teal !important;
-    }
+      h1, h2, h3, h4, h5, h6 {
+        color: teal !important;
+      }
+      ul li::marker {
+        color: teal !important;
+      }
+      .wp-block-columns {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        min-width: 280px;
+      }
+      .wp-block-column {
+        flex: 1 !important;
+        min-width: 280px;
+      }
+      .wp-block-column img {
+        max-width: 80%;
+        height: auto;
+        border-radius: 6px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        margin-top: -1rem;
+      }
 
-     .wp-block-columns {
-     display: flex;
-      flex: 1 !important;
-      min-width: 280px;
-    }
-    .wp-block-column{
-      flex: 1 !important;
-      min-width: 280px;
-    }
-    .wp-block-column img {
-      max-width: 80%;
-      height: auto;
-      border-radius: 6px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      margin-top: -1rem
-    }
+      @media only screen and (max-width: 768px) {
+        .wp-block-columns {
+          flex-direction: column !important;
+        }
+      }
     `;
     this.renderer.appendChild(this.el.nativeElement, style);
   }
-}
 
+  private removeSpecialChar(slug: string): string {
+    return slug
+    .toLowerCase()
+    .trim()
+    .replace(/[&'"=@]/g, '')  
+    .replace(/\s+/g, '-')     
+    .replace(/--+/g, '-'); 
+  }
+}
