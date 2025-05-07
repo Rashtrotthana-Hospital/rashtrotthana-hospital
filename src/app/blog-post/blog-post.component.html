@@ -6,6 +6,7 @@
   <div class="blog-post-container" *ngIf="post">
     <!-- <img class="post-image" [src]="post.featured_image_url" alt="{{ post.title.rendered }}"> -->
     <div class="post-content">
+      <!-- <img class="featured-image" [src]="featuredPost.featured_image_url" alt="Featured Post"> -->
       <p class="post-date">
         {{ post.date | date:'mediumDate' }} |
         <span *ngFor="let category of categories; let last = last">
