@@ -3,10 +3,10 @@
     <!-- hero section -->
     <div class="heroSection">
         <div class="content">
-            <div class="docname marginLeft">Dr.(Col)Anand Shankar </div>
-            <div class="qualification marginLeft">MBBS,MD (ANAESTHESIOLOGY), EDIC</div>
-            <div class="department marginLeft">Department: ER HEAD, ICU, ANAESTHESIA</div>
-            <div class="experience marginLeft">Years of Experience : 31</div>
+            <div class="docname marginLeft">{{filterdDoctor.name}}</div>
+            <div class="qualification marginLeft">{{filterdDoctor.qualification}}</div>
+            <div class="department marginLeft">{{filterdDoctor.department}}</div>
+            <div class="experience marginLeft">Years of Experience : {{filterdDoctor.experience}}</div>
         </div>
         <div class="image">
             <img src="../../assets/doc-page-banner.png" alt="" class="desktop_bg">
@@ -15,7 +15,7 @@
         </div>
         <div class="doctor_image">
             <div class="image_wrapper">
-                <img src="../../assets/Dr-Col-Anand-Shankar-new.png" alt="">
+                <img [src]="filterdDoctor.image" [alt]="filterdDoctor.alt">
             </div>
         </div>
         <div class="appointment_button">
@@ -32,61 +32,27 @@
                 <img src="../../assets/interest.png" alt="">
                 <span>Brief Profile</span>
             </div>
-            <div class="briefProfilePara">Col (Dr) Anand Shankar K is an alumnus of the prestigious Armed Forces Medical
-                College, Pune. He served in field areas prior to pursuing postgraduation in the field of Anaesthesiology
-                and Intensive Care at AFMC pune. Thereafter he qualified the European Diploma in Intensive Care
-                Medicine. He has an overall experience of more than 31 years, 27 of those years serving with the Armed
-                Forces. He has served within the country and in foreign missions with the United Nations. He also had
-                the unique opportunity to serve as accompanying doctor to the President of India. He has been serving
-                with Rashtrotthana Hospital since its inception in Dec 2022.</div>
+            <div class="briefProfilePara">{{filterdDoctor.briefProfile}}</div>
         </div>
         <div class="areaOfExpertise">
             <div class="profileHeading">
                 <img src="../../assets/benefit.png" alt="">
-                <span>Brief Profile</span>
+                <span>Areas of Expertise</span>
             </div>
 
             <div class="list-wrapper">
-                <div class="list1">
-                    <div class="lists">
-                        <img src="../../assets/list.png" alt="">
-                        <div class="listItem">GI surgery</div>
+                    <div class="list1" *ngIf="filterdDoctor.areaOfExpertise1">
+                        <div class="lists" *ngFor="let expert of filterdDoctor.areaOfExpertise1">
+                            <img src="../../assets/list.png" alt="">
+                            <div class="listItem">{{expert}}</div>
+                        </div>
                     </div>
-                    <div class="lists">
-                        <img src="../../assets/list.png" alt="">
-                        <div class="listItem">Lasers</div>
+                    <div class="list1" *ngIf="filterdDoctor.areaOfExpertise2">
+                        <div class="lists" *ngFor="let expert of filterdDoctor.areaOfExpertise2">
+                            <img src="../../assets/list.png" alt="">
+                            <div class="listItem">{{expert}}</div>
+                        </div>
                     </div>
-                    <div class="lists">
-                        <img src="../../assets/list.png" alt="">
-                        <div class="listItem">Laproscopy</div>
-                    </div>
-                    <div class="lists">
-                        <img src="../../assets/list.png" alt="">
-                        <div class="listItem">Onco Surgery</div>
-                    </div>
-                    <div class="lists">
-                        <img src="../../assets/list.png" alt="">
-                        <div class="listItem">Lasers</div>
-                    </div>
-                </div>
-                <div class="list1">
-                    <div class="lists">
-                        <img src="../../assets/list.png" alt="">
-                        <div class="listItem">Onco Surgery</div>
-                    </div>
-                    <div class="lists">
-                        <img src="../../assets/list.png" alt="">
-                        <div class="listItem">GI surgery</div>
-                    </div>
-                    <div class="lists">
-                        <img src="../../assets/list.png" alt="">
-                        <div class="listItem">Laproscopy</div>
-                    </div>
-                    <div class="lists">
-                        <img src="../../assets/list.png" alt="">
-                        <div class="listItem">Dr.K. Lakshman, MBBS, MRCS(UK), FRCS- General surgery.</div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
@@ -98,78 +64,79 @@
             <div class="formHeading">Book an Appointment for Consultation</div>
 
             <form action="">
-    
+
                 <div class="row-1">
                     <!-- appointment date -->
                     <div class="inputField">
-                        <div class="heading"><img src="../../assets/appointment-date.svg" alt=""><span>Appointment Date</span></div>
+                        <div class="heading"><img src="../../assets/appointment-date.svg" alt=""><span>Appointment
+                                Date</span></div>
                         <!-- <input type="text" placeholder="Choose a date"> -->
-                         <p-calendar  styleClass="date" 
-                         [(ngModel)]="date" 
-                         [minDate]="minDate"
-                         [iconDisplay]="'input'"  
-                         placeholder="Choose a Date"
-                         [showIcon]="true" 
-                         inputId="icondisplay"  
-                         formControlName="date_appointment"
-                         [disabledDays]="disabledDays"
-                         (onSelect)="onDateChange($event)">
-                             <ng-template pTemplate="date" let-date>
-                                 <span>
-                                     {{ date.day }}
-                                 </span>
-                             </ng-template>
-                         </p-calendar>
+                        <p-calendar styleClass="date" [(ngModel)]="date" [minDate]="minDate" [iconDisplay]="'input'"
+                            placeholder="Choose a Date" [showIcon]="true" inputId="icondisplay"
+                            formControlName="date_appointment" [disabledDays]="disabledDays"
+                            (onSelect)="onDateChange($event)">
+                            <ng-template pTemplate="date" let-date>
+                                <span>
+                                    {{ date.day }}
+                                </span>
+                            </ng-template>
+                        </p-calendar>
                     </div>
-    
+
                     <!-- Appointment Time -->
                     <div class="inputField">
-                        <div class="heading"><img src="../../assets/appointment-date.svg" alt=""><span>Appointment Time</span></div>
+                        <div class="heading"><img src="../../assets/appointment-date.svg" alt=""><span>Appointment
+                                Time</span></div>
                         <!-- <input type="text" placeholder="Choose a time"> -->
                         <select name="mySelect" id="mySelect" required>
-                            <option value="" selected disabled hidden class="placeholder-option">Choose an option...</option>
+                            <option value="" selected disabled hidden class="placeholder-option">Choose an option...
+                            </option>
                             <option value="option1">Option 1</option>
                             <option value="option2">Option 2</option>
                             <option value="option3">Option 3</option>
                         </select>
                     </div>
-    
+
                 </div>
-    
+
                 <div class="row-1">
                     <!-- appointment date -->
                     <div class="inputField">
-                        <div class="heading"><img src="../../assets/appointment-name.svg" alt=""><span>First Name</span></div>
+                        <div class="heading"><img src="../../assets/appointment-name.svg" alt=""><span>First Name</span>
+                        </div>
                         <input type="text" placeholder="Frist name">
                     </div>
-    
+
                     <!-- Appointment Time -->
                     <div class="inputField">
-                        <div class="heading"><img src="../../assets/appointment-name.svg" alt=""><span>Last Name</span></div>
+                        <div class="heading"><img src="../../assets/appointment-name.svg" alt=""><span>Last Name</span>
+                        </div>
                         <input type="text" placeholder="Last name">
                     </div>
-    
+
                 </div>
-    
+
                 <div class="row-1">
                     <!-- appointment date -->
                     <div class="inputField">
-                        <div class="heading"><img src="../../assets/appointment-mail.svg" alt=""><span>Email</span></div>
+                        <div class="heading"><img src="../../assets/appointment-mail.svg" alt=""><span>Email</span>
+                        </div>
                         <input type="text" placeholder="Enter email">
                     </div>
-    
+
                     <!-- Appointment Time -->
                     <div class="inputField">
-                        <div class="heading"><img src="../../assets/appointment-call.svg" alt=""><span>Contact Number</span></div>
-                        <input type="text" placeholder="Enter number" >
+                        <div class="heading"><img src="../../assets/appointment-call.svg" alt=""><span>Contact
+                                Number</span></div>
+                        <input type="text" placeholder="Enter number">
                     </div>
-    
+
                 </div>
-    
+
                 <div class="textbox">
                     <textarea placeholder="Your Message..."></textarea>
                 </div>
-    
+
             </form>
         </div>
     </div>
