@@ -730,7 +730,7 @@ export class DoctorLayoutComponent {
       alt : 'Dr. Kavyashree Kulamarva | Ayurvedic Psychiatry Consultant in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore'
     },
     {
-      name: 'Ms. Archana Karthick ',
+      name: 'Ms. Archana Karthick',
       image: 'assets/Ms-Archana-Karthick.png',
       desgination: 'Senior Clinical Dietician',
       about: ' Ms. Archana Karthick has more than 16 years of experience in the field of Clinical Nutrition, dietetics and food service management. Prior Joining to Jaydev memorial Rashtrotthana Hospital she worked as Clinical Nutrition consultant in Cloudnine Hospital Kanakapura Road Bangalore.  Earlier to this she has over 10 years of experience from UAE -as Dubai health authority licensed Paediatric Nutrition & Dietetics from JCI accredited hospital -Al Jalila children’s speciality hospital and as clinical Nutrition & Dietician International Modern Maternity Hospital Dubai, UAE. She also holds life membership of Indian Dietetics association and IAPEN India Association for Parenteral and Enteral nutrition',
@@ -977,7 +977,7 @@ export class DoctorLayoutComponent {
         alt : ''
       },
       {
-        name: "Dr. Kavya N ",
+        name: "Dr. Kavya N",
         image : "assets/Dr-Kavya.png",
         desgination: 'Ayurveda',
         speciality: 'AYURVEDA',
