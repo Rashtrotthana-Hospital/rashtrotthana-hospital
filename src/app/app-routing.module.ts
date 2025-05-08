@@ -59,6 +59,7 @@ import { AyurvedaThyroidComponent } from './ayurveda-thyroid/ayurveda-thyroid.co
 import { RheumatologyComponent } from './rheumatology/rheumatology.component';
 import { CareerComponent } from './career/career.component';
 import { MuthrubhavaComponent } from './muthrubhava/muthrubhava.component';
+import { NewDocPageComponent } from './new-doc-page/new-doc-page.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -140,6 +141,10 @@ children: [
   {path:'maternity-care', component:MaternityComponent},
   {path:'ayurvedic-thyroid-treatment', component:AyurvedaThyroidComponent},
   {path:'mathrubhava-treatment', component:MuthrubhavaComponent},
+  {
+  path: 'doctor/:slug',
+  component: NewDocPageComponent
+},
   
   { path: 'blog', component: BlogComponent },
   { path: 'blog/:slug', component: BlogPostComponent },

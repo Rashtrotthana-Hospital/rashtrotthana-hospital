@@ -110,7 +110,32 @@
     cursor: pointer;
     margin-left: 8%;
 }
-
+.book_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+.book_button button:disabled {
+    background: linear-gradient(90deg, #b0bcc6 0%, #96e6e6 100%) !important;
+    box-shadow: none !important;
+    cursor: not-allowed !important;
+    opacity: 0.6;
+  }
+.book_button button {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 8px 5px 8px 15px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    background: linear-gradient(90deg, #022b50 0%, #279797 100%);
+    box-shadow: 3px 4px 15px rgba(63, 176, 206, 0.65);
+    cursor: pointer;
+    margin-left: 8%;
+}
 .btn_text {
     color: #FFF;
     font-family: Inter;
@@ -253,7 +278,9 @@ form {
     border-radius: 8px;
     margin-top: 10px;
 }
-
+.time{
+    margin-bottom: 10px;
+}
 .formHeading {
     font-size: 40px;
 }
@@ -360,7 +387,11 @@ select::-ms-expand {
 .tabsize {
     display: none;
 }
-
+.error{
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
 @media (max-width : 1200px) {
     .image_wrapper img {
         width: 390px;

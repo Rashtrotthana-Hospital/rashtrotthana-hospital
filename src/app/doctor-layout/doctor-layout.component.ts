@@ -5,6 +5,7 @@ import { Title, Meta, DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { DoctorDetailsComponent } from '../doctor-details/doctor-details.component';
 import { MessageService } from 'primeng/api';
 import { ContactFormService } from '../contact-form.service';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -988,46 +989,13 @@ export class DoctorLayoutComponent {
         date : "Thursday",
         alt : ''
       },
-      // {
-      //   name: "",
-      //   image : "",
-      //   desgination: '',
-      //   speciality: '',
-      //   about : "",
-      //   areasOfExpertise : [],
-      //   expertise : "Years of Experience: ",
-      //   qualification : "",
-      //   time : "",
-      //   date : "",
-      //   alt : ''
-      // },
   ]
   specialDoctors = ['Dr. Pramod S. Chinder', 'Dr. Meena H. B', 'Brig (Dr) S. Shashivadhanan', 'Dr. Ravishankar. D', 'Dr. Sapna S','Dr. Kalyani Dilip Karkare','Dr. Man Mohan U. S'];
 
-  constructor(private fb: FormBuilder, public dialog: MatDialog, private titleService: Title, private metaService: Meta) {
-    // this.subjects = [
-    //   {
-    //     name: 'General Medicine', code: 'GM',
-    //     items: [
-    //       {
-    //         name: 'New South Wales',
-    //         cities: [
-    //             { cname: 'Sydney', code: 'A-SY' },
-    //             { cname: 'Newcastle', code: 'A-NE' },
-    //             { cname: 'Wollongong', code: 'A-WO' }
-    //         ]
-    //     },
-    //     ]
-    //   },
-    //   { name: 'Yoga', code: 'YG' },
-    //   { name: 'AYURVEDA', code: 'AY' },
-    //   { name: 'Homeopathy', code: 'HO' },
-    //   { name: 'Naturopathy', code: 'NA' }
-    // ];
+  constructor(private fb: FormBuilder, public dialog: MatDialog, private titleService: Title, private metaService: Meta, private router: Router) {
+
   }
-  // onSubjectChange(event: any) {
-  //   this.selectedSubject = event.value;
-  // }
+
 
   ngOnInit() {
     this.titleService.setTitle("Doctors List | Best Doctors in Bangalore, India | surgeons - Rashtrotthana Hospital");
@@ -1180,20 +1148,22 @@ export class DoctorLayoutComponent {
   }
 
   selectDoctor(doctor: any) {
-    this.selectedDoctor = doctor;
-    const doctorIndex = this.doctors.indexOf(doctor);
-    if (doctorIndex !== -1) {
-      this.startIndex = doctorIndex;
-      this.loadVisibleDoctors();
-    }
+    // this.selectedDoctor = doctor;
+    // const doctorIndex = this.doctors.indexOf(doctor);
+    // if (doctorIndex !== -1) {
+    //   this.startIndex = doctorIndex;
+    //   this.loadVisibleDoctors();
+    // }
 
-    // Scroll to the doctor-details div
-    setTimeout(() => {
-      const element = document.getElementById('doctor-details');
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-      }
-    }, 100);
+    // // Scroll to the doctor-details div
+    // setTimeout(() => {
+    //   const element = document.getElementById('doctor-details');
+    //   if (element) {
+    //     element.scrollIntoView({ behavior: 'smooth' });
+    //   }
+    // }, 100);
+    const slug = doctor.name.toLowerCase().replace(/\s+/g, '-');
+    this.router.navigate(['/doctor', slug]);
   }
 
   selectDoctorAppoint(doctor: any) {
