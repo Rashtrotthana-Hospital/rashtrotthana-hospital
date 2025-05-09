@@ -428,4 +428,8 @@
         width: 330px;
         height: 930px;
     }
+
+    .hide{
+        display: none;
+    }
 }
