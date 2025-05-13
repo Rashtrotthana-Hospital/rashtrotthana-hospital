@@ -989,6 +989,19 @@ export class DoctorLayoutComponent {
         date : "Thursday",
         alt : ''
       },
+      {
+        name: "Dr. Sandhya S. Patil",
+        image : "assets/dummy.png",
+        desgination: 'ENT and Head & Neck Surgery',
+        speciality: 'ENT SPECIALITY',
+        about : "Dr. Sandhya S. Patil is a skilled ENT and Head & Neck Surgeon with over a decade of experience in managing a wide range of ENT conditions. She has trained at prestigious institutions such as KEM Hospital, Pune, and St. John's Medical College, Bengaluru. Her clinical expertise spans endoscopic sinus surgeries, pediatric ENT procedures, allergy management, and complex head and neck surgeries. Dr. Sandhya Patil currently practices as a Consultant at multiple reputed hospitals in Bengaluru and also runs her own ENT clinic, Swasthya ENT Centre. She is known for her thorough patient care, surgical precision and commitment to academic excellence.",
+        areasOfExpertise : ['Septoplasty','Turbinectomy','Turbinoplasty','Functional Endoscopic Sinus Surgery (FESS)','Nasal Endoscopy and Biopsy','Skin Prick Test','Allergen Immunotherapy','Tympanoplasty','* Cortical Mastoidectomy','Modified Radical Mastoidectomy','Auroplasty','Myringotomy and Grommet Insertion','Tonsillectomy','Coblation Adenoidectomy','Conventional Adenoidectomy','Direct Laryngoscopy','Microlaryngeal Surgery','Tracheostomy','Incision and Drainage','Submandibular Gland Excision','Hemithyroidectomy','Total Thyroidectomy','Diagnosis and Management of Head and Neck Oncologic Surgeries'],
+        expertise : "Years of Experience: 10+",
+        qualification : "MBBS, DLO, DNB (ENT), AASC",
+        time : "",
+        date : "",
+        alt : 'Dr. Sandhya S. Patil | Best ENT Consultant in Bangalore | Rashtrotthana Hospital'
+      },
   ]
   specialDoctors = ['Dr. Pramod S. Chinder', 'Dr. Meena H. B', 'Brig (Dr) S. Shashivadhanan', 'Dr. Ravishankar. D', 'Dr. Sapna S','Dr. Kalyani Dilip Karkare','Dr. Man Mohan U. S'];
 

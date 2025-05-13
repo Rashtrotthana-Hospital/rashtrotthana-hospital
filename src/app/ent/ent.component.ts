@@ -43,7 +43,13 @@ export class ENTComponent {
       doctor_name:'Dr. Manasa N. A',
       experience : "7",
       docalt : 'Dr. Manasa N. A | Best ENT Consultant in Bangalore | Rashtrotthana Hospital'
-    },   
+    },  
+    {
+      doctor_image:'../../assets/dummy.png',
+      doctor_name:'Dr. Sandhya S. Patil',
+      experience : "10+",
+      docalt : 'Dr. Sandhya S. Patil | Best ENT Consultant in Bangalore | Rashtrotthana Hospital'
+    },  
     // {
     //   doctor_image:'../../assets/dummy.png',
     //   doctor_name:'Dr. S K Ranjani',
