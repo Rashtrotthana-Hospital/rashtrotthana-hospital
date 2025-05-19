@@ -1,13 +1,47 @@
 .blog-post-container {
-    width: 80%;
+    /* width: 80%;
     margin: 0 auto;
-    padding: 20px;
+    padding: 20px; */
     background: #ffffff;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 18vh;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    margin-top: 8vh !important;
+    margin: 0 4rem
+  }
+  .post-layout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    /* width: 70%; */
+
   }
   
+  .banner-left {
+    position: absolute;
+    top: 191px; /* Adjust as needed */
+    left: 50px;
+    width: 160px; /* Adjust to fit your layout */
+    /* z-index: 1000; */
+  }
+  
+  .banner-right {
+    position: absolute;
+    top: 191px; /* Same as left for balance */
+    right: 50px;
+    width: 160px;
+    z-index: 1000;
+  }
+  
+  .banner img {
+    width: 100%;
+    height: 87vh;
+    display: block;
+    border-radius: 8px;
+  }
+  
+
   .post-image {
     width: 100%;
     /* max-height: 400px; */
@@ -17,7 +51,12 @@
   }
   
   .post-content {
-    padding: 20px;
+    padding: 83px;
+    padding-top: 20px;
+    margin-top: 42px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 138px;
+    margin-right: 146px;
   }
   
   .post-date {
@@ -79,6 +118,20 @@ table{
 h2{
   text-align: center;
 }
+button {
+  padding: 10px 20px;
+  height: 50px;
+  background-color: #008080;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: inter;
+}
+button:hover {
+  background-color: #126565;
+}
+
 
   @media only screen and (max-width:1200px){
     .blog-post-container {
@@ -88,6 +141,42 @@ h2{
       width: 100%;
       height: 100%;
     }
+}
+@media (max-width: 992px) {
+  .post-layout {
+    flex-direction: column;
+    align-items: center;
+  }
+  .post-content {
+    padding: 20px;
+    margin: 0;
+    box-shadow: none;
+    width: 100%;
+    margin-top: 0;
+  }
+  .banner {
+    display: none !important;
+  }
+  .blog-post-container{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .wp-block-columns {
+    flex-direction: column;
+    gap: 1em;
+  }
+  
+  .wp-block-column {
+    width: 100%;
+    min-width: 100%;
+  }
+  .banner{
+    display: none !important;
+  }
 }
 @media only screen and (max-width:400px){
   .post-content{
@@ -101,7 +190,10 @@ h2{
     width: 300px;
     height: auto;
   }
-}
+  .banner{
+    display: none !important;
+  }
+
 
 /* Add these styles to your blog-post.component.css */
 
@@ -116,19 +208,6 @@ h2{
 .wp-block-column {
   flex: 1;
   min-width: 280px; /* Minimum width before stacking */
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .wp-block-columns {
-    flex-direction: column;
-    gap: 1em;
-  }
-  
-  .wp-block-column {
-    width: 100%;
-    min-width: 100%;
-  }
 }
 
 /* Ensure images in columns are responsive */
@@ -150,4 +229,5 @@ h2{
 
 .wp-block-column > *:last-child {
   margin-bottom: 0;
+}
 }

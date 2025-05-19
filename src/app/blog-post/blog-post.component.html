@@ -3,21 +3,41 @@
     <div [innerHTML]="post.content.rendered"></div>
   </div> -->
 
-  <div class="blog-post-container" *ngIf="post">
-    <!-- <img class="post-image" [src]="post.featured_image_url" alt="{{ post.title.rendered }}"> -->
-    <div class="post-content">
-      <!-- <img class="featured-image" [src]="featuredPost.featured_image_url" alt="Featured Post"> -->
-      <p class="post-date">
-        {{ post.date | date:'mediumDate' }} |
-        <span *ngFor="let category of categories; let last = last">
-          {{ category }}<span *ngIf="!last">, </span>
-        </span>
-      </p>
-      <h1 class="post-title" [innerHTML]= "post.title.rendered"></h1>
-      <div class="post-body" [innerHTML]="post.content.rendered"></div>
+  <div class="blog-post-container post-layout" *ngIf="post">
+    <!-- Left Banner -->
+    <div class="banner banner-left" *ngIf="leftBannerUrl" #leftBanner>
+      <!-- <img [src]="leftBannerUrl" alt="Left Banner"> -->
+      <a [href]="leftBannerLink" target="_blank">
+        <img [src]="leftBannerUrl" alt="Right Banner" />
+      </a>
     </div>
-    <div 
-      class="youtube" 
-      [innerHTML]="sanitizedYouTubeContent">
+  
+    <!-- Blog Content -->
+    <div class="blog-post-container" *ngIf="post">
+      <div class="post-content">
+        <p class="post-date">
+          {{ post.date | date:'mediumDate' }} |
+          <span *ngFor="let category of categories; let last = last">
+            {{ category }}<span *ngIf="!last">, </span>
+          </span>
+        </p>
+        <h1 class="post-title" [innerHTML]="post.title.rendered"></h1>
+        <div class="post-body" [innerHTML]="post.content.rendered"></div>
+        <button *ngIf="buttonUrl" (click)="goToButtonUrl()">
+          {{ buttonText || 'Click Me' }}
+        </button>
+      </div>
+
+      
+      <div class="youtube" [innerHTML]="sanitizedYouTubeContent"></div>
+    </div>
+  
+    <!-- Right Banner -->
+    <div class="banner banner-right" *ngIf="rightBannerUrl" #rightBanner >
+      <a [href]="rightBannerLink" target="_blank">
+        <img [src]="rightBannerUrl" alt="Right Banner" />
+      </a>
     </div>
   </div>
+  
+  

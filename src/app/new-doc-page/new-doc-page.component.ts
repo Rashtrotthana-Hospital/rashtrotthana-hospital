@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { FormBuilder, FormGroup, Validators, AbstractControl } from '@angular/forms';
 import { Meta, Title } from '@angular/platform-browser';
@@ -37,8 +37,13 @@ export class NewDocPageComponent {
   unavailableSlotsForDate: any[] = [];
   contactForm:any = FormGroup;
   clicked:boolean = true;
-  apiUrl: string = 'http://localhost:3000/api'
-  // apiUrl:string= 'https://rashtrotthana-backend-812956739285.us-east4.run.app/api'
+  // apiUrl: string = 'http://localhost:3000/api'
+    apiUrl:string= 'https://rashtrotthana-backend-812956739285.us-east4.run.app/api';
+    @ViewChild('formSection') formSection!: ElementRef;
+  
+    scrollToForm() {
+      this.formSection.nativeElement.scrollIntoView({ behavior: 'smooth' });
+    }
 
   constructor(private route: ActivatedRoute,
     private messageService: MessageService,
@@ -1188,8 +1193,9 @@ export class NewDocPageComponent {
       time: "",
       date: "",
       alt: 'Dr. Sandhya S. Patil | Best ENT Consultant in Bangalore | Rashtrotthana Hospital',
-      title:'',
-      description:''
+      title:'Dr. Sandhya S. Patil | ENT Specialist & Head-Neck Surgeon in Bengaluru',
+      id: 68,
+      description:'Consult Dr. Sandhya S. Patil, ENT & Head-Neck Surgeon in Bengaluru. Expert in sinus surgery, pediatric ENT, allergy care, and thyroid surgeries.'
     },
   ]
   onDateChange(event: any) {

@@ -19,7 +19,7 @@
             </div>
         </div>
         <div class="appointment_button">
-            <button><span class="btn_text">Book an Appointment</span><span class="arrow"><i
+            <button><span class="btn_text" (click)="scrollToForm()">Book an Appointment</span><span class="arrow"><i
                         class="fa-solid fa-angle-right"></i></span></button>
         </div>
     </div>
@@ -59,7 +59,7 @@
 
     <!-- form -->\
 
-    <div class="form">
+    <div class="form" #formSection>
         <div class="formWrapper">
             <div class="formHeading">Book an Appointment for Consultation</div>
 
@@ -181,3 +181,4 @@
     </div>
 
 </div>
+<p-toast position="top-right"></p-toast>

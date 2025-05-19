@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, AfterViewInit } from '@angular/core';
 import { BlogServiceService } from '../blog-service.service';
 import { ActivatedRoute } from '@angular/router';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
@@ -9,11 +9,16 @@ import { Renderer2, ElementRef } from '@angular/core';
   templateUrl: './blog-post.component.html',
   styleUrl: './blog-post.component.css'
 })
-export class BlogPostComponent {
+export class BlogPostComponent implements AfterViewInit{
   post: any;
   categories: string[] = [];
   sanitizedYouTubeContent: SafeHtml | null = null;
-
+  leftBannerUrl: string = '';
+  rightBannerUrl: string = '';
+  rightBannerLink: string = '';
+  leftBannerLink: string = '';
+  buttonText: string = '';
+  buttonUrl: string = '';
   constructor(
     private route: ActivatedRoute,
     private blogService: BlogServiceService,
@@ -21,8 +26,12 @@ export class BlogPostComponent {
     private renderer: Renderer2,
     private el: ElementRef
   ) { }
+  @ViewChild('leftBanner') leftBanner!: ElementRef;
+  @ViewChild('rightBanner') rightBanner!: ElementRef;
 
-  ngOnInit(): void {
+
+
+  ngOnInit(): void  {
     const importedslug = this.route.snapshot.paramMap.get('slug')!;
     const slug = this.removeSpecialChar(importedslug);
 
@@ -30,6 +39,24 @@ export class BlogPostComponent {
 
     this.blogService.getPostBySlug(slug).subscribe(async (data: any) => {
       this.post = data[0];
+      this.leftBannerUrl = this.post.acf.left_banner.url;
+      this.rightBannerUrl = this.post.acf.right_banner.url;
+      this.rightBannerLink = this.post.acf.right_banner_link;
+      this.leftBannerLink = this.post.acf.left_banner_link;
+      this.buttonText = this.post.acf.button_text;
+this.buttonUrl = this.post.acf.buttton_url;
+      console.log(this.buttonText, this.buttonUrl)
+      setInterval(() => {
+        const tempImg = this.leftBannerUrl;
+        const tempLink = this.leftBannerLink;
+      
+        this.leftBannerUrl = this.rightBannerUrl;
+        this.leftBannerLink = this.rightBannerLink;
+      
+        this.rightBannerUrl = tempImg;
+        this.rightBannerLink = tempLink;
+      }, 10000);
+      
 
       const youtubeContent = this.extractYouTubeIframes(this.post.content.rendered);
       this.sanitizedYouTubeContent = this.sanitizer.bypassSecurityTrustHtml(youtubeContent);
@@ -121,6 +148,23 @@ export class BlogPostComponent {
       }
     `;
     this.renderer.appendChild(this.el.nativeElement, style);
+    setTimeout(() => {
+      const footer = document.getElementById('global-footer');
+  
+      if (footer) {
+        const observer = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              this.hideBanners();
+            } else {
+              this.showBanners();
+            }
+          });
+        });
+  
+        observer.observe(footer);
+      }
+    }, 0);
   }
 
   private removeSpecialChar(slug: string): string {
@@ -131,4 +175,47 @@ export class BlogPostComponent {
     .replace(/\s+/g, '-')     
     .replace(/--+/g, '-'); 
   }
+
+
+  setBannersToAbsolute() {
+    console.log('Setting banners to absolute position');
+    if (!this.leftBanner || !this.rightBanner) return;
+    const scrollY = window.scrollY;
+    this.renderer.setStyle(this.leftBanner.nativeElement, 'position', 'absolute');
+    this.renderer.setStyle(this.leftBanner.nativeElement, 'top', `${scrollY + window.innerHeight - 200}px`);
+
+    this.renderer.setStyle(this.rightBanner.nativeElement, 'position', 'absolute');
+    this.renderer.setStyle(this.rightBanner.nativeElement, 'top', `${scrollY + window.innerHeight - 200}px`);
+  }
+
+  setBannersToFixed() {
+    if (!this.leftBanner || !this.rightBanner) return;
+    this.renderer.setStyle(this.leftBanner.nativeElement, 'position', 'fixed');
+    this.renderer.setStyle(this.leftBanner.nativeElement, 'top', '100px');
+
+    this.renderer.setStyle(this.rightBanner.nativeElement, 'position', 'fixed');
+    this.renderer.setStyle(this.rightBanner.nativeElement, 'top', '100px');
+  }
+
+  hideBanners(): void {
+    if (this.leftBanner) {
+      this.renderer.setStyle(this.leftBanner.nativeElement, 'display', 'none');
+    }
+    if (this.rightBanner) {
+      this.renderer.setStyle(this.rightBanner.nativeElement, 'display', 'none');
+    }
+  }
+
+  showBanners(): void {
+    if (this.leftBanner) {
+      this.renderer.setStyle(this.leftBanner.nativeElement, 'display', 'block');
+    }
+    if (this.rightBanner) {
+      this.renderer.setStyle(this.rightBanner.nativeElement, 'display', 'block');
+    }
+  }
+  goToButtonUrl() {
+    window.open(this.buttonUrl, '_blank');
+  }
+  
 }
