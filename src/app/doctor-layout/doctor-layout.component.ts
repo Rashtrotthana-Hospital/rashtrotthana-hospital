@@ -273,7 +273,7 @@ export class DoctorLayoutComponent {
       image: 'assets/Dr-Sowmya-Bhat-S.png',
       desgination: 'OPTHALMOLOGIST',
       about: 'Dr. Sowmya S Bhat has completed her basic Medical Education from St. John’s Medical College, Bangalore She has received post graduate training in ophthalmology from the prestigious Aravind Eye Hospital, Madurai and received the Dr. G. Venkataswamy Gold Medal for standing first in Ophthalmology. She has obtained the long term fellowship degree for super specialising in Phacoemulsification surgery and refractive surgeries from Rajiv Gandhi University of Medical Science, Bangalore and received the best outgoing Fellow Award.',
-      speciality: 'OPTHALMOLOGY',
+      speciality: 'OPHTHALMOLOGY',
       areasOfExpertise: ['CATARACT SURGERY (MSILS, PHACOEMULSIFION)', 'REFRACTIVE SURGERY (PRK, LASIK, SMILE) ', 'GENERAL OPHTHALMOLOGY'],
       expertise: 'Years of Experience: 13+',
       qualification: 'MBBS, DO, DNB, FPR, FICO',
@@ -1002,6 +1002,36 @@ export class DoctorLayoutComponent {
         date : "",
         alt : 'Dr. Sandhya S. Patil | Best ENT Consultant in Bangalore | Rashtrotthana Hospital'
       },
+      {
+      name: "Dr. Dona Susan John ",
+      image: "assets/dr-dona-susan-john-dr-page.png",
+      department: 'Ophthalmology',
+      speciality: 'OPHTHALMOLOGY',
+      about: "<p>Graduation (MBBS) from Govt Medical College, Thiruvananthapuram. (1996-2002) Post graduation(DNB Ophthal) and medical retina from Chaitanya Eye Hospital and research institute, Thiruvananthapuram. (2003-2006) Worked in Mulamoottil Eye Hospital, Kozhencherry, Kerala for 5 years.(2007-2012 April)</p> <p>Worked in Vasan Eye Care, Bangalore for 6 years. (2012 may-2018 feb) Self employed in Move &Shine orthopaedic wellness and eye clinic, Uttarahalli Bangalore from 2018 till now.</p>",
+      areasOfExpertise: ['Medical Retina'],
+      expertise: "Years of Experience: 18+",
+      qualification: "MBBS, DNB Ophthal, FICO",
+      time: "",
+      date: "",
+      alt: 'Dr. Dona Susan John | Best Ophthalmology doctor in Bangalore | Rashtrotthana Hospital',
+      title:'',
+      description:''
+    },
+    {
+      name: "Dr. Nithin J",
+      image: "assets/dr-nithin-j-dr-page.png",
+      department: 'Nephrology',
+      speciality: 'NEPHROLOGY',
+      about: "<p>Dr. Nithin J is a skilled and experienced nephrologist known for his precision in renal procedures and holistic approach to kidney care. He has independently performed over 1000 renal biopsies, inserted more than 1000 uncuffed jugular and femoral catheters and over 200 cuffed jugular catheters - demonstrating his strong procedural expertise.</p> <p>He has managed the complete workup and post-transplant care of more than 300 renal transplant recipients, including complex cases involving post-transplant complications. His technical proficiency is complemented by a deep clinical interest in glomerular diseases, dialysis management and transplant nephrology.</p> <p>Dr. Nithin has actively contributed to nephrology research, with several national presentations and a publication in an international journal. His academic involvement includes studies on idiopathic membranous nephropathy, drug-induced nephrotoxicity and individualized dialysis strategies. Through his hands-on skills and research-driven approach, he remains committed to delivering comprehensive, high-quality renal care.</p>",
+      areasOfExpertise: ['Clinical nephrology','Renal transplantation (pre- and post-operative care)','Hemodialysis and peritoneal dialysis','Management of glomerular diseases','Renal biopsies and catheter placements','Post-transplant complication management'],
+      expertise: "Years of Experience: 13+",
+      qualification: " MBBS, MD in General Medicine, DM in Nephrology",
+      time: "",
+      date: "",
+      alt: 'Dr. Nithin J | Best Nephrology doctor in Bangalore | Rashtrotthana Hospital',
+      title:'',
+      description:''
+    },
   ]
   specialDoctors = ['Dr. Pramod S. Chinder', 'Dr. Meena H. B', 'Brig (Dr) S. Shashivadhanan', 'Dr. Ravishankar. D', 'Dr. Sapna S','Dr. Kalyani Dilip Karkare','Dr. Man Mohan U. S'];
 
@@ -1052,7 +1082,7 @@ export class DoctorLayoutComponent {
             cname: 'PULMONOLOGY', code: 'GM-ON'
           },
           {
-            cname: 'OPTHALMOLOGY', code: 'GM-ON'
+            cname: 'OPHTHALMOLOGY', code: 'GM-ON'
           },
           {
             cname: 'DENTAL SCIENCES', code: 'GM-ON'
