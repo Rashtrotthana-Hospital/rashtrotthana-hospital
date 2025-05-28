@@ -50,7 +50,14 @@ export class FooterComponent {
     this.router.navigate(['/blog']);
   }
   insurance(){
-    this.router.navigate(['/facility/health-insurance-plans-bangalore']);
+    this.router.navigate(['/insurance']);
+  }
+  career(){
+    this.router.navigate(['/career']);
+    console.log('career');
+  }
+  goToReviews() {
+    this.router.navigate(['/'], { fragment: 'reviews-section' });
   }
 }
 

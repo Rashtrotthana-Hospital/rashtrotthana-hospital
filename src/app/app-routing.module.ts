@@ -145,6 +145,10 @@ children: [
   path: 'doctor/:slug',
   component: NewDocPageComponent
 },
+  {
+    path: 'insurance',
+    component: InsuranceComponent
+  },
   
   { path: 'blog', component: BlogComponent },
   { path: 'blog/:slug', component: BlogPostComponent },

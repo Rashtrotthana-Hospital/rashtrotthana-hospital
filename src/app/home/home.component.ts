@@ -1,6 +1,8 @@
 import { Component,OnInit, ElementRef, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { Title, Meta,DomSanitizer,SafeHtml } from '@angular/platform-browser'; 
+import { ActivatedRoute } from '@angular/router';
+import { ViewportScroller } from '@angular/common';
 
 @Component({
   selector: 'app-home',
@@ -9,7 +11,8 @@ import { Title, Meta,DomSanitizer,SafeHtml } from '@angular/platform-browser';
 })
 export class HomeComponent implements OnInit {  
   constructor(private router: Router, private titleService: Title,  
-    private metaService: Meta) {}
+    private metaService: Meta,
+    private route: ActivatedRoute, private viewportScroller: ViewportScroller) {}
   @ViewChild('counterSection', { static: true }) counterSection!: ElementRef;
   stopcounters: any[] = [];
   doctors: number = 0;
@@ -191,6 +194,13 @@ ngOnInit(){
     root: null, // Use the viewport as the root
     threshold: 0.5 // Trigger when 50% of the section is visible
   };
+  this.route.fragment.subscribe(fragment => {
+    if (fragment) {
+      setTimeout(() => {
+        this.viewportScroller.scrollToAnchor(fragment);
+      }, 100); // slight delay ensures DOM is ready
+    }
+  });
   this.titleService.setTitle("Best Multispeciality Hospital In Bangalore");  
     
   // Set the meta description

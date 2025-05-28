@@ -1209,6 +1209,7 @@ export class NewDocPageComponent {
       time: "",
       date: "",
       alt: '',
+      id:65,
       title:'Dr. Dona Susan John | Senior Eye doctor in Bangalore',
       description:'Consult Dr. Dona Susan John, experienced ophthalmologist in Bangalore with 18 years in treating retinal conditions. Trusted care for your eye health.'
     },
@@ -1223,6 +1224,7 @@ export class NewDocPageComponent {
       qualification: " MBBS, MD in General Medicine, DM in Nephrology",
       time: "",
       date: "",
+      id:71,
       alt: 'Dr. Nithin J | Best Nephrology doctor in Bangalore | Rashtrotthana Hospital',
       title:'Dr. Nithin J | Trusted Nephrologist for Transplant & Dialysis',
       description: 'Expert in renal biopsies, dialysis, glomerular diseases, and transplant care. 1000+ procedures performed. Trusted nephrologist with 13+ years of experience.'

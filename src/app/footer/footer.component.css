@@ -19,10 +19,12 @@
 .our-links,
 .other-links {
   width: 50%;
+  position: relative;
+  /* left: 110px; */
 }
 .our-links{
   left: 93px;
-    width: 50%;
+  width: 19%;
     position: relative;
 }
 
@@ -64,6 +66,7 @@
   a {
     color: white;
     text-decoration: none;
+    pointer-events: auto;
   }
 }
 
@@ -97,7 +100,7 @@ ul {
 .links{
   display: flex;
  
-  justify-content: space-evenly;
+  justify-content: space-between;
   width: 100%;
 }
 
