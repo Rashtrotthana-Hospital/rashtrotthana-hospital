@@ -921,7 +921,7 @@ export class NewDocPageComponent {
     },
     {
       name: 'Dr. Nagesh R',
-      image: 'assets/Doc-Inv-Page/Dr-Nagesh-R.png',
+      image: 'assets/dummy-doc-male.svg',
       department: 'Radiologist',
       about: 'Dr. Nagesh R is an accomplished radiology consultant in jaydev rashtrotthana Hospital, with over a decade of experience in the field. He holds a medical degree in MBBS, DMRD and DNB and he is going to be a Fellow of the Royal College of Radiologists (FRCR), a highly esteemed qualification in the field of radiology. He is an active member of the Indian Radiology and Imaging Association.Dr. Nagesh R is an expert in general radiology and has a special interest in cardiovascular imaging, as well as performing USG and CT-guided interventions. He is highly skilled in interpreting medical images and diagnosing a wide range of medical conditions, from the most common to the most complex.',
       speciality: 'RADIOLOGY',
@@ -1139,7 +1139,7 @@ export class NewDocPageComponent {
     },
     // {
     //   name: "Dr. S K Ranjani",
-    //   image : "assets/dummy.png",
+    //   image : "assets/dummy-doc-female.svg",
     //   department: 'ENT (Ear, Nose, and Throat) ',
     //   speciality: 'ENT SPECIALITY',
     //   about : "Dr. S K Ranjani specializes in both general and complex ENT conditions, with a particular focus on airway disorders in children. She is committed to providing comprehensive care for a range of airway issues, including allergies, obstructive sleep apnea and voice alterations.",
@@ -1183,7 +1183,7 @@ export class NewDocPageComponent {
     },
     {
       name: "Dr. Sandhya S. Patil",
-      image: "assets/dummy.png",
+      image: "assets/dummy-doc-female.svg",
       department: 'ENT and Head & Neck Surgery',
       speciality: 'ENT',
       about: "Dr. Sandhya S. Patil is a skilled ENT and Head & Neck Surgeon with over a decade of experience in managing a wide range of ENT conditions. She has trained at prestigious institutions such as KEM Hospital, Pune, and St. John's Medical College, Bengaluru. Her clinical expertise spans endoscopic sinus surgeries, pediatric ENT procedures, allergy management, and complex head and neck surgeries. Dr. Sandhya Patil currently practices as a Consultant at multiple reputed hospitals in Bengaluru and also runs her own ENT clinic, Swasthya ENT Centre. She is known for her thorough patient care, surgical precision and commitment to academic excellence.",
@@ -1228,6 +1228,38 @@ export class NewDocPageComponent {
       alt: 'Dr. Nithin J | Best Nephrology doctor in Bangalore | Rashtrotthana Hospital',
       title:'Dr. Nithin J | Trusted Nephrologist for Transplant & Dialysis',
       description: 'Expert in renal biopsies, dialysis, glomerular diseases, and transplant care. 1000+ procedures performed. Trusted nephrologist with 13+ years of experience.'
+    },
+        {
+      name: "Dr. Dhruva Ithal",
+      image: "assets/dr-dhruva-ithal.png",
+      department: 'Psychiatry',
+      speciality: 'PSYCHIATRY',
+      about: "<p>Dr. Dhruva Ithal is a highly accomplished psychiatrist with extensive experience across clinical care, academic research and mental health training. A graduate of NIMHANS with an MD and Ph.D. in Psychiatry, he has also held a prestigious Research Training Fellowship from the Wellcome Trust-DBT India Alliance. His expertise spans a wide range of psychiatric conditions, with a strong focus on treatment-resistant schizophrenia, adolescent mental health, substance use disorders and neurostimulation therapies such as ECT and TMS.</p> <p>Dr. Dhruva has been associated with leading institutions including NIMHANS and Harvard Medical School (as a visiting research scholar), and has contributed to several national and international research projects. He integrates neuroscience, psychotherapy and holistic practices like yoga and art therapy into patient care. Passionate about advancing mental health awareness and evidence-based treatment, he is also actively involved in training young professionals and engaging with the community through public education initiatives.</p>",
+      areasOfExpertise: ['General & Adult Psychiatry', 'Schizophrenia', 'Brain Stimulation Techniques (ECT, TMS)', 'Neuroimaging and Functional MRI', 'Substance Use Disorders', 'Adolescent Psychiatry', 'Perinatal Psychiatry', 'Psychotherapy (CBT, Psychodynamic, Trauma-focused)', 'Dance, Art, and Yoga-based therapies'],
+      expertise: "Years of Experience: 13+",
+      qualification: "MBBS, MD (NIMHANS), Ph.D. in Psychiatry (NIMHANS)",
+      time: "",
+      date: "",
+      alt: 'Dr. Dhruva Ithal - Expert Psychiatrist in Bangalore',
+      title:'Dr. Dhruva Ithal - Expert Psychiatrist in Bangalore',
+      id: 69,
+      description:'Dr. Dhruva Ithal specializes in schizophrenia, adolescent psychiatry, neurostimulation therapies, and psychotherapy with 13+ years of clinical experience.'
+    },
+    {
+      name: "Dr. Limesh M",
+      image: "assets/dummy-doc-male.svg",
+      department: 'Nephrology',
+      speciality: 'NEPHROLOGY',
+      about: "<p>Dr. Limesh M is a nephrologist and transplant physician with a strong foundation in both clinical care and academic nephrology. His core strengths include vascular access procedures, kidney biopsies and the comprehensive management of transplant patients. He has a keen interest in CKD prevention, acute kidney injury in critical care settings and post-transplant immunosuppression monitoring.</p> <p>posters presented at reputed national forums on topics such as CRBSI incidence, the safety of ACE inhibitors in CKD, MMF level monitoring and rare conditions like Dent’s disease and nephrogenic systemic fibrosis. Known for his systematic and patient-centered approach, Dr. Limesh integrates evidence-based medicine with procedural expertise to support high-quality kidney care.</p>",
+      areasOfExpertise: ['Management of chronic kidney disease (CKD) and acute kidney injury (AKI)','Critical care nephrology and ICU monitoring','Kidney transplantation (live and cadaveric)','Renal biopsies and vascular access procedures','Catheterization techniques (jugular and femoral)','Post-transplant care and immunosuppressive therapy monitoring','Nephrology-related emergency and casualty care'],
+      expertise: "Years of Experience: 15+",
+      qualification: "MBBS, MD in General Medicine, DNB (Nephrology)",
+      time: "",
+      date: "",
+      id : 70,
+      alt: 'Dr. Limesh M | Nephrologist & Transplant Physician Bangalore',
+      title:'Dr. Limesh M | Nephrologist & Transplant Physician',
+      description:'Dr. Limesh M offers expert care in CKD, AKI, dialysis, renal biopsies, and kidney transplantation. 15+ years of experience in nephrology and ICU care.'
     },
     // {
     //   name: "",

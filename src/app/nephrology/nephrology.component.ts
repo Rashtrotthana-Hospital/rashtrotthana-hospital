@@ -31,6 +31,12 @@ export class NephrologyComponent {
       doctor_name:'Dr. Nithin J',
       experience : "13",
       docalt : 'Dr. Nithin J | Best Nephrology doctor in Bangalore | Rashtrotthana Hospital'
+    },
+    {
+      doctor_image:'../../assets/Dr-Nagesh-R.png',
+      doctor_name:'Dr. Limesh M',
+      experience : "15",
+      docalt : 'Dr. Limesh M | Nephrologist & Transplant Physician Bangalore'
     }
   ]
 

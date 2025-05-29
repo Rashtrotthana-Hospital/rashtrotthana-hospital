@@ -1005,7 +1005,7 @@ export class DoctorLayoutComponent {
       {
       name: "Dr. Dona Susan John ",
       image: "assets/dr-dona-susan-john-dr-page.png",
-      department: 'Ophthalmology',
+      desgination: 'Ophthalmology',
       speciality: 'OPHTHALMOLOGY',
       about: "<p>Graduation (MBBS) from Govt Medical College, Thiruvananthapuram. (1996-2002) Post graduation(DNB Ophthal) and medical retina from Chaitanya Eye Hospital and research institute, Thiruvananthapuram. (2003-2006) Worked in Mulamoottil Eye Hospital, Kozhencherry, Kerala for 5 years.(2007-2012 April)</p> <p>Worked in Vasan Eye Care, Bangalore for 6 years. (2012 may-2018 feb) Self employed in Move &Shine orthopaedic wellness and eye clinic, Uttarahalli Bangalore from 2018 till now.</p>",
       areasOfExpertise: ['Medical Retina'],
@@ -1020,7 +1020,7 @@ export class DoctorLayoutComponent {
     {
       name: "Dr. Nithin J",
       image: "assets/dr-nithin-j-dr-page.png",
-      department: 'Nephrology',
+      desgination: 'Nephrology',
       speciality: 'NEPHROLOGY',
       about: "<p>Dr. Nithin J is a skilled and experienced nephrologist known for his precision in renal procedures and holistic approach to kidney care. He has independently performed over 1000 renal biopsies, inserted more than 1000 uncuffed jugular and femoral catheters and over 200 cuffed jugular catheters - demonstrating his strong procedural expertise.</p> <p>He has managed the complete workup and post-transplant care of more than 300 renal transplant recipients, including complex cases involving post-transplant complications. His technical proficiency is complemented by a deep clinical interest in glomerular diseases, dialysis management and transplant nephrology.</p> <p>Dr. Nithin has actively contributed to nephrology research, with several national presentations and a publication in an international journal. His academic involvement includes studies on idiopathic membranous nephropathy, drug-induced nephrotoxicity and individualized dialysis strategies. Through his hands-on skills and research-driven approach, he remains committed to delivering comprehensive, high-quality renal care.</p>",
       areasOfExpertise: ['Clinical nephrology','Renal transplantation (pre- and post-operative care)','Hemodialysis and peritoneal dialysis','Management of glomerular diseases','Renal biopsies and catheter placements','Post-transplant complication management'],
@@ -1032,6 +1032,50 @@ export class DoctorLayoutComponent {
       title:'',
       description:''
     },
+    {
+      name: "Dr. Dhruva Ithal",
+      image: "assets/dr-dhruva-ithal-doctor-page.png",
+      desgination: 'Psychiatry',
+      speciality: 'PSYCHIATRY',
+      about: "<p>Dr. Dhruva Ithal is a highly accomplished psychiatrist with extensive experience across clinical care, academic research and mental health training. A graduate of NIMHANS with an MD and Ph.D. in Psychiatry, he has also held a prestigious Research Training Fellowship from the Wellcome Trust-DBT India Alliance. His expertise spans a wide range of psychiatric conditions, with a strong focus on treatment-resistant schizophrenia, adolescent mental health, substance use disorders and neurostimulation therapies such as ECT and TMS.</p> <p>Dr. Dhruva has been associated with leading institutions including NIMHANS and Harvard Medical School (as a visiting research scholar), and has contributed to several national and international research projects. He integrates neuroscience, psychotherapy and holistic practices like yoga and art therapy into patient care. Passionate about advancing mental health awareness and evidence-based treatment, he is also actively involved in training young professionals and engaging with the community through public education initiatives.</p>",
+      areasOfExpertise: ['General & Adult Psychiatry', 'Schizophrenia', '* Brain Stimulation Techniques (ECT, TMS)', 'Neuroimaging and Functional MRI', '* Substance Use Disorders', 'Adolescent Psychiatry', 'Perinatal Psychiatry', 'Psychotherapy (CBT, Psychodynamic, Trauma-focused)', 'Dance, Art, and Yoga-based therapies'],
+      expertise: "Years of Experience: 13+",
+      qualification: "MBBS, MD (NIMHANS), Ph.D. in Psychiatry (NIMHANS)",
+      time: "",
+      date: "",
+      alt: 'Dr. Dhruva Ithal - Expert Psychiatrist in Bangalore',
+      description:''
+    },
+    {
+      name: "Dr. Limesh M",
+      image: "assets/Dr-Nagesh-R.png",
+      desgination: 'Nephrology',
+      speciality: 'NEPHROLOGY',
+      about: "<p>Dr. Limesh M is a nephrologist and transplant physician with a strong foundation in both clinical care and academic nephrology. His core strengths include vascular access procedures, kidney biopsies and the comprehensive management of transplant patients. He has a keen interest in CKD prevention, acute kidney injury in critical care settings and post-transplant immunosuppression monitoring.</p> <p>posters presented at reputed national forums on topics such as CRBSI incidence, the safety of ACE inhibitors in CKD, MMF level monitoring and rare conditions like Dent’s disease and nephrogenic systemic fibrosis. Known for his systematic and patient-centered approach, Dr. Limesh integrates evidence-based medicine with procedural expertise to support high-quality kidney care.</p>",
+      areasOfExpertise: ['Management of chronic kidney disease (CKD) and acute kidney injury (AKI)','Critical care nephrology and ICU monitoring','Kidney transplantation (live and cadaveric)','Renal biopsies and vascular access procedures','Catheterization techniques (jugular and femoral)','Post-transplant care and immunosuppressive therapy monitoring','Nephrology-related emergency and casualty care'],
+      expertise: "Years of Experience: 15+",
+      qualification: "MBBS, MD in General Medicine, DNB (Nephrology)",
+      time: "",
+      date: "",
+      alt: 'Dr. Limesh M | Nephrologist & Transplant Physician Bangalore',
+      title:'',
+      description:''
+    },
+    // {
+    //   name: "",
+    //   image: "",
+    //   department: '',
+    //   speciality: '',
+    //   about: "",
+    //   areasOfExpertise: [],
+    //   expertise: "Years of Experience: +",
+    //   qualification: "",
+    //   time: "",
+    //   date: "",
+    //   alt: '',
+    //   title:'',
+    //   description:''
+    // },
   ]
   specialDoctors = ['Dr. Pramod S. Chinder', 'Dr. Meena H. B', 'Brig (Dr) S. Shashivadhanan', 'Dr. Ravishankar. D', 'Dr. Sapna S','Dr. Kalyani Dilip Karkare','Dr. Man Mohan U. S'];
 
