@@ -32,6 +32,12 @@ export class PsychiatryComponent {
       experience : "11",
       docalt : "Best psychiatrist in RR Nagar Bangalore | Dr. Gopal Das C M' | Rashtrotthana Hospital"
     },
+    {
+      doctor_image:'../../assets/dr-dhruva-ithal-doctor-page.png',
+      doctor_name:'Dr. Dhruva Ithal',
+      experience : "13",
+      docalt : "Dr. Dhruva Ithal - Expert Psychiatrist in Bangalore"
+    },
   ];
 
   faqs : any = [
