@@ -37,7 +37,7 @@ export class AyurvedhaDoctorsCarouselComponent {
       alt : 'Dr. Venkatesh H. S | Best Ayurveda Endocrinologist in Bangalore | Rashtrotthana Hospital'
     },
     {
-      image: '../../assets/Dr-Sapna-S.jpg',
+      image: '../../assets/dr-sapna-dr-page.jpg',
       name: "Dr. Sapna S",
       section: "MD (Ayu) in Rasa Shastra and Bhaishajya Kalpana, PG Dip (Yoga) Diploma in Medical Astrology",
       designation: "Ayurveda Specialist",

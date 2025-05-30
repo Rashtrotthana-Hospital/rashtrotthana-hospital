@@ -937,7 +937,7 @@ export class NewDocPageComponent {
     },
     {
       name: 'Dr. Sapna S',
-      image: 'assets/Doc-Inv-Page/Dr-Sapna-S.png',
+      image: 'assets/dr-sapna.png',
       department: 'AYURVEDA',
       about: 'Dr. Sapna S. is an experienced Ayurvedic professional with over 20 years of teaching and practice in Ayurveda, specializing in Rasashastra, Bhaishajya Kalpana and Panchakarma therapies. She holds an MD from SDM College, Udupi, along with additional qualifications such as a Postgraduate Diploma in Yoga and a Diploma in Medical Astrology. Dr. Sapna has been instrumental in shaping Ayurvedic education, working at renowned institutions including Sushruta Ayurvedic Medical College and Kalabahairaveshwara Ayurvedic Medical College in Bangalore and most recently, as a professor at Sanskriti Ayurvedic Medical College, Mathura.Her 20-year career includes 17 years in Bangalore and 3 years at Sanskriti Ayurvedic College, where she has dedicated herself to making Ayurvedic knowledge engaging and accessible for students. ',
       speciality: 'AYURVEDA',
@@ -1183,7 +1183,7 @@ export class NewDocPageComponent {
     },
     {
       name: "Dr. Sandhya S. Patil",
-      image: "assets/dummy-doc-female.svg",
+      image: "assets/dr-sandhaya.png",
       department: 'ENT and Head & Neck Surgery',
       speciality: 'ENT',
       about: "Dr. Sandhya S. Patil is a skilled ENT and Head & Neck Surgeon with over a decade of experience in managing a wide range of ENT conditions. She has trained at prestigious institutions such as KEM Hospital, Pune, and St. John's Medical College, Bengaluru. Her clinical expertise spans endoscopic sinus surgeries, pediatric ENT procedures, allergy management, and complex head and neck surgeries. Dr. Sandhya Patil currently practices as a Consultant at multiple reputed hospitals in Bengaluru and also runs her own ENT clinic, Swasthya ENT Centre. She is known for her thorough patient care, surgical precision and commitment to academic excellence.",
