@@ -45,7 +45,7 @@ export class ENTComponent {
       docalt : 'Dr. Manasa N. A | Best ENT Consultant in Bangalore | Rashtrotthana Hospital'
     },  
     {
-      doctor_image:'../../assets/dummy.png',
+      doctor_image:'../../assets/dr-sandhya-dr-page.png',
       doctor_name:'Dr. Sandhya S. Patil',
       experience : "10+",
       docalt : 'Dr. Sandhya S. Patil | Best ENT Consultant in Bangalore | Rashtrotthana Hospital'
