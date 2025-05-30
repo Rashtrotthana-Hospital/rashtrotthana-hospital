@@ -255,19 +255,19 @@ export class DoctorLayoutComponent {
       date: 'Monday-Saturday',
       alt: 'Dr. Geethanjali K. G | Best Dental Surgery Doctor in Bangalore | Rashtrotthana Hospital | RR Nagar Bangalore'
     },
-    {
-      name: 'Dr. Santhosh S',
-      image: 'assets/Dr-Santhosh-S.png',
-      desgination: 'CONSULTANT NEPHROLOGIST & TRANSPLANT PHYSICIAN',
-      about: 'Dr. Santhosh S is graduated from AJIMS, MANAGALORE in 2008. He finished his post graduation (MD Internal medicine) from KIMS HUBLI. He has also completed DNB Nephrology from MANIPAL HOSPITAL BENGALURU in 2018.',
-      speciality: 'NEPHROLOGY',
-      areasOfExpertise: ['General nephrology,', 'Diabetic kidney disease','Kidney transplantation','Glomerular diseases','Hemodialysis','Resistant hypertension','Pregnancy and kidney disease'],
-      expertise: 'Years of Experience: 14',
-      qualification: 'MBBS, MD, DM(NEPHROLOGY)',
-      time: '10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00,16:40-17:00,17:00-17:20,17:20-17:40,17:40-18:00,18:00-18:20,18:20-18:40,18:40-19:00,19:00-19:20,19:20-19:40,19:40-20:00,20:00-20:20,20:20-20:40,20:40-21:00,21:00-21:20,21:20-21:40,21:40-22:00,22:00-22:20,22:20-22:40,22:40-23:00,23:00-23:15,23:15-23:30',
-      date: 'Monday-Saturday',
-      alt: 'Dr. Santhosh S | Best Nephrologist in Bangalore | Rashtrotthana Hospital | RR Nagar Bangalore'
-    },
+    // {
+    //   name: 'Dr. Santhosh S',
+    //   image: 'assets/Dr-Santhosh-S.png',
+    //   desgination: 'CONSULTANT NEPHROLOGIST & TRANSPLANT PHYSICIAN',
+    //   about: 'Dr. Santhosh S is graduated from AJIMS, MANAGALORE in 2008. He finished his post graduation (MD Internal medicine) from KIMS HUBLI. He has also completed DNB Nephrology from MANIPAL HOSPITAL BENGALURU in 2018.',
+    //   speciality: 'NEPHROLOGY',
+    //   areasOfExpertise: ['General nephrology,', 'Diabetic kidney disease','Kidney transplantation','Glomerular diseases','Hemodialysis','Resistant hypertension','Pregnancy and kidney disease'],
+    //   expertise: 'Years of Experience: 14',
+    //   qualification: 'MBBS, MD, DM(NEPHROLOGY)',
+    //   time: '10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00,16:40-17:00,17:00-17:20,17:20-17:40,17:40-18:00,18:00-18:20,18:20-18:40,18:40-19:00,19:00-19:20,19:20-19:40,19:40-20:00,20:00-20:20,20:20-20:40,20:40-21:00,21:00-21:20,21:20-21:40,21:40-22:00,22:00-22:20,22:20-22:40,22:40-23:00,23:00-23:15,23:15-23:30',
+    //   date: 'Monday-Saturday',
+    //   alt: 'Dr. Santhosh S | Best Nephrologist in Bangalore | Rashtrotthana Hospital | RR Nagar Bangalore'
+    // },
     {
       name: 'Dr. Sowmya Bhat S',
       image: 'assets/Dr-Sowmya-Bhat-S.png',
@@ -413,7 +413,7 @@ export class DoctorLayoutComponent {
     {
       name: 'Dr. Nishanth Lakshmikantha',
       image: 'assets/Dr-Nishanth-Lakshmikantha.png',
-      desgination: 'GENERAL & GI SURGERY/Gastrosciences',
+      desgination: 'General, GI and Robotic Surgery',
       speciality: 'GENERAL SURGERY',
       about: ' Dr. Nishanth Lakshmikantha is a highly skilled surgeon known for excellence in both clinical practice and academic achievement. Having secured a rank in the Surgery university exams he has built a reputation for precision, dedication and innovation in the surgical field.His excellent grasp in communication and clinical examination of patients ensures they receive the most effective treatments available.  His forward-thinking approach and commitment to mastering advanced surgical techniques made him embrace laparoscopic surgery early in his career and has made significant strides in the field of minimally invasive procedures such as Laparoscopic and Robotic surgeries.',
       areasOfExpertise: [' Laparoscopic & Robotic surgery', 'Laser proctology '],
@@ -596,19 +596,19 @@ export class DoctorLayoutComponent {
       date: 'Monday-Saturday',
       alt : 'Dr. Anusha Mutalik Desai | Best Homeopathy Doctor in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore'
     },
-    {
-      name: 'Dr. Ajay N',
-      image: 'assets/Dr-Ajay-N.png',
-      desgination: 'GASTRO SCIENCES',
-      speciality: 'GASTRO SCIENCES',
-      about: 'Dr. Ajay N is a dedicated surgeon specializing in gastrosciences, known for their expertise and compassionate care. With years of experience, Dr. Ajay N has mastered advanced surgical techniques, focusing on gastrointestinal disorders and innovative treatment approaches. Their commitment to patient outcomes is evident in their meticulous attention to detail and ability to foster trust with patients and families. Outside the operating room, Dr. Ajay N participates in community outreach programs, promoting awareness of gastrointestinal health. Dr. Ajay N continues to make significant impacts in the lives of those they serve.',
-      areasOfExpertise: ['Laparoscopic surgery', 'Proctology', 'General Surgery'],
-      qualification: 'MBBS, MS(General Surgery)',
-      expertise: 'Years of Experience: 4',
-      time: '09:30-09:50,09:50-10:10,10:10-10:30,10:30-10:50,10:50-11:10,11:10-11:30,11:30-11:50,11:50-12:10,12:10-12:30,12:30-12:50,12:50-13:10,13:10-13:30,13:30-13:50,13:50-14:10,14:10-14:30,14:30-14:50,14:50-15:10,15:10-15:30,15:30-15:50,15:50-16:10,16:10-16:30,16:30-16:50,16:50-17:00',
-      date: 'Monday-Saturday',
-      alt : 'Dr. Ajay N | Best Gastro Doctor in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore'
-    },
+    // {
+    //   name: 'Dr. Ajay N',
+    //   image: 'assets/Dr-Ajay-N.png',
+    //   desgination: 'GASTRO SCIENCES',
+    //   speciality: 'GASTRO SCIENCES',
+    //   about: 'Dr. Ajay N is a dedicated surgeon specializing in gastrosciences, known for their expertise and compassionate care. With years of experience, Dr. Ajay N has mastered advanced surgical techniques, focusing on gastrointestinal disorders and innovative treatment approaches. Their commitment to patient outcomes is evident in their meticulous attention to detail and ability to foster trust with patients and families. Outside the operating room, Dr. Ajay N participates in community outreach programs, promoting awareness of gastrointestinal health. Dr. Ajay N continues to make significant impacts in the lives of those they serve.',
+    //   areasOfExpertise: ['Laparoscopic surgery', 'Proctology', 'General Surgery'],
+    //   qualification: 'MBBS, MS(General Surgery)',
+    //   expertise: 'Years of Experience: 4',
+    //   time: '09:30-09:50,09:50-10:10,10:10-10:30,10:30-10:50,10:50-11:10,11:10-11:30,11:30-11:50,11:50-12:10,12:10-12:30,12:30-12:50,12:50-13:10,13:10-13:30,13:30-13:50,13:50-14:10,14:10-14:30,14:30-14:50,14:50-15:10,15:10-15:30,15:30-15:50,15:50-16:10,16:10-16:30,16:30-16:50,16:50-17:00',
+    //   date: 'Monday-Saturday',
+    //   alt : 'Dr. Ajay N | Best Gastro Doctor in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore'
+    // },
     {
       name: 'Dr. Varsha P',
       image: 'assets/Dr-Varsha-P.png',

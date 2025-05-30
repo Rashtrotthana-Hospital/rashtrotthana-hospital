@@ -501,7 +501,7 @@ export class NewDocPageComponent {
     {
       name: 'Dr. Nishanth Lakshmikantha',
       image: 'assets/Doc-Inv-Page/Dr-Nishanth-Lakshmikantha.png',
-      department: 'GENERAL & GI SURGERY/Gastrosciences',
+      department: 'General, GI and Robotic Surgery',
       speciality: 'GENERAL SURGERY',
       about: ' Dr. Nishanth Lakshmikantha is a highly skilled surgeon known for excellence in both clinical practice and academic achievement. Having secured a rank in the Surgery university exams he has built a reputation for precision, dedication and innovation in the surgical field.His excellent grasp in communication and clinical examination of patients ensures they receive the most effective treatments available.  His forward-thinking approach and commitment to mastering advanced surgical techniques made him embrace laparoscopic surgery early in his career and has made significant strides in the field of minimally invasive procedures such as Laparoscopic and Robotic surgeries.',
       areasOfExpertise: [' Laparoscopic & Robotic surgery', 'Laser proctology '],
