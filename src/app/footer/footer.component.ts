@@ -59,5 +59,8 @@ export class FooterComponent {
   goToReviews() {
     this.router.navigate(['/'], { fragment: 'reviews-section' });
   }
+  termsnconditions() {
+    this.router.navigate(['/terms-and-conditions'])
+  }
 }
 

@@ -121,6 +121,7 @@ import { CareerComponent } from './career/career.component';
 import { MuthrubhavaComponent } from './muthrubhava/muthrubhava.component';
 import { CareerPagePopupComponent } from './career-page-popup/career-page-popup.component';
 import { NewDocPageComponent } from './new-doc-page/new-doc-page.component';
+import { TermsAndConditionsComponent } from './terms-and-conditions/terms-and-conditions.component';
 
 
 @NgModule({
@@ -215,7 +216,8 @@ import { NewDocPageComponent } from './new-doc-page/new-doc-page.component';
     CareerComponent,
     MuthrubhavaComponent,
     CareerPagePopupComponent,
-    NewDocPageComponent
+    NewDocPageComponent,
+    TermsAndConditionsComponent
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   imports: [
