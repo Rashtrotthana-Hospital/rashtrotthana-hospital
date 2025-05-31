@@ -60,6 +60,7 @@ import { RheumatologyComponent } from './rheumatology/rheumatology.component';
 import { CareerComponent } from './career/career.component';
 import { MuthrubhavaComponent } from './muthrubhava/muthrubhava.component';
 import { NewDocPageComponent } from './new-doc-page/new-doc-page.component';
+import { TermsAndConditionsComponent } from './terms-and-conditions/terms-and-conditions.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -145,6 +146,7 @@ children: [
   path: 'doctor/:slug',
   component: NewDocPageComponent
 },
+{path: 'terms-and-conditions', component: TermsAndConditionsComponent},
   {
     path: 'insurance',
     component: InsuranceComponent
