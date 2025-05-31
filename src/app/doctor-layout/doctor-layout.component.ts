@@ -1048,7 +1048,7 @@ export class DoctorLayoutComponent {
     },
     {
       name: "Dr. Limesh M",
-      image: "assets/Dr-Nagesh-R.png",
+      image: "assets/dr-limesh-dr-page.png",
       desgination: 'Nephrology',
       speciality: 'NEPHROLOGY',
       about: "<p>Dr. Limesh M is a nephrologist and transplant physician with a strong foundation in both clinical care and academic nephrology. His core strengths include vascular access procedures, kidney biopsies and the comprehensive management of transplant patients. He has a keen interest in CKD prevention, acute kidney injury in critical care settings and post-transplant immunosuppression monitoring.</p> <p>posters presented at reputed national forums on topics such as CRBSI incidence, the safety of ACE inhibitors in CKD, MMF level monitoring and rare conditions like Dent’s disease and nephrogenic systemic fibrosis. Known for his systematic and patient-centered approach, Dr. Limesh integrates evidence-based medicine with procedural expertise to support high-quality kidney care.</p>",
