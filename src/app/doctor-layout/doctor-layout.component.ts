@@ -1249,8 +1249,16 @@ export class DoctorLayoutComponent {
     //     element.scrollIntoView({ behavior: 'smooth' });
     //   }
     // }, 100);
-    const slug = doctor.name.toLowerCase().replace(/\s+/g, '-');
-    this.router.navigate(['/doctor', slug]);
+    // const slug = doctor.name.toLowerCase().replace(/\s+/g, '-');
+    // this.router.navigate(['/doctor', slug]);
+
+    const slug = doctor.name
+  .toLowerCase()
+  .replace(/\./g, '')       // Remove all dots
+  .replace(/\s+/g, '-');    // Replace spaces with hyphens
+
+this.router.navigate(['/doctor', slug]);
+
   }
 
   selectDoctorAppoint(doctor: any) {

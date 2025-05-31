@@ -55,6 +55,7 @@ export class NewDocPageComponent {
   ngOnInit(): void {
     this.route.params.subscribe(params => {
       const slug = params['slug'];
+      console.log(slug)
       this.loadDoctorBySlug(slug);
     });
     this.contactForm = this.fb.group({
@@ -70,8 +71,13 @@ export class NewDocPageComponent {
   loadDoctorBySlug(slug: string) {
     // Replace with actual data source (e.g., service or static list)
     const doctor = this.allDoctors.find(doc =>
-      doc.name.toLowerCase().replace(/\s+/g, '-') === slug
+      doc.name
+        .toLowerCase()
+        .replace(/\./g, '')      // Remove dots
+        .replace(/\s+/g, '-')    // Replace spaces with hyphens
+      === slug
     );
+    console.log(doctor)
 
     if (doctor) {
       this.filteredDoctor = doctor;
