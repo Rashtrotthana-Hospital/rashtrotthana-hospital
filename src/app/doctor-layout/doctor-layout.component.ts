@@ -1003,7 +1003,7 @@ export class DoctorLayoutComponent {
         alt : 'Dr. Sandhya S. Patil | Best ENT Consultant in Bangalore | Rashtrotthana Hospital'
       },
       {
-      name: "Dr. Dona Susan John ",
+      name: "Dr. Dona Susan John",
       image: "assets/dr-dona-susan-john-dr-page.png",
       desgination: 'Ophthalmology',
       speciality: 'OPHTHALMOLOGY',
