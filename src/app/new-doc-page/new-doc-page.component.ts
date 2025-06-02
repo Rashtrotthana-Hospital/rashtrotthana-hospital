@@ -1209,7 +1209,7 @@ export class NewDocPageComponent {
       department: 'Ophthalmology',
       speciality: 'OPHTHALMOLOGY',
       about: "<p>Graduation (MBBS) from Govt Medical College, Thiruvananthapuram. (1996-2002)   `Post graduation(DNB Ophthal) and medical retina from Chaitanya Eye Hospital and research institute, Thiruvananthapuram. (2003-2006)<p> <p>Worked in Mulamoottil Eye Hospital, Kozhencherry, Kerala for 5 years.(2007-2012 April)</p> <p>Worked in Vasan Eye Care, Bangalore for 6 years. (2012 may-2018 feb) Self employed in Move &Shine orthopaedic wellness and eye clinic, Uttarahalli Bangalore from 2018 till now.</p>",
-      areasOfExpertise: ['Medical Retina'],
+      areasOfExpertise: ['Medical Retina', 'General Ophthalmology', 'Diabetic Retinopathy Screening and Treatment', 'Age related Macular Degeneration Screening and Treatment', 'Lasers and Intravitreal injections'],
       expertise: "Years of Experience: 18+",
       qualification: "MBBS, DNB Ophthal, FICO",
       time: "",
