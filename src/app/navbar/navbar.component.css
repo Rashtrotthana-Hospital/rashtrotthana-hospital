@@ -8,6 +8,10 @@
   width: 100%;
 }
 
+.responsive{
+  display: none;
+}
+
 .contact-nav {
   display: flex;
   width: 100%;
@@ -249,6 +253,19 @@ input [type=text],[type=email]{
   width: 15px;
   height: 15px;
 }
+
+.sam-nav{
+  position: absolute;
+  top: 76px;
+  background: white;
+}
+
+/* .sam-nav:hover{
+  background: #0392CE;
+} */
+
+
+
 @media screen and (max-width: 1390px) {
  #navbar ul li a{
     font-size: 12px;
@@ -360,6 +377,10 @@ input [type=text],[type=email]{
    .submit-text{
     padding: 12px;
    }
+
+   .responsive{
+  display: block;
+}
 
 }
 @media only screen and (max-width: 600px) {

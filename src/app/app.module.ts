@@ -122,6 +122,7 @@ import { MuthrubhavaComponent } from './muthrubhava/muthrubhava.component';
 import { CareerPagePopupComponent } from './career-page-popup/career-page-popup.component';
 import { NewDocPageComponent } from './new-doc-page/new-doc-page.component';
 import { TermsAndConditionsComponent } from './terms-and-conditions/terms-and-conditions.component';
+import { SamrakshaComponent } from './samraksha/samraksha.component';
 
 
 @NgModule({
@@ -217,7 +218,8 @@ import { TermsAndConditionsComponent } from './terms-and-conditions/terms-and-co
     MuthrubhavaComponent,
     CareerPagePopupComponent,
     NewDocPageComponent,
-    TermsAndConditionsComponent
+    TermsAndConditionsComponent,
+    SamrakshaComponent
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   imports: [
