@@ -61,106 +61,112 @@ import { CareerComponent } from './career/career.component';
 import { MuthrubhavaComponent } from './muthrubhava/muthrubhava.component';
 import { NewDocPageComponent } from './new-doc-page/new-doc-page.component';
 import { TermsAndConditionsComponent } from './terms-and-conditions/terms-and-conditions.component';
+import { SamrakshaComponent } from './samraksha/samraksha.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'about-us', component: AboutUsComponent },
-  { path:"career", component:CareerComponent},
-  { path: 'specialities', component: SpecalitiesComponent,
-  children: [
-    {path:'best-general-medicine-hospital-in-bangalore', component:ModernMedicineComponent},
+  { path: "career", component: CareerComponent },
+  {
+    path: 'specialities', component: SpecalitiesComponent,
+    children: [
+      { path: 'best-general-medicine-hospital-in-bangalore', component: ModernMedicineComponent },
 
-  {path:'internal-medicine-hospital-in-bangalore',component:GeneralMedicineComponent},
-  {path:'best-general-surgery-hospital-in-bangalore',component:GeneralSurgeryComponent},
-  {path:'best-paediatric-hospital-in-bangalore',component:PaediatricsComponent},
-  {path:'best-nephrology-hospital-in-bangalore',component:NephrologyComponent},
-  {path:'best-urology-hospital-in-bangalore',component:UrologyComponent},
-  {path:'best-orthopaedics-hospital-in-bangalore',component:OrthopedicsComponent},
-  {path:'best-gastroenterology-hospital-in-bangalore',component:GastrosciencesComponent},
-  {path:'best-cardiology-hospital-in-bangalore',component:CardiacComponent},
-  {path:'best-pulmonology-hospital-in-bangalore',component:PulmonologyComponent},
-  {path:'best-eye-hospital-in-bangalore',component:OphthalmologyComponent},
-  {path:'best-dental-hospital-in-bangalore',component:DentalComponent},
-  {path:'best-ent-hospital-in-bangalore',component:ENTComponent},
-  {path:'best-neurology-hospital-in-bangalore',component:NeurosciencesComponent},
-  {path:'best-pshychiatry-hospital-in-bangalore',component:PsychiatryComponent},
-  {path:'best-oncology-hospital-in-bangalore',component:OncologyComponent},
-  {path:'best-emergency-medicine-hospital-in-bangalore',component:EmergencyMedicineComponent},
-  // {path:'emergency-medicine',component:EmergencyMedicineComponent},
-  {path:'best-anesthesiology-hospital-in-india',component:AnesthesiologyComponent},
-  {path:'best-obstetrics-and-gynecologist-hospital-in-bangalore',component:ObstetricsGynaecologyComponent},
-  {path:'best-endocrinology-hospital-in-bangalore',component:EndocrinologyComponent},
-  {path:'rheumatology-hospital-bangalore', component:RheumatologyComponent},
-
-  
-  {path:'yoga-therapy-bangalore',component:YogaComponent},
-  {path:'ayurvedic-treatment-bangalore',component:AyurvedaComponent},
-  {path:'homeopathy-treatment-bangalore',component:HomeopathyComponent},
-  {path:'lifestyle-medicine-bangalore',component:NaturopathyComponent},
-  {path: 'research-center', component: ResearchComponent},
-]},
-
-  {path:'yoga-therapy-bangalore',component:YogaComponent},
-  {path:'ayurvedic-treatment-bangalore',component:AyurvedaComponent},
-  {path:'homeopathy-treatment-bangalore',component:HomeopathyComponent},
-  {path:'lifestyle-medicine-bangalore',component:NaturopathyComponent},
-  {path:'advisory-board-members',component:AdvisoryBoardMembersComponent},
-  {path:'ethical-committee',component:EthicCommitteeComponent},
+      { path: 'internal-medicine-hospital-in-bangalore', component: GeneralMedicineComponent },
+      { path: 'best-general-surgery-hospital-in-bangalore', component: GeneralSurgeryComponent },
+      { path: 'best-paediatric-hospital-in-bangalore', component: PaediatricsComponent },
+      { path: 'best-nephrology-hospital-in-bangalore', component: NephrologyComponent },
+      { path: 'best-urology-hospital-in-bangalore', component: UrologyComponent },
+      { path: 'best-orthopaedics-hospital-in-bangalore', component: OrthopedicsComponent },
+      { path: 'best-gastroenterology-hospital-in-bangalore', component: GastrosciencesComponent },
+      { path: 'best-cardiology-hospital-in-bangalore', component: CardiacComponent },
+      { path: 'best-pulmonology-hospital-in-bangalore', component: PulmonologyComponent },
+      { path: 'best-eye-hospital-in-bangalore', component: OphthalmologyComponent },
+      { path: 'best-dental-hospital-in-bangalore', component: DentalComponent },
+      { path: 'best-ent-hospital-in-bangalore', component: ENTComponent },
+      { path: 'best-neurology-hospital-in-bangalore', component: NeurosciencesComponent },
+      { path: 'best-pshychiatry-hospital-in-bangalore', component: PsychiatryComponent },
+      { path: 'best-oncology-hospital-in-bangalore', component: OncologyComponent },
+      { path: 'best-emergency-medicine-hospital-in-bangalore', component: EmergencyMedicineComponent },
+      // {path:'emergency-medicine',component:EmergencyMedicineComponent},
+      { path: 'best-anesthesiology-hospital-in-india', component: AnesthesiologyComponent },
+      { path: 'best-obstetrics-and-gynecologist-hospital-in-bangalore', component: ObstetricsGynaecologyComponent },
+      { path: 'best-endocrinology-hospital-in-bangalore', component: EndocrinologyComponent },
+      { path: 'rheumatology-hospital-bangalore', component: RheumatologyComponent },
 
 
-  { path: 'facility', component: FacilitiesComponent,
-children: [
-  {path:'best-ambulance-service-rashtrotthana-hospital-bangalore', component:AbulanceComponent},
-  {path:'dietary-services-bangalore', component:DieteryComponent},
-  {path:'best-emergency-trauma-multispeciality-hospital-bangalore', component:EmergencyFacilityComponent},
-  {path:'best-intensive-care-unit-multispeciality-hospital-bangalore', component:IcuComponent},
-  {path:'laboratory-services-bangalore', component:LaboratoryComponent},
-  {path:'operation-theatre-bangalore', component:OperationTheatreComponent},
-  {path:'physiotherapy-services-bangalore', component:PhysiotherapyComponent},
-  {path:'inpatient-facility-bangalore',component:InPatientComponent},
-  {path:'top-diagnostics-multi-speciality-hospital-bangalore',component:RadiologyComponent},
-  {path:'endoscopy-services-bangalore',component:EndoscopyComponent},
-  {path:'nutrition-dietetics-services-bangalore',component:NutritionComponent},
-  {path:'24-hours-pharmacy-store-bangalore',component:PharmacyComponent},
-  {path:'health-insurance-plans-bangalore',component:InsuranceComponent},
-  {path:'best-kidney-dialysis-multispeciality-hospital-bangalore',component:DialysisComponent},
-]},
-{path:'laboratory-services-bangalore', component:LaboratoryComponent},
-{path:'best-kidney-dialysis-multispeciality-hospital-bangalore',component:DialysisComponent},
-{path:'24-hours-pharmacy-store-bangalore',component:PharmacyComponent},
-{path:'top-diagnostics-multi-speciality-hospital-bangalore',component:RadiologyComponent},
-{path:'best-emergency-trauma-multispeciality-hospital-bangalore', component:EmergencyFacilityComponent},
+      { path: 'yoga-therapy-bangalore', component: YogaComponent },
+      { path: 'ayurvedic-treatment-bangalore', component: AyurvedaComponent },
+      { path: 'homeopathy-treatment-bangalore', component: HomeopathyComponent },
+      { path: 'lifestyle-medicine-bangalore', component: NaturopathyComponent },
+      { path: 'research-center', component: ResearchComponent },
+    ]
+  },
+
+  { path: 'yoga-therapy-bangalore', component: YogaComponent },
+  { path: 'ayurvedic-treatment-bangalore', component: AyurvedaComponent },
+  { path: 'homeopathy-treatment-bangalore', component: HomeopathyComponent },
+  { path: 'lifestyle-medicine-bangalore', component: NaturopathyComponent },
+  { path: 'advisory-board-members', component: AdvisoryBoardMembersComponent },
+  { path: 'ethical-committee', component: EthicCommitteeComponent },
+
+
+  {
+    path: 'facility', component: FacilitiesComponent,
+    children: [
+      { path: 'best-ambulance-service-rashtrotthana-hospital-bangalore', component: AbulanceComponent },
+      { path: 'dietary-services-bangalore', component: DieteryComponent },
+      { path: 'best-emergency-trauma-multispeciality-hospital-bangalore', component: EmergencyFacilityComponent },
+      { path: 'best-intensive-care-unit-multispeciality-hospital-bangalore', component: IcuComponent },
+      { path: 'laboratory-services-bangalore', component: LaboratoryComponent },
+      { path: 'operation-theatre-bangalore', component: OperationTheatreComponent },
+      { path: 'physiotherapy-services-bangalore', component: PhysiotherapyComponent },
+      { path: 'inpatient-facility-bangalore', component: InPatientComponent },
+      { path: 'top-diagnostics-multi-speciality-hospital-bangalore', component: RadiologyComponent },
+      { path: 'endoscopy-services-bangalore', component: EndoscopyComponent },
+      { path: 'nutrition-dietetics-services-bangalore', component: NutritionComponent },
+      { path: '24-hours-pharmacy-store-bangalore', component: PharmacyComponent },
+      { path: 'health-insurance-plans-bangalore', component: InsuranceComponent },
+      { path: 'best-kidney-dialysis-multispeciality-hospital-bangalore', component: DialysisComponent },
+    ]
+  },
+  { path: 'laboratory-services-bangalore', component: LaboratoryComponent },
+  { path: 'best-kidney-dialysis-multispeciality-hospital-bangalore', component: DialysisComponent },
+  { path: '24-hours-pharmacy-store-bangalore', component: PharmacyComponent },
+  { path: 'top-diagnostics-multi-speciality-hospital-bangalore', component: RadiologyComponent },
+  { path: 'best-emergency-trauma-multispeciality-hospital-bangalore', component: EmergencyFacilityComponent },
 
   { path: 'health-check-up-packages-bangalore', component: HealthCheckupComponent },
   { path: 'contact-us-bangalore', component: ContactFormComponent },
-  {path: 'best-doctors-bangalore', component:DoctorLayoutComponent},
-  {path:'donate-to-hospital-bangalore', component:DonationComponent},
-  
-  {path:'total-knee-replacement-bangalore',component:KneeReplacementComponent},
-  {path:'hernia-hospital-bangalore',component:HerniaComponent},
-  {path:'piles-hospital-bangalore',component:ProctologyComponent},
-  {path:'maternity-care', component:MaternityComponent},
-  {path:'ayurvedic-thyroid-treatment', component:AyurvedaThyroidComponent},
-  {path:'mathrubhava-treatment', component:MuthrubhavaComponent},
+  { path: 'best-doctors-bangalore', component: DoctorLayoutComponent },
+  { path: 'donate-to-hospital-bangalore', component: DonationComponent },
+
+  { path: 'total-knee-replacement-bangalore', component: KneeReplacementComponent },
+  { path: 'hernia-hospital-bangalore', component: HerniaComponent },
+  { path: 'piles-hospital-bangalore', component: ProctologyComponent },
+  { path: 'maternity-care', component: MaternityComponent },
+  { path: 'ayurvedic-thyroid-treatment', component: AyurvedaThyroidComponent },
+  { path: 'mathrubhava-treatment', component: MuthrubhavaComponent },
   {
-  path: 'doctor/:slug',
-  component: NewDocPageComponent
-},
-{path: 'terms-and-conditions', component: TermsAndConditionsComponent},
+    path: 'doctor/:slug',
+    component: NewDocPageComponent
+  },
+  { path: 'samraksha', component: SamrakshaComponent },
+  { path: 'terms-and-conditions', component: TermsAndConditionsComponent },
   {
     path: 'insurance',
     component: InsuranceComponent
   },
-  
+
   { path: 'blog', component: BlogComponent },
   { path: 'blog/:slug', component: BlogPostComponent },
-  { path:'**',redirectTo:''},
- 
-]; 
+  { path: '**', redirectTo: '' },
+
+];
 
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes,{ anchorScrolling: 'enabled', scrollPositionRestoration: 'enabled', useHash: false })],
+  imports: [RouterModule.forRoot(routes, { anchorScrolling: 'enabled', scrollPositionRestoration: 'enabled', useHash: false })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

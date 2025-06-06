@@ -36,7 +36,6 @@
   { "name": "Dr. Varsha P" },
   { "name": "Dr. Rohith K. R" },
   { "name": "Dr. Narendranath A" },
-  { "name": "Dr. Bhavya" },
   { "name": "Dr. Shamantha S" },
   { "name": "Dr. Kavyashree Kulamarva" },
   { "name": "Ms. Archana Karthick" },
@@ -60,5 +59,6 @@
   { "name": "Dr. Dona Susan John" },
   { "name": "Dr. Nithin J" },
   { "name": "Dr. Dhruva Ithal" },
-  { "name": "Dr. Limesh M" }
+  { "name": "Dr. Limesh M" },
+  { "name" : "Dr. Shruti Suresh'"}
 ]

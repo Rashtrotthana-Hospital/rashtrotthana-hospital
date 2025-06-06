@@ -829,22 +829,23 @@ export class NewDocPageComponent {
     //   time:'10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00',
     //   date:'Sunday'
     // },
-    {
-      name: 'Dr. Bhavya',
-      image: 'assets/Doc-Inv-Page/Dr-Bhavya.png',
-      department: 'Consultant Internal Medicine',
-      about: 'Dr. Bhavya N is a consultant physician and Diabetologist with practicing experience of 7 years in the field of Internal Medicine. She is a gold medalist and state rank holder in MD Internal medicine in RGUHS. She has sound knowledge in her field and practices evidence-based medicine providing patient centred care. Being a female physician she has an extra mile of interest in women and family health care. She has keen interest in research and is updated on newer aspects and recent advancements in treatment modalities.',
-      speciality: 'INTERNAL MEDICINE',
-      areasOfExpertise: ['Diabetes', 'Diabetes Reversal', 'Thyroid related illness', 'Blood related disorders', 'Critical illness', 'Hypertension', 'Infectious disease'],
-      expertise: 'Years of Experience: 9',
-      qualification: 'MBBS, MD',
-      time: '09:00-09:20,09:20-09:40,09:40-10:00,10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,13:00-13:20,13:20-13:40,13:40-14:00,14:00-14:20,14:20-14:40,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00,16:00-16:20,16:20-16:40,16:40-17:00',
-      date: 'Monday-Saturday',
-      alt: 'Dr. Bhavya | Best Diabetologist in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
-      id: 2,
-      title:'Dr. Bhavya N | Consultant Physician & Diabetologist Bangalore',
-      description:'Dr. Bhavya N is a gold medalist physician and diabetologist in Bangalore, experienced in diabetes reversal, thyroid care, and internal medicine.'
-    },
+    
+    // {
+    //   name: 'Dr. Bhavya',
+    //   image: 'assets/Doc-Inv-Page/Dr-Bhavya.png',
+    //   department: 'Consultant Internal Medicine',
+    //   about: 'Dr. Bhavya N is a consultant physician and Diabetologist with practicing experience of 7 years in the field of Internal Medicine. She is a gold medalist and state rank holder in MD Internal medicine in RGUHS. She has sound knowledge in her field and practices evidence-based medicine providing patient centred care. Being a female physician she has an extra mile of interest in women and family health care. She has keen interest in research and is updated on newer aspects and recent advancements in treatment modalities.',
+    //   speciality: 'INTERNAL MEDICINE',
+    //   areasOfExpertise: ['Diabetes', 'Diabetes Reversal', 'Thyroid related illness', 'Blood related disorders', 'Critical illness', 'Hypertension', 'Infectious disease'],
+    //   expertise: 'Years of Experience: 9',
+    //   qualification: 'MBBS, MD',
+    //   time: '09:00-09:20,09:20-09:40,09:40-10:00,10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,13:00-13:20,13:20-13:40,13:40-14:00,14:00-14:20,14:20-14:40,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00,16:00-16:20,16:20-16:40,16:40-17:00',
+    //   date: 'Monday-Saturday',
+    //   alt: 'Dr. Bhavya | Best Diabetologist in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
+    //   id: 2,
+    //   title:'Dr. Bhavya N | Consultant Physician & Diabetologist Bangalore',
+    //   description:'Dr. Bhavya N is a gold medalist physician and diabetologist in Bangalore, experienced in diabetes reversal, thyroid care, and internal medicine.'
+    // },
 
     {
       name: 'Dr. Shamantha S',
@@ -1267,9 +1268,25 @@ export class NewDocPageComponent {
       title:'Dr. Limesh M | Nephrologist & Transplant Physician',
       description:'Dr. Limesh M offers expert care in CKD, AKI, dialysis, renal biopsies, and kidney transplantation. 15+ years of experience in nephrology and ICU care.'
     },
+    {
+      name: "Dr. Shruti Suresh",
+      image: "assets/dr-shruti-suresh.png",
+      speciality: 'Internal Medicine',
+      department: 'INTERNAL MEDICINE',
+      about: "Compassionate and skilled physician with over 12 years of experience in providing high-quality care in General Medicine. Adept at diagnosing and treating a variety of conditions while building strong relationships with patients. Committed to continuous learning and advancing medical knowledge.",
+      areasOfExpertise: ['Communicable and non comminacable diseases', 'particularly Diabetes Mellitus'],
+      expertise: "Years of Experience: 13+",
+      qualification: "MBBS, DNB (Internal Medicine)",
+      time: "",
+      date: "",
+      alt: 'Dr. Shruti Suresh| Nephrologist & Transplant Physician Bangalore',
+      title:'Dr. Shruti Suresh - Experienced General Physician in Bangalore',
+      description:'Consult Dr. Shruti Suresh for expert care in general medicine and long-term health management in Rajarajeshwari Nagar.',
+      id : ''
+    },
     // {
     //   name: "",
-    //   image: "",
+    //   image: "", 
     //   department: '',
     //   speciality: '',
     //   about: "",

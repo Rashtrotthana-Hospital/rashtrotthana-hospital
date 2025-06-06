@@ -33,17 +33,23 @@ export class GeneralMedicineComponent {
       alttext : 'Dr. Sindhu P. Madanshetty | Best General Physicians in RR Nagar Bangalore | Rashtrotthana Hospital',
       image : '../../assets/Dr-Sindhu-P-Madanshetty.png'
     },
-    {
-      name : 'Dr. Bhavya',
-      experience : '9',
-      alttext : 'Dr. Bhavya | Best General Physicians in RR Nagar Bangalore | Rashtrotthana Hospital',
-      image : '../../assets/Dr-Bhavya.png'
-    },
+    // {
+    //   name : 'Dr. Bhavya',
+    //   experience : '9',
+    //   alttext : 'Dr. Bhavya | Best General Physicians in RR Nagar Bangalore | Rashtrotthana Hospital',
+    //   image : '../../assets/Dr-Bhavya.png'
+    // },
     {
       name : 'Dr. C Rajendran',
-      experience : '27',
+      experience : '13',
       alttext : 'Dr. C Rajendran | Best General Physicians in RR Nagar Bangalore | Rashtrotthana Hospital',
       image : '../../assets/Dr-Rajendran.png'
+    },
+    {
+      name : 'Dr. Shruti Suresh',
+      experience : '27',
+      alttext : 'Dr. Shruti Suresh | Best General Physicians in RR Nagar Bangalore | Rashtrotthana Hospital',
+      image : '../../assets/dr-shruti-suresh-doc-page.jpg'
     },
   ]
 
@@ -73,4 +79,6 @@ export class GeneralMedicineComponent {
       ans : 'Rashtrotthana Hospital is among the best hospitals in RR Nagar, Bangalore, for fever, cold, and flu treatment. Our doctors, including Dr. C. Rajendran and Dr. H. M. Krishnamurthy, provides expert care for viral infections, respiratory illnesses and seasonal flu.'
     },
   ]
+
+  
 }

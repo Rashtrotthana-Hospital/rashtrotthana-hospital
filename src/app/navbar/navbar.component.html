@@ -105,12 +105,24 @@
             <a class="nav-link" routerLink="/health-check-up-packages-bangalore" routerLinkActive="active-link"
               (click)="closeMenu()">Health Check</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" (mouseover)="isSamraksha = true">
             <a class="nav-link" routerLink="/contact-us-bangalore" routerLinkActive="active-link"
-              (click)="closeMenu()">Contact Us</a>
+              (click)="onContactUs()">Contact Us</a>
+              <!-- <ul class="sam-nav"> -->
+              <a class="nav-link sam-nav" #containerOne routerLink="/samraksha" routerLinkActive="active-link" (mouseover)="isSamraksha = true" (mouseleave)="isSamraksha = false"
+              (click)="closeSam()" *ngIf="isSamraksha">Samraksha</a>
+
+                          <a class="nav-link responsive" #containerOne routerLink="/samraksha" routerLinkActive="active-link"
+              (click)="closeSam()">Samraksha</a>
+              <!-- </ul> -->
           </li>
+
+          <!-- <li class="responsive">
+
+          </li> -->
+          
           <li class="nav-item">
-            <a class="nav-link" routerLink="/donate-to-hospital-bangalore" routerLinkActive="active-link"
+            <a class="nav-link" #containerTwo routerLink="/donate-to-hospital-bangalore" routerLinkActive="active-link"
               (click)="closeMenu()">Donation</a>
           </li>
           <li class="nav-item">
@@ -119,6 +131,7 @@
           <li class="nav-item">
             <a class="nav-link" routerLink="/blog" routerLinkActive="active-link" (click)="closeMenu()">Blog</a>
           </li>
+
         </ul>
       </div>
     </div>

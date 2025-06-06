@@ -1,4 +1,5 @@
-import { Component,Renderer2 } from '@angular/core';
+import { Component, Renderer2, ElementRef, HostListener, ViewChild } from '@angular/core';
+
 import { Router } from '@angular/router';
 import { DialogModule } from 'primeng/dialog';
 import { ButtonModule } from 'primeng/button';
@@ -105,10 +106,39 @@ export class NavbarComponent {
   navigateToHome() {
     this.router.navigate(['/']);
   }
+
   closeMenu() {
     const navbarCollapse = document.getElementById('navbarText');
     if (navbarCollapse && navbarCollapse.classList.contains('show')) {
       this.renderer.removeClass(navbarCollapse, 'show');
+    }
+  }
+
+  isSamraksha : boolean = false
+
+  onContactUs(){
+    this.isSamraksha = !this.isSamraksha
+
+    const navbarCollapse = document.getElementById('navbarText');
+    if (navbarCollapse && navbarCollapse.classList.contains('show')) {
+      this.renderer.removeClass(navbarCollapse, 'show');
+      this.isSamraksha = false
+    }
+  }
+
+  closeSam(){
+    this.isSamraksha = false
+  }
+
+  @ViewChild('samrakshaContainer', { static: true }) containerRef!: ElementRef;
+
+  @HostListener('document:mouseover', ['$event'])
+  onMouseOver(event: MouseEvent) {
+    const target = event.target as HTMLElement;
+    const container = this.containerRef.nativeElement as HTMLElement;
+
+    if (!container.contains(target)) {
+      this.isSamraksha = false;
     }
   }
 }
