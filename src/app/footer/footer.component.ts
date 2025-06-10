@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   styleUrl: './footer.component.css'
 })
 export class FooterComponent {
-  constructor(private router: Router) {}
+  constructor(private router: Router) { }
   openLink(type: string) {
     if (type == 'youtube') {
       window.open('https://www.youtube.com/channel/UC5yBntegcZ_lR_IpfkbSVrA', '_blank');
@@ -28,31 +28,31 @@ export class FooterComponent {
   aboutus() {
     this.router.navigate(['/about-us']);
   }
-  home(){
+  home() {
     this.router.navigate(['/']);
   }
-  speciality(){
+  speciality() {
     this.router.navigate(['/specialities']);
   }
-  facilities(){
+  facilities() {
     this.router.navigate(['/facility']);
   }
-  doctor(){
+  doctor() {
     this.router.navigate(['/best-doctors-bangalore']);
   }
-  health(){
+  health() {
     this.router.navigate(['/health-check-up-packages-bangalore']);
   }
-  donation(){
+  donation() {
     this.router.navigate(['/donate-to-hospital-bangalore']);
   }
-  blog(){
+  blog() {
     this.router.navigate(['/blog']);
   }
-  insurance(){
+  insurance() {
     this.router.navigate(['/insurance']);
   }
-  career(){
+  career() {
     this.router.navigate(['/career']);
     console.log('career');
   }
@@ -62,5 +62,12 @@ export class FooterComponent {
   termsnconditions() {
     this.router.navigate(['/terms-and-conditions'])
   }
+  samraksha() {
+    this.router.navigate(['/samraksha'])
+  }
+  contactUs() {
+    this.router.navigate(['/contact-us-bangalore'])
+  }
+
 }
 

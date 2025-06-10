@@ -55,6 +55,8 @@
 
 .set-container {
   width: 100%;
+  display: flex;
+  gap: 30px;
 }
 
 .each-link {
@@ -99,7 +101,6 @@ ul {
 }
 .links{
   display: flex;
- 
   justify-content: space-between;
   width: 100%;
 }
@@ -179,6 +180,15 @@ ul {
 .navbar_icon .fa-brands{
   font-size: 22px;
 }
+/* 
+.margin-left{
+  margin-left: 25px;
+} */
+
+.other-link{
+  padding-left: 40px;
+}
+
 
 @media (max-width: 1100px) {
   .footer-component {
@@ -189,7 +199,6 @@ ul {
     /* overflow-x:hidden; */
   }
   .text{
-    
     padding-bottom: 20px;
   }
   .logo,
@@ -223,10 +232,8 @@ ul {
   .links-container {
     justify-content: center;
   }
-  .links{
-    display: flex;
-    justify-content: center;
-    width: 100%;
+  .other-link{
+    margin-left: 100px;
   }
   .footer-1{
     display: flex;
@@ -236,6 +243,10 @@ ul {
   }
   .footer-logo{
     right: 25px;
+  }
+
+  .other-link{
+    margin-left: 0;
   }
   
 }
@@ -247,5 +258,17 @@ ul {
 @media only screen and (max-width:600px){
   .footer-1{
     height: 200px;
+  }
+
+    .links{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+  }
+
+  .margin-left{
+    width: 100%;
   }
 }
