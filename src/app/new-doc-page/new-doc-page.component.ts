@@ -1543,13 +1543,19 @@ export class NewDocPageComponent {
         appointmentDate: appointmentDate,
         message: this.contactForm.value.message
       };
+      // const emailRequest = {
+      //   to: 'patientservices@rashtrotthanahospital.com',
+      //   // to: 'keerthanasaminathan0805@gmail.com',
+      //   status: 'frontoffice',
+      //   appointmentDetails: emailParams,
+      // };
+
       const emailRequest = {
-        to: 'patientservices@rashtrotthanahospital.com',
-        // to: 'keerthanasaminathan0805@gmail.com',
+        to: ['patientservices@rashtrotthanahospital.com', 'frontoffice@rashtrotthanahospital.com'],
         status: 'frontoffice',
         appointmentDetails: emailParams,
       };
-
+      
       // Fetch the doctor ID by name
       this.http.post(`${this.apiUrl}/email/send-email`, emailRequest)
               .subscribe({
