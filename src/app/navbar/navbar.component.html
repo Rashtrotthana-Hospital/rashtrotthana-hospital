@@ -107,10 +107,10 @@
           </li>
           <li class="nav-item" (mouseover)="isSamraksha = true">
             <a class="nav-link" routerLink="/contact-us-bangalore" routerLinkActive="active-link"
-              (click)="onContactUs()">Contact Us</a>
+              (click)="onContactUs()">Contact Us <i class="fa-solid fa-angle-down"></i></a>
               <!-- <ul class="sam-nav"> -->
-              <a class="nav-link sam-nav" #containerOne routerLink="/samraksha" routerLinkActive="active-link" (mouseover)="isSamraksha = true" (mouseleave)="isSamraksha = false"
-              (click)="closeSam()" *ngIf="isSamraksha">Samraksha</a>
+              <a class="nav-link sam-nav shadow" #containerOne routerLink="/samraksha" routerLinkActive="active-link" (mouseover)="isSamraksha = true" (mouseleave)="isSamraksha = false"
+              (click)="closeSam()" *ngIf="isSamraksha"><i class="fa-regular fa-circle-dot"></i>Samraksha</a>
 
                           <a class="nav-link responsive" #containerOne routerLink="/samraksha" routerLinkActive="active-link"
               (click)="closeSam()">Samraksha</a>

@@ -256,9 +256,25 @@ input [type=text],[type=email]{
 
 .sam-nav{
   position: absolute;
-  top: 76px;
+  top: 77px;
   background: white;
+  width: 140px;
+  color: #0392CE !important;
 }
+
+.shadow {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.fa-angle-down{
+  margin-left: 5px;
+  font-size: 17px;
+}
+
+ .fa-circle-dot{
+  margin-right: 8px;
+  font-size: 14px;
+ }
 
 /* .sam-nav:hover{
   background: #0392CE;
@@ -380,6 +396,10 @@ input [type=text],[type=email]{
 
    .responsive{
   display: block;
+}
+
+.fa-angle-down{
+  display: none;
 }
 
 }
