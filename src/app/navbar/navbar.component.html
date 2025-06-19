@@ -105,22 +105,29 @@
             <a class="nav-link" routerLink="/health-check-up-packages-bangalore" routerLinkActive="active-link"
               (click)="closeMenu()">Health Check</a>
           </li>
-          <li class="nav-item" (mouseover)="isSamraksha = true">
+
+          <li class="nav-item dropdown-container" (mouseenter)="isSamraksha = true" (mouseleave)="isSamraksha = false">
             <a class="nav-link" routerLink="/contact-us-bangalore" routerLinkActive="active-link"
               (click)="onContactUs()">Contact Us <i class="fa-solid fa-angle-down"></i></a>
-              <!-- <ul class="sam-nav"> -->
-              <a class="nav-link sam-nav shadow" #containerOne routerLink="/samraksha" routerLinkActive="active-link" (mouseover)="isSamraksha = true" (mouseleave)="isSamraksha = false"
-              (click)="closeSam()" *ngIf="isSamraksha"><i class="fa-regular fa-circle-dot"></i>Samraksha</a>
 
-                          <a class="nav-link responsive" #containerOne routerLink="/samraksha" routerLinkActive="active-link"
+            <!-- Dropdown for Samraksha -->
+            <a class="nav-link sam-nav shadow" *ngIf="isSamraksha" routerLink="/samraksha"
+              routerLinkActive="active-link" (click)="closeSam()">
+              <i class="fa-regular fa-circle-dot"></i> Samraksha
+            </a>
+
+
+            <a class="nav-link responsive" #containerOne routerLink="/samraksha" routerLinkActive="active-link"
               (click)="closeSam()">Samraksha</a>
-              <!-- </ul> -->
           </li>
+
+
+
 
           <!-- <li class="responsive">
 
           </li> -->
-          
+
           <li class="nav-item">
             <a class="nav-link" #containerTwo routerLink="/donate-to-hospital-bangalore" routerLinkActive="active-link"
               (click)="closeMenu()">Donation</a>
