@@ -120,6 +120,9 @@ this.buttonUrl = this.post.acf.buttton_url;
       h1, h2, h3, h4, h5, h6 {
         color: teal !important;
       }
+      h1{
+        margin-top: 40px !important;
+      }
       ul li::marker {
         color: teal !important;
       }
@@ -127,6 +130,7 @@ this.buttonUrl = this.post.acf.buttton_url;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
+        align-items:center;
         min-width: 280px;
       }
       .wp-block-column {
