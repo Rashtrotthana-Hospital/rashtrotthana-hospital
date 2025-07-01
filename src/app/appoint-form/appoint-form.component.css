@@ -1,33 +1,48 @@
 .iframe-container {
     position: fixed; /* Or absolute, depending on your layout */
-    top: 0;
+    top: 14vh;
     left: 0;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
+    padding-right: 2%;
   }
   
   .book-appoint {
     width: 100%; /* Adjust as needed */
     height: 100%; /* Adjust as needed */
     border: none;
-   position: relative;
+   /* position: relative;
    top: 25vh;
-   left: 500px;
+   left: 500px; */
   }
   .close-btn {
     position: absolute;
-    top: 30vh;
-    right:60px;
+    /* top: 30vh;
+    right:60px; */
+    top: 10px;
+    right: 10px;
     background: transparent;
     border: none;
     font-size: 30px;
     cursor: pointer;
     z-index: 2;
+    color: red;
   }
+  .modal-box {
+    position: relative;
+    width: 90%; /* Adjust as needed */
+    max-width: 600px; 
+    height: 60vh;
+    min-height: 70vh;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
   @media only screen and (max-width:1390px){
     .book-appoint {
       width:100%; /* Adjust as needed */

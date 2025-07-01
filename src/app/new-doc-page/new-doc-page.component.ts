@@ -60,7 +60,7 @@ export class NewDocPageComponent {
     });
     this.contactForm = this.fb.group({
       firstName: ['', [Validators.required, Validators.minLength(2), Validators.pattern(/^[a-zA-Z]+$/)]],
-      lastName: ['', [Validators.required, Validators.minLength(1), Validators.pattern(/^[a-zA-Z]+$/)]],
+      lastName: ['', [Validators.required, Validators.minLength(1), Validators.pattern(/^[a-zA-Z.\s]*$/)]],
       email: ['', [Validators.required, Validators.email]],
       contactNumber:  ['', [Validators.required, Validators.pattern(/^[0-9]{10}$/)]],
       time: ['', Validators.required],
