@@ -1123,7 +1123,7 @@ export class NewDocPageComponent {
       qualification: "MD (General Medicine), MBBS, Fellowship in Diabetology, Fellowship in Infectious Diseases  ",
       time: "",
       date: "Sunday-Tuesday",
-      alt: '',
+      alt: 'Dr-Rajendran.png | Best Internal Medicine Doctor in Bangalore | Rashtrotthana Hospital',
       id: 58,
       title:'Dr. C Rajendran | Internal Medicine Doctor in Bangalore',
       description:'27+ years experience in diabetes management, general medicine, infectious diseases, hypertension, asthma, thyroid care and fever treatment.'
@@ -1139,7 +1139,7 @@ export class NewDocPageComponent {
       qualification: "BDS, FRCD",
       time: "",
       date: 'Monday-Saturday',
-      alt: '',
+      alt: 'Dr. Sushmitha Raj R | Best Dentist in Bangalore | Rashtrotthana Hospital',
       id: 55,
       title:'Dr. Sushmitha Raj R | Dentist in RR Nagar Bangalore',
       description:'Experienced in general, cosmetic, and restorative dentistry. Skilled in endodontics, extractions, and patient-centered dental care for all age groups.'
@@ -1168,7 +1168,7 @@ export class NewDocPageComponent {
       qualification: "MBBS, MD, DM",
       time: "",
       date: "Monday, Wednesday and Friday",
-      alt: '',
+      alt: 'Dr. G. V. Giri | Best Oncologist Bangalore | Rashtrotthana Hospital',
       id: 61,
       title:'Dr. G. V. Giri | Cancer Specialist in RR Nagar Bangalore',
       description:'Expert in head, neck, lung, breast, GI, and genitourinary cancers. 10+ years of oncology experience with DM in Medical Oncology from Kidwai Institute.'
