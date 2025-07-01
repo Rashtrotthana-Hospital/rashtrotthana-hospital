@@ -43,7 +43,7 @@ export class GeneralMedicineComponent {
       name : 'Dr. C Rajendran',
       experience : '27',
       alttext : 'Dr. C Rajendran | Best General Physicians in RR Nagar Bangalore | Rashtrotthana Hospital',
-      image : '../../assets/Dr-Rajendran.png'
+      image : '../../assets/Dr-Rajendran.png',
     },
     {
       name : 'Dr. Shruti Suresh',

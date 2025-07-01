@@ -923,7 +923,7 @@ export class DoctorLayoutComponent {
         qualification : "Qualification: MBBS, MD (Internal Medicine) DM (Clinical Immunology and Rheumatology) MRCP-SCE (UK) Rheumatology, EULAR Fellow",
         time : "",
         date : "Monday, Wednesday and Friday",
-        alt : ''
+        alt : 'Dr. Matam Sri Anusha | Best Rheumatology Doctor in Bnagalore | Rashtrotthana Hospital'
       },
       {
         name: "Dr. C Rajendran",
@@ -936,7 +936,7 @@ export class DoctorLayoutComponent {
         qualification : "MD (General Medicine), MBBS, Fellowship in Diabetology, Fellowship in Infectious Diseases  ",
         time : "",
         date : "Sunday-Tuesday",
-        alt : ''
+        alt : 'Dr-Rajendran.png | Best Internal Medicine Doctor in Bangalore | Rashtrotthana Hospital'
       },
       {
         name: "Dr. Sushmitha Raj R",
@@ -949,7 +949,7 @@ export class DoctorLayoutComponent {
         qualification : "BDS, FRCD",
         time : "",
         date : 'Monday-Saturday',
-        alt : ''
+        alt : 'Dr. Sushmitha Raj R | Best Dentist in Bangalore | Rashtrotthana Hospital'
       },
       // {
       //   name: "Dr. S K Ranjani",
@@ -975,7 +975,7 @@ export class DoctorLayoutComponent {
         qualification : "MBBS, MD, DM",
         time : "",
         date : "Monday, Wednesday and Friday",
-        alt : ''
+        alt : 'Dr. G. V. Giri | Best Oncologist Bangalore | Rashtrotthana Hospital'
       },
       {
         name: "Dr. Kavya N",
@@ -988,7 +988,7 @@ export class DoctorLayoutComponent {
         qualification : "BAMS, MD (Ay), (PhD)",
         time : "",
         date : "Thursday",
-        alt : ''
+        alt : 'Dr. Kavya | Ayurveda Doctor in Bangalore | Rashtrotthana Hospital'
       },
       {
         name: "Dr. Sandhya S. Patil",
@@ -1074,7 +1074,7 @@ export class DoctorLayoutComponent {
       qualification: "MBBS, DNB (Internal Medicine)",
       time: "",
       date: "",
-      alt: '',
+      alt: 'Dr. Shruti Suresh | Best Internal Medicine Doctor in Bangalore | Rashtrotthan Hospital',
       title:'',
       description:''
     },
