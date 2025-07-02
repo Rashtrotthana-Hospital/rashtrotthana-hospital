@@ -1,9 +1,10 @@
-import { Component , OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router, NavigationEnd, Event } from '@angular/router';
 import { filter } from 'rxjs/operators';
 import { AnalyticsService } from './analytics.service';
 import { MessageService } from 'primeng/api';
 import { Meta, Title } from '@angular/platform-browser';
+import { CanonicalService } from './canonical.service';
 
 declare let gtag: Function;
 @Component({
@@ -11,11 +12,11 @@ declare let gtag: Function;
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent implements OnInit{
-  constructor(private router: Router, private analyticsService: AnalyticsService, private messageService: MessageService,private meta: Meta, private title: Title) { } 
+export class AppComponent implements OnInit {
+  constructor(private router: Router, private analyticsService: AnalyticsService, private messageService: MessageService, private meta: Meta, private title: Title, private canonicalService: CanonicalService) { }
   // title = 'rashtrotthana_hospital';
   isCareerPage = false;
-  ngOnInit() { 
+  ngOnInit() {
     // this.router.events.subscribe((event) => { 
     //     if (!(event instanceof NavigationEnd)) { 
     //         return; 
@@ -27,17 +28,17 @@ export class AppComponent implements OnInit{
         this.isCareerPage = event.urlAfterRedirects === '/career';
       }
     });
-   
 
 
-    document.addEventListener('DOMContentLoaded',()=> {
+
+    document.addEventListener('DOMContentLoaded', () => {
       const chatBotPopup = document.getElementById('chatBotPopup')
       const notificationSound = document.getElementById('audio') as HTMLAudioElement
 
       setTimeout(() => {
         chatBotPopup?.classList.remove('initial');
         chatBotPopup?.classList.add('show');
-      
+
         if (notificationSound) {
           notificationSound.play().catch((error) => {
             console.error("Audio playback failed:", error);
@@ -73,6 +74,20 @@ export class AppComponent implements OnInit{
         'page_path': event.urlAfterRedirects
       });
     });
+
+
+    // canonical
+
+    this.router.events
+      .pipe(filter(event => event instanceof NavigationEnd))
+      .subscribe(() => {
+        const absoluteUrl = this.getAbsoluteUrl(window.location.pathname);
+        this.canonicalService.setCanonical(absoluteUrl);
+      });
+    }
+
+  getAbsoluteUrl(path: string): string {
+    return `${window.location.origin}${path}`;
   }
 
   setMetaTags() {
@@ -87,5 +102,5 @@ export class AppComponent implements OnInit{
   toggleChatBot() {
     this.closeChatBot = !this.closeChatBot; // Toggle the visibility state
   }
-} 
+}
 
