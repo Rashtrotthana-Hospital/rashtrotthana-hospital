@@ -1078,6 +1078,21 @@ export class DoctorLayoutComponent {
       title:'',
       description:''
     },
+    {
+      name: "Dr. Harshith K. S",
+      image: "assets/Dr-Harshith-K-S.png",
+      department: 'Internal Medicine',
+      speciality: 'INTERNAL MEDICINE',
+      about: "Dr. Harshith K. S is an experienced consultant physician specializing in internal medicine, with nearly two decades of expertise in comprehensive diagnosis and management of adult medical conditions. His clinical interests include managing complex cases, diabetes care and diabetic foot risk assessment, with his thesis presented at a national diabetic conference. He is known for his commitment to patient care, evidence-based practice and dedication to continuous learning in general medicine.",
+      areasOfExpertise: ['Hand injuries','Vaccination/immunization','Marfan syndrome','Hyperhidrosis','Capsule endoscopy','MMR vaccination','Ganglion cyst','Hemochromatosis','Toxic hepatitis'],
+      expertise: "Years of Experience: 18+",
+      qualification: "MBBS, MD in General Medicine ",
+      time: "",
+      date: "",
+      alt: 'Dr. Harshith K. S | Best Internal Medicine Doctor in Bangalore | Rashtrotthan Hospital',
+      title:'',
+      description:''
+    },
     // {
     //   name: "",
     //   image: "",
