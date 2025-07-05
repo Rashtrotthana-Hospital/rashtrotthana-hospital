@@ -49,14 +49,10 @@ export class ENTComponent {
       doctor_name:'Dr. Sandhya S. Patil',
       experience : "10+",
       docalt : 'Dr. Sandhya S. Patil | Best ENT Consultant in Bangalore | Rashtrotthana Hospital'
-    },  
-    // {
-    //   doctor_image:'../../assets/dummy.png',
-    //   doctor_name:'Dr. S K Ranjani',
-    //   experience : "2",
-    //   docalt : 'Dr. S K Ranjani| Best ENT Consultant in Bangalore | Rashtrotthana Hospital'
-    // },  
+    },
   ]
+
+  formDoctors = ["Dr. Sunil Kumar C", "Dr. Narendranath A", "Dr. Manasa N. A", "Dr. Sandhya S. Patil"]
 
   faqs = [
     {

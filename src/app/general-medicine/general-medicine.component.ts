@@ -51,6 +51,12 @@ export class GeneralMedicineComponent {
       alttext : 'Dr. Shruti Suresh | Best General Physicians in RR Nagar Bangalore | Rashtrotthana Hospital',
       image : '../../assets/dr-shruti-suresh-doc-page.jpg'
     },
+    {
+      name : 'Dr. Harshith K. S',
+      experience : '18',
+      alttext : 'Dr. Harshith K. S | Best General Physicians in RR Nagar Bangalore | Rashtrotthana Hospital',
+      image : '../../assets/Dr-Harshith-K-S.png'
+    },
   ]
 
   faqs : any = [

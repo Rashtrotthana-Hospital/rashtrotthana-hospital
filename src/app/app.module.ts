@@ -123,6 +123,7 @@ import { CareerPagePopupComponent } from './career-page-popup/career-page-popup.
 import { NewDocPageComponent } from './new-doc-page/new-doc-page.component';
 import { TermsAndConditionsComponent } from './terms-and-conditions/terms-and-conditions.component';
 import { SamrakshaComponent } from './samraksha/samraksha.component';
+import { SpecialityFormComponent } from './speciality-form/speciality-form.component';
 
 
 @NgModule({
@@ -219,7 +220,8 @@ import { SamrakshaComponent } from './samraksha/samraksha.component';
     CareerPagePopupComponent,
     NewDocPageComponent,
     TermsAndConditionsComponent,
-    SamrakshaComponent
+    SamrakshaComponent,
+    SpecialityFormComponent
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   imports: [

@@ -1,0 +1,27 @@
+<div class="appointment-form">
+    <h2>Book an Appointment</h2>
+    <form>
+        <div class="form-row">
+            <input type="text" placeholder="First Name" required>
+            <input type="text" placeholder="Last Name" required>
+        </div>
+        <div class="form-row">
+            <!-- <select required>
+                <option value="">Select Country</option>
+                <option value="India">India</option>
+                <option value="Other">Other</option>
+            </select> -->
+            <input type="email" placeholder="Email Address" required>
+            <input type="tel" placeholder="Mobile Number" required>
+        </div>
+        <div class="form-row">
+            <select required>
+                <option value="">Select Doctor</option>
+                <option value="" *ngFor="let doc of doctor">{{doc}}</option>
+            </select>
+            <!-- <input type="text" placeholder="Location" required> -->
+        </div>
+        <textarea placeholder="Enter Patient Case Details" rows="4"></textarea>
+        <button type="submit">Submit</button>
+    </form>
+</div>
