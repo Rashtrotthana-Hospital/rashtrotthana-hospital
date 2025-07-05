@@ -55,6 +55,16 @@
 
   gtag('config', 'G-6T1G50PFJK');
 </script>
+<script>
+  window.addEventListener('load', function() {
+    if (window.location.href.includes('/thank-you')) {
+      console.log('Thank you page script fired!');
+      gtag('event', 'conversion', {'send_to': 'AW-16656770043/x-W0COOwn-gaEPvHyIY-'});
+    }
+  });
+</script>
+
+
 <script type="application/ld+json">
   {
     "@context": "https://schema.org",

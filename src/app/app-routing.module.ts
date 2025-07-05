@@ -62,6 +62,7 @@ import { MuthrubhavaComponent } from './muthrubhava/muthrubhava.component';
 import { NewDocPageComponent } from './new-doc-page/new-doc-page.component';
 import { TermsAndConditionsComponent } from './terms-and-conditions/terms-and-conditions.component';
 import { SamrakshaComponent } from './samraksha/samraksha.component';
+import { ThankYouComponent } from './thank-you/thank-you.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -147,6 +148,7 @@ const routes: Routes = [
   { path: 'maternity-care', component: MaternityComponent },
   { path: 'ayurvedic-thyroid-treatment', component: AyurvedaThyroidComponent },
   { path: 'mathrubhava-treatment', component: MuthrubhavaComponent },
+  { path: 'thank-you', component: ThankYouComponent },
   {
     path: 'doctor/:slug',
     component: NewDocPageComponent

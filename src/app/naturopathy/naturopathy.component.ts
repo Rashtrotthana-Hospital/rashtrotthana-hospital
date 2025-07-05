@@ -41,7 +41,7 @@ export class NaturopathyComponent {
       section : "BAMS",
       designation : "LIFESTYLE",
       experience : "3",
-      alt : 'Dr. Shamantha S | Lifestyle Specialist in Bangalore | Rashtrotthana Hospita'
+      alt : 'Dr. Shamantha S | Lifestyle Specialist in Bangalore | Rashtrotthana Hospital'
     }
   ]
 }

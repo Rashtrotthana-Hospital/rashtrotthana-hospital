@@ -123,6 +123,7 @@ import { CareerPagePopupComponent } from './career-page-popup/career-page-popup.
 import { NewDocPageComponent } from './new-doc-page/new-doc-page.component';
 import { TermsAndConditionsComponent } from './terms-and-conditions/terms-and-conditions.component';
 import { SamrakshaComponent } from './samraksha/samraksha.component';
+import { ThankYouComponent } from './thank-you/thank-you.component';
 import { SpecialityFormComponent } from './speciality-form/speciality-form.component';
 
 
@@ -221,6 +222,7 @@ import { SpecialityFormComponent } from './speciality-form/speciality-form.compo
     NewDocPageComponent,
     TermsAndConditionsComponent,
     SamrakshaComponent,
+    ThankYouComponent,
     SpecialityFormComponent
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
