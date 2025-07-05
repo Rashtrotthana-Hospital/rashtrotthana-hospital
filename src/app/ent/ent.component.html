@@ -1,14 +1,22 @@
 <div class="root-container">
-    <div class="speciality-header">
+    <!-- <div class="speciality-header">
         <app-speciality-header main_heading="ENT" />
-    </div>
+    </div> -->
+
+    <div class="speciality-header">
+        <img src="../../assets/ent-banner.png" class="desktop" alt="">
+        <img src="../../assets/ent-banner-mobile.png" class="mobile" alt="">
+        <div class="header_button">
+            <a href="tel:+91-08069239999" class="contact_button">Contact Now</a>
+        </div>
+    </div>    
 
     <div class="container-2">
         <div class="sidebar">
             <app-sidebar />
         </div>
         <div class="contents">
-            <h1 class="s_h1">BBest ENT Hospital in Bangalore - Comprehensive Care for Ear, Nose & Throat</h1>
+            <h1 class="s_h1">Best ENT Hospital in Bangalore - Comprehensive Care for Ear, Nose & Throat</h1>
             <div class="para_image">
                 <div class="s_content">
                     <div class="s_para">When you’re struggling to hear your loved ones, breathe comfortably, or speak
@@ -43,90 +51,109 @@
                             back to what matters most: living your life, pain-free and confident.</p>
                     </div>
                 </div>
-                <p class="s_para">We offer comprehensive ear, nose, and throat care in Bangalore, focused on accurate
+                <p class="s_para para_margin">We offer comprehensive ear, nose, and throat care in Bangalore, focused on
+                    accurate
                     diagnosis, effective treatments, and long-term relief. Whether you’re searching for an ENT
                     consultation or require complex surgery, our team will guide you every step of the way with
                     expertise and empathy.</p>
             </div>
 
-            <div class="contents container-margin">
+            <div class="youtube container-margin">
 
+                <h2 class="s_subheadings">Expert Insights from Our ENT Specialists</h2>
+
+                <div class="videos">
+                    <iframe width="320" height="200" src="https://www.youtube.com/embed/E9UQoItPrPI?si=yCNaVMsczZQjnwoe"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe width="320" height="200" src="https://youtube.com/embed/TLIYS2qP84o?si=YH0pzavxVoXS1A-o"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe width="320" height="200" src="https://www.youtube.com/embed/OK538oOk-eM?si=0-pFwUtbT-5oEaSQ"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <!-- <iframe width="320" height="200" src="https://www.youtube.com/embed/vzZxYGCJK0E?si=F16IqscsomYYZOp0"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+                </div>
+            </div>
+
+            <div class="contents">
                 <h2 class="s_subheadings">Our Expertise: Comprehensive Ear, Nose & Throat Care, from Ear Infections to
                     Tonsillitis</h2>
 
-                <div class="form-container">
-                    <div class="form-left">
+                <h2 class="ss_subheading">Ear Infections & Hearing Loss</h2>
+                <p class="s_para"> From ear infection treatment in Bangalore to professional ear cleaning
+                    services, we
+                    manage issues like noise in ear, earache remedies and ear bone problems with precision and
+                    care. Our
+                    ear doctors in Bangalore specialize in restoring your hearing and peace of mind.</p>
+            </div>
 
-                        <h2 class="ss_subheading">Ear Infections & Hearing Loss</h2>
-                        <p class="s_para"> From ear infection treatment in Bangalore to professional ear cleaning
-                            services, we
-                            manage issues like noise in ear, earache remedies and ear bone problems with precision and
-                            care. Our
-                            ear doctors in Bangalore specialize in restoring your hearing and peace of mind.</p>
+        </div>
+    </div>
 
-                        <h2 class="ss_subheading">Sinus & Nasal Problems</h2>
-                        <p class="s_para">Struggling with chronic congestion or facial pain? Our ENT specialists provide
-                            sinusitis treatment Bangalore, nasal congestion treatment Bangalore and sinus headache
-                            relief
-                            Bangalore. We use advanced diagnostic tools for vertigo evaluation in Bangalore and treat
-                            nasal
-                            blockages, polyps and fractures for better breathing and restful sleep.</p>
-                    </div>
-                    <div class="form-right">
-                        <app-speciality-form [doctor]="formDoctors" />
-                    </div>
-                </div>
+    <div class="contents container-padding">
+
+        <div class="para_image">
+            <div class="s_content">
+                <h2 class="ss_subheading">Sinus & Nasal Problems</h2>
+                <p class="s_para">Struggling with chronic congestion or facial pain? Our ENT specialists provide
+                    sinusitis treatment Bangalore, nasal congestion treatment Bangalore and sinus headache
+                    relief
+                    Bangalore. We use advanced diagnostic tools for vertigo evaluation in Bangalore and treat
+                    nasal
+                    blockages, polyps and fractures for better breathing and restful sleep.</p>
+            </div>
+            <div class="s_image">
+                <img src="../../assets/Sinus-Nasal-Problems-treatment-at-rashtrotthana-hospital-bangalore.jpg"
+                    alt="Best ENT Specialists Near Me">
             </div>
         </div>
-    </div>
 
-    <div class="contents container-padding">
-        <h2 class="ss_subheading">Throat & Tonsil Conditions</h2>
-        <p class="s_para">Recurring sore throats and tonsil infections can make eating, speaking, and
-            sleeping
-            difficult. Our experts deliver tonsillitis treatment in Bangalore, including affordable
-            tonsillitis
-            treatment for children and adults in Bangalore and effective painful sore throat solutions
-            for
-            lasting relief.</p>
-
-        <h2 class="ss_subheading">Vertigo & Balance Disorders</h2>
-        <p class="s_para">If dizziness or imbalance is affecting your day-to-day life, our ENT doctors
-            treating
-            vertigo and dizziness in Bangalore offer comprehensive evaluations and targeted therapies so
-            you can
-            regain stability and confidence.</p>
-    </div>
-
-    <div class="youtube container-padding">
-
-        <h2 class="s_subheadings">Expert Insights from Our ENT Specialists</h2>
-
-        <div class="videos">
-            <iframe width="320" height="200" src="https://www.youtube.com/embed/E9UQoItPrPI?si=yCNaVMsczZQjnwoe"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <iframe width="320" height="200" src="https://youtube.com/embed/TLIYS2qP84o?si=YH0pzavxVoXS1A-o"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <iframe width="320" height="200" src="https://www.youtube.com/embed/OK538oOk-eM?si=0-pFwUtbT-5oEaSQ"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <iframe width="320" height="200" src="https://www.youtube.com/embed/vzZxYGCJK0E?si=F16IqscsomYYZOp0"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="para_image row-reverse">
+            <div class="s_image">
+                <img src="../../assets/ent-doctors-treating-kids-throat-at-rahtrotthana-hospital-bangalore.jpg"
+                    alt="Best ENT Specialists Near Me">
+            </div>
+            <div class="s_content">
+                <h2 class="ss_subheading">Throat & Tonsil Conditions</h2>
+                <p class="s_para">Recurring sore throats and tonsil infections can make eating, speaking, and
+                    sleeping
+                    difficult. Our experts deliver tonsillitis treatment in Bangalore, including affordable
+                    tonsillitis
+                    treatment for children and adults in Bangalore and effective painful sore throat solutions
+                    for
+                    lasting relief.</p>
+            </div>
         </div>
+
+        <div class="para_image">
+            <div class="s_content">
+                <h2 class="ss_subheading">Vertigo & Balance Disorders</h2>
+                <p class="s_para">If dizziness or imbalance is affecting your day-to-day life, our ENT doctors
+                    treating
+                    vertigo and dizziness in Bangalore offer comprehensive evaluations and targeted therapies so
+                    you can
+                    regain stability and confidence.</p>
+            </div>
+            <div class="s_image">
+                <img src="../../assets/vertigo-treatment-at-rashtrotthana-hospital-bangalore.jpg"
+                    alt="Best ENT Specialists Near Me">
+            </div>
+        </div>
+
     </div>
 
-    <div class="contents container-padding">
+    <div class="contents container-padding container-margin">
         <h2 class="s_subheadings">Advanced ENT Surgeries at Affordable Price </h2>
         <p class="s_para">At our advanced ENT hospital for nasal congestion and sinus pain in Bangalore, we perform
             state-of-the-art procedures at affordable price like:</p>
-        <div class="para_image">
+        <div class="para_image row-reverse">
             <div class="s_image">
                 <img src="../../assets/ear-pain-hospital-in-rajarajeshwari-nagar-bangalore.jpg" alt="">
             </div>
@@ -209,6 +236,15 @@
 
     </div>
 
+    <div class="form-container container-padding">
+        <div class="form-image">
+            <img src="../../assets/sunday.jpeg" alt="">
+        </div>
+        <div class="form">
+            <app-speciality-form [doctor]="formDoctors" />
+        </div>
+    </div>
+
     <div class="doctors">
         <div class="doc-heading">Meet Our Medical Team</div>
         <div class="doctor-container">
@@ -218,6 +254,8 @@
             </div>
         </div>
     </div>
+
+
 
     <div class="faq">
         <div class="faq-heading">FAQs</div>
