@@ -9,20 +9,25 @@
 
 .contact_button {
     border-radius: 8px;
-    background: #FBCA51;
-    color: #000;
+    border: 2px solid #FBCA51;
+    color: #FBCA51;
     font-family: Inter;
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    border: none;
     padding: 10px 20px;
     height: 40px;
     position: relative;
     bottom: 60px;
     margin-left: 3%;
     text-decoration: none;
+    transition: 0.5s;
+}
+
+.contact_button:hover{
+    background-color: #FBCA51;
+    color: #000;
 }
 
 .root-container {
