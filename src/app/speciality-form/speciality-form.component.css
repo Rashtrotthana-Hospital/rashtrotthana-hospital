@@ -64,6 +64,16 @@
     background-color: #006666;
 }
 
+.input-field{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.input-field small{
+    color: red;
+}
+
 /* Responsive adjustments for small screens */
 @media (max-width: 600px) {
     .appointment-form {
