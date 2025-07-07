@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Title, Meta, DomSanitizer, SafeHtml } from '@angular/platform-browser';
 
 
@@ -25,6 +25,8 @@ export class OrthopedicsComponent {
     this.sanitizedContent = this.sanitizer.bypassSecurityTrustHtml(this.specialities[0].content);
     this.sanitizedContent1 = this.sanitizer.bypassSecurityTrustHtml(this.specialities[0].content_1);
   }
+
+  formDoctors : any = ['Dr. Mahesh Kulkarni', 'Dr. Sujayendra D. M', 'Dr. Nikhil Hegde', 'Dr. Hemanth Kumar Venkatesh']
 
   doctors = [
     {
