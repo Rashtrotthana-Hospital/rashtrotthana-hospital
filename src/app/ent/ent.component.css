@@ -1,9 +1,9 @@
 .speciality-header {
-    margin-top: 120px;
+    margin-top: 126px;
 }
 
 .speciality-header img {
-    width: 100vw;
+    width: 100%;
     height: auto;
 }
 
@@ -20,12 +20,12 @@
     height: 40px;
     position: relative;
     bottom: 60px;
-    margin-left: 3%;
+    margin-left: 4%;
     text-decoration: none;
     transition: 0.5s;
 }
 
-.contact_button:hover{
+.contact_button:hover {
     background-color: #FBCA51;
     color: #000;
 }
@@ -58,7 +58,7 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    line-height: 36px;
+    line-height: 26px;
     /* 225% */
 }
 
@@ -215,6 +215,10 @@
     display: none;
 }
 
+.mobile-youtube {
+    display: none;
+}
+
 @media (max-width : 1200px) {
     .sidebar {
         display: none;
@@ -234,6 +238,11 @@
 }
 
 @media (max-width: 780px) {
+
+    .speciality-header{
+        margin-top: 110px;
+    }
+
     .form-container {
         flex-direction: column;
         gap: 40px;
@@ -326,6 +335,14 @@
     }
 
     .contact_button {
-        bottom: 70px;
+        bottom: 80px;
+    }
+
+    .desktop-youtube {
+        display: none;
+    }
+
+    .mobile-youtube {
+        display: block;
     }
 }
