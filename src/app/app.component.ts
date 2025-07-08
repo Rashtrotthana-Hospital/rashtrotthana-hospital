@@ -4,7 +4,6 @@ import { filter } from 'rxjs/operators';
 import { AnalyticsService } from './analytics.service';
 import { MessageService } from 'primeng/api';
 import { Meta, Title } from '@angular/platform-browser';
-import { CanonicalService } from './canonical.service';
 
 declare let gtag: Function;
 @Component({
@@ -13,7 +12,7 @@ declare let gtag: Function;
   styleUrl: './app.component.css'
 })
 export class AppComponent implements OnInit {
-  constructor(private router: Router, private analyticsService: AnalyticsService, private messageService: MessageService, private meta: Meta, private title: Title, private canonicalService: CanonicalService) { }
+  constructor(private router: Router, private analyticsService: AnalyticsService, private messageService: MessageService, private meta: Meta, private title: Title) { }
   // title = 'rashtrotthana_hospital';
   isCareerPage = false;
   ngOnInit() {
@@ -74,20 +73,6 @@ export class AppComponent implements OnInit {
         'page_path': event.urlAfterRedirects
       });
     });
-
-
-    // canonical
-
-    this.router.events
-      .pipe(filter(event => event instanceof NavigationEnd))
-      .subscribe(() => {
-        const absoluteUrl = this.getAbsoluteUrl(window.location.pathname);
-        this.canonicalService.setCanonical(absoluteUrl);
-      });
-    }
-
-  getAbsoluteUrl(path: string): string {
-    return `${window.location.origin}${path}`;
   }
 
   setMetaTags() {
