@@ -23,6 +23,14 @@ export class EndocrinologyComponent {
 
   }
 
+  doctors : any = [
+    {
+      doctor_image: '../../assets/dr-manasa-m-g.jpg',
+      doctor_name: 'Dr. Manasa M. G',
+      experience: "8+",
+      docalt: 'Dr. Manasa M. G. | Best Endocrinology Doctor in Bangalore | Rashtrotthan Hospital'
+    },
+  ]
 
 
 }

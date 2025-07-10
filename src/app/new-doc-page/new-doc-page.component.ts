@@ -817,8 +817,8 @@ export class NewDocPageComponent {
       time: "",
       date: "",
       alt: 'Dr. Harshith K. S | Best Internal Medicine Doctor in Bangalore | Rashtrotthan Hospital',
-      title:'',
-      description:''
+      ttitle: 'Dr. Harshith K.S. | Consultant Physician in Bangalore',
+      description: 'Book a consultation with Dr. Harshith K.S., expert in internal medicine, diabetes care and adult chronic disease management in Bangalore.'
     },
     // {
     //   name: 'Dr. Ashika Bagaria',
@@ -1298,6 +1298,21 @@ export class NewDocPageComponent {
       title:'Dr. Shruti Suresh - Experienced General Physician in Bangalore',
       description:'Consult Dr. Shruti Suresh for expert care in general medicine and long-term health management in Rajarajeshwari Nagar.',
       id : ''
+    },
+    {
+      name: "Dr. Manasa M. G.",
+      image: "assets/dr-manasa-m-g-doc-page.png",
+      department: 'Endocrinology',
+      speciality: 'ENDOCRINOLOGY',
+      about: "Dr. Manasa M. G. is an accomplished endocrinologist-in-training with extensive experience in managing complex hormonal disorders. She completed her M.D. in Internal Medicine as the university topper and secured an All India 3rd rank in NEET-SS for DM Endocrinology. She has presented and won awards at national conferences on topics ranging from hypothyroid myopathy to pituitary disorders, and has published multiple case reports in reputed journals. She is skilled in a wide range of diagnostic and interventional procedures, committed to evidence-based endocrine care, and dedicated to advancing her expertise to provide comprehensive management for patients with endocrine and metabolic diseases.",
+      areasOfExpertise: ["Diabetes and thyroid disorders", "Hypertension with hormonal causes", "Adrenal and pituitary diseases", "Bone metabolism and osteoporosis", "Rare endocrine syndromes", "General endocrine care"],
+      expertise: "Years of Experience: 8+",
+      qualification: "MBBS, MD Internal Medicine, DM Endocrinology",
+      time: "",
+      date: "",
+      alt: 'Dr. Manasa M. G. | Best Endocrinology Doctor in Bangalore | Rashtrotthan Hospital',
+      title: 'Dr. Manasa M. G. | Endocrinologist - Hormone & Diabetes Expert',
+      description: 'Meet Dr. Manasa M. G., expert in endocrine care with research-backed experience in treating hormonal and metabolic disorders in Bangalore.'
     },
     // {
     //   name: "",
