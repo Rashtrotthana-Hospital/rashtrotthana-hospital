@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Title, Meta, DomSanitizer, SafeHtml } from '@angular/platform-browser';
-
+declare var gtag: Function;
 
 @Component({
   selector: 'app-urology',
@@ -28,26 +28,28 @@ export class UrologyComponent {
       doctor_image: '../../assets/doctor-31.png',
       doctor_name: 'Dr. Nagaraj Rao',
       experience: "25",
-      docalt : "Dr. Nagaraj Rao is the best urologist in Bangalore | Rashtrotthana Hospital Bangalore"
+      docalt: "Dr. Nagaraj Rao is the best urologist in Bangalore | Rashtrotthana Hospital Bangalore"
     },
     {
       doctor_image: '../../assets/Dr-Madhu-S-N.png',
       doctor_name: 'Dr. Madhu S. N',
       experience: "14",
-      docalt : "Dr.Madhu S N Rao is the best urologist in Bangalore | Rashtrotthana Hospital Bangalore"
+      docalt: "Dr.Madhu S N Rao is the best urologist in Bangalore | Rashtrotthana Hospital Bangalore"
     },
 
   ]
 
+  formDoctors = ['Dr. Nagaraj Rao', 'Dr. Madhu S. N']
+
   faqs = [
     {
-      ques : " Why am I seeing blood in my urine?",
-      ans : "Blood in urine, also called hematuria, can be a sign of several underlying health conditions, including kidney stones, bladder infection, urinary tract infection (UTI), prostate issues, or even bladder cancer. Sometimes, it may result from strenuous exercise or certain medications, but persistent cases should be evaluated immediately. At Rashtrotthana Hospital, our expert urologists, Dr. Nagaraj Rao and Dr. Madhu S. N, use advanced diagnostic tests like urine analysis, ultrasound and cystoscopy to determine the exact cause and provide the best treatment."
+      ques: " Why am I seeing blood in my urine?",
+      ans: "Blood in urine, also called hematuria, can be a sign of several underlying health conditions, including kidney stones, bladder infection, urinary tract infection (UTI), prostate issues, or even bladder cancer. Sometimes, it may result from strenuous exercise or certain medications, but persistent cases should be evaluated immediately. At Rashtrotthana Hospital, our expert urologists, Dr. Nagaraj Rao and Dr. Madhu S. N, use advanced diagnostic tests like urine analysis, ultrasound and cystoscopy to determine the exact cause and provide the best treatment."
     },
 
     {
-      ques : "What causes painful urination and burning urine?",
-      ans : `
+      ques: "What causes painful urination and burning urine?",
+      ans: `
         <p class = "s_para"><b>Painful urination (dysuria) and burning urine</b> are often caused by:</p>
         <ul>
           <li class = "s_para"><b>Urinary tract infections (UTIs)</b> - Common in both men and women, causing frequent urination and bladder pain.</li>
@@ -59,8 +61,8 @@ export class UrologyComponent {
       `
     },
     {
-      ques : "What are the symptoms of a urinary infection (UTI)?",
-      ans : `
+      ques: "What are the symptoms of a urinary infection (UTI)?",
+      ans: `
         <ul>
           <li class = "s_para">A urinary infection can cause:</li>
           <li class = "s_para">Frequent urination (needing to urinate often, even at night)</li>
@@ -73,8 +75,8 @@ export class UrologyComponent {
       `
     },
     {
-      ques : "How is kidney stone removal done?",
-      ans : `
+      ques: "How is kidney stone removal done?",
+      ans: `
         <p class = "s_para">Kidney stones can cause severe back pain, nausea, vomiting and difficulty passing urine. Treatment options include:</p>
         <ul>
           <li class = "s_para"><b>Medication to dissolve small stones</b></li>
@@ -86,8 +88,8 @@ export class UrologyComponent {
       `
     },
     {
-      ques : "What is the best treatment for prostate cancer?",
-      ans : `
+      ques: "What is the best treatment for prostate cancer?",
+      ans: `
         <p class = "s_para">Prostate cancer treatment depends on factors like age, cancer stage, and overall health. Common treatments include:</p>
         <ul>
           <li class = "s_para"><b>Active Surveillance</b> - For slow-growing cases</li>
@@ -99,8 +101,8 @@ export class UrologyComponent {
       `
     },
     {
-      ques : "Can bladder stones cause bladder pain?",
-      ans : `
+      ques: "Can bladder stones cause bladder pain?",
+      ans: `
         <p class = "s_para">Yes, bladder stones can cause:</p>
         <ul>
           <li class = "s_para">Bladder pain and discomfort</li>
@@ -112,8 +114,8 @@ export class UrologyComponent {
       `
     },
     {
-      ques : "Where can I find the best urology surgery in Bangalore?",
-      ans : `
+      ques: "Where can I find the best urology surgery in Bangalore?",
+      ans: `
         <p class = "s_para">If you're looking for the best urologist in Bangalore for treatments like kidney stone removal, prostate surgery, or bladder cancer treatment, Rashtrotthana Hospital provides:</p>
         <ul>
           <li class = "s_para"><b>Experienced Urology Surgeons</b> - Dr. Nagaraj Rao and Dr. Madhu S. N</li>
@@ -124,5 +126,11 @@ export class UrologyComponent {
       `
     },
   ]
+
+  trackPhoneClick() {
+    gtag('event', 'conversion', {
+      'send_to': 'AW-16656770043/-YEMCITg09IZEPvHyIY-'
+    });
+  }
 
 }

@@ -62,6 +62,7 @@
 
     gtag('config', 'G-6T1G50PFJK');
   </script>
+
   <script>
     window.addEventListener('load', function () {
       if (window.location.href.includes('/thank-you')) {
@@ -71,6 +72,7 @@
     });
   </script>
 
+  <script>qp('track', 'GenerateLead');</script>
 
   <script type="application/ld+json">
 [
@@ -127,27 +129,41 @@
 
 
   <!-- quora tracking ID -->
+  <!-- DO NOT MODIFY -->
+  <!-- Quora Pixel Code (JS Helper) -->
   <script>
-    !function (q, e, v, n, t, s) {
-      if (q.qp) return;
-      n = q.qp = function () { n.qp ? n.qp.apply(n, arguments) : n.queue.push(arguments) };
-      n.queue = [];
-      t = document.createElement(e); t.async = !0; t.src = v;
-      s = document.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t, s);
-    }(window, 'script', 'https://a.quora.com/qevents.js');
-    qp('init', '84a8962e70b0814fa7014b8d1afc424b');
+    !function (q, e, v, n, t, s) { if (q.qp) return; n = q.qp = function () { n.qp ? n.qp.apply(n, arguments) : n.queue.push(arguments); }; n.queue = []; t = document.createElement(e); t.async = !0; t.src = v; s = document.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s); }(window, 'script', 'https://a.quora.com/qevents.js');
+    qp('init', 'c5a5ebd72df04bb9b1c1ece9400e34c9');
     qp('track', 'ViewContent');
   </script>
-  <!-- <noscript>
-    <img height="1" width="1" style="display:none"
-      src="https://q.quora.com/_/ad/84a8962e70b0814fa7014b8d1afc424b/pixel?event=ViewContent" />
-  </noscript> -->
+  <!-- End of Quora Pixel Code -->
+
+
+  <!-- bing ads -->
+  <script>
+    (function (w, d, t, r, u) {
+      var f, n, i;
+      w[u] = w[u] || [], f = function () {
+        var o = { ti: "343201183", enableAutoSpaTracking: true };
+        o.q = w[u], w[u] = new UET(o), w[u].push("pageLoad")
+      },
+        n = d.createElement(t), n.src = r, n.async = 1, n.onload = n.onreadystatechange = function () {
+          var s = this.readyState;
+          s && s !== "loaded" && s !== "complete" || (f(), n.onload = n.onreadystatechange = null)
+        },
+        i = d.getElementsByTagName(t)[0], i.parentNode.insertBefore(n, i)
+    })
+      (window, document, "script", "//bat.bing.com/bat.js", "uetq");
+  </script>
+
 
 </head>
 
 <body class="mat-typography">
   <app-root></app-root>
+
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://q.quora.com/_/ad/c5a5ebd72df04bb9b1c1ece9400e34c9/pixel?tag=ViewContent&noscript=1" /></noscript>
 </body>
 
 </html>
