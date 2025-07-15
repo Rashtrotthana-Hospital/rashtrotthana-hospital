@@ -42,20 +42,15 @@ selectedPackage: Package | null = null; // Selected package
 
   packages: Package[] = [
     {
-      title: 'Integrated Diabetic Care',
+      title: 'Basic Diabetic Care',
       price: 599,
       packageId: 1,
       package: [
         {
           title: 'LABORATORY INVESTIGATIONS',
-          items: ['Basic Vitals Check','FBS', 'Lipid profile', 'PPBS', 'Serum Creatinine', ' HBA1C'],
+          items: ['FBS', 'Lipid profile', 'PPBS', 'Serum Creatinine', ' HBA1C'],
           icon: 'blood'
-        },
-        {
-          title:' SPECIALITY CONSULTATIONS',
-          items: ['General Physician','Ayurveda', 'Lifestyle'],
-          icon: 'speciality'
-        } 
+        }
       ],
       test: '15'
     },
@@ -104,12 +99,12 @@ selectedPackage: Package | null = null; // Selected package
         },
         {
           title: 'CARDIAC EVALUATION',
-          items: ['ECG', 'Echo OR TMT'],
+          items: ['ECG', 'Echo'],
           icon: 'cardiac'
         },
         {
           title:' SPECIALITY CONSULTATIONS',
-          items: ['Physician', 'Ophthalmology', 'ENT', 'Life Style - Cognetive Fitness', 'Diet Counselling', 'Dental Check up'],
+          items: ['Physician', 'Ophthalmology', 'ENT', 'Life Style', 'Dental'],
           icon: 'speciality'
         } 
       ],
@@ -122,7 +117,7 @@ selectedPackage: Package | null = null; // Selected package
       package: [
         {
           title: 'LABORATORY Investigations',
-          items: ['Complete Blood count with ESR', 'Fasting Blood Sugar', 'Post prandial blood sugar', 'Complete Urine Examination', 'Complete Stool Examination Including occult blood', ' Lipid profile', 'Serum Creatinine', 'Vitamin D', 'HBA1C', 'TFT', 'Liver function test', 'PSA (For Male)'],
+          items: ['Complete Blood count with ESR', 'Fasting Blood Sugar', 'Post prandial blood sugar', 'Complete Urine Examination', 'Complete Stool Examination Including occult blood', ' Lipid profile', 'Serum Creatinine', 'Vitamin D', 'HBA1C', 'TFT', 'Liver function test', 'Pap Smear (For Male)'],
           icon: 'blood'
         },
         {
@@ -132,7 +127,7 @@ selectedPackage: Package | null = null; // Selected package
         },
         {
           title: 'CARDIAC EVALUATION',
-          items: ['ECG', 'Echo OR TMT'],
+          items: ['ECG', 'Echo'],
           icon: 'cardiac'
         },
         {
@@ -165,7 +160,7 @@ selectedPackage: Package | null = null; // Selected package
         },
         {
           title: ' SPECIALITY CONSULTATIONS',
-          items: ['Physician', 'Eye Check / Vision Test'],
+          items: ['Physician', 'Eye Check / Vision Test', 'Life Style Consultation'],
           icon: 'speciality'
         } 
       ],
@@ -178,22 +173,22 @@ selectedPackage: Package | null = null; // Selected package
       package: [
         {
           title: 'LABORATORY INVESTIGATIONS',
-          items: ['Complete Blood count with ESR', 'Fasting Blood Sugar', 'Post prandial blood sugar','Complete Hemogram ', 'Complete Urine Examination', 'Complete Stool Examination Including occult blood', ' Lipid profile', 'Serum Creatinine', 'Vitamin D', 'HBA1C', 'TFT', 'Liver function test', 'PSA (For Male)'],
+          items: ['Complete Blood count', 'Fasting Blood Sugar', 'Complete Urine Examination', 'PPBS', ' Lipid profile', 'Serum Creatinine', 'Vitamin D', 'TFT', 'LFT', 'PSA'],
           icon: 'blood'
         },
         {
           title: 'RADIOLOGY',
-          items: ['Ultrasound (Abd & Plv)', 'Chest X-Ray'],
+          items: ['USG (Abd & Plv)', 'Chest X-Ray'],
           icon: 'radiology'
         },
         {
           title: 'CARDIAC EVALUATION',
-          items: ['ECG', 'Echo OR TMT'],
+          items: ['ECG', 'Echo'],
           icon: 'cardiac'
         },
         {
           title:' SPECIALITY CONSULTATIONS',
-          items: ['Physician', 'Ophthalmology', 'ENT', 'Life Style - Cognetive Fitness', 'Diet Counselling', 'Dental Check up'],
+          items: ['Physician', 'Ophthalmology', 'ENT', 'Specialist of Choice', 'Life Style', 'Dental'],
           icon: 'speciality'
         } 
       ],
@@ -206,7 +201,7 @@ selectedPackage: Package | null = null; // Selected package
       package: [
         {
           title: 'LABORATORY INVESTIGATIONS',
-          items: ['Complete Blood count with ESR', 'Fasting Blood Sugar', 'Post prandial blood sugar', 'Complete Urine Examination', ' Lipid profile', 'Serum Creatinine','TFT','TSH'],
+          items: ['Complete Blood count with ESR', 'Fasting Blood Sugar', 'Post prandial blood sugar', 'Complete Urine Examination', ' Lipid profile', 'Serum Creatinine','LFT','TSH'],
           icon: 'blood'
         },
         {
@@ -216,12 +211,12 @@ selectedPackage: Package | null = null; // Selected package
         },
         {
           title: 'CARDIAC EVALUATION',
-          items: ['ECG', 'Echo OR TMT'],
+          items: ['ECG', 'Echo'],
           icon: 'cardiac'
         },
         {
           title:' SPECIALITY CONSULTATIONS',
-          items: ['Physician', 'Ophthalmology', 'ENT', 'Life Style - Cognetive Fitness', 'Diet Counselling', 'Dental Check up'],
+          items: ['Physician', 'Ophthalmology', 'Life Style', 'Dental'],
           icon: 'speciality'
         } 
       ],
@@ -234,22 +229,22 @@ selectedPackage: Package | null = null; // Selected package
       package: [
         {
           title: 'LABORATORY INVESTIGATIONS',
-          items: [ 'Fasting Blood Sugar', 'Post prandial blood sugar', 'Complete Urine Examination','Creatinine','Complete Hemogram', ' Lipid profile', 'Pap Smear','TFT','LFT'],
+          items: [ 'Fasting Blood Sugar', 'Post prandial blood sugar', 'Complete Urine Examination','Creatinine','Vitamin D ', ' Lipid profile', 'Pap Smear','TFT','LFT'],
           icon: 'blood'
         },
         {
           title: 'RADIOLOGY',
-          items: ['Ultrasound (Abd & Plv)', 'Chest X-Ray','MamoGraphy'],
+          items: ['USG (Abd & Plv)', 'Chest X-Ray','MammoGraphy'],
           icon: 'radiology'
         },
         {
           title: 'CARDIAC EVALUATION',
-          items: ['ECG', 'Echo OR TMT'],
+          items: ['ECG', 'Echo'],
           icon: 'cardiac'
         },
         {
           title:' SPECIALITY CONSULTATIONS',
-          items: ['Physician', 'Ophthalmology', 'ENT', 'Life Style - Cognetive Fitness', 'Diet Counselling', 'Dental Check up'],
+          items: ['Physician', 'Ophthalmology', 'ENT', 'Life Style', 'Speciality of Choice', 'Dental'],
           icon: 'speciality'
         } 
       ],
@@ -262,12 +257,12 @@ selectedPackage: Package | null = null; // Selected package
       package: [
         {
           title: 'LABORATORY INVESTIGATIONS',
-          items: [ 'Fasting Blood Sugar', 'Post prandial blood sugar','CBC','Sr Creatinine','Urine Routine', ' Lipid profile', 'Pap Smear','TFT','LFT'],
+          items: [ 'Fasting Blood Sugar', 'Post prandial blood sugar','CBC','Sr. Creatinine','Urine Routine', 'Lipid profile', 'Pap Smear','TFT','LFT'],
           icon: 'blood'
         },
         {
           title: 'RADIOLOGY',
-          items: ['Ultrasound (Abd & Plv)', 'Chest X-Ray','Thermal Breast Creaming'],
+          items: ['Ultrasound (Abd & Plv)', 'Chest X-Ray','Breast Imaging'],
           icon: 'radiology'
         },
         {
@@ -277,7 +272,7 @@ selectedPackage: Package | null = null; // Selected package
         },
         {
           title:' SPECIALITY CONSULTATIONS',
-          items: ['Physician', 'Gynecologist', 'ENT', 'Life Style - Cognetive Fitness', 'Diet Counselling', 'Dental Check up'],
+          items: ['Physician', 'Gynecologist', 'Life Style', 'Dental'],
           icon: 'speciality'
         } 
       ],
@@ -290,7 +285,7 @@ selectedPackage: Package | null = null; // Selected package
       package: [
         {
           title: 'LABORATORY INVESTIGATIONS',
-          items: [ 'Fasting Blood Sugar','Uric Acid','Complete Blood Count with ESR', 'Post prandial blood sugar','Complete Urine Examination','Sr Creatinine','HBA1C','TSH','Blood Urea','Electrolytes','Urine Microalbumin','Urine Creatinine', 'Microalbumin / Creatinine Ratio (random Urine)',' Lipid profile', 'Pap Smear','TFT','LFT'],
+          items: [ 'Fasting Blood Sugar','Uric Acid','Complete Blood Count with ESR', 'Post prandial blood sugar','Complete Urine Examination','Serum Creatinine','HBA1C','TSH','Blood Urea','Electrolytes','Urine Microalbumin','Urine Creatinine', 'Microalbumin / Creatinine Ratio (random Urine)',' Lipid profile', 'Blood Urea Nitrogen','TFT','LFT'],
           icon: 'blood'
         },
         {
@@ -300,12 +295,12 @@ selectedPackage: Package | null = null; // Selected package
         },
         {
           title: 'CARDIAC EVALUATION',
-          items: ['ECG', 'Echo or TMT'],
+          items: ['ECG', 'Echo'],
           icon: 'cardiac'
         },
         {
           title:' SPECIALITY CONSULTATIONS',
-          items: ['Physician', 'Ophthalmology', 'ENT', 'Life Style - Cognetive Fitness', 'Diet Counselling', 'Dental Check up'],
+          items: ['Ophthalmology', 'ENT', 'Life Style', 'Dental', 'Diabetologist / Physician'],
           icon: 'speciality'
         } 
       ],
