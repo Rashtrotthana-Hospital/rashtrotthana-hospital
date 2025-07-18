@@ -336,19 +336,19 @@ export class DoctorLayoutComponent {
       alt: 'Dr. Meena H. B | Best Skin Doctor in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore'
     },
 
-    {
-      name: 'Dr. Sindhu P. Madanshetty',
-      image: 'assets/Dr-Sindhu-P-Madanshetty.png',
-      desgination: 'INTERNAL MEDICINE',
-      about: 'Dr Sindhu has built a reputable career as a recognised expert with superb patient care and medical knowledge. She completed her MBBS from Hubli, then MD in general medicine from Bangalore Medical College and research institute in 2018. She has been a gold medallist in her undergraduate. She has worked in both Internal Medicine and Intensive care and contributed in patient care at BGS global hospitals. Special interest is in critical care, Infection diseases, diabetology, metabolic diseases.',
-      speciality: 'INTERNAL MEDICINE',
-      areasOfExpertise: ['Critical Care', 'Diabetology', 'Hypertensions', 'Thyroid illness', 'Infectious diseases like Dengue', 'pneumonia', 'UTI'],
-      expertise: 'Years of Experience: 7',
-      qualification: 'MBBS, MD INTERNAL MEDICINE, IDCCM',
-      time: '10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00',
-      date: 'Monday-Saturday',
-      alt: 'Dr. Sindhu P. Madanshetty | Best Physician in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore'
-    },
+    // {
+    //   name: 'Dr. Sindhu P. Madanshetty',
+    //   image: 'assets/Dr-Sindhu-P-Madanshetty.png',
+    //   desgination: 'INTERNAL MEDICINE',
+    //   about: 'Dr Sindhu has built a reputable career as a recognised expert with superb patient care and medical knowledge. She completed her MBBS from Hubli, then MD in general medicine from Bangalore Medical College and research institute in 2018. She has been a gold medallist in her undergraduate. She has worked in both Internal Medicine and Intensive care and contributed in patient care at BGS global hospitals. Special interest is in critical care, Infection diseases, diabetology, metabolic diseases.',
+    //   speciality: 'INTERNAL MEDICINE',
+    //   areasOfExpertise: ['Critical Care', 'Diabetology', 'Hypertensions', 'Thyroid illness', 'Infectious diseases like Dengue', 'pneumonia', 'UTI'],
+    //   expertise: 'Years of Experience: 7',
+    //   qualification: 'MBBS, MD INTERNAL MEDICINE, IDCCM',
+    //   time: '10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00',
+    //   date: 'Monday-Saturday',
+    //   alt: 'Dr. Sindhu P. Madanshetty | Best Physician in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore'
+    // },
 
 
     {
@@ -864,7 +864,7 @@ export class DoctorLayoutComponent {
       name: "Dr. Vivekanand",
       image: "assets/Dr-Vivekanad.png",
       desgination: 'Consultant Vascular Surgeon',
-      speciality: 'GENERAL SURGERY',
+      speciality: 'VASCULAR SURGERY',
       about: "Dr. Vivekanand is a highly experienced vascular surgeon with over two decades of expertise in vascular and endovascular surgery. Currently serving as the Head of the Department at the Jain Institute of Vascular Sciences, Bhagwan Mahaveer Jain Hospital, he has been instrumental in advancing vascular care. He is a recognized leader, having served as the President of the Vascular Surgeons Association of Karnataka and President Elect of the Vascular Society of India. With a strong commitment to education, Dr. Vivekanand has mentored numerous fellows and postgraduates and has authored multiple publications and textbook chapters in vascular surgery and dermatology.",
       areasOfExpertise: ["Prevention and management of diabetic foot infections and limb preservation.", "Awareness and treatment of Deep Vein Thrombosis (DVT) and thrombotic events.", "Advanced wound healing techniques.", "Management of thrombosis and hemostasis disorders."],
       expertise: "Years of Experience: 25+",
@@ -1216,9 +1216,10 @@ export class DoctorLayoutComponent {
           },
           {
             cname: 'ENDOCRINOLOGY', code: 'GM-ON'
+          },
+          {
+            cname: 'VASCULAR SURGERY', code: 'GM-ON'
           }
-
-
         ]
       },
       { cname: 'LIFESTYLE MEDICINE', code: 'YG' },

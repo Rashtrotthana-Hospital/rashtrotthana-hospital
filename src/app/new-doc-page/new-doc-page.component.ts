@@ -415,22 +415,22 @@ export class NewDocPageComponent {
       description:'Consult Dr. Meena H. B, dermatologist in RR Nagar with 28+ years’ experience in acne scars, pigmentation, PRP therapy, chemical peels, and laser hair removal.'
     },
 
-    {
-      name: 'Dr. Sindhu P. Madanshetty',
-      image: 'assets/Doc-Inv-Page/Dr-Sindhu-P-Madanshetty.png',
-      department: 'INTERNAL MEDICINE',
-      about: 'Dr Sindhu has built a reputable career as a recognised expert with superb patient care and medical knowledge. She completed her MBBS from Hubli, then MD in general medicine from Bangalore Medical College and research institute in 2018. She has been a gold medallist in her undergraduate. She has worked in both Internal Medicine and Intensive care and contributed in patient care at BGS global hospitals. Special interest is in critical care, Infection diseases, diabetology, metabolic diseases.',
-      speciality: 'INTERNAL MEDICINE',
-      areasOfExpertise: ['Critical Care', 'Diabetology', 'Hypertensions', 'Thyroid illness', 'Infectious diseases like Dengue', 'pneumonia', 'UTI'],
-      expertise: 'Years of Experience: 7',
-      qualification: 'MBBS, MD INTERNAL MEDICINE, IDCCM',
-      time: '10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00',
-      date: 'Monday-Saturday',
-      alt: 'Dr. Sindhu P. Madanshetty | Best Physician in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
-      id: 1,
-      title:'Dr. Sindhu P. Madanshetty | Internal Medicine in RR Nagar',
-      description:'Book with Dr. Sindhu P. Madanshetty, RR Nagar-based internal medicine doctor with 7+ years’ experience in critical care, diabetes, thyroid, and infections.'
-    },
+    // {
+    //   name: 'Dr. Sindhu P. Madanshetty',
+    //   image: 'assets/Doc-Inv-Page/Dr-Sindhu-P-Madanshetty.png',
+    //   department: 'INTERNAL MEDICINE',
+    //   about: 'Dr Sindhu has built a reputable career as a recognised expert with superb patient care and medical knowledge. She completed her MBBS from Hubli, then MD in general medicine from Bangalore Medical College and research institute in 2018. She has been a gold medallist in her undergraduate. She has worked in both Internal Medicine and Intensive care and contributed in patient care at BGS global hospitals. Special interest is in critical care, Infection diseases, diabetology, metabolic diseases.',
+    //   speciality: 'INTERNAL MEDICINE',
+    //   areasOfExpertise: ['Critical Care', 'Diabetology', 'Hypertensions', 'Thyroid illness', 'Infectious diseases like Dengue', 'pneumonia', 'UTI'],
+    //   expertise: 'Years of Experience: 7',
+    //   qualification: 'MBBS, MD INTERNAL MEDICINE, IDCCM',
+    //   time: '10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00',
+    //   date: 'Monday-Saturday',
+    //   alt: 'Dr. Sindhu P. Madanshetty | Best Physician in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
+    //   id: 1,
+    //   title:'Dr. Sindhu P. Madanshetty | Internal Medicine in RR Nagar',
+    //   description:'Book with Dr. Sindhu P. Madanshetty, RR Nagar-based internal medicine doctor with 7+ years’ experience in critical care, diabetes, thyroid, and infections.'
+    // },
 
 
     {
