@@ -63,6 +63,7 @@ import { NewDocPageComponent } from './new-doc-page/new-doc-page.component';
 import { TermsAndConditionsComponent } from './terms-and-conditions/terms-and-conditions.component';
 import { SamrakshaComponent } from './samraksha/samraksha.component';
 import { ThankYouComponent } from './thank-you/thank-you.component';
+import { VascularSurgeriesComponent } from './vascular-surgeries/vascular-surgeries.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -94,6 +95,7 @@ const routes: Routes = [
       { path: 'best-obstetrics-and-gynecologist-hospital-in-bangalore', component: ObstetricsGynaecologyComponent },
       { path: 'best-endocrinology-hospital-in-bangalore', component: EndocrinologyComponent },
       { path: 'rheumatology-hospital-bangalore', component: RheumatologyComponent },
+      { path: 'best-vascular-surgery-hospital-in-bangalore', component: VascularSurgeriesComponent },
 
 
       { path: 'yoga-therapy-bangalore', component: YogaComponent },

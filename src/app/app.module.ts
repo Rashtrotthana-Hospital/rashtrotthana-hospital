@@ -125,6 +125,7 @@ import { TermsAndConditionsComponent } from './terms-and-conditions/terms-and-co
 import { SamrakshaComponent } from './samraksha/samraksha.component';
 import { ThankYouComponent } from './thank-you/thank-you.component';
 import { SpecialityFormComponent } from './speciality-form/speciality-form.component';
+import { VascularSurgeriesComponent } from './vascular-surgeries/vascular-surgeries.component';
 
 
 @NgModule({
@@ -223,7 +224,8 @@ import { SpecialityFormComponent } from './speciality-form/speciality-form.compo
     TermsAndConditionsComponent,
     SamrakshaComponent,
     ThankYouComponent,
-    SpecialityFormComponent
+    SpecialityFormComponent,
+    VascularSurgeriesComponent
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   imports: [
