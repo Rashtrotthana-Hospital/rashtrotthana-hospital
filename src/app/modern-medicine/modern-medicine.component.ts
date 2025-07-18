@@ -185,6 +185,14 @@ export class ModernMedicineComponent {
       route:'rheumatology-hospital-bangalore',
       alt : 'Rashtrotthana Hospital | Best Rheumatology  Hospital in Bangalore'
     },
+    // {
+    //   name: 'card',
+    //   image: '../../assets/rheumatology-bangalore.png',
+    //   title: 'Vascular Surgeries',
+    //   button_text: 'Read More',
+    //   route:'best-vascular-surgery-hospital-in-bangalore',
+    //   alt : 'Rashtrotthana Hospital | Best Vascular Surgeries Hospital in Bangalore'
+    // },
     
   ]
   hoverBoxes = [
