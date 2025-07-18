@@ -816,6 +816,7 @@ export class NewDocPageComponent {
       qualification: "MBBS, MD in General Medicine ",
       time: "",
       date: "",
+      id:74,
       alt: 'Dr. Harshith K. S | Best Internal Medicine Doctor in Bangalore | Rashtrotthan Hospital',
       ttitle: 'Dr. Harshith K.S. | Consultant Physician in Bangalore',
       description: 'Book a consultation with Dr. Harshith K.S., expert in internal medicine, diabetes care and adult chronic disease management in Bangalore.'
@@ -1294,10 +1295,10 @@ export class NewDocPageComponent {
       qualification: "MBBS, DNB (Internal Medicine)",
       time: "",
       date: "",
+      id:73,
       alt: 'Dr. Shruti Suresh| Nephrologist & Transplant Physician Bangalore',
       title:'Dr. Shruti Suresh - Experienced General Physician in Bangalore',
       description:'Consult Dr. Shruti Suresh for expert care in general medicine and long-term health management in Rajarajeshwari Nagar.',
-      id : ''
     },
     {
       name: "Dr. Manasa M. G.",
@@ -1310,6 +1311,7 @@ export class NewDocPageComponent {
       qualification: "MBBS, MD Internal Medicine, DM Endocrinology",
       time: "",
       date: "",
+      id:75,
       alt: 'Dr. Manasa M. G. | Best Endocrinology Doctor in Bangalore | Rashtrotthan Hospital',
       title: 'Dr. Manasa M. G. | Endocrinologist - Hormone & Diabetes Expert',
       description: 'Meet Dr. Manasa M. G., expert in endocrine care with research-backed experience in treating hormonal and metabolic disorders in Bangalore.'
