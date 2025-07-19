@@ -76,4 +76,6 @@ export class PulmonologyComponent {
     },
   ]
 
+
+  formDoctors : any = ["Dr. Kolla Vinod"]
 }

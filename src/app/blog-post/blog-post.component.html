@@ -26,10 +26,12 @@
         <button *ngIf="buttonUrl" (click)="goToButtonUrl()">
           {{ buttonText || 'Click Me' }}
         </button>
+
+        <div class="youtube" [innerHTML]="sanitizedYouTubeContent"></div>
       </div>
 
       
-      <div class="youtube" [innerHTML]="sanitizedYouTubeContent"></div>
+      
     </div>
   
     <!-- Right Banner -->

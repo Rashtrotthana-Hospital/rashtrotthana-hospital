@@ -1,6 +1,14 @@
 <div class="root-container">
     <div class="speciality-header">
-        <app-speciality-header main_heading="Pulmonology" />
+        <div class="speciality-header">
+        <img src="../../assets/pulmonology-banner.png" class="desktop"
+            alt="ENT Department care banner at Rashtrotthana Hospital, Bangalore">
+        <img src="../../assets/pulmonology-banner-mobile.png" class="mobile"
+            alt="ENT Department care banner at Rashtrotthana Hospital, Bangalore">
+        <div class="header_button">
+            <a href="tel:+918069239999" class="contact_button">Contact Now</a>
+        </div>
+    </div>
     </div>
 
     <div class="container-2">
@@ -271,6 +279,12 @@
             <div style="text-align: left; margin-bottom: 20px;" class="s_h1">Conclusion</div>
             <div class="s_para">At Rashtrotthana Hospital, we are committed to delivering world-class lung and respiratory care. As the best lungs hospital in RR Nagar Bangalore, we ensure that patients receive accurate diagnoses, advanced treatments, and compassionate care. Whether you need chronic cough treatment, tuberculosis (TB) treatment, lung cancer treatment, or breathing difficulty treatment, our best pulmonologists in Rajarajeshwari Nagar Bangalore are here to help.</div>
             <div class="s_para">For expert pulmonology care, visit Rashtrotthana Hospital, the best hospital for wheezing problems and lung diseases in Bangalore.</div>
+        </div>
+    </div>
+
+    <div class="form-container container-padding">
+        <div class="form">
+            <app-speciality-form [doctor]="formDoctors" />
         </div>
     </div>
 

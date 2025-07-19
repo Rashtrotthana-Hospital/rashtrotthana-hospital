@@ -1,4 +1,4 @@
-import { Component, ViewChild, AfterViewInit } from '@angular/core';
+import { Component, ViewChild, AfterViewInit} from '@angular/core';
 import { BlogServiceService } from '../blog-service.service';
 import { ActivatedRoute } from '@angular/router';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
@@ -168,6 +168,17 @@ this.buttonUrl = this.post.acf.buttton_url;
   
         observer.observe(footer);
       }
+    }, 0);
+
+    setTimeout(() => {
+      const iframes = this.el.nativeElement.querySelectorAll('iframe');
+      iframes.forEach((iframe: HTMLIFrameElement) => {
+        iframe.removeAttribute('width');
+        iframe.removeAttribute('height');
+        this.renderer.setStyle(iframe, 'width', '300px');
+        this.renderer.setStyle(iframe, 'height', '170px');
+        this.renderer.setStyle(iframe, 'maxWidth', '100%');
+      });
     }, 0);
   }
 

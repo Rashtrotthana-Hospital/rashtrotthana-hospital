@@ -85,12 +85,18 @@
   }
 
   .youtube{
-    display: flex;
+    display: grid;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     gap: 30px;
     overflow: hidden;
+    margin-top: 50px;
+  }
+
+  .youtube iframe{
+    width: 100px;
   }
 
   .responsive-iframe{
