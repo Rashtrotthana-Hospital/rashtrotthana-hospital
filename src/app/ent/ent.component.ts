@@ -100,9 +100,14 @@ export class ENTComponent {
   ]
 
   trackPhoneClick() {
+    if (typeof gtag === 'function') {
     gtag('event', 'conversion', {
-      'send_to': 'AW-16656770043/-YEMCITg09IZEPvHyIY-'
+      'send_to': 'AW-16656770043/-YEMCITg09IZEPvHyIY-',
+      'event_callback': () => {
+        console.log('Phone call conversion tracked!');
+      }
     });
+  }
   }
 
 }

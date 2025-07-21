@@ -53,26 +53,6 @@
   <link
     href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Cedarville+Cursive&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet">
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6T1G50PFJK"></script>
-
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'G-6T1G50PFJK');
-  </script>
-
-  <script>
-    window.addEventListener('load', function () {
-      if (window.location.href.includes('/thank-you')) {
-        console.log('Thank you page script fired!');
-        gtag('event', 'conversion', { 'send_to': 'AW-16656770043/x-W0COOwn-gaEPvHyIY-' });
-      }
-    });
-  </script>
-
-  <script>qp('track', 'GenerateLead');</script>
 
   <script type="application/ld+json">
 [
@@ -114,36 +94,40 @@
 </script>
 
 
+
+  <!-- Global Site Tag (gtag.js) - Google Ads & GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16656770043"></script>
   <script>
-    gtag('config', 'AW-16656770043/-YEMCITg09IZEPvHyIY-', {
-      'phone_conversion_number': '08069239999'
-    });
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    // Google Analytics 4
+    gtag('config', 'G-6T1G50PFJK');
+
+    // Google Ads
+    gtag('config', 'AW-16656770043');
   </script>
 
-  <!-- Event snippet for Hernia Lead Form Submission conversion page -->
+  <!-- Quora Pixel Code -->
   <script>
-    gtag('event', 'conversion', { 'send_to': 'AW-16656770043/HWNtCNvg3cAaEPvHyIY-' });
-  </script>
-
-  <!-- Event snippet for Contact conversion page -->
-  <script>
-    gtag('event', 'conversion', { 'send_to': 'AW-16656770043/qbjSCMi0--sZEPvHyIY-' });
-  </script>
-
-  <!-- gtag('event', 'conversion', { 'send_to': 'AW-16656770043/x-W0COOwn-gaEPvHyIY-' }); -->
-
-  <!-- quora tracking ID -->
-  <!-- DO NOT MODIFY -->
-  <!-- Quora Pixel Code (JS Helper) -->
-  <script>
-    !function (q, e, v, n, t, s) { if (q.qp) return; n = q.qp = function () { n.qp ? n.qp.apply(n, arguments) : n.queue.push(arguments); }; n.queue = []; t = document.createElement(e); t.async = !0; t.src = v; s = document.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s); }(window, 'script', 'https://a.quora.com/qevents.js');
+    !function (q, e, v, n, t, s) {
+      if (q.qp) return;
+      n = q.qp = function () {
+        n.qp ? n.qp.apply(n, arguments) : n.queue.push(arguments);
+      };
+      n.queue = [];
+      t = document.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = document.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s);
+    }(window, 'script', 'https://a.quora.com/qevents.js');
     qp('init', 'c5a5ebd72df04bb9b1c1ece9400e34c9');
     qp('track', 'ViewContent');
   </script>
-  <!-- End of Quora Pixel Code -->
 
-
-  <!-- bing ads -->
+  <!-- Bing Ads UET -->
   <script>
     (function (w, d, t, r, u) {
       var f, n, i;
@@ -153,12 +137,26 @@
       },
         n = d.createElement(t), n.src = r, n.async = 1, n.onload = n.onreadystatechange = function () {
           var s = this.readyState;
-          s && s !== "loaded" && s !== "complete" || (f(), n.onload = n.onreadystatechange = null)
+          if (s && s !== "loaded" && s !== "complete") return;
+          f(); n.onload = n.onreadystatechange = null;
         },
         i = d.getElementsByTagName(t)[0], i.parentNode.insertBefore(n, i)
-    })
-      (window, document, "script", "//bat.bing.com/bat.js", "uetq");
+    })(window, document, "script", "//bat.bing.com/bat.js", "uetq");
   </script>
+
+  <!-- <script>
+   // Add this script right after your base UET tag code
+   window.uetq = window.uetq || [];
+   window.uetq.push('set', { 'pid': { 
+      'em': 'contoso@example.com', // Replace with the variable that holds the user's email address. 
+      'ph': '+14250000000', // Replace with the variable that holds the user's phone number. 
+   } });
+</script> -->
+  
+<!-- <script>
+     window.uetq = window.uetq || [];
+     window.uetq.push('event', 'submit_lead_form_jmrh', {});
+</script> -->
 
 
 </head>

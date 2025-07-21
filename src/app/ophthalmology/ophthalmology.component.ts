@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Title, Meta, DomSanitizer, SafeHtml } from '@angular/platform-browser';
+declare var gtag: Function;
 
 @Component({
   selector: 'app-ophthalmology',
@@ -70,5 +71,16 @@ export class OphthalmologyComponent {
       ans: "At Rashtrotthana Hospital, Dr. Sowmya Bhat S is widely regarded as one of the best eye doctors in RR Nagar. With over 10 years of experience, she provides personalized care for everything from pediatric vision concerns to glaucoma and diabetic eye management."
     },
   ]
+
+  trackPhoneClick(){
+    if (typeof gtag === 'function') {
+    gtag('event', 'conversion', {
+      'send_to': 'AW-16656770043/-YEMCITg09IZEPvHyIY-',
+      'event_callback': () => {
+        console.log('Phone call conversion tracked!');
+      }
+    });
+  }
+  }
 
 }
