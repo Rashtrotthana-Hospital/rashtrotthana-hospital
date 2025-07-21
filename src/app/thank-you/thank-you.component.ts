@@ -8,14 +8,16 @@ declare function gtag(command: string, eventName: string, params?: any): void;
   styleUrl: './thank-you.component.css'
 })
 export class ThankYouComponent {
-ngOnInit(){
-  this.trackConversion()
-}
-trackConversion() {
-  console.log('g-tag event triggered');
-  gtag('event', 'conversion', {
-    send_to: 'AW-16656770043/x-W0COOwn-gaEPvHyIY-'
-  });
-}
+
+  ngOnInit() {
+    this.trackConversion()
+  }
+
+  trackConversion() {
+    console.log('g-tag event triggered');
+    gtag('event', 'conversion', {
+      send_to: 'AW-16656770043/x-W0COOwn-gaEPvHyIY-'
+    });
+  }
 
 }

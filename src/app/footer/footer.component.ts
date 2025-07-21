@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+declare let gtag: Function;
 
 @Component({
   selector: 'app-footer',
@@ -69,5 +70,15 @@ export class FooterComponent {
     this.router.navigate(['/contact-us-bangalore'])
   }
 
+  trackPhoneClick() {
+    if (typeof gtag === 'function') {
+    gtag('event', 'conversion', {
+      'send_to': 'AW-16656770043/-YEMCITg09IZEPvHyIY-',
+      'event_callback': () => {
+        console.log('Phone call conversion tracked!');
+      }
+    });
+  }
+  }
 }
 

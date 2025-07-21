@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Title, Meta, SafeHtml, DomSanitizer } from '@angular/platform-browser';
+declare let gtag: Function;
 
 @Component({
   selector: 'app-vascular-surgeries',
@@ -63,6 +64,13 @@ export class VascularSurgeriesComponent {
   formDoctors: any = ['Dr. Vivekanand']
 
   trackPhoneClick() {
-    
+    if (typeof gtag === 'function') {
+    gtag('event', 'conversion', {
+      'send_to': 'AW-16656770043/-YEMCITg09IZEPvHyIY-',
+      'event_callback': () => {
+        console.log('Phone call conversion tracked!');
+      }
+    });
+  } 
   }
 }

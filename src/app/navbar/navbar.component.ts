@@ -7,6 +7,7 @@ import { InputTextModule } from 'primeng/inputtext';
 import { FormBuilder, FormGroup, Validators, AbstractControl } from '@angular/forms';
 import { MessageService } from 'primeng/api';
 import { ContactFormService } from '../contact-form.service';
+declare let gtag: Function;
 
 interface City {
   name: string;
@@ -141,4 +142,16 @@ export class NavbarComponent {
       this.isSamraksha = false;
     }
   }
+
+  trackPhoneClick() {
+    if (typeof gtag === 'function') {
+    gtag('event', 'conversion', {
+      'send_to': 'AW-16656770043/-YEMCITg09IZEPvHyIY-',
+      'event_callback': () => {
+        console.log('Phone call conversion tracked!');
+      }
+    });
+  }
+  }
+  
 }
