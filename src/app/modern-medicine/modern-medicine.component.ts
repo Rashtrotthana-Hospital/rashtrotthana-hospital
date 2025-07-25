@@ -185,14 +185,14 @@ export class ModernMedicineComponent {
       route:'rheumatology-hospital-bangalore',
       alt : 'Rashtrotthana Hospital | Best Rheumatology  Hospital in Bangalore'
     },
-    // {
-    //   name: 'card',
-    //   image: '../../assets/rheumatology-bangalore.png',
-    //   title: 'Vascular Surgeries',
-    //   button_text: 'Read More',
-    //   route:'best-vascular-surgery-hospital-in-bangalore',
-    //   alt : 'Rashtrotthana Hospital | Best Vascular Surgeries Hospital in Bangalore'
-    // },
+    {
+      name: 'card',
+      image: '../../assets/vascular-bangalore.png',
+      title: 'Vascular Surgeries',
+      button_text: 'Read More',
+      route:'best-vascular-surgery-hospital-in-bangalore',
+      alt : 'Rashtrotthana Hospital | Best Vascular Surgeries Hospital in Bangalore'
+    },
     
   ]
   hoverBoxes = [
@@ -215,7 +215,8 @@ export class ModernMedicineComponent {
     { image: 'assets/best_oncology_hospital_in_rrnagar.png' },
     { image: 'assets/best_anesthesiology_hospital_in_rrnagar.png' },
     { image: 'assets/best_emergency_medicine_hospital_in_rrnagar.png' },
-    { image: 'assets/rheumatology-treatment.png'}
+    { image: 'assets/rheumatology-treatment.png'},
+    { image: 'assets/best-vascular-surgery-hospital-in-bangalore.png' }
   ];
   activeHoverIndex: number | null = null;
 
