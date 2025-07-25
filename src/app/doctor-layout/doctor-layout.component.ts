@@ -1110,6 +1110,22 @@ export class DoctorLayoutComponent {
       title: 'Dr. Manasa M. G. | Endocrinologist - Hormone & Diabetes Expert',
       description: 'Meet Dr. Manasa M. G., expert in endocrine care with research-backed experience in treating hormonal and metabolic disorders in Bangalore.'
     },
+    {
+      name: "Dr. Kishan G. N",
+      image: "assets/dr-kishan-g-n-doc-page.png",
+      department: 'Ayurveda (Panchakarma and Ayurvedic Medicine)',
+      speciality: 'AYURVEDA',
+      desgination: 'Ayurveda (Panchakarma and Ayurvedic Medicine)',
+      about: "Dr. Kishan G. N is an experienced Ayurvedic practitioner with over a decade of expertise in Panchakarma and holistic healthcare. He has served as a consultant across reputed Ayurvedic institutions, conducted extensive clinical documentation and research, and trained hundreds of therapists in therapeutic practices. His work includes participation in national and international seminars, representing Ayurveda at global platforms and integrating traditional knowledge with modern healthcare approaches.",
+      areasOfExpertise: ["Panchakarma therapies (detoxification and rejuvenation treatments)", "Ayurvedic management of chronic and lifestyle-related conditions", "Therapeutic drug monitoring and dose calculations", "Clinical documentation and research in Ayurveda", "Training and mentoring Ayurvedic therapists and students", "Uttarabasti and Vasti karma", "Gastroenterology", "Autoimmune disorders", "Musculoskeletal disorders"],
+      expertise: "Years of Experience: 14+",
+      qualification: "CCPT, PGCPK, BAMS",
+      time: "",
+      date: "",
+      alt: 'Dr. Kishan G. N – Ayurveda, Rashtrotthana Hospital Bangalore',
+      title:'',
+      description:''
+    },
     // {
     //   name: "",
     //   image: "",
