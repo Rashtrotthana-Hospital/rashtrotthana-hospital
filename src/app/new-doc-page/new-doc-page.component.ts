@@ -421,7 +421,7 @@ export class NewDocPageComponent {
       speciality: 'AYURVEDA',
       desgination: 'Ayurveda (Panchakarma and Ayurvedic Medicine)',
       about: "Dr. Kishan G. N is an experienced Ayurvedic practitioner with over a decade of expertise in Panchakarma and holistic healthcare. He has served as a consultant across reputed Ayurvedic institutions, conducted extensive clinical documentation and research, and trained hundreds of therapists in therapeutic practices. His work includes participation in national and international seminars, representing Ayurveda at global platforms and integrating traditional knowledge with modern healthcare approaches.",
-      areasOfExpertise: ["Specialized in Panchakarma therapies (detoxification and rejuvenation treatments)", "Ayurvedic management of chronic, lifestyle-related conditions, Autoimmune disorders, Gastrointestinal disorders, Musculoskeletal disorders", "Training and mentoring Ayurvedic therapists and students", "Uttarabasti"],
+      areasOfExpertise: ["Specialized in Panchakarma therapies (detoxification and rejuvenation treatments)", "Ayurvedic management of chronic, lifestyle-related conditions, Autoimmune disorders, Gastrointestinal disorders, Neuro-Musculoskeletal disorders", "Training and mentoring Ayurvedic therapists and students", "Uttarabasti"],
       expertise: "Years of Experience: 14+",
       qualification: "CCPT, PGCPK, BAMS",
       time: "",
