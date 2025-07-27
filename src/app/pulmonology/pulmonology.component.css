@@ -196,7 +196,6 @@
     justify-content: center;
     gap: 100px;
     align-items: center;
-    margin-top: 50px;
 }
 
 .form-container img {
@@ -224,6 +223,14 @@
 .mobile-youtube {
     display: none;
 }
+
+.grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 30px;
+}
+
+
 
 @media (max-width : 1200px) {
     .sidebar {
@@ -269,6 +276,11 @@
 
     .contact_button {
         bottom: 40px;
+        padding: 0px 10px;
+        margin-right: 25%;
+        display: flex;
+        align-items: center;
+        
     }
 
     .para_image {
@@ -281,6 +293,11 @@
     .row-reverse {
         display: flex;
         flex-direction: column-reverse;
+    }
+
+    .grid{
+        grid-template-columns: 100%;
+        column-gap: 0;
     }
 }
 
@@ -350,5 +367,9 @@
 
     .mobile-youtube {
         display: block;
+    }
+
+    .grid{
+        grid-template-columns: 100%;
     }
 }
