@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Title, Meta, DomSanitizer, SafeHtml } from '@angular/platform-browser';
+declare var gtag: Function;
 
 @Component({
   selector: 'app-dental',
@@ -92,4 +93,15 @@ export class DentalComponent {
       ans : 'Yes. Rashtrotthana Hospital is considered the best dental hospital for root canal in RR Nagar Bangalore, known for precision, painless procedures, and excellent outcomes. While we do not perform surgical dental implant placements, we provide accurate pre-implant evaluations and refer patients to trusted specialists. Our team ensures you understand the dental implant cost in RR Nagar Bangalore and guides you on choosing the right treatment pathway.'
     },
   ]
+
+  trackPhoneClick() {
+    if (typeof gtag === 'function') {
+      gtag('event', 'conversion', {
+        'send_to': 'AW-16656770043/-YEMCITg09IZEPvHyIY-',
+        'event_callback': () => {
+          console.log('Phone call conversion tracked!');
+        }
+      });
+    }
+  }
 }
