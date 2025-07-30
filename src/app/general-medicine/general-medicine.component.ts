@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
+declare var gtag: Function;
 
 @Component({
   selector: 'app-general-medicine',
@@ -86,5 +87,15 @@ export class GeneralMedicineComponent {
     },
   ]
 
+  trackPhoneClick() {
+    if (typeof gtag === 'function') {
+      gtag('event', 'conversion', {
+        'send_to': 'AW-16656770043/-YEMCITg09IZEPvHyIY-',
+        'event_callback': () => {
+          console.log('Phone call conversion tracked!');
+        }
+      });
+    }
+  }
   
 }

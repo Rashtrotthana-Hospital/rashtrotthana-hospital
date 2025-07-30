@@ -23,6 +23,8 @@ export class CardiacComponent {
 
   }
 
+  formDoctors : any = ["Dr. Suhas Raj S"]
+
   doctors = [
     {
       doctor_image:'../../assets/Dr-Suhas-Raj-S.png',
@@ -35,43 +37,53 @@ export class CardiacComponent {
   faqs = [
     {
       ques : "Who is the best cardiologist in RR Nagar, Bangalore?",
-      ans : "At Rashtrotthana Hospital, our team of experienced heart specialists provides advanced cardiac care. Our specialists are known for their expertise in diagnosing and treating heart diseases, hypertension, and chest pain."
+      ans : "At Rashtrotthana Hospital, our best cardiologists in Bangalore provide advanced cardiac care for heart conditions such as hypertension, chest pain, and cardiovascular disease. Patients searching for a good cardiologist near me often choose our facility for its combination of expertise, technology and affordable cardiology treatment in Bangalore."
     },
     {
       ques : "When should I see a cardiologist?",
-      ans : "You should consult a cardiologist if you experience chest pain, shortness of breath, irregular heartbeat, or high blood pressure. Regular check-ups can help detect heart conditions early and ensure proper treatment."
+      ans : "You should consult a heart specialist in Bangalore if you experience symptoms like chest discomfort, irregular heartbeat, shortness of breath, or high blood pressure. These may indicate heart problems and symptoms requiring early diagnosis and treatment. Regular visits also help in preventing congestive heart disease or complications from atrial fibrillation."
     },
     {
       ques : "What are the early symptoms of heart disease?",
-      ans : "Common early signs include chest discomfort, fatigue, dizziness, swelling in the legs, and palpitations. If you notice any of these symptoms, visiting a heart specialist is highly recommended. Consult our cardiologist, Dr. Suhas Raj S, at Rashtrotthana Hospital for expert diagnosis and personalized care."
+      ans : "Early warning signs include fatigue, swelling in the legs, dizziness, palpitations, and chest tightness. These symptoms may point to conditions like congestive heart failure or cardiac valve problems. Our best hospital for congestive heart failure treatment in Bangalore offers early detection and intervention to prevent progression."
     },
     {
       ques : "What tests are done to diagnose heart problems?",
-      ans : "A cardiologist may recommend tests such as ECG, echocardiogram, stress test, angiography, and lipid profile to assess heart health. Advanced diagnostic tools help detect heart conditions accurately."
+      ans : `<p class = "s_para">We provide advanced cardiac cycle and heart circulation checkups in Bangalore, including:</p>
+              <ul>
+                <li class = "s_para">ECG (Electrocardiogram) to check heart rhythm</li>
+                <li class = "s_para">Echocardiogram (ECHO) to assess valve and cardiac muscle function</li>
+                <li class = "s_para">Stress/Treadmill Test (TMT) to evaluate heart response during exertion</li>
+                <li class = "s_para">Angiography for artery blockages</li>
+                <li class = "s_para">Holter Monitoring for normal heart beat rate variations</li>
+              </ul>
+              <p class = "s_para">These tests help our heart specialists for cardiovascular disease in Bangalore make accurate diagnoses.</p>
+      `
+      
     },
     {
       ques : "How often should I get my heart checked?",
-      ans : "For individuals above 40 years or those with risk factors like diabetes, hypertension, or a family history of heart disease, an annual check-up is advised. Younger individuals should get screened every 2-3 years."
+      ans : "If you’re over 40 or have risk factors like diabetes, high blood pressure, high cholesterol, or family history of heart disease, annual cardiac checkups are advised. Others can undergo screening every 2-3 years. Preventive monitoring ensures timely management of cardiovascular disease and reduces the risk of cardiac arrest."
     },
     {
       ques : "What are the common risk factors for heart disease?",
-      ans : "Risk factors include high blood pressure, diabetes, high cholesterol, obesity, smoking, excessive alcohol consumption, and a sedentary lifestyle. Regular screenings can help assess your risk and take preventive measures."
+      ans : "Major risk factors include uncontrolled blood pressure, diabetes, smoking, obesity, high cholesterol and sedentary lifestyle habits. These can lead to cardiorespiratory arrest, congestive heart failure and atrial fibrillation over time. Regular screenings at our cardiac hospital in Bangalore help manage these risks effectively."
     },
     {
       ques : "Can heart disease be reversed?",
-      ans : "While some forms of heart disease can’t be completely reversed, lifestyle modifications, medications, and advanced treatments can help improve heart health. Cardiologists work closely with patients to manage and prevent complications."
+      ans : "While not all conditions - like congestive heart disease or valvular defects - can be fully reversed, affordable cardiovascular disease management in Bangalore at Rashtrotthana Hospital can improve heart function. Our approach includes lifestyle guidance, medication and advanced heart surgery in Bangalore when required."
     },
     {
-      ques : "What are the different types of heart diseases?",
-      ans : `
-        <div class = "s_para">Common heart conditions include:</div>
-        <ul class = "s_para">
-          <li class = "s_para"><b>Coronary artery disease (CAD) - </b>Blocked arteries leading to heart attacks.</li>
-          <li class = "s_para"><b>Arrhythmia - </b>Irregular heartbeats.</li>
-          <li class = "s_para"><b>Heart failure - </b>Weak heart muscles reducing pumping efficiency.</li>
-          <li class = "s_para"><b>Congenital heart disease - </b>Birth defects affecting heart structure.</li>
-          <li class = "s_para"><b>Valvular heart disease - </b> Issues with heart valves affecting blood flow.</li>
-        </ul>
+      ques : "What are the different types of heart diseases treated at Rashtrotthana Hospital?",
+      ans : `<p class = "s_para">Our cardiology department in Bangalore treats multiple conditions, including:</p>
+              <ul>
+                <li class = "s_para">Coronary artery disease (CAD): Blocked arteries leading to heart attacks</li>
+                <li class = "s_para">Arrhythmias: Irregular or fast heartbeats, including atrial fibrillation</li>
+                <li class = "s_para">Heart failure: Weak cardiac muscle impacting pumping efficiency</li>
+                <li class = "s_para">Congenital heart defects: Structural heart problems present at birth</li>
+                <li class = "s_para">Valvular heart disease: Dysfunctional cardiac valves affecting blood flow</li>
+              </ul>
+              <p class = "s_para">We provide complete heart care from diagnosis to surgery in Bangalore, ensuring long-term recovery and monitoring.</p>
       `
     },
   ]
