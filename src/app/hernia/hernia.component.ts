@@ -13,7 +13,7 @@ export class HerniaComponent {
     
   }
   ngOnInit(): void {
-    this.titleService.setTitle("Hernia Hospital in Bangalore | Laparoscopic Hernia Surgery – Rashtrotthana Hospital");  
+    this.titleService.setTitle("Hernia Surgery in Bangalore | Rashtrotthana Hospital");  
 
   this.metaService.updateTag({ name: 'description', content: 'Expert hernia treatment in Bangalore at Rashtrotthana Hospital. Advanced laparoscopic hernia surgery by top specialists. Book your consultation today!' });
 

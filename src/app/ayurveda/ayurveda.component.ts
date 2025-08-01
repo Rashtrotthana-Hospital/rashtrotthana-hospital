@@ -9,7 +9,7 @@ import { Title, Meta,DomSanitizer,SafeHtml } from '@angular/platform-browser';
 export class AyurvedaComponent {
   constructor(private titleService: Title, private metaService: Meta, private sanitizer: DomSanitizer) {}
   ngOnInit(): void {
-    this.titleService.setTitle(" Holistic Ayurvedic Treatment - Rashtrotthana Hospital Bangalore");  
+    this.titleService.setTitle("  Ayurvedic Care in Bangalore | Rashtrotthana Hospital");  
 
   this.metaService.updateTag({ name: 'description', content: ' Discover holistic healing with traditional Ayurvedic treatments at Rashtrotthana Hospital, blending ancient wisdom with modern care.' });
 

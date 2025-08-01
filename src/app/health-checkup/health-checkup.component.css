@@ -33,7 +33,7 @@
     justify-content: flex-start;
 }
 
-.title-box h1{
+.title-box h2{
     font-size: 20px;
 }
 
@@ -108,7 +108,7 @@
     gap: 10px;
 }
 
-.items-heading h1 {
+.items-heading h2 {
     font-size: 18px;
 }
 

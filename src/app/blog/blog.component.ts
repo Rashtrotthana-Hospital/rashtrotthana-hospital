@@ -33,7 +33,7 @@ export class BlogComponent {
         });
       }
     });
-    this.titleService.setTitle("Rashtrotthana Hospital Blogs | Top Medical Treatments & Procedures Blogs");  
+    this.titleService.setTitle("Health & Wellness Blogs | Rashtrotthana Hospital");  
 
   this.metaService.updateTag({ name: 'description', content: 'Visit the healthcare blog of Rashtrotthana Hospital and discover a world of wellness. Discover health-related topics that empower your journey towards better health, from expert advice to medical insights' });
 

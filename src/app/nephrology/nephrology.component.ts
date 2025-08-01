@@ -12,7 +12,7 @@ export class NephrologyComponent {
   sanitizedContent1: SafeHtml = '';
   specialities: any[] = [];
   ngOnInit(): void {
-    this.titleService.setTitle("Best Nephrology Hospital in Bangalore | Rashtrotthana Hospital");
+    this.titleService.setTitle("Best Nephrology Hospital | Rashtrotthana Bangalore");
     this.metaService.updateTag({ name: 'description', content: 'Looking for the best nephrology hospital in Bangalore? Get expert kidney care, dialysis and kidney failure treatment from top nephrologists in RR Nagar.' });
     this.metaService.updateTag({ name: 'keywords', content: 'nephrology, kidney hospital near me, kidney, kidney pain causes, kidney stones, kidney stone symptoms, Best Nephrology hospital in Rajarajeshwari nagar Bangalore, Nephrologists in RR nagar Bangalore, Kidney Stones treatment in RR nagar bangalore, Best hospital Kidney Dialysis hospital in Rajarajeshwari nagar bangalore, best hospital for nephrology, Kidney Specialist Near Me, Best doctors for Kidney problems in RR Nagar Bangalore, Best Kidney Care Centers in Bangalore, Renal Failure treatment in Bangalore, Kidney Failure treatment in RR Nagar Bangalore, Best hospital for Dialysis Treatment in RR nagar Bangalore, Affordable Kidney failure treatment in Bangalore, Expert Nephrologists in Rajarajeshwari Nagar bangare, Best Kidney Specialists Near Me, Top-rated Nephrologists in Bangalore, Experienced Kidney Specialists for Dialysis' });
     this.sanitizedContent = this.sanitizer.bypassSecurityTrustHtml(this.specialities[0].content);

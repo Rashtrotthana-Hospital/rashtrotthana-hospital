@@ -1131,7 +1131,7 @@ export class NewDocPageComponent {
     },
     {
       name: "Dr. Matam Sri Anusha",
-      image: "assets/Doc-Inv-Page/Dr-Matam-Sri-Anusha.png",
+      image: "assets/dummy-doc-female.svg",
       department: 'Rheumatology',
       speciality: 'RHEUMATOLOGY',
       about: "<p>Dr. Matam Sri Anusha is a compassionate and experienced Rheumatologist specializing in the diagnosis and treatment of a wide range of inflammatory and autoimmune conditions. She provides expert care for conditions such as rheumatoid arthritis, psoriatic arthritis, lupus, spondyloarthritis and osteoporosis, as well as recurrent pregnancy losses and vasculitis.</p<p>She offers personalized treatment plans using the latest advancements in rheumatology to help patients manage chronic pain, joint issues and systemic inflammatory disorders. If you're experiencing symptoms like joint pain, swelling, stiffness, skin rashes, fatigue, or unexplained weight loss, Dr. Anusha is dedicated to providing the care and support you need for improved health and well-being.</p>",
