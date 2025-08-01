@@ -1,6 +1,6 @@
 <div class="health-checkup-container">
     <div class="content-container">
-        <h1 class="packages-container-title">Health Check</h1>
+        <h1 class="packages-container-title">Preventive Health Check Packages for Early Detection</h1>
         <div class="text-container">
             <span>
                 A Dedicated team of professionals driven by passion lead the <a style="text-decoration: none; margin:0;padding: 0;" href="https://en.wikipedia.org/wiki/Health_Check">Health check</a> department at Rashtrotthana Hospital. To meet
@@ -14,7 +14,7 @@
         </div>
     </div>
     <div class="packages-container">
-        <h1 class="packages-container-title">Affordable Packages</h1>
+        <h2 class="packages-container-title">Affordable Packages</h2>
 
         <p-accordion class="w-full" [activeIndex]="activeIndex" (onTabOpen)="preventDefault($event)">
             <div *ngFor="let package of packages;let i = index" class="accordion-container">
@@ -25,7 +25,7 @@
                                 <div class="title-box-img">
                                     <img src="assets/health-checkup.png" alt="{{ package }}" />
                                 </div>
-                                <h1>{{ package.title }}</h1>
+                                <h2>{{ package.title }}</h2>
                                 <div class="total-count">
                                     <span>Included {{ package.test }} tests</span>
                                 </div>
@@ -48,7 +48,7 @@
                                 <div class="items-heading-img">
                                     <img [src]="'assets/health-checkup/' + item.icon + '.png'" alt="{{ item.title }}" />
                                 </div>
-                                <h1>{{ item.title }}</h1>
+                                <h2>{{ item.title }}</h2>
                             </div>
                             <div class="items-lists">
                                 <span *ngFor="let each of item.items" class="each-bullet">

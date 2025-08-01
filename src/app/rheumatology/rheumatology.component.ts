@@ -27,7 +27,7 @@ export class RheumatologyComponent {
     {
       doctor_name : "Dr. Matam Sri Anusha",
       experience : "8",
-      doctor_image : "../../assets/Dr-Matam-Sri-Anusha.png",
+      doctor_image : "../../assets/dummy.png",
       docalt : "Dr. Matam Sri Anusha| Top rheumatology in banaglore | Rashtrotthana Hospital"
     }
   ]

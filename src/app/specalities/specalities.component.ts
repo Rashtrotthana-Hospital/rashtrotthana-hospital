@@ -47,7 +47,7 @@ export class SpecalitiesComponent {
     this.childRouteActive = this.route.firstChild !== null;
   }
   ngOnInit(): void {
-    this.titleService.setTitle("Rashtrotthana Hospital Medical Specialities List and Departments");  
+    this.titleService.setTitle("Our Specialities & Departments | Rashtrotthana Hospital");  
 
   this.metaService.updateTag({ name: 'description', content: 'Browse through the list of specialties that Rashtrotthana Hospital provide, world-class treatment options; experienced doctors in Bangalore which makes it Indias top multi-specialty hospital.' });
 

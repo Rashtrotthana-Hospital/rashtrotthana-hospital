@@ -12,7 +12,7 @@ export class ProctologyComponent {
     
   }
   ngOnInit(): void {
-    this.titleService.setTitle("Piles Hospital in Bangalore | Advanced Piles Treatment – Rashtrotthana Hospital");  
+    this.titleService.setTitle("Piles Treatment in Bangalore | Rashtrotthana Hospital");  
 
   this.metaService.updateTag({ name: 'description', content: 'Get advanced piles treatment in Bangalore at Rashtrotthana Hospital. Expert piles specialists offering painless laser surgery for piles and quick recovery. Book your appointment today!' });
 

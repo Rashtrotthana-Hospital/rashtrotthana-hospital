@@ -17,9 +17,9 @@ export class ModernMedicineComponent {
     });
   }
   ngOnInit(): void {
-    this.titleService.setTitle("Rashtrotthana Hospital Medical Specialities List and Departments");  
+    this.titleService.setTitle("Multispeciality Care | Modern Medicine | Rashtrotthana Hospital");  
 
-  this.metaService.updateTag({ name: 'description', content: 'Browse through the list of specialties that Rashtrotthana Hospital provide, world-class treatment options &amp; experienced doctors in Bangalore which makes it Indias top multi-specialty hospital.' });
+  this.metaService.updateTag({ name: 'description', content: 'Comprehensive multispeciality medical care with expert doctors at Rashtrotthana Hospital, Bangalore..' });
 
   this.metaService.updateTag({ name: 'keywords', content: ' general medicine, internal medicine, cardiology, nephrology, urology, dermatology, gynaecology, pulmonology' });
   }

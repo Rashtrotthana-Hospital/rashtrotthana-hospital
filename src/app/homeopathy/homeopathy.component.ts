@@ -11,7 +11,7 @@ export class HomeopathyComponent {
     
   }
   ngOnInit(): void {
-    this.titleService.setTitle("Comprehensive Homeopathic Care - Rashtrotthana Hospital Bangalore");  
+    this.titleService.setTitle("Homeopathic Care | Rashtrotthana Hospital Bangalore");  
 
   this.metaService.updateTag({ name: 'description', content: 'Rashtrotthana Hospital offers comprehensive homeopathic treatments in Bangalore, focusing on holistic and natural healing.' });
 

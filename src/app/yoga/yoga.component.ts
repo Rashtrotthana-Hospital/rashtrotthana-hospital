@@ -11,7 +11,7 @@ export class YogaComponent {
     
   }
   ngOnInit(): void {
-    this.titleService.setTitle("Therapeutic Yoga & Wellness Programs - Rashtrotthana Hospital Bangalore");  
+    this.titleService.setTitle("Therapeutic Yoga & Wellness | Rashtrotthana Hospital");  
 
   this.metaService.updateTag({ name: 'description', content: 'Enhance your well-being with therapeutic yoga sessions at Rashtrotthana Hospital in Bangalore, designed for holistic health.' });
 

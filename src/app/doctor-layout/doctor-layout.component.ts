@@ -1151,7 +1151,7 @@ export class DoctorLayoutComponent {
 
 
   ngOnInit() {
-    this.titleService.setTitle("Doctors List | Best Doctors in Bangalore, India | surgeons - Rashtrotthana Hospital");
+    this.titleService.setTitle("Top Doctors in Bangalore | Rashtrotthana Hospital");
 
     this.metaService.updateTag({ name: 'description', content: 'Rashtrotthana hospital consists of highly experienced doctors in India who some of the top doctors in Bangalore. Our team consists of skilled surgeons and dedicated support teams.' });
 

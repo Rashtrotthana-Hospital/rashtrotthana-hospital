@@ -31,7 +31,7 @@ export class HealthCheckupComponent {
 showBookingForm = false; // Flag to show the booking form
 selectedPackage: Package | null = null; // Selected package
   ngOnInit(): void {
-    this.titleService.setTitle("Comprehensive Health Check-Up Packages - Rashtrotthana Hospital");  
+    this.titleService.setTitle("Health Check-Up Packages | Rashtrotthana Hospital");  
 
   this.metaService.updateTag({ name: 'description', content: 'Schedule your preventive health check-up at Rashtrotthana Hospital, Bangalore, with our comprehensive packages tailored to your needs.' });
 

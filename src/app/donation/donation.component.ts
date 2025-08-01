@@ -17,7 +17,7 @@ export class DonationComponent implements OnInit {
     private viewportScroller: ViewportScroller,private titleService: Title, private metaService: Meta) { }
   ngOnInit() {
     AOS.init();
-    this.titleService.setTitle("Donate to Support Healthcare - Rashtrotthana Hospital Bangalore");  
+    this.titleService.setTitle("Support Healthcare | Donate to Rashtrotthana Hospital");  
 
     this.metaService.updateTag({ name: 'description', content: 'Contribute to quality healthcare by donating to Rashtrotthana Hospital in Bangalore. Your support makes a difference in patient care.' });
   

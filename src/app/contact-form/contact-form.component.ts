@@ -42,7 +42,7 @@ export class ContactFormComponent implements OnInit {
         subject: ['', Validators.required],
         message: ['', Validators.required],
       });
-      this.titleService.setTitle("Rashtrotthana Hospital Contact Details, Phone Number, Address, Enquiry form");  
+      this.titleService.setTitle("Contact Us | Rashtrotthana Hospital Bangalorem");  
 
   this.metaService.updateTag({ name: 'description', content: 'Find all information about contact details such as Address, Phone number and Location of Rashrotthana Hospital here and enquire us by filling the form for required information.' });
 
