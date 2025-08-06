@@ -1,0 +1,43 @@
+<!-- doctor-cards.component.html -->
+<div class="container-2">
+  <!-- <h2 class="s_h1 text-center heading-margin">Our Urology Experts</h2> -->
+  
+  <div class="doctors-grid">
+    <div class="doctor-card" *ngFor="let doctor of doctors">
+      <div class="doctor-image">
+        <img [src]="doctor.image || 'assets/images/default-doctor.jpg'" 
+             [alt]="doctor.name"
+             onerror="this.src='assets/images/default-doctor.jpg'">
+      </div>
+      
+      <div class="doctor-info">
+        <h3 class="doctor-name">{{ doctor.name }}</h3>
+        
+        <div class="doctor-details">
+          <!-- <div class="detail-item">
+            <span class="detail-label">Qualification:</span>
+            <span class="detail-value">{{ doctor.qualification }}</span>
+          </div>
+          
+          <div class="detail-item">
+            <span class="detail-label">Department:</span>
+            <span class="detail-value">{{ doctor.department }}</span>
+          </div> -->
+          
+          <div class="detail-item">
+            <div class="detail-label">Experience:</div>
+            <div class="detail-value">{{ doctor.experience }}</div>
+          </div>
+        </div>
+        
+
+        <div class="buttons">
+        <a href="tel:+918069239999" class="contact_button" (click)="trackPhoneClick()" class="call_button"><i class="fa-solid fa-phone"></i></a>
+        <button  class="book-appointment-btn" [routerLink]="doctor.slug">
+          Book an Appointment
+        </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

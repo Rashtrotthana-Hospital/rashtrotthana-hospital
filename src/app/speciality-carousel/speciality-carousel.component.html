@@ -1,0 +1,36 @@
+<div class="carousel-container">
+
+    <h3 class="faq-title">Our Other Services</h3>
+
+    <div class="carousel-wrapper" #carouselWrapper>
+        <div class="carousel-track" #carouselTrack>
+            <!-- Original slides -->
+            <div class="carousel-item" *ngFor="let slide of slides; let i = index" (mouseenter)="onHover(i)" [routerLink]= "slide.slug"
+                (mouseleave)="onLeave()">
+                <img [src]="hoverIndex === i ? hoverBoxes[i]?.image : slide.image" [alt]="slide.alt">
+                <h3 class="carousel-item-title">{{ slide.title }}</h3>
+            </div>
+            <!-- Cloned slides for infinite loop -->
+            <div class="carousel-item" *ngFor="let slide of slides; let i = index"  [routerLink]= "slide.slug"
+                (mouseenter)="onHover(i + slides.length)" (mouseleave)="onLeave()">
+                <img [src]="hoverIndex === (i + slides.length) ? hoverBoxes[i]?.image : slide.image" [alt]="slide.alt">
+                <h3 class="carousel-item-title">{{ slide.title }}</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="carousel-controls">
+        <button class="control-button prev-button" (click)="movePrevious()">
+            <span class="arrow-icon">‹</span>
+        </button>
+        <button class="control-button next-button" (click)="moveNext()">
+            <span class="arrow-icon">›</span>
+        </button>
+    </div>
+
+    <!-- <div class="carousel-indicators">
+        <span *ngFor="let indicator of [0,1,2,3,4]; let i = index" class="indicator-dot"
+            [class.active-indicator]="i === getActiveIndicatorIndex()" (click)="goToSlide(i * 4)">
+        </span>
+    </div> -->
+</div>

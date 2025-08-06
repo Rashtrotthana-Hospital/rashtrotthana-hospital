@@ -1,0 +1,44 @@
+<div class="faq-container">
+  <div class="faq-header">
+    <h3 class="faq-title">{{ title }}</h3>
+    <p class="faq-subtitle">{{ subtitle }}</p>
+  </div>
+
+  <div class="faq-list">
+    <div 
+      class="faq-item" 
+      *ngFor="let faq of faqData"
+      [@fadeInUp]
+      [class.active]="faq.isOpen"
+    >
+      <div 
+        class="faq-question" 
+        (click)="toggleFaq(faq)"
+        role="button"
+        tabindex="0"
+        (keydown.enter)="toggleFaq(faq)"
+        (keydown.space)="toggleFaq(faq)"
+        [attr.aria-expanded]="faq.isOpen"
+        [attr.aria-controls]="'answer-' + faq.id"
+      >
+        <div class="question-text">{{ faq.ques }}</div>
+        <div 
+          class="toggle-icon"
+          [@rotateIcon]="faq.isOpen ? 'close' : 'plus'"
+        >
+          <span class="icon-line horizontal"></span>
+          <span class="icon-line vertical" [class.hidden]="faq.isOpen"></span>
+        </div>
+      </div>
+      
+      <div 
+        class="faq-answer"
+        [@slideInOut]="faq.isOpen ? 'in' : 'out'"
+        [id]="'answer-' + faq.id"
+        [attr.aria-hidden]="!faq.isOpen"
+      >
+        <div class="faq-answer-content" [innerHTML]="faq.ans"></div>
+      </div>
+    </div>
+  </div>
+</div>
