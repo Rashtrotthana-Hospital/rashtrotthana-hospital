@@ -126,6 +126,9 @@ import { SamrakshaComponent } from './samraksha/samraksha.component';
 import { ThankYouComponent } from './thank-you/thank-you.component';
 import { SpecialityFormComponent } from './speciality-form/speciality-form.component';
 import { VascularSurgeriesComponent } from './vascular-surgeries/vascular-surgeries.component';
+import { SpecialityCarouselComponent } from './speciality-carousel/speciality-carousel.component';
+import { SpecialityDocCardComponent } from './speciality-doc-card/speciality-doc-card.component';
+import { FaqsNewComponent } from './faqs-new/faqs-new.component';
 
 
 @NgModule({
@@ -225,7 +228,10 @@ import { VascularSurgeriesComponent } from './vascular-surgeries/vascular-surger
     SamrakshaComponent,
     ThankYouComponent,
     SpecialityFormComponent,
-    VascularSurgeriesComponent
+    VascularSurgeriesComponent,
+    SpecialityCarouselComponent,
+    SpecialityDocCardComponent,
+    FaqsNewComponent,
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   imports: [

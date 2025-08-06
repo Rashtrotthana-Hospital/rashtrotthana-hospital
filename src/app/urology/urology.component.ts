@@ -43,87 +43,28 @@ export class UrologyComponent {
 
   faqs = [
     {
-      ques: " Why am I seeing blood in my urine?",
-      ans: "Blood in urine, also called hematuria, can be a sign of several underlying health conditions, including kidney stones, bladder infection, urinary tract infection (UTI), prostate issues, or even bladder cancer. Sometimes, it may result from strenuous exercise or certain medications, but persistent cases should be evaluated immediately. At Rashtrotthana Hospital, our expert urologists, Dr. Nagaraj Rao and Dr. Madhu S. N, use advanced diagnostic tests like urine analysis, ultrasound and cystoscopy to determine the exact cause and provide the best treatment."
-    },
-
-    {
-      ques: "What causes painful urination and burning urine?",
-      ans: `
-        <p class = "s_para"><b>Painful urination (dysuria) and burning urine</b> are often caused by:</p>
-        <ul>
-          <li class = "s_para"><b>Urinary tract infections (UTIs)</b> - Common in both men and women, causing frequent urination and bladder pain.</li>
-          <li class = "s_para"><b>Bladder infections</b> - Can lead to severe pelvic pain and urine blockage</li>
-          <li class = "s_para"><b>Kidney stones - </b>Can irritate the urinary tract, causing burning sensations.</li>
-          <li class = "s_para"><b>Prostate problems</b> - Enlarged prostate or prostate cancer can lead to painful urination.</li>
-        </ul>
-        <p class = "s_para">If you experience burning urine, pain while peeing, or frequent urination, consult our urology specialists for a personalized treatment plan.</p>
-      `
+      ques : "What is genito-urinary reconstruction surgery?",
+      ans : "Genito-urinary reconstruction is a specialized surgical field focused on repairing, rebuilding, or replacing parts of the urinary or reproductive systems that have been damaged by disease, injury, or are congenitally malformed."
     },
     {
-      ques: "What are the symptoms of a urinary infection (UTI)?",
-      ans: `
-        <ul>
-          <li class = "s_para">A urinary infection can cause:</li>
-          <li class = "s_para">Frequent urination (needing to urinate often, even at night)</li>
-          <li class = "s_para">Burning urine or pain while urinating</li>
-          <li class = "s_para">Bladder pain and pelvic discomfort</li>
-          <li class = "s_para">Cloudy, strong-smelling, or blood in urine</li>
-          <li class = "s_para">Fever or lower back pain (if the infection reaches the kidneys)</li>
-        </ul>
-        <p class = "s_para">At Rashtrotthana Hospital, we offer specialized UTI treatment, including antibiotic therapy and urine culture tests for accurate diagnosis.</p>
-      `
+      ques : "Who is a candidate for genito-urinary reconstruction?",
+      ans : "Patients who may benefit from this surgery include those with congenital abnormalities, men who have suffered trauma to the urinary system, or patients who need their urinary organs reconstructed after cancer surgery. Our specialists in Bangalore can provide a thorough evaluation to determine if you are a suitable candidate."
     },
     {
-      ques: "How is kidney stone removal done?",
-      ans: `
-        <p class = "s_para">Kidney stones can cause severe back pain, nausea, vomiting and difficulty passing urine. Treatment options include:</p>
-        <ul>
-          <li class = "s_para"><b>Medication to dissolve small stones</b></li>
-          <li class = "s_para"><b>Shock wave lithotripsy (ESWL)</b> - Non-surgical procedure to break stones</li>
-          <li class = "s_para"><b>Ureteroscopy with laser treatment</b> - Removes medium-sized stones</li>
-          <li class = "s_para"><b>Minimally invasive kidney stone surgery</b> for large or complex stones</li>
-        </ul>
-        <p class = "s_para">Our urology surgeons, Dr. Nagaraj Rao and Dr. Madhu S. N, specialize in kidney stone removal using the latest techniques for faster recovery and minimal discomfort.</p>
-      `
+      ques : "Is genito-urinary reconstruction a major surgery?",
+      ans : "The scope of the surgery varies depending on the condition being treated. Our surgeons at Rashtrotthana Hospital are highly skilled in a range of advanced, often minimally invasive, techniques to ensure the best possible outcome with a focus on a safe and comfortable recovery."
     },
     {
-      ques: "What is the best treatment for prostate cancer?",
-      ans: `
-        <p class = "s_para">Prostate cancer treatment depends on factors like age, cancer stage, and overall health. Common treatments include:</p>
-        <ul>
-          <li class = "s_para"><b>Active Surveillance</b> - For slow-growing cases</li>
-          <li class = "s_para"><b>Surgery (Prostatectomy)</b> - Removal of the prostate gland</li>
-          <li class = "s_para"><b>Radiation Therapy</b> - High-energy beams to kill cancer cells</li>
-          <li class = "s_para"><b>Hormone Therapy</b> - Slows cancer growth</li>
-        </ul>
-        <p class = "s_para">Early detection saves lives! Our urology team offers prostate screenings, PSA tests, and advanced prostate cancer treatments for better health outcomes.</p>
-      `
+      ques : "What types of conditions does this surgery treat?",
+      ans : "This surgery can treat a wide range of conditions, including urethral strictures, bladder exstrophy, penile deformities and injuries to the kidneys, bladder, and urethra."
     },
     {
-      ques: "Can bladder stones cause bladder pain?",
-      ans: `
-        <p class = "s_para">Yes, bladder stones can cause:</p>
-        <ul>
-          <li class = "s_para">Bladder pain and discomfort</li>
-          <li class = "s_para">Frequent urination (especially at night)</li>
-          <li class = "s_para">Painful urination and urine blockage</li>
-          <li class = "s_para">Blood in urine and infections</li>
-        </ul>
-        <p class = "s_para">If left untreated, bladder stones can lead to serious complications, including bladder infections or kidney problems. Our experts offer safe and effective bladder stone treatments, including non-invasive procedures and surgical removal.</p>
-      `
+      ques : "How long is the recovery time?",
+      ans : "Recovery time is unique to each patient and the specific procedure performed. Our team will provide a personalized recovery plan and care to help you return to your daily activities as quickly and safely as possible. We offer a holistic approach to healing to support your well-being."
     },
     {
-      ques: "Where can I find the best urology surgery in Bangalore?",
-      ans: `
-        <p class = "s_para">If you're looking for the best urologist in Bangalore for treatments like kidney stone removal, prostate surgery, or bladder cancer treatment, Rashtrotthana Hospital provides:</p>
-        <ul>
-          <li class = "s_para"><b>Experienced Urology Surgeons</b> - Dr. Nagaraj Rao and Dr. Madhu S. N</li>
-          <li class = "s_para"><b>State-of-the-art technology</b> for accurate diagnosis and effective treatment</li>
-          <li class = "s_para"><b>Personalized care</b> for all urinary and kidney-related issues</li>
-        </ul>
-        <p class = "s_para">Book a consultation today and get expert guidance on prostate health, urinary infections, kidney stones, bladder cancer and urology surgery!</p>
-      `
+      ques : "What kind of technology do you use for diagnosis and treatment?",
+      ans : "We use state-of-the-art technology for accurate diagnosis and effective, minimally invasive treatments. For example, our department is equipped for advanced endoscopic and laser treatments for kidney stones, which ensures a faster recovery and less discomfort for our patients."
     },
   ]
 
