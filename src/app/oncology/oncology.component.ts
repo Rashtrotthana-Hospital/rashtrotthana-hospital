@@ -32,11 +32,11 @@ export class OncologyComponent {
       doctor_name: 'Dr. Pramod S. Chinder',
       alt: 'Dr. Pramod S. Chinder | Best Orthopaedic Oncosurgeon in Bangalore | Rashtrotthana Hospital'
     },
-    {
-      doctor_image: '../../assets/Dr-Rajeev-Vijayakumar.png',
-      doctor_name: 'Dr. Rajeev Vijayakumar',
-      alt: 'Dr. Rajeev Vijayakumar | Best Medical Oncologist in Bangalore | Rashtrotthana Hospital'
-    },
+    // {
+    //   doctor_image: '../../assets/Dr-Rajeev-Vijayakumar.png',
+    //   doctor_name: 'Dr. Rajeev Vijayakumar',
+    //   alt: 'Dr. Rajeev Vijayakumar | Best Medical Oncologist in Bangalore | Rashtrotthana Hospital'
+    // },
     {
       doctor_image: '../../assets/Dr-Ravi-T.png',
       doctor_name: 'Dr. Ravi T',
