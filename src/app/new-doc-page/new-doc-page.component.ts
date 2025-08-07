@@ -1,10 +1,11 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { FormBuilder, FormGroup, Validators, AbstractControl } from '@angular/forms';
 import { Meta, Title } from '@angular/platform-browser';
 import { MessageService } from 'primeng/api';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+
 import { map } from 'rxjs/operators';
 type DayName = 'sun' | 'mon' | 'tue' | 'wed' | 'thu' | 'fri' | 'sat';
 interface Availability {
@@ -46,6 +47,7 @@ export class NewDocPageComponent {
     }
 
   constructor(private route: ActivatedRoute,
+    private router: Router,
     private messageService: MessageService,
     private http: HttpClient,
     private fb: FormBuilder,
@@ -267,21 +269,21 @@ export class NewDocPageComponent {
     //   title:'Dr. Rajeev Vijayakumar | Medical Oncologist in RR Nagar Bangalore',
     //   description:'Book with Dr. Rajeev Vijayakumar, oncologist in RR Nagar with 20+ years of experience in medical oncology, hemato-oncology, and bone marrow transplant care.'
     // },
-    {
-      name: 'Dr. Shashidhar',
-      image: 'assets/Doc-Inv-Page/Dr-Shashidhar.png',
-      department: 'Anaesthesia',
-      about: ' Dr. Shashidhar, our esteemed anesthesiologist with over 20 years of dedicated experience in the field. With qualifications including MBBS and DA, Dr. Shashidhar specializes in intensive care, emergency care and anesthesiology. His expertise ensures the safe and effective management of anesthesia for various medical procedures, providing essential support in critical and emergency situations. Trust him for expert care in anesthesia at every stage of your medical journey.',
-      speciality: 'ANAESTHESIOLOGY',
-      expertise: 'Years of Experience: 20+',
-      time: 'No-slot',
-      date: 'Monday-Saturday',
-      qualification: 'MBBS, DA',
-      areasOfExpertise: ['Intensive Care', 'Emergency Care', 'Anesthesiology'],
-      alt: 'Dr. Shashidhar | Best Anesthesiologist in Bangalore | Rashtrotthana Hospital | RR Nagar Bangalore',
-      title:'Dr. Shashidhar | Anesthesiologist & ICU Care in RR Nagar',
-      description:'Consult Dr. Shashidhar, anesthesiologist in RR Nagar with 20+ years’ experience in intensive care, emergency management, and safe anesthesia procedures.'
-    },
+    // {
+    //   name: 'Dr. Shashidhar',
+    //   image: 'assets/Doc-Inv-Page/Dr-Shashidhar.png',
+    //   department: 'Anaesthesia',
+    //   about: ' Dr. Shashidhar, our esteemed anesthesiologist with over 20 years of dedicated experience in the field. With qualifications including MBBS and DA, Dr. Shashidhar specializes in intensive care, emergency care and anesthesiology. His expertise ensures the safe and effective management of anesthesia for various medical procedures, providing essential support in critical and emergency situations. Trust him for expert care in anesthesia at every stage of your medical journey.',
+    //   speciality: 'ANAESTHESIOLOGY',
+    //   expertise: 'Years of Experience: 20+',
+    //   time: 'No-slot',
+    //   date: 'Monday-Saturday',
+    //   qualification: 'MBBS, DA',
+    //   areasOfExpertise: ['Intensive Care', 'Emergency Care', 'Anesthesiology'],
+    //   alt: 'Dr. Shashidhar | Best Anesthesiologist in Bangalore | Rashtrotthana Hospital | RR Nagar Bangalore',
+    //   title:'Dr. Shashidhar | Anesthesiologist & ICU Care in RR Nagar',
+    //   description:'Consult Dr. Shashidhar, anesthesiologist in RR Nagar with 20+ years’ experience in intensive care, emergency management, and safe anesthesia procedures.'
+    // },
 
     {
       name: 'Dr. Mahesh Kulkarni',
@@ -1638,6 +1640,7 @@ export class NewDocPageComponent {
                       summary: 'Success',
                       detail: 'Thank you, we have received your request and will get back to you shortly.',
                     });
+                    this.router.navigate(['/thank-you'])
                     this.http.post<any>(`${this.apiUrl}/appointments`, appointmentData)
                     .subscribe({
                       next: (appointmentResult) => {

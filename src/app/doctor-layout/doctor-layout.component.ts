@@ -214,19 +214,19 @@ export class DoctorLayoutComponent {
     //   date: 'Monday and Wednesday',
     //   alt: 'Dr. Rajeev Vijayakumar | Best Medical Oncologist in Bangalore | Rashtrotthana Hospital | RR Nagar Bangalore'
     // },
-    {
-      name: 'Dr. Shashidhar',
-      image: 'assets/Dr-Shashidhar.png',
-      desgination: 'Anaesthesia',
-      about: ' Dr. Shashidhar, our esteemed anesthesiologist with over 20 years of dedicated experience in the field. With qualifications including MBBS and DA, Dr. Shashidhar specializes in intensive care, emergency care and anesthesiology. His expertise ensures the safe and effective management of anesthesia for various medical procedures, providing essential support in critical and emergency situations. Trust him for expert care in anesthesia at every stage of your medical journey.',
-      speciality: 'ANAESTHESIOLOGY',
-      expertise: 'Years of Experience: 20+',
-      time: 'No-slot',
-      date: 'Monday-Saturday',
-      qualification: 'MBBS, DA',
-      areasOfExpertise: ['Intensive Care', 'Emergency Care', 'Anesthesiology'],
-      alt: 'Dr. Shashidhar | Best Anesthesiologist in Bangalore | Rashtrotthana Hospital | RR Nagar Bangalore'
-    },
+    // {
+    //   name: 'Dr. Shashidhar',
+    //   image: 'assets/Dr-Shashidhar.png',
+    //   desgination: 'Anaesthesia',
+    //   about: ' Dr. Shashidhar, our esteemed anesthesiologist with over 20 years of dedicated experience in the field. With qualifications including MBBS and DA, Dr. Shashidhar specializes in intensive care, emergency care and anesthesiology. His expertise ensures the safe and effective management of anesthesia for various medical procedures, providing essential support in critical and emergency situations. Trust him for expert care in anesthesia at every stage of your medical journey.',
+    //   speciality: 'ANAESTHESIOLOGY',
+    //   expertise: 'Years of Experience: 20+',
+    //   time: 'No-slot',
+    //   date: 'Monday-Saturday',
+    //   qualification: 'MBBS, DA',
+    //   areasOfExpertise: ['Intensive Care', 'Emergency Care', 'Anesthesiology'],
+    //   alt: 'Dr. Shashidhar | Best Anesthesiologist in Bangalore | Rashtrotthana Hospital | RR Nagar Bangalore'
+    // },
 
     {
       name: 'Dr. Mahesh Kulkarni',
