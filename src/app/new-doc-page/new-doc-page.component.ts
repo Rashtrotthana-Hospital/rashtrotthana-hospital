@@ -251,22 +251,22 @@ export class NewDocPageComponent {
       title:'Dr. H. M. Krishnamurthy | Internal Medicine Doctor Bangalore',
       description:'Consult Dr. H. M. Krishnamurthy, internal medicine expert in Bangalore with 36+ years experience in diabetes, thyroid, geriatric care and chronic diseases.'
     },
-    {
-      name: 'Dr. Rajeev Vijayakumar',
-      image: 'assets/Doc-Inv-Page/Dr-Rajeev-Vijayakumar.png',
-      department: 'Oncologist',
-      about: 'Dr. Rajeev, the very senior consultant whose expertise in Medical Oncology, Hemato Oncology and Bone Marrow Transplant ensures that your confidence in his ...',
-      speciality: 'ONCOLOGY',
-      areasOfExpertise: ['Medical Oncology', 'Hemato- Oncology', 'Bone Marrow Transplant'],
-      expertise: 'Years of Experience: 20',
-      qualification: 'MBBS, DNB (Gen Medicine) DNB (Medical Oncology) MRCP (UK)',
-      time: '10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00',
-      date: 'Monday and Wednesday',
-      alt: 'Dr. Rajeev Vijayakumar | Best Medical Oncologist in Bangalore | Rashtrotthana Hospital | RR Nagar Bangalore',
-      id: 53,
-      title:'Dr. Rajeev Vijayakumar | Medical Oncologist in RR Nagar Bangalore',
-      description:'Book with Dr. Rajeev Vijayakumar, oncologist in RR Nagar with 20+ years of experience in medical oncology, hemato-oncology, and bone marrow transplant care.'
-    },
+    // {
+    //   name: 'Dr. Rajeev Vijayakumar',
+    //   image: 'assets/Doc-Inv-Page/Dr-Rajeev-Vijayakumar.png',
+    //   department: 'Oncologist',
+    //   about: 'Dr. Rajeev, the very senior consultant whose expertise in Medical Oncology, Hemato Oncology and Bone Marrow Transplant ensures that your confidence in his ...',
+    //   speciality: 'ONCOLOGY',
+    //   areasOfExpertise: ['Medical Oncology', 'Hemato- Oncology', 'Bone Marrow Transplant'],
+    //   expertise: 'Years of Experience: 20',
+    //   qualification: 'MBBS, DNB (Gen Medicine) DNB (Medical Oncology) MRCP (UK)',
+    //   time: '10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00',
+    //   date: 'Monday and Wednesday',
+    //   alt: 'Dr. Rajeev Vijayakumar | Best Medical Oncologist in Bangalore | Rashtrotthana Hospital | RR Nagar Bangalore',
+    //   id: 53,
+    //   title:'Dr. Rajeev Vijayakumar | Medical Oncologist in RR Nagar Bangalore',
+    //   description:'Book with Dr. Rajeev Vijayakumar, oncologist in RR Nagar with 20+ years of experience in medical oncology, hemato-oncology, and bone marrow transplant care.'
+    // },
     {
       name: 'Dr. Shashidhar',
       image: 'assets/Doc-Inv-Page/Dr-Shashidhar.png',
