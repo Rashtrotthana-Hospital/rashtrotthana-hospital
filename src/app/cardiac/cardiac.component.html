@@ -1,210 +1,122 @@
 <div class="root-container">
     <div class="speciality-header">
         <img src="../../assets/cardiology-banner.jpg" class="desktop"
-            alt="ENT Department care banner at Rashtrotthana Hospital, Bangalore">
+            alt="Cardiology Department care banner at Rashtrotthana Hospital, Bangalore">
         <img src="../../assets/cardiology-banner-mobile.jpg" class="mobile"
-            alt="ENT Department care banner at Rashtrotthana Hospital, Bangalore">
+            alt="Cardiology Department care banner at Rashtrotthana Hospital, Bangalore">
         <div class="header_button">
             <a href="tel:+918069239999" class="contact_button" (click)="trackPhoneClick()">Contact Now</a>
         </div>
     </div>
 
-    <div class="container-2">
-        <div class="sidebar">
-            <app-sidebar />
-        </div>
-        <div class="contents">
-            <h1 class="s_h1">Best Cardiology Care in Bangalore - Rashtrotthana Hospital</h1>
-            <div class="para_image">
-                <div class="s_content">
-                    <p class="s_para">Your heart works non-stop to keep you alive - pumping blood, carrying oxygen, and maintaining balance in every cell of your body. When something goes wrong - chest discomfort, irregular heartbeat, or breathlessness - it can signal more than just fatigue. It might point to underlying cardiovascular disease or even congestive heart failure that needs immediate attention.</p>
-                    <p class="s_para">At Rashtrotthana Hospital, we provide comprehensive cardiac care in Bangalore. Our heart specialists and experienced heart surgeons combine advanced diagnostics, affordable heart surgery and cardiac care in Bangalore and personalized treatment plans to restore your heart’s health and improve your quality of life.</p>
-                </div>
-                <div class="s_image">
-                    <img src="../../assets/heart-hospital-near-me.png" alt="Best Cardiologist in RR Nagar Bangalore">
-                </div>
+    <div class="container-2 container_margin">
+
+        <div class="s_h1">Best Hospital for Heart Care in Bangalore</div>
+
+        <p class="s_para para-margin">Your heart works non-stop to keep you alive - pumping blood, carrying oxygen, and maintaining balance in every cell of your body. When something goes wrong - chest discomfort, irregular heartbeat, or breathlessness - it can signal more than just fatigue. It might point to underlying cardiovascular disease or even congestive heart failure that needs immediate attention. At Rashtrotthana Hospital, we provide comprehensive cardiac care in Bangalore. Our heart specialists and experienced heart surgeons combine advanced diagnostics, affordable heart surgery and cardiac care in Bangalore and personalized treatment plans to restore your <a routerLink="/blog/the-importance-of-heart-health-check-ups-what-you-need-to-know">heart's health</a> and improve your quality of life.</p>
+
+        <div class="s_container container_margin">
+
+            <div class="content">
+                <h2 class="s_subheadings">Advanced Cardiology Services for Every Stage of Heart Care</h2>
+                <p class="s_para">At Rashtrotthana Hospital, we offer comprehensive heart care services from emergency intervention to complex surgeries. Our experienced cardiologists and heart surgeons combine advanced diagnostics with personalized treatment plans to restore your heart's health and improve your quality of life.</p>
+
+                <ul>
+                    <li class="s_container_margin">
+                        <h3 class="ss_subheading">Timely Intervention for Heart Attacks and Emergencies:</h3>
+                        <p class="s_para">When it comes to cardiac arrest or a sudden heart attack, time is everything. Our Interventional Cardiology team is equipped to perform Primary Angioplasty - a critical emergency procedure that restores blood flow and saves heart muscle. We also handle cardiorespiratory arrest with immediate, specialized response, ensuring the best chance at recovery.</p>
+                    </li>
+                    <li class="s_container_margin">
+                        <h3 class="ss_subheading">High-Risk PCI for Complex Cardiac Cases:</h3>
+                        <p class="s_para">For patients with blocked cardiac arteries, especially those who can't undergo regular surgery, High-Risk PCI (Percutaneous Coronary Intervention) offers a safer alternative. Our experienced cardiologists in RR Nagar, Bangalore manage even the most challenging conditions using cutting-edge techniques.</p>
+                    </li>
+                    <li class="s_container_margin">
+                        <h3 class="ss_subheading">Electrophysiology - Managing Irregular Heartbeats:</h3>
+                        <p class="s_para">Irregular heartbeats like atrial fibrillation can increase your risk of stroke or heart failure. Through electrophysiology studies, we identify and correct rhythm disturbances, sometimes using devices like an internal cardiac defibrillator to keep your heartbeat steady.</p>
+                    </li>
+                </ul>
             </div>
 
-            <div class="para_image container-margin row-reverse">
-                <div class="s_image">
-                    <img src="../../assets/best-cardiologist-in-rr-nagar-bangalore.png" alt="Best cardiologist in RR Nagar Bangalore">
-                </div>
-                <div class="s_content">
-                    <h2 class="s_subheadings">Best Cardiologist in Bangalore - Expert Heart Specialists</h2>
-                    <p class="s_para">Our department is led by some of the best cardiologists in Bangalore, supported by skilled heart surgeons in Bangalore for complex procedures. We manage everything from heart problems symptoms diagnosis to cardiac valve treatment and surgery with precision and care.</p>
-                    <p class="s_para">Patients searching for a best cardiologist near me for heart beat rate and cardiac muscle care in Bangalore trust us for:</p>
-                    <ul class="grid">
-                        <li class="s_para">Congestive heart failure treatment in Bangalore</li>
-                        <li class="s_para">Atrial fibrillation management and rhythm correction</li>
-                        <li class="s_para">Cardiac arrest emergency care and post‑arrest rehabilitation</li>
-                        <li class="s_para">Cardiac valves treatment and surgery including valve repair or replacement</li>
-                        <li class="s_para">Comprehensive cardiac cycle and heart circulation checkups</li>
-                    </ul>
-                </div>
+            <div class="image">
+                <app-speciality-form [doctor]="formDoctors" />
+                <img src="../../assets/heart-health-checkup-cardiology-rashtrotthana-hospital-bangalore.jpg" alt="Best Cardiologists for Heart Surgery Near Me">
             </div>
 
-                        <div class="youtube container-margin desktop-youtube">
+        </div>
 
-                <h2 class="s_subheadings">Expert Insights from Our Cardiology Specialists</h2>
+        <!-- <div class="youtube container-margin">
 
-                <div class="videos">
-                    <iframe width="320" height="210" src="https://www.youtube.com/embed/hyNUYRUxUx4?si=rUFxNZVSDu4327ZL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    <iframe width="320" height="210" src="https://www.youtube.com/embed/jeLvbdUH1ak?si=c7M8Xww7PR1cGxS4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    <iframe width="320" height="210" src="https://www.youtube.com/embed/uK17R5_y8kE?si=dXquUDFx37WCst7x" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    <!-- <iframe width="320" height="200" src="https://www.youtube.com/embed/vzZxYGCJK0E?si=F16IqscsomYYZOp0"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
-                </div>
+            <h2 class="youtube_heading">Expert Insights from Our Cardiology Specialists</h2>
+
+            <div class="videos">
+                <iframe width="320" height="200" src="https://www.youtube.com/embed/E9UQoItPrPI?si=yCNaVMsczZQjnwoe"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="320" height="200" src="https://youtube.com/embed/TLIYS2qP84o?si=YH0pzavxVoXS1A-o"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="320" height="200" src="https://www.youtube.com/embed/OK538oOk-eM?si=0-pFwUtbT-5oEaSQ"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
+        </div> -->
 
-            <div class="para_image container-margin">
-                <div class="s_content">
-                    <h2 class="s_subheadings">Advanced Cardiac Diagnostics & Heart Monitoring</h2>
-                    <div class="s_para">Early detection is key to preventing severe heart disease. At our cardiac hospital in Bangalore, we use advanced tools to evaluate your heart’s condition:</div>
-                    <ul  class="grid">
-                        <li class="s_para"><b>Echocardiogram (ECHO)</b>: Visualizes heart chambers, valves and muscle function</li>
-                        <li class="s_para"><b>Electrocardiogram (ECG)</b>: Detects arrhythmias and abnormal heart rhythms</li>
-                        <li class="s_para"><b>Treadmill Test (TMT)</b>:Monitors heart performance under stress</li>
-                        <li class="s_para"><b>Holter Monitoring</b>: Tracks normal heart beat and variations over 24-48 hours</li>
-                    </ul>
-                    <div class="s_para">These tests guide cardiac treatment at Rashtrotthana Hospital for conditions like atrial fibrillation, congestive heart disease and cardiac muscle weakness.</div>
-                </div>
-                <div class="s_image">
-                    <img src="../../assets/heart-disease-diagnosis-and-treatment.png" alt="Heart Disease Diagnosis and Treatment">
-                </div>
-            </div> 
-        </div>
-    </div>
-
-    <div class="para_image container-padding container-margin">
-        <div class="s_content">
-            <h2 class="s_subheadings">Minimally Invasive & Affordable Heart Surgery in Bangalore</h2>
-            <p class="s_para">We perform a wide range of interventions and surgeries with shorter recovery times and excellent outcomes:</p>
-            <div class="s_para">For cases where surgical intervention is necessary, our hospital is equipped with modern operation theaters and advanced monitoring systems, ensuring safe and effective procedures. Some of the critical surgeries performed include:</div>
-            <ul class="grid">
-                <li class="s_para">Coronary angioplasty and stenting for blocked arteries</li>
-                <li class="s_para">Internal cardiac defibrillator implantation for life‑threatening arrhythmias</li>
-                <li class="s_para">Cardiac valves treatment and replacement surgeries by experienced heart surgeons for cardiac valve replacement in Bangalore</li>
-                <li class="s_para">Heart operation and recovery care for structural defects and congenital conditions</li>
-            </ul>
-            <div class="s_para">Patients looking for affordable cardiovascular disease management in Bangalore find cost‑effective solutions without compromising quality.</div>
-        </div>
-        <div class="s_image">
-            <img src="../../assets/best-hospital-for-cardiology-in-bangalore.jpg" alt="Heart hospital near me">
-        </div>
-    </div>
-
-    <div class="para_image container-padding container-margin row-reverse">
-        <div class="s_image">
-            <img src="../../assets/affordable-heart-surgery-in-bangalore.png" alt="Best Hospital for cardiology in Bangalore">
-        </div>
-        <div class="s_content">
-            <h2 class="s_subheadings">Comprehensive Heart Disease Treatment</h2>
-            <p class="s_para">Our cardiology department offers complete heart care from diagnosis to surgery in Bangalore, addressing conditions such as:</p>
-            <ul class="grid">
-                <li class="s_para">Congestive heart failure and congestive heart disease treatment</li>
-                <li class="s_para">Cardiorespiratory arrest treatment and recovery services at Rashtrotthana Hospital</li>
-                <li class="s_para">Heart specialists for atrial fibrillation and cardiovascular disease in Bangalore</li>
-                <li class="s_para">Pediatric and adult cardiac cycle evaluations for long-term health monitoring</li>
+        <div class="container container_margin">
+            <ul>
+                <li>
+                    <h2 class="ss_subheading s_container_margin">Peripheral Vascular Diseases and Circulation Care</h2>
+                    <p class="s_para">Problems in blood vessels outside the heart can affect your legs, brain or kidneys. We diagnose and treat peripheral vascular diseases to improve your heart circulation and overall cardiovascular health. These conditions often share risk factors with heart disease.</p>
+                </li>
+                <li>
+                    <h3 class="ss_subheading s_container_margin">Managing Hypertension and Heart Failure</h3>
+                    <p class="s_para">Uncontrolled hypertension can damage your heart over time. We help you manage high blood pressure effectively to prevent complications. For patients with congestive heart failure or congestive heart disease, we offer advanced monitoring and medication plans to improve quality of life.</p>
+                </li>
+                <li>
+                    <h3 class="ss_subheading s_container_margin">Full Range of Cardiac Testing Services:</h3>
+                    <p class="s_para">If you're feeling breathless or notice unusual heart beat rate or chest discomfort, early diagnosis can save lives. We offer ECG, ECHO, TMT, TEE and <a routerLink="/blog/stress-and-heart-health-understanding-the-unseen-connection">Stress</a> Echo to assess heart function and detect underlying cardiac conditions before they worsen.</p>
+                </li>
+                <li>
+                    <h3 class="ss_subheading s_container_margin">Expertise in Cardiac Surgery and Valve Conditions:</h3>
+                    <p class="s_para">From cardiac valve repairs to full heart surgeries, our cardiac surgeons perform life-saving operations using proven techniques. If you're advised to have a heart operation, you'll be in the hands of experienced specialists who prioritize safety and recovery.</p>
+                </li>
             </ul>
         </div>
-    </div>
 
-    <div class="para_image container-padding container-margin">
-        <div class="s_content">
-            <h2 class="s_subheadings">Emergency Cardiac Care in Bangalore</h2>
-            <p class="s_para">Time is crucial during a heart emergency. We provide emergency treatment for cardiac arrest and heart problems in Bangalore, including:</p>
-            <ul class="grid">
-                <li class="s_para">Sudden chest pain and heart beat rate abnormalities</li>
-                <li class="s_para">Severe shortness of breath or cardiac arrest emergency care</li>
-                <li class="s_para">Collapse or fainting episodes linked to cardiorespiratory arrest</li>
-                <li class="s_para">Immediate heart operation and stabilization measures</li>
-            </ul>
-            <div class="s_para">Our 24/7 cardiac team ensures rapid response to save lives and minimize complications.</div>
-        </div>
-        <div class="s_image">
-            <img src="../../assets/heart-attack-treatment-near-me.png" alt="Best Cardiologists for Heart Surgery Near Me">
-        </div>
-    </div>
-
-    <div class="para_image container-padding container-margin row-reverse">
-        <div class="s_image">
-            <img src="../../assets/heart-health-checkup-cardiology-rashtrotthana-hospital-bangalore.jpg" alt="Best Cardiologists for Heart Surgery Near Me">
-        </div>
-        <div class="s_content">
-            <h2 class="s_subheadings">Preventive Cardiology and Lifestyle Guidance</h2>
-            <p class="s_para">Cardiology in Bangalore is not only about treatment - it’s about prevention. Our experts emphasize:</p>
-            <ul class="grid">
-                <li class="s_para">Regular heart circulation and cardiac cycle checkups</li>
-                <li class="s_para">Early screening for risk factors like hypertension and diabetes</li>
-                <li class="s_para">Guidance on diet, exercise, and stress management for normal heart beat maintenance</li>
-                <li class="s_para">Continuous follow-ups to avoid recurrence of cardiovascular disease</li>
-            </ul>
-            <div class="s_para">Our 24/7 cardiac team ensures rapid response to save lives and minimize complications.</div>
-        </div>
-    </div>
-
-    <div class="para_image container-padding container-margin">
-        <div class="s_content">
-            <h2 class="s_subheadings">Why Choose Rashtrotthana Hospital for Cardiac Care?</h2>
-            <ul class="grid">
-                <li class="s_para">Recognized as a top cardiac hospital in Bangalore for advanced interventions</li>
-                <li class="s_para">Specialists in affordable heart surgery and cardiac care in Bangalore</li>
-                <li class="s_para">Expertise in cardiac valves surgery, atrial fibrillation management, and heart muscle care</li>
-                <li class="s_para">Best hospital for congestive heart failure treatment in Bangalore with proven outcomes</li>
-                <li class="s_para">Emergency support for cardiac arrest and heart problems symptoms diagnosis</li>
-                <li class="s_para">Integrated cardiology and cardiac surgery team for seamless care</li>
-            </ul>
-        </div>
-        <div class="s_image">
-            <img src="../../assets/cardiology-specialist-rashtrotthana-hospital-bangalore.jpg" alt="Best Cardiologists for Heart Surgery Near Me">
-        </div>
-    </div>
-
-    <div class="para_image container-padding container-margin">
-        <div class="s_content">
+        <div class="container container_margin">
             <h2 class="s_subheadings">Affordable Cardiology Treatment in Bangalore</h2>
-            
-            <p class="s_para">We understand that heart surgery and specialized cardiac care can be overwhelming, not just emotionally but financially. Rashtrotthana Hospital is known for affordable cardiology treatment in Bangalore without compromising quality. From affordable heart surgery and cardiac care to cost-effective cardiovascular disease management, we make expert care accessible to every patient.</p>
-            <p class="s_para">Patients often search for a good cardiologist near me who offers both expertise and affordable care. At Rashtrotthana Hospital, you will find experienced heart surgeons in Bangalore skilled in performing complex heart operations such as bypass surgeries, valve repairs, and implantation of devices like internal cardiac defibrillators for patients with life-threatening arrhythmias.</p>
-            <p class="s_para">From the first consultation to post-surgery follow-up, our focus is on providing complete heart care. We manage all conditions - congestive heart failure, atrial fibrillation, cardiac arrest, cardiac valves issues, and heart circulation problems - with a patient-first approach.</p>
-            <p class="s_para">Whether you need preventive cardiac checkups, emergency cardiac arrest treatment, or major heart operations, Rashtrotthana Hospital ensures every patient receives compassionate and world-class treatment in Bangalore.</p>
+            <p class="s_para">We understand that heart surgery and specialized cardiac care can be overwhelming, not just emotionally but financially. Rashtrotthana Hospital is known for affordable cardiology treatment in Bangalore without compromising quality. From affordable heart surgery and cardiac care to cost-effective <a routerLink="/blog/vascular-disease-understanding-a-common-circulatory-health-issue">cardiovascular disease</a> management, we make expert care accessible to every patient.</p>
+
+            <ul>
+                <li>
+                    <h3 class="ss_subheading s_container_margin">Comprehensive Heart Care:</h3>
+                    <p class="s_para">Patients often search for a good cardiologist near me who offers both expertise and affordable care. At Rashtrotthana Hospital, you will find experienced heart surgeons in Bangalore skilled in performing complex heart operations such as bypass surgeries, valve repairs, and implantation of devices like internal cardiac defibrillators for patients with life-threatening arrhythmias.</p>
+                </li>
+                <li>
+                    <h3 class="ss_subheading s_container_margin">Patient-First Approach:</h3>
+                    <p class="s_para">From the first consultation to post-surgery follow-up, our focus is on providing complete heart care. We manage all conditions - congestive heart failure, atrial fibrillation, cardiac arrest, cardiac valves issues, and heart circulation problems - with a patient-first approach.</p>
+                </li>
+                <li>
+                    <h3 class="ss_subheading s_container_margin">Complete Cardiac Care Services:</h3>
+                    <p class="s_para">Whether you need preventive cardiac checkups, emergency cardiac arrest treatment, or major heart operations, Rashtrotthana Hospital ensures every patient receives compassionate and world-class treatment in Bangalore.</p>
+                </li>
+            </ul>
         </div>
+
+        <div class="container_margin">
+            <h2 class="youtube_heading text-center heading-margin">Our Cardiology Experts</h2>
+            <app-speciality-doc-card [doctors]="doctors" />
+        </div>
+
+        <div class="container container_margin">
+            <app-speciality-carousel />
+        </div>
+
     </div>
 
-    <div class="form-container container-padding">
-        <!-- <div class="form-image">
-            <img src="../../assets/sunday.jpeg" alt="">
-        </div> -->
-        <div class="form">
-            <app-speciality-form [doctor]="formDoctors" />
-        </div>
-    </div>
-
-    <!-- doctors -->
-    <div class="doctors">
-        <div class="doc-heading">Meet Our Medical Team</div>
-        <div class="doctor-container">
-            <div *ngFor="let doctor of doctors">
-                <app-speciality-doctors [name]="doctor.doctor_name" [experience]="doctor.experience"
-                    [image]="doctor.doctor_image" [alt]="doctor.docalt"></app-speciality-doctors>
-            </div>
-        </div>
-        <!-- <div class="doctor-container">
-            <div *ngFor="let doctor of doctors2">
-                <app-speciality-doctors [name]="doctor.doctor_name" [experience]="doctor.experience"
-                    [image]="doctor.doctor_image" [alt]="doctor.docalt"></app-speciality-doctors>
-            </div>
-        </div> -->
-    </div>
-
-    <!-- faq -->
-    <div class="faq">
-        <div class="faq-heading">FAQs</div>
-        <div class="ques_ans" *ngFor="let faq of faqs; let i = index">
-            <div style="color: #008080;" class="ques s_para"><b>Q{{i+1}}. {{faq.ques}}</b></div>
-            <div class="ans s_para" [innerHTML]="faq.ans"></div>
-        </div>
+    <div class="faqs">
+        <app-faqs-new [faqData]="faqs" />
     </div>
 </div>
