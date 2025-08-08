@@ -26,88 +26,92 @@ export class ENTComponent {
     this.sanitizedContent1 = this.sanitizer.bypassSecurityTrustHtml(this.specialities[0].content_1);
   }
 
-  doctors = [
+  doctors: any = [
     {
-      doctor_image: '../../assets/Dr-Sunil-Kumar-C.png',
-      doctor_name: 'Dr. Sunil Kumar C',
-      experience: "10+",
-      docalt: 'Dr. Sunil Kumar C | Best  ENT, Head and Neck Surgeon in Bangalore | Rashtrotthana Hospital'
+      id: 1,
+      name: 'Dr. Sunil Kumar C',
+      experience: '10+ Years',
+      image: '../../assets/Dr-Sunil-Kumar-C.png',
+      slug: '/doctor/dr-sunil-kumar-c'
     },
+    {
+      id: 2,
+      name: 'Dr. Narendranath A',
+      experience: '10 Years',
+      image: '../../assets/Dr-Narendranath-A.png',
+      slug: '/doctor/dr-narendranath-a'
+    },
+    {
+      id: 3,
+      name: 'Dr. Manasa N. A',
+      experience: '7 Years',
+      image: '../../assets/Dr-Manasa-N-A.png',
+      slug: '/doctor/dr-manasa-n-a'
+    },
+    {
+      id: 4,
+      name: 'Dr. Sandhya S. Patil',
+      experience: '10+ Years',
+      image: '../../assets/dr-sandhya-dr-page.png',
+      slug: '/doctor/dr-sandhya-s-patil'
+    }
+  ];
 
-    {
-      doctor_image: '../../assets/Dr-Narendranath-A.png',
-      doctor_name: 'Dr. Narendranath A',
-      experience: "10",
-      docalt: 'Dr. Narendranath A | Best ENT Doctor in Bangalore | Rashtrotthana Hospital'
-    },
-    {
-      doctor_image: '../../assets/Dr-Manasa-N-A.png',
-      doctor_name: 'Dr. Manasa N. A',
-      experience: "7",
-      docalt: 'Dr. Manasa N. A | Best ENT Consultant in Bangalore | Rashtrotthana Hospital'
-    },
-    {
-      doctor_image: '../../assets/dr-sandhya-dr-page.png',
-      doctor_name: 'Dr. Sandhya S. Patil',
-      experience: "10+",
-      docalt: 'Dr. Sandhya S. Patil | Best ENT Consultant in Bangalore | Rashtrotthana Hospital'
-    },
-  ]
 
   formDoctors = ["Dr. Sunil Kumar C", "Dr. Narendranath A", "Dr. Manasa N. A", "Dr. Sandhya S. Patil"]
 
   faqs = [
     {
-      ques: "Who are the Best ENT Specialists in Rajarajeshwari Nagar?",
-      ans: "Rashtrotthana Hospital is home to the Best ENT Specialists in Rajarajeshwari Nagar, including Dr. Manasa N. A., Dr. Narendranath A. and Dr. Sunil Kumar. They specialize in treating conditions such as ear pain, nasal congestion, sinus infections and head and neck cancers treatment in Rajarajeshwari Nagar Bangalore with advanced diagnostic and surgical techniques."
+      ques : "Who are the Best ENT Specialists in Bangalore?",
+      ans : "Rashtrotthana Hospital is home to some of the best ENT specialists in Bangalore, including Dr. Manasa N. A., Dr. Narendranath A., and Dr. Sunil Kumar. They are highly experienced in diagnosing and treating conditions such as ear pain, nasal congestion, sinus infections, and head and neck cancers using advanced diagnostic and surgical techniques.  "
     },
     {
-      ques: "Why is Rashtrotthana Hospital considered the Best ENT Hospital in RR Nagar Bangalore?",
-      ans: "Our hospital stands out as the Best ENT Hospital in RR Nagar Bangalore for offering comprehensive care by a team of Expertise ENT doctors in RR Nagar Bangalore. We provide specialized treatments, including endoscopic sinus surgery, snoring treatment ENT services and solutions for throat pain and nasal polyps treatment in RR Nagar Bangalore."
+      ques : "Why is Rashtrotthana Hospital considered the Best ENT Hospital in Bangalore?",
+      ans : "Our hospital stands out for offering comprehensive ENT care delivered by a team of expert ENT doctors in Bangalore. We provide specialized treatments such as endoscopic sinus surgery, snoring treatment, and effective solutions for throat pain and nasal polyps, supported by state-of-the-art equipment and personalized care."
     },
     {
-      ques: "What treatments are available for ear pain at Rashtrotthana Hospital?",
-      ans: "Our hospital specializes in the treatment for ear pain, including conditions like Otitis Media and Tinnitus. Dr. Manasa N. A. and Dr. Narendranath A. are experts in procedures such as mastoidectomy surgeries, ear tube surgery and micro ear surgery for hearing restoration."
+      ques : "What treatments are available for ear pain at Rashtrotthana Hospital?",
+      ans : "We offer expert treatment for ear pain caused by conditions like Otitis Media and Tinnitus. Our ENT specialists, including Dr. Manasa N. A. and Dr. Narendranath A., perform procedures such as mastoidectomy, ear tube surgery, and micro ear surgery for hearing restoration."
     },
     {
-      ques: "Who provides the best care for sinus infections in Rajarajeshwari Nagar?",
-      ans: "Dr. Sunil Kumar is a specialist in sinus infection treatment in Rajarajeshwari Nagar. He performs advanced procedures like endoscopic sinus surgery and FESS (nasal polyp surgery) to provide long-term relief for chronic sinus issues."
+      ques : "Who provides the best care for sinus infections in Bangalore?",
+      ans : "Dr. Sunil Kumar specializes in sinus infection treatment in Bangalore. He performs advanced procedures like endoscopic sinus surgery and FESS (Functional Endoscopic Sinus Surgery) to offer long-term relief from chronic sinus conditions."
     },
     {
-      ques: "Can Rashtrotthana Hospital treat throat-related conditions like chronic coughing?",
-      ans: "Yes, our hospital is recognized as the best hospital for chronic cough treatment in Rajarajeshwari Nagar Bangalore. Dr. Manasa N. A. and Dr. Narendranath A. are experts in treating conditions like tonsillitis, sore throat and throat cancer treatments in Bangalore, ensuring a comprehensive approach to throat care."
+      ques : "Can Rashtrotthana Hospital treat throat-related conditions like chronic coughing?",
+      ans : "Yes, our hospital is well-equipped to treat throat-related conditions including chronic cough, tonsillitis, sore throat, and throat cancer. Dr. Manasa N. A. and Dr. Narendranath A. provide a comprehensive approach to throat care and long-term treatment solutions."
     },
     {
-      ques: "What ENT services are available for nasal blockage or nasal discharge?",
-      ans: "Our team, including Dr. Sunil Kumar, specializes in the treatment for nasal congestion, nasal blockage treatment in Bangalore and nasal polyps treatment in RR Nagar Bangalore. Advanced surgical options like nasal septum correction surgery are offered for effective relief."
+      ques : "What ENT services are available for nasal blockage or nasal discharge?",
+      ans : "Our ENT team, including Dr. Sunil Kumar, offers advanced care for nasal issues such as nasal congestion, nasal blockage, and nasal polyps. Surgical options like nasal septum correction surgery are available for patients requiring long-term relief."
     },
     {
-      ques: "What advanced surgeries are performed at Rashtrotthana Hospital for ENT conditions?",
-      ans: "Our hospital provides cutting-edge ENT procedures such as endoscopic sinus surgery, tracheotomy, adenoidectomy and tonsillectomy. Dr. Narendranath A. is particularly skilled in mastoidectomy surgeries and tympanoplasty, while Dr. Manasa N. A. specializes in voice restoration surgery and head and neck tumor surgeries."
+      ques : "What advanced ENT surgeries are performed at Rashtrotthana Hospital?",
+      ans : "We provide a wide range of advanced ENT surgeries including endoscopic sinus surgery, tracheotomy, adenoidectomy, and tonsillectomy. Dr. Narendranath A. is skilled in mastoidectomy and tympanoplasty, while Dr. Manasa N. A. specializes in voice restoration and head and neck tumor surgeries."
     },
     {
-      ques: "How does Rashtrotthana Hospital treat hearing loss?",
-      ans: "As the best hospital for ENT in Bangalore, we offer advanced care for hearing loss or impairment. Dr. Manasa N. A. and Dr. Sunil Kumar specialize in cochlear implants, micro ear surgery for hearing restoration and treatments for persistent ear aches or pain."
+      ques : "How does Rashtrotthana Hospital treat hearing loss?",
+      ans : "As one of the best hospitals for ENT care in Bangalore, we offer cutting-edge treatment for hearing loss, including cochlear implants and micro ear surgery. Dr. Manasa N. A. and Dr. Sunil Kumar provide personalized solutions for both temporary and chronic hearing conditions."
     },
     {
-      ques: "Who provides snoring treatment at Rashtrotthana Hospital?",
-      ans: "Dr. Sunil Kumar is an expert in snoring treatment ENT services and management of obstructive sleep apnea. With advanced diagnostic tools and personalized therapies, he helps patients improve their quality of sleep and overall health."
+      ques : "Who provides snoring treatment at Rashtrotthana Hospital?",
+      ans : "Dr. Sunil Kumar is an expert in diagnosing and treating snoring and obstructive sleep apnea. He uses advanced diagnostic tools and customized therapies to help patients improve sleep quality and manage related ENT conditions effectively."
     },
     {
-      ques: "What care is available for head and neck cancers in Rajarajeshwari Nagar?",
-      ans: "Dr. Manasa N. A. and Dr. Narendranath A. specialize in head and neck cancer treatment in Rajarajeshwari Nagar Bangalore. Using advanced surgical techniques and personalized care plans, they ensure the best possible outcomes for patients."
+      ques : "What care is available for head and neck cancers in Bangalore?",
+      ans : "Dr. Manasa N. A. and Dr. Narendranath A. lead our head and neck cancer treatment program in Bangalore. Using the latest surgical techniques and personalized treatment plans, they provide high-quality care focused on the best outcomes for patients."
     }
   ]
 
   trackPhoneClick() {
     if (typeof gtag === 'function') {
-    gtag('event', 'conversion', {
-      'send_to': 'AW-16656770043/-YEMCITg09IZEPvHyIY-',
-      'event_callback': () => {
-        console.log('Phone call conversion tracked!');
-      }
-    });
-  }
+      gtag('event', 'conversion', {
+        'send_to': 'AW-16656770043/-YEMCITg09IZEPvHyIY-',
+        'event_callback': () => {
+          console.log('Phone call conversion tracked!');
+        }
+      });
+    }
   }
 
 }
