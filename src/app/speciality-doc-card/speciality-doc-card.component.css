@@ -2,7 +2,7 @@
 .container-2 {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    /* padding: 20px; */
 }
 
 .s_h1 {
@@ -26,7 +26,7 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 3rem;
-    padding: 0 1rem;
+    /* padding: 0 1rem; */
 }
 
 .doctor-card {
@@ -37,13 +37,11 @@
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: 1px solid #f0f0f0;
+    border: 4px solid transparent;
 }
 
 .doctor-card:hover {
-  /* transform: translateY(-8px) scale(1.02); */
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-  border: 4px solid #008080;
-  /* background: #008080; */
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.392);
   background-size: auto, 300% 300%;
   animation: gradientBorder 3s ease infinite;
 }

@@ -140,7 +140,8 @@
   }
 
   .carousel-item img {
-    height: 150px;
+    width: 90px;
+    height: auto;
   }
 
   .carousel-item-title {
@@ -174,8 +175,9 @@
   }
 
   .carousel-item img {
-    height: 120px;
-  }
+    width: 90px;
+    height: auto;
+  } 
 
   .carousel-item-title {
     font-size: 14px;
@@ -192,5 +194,9 @@
 
   .carousel-controls {
     padding: 0 10px;
+  }
+
+  .faq-title {
+    font-size: 28px;
   }
 }

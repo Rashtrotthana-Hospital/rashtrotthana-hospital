@@ -23,21 +23,22 @@ export class UrologyComponent {
     this.metaService.updateTag({ name: 'keywords', content: 'best urology hospital near me,urology, urinary problems, UTI, kidney stones, urinary incontinence, urine' });
   }
 
-  doctors = [
+  doctors: any = [
     {
-      doctor_image: '../../assets/doctor-31.png',
-      doctor_name: 'Dr. Nagaraj Rao',
-      experience: "25",
-      docalt: "Dr. Nagaraj Rao is the best urologist in Bangalore | Rashtrotthana Hospital Bangalore"
+      id: 1,
+      name: 'Dr. Nagaraj Rao',
+      experience: '26+ Years',
+      image: '../../assets/doctor-31.png',
+      slug : '/doctor/dr-nagaraj-rao'
     },
     {
-      doctor_image: '../../assets/Dr-Madhu-S-N.png',
-      doctor_name: 'Dr. Madhu S. N',
-      experience: "14",
-      docalt: "Dr.Madhu S N Rao is the best urologist in Bangalore | Rashtrotthana Hospital Bangalore"
-    },
-
-  ]
+      id: 2,
+      name: 'Dr. Madhu S. N',
+      experience: '14+ years',
+      image: 'assets/Dr-Madhu-S-N.png',
+      slug : '/doctor/dr-madhu-s-n'
+    }
+  ];
 
   formDoctors = ['Dr. Nagaraj Rao', 'Dr. Madhu S. N']
 
