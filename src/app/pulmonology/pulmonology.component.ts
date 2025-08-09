@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Title, Meta, DomSanitizer, SafeHtml } from '@angular/platform-browser';
-
+declare var gtag: Function;
 
 @Component({
   selector: 'app-pulmonology',
@@ -24,11 +24,13 @@ export class PulmonologyComponent {
 
   doctors = [
     {
-      doctor_image:'../../assets/Dr-Kolla-Vinod.png',
-      doctor_name:'Dr. Kolla Vinod',
-      experience : "15",
+      id: 1,
+      name: 'Dr. Kolla Vinod',
+      experience: '15+ Years',
+      image: '../../assets/Dr-Kolla-Vinod.png',
+      slug: '/doctor/dr-kolla-vinod',
       docalt : 'Dr. Kolla Vinod | Best Pulmonologist in Bangalore | Rashtrotthana Hospital'
-    }
+    },
   ];
 
   faqs = [
@@ -37,12 +39,12 @@ export class PulmonologyComponent {
       ans : 'Lung diseases often present with chronic cough, wheezing, breathlessness, chest congestion, and persistent respiratory infections. If you experience recurring breathing problems, consult Dr. Kolla Vinod, best pulmonologist in RR Nagar Bangalore, for early diagnosis and treatment.'
     },
     {
-      ques : 'How is COPD diagnosed and treated?',
-      ans : 'COPD (Chronic Obstructive Pulmonary Disease) is diagnosed using Lung Function Tests (PFT), spirometry, and imaging tests. Treatment includes inhalers, medication, pulmonary rehabilitation, and lifestyle modifications to improve breathing. At Rashtrotthana Hospital, the best lung hospital in RR Nagar Bangalore, Dr. Kolla Vinod provides comprehensive COPD cough treatment and breathlessness management.'
+      ques : ' How is COPD diagnosed and treated?',
+      ans : 'COPD (Chronic Obstructive Pulmonary Disease) is diagnosed using Lung Function Tests (PFT), spirometry, and imaging tests. Treatment includes inhalers, medication, pulmonary rehabilitation and lifestyle modifications to improve breathing. At Rashtrotthana Hospital, the best lung hospital in RR Nagar Bangalore, Dr. Kolla Vinod provides comprehensive COPD cough treatment and breathlessness management.'
     },
     {
       ques : 'What is the best treatment for chronic cough?',
-      ans : 'Chronic cough can result from asthma, COPD, lung infections, or acid reflux. Our lungs specialist, Dr. Kolla Vinod, in Rajarajeshwari Nagar Bangalore, provides advanced chronic cough treatment tailored to the underlying cause.'
+      ans : 'Chronic cough can result from asthma, COPD, lung infections or acid reflux. Our lungs specialist, Dr. Kolla Vinod, in Bangalore, provides advanced chronic cough treatment tailored to the underlying cause.'
     },
     {
       ques : 'When should I see a doctor for breathing difficulties?',
@@ -78,4 +80,15 @@ export class PulmonologyComponent {
 
 
   formDoctors : any = ["Dr. Kolla Vinod"]
+
+    trackPhoneClick() {
+    if (typeof gtag === 'function') {
+      gtag('event', 'conversion', {
+        'send_to': 'AW-16656770043/-YEMCITg09IZEPvHyIY-',
+        'event_callback': () => {
+          console.log('Phone call conversion tracked!');
+        }
+      });
+    }
+  }
 }
