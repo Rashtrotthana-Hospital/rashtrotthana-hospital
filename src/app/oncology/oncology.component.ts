@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Title, Meta, DomSanitizer, SafeHtml } from '@angular/platform-browser';
-
+declare var gtag: Function;
 
 @Component({
   selector: 'app-oncology',
@@ -84,4 +84,14 @@ export class OncologyComponent {
     },
   ]
 
+    trackPhoneClick() {
+    if (typeof gtag === 'function') {
+    gtag('event', 'conversion', {
+      'send_to': 'AW-16656770043/-YEMCITg09IZEPvHyIY-',
+      'event_callback': () => {
+        console.log('Phone call conversion tracked!');
+      }
+    });
+  }
+  }
 }

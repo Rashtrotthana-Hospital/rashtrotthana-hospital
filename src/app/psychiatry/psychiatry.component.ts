@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Title, Meta,DomSanitizer,SafeHtml } from '@angular/platform-browser'; 
-
+declare var gtag: Function;
 
 @Component({
   selector: 'app-psychiatry',
@@ -78,5 +78,16 @@ export class PsychiatryComponent {
       ans : "One of the most respected names in the field is Dr. Gopal Das C M, a senior consultant in the Department of Psychiatry at Rashtrotthana Hospital. With over 11 years of experience, he is known for his patient-centered approach, clinical accuracy, and compassionate care. Patients appreciate his expertise in managing conditions like depression, anxiety, stress, and complex mood disorders, making him one of the best psychiatrists in RR Nagar Bangalore."
     }
   ]
+
+  trackPhoneClick() {
+    if (typeof gtag === 'function') {
+    gtag('event', 'conversion', {
+      'send_to': 'AW-16656770043/-YEMCITg09IZEPvHyIY-',
+      'event_callback': () => {
+        console.log('Phone call conversion tracked!');
+      }
+    });
+  }
+  }
 
 }

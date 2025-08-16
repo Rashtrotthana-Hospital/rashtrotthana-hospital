@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Title, Meta,DomSanitizer } from '@angular/platform-browser';
+declare var gtag: Function;
 
 @Component({
   selector: 'app-anesthesiology',
@@ -62,4 +63,15 @@ export class AnesthesiologyComponent {
       ans : "Absolutely. It's important to have an open discussion with your anesthesiologist to understand the anesthesia plan and address any concerns prior to surgery.​"
     },
   ]
+
+  trackPhoneClick() {
+    if (typeof gtag === 'function') {
+    gtag('event', 'conversion', {
+      'send_to': 'AW-16656770043/-YEMCITg09IZEPvHyIY-',
+      'event_callback': () => {
+        console.log('Phone call conversion tracked!');
+      }
+    });
+  }
+  }
 }
