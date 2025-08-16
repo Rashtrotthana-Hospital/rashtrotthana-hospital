@@ -28,35 +28,38 @@ export class OrthopedicsComponent {
   }
 
   formDoctors: any = ['Dr. Mahesh Kulkarni', 'Dr. Sujayendra D. M', 'Dr. Nikhil Hegde', 'Dr. Hemanth Kumar Venkatesh']
+  
+doctors: any = [
+  {
+    id: 1,
+    name: 'Dr. Mahesh Kulkarni',
+    experience: '15+ Years',
+    image: '../../assets/Dr-Mahesh-Kulkarni.png',
+    slug: '/doctor/dr-mahesh-kulkarni'
+  },
+  {
+    id: 2,
+    name: 'Dr. Sujayendra D. M',
+    experience: '11 Years',
+    image: '../../assets/Dr-Sujayendra-D-M.png',
+    slug: '/doctor/dr-sujayendra-d-m'
+  },
+  {
+    id: 3,
+    name: 'Dr. Nikhil Hegde',
+    experience: '6 Years',
+    image: '../../assets/Dr-Nikhil-Hegde.png',
+    slug: '/doctor/dr-nikhil-hegde'
+  },
+  {
+    id: 4,
+    name: 'Dr. Hemanth Kumar Venkatesh',
+    experience: '20 Years',
+    image: '../../assets/Dr-Hemanth-kumar-Venkatesh.png',
+    slug: '/doctor/dr-hemanth-kumar-venkatesh'
+  }
+];
 
-  doctors = [
-    {
-      doctor_image: '../../assets/Dr-Mahesh-Kulkarni.png',
-      doctor_name: 'Dr. Mahesh Kulkarni',
-      experience: "15+",
-      docalt: 'Dr. Mahesh Kulkarni | Best Ortho Doctor in Bangalore | Rashtrotthana Hospital'
-    },
-    {
-      doctor_image: '../../assets/Dr-Sujayendra-D-M.png',
-      doctor_name: 'Dr. Sujayendra D. M',
-      experience: "11",
-      docalt: 'Dr. Sujayendra D. M | Best Orthopaedic Doctor in Bangalore | Rashtrotthana Hospital'
-    },
-    {
-
-      doctor_image: '../../assets/Dr-Nikhil-Hegde.png',
-      doctor_name: 'Dr. Nikhil Hegde',
-      experience: "6",
-      docalt: 'Dr. Nikhil Hegde | Best Orthopaedic Consultant in Bangalore | Rashtrotthana Hospital'
-    },
-    {
-
-      doctor_image: '../../assets/Dr-Hemanth-kumar-Venkatesh.png',
-      doctor_name: "Dr. Hemanth Kumar Venkatesh",
-      experience: "20",
-      docalt: 'Dr. Hemanth Kumar Venkatesh | Best Orthopaedic Consultant in Bangalore | Rashtrotthana Hospital'
-    },
-  ]
 
   faqs = [
     {

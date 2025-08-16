@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Title, Meta, DomSanitizer, SafeHtml } from '@angular/platform-browser';
-
+declare var gtag: Function;
 
 @Component({
   selector: 'app-paediatrics',
@@ -27,37 +27,37 @@ export class PaediatricsComponent {
 
   doctors = [
     {
-      doctor_image:'../../assets/Dr-Vishwanath-Sanagoudar.png',
-      doctor_name:'Dr. Vishwanath Sanagoudar',
-      experience : "8",
-      docalt : 'Dr. Vishwanath Sanagoudar | Best Paediatrician and Neonatologist in Bangalore | Rashtrotthana Hospital'
+      doctor_image: '../../assets/Dr-Vishwanath-Sanagoudar.png',
+      doctor_name: 'Dr. Vishwanath Sanagoudar',
+      experience: "8",
+      docalt: 'Dr. Vishwanath Sanagoudar | Best Paediatrician and Neonatologist in Bangalore | Rashtrotthana Hospital'
     },
     {
-      doctor_image:'../../assets/Dr-Niveditha-C.png',
-      doctor_name:'Dr. Niveditha C',
-      experience : "7",
-      docalt : 'Dr. Niveditha C | Best Pediatrician in Bangalore | Rashtrotthana Hospital'
+      doctor_image: '../../assets/Dr-Niveditha-C.png',
+      doctor_name: 'Dr. Niveditha C',
+      experience: "7",
+      docalt: 'Dr. Niveditha C | Best Pediatrician in Bangalore | Rashtrotthana Hospital'
     },
     {
-      doctor_image:'../../assets/Dr-Dhanyatha-Muninarayan.png',
-      doctor_name:'Dr. Dhanyatha Muninarayan',
-      experience : "7",
-      docalt : 'Dr. Dhanyatha Muninarayan | Best Pediatrician in Bangalore | Rashtrotthana Hospital'
+      doctor_image: '../../assets/Dr-Dhanyatha-Muninarayan.png',
+      doctor_name: 'Dr. Dhanyatha Muninarayan',
+      experience: "7",
+      docalt: 'Dr. Dhanyatha Muninarayan | Best Pediatrician in Bangalore | Rashtrotthana Hospital'
     }
   ]
 
   faqs = [
     {
-      ques : 'Which is the best pediatric hospital in Bangalore?',
-      ans : 'Rashtrotthana Hospital is recognized as one of the best pediatric hospitals in Bangalore, providing expert care for infants, children and adolescents. With a team of experienced pediatricians and neonatologists, we ensure comprehensive treatment for various pediatric conditions'
+      ques: 'Which is the best pediatric hospital in Bangalore?',
+      ans: 'Rashtrotthana Hospital is recognized as one of the best pediatric hospitals in Bangalore, providing expert care for infants, children and adolescents. With a team of experienced pediatricians and neonatologists, we ensure comprehensive treatment for various pediatric conditions'
     },
     {
-      ques : 'Who are the best pediatricians in RR Nagar, Bangalore?',
-      ans : 'At Rashtrotthana Hospital, our team includes some of the best pediatricians in RR Nagar, Bangalore, dedicated to providing top-quality child healthcare services. We specialize in preventive care, early diagnosis and advanced treatments for children of all ages.'
+      ques: 'Who are the best pediatricians in RR Nagar, Bangalore?',
+      ans: 'At Rashtrotthana Hospital, our team includes some of the best pediatricians in RR Nagar, Bangalore, dedicated to providing top-quality child healthcare services. We specialize in preventive care, early diagnosis and advanced treatments for children of all ages.'
     },
     {
-      ques : 'What treatments does Rashtrotthana Hospital provide for children?',
-      ans : `<p class = 's_para'>We offer a range of pediatric services, including</p>
+      ques: 'What treatments does Rashtrotthana Hospital provide for children?',
+      ans: `<p class = 's_para'>We offer a range of pediatric services, including</p>
              <ul>
               <li class = 's_para'>Child health care for newborns, infants and adolescents</li>
               <li class = 's_para'>Treatment for fever, common cold, cough and stomach pain</li>
@@ -69,24 +69,24 @@ export class PaediatricsComponent {
       `
     },
     {
-      ques : 'Where can I find the best hospital for kids in Rajarajeshwari Nagar, Bangalore?',
-      ans : 'If you are looking for the best hospital for kids in Rajarajeshwari Nagar, Bangalore, Rashtrotthana Hospital is the preferred choice for pediatric and neonatal care. Our expert team ensures the best treatment for children in a safe and child-friendly environment.'
+      ques: 'Where can I find the best hospital for kids in Rajarajeshwari Nagar, Bangalore?',
+      ans: 'If you are looking for the best hospital for kids in Rajarajeshwari Nagar, Bangalore, Rashtrotthana Hospital is the preferred choice for pediatric and neonatal care. Our expert team ensures the best treatment for children in a safe and child-friendly environment.'
     },
     {
-      ques : 'Who is the best pediatric doctor in Rajarajeshwari Nagar, Bangalore?',
-      ans : 'Our hospital has some of the best pediatric doctors in Rajarajeshwari Nagar, Bangalore, offering personalized care for children’s health and wellness. Whether it’s a routine check-up or specialized treatment, our experienced pediatricians provide compassionate and expert care.'
+      ques: 'Who is the best pediatric doctor in Rajarajeshwari Nagar, Bangalore?',
+      ans: 'Our hospital has some of the best pediatric doctors in Rajarajeshwari Nagar, Bangalore, offering personalized care for children’s health and wellness. Whether it’s a routine check-up or specialized treatment, our experienced pediatricians provide compassionate and expert care.'
     },
     {
-      ques : 'Which hospital has the best child doctors for cold and cough treatment in RR Nagar?',
-      ans : "Rashtrotthana Hospital is known as a top children's hospital for cold and cough treatment in RR Nagar, providing effective and timely treatment for common pediatric illnesses."
+      ques: 'Which hospital has the best child doctors for cold and cough treatment in RR Nagar?',
+      ans: "Rashtrotthana Hospital is known as a top children's hospital for cold and cough treatment in RR Nagar, providing effective and timely treatment for common pediatric illnesses."
     },
     {
-      ques : 'Where can I find expert pediatric doctors for fever and common cold in RR Nagar?',
-      ans : 'Our experienced pediatric doctors for fever and common cold in RR Nagar ensure accurate diagnosis and treatment, helping your child recover quickly.'
+      ques: 'Where can I find expert pediatric doctors for fever and common cold in RR Nagar?',
+      ans: 'Our experienced pediatric doctors for fever and common cold in RR Nagar ensure accurate diagnosis and treatment, helping your child recover quickly.'
     },
     {
-      ques : 'Why choose Rashtrotthana Hospital for pediatric and neonatal care?',
-      ans : `
+      ques: 'Why choose Rashtrotthana Hospital for pediatric and neonatal care?',
+      ans: `
         <p class = 's_para'>Our experienced pediatric doctors for fever and common cold in RR Nagar ensure accurate diagnosis and treatment, helping your child recover quickly.</p>
         <ul>
           <li class = 's_para'>Top pediatric specialists in RR Nagar</li>
@@ -98,4 +98,15 @@ export class PaediatricsComponent {
       `
     },
   ]
+
+  trackPhoneClick() {
+    if (typeof gtag === 'function') {
+      gtag('event', 'conversion', {
+        'send_to': 'AW-16656770043/-YEMCITg09IZEPvHyIY-',
+        'event_callback': () => {
+          console.log('Phone call conversion tracked!');
+        }
+      });
+    }
+  }
 }
