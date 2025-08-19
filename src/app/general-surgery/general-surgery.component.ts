@@ -23,7 +23,7 @@ export class GeneralSurgeryComponent implements OnInit {
     {
       doctor_image: '../../assets/Dr-Atmaram-D-C.png',
       doctor_name: 'Dr. Atmaram D. C',
-      experience: "18",
+      experience: "19",
       docalt: 'Dr. Atmaram D. C | Best laparoscopic Surgeon in Bangalore | Rashtrotthana Hospital'
     },
     {

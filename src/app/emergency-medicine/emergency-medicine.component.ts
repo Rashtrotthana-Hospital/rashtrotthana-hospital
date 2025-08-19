@@ -26,7 +26,7 @@ export class EmergencyMedicineComponent {
         Doctors:[
           {
             doctor_image:'../../assets/Dr-Anand-Shankar.png',
-            doctor_name:'Dr. (Col)Anand Shankar',
+            doctor_name:'Col (Dr) Anand Shankar K',
             experience : '31'
           }
           // {
