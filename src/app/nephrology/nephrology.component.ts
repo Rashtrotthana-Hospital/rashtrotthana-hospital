@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Title, Meta, DomSanitizer, SafeHtml } from '@angular/platform-browser';
+declare var gtag: Function;
 
 @Component({
   selector: 'app-nephrology',
@@ -94,4 +95,15 @@ export class NephrologyComponent {
       ans : 'Rashtrotthana Hospital offers Affordable Kidney Failure Treatment in Bangalore with expert guidance from Dr. Santhosh S and a dedicated nephrology team.'
     },
   ]
+
+  trackPhoneClick() {
+    if (typeof gtag === 'function') {
+      gtag('event', 'conversion', {
+        'send_to': 'AW-16656770043/-YEMCITg09IZEPvHyIY-',
+        'event_callback': () => {
+          console.log('Phone call conversion tracked!');
+        }
+      });
+    }
+  }
 }

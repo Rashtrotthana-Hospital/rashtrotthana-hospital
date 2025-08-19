@@ -51,13 +51,13 @@ doctors: any = [
     image: '../../assets/Dr-Nikhil-Hegde.png',
     slug: '/doctor/dr-nikhil-hegde'
   },
-  {
-    id: 4,
-    name: 'Dr. Hemanth Kumar Venkatesh',
-    experience: '20 Years',
-    image: '../../assets/Dr-Hemanth-kumar-Venkatesh.png',
-    slug: '/doctor/dr-hemanth-kumar-venkatesh'
-  }
+  // {
+  //   id: 4,
+  //   name: 'Dr. Hemanth Kumar Venkatesh',
+  //   experience: '20 Years',
+  //   image: '../../assets/Dr-Hemanth-kumar-Venkatesh.png',
+  //   slug: '/doctor/dr-hemanth-kumar-venkatesh'
+  // }
 ];
 
 

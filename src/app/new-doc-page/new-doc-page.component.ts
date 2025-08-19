@@ -36,15 +36,15 @@ export class NewDocPageComponent {
   availableTimes: { name: string }[] = [];
   filteredDoctor: any;
   unavailableSlotsForDate: any[] = [];
-  contactForm:any = FormGroup;
-  clicked:boolean = true;
+  contactForm: any = FormGroup;
+  clicked: boolean = true;
   // apiUrl: string = 'http://localhost:3000/api'
-    apiUrl:string= 'https://rashtrotthana-backend-812956739285.us-east4.run.app/api';
-    @ViewChild('formSection') formSection!: ElementRef;
-  
-    scrollToForm() {
-      this.formSection.nativeElement.scrollIntoView({ behavior: 'smooth' });
-    }
+  apiUrl: string = 'https://rashtrotthana-backend-812956739285.us-east4.run.app/api';
+  @ViewChild('formSection') formSection!: ElementRef;
+
+  scrollToForm() {
+    this.formSection.nativeElement.scrollIntoView({ behavior: 'smooth' });
+  }
 
   constructor(private route: ActivatedRoute,
     private router: Router,
@@ -64,7 +64,7 @@ export class NewDocPageComponent {
       firstName: ['', [Validators.required, Validators.minLength(2), Validators.pattern(/^[a-zA-Z]+$/)]],
       lastName: ['', [Validators.required, Validators.minLength(1), Validators.pattern(/^[a-zA-Z.\s]*$/)]],
       email: ['', [Validators.required, Validators.email]],
-      contactNumber:  ['', [Validators.required, Validators.pattern(/^[0-9]{10}$/)]],
+      contactNumber: ['', [Validators.required, Validators.pattern(/^[0-9]{10}$/)]],
       time: ['', Validators.required],
       message: ['', Validators.required],
       date_appointment: ['', Validators.required],
@@ -75,8 +75,10 @@ export class NewDocPageComponent {
     const doctor = this.allDoctors.find(doc =>
       doc.name
         .toLowerCase()
-        .replace(/\./g, '')      // Remove dots
-        .replace(/\s+/g, '-')    // Replace spaces with hyphens
+        .replace(/[().]/g, '')      // remove dots and parentheses
+        .replace(/\s+/g, '-')       // replace spaces with hyphens
+        .replace(/-+/g, '-')        // replace multiple hyphens with single
+        .replace(/^-|-$/g, '')     // trim hyphens from start/end   // Replace spaces with hyphens
       === slug
     );
     console.log(doctor)
@@ -96,26 +98,26 @@ export class NewDocPageComponent {
           let latestTimestamp: string | null = null;
           if (!allUpdatedAtNull) {
             const validUpdatedAts = response.availability
-              .filter(avail => avail.updatedAt) 
-              .map(avail => new Date(avail.updatedAt!).getTime()); 
-  
+              .filter(avail => avail.updatedAt)
+              .map(avail => new Date(avail.updatedAt!).getTime());
+
             // Find the maximum timestamp
             const maxTimestamp = Math.max(...validUpdatedAts);
-  
+
             // Convert the max timestamp back to an ISO string
             latestTimestamp = new Date(maxTimestamp).toISOString();
-  
+
           }
 
           const latestAvailability = allUpdatedAtNull
-            ? response.availability 
+            ? response.availability
             : response.availability?.filter(avail => avail.updatedAt === latestTimestamp);
 
           const validatedAvailability: Availability[] = latestAvailability?.map(avail => ({
             ...avail,
-            day: avail.day.toLowerCase() as DayName, 
-          })) || []; 
-    
+            day: avail.day.toLowerCase() as DayName,
+          })) || [];
+
           this.updateDisabledDays(validatedAvailability);
         },
         (error) => {
@@ -128,12 +130,12 @@ export class NewDocPageComponent {
 
   allDoctors = [
     {
-      name: 'Dr. (Col)Anand Shankar',
+      name: 'Col (Dr) Anand Shankar K',
       image: 'assets/Doc-Inv-Page/Dr-(Col)Anand-Shankar.png',
       department: 'ER HEAD, ICU, ANAESTHESIA',
       about: 'Col (Dr) Anand Shankar K is an alumnus of the prestigious Armed Forces Medical College, Pune. He served in field areas prior to pursuing postgraduation in the field of Anaesthesiology and Intensive Care at AFMC pune. Thereafter he qualified the European Diploma in Intensive Care Medicine. He has an overall experience of more than 31 years, 27 of those years serving with the Armed Forces. He has served within the country and in foreign missions with the United Nations. He also had the unique opportunity to serve as accompanying doctor to the President of India. He has been serving with Rashtrotthana Hospital since its inception in Dec 2022.',
       speciality: ['ANAESTHESIOLOGY', 'EMERGENCY MEDICINE'],
-      areasOfExpertise: ['Intensive Care', 'Emergency Care', 'Anesthesiology'],
+      areasOfExpertise: ['Anaesthesiology', 'Emergency Care', 'Labour Analgesia', 'Pain Medicine', 'Intensive Care Medicine'],
       expertise: 'Years of Experience: 31',
       qualification: 'MBBS, MD (ANAESTHESIOLOGY), EDIC',
       date: 'Monday-Saturday',
@@ -141,7 +143,7 @@ export class NewDocPageComponent {
       alt: 'Dr. (Col) Anand Shankar | Best Anesthesiology Doctor in Bangalore | Rashtrotthana Hospital',
       id: 46,
       title: 'Dr. Anand Shankar | Anesthesiologist in RR Nagar',
-      description:'Consult Dr. Anand Shankar, ICU and emergency care expert in RR Nagar with 31+ years of experience in anesthesiology and intensive care. Book now.'
+      description: 'Consult Dr. Anand Shankar, ICU and emergency care expert in RR Nagar with 31+ years of experience in anesthesiology and intensive care. Book now.'
     },
     {
       name: 'Dr. H. N. Shyla',
@@ -156,8 +158,8 @@ export class NewDocPageComponent {
       date: 'Monday-Saturday',
       alt: 'Dr. H. N. Shyla | Best Dental Doctor in Bangalore | Rashtrotthana Hospital | RR Nagar Bangalore',
       id: 34,
-      title:'Dr. H. N. Shyla | Dentist & Implantologist in RR Nagar',
-      description:'Book with Dr. H. N. Shyla, senior dentist in RR Nagar Bangalore with 27+ years of experience in implants, maxillofacial surgery, and cosmetic dentistry.'
+      title: 'Dr. H. N. Shyla | Dentist & Implantologist in RR Nagar',
+      description: 'Book with Dr. H. N. Shyla, senior dentist in RR Nagar Bangalore with 27+ years of experience in implants, maxillofacial surgery, and cosmetic dentistry.'
     },
 
     {
@@ -180,7 +182,7 @@ export class NewDocPageComponent {
       alt: 'Dr. Latha Venkataram | Top Obstetrics & Gynaecologist in banaglore | Rashtrotthana Hospital | RR Nagar Bangalore',
       id: 14,
       title: 'Dr. Latha Venkataram | High-Risk Pregnancy & Delivery Expert in RR Nagar Bangalore',
-      description:'Consult Dr. Latha Venkataram, senior gynecologist in RR Nagar with 32+ years of experience in high-risk pregnancy, delivery, and women’s health care.'
+      description: 'Consult Dr. Latha Venkataram, senior gynecologist in RR Nagar with 32+ years of experience in high-risk pregnancy, delivery, and women’s health care.'
     },
     {
       name: 'Dr. Shekar Patil',
@@ -194,8 +196,8 @@ export class NewDocPageComponent {
       time: '09:00-09:15,09:15-09:30,09:30-09:45,09:45:10:00',
       date: 'Friday',
       alt: 'Dr. Shekar Patil | Best Medical Oncologist Doctor in Bangalore | Rashtrotthana Hospital | RR Nagar Bangalore',
-      title:'Dr. Shekar Patil | Medical Oncologist in RR Nagar Bangalore',
-      description:'Consult Dr. Shekar Patil, senior medical oncologist in RR Nagar with 35+ years of experience in treating adult cancers, precision oncology, and immunotherapy.'
+      title: 'Dr. Shekar Patil | Medical Oncologist in RR Nagar Bangalore',
+      description: 'Consult Dr. Shekar Patil, senior medical oncologist in RR Nagar with 35+ years of experience in treating adult cancers, precision oncology, and immunotherapy.'
     },
     {
       name: 'Dr. Pramod S. Chinder',
@@ -218,8 +220,8 @@ export class NewDocPageComponent {
       time: '09:00-09:20,09:20-09:40,09:40-10:00,10:20-10:40,10:40-11:00',
       date: 'Friday',
       alt: 'Dr. Pramod S. Chinder | Best Orthopaedic Oncosurgeon in Bangalore | Rashtrotthana Hospital | RR Nagar Bangalore',
-      title:'Dr. Pramod S. Chinder | Bone Cancer Surgeon in RR Nagar',
-      description:'Consult Dr. Pramod Chinder, orthopedic oncosurgeon in RR Nagar with 20+ years of expertise in bone tumor surgery, limb salvage, and complex reconstructions.'
+      title: 'Dr. Pramod S. Chinder | Bone Cancer Surgeon in RR Nagar',
+      description: 'Consult Dr. Pramod Chinder, orthopedic oncosurgeon in RR Nagar with 20+ years of expertise in bone tumor surgery, limb salvage, and complex reconstructions.'
     },
     {
       name: 'Dr. Nagaraj Rao',
@@ -234,8 +236,8 @@ export class NewDocPageComponent {
       date: 'Tuesday and Thursday',
       alt: 'Dr. Nagaraj Rao | Best Urologist in Bangalore | Rashtrotthana Hospital | RR Nagar Bangalore',
       id: 18,
-      title:'Dr. Nagaraj Rao | Senior Urologist in RR Nagar Bangalore',
-      description:'Consult Dr. Nagaraj Rao, urologist in RR Nagar with 26+ years of expertise in endourology, stone disease, uro-oncology, and complex genito-urinary care.'
+      title: 'Dr. Nagaraj Rao | Senior Urologist in RR Nagar Bangalore',
+      description: 'Consult Dr. Nagaraj Rao, urologist in RR Nagar with 26+ years of expertise in endourology, stone disease, uro-oncology, and complex genito-urinary care.'
     },
     {
       name: 'Dr. H. M. Krishnamurthy',
@@ -250,8 +252,8 @@ export class NewDocPageComponent {
       date: 'Monday-Saturday',
       alt: 'Dr. H. M. Krishnamurthy | Consultant - Internal Medicine in Bangalore | Rashtrotthana Hospital | RR Nagar Bangalore',
       id: 3,
-      title:'Dr. H. M. Krishnamurthy | Internal Medicine Doctor Bangalore',
-      description:'Consult Dr. H. M. Krishnamurthy, internal medicine expert in Bangalore with 36+ years experience in diabetes, thyroid, geriatric care and chronic diseases.'
+      title: 'Dr. H. M. Krishnamurthy | Internal Medicine Doctor Bangalore',
+      description: 'Consult Dr. H. M. Krishnamurthy, internal medicine expert in Bangalore with 36+ years experience in diabetes, thyroid, geriatric care and chronic diseases.'
     },
     // {
     //   name: 'Dr. Rajeev Vijayakumar',
@@ -298,8 +300,8 @@ export class NewDocPageComponent {
       areasOfExpertise: ['Joint preservation', 'Limb preservation', 'Deformity correction', 'Pelviacetabular fractures', 'Sports injuries', 'Spine affections'],
       alt: 'Dr. Mahesh Kulkarni | Best Ortho Doctor in Bangalore | Rashtrotthana Hospital | RR Nagar Bangalore',
       id: 7,
-      title:'Dr. Mahesh Kulkarni | Orthopedic Surgeon in RR Nagar Bangalore',
-      description:'Consult Dr. Mahesh Kulkarni, orthopedic surgeon in RR Nagar with 15+ years’ experience in joint preservation, spine surgery, trauma, and sports injuries.'
+      title: 'Dr. Mahesh Kulkarni | Orthopedic Surgeon in RR Nagar Bangalore',
+      description: 'Consult Dr. Mahesh Kulkarni, orthopedic surgeon in RR Nagar with 15+ years’ experience in joint preservation, spine surgery, trauma, and sports injuries.'
     },
 
     {
@@ -315,8 +317,8 @@ export class NewDocPageComponent {
       date: 'Monday-Saturday',
       alt: 'Dr. Geethanjali K. G | Best Dental Surgery Doctor in Bangalore | Rashtrotthana Hospital | RR Nagar Bangalore',
       id: 35,
-      title:'Dr. Geethanjali K. G | Dentist & Endodontist in RR Nagar Bangalore',
-      description:'Book with Dr. Geethanjali K. G, dentist in RR Nagar with 18+ years’ experience in endodontics, general dentistry, cosmetic procedures, and smile correction.'
+      title: 'Dr. Geethanjali K. G | Dentist & Endodontist in RR Nagar Bangalore',
+      description: 'Book with Dr. Geethanjali K. G, dentist in RR Nagar with 18+ years’ experience in endodontics, general dentistry, cosmetic procedures, and smile correction.'
     },
     {
       name: 'Dr. Santhosh S',
@@ -331,8 +333,8 @@ export class NewDocPageComponent {
       date: 'Monday-Saturday',
       alt: 'Dr. Santhosh S | Best Nephrologist in Bangalore | Rashtrotthana Hospital | RR Nagar Bangalore',
       id: 20,
-      title:'Dr. Santhosh S | Nephrologist & Kidney Specialist in RR Nagar',
-      description:'Consult Dr. Santhosh S, nephrologist in RR Nagar with 14+ years’ experience in kidney transplantation, dialysis, diabetic kidney disease, and hypertension care.'
+      title: 'Dr. Santhosh S | Nephrologist & Kidney Specialist in RR Nagar',
+      description: 'Consult Dr. Santhosh S, nephrologist in RR Nagar with 14+ years’ experience in kidney transplantation, dialysis, diabetic kidney disease, and hypertension care.'
     },
     {
       name: 'Dr. Sowmya Bhat S',
@@ -347,8 +349,8 @@ export class NewDocPageComponent {
       date: 'Tuesday and Friday',
       alt: 'Dr. Sowmya Bhat S | Best Ophthalmologist in Bangalore | Rashtrotthana Hospital | RR Nagar Bangalore',
       id: 36,
-       title:'Dr. Sowmya Bhat S | Cataract & LASIK Eye Surgeon in RR Nagar',
-      description:'Consult Dr. Sowmya Bhat S, eye specialist in RR Nagar with 13+ years’ experience in cataract surgery, LASIK, SMILE, and comprehensive ophthalmic care.'
+      title: 'Dr. Sowmya Bhat S | Cataract & LASIK Eye Surgeon in RR Nagar',
+      description: 'Consult Dr. Sowmya Bhat S, eye specialist in RR Nagar with 13+ years’ experience in cataract surgery, LASIK, SMILE, and comprehensive ophthalmic care.'
     },
     {
       name: 'Dr. Suhas Raj S',
@@ -363,25 +365,25 @@ export class NewDocPageComponent {
       date: 'Monday-Saturday',
       alt: 'Dr. Suhas Raj S | Best Cardiologist in Bangalore | Rashtrotthana Hospital | RR Nagar Bangalore',
       id: 25,
-       title:'Dr. Suhas Raj S | Interventional Cardiologist in RR Nagar',
-      description:'Consult Dr. Suhas Raj, interventional cardiologist in RR Nagar with 9+ years’ experience in angioplasty, high-risk PCI, heart failure, and hypertension care.'
+      title: 'Dr. Suhas Raj S | Interventional Cardiologist in RR Nagar',
+      description: 'Consult Dr. Suhas Raj, interventional cardiologist in RR Nagar with 9+ years’ experience in angioplasty, high-risk PCI, heart failure, and hypertension care.'
     },
 
     {
       name: 'Dr. Atmaram D. C',
       image: 'assets/Doc-Inv-Page/Dr-Atmaram-D-C.png',
       department: 'SURGEON/ LAPROSCOPY/ GASTROENTEROLOGLIST',
-      about: 'A dedicated surgeon with 18 years of experience specializing in laparoscopy, proctologist, gastroenterology and oncology. My medical journey began at MS Ramaiah Medical College in Bangalore, where I developed a strong foundation in surgical techniques and patient care. Over the years, I have honed my skills in minimally invasive procedures, which allow for quicker recoveries and reduced patient discomfort.I strongly believe in the existence of divinity, which inspires my approach to medicine. The immense trust my patients place in me is a driving force behind my commitment to serve them better every day. I am passionate about providing compassionate care and fostering trusting relationships with those I treat.',
+      about: 'A dedicated surgeon with 19 years of experience specializing in laparoscopy, proctologist, gastroenterology and oncology. My medical journey began at MS Ramaiah Medical College in Bangalore, where I developed a strong foundation in surgical techniques and patient care. Over the years, I have honed my skills in minimally invasive procedures, which allow for quicker recoveries and reduced patient discomfort.I strongly believe in the existence of divinity, which inspires my approach to medicine. The immense trust my patients place in me is a driving force behind my commitment to serve them better every day. I am passionate about providing compassionate care and fostering trusting relationships with those I treat.',
       speciality: 'GENERAL SURGERY',
       areasOfExpertise: ['Laparoscopy', 'Gastroenterology', 'Oncology', 'Proctology'],
-      expertise: 'Years of Experience: 18',
+      expertise: 'Years of Experience: 19',
       qualification: 'MBBS, MS',
       time: '16:00-16:20,16:20-16:40,16:40-17:00',
       date: 'Monday-Saturday',
       alt: 'Dr. Atmaram D. C | Best laparoscopic Surgeon in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
       id: 9,
-       title:'Dr. Atmaram D. C | Laparoscopic & GI Surgeon in RR Nagar',
-      description:'Book with Dr. Atmaram D. C, laparoscopic and GI surgeon in RR Nagar with 18+ years’ experience in gastroenterology, proctology, and minimally invasive care.'
+      title: 'Dr. Atmaram D. C | Laparoscopic & GI Surgeon in RR Nagar',
+      description: 'Book with Dr. Atmaram D. C, laparoscopic and GI surgeon in RR Nagar with 18+ years’ experience in gastroenterology, proctology, and minimally invasive care.'
     },
     {
       name: 'Dr. Kolla Vinod',
@@ -389,15 +391,15 @@ export class NewDocPageComponent {
       department: 'Pulmonary and sleep medicine',
       about: 'Dr. KOLLA VINOD is a professor in Pulmonary medicine for over a decade. His education, training and extensive experience given special expertise in the diagnosis, treatment and management of disorders of the pulmonary diseases. He has achieved state 2nd rank during his post-graduation. He strives to stay current with medical knowledge and interventional skills in order to provide his patients with the best, up- to-date care available. He is interested in new interventions (Bronchoscopy, Throcoscopy, cryobiopsy rigid bronchoscopy) The majority of his early education was in Lawrence school Ooty, he completed his Pre-University in Lawrence school Ooty. He finished MBBS, MD in Pulmonary Medicine obtained from Narayana Medical College, Nellore. His post- doctoral studies included a critical care, Interventional pulmonology. Dr. Kolla Vinod authored or co- authored peer-reviewed abstracts/articles. He holds multiple Journals and case reports in his field in various Indian and International journals. Upon his return to Bangalore.',
       speciality: 'PULMONOLOGY',
-      areasOfExpertise: ['Interventional pulmonology (Bronchoscopy, Throcoscopy, cryobiopsy, rigid bronchoscopy) Asthama', 'Copd', 'pneumonia', 'tuberculosis', 'Interstitial lung disease', 'pleural effusion', 'lung cancer', 'sleep medicine', 'Flu and allergic bronchitis'],
+      areasOfExpertise: ['Interventional pulmonology (Bronchoscopy, Throcoscopy, Cryobiopsy, Rigid bronchoscopy) Asthama', 'Copd', 'Pneumonia', 'Tuberculosis', 'Interstitial lung disease', 'Pleural effusion', 'Lung cancer', 'Sleep medicine', 'Flu and allergic bronchitis', 'Pulmonary rehabilitation'],
       expertise: 'Years of Experience: 18',
       qualification: 'MBBS, MD PULMONOLOGY MEDICINE',
       time: '16:30-16:50,16:50-17:10,17:10-17:30,17:30-17:50,17:50-18:10,18:10-18:30',
       id: 21,
       date: 'Monday-Saturday',
       alt: 'Dr. Kolla Vinod | Best Pulmonologist in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
-       title:'Dr. Kolla Vinod | Pulmonologist & Sleep Medicine Expert',
-      description:'Dr. Kolla Vinod is an expert in pulmonary and sleep medicine with 18 years of experience in bronchoscopy, COPD, asthma, lung cancer, and ILD care.'
+      title: 'Dr. Kolla Vinod | Pulmonologist & Sleep Medicine Expert',
+      description: 'Dr. Kolla Vinod is an expert in pulmonary and sleep medicine with 18 years of experience in bronchoscopy, COPD, asthma, lung cancer, and ILD care.'
     },
     {
       name: 'Dr. Meena H. B',
@@ -413,8 +415,8 @@ export class NewDocPageComponent {
       date: 'Tuesday, Thursday and Saturday',
       alt: 'Dr. Meena H. B | Best Skin Doctor in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
       id: 42,
-      title:'Dr. Meena H. B | Dermatologist & Skin Specialist in RR Nagar',
-      description:'Consult Dr. Meena H. B, dermatologist in RR Nagar with 28+ years’ experience in acne scars, pigmentation, PRP therapy, chemical peels, and laser hair removal.'
+      title: 'Dr. Meena H. B | Dermatologist & Skin Specialist in RR Nagar',
+      description: 'Consult Dr. Meena H. B, dermatologist in RR Nagar with 28+ years’ experience in acne scars, pigmentation, PRP therapy, chemical peels, and laser hair removal.'
     },
     {
       name: "Dr. Kishan G. N",
@@ -428,10 +430,10 @@ export class NewDocPageComponent {
       qualification: "CCPT, PGCPK, BAMS",
       time: "",
       date: "",
-       id: '',
+      id: '',
       alt: 'Dr. Kishan G. N – Ayurveda, Rashtrotthana Hospital Bangalore',
-      title:'Dr. Kishan G. N - Expert in Ayurveda & Panchakarma Care',
-      description:'Consult Dr. Kishan G. N for holistic healing, detox therapies, and lifestyle care rooted in Ayurveda.'
+      title: 'Dr. Kishan G. N - Expert in Ayurveda & Panchakarma Care',
+      description: 'Consult Dr. Kishan G. N for holistic healing, detox therapies, and lifestyle care rooted in Ayurveda.'
     },
 
     // {
@@ -465,8 +467,8 @@ export class NewDocPageComponent {
       date: 'Tuesday,Thursday and Saturday',
       alt: "Dr. Sujayendra D. M | Best Orthopaedic Doctor in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore",
       id: 5,
-       title:'Dr. Sujayendra D. M | Orthopedic Surgeon & Joint Specialist RR Nagar',
-      description:'Book with Dr. Sujayendra D. M, orthopedic surgeon in RR Nagar with 9+ years’ experience in fracture care, arthroscopy, trauma surgery, and joint replacement.'
+      title: 'Dr. Sujayendra D. M | Orthopedic Surgeon & Joint Specialist RR Nagar',
+      description: 'Book with Dr. Sujayendra D. M, orthopedic surgeon in RR Nagar with 9+ years’ experience in fracture care, arthroscopy, trauma surgery, and joint replacement.'
     },
 
 
@@ -483,8 +485,8 @@ export class NewDocPageComponent {
       date: 'Monday,Wednesday,Friday and Saturday',
       alt: 'Dr. Manasa N. A | Best ENT Consultant in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
       id: 32,
-       title:'Dr. Manasa N. A | ENT Head & Neck Surgeon in RR Nagar Bangalore',
-      description:'Consult Dr. Manasa N. A, expert ENT doctor in RR Nagar, Bangalore. Skilled in endoscopic sinus surgery, tonsillectomy, voice & sleep apnea treatment.'
+      title: 'Dr. Manasa N. A | ENT Head & Neck Surgeon in RR Nagar Bangalore',
+      description: 'Consult Dr. Manasa N. A, expert ENT doctor in RR Nagar, Bangalore. Skilled in endoscopic sinus surgery, tonsillectomy, voice & sleep apnea treatment.'
     },
 
 
@@ -501,8 +503,8 @@ export class NewDocPageComponent {
       date: 'Monday-Saturday',
       alt: 'Dr. Madhu S. N | Best Urologist & Andrologist in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
       id: 19,
-       title:'Dr. Madhu S. N | Urologist & Andrologist in Bangalore',
-      description:'Dr. Madhu S. N is a senior urologist with 14 years of experience in endourology, kidney transplant, laparoscopic uro oncology, and stone disease care.'
+      title: 'Dr. Madhu S. N | Urologist & Andrologist in Bangalore',
+      description: 'Dr. Madhu S. N is a senior urologist with 14 years of experience in endourology, kidney transplant, laparoscopic uro oncology, and stone disease care.'
     },
 
 
@@ -519,8 +521,8 @@ export class NewDocPageComponent {
       date: 'Monday-Saturday',
       alt: 'Dr. Jaidev S | Best Neurosurgeon in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
       id: 26,
-       title:'Dr. Jaidev S | Neurosurgeon in RR Nagar Bangalore',
-      description:'Consult Dr. Jaidev S, expert neurosurgeon in RR Nagar, Bangalore. Specialised in spine surgery, brain surgery, stroke care, and endovascular interventions.'
+      title: 'Dr. Jaidev S | Neurosurgeon in RR Nagar Bangalore',
+      description: 'Consult Dr. Jaidev S, expert neurosurgeon in RR Nagar, Bangalore. Specialised in spine surgery, brain surgery, stroke care, and endovascular interventions.'
     },
 
     {
@@ -536,8 +538,8 @@ export class NewDocPageComponent {
       date: 'Monday-Saturday',
       alt: 'Dr. Nishanth Lakshmikantha | Best General & GI Surgeon in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
       id: 8,
-       title:'Dr. Nishanth Lakshmikantha | GI & Laparoscopic Surgeon',
-      description:'Consult Dr. Nishanth Lakshmikantha, experienced GI and robotic surgeon in Bangalore. Specialised in laparoscopic surgery and laser proctology.'
+      title: 'Dr. Nishanth Lakshmikantha | GI & Laparoscopic Surgeon',
+      description: 'Consult Dr. Nishanth Lakshmikantha, experienced GI and robotic surgeon in Bangalore. Specialised in laparoscopic surgery and laser proctology.'
     },
     {
       name: 'Dr. Sameer M. Halageri',
@@ -557,8 +559,8 @@ export class NewDocPageComponent {
       date: 'Monday-Saturday',
       alt: 'Dr. Sameer M. Halageri | Best Consultant Plastic Surgeon in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
       id: 48,
-       title:'Dr. Sameer Halageri | Plastic and Reconstructive Surgeon',
-      description:'Consult Dr. Sameer Halageri, expert plastic surgeon in Bangalore. Skilled in microvascular, cosmetic, cleft, diabetic foot, and trauma reconstruction.'
+      title: 'Dr. Sameer Halageri | Plastic and Reconstructive Surgeon',
+      description: 'Consult Dr. Sameer Halageri, expert plastic surgeon in Bangalore. Skilled in microvascular, cosmetic, cleft, diabetic foot, and trauma reconstruction.'
     },
     // {
     //   name: 'Dr. Valli Kiran',
@@ -578,14 +580,14 @@ export class NewDocPageComponent {
       department: 'Ortho Dontics',
       speciality: 'DENTAL SCIENCES',
       about: 'Dr. Vishnu Vardhan has completed BDS and MDS from DAPM RV DENTAL COLLEGE affiliated to Rajiv Gandhi University Bangalore having about 9 years overall experience. Life Member of the Indian Orthodontic Society. Senior Consultant orthodontist. Specialist in metal, ceramic, invisible, lingual and surgical orthodontics.',
-      areasOfExpertise: ['Correction of irregular, abnormally placed teeth', 'Surgical Correction', 'Metal braces and ceramic braces, Invisible braces'],
+      areasOfExpertise: ['Metal and ceramic braces', 'Lingual braces', 'Myofunctional appliances', 'Invisible alligner treatment'],
       expertise: 'Years of Experience: 9',
       qualification: 'BDS, MDS',
       time: '15:00-15:20,15:20-15:40,15:40-16:00',
       date: 'Monday-Saturday',
       alt: 'Dr. Vishnuvardhan V | Best Orthodontics in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
-       title:'Dr. Vishnuvardhan V | Best Orthodontist in Bangalore',
-      description:'Meet Dr. Vishnuvardhan V, expert orthodontist in Bangalore. Skilled in metal, ceramic, invisible, lingual braces, and surgical orthodontics.'
+      title: 'Dr. Vishnuvardhan V | Best Orthodontist in Bangalore',
+      description: 'Meet Dr. Vishnuvardhan V, expert orthodontist in Bangalore. Skilled in metal, ceramic, invisible, lingual braces, and surgical orthodontics.'
     },
     {
       name: 'Dr. Prakruthi',
@@ -600,8 +602,8 @@ export class NewDocPageComponent {
       date: 'Saturday',
       alt: 'Dr. Prakruthi | Best Gynaec Doctor in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
       id: 16,
-       title:'Dr. Prakruthi | High-Risk Pregnancy Expert | 16+ Years',
-      description:'Dr. Prakruthi is an experienced obstetrician and gynecologist with expertise in high-risk pregnancy care, fetal medicine, and labor ward management.'
+      title: 'Dr. Prakruthi | High-Risk Pregnancy Expert | 16+ Years',
+      description: 'Dr. Prakruthi is an experienced obstetrician and gynecologist with expertise in high-risk pregnancy care, fetal medicine, and labor ward management.'
     },
     {
       name: 'Dr. Ravi T',
@@ -615,8 +617,8 @@ export class NewDocPageComponent {
       time: '09:00-09:20,09:20-09:40,09:40-10:00,10:20-10:40,10:40-11:00',
       date: 'Friday',
       alt: 'Dr. Ravi T | Best Cancer Doctor in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
-       title:'Dr. Ravi Thippeswamy | Medical Oncologist in Bangalore',
-      description:'Dr. Ravi Thippeswamy is a senior oncologist with 16+ years of experience in adult cancers, precision oncology, immuno-oncology & hemato oncology.'
+      title: 'Dr. Ravi Thippeswamy | Medical Oncologist in Bangalore',
+      description: 'Dr. Ravi Thippeswamy is a senior oncologist with 16+ years of experience in adult cancers, precision oncology, immuno-oncology & hemato oncology.'
     },
     {
       name: 'Dr. Suvarnini Konale',
@@ -630,8 +632,8 @@ export class NewDocPageComponent {
       time: '10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00',
       date: 'Monday-Saturday',
       alt: 'Dr. Suvarnini Konale | Best Lifestyle Consultant in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
-       title:'Dr. Suvarnini Konale | Expert in Yoga & Naturopathy Therapy',
-      description:'BNYS doctor with 15 years of experience in yoga, naturopathy and lifestyle therapy, helping patients manage health holistically across all age groups.'
+      title: 'Dr. Suvarnini Konale | Expert in Yoga & Naturopathy Therapy',
+      description: 'BNYS doctor with 15 years of experience in yoga, naturopathy and lifestyle therapy, helping patients manage health holistically across all age groups.'
     },
     {
       name: 'Dr. Vishwanath Sanagoudar',
@@ -646,8 +648,8 @@ export class NewDocPageComponent {
       date: 'Monday-Saturday',
       alt: 'Dr. Vishwanath Sanagoudar | Best Paediatrician and Neonatologist in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
       id: 12,
-      title:'Dr. Vishwanath Sanagoudar | Pediatric & NICU Expert Bangalore',
-      description:'With 9 years of experience, Dr. Vishwanath Sanagoudar specializes in pediatric ICU, newborn care, and child emergencies with fellowship from IGICH.'
+      title: 'Dr. Vishwanath Sanagoudar | Pediatric & NICU Expert Bangalore',
+      description: 'With 9 years of experience, Dr. Vishwanath Sanagoudar specializes in pediatric ICU, newborn care, and child emergencies with fellowship from IGICH.'
     },
     {
       name: 'Dr. Niveditha C',
@@ -662,8 +664,8 @@ export class NewDocPageComponent {
       date: 'Monday-Saturday',
       alt: 'Dr. Niveditha C | Best Pediatrician in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
       id: 13,
-       title:'Dr. Niveditha C | Pediatric & Neonatal Nutrition Expert',
-      description:'Dr. Niveditha C specializes in neonatology, critical newborn care, and pediatric nutrition with 7.5 years of experience and multiple fellowships in child care.'
+      title: 'Dr. Niveditha C | Pediatric & Neonatal Nutrition Expert',
+      description: 'Dr. Niveditha C specializes in neonatology, critical newborn care, and pediatric nutrition with 7.5 years of experience and multiple fellowships in child care.'
     },
     {
       name: 'Dr. Nikhil Hegde',
@@ -678,8 +680,8 @@ export class NewDocPageComponent {
       date: 'Monday,Wednesday and Friday',
       alt: 'Dr. Nikhil Hegde | Best Orthopaedic Consultant in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
       id: 6,
-       title:'Dr. Nikhil Hegde | Sports Injury & Trauma Orthopedic Surgeon',
-      description:'Dr. Nikhil Hegde is an orthopedic surgeon with 6 years of experience, specializing in sports medicine, arthroplasty, arthroscopy, and trauma care.'
+      title: 'Dr. Nikhil Hegde | Sports Injury & Trauma Orthopedic Surgeon',
+      description: 'Dr. Nikhil Hegde is an orthopedic surgeon with 6 years of experience, specializing in sports medicine, arthroplasty, arthroscopy, and trauma care.'
     },
     {
       name: 'Dr. Neelam Saraswat',
@@ -694,8 +696,8 @@ export class NewDocPageComponent {
       date: 'Monday-Saturday',
       alt: 'Dr. Neelam Saraswat | Best Gynaecology Consultant in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
       id: 15,
-      title:'Dr. Neelam Saraswat | Expert in High-Risk Pregnancy & Women\'s Health',
-      description:'Dr. Neelam Saraswat is a gynecologist with 10+ years’ experience in high-risk pregnancy, adolescent care, yoga in women’s health, and integrative care.'
+      title: 'Dr. Neelam Saraswat | Expert in High-Risk Pregnancy & Women\'s Health',
+      description: 'Dr. Neelam Saraswat is a gynecologist with 10+ years’ experience in high-risk pregnancy, adolescent care, yoga in women’s health, and integrative care.'
     },
     {
       name: 'Dr. Ashwitha Gundmi',
@@ -710,8 +712,8 @@ export class NewDocPageComponent {
       date: 'Monday-Saturday',
       alt: 'Dr. Ashwitha Gundmi | Best Obstetrics & Gynaecologist in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
       id: 17,
-       title:'Dr. Ashwitha Gundmi | High-Risk Pregnancy & MIS Specialist',
-      description:'Dr. Ashwitha Gundmi is an experienced gynecologist skilled in high-risk obstetrics, MIS surgeries, cervical care, and fertility solutions.'
+      title: 'Dr. Ashwitha Gundmi | High-Risk Pregnancy & MIS Specialist',
+      description: 'Dr. Ashwitha Gundmi is an experienced gynecologist skilled in high-risk obstetrics, MIS surgeries, cervical care, and fertility solutions.'
     },
     {
       name: 'Dr. Vinita Udupa',
@@ -725,8 +727,8 @@ export class NewDocPageComponent {
       time: '11:30-11:50,11:50-12:10,12:10-12:30,12:30-12:50,12:50-13:10',
       date: 'Tuesday',
       alt: 'Dr. Vinita Udupa | Best OBG in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
-       title:'Dr. Vinita Udupa | High-Risk Pregnancy & Fetal Medicine Expert',
-      description:'Dr. Vinita Udupa is an expert in maternal and fetal medicine, specializing in high-risk pregnancies and evidence-based obstetric care.'
+      title: 'Dr. Vinita Udupa | High-Risk Pregnancy & Fetal Medicine Expert',
+      description: 'Dr. Vinita Udupa is an expert in maternal and fetal medicine, specializing in high-risk pregnancies and evidence-based obstetric care.'
     },
     {
       name: 'Dr. Anusha Mutalik Desai',
@@ -741,8 +743,8 @@ export class NewDocPageComponent {
       date: 'Monday-Saturday',
       alt: 'Dr. Anusha Mutalik Desai | Best Homeopathy Doctor in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
       id: 28,
-       title:'Dr. Anusha Mutalik Desai | Best Homeopathy Specialist ',
-      description:'Dr. Anusha Desai blends classical homeopathy with modern care to treat conditions like hypothyroidism, PCOD, asthma, and mental wellness.'
+      title: 'Dr. Anusha Mutalik Desai | Best Homeopathy Specialist ',
+      description: 'Dr. Anusha Desai blends classical homeopathy with modern care to treat conditions like hypothyroidism, PCOD, asthma, and mental wellness.'
     },
     {
       name: 'Dr. Ajay N',
@@ -756,8 +758,8 @@ export class NewDocPageComponent {
       time: '09:30-09:50,09:50-10:10,10:10-10:30,10:30-10:50,10:50-11:10,11:10-11:30,11:30-11:50,11:50-12:10,12:10-12:30,12:30-12:50,12:50-13:10,13:10-13:30,13:30-13:50,13:50-14:10,14:10-14:30,14:30-14:50,14:50-15:10,15:10-15:30,15:30-15:50,15:50-16:10,16:10-16:30,16:30-16:50,16:50-17:00',
       date: 'Monday-Saturday',
       alt: 'Dr. Ajay N | Best Gastro Doctor in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
-      title:'Dr. Ajay N | Best Gastro Surgeon in Bangalore ',
-      description:'Dr. Ajay N is a skilled gastro surgeon in Bangalore specializing in laparoscopic surgery, proctology, and GI care with a patient-first approach.'
+      title: 'Dr. Ajay N | Best Gastro Surgeon in Bangalore ',
+      description: 'Dr. Ajay N is a skilled gastro surgeon in Bangalore specializing in laparoscopic surgery, proctology, and GI care with a patient-first approach.'
     },
     {
       name: 'Dr. Varsha P',
@@ -771,13 +773,13 @@ export class NewDocPageComponent {
         'Preventive measures for all diseases',
         'Healthy lifestyle guidelines, Diet counselling.'
       ],
-      expertise: 'Years of Experience: 4',
+      expertise: 'Years of Experience: 5',
       time: '09:30-09:50,09:50-10:10,10:10-10:30,10:30-10:50,10:50-11:10,11:10-11:30,11:30-11:50,11:50-12:10,12:10-12:30,12:30-12:50,12:50-13:10,13:10-13:30,13:30-13:50,13:50-14:10,14:10-14:30,14:30-14:50,14:50-15:10,15:10-15:30,15:30-15:50,15:50-16:10,16:10-16:30,16:30-16:50,16:50-17:00',
       date: 'Monday-Saturday',
       alt: 'Dr. Varsha P | Best Yoga & Lifestyle Consultant in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
       id: 23,
-      title:'Dr. Varsha P | Ayurvedic Lifestyle Doctor in Bangalore',
-      description:'Dr. Varsha P offers Ayurvedic lifestyle care for diabetes, hypertension, thyroid disorders, diet counselling & preventive health in Bangalore.'
+      title: 'Dr. Varsha P | Ayurvedic Lifestyle Doctor in Bangalore',
+      description: 'Dr. Varsha P offers Ayurvedic lifestyle care for diabetes, hypertension, thyroid disorders, diet counselling & preventive health in Bangalore.'
     },
 
     {
@@ -793,8 +795,8 @@ export class NewDocPageComponent {
       date: 'Monday-Saturday',
       alt: 'Dr. Rohith K. R | Ayurveda doctor in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
       id: 39,
-      title:'Dr. Rohith K. R | Ayurveda Doctor in Bangalore',
-      description:'Dr. Rohith K. R is an Ayurveda doctor with 3+ years of experience, offering holistic treatments for wellness and lifestyle diseases in Bangalore.'
+      title: 'Dr. Rohith K. R | Ayurveda Doctor in Bangalore',
+      description: 'Dr. Rohith K. R is an Ayurveda doctor with 3+ years of experience, offering holistic treatments for wellness and lifestyle diseases in Bangalore.'
     },
     // {
     //   name: 'Dr. Alekhya R',
@@ -821,8 +823,8 @@ export class NewDocPageComponent {
       date: 'Monday,Wednesday,Thursday and Friday',
       alt: 'Dr. Narendranath A | Best ENT Doctor in Bangalore | Rashtrotthana Hospita | Rajarajeshwari Nagar Bangalore',
       id: 31,
-      title:'Dr. Narendranath A | ENT Head & Neck Surgeon Bangalore',
-      description:'Dr. Narendranath A is an ENT and Head & Neck Surgeon with 10+ years of experience in advanced ENT surgeries, sinus, voice box, and thyroid procedures.'
+      title: 'Dr. Narendranath A | ENT Head & Neck Surgeon Bangalore',
+      description: 'Dr. Narendranath A is an ENT and Head & Neck Surgeon with 10+ years of experience in advanced ENT surgeries, sinus, voice box, and thyroid procedures.'
     },
     {
       name: "Dr. Harshith K. S",
@@ -830,12 +832,12 @@ export class NewDocPageComponent {
       department: 'Internal Medicine',
       speciality: 'INTERNAL MEDICINE',
       about: "Dr. Harshith K. S is an experienced consultant physician specializing in internal medicine, with nearly two decades of expertise in comprehensive diagnosis and management of adult medical conditions. His clinical interests include managing complex cases, diabetes care and diabetic foot risk assessment, with his thesis presented at a national diabetic conference. He is known for his commitment to patient care, evidence-based practice and dedication to continuous learning in general medicine.",
-      areasOfExpertise: ['Hand injuries','Vaccination/immunization','Marfan syndrome','Hyperhidrosis','Capsule endoscopy','MMR vaccination','Ganglion cyst','Hemochromatosis','Toxic hepatitis'],
+      areasOfExpertise: ['Hand injuries', 'Vaccination/immunization', 'Marfan syndrome', 'Hyperhidrosis', 'Capsule endoscopy', 'MMR vaccination', 'Ganglion cyst', 'Hemochromatosis', 'Toxic hepatitis'],
       expertise: "Years of Experience: 18+",
       qualification: "MBBS, MD in General Medicine ",
       time: "",
       date: "",
-      id:74,
+      id: 74,
       alt: 'Dr. Harshith K. S | Best Internal Medicine Doctor in Bangalore | Rashtrotthan Hospital',
       ttitle: 'Dr. Harshith K.S. | Consultant Physician in Bangalore',
       description: 'Book a consultation with Dr. Harshith K.S., expert in internal medicine, diabetes care and adult chronic disease management in Bangalore.'
@@ -864,7 +866,7 @@ export class NewDocPageComponent {
     //   time:'10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00',
     //   date:'Sunday'
     // },
-    
+
     // {
     //   name: 'Dr. Bhavya',
     //   image: 'assets/Doc-Inv-Page/Dr-Bhavya.png',
@@ -895,8 +897,8 @@ export class NewDocPageComponent {
       date: 'Monday-Saturday',
       alt: 'Dr. Shamantha S | Lifestyle Specialist in Bangalore | Rashtrotthana Hospita | Rajarajeshwari Nagar Bangalore',
       id: 24,
-      title:'Dr. Shamantha S | Lifestyle Medicine Specialist Bangalore',
-      description:'Dr. Shamantha S is an Ayurveda and lifestyle medicine doctor in Bangalore offering holistic care through diet, preventive wellness, and natural therapies.'
+      title: 'Dr. Shamantha S | Lifestyle Medicine Specialist Bangalore',
+      description: 'Dr. Shamantha S is an Ayurveda and lifestyle medicine doctor in Bangalore offering holistic care through diet, preventive wellness, and natural therapies.'
     },
     {
       name: 'Dr. Kavyashree Kulamarva',
@@ -911,8 +913,8 @@ export class NewDocPageComponent {
       date: 'Monday-Saturday',
       alt: 'Dr. Kavyashree Kulamarva | Ayurvedic Psychiatry Consultant in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
       id: 40,
-      title:'Dr. Kavyashree Kulamarva | Ayurvedic Psychiatry Expert',
-      description:'Dr. Kavyashree Kulamarva is an Ayurvedic Psychiatry Consultant with expertise in integrative care for mental health and neurological disorders.'
+      title: 'Dr. Kavyashree Kulamarva | Ayurvedic Psychiatry Expert',
+      description: 'Dr. Kavyashree Kulamarva is an Ayurvedic Psychiatry Consultant with expertise in integrative care for mental health and neurological disorders.'
     },
     {
       name: 'Ms. Archana Karthick',
@@ -927,8 +929,8 @@ export class NewDocPageComponent {
       date: 'Monday-Saturday',
       alt: 'Ms. Archana Karthick | Best Clinical Dietician in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
       id: 41,
-      title:'Ms. Archana Karthick | Senior Clinical Dietician',
-      description:'Ms. Archana Karthick is a Senior Clinical Dietician with 16+ years of expertise in pediatric, prenatal, diabetic, and enteral nutrition management.'
+      title: 'Ms. Archana Karthick | Senior Clinical Dietician',
+      description: 'Ms. Archana Karthick is a Senior Clinical Dietician with 16+ years of expertise in pediatric, prenatal, diabetic, and enteral nutrition management.'
     },
     {
       name: 'Dr. Gopal Das C M',
@@ -943,8 +945,8 @@ export class NewDocPageComponent {
       date: 'Monday-Saturday',
       alt: 'Dr. Gopal Das C M | Best Psychiatrist in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
       id: 22,
-      title:'Dr. Gopal Das C M | Consultant Psychiatrist in Bangalore',
-      description:'Dr. Gopal Das C M is an experienced psychiatrist treating anxiety, depression, schizophrenia, addictions, and elderly mental health concerns in Bangalore.'
+      title: 'Dr. Gopal Das C M | Consultant Psychiatrist in Bangalore',
+      description: 'Dr. Gopal Das C M is an experienced psychiatrist treating anxiety, depression, schizophrenia, addictions, and elderly mental health concerns in Bangalore.'
     },
     {
       name: 'Dr. Nishitha A',
@@ -958,8 +960,8 @@ export class NewDocPageComponent {
       time: '16:30-16:50,16:50-17:10,17:10-17:30,17:30-17:50,17:50-18:00',
       date: 'Monday-Thursday',
       alt: 'Dr. Nishitha A | Radiologist in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
-      title:'Dr. Nishitha A | Women’s Imaging Radiologist Bangalore',
-      description:'Dr. Nishitha A is a radiologist in Bangalore with expertise in women’s imaging and fetal medicine, currently pursuing a fellowship in fetal studies.'
+      title: 'Dr. Nishitha A | Women’s Imaging Radiologist Bangalore',
+      description: 'Dr. Nishitha A is a radiologist in Bangalore with expertise in women’s imaging and fetal medicine, currently pursuing a fellowship in fetal studies.'
     },
     {
       name: 'Dr. Nagesh R',
@@ -974,8 +976,8 @@ export class NewDocPageComponent {
       date: 'Monday-Friday',
       alt: 'Dr. Nagesh R | Radiology Consultant in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
       id: 43,
-      title:'Dr. Nagesh R | Senior Radiologist in Bangalore',
-      description:'Dr. Nagesh R is a radiologist in Bangalore with 10+ years of expertise in USG, CT-guided interventions, and cardiovascular imaging.'
+      title: 'Dr. Nagesh R | Senior Radiologist in Bangalore',
+      description: 'Dr. Nagesh R is a radiologist in Bangalore with 10+ years of expertise in USG, CT-guided interventions, and cardiovascular imaging.'
     },
     {
       name: 'Dr. Sapna S',
@@ -990,12 +992,12 @@ export class NewDocPageComponent {
       date: 'Monday-Saturday,Sunday',
       alt: 'Dr. Sapna S | Best Ayurveda Specialist in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
       id: 37,
-      title:'Dr. Sapna S | Senior Ayurveda Doctor in Bangalore',
-      description:'Dr. Sapna S is a senior Ayurveda specialist with 20+ years of expertise in Rasashastra, Panchakarma, and medical astrology-based therapies.'
+      title: 'Dr. Sapna S | Senior Ayurveda Doctor in Bangalore',
+      description: 'Dr. Sapna S is a senior Ayurveda specialist with 20+ years of expertise in Rasashastra, Panchakarma, and medical astrology-based therapies.'
     },
     {
       name: 'Dr. Venkatesh H. S',
-      image: 'assets/Doc-Inv-Page/Dr-Venkatesh-H-S.png',
+      image: 'assets/dr-venkatesh-h-s.png',
       department: 'AYURVEDA',
       about: 'Dr. H. S Venkatesh is the founder and chief physician of the foundation. After graduating from Bangalore University and earning a BAMS degree from Taranath Govt. Ayurvedic Medical College in Bellary in 1985, he has spent over 25 years practicing Ayurveda. Dr. Venkatesh has conducted extensive research, particularly focusing on thyroid disorders and his work has demonstrated the efficacy of Ayurvedic treatments for conditions like thyroid imbalance and arthritis. He has been awarded fellowships and titles for his contributions, including "Ayurveda Chikitsa Praveena" and "Vaidya Bhaskara." He is also a respected educator, columnist and speaker on Ayurveda, regularly engaging with Ayurvedic colleges, medical journals and media outlets.',
       speciality: 'AYURVEDA',
@@ -1006,8 +1008,8 @@ export class NewDocPageComponent {
       date: 'Wednesday and Friday',
       alt: 'Dr. Venkatesh H. S | Best Ayurveda Endocrinologist in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
       id: 38,
-      title:'Dr. Venkatesh H. S | Senior Ayurveda Expert in Bangalore',
-      description:'Dr. Venkatesh H. S is a senior Ayurveda specialist with 25+ years of experience in thyroid disorders, arthritis, and Ayurvedic endocrinology.'
+      title: 'Dr. Venkatesh H. S | Senior Ayurveda Expert in Bangalore',
+      description: 'Dr. Venkatesh H. S is a senior Ayurveda specialist with 25+ years of experience in thyroid disorders, arthritis, and Ayurvedic endocrinology.'
     },
     {
       name: 'Dr. Sunil Kumar C',
@@ -1022,8 +1024,8 @@ export class NewDocPageComponent {
       date: 'Tuesday,Thursday and Saturday',
       alt: 'Dr. Sunil Kumar C | Best  ENT, Head and Neck Surgeon in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
       id: 33,
-      title:'Dr. Sunil Kumar C | Expert ENT & Head-Neck Surgeon Bangalore',
-      description:'Dr. Sunil Kumar C brings over 10 years of expertise in ENT, thyroid, laser, cosmetic and facial trauma surgeries with global recognition.'
+      title: 'Dr. Sunil Kumar C | Expert ENT & Head-Neck Surgeon Bangalore',
+      description: 'Dr. Sunil Kumar C brings over 10 years of expertise in ENT, thyroid, laser, cosmetic and facial trauma surgeries with global recognition.'
 
     },
     {
@@ -1051,8 +1053,8 @@ export class NewDocPageComponent {
       date: "Monday, Wednesday and Saturday",
       alt: "Dr. Man Mohan U. S | Best Gastroenterologist in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore",
       id: 47,
-      title:'Dr. Man Mohan U. S | Expert Gastroenterologist in Bangalore',
-      description:'Dr. Man Mohan U. S is a leading gastroenterologist in Bangalore with 8+ years of experience in liver, bowel and gastrointestinal disorders.'
+      title: 'Dr. Man Mohan U. S | Expert Gastroenterologist in Bangalore',
+      description: 'Dr. Man Mohan U. S is a leading gastroenterologist in Bangalore with 8+ years of experience in liver, bowel and gastrointestinal disorders.'
     },
     {
       name: "Dr. Kalyani Dilip Karkare",
@@ -1067,8 +1069,8 @@ export class NewDocPageComponent {
       date: "Monday",
       alt: 'Dr. Kalyani Dilip Karkare | Best Neurologist in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
       id: 29,
-      title:'Dr. Kalyani Karkare | Expert Neurologist for Epilepsy & Stroke',
-      description:'Dr. Kalyani Karkare is a senior neurologist with 14+ years of experience in epilepsy care, stroke treatment, neuropathy, and EEG interpretation.'
+      title: 'Dr. Kalyani Karkare | Expert Neurologist for Epilepsy & Stroke',
+      description: 'Dr. Kalyani Karkare is a senior neurologist with 14+ years of experience in epilepsy care, stroke treatment, neuropathy, and EEG interpretation.'
     },
     {
       name: "Dr. Vivekanand",
@@ -1083,8 +1085,8 @@ export class NewDocPageComponent {
       date: "",
       alt: 'Dr. Vivekanand | Consultant Vascular Surgeon in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
       id: 50,
-      title:'Dr. Vivekanand | Senior Vascular Surgeon with 25+ Years',
-      description:'Dr. Vivekanand is a renowned vascular surgeon with 25+ years of expertise in diabetic foot infections, DVT care, wound healing, and thrombosis management.'
+      title: 'Dr. Vivekanand | Senior Vascular Surgeon with 25+ Years',
+      description: 'Dr. Vivekanand is a renowned vascular surgeon with 25+ years of expertise in diabetic foot infections, DVT care, wound healing, and thrombosis management.'
     },
     {
       name: "Dr. Dhanyatha Muninarayan",
@@ -1099,8 +1101,8 @@ export class NewDocPageComponent {
       date: 'Monday-Saturday',
       alt: 'Dr. Dhanyatha Muninarayan  | Consultant Paediatrician in Bangalore | Rajarajeshwari Nagar Bangalore',
       id: 51,
-      title:'Dr. Dhanyatha Muninarayan | Best Paediatrician in Bangalore',
-      description:'Experienced paediatrician in neonatology, patient counselling and critical procedures with 7+ years in child care and medical student mentorship.'
+      title: 'Dr. Dhanyatha Muninarayan | Best Paediatrician in Bangalore',
+      description: 'Experienced paediatrician in neonatology, patient counselling and critical procedures with 7+ years in child care and medical student mentorship.'
     },
     // {
     //   name: "Dr. Sunil Shenvi",
@@ -1115,22 +1117,22 @@ export class NewDocPageComponent {
     //   date : "",
     //   alt : 'Dr. Sunil Shenvi | Best General Surgery and Gastroenterology doctor in Bngalore | Rajarajeshwari Nagar'
     // },
-    {
-      name: "Dr. Hemanth Kumar Venkatesh",
-      image: "assets/Doc-Inv-Page/Dr-Hemanth-kumar-Venkatesh.png",
-      department: 'ORTHOPEDICS',
-      speciality: 'ORTHOPEDICS',
-      about: "<p>With over 20 years of experience in Trauma and Orthopaedics, Dr. Hemanth Kumar Venkatesh is a highly skilled consultant orthopaedic surgeon specializing in hip and knee joint replacement surgeries, robotic arthroplasty, knee sports surgery and joint preservation techniques. He provides comprehensive care for a wide range of musculoskeletal conditions.</p><p>He is adept at managing complex cases, including primary and revision arthroplasty, shoulder and ankle sports injuries, diabetic foot limb salvage and hand and wrist surgeries. His expertise is complemented by contributions to research and leadership roles in healthcare projects.</p><p>Having worked at renowned institutions like University Hospitals of Plymouth NHS Trust and North West Anglia Foundation Trust, he brings advanced knowledge and a patient-centered approach to his practice. His dedication to exceptional care is supported by extensive training and fellowship experience in both the UK and India.</p>",
-      areasOfExpertise: ["Primary & Revision joint replacement surgery of Hip  & Knee", "Robotic Joint Replacement Surgery", "Soft Tissue Knee Surgery - ACL reconstruction / multi-ligament reconstruction surgery / Meniscus repair/cartilage preservation surgery", "Joint preservation surgery of Knee", "Sports surgery of Shoulder & Ankle", "Complex Diabetic foot limb salvage surgery", "Elective Foot & ankle surgery, Hand & Wrist surgery", "Chronic pain management and Elective Spine Surgery", "Limb Reconstruction surgery"],
-      expertise: "Years of Experience: 20",
-      qualification: "MBBS, DNB Ortho, FRCS Edin T&O, MCh Ortho UK, CCT UK",
-      time: "",
-      date: 'Monday-Saturday',
-      alt: 'Dr. Hemanth Kumar Venkatesh | Best Orthopaedic Consultant in Bangalore | Rashtrotthana Hospital',
-      id: 56,
-      title:'Dr. Hemanth Kumar Venkatesh | Orthopaedic Surgeon',
-      description:'Expert in joint replacement, robotic surgery, ACL reconstruction, sports injuries, diabetic limb salvage, spine care and limb reconstruction with 20+ years experience.'
-    },
+    // {
+    //   name: "Dr. Hemanth Kumar Venkatesh",
+    //   image: "assets/Doc-Inv-Page/Dr-Hemanth-kumar-Venkatesh.png",
+    //   department: 'ORTHOPEDICS',
+    //   speciality: 'ORTHOPEDICS',
+    //   about: "<p>With over 20 years of experience in Trauma and Orthopaedics, Dr. Hemanth Kumar Venkatesh is a highly skilled consultant orthopaedic surgeon specializing in hip and knee joint replacement surgeries, robotic arthroplasty, knee sports surgery and joint preservation techniques. He provides comprehensive care for a wide range of musculoskeletal conditions.</p><p>He is adept at managing complex cases, including primary and revision arthroplasty, shoulder and ankle sports injuries, diabetic foot limb salvage and hand and wrist surgeries. His expertise is complemented by contributions to research and leadership roles in healthcare projects.</p><p>Having worked at renowned institutions like University Hospitals of Plymouth NHS Trust and North West Anglia Foundation Trust, he brings advanced knowledge and a patient-centered approach to his practice. His dedication to exceptional care is supported by extensive training and fellowship experience in both the UK and India.</p>",
+    //   areasOfExpertise: ["Primary & Revision joint replacement surgery of Hip  & Knee", "Robotic Joint Replacement Surgery", "Soft Tissue Knee Surgery - ACL reconstruction / multi-ligament reconstruction surgery / Meniscus repair/cartilage preservation surgery", "Joint preservation surgery of Knee", "Sports surgery of Shoulder & Ankle", "Complex Diabetic foot limb salvage surgery", "Elective Foot & ankle surgery, Hand & Wrist surgery", "Chronic pain management and Elective Spine Surgery", "Limb Reconstruction surgery"],
+    //   expertise: "Years of Experience: 20",
+    //   qualification: "MBBS, DNB Ortho, FRCS Edin T&O, MCh Ortho UK, CCT UK",
+    //   time: "",
+    //   date: 'Monday-Saturday',
+    //   alt: 'Dr. Hemanth Kumar Venkatesh | Best Orthopaedic Consultant in Bangalore | Rashtrotthana Hospital',
+    //   id: 56,
+    //   title:'Dr. Hemanth Kumar Venkatesh | Orthopaedic Surgeon',
+    //   description:'Expert in joint replacement, robotic surgery, ACL reconstruction, sports injuries, diabetic limb salvage, spine care and limb reconstruction with 20+ years experience.'
+    // },
     {
       name: "Dr. Matam Sri Anusha",
       image: "assets/dummy-doc-female.svg",
@@ -1144,8 +1146,8 @@ export class NewDocPageComponent {
       date: "Monday, Wednesday and Friday",
       alt: '',
       id: 57,
-      title:'Dr. Matam Sri Anusha | Rheumatologist in Bangalore',
-      description:'Expert in inflammatory arthritis, lupus, vasculitis, connective tissue diseases, osteoporosis, gout & autoimmune conditions with 8 years of experience.'
+      title: 'Dr. Matam Sri Anusha | Rheumatologist in Bangalore',
+      description: 'Expert in inflammatory arthritis, lupus, vasculitis, connective tissue diseases, osteoporosis, gout & autoimmune conditions with 8 years of experience.'
     },
     {
       name: "Dr. C Rajendran",
@@ -1160,8 +1162,8 @@ export class NewDocPageComponent {
       date: "Sunday-Tuesday",
       alt: 'Dr-Rajendran.png | Best Internal Medicine Doctor in Bangalore | Rashtrotthana Hospital',
       id: 58,
-      title:'Dr. C Rajendran | Internal Medicine Doctor in Bangalore',
-      description:'27+ years experience in diabetes management, general medicine, infectious diseases, hypertension, asthma, thyroid care and fever treatment.'
+      title: 'Dr. C Rajendran | Internal Medicine Doctor in Bangalore',
+      description: '27+ years experience in diabetes management, general medicine, infectious diseases, hypertension, asthma, thyroid care and fever treatment.'
     },
     {
       name: "Dr. Sushmitha Raj R",
@@ -1176,8 +1178,8 @@ export class NewDocPageComponent {
       date: 'Monday-Saturday',
       alt: 'Dr. Sushmitha Raj R | Best Dentist in Bangalore | Rashtrotthana Hospital',
       id: 55,
-      title:'Dr. Sushmitha Raj R | Dentist in RR Nagar Bangalore',
-      description:'Experienced in general, cosmetic, and restorative dentistry. Skilled in endodontics, extractions, and patient-centered dental care for all age groups.'
+      title: 'Dr. Sushmitha Raj R | Dentist in RR Nagar Bangalore',
+      description: 'Experienced in general, cosmetic, and restorative dentistry. Skilled in endodontics, extractions, and patient-centered dental care for all age groups.'
     },
     // {
     //   name: "Dr. S K Ranjani",
@@ -1205,8 +1207,8 @@ export class NewDocPageComponent {
       date: "Monday, Wednesday and Friday",
       alt: 'Dr. G. V. Giri | Best Oncologist Bangalore | Rashtrotthana Hospital',
       id: 61,
-      title:'Dr. G. V. Giri | Cancer Specialist in RR Nagar Bangalore',
-      description:'Expert in head, neck, lung, breast, GI, and genitourinary cancers. 10+ years of oncology experience with DM in Medical Oncology from Kidwai Institute.'
+      title: 'Dr. G. V. Giri | Cancer Specialist in RR Nagar Bangalore',
+      description: 'Expert in head, neck, lung, breast, GI, and genitourinary cancers. 10+ years of oncology experience with DM in Medical Oncology from Kidwai Institute.'
     },
     {
       name: "Dr. Kavya N",
@@ -1220,8 +1222,8 @@ export class NewDocPageComponent {
       time: "",
       date: "Thursday",
       alt: '',
-      title:'Dr. Kavya N | Ayurvedic Specialist in Metabolic & Gut Disorders',
-      description:'Expert in Ayurveda for metabolic disorders, gut health, skin conditions, arthritis, spine care & gynecological issues with 15+ years of clinical experience.'
+      title: 'Dr. Kavya N | Ayurvedic Specialist in Metabolic & Gut Disorders',
+      description: 'Expert in Ayurveda for metabolic disorders, gut health, skin conditions, arthritis, spine care & gynecological issues with 15+ years of clinical experience.'
     },
     {
       name: "Dr. Sandhya S. Patil",
@@ -1229,15 +1231,15 @@ export class NewDocPageComponent {
       department: 'ENT and Head & Neck Surgery',
       speciality: 'ENT',
       about: "Dr. Sandhya S. Patil is a skilled ENT and Head & Neck Surgeon with over a decade of experience in managing a wide range of ENT conditions. She has trained at prestigious institutions such as KEM Hospital, Pune, and St. John's Medical College, Bengaluru. Her clinical expertise spans endoscopic sinus surgeries, pediatric ENT procedures, allergy management, and complex head and neck surgeries. Dr. Sandhya Patil currently practices as a Consultant at multiple reputed hospitals in Bengaluru and also runs her own ENT clinic, Swasthya ENT Centre. She is known for her thorough patient care, surgical precision and commitment to academic excellence.",
-      areasOfExpertise: ['Septoplasty','Turbinectomy','Turbinoplasty','Functional Endoscopic Sinus Surgery (FESS)','Nasal Endoscopy and Biopsy','Skin Prick Test','Allergen Immunotherapy','Tympanoplasty','Cortical Mastoidectomy','Modified Radical Mastoidectomy','Auroplasty','Myringotomy and Grommet Insertion','Tonsillectomy','Coblation Adenoidectomy','Conventional Adenoidectomy','Direct Laryngoscopy','Microlaryngeal Surgery','Tracheostomy','Incision and Drainage','Submandibular Gland Excision','Hemithyroidectomy','Total Thyroidectomy','Diagnosis and Management of Head and Neck Oncologic Surgeries'],
+      areasOfExpertise: ['Septoplasty', 'Turbinectomy', 'Turbinoplasty', 'Functional Endoscopic Sinus Surgery (FESS)', 'Nasal Endoscopy and Biopsy', 'Skin Prick Test', 'Allergen Immunotherapy', 'Tympanoplasty', 'Cortical Mastoidectomy', 'Modified Radical Mastoidectomy', 'Auroplasty', 'Myringotomy and Grommet Insertion', 'Tonsillectomy', 'Coblation Adenoidectomy', 'Conventional Adenoidectomy', 'Direct Laryngoscopy', 'Microlaryngeal Surgery', 'Tracheostomy', 'Incision and Drainage', 'Submandibular Gland Excision', 'Hemithyroidectomy', 'Total Thyroidectomy', 'Diagnosis and Management of Head and Neck Oncologic Surgeries'],
       expertise: "Years of Experience: 10+",
       qualification: "MBBS, DLO, DNB (ENT), AASC",
       time: "",
       date: "",
       alt: 'Dr. Sandhya S. Patil | Best ENT Consultant in Bangalore | Rashtrotthana Hospital',
-      title:'Dr. Sandhya S. Patil | ENT Specialist & Head-Neck Surgeon in Bengaluru',
+      title: 'Dr. Sandhya S. Patil | ENT Specialist & Head-Neck Surgeon in Bengaluru',
       id: 68,
-      description:'Consult Dr. Sandhya S. Patil, ENT & Head-Neck Surgeon in Bengaluru. Expert in sinus surgery, pediatric ENT, allergy care, and thyroid surgeries.'
+      description: 'Consult Dr. Sandhya S. Patil, ENT & Head-Neck Surgeon in Bengaluru. Expert in sinus surgery, pediatric ENT, allergy care, and thyroid surgeries.'
     },
     {
       name: "Dr. Dona Susan John",
@@ -1251,9 +1253,9 @@ export class NewDocPageComponent {
       time: "",
       date: "",
       alt: '',
-      id:65,
-      title:'Dr. Dona Susan John | Senior Eye doctor in Bangalore',
-      description:'Consult Dr. Dona Susan John, experienced ophthalmologist in Bangalore with 18 years in treating retinal conditions. Trusted care for your eye health.'
+      id: 65,
+      title: 'Dr. Dona Susan John | Senior Eye doctor in Bangalore',
+      description: 'Consult Dr. Dona Susan John, experienced ophthalmologist in Bangalore with 18 years in treating retinal conditions. Trusted care for your eye health.'
     },
     {
       name: "Dr. Nithin J",
@@ -1261,17 +1263,17 @@ export class NewDocPageComponent {
       department: 'Nephrology',
       speciality: 'NEPHROLOGY',
       about: "<p>Dr. Nithin J is a skilled and experienced nephrologist known for his precision in renal procedures and holistic approach to kidney care. He has independently performed over 1000 renal biopsies, inserted more than 1000 uncuffed jugular and femoral catheters and over 200 cuffed jugular catheters - demonstrating his strong procedural expertise.</p> <p>He has managed the complete workup and post-transplant care of more than 300 renal transplant recipients, including complex cases involving post-transplant complications. His technical proficiency is complemented by a deep clinical interest in glomerular diseases, dialysis management and transplant nephrology.</p> <p>Dr. Nithin has actively contributed to nephrology research, with several national presentations and a publication in an international journal. His academic involvement includes studies on idiopathic membranous nephropathy, drug-induced nephrotoxicity and individualized dialysis strategies. Through his hands-on skills and research-driven approach, he remains committed to delivering comprehensive, high-quality renal care.</p>",
-      areasOfExpertise: ['Clinical nephrology','Renal transplantation (pre- and post-operative care)','Hemodialysis and peritoneal dialysis','Management of glomerular diseases','Renal biopsies and catheter placements','Post-transplant complication management'],
+      areasOfExpertise: ['Clinical nephrology', 'Renal transplantation (pre- and post-operative care)', 'Hemodialysis and peritoneal dialysis', 'Management of glomerular diseases', 'Renal biopsies and catheter placements', 'Post-transplant complication management'],
       expertise: "Years of Experience: 13+",
       qualification: " MBBS, MD in General Medicine, DM in Nephrology",
       time: "",
       date: "",
-      id:71,
+      id: 71,
       alt: 'Dr. Nithin J | Best Nephrology doctor in Bangalore | Rashtrotthana Hospital',
-      title:'Dr. Nithin J | Trusted Nephrologist for Transplant & Dialysis',
+      title: 'Dr. Nithin J | Trusted Nephrologist for Transplant & Dialysis',
       description: 'Expert in renal biopsies, dialysis, glomerular diseases, and transplant care. 1000+ procedures performed. Trusted nephrologist with 13+ years of experience.'
     },
-        {
+    {
       name: "Dr. Dhruva Ithal",
       image: "assets/dr-dhruva-ithal.png",
       department: 'Psychiatry',
@@ -1283,9 +1285,9 @@ export class NewDocPageComponent {
       time: "",
       date: "",
       alt: 'Dr. Dhruva Ithal - Expert Psychiatrist in Bangalore',
-      title:'Dr. Dhruva Ithal - Expert Psychiatrist in Bangalore',
+      title: 'Dr. Dhruva Ithal - Expert Psychiatrist in Bangalore',
       id: 69,
-      description:'Dr. Dhruva Ithal specializes in schizophrenia, adolescent psychiatry, neurostimulation therapies, and psychotherapy with 13+ years of clinical experience.'
+      description: 'Dr. Dhruva Ithal specializes in schizophrenia, adolescent psychiatry, neurostimulation therapies, and psychotherapy with 13+ years of clinical experience.'
     },
     {
       name: "Dr. Limesh M",
@@ -1293,15 +1295,15 @@ export class NewDocPageComponent {
       department: 'Nephrology',
       speciality: 'NEPHROLOGY',
       about: "<p>Dr. Limesh M is a nephrologist and transplant physician with a strong foundation in both clinical care and academic nephrology. His core strengths include vascular access procedures, kidney biopsies and the comprehensive management of transplant patients. He has a keen interest in CKD prevention, acute kidney injury in critical care settings and post-transplant immunosuppression monitoring.</p> <p>posters presented at reputed national forums on topics such as CRBSI incidence, the safety of ACE inhibitors in CKD, MMF level monitoring and rare conditions like Dent’s disease and nephrogenic systemic fibrosis. Known for his systematic and patient-centered approach, Dr. Limesh integrates evidence-based medicine with procedural expertise to support high-quality kidney care.</p>",
-      areasOfExpertise: ['Management of chronic kidney disease (CKD) and acute kidney injury (AKI)','Critical care nephrology and ICU monitoring','Kidney transplantation (live and cadaveric)','Renal biopsies and vascular access procedures','Catheterization techniques (jugular and femoral)','Post-transplant care and immunosuppressive therapy monitoring','Nephrology-related emergency and casualty care'],
+      areasOfExpertise: ['Management of chronic kidney disease (CKD) and acute kidney injury (AKI)', 'Critical care nephrology and ICU monitoring', 'Kidney transplantation (live and cadaveric)', 'Renal biopsies and vascular access procedures', 'Catheterization techniques (jugular and femoral)', 'Post-transplant care and immunosuppressive therapy monitoring', 'Nephrology-related emergency and casualty care'],
       expertise: "Years of Experience: 15+",
       qualification: "MBBS, MD in General Medicine, DNB (Nephrology)",
       time: "",
       date: "",
-      id : 70,
+      id: 70,
       alt: 'Dr. Limesh M | Nephrologist & Transplant Physician Bangalore',
-      title:'Dr. Limesh M | Nephrologist & Transplant Physician',
-      description:'Dr. Limesh M offers expert care in CKD, AKI, dialysis, renal biopsies, and kidney transplantation. 15+ years of experience in nephrology and ICU care.'
+      title: 'Dr. Limesh M | Nephrologist & Transplant Physician',
+      description: 'Dr. Limesh M offers expert care in CKD, AKI, dialysis, renal biopsies, and kidney transplantation. 15+ years of experience in nephrology and ICU care.'
     },
     {
       name: "Dr. Shruti Suresh",
@@ -1314,10 +1316,10 @@ export class NewDocPageComponent {
       qualification: "MBBS, DNB (Internal Medicine)",
       time: "",
       date: "",
-      id:73,
+      id: 73,
       alt: 'Dr. Shruti Suresh| Nephrologist & Transplant Physician Bangalore',
-      title:'Dr. Shruti Suresh - Experienced General Physician in Bangalore',
-      description:'Consult Dr. Shruti Suresh for expert care in general medicine and long-term health management in Rajarajeshwari Nagar.',
+      title: 'Dr. Shruti Suresh - Experienced General Physician in Bangalore',
+      description: 'Consult Dr. Shruti Suresh for expert care in general medicine and long-term health management in Rajarajeshwari Nagar.',
     },
     {
       name: "Dr. Manasa M. G.",
@@ -1330,7 +1332,7 @@ export class NewDocPageComponent {
       qualification: "MBBS, MD Internal Medicine, DM Endocrinology",
       time: "",
       date: "",
-      id:75,
+      id: 75,
       alt: 'Dr. Manasa M. G. | Best Endocrinology Doctor in Bangalore | Rashtrotthan Hospital',
       title: 'Dr. Manasa M. G. | Endocrinologist - Hormone & Diabetes Expert',
       description: 'Meet Dr. Manasa M. G., expert in endocrine care with research-backed experience in treating hormonal and metabolic disorders in Bangalore.'
@@ -1491,7 +1493,7 @@ export class NewDocPageComponent {
   getDoctorById(id: number): Observable<{ availability: { day: string; id: number; availableFrom: string; slotDuration: number; updatedAt?: string }[] }> {
     return this.http.get<{ availability: { day: string; id: number; availableFrom: string; slotDuration: number; updatedAt?: string }[] }>(`${this.apiUrl}/doctors/${id}`);
   }
-  
+
   generateTimeSlots(startTime: string, endTime: string, slotDuration: number): { name: string }[] {
     const slots: { name: string }[] = [];
     let current = new Date(`1970-01-01T${startTime}`);
@@ -1606,96 +1608,96 @@ export class NewDocPageComponent {
         status: 'frontoffice',
         appointmentDetails: emailParams,
       };
-      
+
       // Fetch the doctor ID by name
       this.http.post(`${this.apiUrl}/email/send-email`, emailRequest)
-              .subscribe({
-                next: (emailResponse) => {
-                  console.log('Email sent successfully:', emailResponse);
-                },
-                error: (emailError) => {
-                  console.error('Error sending email:', emailError);
-                },
-              });
-              const appointmentData = {
-                patientName: patientName,
-                phoneNumber: this.contactForm.value.contactNumber,
-                email: this.contactForm.value.email,
-                doctorName: this.filteredDoctor.name,
-                department: Array.isArray(this.filteredDoctor.speciality)
-                ? this.filteredDoctor.speciality.join(', ')
-                : this.filteredDoctor.speciality, // Convert array to string if necessary, // Assuming `speciality` is the department
-                date: appointmentDate,
-                time: this.contactForm.value.time.name,
-                requestVia: 'Online',
-                status: 'pending',
-                smsSent: false,
-                emailSent: false,
-                doctorId: this.filteredDoctor.id,
-              };
-                    // Reset the form and close dialog after the appointment has been successfully saved
-                    this.contactForm.reset();
-                    this.messageService.add({
-                      severity: 'success',
-                      summary: 'Success',
-                      detail: 'Thank you, we have received your request and will get back to you shortly.',
-                    });
-                    this.router.navigate(['/thank-you'])
-                    this.http.post<any>(`${this.apiUrl}/appointments`, appointmentData)
-                    .subscribe({
-                      next: (appointmentResult) => {
-                        console.log('Appointment successfully created:', appointmentResult);
-                      },
-                      error: (appointmentError) => {
-                        console.error('Error creating appointment:', appointmentError);
-                      }
-                    });
-        
-                    const appointmentDetails ={
-                      ...appointmentData,
-                      patientPhoneNumber:'91'+ appointmentData.phoneNumber,
-                      status: 'received'
-                    }
-                    this.http.post(`${this.apiUrl}/whatsapp/send`, appointmentDetails)
-                    .subscribe({
-                      next: (whatsappResponse) => {
-                        console.log('WhatsApp message sent:', whatsappResponse);
-                      },
-                      error: (whatsappError) => {
-                        console.error('Error sending WhatsApp message:', whatsappError);
-                      },
-                    });
-                    this.http.post(`${this.apiUrl}/sms/send-sms`, appointmentDetails)
-                    .subscribe({
-                      next: (smsResponse) => {
-                        console.log('SMS message sent:');
-                      },
-                      error: (whatsappError) => {
-                        console.error('Error sending WhatsApp message:', whatsappError);
-                      },
-                    });
-                    
-                    this.http.post(`${this.apiUrl}/email/send-email`, emailRequest)
-                      .subscribe({
-                        next: (emailResponse) => {
-                          console.log('Email sent successfully:', emailResponse);
-                        },
-                        error: (emailError) => {
-                          console.error('Error sending email:', emailError);
-                        },
-                      });
+        .subscribe({
+          next: (emailResponse) => {
+            console.log('Email sent successfully:', emailResponse);
+          },
+          error: (emailError) => {
+            console.error('Error sending email:', emailError);
+          },
+        });
+      const appointmentData = {
+        patientName: patientName,
+        phoneNumber: this.contactForm.value.contactNumber,
+        email: this.contactForm.value.email,
+        doctorName: this.filteredDoctor.name,
+        department: Array.isArray(this.filteredDoctor.speciality)
+          ? this.filteredDoctor.speciality.join(', ')
+          : this.filteredDoctor.speciality, // Convert array to string if necessary, // Assuming `speciality` is the department
+        date: appointmentDate,
+        time: this.contactForm.value.time.name,
+        requestVia: 'Online',
+        status: 'pending',
+        smsSent: false,
+        emailSent: false,
+        doctorId: this.filteredDoctor.id,
+      };
+      // Reset the form and close dialog after the appointment has been successfully saved
+      this.contactForm.reset();
+      this.messageService.add({
+        severity: 'success',
+        summary: 'Success',
+        detail: 'Thank you, we have received your request and will get back to you shortly.',
+      });
+      this.router.navigate(['/thank-you'])
+      this.http.post<any>(`${this.apiUrl}/appointments`, appointmentData)
+        .subscribe({
+          next: (appointmentResult) => {
+            console.log('Appointment successfully created:', appointmentResult);
+          },
+          error: (appointmentError) => {
+            console.error('Error creating appointment:', appointmentError);
+          }
+        });
+
+      const appointmentDetails = {
+        ...appointmentData,
+        patientPhoneNumber: '91' + appointmentData.phoneNumber,
+        status: 'received'
+      }
+      this.http.post(`${this.apiUrl}/whatsapp/send`, appointmentDetails)
+        .subscribe({
+          next: (whatsappResponse) => {
+            console.log('WhatsApp message sent:', whatsappResponse);
+          },
+          error: (whatsappError) => {
+            console.error('Error sending WhatsApp message:', whatsappError);
+          },
+        });
+      this.http.post(`${this.apiUrl}/sms/send-sms`, appointmentDetails)
+        .subscribe({
+          next: (smsResponse) => {
+            console.log('SMS message sent:');
+          },
+          error: (whatsappError) => {
+            console.error('Error sending WhatsApp message:', whatsappError);
+          },
+        });
+
+      this.http.post(`${this.apiUrl}/email/send-email`, emailRequest)
+        .subscribe({
+          next: (emailResponse) => {
+            console.log('Email sent successfully:', emailResponse);
+          },
+          error: (emailError) => {
+            console.error('Error sending email:', emailError);
+          },
+        });
+
+    }
+
+
+
+
 
   }
-  
+
+  get f(): { [key: string]: AbstractControl } {
+    return this.contactForm.controls;
+  }
 
 
-
-  
-}
-
-get f(): { [key: string]: AbstractControl } {
-  return this.contactForm.controls;
-}
-  
-  
 }

@@ -47,12 +47,12 @@ export class DoctorLayoutComponent {
   // ];
   doctors = [
     {
-      name: 'Dr. (Col)Anand Shankar',
+      name: 'Col (Dr) Anand Shankar K',
       image: 'assets/Dr-Anand-Shankar.png',
       desgination: 'ER HEAD, ICU, ANAESTHESIA',
       about: 'Col (Dr) Anand Shankar K is an alumnus of the prestigious Armed Forces Medical College, Pune. He served in field areas prior to pursuing postgraduation in the field of Anaesthesiology and Intensive Care at AFMC pune. Thereafter he qualified the European Diploma in Intensive Care Medicine. He has an overall experience of more than 31 years, 27 of those years serving with the Armed Forces. He has served within the country and in foreign missions with the United Nations. He also had the unique opportunity to serve as accompanying doctor to the President of India. He has been serving with Rashtrotthana Hospital since its inception in Dec 2022.',
       speciality: ['ANAESTHESIOLOGY', 'EMERGENCY MEDICINE'],
-      areasOfExpertise: ['Intensive Care', 'Emergency Care', 'Anesthesiology'],
+      areasOfExpertise: ['Anaesthesiology', 'Emergency Care', 'Labour Analgesia', 'Pain Medicine', 'Intensive Care Medicine'],
       expertise: 'Years of Experience: 31',
       qualification: 'MBBS, MD (ANAESTHESIOLOGY), EDIC',
       date: 'Monday-Saturday',
@@ -299,10 +299,10 @@ export class DoctorLayoutComponent {
       name: 'Dr. Atmaram D. C',
       image: 'assets/Dr-Atmaram-D-C.png',
       desgination: 'SURGEON/ LAPROSCOPY/ GASTROENTEROLOGLIST',
-      about: 'A dedicated surgeon with 18 years of experience specializing in laparoscopy, proctologist, gastroenterology and oncology. My medical journey began at MS Ramaiah Medical College in Bangalore, where I developed a strong foundation in surgical techniques and patient care. Over the years, I have honed my skills in minimally invasive procedures, which allow for quicker recoveries and reduced patient discomfort.I strongly believe in the existence of divinity, which inspires my approach to medicine. The immense trust my patients place in me is a driving force behind my commitment to serve them better every day. I am passionate about providing compassionate care and fostering trusting relationships with those I treat.',
+      about: 'A dedicated surgeon with 19 years of experience specializing in laparoscopy, proctologist, gastroenterology and oncology. My medical journey began at MS Ramaiah Medical College in Bangalore, where I developed a strong foundation in surgical techniques and patient care. Over the years, I have honed my skills in minimally invasive procedures, which allow for quicker recoveries and reduced patient discomfort. I strongly believe in the existence of divinity, which inspires my approach to medicine. The immense trust my patients place in me is a driving force behind my commitment to serve them better every day. I am passionate about providing compassionate care and fostering trusting relationships with those I treat.',
       speciality: 'GENERAL SURGERY',
       areasOfExpertise: ['Laparoscopy', 'Gastroenterology', 'Oncology', 'Proctology'],
-      expertise: 'Years of Experience: 18',
+      expertise: 'Years of Experience: 19',
       qualification: 'MBBS, MS',
       time: '16:00-16:20,16:20-16:40,16:40-17:00',
       date: 'Monday-Saturday',
@@ -314,7 +314,7 @@ export class DoctorLayoutComponent {
       desgination: 'Pulmonary and sleep medicine',
       about: 'Dr. KOLLA VINOD is a professor in Pulmonary medicine for over a decade. His education, training and extensive experience given special expertise in the diagnosis, treatment and management of disorders of the pulmonary diseases. He has achieved state 2nd rank during his post-graduation. He strives to stay current with medical knowledge and interventional skills in order to provide his patients with the best, up- to-date care available. He is interested in new interventions (Bronchoscopy, Throcoscopy, cryobiopsy rigid bronchoscopy) The majority of his early education was in Lawrence school Ooty, he completed his Pre-University in Lawrence school Ooty. He finished MBBS, MD in Pulmonary Medicine obtained from Narayana Medical College, Nellore. His post- doctoral studies included a critical care, Interventional pulmonology. Dr. Kolla Vinod authored or co- authored peer-reviewed abstracts/articles. He holds multiple Journals and case reports in his field in various Indian and International journals. Upon his return to Bangalore.',
       speciality: 'PULMONOLOGY',
-      areasOfExpertise: ['Interventional pulmonology (Bronchoscopy, Throcoscopy, cryobiopsy, rigid bronchoscopy) Asthama', 'Copd', 'pneumonia', 'tuberculosis', 'Interstitial lung disease', 'pleural effusion', 'lung cancer', 'sleep medicine', 'Flu and allergic bronchitis'],
+      areasOfExpertise: ['Interventional pulmonology (Bronchoscopy, Throcoscopy, cryobiopsy, rigid bronchoscopy) Asthama', 'Copd', 'pneumonia', 'tuberculosis', 'Interstitial lung disease', 'pleural effusion', 'lung cancer', 'sleep medicine', 'Flu and allergic bronchitis', 'Pulmonary rehabilitation'],
       expertise: 'Years of Experience: 18',
       qualification: 'MBBS, MD PULMONOLOGY MEDICINE',
       time: '16:30-16:50,16:50-17:10,17:10-17:30,17:30-17:50,17:50-18:10,18:10-18:30',
@@ -458,7 +458,7 @@ export class DoctorLayoutComponent {
       image: 'assets/Dr-Vishnuvardhan-V.png',
       desgination: 'Ortho Dontics',
       speciality: 'DENTAL SCIENCES',
-      about: 'Dr. Vishnu Vardhan has completed BDS and MDS from DAPM RV DENTAL COLLEGE affiliated to Rajiv Gandhi University Bangalore having about 9 years overall experience. Life Member of the Indian Orthodontic Society. Senior Consultant orthodontist. Specialist in metal, ceramic, invisible, lingual and surgical orthodontics.',
+      about: 'Dr. Vishnu Vardhan has completed BDS and MDS from DAPM RV DENTAL COLLEGE affiliated to Rajiv Gandhi University Bangalore having about 9 years overall experience. Life Member of the Indian Orthodontic Society. Senior Consultant orthodontist. Specialist in Metal and ceramic braces, lingual braces, myofunctional appliances and invisible alligner treatment',
       areasOfExpertise: [''],
       expertise: 'Years of Experience: 9',
       qualification: 'BDS, MDS',
@@ -621,7 +621,7 @@ export class DoctorLayoutComponent {
         'Preventive measures for all diseases',
         'Healthy lifestyle guidelines, Diet counselling.'
       ],
-      expertise: 'Years of Experience: 4',
+      expertise: 'Years of Experience: 5',
       time: '09:30-09:50,09:50-10:10,10:10-10:30,10:30-10:50,10:50-11:10,11:10-11:30,11:30-11:50,11:50-12:10,12:10-12:30,12:30-12:50,12:50-13:10,13:10-13:30,13:30-13:50,13:50-14:10,14:10-14:30,14:30-14:50,14:50-15:10,15:10-15:30,15:30-15:50,15:50-16:10,16:10-16:30,16:30-16:50,16:50-17:00',
       date: 'Monday-Saturday',
       alt: 'Dr. Varsha P | Best Yoga & Lifestyle Consultant in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore'
@@ -797,7 +797,7 @@ export class DoctorLayoutComponent {
     },
     {
       name: 'Dr. Venkatesh H. S',
-      image: 'assets/Dr-Venkatesh-H-S.jpg',
+      image: 'assets/dr-venkatesh-h-s-doc-page.png',
       desgination: 'AYURVEDA',
       about: 'Dr. H. S Venkatesh is the founder and chief physician of the foundation. After graduating from Bangalore University and earning a BAMS degree from Taranath Govt. Ayurvedic Medical College in Bellary in 1985, he has spent over 25 years practicing Ayurveda. Dr. Venkatesh has conducted extensive research, particularly focusing on thyroid disorders and his work has demonstrated the efficacy of Ayurvedic treatments for conditions like thyroid imbalance and arthritis. He has been awarded fellowships and titles for his contributions, including "Ayurveda Chikitsa Praveena" and "Vaidya Bhaskara." He is also a respected educator, columnist and speaker on Ayurveda, regularly engaging with Ayurvedic colleges, medical journals and media outlets.',
       speciality: 'AYURVEDA',
@@ -899,19 +899,19 @@ export class DoctorLayoutComponent {
     //   date : "",
     //   alt : 'Dr. Sunil Shenvi | Best General Surgery and Gastroenterology doctor in Bngalore | Rajarajeshwari Nagar'
     // },
-    {
-      name: "Dr. Hemanth Kumar Venkatesh",
-      image: "assets/Dr-Hemanth-kumar-Venkatesh.png",
-      desgination: 'ORTHOPEDICS',
-      speciality: 'ORTHOPEDICS',
-      about: "<p>With over 20 years of experience in Trauma and Orthopaedics, Dr. Hemanth Kumar Venkatesh is a highly skilled consultant orthopaedic surgeon specializing in hip and knee joint replacement surgeries, robotic arthroplasty, knee sports surgery and joint preservation techniques. He provides comprehensive care for a wide range of musculoskeletal conditions.</p><p>He is adept at managing complex cases, including primary and revision arthroplasty, shoulder and ankle sports injuries, diabetic foot limb salvage and hand and wrist surgeries. His expertise is complemented by contributions to research and leadership roles in healthcare projects.</p><p>Having worked at renowned institutions like University Hospitals of Plymouth NHS Trust and North West Anglia Foundation Trust, he brings advanced knowledge and a patient-centered approach to his practice. His dedication to exceptional care is supported by extensive training and fellowship experience in both the UK and India.</p>",
-      areasOfExpertise: ["Primary & Revision joint replacement surgery of Hip  & Knee", "Robotic Joint Replacement Surgery", "Soft Tissue Knee Surgery - ACL reconstruction / multi-ligament reconstruction surgery / Meniscus repair/cartilage preservation surgery", "Joint preservation surgery of Knee", "Sports surgery of Shoulder & Ankle", "Complex Diabetic foot limb salvage surgery", "Elective Foot & ankle surgery, Hand & Wrist surgery", "Chronic pain management and Elective Spine Surgery", "Limb Reconstruction surgery"],
-      expertise: "Years of Experience: 20",
-      qualification: "MBBS, DNB Ortho, FRCS Edin T&O, MCh Ortho UK, CCT UK",
-      time: "",
-      date: 'Monday-Saturday',
-      alt: 'Dr. Hemanth Kumar Venkatesh | Best Orthopaedic Consultant in Bangalore | Rashtrotthana Hospital'
-    },
+    // {
+    //   name: "Dr. Hemanth Kumar Venkatesh",
+    //   image: "assets/Dr-Hemanth-kumar-Venkatesh.png",
+    //   desgination: 'ORTHOPEDICS',
+    //   speciality: 'ORTHOPEDICS',
+    //   about: "<p>With over 20 years of experience in Trauma and Orthopaedics, Dr. Hemanth Kumar Venkatesh is a highly skilled consultant orthopaedic surgeon specializing in hip and knee joint replacement surgeries, robotic arthroplasty, knee sports surgery and joint preservation techniques. He provides comprehensive care for a wide range of musculoskeletal conditions.</p><p>He is adept at managing complex cases, including primary and revision arthroplasty, shoulder and ankle sports injuries, diabetic foot limb salvage and hand and wrist surgeries. His expertise is complemented by contributions to research and leadership roles in healthcare projects.</p><p>Having worked at renowned institutions like University Hospitals of Plymouth NHS Trust and North West Anglia Foundation Trust, he brings advanced knowledge and a patient-centered approach to his practice. His dedication to exceptional care is supported by extensive training and fellowship experience in both the UK and India.</p>",
+    //   areasOfExpertise: ["Primary & Revision joint replacement surgery of Hip  & Knee", "Robotic Joint Replacement Surgery", "Soft Tissue Knee Surgery - ACL reconstruction / multi-ligament reconstruction surgery / Meniscus repair/cartilage preservation surgery", "Joint preservation surgery of Knee", "Sports surgery of Shoulder & Ankle", "Complex Diabetic foot limb salvage surgery", "Elective Foot & ankle surgery, Hand & Wrist surgery", "Chronic pain management and Elective Spine Surgery", "Limb Reconstruction surgery"],
+    //   expertise: "Years of Experience: 20",
+    //   qualification: "MBBS, DNB Ortho, FRCS Edin T&O, MCh Ortho UK, CCT UK",
+    //   time: "",
+    //   date: 'Monday-Saturday',
+    //   alt: 'Dr. Hemanth Kumar Venkatesh | Best Orthopaedic Consultant in Bangalore | Rashtrotthana Hospital'
+    // },
     {
       name: "Dr. Matam Sri Anusha",
       image: "assets/dummy.png",
@@ -1123,8 +1123,8 @@ export class DoctorLayoutComponent {
       time: "",
       date: "",
       alt: 'Dr. Kishan G. N – Ayurveda, Rashtrotthana Hospital Bangalore',
-      title:'',
-      description:''
+      title: '',
+      description: ''
     },
     // {
     //   name: "",
@@ -1324,8 +1324,10 @@ export class DoctorLayoutComponent {
 
     const slug = doctor.name
       .toLowerCase()
-      .replace(/\./g, '')       // Remove all dots
-      .replace(/\s+/g, '-');    // Replace spaces with hyphens
+      .replace(/[().]/g, '')      // remove dots and parentheses
+      .replace(/\s+/g, '-')       // replace spaces with hyphens
+      .replace(/-+/g, '-')        // replace multiple hyphens with single
+      .replace(/^-|-$/g, '');     // trim hyphens from start/end   // Replace spaces with hyphens
 
     this.router.navigate(['/doctor', slug]);
 
