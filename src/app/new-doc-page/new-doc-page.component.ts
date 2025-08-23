@@ -496,7 +496,7 @@ export class NewDocPageComponent {
       department: 'UROLOGIST & ANDROLOGIST',
       speciality: 'UROLOGY',
       about: 'Worked as Assistant prof. in the department of urology at St. John’s Medical Collage hospital, a premier high volume territory care hospital in Bangalore.',
-      areasOfExpertise: ['Urology', 'EndoUrology, Kidney Transplantation', 'Reconstructive urology', 'Laproscopic urology Uro Oncology', 'Stone Disease'],
+      areasOfExpertise: ['Endourology', 'Andrology', 'Kidney Transplantation', 'Reconstructive Urology', 'Uro Oncology', 'Laproscopic urology', 'Uro Gynecology', 'Pediatric Urology', 'Stone Disease'],
       expertise: 'Years of Experience: 14',
       qualification: 'MBBS, MS(GEN. SURGERY), MCH(UROLOGY)',
       time: '09:30-09:50,09:50-10:10,10:10-10:30,10:30-10:50,10:50-11:10,11:10-11:30,11:30-11:50,11:50-12:10,12:10-12:30,12:30-12:50,12:50-13:10,13:10-13:30,13:30-13:50,13:50-14:10,14:10-14:30,14:30-14:50,14:50-15:10,15:10-15:30,15:30-15:50,15:50-16:10',
