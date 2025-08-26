@@ -1,332 +1,247 @@
-*{
-    margin: 0;
-    padding: 0;
-    
+.speciality-header {
+    margin-top: 126px;
 }
 
-.gm_poster{
-    background-image: url('../../assets/images/best_general_medicine_hospital_in_bengaluru.jfif');
-    background-size: cover;    height: 380px;
-    padding-bottom: 20px;
-}
-.main_container{
-    margin: 0;
-    padding: 0;
-    background-color: #FBFFF5;
+.speciality-header img {
+    width: 100%;
+    height: auto;
 }
 
-.o_heading{
-    color: #008080;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    text-transform: uppercase;
-    padding: 250px 0 0 100px;
-    font-family: "poppins";
-    font-weight: 600;
-}
-
-.o_info{
-    font-size: 20px;
-    padding: 20px 0 0 100px;
-    font-family: "inter";
-    font-weight: 300;
-}
-
-
-/* menu */
-
-
-.gm_m_heading{
-    text-align: center;
-    background-color: #008080;
-    color: white;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-    padding: 20px;
-    font-family: "poppins";
-    text-transform: capitalize;
-}
-
-.menu_n_content{
+.header_button {
     display: flex;
-    justify-content: center;
-    gap: 80px;
-    padding: 50px 0;
-    background-color: #FBFFF5;
+    justify-content: start;
 }
-.o_menu{
-    width: 320px;
-    height: 100%;
-    border-radius: 10px;
-    padding: 0; 
-    margin-left: 50px;
-    background-color: #ffffff;
-    /* box-shadow: 1px 1px 10px rgb(161, 160, 160); */
-}
-.menu_list_box{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-    margin-bottom: 28px;
-}
-.more_specs{
-    font-weight: 600;
-    letter-spacing: 1px;
+
+.contact_button {
+    border-radius: 8px;
+    background-color: #FBCA51;
+    color: #000;
+    font-family: Inter;
     font-size: 18px;
-}
-.menu_contents{
-    padding: 8px 15px;
-    font-family: "inter";
-    font-weight: 700;
-}
-.menu_list_box .menu_list:hover{
-    color:  #FBCA51;
-    cursor: pointer;
-}
-.con_n_img{
-    display: flex;
-    /* justify-content: space-around; */
-    gap : 30px;
-    padding: 0;
-    margin-top: 20px;
-    margin-right: 50px;
-    width: 830px;
-    border-radius: 10px;
-}
-.gm_o_image{
-    border-radius: 10px;
-    margin-top: 5px;
-}
-
-.o_h_heading{
-    color: #008080;
-    font-size: 30px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    text-transform: uppercase;
-    margin-left: 10px;
-    font-family: "poppins";
-    font-weight: 600;
+    padding: 10px 20px;
+    height: 40px;
+    position: relative;
+    bottom: 70px;
+    margin-left: 26%;
+    text-decoration: none;
+    transition: 0.5s;
 }
 
-.gm_content{
+.contact_button:hover {
+    background-color: #FBCA51;
+    color: #000;
     
+}
+
+.root-container {
+    background-color: #FBFFF5;
+}
+
+.s_h1 {
+    color: #008080;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.s_para {
+    color: #000;
+    text-align: justify;
     font-family: Inter;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    line-height: 30px; /* 225% */
-    text-transform: none;
-    margin: 0px 50px 10px 10px;
-    font-family: "inter";
-    font-weight: 500;
-    text-align: justify;
+    line-height: 26px;
+    /* 225% */
 }
-.gm_o_image{
-    width: 300px;
-    height: 300px;
-    
+
+.container-2 {
+    padding: 0 10%;
 }
-.Meet_Medical_Team{
+
+.s_container {
     display: flex;
+    gap: 30px;
+    align-items: center;
     justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 50px;
-    font-family: Poppins;
-    font-weight: 500;
-    font-size: 32px;
-    color: #222;
-    font-style: normal;
-    line-height: normal;
+    /* align-items: center; */
 }
-.doc_details{
-    display: flex;
-    width: 254.88px;
-    padding: 0px 0.048px 20.404px 0.832px;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 50px;
-    border-radius: 20px;
-    box-shadow: -25px 25px 0 #e2e7f2;
-    color: #222;
+
+.s_subheadings {
+    color: #008080;
     font-family: Poppins;
-    font-size: 16px;
+    font-size: 22px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin-right: 30px;
-    margin-left: 30px;
+    margin: 12px 0;
 }
-.menu_list_box.active {
-    color:  #FBCA51; /* Highlight the active menu item */
-  }
-.doc_common_box{
-    display: flex;
-    justify-content: center;
-}
-.doc_details img{
-    width: 254px;
-    height: 255px;
-    border-radius: 20px;
-}
-.doc_name{
-    margin-top: 15px;
-    font-size: 13px
-}
-.view_all_btn_box{
-    margin-top: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.view_all_btn{
-    padding: 15px 25px;
-    border-radius: 30px;
-    border-radius: 30px;
-    background: linear-gradient(90deg, #022B50 0%, #279797 100%);
-    border: none;
-    box-shadow: 3px 4px 15px 0px rgba(63, 176, 206, 0.65);
-    color: white;
-    font-size: 20px;
-    transition-duration: 0.3s;
-}
-.view_all_btn .fa-angle-right{
-    border: 1px solid white;
-    border-radius: 50%;
-    padding: 4px 8.5px;
-    font-size: 20px;
-    margin-left: 10px;
-}
-.view_all_btn:hover{
-    border: 2px solid #279797;
-    background: white;
+
+.ss_subheading {
     color: #022B50;
-    transition-duration: 0.5s;
-}
-
-.doc-heading {
-    color: #222;
-    text-align: center;
     font-family: Poppins;
-    font-size: 42px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    margin: 15px 0;
 }
 
-.doctors {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.text-center {
+    text-align: center;
+}
+
+.heading-margin {
     margin: 50px 0;
 }
 
-.doctor-container {
+.mobile {
+    display: none;
+}
+
+.mobile-youtube {
+    display: none;
+}
+
+.para-margin {
+    margin-top: 20px;
+}
+
+.container_margin {
+    margin-top: 50px;
+}
+
+.s_container_margin {
+    margin-top: 30px;
+}
+
+.content {
+    width: 50%;
+}
+
+.form {
+    width: 50%;
+}
+
+.image {
+    width: 50%;
     display: flex;
-    gap: 50px;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
     justify-content: center;
+}
+
+.image img{
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+.faqs {
+    margin-top: 50px;
+}
+
+.youtube {
+    margin-bottom: 50px;
+    background-color: white;
+    padding: 5% 1%;
+    box-shadow: 2px 2px 50px rgba(128, 128, 128, 0.573);
+    border-radius: 20px;
+    margin-top: 50px;
+}
+
+.youtube_heading{
+    color: #022B50;
+    font-family: Poppins;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 15px 0;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.videos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
     flex-wrap: wrap;
 }
 
-@media only screen and (max-width:1390px){
-    .gm_poster{
-        height: 64vh;
-    }   
+.videos iframe {
+    border-radius: 10px;
 }
-@media only screen and (max-width:1030px){
-    
-    .o_menu{
+
+@media (max-width: 1024px) {
+    .s_container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    .image {
+        width: 100%;
+    }
+
+
+}
+
+@media (max-width : 600px) {
+    .desktop {
         display: none;
     }
-    .o_heading{
-        padding: 200px 0 0 100px;
+
+    .container-2 {
+        padding: 0 5%;
     }
-    .con_n_img {
-        display: flex;
-        flex-direction: column;
+
+
+    .mobile {
+        display: block;
+    }
+
+    .header_button {
         justify-content: center;
-        align-items: center;
-        padding: 0;
-        margin-top: 20px;
-        /* margin-right: 50px; */
-        width: 100%;
-        border-radius: 10px;
-    }
-}
-
-
-@media (max-width:800px){
-    .doc_common_box{
-        flex-direction: column;
-        align-items: center;
     }
 
-    .o_container{
-        padding: 0 3%;
-    }
-}
-@media only screen and (max-width:600px){
-    .o_heading{
-        padding:3rem 0rem 1rem 2rem;
-        font-size: 20px;
-    }    .gm_poster{
-        background-image: url('../../assets/modern-medicine-sub-res-bg.png');
-        background-size: cover;
-        height: 28vh;
-        background-repeat: no-repeat;
-        padding-bottom: -2px;
-        margin-top: 18vh;
-    }
-    .o_container{
-        width: 100%;
-    }
-    .o_menu{
-        display: none;
-    }
-    .con_n_img{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-    .o_info{
-        padding: 1rem 2rem;
-        font-size: 14px;
-
-    }
-    .o_h_heading{
+    .s_h1 {
         font-size: 20px;
     }
-    .gm_content{
-        width: 100%;
+
+    .s_para {
         font-size: 14px;
-        padding-right: 1rem;
+        /* 225% */
     }
-    .Meet_Medical_Team{
-        display: flex;
-        align-items:center;
-        width: 100%;
+
+    .s_subheadings {
+        font-size: 18px;
     }
-    .doc_common_box{
-        display: flex;
-        flex-direction: column;
+
+    .ss_subheading {
+        font-size: 16px;
     }
-    .menu_n_content{
-        padding:40px 35px;
+
+    .contact_button{
+        margin-left: 0;
     }
-    .doc-heading {
-        font-size: 30px;
-    }
-}
-@media only screen and (max-width:365px){
-    .doc_details{
-        margin-right: 0;
-    }
-    .gm_o_image{
-        width: 280px;
-        height: 280px;
+
+    .youtube_heading{
+        font-size: 24px
     }
 }

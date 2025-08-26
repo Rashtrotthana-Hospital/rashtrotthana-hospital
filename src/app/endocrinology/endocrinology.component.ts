@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Title, Meta, DomSanitizer, SafeHtml } from '@angular/platform-browser';
-
+declare var gtag: Function;
 
 @Component({
   selector: 'app-endocrinology',
@@ -20,14 +20,27 @@ export class EndocrinologyComponent {
     this.metaService.updateTag({ name: 'keywords', content: 'endocrinology, diabetic hospital near me, hormonal imbalance, hormones, hormonal problems, thyroid carcinoma/tumors, Hypopituitarism, Hyperthyroidism, Hypothyroidism, Turner syndrome, Type 1 and 2 diabetes, Adrenal Gland disorders, Ambiguous genitalia, Klinefelter syndrome, Thyroid cancer issues, childhood Obesity, Pituitary disorders, Parathyroid issues, Bone and mineral issues, Lipid disorders, Prader-Willi syndrome' });
   }
 
-  doctors: any = [
+
+  trackPhoneClick() {
+    if (typeof gtag === 'function') {
+      gtag('event', 'conversion', {
+        'send_to': 'AW-16656770043/-YEMCITg09IZEPvHyIY-',
+        'event_callback': () => {
+          console.log('Phone call conversion tracked!');
+        }
+      });
+    }
+  }
+
+  doctors = [
     {
-      doctor_image: '../../assets/dr-manasa-m-g.jpg',
-      doctor_name: 'Dr. Manasa M. G',
-      experience: "8+",
-      docalt: 'Dr. Manasa M. G. | Best Endocrinology Doctor in Bangalore | Rashtrotthan Hospital'
+      id: 1,
+      name: 'Dr. Manasa M. G',
+      experience: '8+ Years',
+      image: '../../assets/dr-manasa-m-g.jpg',
+      slug: '/doctor/dr-manasa-m-g'
     },
   ]
 
-
+  formDoctors = ['Dr. Manasa M. G']
 }
