@@ -1,5 +1,46 @@
+<div class="root-container">
 
-<ng-container *ngFor="let speciality of specialities">
-    <app-speciality-component [doctor]="speciality.Doctors"[image]="speciality.image"  [alt] = "speciality.alt" [main_heading]="speciality.main_heading"   [heading]="speciality.heading"  [content]="speciality.content" [content_1]="speciality.content_1"></app-speciality-component>
-</ng-container>
+    <div class="speciality-header">
+        <img src="../../assets/emergency-medicine-banner-desktop.jpg" class="desktop"
+            alt="ENT Department care banner at Rashtrotthana Hospital, Bangalore">
+        <img src="../../assets/emergency-medicine-banner.jpg" class="mobile"
+            alt="ENT Department care banner at Rashtrotthana Hospital, Bangalore">
+        <div class="header_button">
+            <a href="tel:+918069239999" class="contact_button" (click)="trackPhoneClick()">Contact Now</a>
+        </div>
+    </div>
 
+    <div class="container-2  s_container container_margin container-padding">
+
+        <div class="content">
+            <h1 class="s_h1">Emergency Medicine</h1>
+
+            <p class="s_para para-margin">The Emergency Medicine Department at Rashtrotthana Hospital provides
+                immediate, expert care for patients in critical conditions, ensuring high standards of emergency medical
+                support. Our team of specialized emergency physicians, nurses and support staff is trained to handle a
+                broad spectrum of urgent medical needs, including trauma, cardiac emergencies, respiratory distress and
+                acute illnesses. With state-of-the-art equipment and advanced monitoring systems, we prioritize swift
+                assessment, intervention and stabilization, offering 24/7 availability for critical cases. Our facility
+                is designed to manage life-threatening situations, enabling efficient, high-quality care at every stage
+                of the emergency process.</p>
+            <p class="s_para para-margin">Our department also focuses on preventive measures, conducting educational
+                initiatives to raise awareness about emergency preparedness and response. From managing minor injuries
+                to complex, multi-disciplinary interventions, we emphasize compassionate, patient-centered care. We aim
+                to support families during distressing times and ensure that each patient receives rapid treatment with
+                the highest level of medical professionalism. By fostering collaborations with other departments and
+                continuously improving our protocols, the Emergency Medicine Department at Rashtrotthana Hospital
+                remains a trusted choice for emergency healthcare in Bangalore.</p>
+        </div>
+
+        <div class="form">
+            <app-speciality-form [doctor]="formDoctors" />
+        </div>
+    </div>
+
+
+    <div class="container-2" style="margin-bottom: 50px;">
+        <div class="container container_margin">
+            <app-speciality-carousel />
+        </div>
+    </div>
+</div>
