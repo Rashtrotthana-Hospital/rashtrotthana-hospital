@@ -3,43 +3,53 @@
     <div [innerHTML]="post.content.rendered"></div>
   </div> -->
 
-  <div class="blog-post-container post-layout" *ngIf="post">
-    <!-- Left Banner -->
-    <div class="banner banner-left" *ngIf="leftBannerUrl" #leftBanner>
-      <!-- <img [src]="leftBannerUrl" alt="Left Banner"> -->
-      <a [href]="leftBannerLink" target="_blank">
-        <img [src]="leftBannerUrl" alt="Right Banner" />
-      </a>
-    </div>
-  
-    <!-- Blog Content -->
-    <div class="blog-post-container" *ngIf="post">
-      <div class="post-content">
-        <p class="post-date">
-          {{ post.date | date:'mediumDate' }} |
-          <span *ngFor="let category of categories; let last = last">
-            {{ category }}<span *ngIf="!last">, </span>
-          </span>
-        </p>
-        <h1 class="post-title" [innerHTML]="post.title.rendered"></h1>
-        <div class="post-body" [innerHTML]="post.content.rendered"></div>
-        <button *ngIf="buttonUrl" (click)="goToButtonUrl()">
-          {{ buttonText || 'Click Me' }}
-        </button>
+<div class="blog-post-container post-layout" *ngIf="post">
+  <!-- Left Banner -->
+  <div class="banner banner-left" *ngIf="leftBannerUrl" #leftBanner>
+    <!-- <img [src]="leftBannerUrl" alt="Left Banner"> -->
+    <a [href]="leftBannerLink" target="_blank">
+      <img [src]="leftBannerUrl" alt="Right Banner" />
+    </a>
+  </div>
 
-        <div class="youtube" [innerHTML]="sanitizedYouTubeContent"></div>
+  <!-- Blog Content -->
+  <div class="blog-post-container" *ngIf="post">
+
+
+    <div class="post-content">
+      <div class="back_button">
+        <div routerLink="/blog">
+          <i class="fa-solid fa-arrow-left"></i> <span class="back_text">Back</span>
+        </div>
       </div>
 
-      
-      
+      <p class="post-date">
+        {{ post.date | date:'mediumDate' }} |
+        <span *ngFor="let category of categories; let last = last">
+          {{ category }}<span *ngIf="!last">, </span>
+        </span>
+      </p>
+      <h1 class="post-title" [innerHTML]="post.title.rendered"></h1>
+      <div class="post-body" [innerHTML]="post.content.rendered"></div>
+      <button *ngIf="buttonUrl" (click)="goToButtonUrl()">
+        {{ buttonText || 'Click Me' }}
+      </button>
+
+      <div class="youtube" [innerHTML]="sanitizedYouTubeContent"></div>
     </div>
-  
-    <!-- Right Banner -->
-    <div class="banner banner-right" *ngIf="rightBannerUrl" #rightBanner >
-      <a [href]="rightBannerLink" target="_blank">
-        <img [src]="rightBannerUrl" alt="Right Banner" />
-      </a>
-    </div>
+
+
+
   </div>
-  
-  
+
+  <!-- Right Banner -->
+  <div class="banner banner-right" *ngIf="rightBannerUrl" #rightBanner>
+    <a [href]="rightBannerLink" target="_blank">
+      <img [src]="rightBannerUrl" alt="Right Banner" />
+    </a>
+
+    
+  </div>
+
+
+</div>
