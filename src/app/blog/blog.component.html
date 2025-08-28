@@ -1,35 +1,256 @@
-
-
-
-  <div class="blog-container">
+<div class="blog-container">
+  <div class="blog-header">
     <h1 class="blog-title">The Blog</h1>
-  
-    <div *ngIf="featuredPost" class="featured-post">
-      <img class="featured-image" [src]="featuredPost.featured_image_url" alt="Featured Post">
-      <div class="featured-content">
-        <p class="post-date">{{ featuredPost.date | date:'mediumDate' }}</p>
-        <h2 class="post-title" [innerHTML]="featuredPost.title.rendered"></h2>
-        <p class="post-excerpt" [innerHTML]="featuredPost.excerpt.rendered"></p>
-        <a [routerLink]="['/blog', featuredPost.slug]" class="read-more-button">Read More</a>
-      </div>
-    </div>  
-  
+    <p class="blog-subtitle">Discover health insights and expert advice</p>
+  </div>
 
-    <div class="post-grid">
-      <div class="post-card" *ngFor="let post of posts">
-        <a [routerLink]="['/blog', post.slug]" class="post-link">
-          <img class="post-image" [src]="post.featured_image_url" alt="{{ post.title.rendered }}">
-          <div class="post-content">
-            <h3 class="post-title-1" [innerHTML]="post.title.rendered">{{ post.title.rendered }}</h3>
-            <p class="post-date">{{ post.date | date:'mediumDate' }}<span *ngFor="let category of categories; let last = last">
-              | {{ category }}<span *ngIf="!last">, </span>
-            </span></p>
-            <p class="post-excerpt-1" [innerHTML]="post.excerpt.rendered"></p>
+  <div class="widget search-widget mobile">
+    <div class="widget-header">
+      <h3 class="widget-title">
+        <img src="../../assets/search-icon.svg" class="icons">
+        Search Articles
+      </h3>
+    </div>
+    <div class="search-input-container">
+      <input type="text" class="search-input" [(ngModel)]="searchTerm" (input)="onSearchChange()"
+        placeholder="What are you looking for?" />
+      <button class="search-btn">
+        <i class="search-icon">→</i>
+      </button>
+    </div>
+  </div>
+
+  <div class="main-content">
+    <!-- Content Section -->
+    <div class="content-section">
+      <!-- Results Count -->
+      <div class="results-info" *ngIf="searchTerm || selectedCategories.length > 0">
+        <div class="results-badge">
+          <i class="results-icon">📊</i>
+          <span>{{ filteredPosts.length }} of {{ allPosts.length }} articles found</span>
+        </div>
+      </div>
+
+      <!-- Featured Post (only show on page 1 with no filters) -->
+      <div *ngIf="shouldShowFeaturedPost() && featuredPost" class="featured-post">
+        <div class="featured-badge">Featured</div>
+        <div class="featured-image-container">
+          <img class="featured-image" [src]="featuredPost.featured_image_url" alt="Featured Post">
+          <div class="featured-overlay"></div>
+        </div>
+        <div class="featured-content">
+          <div class="featured-meta">
+            <span class="featured-date">{{ featuredPost.date | date:'mediumDate' }}</span>
+            <span class="reading-time"></span>
           </div>
-        </a>
+          <h2 class="featured-title" [innerHTML]="featuredPost.title.rendered"></h2>
+          <p class="featured-excerpt" [innerHTML]="featuredPost.excerpt.rendered"></p>
+          <a [routerLink]="['/blog', featuredPost.slug]" class="read-more-button">
+            <span>Read Full Article</span>
+            <i class="arrow-icon">→</i>
+          </a>
+        </div>
+      </div>
+
+      <!-- No Results Message -->
+      <div *ngIf="filteredPosts.length === 0 && (searchTerm || selectedCategories.length > 0)" class="no-results">
+        <div class="no-results-icon">🔍</div>
+        <h3>No articles found</h3>
+        <p>We couldn't find any articles matching your criteria.</p>
+        <button class="try-again-btn" (click)="clearFilters()">Try Different Keywords</button>
+      </div>
+
+      <!-- Post Grid -->
+      <div class="post-grid" *ngIf="paginatedPosts.length > 0">
+        <article class="post-card" *ngFor="let post of paginatedPosts; let i = index">
+          <a [routerLink]="['/blog', post.slug]" class="post-link">
+            <div class="post-image-container">
+              <img class="post-image" [src]="post.featured_image_url" alt="{{ post.title.rendered }}">
+              <div class="post-overlay"></div>
+              <div class="post-categories" *ngIf="getPostCategories(post).length > 0">
+                <span class="category-tag" *ngFor="let category of getPostCategories(post).slice(0, 2)">
+                  {{ category }}
+                </span>
+              </div>
+            </div>
+            <div class="post-content">
+              <div class="post-meta">
+                <span class="post-date">{{ post.date | date:'MMM d, y' }}</span>
+                <span class="reading-time"></span>
+              </div>
+              <h3 class="post-title" [innerHTML]="post.title.rendered"></h3>
+              <p class="post-excerpt" [innerHTML]="post.excerpt.rendered"></p>
+              <div class="read-more-link">
+                <span>Read More</span>
+                <i class="arrow-icon">→</i>
+              </div>
+            </div>
+          </a>
+        </article>
+      </div>
+
+      <!-- Pagination Controls -->
+      <div class="pagination-container" *ngIf="totalPages > 1">
+        <div class="pagination-info">
+          <span class="page-info">Page {{ currentPage }} of {{ totalPages }}</span>
+          <span class="posts-info">Showing {{ paginatedPosts.length }} of {{ filteredPosts.length }} articles</span>
+        </div>
+        
+        <div class="pagination-controls">
+          <button 
+            class="pagination-btn prev-btn" 
+            [class.disabled]="!canGoToPrevious()"
+            [disabled]="!canGoToPrevious()"
+            (click)="goToPreviousPage()">
+            <i class="pagination-icon">←</i>
+            <span>Previous</span>
+          </button>
+          
+          <div class="page-numbers">
+            <!-- First page -->
+            <button 
+              *ngIf="currentPage > 2" 
+              class="page-number-btn"
+              (click)="goToPage(1)">
+              1
+            </button>
+            
+            <!-- Ellipsis before current page range -->
+            <span *ngIf="currentPage > 3" class="pagination-ellipsis">...</span>
+            
+            <!-- Previous page -->
+            <button 
+              *ngIf="currentPage > 1" 
+              class="page-number-btn"
+              (click)="goToPage(currentPage - 1)">
+              {{ currentPage - 1 }}
+            </button>
+            
+            <!-- Current page -->
+            <button class="page-number-btn active">
+              {{ currentPage }}
+            </button>
+            
+            <!-- Next page -->
+            <button 
+              *ngIf="currentPage < totalPages" 
+              class="page-number-btn"
+              (click)="goToPage(currentPage + 1)">
+              {{ currentPage + 1 }}
+            </button>
+            
+            <!-- Ellipsis after current page range -->
+            <span *ngIf="currentPage < totalPages - 2" class="pagination-ellipsis">...</span>
+            
+            <!-- Last page -->
+            <button 
+              *ngIf="currentPage < totalPages - 1" 
+              class="page-number-btn"
+              (click)="goToPage(totalPages)">
+              {{ totalPages }}
+            </button>
+          </div>
+          
+          <button 
+            class="pagination-btn next-btn" 
+            [class.disabled]="!canGoToNext()"
+            [disabled]="!canGoToNext()"
+            (click)="goToNextPage()">
+            <span>Next</span>
+            <i class="pagination-icon">→</i>
+          </button>
+        </div>
       </div>
     </div>
-    
+
+    <!-- Sidebar Section -->
+    <div class="sidebar-wrapper">
+      <div class="sidebar-section">
+        <!-- Search Container -->
+        <div class="widget search-widget desktop_search">
+          <div class="widget-header">
+            <h3 class="widget-title">
+              <img src="../../assets/search-icon.svg" class="icons">
+              Search Articles
+            </h3>
+          </div>
+          <div class="search-input-container">
+            <input type="text" class="search-input" [(ngModel)]="searchTerm" (input)="onSearchChange()"
+              placeholder="What are you looking for?" />
+            <button class="search-btn">
+              <i class="search-icon">→</i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Categories Filter -->
+        <div class="widget categories-widget">
+          <div class="widget-header">
+            <h3 class="widget-title">
+              <img src="../../assets/filter-icon.svg" alt="" class="icons">
+              Filter by Category
+            </h3>
+          </div>
+          <div class="categories-list">
+            <div class="category-item"
+              *ngFor="let category of (showAllCategories ? categories : categories.slice(0, 5))">
+              <label class="category-label" [class.active]="selectedCategories.includes(category)">
+                <input type="checkbox" [value]="category" [checked]="selectedCategories.includes(category)"
+                  (change)="onCategoryCheck($event, category)" class="category-checkbox" />
+                <span class="custom-checkbox">
+                  <i class="check-icon">✓</i>
+                </span>
+                <span class="category-name">{{ category }}</span>
+                <span class="category-count">({{ getCategoryCount(category) }})</span>
+              </label>
+            </div>
+
+            <button class="view-more-btn" (click)="toggleShowAllCategories()" *ngIf="categories.length > 5">
+              <span>{{ showAllCategories ? 'Show Less' : 'View All Categories' }}</span>
+              <i class="expand-icon" [class.rotated]="showAllCategories">▼</i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Active Filters -->
+        <div class="widget active-filters-widget" *ngIf="searchTerm || selectedCategories.length > 0">
+          <div class="widget-header">
+            <h3 class="widget-title">
+              <img src="../../assets/active-categories.svg" alt="" class="icons">
+              Active Filters
+            </h3>
+          </div>
+          <div class="active-filters">
+            <div class="filter-tag" *ngIf="searchTerm">
+              <span>Search: "{{ searchTerm }}"</span>
+              <button class="remove-filter" (click)="searchTerm = ''; onSearchChange()">×</button>
+            </div>
+            <div class="filter-tag" *ngFor="let category of selectedCategories">
+              <span>{{ category }}</span>
+              <button class="remove-filter" (click)="removeCategory(category)">×</button>
+            </div>
+          </div>
+          <button class="clear-all-btn" (click)="clearFilters()">
+            <img src="../../assets/clear.svg" alt="" class="icons">
+            Clear All Filters
+          </button>
+        </div>
+
+        <!-- Popular Categories -->
+        <div class="widget popular-widget">
+          <div class="widget-header">
+            <h3 class="widget-title">
+              <img src="../../assets/trending.svg" alt="" class="icons">
+              Popular Topics
+            </h3>
+          </div>
+          <div class="popular-tags">
+            <span class="popular-tag" *ngFor="let category of categories.slice(0, 3)">
+              {{ category }}
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-  
-  
+</div>

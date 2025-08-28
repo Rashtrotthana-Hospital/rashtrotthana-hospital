@@ -232,5 +232,6 @@ this.buttonUrl = this.post.acf.buttton_url;
   goToButtonUrl() {
     window.open(this.buttonUrl, '_blank');
   }
+ 
   
 }
