@@ -14,7 +14,7 @@ export class KneeReplacementComponent implements OnInit {
     private router: Router
   ) { } 
   ngOnInit() {  
-    this.titleService.setTitle(" Advanced Total Knee Replacement Surgery - Rashtrotthana Hospital");  
+    this.titleService.setTitle("Advanced Total Knee Replacement Surgery - Rashtrotthana Hospital");  
     
   // Set the meta description
   this.metaService.updateTag({ name: 'description', content: 'Experience pain-free mobility with advanced total knee replacement surgery at Rashtrotthana Hospital, Bangalore\'s leading orthopedic center.' });
