@@ -4,6 +4,8 @@ import { filter } from 'rxjs/operators';
 import { AnalyticsService } from './analytics.service';
 import { MessageService } from 'primeng/api';
 import { Meta, Title } from '@angular/platform-browser';
+import { CanonicalUrlService } from './canonical-url.service';
+
 
 declare let gtag: Function;
 @Component({
@@ -12,7 +14,7 @@ declare let gtag: Function;
   styleUrl: './app.component.css'
 })
 export class AppComponent implements OnInit {
-  constructor(private router: Router, private analyticsService: AnalyticsService, private messageService: MessageService, private meta: Meta, private title: Title) { }
+  constructor(private router: Router, private analyticsService: AnalyticsService, private messageService: MessageService, private meta: Meta, private title: Title, private canonicalService: CanonicalUrlService) { }
   // title = 'rashtrotthana_hospital';
   isCareerPage = false;
   ngOnInit() {
@@ -73,6 +75,22 @@ export class AppComponent implements OnInit {
         'page_path': event.urlAfterRedirects
       });
     });
+
+    // Set up global rules for special cases
+    // this.canonicalService.setCustomRules({
+    //   // Duplicate content scenarios
+    //   '/product-detail/:id': '/products/:id',
+    //   '/old-about': '/about',
+    //   '/legacy/contact': '/contact',
+      
+    //   // Pagination - point to main page
+    //   '/products?page=1': '/products',
+    //   '/blog?page=1': '/blog',
+      
+    //   // Parameter variations that should point to clean URLs
+    //   '/search?category=all': '/search',
+    // });
+
   }
 
   setMetaTags() {
