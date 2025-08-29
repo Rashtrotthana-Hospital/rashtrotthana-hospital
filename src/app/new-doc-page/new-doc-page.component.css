@@ -157,6 +157,25 @@
     background: rgba(255, 255, 255, 0.28);
 }
 
+.back_button a{
+    width: 100px;
+    color: #008080;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    gap: 12px;
+    text-decoration: none;
+    position: relative;
+    z-index: 20;
+    top: 20px;
+    left: 10px;
+    background-color: #00808035;
+    text-decoration: none;
+    padding: 10px 10px;
+    border-radius: 30px;
+}
+
 .profile_content {
     padding: 0 8%;
     display: flex;

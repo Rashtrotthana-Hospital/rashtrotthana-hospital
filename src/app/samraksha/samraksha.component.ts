@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Title, Meta, DomSanitizer, SafeHtml } from '@angular/platform-browser';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-samraksha',
@@ -7,4 +9,14 @@ import { Component } from '@angular/core';
 })
 export class SamrakshaComponent {
 
-}
+  constructor(
+    private titleService: Title,
+    private metaService: Meta,
+    private router: Router
+  ) { }
+  ngOnInit() {
+    this.titleService.setTitle("Samraksha – Thalassemia Day Care Centre | Rashtrotthana Blood Centre");
+    // Set the meta description
+    this.metaService.updateTag({ name: 'description', content: 'Samraksha is Rashtrotthana Blood Centre’s Thalassemia Day Care Centre—providing free, integrated care including blood transfusions, medication, counselling, and monitoring to 400+ children. Our mission: ensure no child suffers or dies due to Thalassemia.' });
+  }
+} 
