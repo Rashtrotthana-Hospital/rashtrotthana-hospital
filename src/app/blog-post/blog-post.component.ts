@@ -3,6 +3,7 @@ import { BlogServiceService } from '../blog-service.service';
 import { ActivatedRoute } from '@angular/router';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { Renderer2, ElementRef } from '@angular/core';
+import { Title, Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-blog-post',
@@ -24,7 +25,9 @@ export class BlogPostComponent implements AfterViewInit {
     private blogService: BlogServiceService,
     private sanitizer: DomSanitizer,
     private renderer: Renderer2,
-    private el: ElementRef
+    private el: ElementRef,
+    private titleService: Title,
+    private metaService: Meta
   ) { }
   @ViewChild('leftBanner') leftBanner!: ElementRef;
   @ViewChild('rightBanner') rightBanner!: ElementRef;
@@ -75,7 +78,22 @@ export class BlogPostComponent implements AfterViewInit {
       const categories = await Promise.all(categoryPromises);
       this.categories = categories.map((category: any) => category.name);
       console.log(this.categories, "Categories")
+
+      // meta title and description
+      if (this.post?.yoast_head_json) {
+        this.titleService.setTitle(this.post.yoast_head_json.title || "Blog Post");
+        this.metaService.updateTag({
+          name: 'description',
+          content: this.post.yoast_head_json.description || "Blog Description"
+        });
+      }
     });
+
+
+
+
+    // console.log(this.post.yoast_head_json?.title, "title")
+
   }
 
   private extractYouTubeIframes(content: string): string {

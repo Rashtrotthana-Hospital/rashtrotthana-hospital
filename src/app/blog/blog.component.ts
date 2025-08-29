@@ -57,10 +57,12 @@ export class BlogComponent {
     private metaService: Meta
   ) { }
 
-  generateSlug(title: string): string {
-    return title.toLowerCase().replace(/ /g, '-').replace(/[^\w-]+/g, '');
-  }
-
+generateSlug(title: string): string {
+  return title
+    .toLowerCase()
+    .replace(/ /g, '-')              // spaces → dashes
+    .replace(/[^a-z0-9'-]+/g, '');      // only keep letters, dash, apostrophe
+}
   ngOnInit(): void {
     this.blogService.getPosts().subscribe((data: any[]) => {
       if (data.length > 0) {
