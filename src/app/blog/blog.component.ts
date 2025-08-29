@@ -67,6 +67,9 @@ export class BlogComponent {
         // Process all posts
         const processedPosts = data.map(post => {
           post.slug = this.generateSlug(post.title.rendered);
+          post.featured_image_url =
+          post._embedded?.['wp:featuredmedia']?.[0]?.source_url ||
+          'assets/default-placeholder.png'; // fallback imag
           return post;
         });
 

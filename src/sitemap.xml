@@ -205,16 +205,6 @@
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://www.rashtrotthanahospital.com/doctor/dr-rajeev-vijayakumar</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://www.rashtrotthanahospital.com/doctor/dr-shashidhar</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
         <loc>https://www.rashtrotthanahospital.com/doctor/dr-mahesh-kulkarni</loc>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
@@ -621,6 +611,16 @@
     </url>
     <url>
         <loc>https://www.rashtrotthanahospital.com/blog/best-hospital-for-your-pregnancy-and-postnatal-journey</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.rashtrotthanahospital.com/blog/managing-asthma-in-bangalore-can-you-still-lead-a-normal-life</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.rashtrotthanahospital.com/blog/vascular-disease-understanding-a-common-circulatory-health-issue</loc>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>

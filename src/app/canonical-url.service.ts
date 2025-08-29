@@ -133,13 +133,13 @@ export class CanonicalUrlService {
       const portString = port && port !== '80' && port !== '443' ? `:${port}` : '';
       return `${protocol}//${hostname}${portString}`;
     }
-    return 'https://yourdomain.com'; // Fallback for SSR
+    return 'https://rashtrotthanahospital.com'; // Fallback for SSR
   }
 
   // Method for manual override (use sparingly)
   setCustomCanonical(url: string) {
     this.setCanonicalUrl(url);
-  }
+  } 
 
   // Add custom rule dynamically
   addCustomRule(fromUrl: string, toUrl: string) {
