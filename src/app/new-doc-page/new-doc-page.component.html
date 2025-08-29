@@ -3,11 +3,18 @@
     <!-- hero section -->
     <div class="heroSection">
         <div class="content">
-            <div class="docname marginLeft">{{filteredDoctor.name}}</div>
+            <h1 class="docname marginLeft">{{filteredDoctor.name}}</h1>
             <div class="qualification marginLeft">{{filteredDoctor.qualification}}</div>
             <div class="department marginLeft">{{filteredDoctor.department}}</div>
             <div class="experience marginLeft">{{filteredDoctor.expertise}}</div>
         </div>
+
+        <div class="back_button">
+            <a routerLink="/best-doctors-bangalore" style="position: relative; cursor: pointer; z-index: 10;"><i
+                    class="fa-solid fa-arrow-left"></i> Back</a>
+        </div>
+
+
         <div class="image">
             <img src="../../assets/doc-page-banner.png" alt="" class="desktop_bg">
             <img src="../../assets/doc_page_banner_mobile.png" alt="" class="mobileBg">
@@ -22,6 +29,7 @@
             <button><span class="btn_text" (click)="scrollToForm()">Book an Appointment</span><span class="arrow"><i
                         class="fa-solid fa-angle-right"></i></span></button>
         </div>
+
     </div>
 
     <!-- profile content -->
@@ -88,7 +96,7 @@
                         <div class="heading time"><img src="../../assets/appointment-date.svg" alt=""><span>Appointment
                                 Time</span></div>
                         <!-- <input type="text" placeholder="Choose a time"> -->
-                        <p-dropdown styleClass="dropdown"  [options]="availableTimes" optionLabel="name"
+                        <p-dropdown styleClass="dropdown" [options]="availableTimes" optionLabel="name"
                             formControlName="time" placeholder="Choose a Time" [disabled]="availableTimes.length === 0"
                             required></p-dropdown>
                     </div>
@@ -173,7 +181,8 @@
                     </div>
                 </div>
                 <div class="book_button">
-                    <button class="appt-btn" type="submit" [disabled]="contactForm.invalid && clicked"><span class="btn_text">Book an Appointment</span><span class="arrow"><i
+                    <button class="appt-btn" type="submit" [disabled]="contactForm.invalid && clicked"><span
+                            class="btn_text">Book an Appointment</span><span class="arrow"><i
                                 class="fa-solid fa-angle-right"></i></span></button>
                 </div>
             </form>

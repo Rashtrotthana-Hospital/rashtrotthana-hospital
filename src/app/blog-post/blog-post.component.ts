@@ -1,4 +1,4 @@
-import { Component, ViewChild, AfterViewInit} from '@angular/core';
+import { Component, ViewChild, AfterViewInit } from '@angular/core';
 import { BlogServiceService } from '../blog-service.service';
 import { ActivatedRoute } from '@angular/router';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
@@ -9,7 +9,7 @@ import { Renderer2, ElementRef } from '@angular/core';
   templateUrl: './blog-post.component.html',
   styleUrl: './blog-post.component.css'
 })
-export class BlogPostComponent implements AfterViewInit{
+export class BlogPostComponent implements AfterViewInit {
   post: any;
   categories: string[] = [];
   sanitizedYouTubeContent: SafeHtml | null = null;
@@ -31,7 +31,7 @@ export class BlogPostComponent implements AfterViewInit{
 
 
 
-  ngOnInit(): void  {
+  ngOnInit(): void {
     const importedslug = this.route.snapshot.paramMap.get('slug')!;
     const slug = this.removeSpecialChar(importedslug);
 
@@ -39,27 +39,34 @@ export class BlogPostComponent implements AfterViewInit{
 
     this.blogService.getPostBySlug(slug).subscribe(async (data: any) => {
       this.post = data[0];
-      this.leftBannerUrl = this.post.acf.left_banner.url;
-      this.rightBannerUrl = this.post.acf.right_banner.url;
-      this.rightBannerLink = this.post.acf.right_banner_link;
-      this.leftBannerLink = this.post.acf.left_banner_link;
-      this.buttonText = this.post.acf.button_text;
-this.buttonUrl = this.post.acf.buttton_url;
+      if (this.post?.acf) {
+        this.leftBannerUrl = this.post.acf.left_banner?.url || '';
+        this.rightBannerUrl = this.post.acf.right_banner?.url || '';
+        this.rightBannerLink = this.post.acf.right_banner_link || '';
+        this.leftBannerLink = this.post.acf.left_banner_link || '';
+        this.buttonText = this.post.acf.button_text || '';
+        this.buttonUrl = this.post.acf.buttton_url || '';
+      }
       console.log(this.buttonText, this.buttonUrl)
       setInterval(() => {
         const tempImg = this.leftBannerUrl;
         const tempLink = this.leftBannerLink;
-      
+
         this.leftBannerUrl = this.rightBannerUrl;
         this.leftBannerLink = this.rightBannerLink;
-      
+
         this.rightBannerUrl = tempImg;
         this.rightBannerLink = tempLink;
       }, 10000);
-      
 
-      const youtubeContent = this.extractYouTubeIframes(this.post.content.rendered);
-      this.sanitizedYouTubeContent = this.sanitizer.bypassSecurityTrustHtml(youtubeContent);
+
+      if (this.post?.content?.rendered) {
+        const youtubeContent = this.extractYouTubeIframes(this.post.content.rendered);
+        this.sanitizedYouTubeContent = this.sanitizer.bypassSecurityTrustHtml(youtubeContent);
+      } else {
+        this.sanitizedYouTubeContent = '';
+      }
+      // this.sanitizedYouTubeContent = this.sanitizer.bypassSecurityTrustHtml(youtubeContent);
 
       const categoryPromises = this.post.categories.map((categoryId: number) =>
         this.blogService.getCategory(categoryId).toPromise()
@@ -67,6 +74,7 @@ this.buttonUrl = this.post.acf.buttton_url;
 
       const categories = await Promise.all(categoryPromises);
       this.categories = categories.map((category: any) => category.name);
+      console.log(this.categories, "Categories")
     });
   }
 
@@ -154,7 +162,7 @@ this.buttonUrl = this.post.acf.buttton_url;
     this.renderer.appendChild(this.el.nativeElement, style);
     setTimeout(() => {
       const footer = document.getElementById('global-footer');
-  
+
       if (footer) {
         const observer = new IntersectionObserver(entries => {
           entries.forEach(entry => {
@@ -165,7 +173,7 @@ this.buttonUrl = this.post.acf.buttton_url;
             }
           });
         });
-  
+
         observer.observe(footer);
       }
     }, 0);
@@ -184,11 +192,11 @@ this.buttonUrl = this.post.acf.buttton_url;
 
   private removeSpecialChar(slug: string): string {
     return slug
-    .toLowerCase()
-    .trim()
-    .replace(/[&'"=@]/g, '')  
-    .replace(/\s+/g, '-')     
-    .replace(/--+/g, '-'); 
+      .toLowerCase()
+      .trim()
+      .replace(/[&'"=@]/g, '')
+      .replace(/\s+/g, '-')
+      .replace(/--+/g, '-');
   }
 
 
@@ -232,6 +240,6 @@ this.buttonUrl = this.post.acf.buttton_url;
   goToButtonUrl() {
     window.open(this.buttonUrl, '_blank');
   }
- 
-  
+
+
 }
