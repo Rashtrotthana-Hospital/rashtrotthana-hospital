@@ -58,10 +58,10 @@ export class PulmonologyComponent {
       ques : 'How can I prevent lung infections and respiratory diseases?',
       ans : 'Preventing lung diseases involves avoiding allergens, quitting smoking, maintaining good hygiene, and getting vaccinated against flu and pneumonia. Regular lung check-ups with Dr. Kolla Vinod at the best pulmonology hospital in Bangalore can help detect issues early.'
     },
-    {
-      ques : 'What tests are done to diagnose lung diseases?',
-      ans : 'Common diagnostic tests include CT scans, X-rays, Lung Function Tests (PFT), bronchoscopy and blood tests to assess lung health. Our expert pulmonologist for lung diseases, Dr. Kolla Vinod, ensures accurate diagnosis and effective treatment.'
-    },
+    // {
+    //   ques : 'What tests are done to diagnose lung diseases?',
+    //   ans : 'Common diagnostic tests include CT scans, X-rays, Lung Function Tests (PFT), bronchoscopy and blood tests to assess lung health. Our expert pulmonologist for lung diseases, Dr. Kolla Vinod, ensures accurate diagnosis and effective treatment.'
+    // },
     {
       ques : 'What are the symptoms of tuberculosis (TB)?',
       ans : `
