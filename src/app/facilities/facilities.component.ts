@@ -32,7 +32,8 @@ export class FacilitiesComponent implements OnInit {
     //   .subscribe(() => {
     //     this.checkIfChildRouteActive();
     //   });
-    // this.observeLaptopSizeChanges();
+  
+    this.observeLaptopSizeChanges();
 
     this.titleService.setTitle('Medical Services - Rashtrotthana Hospital');
 
