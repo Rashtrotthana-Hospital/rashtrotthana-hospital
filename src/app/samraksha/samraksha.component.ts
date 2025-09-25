@@ -17,6 +17,6 @@ export class SamrakshaComponent {
   ngOnInit() {
     this.titleService.setTitle("Samraksha – Thalassemia Day Care Centre | Rashtrotthana Blood Centre");
     // Set the meta description
-    this.metaService.updateTag({ name: 'description', content: 'Samraksha is Rashtrotthana Blood Centre’s Thalassemia Day Care Centre—providing free, integrated care including blood transfusions, medication, counselling, and monitoring to 400+ children. Our mission: ensure no child suffers or dies due to Thalassemia.' });
+    this.metaService.updateTag({ name: 'description', content: 'Samraksha, Rashtrotthana Blood Centre’s Thalassemia Day Care, provides free transfusions, medication, and care to 400+ children.' });
   }
 } 

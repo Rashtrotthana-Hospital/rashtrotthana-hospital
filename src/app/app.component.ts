@@ -68,10 +68,11 @@ export class AppComponent implements OnInit {
     ).subscribe(() => {
       window.scrollTo(0, 0);
     });
+
     this.router.events.pipe(
       filter((event: Event): event is NavigationEnd => event instanceof NavigationEnd)
     ).subscribe((event: NavigationEnd) => {
-      gtag('config', 'G-RTWK6W8EE3', {
+      gtag('config', 'G-6T1G50PFJK', {
         'page_path': event.urlAfterRedirects
       });
     });
