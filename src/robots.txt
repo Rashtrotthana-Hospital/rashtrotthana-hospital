@@ -1,3 +1,22 @@
 User-agent: *
-Disallow:
-Sitemap: https://www.rashtrotthanahospital.com/sitemap.xml
+Disallow: /contact.php
+Disallow: /index.html
+Disallow: /carrer.php
+Disallow: /Best-Emergency-and-Trauma-Multispeciality-Hospital-in-Bangalore.html
+Disallow: /Dr-Latha-Venkatraman-Gynecologist-JMRH-Multispeciality-Hospital-in-Bangalore.html
+Disallow: /speciality_s.php
+Disallow: /top-10-Gynecologist-Hospital-in-Bangalore.html
+Disallow: /Dental.php
+Disallow: /doctors.php
+Disallow: /The-Best-Ayurveda-Hospital-in-Bangalore.html
+Disallow: /Top-Orthopedic-Hospitals-in-Bangalore.html
+Disallow: /Top10-Multispeciality-Hospitals-in-Bangalore.html
+Disallow: /best_surgery.php
+Disallow: /doctors.html
+Disallow: /health_check.html
+Disallow: /ortho.php
+Disallow: /top-10-multispeciality-hospitals-in-bangalore.html
+Disallow: /The-Best-Lungs-Specialist-multispeciality-Hospital-in-Bangalore.html
+Disallow: /experts
+Disallow: /best-general-medicine-hospital-in-bangalore
+
