@@ -9,6 +9,7 @@ import { Title, Meta,DomSanitizer,SafeHtml } from '@angular/platform-browser';
   styleUrl: './modern-medicine.component.css'
 })
 export class ModernMedicineComponent {
+  
   constructor(private router: Router, private route: ActivatedRoute, private titleService: Title, private metaService: Meta) {
     this.router.events.pipe(
       filter(event => event instanceof NavigationEnd)
@@ -16,13 +17,13 @@ export class ModernMedicineComponent {
       this.checkIfChildRouteActive();
     });
   }
+
   ngOnInit(): void {
     this.titleService.setTitle("Multispeciality Care | Modern Medicine | Rashtrotthana Hospital");  
-
-  this.metaService.updateTag({ name: 'description', content: 'Comprehensive multispeciality medical care with expert doctors at Rashtrotthana Hospital, Bangalore..' });
-
-  this.metaService.updateTag({ name: 'keywords', content: ' general medicine, internal medicine, cardiology, nephrology, urology, dermatology, gynaecology, pulmonology' });
+    this.metaService.updateTag({ name: 'description', content: 'Comprehensive multispeciality medical care with expert doctors at Rashtrotthana Hospital, Bangalore..' });
+    this.metaService.updateTag({ name: 'keywords', content: ' general medicine, internal medicine, cardiology, nephrology, urology, dermatology, gynaecology, pulmonology' });
   }
+
   box =[
     {
       name: 'card',
