@@ -298,7 +298,7 @@ export class DoctorLayoutComponent {
     {
       name: 'Dr. Atmaram D. C',
       image: 'assets/Dr-Atmaram-D-C.png',
-      desgination: 'SURGEON/ LAPROSCOPY/ GASTROENTEROLOGLIST',
+      desgination: 'SURGEON/ LAPAROSCOPY/ GASTROENTEROLOGIST',
       about: 'A dedicated surgeon with 19 years of experience specializing in laparoscopy, proctologist, gastroenterology and oncology. My medical journey began at MS Ramaiah Medical College in Bangalore, where I developed a strong foundation in surgical techniques and patient care. Over the years, I have honed my skills in minimally invasive procedures, which allow for quicker recoveries and reduced patient discomfort. I strongly believe in the existence of divinity, which inspires my approach to medicine. The immense trust my patients place in me is a driving force behind my commitment to serve them better every day. I am passionate about providing compassionate care and fostering trusting relationships with those I treat.',
       speciality: 'GENERAL SURGERY',
       areasOfExpertise: ['Laparoscopy', 'Gastroenterology', 'Oncology', 'Proctology'],
