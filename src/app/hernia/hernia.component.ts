@@ -29,7 +29,7 @@ export class HerniaComponent {
     {
       image: 'assets/Dr-Atmaram-D-C.png',
       name: 'Dr. Atmaram D. C',
-      department : 'GASTROENTEROLOGLIST',
+      department : 'GASTROENTEROLOGIST',
       alt : 'Dr. Atmaram D. C | Best laparoscopic Surgeon in Bangalore | Rashtrotthana Hospital'
     },
     {
