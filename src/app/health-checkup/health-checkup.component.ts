@@ -117,7 +117,7 @@ selectedPackage: Package | null = null; // Selected package
       package: [
         {
           title: 'LABORATORY Investigations',
-          items: ['Complete Blood count with ESR', 'Fasting Blood Sugar', 'Post prandial blood sugar', 'Complete Urine Examination', 'Complete Stool Examination Including occult blood', ' Lipid profile', 'Serum Creatinine', 'Vitamin D', 'HBA1C', 'TFT', 'Liver function test', 'Pap Smear (For Male)'],
+          items: ['Complete Blood count with ESR', 'Fasting Blood Sugar', 'Post prandial blood sugar', 'Complete Urine Examination', 'Complete Stool Examination Including occult blood', ' Lipid profile', 'Serum Creatinine', 'Vitamin D', 'HBA1C', 'TFT', 'Liver function test', 'Pap Smear'],
           icon: 'blood'
         },
         {
