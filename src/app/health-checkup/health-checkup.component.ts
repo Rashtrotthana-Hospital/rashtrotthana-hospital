@@ -15,6 +15,7 @@ interface Package {
   test: string;
   packageId?: number;
   ageGroup?: string;
+  validTill?: string;
 }
 
 @Component({
@@ -93,6 +94,7 @@ export class HealthCheckupComponent {
         },
       ],
       ageGroup: '55 Years & Above',
+      validTill: "31st December, 2025",
       test: '22',
     },
     {
