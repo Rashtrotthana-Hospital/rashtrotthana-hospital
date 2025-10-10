@@ -58,6 +58,10 @@
                             </div>
                         </div>
                     </div>
+
+                     <div class="items-lists" *ngIf="package.ageGroup">
+                        <span><b>Age Group</b>: {{package.ageGroup}}</span>
+                    </div>
                 </p-accordionTab>
             </div>
         </p-accordion>
