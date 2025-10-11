@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit , ViewChild, ElementRef} from '@angular/core';
 import { Title, Meta, DomSanitizer, SafeHtml } from '@angular/platform-browser';
 declare var gtag: Function;
 
@@ -79,5 +79,211 @@ export class UrologyComponent {
     });
   }
   }
+
+
+  surgeries:any = [
+    {
+      id: 'rirs',
+      title: 'Laser Kidney Stone Removal Surgery',
+      subtitle: 'RIRS with DJ Stenting',
+      description: 'Kidney stones can cause sharp back pain and discomfort. Our Laser Kidney Stone Removal (technically called Retrograde Intrarenal Surgery – RIRS) is a scar-free and painless way to clear kidney stones using advanced laser technology.',
+      procedure: 'During the procedure, a very thin flexible scope is gently passed through the natural urinary passage to reach the kidney. The stones are broken into fine dust using a laser and removed safely. A small DJ stent is placed temporarily to help the kidney heal and ensure smooth urine flow.',
+      benefits: [
+        'No external cuts, stitches, or scars',
+        'Laser precision – completely safe and effective',
+        'Minimal pain, faster recovery, short hospital stay',
+        'Ideal even for hard-to-reach stones'
+      ],
+      highlight: 'This procedure helps you get back to normal life quickly, free from the fear and pain of kidney stones.',
+      icon: '🔬'
+    },
+    {
+      id: 'ursl',
+      title: 'Ureteric Stone Removal Surgery',
+      subtitle: 'URSL with DJ Stenting',
+      description: 'If a stone is stuck in the ureter (the tube that carries urine from the kidney to the bladder), it can block urine flow and cause severe pain. Our Ureteric Stone Removal Surgery – also known as Ureteroscopic Lithotripsy (URSL) – is a minimally invasive laser procedure that removes the stone gently without any external incision.',
+      procedure: 'The doctor uses a tiny scope to locate the stone and then breaks it into small fragments with a laser. To protect the ureter and allow healing, a Double J (DJ) stent is placed temporarily and removed after a short period.',
+      benefits: [
+        'No cuts or open surgery',
+        'Very short recovery time',
+        'Performed under expert urologist supervision',
+        'Prevents kidney damage from blockage'
+      ],
+      highlight: 'Our patients often say they feel immediate relief once the stone is cleared and urine flow becomes normal again.',
+      icon: '⚡'
+    },
+    {
+      id: 'turp',
+      title: 'Prostate Enlargement Treatment',
+      subtitle: 'TURP – Transurethral Resection of the Prostate',
+      description: 'Difficulty passing urine, frequent night urination, or a weak urine stream are often signs of prostate enlargement in men. Our Prostate Enlargement Treatment, medically known as TURP (Transurethral Resection of the Prostate), is a proven and effective solution that restores easy urine flow without any cuts or external wounds.',
+      procedure: 'Using a small instrument inserted through the urinary passage, the surgeon removes only the excess prostate tissue causing the blockage. It\'s a safe, hospital-based procedure trusted by thousands of men for long-term relief.',
+      benefits: [
+        'No external incision',
+        'Minimal discomfort and quick recovery',
+        'Restores confidence and normal lifestyle',
+        'Significant improvement in urinary flow and comfort'
+      ],
+      highlight: 'Many of our patients share that the relief is almost immediate — the constant urge to urinate reduces, the urine flow feels normal again, and the anxiety of sleepless nights finally fades away.',
+      icon: '🩺'
+    }
+  ];
+
+
+  sections: any = [
+    {
+      id: 'advanced-facilities',
+      number: '01',
+      title: '1. Advanced Facilities & Experienced Urology Team',
+      icon: '🏥',
+      color: '#008080',
+      description: 'At Rashtrotthana Hospital, every urology procedure is performed in state-of-the-art operation theatres equipped with advanced laser and endoscopic technology for maximum precision and safety.',
+      features: [
+        {
+          icon: '🔬',
+          title: 'Specialized Urology Units',
+          description: 'Dedicated units for kidney, ureter, and prostate surgeries.'
+        },
+        {
+          icon: '👨‍⚕️',
+          title: 'Experienced Urologists',
+          description: 'Years of clinical and surgical expertise.'
+        },
+        {
+          icon: '💊',
+          title: 'End-to-End Medical Support',
+          description: 'From diagnosis, anesthesia, and surgery to guided recovery.'
+        },
+        {
+          icon: '⚡',
+          title: 'Faster Healing & Minimal Pain',
+          description: 'Modern, minimally invasive methods.'
+        }
+      ],
+      highlightText: 'Your entire journey — from the first consultation to complete recovery — is guided with care, comfort, and clinical excellence.'
+    },
+    {
+      id: 'affordable-packages',
+      number: '02',
+      title: '2. Transparent & Affordable Packages',
+      icon: '💰',
+      color: '#008080',
+      description: 'We believe quality healthcare should never feel out of reach. At Rashtrotthana Hospital, every patient receives ethical, affordable, and transparent care — without compromising on quality or safety.',
+      features: [
+        {
+          icon: '📋',
+          title: 'Comprehensive All-Inclusive Packages',
+          description: 'Complete packages for all urology and laser surgeries.'
+        },
+        {
+          icon: '💳',
+          title: 'Cashless Insurance Facility',
+          description: 'Leading insurance providers for hassle-free experience.'
+        },
+        {
+          icon: '🤝',
+          title: 'Dedicated Insurance Assistance Desk',
+          description: 'Guides through approvals, claims, and paperwork.'
+        },
+        {
+          icon: '✓',
+          title: 'No Hidden Charges',
+          description: 'What we promise is exactly what you pay.'
+        }
+      ],
+      highlightText: 'Our patients often appreciate how seamless and supportive our insurance process is — from admission to discharge, everything is handled with clarity and care.'
+    },
+    {
+      id: 'easy-access',
+      number: '03',
+      title: '3. Easy Access & Patient Convenience',
+      icon: '📍',
+      color: '#00a0a0',
+      description: 'Located in the heart of Rajarajeshwari Nagar, Bangalore, Rashtrotthana Hospital is easily reachable and designed for patient comfort at every step.',
+      features: [
+        {
+          icon: '🚇',
+          title: 'Well Connected',
+          description: 'By Metro, Bus, and Railway routes.'
+        },
+        {
+          icon: '🏨',
+          title: 'Comfortable Accommodation',
+          description: 'Options available nearby for families.'
+        },
+        {
+          icon: '🏪',
+          title: 'Essential Amenities',
+          description: 'Pharmacies, cafés, and transport facilities.'
+        },
+        {
+          icon: '👥',
+          title: 'Dedicated Support Staff',
+          description: 'Assist throughout your hospital journey.'
+        }
+      ],
+      highlightText: 'We make sure your experience — from admission to discharge — remains smooth, convenient, and worry-free.'
+    }
+  ];
+  
+  @ViewChild('formSection') formSection!: ElementRef;
+
+  scrollToForm() {
+    if (this.formSection) {
+      this.formSection.nativeElement.scrollIntoView({ 
+        // behavior: 'smooth', 
+        block: 'start',
+        inline: 'nearest'
+      });
+    }
+  }
+
+  mainServices: any[] = [
+    {
+      icon: '🔬',
+      title: 'Endoscopic and Laser Treatment',
+      description: 'Advanced minimally invasive treatments for kidney stones. Quick recovery with minimal discomfort.',
+      color: '#008080'
+    },
+    {
+      icon: '⚕️',
+      title: 'Laparoscopic Surgery',
+      description: 'Modern surgical technique using small incisions for kidney disease and bladder conditions.',
+      color: '#00a0a0'
+    }
+  ];
+
+  specialtyServices: any[] = [
+    {
+      icon: '👨‍⚕️',
+      title: 'Andrology and Male Infertility Services',
+      description: 'Dedicated service for men\'s health concerns with expert diagnosis and treatment for male infertility.'
+    },
+    {
+      icon: '👩‍⚕️',
+      title: 'Female Urology',
+      description: 'Specialized care for women\'s urological issues including bladder irritation and incontinence.'
+    },
+    {
+      icon: '🎗️',
+      title: 'Uro-Oncology',
+      description: 'Comprehensive treatment of cancers affecting the urinary system with personalized care.'
+    },
+    {
+      icon: '💎',
+      title: 'Stone Disease',
+      description: 'Latest technology and techniques to manage and treat kidney stones effectively.'
+    },
+    {
+      icon: '🔧',
+      title: 'Genito-Urinary Reconstruction',
+      description: 'Expert reconstructive surgery to restore function and confidence for urinary organ issues.'
+    },
+    {
+      icon: '👶',
+      title: 'Paediatric Urology',
+      description: 'Specialized compassionate care for children with unique urological needs.'
+    }
+  ];
 
 }
