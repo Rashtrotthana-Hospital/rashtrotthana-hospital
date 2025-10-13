@@ -1343,6 +1343,22 @@ export class NewDocPageComponent {
       title: 'Dr. Manasa M. G. | Endocrinologist - Hormone & Diabetes Expert',
       description: 'Meet Dr. Manasa M. G., expert in endocrine care with research-backed experience in treating hormonal and metabolic disorders in Bangalore.'
     },
+    {
+      name: "Ms. Samarchitha S",
+      image: "assets/ms-samarchitha-s.png",
+      department: 'Clinical Psychology',
+      speciality: 'PSYCHIATRY',
+      desgination: 'Clinical Psychologist',
+      about: "Ms. Samarchitha S is a trained clinical psychologist with over six years of experience, specializing in the assessment and treatment of a wide range of psychological and neuropsychological conditions. Her professional journey includes working with diverse patient populations across age groups - including children, adults and the elderly - in both psychiatric and neurological settings.",
+      areasOfExpertise: ["Mood disorders", "Obsessive-compuslive disorder", "Anxiety disorders", "Dissociative and conversion disorders", "Sleep disorders", "Personality disorders", "Substance-related disorders", "Neurodevelopmental disorders (Autism, ADHD,IDD)", "Neurodegenerative disorders"],
+      expertise: "Years of Experience: 6+",
+      qualification: "MSc. Clinical Psychology, M.Phil Clinical Psychology, Fellowship in Clinical Neuropsychology(NIMHANS)",
+      time: "",
+      date: "",
+      alt: 'Ms. Samarchitha S | Best Psychology Hospital in Bangalore | Rashtrotthana Hospital',
+      title:'Ms. Samarchitha S | Clinical Psychologist in Bangalore',
+      description:'Ms. Samarchitha S, Clinical Psychologist at Rashtrotthana Hospital Bangalore, offers expert care for mood, anxiety, sleep and personality disorders.'
+    },
     // {
     //   name: "Dr. Sandeep K. M",
     //   image: "assets/dummy-doc-male.svg",

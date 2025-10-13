@@ -51,6 +51,13 @@ doctors: any = [
     image: '../../assets/Dr-Nikhil-Hegde.png',
     slug: '/doctor/dr-nikhil-hegde'
   },
+  {
+    id: 4,
+    name: 'Dr. Sandeep K. M',
+    experience: '11 Years',
+    image: '../../assets/Dr-Nagesh-R.png',
+    slug: '/doctor/dr-sandeep-k-m'
+  },
   // {
   //   id: 4,
   //   name: 'Dr. Hemanth Kumar Venkatesh',

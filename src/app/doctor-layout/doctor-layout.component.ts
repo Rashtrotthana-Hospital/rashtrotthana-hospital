@@ -1126,6 +1126,38 @@ export class DoctorLayoutComponent {
       title: '',
       description: ''
     },
+    {
+      name: "Dr. Sandeep K M",
+      image: "assets/Dr-Nagesh-R.png",
+      department: 'Orthopedics',
+      speciality: 'ORTHOPEDICS',
+      desgination: 'Consultant - Orthopaedic Surgeon',
+      about: "Dr. Sandeep K M is an experienced orthopedic surgeon with over a decade of clinical expertise in trauma care, joint replacement (arthroplasty), and arthroscopy. He completed his MBBS from Mysore Medical College and MS in Orthopedics from Bangalore Medical College & Research Institute. He further specialized with a Fellowship in Joint Replacement at Sparsh Hospital, Bangalore. Dr. Sandeep has previously worked at Apollo Hospital, Bangalore, and currently serves as an Associate Professor at RajaRajeswari Medical College, alongside his clinical practice.",
+      areasOfExpertise: ["Trauma", "Arthroplasty", "Arthroscopy"],
+      expertise: "Years of Experience: 11+",
+      qualification: "MBBS, MS (Orthopedics), Fellowship in Joint Replacemen",
+      time: "",
+      date: "",
+      alt: 'Dr. Sandeep K M, top orthopedic surgeon in Bangalore | Rashtrotthana Hospital',
+      title:'',
+      description:''
+    },
+    {
+      name: "Ms. Samarchitha S",
+      image: "assets/ms-samarchitha-s-doc-page.png",
+      department: 'Clinical Psychology',
+      speciality: 'PSYCHIATRY',
+      desgination: 'Clinical Psychologist',
+      about: "Ms. Samarchitha S is a trained clinical psychologist with over six years of experience, specializing in the assessment and treatment of a wide range of psychological and neuropsychological conditions. Her professional journey includes working with diverse patient populations across age groups - including children, adults and the elderly - in both psychiatric and neurological settings.",
+      areasOfExpertise: ["Mood disorders", "* Obsessive-compuslive disorder", "Anxiety disorders", "Dissociative and conversion disorders", "Sleep disorders", "Personality disorders", "Substance-related disorders", "Neurodevelopmental disorders (Autism, ADHD,IDD)", "Neurodegenerative disorders"],
+      expertise: "Years of Experience: 6+",
+      qualification: "MSc. Clinical Psychology, M.Phil Clinical Psychology, Fellowship in Clinical Neuropsychology(NIMHANS)",
+      time: "",
+      date: "",
+      alt: 'Ms. Samarchitha S | Best Psychology Hospital in Bangalore | Rashtrotthana Hospital',
+      title:'',
+      description:''
+    },
     // {
     //   name: "",
     //   image: "",
