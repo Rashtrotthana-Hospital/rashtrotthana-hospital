@@ -1032,7 +1032,8 @@ export class NewDocPageComponent {
       name: "Dr. Man Mohan U. S",
       image: "assets/Doc-Inv-Page/Dr-Man-Mohan-U-S.png",
       department: "Gastroenterologist",
-      about: "Dr. Man Mohan U.S. is a highly qualified gastroenterologist with extensive experience in managing complex gastrointestinal and hepatology conditions. Currently serving as an Assistant Professor at the Institute of Gastroenterology and Organ Transplant (IGOT), he has a keen interest in clinical research, with multiple publications and presentations at prestigious national and international conferences. He specializes in advanced diagnostic and therapeutic procedures, focusing on patient-centered care and innovative treatments in medical gastroenterology.",
+      about: `<p>Dr. Manmohan U S is a consultant in Gastroenterology with comprehensive clinical and academic experience. He completed his MBBS from M.S. Ramaiah Medical College, followed by an MD in General Medicine from AIMS, and super-speciality training (DM) in Gastroenterology from Madras Medical Mission Hospital, Chennai.</p> 
+              <p>He has also completed an observership at CMC Vellore and worked in Vellore for two years. Additionally, he served as an Assistant Professor at the Institute of Gastroenterology and Organ Transplant, Victoria Hospital campus. He has presented more than six papers at national and international conferences and has served as faculty at two national and two international gastroenterology conferences.</p>`,
       speciality: "GASTRO SCIENCES",
       areasOfExpertise: [
         "Acid Reflux / GERD, Gastritis & Peptic Ulcer Disease",
@@ -1044,11 +1045,16 @@ export class NewDocPageComponent {
         "Fatty Liver Disease, Alcoholic Liver Disease",
         "Cirrhosis & Liver Fibrosis, Liver-Related Issues",
         "Pancreatitis, Gallstones & Biliary Disorders",
-        "Abdominal Pain, Bloating & Nausea, Hepatitis & Liver Disorders"
+        "Abdominal Pain, Bloating & Nausea, Hepatitis & Liver Disorders",
+        "Clinical Gastroenterology",
+        "Motility Disorders",
+        "Advanced Endoscopy",
+        "Manometry",
+        "Inflammatory bowel disease"
       ],
 
       expertise: "Years of Experience: 8+",
-      qualification: "MBBS, MD in General Medicine, Dr.N.B in Medical Gastroenterology",
+      qualification: "MBBS, MD (G. MEDICINE); DrNB(Med Gastro); MNAMS",
       time: "",
       date: "Monday, Wednesday and Saturday",
       alt: "Dr. Man Mohan U. S | Best Gastroenterologist in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore",
@@ -1337,6 +1343,38 @@ export class NewDocPageComponent {
       title: 'Dr. Manasa M. G. | Endocrinologist - Hormone & Diabetes Expert',
       description: 'Meet Dr. Manasa M. G., expert in endocrine care with research-backed experience in treating hormonal and metabolic disorders in Bangalore.'
     },
+    {
+      name: "Ms. Samarchitha S",
+      image: "assets/ms-samarchitha-s.png",
+      department: 'Clinical Psychology',
+      speciality: 'PSYCHIATRY',
+      desgination: 'Clinical Psychologist',
+      about: "Ms. Samarchitha S is a trained clinical psychologist with over six years of experience, specializing in the assessment and treatment of a wide range of psychological and neuropsychological conditions. Her professional journey includes working with diverse patient populations across age groups - including children, adults and the elderly - in both psychiatric and neurological settings.",
+      areasOfExpertise: ["Mood disorders", "Obsessive-compuslive disorder", "Anxiety disorders", "Dissociative and conversion disorders", "Sleep disorders", "Personality disorders", "Substance-related disorders", "Neurodevelopmental disorders (Autism, ADHD,IDD)", "Neurodegenerative disorders"],
+      expertise: "Years of Experience: 6+",
+      qualification: "MSc. Clinical Psychology, M.Phil Clinical Psychology, Fellowship in Clinical Neuropsychology(NIMHANS)",
+      time: "",
+      date: "",
+      alt: 'Ms. Samarchitha S | Best Psychology Hospital in Bangalore | Rashtrotthana Hospital',
+      title:'Ms. Samarchitha S | Clinical Psychologist in Bangalore',
+      description:'Ms. Samarchitha S, Clinical Psychologist at Rashtrotthana Hospital Bangalore, offers expert care for mood, anxiety, sleep and personality disorders.'
+    },
+    // {
+    //   name: "Dr. Sandeep K. M",
+    //   image: "assets/dummy-doc-male.svg",
+    //   department: 'Orthopedics',
+    //   speciality: 'ORTHOPEDICS',
+    //   desgination: 'Consultant - Orthopaedic Surgeon',
+    //   about: "Dr. Sandeep K M is an experienced orthopedic surgeon with over a decade of clinical expertise in trauma care, joint replacement (arthroplasty), and arthroscopy. He completed his MBBS from Mysore Medical College and MS in Orthopedics from Bangalore Medical College & Research Institute. He further specialized with a Fellowship in Joint Replacement at Sparsh Hospital, Bangalore. Dr. Sandeep has previously worked at Apollo Hospital, Bangalore, and currently serves as an Associate Professor at RajaRajeswari Medical College, alongside his clinical practice.",
+    //   areasOfExpertise: ["Trauma", "Arthroplasty", "Arthroscopy"],
+    //   expertise: "Years of Experience: 11+",
+    //   qualification: "MBBS, MS (Orthopedics), Fellowship in Joint Replacemen",
+    //   time: "",
+    //   date: "",
+    //   alt: 'Dr. Sandeep K M, top orthopedic surgeon in Bangalore | Rashtrotthana Hospital',
+    //   title:'Dr. Sandeep K M | Expert Orthopedic Surgeon in Bangalore',
+    //   description:'Expert orthopedic care by Dr. Sandeep K M, with 11+ years in trauma, joint replacement, and arthroscopy. MBBS, MS, Fellowship-trained. At Rashtrotthana Hospital, restoring mobility. Book now!'
+    // },
     // {
     //   name: "",
     //   image: "", 
