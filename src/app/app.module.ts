@@ -129,6 +129,7 @@ import { VascularSurgeriesComponent } from './vascular-surgeries/vascular-surger
 import { SpecialityCarouselComponent } from './speciality-carousel/speciality-carousel.component';
 import { SpecialityDocCardComponent } from './speciality-doc-card/speciality-doc-card.component';
 import { FaqsNewComponent } from './faqs-new/faqs-new.component';
+import { AllergieClinic } from './rashtrotthana-clinic/allergie-clinic/allergie-clinic';
 
 
 @NgModule({
@@ -232,6 +233,7 @@ import { FaqsNewComponent } from './faqs-new/faqs-new.component';
     SpecialityCarouselComponent,
     SpecialityDocCardComponent,
     FaqsNewComponent,
+    AllergieClinic,
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   imports: [
