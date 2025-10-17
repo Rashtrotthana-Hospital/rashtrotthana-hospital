@@ -65,6 +65,8 @@ import { SamrakshaComponent } from './samraksha/samraksha.component';
 import { ThankYouComponent } from './thank-you/thank-you.component';
 import { VascularSurgeriesComponent } from './vascular-surgeries/vascular-surgeries.component';
 import { AllergieClinic } from './rashtrotthana-clinic/allergie-clinic/allergie-clinic';
+import { DiabeticFoot } from './rashtrotthana-clinic/diabetic-foot/diabetic-foot';
+import { PopupForm } from './rashtrotthana-clinic/popup-form/popup-form';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -106,7 +108,10 @@ const routes: Routes = [
       { path: 'homeopathy-treatment-bangalore', component: HomeopathyComponent },
       { path: 'lifestyle-medicine-bangalore', component: NaturopathyComponent },
       { path: 'research-center', component: ResearchComponent },
+      { path: "diabetic", component: DiabeticFoot },
       { path: "allergy", component: AllergieClinic },
+      { path: "popup", component: PopupForm },
+
       
     ]
   },

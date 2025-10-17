@@ -7,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrl: './allergie-clinic.css'
 })
 export class AllergieClinic {
+   showPopup = false
 
+  openPopup(){
+    this.showPopup = true
+  }
+
+  closePopup(){
+    this.showPopup = false
+  }
 }
