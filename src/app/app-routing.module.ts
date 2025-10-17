@@ -64,11 +64,14 @@ import { TermsAndConditionsComponent } from './terms-and-conditions/terms-and-co
 import { SamrakshaComponent } from './samraksha/samraksha.component';
 import { ThankYouComponent } from './thank-you/thank-you.component';
 import { VascularSurgeriesComponent } from './vascular-surgeries/vascular-surgeries.component';
+import { AllergieClinic } from './rashtrotthana-clinic/allergie-clinic/allergie-clinic';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'about-us', component: AboutUsComponent },
   { path: "career", component: CareerComponent },
+
+
   {
     path: 'specialities', component: SpecalitiesComponent,
     children: [
@@ -103,6 +106,8 @@ const routes: Routes = [
       { path: 'homeopathy-treatment-bangalore', component: HomeopathyComponent },
       { path: 'lifestyle-medicine-bangalore', component: NaturopathyComponent },
       { path: 'research-center', component: ResearchComponent },
+      { path: "allergy", component: AllergieClinic },
+      
     ]
   },
 
@@ -161,12 +166,15 @@ const routes: Routes = [
     path: 'insurance',
     component: InsuranceComponent
   },
+  
 
   { path: 'blog', component: BlogComponent },
   { path: 'blog/:slug', component: BlogPostComponent },
   { path: '**', redirectTo: '' },
 
 ];
+
+
 
 
 @NgModule({
