@@ -1,0 +1,64 @@
+<div class="appointment-form popup-overlay"  style="height: 520px;">
+    <div class="" (click)="onOverlayClick($event)">
+        <div class="popup-header">
+            <h2>Book an Appointment</h2>
+            <i class="fa-solid fa-xmark close" (click)="closePopup()"></i>
+        </div>
+        <form [formGroup]="appointmentForm" (ngSubmit)="onSubmit()">
+            <div class="form-row">
+                <div class="input-field">
+                    <input type="text" placeholder="First Name" formControlName="firstName" />
+                    <div *ngIf="appointmentForm.get('firstName')?.touched && appointmentForm.get('firstName')?.invalid">
+                        <small>First name is required.</small>
+                    </div>
+                </div>
+
+                <div class="input-field">
+                    <input type="text" placeholder="Last Name" formControlName="lastName" />
+                    <div *ngIf="appointmentForm.get('lastName')?.touched && appointmentForm.get('lastName')?.invalid">
+                        <small>Last name is required.</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-row">
+
+                <div class="input-field">
+                    <input type="email" placeholder="Email Address" formControlName="email" />
+                    <div *ngIf="appointmentForm.get('email')?.touched && appointmentForm.get('email')?.invalid">
+                        <small *ngIf="appointmentForm.get('email')?.errors?.['required']">Email is required.</small>
+                        <small *ngIf="appointmentForm.get('email')?.errors?.['email']">Invalid email format.</small>
+                    </div>
+                </div>
+
+                <div class="input-field">
+                    <input type="tel" placeholder="Mobile Number" formControlName="mobile" />
+                    <div *ngIf="appointmentForm.get('mobile')?.touched && appointmentForm.get('mobile')?.invalid">
+                        <small *ngIf="appointmentForm.get('mobile')?.errors?.['required']">
+                            Mobile number is required.
+                        </small>
+                        <small *ngIf="appointmentForm.get('mobile')?.errors?.['pattern']">
+                            Enter a valid 10 digit mobile number.
+                        </small>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="form-row input-field">
+                <!-- <select formControlName="doctor">
+                <option value="">Select Doctor</option>
+                <option *ngFor="let doc of doctor" [value]="doc">{{ doc }}</option>
+            </select> -->
+                <input type="text" [placeholder]="doctorName" readonly>
+                <!-- <div *ngIf="appointmentForm.get('doctor')?.touched && appointmentForm.get('doctor')?.invalid">
+                    <small>Please select a doctor.</small>
+                </div> -->
+            </div>
+
+            <textarea placeholder="Your Message...." formControlName="message" rows="4"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>

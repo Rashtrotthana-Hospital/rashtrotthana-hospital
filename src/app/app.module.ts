@@ -130,7 +130,10 @@ import { SpecialityCarouselComponent } from './speciality-carousel/speciality-ca
 import { SpecialityDocCardComponent } from './speciality-doc-card/speciality-doc-card.component';
 import { FaqsNewComponent } from './faqs-new/faqs-new.component';
 import { AllergieClinic } from './rashtrotthana-clinic/allergie-clinic/allergie-clinic';
-
+import { DiabeticFoot } from './rashtrotthana-clinic/diabetic-foot/diabetic-foot';
+import { PopupForm } from './rashtrotthana-clinic/popup-form/popup-form';
+// import { CdkAriaLive } from "../../node_modules/@angular/cdk/a11y/index";
+import { CdkAriaLive } from '@angular/cdk/a11y';
 
 @NgModule({
   declarations: [
@@ -234,6 +237,8 @@ import { AllergieClinic } from './rashtrotthana-clinic/allergie-clinic/allergie-
     SpecialityDocCardComponent,
     FaqsNewComponent,
     AllergieClinic,
+    DiabeticFoot,
+    PopupForm,
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   imports: [
@@ -258,9 +263,8 @@ import { AllergieClinic } from './rashtrotthana-clinic/allergie-clinic/allergie-
     CascadeSelectModule,
     CalendarModule,
     InfiniteScrollModule,
-  
-
-  ],
+    CdkAriaLive
+],
   providers: [
     MessageService,
     ContactFormService,

@@ -37,6 +37,7 @@
                                 fill="#FBCA51" />
                         </svg>Long-lasting relief, not quick fixes</div>
                 </div>
+                <button (click)="openPopup()">Book an Appointment</button>
             </div>
             <div class="img">
                 <svg xmlns="http://www.w3.org/2000/svg" width="93" height="94" viewBox="0 0 93 94" fill="none">
@@ -209,3 +210,5 @@
     </div>
 
 </div>
+
+<app-popup-form *ngIf="showPopup" (close)="closePopup()" doctorName="Dr. Sandhya S. Patil"></app-popup-form>
