@@ -1,165 +1,282 @@
-<div class="rootContainer">
+<div class="root-container">
 
-    <div class="container-1">
-        <div class="bannerIMage">
-            <img src="../../assets/tkr/tkr-treatment-in-bangalore.png" class="desktopBanner" alt="">
-            <img src="../../assets/tkr/tkr-surgery-in-rr-nagar-bangalore.png" class="tabBanner" alt="">
-            <img src="../../assets/tkr/tkr-treatment-in-rr-nagar-bangalore.png" class="mobileBanner" alt="">
-        </div>
-        <div class="bannerButton">
-            <button (click)="contactus()" class="container_1_btn">Book your appointment at discounted price <i class="fa-solid fa-angle-right"></i></button>
+    <!-- hero section -->
+    <div class="speciality-header">
+        <img src="../../assets/total-knee-replacement-banner.png" class="desktop"
+            alt="Total Knee Replacement Banner of Rashtrotthana Hospital Bangalore" />
+        <img src="../../assets/total-knee-replacement-mobile-banner.png" class="mobile"
+            alt="Total Knee Replacement Banner of Rashtrotthana Hospital Bangalore">
+        <div class="header_button">
+            <button class="appointment" (click)="scrollToForm()">Book an Appointment</button>
+            <a href="tel:+918069239999" class="contact_button" (click)="trackPhoneClick()">Contact Now</a>
         </div>
     </div>
 
-    <div class="flex containerMargin">
-        <div class="s_content">
-            <h1 class="heading">Total Knee Replacement Surgery: Regain Mobility and Relieve Pain</h1>
-            <div class="para">At Rashtrotthana Hospital, one of the best knee replacement hospitals in Bangalore, our team of skilled orthopedic surgeons, including Dr. Nikhil Hegde and Dr. Sujayendra, is dedicated to providing comprehensive care and advanced knee replacement treatments in Bangalore. We specialize in a range of procedures, including total knee replacement surgery in Bangalore and joint replacement surgery in Bangalore, to help you regain mobility and enhance your quality of life.</div>
-        </div>
-    </div>
+    <div class="container-2">
 
-    <div class="flex containerMargin">
-        <div class="s_content">
-            <h2 class="heading">What is Total Knee Replacement (TKR)?</h2>
-            <div class="para">Total Knee Replacement in Bangalore (TKR) is a surgical procedure to relieve knee pain and restore mobility by replacing damaged knee joint components with prosthetic implants. It is an effective solution for those with severe knee discomfort, improving their quality of life.</div>
-            <div class="para">At Rashtrotthana Hospital, one of the best knee replacement hospitals in Bangalore, our expert team, including Dr. Nikhil Hegde and Dr. Sujayendra, offers advanced treatments like knee replacement surgery and joint replacement surgery. We address the root causes of knee pain with cutting-edge technology and compassionate care. For affordable knee replacement in Bangalore and a consultation with the best orthopedic surgeons, visit Rashtrotthana Hospital in RR Nagar. We also offer free knee pain consultations every Monday and Thursday from 10 AM to 1 PM.</div>
-        </div>
-        <div class="s_image">
-            <img src="../../assets/Knee-Pain-Rashtrotthana-Hospital.png" alt="Knee Pain Rashtrotthana Hospital | Rashtrotthana Hospital">
-        </div>
-    </div>
+        <!-- Intro Section -->
+        <div class="intro-section">
+            <h1 class="page-title">Say Goodbye to Pain with Advanced Knee Replacement</h1>
 
-    <div class="flex containerMargin column_reverse">
-        <div class="s_image">
-            <img class="knee-image" src="../../assets/Knee-Replacement-Surgery-Rashtrotthana-Hospital.png" alt="Knee Replacement Surgery | Rashtrotthana Hospital">
-        </div>
-        <div class="s_content">
-            <h2 class="heading">Who Should Consider TKR Surgery?</h2>
-            <div class="para">Total Knee Replacement (TKR) surgery in Bangalore is recommended for individuals experiencing chronic knee joint pain that interferes with daily activities and does not respond to nonsurgical treatments. It is commonly performed at leading facilities like Rashtrotthana Hospital, recognized as one of the best knee replacement hospitals in Bangalore, under the expertise of renowned surgeons like Dr. Nikhil Hegde and Dr. Sujayendra.</div>
-            <div class="para">While TKR is most frequently performed on patients aged 60 and older, younger individuals with severe knee damage due to arthritis, injury, or other conditions can also benefit from this advanced procedure. Candidates for total knee replacement surgery in Bangalore often experience:</div>
-            <ul>
-                <li class="para">Severe knee discomfort that limits daily activities such as walking, climbing stairs, and sitting or rising from chairs.</li>
-                <li class="para">Moderate or severe knee pain while resting, both day and night.</li>
-                <li class="para">Chronic knee inflammation and swelling that doesn’t improve with rest or medications.</li>
-                <li class="para">Knee deformities, such as noticeable arching in or out of the knee.</li>
-                <li class="para">No significant relief from other knee pain treatments in Bangalore, such as physical therapy, medications, or injections.</li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="flex containerMargin">
-        <div class="s_content">
-            <h2 class="heading">Why is Total Knee Replacement Surgery Recommended?</h2>
-            <div class="para">Total Knee Replacement (TKR) surgery is often recommended when other treatments for knee pain and discomfort have failed to provide relief. This includes conditions such as:</div>
-            <ul>
-                <li class="para"><b>Knee Pain Causes:</b> Osteoarthritis, rheumatoid arthritis, post-traumatic arthritis, injury, or overuse.</li>
-                <li class="para"><b>Knee Pain Treatment in Bangalore:</b> Physical therapy, medications, lifestyle modifications, or surgery.</li>
-                <li class="para"><b>Reasons for Knee Pain:</b> Degenerative joint disease, injuries, aging, or repetitive strain.</li>
-            </ul>
-            <div class="para">At Rashtrotthana Hospital, one of the best knee replacement hospitals in Bangalore, <a routerLink="/specialities/best-orthopaedics-hospital-in-bangalore">experts like Dr. Nikhil Hegde Orthopedics and Dr. Sujayendra specialize in diagnosing and treating complex knee conditions</a></div>
-        </div>
-        <div class="s_image">
-            <img class="knee-image-1" src="../../assets/Knee-Joint-Pain-Treatment-Rashtrotthana-Hospital.png"
-                alt="Knee Joint Pain Treatment | Rashtrotthana Hospital">
-        </div>
-    </div>
-
-    <div class="flex containerMargin column_reverse">
-        <div class="s_image">
-            <img src="../../assets/best-hospital-for-kneepain-rrnagar.jpg" alt="Best Hospital for Knee Pain in RR nagar Bangalore" class="tkr-img">
-            <img src="../../assets/Best-Knee-Replacement-Hospital-Rashtrotthana-Hospital.png" alt="Best Hospital for Knee Pain in RR nagar Bangalore" class="tkr-img">
-        </div>
-        <div class="s_content">
-            <h2 class="heading">How We Help at Rashtrotthana Hospital</h2>
-            <div class="para">At Rashtrotthana Hospital, one of the best knee replacement hospitals in Bangalore, we specialize in addressing knee pain and joint issues with a focus on knee replacement treatment in Bangalore. Whether you're considering a total knee replacement surgery in Bangalore or exploring non-surgical knee pain treatment in Bangalore, our team of expert orthopedic specialists, including Dr. Nikhil Hegde, ensures you receive comprehensive care. Our state-of-the-art facilities and advanced techniques make us a trusted name for knee replacement surgery in Bangalore.</div>
-            <div class="para"><b>Our Speciality in Total Knee Replacement (TKR) Surgery</b></div>
-            <ul>
-                <li class="para"><b>Expert Team:</b> Led by renowned specialists like Dr. Nikhil Hegde Orthopedic Surgeon and Dr. Sujayendra, our team is experienced in performing total knee replacement in Bangalore and other joint replacement surgeries with excellent outcomes.</li>
-                <li class="para"><b>Advanced Technology:</b> We leverage cutting-edge technology for advanced knee replacement in Bangalore, ensuring precision and the best results for each patient. Our expertise extends to minimally invasive techniques, making us a leader in joint replacement surgery in Bangalore.</li>
-                <li class="para"><b>Personalized Care:</b> At Rashtrotthana Hospital RR Nagar, every patient benefits from a customized treatment plan designed to suit their unique needs. Whether you're seeking the best knee replacement surgery in Bangalore or specialized care for complex conditions, we are here to help.</li>
-                <li class="para"><b>Comprehensive Rehabilitation:</b> After surgery, we offer tailored rehabilitation programs to support a faster recovery. Patients recovering from knee replacement surgery in Bangalore receive ongoing care to regain strength and mobility.</li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="flex containerMargin">
-        <div class="s_content">
-            <h2 class="heading">From Knee Pain to Freedom</h2>
-            <div class="para" style="color: #008080;"><b>Best Knee Replacement Hospital</b></div>
-            <div class="para">At Rashtrotthana Hospital in RR Nagar, our commitment to excellence is reflected in our outstanding success rate in total knee replacement (TKR) surgeries. With over 100 successful knee replacement surgeries in Bangalore performed to date, we have become one of the best knee replacement hospitals in Bangalore. Our team, including renowned orthopedic experts like Dr. Nikhil Hegde and Dr. Sujayendra, ensures exceptional outcomes and patient satisfaction. Whether you're seeking advanced knee replacement in Bangalore or effective knee pain treatment in Bangalore, our dedication to providing the best knee replacement surgery in Bangalore sets us apart.</div>
-        </div>
-    </div>
-
-    <div class="flex containerMargin">
-        <div class="s_content">
-            <h2 class="heading">Real Stories of Recovery and Renewal!</h2>
-            <li class="para">Meet Ms. Anuradha, our inspiring example! Just six weeks after knee replacement surgery on both knees, she's walking, climbing and living her best life! Her journey shows how knee replacement surgery can be life-changing.</li>
-            <div class="link">
-                <a class="link" href="https://youtu.be/mp0IOxR5-xQ?si=6bl3MIvPMjM8fASP" target="_blank">The TRUTH About Knee Replacement Surgery - Anuradha's Amazing Recovery Story!</a>
-            </div>
-
-            <li class="para">Meet Ms. Anuradha, our inspiring example! Just six weeks after knee replacement surgery on both knees, she's walking, climbing and living her best life! Her journey shows how knee replacement surgery can be life-changing.</li>
-            <div class="link">
-                <a class="link" href="https://youtu.be/qcR4evvQ03Q?si=FWC90KBtKhCYAnfG" target="_blank">KNOW the truth about KNEE REPLACEMENT SURGERY! ✅</a>
-            </div>
-
-            <div class="para">Knee replacement isn't a last resort; it's a way to get back your freedom and enjoy moving again. Whether it's due to arthritis, injury or other conditions, this surgery aims to relieve pain, improve function and make your life better.</div>
-        </div>
-    </div>
-
-    <div class="flex containerMargin">
-        <div class="s_content">
-            <div class="heading">Best Knee Pain Hospital in Bangalore</div>
-            <div class="para">If you are suffering from severe knee pain and other knee pain treatments in Bangalore have not provided relief, total knee replacement (TKR) surgery in Bangalore at Rashtrotthana Hospital RR Nagar may be the solution you need. Led by renowned specialists like Dr. Nikhil Hegde Orthopaedics and Dr. Sujayendra, our hospital is recognized as one of the best knee replacement hospitals in Bangalore, offering advanced care and expertise in knee replacement surgery.</div>
-            <div class="para">Our team is here to guide you through every step of the process, from the initial free knee pain consultation clinic to post-surgery rehabilitation. Whether you're considering joint replacement surgery in Bangalore, advanced knee replacement in Bangalore, or exploring options for the best knee replacement surgeon in Bangalore, we are dedicated to providing comprehensive care tailored to your needs.</div>
-            <div class="para"><a routerLink="/contact-us-bangalore">Contact us</a> today to schedule an appointment and take the first step towards a pain-free life. With the best knee replacement treatment in Bangalore, don't let knee pain hold you back from enjoying life to the fullest.</div>
-        </div>
-    </div>   
-    
-    <div class="flex containerMargin">
-        <div class="s_content">
-            <div class="heading">FAQs</div>
-            <div class="faqs" style="margin-top: 30px; margin-bottom: 40px;" *ngFor="let faq of faqs; let i = index">
-                <div class="para" style="color: #008080;"><b>Q{{i+1}}. {{faq.questions}}</b></div>
-                <div class="para"[innerHTML]="faq.answer"></div>
+            <div class="intro-content">
+                <p class="intro-para">Living with constant knee pain can be frustrating - every step feels like a
+                    struggle.
+                    At Rashtrotthana Hospital, we believe no one should compromise on their quality of life. </p>
+                <p class="intro-para">Our expert orthopedic team has successfully helped hundreds of patients walk
+                    pain-free
+                    again through advanced, safe and affordable Total Knee Replacement (TKR) procedures. From
+                    consultation
+                    to recovery, we make your knee replacement journey smooth, safe and stress-free. We work closely
+                    with
+                    each patient to rebuild mobility, reduce pain and regain the confidence to move freely and live
+                    independently again.</p>
             </div>
         </div>
-    </div>
 
-    <div class="doctors">
-        <div class="doc-heading">Meet Our Medical Team</div>
-        <div class="doctor-container">
-            <div *ngFor="let doctor of doctors">
-                <app-speciality-doctors [name]="doctor.name" [experience]="doctor.designation"
-                    [image]="doctor.image" [alt]="doctor.alt"></app-speciality-doctors>
+
+        <div class="surgery-sections-container">
+            <div class="surgery-header">
+                <h2 class="surgery-main-title">Our Total Knee Replacement Package</h2>
+                <p class="surgery-main-subtitle">Precision. Comfort. Recovery - Experience pain-free movement with our
+                    expert TKR care.</p>
+            </div>
+
+            <div class="surgeries-grid">
+                <div *ngFor="let surgery of surgeries; let i = index" class="surgery-card"
+                    [class.surgery-card-left]="i % 2 === 0" [class.surgery-card-right]="i % 2 !== 0">
+
+                    <div class="surgery-icon-wrapper">
+                        <div class="surgery-icon" [innerHTML]="surgery.icon"></div>
+                    </div>
+
+                    <div class="surgery-content">
+                        <!-- <div class="surgery-number">0{{ i + 1 }}</div> -->
+                        <h3 class="surgery-title">{{ surgery.title }}</h3>
+                        <p class="surgery-subtitle">{{ surgery.subtitle }}</p>
+
+                        <p class="surgery-description">{{ surgery.description }}</p>
+
+                        <p class="surgery-procedure">{{ surgery.procedure }}</p>
+
+                        <div class="benefits-section">
+                            <h4 class="benefits-title">What Makes Our Package the Right Choice</h4>
+                            <ul class="benefits-list">
+                                <li *ngFor="let benefit of surgery.benefits" class="benefit-item">
+                                    <span class="checkmark">✓</span>
+                                    <span>{{ benefit }}</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <p class="surgery-highlight">{{ surgery.highlight }}</p>
+
+                        <div class="surgery-cta-buttons">
+                            <a href="tel:+918069239999" class="cta-button cta-call">
+                                <span class="cta-icon"><i class="fa-solid fa-phone"></i></span>
+                                Call Us Now
+                            </a>
+                            <button class="cta-button cta-appointment" (click)="scrollToForm()">
+                                <span class="cta-icon">📅</span>
+                                Book Appointment
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+
+        <!-- knee pain clinic -->
+
+        <div class="knee-pain-clinic">
+            <h2 class="surgery-title-knee" style="margin-bottom: 15px;">Visit Our Free Knee Pain Clinic</h2>
+            <p class="surgery-description-knee">If you’re experiencing any of the symptoms above, our Knee Pain Clinic is
+                here
+                to help. Every Monday and Thursday from 10 AM to 1 PM, our expert orthopedic specialists provide free
+                consultations to evaluate your knee condition and guide you toward the most suitable treatment.</p>
+
+            <div class="benefits-section">
+                <ul class="benefits-list">
+                    <li class="benefit-item">
+                        <span class="checkmark">✓</span>
+                        <span>Personalized assessment of your knee pain and mobility issues</span>
+                    </li>
+                    <li class="benefit-item">
+                        <span class="checkmark">✓</span>
+                        <span>Expert evaluation to determine if Total Knee Replacement (TKR) is necessary - not every
+                            patient requires surgery</span>
+                    </li>
+                    <li class="benefit-item">
+                        <span class="checkmark">✓</span>
+                        <span>Guidance on non-surgical options and preventive care if TKR is not needed</span>
+                    </li>
+                    <li class="benefit-item">
+                        <span class="checkmark">✓</span>
+                        <span>Clear next steps to reduce pain, improve function, and restore mobility</span>
+                    </li>
+                </ul>
+            </div>
+
+            <p class="surgery-highlight" style="margin-top: 3%;">Your knee health is unique - our experts will carefully
+                assess your condition and recommend the best solution for you. Book your free consultation at our Knee
+                Pain Clinic today. Every Monday & Thursday from 10am to 1pm.</p>
+
+            <button class="cta-button cta-appointment-free " (click)="scrollToForm()">
+                <span class="cta-icon">📅</span>
+                Book Your Free consultation
+            </button>
+
+        </div>
+
+
+        <div class="main-services-section">
+            <div class="services-content-area">
+                <div class="section-badge">
+                    <span class="badge-icon">🏥</span>
+                    <span>Surgery Types</span>
+                </div>
+
+                <h2 class="section-heading">Types of Knee Replacement Surgery</h2>
+
+                <p class="section-intro">
+                    There are two main types of knee replacement procedures, depending on the extent of joint damage:
+                </p>
+
+                <div class="main-services-grid">
+                    <div *ngFor="let service of mainServices" class="main-service-card"
+                        [style.--card-color]="service.color">
+                        <div class="service-icon-circle">
+                            <span>{{ service.icon }}</span>
+                        </div>
+                        <div class="service-card-content">
+                            <h3 class="service-card-title">{{ service.title }}</h3>
+                            <div class="service-card-desc" [innerHTML]="service.description"></div>
+                        </div>
+                        <!-- <div class="service-arrow">→</div> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-sidebar" #formSection>
+                <app-speciality-form />
+            </div>
+        </div>
+
+        <!-- doctors section -->
+
+        <div class="container_margin">
+            <h2 class="s_h1 text-center heading-margin">Our orthopedic Experts</h2>
+            <app-speciality-doc-card [doctors]="doctors" />
+        </div>
+
+        <!-- Why Choose Rashtrotthana Hospital? -->
+
+        <div class="why-choose-wrapper" style="margin-top: 30px;">
+            <!-- Header Section -->
+            <div class="section-intro">
+                <span class="intro-badge">Your Health Partner</span>
+                <h2 class="main-heading">Why Choose Rashtrotthana Hospital?</h2>
+                <p class="main-subheading">Your Health in Trustable Hands</p>
+                <div class="heading-underline">
+                    <span class="line"></span>
+                    <span class="dot"></span>
+                    <span class="line"></span>
+                </div>
+            </div>
+
+            <!-- Sections with alternating layouts -->
+            <div *ngFor="let section of sections; let i = index" class="section-block">
+
+                <!-- Left Layout (Icon Left) -->
+                <div *ngIf="i % 2 === 0" class="layout-container layout-left">
+                    <!-- <div class="icon-column" [style.background]="section.color">
+            <div class="number-badge">{{ section.number }}</div>
+            <div class="main-icon">{{ section.icon }}</div>
+            <div class="vertical-text">{{ section.title.split('.')[1]?.trim() || section.title }}</div>
+          </div> -->
+
+                    <div class="content-column">
+                        <h3 class="section-title" [style.color]="section.color">{{ section.title }}</h3>
+                        <p class="section-desc">{{ section.description }}</p>
+
+                        <div class="features-grid">
+                            <div *ngFor="let feature of section.features" class="feature-item">
+                                <div class="feature-icon-box" [style.border-color]="section.color">
+                                    <span>{{ feature.icon }}</span>
+                                </div>
+                                <div class="feature-text">
+                                    <strong>{{ feature.title }}</strong>
+                                    <p>{{ feature.description }}</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="highlight-box" [style.border-left-color]="section.color">
+                            <span class="bulb-icon">💡</span>
+                            <em>{{ section.highlightText }}</em>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Layout (Icon Right) -->
+                <div *ngIf="i % 2 !== 0" class="layout-container layout-right">
+                    <div class="content-column">
+                        <h3 class="section-title" [style.color]="section.color">{{ section.title }}</h3>
+                        <p class="section-desc">{{ section.description }}</p>
+
+                        <div class="features-grid">
+                            <div *ngFor="let feature of section.features" class="feature-item">
+                                <div class="feature-icon-box" [style.border-color]="section.color">
+                                    <span>{{ feature.icon }}</span>
+                                </div>
+                                <div class="feature-text">
+                                    <strong>{{ feature.title }}</strong>
+                                    <p>{{ feature.description }}</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="highlight-box" [style.border-left-color]="section.color">
+                            <span class="bulb-icon">💡</span>
+                            <em>{{ section.highlightText }}</em>
+                        </div>
+                    </div>
+
+                    <!-- <div class="icon-column" [style.background]="section.color">
+            <div class="number-badge">{{ section.number }}</div>
+            <div class="main-icon">{{ section.icon }}</div>
+            <div class="vertical-text">{{ section.title.split('.')[1]?.trim() || section.title }}</div>
+          </div> -->
+                </div>
+
+                <!-- Separator Line -->
+                <div *ngIf="i < sections.length - 1" class="section-divider">
+                    <span class="divider-circle" [style.background]="section.color"></span>
+                </div>
+            </div>
+
+            <!-- Final CTA -->
+            <div class="final-action-bar">
+                <div class="action-content">
+                    <h3>
+                        <h3>Your Health, Our Prioity</h3>
+                    </h3>
+                    <p><b>Experience World-Class Orthopedic Care</b></p>
+                    <p style="margin-top: 15px; line-height: 25px;">Your mobility is your freedom. Don’t let knee pain
+                        stop
+                        you from enjoying life to the fullest. Book a consultation with our expert orthopedic surgeons
+                        today
+                        and take the first step toward a pain-free active and confident tomorrow.</p>
+                </div>
+                <div class="action-buttons">
+                    <a href="tel:+918069239999" class="action-btn btn-yellow" (click)="trackPhoneClick()">
+                        <i class="fa-solid fa-phone"></i> Call +91 80692 39999
+                    </a>
+                    <button class="action-btn btn-teal" (click)="scrollToForm()">
+                        📅 Book Appointment
+                    </button>
+                </div>
+            </div>
+        </div>
+
     </div>
-
-    <!-- youtube -->
-
-    <div class="title-container testimonials containerMargin">
-        <div class="heading"  style="margin-top: 40px;">PATIENT TESTIMONIALS</div>
-    </div>
-
-    <div class="youtube containerMargin" style="margin-bottom: 50px;">
-        <div class="video"><iframe width="320" height="200"
-                src="https://www.youtube.com/embed/3_t5sd3Cy8w?si=7D-n3sHMz6-5BiPZ" title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-        <div class="video"><iframe width="320" height="200"
-                src="https://www.youtube.com/embed/qcR4evvQ03Q?si=6YaHJIzmuNZhCeJX" title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-        <div class="video"><iframe width="320" height="200"
-                src="https://www.youtube.com/embed/mp0IOxR5-xQ?si=1JKtmiGQanrzyvpl" title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-    </div>
-
-
-
 </div>
