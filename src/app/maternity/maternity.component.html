@@ -1,285 +1,268 @@
-<div class="maternity_container">
-  <!-- container 1 -->
-  <div class="container_1">
-    <!-- box_1 -->
-    <div class="container_1_content_box">
-      <div class="topbox">
-        <div class="content_heading_box">
-          <h2 class="container_1_heading">JANANI SAMRIDDHI:</h2>
-          <div class="heading_des">Mom & Baby, Covered</div>
-        </div>
-        <div class="discount_tag">
-          <img src="../../assets/Rashtrotthana-Hospital-maternity-care.png"
-            alt="Best pregnancy hospital in Raja Rajeshwari Nagar | Bangalore | Rashtrotthana hospital">
-        </div>
-      </div>
-      <!-- box_1 -->
-      <div class="container_1_heading_points">
-        <ul class="container_1_list">
-          <li class="container_1_list_item">1. Secure Your Package : Book with a 20% advance.</li>
-          <li class="container_1_list_item">2. Rooms Upgrades: Options for semi-private, private and suite
-            accommodations.</li>
-          <li class="container_1_list_item">3. Flexible Options: personalized additions for a C-section, painless
-            delivery and more.</li>
-        </ul>
-      </div>
-    </div>
-    <div class="button_container">
-      <button (click)="contactus()" class="container_1_btn">Book your package today! <i
-          class="fa-solid fa-angle-right"></i></button>
+<div class="root-container">
+
+  <!-- hero section -->
+  <div class="speciality-header">
+    <img src="../../assets/janani-samriddhi-banner.png" class="desktop"
+      alt="Maternity Package (Janani Samridhi) Banner of Rashtrotthana Hospital Bangalore" />
+    <img src="../../assets/Janani-samridhi-mobile-banner.png" class="mobile"
+      alt="Maternity Package (Janani Samridhi) Banner of Rashtrotthana Hospital Bangalore">
+    <div class="header_button">
+      <button class="appointment" (click)="scrollToForm()">Book an Appointment</button>
+      <a href="tel:+918069239999" class="contact_button" (click)="trackPhoneClick()">Contact Now</a>
     </div>
   </div>
 
-  <div class="page_content">
-    <h1 class="pc_heading">Experience the Best Pregnancy Care &#64; Rashtrotthana Hospital and best in Normal Delivery
-    </h1>
-    <p class="pc_para">Rashtrotthana Hospital provides exceptional <span><h3 class="pc_para h2_inline bold_para">Pregnancy Care Services</h3></span> through its JANANI
-      SAMRIDDHI package – a comprehensive, all-inclusive <span><h3 class="h2_inline pc_para bold_para">Maternity Care Plan.</h3></span> Our expert team of <span><h3 class="pc_para h2_inline bold_para">Gynecologists
-        and Obstetricians</h3></span> is available 24/7, ensuring safe and timely care for both mother and baby during
-      emergencies or high-risk pregnancies.</p>
-    <h2 class="pc_heading">Best Pregnancy Hospital for Safe & Normal Deliveries</h2>
-    <div class="pc_para">Choose Rashtrotthana Hospital for Safe and Normal Deliveries, now available at just Rs. 50,000*. Our <b>antenatal package in Bangalore</b> is designed to provide expert guidance and personalized care throughout your pregnancy journey. As one of the providers of the <b>best maternity packages in Bangalore</b>, we focus on ensuring your safety and comfort during every stage of motherhood.</div>   
-    <div class="pc_para">In addition to expert prenatal care, our <b>pregnancy packages in Bangalore</b> include post-delivery support with <b>postpartum recovery programsin Bangalore</b>, helping new mothers regain their health and confidence. Our hospital stands out for offering <b>antenatal comprehensive programs in Bangalore</b>, which include regular check-ups, advanced screenings, and holistic care for a seamless pregnancy experience.</div>   
-    <div class="pc_para">Trust Rashtrotthana Hospital for exceptional <b>maternity care in Bangalore</b>, where every detail of your journey is thoughtfully planned. Explore our <b>pregnancy packages in Bangalore</b> and book your consultation today!</div>   
-  </div>
+  <div class="container-2">
 
-  <!-- maternity doc profile -->
-  <div class="m_doc_profile">
-    <!-- left side box -->
-    <div class="dp_left">
-      <div class="bg_image">
-        <img src="../../assets/Best-maternity-hospital-in-Bangalore.png"
-          alt="Best Maternity Hospital in RR Nagar Bangalore | Rashtrotthana Hospital">
+    <!-- Intro Section -->
+    <div class="intro-section">
+      <h1 class="page-title">About Janani Samridhi Maternity Package</h1>
+
+      <div class="intro-content">
+        <p class="intro-para">Motherhood is not just about bringing a child into the world - it’s about creating a
+          lifetime of love, warmth, and strength. At Rashtrotthana Hospital, we understand that this journey deserves
+          nothing less than the best care, comfort, and compassion.</p>
+        <p class="intro-para">Janani Samridhi is more than a maternity package - it’s a promise of safe delivery, expert
+          care, and a joyful beginning for every mother and baby. Starting at just ₹50,000, this package has been
+          thoughtfully designed to make quality maternity care accessible to every family.</p>
+        <p class="intro-para">From your first contraction to your baby’s first cry, our dedicated obstetric team ensures
+          that you feel supported, reassured, and cherished at every step. Because we believe that when a mother feels
+          cared for, the baby arrives in the happiest way possible.</p>
       </div>
-      <!-- contents -->
-      <div class="con2_contents">
-        <div class="m_doc_name">Dr. Latha Venkataraman</div>
-        <div class="doc_desig">Senior Consultant - Obstetrics & Gynecology MRCOG (UK), MRCP (I), FRCOG (UK)</div>
-        <div class="m_expertise">
-          <div class="expertise_points_wrapper" *ngFor="let expertise of doc_expertise">
-            <img src="../../assets/Best-Pregnancy-Hospital-in-Bangalore.svg" alt="Best Pregnancy Hospital in Bangalore">
-            <div class="expertise_points">{{expertise}}</div>
+    </div>
+
+
+    <div class="surgery-sections-container">
+      <div class="surgery-header">
+        <h2 class="surgery-main-title">OUR JANANI SAMRIDHI MATERNITY PACKAGE</h2>
+        <p class="surgery-main-subtitle">Cherishing Every Birth - Safe Delivery, Warm Care, and Complete Support for
+          Every Mother.</p>
+      </div>
+
+      <div class="surgeries-grid">
+        <div *ngFor="let surgery of surgeries; let i = index" class="surgery-card"
+          [class.surgery-card-left]="i % 2 === 0" [class.surgery-card-right]="i % 2 !== 0">
+
+          <div class="surgery-icon-wrapper">
+            <div class="surgery-icon" [innerHTML]="surgery.icon"></div>
+          </div>
+
+          <div class="surgery-content">
+            <!-- <div class="surgery-number">0{{ i + 1 }}</div> -->
+            <h3 class="surgery-title">{{ surgery.title }}</h3>
+            <p class="surgery-subtitle">{{ surgery.subtitle }}</p>
+
+            <p class="surgery-description">{{ surgery.description }}</p>
+
+            <p class="surgery-procedure">{{ surgery.procedure }}</p>
+
+            <div class="benefits-section">
+              <h4 class="benefits-title">What’s Inside the Package</h4>
+              <ul class="benefits-list">
+                <li *ngFor="let benefit of surgery.benefits" class="benefit-item">
+                  <span class="checkmark">✓</span>
+                  <span>{{ benefit }}</span>
+                </li>
+              </ul>
+            </div>
+
+            <p class="surgery-highlight">{{ surgery.highlight }}</p>
+
+            <div class="surgery-cta-buttons">
+              <a href="tel:+918069239999" class="cta-button cta-call">
+                <span class="cta-icon"><i class="fa-solid fa-phone"></i></span>
+                Call Us Now
+              </a>
+              <button class="cta-button cta-appointment" (click)="scrollToForm()">
+                <span class="cta-icon">📅</span>
+                Book Appointment
+              </button>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- right side box -->
-    <div class="dp_right">
-      <img src="../../assets/Prenatal-Care-Services-Bangalore.png"
-        alt="Prenatal Care Services Bangalore | Rashtrotthana Hospital">
-    </div>
-  </div>
-  <!-- container 2 -->
-  <div class="container_2">
-    <div class="container_2_box">
-      <div class="container_2_para">We understand the importance of safe pregnancy care, which is why our team of <b>experienced doctors for maternity care in Bangalore</b>, including renowned gynaecologist <b>Dr. Latha Venkataraman</b>, is dedicated to providing exceptional medical attention throughout your maternity journey. At <b>Rashtrotthana Hospital</b>, we offer comprehensive and compassionate <b>maternity care in Bangalore</b>, ensuring that every mother receives the care she deserves for a safe and fulfilling experience.</div>
-      <div class="container_2_para">As one of the <b>top maternity care centers in Bangalore</b>, we take pride in offering a variety of <b>delivery packages in Bangalore</b> and <b>birthing packages in Bangalore</b> to meet the unique needs of every mother. Whether you’re exploring a <b>pregnancy delivery package in Bangalore</b> or looking for the <b>best maternity packages in Bangalore</b>, our expert team ensures you receive unparalleled care and support throughout your journey</div>
-    </div>
-    <div class="container_2_box">
-      <h2 class="container_2_heading_1">Mathruswasthyam Lokaswasthyam</h2>
-      <div class="container_2_para">At Rashtrotthana Hospital, we believe that maternal health is the foundation for a healthier society. Our compassionate, patient-centered approach ensures both mothers and newborns receive the highest level of care, empowering families with confidence and support throughout the pregnancy journey.</div>
-      <div class="container_2_para">As one of the <b>top maternity care centers in Bangalore</b>, Rashtrotthana Hospital offers a range of <b>delivery packages in Bangalore</b> to meet the diverse needs of expecting mothers. Whether you’re looking for <b>birthing packages in Bangalore</b> or <b>a pregnancy delivery package in Bangalore</b>, our hospital provides expert care at every stage.</div>
-      <div class="container_2_para">Choose <b>Rashtrotthana Hospital</b> for trusted maternity care and explore our thoughtfully designed packages tailored to your unique needs. Let us support you every step of the way!</div>
-    </div>
-  </div>
-  <!-- container 3 -->
-  <div class="container_3">
-    <h2 class="container_3_heading">Our Expertise in Maternity Care Includes:</h2>
-    <div class="container_3_contents">
-      <div class="container_3_lists">
-        <ul class="expertise_lists">
-          <li class="expertise_list_item">Vaginal Delivery</li>
-          <li class="expertise_list_item">High-Risk Pregnancy Management</li>
-          <li class="expertise_list_item">Diabetes & Pregnancy</li>
-          <li class="expertise_list_item">Medical Disorders in Pregnancy</li>
-          <li class="expertise_list_item">Recurrent Pregnancy Loss Treatment</li>
-          <li class="expertise_list_item">Emergency Obstetric Care</li>
-          <li class="expertise_list_item">Vaginal Surgeries</li>
+
+    <div class="doctor-part">
+        <div class="doctor-heading">Meet Our Senior Gynecologist</div>
+        <div class="doctor-img">
+            <img src="assets/Doc-Inv-Page/Dr-Latha-Venkataram.png" alt="">
+            <div class="doctor-name">
+                <li class="doctor-name"><b>Dr. Latha Venkataraman</b></li>
+                <li class="doctor-name-2" style="margin-top: 20px;">MBBS, MRCOG (UK), MRCP(I), FRCOG(UK)</li>
+                <li class="doctor-name-2">Experience: 32+ Years</li>
+                <li class="doctor-name-2">Speciality: Obstetrics & Gynecology</li>
+            </div>
+        </div>
+        <ul style="text-align: left;">
+          <li class="doctor-description_left">30+ years of experience</li>
+          <li class="doctor-description_left">50k+ successful deliveries</li>
+          <li class="doctor-description_left">80% success rate on Normal Delivery</li>
+          <li class="doctor-description_left">Skilled in vaginal surgeries</li>
+          <li class="doctor-description_left">Specializes in safe and normal (vaginal) deliveries</li>
+          <li class="doctor-description_left">Focused on menopause management and related health issues</li>
+          <li class="doctor-description_left">Expertise in managing high-risk pregnancies</li>
+          <li class="doctor-description_left">Provides care for diabetes and medical disorders in pregnancy</li>
+          <li class="doctor-description_left">Offers treatment for recurrent pregnancy loss</li>
         </ul>
-      </div>
-      <div class="container_3_image">
-        <img src="../../assets/Maternity/Postnatal-Care-Bangalore.png"
-          alt="Postnatal Care Bangalore | Rashtrotthana Hospital">
-      </div>
+
+        <button class="appointment-btn" (click)="scrollToForm()">Book an Appointment</button>
+            
     </div>
-    <div class="container_3_description">We understand the importance of <b>personalized pregnancy care</b>, which is
-      why our team of <b>highly qualified gynecologists and obstetricians</b> is dedicated to providing exceptional
-      medical attention throughout your <b>maternity journey</b>. From the early stages of pregnancy to postpartum
-      recovery, we ensure that every mother receives the care she deserves for a safe and fulfilling experience.</div>
-  </div>
-  <!-- container 4 -->
-  <div class="container_4">
-    <h2 class="container_4_heading">Integrated Maternity Packages</h2>
-    <div class="container_4_para">Starting from the 3rd month of pregnancy, our Integrated Maternity Care Packages offer
-      a comprehensive, all-in-one approach to maternal health and wellness. These packages provide complete support for
-      a healthy pregnancy and postnatal recovery, ensuring that every aspect of care is covered under one roof.</div>
-    <ul class="container_4_lists">
-      <li class="container_4_list_items">
-        <b> Prenatal Yoga for Expecting Mothers: </b>Our simple prenatal yoga sessions help you in improving digestion,
-        flexibility, mood stability and reducing pregnancy - related discomforts such as back pain, swelling and
-        fatigue. These sessions also help manage stress and anxiety while enhancing breath control - an essential tool
-        for a smoother labor experience.
-      </li>
-      <li class="container_4_list_items">
-        <b>Post-Delivery Home Care Package (Ayurvedic Treatment): </b>Our customized postnatal care services focus on
-        Ayurvedic therapies designed to help mothers recover fully after delivery. This program supports postpartum
-        healing, strength restoration and overall emotional well-being, ensuring a healthier recovery process.S
-      </li>
-      <li class="container_4_list_items">
-        <b>Postnatal Yoga for New Mothers : </b>Postnatal yoga classes focus on restoring core strength, improving
-        posture and enhancing mental health. These sessions help manage post-delivery stress, boost energy levels and
-        aid in physical recovery.
-      </li>
-    </ul>
-    <div class="container_4_description">Antenatal and postnatal yoga offer numerous benefits for both expecting and new
-      mothers. Antenatal yoga helps improve physical strength and flexibility, which can ease common pregnancy
-      discomforts such as back pain, swelling and fatigue. It also promotes relaxation, which may help reduce stress and
-      anxiety during pregnancy. Regular practice can enhance breath control, which is beneficial during labor. Postnatal
-      yoga focuses on recovery, helping to restore core strength, improve posture and support mental well-being after
-      childbirth. It also aids in managing stress and improving energy levels, which are essential during the postnatal
-      period. Additionally, both antenatal and postnatal yoga can foster a sense of community, allowing mothers to
-      connect and share experiences with others going through similar stages of motherhood.</div>
-  </div>
-  <!-- new container -->
-  <div class="container_4">
-    <div class="container_4_heading">Comprehensive Pregnancy Care with Holistic Wellness &#64; Rashtrotthana Hospital
-    </div>
-    <div class="container_4_para">We are committed to providing exceptional <b>pregnancy care services</b> that ensure a
-      safe and healthy motherhood journey. Our expert team of <b>gynecologists and obstetricians</b> specializes in
-      managing <b>high-risk pregnancies,</b> conducting <b>normal deliveries</b> and offering personalized <b>prenatal
-        care</b> and <b>postnatal support.</b> We provide comprehensive <b>maternity care packages</b> designed to cover
-      every stage of pregnancy, from early consultations to postpartum recovery.</div>
-    <div class="container_4_para">Our specialized services include <b>antenatal and postnatal yoga classes</b>, helping
-      expectant mothers improve <b>flexibility, strength</b>, and manage <b>pregnancy-related discomforts</b> like back
-      pain and stress. We also offer <b>Ayurvedic postnatal therapies and lactation support</b> that promote faster
-      recovery and emotional well-being after childbirth. Our hospital is equipped with state-of-the-art <b>labor and
-        delivery</b> rooms, supported by experienced <b>neonatal specialists</b> ensuring newborns receive the best care
-      from day one.</div>
-    <div class="container_4_para">Recognized as the <b>best pregnancy hospital in Bangalore, we provide 24/7 support and
-        neonatal care, ensuring your baby’s health and safety.</b></div>
-    <div class="container_4_para">Whether you’re preparing for your first baby or need advanced <b>high-risk pregnancy
-        management</b>, trust us for a seamless maternity experience that prioritizes your health and your baby’s
-      development. Choose <b>Rashtrotthana Hospital</b> for a safe, supportive, and fulfilling motherhood journey!</div>
-  </div>
 
-  <!-- Expert Pregnancy Care for Safe Motherhood -->
+    <div class="main-services-section">
+      <div class="services-content-area">
+        <div class="section-badge">
+          <span class="badge-icon">🏥</span>
+          <span>Maternity Care</span>
+        </div>
 
-  <div class="container_list new_container">
-    <h2 class="container_4_heading">Expert Pregnancy Care for Safe Motherhood</h2>
-    <div class="container_4_content">
-      <div class="container_4_image">
-        <img src="../../assets/best-maternity-care-hospital-in-raja-rajeshwari-nagar.jpg" alt="Best Maternity Care Hospital in Raja Rajeshwari Nagar | Bengaluru | Rashtrotthana Hospital">
+        <h2 class="section-heading">Our Expertise in Maternity Care Includes</h2>
+
+        <p class="service-card-desc">Our maternity care services cover every stage of pregnancy - from regular check-ups
+          and safe delivery to managing complex conditions. With experienced obstetricians and advanced facilities, we
+          ensure both mother and baby receive the best care throughout this beautiful journey.</p>
+
+        <ul>
+          <li class="service-card-title" style="margin-top: 15px;">Vaginal Delivery</li>
+          <li class="service-card-title" style="margin-top: 15px;">High-Risk Pregnancy Management</li>
+          <li class="service-card-title" style="margin-top: 15px;">Diabetes & Pregnancy</li>
+          <li class="service-card-title" style="margin-top: 15px;">Medical Disorders in Pregnancy</li>
+          <li class="service-card-title" style="margin-top: 15px;">Recurrent Pregnancy Loss Treatment</li>
+          <li class="service-card-title" style="margin-top: 15px;">Emergency Obstetric Care</li>
+          <li class="service-card-title" style="margin-top: 15px;">Emergency Obstetric Care</li>
+        </ul>
+
+
       </div>
-      <ul class="container_4_lists">
-        <li class="container_4_list_items"><b>Comprehensive Pregnancy Care Packages</b> from the first trimester to
-          postnatal recovery</li>
-        <li class="container_4_list_items"><b>Best Pregnancy Hospital in Bangalore</b> offering expert medical care and
-          support</li>
-        <li class="container_4_list_items"><b>Safe and Normal Deliveries </b>under the supervision of experienced
-          obstetricians</li>
-        <li class="container_4_list_items"><b>Prenatal and Postnatal Yoga Classes</b> guided by certified professionals
-        </li>
-        <li class="container_4_list_items"><b>Ayurvedic Postnatal Therapies</b> for holistic recovery</li>
-        <li class="container_4_list_items"><b>High-Risk Pregnancy Care</b> with round-the-clock emergency services</li>
-        <li class="container_4_list_items"><b>Neonatal and Pediatric</b> Care for newborns</li>
-      </ul>
-    </div>
-  </div>
 
-
-  <!-- Personalized Maternity Care -->
-  <div class="container_4">
-    <h2 class="container_4_heading">Personalized Maternity Care for a Safe & Healthy Pregnancy</h2>
-    <div class="container_4_para">We understand the importance of <b>personalized pregnancy care</b>, which is why our
-      team of <b>highly qualified gynecologists and obstetricians</b> is dedicated to providing exceptional medical
-      attention throughout your <b>maternity journey</b>. From the early stages of pregnancy to postpartum recovery, we
-      ensure that every mother receives the care she deserves for a safe and fulfilling experience</div>
-  </div>
-
-  <!-- Why Choose Rashtrotthana Hospital for Pregnancy Care? -->
-
-  <div class="container_list new_container">
-    <h2 class="container_4_heading">Why Choose Rashtrotthana Hospital for Pregnancy Care?</h2>
-    <div class="container_4_content row-reverse">
-      <ul class="container_4_lists">
-        <li class="container_4_list_items">24/7 availability of <b>experienced and skilled gynecologists</b> and <b>neonatal
-            specialists</b></li>
-        <li class="container_4_list_items"><b>Safe and Normal Deliveries</b> with modern medical facilities</li>
-        <li class="container_4_list_items"><b>Prenatal and Postnatal Yoga Classes</b> guided by certified professionals
-        </li>
-        <li class="container_4_list_items"><b>High-Risk Pregnancy Management</b> with advanced diagnostics and
-          round-the-clock support</li>
-        <li class="container_4_list_items"><b>Comprehensive Maternity Packages</b> like JANANI SAMRIDDHI for complete care
-          at affordable rates</li>
-      </ul>
-      <div class="container_4_image">
-        <img src="../../assets/best-pregnancy-services-in-raja-rajeshwari-nagar.png" alt="Best Pregnancy Services in Raja Rajeshwari Nagar | Bengaluru | Rashtrotthana Hospital">
+      <div class="form-sidebar" #formSection>
+        <app-speciality-form />
       </div>
     </div>
-  </div>
-  <!-- container 5 -->
-  <div class="container_5">
-    <img src="../../assets/Maternity/High-risk-pregnancy-care-Bangalore.png"
-      alt="High Risk Pregnancy Care Bangalore | Rashtrotthana Hospital">
-    <img src="../../assets/Maternity/Normal-delivery-hospital-Bangalore.png"
-      alt="Normal Delivery Hospital Bangalore | Rashtrotthana Hospital">
-    <img src="../../assets/Maternity/Obstetricians-in-Bangalore.png"
-      alt="Obstetricians in Bangalore | Rashtrotthana Hospital">
-  </div>
-  <!-- conatainer 6 -->
-  <div class="container_6">
-    <img src="../../assets/Maternity/Gynecology-services-Bangalore.png"
-      alt="Gynecology Services Bangalore | Rashtrotthana Hospital">
 
-    <div class="container_6_poster">At Rashtrotthana Hospital, we believe in a holistic approach to maternity care,
-      ensuring both mother and baby thrive through every stage of this incredible journey. Experience comprehensive
-      maternity services backed by compassionate care, advanced technology and a patient-first approach.
+    <!-- doctors section -->
+
+    <div class="container_margin">
+      <h2 class="s_h1 text-center heading-margin">Our Gynecology Experts</h2>
+      <app-speciality-doc-card [doctors]="doctors" />
     </div>
 
-    <div class="container_6_poster">Join our expert-guided sessions, designed to support physical and emotional
-      well-being throughout your motherhood journey.</div>
-  </div>
-  <!-- doctor details -->
 
-  <div class="heading">
-    <p class="doctor_heading">MEET OUR MEDICAL TEAM</p>
-  </div>
+    <!-- yoga -->
+    <div class="container-2 container_margin yoga">
+      <img src="../../assets/Maternity/Gynecology-services-Bangalore.png" alt="">
+    </div>
 
-  <div class="doc_container">
-    <div class="doctors_flex">
-      <div class="doc_details" *ngFor="let slide of doctors; let i = index" [ngClass]="{ active: i === 0 }">
-        <div class="doc_1">
-          <img [src]="slide.image" alt="{{ slide.name }}" [alt]="slide.alt" />
-          <p class="doc_name">{{ slide.name }}</p>
-          <p class="doc_Exp">{{ slide.experience }}</p>
+    <!-- Why Choose Rashtrotthana Hospital? -->
+
+    <div class="why-choose-wrapper" style="margin-top: 30px;">
+      <!-- Header Section -->
+      <div class="section-intro">
+        <span class="intro-badge">Your Health Partner</span>
+        <h2 class="main-heading">Why Choose Rashtrotthana Hospital?</h2>
+        <p class="main-subheading">Your Health in Trustable Hands</p>
+        <div class="heading-underline">
+          <span class="line"></span>
+          <span class="dot"></span>
+          <span class="line"></span>
+        </div>
+      </div>
+
+      <!-- Sections with alternating layouts -->
+      <div *ngFor="let section of sections; let i = index" class="section-block">
+
+        <!-- Left Layout (Icon Left) -->
+        <div *ngIf="i % 2 === 0" class="layout-container layout-left">
+          <!-- <div class="icon-column" [style.background]="section.color">
+            <div class="number-badge">{{ section.number }}</div>
+            <div class="main-icon">{{ section.icon }}</div>
+            <div class="vertical-text">{{ section.title.split('.')[1]?.trim() || section.title }}</div>
+          </div> -->
+
+          <div class="content-column">
+            <h3 class="section-title" [style.color]="section.color">{{ section.title }}</h3>
+            <p class="section-desc">{{ section.description }}</p>
+
+            <div class="features-grid">
+              <div *ngFor="let feature of section.features" class="feature-item">
+                <div class="feature-icon-box" [style.border-color]="section.color">
+                  <span>{{ feature.icon }}</span>
+                </div>
+                <div class="feature-text">
+                  <strong>{{ feature.title }}</strong>
+                  <p>{{ feature.description }}</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="highlight-box" [style.border-left-color]="section.color">
+              <span class="bulb-icon">💡</span>
+              <em>{{ section.highlightText }}</em>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Layout (Icon Right) -->
+        <div *ngIf="i % 2 !== 0" class="layout-container layout-right">
+          <div class="content-column">
+            <h3 class="section-title" [style.color]="section.color">{{ section.title }}</h3>
+            <p class="section-desc">{{ section.description }}</p>
+
+            <div class="features-grid">
+              <div *ngFor="let feature of section.features" class="feature-item">
+                <div class="feature-icon-box" [style.border-color]="section.color">
+                  <span>{{ feature.icon }}</span>
+                </div>
+                <div class="feature-text">
+                  <strong>{{ feature.title }}</strong>
+                  <p>{{ feature.description }}</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="highlight-box" [style.border-left-color]="section.color">
+              <span class="bulb-icon">💡</span>
+              <em>{{ section.highlightText }}</em>
+            </div>
+          </div>
+
+          <!-- <div class="icon-column" [style.background]="section.color">
+            <div class="number-badge">{{ section.number }}</div>
+            <div class="main-icon">{{ section.icon }}</div>
+            <div class="vertical-text">{{ section.title.split('.')[1]?.trim() || section.title }}</div>
+          </div> -->
+        </div>
+
+        <!-- Separator Line -->
+        <div *ngIf="i < sections.length - 1" class="section-divider">
+          <span class="divider-circle" [style.background]="section.color"></span>
+        </div>
+      </div>
+
+      <!-- Final CTA -->
+      <div class="final-action-bar">
+        <div class="action-content">
+          <h3>Your Health, Our Priority</h3>
+          <p><b>Experience Safe & Compassionate Maternity Care</b></p>
+          <p style="margin-top: 15px; line-height: 25px;">
+            Motherhood is a special journey - and we’re here to make it safe, joyful, and stress-free.
+            From prenatal check-ups to post-delivery recovery, our expert obstetricians ensure the best care
+            for both mother and baby. Choose the <b>Janani Samriddhi Maternity Package</b> and welcome your little one
+            with confidence and comfort.
+          </p>
+        </div>
+
+        <div class="action-buttons">
+          <a href="tel:+918069239999" class="action-btn btn-yellow" (click)="trackPhoneClick()">
+            <i class="fa-solid fa-phone"></i> Call +91 80692 39999
+          </a>
+          <button class="action-btn btn-teal" (click)="scrollToForm()">
+            📅 Book Appointment
+          </button>
         </div>
       </div>
     </div>
-  </div>
-  <div class="doc_container">
-    <div class="doctors_flex">
-      <div class="doc_details" *ngFor="let slide of doctors2; let i = index" [ngClass]="{ active: i === 0 }">
-        <div class="doc_1">
-          <img [src]="slide.image" [alt]="slide.alt" />
-          <p class="doc_name">{{ slide.name }}</p>
-          <p class="doc_Exp">{{ slide.experience }}</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- view all button -->
-  <div class="view_all_btn_box">
-    <app-arrow-btn></app-arrow-btn>
-  </div>
 
-  <!-- youtube videos -->
-
-  <div class="title-container testimonials">
-    <app-title-button text='PATIENT TESTIMONIALS'></app-title-button>
   </div>
-
-  <div class="youtube">
-    <iframe src="https://154f74ff571a4bc78cf89cee050e9624.elf.site" frameborder="0"></iframe>
-  </div>
-
 </div>

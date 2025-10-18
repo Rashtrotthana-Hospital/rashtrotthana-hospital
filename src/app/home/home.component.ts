@@ -58,6 +58,12 @@ export class HomeComponent implements OnInit {
   proctology(){
     this.router.navigate(['/piles-hospital-bangalore']);
   }
+  allergyClinic(){
+    this.router.navigate(['/allergy-clinic-in-bangalore']);
+  } 
+  diabeticFoot(){
+    this.router.navigate(['/diabetic-foot-clinic-in-bangalore']);
+  }
   
   showContent: any = 'default';
   showTitle:any = 'default'

@@ -108,11 +108,7 @@ const routes: Routes = [
       { path: 'homeopathy-treatment-bangalore', component: HomeopathyComponent },
       { path: 'lifestyle-medicine-bangalore', component: NaturopathyComponent },
       { path: 'research-center', component: ResearchComponent },
-      { path: "diabetic", component: DiabeticFoot },
-      { path: "allergy", component: AllergieClinic },
       { path: "popup", component: PopupForm },
-
-      
     ]
   },
 
@@ -171,6 +167,10 @@ const routes: Routes = [
     path: 'insurance',
     component: InsuranceComponent
   },
+
+  // integrated clinics      
+  { path: "diabetic-foot-clinic-in-bangalore", component: DiabeticFoot },
+  { path: "allergy-clinic-in-bangalore", component: AllergieClinic },
   
 
   { path: 'blog', component: BlogComponent },
