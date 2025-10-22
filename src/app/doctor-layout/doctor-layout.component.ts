@@ -1128,7 +1128,7 @@ export class DoctorLayoutComponent {
     },
     {
       name: "Dr. Sandeep K M",
-      image: "assets/Dr-Nagesh-R.png",
+      image: "assets/dr-sandeep-k-m-doc-page.png",
       department: 'Orthopedics',
       speciality: 'ORTHOPEDICS',
       desgination: 'Consultant - Orthopaedic Surgeon',
