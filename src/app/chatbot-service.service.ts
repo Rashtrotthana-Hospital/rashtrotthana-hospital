@@ -89,4 +89,7 @@ export class ChatbotServiceService {
   sendSMSMessageForService(data: any): Observable<any> {
     return this.http.post<any>(`${this.apiUrl}/api/sms/send-sms-package`, data);
   }
+  sendMailtoHospital(formdata : any) : Observable<any>{
+    return this.http.post<any>(`${this.apiUrl}/api/email/send-package-email`, formdata)
   }
+}

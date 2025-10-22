@@ -1,5 +1,6 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { ChatbotServiceService } from '../chatbot-service.service';
+import { Router } from '@angular/router';
 import { first } from 'rxjs';
 
 @Component({
@@ -19,7 +20,7 @@ export class PackageFormComponent {
     appointmentDate: ''
   };
   today: string = '';
-  constructor(private chatbotService: ChatbotServiceService) { }
+  constructor(private chatbotService: ChatbotServiceService, private router: Router) { }
   ngOnInit() {
     const now = new Date();
     this.today = now.toISOString().split('T')[0]; // Format today's date as YYYY-MM-DD
@@ -42,6 +43,8 @@ export class PackageFormComponent {
       firstName: this.formData.firstName,
       lastName: this.formData.lastName,
       phoneNumber: this.formData.phoneNumber,
+      email: this.formData.email,
+      appointmentDate: this.formData.appointmentDate,
 
     }
     this.chatbotService.createService(formDetails).subscribe({
@@ -55,12 +58,21 @@ export class PackageFormComponent {
         //     console.error('Failed to send whatsapp message:', error);
         //   }
         // });
+        
         const smsPayload ={
           packageName: this.selectedPackage?.title,
           patientName: this.formData.firstName + ' ' + this.formData.lastName,
           patientPhoneNumber: this.formData.phoneNumber,
           status: 'pending'
         }
+        this.chatbotService.sendMailtoHospital(payload).pipe(first()).subscribe({
+          next: (response) => {
+            console.log('Email sent successfully:', response);
+          },
+          error: (error) => {
+            console.error('Failed to send email:', error);
+          }
+        });
         this.chatbotService.sendSMSMessageForService(smsPayload).subscribe({
           next: (response) => {
             console.log('SMS message sent successfully:', response);
@@ -70,6 +82,7 @@ export class PackageFormComponent {
           }
         });
         this.closeForm.emit(); // Emit close form event
+        this.router.navigate(['/thank-you'])
       },
       error: (error) => {
         console.error('Failed to create appointment:', error);

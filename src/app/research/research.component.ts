@@ -63,38 +63,82 @@ export class ResearchComponent {
       description : "",
       role_2 : "Research Manager"
     },
+    // {
+    //   image : "../../assets/member_15.png",
+    //   name : "Dr. Kavyashree Kulamarva",
+    //   qualification : "BAMS, MD",
+    //   designation : "Research Officer",
+    //   address : "Former Senior Resident, NIMHANS, Bengaluru",
+    //   role : "",
+    //   roleDesv : "Former Senior Research Fellow, CCRAS",
+    //   description : "",
+    //   role_2 : "Research Officer"
+    // },
+    // {
+    //   image : "../../assets/member_16.png",
+    //   name : "Dr. Sooraj Mohan R",
+    //   qualification : "BAMS",
+    //   designation : "Research Officer",
+    //   address : "Former Senior Research fellow, National ayurveda Research Institute for Panchakarma",
+    //   role : "",
+    //   roleDesv : "Former Research Fellow, Dept. of  Ethno medicine, JNTBGRI",
+    //   description : "",
+    //   role_2 : "Research Officer"
+    // },
+    // {
+    //   image : "../../assets/member_14.png",
+    //   name : "Dr. Rohith K. R",
+    //   qualification : "BAMS",
+    //   designation : "Research Co-ordinator",
+    //   address : "",
+    //   role : "",
+    //   roleDesv : "",
+    //   description : "",
+    //   role_2 : "Research Co-ordinator"
+    // }
     {
-      image : "../../assets/member_15.png",
-      name : "Dr. Kavyashree Kulamarva",
-      qualification : "BAMS, MD",
+      image : "../../assets/vrinda.png",
+      name : "Dr. Vrinda",
+      qualification : "BAMS MD (Ayu)",
       designation : "Research Officer",
-      address : "Former Senior Resident, NIMHANS, Bengaluru",
+      address : "Former Senior Research Fellow, CCRAS - Central Ayurveda Research Institute, Bengaluru",
       role : "",
-      roleDesv : "Former Senior Research Fellow, CCRAS",
+      roleDesv : "Former Research consultant at Greenspace Herbs.",
       description : "",
       role_2 : "Research Officer"
     },
     {
-      image : "../../assets/member_16.png",
-      name : "Dr. Sooraj Mohan R",
-      qualification : "BAMS",
-      designation : "Research Officer",
-      address : "Former Senior Research fellow, National ayurveda Research Institute for Panchakarma",
-      role : "",
-      roleDesv : "Former Research Fellow, Dept. of  Ethno medicine, JNTBGRI",
-      description : "",
-      role_2 : "Research Officer"
-    },
-    {
-      image : "../../assets/member_14.png",
-      name : "Dr. Rohith K. R",
-      qualification : "BAMS",
-      designation : "Research Co-ordinator",
-      address : "",
+      image : "../../assets/vairamuthu.png",
+      name : "Dr. Vairamuthu. K",
+      qualification : "BAMS, MA (Sanskrit)",
+      designation : "Research Assistant",
+      address : "Former Senior Research Fellow, CCRAS-National Institute of Indian Medical Heritage, Hyderabad",
       role : "",
       roleDesv : "",
       description : "",
-      role_2 : "Research Co-ordinator"
+      role_2 : "Research Assistant"
+    },
+    {
+      image : "../../assets/Chaitra.png",
+      name : "Dr. Chaithra Rao P",
+      qualification : " BAMS, MD (Ayu)",
+      designation : "Research Assistant",
+      address : "Former Consultant, Centre of Excellence in Research and Clinical services in Diabetes Mellitus, Ministry of Ayush, Govt of India ",
+      role : "",
+      roleDesv : " Former Senior Research Fellow, CCRAS-Central Ayurveda Research Institute, Bengaluru",
+      description : "",
+      role_2 : "Research Assistant"
+    },
+    {
+      image : "../../assets/gopika.png",
+      name : "Dr. Gopika. C",
+      qualification : "BAMS, MD (Ayu), CRN",
+      designation : "Research Assistant",
+      address : "Former Researcher & Assistant Professor at Sri Paripoorna Sanathana Ayurveda Medical College Hospitals & Research Centre, Bengaluru ",
+      role : "",
+      roleDesv : "",
+      description : "",
+      role_2 : "Research Assistant"
     }
   ]
 

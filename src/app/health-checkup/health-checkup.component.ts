@@ -54,7 +54,7 @@ export class HealthCheckupComponent {
     {
       title: 'Senior Citizen Health Package',
       price: 1999,
-      packageId: 1,
+      packageId: 11,
       package: [
         {
           title: 'BLOOD TEST',
