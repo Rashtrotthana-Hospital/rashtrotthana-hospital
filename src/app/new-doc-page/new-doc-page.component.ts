@@ -1359,22 +1359,22 @@ export class NewDocPageComponent {
       title:'Ms. Samarchitha S | Clinical Psychologist in Bangalore',
       description:'Ms. Samarchitha S, Clinical Psychologist at Rashtrotthana Hospital Bangalore, offers expert care for mood, anxiety, sleep and personality disorders.'
     },
-    // {
-    //   name: "Dr. Sandeep K. M",
-    //   image: "assets/dummy-doc-male.svg",
-    //   department: 'Orthopedics',
-    //   speciality: 'ORTHOPEDICS',
-    //   desgination: 'Consultant - Orthopaedic Surgeon',
-    //   about: "Dr. Sandeep K M is an experienced orthopedic surgeon with over a decade of clinical expertise in trauma care, joint replacement (arthroplasty), and arthroscopy. He completed his MBBS from Mysore Medical College and MS in Orthopedics from Bangalore Medical College & Research Institute. He further specialized with a Fellowship in Joint Replacement at Sparsh Hospital, Bangalore. Dr. Sandeep has previously worked at Apollo Hospital, Bangalore, and currently serves as an Associate Professor at RajaRajeswari Medical College, alongside his clinical practice.",
-    //   areasOfExpertise: ["Trauma", "Arthroplasty", "Arthroscopy"],
-    //   expertise: "Years of Experience: 11+",
-    //   qualification: "MBBS, MS (Orthopedics), Fellowship in Joint Replacemen",
-    //   time: "",
-    //   date: "",
-    //   alt: 'Dr. Sandeep K M, top orthopedic surgeon in Bangalore | Rashtrotthana Hospital',
-    //   title:'Dr. Sandeep K M | Expert Orthopedic Surgeon in Bangalore',
-    //   description:'Expert orthopedic care by Dr. Sandeep K M, with 11+ years in trauma, joint replacement, and arthroscopy. MBBS, MS, Fellowship-trained. At Rashtrotthana Hospital, restoring mobility. Book now!'
-    // },
+    {
+      name: "Dr. Sandeep K. M",
+      image: "assets/dr-sandeep-k-m.png",
+      department: 'Orthopedics',
+      speciality: 'ORTHOPEDICS',
+      desgination: 'Consultant - Orthopaedic Surgeon',
+      about: "Dr. Sandeep K M is an experienced orthopedic surgeon with over a decade of clinical expertise in trauma care, joint replacement (arthroplasty), and arthroscopy. He completed his MBBS from Mysore Medical College and MS in Orthopedics from Bangalore Medical College & Research Institute. He further specialized with a Fellowship in Joint Replacement at Sparsh Hospital, Bangalore. Dr. Sandeep has previously worked at Apollo Hospital, Bangalore, and currently serves as an Associate Professor at RajaRajeswari Medical College, alongside his clinical practice.",
+      areasOfExpertise: ["Trauma", "Arthroplasty", "Arthroscopy", "Rheumatology"],
+      expertise: "Years of Experience: 11+",
+      qualification: "MBBS, MS (Orthopedics), Fellowship in Joint Replacemen",
+      time: "",
+      date: "",
+      alt: 'Dr. Sandeep K M, top orthopedic surgeon in Bangalore | Rashtrotthana Hospital',
+      title:'Dr. Sandeep K M | Expert Orthopedic Surgeon in Bangalore',
+      description:'Expert orthopedic care by Dr. Sandeep K M, with 11+ years in trauma, joint replacement, and arthroscopy. MBBS, MS, Fellowship-trained. At Rashtrotthana Hospital, restoring mobility. Book now!'
+    },
     // {
     //   name: "",
     //   image: "", 

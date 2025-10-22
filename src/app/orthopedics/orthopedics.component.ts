@@ -55,7 +55,7 @@ doctors: any = [
     id: 4,
     name: 'Dr. Sandeep K. M',
     experience: '11 Years',
-    image: '../../assets/Dr-Nagesh-R.png',
+    image: '../../assets/dr-sandeep-k-m-doc-page.png',
     slug: '/doctor/dr-sandeep-k-m'
   },
   // {
