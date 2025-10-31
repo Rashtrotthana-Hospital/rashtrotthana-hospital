@@ -12,7 +12,7 @@ export class AboutUsComponent {
   ngOnInit(): void {
   this.titleService.setTitle("About Rashtrotthana Hospital, RR Nagar Bangalore India");  
 
-  this.metaService.updateTag({ name: 'description', content: 'Holistic care at Rashtrotthana Hospital: Modern Medicine, Ayurveda, Homeopathy, Yoga & Naturopathy.' });
+  this.metaService.updateTag({ name: 'description', content: 'Experience holistic healing at Rashtrotthana Hospital with Modern Medicine, Ayurveda, Homeopathy, Yoga, and Naturopathy for complete well-being.' });
 
   this.metaService.updateTag({ name: 'keywords', content: 'rashtrotthana hospital, modern medicine, ayurveda, homeopathy, yoga, naturopathy, affordable healthcarae' });
 

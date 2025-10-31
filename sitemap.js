@@ -23,7 +23,7 @@ const staticRoutes = [
   '/health-check-up-packages-bangalore',
   '/terms-and-conditions',
   '/blog',
-  '/specialities/best-general-medicine-hospital-in-bangalore',
+  '/specialities/best-modern-medicine-hospital-in-bangalore',
   '/specialities/internal-medicine-hospital-in-bangalore',
   '/specialities/best-general-surgery-hospital-in-bangalore',
   '/specialities/best-paediatric-hospital-in-bangalore',
