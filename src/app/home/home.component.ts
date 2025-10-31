@@ -101,7 +101,7 @@ export class HomeComponent implements OnInit {
       className: 'modern-medicine',
       key: 'modern-medicine',
       image: 'modern-medicine-hover.png',
-      url: '/specialities/best-general-medicine-hospital-in-bangalore',
+      url: '/specialities/best-modern-medicine-hospital-in-bangalore',
       alt : 'best modern medicine hospital in rrnagar'
     },
     {

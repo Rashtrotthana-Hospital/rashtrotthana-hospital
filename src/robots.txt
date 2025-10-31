@@ -17,4 +17,5 @@ Disallow: /health_check.html
 Disallow: /ortho.php
 Disallow: /top-10-multispeciality-hospitals-in-bangalore.html
 Disallow: /The-Best-Lungs-Specialist-multispeciality-Hospital-in-Bangalore.html
+Disallow: /best-general-medicine-hospital-in-bangalore
 Disallow: /experts

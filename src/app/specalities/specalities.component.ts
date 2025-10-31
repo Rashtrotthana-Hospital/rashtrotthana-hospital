@@ -20,7 +20,7 @@ export class SpecalitiesComponent {
   private childRouteActive = false;
   
   modernMedicine(){
-    this.router.navigate(['best-general-medicine-hospital-in-bangalore'], {relativeTo:this.route});
+    this.router.navigate(['best-modern-medicine-hospital-in-bangalore'], {relativeTo:this.route});
     console.log('Modern Medicine');
   }
   yoga(){

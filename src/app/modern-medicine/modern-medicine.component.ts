@@ -20,7 +20,7 @@ export class ModernMedicineComponent {
 
   ngOnInit(): void {
     this.titleService.setTitle("Multispeciality Care | Modern Medicine | Rashtrotthana Hospital");  
-    this.metaService.updateTag({ name: 'description', content: 'Comprehensive multispeciality medical care with expert doctors at Rashtrotthana Hospital, Bangalore..' });
+    this.metaService.updateTag({ name: 'description', content: 'Comprehensive multispeciality healthcare in Bangalore with expert doctors and advanced treatments at Rashtrotthana Hospital for total patient care.' });
     this.metaService.updateTag({ name: 'keywords', content: ' general medicine, internal medicine, cardiology, nephrology, urology, dermatology, gynaecology, pulmonology' });
   }
 

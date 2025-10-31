@@ -77,7 +77,7 @@ const routes: Routes = [
   {
     path: 'specialities', component: SpecalitiesComponent,
     children: [
-      { path: 'best-general-medicine-hospital-in-bangalore', component: ModernMedicineComponent },
+      { path: 'best-modern-medicine-hospital-in-bangalore', component: ModernMedicineComponent },
 
       { path: 'internal-medicine-hospital-in-bangalore', component: GeneralMedicineComponent },
       { path: 'best-general-surgery-hospital-in-bangalore', component: GeneralSurgeryComponent },
