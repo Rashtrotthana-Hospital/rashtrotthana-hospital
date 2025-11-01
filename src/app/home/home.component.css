@@ -1722,7 +1722,7 @@ li {
   }
 }
 
-@media only screen and (max-width:430px) {
+@media only screen and (max-width:700px) {
   .whatsapp {
     border-radius: 50%;
     position: fixed;
