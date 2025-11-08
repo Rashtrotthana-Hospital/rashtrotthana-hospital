@@ -5,7 +5,7 @@ import { AnalyticsService } from './analytics.service';
 import { MessageService } from 'primeng/api';
 import { Meta, Title } from '@angular/platform-browser';
 import { CanonicalUrlService } from './canonical-url.service';
-
+import { FacebookPixelService } from './facebook-pixel.service';
 
 declare let gtag: Function;
 @Component({
@@ -14,7 +14,7 @@ declare let gtag: Function;
   styleUrl: './app.component.css'
 })
 export class AppComponent implements OnInit {
-  constructor(private router: Router, private analyticsService: AnalyticsService, private messageService: MessageService, private meta: Meta, private title: Title, private canonicalService: CanonicalUrlService) { }
+  constructor(private router: Router, private analyticsService: AnalyticsService, private messageService: MessageService, private meta: Meta, private title: Title, private canonicalService: CanonicalUrlService, private pixelService: FacebookPixelService) { }
   // title = 'rashtrotthana_hospital';
   isCareerPage = false;
   ngOnInit() {
