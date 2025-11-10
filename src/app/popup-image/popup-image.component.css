@@ -25,8 +25,8 @@
   }
   
   img {
-    max-width: 35%;
-    height: 100%;
+    max-width: 25%;
+    height: auto;
     margin-bottom: 20px;
   }
   
@@ -41,13 +41,12 @@
   
   .close-icon {
     position: absolute;
-    top: 10vh;
-    right: 33%;
+    top: 18.6vh;
+    right: 37%;
     font-size: 46px;
     font-weight: 700;
     color: #ff0000;
     cursor: pointer;
-   
   }
   
   .close-icon:hover {

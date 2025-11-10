@@ -948,21 +948,21 @@ export class NewDocPageComponent {
       title: 'Dr. Gopal Das C M | Consultant Psychiatrist in Bangalore',
       description: 'Dr. Gopal Das C M is an experienced psychiatrist treating anxiety, depression, schizophrenia, addictions, and elderly mental health concerns in Bangalore.'
     },
-    {
-      name: 'Dr. Nishitha A',
-      image: 'assets/Doc-Inv-Page/Dr-Nishitha-A.png',
-      department: 'Radiologist',
-      about: 'Dr. Nishitha A is a recent addition to our  dedicated team of radiologists with a special interest in  women\'s imaging . She graduated summa cum laude in her  M.D Radio-Diagnosis(2023) examinations. Dr. Nishitha has completed her Senior Residency at BGS GIMS Hospital and is currently,  pursuing a fellowship in Fetal Medicine at ADI Advanced Care for Fetal Studies, Bangalore . Dr. Nishitha has  numerous paper presentations at State, national and international conferences to her credit with a Gold medal for the best paper in KCACON-2013 . Outside of her professional work, she is a trained Carnatic vocalist and Bharatanatyam dancer, reflecting her diverse talents and interests.',
-      speciality: 'RADIOLOGY',
-      areasOfExpertise: ['Women\'s Imaging'],
-      expertise: 'Years of Experience: 1+',
-      qualification: 'MBBS, MD',
-      time: '16:30-16:50,16:50-17:10,17:10-17:30,17:30-17:50,17:50-18:00',
-      date: 'Monday-Thursday',
-      alt: 'Dr. Nishitha A | Radiologist in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
-      title: 'Dr. Nishitha A | Women’s Imaging Radiologist Bangalore',
-      description: 'Dr. Nishitha A is a radiologist in Bangalore with expertise in women’s imaging and fetal medicine, currently pursuing a fellowship in fetal studies.'
-    },
+    // {
+    //   name: 'Dr. Nishitha A',
+    //   image: 'assets/Doc-Inv-Page/Dr-Nishitha-A.png',
+    //   department: 'Radiologist',
+    //   about: 'Dr. Nishitha A is a recent addition to our  dedicated team of radiologists with a special interest in  women\'s imaging . She graduated summa cum laude in her  M.D Radio-Diagnosis(2023) examinations. Dr. Nishitha has completed her Senior Residency at BGS GIMS Hospital and is currently,  pursuing a fellowship in Fetal Medicine at ADI Advanced Care for Fetal Studies, Bangalore . Dr. Nishitha has  numerous paper presentations at State, national and international conferences to her credit with a Gold medal for the best paper in KCACON-2013 . Outside of her professional work, she is a trained Carnatic vocalist and Bharatanatyam dancer, reflecting her diverse talents and interests.',
+    //   speciality: 'RADIOLOGY',
+    //   areasOfExpertise: ['Women\'s Imaging'],
+    //   expertise: 'Years of Experience: 1+',
+    //   qualification: 'MBBS, MD',
+    //   time: '16:30-16:50,16:50-17:10,17:10-17:30,17:30-17:50,17:50-18:00',
+    //   date: 'Monday-Thursday',
+    //   alt: 'Dr. Nishitha A | Radiologist in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
+    //   title: 'Dr. Nishitha A | Women’s Imaging Radiologist Bangalore',
+    //   description: 'Dr. Nishitha A is a radiologist in Bangalore with expertise in women’s imaging and fetal medicine, currently pursuing a fellowship in fetal studies.'
+    // },
     {
       name: 'Dr. Nagesh R',
       image: 'assets/dummy-doc-male.svg',
