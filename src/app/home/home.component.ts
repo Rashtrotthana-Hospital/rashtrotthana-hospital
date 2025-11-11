@@ -295,4 +295,18 @@ slidearray = [
   { img: '../../assets/testinomials_female_icon.png', review: "Excellent health care services with clean and hygienic conditions token of thanks to the doctors and excellent housekeeping Vinod, Rajini, Snega and others are very cooperating. Good catering and patient wellness. Overall great recovery ", name: 'Sholenkee Mitra', place: 'Bengaluru' },
   { img: '../../assets/testinomials_male_icon.png', review: "I had a great experience at Rashtrotthana Hospital. The staff were extremely friendly and helpful and the facilities were modern and clean. My mother felt like she was in very safe hands throughout the procedure, thanks to their top-notch medical care. I would highly recommend this hospital to anyone looking for quality health care services.", name: 'Rajeev VK', place: 'California' }
 ];
+
+journeyData:any = [
+    { title: 'Founded', description: 'December 2022, with a vision to deliver compassionate, high-quality healthcare.' },
+    { title: 'Initial Milestone', description: 'Achieved NABH Entry Level Certification in December 2023.' },
+    { title: 'Full Accreditation', description: 'Within 3 years, we reached NABH Full Level Accreditation - a rare feat with one of the fewest number of NCs in such a short time.' },
+    { title: 'Patient Care', description: '50,000+ happy patients served, reflecting our commitment to quality and compassionate healthcare.' },
+    { title: 'Surgeries', description: '3,000+ Successful Surgeries performed to date.' },
+    { title: 'Specialty Clinics', description: 'Weekly Ano-rectal, Hernia & Liver Clinics and Sunday Clinics for the community.' },
+    { title: 'Team', description: '90+ expert doctors across 25+ specialties dedicated to delivering excellence every day.' },
+    { title: 'Social Responsibility', description: 'Conducting free medical camps benefiting 18,000+ individuals across orphanages, old age homes and schools.' },
+    { title: 'Health Programs', description: 'Active school health programs and community awareness initiatives.' },
+    { title: 'Insurance & Corporate Tie-ups', description: 'Empanelment with leading corporate partners and TPAs.' },
+  ]
+
 }
