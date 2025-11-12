@@ -168,8 +168,8 @@
         </h2>
         <div class="about-us-content">
             Jayadev Memorial Rashtrotthana Hospital & Research Centre, a 162-bed Integrated <a
-                style="text-decoration: none; margin:0;padding: 0;"
-                routerLink="/specialities">Multi-Specialty</a> Tertiary
+                style="text-decoration: none; margin:0;padding: 0;" routerLink="/specialities">Multi-Specialty</a>
+            Tertiary
             Care Hospital, is recognized as<b> the best multispeciality hospital in RR Nagar Bangalore</b>, offering
             world-class
             healthcare facilities. As part of the Rashtrotthana Trust, we provide expert, holistic care in <a
@@ -227,7 +227,9 @@
         </div>
 
     </div>
-    <div class="eight-container">
+
+
+    <!-- <div class="eight-container">
         <div class="achieve-content">
             <div class="achieve-heading">
                 Achievements
@@ -255,7 +257,92 @@
         <div class="achieve-image">
             <img class="NABH" src="../../assets/NABH.png" alt="best multispeciality hospital in bangalore">
         </div>
+    </div> -->
+
+    <div class="card-wrapper">
+        <div class="nabh-card">
+
+            <!-- Header: Uses Gradient and Highlights TOP 7 Achievement -->
+            <header class="header-banner">
+                <h1 class="text-3xl font-extrabold mb-2">
+                    A New Era of Excellence at Rashtrotthana Hospital!
+                </h1>
+                <p class="text-xl font-light mx-auto max-w-3xl">
+                    Jayadev Memorial Rashtrotthana Hospital and Research Centre has achieved a remarkable milestone.
+                </p>
+                <div class="top-7-badge">
+                    <span class="" style="color: #FBCA51;">TOP 7 HOSPITALS IN INDIA</span>
+                    <span class="font-semibold block sm:inline-block sm:ml-2 text-sm">to receive full NABH 6th Edition
+                        Accreditation!</span>
+                </div>
+            </header>
+
+            <!-- Main Content Area: Grid for Text and Image -->
+            <div class="main-content-grid">
+
+                <!-- Column 1: Accreditation Details and Metrics -->
+                <div class="details-section">
+
+                    <!-- Introductory Text -->
+                    <p class="intro-paragraph">
+                        From humble beginnings to setting new benchmarks in healthcare, we are proud to announce that we
+                        are among the <b>TOP 7 HOSPITALS IN INDIA</b> to receive full NABH 6th Edition Accreditation!
+                    </p>
+
+
+
+                    <!-- Built on Values, Guided by Vision -->
+                    <section class="values-section">
+                        <div class="value-content">
+                            <h2 class="section-title">Built on Values, Guided by Vision</h2>
+                            <p class="values-text">
+                                At Rashtrotthana Hospital, our foundation rests on compassion, respect, dignity, and
+                                ethical practice. Guided by our vision -
+                                <span class="font-bold text-teal-800">Swastha-Susthira Samājanirmāṇam</span> (To build a
+                                healthy and sustainable society) - we strive to deliver care that nurtures both body and
+                                spirit.
+                            </p>
+                            <p class="values-conclusion">
+                                Achieving Full NABH 6th Edition Accreditation is not just a recognition of quality
+                                standards, but a reflection of our relentless commitment, teamwork and shared purpose.
+                                Every doctor, nurse, and staff member contributes to making excellence a way of life,
+                                ensuring that every patient experiences care with warmth, safety and integrity.
+                            </p>
+                        </div>
+                        <div class="image-placeholder-box">
+                            <img src="../../assets/new-nabh-logo.png" alt="">
+                        </div>
+
+                    </section>
+                </div>
+
+                <!-- Column 2: NABH Image/Placeholder -->
+                <!-- <div class="image-column">
+            <div class="nabh-image-container">
+              <div class="image-placeholder-box">
+                <img src="../../assets/new-nabh-logo.png" alt="">
+              </div>
+            </div>
+          </div> -->
+            </div>
+
+
+            <!-- Our Journey of Excellence -->
+            <section class="journey-section">
+                <h2 class="section-title">Our Journey of Excellence</h2>
+                <ul class="journey-list">
+
+                    <li class="journey-item" *ngFor="let item of journeyData">
+                        <span class="item-label">{{ item.title }}</span>
+                        <span class="item-value">{{ item.description }}</span>
+                    </li>
+
+                </ul>
+            </section>
+        </div>
     </div>
+
+
     <div class="department">
         <div class="title-container">
             <app-title-button text='Our Departments'></app-title-button>
@@ -290,7 +377,8 @@
                             routerLink="/blog/integrated-diabetic-clinic-at-rashtrotthana-hospital-where-comfort-meets-diabetes-care">
                             <img class="meno-img" src="../../assets/diabetic.png"
                                 alt="best multispeciality hospital in bangalore">
-                            <div class="meno-content" routerLink="/health-check-up-packages-bangalore">Integrated Diabetic Care</div>
+                            <div class="meno-content" routerLink="/health-check-up-packages-bangalore">Integrated
+                                Diabetic Care</div>
                             <div class="meno-arrow">
 
                             </div>
@@ -388,7 +476,8 @@
             Corporate Social Responsibility
         </div>
         <div class="hope">
-            "Give Hope, <a routerLink="/donate-to-hospital-bangalore">Donate</a> to Heal: Supporting<br> Our Hospital, Saving Lives!"
+            "Give Hope, <a routerLink="/donate-to-hospital-bangalore">Donate</a> to Heal: Supporting<br> Our Hospital,
+            Saving Lives!"
         </div>
         <div class="benefit">
             50+<br>

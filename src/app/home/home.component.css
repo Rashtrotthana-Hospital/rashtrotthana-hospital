@@ -296,6 +296,8 @@ form {
   display: flex;
   gap: 40px;
   margin: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .doctor-container {
@@ -613,6 +615,7 @@ ol {
   padding: 3rem;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .count {
@@ -1346,7 +1349,13 @@ li {
   .surgery-package {
     height: 200px;
   }
+
+  .doctor-section{
+    grid-template-columns: 50% 50%;
+  }
 }
+
+
 
 @media only screen and (max-width:1030px) {
   .container {
@@ -1387,7 +1396,7 @@ li {
 
   .doctor-section {
     display: grid;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: 50% 50%;
     /* padding-left: 6rem; */
     padding: 5rem 2rem 3rem 3rem;
   }
@@ -2492,3 +2501,278 @@ li {
     height: 734px;
   } */
 }
+
+
+
+
+:host {
+      --primary-color: #008080;
+      --primary-dark: #006666;
+      --primary-light: #40a9a9;
+      --text-dark: #4B4B4B;
+      --text-light: #666;
+      --background-light: #f8f9fa;
+      --white: #ffffff;
+      --shadow-medium: 0 4px 20px rgba(0, 0, 0, 0.12);
+      --shadow-heavy: 0 8px 30px rgba(0, 0, 0, 0.15);
+      --border-radius: 16px;
+      --border-radius-small: 8px;
+      --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    /* 2. Card Layout and Styling */
+    .card-wrapper {
+      display: flex;
+      justify-content: center;
+      padding: 1.5rem;
+      background-color: var(--background-light);
+      width: 100%;
+    }
+
+    .nabh-card {
+      max-width: 1200px;
+      width: 100%;
+      background: var(--white);
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow-heavy);
+      overflow: hidden;
+      font-family: 'Inter', sans-serif;
+    }
+
+    /* 3. Header and Gradient */
+    .header-banner {
+      /* Applying the requested gradient */
+      background: linear-gradient(145deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+      color: var(--white);
+      padding: 2.5rem 2rem;
+      text-align: center;
+      border-bottom: 5px solid var(--primary-light);
+    }
+
+    .header-banner h1 {
+      font-size: 2.25rem; /* responsive scaling via media queries below */
+      color: #FBCA51;
+      font-weight: 600
+    }
+
+    .top-7-badge {
+      display: inline-block;
+      background-color: var(--white);
+      color: var(--primary-dark);
+      font-size: 1.1rem;
+      font-weight: 800;
+      padding: 0.75rem 1.5rem;
+      border-radius: 50px;
+      margin-top: 1.5rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .top-7-badge span:first-child {
+      display: block;
+      font-size: 1.5rem;
+    }
+
+    /* 4. Main Content Grid */
+    .main-content-grid {
+      padding: 2.5rem;
+    }
+
+    /* 5. Text Sections */
+    .intro-paragraph {
+      color: var(--text-dark);
+      margin-bottom: 2rem;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .section-title {
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: var(--primary-dark);
+      margin-bottom: 1.5rem;
+      border-bottom: 2px solid var(--primary-light);
+      padding-bottom: 0.5rem;
+    }
+
+    /* 6. Journey List Styling */
+
+    .journey-section{
+      padding: 20px;
+    }
+
+    .journey-list {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      gap: 1rem;
+    }
+
+
+
+    .journey-item {
+      padding: 1rem;
+      background-color: var(--background-light);
+      border-radius: var(--border-radius-small);
+      box-shadow: var(--shadow-medium);
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+      border-left: 5px solid var(--primary-color);
+      width: 100%;
+    }
+
+    .journey-item:hover {
+      box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+      transform: translateY(-3px);
+      border-left-color: var(--primary-dark);
+    }
+
+    .item-label {
+      font-weight: 700;
+      color: var(--primary-dark);
+      font-size: 1.20rem;
+      text-transform: uppercase;
+      margin-bottom: 0.25rem;
+    }
+
+    .item-value {
+      font-size: 0.90rem;
+      color: var(--text-dark);
+    }
+
+    /* 7. Values Section */
+    .values-section {
+      display: flex;
+      gap: 30px;
+      justify-content: center;
+      align-items: center;
+      margin-top: 2.5rem;
+      padding: 1.5rem;
+      border-radius: var(--border-radius-small);
+      background: linear-gradient(to right, rgba(0, 128, 128, 0.05), var(--background-light) 30%);
+      border: 1px solid var(--primary-light);
+      
+    }
+    
+    .values-text, .values-conclusion {
+      color: var(--text-dark);
+      line-height: 1.6;
+      margin-bottom: 1rem;
+      font-size: 0.95rem;
+    }
+    .values-conclusion {
+        font-style: italic;
+        color: var(--text-light);
+    }
+
+
+    /* 8. NABH Image Placeholder */
+    .image-column {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .nabh-image-container {
+      width: 100%;
+      padding: 2.5rem 1.5rem;
+      background-color: var(--background-light);
+      border-radius: var(--border-radius-small);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      border: 3px dashed var(--primary-light);
+      box-shadow: 0 0 15px rgba(0, 128, 128, 0.1);
+      height: 100%;
+      min-height: 300px; /* Ensure space on mobile */
+    }
+    
+    .image-placeholder-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+    }
+
+    /* .image-placeholder-box {
+      width: 100px;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1rem;
+      background-color: var(--white);
+      border-radius: 50%;
+      box-shadow: var(--shadow-medium);
+    } */
+
+
+    .image-placeholder-box img{
+      width: 300px;
+      height: auto;
+    }
+
+    .image-placeholder-info {
+      font-size: 0.85rem;
+      color: var(--text-light);
+    }
+
+    @media (max-width: 800px){
+
+      .values-section{
+        flex-direction: column;
+      }
+
+    }
+
+    /* 9. Mobile adjustments */
+    @media (max-width: 640px) {
+
+      .main-content-grid{
+        padding: 0.5rem;
+      }
+
+
+      .header-banner h1 {
+        font-size: 1.75rem;
+      }
+      .top-7-badge {
+        font-size: 1rem;
+      }
+      .top-7-badge span:first-child {
+        font-size: 1.25rem;
+      }
+      .section-title {
+        font-size: 1.5rem;
+      }
+
+      .journey-list {
+        grid-template-columns: 100%;
+      }
+
+      .image-placeholder-box img{
+        width: 220px;
+        height: auto;
+      }
+
+      .intro-paragraph{
+        font-size: 14px;
+      }
+
+      .header-banner h1{
+        font-size: 1.25rem;
+        font-weight: 700;
+      }
+
+      .header-banner p{
+        line-height: 20px;
+      }
+
+      .item-value{
+        line-height: 20px;
+        font-size: 1rem;
+      }
+    }
