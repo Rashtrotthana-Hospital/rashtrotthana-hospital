@@ -26,7 +26,7 @@ export class PulmonologyComponent {
     {
       id: 1,
       name: 'Dr. Kolla Vinod',
-      experience: '15+ Years',
+      experience: '18+ Years',
       image: '../../assets/Dr-Kolla-Vinod.png',
       slug: '/doctor/dr-kolla-vinod',
       docalt : 'Dr. Kolla Vinod | Best Pulmonologist in Bangalore | Rashtrotthana Hospital'

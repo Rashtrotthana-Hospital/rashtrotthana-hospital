@@ -392,7 +392,7 @@ export class NewDocPageComponent {
       about: 'Dr. KOLLA VINOD is a professor in Pulmonary medicine for over a decade. His education, training and extensive experience given special expertise in the diagnosis, treatment and management of disorders of the pulmonary diseases. He has achieved state 2nd rank during his post-graduation. He strives to stay current with medical knowledge and interventional skills in order to provide his patients with the best, up- to-date care available. He is interested in new interventions (Bronchoscopy, Throcoscopy, cryobiopsy rigid bronchoscopy) The majority of his early education was in Lawrence school Ooty, he completed his Pre-University in Lawrence school Ooty. He finished MBBS, MD in Pulmonary Medicine obtained from Narayana Medical College, Nellore. His post- doctoral studies included a critical care, Interventional pulmonology. Dr. Kolla Vinod authored or co- authored peer-reviewed abstracts/articles. He holds multiple Journals and case reports in his field in various Indian and International journals. Upon his return to Bangalore.',
       speciality: 'PULMONOLOGY',
       areasOfExpertise: ['Interventional pulmonology (Bronchoscopy, Throcoscopy, Cryobiopsy, Rigid bronchoscopy) Asthama', 'Copd', 'Pneumonia', 'Tuberculosis', 'Interstitial lung disease', 'Pleural effusion', 'Lung cancer', 'Sleep medicine', 'Flu and allergic bronchitis', 'Pulmonary rehabilitation'],
-      expertise: 'Years of Experience: 18',
+      expertise: 'Years of Experience: 18+',
       qualification: 'MBBS, MD PULMONOLOGY MEDICINE',
       time: '16:30-16:50,16:50-17:10,17:10-17:30,17:30-17:50,17:50-18:10,18:10-18:30',
       id: 21,
