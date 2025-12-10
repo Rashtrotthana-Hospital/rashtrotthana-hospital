@@ -134,6 +134,7 @@ import { DiabeticFoot } from './rashtrotthana-clinic/diabetic-foot/diabetic-foot
 import { PopupForm } from './rashtrotthana-clinic/popup-form/popup-form';
 // import { CdkAriaLive } from "../../node_modules/@angular/cdk/a11y/index";
 import { CdkAriaLive } from '@angular/cdk/a11y';
+import { HealthCheckComponent } from './health-package/health-check/health-check.component';
 
 @NgModule({
   declarations: [
@@ -239,6 +240,7 @@ import { CdkAriaLive } from '@angular/cdk/a11y';
     AllergieClinic,
     DiabeticFoot,
     PopupForm,
+    HealthCheckComponent,
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   imports: [

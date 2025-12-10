@@ -67,6 +67,7 @@ import { VascularSurgeriesComponent } from './vascular-surgeries/vascular-surger
 import { AllergieClinic } from './rashtrotthana-clinic/allergie-clinic/allergie-clinic';
 import { DiabeticFoot } from './rashtrotthana-clinic/diabetic-foot/diabetic-foot';
 import { PopupForm } from './rashtrotthana-clinic/popup-form/popup-form';
+import { HealthCheckComponent } from './health-package/health-check/health-check.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -118,6 +119,7 @@ const routes: Routes = [
   { path: 'lifestyle-medicine-bangalore', component: NaturopathyComponent },
   { path: 'advisory-board-members', component: AdvisoryBoardMembersComponent },
   { path: 'ethical-committee', component: EthicCommitteeComponent },
+  { path: 'health-package/:slug', component:HealthCheckComponent },
 
 
   {

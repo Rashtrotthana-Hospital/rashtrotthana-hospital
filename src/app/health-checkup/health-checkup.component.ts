@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Title, Meta, DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { PackageFormComponent } from '../package-form/package-form.component';
+import { Router } from '@angular/router';
 
 interface PackageDetails {
   title: string;
@@ -16,6 +17,7 @@ interface Package {
   packageId?: number;
   ageGroup?: string;
   validTill?: string;
+  slug: string;
 }
 
 @Component({
@@ -27,8 +29,9 @@ export class HealthCheckupComponent {
   constructor(
     private titleService: Title,
     private metaService: Meta,
-    private sanitizer: DomSanitizer
-  ) {}
+    private sanitizer: DomSanitizer,
+    private router: Router
+  ) { }
   showBookingForm = false; // Flag to show the booking form
   selectedPackage: Package | null = null; // Selected package
   ngOnInit(): void {
@@ -52,6 +55,7 @@ export class HealthCheckupComponent {
 
   packages: Package[] = [
     {
+      slug: '',
       title: 'Senior Citizen Health Package',
       price: 1999,
       packageId: 11,
@@ -98,6 +102,7 @@ export class HealthCheckupComponent {
       test: '22',
     },
     {
+      slug: "",
       title: 'Basic Diabetic Care',
       price: 599,
       packageId: 1,
@@ -111,6 +116,7 @@ export class HealthCheckupComponent {
       test: '15',
     },
     {
+      slug: "annual-master-diabetes-care",
       title: 'Annual Master Diabetes Care',
       price: 5999,
       packageId: 2,
@@ -157,6 +163,7 @@ export class HealthCheckupComponent {
       test: '128',
     },
     {
+      slug: "",
       title: 'Senior Citizen Health (Male)',
       price: 5500,
       packageId: 3,
@@ -202,6 +209,7 @@ export class HealthCheckupComponent {
       test: '23',
     },
     {
+      slug: "",
       title: 'Senior Citizen Health Check (Female)',
       price: 5500,
       packageId: 4,
@@ -255,6 +263,7 @@ export class HealthCheckupComponent {
       test: '24',
     },
     {
+      slug: "",
       title: 'Basic Health Check Up',
       price: 950,
       packageId: 5,
@@ -295,6 +304,7 @@ export class HealthCheckupComponent {
       test: '11',
     },
     {
+      slug: "",
       title: 'Executive Health Check Up (Male)',
       price: 4200,
       packageId: 6,
@@ -341,6 +351,7 @@ export class HealthCheckupComponent {
       test: '23',
     },
     {
+      slug: "",
       title: 'Master Health Check Up',
       price: 2600,
       packageId: 7,
@@ -378,6 +389,7 @@ export class HealthCheckupComponent {
       test: '18',
     },
     {
+      slug: "",
       title: 'Executive Health Check Up (Female)',
       price: 4500,
       packageId: 8,
@@ -423,6 +435,7 @@ export class HealthCheckupComponent {
       test: '20',
     },
     {
+      slug: "",
       title: 'Well Women check up',
       price: 3000,
       packageId: 9,
@@ -461,6 +474,7 @@ export class HealthCheckupComponent {
       test: '19',
     },
     {
+      slug: "",
       title: 'Comprehensive Diabetic check',
       price: 4000,
       packageId: 10,
@@ -550,4 +564,14 @@ export class HealthCheckupComponent {
     console.log('Form submitted:', data);
     this.closeBookingForm(); // Close the booking form after submission
   }
+
+  goToPackage(pkg: Package) {
+    if (!pkg.slug || pkg.slug.trim() === "") {
+      console.log("No slug → Navigation disabled for this package.");
+      return; // DO NOTHING when slug is empty
+    }
+
+    this.router.navigate(['/health-package', pkg.slug]);
+  }
+
 }

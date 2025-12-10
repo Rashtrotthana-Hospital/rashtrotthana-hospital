@@ -3,13 +3,18 @@
         <h1 class="packages-container-title">Preventive Health Check Packages for Early Detection</h1>
         <div class="text-container">
             <span>
-                A Dedicated team of professionals driven by passion lead the <a style="text-decoration: none; margin:0;padding: 0;" href="https://en.wikipedia.org/wiki/Health_Check">Health check</a> department at Rashtrotthana Hospital. To meet
+                A Dedicated team of professionals driven by passion lead the <a
+                    style="text-decoration: none; margin:0;padding: 0;"
+                    href="https://en.wikipedia.org/wiki/Health_Check">Health check</a> department at Rashtrotthana
+                Hospital. To meet
                 the requirements of all age groups in both genders multiple health check packages have been designed &
                 made available. From Basic health checks to advanced health packages including comprehensive health
                 check packages are priced affordably. Disease specific health packages have also been designed to
                 facilitate patients & reduce the diagnostic expenses. NOTE: all health packages comprise of multiple
                 specialist consultations up to 5 specialist consultations. Eg: Renal Profile package for the benefit of
-                <a style="text-decoration: none; margin:0;padding: 0;" href="https://www.rashtrotthanahospital.com/facility/best-kidney-dialysis-multispeciality-hospital-bangalore">Dialysis</a> patients.
+                <a style="text-decoration: none; margin:0;padding: 0;"
+                    href="https://www.rashtrotthanahospital.com/facility/best-kidney-dialysis-multispeciality-hospital-bangalore">Dialysis</a>
+                patients.
             </span>
         </div>
     </div>
@@ -20,7 +25,7 @@
             <div *ngFor="let package of packages;let i = index" class="accordion-container">
                 <p-accordionTab class="checkup-accordion" transitionOptions="500ms cubic-bezier(0.86, 0, 0.07, 1)">
                     <ng-template pTemplate="header">
-                        <div class="accordion-header">
+                        <div class="accordion-header" (click)="goToPackage(package)" [class.disabled]="!package.slug">
                             <div class="title-box">
                                 <div class="title-box-img">
                                     <img src="assets/health-checkup.png" alt="{{ package }}" />
@@ -35,9 +40,9 @@
                                     ₹{{ package.price }} <span>onwards</span>
                                 </div>
                                 <div class="view-btn-container">
-                                    <span class="view-all-btn" (click)="toggleTab($event, i)"> {{ activeIndex === i ?
+                                    <span class="view-all-btn" (click)="toggleTab($event, i); $event.stopPropagation()"> {{ activeIndex === i ?
                                         'Close All' : 'View All' }} </span>
-                                    <span class="view-all-btn" (click)="openBookingForm(package)">Book Now</span>
+                                    <span class="view-all-btn" (click)="openBookingForm(package); $event.stopPropagation()">Book Now</span>
                                 </div>
                             </div>
                         </div>
@@ -59,7 +64,7 @@
                         </div>
                     </div>
 
-                     <div class="items-lists" *ngIf="package.ageGroup">
+                    <div class="items-lists" *ngIf="package.ageGroup">
                         <span><b>Age Group</b>: {{package.ageGroup}}</span>
                     </div>
 
@@ -81,12 +86,10 @@
           </app-package-form>
         </div>
       </div> -->
-      <div class="modal-overlay" *ngIf="showBookingForm">
-        <app-package-form
-        [selectedPackage]="selectedPackage"
-        (closeForm)="closeBookingForm()"
-        (formSubmit)="handleFormSubmission($event)">
+    <div class="modal-overlay" *ngIf="showBookingForm">
+        <app-package-form [selectedPackage]="selectedPackage" (closeForm)="closeBookingForm()"
+            (formSubmit)="handleFormSubmission($event)">
         </app-package-form>
-      </div>
+    </div>
 
 </div>
