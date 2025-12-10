@@ -178,9 +178,10 @@
                             <h3 class="doctor-name">{{ d.doctor_name }}</h3>
                             <p class="doctor-exp">{{ d.experience }} Years Experience</p>
 
-                            <a [routerLink]="'d.slug'" class="doctor-btn">
+                            <a [routerLink]="['/doctor', d.slug]" class="doctor-btn">
                                 View Profile →
                             </a>
+
                         </div>
                     </div>
                 </div>
