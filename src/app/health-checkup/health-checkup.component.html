@@ -25,7 +25,7 @@
             <div *ngFor="let package of packages;let i = index" class="accordion-container">
                 <p-accordionTab class="checkup-accordion" transitionOptions="500ms cubic-bezier(0.86, 0, 0.07, 1)">
                     <ng-template pTemplate="header">
-                        <div class="accordion-header" (click)="goToPackage(package)" [class.disabled]="!package.slug">
+                        <div class="accordion-header" (click)="goToPackage(package)">
                             <div class="title-box">
                                 <div class="title-box-img">
                                     <img src="assets/health-checkup.png" alt="{{ package }}" />
