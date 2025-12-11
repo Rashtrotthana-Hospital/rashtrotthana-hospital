@@ -1,4 +1,5 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Meta, Title } from '@angular/platform-browser';
 import { ActivatedRoute } from '@angular/router';
 interface PackageSection {
   title: string;
@@ -25,11 +26,12 @@ export class HealthCheckComponent {
   currentPackage: any;
   doctors: any = [];
 
-  constructor(private route: ActivatedRoute) { }
+  constructor(private route: ActivatedRoute, private title: Title, private meta: Meta) { }
 
   ngOnInit() {
     this.checkScreenSize();
     window.addEventListener('resize', () => this.checkScreenSize());
+
     this.route.params.subscribe(params => {
       const slug = params['slug'];
       const pkg = this.pages.find(p => p.slug === slug);
@@ -37,8 +39,15 @@ export class HealthCheckComponent {
       if (pkg) {
         this.currentPackage = pkg;
         this.doctors = pkg.doctors;
+        this.title.setTitle(pkg.metaTitle);
+
+        this.meta.updateTag({
+          name: 'description',
+          content: pkg.metaDescription
+        });
       }
     });
+
 
     // Auto slide every 3 seconds (optional)
     // this.interval = setInterval(() => {
@@ -121,12 +130,14 @@ export class HealthCheckComponent {
   pages = [
     {
       slug: 'annual-master-diabetes-care',
+      metaTitle: "Annual Diabetic Health Check | Rashtrotthana Hospital Bangalore",
+      metaDescription: "Affordable annual diabetic health check at Rashtrotthana Hospital, Bangalore. Includes HbA1c, sugar profile, kidney screening & doctor consultation at budget-friendly rates.",
 
       title: 'Annual Master Diabetes Care',
       price: 5999,
       testsCount: 128,
-      heroImg:"assets/health-package/health-care-doctor-help-concept.jpg",
-      heroAlt:"",
+      heroImg: "assets/health-package/health-care-doctor-help-concept.jpg",
+      heroAlt: "",
       tagLine: "One package, One payment, One full year of care",
       heading: "Diabetes Health Check",
       heroText: "Track your blood sugar, heart, kidney, liver and overall health through a single, annual diabetes package - designed to prevent complications and support long-term wellbeing.",
