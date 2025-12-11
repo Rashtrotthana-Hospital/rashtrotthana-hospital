@@ -431,11 +431,42 @@
 @media(max-width:767px){
     .view-btn-container{
         display: flex;
-        flex-direction: column;
+        /* flex-direction: column; */
+        width: 150%;
+        margin: 0;
     }
     .title-box{
         display: flex;
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    .view-all-btn,
+    .total-count span{
+        font-size: 14px;
+    }
+
+    .title-box h2{
+        margin: 0;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .price-container{
+        flex-direction: column;
+    }
+    .title-box-img,
+    .total-count{
+        text-align: center;
+    }
+
+    .accordion-header{
+        gap: 10px;
+    }
+
+    .total-count{
+        width: auto;
     }
 
 }
