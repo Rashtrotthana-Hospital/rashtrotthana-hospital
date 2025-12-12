@@ -68,6 +68,7 @@ import { AllergieClinic } from './rashtrotthana-clinic/allergie-clinic/allergie-
 import { DiabeticFoot } from './rashtrotthana-clinic/diabetic-foot/diabetic-foot';
 import { PopupForm } from './rashtrotthana-clinic/popup-form/popup-form';
 import { HealthCheckComponent } from './health-package/health-check/health-check.component';
+import { WinterCardiologyComponent } from './winter-cardiology/winter-cardiology.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -87,7 +88,7 @@ const routes: Routes = [
       { path: 'best-urology-hospital-in-bangalore', component: UrologyComponent },
       { path: 'best-orthopaedics-hospital-in-bangalore', component: OrthopedicsComponent },
       { path: 'best-gastroenterology-hospital-in-bangalore', component: GastrosciencesComponent },
-      { path: 'best-cardiology-hospital-in-bangalore', component: CardiacComponent },
+      { path: 'best-cardiology-hospital-in-bangalore', component: CardiacComponent},
       { path: 'best-pulmonology-hospital-in-bangalore', component: PulmonologyComponent },
       { path: 'best-eye-hospital-in-bangalore', component: OphthalmologyComponent },
       { path: 'best-dental-hospital-in-bangalore', component: DentalComponent },
@@ -120,6 +121,9 @@ const routes: Routes = [
   { path: 'advisory-board-members', component: AdvisoryBoardMembersComponent },
   { path: 'ethical-committee', component: EthicCommitteeComponent },
   { path: 'health-package/:slug', component:HealthCheckComponent },
+
+
+
 
 
   {
@@ -173,6 +177,7 @@ const routes: Routes = [
   // integrated clinics      
   { path: "diabetic-foot-clinic-in-bangalore", component: DiabeticFoot },
   { path: "allergy-clinic-in-bangalore", component: AllergieClinic },
+  { path: 'heart-problems-in-winter',component: WinterCardiologyComponent },
   
 
   { path: 'blog', component: BlogComponent },
