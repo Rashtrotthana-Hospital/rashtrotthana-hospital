@@ -1,243 +1,204 @@
 <div class="diabetes-page">
-    <!-- Hero Section -->
-    <section class="hero container" style="margin-top: 120px;">
-        <div class="hero-left">
-            <span class="eyebrow">{{currentPackage?.title}}</span>
+    <div class="diabetes">
+        <div *ngIf="currentPackage" class="banner-part"
+            [ngStyle]="{'background-image': 'url(' + currentPackage.heroImg + ')'}">
 
-            <h1>{{currentPackage?.heading}}</h1>
+            <div class="banner-fade"></div>
 
-            <div class="price-box">
-                <h3 class="price-title">Package Price</h3>
+            <div class="banner-content">
+                <h1 class="banner-heading">
+                    {{ currentPackage.heading }}
+                </h1>
 
-                <div class="price-value">
-                    ₹{{ currentPackage?.price }}
-                    <span>onwards</span>
-                </div>
-
-                <p class="price-note">
-                    <!-- Includes {{ currentPackage?.testsCount }} tests. -->
-                    {{currentPackage?.tagLine}}
-
+                <p class="banner-para">
+                    {{ currentPackage.heroText }}
                 </p>
 
-            </div>
-
-            <p class="hero-text">
-                {{currentPackage?.heroText}}
-            </p>
-
-            <div class="hero-badges">
-                <div class="badge-item" *ngFor="let card of currentPackage?.badge">
-                    <div class="badge-title">{{ card.title }}</div>
-                    <div class="badge-sub">{{ card.para }}</div>
-                </div>
-            </div>
-
-
-
-            <div class="hero-cta" style="margin-top: 20px;">
-                <!-- <button class="btn btn-primary">Book Now</button> -->
-                <button class="btn btn-primary" (click)="openBookingForm()">Book an Appointment</button>
-
+                <button class="banner-btn" (click)="openBookingForm()">
+                    Book an Appointment
+                </button>
             </div>
         </div>
 
-        <div class="hero-right" #appointmentForm>
-            <!-- <div class="price-card">
-        <h2>Annual Master Diabetes Care</h2>
-        <p class="price">
-          ₹{{ price}}
-          <span class="price-note"> onwards</span>
-        </p>
-        <p class="price-sub">
-          Includes {{ testsCount }} tests, radiology, cardiac evaluation
-          and speciality consultations.
-        </p>
-        <ul class="price-points">
-          <li>Ideal for diabetics &amp; prediabetics</li>
-          <li>Cashless/insurance support as per policy</li>
-          <li>Reports within a reasonable turnaround time</li>
-        </ul>
-        <button class="btn btn-primary btn-block">Schedule My Check</button>
-        <p class="small-note">
-          Need help? Call our health check desk for guidance.
-        </p>
-      </div> -->
-
-            <!-- <app-health-ckeck-form /> -->
-            <div class="hero-img">
-                <img [src]="currentPackage?.heroImg" [alt]="currentPackage?.heroAlt" />
-            </div>
-        </div>
-    </section>
 
 
-    <!-- awareness -->
-    <section class="diabetes-awareness container">
-        <div class="awareness-card">
-
-            <div class="awareness-content">
-                <h2>
-                    {{currentPackage?.aboutheading}}
-                </h2>
-
-                <p class="lead">
-                    {{currentPackage?.lead}}
-                </p>
-
-                <p class="sub-text">
-                    {{currentPackage?.subtext}}
-                </p>
-            </div>
-
-            <div class="awareness-illustration">
-                <img [src]="currentPackage?.aboutImg" [alt]="currentPackage?.aboutAlt" />
-            </div>
-
-        </div>
-    </section>
-
-
-
-    <!-- Package Sections -->
-    <section class="sections container">
-        <div class="section-header">
-            <h2>{{currentPackage?.sectionHeading}}</h2>
-            <p>{{currentPackage?.sectionPara}}</p>
-        </div>
-
-        <div class="sections-grid">
-            <article class="section-card" *ngFor="let s of currentPackage?.sections">
-
-                <!-- Icon + Title Row -->
-                <div class="card-top">
-                    <div class="icon-circle">
-                        <span class="material-icons">medical_services</span>
-                    </div>
-
-                    <div>
-                        <h3>{{ s.title }}</h3>
-                        <span class="section-badge" *ngIf="s.badge">{{ s.badge }}</span>
-                        <p class="section-sub" *ngIf="s.subtitle">{{ s.subtitle }}</p>
+        <div class="part-1">
+            <div class="">
+                <div class="">
+                    <div class="price">
+                        Rs.{{currentPackage?.price}}/-
+                        <span>T&C Apply*</span>
                     </div>
                 </div>
-
-                <div class="divider"></div>
-
-                <ul class="section-list">
-                    <li *ngFor="let item of s.items">
-                        <span class="tick">•</span>
-                        <span>{{ item }}</span>
-                    </li>
-                </ul>
-            </article>
-        </div>
-    </section>
-
-    <!-- Why Choose Section -->
-    <section class="why container">
-        <div class="section-header">
-            <h2>{{currentPackage?.choosetitle}}</h2>
-            <p>
-                {{currentPackage?.choosepara}}
-            </p>
-        </div>
-
-        <div class="why-grid">
-            <div class="why-card" *ngFor="let point of currentPackage?.whyChoose">
-                <div class="why-icon">✔</div>
-                <p>{{ point }}</p>
+                <div class="tagline-part">
+                    <div class="tagline">{{currentPackage?.tagLine}}</div>
+                    <div class="flex-column">
+                        <div class="tagline1">{{currentPackage?.tagLine1}}</div>
+                        <div class="tagline1">{{currentPackage?.tagLine2}}</div>
+                        <div class="tagline1">{{currentPackage?.tagLine3}}</div>
+                    </div>
+                </div>
             </div>
+
+            <div class="details">
+                <div class="details-img">
+                    <img [src]="currentPackage?.detailsImg" alt="Medical illustration" />
+                </div>
+                <div class="herobadges">
+                    <div class="badgeitem" *ngFor="let card of currentPackage?.badge; let last = last">
+                        <div class="badgetitle">{{ card.title }}</div>
+                        <div class="badgesub">{{ card.para }}</div>
+
+                        <div class="br" *ngIf="!last"></div>
+                    </div>
+                </div>
+            </div>
+
         </div>
-    </section>
 
-    <!-- doctors section -->
+        <div class="journey-part">
+            <div class="">
+                <div class="section-header">
+                    <h2>{{currentPackage?.stpestitle}}</h2>
+                    <p>{{currentPackage?.stpedpara}}</p>
+                </div>
 
-    <div class="doctor-section">
-        <div class="section-header">
-            <h2>Meet Our Doctors</h2>
-            <p>
-                Get to know the expert doctors committed to your long-term health and wellbeing.
-            </p>
+                <div class="steps">
+                    <div class="step-card" *ngFor="let step of currentPackage.steps">
+                        <!-- <div class="step-number">{{ i + 1 }}</div> -->
+                        <img [src]="step.stepImg" [alt]="">
+                        <div class="stepPara">{{step.stepPara}}</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="form"></div> -->
+
         </div>
 
+        <div class="includes-part">
+            <div class="">
+                <div class="section-heading">{{currentPackage.sectionHeading}}</div>
+                <div class="section-para">{{currentPackage.sectionPara}}</div>
+            </div>
 
-        <div class="carousel-container">
-            <button class="nav-btn prev" (click)="prevSlide()" aria-label="Previous">
-                <span class="material-icons">chevron_left</span>
-            </button>
+            <div class="card-layout">
 
-            <div class="carousel-wrapper">
-                <div class="carousel-track" [style.transform]="getTransform()">
-                    <div class="doctor-card" *ngFor="let d of currentPackage?.doctors">
-                        <div class="doctor-image">
-                            <img [src]="d.doctor_image" [alt]="d.docalt" />
+
+                <div class="card-tabs">
+                    <div class="tab" *ngFor="let section of currentPackage?.sections; let i = index"
+                        [class.active]="activeIndex === i" (click)="activeIndex = i">
+
+                        <img class="tab-icon" [src]="section.icon" [alt]="section.title" />
+
+                        <span class="tab-title">
+                            {{ section.title }}
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="card-content">
+                    <h3>{{ currentPackage?.sections[activeIndex].title }}</h3>
+                    <div class="flex">
+                        <div class="badge">
+                            {{ currentPackage?.sections[activeIndex].badge }}
                         </div>
+                        <div class="subtitle">{{ currentPackage?.sections[activeIndex].subtitle }}</div>
+                    </div>
+                    <div class="br"></div>
 
-                        <div class="doctor-content">
-                            <h3 class="doctor-name">{{ d.doctor_name }}</h3>
-                            <p class="doctor-exp">{{ d.experience }} Years Experience</p>
+                    <ul class="items">
+                        <li *ngFor="let item of currentPackage?.sections[activeIndex].items">
+                            {{ item }}
+                        </li>
+                    </ul>
+                </div>
 
-                            <a [routerLink]="['/doctor', d.slug]" class="doctor-btn">
-                                View Profile →
-                            </a>
+            </div>
 
+
+        </div>
+
+        <!-- doctors section -->
+
+        <div class="doctor-section">
+            <div class="section-header">
+                <h2>Meet Our Doctors</h2>
+                <p>
+                    Get to know the expert doctors committed to your long-term health and wellbeing.
+                </p>
+            </div>
+
+
+            <div class="carousel-container">
+                <button class="nav-btn prev" (click)="prevSlide()" aria-label="Previous">
+                    <span class="material-icons">chevron_left</span>
+                </button>
+
+                <div class="carousel-wrapper">
+                    <div class="carousel-track" [style.transform]="getTransform()">
+                        <div class="doctor-card" *ngFor="let d of currentPackage?.doctors">
+                            <div class="doctor-image">
+                                <img [src]="d.doctor_image" [alt]="d.docalt" />
+                            </div>
+
+                            <div class="doctor-content">
+                                <h3 class="doctor-name">{{ d.doctor_name }}</h3>
+                                <p class="doctor-exp">{{ d.experience }} Years Experience</p>
+
+                                <a [routerLink]="['/doctor', d.slug]" class="doctor-btn">
+                                    View Profile →
+                                </a>
+
+                            </div>
                         </div>
                     </div>
                 </div>
+
+                <button class="nav-btn next" (click)="nextSlide()" aria-label="Next">
+                    <span class="material-icons">chevron_right</span>
+                </button>
             </div>
 
-            <button class="nav-btn next" (click)="nextSlide()" aria-label="Next">
-                <span class="material-icons">chevron_right</span>
-            </button>
+
+
         </div>
 
+        <!-- CTA Banner -->
+        <section class="cta-banner">
+            <div class="cta-inner container">
+                <div>
+                    <h2>{{currentPackage.ctaTitle}}</h2>
+                    <p>
+                        {{currentPackage.catpara}}
+                    </p>
+                </div>
+                <button class="btn btn-light" (click)="openBookingForm()">Book Appointment</button>
+            </div>
+        </section>
 
+        <!-- FAQ -->
+        <section class="faq container">
+            <div class="section-header">
+                <h2>Frequently asked questions</h2>
+            </div>
+
+            <div class="faq-list">
+                <details *ngFor="let f of currentPackage.faqs" class="faq-item">
+                    <summary>{{ f.q }}</summary>
+                    <p>{{ f.a }}</p>
+                </details>
+            </div>
+        </section>
 
     </div>
 
 
-    <!-- Journey / How it works -->
-    <section class="journey container">
-        <div class="section-header">
-            <h2>Your care journey with us</h2>
-            <p>Simple, guided and patient-friendly at every step.</p>
-        </div>
 
-        <div class="steps">
-            <div class="step" *ngFor="let step of currentPackage.steps let i = index">
-                <div class="step-number">{{ i + 1 }}</div>
-                <p>{{ step }}</p>
-            </div>
-        </div>
-    </section>
 
-    <!-- CTA Banner -->
-    <section class="cta-banner">
-        <div class="cta-inner container">
-            <div>
-                <h2>{{currentPackage.ctaTitle}}</h2>
-                <p>
-                    {{currentPackage.catpara}}
-                </p>
-            </div>
-            <button class="btn btn-light" (click)="openBookingForm()">Book Appointment</button>
-        </div>
-    </section>
-
-    <!-- FAQ -->
-    <section class="faq container">
-        <div class="section-header">
-            <h2>Frequently asked questions</h2>
-        </div>
-
-        <div class="faq-list">
-            <details *ngFor="let f of currentPackage.faqs" class="faq-item">
-                <summary>{{ f.q }}</summary>
-                <p>{{ f.a }}</p>
-            </details>
-        </div>
-    </section>
 
     <div class="modal-overlay" *ngIf="showBookingForm">
         <app-package-form [selectedPackage]="currentPackage" (closeForm)="closeBookingForm()">
