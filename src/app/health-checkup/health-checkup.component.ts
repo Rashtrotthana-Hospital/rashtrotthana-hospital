@@ -552,8 +552,8 @@ export class HealthCheckupComponent {
   openBookingForm(packageData: any): void {
     this.selectedPackage = packageData; // Set the selected package
     this.showBookingForm = true; // Show the booking form
-    console.log(this.showBookingForm);
-  }
+    console.log(this.selectedPackage)
+    }
 
   closeBookingForm(): void {
     this.selectedPackage = null; // Clear selected package

@@ -201,7 +201,8 @@
 
 
     <div class="modal-overlay" *ngIf="showBookingForm">
-        <app-package-form [selectedPackage]="currentPackage" (closeForm)="closeBookingForm()">
+        <app-package-form [selectedPackage]="currentPackage" (closeForm)="closeBookingForm()" 
+            (formSubmit)="handleFormSubmission($event)">
         </app-package-form>
     </div>
 
