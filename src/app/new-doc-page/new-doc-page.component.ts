@@ -900,22 +900,22 @@ export class NewDocPageComponent {
       title: 'Dr. Shamantha S | Lifestyle Medicine Specialist Bangalore',
       description: 'Dr. Shamantha S is an Ayurveda and lifestyle medicine doctor in Bangalore offering holistic care through diet, preventive wellness, and natural therapies.'
     },
-    {
-      name: 'Dr. Kavyashree Kulamarva',
-      image: 'assets/Doc-Inv-Page/Dr-Kavyashree-Kulamarva.png',
-      department: 'Ayurvedic Psychiatry Consultant',
-      about: 'Dr. Kavyashree is a seasoned researcher specializing in Ayurveda, Integrative Medicine and Neurology. With a robust background in clinical practice and research, Doctor has published several papers in reputed international journals. She served as a Senior Resident at the National Institute of Mental Health and Neurosciences (NIMHANS) for 3.5 years, contributing significantly to mental health and neurological research. Additionally, she worked as a Senior Research Fellow at the Central Council for Research in Ayurvedic Sciences (CCRAS), which involved several community health surveys and medical camps. Her work aims to bridge ancient wisdom with contemporary science for holistic patient care.',
-      speciality: 'AYURVEDA',
-      qualification: 'MD, PDF',
-      areasOfExpertise: [' Anxiety disorder and Depression', 'Child psychiatric disorders (ASD, ADHD)', 'Add on Ayurveda for Schizophrenia', 'Motor Neuron Disease', 'Parkinson s disease', 'Muscular dystrophy', 'Stroke rehab', 'Multiple Sclerosis', 'Dementia'],
-      expertise: 'Years of Experience: 6',
-      time: '09:30-09:50,09:50-10:10,10:10-10:30,10:30-10:50,10:50-11:10,11:10-11:30,11:30-11:50,11:50-12:10,12:10-12:30,12:30-12:50,12:50-13:10,13:10-13:30,14:30-14:50,14:50-15:10,15:10-15:30,15:30-15:50,15:50-16:10,16:10-16:30,16:30-16:50,16:50-17:10',
-      date: 'Monday-Saturday',
-      alt: 'Dr. Kavyashree Kulamarva | Ayurvedic Psychiatry Consultant in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
-      id: 40,
-      title: 'Dr. Kavyashree Kulamarva | Ayurvedic Psychiatry Expert',
-      description: 'Dr. Kavyashree Kulamarva is an Ayurvedic Psychiatry Consultant with expertise in integrative care for mental health and neurological disorders.'
-    },
+    // {
+    //   name: 'Dr. Kavyashree Kulamarva',
+    //   image: 'assets/Doc-Inv-Page/Dr-Kavyashree-Kulamarva.png',
+    //   department: 'Ayurvedic Psychiatry Consultant',
+    //   about: 'Dr. Kavyashree is a seasoned researcher specializing in Ayurveda, Integrative Medicine and Neurology. With a robust background in clinical practice and research, Doctor has published several papers in reputed international journals. She served as a Senior Resident at the National Institute of Mental Health and Neurosciences (NIMHANS) for 3.5 years, contributing significantly to mental health and neurological research. Additionally, she worked as a Senior Research Fellow at the Central Council for Research in Ayurvedic Sciences (CCRAS), which involved several community health surveys and medical camps. Her work aims to bridge ancient wisdom with contemporary science for holistic patient care.',
+    //   speciality: 'AYURVEDA',
+    //   qualification: 'MD, PDF',
+    //   areasOfExpertise: [' Anxiety disorder and Depression', 'Child psychiatric disorders (ASD, ADHD)', 'Add on Ayurveda for Schizophrenia', 'Motor Neuron Disease', 'Parkinson s disease', 'Muscular dystrophy', 'Stroke rehab', 'Multiple Sclerosis', 'Dementia'],
+    //   expertise: 'Years of Experience: 6',
+    //   time: '09:30-09:50,09:50-10:10,10:10-10:30,10:30-10:50,10:50-11:10,11:10-11:30,11:30-11:50,11:50-12:10,12:10-12:30,12:30-12:50,12:50-13:10,13:10-13:30,14:30-14:50,14:50-15:10,15:10-15:30,15:30-15:50,15:50-16:10,16:10-16:30,16:30-16:50,16:50-17:10',
+    //   date: 'Monday-Saturday',
+    //   alt: 'Dr. Kavyashree Kulamarva | Ayurvedic Psychiatry Consultant in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
+    //   id: 40,
+    //   title: 'Dr. Kavyashree Kulamarva | Ayurvedic Psychiatry Expert',
+    //   description: 'Dr. Kavyashree Kulamarva is an Ayurvedic Psychiatry Consultant with expertise in integrative care for mental health and neurological disorders.'
+    // },
     {
       name: 'Ms. Archana Karthick',
       image: 'assets/Doc-Inv-Page/Ms-Archana-Karthick.png',

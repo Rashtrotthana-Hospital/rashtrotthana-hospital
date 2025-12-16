@@ -48,7 +48,11 @@ const staticRoutes = [
   '/specialities/ayurvedic-treatment-bangalore',
   '/specialities/homeopathy-treatment-bangalore',
   '/specialities/lifestyle-medicine-bangalore',
-  '/best-vascular-surgery-hospital-in-bangalore'
+  '/best-vascular-surgery-hospital-in-bangalore',
+
+  //Health Packages
+  '/health-package/annual-master-diabetes-care',
+  '/heart-problems-in-winter'
 ];
 
 const doctorRoutes = doctorData.map(doc => `/doctor/${nameToSlug(doc.name)}`);
