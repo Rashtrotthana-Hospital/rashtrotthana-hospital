@@ -118,8 +118,13 @@ export class HealthCheckComponent {
   showBookingForm = false;
 
   openBookingForm() {
+    this.currentPackage = {
+      ...this.currentPackage,
+      title: this.currentPackage.heading
+    };
     this.showBookingForm = true;
   }
+
 
   closeBookingForm() {
     this.showBookingForm = false;
@@ -139,9 +144,9 @@ export class HealthCheckComponent {
       heroImg: "assets/health-package/banner.png",
       heroAlt: "",
       tagLine: "One",
-      tagLine1:"Package",
-      tagLine2:"Payment",
-      tagLine3:"Full year of care",
+      tagLine1: "Package",
+      tagLine2: "Payment",
+      tagLine3: "Full year of care",
       heading: "Annual Master Diabetes Care",
       heroText: "Track your blood sugar, heart, kidney, liver and overall health through a single, annual diabetes package - designed to prevent complications and support long-term wellbeing.",
       aboutheading: "Diabetes affects more than just your sugar.",
@@ -179,7 +184,7 @@ export class HealthCheckComponent {
           title: 'Speciality Consultations',
           subtitle: 'Holistic diabetes care',
           badge: 'Up to 4 visits / year',
-          icon:"assets/health-package/Ellipse 101.png",
+          icon: "assets/health-package/Ellipse 101.png",
           items: [
             'Physiotherapy Consultation (if required – once / year)',
             'Physician / Diabetologist Consultation (4 times / year)',
@@ -192,21 +197,21 @@ export class HealthCheckComponent {
           title: 'Radiology',
           subtitle: 'Imaging for deeper insights',
           badge: 'Yearly',
-          icon:"assets/health-package/Ellipse 103.png",
+          icon: "assets/health-package/Ellipse 103.png",
           items: ['Chest X-Ray (once / year)'],
         },
         {
           title: 'Cardiac Evaluation',
           subtitle: 'Protect your heart',
           badge: 'Twice a year',
-          icon:"assets/health-package/Ellipse 105.png",
+          icon: "assets/health-package/Ellipse 105.png",
           items: ['ECG (2 times / year)'],
         },
-         {
+        {
           title: 'Laboratory Investigations',
           subtitle: 'Core blood & urine tests',
           badge: 'Multiple times / year',
-          icon:"assets/health-package/Ellipse 102.png",
+          icon: "assets/health-package/Ellipse 102.png",
           items: [
             'Complete Blood Count with ESR (2 times / year)',
             'Fasting Blood Sugar (4 times / year)',
@@ -223,14 +228,14 @@ export class HealthCheckComponent {
         },
 
       ],
-      
+
 
       steps: [
-        {stepImg:'assets/health-package/medical-chart-pen-icons 1.png',stepPara:'Book your slot online or via call'},
-        {stepImg:'assets/health-package/b3560a31-ed57-42ee-b0b8-f42d6485e249 1.png',stepPara:'Visit the center fasting, as advised by our team'},
-        {stepImg:'assets/health-package/medicine-icon-27 1.png',stepPara:'Sample collection & scans as per package'},
-        {stepImg:'assets/health-package/3d-healthcare-icon-with-medic 1.png',stepPara:'Consultation with our specialist doctors'},
-        {stepImg:'assets/health-package/3d-cartoon-salad-bowl-with-fresh-vegetables-icon 1.png',stepPara:'Personalised lifestyle & diet plan'},
+        { stepImg: 'assets/health-package/medical-chart-pen-icons 1.png', stepPara: 'Book your slot online or via call' },
+        { stepImg: 'assets/health-package/b3560a31-ed57-42ee-b0b8-f42d6485e249 1.png', stepPara: 'Visit the center fasting, as advised by our team' },
+        { stepImg: 'assets/health-package/medicine-icon-27 1.png', stepPara: 'Sample collection & scans as per package' },
+        { stepImg: 'assets/health-package/3d-healthcare-icon-with-medic 1.png', stepPara: 'Consultation with our specialist doctors' },
+        { stepImg: 'assets/health-package/3d-cartoon-salad-bowl-with-fresh-vegetables-icon 1.png', stepPara: 'Personalised lifestyle & diet plan' },
       ],
       stpestitle: "Your care journey with us",
       stpedpara: "Simple, guided and patient-friendly at every step.",
@@ -299,14 +304,14 @@ export class HealthCheckComponent {
 
       ctaTitle: "Ready to take charge of your diabetes?",
       catpara: `Book your Annual Master Diabetes Care package and start your journey towards better sugar control and a healthier life.`,
-      detailsImg:"assets/health-package/3d-human-body-parts-background 1.png",
+      detailsImg: "assets/health-package/3d-human-body-parts-background 1.png",
 
-      
+
 
     }
 
 
-  
+
   ]
   activeIndex = 0;
 
