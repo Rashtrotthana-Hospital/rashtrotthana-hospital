@@ -120,7 +120,8 @@ export class HealthCheckComponent {
   openBookingForm() {
     this.currentPackage = {
       ...this.currentPackage,
-      title: this.currentPackage.heading
+      title: this.currentPackage.heading,
+      packageId: this.currentPackage.packageId
     };
     this.showBookingForm = true;
   }
@@ -128,6 +129,11 @@ export class HealthCheckComponent {
 
   closeBookingForm() {
     this.showBookingForm = false;
+  }
+
+  handleFormSubmission(data: any): void {
+    console.log('Form submitted:', data);
+    this.closeBookingForm(); 
   }
 
 
@@ -139,6 +145,7 @@ export class HealthCheckComponent {
       metaDescription: "Affordable annual diabetic health check at Rashtrotthana Hospital, Bangalore. Includes HbA1c, sugar profile, kidney screening & doctor consultation at budget-friendly rates.",
 
       // title: 'Annual Master Diabetes Care',
+      packageId:2,
       price: 5999,
       testsCount: 128,
       heroImg: "assets/health-package/banner.png",
