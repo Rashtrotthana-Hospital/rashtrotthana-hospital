@@ -1139,8 +1139,8 @@ export class DoctorLayoutComponent {
       time: "",
       date: "",
       alt: 'Dr. Sandeep K M, top orthopedic surgeon in Bangalore | Rashtrotthana Hospital',
-      title:'',
-      description:''
+      title: '',
+      description: ''
     },
     {
       name: "Ms. Samarchitha S",
@@ -1155,8 +1155,24 @@ export class DoctorLayoutComponent {
       time: "",
       date: "",
       alt: 'Ms. Samarchitha S | Best Psychology Hospital in Bangalore | Rashtrotthana Hospital',
-      title:'',
-      description:''
+      title: '',
+      description: ''
+    },
+    {
+      name: "Dr. Pooja Prasad",
+      image: "assets/Doc-Inv-Page/Dr-Pooja-sq.png",
+      department: 'Radiologist',
+      speciality: '',
+      desgination: 'Radiologist',
+      // about: "Ms. Samarchitha S is a trained clinical psychologist with over six years of experience, specializing in the assessment and treatment of a wide range of psychological and neuropsychological conditions. Her professional journey includes working with diverse patient populations across age groups - including children, adults and the elderly - in both psychiatric and neurological settings.",
+      areasOfExpertise: ["Diagnostic Radiology", "CT and MRI interpretation", "Ultrasound & Doppler imaging", "X-ray", "Women’s imaging (Breast, pelvic US/MRI)", "Neuroimaging (Brain & Spine)", "Musculoskeletal imaging", "Chest imaging", "Abdominal & pelvic imaging", "Emergency & trauma imaging", "Obstetric ultrasound (routine & growth scans)"],
+      // expertise: "Years of Experience: 6+",
+      qualification: "MBBS , MD, DNB Radiology",
+      time: "",
+      date: "",
+      alt: 'Dr. Pooja Prasad | Best Radiologist Hospital in Bangalore | Rashtrotthana Hospital',
+      title: '',
+      description: ''
     },
     // {
     //   name: "",

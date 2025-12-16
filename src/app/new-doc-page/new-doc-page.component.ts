@@ -1375,6 +1375,22 @@ export class NewDocPageComponent {
       title:'Dr. Sandeep K M | Expert Orthopedic Surgeon in Bangalore',
       description:'Expert orthopedic care by Dr. Sandeep K M, with 11+ years in trauma, joint replacement, and arthroscopy. MBBS, MS, Fellowship-trained. At Rashtrotthana Hospital, restoring mobility. Book now!'
     },
+    {
+      name: "Dr. Pooja Prasad",
+      image: "assets/Doc-Inv-Page/Dr-Pooja.png",
+      department: 'Radiologist',
+      // speciality: 'ORTHOPEDICS',
+      desgination: 'Consultant - Radiologist',
+      about: "",
+      areasOfExpertise: ["Diagnostic Radiologist", "CT and MRI interpretation", "Ultrasound & Doppler imaging", "X-ray","Women’s imaging (Breast, pelvic US/MRI)","Neuroimaging (Brain & Spine)","Musculoskeletal imaging","Chest imaging","Abdominal & pelvic imaging","Emergency & trauma imaging","Obstetric ultrasound (routine & growth scans)"],
+      // expertise: "Years of Experience: 11+",
+      qualification: "MBBS , MD, DNB Radiology",
+      time: "",
+      date: "",
+      alt: 'Dr.Pooja Prasad, top Radiologist surgeon in Bangalore | Rashtrotthana Hospital',
+      title:'Dr.Pooja Prasad | Expert Radiologist Surgeon in Bangalore',
+      // description:'Expert orthopedic care by Dr. Sandeep K M, with 11+ years in trauma, joint replacement, and arthroscopy. MBBS, MS, Fellowship-trained. At Rashtrotthana Hospital, restoring mobility. Book now!'
+    },
     // {
     //   name: "",
     //   image: "", 
