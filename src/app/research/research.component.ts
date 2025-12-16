@@ -63,17 +63,17 @@ export class ResearchComponent {
       description : "",
       role_2 : "Research Manager"
     },
-    // {
-    //   image : "../../assets/member_15.png",
-    //   name : "Dr. Kavyashree Kulamarva",
-    //   qualification : "BAMS, MD",
-    //   designation : "Research Officer",
-    //   address : "Former Senior Resident, NIMHANS, Bengaluru",
-    //   role : "",
-    //   roleDesv : "Former Senior Research Fellow, CCRAS",
-    //   description : "",
-    //   role_2 : "Research Officer"
-    // },
+    {
+      image : "../../assets/member_15.png",
+      name : "Dr. Kavyashree Kulamarva",
+      qualification : "BAMS, MD",
+      designation : "Research Officer",
+      address : "Former Senior Resident, NIMHANS, Bengaluru",
+      role : "",
+      roleDesv : "Former Senior Research Fellow, CCRAS",
+      description : "",
+      role_2 : "Research Officer"
+    },
     // {
     //   image : "../../assets/member_16.png",
     //   name : "Dr. Sooraj Mohan R",
