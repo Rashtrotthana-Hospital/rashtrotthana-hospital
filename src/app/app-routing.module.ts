@@ -68,11 +68,13 @@ import { AllergieClinic } from './rashtrotthana-clinic/allergie-clinic/allergie-
 import { DiabeticFoot } from './rashtrotthana-clinic/diabetic-foot/diabetic-foot';
 import { PopupForm } from './rashtrotthana-clinic/popup-form/popup-form';
 import { HealthCheckComponent } from './health-package/health-check/health-check.component';
+import { DoctorCardComponent } from './doctor-card/doctor-card.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'about-us', component: AboutUsComponent },
   { path: "career", component: CareerComponent },
+  { path: "doctor-card", component: DoctorCardComponent },
 
 
   {

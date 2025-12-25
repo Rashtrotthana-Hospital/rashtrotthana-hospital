@@ -1,570 +1,903 @@
-.allergy {
-    margin-top: 16vh;
-    background: #FBFFF5;
-}
-
-
-.banner {
-    background: linear-gradient(255deg, #01AFB8 0.94%, #004B5F 100.59%);
+.banner-img {
     width: 100%;
-    height: 570px;
-    flex-shrink: 0;
-    color: white;
-
+    height: 100%;
+    position: absolute;
 }
 
-.content-part {
-    /* position: relative; */
-    /* top: 50px; */
+.banner-content {
     display: flex;
-    /* align-items: center; */
-    gap: 30px;
-    margin: 100px;
-}
-
-
-.content {
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    margin-top: 50px;
+    position: relative;
+    top: 125px;
+    gap: 315px;
+    padding: 30px 30px 0;
 }
 
-.main-heading {
-    color: #FFF;
-    text-align: center;
-    font-family: Poppins;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    /* width: 684px; */
+.banner-resp {
+    display: none;
 }
 
-.main-heading span {
-    color: #FBCA51;
-    font-family: Poppins;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-
-
-.banner-para {
-    color: #FFF;
-    text-align: center;
-    font-family: Inter;
-    font-size: 16px;
+.banner-heading {
+    color: #FFFBFB;
+    font-family: "IBM Plex Sans Condensed";
+    font-size: 50px;
     font-style: normal;
     font-weight: 600;
-    line-height: 26px;
-    width: 674px;
-    margin-top: 10px;
+    line-height: 60px;
+    /* 120% */
+    text-transform: capitalize;
 }
 
-.img img {
-    width: 100%;
-    height: auto;
-    flex-shrink: 0;
-    position: relative;
-    left: 100px;
-    top: 12px;
+.banner-heading span {
+    color: #FFD901;
+    font-family: "IBM Plex Sans Condensed";
+    font-size: 106px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 104px;
+    text-transform: uppercase;
 }
 
-.img svg {
-    position: relative;
-    top: 106px;
-    left: 100px;
+.banner-sub-heading {
+    width: 475px;
+    height: 53px;
+    border-radius: 10px;
+    border: 1px solid #FFF;
+    color: #FFF;
+    text-align: center;
+    font-family: Inder;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-button {
-    display: inline-flex;
-    height: 50px;
-    padding: 14px 20px;
+
+.banner-btn {
+    display: flex;
+    width: 408px;
+    height: 87px;
+    padding: 24px 37px;
     justify-content: center;
     align-items: center;
     gap: 10px;
-    color: black;
-    font-size: 18px;
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
     font-weight: 600;
-    flex-shrink: 0;
-    border-radius: 8px;
-    background: #FBCA51;
-    border: none;
-    margin: 20px;
-
+    line-height: normal;
+    border-radius: 15px;
+    background: #FFD901;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.25);
+    margin-top: 30px;
 }
 
-/* .img {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-} */
-
-.flex1 {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 20px;
+.banner-content img {
+    width: auto;
+    height: 600px;
+    aspect-ratio: 619/820;
 }
 
-.flex {
+.timing-card {
+    width: 1332px;
+    height: 208px;
+    border-radius: 15px;
+    background: #FFF;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.25);
     display: flex;
-    gap: 10px;
     align-items: center;
-    color: #FFF;
+    justify-content: space-evenly;
+    position: relative;
+    top: -30px;
+    left: 80px;
+}
+
+.card {
+    width: 386px;
+    height: 131px;
+    border-radius: 15px;
+    background: #FBFBFB;
+    box-shadow: 2px 2px 5px 2px #127F80;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.Clinic-heading {
+    color: #000;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: nsormal;
+    font-weight: 600;
+    line-height: 25px;
+    /* 78.125% */
+}
+
+.Clinic-para {
+    color: #616161;
     font-family: Inter;
     font-size: 18px;
     font-style: normal;
-    font-weight: 600;
-    line-height: 30px;
-    /* 166.667% */
+    font-weight: 500;
+    line-height: 25px;
+    margin-top: 10px;
 }
 
-.symptom,
-.about,
-.types,
-.service,
-.treatment {
+.allergy {
+    margin-top: 16vh;
+    background: #FBFFF5;
+    padding-bottom: 50px;
+    position: relative;
+
+}
+
+.service-part {
+    width: auto;
+    height: 617px;
+    background: linear-gradient(355deg, #E6EAEA 3.91%, #FFF 96.27%);
     display: flex;
+    align-items: center;
     flex-direction: column;
-    gap: 10px;
-    padding: 70px;
+    gap: 20px;
+    /* position: relative; */
 }
 
-.heading {
-    color: #1E0B9B;
-    font-family: Poppins;
-    font-size: 36px;
+.service-header {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.service-heading {
+    color: #008080;
+    font-family: Inter;
+    font-size: 64px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     line-height: normal;
 }
 
+.service-para {
+    color: #616161;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    /* 187.5% */
+    width: 651px;
+}
 
-.para {
+.service-cards {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.service-card {
+    width: 362px;
+    height: 416px;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+    padding: 30px;
+}
+
+.card-heading {
     color: #000;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.card-para {
+    color: #616161;
     font-family: Inter;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
-    line-height: 28px;
-    /* 140% */
+    line-height: normal;
+    width: 248px;
 }
 
+.about-part {
+    display: flex;
+    align-items: flex-start;
+    padding: 50px 90px;
+    gap: 20px;
+}
 
-.sub-heading {
-    color: #008080;
-    font-family: Poppins;
-    font-size: 24px;
+.about-heading {
+    color: #000;
+    font-family: Inter;
+    font-size: 48px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     line-height: normal;
 }
 
-ul li {
-    color: #000;
+.about-para {
+    color: #5B5B5B;
     font-family: Inter;
     font-size: 20px;
     font-style: normal;
-    font-weight: 600;
-    line-height: 34px;
+    font-weight: 400;
+    line-height: 25px;
+    /* 125% */
 }
 
-ul {
-    margin-top: 10px;
-}
-
-.symptom img {
-    width: 160px;
-    height: 180px;
-    flex-shrink: 0;
-    border-radius: 12px;
-}
-
-.flex2 {
+.content {
     display: flex;
-    gap: 100px;
+    flex-direction: column;
+    gap: 20px;
     align-items: center;
 }
 
-.imgs {
+.content ul li {
+    color: #5B5B5B;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    /* 166.667% */
+}
+
+.symptoms {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-
+    align-items: center;
 }
 
-.about,
-.service,
-.treatment {
-    padding: 0 70px 70px;
-}
-
-.sub-para {
-    color: #000;
-    font-family: Poppins;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
-
-.about-sub-para {
-    color: #008080;
-    font-family: Poppins;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
-
-
-.about-img {
+.symtoms-part {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 30px;
 }
 
-.box {
-    width: 444px;
-    height: 211px;
-    flex-shrink: 0;
-    border-radius: 8px;
-    background: #D9D9D9;
+.symtoms-heading {
+    color: #008080;
+    font-family: Inter;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
 }
 
 .mt {
     margin-top: 20px;
 }
 
-.doctor-part {
-    background: linear-gradient(284deg, #FBCA51 -45.93%, #008080 100.02%), #D9D9D9;
+
+.symtoms-sub-heading {
+    color: #616161;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px;
+}
+
+.symtoms-sub-heading span {
+    color: #127F80;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px;
+    text-transform: capitalize;
+}
+
+.symtoms-content ul li {
+    color: #616161;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px;
+    text-transform: capitalize;
+
+}
+
+.symtoms-content ul {
+    margin-top: 20px;
+}
+
+.symtoms-content {
+    width: 1062px;
+    height: 484px;
+    border-radius: 10px;
+    background: #F4F4F4;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.25);
+    padding: 30px 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.symtoms-img {
+    position: relative;
+    left: 80px;
+}
+
+.symtoms-para {
+    color: #616161;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.treatment {
     width: 100%;
-    /* height: 4px; */
-    flex-shrink: 0;
+    height: 910px;
+    background: #F4F4F4;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
-    padding: 30px 0;
+    /* justify-content: center; */
+    gap: 50px;
+    margin-top: 50px;
 }
 
-.doctor-img {
-    display: flex;
-    align-items: center;
-    width: 50%;
-    gap: 30px;
-    list-style-type: none;
-}
-
-.doctor-img img {
-    width: 230px;
-    height: 230px;
-    border-radius: 50%;
-    background-color: white;
-}
-
-.doctor-heading {
-    color: #FFF;
-    font-family: Poppins;
-    font-size: 36px;
+.treatment-heading {
+    color: #008080;
+    font-family: Inter;
+    font-size: 64px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     line-height: normal;
 }
 
-.doctor-name {
-    color: #FFF;
-    font-family: Poppins;
-    font-size: 20px;
+.treatment-para {
+    color: #616161;
+    font-family: Inter;
+    font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    line-height: 32px;
+    line-height: 30px;
+    /* 187.5% */
+    width: 806px;
+    margin-top: 30px;
+}
+
+.treatment-cards-1,
+.treatment-cards-2,
+.treatment-cards-3,
+.treatment-cards-4 {
+    width: 371px;
+    height: 150px;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    position: absolute;
+    gap: 20px;
+}
+
+.treatment-cards-1 {
+    top: 77%;
+    left: 216px;
+}
+
+.treatment-cards-2 {
+    top: 83%;
+    left: 300px;
+}
+
+.treatment-cards-3 {
+    top: 75%;
+    right: 245px;
+}
+
+.treatment-cards-4 {
+    top: 81%;
+    right: 206px;
+}
+
+.treatment-box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
 
 }
 
-.doctor-description {
-    width: 1240px;
-    color: #FFF;
-    text-align: center;
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.treatment-card-heading {
+    color: #000;
+    text-align: right;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.treatment-card-para {
+    color: #616161;
+    text-align: right;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 224px;
+}
+
+.tr {
+    text-align: left;
+}
+
+.contact-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 30px;
+}
+
+.contact-heading {
+    color: #000;
+    font-family: Inter;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.contact-heading span {
+    color: #127F80;
+    font-family: Inter;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.contact-content {
+    width: 1119px;
+    height: 418px;
+    border-radius: 10px;
+    background: #F4F4F4;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.25);
+    padding: 30px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contact-para {
+    color: #616161;
     font-family: Inter;
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
-    line-height: 28px;
-    /* 140% */
+    line-height: 30px;
+    /* 150% */
 }
 
-.help {
+.time {
+    color: #000;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.time span {
+    color: #127F80;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.call {
+    color: #000;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.call span {
+    color: #127F80;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.btn {
     display: flex;
-    flex-direction: column;
+    width: 408px;
+    height: 87px;
+    padding: 24px 37px;
+    justify-content: center;
     align-items: center;
-    padding: 0 70px 70px;
     gap: 10px;
-}
-
-.help-sub-para {
-    color: #008080;
+    border-radius: 15px;
+    background: #FFD901;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.25);
+    color: #000;
     text-align: center;
-    font-family: Poppins;
-    font-size: 22px;
+    font-family: Inter;
+    font-size: 32px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    padding: 10px;
 }
 
-a {
-    text-decoration: none;
-    color: #008080;
+.timings {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.tx {
-    text-align: center;
-    font-weight: 500;
-    line-height: 32px;
-}
-
-@media(max-width:1024px) {
-
-    .allergy {
-        margin-top: 10vh;
+@media (max-width: 1024px) {
+    .banner-content {
+        gap: 130px;
+        top: 80px;
+        padding: 20px;
+        top: 160px;
     }
 
-    .content-part {
-        margin: 0;
+    .banner-heading {
+        font-size: 38px;
+        line-height: 48px;
     }
 
-    .content {
+    .banner-heading span {
+        font-size: 70px;
+        line-height: 80px;
+    }
+
+    .banner-content img {
+        height: 450px;
+    }
+
+    .banner-btn {
+        width: 348px;
+        height: 67px;
+        padding: 24px 0px;
+        font-size: 28px;
+    }
+
+    .timing-card {
+        width: 95%;
+        left: 0;
+        margin: auto;
+        flex-wrap: wrap;
+        height: auto;
+        gap: 20px;
         padding: 20px;
     }
 
-    .img img {
-        top: 268px;
-        left: 0px;
-    }
-
-    .img {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .img svg {
-        top: 235px;
-        left: 0px;
-        width: 50px;
-    }
-
-    .doctor-part {
-        height: 100%;
-    }
-
-    .doctor-description {
+    .card {
         width: 100%;
-        padding: 30px;
-    }
-}
-
-@media(max-width:768px) {
-    .allergy {
-        margin-top: 10vh;
+        max-width: 350px;
     }
 
-    .content-part {
-        display: flex;
-        flex-direction: column;
+    .service-cards {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
-    .banner {
-        height: 100%;
-    }
-
-    .img img {
-        top: 0;
-    }
-
-
-
-    .img svg {
-        top: 150px;
-        left: -296px;
-        width: 202px;
-    }
-
-    .flex2 {
-        display: flex;
-        flex-direction: column;
-        gap: 50px;
-    }
-
-    .symptom img {
-        width: 50%;
-        height: 50%;
-        /* margin:5px; */
-        margin-bottom: 20px;
-    }
-
-    .doctor-img {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .symptom,
-    .about,
-    .types,
-    .service,
-    .treatment {
-        padding: 50px;
-    }
-
-    .about,
-    .service,
-    .treatment {
-        padding: 0 50px 50px;
-    }
-
-    .imgs {
-        display: flex;
-        gap: 10px;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .sub-heading,
-    .sub-para,
-    .help-sub-para,
-    .para {
-        font-size: 18px;
-    }
-
-    .heading {
-        font-size: 26px;
-
-    }
-
-    .doctor-name,
-    .about-sub-para,
-    .doctor-description,
-    ul li {
-        font-size: 18px;
-    }
-
-}
-
-
-@media (max-width: 480px) {
-
-    .main-heading,
-    .main-heading span {
-        font-size: 20px;
-    }
-
-    .banner-para {
+    .service-para {
         width: 100%;
-        font-size: 14px;
-    }
-
-    .flex {
-        font-size: 14px;
-    }
-
-    .content {
-        padding: 20px;
-    }
-
-    .img svg {
-        top: 85px;
-        left: -122px;
-        width: 54px;
-
-    }
-
-    .box {
-        width: 100%;
-        height: 100%;
-    }
-
-    .content-part {
-        gap: 0px;
-    }
-
-    .heading {
-        font-size: 20px;
-
-    }
-
-    .sub-heading,
-    .sub-para,
-    .help-sub-para,
-    .para {
-        font-size: 14px;
-    }
-
-    ul li {
-        font-size: 12px;
-    }
-
-    .flex2,
-    .doctor-part {
-        gap: 0px;
-    }
-
-    .symptom,
-    .about,
-    .types,
-    .service,
-    .treatment {
-        padding: 20px;
-    }
-
-    .about,
-    .service,
-    .treatment {
-        padding: 0 20px 20px;
-    }
-
-    .help {
-        padding: 20px;
-    }
-
-    .doctor-heading {
-        font-size: 20px;
         text-align: center;
     }
 
-    .doctor-name,
-    .about-sub-para,
-    .doctor-description {
-        font-size: 14px;
-    }
-
-    .doctor-description,
-    .para {
-        text-align: left;
-    }
-
-    .doctor-img {
-        width: 100%;
-        padding: 20px;
-    }
-
-    .symptom img {
-        margin-bottom: 0;
-    }
-
-    .imgs {
-        display: flex;
-        gap: 10px;
+    .about-part {
+        flex-direction: column;
+        padding: 40px;
+        text-align: center;
         align-items: center;
+    }
+
+    .symptoms {
         flex-direction: column;
     }
 
-    button{
-        font-size: 14px;
-        padding: 14px 20px;
+    .symtoms-content {
+        width: 90%;
+        padding: 50px 30px 30px;
     }
 
+    .service-header {
+        flex-direction: column;
+    }
+
+    .symtoms-img {
+        left: 0;
+        /* margin-top: 20px; */
+        top: 30px;
+    }
+
+    .treatment {
+        height: auto;
+    }
+
+    .treatment-box {
+        position: static;
+        display: flex;
+        /* grid-template-columns: repeat(2, 1fr); */
+        gap: 20px;
+    }
+
+    .treatment-cards-1,
+    .treatment-cards-2,
+    .treatment-cards-3,
+    .treatment-cards-4 {
+        position: static;
+        /* width: 100%; */
+    }
+
+    .treatment-cards-1,
+    .treatment-cards-2 {
+        flex-direction: row-reverse;
+    }
+
+    .contact-content {
+        width: 95%;
+        height: auto;
+    }
+
+    .service-part {
+        height: auto;
+        padding: 20px;
+    }
+
+    .btn {
+        font-size: 30px;
+    }
+
+    .treatment-para {
+        width: 100%;
+    }
+
+    /* .contact-heading,
+    .contact-heading span{
+        font-size: 20px;
+    } */
+}
+
+
+@media (max-width: 768px) {
+    .banner-content {
+        flex-direction: column-reverse;
+        top: 100px;
+        left: -11px;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .banner-resp {
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+
+    .banner-img {
+        display: none;
+    }
+
+    .banner-sub-heading {
+        width: 74%;
+        font-size: 20px;
+    }
+
+    .banner-btn {
+        width: 74%;
+        height: auto;
+        font-size: 16px;
+        padding: 16px;
+        margin-top: 0;
+    }
+
+    .banner-content img {
+        height: 257px;
+    }
+
+    .timing-card {
+        flex-direction: column;
+    }
+
+    .service-heading {
+        font-size: 40px;
+    }
+
+    .service-card {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+    }
+
+    .content {
+        margin-left: 50px;
+    }
+
+    .symtoms-heading {
+        font-size: 26px;
+    }
+
+    .symtoms-sub-heading,
+    .symtoms-sub-heading span {
+        font-size: 20px;
+    }
+
+    .symtoms-content ul li {
+        font-size: 16px;
+        line-height: 34px;
+    }
+
+    .symtoms-img {
+        width: 90%;
+        left: 10px;
+    }
+
+    .allergy-img {
+        width: 80%;
+    }
+
+    .contact-heading {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .btn {
+        width: 100%;
+        height: auto;
+        font-size: 16px;
+        padding: 16px;
+        display: flex;
+        width: 207px;
+        height: 43px;
+        padding: 24px 14px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .symtoms-content {
+        height: auto;
+        width: 100%;
+    }
+
+    .banner-heading,
+    .banner-heading span {
+        font-size: 40px;
+        line-height: 45px;
+    }
+
+    .flex {
+        flex-direction: column;
+    }
+
+    .card {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .Clinic-heading {
+        font-size: 20px;
+    }
+
+    .about-heading {
+        font-size: 20px;
+    }
+
+    .about-para {
+        font-size: 16px;
+    }
+
+    .content ul li {
+        font-size: 16px;
+        line-height: 26px;
+        text-align: start;
+    }
+
+    .about-img {
+        width: 100%;
+
+    }
+
+    .treatment-cards-1,
+    .treatment-cards-2,
+    .treatment-cards-3,
+    .treatment-cards-4 {
+        width: 300px;
+    }
+
+    .treatment-card-heading {
+        font-size: 16px;
+        text-align: start;
+    }
+
+    .treatment-card-para {
+        font-size: 14px;
+        width: 100%;
+        text-align: start;
+    }
+
+    .contact-heading,
+    .contact-heading span {
+        font-size: 18px;
+    }
+
+    .contact-para {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    .time,
+    .time span,
+    .call,
+    .call span {
+        font-size: 16px;
+    }
+
+
+}
+
+@media (max-width: 600px) {
+    .treatment-box {
+        /* grid-template-columns: 1fr; */
+        flex-direction: column-reverse;
+    }
+
+    .treatment-heading {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .treatment-para {
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .banner-sub-heading {
+        font-size: 14px;
+    }
+
+    .banner-btn{
+        font-size: 12px;
+    }
 }

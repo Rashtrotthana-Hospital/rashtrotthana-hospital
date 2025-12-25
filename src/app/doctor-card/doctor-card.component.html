@@ -1,0 +1,49 @@
+<div class="doctor-card">
+    <div class="card">
+
+        <div class="image">
+            <img [src]="doctorCard.image" alt="Doctor Image">
+        </div>
+
+        <div class="details">
+            <div class="main-heading">
+                Meet Our <span>{{ doctorCard.title }}</span> Specialist
+            </div>
+
+            <div class="name">
+                {{ doctorCard.name }}
+            </div>
+
+            <div class="dept">
+                {{ doctorCard.degree }}
+            </div>
+
+            <div class="flex">
+                <div class="info">
+                    <div class="info-item">
+                        <img [src]="doctorCard.icons.experience" alt="Experience">
+                        <span>Experience: {{ doctorCard.experience }}</span>
+                    </div>
+
+                    <div class="info-item">
+                        <img [src]="doctorCard.icons.timings" alt="Clinic Hours">
+                        <span>Clinic Hours: {{ doctorCard.timings }}</span>
+                    </div>
+
+                    <div class="info-item">
+                        <img [src]="doctorCard.icons.speciality" alt="Speciality">
+                        <span>Speciality: {{ doctorCard.speciality }}</span>
+                    </div>
+                </div>
+
+
+
+                <button class="profile-btn" [routerLink]="['/doctor', doctorCard.slug]">
+                    Contact Us →
+                </button>
+
+
+            </div>
+        </div>
+    </div>
+</div>
