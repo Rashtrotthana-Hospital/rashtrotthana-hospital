@@ -1,0 +1,115 @@
+/* SECTION */
+.documents-section {
+    padding: 4rem 6rem;
+    padding-top: 24vh;
+    background: linear-gradient(180deg, #fbfff5, #f0f7f3);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* HEADING */
+  .documents-heading {
+    font-family: Poppins;
+    font-size: 36px;
+    color: #008080;
+    margin-bottom: 1rem;
+    will-change: transform;
+  }
+  
+  .documents-subtext {
+    max-width: 720px;
+    margin: 0 auto 3rem;
+  }
+  
+  /* GRID */
+  .documents-grid {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    perspective: 1200px;
+  }
+  
+  /* CARD */
+  .document-card {
+    width: 50%;
+    padding: 2rem;
+    background: rgba(255,255,255,0.85);
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.15s ease, box-shadow 0.3s ease;
+    transform-style: preserve-3d;
+    will-change: transform;
+    opacity: 0;
+    transform: translateY(60px) rotateX(10deg);
+  }
+  
+  .document-card.reveal {
+    opacity: 1;
+    transform: translateY(0) rotateX(0);
+  }
+  
+  .document-card:hover {
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  }
+  
+  /* TEXT DEPTH */
+  .document-title,
+  .document-desc {
+    transform: translateZ(30px);
+  }
+  
+  /* IFRAME */
+  .document-flip {
+    width: 100%;
+    height: 630px;
+    margin-top: 1rem;
+    border-radius: 10px;
+    transform: translateZ(20px);
+    transition: transform 0.3s ease;
+  }
+  
+  .document-card:hover .document-flip {
+    transform: translateZ(40px) scale(1.02);
+  }
+  
+  /* PARALLAX SHAPES */
+  .parallax-shape {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.15;
+    background: #008080;
+    z-index: 0;
+  }
+  
+  .shape-1 {
+    width: 200px;
+    height: 200px;
+    top: 10%;
+    left: 5%;
+  }
+  
+  .shape-2 {
+    width: 300px;
+    height: 300px;
+    bottom: 10%;
+    right: 10%;
+  }
+  
+  /* MOBILE */
+  @media (max-width: 768px) {
+    .documents-grid {
+      flex-direction: column;
+    }
+  
+    .document-card {
+      width: 100%;
+    }
+  }
+  
+  @media (hover: none) {
+    .document-card {
+      transform: none !important;
+    }
+  }
+  

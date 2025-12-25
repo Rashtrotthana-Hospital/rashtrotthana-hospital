@@ -69,6 +69,7 @@ import { DiabeticFoot } from './rashtrotthana-clinic/diabetic-foot/diabetic-foot
 import { PopupForm } from './rashtrotthana-clinic/popup-form/popup-form';
 import { HealthCheckComponent } from './health-package/health-check/health-check.component';
 import { WinterCardiologyComponent } from './winter-cardiology/winter-cardiology.component';
+import { AnnualReportComponent } from './annual-report/annual-report.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -163,6 +164,7 @@ const routes: Routes = [
   { path: 'ayurvedic-thyroid-treatment', component: AyurvedaThyroidComponent },
   { path: 'mathrubhava-treatment', component: MuthrubhavaComponent },
   { path: 'thank-you', component: ThankYouComponent },
+  { path: 'annual-report', component: AnnualReportComponent},
   {
     path: 'doctor/:slug',
     component: NewDocPageComponent

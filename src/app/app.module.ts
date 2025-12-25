@@ -136,6 +136,7 @@ import { PopupForm } from './rashtrotthana-clinic/popup-form/popup-form';
 import { CdkAriaLive } from '@angular/cdk/a11y';
 import { HealthCheckComponent } from './health-package/health-check/health-check.component';
 import { WinterCardiologyComponent } from './winter-cardiology/winter-cardiology.component';
+import { AnnualReportComponent } from './annual-report/annual-report.component';
 
 @NgModule({
   declarations: [
@@ -243,6 +244,7 @@ import { WinterCardiologyComponent } from './winter-cardiology/winter-cardiology
     PopupForm,
     HealthCheckComponent,
     WinterCardiologyComponent,
+    AnnualReportComponent,
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   imports: [

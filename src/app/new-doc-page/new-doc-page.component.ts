@@ -69,6 +69,7 @@ export class NewDocPageComponent {
       message: ['', Validators.required],
       date_appointment: ['', Validators.required],
     });
+    this.minDate = new Date();
   }
   loadDoctorBySlug(slug: string) {
     // Replace with actual data source (e.g., service or static list)
@@ -1228,6 +1229,7 @@ export class NewDocPageComponent {
       time: "",
       date: "Thursday",
       alt: '',
+      id:76,
       title: 'Dr. Kavya N | Ayurvedic Specialist in Metabolic & Gut Disorders',
       description: 'Expert in Ayurveda for metabolic disorders, gut health, skin conditions, arthritis, spine care & gynecological issues with 15+ years of clinical experience.'
     },
@@ -1322,7 +1324,7 @@ export class NewDocPageComponent {
       qualification: "MBBS, DNB (Internal Medicine)",
       time: "",
       date: "",
-      id: 73,
+      id: 77,
       alt: 'Dr. Shruti Suresh| Nephrologist & Transplant Physician Bangalore',
       title: 'Dr. Shruti Suresh - Experienced General Physician in Bangalore',
       description: 'Consult Dr. Shruti Suresh for expert care in general medicine and long-term health management in Rajarajeshwari Nagar.',
@@ -1338,7 +1340,7 @@ export class NewDocPageComponent {
       qualification: "MBBS, MD Internal Medicine, DM Endocrinology",
       time: "",
       date: "",
-      id: 75,
+      id: 73,
       alt: 'Dr. Manasa M. G. | Best Endocrinology Doctor in Bangalore | Rashtrotthan Hospital',
       title: 'Dr. Manasa M. G. | Endocrinologist - Hormone & Diabetes Expert',
       description: 'Meet Dr. Manasa M. G., expert in endocrine care with research-backed experience in treating hormonal and metabolic disorders in Bangalore.'
@@ -1355,6 +1357,7 @@ export class NewDocPageComponent {
       qualification: "MSc. Clinical Psychology, M.Phil Clinical Psychology, Fellowship in Clinical Neuropsychology(NIMHANS)",
       time: "",
       date: "",
+      id: 75,
       alt: 'Ms. Samarchitha S | Best Psychology Hospital in Bangalore | Rashtrotthana Hospital',
       title:'Ms. Samarchitha S | Clinical Psychologist in Bangalore',
       description:'Ms. Samarchitha S, Clinical Psychologist at Rashtrotthana Hospital Bangalore, offers expert care for mood, anxiety, sleep and personality disorders.'
@@ -1371,6 +1374,7 @@ export class NewDocPageComponent {
       qualification: "MBBS, MS (Orthopedics), Fellowship in Joint Replacemen",
       time: "",
       date: "",
+      id: 74,
       alt: 'Dr. Sandeep K M, top orthopedic surgeon in Bangalore | Rashtrotthana Hospital',
       title:'Dr. Sandeep K M | Expert Orthopedic Surgeon in Bangalore',
       description:'Expert orthopedic care by Dr. Sandeep K M, with 11+ years in trauma, joint replacement, and arthroscopy. MBBS, MS, Fellowship-trained. At Rashtrotthana Hospital, restoring mobility. Book now!'

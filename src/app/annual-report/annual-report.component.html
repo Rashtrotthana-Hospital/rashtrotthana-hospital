@@ -1,0 +1,54 @@
+<div class="documents-section" (window:scroll)="onScroll()">
+    <!-- background shapes -->
+    <div class="parallax-shape shape-1"></div>
+    <div class="parallax-shape shape-2"></div>
+  
+    <h2 class="documents-heading" #heading>2025 Reports</h2>
+  
+    <p class="documents-subtext">
+      We are pleased to share key documents that showcase our hospital’s journey and achievements.
+    </p>
+  
+    <div class="documents-grid">
+      <!-- CARD 1 -->
+      <div
+        class="document-card"
+        #docCard
+        (mousemove)="onMouseMove($event, docCard)"
+        (mouseleave)="onMouseLeave(docCard)"
+      >
+        <p class="document-title">Grand Finale Annual Report</p>
+        <p class="document-desc">
+          A comprehensive overview of our recent activities, performance, and future goals.
+        </p>
+  
+        <iframe
+          src="https://bf75fee960ca42a7839ad60c83346d05.elf.site"
+          frameborder="0"
+          class="document-flip"
+          loading="lazy"
+        ></iframe>
+      </div>
+  
+      <!-- CARD 2 -->
+      <div
+        class="document-card"
+        #docCard
+        (mousemove)="onMouseMove($event, docCard)"
+        (mouseleave)="onMouseLeave(docCard)"
+      >
+        <p class="document-title">Coffee Table Book</p>
+        <p class="document-desc">
+          A visual celebration of our history, milestones, and community impact.
+        </p>
+  
+        <iframe
+          src="https://6b5b0dddd2e94fa9b13caa78010bd335.elf.site"
+          frameborder="0"
+          class="document-flip"
+          loading="lazy"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+  

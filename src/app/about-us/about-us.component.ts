@@ -24,4 +24,7 @@ navigateToPage() {
     console.log('About Us');
   }
 
+  openDocument(type: string) {
+    this.router.navigate(['/documents', type]);
+  }
 }
