@@ -12,66 +12,60 @@ export class AnnualReportComponent implements AfterViewInit {
   private isTouchDevice = window.matchMedia('(hover: none)').matches;
 
   ngAfterViewInit() {
-    const observer = new IntersectionObserver(
-      entries => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('reveal');
-          }
-        });
-      },
-      { threshold: 0.2 }
-    );
-
-    this.docCards.forEach(card => observer.observe(card.nativeElement));
+    // Optional: Add scroll reveal animation
+    this.setupScrollAnimation();
   }
 
-  onMouseMove(event: MouseEvent, card: HTMLElement) {
+  onMouseMove(event: MouseEvent, card: HTMLElement): void {
+    // Skip 3D effect on touch devices
     if (this.isTouchDevice) return;
 
     const rect = card.getBoundingClientRect();
     const x = event.clientX - rect.left;
     const y = event.clientY - rect.top;
 
-    const rotateY = ((x - rect.width / 2) / rect.width) * 12;
-    const rotateX = -((y - rect.height / 2) / rect.height) * 12;
+    const centerX = rect.width / 2;
+    const centerY = rect.height / 2;
 
-    card.style.transform = `
-      rotateX(${rotateX}deg)
-      rotateY(${rotateY}deg)
-      translateZ(12px)
-    `;
+    const rotateX = (y - centerY) / 10;
+    const rotateY = (centerX - x) / 10;
+
+    card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
   }
 
-  onMouseLeave(card: HTMLElement) {
-    card.style.transform = `
-      rotateX(0deg)
-      rotateY(0deg)
-      translateZ(0)
-    `;
+  onMouseLeave(card: HTMLElement): void {
+    card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale3d(1, 1, 1)';
   }
 
-  onScroll() {
-    const scrollY = window.scrollY;
+  onViewDocument(documentType: string): void {
+    console.log(`Viewing document: ${documentType}`);
+    // Add your navigation or modal logic here
+  }
 
-    // Heading micro-parallax
-    if (this.heading) {
-      this.heading.nativeElement.style.transform =
-        `translateY(${scrollY * 0.1}px)`;
-    }
+  private setupScrollAnimation(): void {
+    // Optional: Add intersection observer for scroll animations
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
 
-    // Card parallax
-    this.docCards.forEach((card, index) => {
-      const speed = 0.05 + index * 0.03;
-      card.nativeElement.style.translate =
-        `0 ${scrollY * speed}px`;
+    this.docCards.forEach((card) => {
+      observer.observe(card.nativeElement);
     });
+  }
 
-    // Background shapes
-    const shape1 = document.querySelector('.shape-1') as HTMLElement;
-    const shape2 = document.querySelector('.shape-2') as HTMLElement;
+  @ViewChild('reportsSection') reportsSection!: ElementRef;
 
-    if (shape1) shape1.style.transform = `translateY(${scrollY * 0.15}px)`;
-    if (shape2) shape2.style.transform = `translateY(${scrollY * 0.25}px)`;
+  onViewReports(): void {
+    this.reportsSection.nativeElement.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    });
   }
 }
