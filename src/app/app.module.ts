@@ -135,6 +135,7 @@ import { PopupForm } from './rashtrotthana-clinic/popup-form/popup-form';
 // import { CdkAriaLive } from "../../node_modules/@angular/cdk/a11y/index";
 import { CdkAriaLive } from '@angular/cdk/a11y';
 import { HealthCheckComponent } from './health-package/health-check/health-check.component';
+import { DoctorCardComponent } from './doctor-card/doctor-card.component';
 import { WinterCardiologyComponent } from './winter-cardiology/winter-cardiology.component';
 import { AnnualReportComponent } from './annual-report/annual-report.component';
 
@@ -243,6 +244,7 @@ import { AnnualReportComponent } from './annual-report/annual-report.component';
     DiabeticFoot,
     PopupForm,
     HealthCheckComponent,
+    DoctorCardComponent,
     WinterCardiologyComponent,
     AnnualReportComponent,
   ],

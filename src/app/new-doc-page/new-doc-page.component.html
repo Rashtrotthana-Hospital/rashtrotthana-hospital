@@ -60,12 +60,29 @@
                         <div class="listItem">{{ expert }}</div>
                     </div>
                 </div>
+
+                <div class="expertise-groups" *ngIf="filteredDoctor.areasOfExpertise2?.length > 0">
+
+                    <div class="expertise-group" *ngFor="let group of filteredDoctor.areasOfExpertise2">
+
+                        <div class="expertise-title">{{ group.title }}</div>
+
+                        <div class="lists" *ngFor="let item of group.items">
+                            <img src="../../assets/list.png" alt="">
+                            <div class="listItem">{{ item }}</div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
+
+
+
 
         </div>
     </div>
 
-    <!-- form -->\
+    <!-- form -->
 
     <div class="form" #formSection>
         <div class="formWrapper">

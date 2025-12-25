@@ -1,4 +1,4 @@
-.root-container{
+.root-container {
     margin-top: 120px;
 }
 
@@ -73,6 +73,19 @@
     z-index: 2;
 }
 
+.expertise-title {
+    color: #008080;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px;
+}
+
 .image_wrapper {
     width: 45%;
     display: flex;
@@ -110,19 +123,22 @@
     cursor: pointer;
     margin-left: 8%;
 }
-.book_button{
+
+.book_button {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     margin-top: 20px;
 }
+
 .book_button button:disabled {
     background: linear-gradient(90deg, #b0bcc6 0%, #96e6e6 100%) !important;
     box-shadow: none !important;
     cursor: not-allowed !important;
     opacity: 0.6;
-  }
+}
+
 .book_button button {
     display: flex;
     align-items: center;
@@ -136,6 +152,7 @@
     cursor: pointer;
     margin-left: 8%;
 }
+
 .btn_text {
     color: #FFF;
     font-family: Inter;
@@ -157,7 +174,7 @@
     background: rgba(255, 255, 255, 0.28);
 }
 
-.back_button a{
+.back_button a {
     width: 100px;
     color: #008080;
     font-family: Poppins;
@@ -297,9 +314,11 @@ form {
     border-radius: 8px;
     margin-top: 10px;
 }
-.time{
+
+.time {
     margin-bottom: 10px;
 }
+
 .formHeading {
     font-size: 40px;
 }
@@ -391,7 +410,7 @@ select::-ms-expand {
     height: 50px;
     border-radius: 6px;
     margin-top: 10px;
-    
+
 }
 
 .p-inputtext::placeholder {
@@ -406,11 +425,13 @@ select::-ms-expand {
 .tabsize {
     display: none;
 }
-.error{
+
+.error {
     color: red;
     font-size: 12px;
     margin-top: 5px;
 }
+
 @media (max-width : 1200px) {
     .image_wrapper img {
         width: 390px;
@@ -418,10 +439,10 @@ select::-ms-expand {
 }
 
 @media (max-width : 800px) {
-    .root-container{
+    .root-container {
         margin-top: 110px;
     }
-    
+
     .profile_content {
         flex-direction: column;
         gap: 50px;
@@ -524,7 +545,7 @@ select::-ms-expand {
 
 @media (max-width : 700px) {
 
-    .root-container{
+    .root-container {
         margin-top: 130px;
     }
 
@@ -620,12 +641,13 @@ select::-ms-expand {
     input::placeholder,
     textarea::placeholder,
     input,
-    textarea, select {
+    textarea,
+    select {
         font-size: 12px;
     }
 
     select:invalid,
-    select option.placeholder-option{
+    select option.placeholder-option {
         font-size: 12px;
     }
 

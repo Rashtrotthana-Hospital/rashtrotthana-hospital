@@ -966,13 +966,51 @@ export class NewDocPageComponent {
     // },
     {
       name: 'Dr. Nagesh R',
-      image: 'assets/dummy-doc-male.svg',
+      image: 'assets/Doc-Inv-Page/dr-nagesh.png',
       department: 'Radiologist',
       about: 'Dr. Nagesh R is an accomplished radiology consultant in jaydev rashtrotthana Hospital, with over a decade of experience in the field. He holds a medical degree in MBBS, DMRD and DNB and he is going to be a Fellow of the Royal College of Radiologists (FRCR), a highly esteemed qualification in the field of radiology. He is an active member of the Indian Radiology and Imaging Association.Dr. Nagesh R is an expert in general radiology and has a special interest in cardiovascular imaging, as well as performing USG and CT-guided interventions. He is highly skilled in interpreting medical images and diagnosing a wide range of medical conditions, from the most common to the most complex.',
       speciality: 'RADIOLOGY',
       areasOfExpertise: ['Radiology'],
-      expertise: 'Years of Experience: 10',
-      qualification: 'MBBS, DMRD, DNB, FRCR',
+
+      areasOfExpertise2 : [
+    {
+      title: 'USG :',
+      items: [
+        'Routine USG Neurosonogram',
+        'MSK ultrasounds',
+        'Paediatric hip scans',
+        'High Resolution Ultrasound',
+        'Transrectal and Trans vaginal ultrasound',
+        'All types of dopplers'
+      ]
+    },
+    {
+      title: 'Ultrasound and CT Guided Interventions',
+      items: [
+        'FNAC, Biopsy',
+        'Pigtail Drainage',
+        'Mallicot Drainage',
+        'TRUS Prostate Biopsy',
+        'Neural Foraminal Injections',
+        'Shoulder Joint / Bursal injections'
+      ]
+    },
+    {
+      title: 'Special Interest',
+      items: [
+        'Cardiovascular imaging (Coronary angiogram, aortogram, venograms)',
+        'CT and MRI abdomino-pelvic imaging',
+        'Thoracic imaging',
+        'Neuro imaging',
+        'MSK imaging'
+      ]
+    }
+  ],
+
+
+
+      expertise: 'Years of Experience: 19',
+      qualification: 'MBBS, DMRD, DNB',
       time: '09:30-09:50,09:50-10:10,10:10-10:30,10:30-10:50,10:50-11:00',
       date: 'Monday-Friday',
       alt: 'Dr. Nagesh R | Radiology Consultant in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
@@ -1359,8 +1397,8 @@ export class NewDocPageComponent {
       date: "",
       id: 75,
       alt: 'Ms. Samarchitha S | Best Psychology Hospital in Bangalore | Rashtrotthana Hospital',
-      title:'Ms. Samarchitha S | Clinical Psychologist in Bangalore',
-      description:'Ms. Samarchitha S, Clinical Psychologist at Rashtrotthana Hospital Bangalore, offers expert care for mood, anxiety, sleep and personality disorders.'
+      title: 'Ms. Samarchitha S | Clinical Psychologist in Bangalore',
+      description: 'Ms. Samarchitha S, Clinical Psychologist at Rashtrotthana Hospital Bangalore, offers expert care for mood, anxiety, sleep and personality disorders.'
     },
     {
       name: "Dr. Sandeep K. M",
@@ -1376,8 +1414,8 @@ export class NewDocPageComponent {
       date: "",
       id: 74,
       alt: 'Dr. Sandeep K M, top orthopedic surgeon in Bangalore | Rashtrotthana Hospital',
-      title:'Dr. Sandeep K M | Expert Orthopedic Surgeon in Bangalore',
-      description:'Expert orthopedic care by Dr. Sandeep K M, with 11+ years in trauma, joint replacement, and arthroscopy. MBBS, MS, Fellowship-trained. At Rashtrotthana Hospital, restoring mobility. Book now!'
+      title: 'Dr. Sandeep K M | Expert Orthopedic Surgeon in Bangalore',
+      description: 'Expert orthopedic care by Dr. Sandeep K M, with 11+ years in trauma, joint replacement, and arthroscopy. MBBS, MS, Fellowship-trained. At Rashtrotthana Hospital, restoring mobility. Book now!'
     },
     {
       name: "Dr. Pooja Prasad",
@@ -1386,13 +1424,13 @@ export class NewDocPageComponent {
       // speciality: 'ORTHOPEDICS',
       desgination: 'Consultant - Radiologist',
       about: "",
-      areasOfExpertise: ["Diagnostic Radiologist", "CT and MRI interpretation", "Ultrasound & Doppler imaging", "X-ray","Women’s imaging (Breast, pelvic US/MRI)","Neuroimaging (Brain & Spine)","Musculoskeletal imaging","Chest imaging","Abdominal & pelvic imaging","Emergency & trauma imaging","Obstetric ultrasound (routine & growth scans)"],
+      areasOfExpertise: ["Diagnostic Radiologist", "CT and MRI interpretation", "Ultrasound & Doppler imaging", "X-ray", "Women’s imaging (Breast, pelvic US/MRI)", "Neuroimaging (Brain & Spine)", "Musculoskeletal imaging", "Chest imaging", "Abdominal & pelvic imaging", "Emergency & trauma imaging", "Obstetric ultrasound (routine & growth scans)"],
       // expertise: "Years of Experience: 11+",
       qualification: "MBBS , MD, DNB Radiology",
       time: "",
       date: "",
       alt: 'Dr.Pooja Prasad, top Radiologist surgeon in Bangalore | Rashtrotthana Hospital',
-      title:'Dr.Pooja Prasad | Expert Radiologist Surgeon in Bangalore',
+      title: 'Dr.Pooja Prasad | Expert Radiologist Surgeon in Bangalore',
       // description:'Expert orthopedic care by Dr. Sandeep K M, with 11+ years in trauma, joint replacement, and arthroscopy. MBBS, MS, Fellowship-trained. At Rashtrotthana Hospital, restoring mobility. Book now!'
     },
     // {

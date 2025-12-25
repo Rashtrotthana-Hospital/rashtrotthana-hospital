@@ -7,13 +7,32 @@ import { Component } from '@angular/core';
   styleUrl: './allergie-clinic.css'
 })
 export class AllergieClinic {
-   showPopup = false
+  showPopup = false
 
-  openPopup(){
+  openPopup() {
     this.showPopup = true
   }
 
-  closePopup(){
+  closePopup() {
     this.showPopup = false
   }
+
+  doctorCard = {
+    title: 'Allergy & ENT',
+    name: 'Dr. Sandhya S. Patil',
+    degree: `MBBS, DLO, DNB (ENT),
+     AASCConsultant – ENT and Head & Neck Surgery`,
+    experience: '10+ Years',
+    timings: 'Every Friday, 3 PM – 4 PM',
+    speciality: 'ENT & Allergy Care',
+    image: 'assets/Doc-Inv-Page/dr-sandhya-s-sq.png',
+    slug: 'dr-sandhya-s-patil',
+
+    icons: {
+      experience: 'assets/allergy-clinic/icon-park-solid_loading-three.png',
+      timings: 'assets/allergy-clinic/mdi_clock.png',
+      speciality: 'assets/allergy-clinic/Vector.png'
+    }
+  };
+
 }
