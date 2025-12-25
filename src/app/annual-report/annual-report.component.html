@@ -1,0 +1,153 @@
+<div class="documents-section">
+    <!-- background shapes -->
+    <!-- <div class="parallax-shape shape-1"></div>
+    <div class="parallax-shape shape-2"></div>
+  
+    <h2 class="documents-heading" #heading>2025 Reports</h2>
+  
+    <p class="documents-subtext">
+      We are pleased to share key documents that showcase our hospital’s journey and achievements.
+    </p> -->
+
+     <section class="hero">
+      <div class="animated-bg">
+        <div class="floating-shape shape1"></div>
+        <div class="floating-shape shape2"></div>
+        <div class="floating-shape shape3"></div>
+        <div class="floating-shape shape4"></div>
+      </div>
+
+      <div class="hero-content">
+        <div class="year-badge">Annual Reports</div>
+        
+        <h1>
+          Our Journey of <span class="highlight">Excellence</span><br>
+          and Achievements
+        </h1>
+        
+        <p class="subtitle">
+          We are pleased to share key documents that showcase our hospital's journey and achievements
+        </p>
+
+        <div class="cta-container">
+          <button class="cta-button cta-primary" (click)="onViewReports()">
+            <span>📊</span> View Reports
+          </button>
+          <!-- <button class="cta-button cta-secondary" (click)="onLearnMore()">
+            <span>🏥</span> Learn More
+          </button> -->
+        </div>
+
+        <!-- <div class="stats-container">
+          <div class="stat-item">
+            <span class="stat-number">25+</span>
+            <span class="stat-label">Years of Service</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">50K+</span>
+            <span class="stat-label">Patients Served</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Commitment</span>
+          </div>
+        </div> -->
+      </div>
+
+      <!-- <div class="scroll-indicator">
+        <span></span>
+      </div> -->
+    </section>
+  
+<section class="document-section-1" #reportsSection >
+      <!-- Animated Background Shapes -->
+      <div class="animated-bg">
+        <div class="floating-shape shape1"></div>
+        <div class="floating-shape shape2"></div>
+        <div class="floating-shape shape3"></div>
+        <div class="floating-shape shape4"></div>
+        <div class="floating-shape shape5"></div>
+      </div>
+
+      <!-- Main Heading -->
+      <div class="section-header">
+        <div class="year-badge">2025 Reports</div>
+        <!-- <h2 class="section-title">
+          Discover Our <span class="highlight">Journey</span>
+        </h2>
+        <p class="section-subtitle">
+          Explore our comprehensive reports and visual celebrations of milestones
+        </p> -->
+      </div>
+
+      <!-- Documents Grid -->
+      <div class="documents-grid" #reportsSection>
+        <!-- CARD 1 -->
+        <div
+          class="document-card"
+          #docCard
+          (mousemove)="onMouseMove($event, docCard)"
+          (mouseleave)="onMouseLeave(docCard)"
+        >
+          <div class="card-content">
+            <div class="card-icon">📊</div>
+            <h3 class="document-title">Grand Finale Annual Report - 2025</h3>
+            <p class="document-desc">
+              A comprehensive overview of our recent activities, performance, and future goals.
+            </p>
+            
+            <!-- <div>
+              <iframe
+                src="https://bf75fee960ca42a7839ad60c83346d05.elf.site"
+                frameborder="0"
+                class="document-flip"
+                loading="lazy"
+              ></iframe>
+            </div> -->
+
+            <iframe allowfullscreen="allowfullscreen" allow="clipboard-write" scrolling="no" class="fp-iframe" src="https://heyzine.com/flip-book/5670e47a45.html" style="border: 1px solid lightgray; width: 100%; height: 400px;"></iframe>
+
+            
+
+            <!-- <button class="view-btn" (click)="onViewDocument('annual-report')">
+              <span>View Full Report</span>
+              <span class="arrow">→</span>
+            </button> -->
+          </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div
+          class="document-card"
+          #docCard
+          (mousemove)="onMouseMove($event, docCard)"
+          (mouseleave)="onMouseLeave(docCard)"
+        >
+          <div class="card-content">
+            <div class="card-icon">📖</div>
+            <h3 class="document-title">Coffee Table Book</h3>
+            <p class="document-desc">
+              A visual celebration of our history, milestones, and community impact.
+            </p>
+            
+            <!-- <div class="iframe-container">
+              <iframe
+                src="https://6b5b0dddd2e94fa9b13caa78010bd335.elf.site"
+                frameborder="0"
+                class="document-flip"
+                loading="lazy"
+              ></iframe>
+            </div> -->
+
+            <iframe allowfullscreen="allowfullscreen" allow="clipboard-write" scrolling="no" class="fp-iframe" src="https://heyzine.com/flip-book/4c1d965b6e.html" style="border: 1px solid lightgray; width: 100%; height: 400px;"></iframe>
+
+            <!-- <button class="view-btn" (click)="onViewDocument('coffee-table-book')">
+              <span>View Full Book</span>
+              <span class="arrow">→</span>
+            </button> -->
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  
