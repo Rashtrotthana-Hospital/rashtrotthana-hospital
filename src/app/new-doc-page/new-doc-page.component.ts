@@ -33,6 +33,8 @@ export class NewDocPageComponent {
   // disabledDays: any;
   expertiseCol1: string[] = [];
   expertiseCol2: string[] = [];
+  expertise2Col1: any[] = [];
+  expertise2Col2: any[] = [];
   availableTimes: { name: string }[] = [];
   filteredDoctor: any;
   unavailableSlotsForDate: any[] = [];
@@ -88,9 +90,18 @@ export class NewDocPageComponent {
       this.filteredDoctor = doctor;
       console
       const expertise = doctor.areasOfExpertise || [];
+      const expertise2 = doctor.areasOfExpertise2 || [];
       const mid = Math.ceil(expertise.length / 2);
       this.expertiseCol1 = expertise.slice(0, mid);
       this.expertiseCol2 = expertise.slice(mid);
+      
+      const mid2 = Math.ceil(expertise2.length / 2);
+      this.expertise2Col1 = expertise2.slice(0, mid2);
+      this.expertise2Col2 = expertise2.slice(mid2);
+
+      console.log(this.expertise2Col1, "expertise2Col1 log")
+      console.log(this.expertise2Col2, "expertise2Col2 log")
+
       this.titleService.setTitle(this.filteredDoctor.title || this.filteredDoctor.name);
       this.metaService.updateTag({ name: 'description', content: this.filteredDoctor.description || this.filteredDoctor.about });
       this.getDoctorById(this.filteredDoctor.id).subscribe(
@@ -970,7 +981,7 @@ export class NewDocPageComponent {
       department: 'Radiologist',
       about: 'Dr. Nagesh R is an accomplished radiology consultant in jaydev rashtrotthana Hospital, with over a decade of experience in the field. He holds a medical degree in MBBS, DMRD and DNB and he is going to be a Fellow of the Royal College of Radiologists (FRCR), a highly esteemed qualification in the field of radiology. He is an active member of the Indian Radiology and Imaging Association.Dr. Nagesh R is an expert in general radiology and has a special interest in cardiovascular imaging, as well as performing USG and CT-guided interventions. He is highly skilled in interpreting medical images and diagnosing a wide range of medical conditions, from the most common to the most complex.',
       speciality: 'RADIOLOGY',
-      areasOfExpertise: ['Radiology'],
+      // areasOfExpertise: ['Radiology'],
 
       areasOfExpertise2 : [
     {

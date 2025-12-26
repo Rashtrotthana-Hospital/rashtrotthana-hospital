@@ -687,9 +687,9 @@
 
 .vision-mission {
     width: 50%;
-    background: linear-gradient(180deg, #c9dc3a 0%, #2aa6a1 100%);
-
-     /* background: linear-gradient(135deg, #0a6d7c 0%, #123a63 100%); */
+    /* background: linear-gradient(180deg, #c9dc3a 0%, #2aa6a1 100%); */
+    /* background: linear-gradient(135deg, #0a6d7c 0%, #123a63 100%); */
+    background: linear-gradient(157deg, #fbca51 -58.23%, teal 74.61%);
 }
 
 .vision-mission hr{
@@ -699,7 +699,7 @@
 .sans-text {
     font-size: 30px;
     color: #fff;
-    font-weight: 600;
+    font-weight: 400;
     font-family: "Playfair Display", serif;
     margin-bottom: 30px;
     text-align: center;
@@ -721,7 +721,7 @@
     color: white;
     font-size: 30px;
     font-family: "Playfair Display", serif;
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 25px;
 }
 
@@ -729,7 +729,7 @@
     color: white;
     font-size: 20px;
     font-family: "Playfair Display", serif;
-    font-weight: 600;
+    font-weight: 400;
     margin-top: 10px;
 }
 
