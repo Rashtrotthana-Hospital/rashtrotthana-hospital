@@ -35,6 +35,9 @@ export class FooterComponent {
   speciality() {
     this.router.navigate(['/specialities']);
   }
+  anualReport() {
+    this.router.navigate(['/annual-report']);
+  }
   facilities() {
     this.router.navigate(['/facility']);
   }

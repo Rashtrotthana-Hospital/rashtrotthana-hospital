@@ -1,7 +1,9 @@
 .banner-img {
     width: 100%;
     height: 750px;
-    position: absolute;
+    /* position: absolute; */
+    margin-top: 120px;
+
 }
 
 .banner-content {
@@ -55,8 +57,8 @@
 
 .banner-btn {
     display: flex;
-    width: 408px;
-    height: 87px;
+    width: 263px;
+    height: 60px;
     padding: 24px 37px;
     justify-content: center;
     align-items: center;
@@ -64,7 +66,7 @@
     color: #000;
     text-align: center;
     font-family: Inter;
-    font-size: 32px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -72,12 +74,19 @@
     background: #FFD901;
     box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.25);
     margin-top: 30px;
+    position: absolute;
+    top: 640px;
+    right: 320px;
 }
 
 .banner-content img {
     width: auto;
     height: 600px;
     aspect-ratio: 619/820;
+}
+
+a{
+    text-decoration: none;
 }
 
 .timing-card {
@@ -125,7 +134,7 @@
 .Clinic-heading {
     color: #000;
     font-family: Inter;
-    font-size: 32px;
+    font-size: 26px;
     font-style: nsormal;
     font-weight: 600;
     line-height: 25px;
@@ -135,7 +144,7 @@
 .Clinic-para {
     color: #616161;
     font-family: Inter;
-    font-size: 18px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 500;
     line-height: 25px;
@@ -143,7 +152,7 @@
 }
 
 .allergy {
-    margin-top: 36vh;
+    /* margin-top: 36vh; */
     background: #FBFFF5;
     padding-bottom: 50px;
     position: relative;
@@ -152,7 +161,7 @@
 
 .service-part {
     width: auto;
-    height: 617px;
+    height: 470px;
     background: linear-gradient(355deg, #E6EAEA 3.91%, #FFF 96.27%);
     display: flex;
     align-items: center;
@@ -195,14 +204,14 @@
 
 .service-card {
     width: 362px;
-    height: 416px;
+    height: 325px;
     border-radius: 10px;
     background: #FFF;
     box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.25);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 50px;
+    gap: 20px;
     padding: 30px;
 }
 
@@ -235,7 +244,7 @@
 .about-heading {
     color: #000;
     font-family: Inter;
-    font-size: 48px;
+    font-size: 40px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -244,7 +253,7 @@
 .about-para {
     color: #5B5B5B;
     font-family: Inter;
-    font-size: 20px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 25px;
@@ -267,7 +276,7 @@
 .content ul li {
     color: #5B5B5B;
     font-family: Inter;
-    font-size: 24px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: 40px;
@@ -288,7 +297,7 @@
 .symtoms-heading {
     color: #008080;
     font-family: Inter;
-    font-size: 48px;
+    font-size: 40px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -304,7 +313,7 @@
 .symtoms-sub-heading {
     color: #616161;
     font-family: Inter;
-    font-size: 32px;
+    font-size: 28px;
     font-style: normal;
     font-weight: 500;
     line-height: 36px;
@@ -313,7 +322,7 @@
 .symtoms-sub-heading span {
     color: #127F80;
     font-family: Inter;
-    font-size: 32px;
+    font-size: 28px;
     font-style: normal;
     font-weight: 600;
     line-height: 36px;
@@ -323,7 +332,7 @@
 .symtoms-content ul li {
     color: #616161;
     font-family: Inter;
-    font-size: 24px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 600;
     line-height: 36px;
@@ -337,14 +346,15 @@
 
 .symtoms-content {
     width: 1062px;
-    height: 484px;
+    height: 400px;
     border-radius: 10px;
     background: #F4F4F4;
     box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.25);
     padding: 30px 90px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    gap: 20px;
 }
 
 .symtoms-img {
@@ -383,7 +393,7 @@
 .treatment-heading {
     color: #008080;
     font-family: Inter;
-    font-size: 64px;
+    font-size: 40px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -418,22 +428,22 @@
 }
 
 .treatment-cards-1 {
-    top: 74%;
+    top: 72%;
     left: 216px;
 }
 
 .treatment-cards-2 {
-    top: 80%;
+    top: 79%;
     left: 300px;
 }
 
 .treatment-cards-3 {
-    top: 74%;
+    top: 71%;
     right: 245px;
 }
 
 .treatment-cards-4 {
-    top: 80%;
+    top: 77%;
     right: 206px;
 }
 
@@ -491,7 +501,7 @@
 .contact-heading {
     color: #000;
     font-family: Inter;
-    font-size: 50px;
+    font-size: 40px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -500,7 +510,7 @@
 .contact-heading span {
     color: #127F80;
     font-family: Inter;
-    font-size: 50px;
+    font-size: 40px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -521,7 +531,7 @@
 .contact-para {
     color: #616161;
     font-family: Inter;
-    font-size: 20px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: 30px;
@@ -531,7 +541,7 @@
 .time {
     color: #000;
     font-family: Inter;
-    font-size: 24px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -540,7 +550,7 @@
 .time span {
     color: #127F80;
     font-family: Inter;
-    font-size: 24px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -549,7 +559,7 @@
 .call {
     color: #000;
     font-family: Inter;
-    font-size: 24px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -558,7 +568,7 @@
 .call span {
     color: #127F80;
     font-family: Inter;
-    font-size: 24px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -566,8 +576,8 @@
 
 .btn {
     display: flex;
-    width: 408px;
-    height: 87px;
+    width: 263px;
+    height: 60px;
     padding: 24px 37px;
     justify-content: center;
     align-items: center;
@@ -578,7 +588,7 @@
     color: #000;
     text-align: center;
     font-family: Inter;
-    font-size: 32px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -594,7 +604,7 @@
     display: none;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1439px) {
     .banner-content {
         gap: 130px;
         /* top: 80px; */
@@ -603,6 +613,8 @@
         left: 380px;
 
     }
+
+   
 
     .banner-heading {
         font-size: 38px;
@@ -623,7 +635,10 @@
         height: 67px;
         padding: 24px 0px;
         font-size: 28px;
+        top: 70%;
+        right: 13%;
     }
+
 
     .timing-card {
         width: 95%;
@@ -687,6 +702,7 @@
         display: flex;
         /* grid-template-columns: repeat(2, 1fr); */
         gap: 20px;
+        flex-direction: column-reverse;
     }
 
     .treatment-cards-1,
@@ -713,7 +729,7 @@
     }
 
     .btn {
-        font-size: 30px;
+         font-size: 18px;
     }
 
     .treatment-para {
@@ -734,7 +750,7 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
     .banner-content {
         top: 100px;
         left: 136px;
@@ -745,15 +761,16 @@
     }
 
     .banner-resp {
-        display: block;
+        display: none;
         width: 100%;
         height: 100%;
-        position: absolute;
+        /* position: absolute; */
         top: 100px;
     }
 
     .banner-img {
-        display: none;
+        display: block;
+        margin-top: 100px;
     }
 
     .banner-sub-heading {
@@ -762,13 +779,14 @@
     }
 
     .banner-btn {
-        width: 74%;
+        width: 34%;
         height: auto;
         font-size: 16px;
         padding: 16px;
         margin-top: 0;
-        position: relative;
-        top: 290px;
+        /* position: absolute; */
+        top: 85%;
+        right: 100px;
     }
 
     .banner-content img {
@@ -925,13 +943,13 @@
 
     .allergy {
         /* top: 460px; */
-        margin-top: 68vh;
+        /* margin-top: 68vh; */
     }
 
 
 }
 
-@media (max-width: 600px) {
+@media (max-width: 767px) {
     .treatment-box {
         /* grid-template-columns: 1fr; */
         flex-direction: column-reverse;
@@ -955,7 +973,22 @@
 
     .banner-btn {
         font-size: 12px;
+        width: 85%;
+        right: 30px;
+        top: 68%;
 
+    }
+
+    .banner-img {
+        display: none;
+    }
+
+    .banner-resp {
+        display: block;
+        width: 100%;
+        height: 100%;
+        /* position: absolute; */
+        margin-top: 90px;
     }
 
     .banner-content {
@@ -971,6 +1004,18 @@
     .banner-heading {
         font-size: 44px;
         margin-left: 40px;
+    }
+
+    .bannercontent {
+        margin-left: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .allergy {
+        margin-top: 20px;
     }
 
 
