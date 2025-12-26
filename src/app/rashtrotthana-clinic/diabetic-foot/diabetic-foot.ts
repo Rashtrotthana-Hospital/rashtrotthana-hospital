@@ -24,14 +24,14 @@ export class DiabeticFoot {
      Plastic and Reconstructive Surgery`,
     experience: '8+ Years',
     timings: 'Every Tuesday & Saturday, | 9:00 AM – 11:00 AM',
-    speciality: 'ENT & Allergy Care',
-    image: 'assets/Doc-Inv-Page/Dr-Sameer-M-Halageri.png',
+    speciality: 'Plastic and Reconstructive Surgery',
+    image: 'assets/Doc-Inv-Page/Dr-Sameer-M-Halageri-dq.png',
     slug: 'dr-sameer-m-halageri',
 
     icons: {
       experience: 'assets/allergy-clinic/icon-park-solid_loading-three.png',
       timings: 'assets/allergy-clinic/mdi_clock.png',
-      speciality: 'assets/allergy-clinic/Vector.png'
+      speciality: 'assets/diabetic/plastic-surgery.svg'
     }
   };
 }

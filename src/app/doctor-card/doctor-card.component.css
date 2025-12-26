@@ -22,7 +22,7 @@
 .image img {
     display: flex;
     width: 370px;
-    height: 530px;
+    height: auto;
     padding-top: 1px;
     flex-direction: column;
     justify-content: center;
