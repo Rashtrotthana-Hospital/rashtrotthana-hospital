@@ -1,4 +1,26 @@
 <div class="root-container">
+
+    <div class="hero-section" style="margin-top: 120px;">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+        </div>
+
+        <div class="left-content">
+            <h1 class="logo-title">AYURVEDA</h1>
+            <p class="subtitle">Holistic Healing Rooted in Ancient Wisdom</p>
+        </div>
+
+        <div class="right-content">
+            <div class="iframe-container">
+                <iframe allowfullscreen="allowfullscreen" allow="clipboard-write" scrolling="no" class="fp-iframe" src="https://heyzine.com/flip-book/3f9f2e0280.html" style="border: 1px solid lightgray; width: 100%; height: 400px;"></iframe>
+            </div>
+        </div>
+
+    </div>
+
     <!-- container 1 -->
     <div class="container_1">
         <!-- container 1 left side box -->
@@ -12,12 +34,14 @@
                 centuries. At Rashtrotthana Hospital, recognized as the Best Ayurvedic Hospital in RR Nagar Bangalore,
                 we bring you the timeless wisdom of Ayurvedic treatment combined with modern expertise. More than just a
                 system of medicine, Ayurveda emphasizes natural healing therapy, offering solutions that encompass diet,
-                <a routerLink="/specialities/lifestyle-medicine-bangalore">lifestyle</a> and preventive care. According to Acharya Charaka, a prominent scholar of Ayurveda, the
+                <a routerLink="/specialities/lifestyle-medicine-bangalore">lifestyle</a> and preventive care. According
+                to Acharya Charaka, a prominent scholar of Ayurveda, the
                 ultimate goal of this science is to maintain the health of the healthy and to cure diseases in the ill.
                 The foundation of Ayurveda lies in achieving balance between the mind, body, soul, and social
                 well-being. This balance is reflected in the state of ‘Svastha,’ where the three doshas- Vata, Pitta and
                 Kapha- harmonize, fostering overall wellness. Through personalized care and Ayurvedic doctor
-                consultation, we help individuals achieve this equilibrium. </p>
+                consultation, we help individuals achieve this equilibrium.
+            </p>
         </div>
         <!-- conteiner 1 right side box -->
         <div class="con_1_right_box">
@@ -99,7 +123,10 @@
         <div class="flex">
             <div class="content">
                 <div class="subheading">Mathrubhava - Ayurvedic Postnatal Care for Mom & Baby</div>
-                <div class="para para_margin_bottom">Experience holistic postnatal care at Rashtrotthana Hospital with Mathrubhava, a specialized Ayurvedic program designed to support new mothers and their babies. Our expert-guided therapies, nutritional support and healing treatments ensure a smooth recovery, strength and well-being during this precious phase of life.</div>
+                <div class="para para_margin_bottom">Experience holistic postnatal care at Rashtrotthana Hospital with
+                    Mathrubhava, a specialized Ayurvedic program designed to support new mothers and their babies. Our
+                    expert-guided therapies, nutritional support and healing treatments ensure a smooth recovery,
+                    strength and well-being during this precious phase of life.</div>
                 <app-read-more-btn routerLink="/mathrubhava-treatment" />
             </div>
             <div class="image">
@@ -215,7 +242,9 @@
                     nation. Ayurveda caters to all health needs of society, such as curing or regressing disease
                     conditions, detoxification in chronic illnesses through Panchakarma treatment in Bangalore, and
                     promoting health in individuals with therapies like Kaya Chikitsa treatments. The eight branches of
-                    Ayurveda- Kayachikitsa <a routerLink="/specialities/internal-medicine-hospital-in-bangalore">(Internal Medicine)</a>, Bala Chikitsa (Pediatrics), Graha Chikitsa (Psychiatric
+                    Ayurveda- Kayachikitsa <a
+                        routerLink="/specialities/internal-medicine-hospital-in-bangalore">(Internal Medicine)</a>, Bala
+                    Chikitsa (Pediatrics), Graha Chikitsa (Psychiatric
                     and Psychosomatic Treatment), Shalakya (Diseases of Neck and Above), Shalya Chikitsa (Surgical
                     Intervention), Agada (Toxicology), Jara (Rejuvenation), and Vrushya (Reproductive Medicine)-
                     contribute to the complete health of a person. At the Best Ayurvedic Hospital in RR Nagar Bangalore,
@@ -371,7 +400,8 @@
         <div class="faq-container" *ngFor="let faq of faqs; let i = index">
             <div class="ques_ans">
                 <div style="margin-top: 20px; font-weight: bold; color: #008080;" class="ques faq-ques-ans">
-                    <span>{{i+1}}. </span><span [innerHTML]="faq.questions"></span></div>
+                    <span>{{i+1}}. </span><span [innerHTML]="faq.questions"></span>
+                </div>
                 <div style="margin-top: 10px;" class="ans faq-ques-ans" [innerHTML]="faq.answer"></div>
             </div>
         </div>
