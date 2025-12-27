@@ -103,6 +103,8 @@ export class MaternityComponent {
     this.router.navigate(['/contact-us-bangalore']);
   }
 
+  formdoctors = ['Dr. Latha Venkataram', 'Dr. Prakruthi', 'Dr. Neelam Saraswat', 'Dr. Ashwitha Gundmi', 'Dr. Vinita Udupa']
+
   surgeries: any = [
     {
       id: '1',

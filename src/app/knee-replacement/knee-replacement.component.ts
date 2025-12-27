@@ -65,6 +65,8 @@ export class KneeReplacementComponent implements OnInit {
     },
   ];
 
+  formdoctors = ['Dr. Sujayendra D. M', 'Dr. Nikhil Hegde', 'Dr. Mahesh Kulkarni']
+
   faqs = [
     {
       questions: 'What is Total Knee Replacement Surgery?',
