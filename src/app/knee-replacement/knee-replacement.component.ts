@@ -155,27 +155,27 @@ export class KneeReplacementComponent implements OnInit {
     },
   ];
 
-  surgeries: any = [
-    {
-      id: '1',
-      title: 'Experience world-class knee replacement at an affordable price.',
-      subtitle: '',
-      description: ` Your comfort, safety, and recovery come first - always. At Rashtrotthana Hospital, our Total Knee Replacement Package is designed to make advanced orthopedic care accessible, transparent, and completely reliable.
-        `,
-      procedure:
-        'Starting at just ₹1,00,000* (T&C applied), this all-inclusive package ensures that every stage of your surgery - from consultation to recovery - is handled by an experienced team with proven success in helping patients walk pain-free again.',
-      benefits: [
-        'Our package includes complete care from consultation to recovery.',
-        'Expert surgeons ensure safe and successful knee replacements.',
-        'Advanced techniques mean less pain and faster healing.',
-        'Personalized rehab helps you walk comfortably again.',
-        'Cashless insurance and caring support make recovery stress-free.',
-      ],
-      highlight:
-        'Every patient deserves quality care without financial strain. Book your consultation today and take the first step toward a pain-free, confident tomorrow.',
-      icon: '🦵',
-    },
-  ];
+  // surgeries: any = [
+  //   {
+  //     id: '1',
+  //     title: 'Experience world-class knee replacement at an affordable price.',
+  //     subtitle: '',
+  //     description: ` Your comfort, safety, and recovery come first - always. At Rashtrotthana Hospital, our Total Knee Replacement Package is designed to make advanced orthopedic care accessible, transparent, and completely reliable.
+  //       `,
+  //     procedure:
+  //       'Starting at just ₹1,00,000* (T&C applied), this all-inclusive package ensures that every stage of your surgery - from consultation to recovery - is handled by an experienced team with proven success in helping patients walk pain-free again.',
+  //     benefits: [
+  //       'Our package includes complete care from consultation to recovery.',
+  //       'Expert surgeons ensure safe and successful knee replacements.',
+  //       'Advanced techniques mean less pain and faster healing.',
+  //       'Personalized rehab helps you walk comfortably again.',
+  //       'Cashless insurance and caring support make recovery stress-free.',
+  //     ],
+  //     highlight:
+  //       'Every patient deserves quality care without financial strain. Book your consultation today and take the first step toward a pain-free, confident tomorrow.',
+  //     icon: '🦵',
+  //   },
+  // ];
 
   mainServices: any[] = [
     {

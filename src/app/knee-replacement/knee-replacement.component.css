@@ -86,13 +86,12 @@
 }
 
 .container-2 {
-  padding: 0 10%;
+  /* padding: 0 10%; */
 }
 
 .s_container {
   display: flex;
   gap: 30px;
-
   /* align-items: center; */
 }
 
@@ -172,6 +171,104 @@
   margin-top: 50px;
 }
 
+.process-line {
+  position: absolute;
+  right: 330px;
+  /* top: 0px; */
+}
+
+.process-part {
+  margin-top: 50px;
+}
+
+.process-container {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  justify-content: center;
+  position: relative;
+  top: -40px;
+  /* flex-wrap: wrap; */
+}
+
+.card-para {
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+  width: 190px;
+}
+
+.process-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: baseline;
+}
+
+.card-para-1 {
+  display: inline-flex;
+  padding: 14px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 13px;
+  background: #D5EBB7;
+}
+
+.card-para-2 {
+  display: inline-flex;
+  padding: 14px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 13px;
+  background: #96CAF4;
+}
+
+.card-para-3 {
+  display: inline-flex;
+  padding: 14px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 13px;
+  background: #347187;
+  color: #FFF;
+  text-align: center;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+  /* 144.444% */
+  width: 190px;
+}
+
+.card-para-4 {
+  display: inline-flex;
+  padding: 14px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 13px;
+  background: #D1FFC5;
+}
+
+.card-para-5 {
+  display: inline-flex;
+  padding: 14px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 13px;
+  background: #CED7FF;
+}
+
 @media (max-width: 1024px) {
   .s_container {
     flex-direction: column;
@@ -189,7 +286,22 @@
   .image {
     width: 100%;
   }
+  .process-container{
+    gap: 16px;
+  }
 
+  .process-line{
+    right: 50px;
+  }
+
+  .benefit-item{
+    position: static;
+  }
+
+  .card-1{
+    top: 0;
+    left: 0;
+  }
 
 }
 
@@ -229,12 +341,20 @@
     font-size: 16px;
   }
 
-  .contact_button{
+  .contact_button {
     height: 62px;
   }
 
-  .appointment{
+  .appointment {
     height: 62px;
+  }
+
+  .process-line {
+    display: none;
+  }
+
+  .process-container {
+    flex-wrap: wrap;
   }
 }
 
@@ -252,20 +372,32 @@
 }
 
 .surgery-main-title {
-  color: #008080;
-  font-family: Poppins, sans-serif;
-  font-size: 32px;
+  color: #1E0B9B;
+  font-family: Poppins;
+  font-size: 36px;
+  font-style: normal;
   font-weight: 700;
-  text-transform: uppercase;
-  margin-bottom: 12px;
+  line-height: 42px;
 }
 
 .surgery-main-subtitle {
-  color: #022B50;
-  font-family: Inter, sans-serif;
+  color: #000;
+  text-align: center;
+  font-family: Inter;
   font-size: 18px;
+  font-style: normal;
   font-weight: 500;
-  opacity: 0.85;
+  line-height: 26px;
+
+}
+
+.surgery-main-subtitle span {
+  color: #000;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
 }
 
 .surgeries-grid {
@@ -321,7 +453,11 @@
 }
 
 .surgery-content {
-  padding-right: 120px;
+  /* padding-right: 120px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .surgery-number {
@@ -336,11 +472,18 @@
 
 .surgery-title {
   color: #008080;
-  font-family: Poppins, sans-serif;
-  font-size: 30px;
+  font-family: Poppins;
+  font-size: 28px;
+  font-style: normal;
   font-weight: 700;
-  margin: 12px 0 8px 0;
-  line-height: 1.3;
+  line-height: normal;
+  display: inline-flex;
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  border: 2px solid #008080;
 }
 
 .surgery-subtitle {
@@ -366,20 +509,25 @@
 }
 
 .surgery-highlight {
-  background: linear-gradient(90deg, #e6f7f7 50%, transparent 100%);
-  padding: 16px;
-  border-left: 4px solid #008080;
-  border-radius: 4px;
-  font-style: italic;
-  margin-top: 20px;
-  /* color: #f5c03e; */
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  width: 1220px;
+}
+
+.surgery-highlight span {
+  font-size: 22px;
+  font-weight: 700;
 }
 
 .benefits-section {
-  margin: 24px 0;
-  background: #f8fffe;
   padding: 24px;
   border-radius: 12px;
+  margin: 5% 0;
 }
 
 .benefits-title {
@@ -390,37 +538,48 @@
   margin-bottom: 16px;
 }
 
-.benefits-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: grid;
-  gap: 12px;
-}
 
 .benefit-item {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
+  padding: 20px;
   gap: 12px;
-  color: #000;
-  font-family: Inter, sans-serif;
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 24px;
+  width: 370px;
+  height: 130px;
+  border-radius: 10px;
+  background: #FFF;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.25);
+  position: absolute;
 }
 
-.checkmark {
-  flex-shrink: 0;
-  width: 24px;
-  height: 24px;
-  background: #008080;
-  color: white;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  font-size: 14px;
+.benefit-item-para {
+  color: #000;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+
+.card-1 {
+  top: 323%;
+  left: 210px;
+}
+
+.card-2 {
+  top: 360%;
+  left: 256px;
+}
+
+.card-3 {
+  top: 312%;
+  right: 300px;
+}
+
+.card-4 {
+  top: 345%;
+  right: 188px;
 }
 
 .surgery-cta-buttons {
@@ -430,6 +589,8 @@
   padding-top: 24px;
   border-top: 2px solid #f0f0f0;
 }
+
+
 
 .cta-button {
   flex: 1;
@@ -451,9 +612,9 @@
 .cta-call {
   background-color: #FBCA51;
   color: #fff;
-}  
+}
 
-.cta-call i{
+.cta-call i {
   color: #fff
 }
 
@@ -469,7 +630,8 @@
 }
 
 .cta-appointment-free {
-  background-color: #f5c03e;
+  /* border-radius: 10px; */
+  background: linear-gradient(255deg, #01AFB8 0.94%, #004B5F 100.59%);
   color: white;
 }
 
@@ -483,6 +645,57 @@
   font-size: 18px;
 }
 
+/* Floating animation */
+@keyframes floatUpDown {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-18px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Left floating images */
+.float-left {
+  position: absolute;
+  animation: floatUpDown 5s ease-in-out infinite;
+}
+
+/* Right floating images */
+.float-right {
+  position: absolute;
+  animation: floatUpDown 6s ease-in-out infinite;
+}
+
+/* Optional delay for natural motion */
+.float-delay-1 {
+  animation-delay: 0.5s;
+}
+
+.float-delay-2 {
+  animation-delay: 1s;
+}
+
+.float-delay-3 {
+  animation-delay: 1.5s;
+}
+
+.intro-part {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.banner-imgs {
+  display: flex;
+  flex-direction: column;
+}
+
 /* Responsive Design */
 @media (max-width: 1024px) {
   .surgery-sections-container {
@@ -490,7 +703,7 @@
   }
 
   .surgery-content {
-    padding-right: 100px;
+    /* padding-right: 100px; */
   }
 
   .surgery-icon-wrapper {
@@ -503,6 +716,50 @@
   .surgery-icon {
     font-size: 35px;
   }
+
+  /* Mobile & Tablet */
+  .banner-imgs {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  .banner-imgs img {
+    position: absolute;
+    z-index: -1;
+    opacity: 0.50; /* soft background effect */
+  }
+
+  .intro-content {
+    position: relative;
+    z-index: 2;
+  }
+
+  .intro-content{
+    width: 100% !important;
+  }
+
+  .benefit-item{
+    position: static;
+  }
+
+  .benefits-section{
+    gap: 30px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .benefits-list{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+
+  
+
 }
 
 @media (max-width: 768px) {
@@ -539,6 +796,7 @@
 
   .surgery-title {
     font-size: 20px;
+    text-align: center;
   }
 
   .surgery-subtitle {
@@ -558,14 +816,59 @@
 
   .benefit-item {
     font-size: 14px;
+    position: unset;
+    /* flex-direction: column; */
+    height: auto;
+    width: 100%;
+  }
+
+  .benefit-item-para{
+    font-size: 14px;
   }
 
   .surgery-cta-buttons {
     flex-direction: column;
   }
 
+  .benefits-main-img{
+    width: 100%;;
+  }
+
   .cta-button {
     width: 100%;
+  }
+
+  .process-line {
+    display: none;
+  }
+
+  .process-container {
+    flex-wrap: wrap;
+  }
+
+  .intro-content {
+    width: 100%;
+    height: auto;
+  }
+  .benefits-section{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+
+  .benefits-list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .flex img,
+  .flex1 img{
+    width: 11%;
+  }
+
+  .surgery-title-knee{
+    font-size: 18px;
   }
 }
 
@@ -580,6 +883,7 @@
 
   .surgery-main-title {
     font-size: 20px;
+    line-height: normal;
   }
 
   .surgery-card {
@@ -588,13 +892,32 @@
 
   .benefits-section {
     padding: 16px;
+    gap: 30px;
+
+  }
+
+  .process-container {
+    flex-wrap: wrap;
+  }
+
+  .intro-content {
+    width: 100%;
+    height: auto;
+  }
+
+  .banner-imgs{
+    display: none;
+  }
+
+  .surgery-title-knee{
+    font-size: 18px;
   }
 }
 
 /* why choose us section */
 
 .why-choose-wrapper {
-  padding: 70px 0%;
+  padding: 70px 10% 0;
   /* background: linear-gradient(180deg, #ffffff 0%, #fbfff5 100%); */
 }
 
@@ -602,37 +925,50 @@
 .section-intro {
   text-align: center;
   margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 
 .intro-badge {
-  display: inline-block;
-  background: #008080;
-  color: #f5c03e;
-  padding: 8px 20px;
-  border-radius: 20px;
-  font-family: Inter, sans-serif;
-  font-size: 13px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-  margin-bottom: 20px;
+  display: inline-flex;
+  padding: 12px 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 50px;
+  background: linear-gradient(105deg, #FBCA51 -40.25%, #008080 98.67%);
+  color: #FFF;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  /* 140% */
 }
 
 .main-heading {
-  color: #008080;
-  font-family: Poppins, sans-serif;
-  font-size: 38px;
+  color: #1E0B9B;
+  font-family: Poppins;
+  font-size: 36px;
+  font-style: normal;
   font-weight: 700;
-  margin: 0 0 10px 0;
-  text-transform: uppercase;
+  line-height: normal;
+  margin-bottom: 0;
 }
 
 .main-subheading {
-  color: #022B50;
-  font-family: Inter, sans-serif;
+  color: #000;
+  text-align: center;
+  font-family: Inter;
   font-size: 20px;
+  font-style: normal;
   font-weight: 500;
-  margin: 0 0 20px 0;
+  line-height: 28px;
+  /* 140% */
 }
 
 .heading-underline {
@@ -713,8 +1049,8 @@
 }
 
 .feature-icon-box {
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   border: 3px solid;
   border-radius: 15px;
   display: flex;
@@ -779,7 +1115,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 60px 0;
+  margin: 20px 0;
   position: relative;
 }
 
@@ -802,16 +1138,23 @@
 
 /* Final Action Bar */
 .final-action-bar {
-  background: linear-gradient(135deg, #008080 0%, #006666 100%);
+  background: linear-gradient(255deg, #01AFB8 0.94%, #004B5F 100.59%);
   padding: 45px 60px;
-  border-radius: 20px;
+  /* border-radius: 20px; */
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-direction: column;
-  /* align-items: center; */
+  align-items: center;
+  margin-bottom: 50px;
   gap: 40px;
-  margin-top: 80px;
+  /* margin-top: 80px; */
   box-shadow: 0 20px 60px rgba(0, 128, 128, 0.25);
+}
+
+.action-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .action-content h3 {
@@ -829,6 +1172,8 @@
   font-weight: 500;
   margin: 0;
   line-height: 20px;
+  width: 1190px;
+  text-align: center;
 }
 
 .action-buttons {
@@ -849,6 +1194,9 @@
   text-decoration: none;
   white-space: nowrap;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+  width: 380px;
+  height: 52px;
+  text-align: center;
 }
 
 .btn-yellow {
@@ -856,7 +1204,7 @@
   color: #fff;
 }
 
-.btn-yellow i{
+.btn-yellow i {
   color: #fff;
 }
 
@@ -876,6 +1224,53 @@
   transform: translateY(-3px);
   box-shadow: 0 8px 25px rgba(255, 255, 255, 0.4);
 }
+.fa-phone {
+  color: #022B50;
+}
+
+.knee-pain-clinic {
+  padding: 3%;
+  border-radius: 15px;
+  background: #F4F4F4;
+  margin: 40px 0;
+  transition: 0.5s;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .knee-pain-clinic:hover {
+  box-shadow: 10px 10px 60px #00666629;
+} */
+
+.benefits-section-clinic {
+  margin: 24px 0;
+  background: #f8fffe78;
+  padding: 24px;
+  border-radius: 12px;
+}
+
+.surgery-description-knee {
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  /* width: 1220px; */
+}
+
+.surgery-title-knee {
+  color: #1E0B9B;
+  font-family: Poppins;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
 
 /* Responsive Design */
 @media (max-width: 1024px) {
@@ -888,6 +1283,21 @@
     grid-template-columns: 1fr;
     gap: 40px;
   }
+
+  .action-content p{
+    width: 100%;
+    line-height: normal;
+  }
+
+  .surgery-highlight{
+    width: 100%;
+  }
+
+  .surgery-description-knee{
+    width: 100%;
+  }
+
+  
 }
 
 @media (max-width: 768px) {
@@ -939,9 +1349,14 @@
   .action-buttons {
     flex-direction: column;
     width: 100%;
+    align-items: center;
   }
 
   .action-btn {
+    width: 50%;
+  }
+
+   .surgery-description-knee{
     width: 100%;
   }
 }
@@ -969,11 +1384,24 @@
 
   .action-content p {
     font-size: 15px;
+    width: 100%;
   }
 
   .action-btn {
     font-size: 15px;
     padding: 14px 24px;
+  }
+
+  .surgery-title-knee{
+    font-size: 18px;
+  }
+
+  .knee-pain-clinic{
+    padding: 20px;
+  }
+
+  .action-btn{
+    width: 100%;
   }
 }
 
@@ -988,32 +1416,64 @@
 /* Intro Section */
 .intro-section {
   padding: 40px 0 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .page-title {
-  color: #008080;
-  font-family: Poppins, sans-serif;
-  font-size: 24px;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin: 0 0 20px 0;
-  line-height: 1.3;
+  color: #000;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 66px;
+  /* 157.143% */
+  letter-spacing: -1.05px;
+  width: 610px;
+  height: 127px;
+}
+
+.page-title span {
+  width: 197px;
+  height: 58px;
+  border-radius: 100px;
+  background: #D7EEDD;
+}
+
+.flex {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.flex1 {
+  display: flex;
+  align-items: end;
+  gap: 10px;
 }
 
 .intro-content {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  width: 879px;
+  height: 358px;
+  border-radius: 60px;
+  background: rgba(215, 238, 221, 0.30);
+  padding: 20px;
 }
 
 .intro-para {
   color: #000;
-  text-align: justify;
-  font-family: Inter, sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 26px;
-  margin: 0;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .text-link {
@@ -1034,12 +1494,13 @@
   gap: 50px;
   padding: 50px 0;
   align-items: start;
+  padding: 0 10%;
 }
 
 .services-content-area {
   display: flex;
   flex-direction: column;
-  gap: 28px;
+  gap: 16px;
   /* width: 50%; */
 }
 
@@ -1296,11 +1757,18 @@
     max-width: 500px;
     margin: 0 auto;
   }
+
+   .surgery-description-knee{
+    width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
   .page-title {
     font-size: 20px;
+    width: 100%;
+    line-height: 26px;
+    height: auto;
   }
 
   .intro-para {
@@ -1353,6 +1821,10 @@
     gap: 16px;
     /* width: 100%; */
   }
+
+  .cta-button{
+    width: 50%;
+  }
 }
 
 @media (max-width: 600px) {
@@ -1362,6 +1834,9 @@
 
   .page-title {
     font-size: 18px;
+    width: 100%;
+    line-height: 26px;
+    height: auto;
   }
 
   .intro-para {
@@ -1419,48 +1894,35 @@
   .specialty-card-desc {
     font-size: 14px;
   }
+
+  .intro-content {
+    width: 100%;
+    height: auto;
+  }
+  .surgery-title-knee{
+    font-size: 18px;
+  }
+
+  .surgery-description-knee{
+    font-size: 12px;
+    line-height: 24px;
+  }
+
+  .intro-badge{
+    font-size: 18px;
+  }
+
+  .cta-button{
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .surgery-highlight span{
+    font-size: 16px;
+  }
 }
 
 
-.fa-phone {
-  color: #022B50;
-}
 
-.knee-pain-clinic {
-  box-shadow: 5px 10px 50px rgba(128, 128, 128, 0.436);
-  padding: 3%;
-  border-radius: 15px;
-  background-color: #006666;
-  margin: 40px 0;
-  transition: 0.5s;
-}
 
-.knee-pain-clinic:hover {
-  box-shadow: 10px 10px 60px #00666629;
-}
 
-.benefits-section-clinic {
-  margin: 24px 0;
-  background: #f8fffe78;
-  padding: 24px;
-  border-radius: 12px;
-}
-
-.surgery-description-knee{
-  color: #fff;
-  font-family: Inter, sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 26px;
-  text-align: justify;
-  margin-bottom: 16px;
-}
-
-.surgery-title-knee {
-  color: #fff;
-  font-family: Poppins, sans-serif;
-  font-size: 30px;
-  font-weight: 700;
-  margin: 12px 0 8px 0;
-  line-height: 1.3;
-}

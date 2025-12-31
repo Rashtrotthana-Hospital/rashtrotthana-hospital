@@ -26,10 +26,10 @@ export class InsuranceComponent {
     },
     {
       image: '../../assets/Bajaj_Allianz_General_Insurance_Company.png',
-      pdfUrl: '../../assets/Insurance PDF/Bajaj_Allianz_General_Insurance_Company.pdf',
+      pdfUrl: 'assets/Insurance PDF/Bajaj_Alliance_General_Insurance_Co.pdf',
       alt: "Bajaj Allianz General Insurance Company"
     },
-    {
+    { 
       image: '../../assets/Cholamandalam_MS_General_Insurance_Company Ltd.png',
       pdfUrl: '../../assets/Insurance PDF/Chola MS.pdf',
       alt: 'Cholamandalam MS General Insurance Company Ltd'
@@ -57,7 +57,7 @@ export class InsuranceComponent {
     },
     {
       image: '../../assets/HDFC_Ergo_General_Insurance_Company.png',
-      pdfUrl: '../../assets/Insurance PDF/HDFC ERGO.pdf',
+      pdfUrl: 'assets/Insurance PDF/HDFC_ERGO.pdf',
       alt: 'HDFC Ergo General Insurance Company'
     },
     {
@@ -104,7 +104,7 @@ export class InsuranceComponent {
     },
     {
       image: '../../assets/Medsave_Health_Insurance_TPA_Ltd.png',
-      pdfUrl: '../../assets/Insurance PDF/MedSave Health Insurance.pdf',
+      pdfUrl: 'assets/Insurance PDF/Medsave Health Insurance.pdf',
       alt: 'Medsave_Health_Insurance_TPA_Ltd'
     },
     {
@@ -129,7 +129,7 @@ export class InsuranceComponent {
     },
     {
       image: '../../assets/United_Healthcare_Parekh_Insurance_TPA_Pvt_Ltd.png',
-      pdfUrl: '../../Insurance PDF/United Health Care Parekh Insurance.pdf',
+      pdfUrl: 'assets/Insurance PDF/United Health Care Parekh Insurance.pdf',
       alt: 'United Healthcare Parekh Insurance TPA Pvt Ltd'
     },
     {

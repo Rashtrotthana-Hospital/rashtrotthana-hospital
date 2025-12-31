@@ -27,7 +27,7 @@ export class OrthopedicsComponent {
     this.sanitizedContent1 = this.sanitizer.bypassSecurityTrustHtml(this.specialities[0].content_1);
   }
 
-  formDoctors: any = ['Dr. Mahesh Kulkarni', 'Dr. Sujayendra D. M', 'Dr. Nikhil Hegde', 'Dr. Hemanth Kumar Venkatesh']
+  formDoctors: any = ['Dr. Mahesh Kulkarni', 'Dr. Sujayendra D. M', 'Dr. Nikhil Hegde', 'Dr. Sandeep K. M']
   
 doctors: any = [
   {
