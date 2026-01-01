@@ -349,20 +349,20 @@ export class NewDocPageComponent {
       description: 'Consult Dr. Santhosh S, nephrologist in RR Nagar with 14+ years’ experience in kidney transplantation, dialysis, diabetic kidney disease, and hypertension care.'
     },
     {
-      name: 'Dr. Sowmya Bhat S',
+      name: 'Dr. Sowmya S. Bhat',
       image: 'assets/Doc-Inv-Page/Dr-Sowmya-Bhat-S.png',
-      department: 'OPTHALMOLOGIST',
+      department: 'OPHTHALMOLOGIST',
       about: 'Dr. Sowmya S Bhat has completed her basic Medical Education from St. John’s Medical College, Bangalore She has received post graduate training in ophthalmology from the prestigious Aravind Eye Hospital, Madurai and received the Dr. G. Venkataswamy Gold Medal for standing first in Ophthalmology. She has obtained the long term fellowship degree for super specialising in Phacoemulsification surgery and refractive surgeries from Rajiv Gandhi University of Medical Science, Bangalore and received the best outgoing Fellow Award.',
       speciality: 'OPHTHALMOLOGY',
-      areasOfExpertise: ['CATARACT SURGERY (MSILS, PHACOEMULSIFION)', 'REFRACTIVE SURGERY (PRK, LASIK, SMILE) ', 'GENERAL OPHTHALMOLOGY'],
-      expertise: 'Years of Experience: 13+',
-      qualification: 'MBBS, DO, DNB, FPR, FICO',
+      areasOfExpertise: ['Cataract surgery with IOL implantation ( MSICS, Phacoemulsification and Advanced MICS )', 'REFRACTIVE SURGERY (PRK, LASIK, SMILE) ', 'GENERAL OPHTHALMOLOGY'],
+      expertise: 'Years of Experience: 14+',
+      qualification: 'MBBS, DO, DNB, FPRS, FICO',
       time: '10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00',
       date: 'Tuesday and Friday',
-      alt: 'Dr. Sowmya Bhat S | Best Ophthalmologist in Bangalore | Rashtrotthana Hospital | RR Nagar Bangalore',
+      alt: 'Dr. Sowmya S. Bhat | Best Ophthalmologist in Bangalore | Rashtrotthana Hospital | RR Nagar Bangalore',
       id: 36,
-      title: 'Dr. Sowmya Bhat S | Cataract & LASIK Eye Surgeon in RR Nagar',
-      description: 'Consult Dr. Sowmya Bhat S, eye specialist in RR Nagar with 13+ years’ experience in cataract surgery, LASIK, SMILE, and comprehensive ophthalmic care.'
+      title: 'Dr. Sowmya S. Bhat | Cataract & LASIK Eye Surgeon in RR Nagar',
+      description: 'Consult Dr. Sowmya S. Bhat, eye specialist in RR Nagar with 13+ years’ experience in cataract surgery, LASIK, SMILE, and comprehensive ophthalmic care.'
     },
     {
       name: 'Dr. Suhas Raj S',
