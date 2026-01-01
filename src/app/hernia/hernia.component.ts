@@ -1,174 +1,198 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { Title, Meta,DomSanitizer,SafeHtml } from '@angular/platform-browser'; 
 import { CommonModule } from '@angular/common'; 
 import { Router } from '@angular/router';
+declare var gtag: Function;
+
 
 @Component({
   selector: 'app-hernia',
   templateUrl: './hernia.component.html',
   styleUrl: './hernia.component.css'
 })
-export class HerniaComponent {
-  constructor(private titleService: Title, private metaService: Meta, private sanitizer: DomSanitizer, private router: Router) {
-    
-  }
+export class HerniaComponent implements OnInit {
+
+   constructor(
+    private titleService: Title,
+    private metaService: Meta,
+    private sanitizer: DomSanitizer
+  ) {}
+  sanitizedContent: SafeHtml = '';
+  sanitizedContent1: SafeHtml = '';
+  specialities: any[] = [];
+
   ngOnInit(): void {
-    this.titleService.setTitle("Hernia Surgery in Bangalore | Rashtrotthana Hospital");  
+    this.titleService.setTitle(
+      'Hernia Surgery in Bangalore | Rashtrotthana Hospital'
+    );
+    this.metaService.updateTag({
+      name: 'description',
+      content:
+        'Get safe, advanced hernia surgery in Bangalore at Rashtrotthana Hospital. Expert surgeons, minimally invasive treatment & trusted care.',
+    });
 
-  this.metaService.updateTag({ name: 'description', content: 'Expert hernia treatment in Bangalore at Rashtrotthana Hospital. Advanced laparoscopic hernia surgery by top specialists. Book your consultation today!' });
-
-  this.metaService.updateTag({ name: 'keywords', content: 'Best Hospital for Hernia Surgery in Bangalore,Best Hernia Mesh Surgery in Bangalore,Types of Hernia (Inguinal, Femoral, Umbilical, Ventral, Epigastric, Incisional, Hiatal),Best Hernia Specialists in Bangalore,Hernia Surgery Cost in Bangalore,Affordable Hernia Surgery in Bangalore,Best Hernia Doctors in Bangalore,Hernia Mesh Treatment in Bangalore,Best Hernia Mesh for Surgery in Bangalore,Laparoscopic Hernia Mesh Surgery in Bangalore,Non-Surgical Treatment for Hernia in RR Nagar, Bangalore,Physiotherapy After Hernia Surgery in Bangalore,Hernia Symptoms in Men,Cost of Hernia Mesh Surgery in Bangalore,Hernia Mesh Implant Centers in Bangalore,Top Hernia Specialists in Bangalore,Experienced Hernia Doctors in Rajarajeshwari Nagar, Bangalore,Hernia surgery success rate in Bangalore,Hernia symptoms,Hernia hospital' });
-
+    this.sanitizedContent = this.sanitizer.bypassSecurityTrustHtml(
+      this.specialities[0].content
+    );
+    this.sanitizedContent1 = this.sanitizer.bypassSecurityTrustHtml(
+      this.specialities[0].content_1
+    );
   }
 
-  doctors =[
-    // {
-    //   image: 'assets/Dr-S-Shashivadhanan.png',
-    //   name: 'Dr. Shashi Vadhanan',
-    // },
+
+  @ViewChild('formSection') formSection!: ElementRef;
+
+  doctorCard = {
+    name: 'Dr. [General Surgeon Name]',
+    image: 'assets/Doc-Inv-Page/general-surgeon.png',
+    qualification: 'MBBS, MS (General Surgery), FMAS',
+    experience: '25+ Years',
+    speciality: 'General & Laparoscopic Surgery',
+    highlights: [
+      '25+ years of experience in general surgery',
+      '10,000+ successful hernia repair surgeries',
+      'Expert in both open and laparoscopic hernia repair',
+      'Specializes in complex and recurrent hernias',
+      'Advanced mesh repair techniques',
+      'Minimal scarring and faster recovery approach',
+      'Comprehensive post-operative care and follow-up',
+      '98% success rate in hernia surgeries'
+    ]
+  };
+
+  formdoctors = ['Dr. Atmaram D. C', 'Dr. Nishanth Lakshmikantha'];
+
+  doctors = [
     {
-      image: 'assets/Dr-Atmaram-D-C.png',
+      id: 1,
       name: 'Dr. Atmaram D. C',
-      department : 'GASTROENTEROLOGIST',
-      alt : 'Dr. Atmaram D. C | Best laparoscopic Surgeon in Bangalore | Rashtrotthana Hospital'
+      image: 'assets/Doc-Inv-Page/Dr-Atmaram-D-C.png',
+      qualification: 'MBBS, MS',
+      experience: '19 Years',
+      speciality: 'General Surgery',
+      slug : "/doctor/dr-atmaram-d-c"
     },
     {
-      image: 'assets/Dr-Nishanth-Lakshmikantha.png',
-      name: 'Dr. Nishanth Lakshmikanth',
-      department : 'SURGERY/GASTROSCIENCES',
-      alt : 'Dr. Nishanth Lakshmikantha | Best General & GI Surgeon in Bangalore | Rashtrotthana Hospital'
+      id: 2,
+      name: 'Dr. Nishanth Lakshmikantha',
+      image: 'assets/Doc-Inv-Page/Dr-Nishanth-Lakshmikantha.png',
+      qualification: 'MBBS, MS (General Surgery)',
+      experience: '9+ Years',
+      speciality: 'General Surgery',
+      slug: "/doctor/dr-nishanth-lakshmikantha"
     }
-  ]
-  contactus(){
-    this.router.navigate(['/contact-us-bangalore']);
+  ];
+
+  sections = [
+    {
+      number: '01',
+      icon: '🏥',
+      title: '1. Advanced Facilities & Experienced Surgical Team',
+      color: '#008080',
+      description: 'At Rashtrotthana Hospital, we combine modern medical technology with years of surgical expertise to deliver safe and effective hernia treatment.',
+      features: [
+        {
+          icon: '⚕️',
+          title: 'Modern Operation Theatres',
+          description: 'Equipped with advanced surgical tools and strict safety standards.'
+        },
+        {
+          icon: '👨‍⚕️',
+          title: 'Highly Skilled Surgeons',
+          description: 'Experienced specialists trained in laparoscopic and open hernia surgeries.'
+        },
+        {
+          icon: '💚',
+          title: 'Complete Surgical Care',
+          description: 'From diagnosis and surgery to recovery and follow-up support.'
+        },
+        {
+          icon: '⚡',
+          title: 'Faster Recovery, Less Discomfort',
+          description: 'Advanced techniques help reduce pain and speed up healing.'
+        }
+      ],
+      highlightText: 'Your hernia treatment journey - from consultation to recovery - is guided with care, skill, and compassion.'
+    },
+    {
+      number: '02',
+      icon: '💳',
+      title: '2. Health Insurance Facility',
+      color: '#FBCA51',
+      description: 'We make hernia treatment affordable and worry-free through insurance support.',
+      features: [
+        {
+          icon: '💳',
+          title: 'Cashless Insurance Available',
+          description: 'Accepted by most major health insurance providers.'
+        },
+        {
+          icon: '📋',
+          title: 'Claim Assistance',
+          description: 'Our team helps with approvals and paperwork.'
+        },
+        {
+          icon: '💰',
+          title: 'Transparent Billing',
+          description: 'No hidden charges. Clear and honest pricing.'
+        },
+        {
+          icon: '✅',
+          title: 'Smooth Process',
+          description: 'Hassle-free insurance support for peace of mind.'
+        }
+      ],
+      highlightText: 'Patients appreciate our smooth and supportive insurance process that lets them focus on healing.'
+    },
+    {
+      number: '03',
+      icon: '🚗',
+      title: '3. Travel & Stay Convenience',
+      color: '#022B50',
+      description: 'Located in Rajarajeshwari Nagar, Bangalore, Rashtrotthana Hospital is easy to reach and well supported with nearby facilities.',
+      features: [
+        {
+          icon: '📍',
+          title: 'Easily Accessible',
+          description: 'Close to metro stations, railway stations and major bus routes.'
+        },
+        {
+          icon: '🏨',
+          title: 'Nearby Stay Options',
+          description: 'Comfortable hotels and lodges for patients and families.'
+        },
+        {
+          icon: '🍽️',
+          title: 'Essential Facilities Around',
+          description: 'Pharmacies, restaurants, and transport services close by.'
+        },
+        {
+          icon: '🤝',
+          title: 'Supportive Environment',
+          description: 'Our staff ensures your visit is smooth and stress-free.'
+        }
+      ],
+      highlightText: 'From travel to treatment to recovery - we take care of everything.'
+    }
+  ];
+
+  scrollToForm(): void {
+    if (this.formSection) {
+      this.formSection.nativeElement.scrollIntoView({ 
+        behavior: 'smooth', 
+        block: 'start' 
+      });
+    }
   }
 
-  types = [
-    {
-      type_name : "Inguinal Hernia",
-      content : "Inguinal hernias are the most common type, accounting for 75% of all hernias. They primarily affect men or individuals assigned male at birth (AMAB). This type of hernia occurs when part of the bowel protrudes into the inguinal canal, a passageway that runs down the inner thigh.",
-      list : ["Pain or discomfort in the groin, especially when bending over, coughing, or lifting.","A bulge on either side of the pubic bone."]
-    },
-    {
-      type_name : "Femoral Hernia",
-      content : "A femoral hernia is a less common type of groin hernia that occurs in the femoral canal, which runs underneath the inguinal canal. It happens when fatty tissue or part of the bowel pushes through into the femoral canal.",
-      list : ["Pain in the groin, particularly when lifting heavy objects.","A bulge near the thigh or groin."]
-    },
-    {
-      type_name : "Hiatal Hernia",
-      content : "A hiatal hernia is a common type acquired over a lifetime. It occurs when the opening in the diaphragm, where the esophagus passes through, widens, allowing the top of the stomach to push up through this opening into the chest cavity.",
-      list : ["Heartburn or acid reflux.","Difficulty swallowing.","Chest pain or discomfort."]
-    },
-    {
-      type_name : "Congenital Diaphragmatic Hernia",
-      content : "This serious birth defect occurs when the diaphragm does not fully close during fetal development. It allows abdominal organs to slip into the chest cavity, crowding the lungs and affecting their growth.",
-      list : ["Difficulty breathing in newborns.","Blue-tinted skin due to lack of oxygen.","Rapid breathing and heart rate."],
-    },
-    {
-      type_name : "Incisional Hernia",
-      content : "An incisional hernia occurs when tissue protrudes through a previous surgical incision in the abdominal wall that has weakened over time. This is a common complication following abdominal surgery.",
-      list : ["Bulging near a previous surgical incision","Pain and discomfort at the site of the previous surgery."]
-    },
-    {
-      type_name : "Umbilical Hernia",
-      content : "An umbilical hernia happens when part of the intestine pushes through an opening in the abdominal wall near the belly button. Most umbilical hernias are congenital, meaning they are present from birth.",
-      list : ["Swelling or bulging near the belly button.","Pain around the belly button, especially when coughing or lifting."]
-    },
-    {
-      type_name : "Ventral Hernia",
-      content : "A ventral hernia refers to any hernia occurring through the front wall of the abdomen. This category includes umbilical hernias and incisional hernias. An epigastric hernia, a type of ventral hernia, occurs above the belly button",
-      list : ["Bulge in the abdominal wall.","Pain or discomfort in the abdomen."]
-    },
-    {
-      type_name : "Perineal Hernia",
-      content : "Perineal hernias are relatively rare and occur when organs or tissue push through an opening or weakness in the pelvic floor into the abdominal cavity.",
-      list : ["Pain or pressure in the pelvic area.","A bulge in the perineum."]
-    },
-  ]
-
-  faqs = [
-    {
-      ques : "Who is the best doctor for hernia treatment in Bangalore?",
-      ans : "At Rashtrotthana Hospital, you can consult experienced hernia doctors like Dr. Atmaram D. C. and Dr. Nishanth Lakshmikanth, who specialize in laparoscopic and open hernia surgeries. Their expertise ensures accurate diagnosis and effective treatment tailored to every patient."
-    },
-    {
-      ques : "Why is Rashtrotthana Hospital the best choice for hernia treatment?",
-      ans : "Rashtrotthana Hospital is recognized as one of the top hernia hospitals in Bangalore. With advanced technology, personalized care plans, and specialists like Dr. Atmaram D. C. and Dr. Nishanth Lakshmikanth, the hospital offers effective solutions for all types of hernias."
-    },
-    {
-      ques : "What are the symptoms of a hernia?",
-      ans : `
-        <p>Common hernia symptoms include:</p>
-        <ul>
-          <li>A noticeable bulge in the abdomen or groin.</li>
-          <li>Discomfort or pain, especially when lifting or bending.</li>
-          <li>A feeling of heaviness or pressure in the affected area.</li>
-          <li>Symptoms that worsen with physical activity, coughing, or sneezing.</li>
-        </ul>
-        <p>If you notice any of these symptoms, you can consult hernia doctors like Dr. Nishanth Lakshmikanth at Rashtrotthana Hospital for expert care.</p>
-      `
-    },
-    {
-      ques : "What causes a hernia?",
-      ans : "Hernias can occur due to muscle weakness or strain. Common hernia causes include heavy lifting, chronic coughing, obesity, pregnancy, and previous surgeries. For thorough evaluation and prevention advice, you can consult specialists like Dr. Atmaram D. C. at Rashtrotthana Hospital."
-    },
-    {
-      ques : "What are the treatment options for a hernia?",
-      ans : `
-        <p>Hernias are primarily treated through surgery. At Rashtrotthana Hospital, options include:</p>
-        <ul>
-          <li><b>Laparoscopic Hernia Surgery: </b>A minimally invasive procedure performed by specialists like Dr. Nishanth Lakshmikanth for faster recovery and less discomfort.</li>
-          <li><b>Open Hernia Surgery: </b>deal for larger or complex hernias.</li>
-          <li><b>Non-Surgical Management: </b>Lifestyle modifications for mild cases to manage symptoms temporarily.</li>
-        </ul>
-      `
-    },
-    {
-      ques : "Can a hernia be treated without surgery?",
-      ans : "While small, asymptomatic hernias can sometimes be managed without surgery, most hernias require surgical intervention for a permanent solution. For a personalized treatment plan, you can consult hernia experts like Dr. Atmaram D. C. at Rashtrotthana Hospital."
-    },
-    {
-      ques : "How long does it take to recover from hernia surgery?",
-      ans : `
-        <p>Recovery depends on the type of procedure:</p>
-        <ul>
-          <li><b>Laparoscopic Surgery: </b>Patients usually return to normal activities within a week.</li>
-          <li><b>Open Surgery: </b> Recovery may take longer, depending on the complexity of the hernia.</li>
-        </ul>
-        <p>With experienced care from specialists like Dr. Nishanth Lakshmikanth, recovery is smooth and supported by personalized follow-ups at Rashtrotthana Hospital.</p>
-      `
-    },
-    {
-      ques : "How much does hernia surgery cost in Bangalore?",
-      ans : "The hernia repair surgery cost in Bangalore varies based on the type of procedure and complexity of the condition. Rashtrotthana Hospital offers affordable treatment options, with surgeries performed by experienced doctors like Dr. Atmaram D. C. and Dr. Nishanth Lakshmikanth."
-    },
-    {
-      ques : "What types of hernias are treated at Rashtrotthana Hospital?",
-      ans : `
-        <p>The hospital specializes in treating all major types of hernias, including:</p>
-        <ul>
-          <li>Inguinal Hernias</li>
-          <li>Umbilical Hernias</li>
-          <li>Hiatal Hernias</li>
-          <li>Femoral Hernias</li>
-          <li>Incisional Hernias</li>
-        </ul>
-        <p>For expert diagnosis and treatment, you can consult doctors like Dr. Nishanth Lakshmikanth, known for their expertise in minimally invasive procedures.</p>
-      `
-    },
-    {
-      ques : "How do I book an appointment for hernia treatment?",
-      ans : "Booking a consultation is easy. Visit the Rashtrotthana Hospital website or call directly to schedule an appointment with hernia specialists like Dr. Atmaram D. C. or Dr. Nishanth Lakshmikanth."
-    },
-  ]
-
-  // doctors =[
-  //   {
-  //     image : '../../assets/yoga/Dr-Suvarnini-Konale.png',
-  //     name : "Dr. Suvarnini Konale",
-  //     section : "BAMS, M.D. (Ayurveda)",
-  //     designation : "LIFESTYLE",
-  //   }
-  // ]
-
+  trackPhoneClick() {
+    if (typeof gtag === 'function') {
+      gtag('event', 'conversion', {
+        send_to: 'AW-16656770043/-YEMCITg09IZEPvHyIY-',
+        event_callback: () => {
+          console.log('Phone call conversion tracked!');
+        },
+      });
+    }
+  }
 }

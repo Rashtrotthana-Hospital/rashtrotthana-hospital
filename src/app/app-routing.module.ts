@@ -71,6 +71,8 @@ import { HealthCheckComponent } from './health-package/health-check/health-check
 import { DoctorCardComponent } from './doctor-card/doctor-card.component';
 import { WinterCardiologyComponent } from './winter-cardiology/winter-cardiology.component';
 import { AnnualReportComponent } from './annual-report/annual-report.component';
+import { TonsillectomyComponent } from './tonsillectomy/tonsillectomy.component';
+import { AdenoidectomyComponent } from './adenoidectomy/adenoidectomy.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -163,6 +165,12 @@ const routes: Routes = [
   { path: 'hernia-hospital-bangalore', component: HerniaComponent },
   { path: 'piles-hospital-bangalore', component: ProctologyComponent },
   { path: 'maternity-care', component: MaternityComponent },
+  { path: 'tonsillectomy-surgery-in-bangalore', component: TonsillectomyComponent },
+  { path: 'adenoidectomy-surgery-in-bangalore', component: AdenoidectomyComponent },
+
+
+
+  
   { path: 'ayurvedic-thyroid-treatment', component: AyurvedaThyroidComponent },
   { path: 'mathrubhava-treatment', component: MuthrubhavaComponent },
   { path: 'thank-you', component: ThankYouComponent },

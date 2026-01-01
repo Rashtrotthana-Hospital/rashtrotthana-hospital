@@ -39,12 +39,14 @@ export class MaternityComponent {
       name: 'Dr. Latha Venkataram',
       experience: 'Years of Experience: 32',
       alt: 'Dr. Latha Venkataram | Top Obstetrics & Gynaecologist in banaglore | Rashtrotthana Hospital',
+      slug : '/doctor/dr-latha-venkataram'
     },
     {
       image: 'assets/Dr-Prakruthi.png',
       name: 'Dr. Prakruthi',
       experience: 'Years of Experience: 16',
       alt: 'Dr. Prakruthi | Best Gynaec Doctor in Bangalore | Rashtrotthana Hospital',
+      slug : '/doctor/dr-prakruthi'
     },
 
     {
@@ -52,18 +54,21 @@ export class MaternityComponent {
       name: 'Dr. Neelam Saraswat',
       experience: 'Years of Experience: 10',
       alt: 'Dr. Neelam Saraswat | Best Gynaecology Consultant in Bangalore | Rashtrotthana Hospital',
+      slug : '/doctor/dr-neelam-saraswat'
     },
     {
       image: 'assets/Dr-Ashwitha-Gundmi.png',
       name: 'Dr. Ashwitha Gundmi',
       experience: 'Years of Experience: 7+',
       alt: 'Dr. Ashwitha Gundmi | Best Obstetrics & Gynaecologist in Bangalore | Rashtrotthana Hospital',
+      slug : '/doctor/dr-ashwitha-gundmi'
     },
     {
       image: 'assets/Dr-Vinita-Udupa.png',
       name: 'Dr. Vinita Udupa',
       experience: 'Years of Experience: 8',
       alt: 'Dr. Vinita Udupa | Best OBG in Bangalore | Rashtrotthana Hospital',
+      slug : '/doctor/dr-vinita-udupa'
     },
   ];
   doctors2 = [
@@ -278,6 +283,23 @@ sections: any = [
       'From comfort to care, every aspect of the Janani Samriddhi package is designed for a joyful motherhood experience.',
   },
 ];
+
+doctorCard = {
+  title: 'Gynecology',
+  name: 'Dr. Latha Venkataraman',
+  degree: 'MBBS, MRCOG (UK), MRCP(I), FRCOG (UK)',
+  experience: '32+ Years',
+  timings: 'Prior Appointments',
+  speciality: 'Obstetrics & Gynecology',
+  image: 'assets/Doc-Inv-Page/Dr-Latha-Venkataram.png',
+  slug: 'dr-latha-venkataram',
+
+  icons: {
+    experience: 'assets/allergy-clinic/icon-park-solid_loading-three.png',
+    timings: 'assets/allergy-clinic/mdi_clock.png',
+    speciality: 'assets/allergy-clinic/Vector.png'
+  }
+};
 
 
 }

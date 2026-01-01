@@ -263,9 +263,9 @@ export class HealthCheckComponent {
         },
         {
           doctor_image: '../../assets/Dr-Sowmya-Bhat-S.png',
-          doctor_name: 'Dr. Sowmya Bhat S',
-          experience: '13+',
-          docalt: 'Dr. Sowmya Bhat S | Best Ophthalmologist in Bangalore | Rashtrotthana Hospital',
+          doctor_name: 'Dr. Sowmya S. Bhat',
+          experience: '14+',
+          docalt: 'Dr. Sowmya S. Bhat | Best Ophthalmologist in Bangalore | Rashtrotthana Hospital',
           slug: 'dr-sowmya-bhat-s',
         },
         {

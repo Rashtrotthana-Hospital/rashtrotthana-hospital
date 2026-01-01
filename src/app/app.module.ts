@@ -138,6 +138,8 @@ import { HealthCheckComponent } from './health-package/health-check/health-check
 import { DoctorCardComponent } from './doctor-card/doctor-card.component';
 import { WinterCardiologyComponent } from './winter-cardiology/winter-cardiology.component';
 import { AnnualReportComponent } from './annual-report/annual-report.component';
+import { TonsillectomyComponent } from './tonsillectomy/tonsillectomy.component';
+import { AdenoidectomyComponent } from './adenoidectomy/adenoidectomy.component';
 
 @NgModule({
   declarations: [
@@ -247,6 +249,8 @@ import { AnnualReportComponent } from './annual-report/annual-report.component';
     DoctorCardComponent,
     WinterCardiologyComponent,
     AnnualReportComponent,
+    TonsillectomyComponent,
+    AdenoidectomyComponent,
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   imports: [
