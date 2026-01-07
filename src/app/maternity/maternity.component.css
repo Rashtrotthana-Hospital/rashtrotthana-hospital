@@ -350,6 +350,7 @@
     gap: 16px;
   }
 
+
   .process-line {
     right: 50px;
   }
@@ -863,6 +864,34 @@
   flex-direction: column;
 }
 
+.img-1{
+  top: 100%; left: 10%;
+}
+.img-2{
+top: 120%; left: 5%;
+}
+
+.img-3{
+top: 920px; left: 209px;
+}
+
+.img-4{
+top: 135%; left: 7%;
+}
+.img-5{
+top: 115%; right: 20%;
+}
+
+.img-6{
+top: 104%; right: 10%;
+}
+.img-7{
+top: 132%; right: 16%;
+}
+
+.img-8{
+top: 143%; right: 5%;
+}
 /* Responsive Design */
 @media (max-width: 1024px) {
   .surgery-sections-container {
@@ -940,6 +969,41 @@
     margin-top: 20px;
   }
 
+  .img-1 {
+        top: 500px;
+    }
+
+    .img-2 {
+        top: 640px;
+    }
+
+    .img-3 {
+        top: 700px;
+    }
+
+    .img-4 {
+        top: 850px;
+    }
+
+    .img-5 {
+        top: 490px;
+        right: 50px;
+    }
+
+    .img-6 {
+        top: 600px;
+    }
+
+    .img-7 {
+        top: 760px;
+        right: 51px;
+    }
+
+    .img-8 {
+        top: 890px;
+    }
+
+
 
 
 
@@ -1015,7 +1079,10 @@
 
   .benefits-main-img {
     width: 100%;
-    ;
+  }
+
+  .process-line-2{
+    display: none;
   }
 
   .cta-button {

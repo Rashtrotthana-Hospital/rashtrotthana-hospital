@@ -140,6 +140,12 @@ import { WinterCardiologyComponent } from './winter-cardiology/winter-cardiology
 import { AnnualReportComponent } from './annual-report/annual-report.component';
 import { TonsillectomyComponent } from './tonsillectomy/tonsillectomy.component';
 import { AdenoidectomyComponent } from './adenoidectomy/adenoidectomy.component';
+import { GallstoneRemovalSurgeryComponent } from './gallstone-removal-surgery/gallstone-removal-surgery.component';
+import { KidneyStoneComponent } from './kidney-stone/kidney-stone.component';
+import { HysterectomySurgeryComponent } from './hysterectomy-surgery/hysterectomy-surgery.component';
+// import { PilesComponent } from './piles/piles.component';
+import { AclReconstructionComponent } from './acl-reconstruction/acl-reconstruction.component';
+import { SurgeryTreatmentCardComponent } from './surgery-treatment-card/surgery-treatment-card.component';
 
 @NgModule({
   declarations: [
@@ -251,6 +257,12 @@ import { AdenoidectomyComponent } from './adenoidectomy/adenoidectomy.component'
     AnnualReportComponent,
     TonsillectomyComponent,
     AdenoidectomyComponent,
+    GallstoneRemovalSurgeryComponent,
+    KidneyStoneComponent,
+    HysterectomySurgeryComponent,
+    
+    AclReconstructionComponent,
+          SurgeryTreatmentCardComponent,
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   imports: [

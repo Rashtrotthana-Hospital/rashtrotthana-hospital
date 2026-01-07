@@ -259,9 +259,13 @@
             <a routerLink="/maternity-care"><img src="../../assets/maternity-instagram-post-of-rashtrotthana-hospital-bangalore.jpeg"
                 alt="Maternity social media post of Rashtrotthana Hospital Bangalore"></a>
         </div>
-        <div class="form">
+        <div class="form" #formSection>
             <app-speciality-form [doctor]="formDoctors" />
         </div>
+    </div>
+
+    <div class="sugery-card">
+        <app-surgery-treatment-card [data]="surgerySection" (bookAppointment)="scrollToForm()"></app-surgery-treatment-card>
     </div>
 
     <!-- doctors -->

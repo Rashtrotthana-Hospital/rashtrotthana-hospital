@@ -44,7 +44,9 @@
                     avoid or delay major joint replacement surgeries while maintaining their active lifestyle.</p>
             </div>
 
-            <div class="form">
+
+
+            <div class="form" #formSection>
                 <app-speciality-form [doctor]="formDoctors" />
             </div>
         </div>
@@ -54,11 +56,20 @@
             <h2 class="youtube_heading">Expert Insights from Our ENT Specialists</h2>
 
             <div class="videos">
-                <iframe width="320" height="210" src="https://www.youtube.com/embed/XAvTliUQtEQ?si=ZzZVwDT1YwpG36S_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="320" height="210" src="https://www.youtube.com/embed/XAvTliUQtEQ?si=ZzZVwDT1YwpG36S_"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-                <iframe width="320" height="210" src="https://www.youtube.com/embed/lE1FplJzFoQ?si=n8S0IxC3VNC4Amh1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="320" height="210" src="https://www.youtube.com/embed/lE1FplJzFoQ?si=n8S0IxC3VNC4Amh1"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-                <iframe width="320" height="210" src="https://www.youtube.com/embed/0VTOmNWhYcM?si=cnflTUhOhhY1x4lF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="320" height="210" src="https://www.youtube.com/embed/0VTOmNWhYcM?si=cnflTUhOhhY1x4lF"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </div>
 
@@ -144,6 +155,10 @@
                 pain and mobility issues. Our orthopedic team provides specialized treatment for inflammatory joint
                 conditions, autoimmune disorders and degenerative joint diseases. The treatment approach combines
                 medical management with physical therapy and surgical interventions when necessary.</p>
+        </div>
+
+        <div class="">
+            <app-surgery-treatment-card [data]="surgerySection" (bookAppointment)="scrollToForm()"></app-surgery-treatment-card>
         </div>
 
         <div class="container_margin container_margin">

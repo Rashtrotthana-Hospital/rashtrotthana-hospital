@@ -95,7 +95,8 @@ export class UrologyComponent {
         'Ideal even for hard-to-reach stones'
       ],
       highlight: 'This procedure helps you get back to normal life quickly, free from the fear and pain of kidney stones.',
-      icon: '🔬'
+      icon: '🔬',
+      slug: '/kidney-stone'
     },
     {
       id: 'ursl',
