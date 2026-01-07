@@ -30,6 +30,10 @@
     transition: 0.5s;
 }
 
+.form {
+    width: 50%;
+}
+
 .contact_button:hover {
     background-color: #FBCA51;
     color: #000;
@@ -230,6 +234,10 @@
     display: none;
 }
 
+.sugery-card{
+    margin: 0 50px;
+}
+
 @media (max-width : 1200px) {
     .sidebar {
         display: none;
@@ -246,6 +254,12 @@
     .form-container img {
         width: 100%;
     }
+
+    .form {
+        width: 100%;
+    }
+
+    
 }
 
 @media (max-width: 780px) {
@@ -296,6 +310,10 @@
         bottom: 50px;
         margin-left: 0;
         margin-right: 3%;
+    }
+
+    .sugery-card{
+        margin: 0 10px;
     }
 }
 

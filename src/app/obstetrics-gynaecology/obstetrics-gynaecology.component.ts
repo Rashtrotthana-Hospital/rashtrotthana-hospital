@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { Title, Meta, DomSanitizer, SafeHtml } from '@angular/platform-browser';
 
 declare var gtag: Function;
@@ -103,13 +103,51 @@ export class ObstetricsGynaecologyComponent {
 
   trackPhoneClick() {
     if (typeof gtag === 'function') {
-    gtag('event', 'conversion', {
-      'send_to': 'AW-16656770043/-YEMCITg09IZEPvHyIY-',
-      'event_callback': () => {
-        console.log('Phone call conversion tracked!');
-      }
-    });
+      gtag('event', 'conversion', {
+        'send_to': 'AW-16656770043/-YEMCITg09IZEPvHyIY-',
+        'event_callback': () => {
+          console.log('Phone call conversion tracked!');
+        }
+      });
+    }
   }
+
+  surgerySection = {
+    heading: 'ENT Surgical Treatments',
+    subHeading: 'Safe, Scar-Free & Child-Friendly Procedures',
+
+    surgeries: [
+      {
+        id: 'uterus-removal-surgery',
+        title: 'Hysterectomy Surgery',
+        subtitle: 'Uterus Removal Surgery',
+        description:
+          `Hysterectomy is a surgical procedure to remove the uterus, commonly recommended for conditions such as fibroids, heavy menstrual bleeding, chronic pelvic pain, or uterine disorders. Our Hysterectomy Surgery helps relieve symptoms and improve overall quality of life.`,
+        procedure:
+          'The procedure is performed using advanced techniques such as laparoscopic or minimally invasive surgery, depending on the patient’s condition. These methods ensure less pain, minimal scarring, and faster recovery, allowing patients to resume daily activities comfortably.',
+        benefits: [
+          'Minimally invasive surgical options',
+          'Effective relief from pain and excessive bleeding',
+          'Faster recovery with minimal discomfort',
+          'Safe and commonly performed gynecological surgery',
+        ],
+        highlight:
+          'Patients often experience lasting relief from symptoms, improved comfort, and a better quality of life after surgery.',
+        icon: '⚕️',
+        slug: '/hysterectomy-surgery'
+      },
+    ]
+  };
+
+  @ViewChild('formSection') formSection!: ElementRef;
+
+  scrollToForm() {
+    if (this.formSection) {
+      this.formSection.nativeElement.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
   }
 
 }

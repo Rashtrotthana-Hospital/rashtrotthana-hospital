@@ -9,82 +9,88 @@
         </div>
     </div>
 
-  <div class="complete-services-wrapper">
-      
-      <!-- Intro Section -->
-      <div class="intro-section">
-        <h1 class="page-title">Advanced Urology Care at Rashtrotthana Hospital, Bangalore</h1>
-        
-        <div class="intro-content">
-          <p class="intro-para">
-            The urinary system - including the kidneys, urinary bladder, and urinary organs and genitalia - 
-            plays a vital role in removing toxins from the body and maintaining fluid balance. When problems occur, 
-            such as <a routerLink="/blog/gallstones-vs-kidney-stones-why-does-it-hurt-and-where" class="text-link">kidney stones</a>, 
-            urinary tract infections (UTI), or bladder deformities, they can affect daily life and lead to serious 
-            complications if untreated.
-          </p>
-          <p class="intro-para">
-            At Rashtrotthana Hospital, our urology department offers comprehensive care for all urological problems - 
-            from routine infections to complex kidney disease. With experienced specialists, modern diagnostic tools 
-            and minimally invasive procedures, we provide safe, effective and affordable urological care for patients 
-            of all ages.
-          </p>
-        </div>
-      </div>
+    <div class="complete-services-wrapper">
 
-      <!-- Main Services with Form Section -->
-      <div class="main-services-section">
-        <div class="services-content-area">
-          <div class="section-badge">
-            <span class="badge-icon">🏥</span>
-            <span>Our Services</span>
-          </div>
-          
-          <h2 class="section-heading">Comprehensive Urology Services for Your Needs</h2>
-          
-          <p class="section-intro">
-            At Rashtrotthana Hospital, we understand that urological problems require specialized and empathetic care. 
-            We offer a full spectrum of services, using modern techniques to ensure the best possible outcomes.
-          </p>
+        <!-- Intro Section -->
+        <div class="intro-section">
+            <h1 class="page-title">Advanced Urology Care at Rashtrotthana Hospital, Bangalore</h1>
 
-          <div class="main-services-grid">
-            <div *ngFor="let service of mainServices" 
-                 class="main-service-card"
-                 [style.--card-color]="service.color">
-              <div class="service-icon-circle">
-                <span>{{ service.icon }}</span>
-              </div>
-              <div class="service-card-content">
-                <h3 class="service-card-title">{{ service.title }}</h3>
-                <p class="service-card-desc">{{ service.description }}</p>
-              </div>
-              <!-- <div class="service-arrow">→</div> -->
+            <div class="intro-content">
+                <p class="intro-para">
+                    The urinary system - including the kidneys, urinary bladder, and urinary organs and genitalia -
+                    plays a vital role in removing toxins from the body and maintaining fluid balance. When problems
+                    occur,
+                    such as <a routerLink="/blog/gallstones-vs-kidney-stones-why-does-it-hurt-and-where"
+                        class="text-link">kidney stones</a>,
+                    urinary tract infections (UTI), or bladder deformities, they can affect daily life and lead to
+                    serious
+                    complications if untreated.
+                </p>
+                <p class="intro-para">
+                    At Rashtrotthana Hospital, our urology department offers comprehensive care for all urological
+                    problems -
+                    from routine infections to complex kidney disease. With experienced specialists, modern diagnostic
+                    tools
+                    and minimally invasive procedures, we provide safe, effective and affordable urological care for
+                    patients
+                    of all ages.
+                </p>
             </div>
-          </div>
         </div>
 
-        <div class="form-sidebar" #formSection>
-          <app-speciality-form />
-        </div>
-      </div>
+        <!-- Main Services with Form Section -->
+        <div class="main-services-section">
+            <div class="services-content-area">
+                <div class="section-badge">
+                    <span class="badge-icon">🏥</span>
+                    <span>Our Services</span>
+                </div>
 
-      <!-- Specialty Services Grid -->
-      <div class="specialty-services-section">
-        <div class="specialty-header">
-          <h2 class="specialty-title">Specialized Urology Treatments</h2>
-          <p class="specialty-subtitle">Expert care across all urological specialties</p>
-        </div>
+                <h2 class="section-heading">Comprehensive Urology Services for Your Needs</h2>
 
-        <div class="specialty-grid">
-          <div *ngFor="let specialty of specialtyServices" class="specialty-card">
-            <div class="specialty-icon-bg">
-              <span class="specialty-icon">{{ specialty.icon }}</span>
+                <p class="section-intro">
+                    At Rashtrotthana Hospital, we understand that urological problems require specialized and empathetic
+                    care.
+                    We offer a full spectrum of services, using modern techniques to ensure the best possible outcomes.
+                </p>
+
+                <div class="main-services-grid">
+                    <div *ngFor="let service of mainServices" class="main-service-card"
+                        [style.--card-color]="service.color">
+                        <div class="service-icon-circle">
+                            <span>{{ service.icon }}</span>
+                        </div>
+                        <div class="service-card-content">
+                            <h3 class="service-card-title">{{ service.title }}</h3>
+                            <p class="service-card-desc">{{ service.description }}</p>
+                        </div>
+                        <!-- <div class="service-arrow">→</div> -->
+                    </div>
+                </div>
             </div>
-            <h3 class="specialty-card-title">{{ specialty.title }}</h3>
-            <p class="specialty-card-desc">{{ specialty.description }}</p>
-          </div>
+
+            <div class="form-sidebar" #formSection>
+                <app-speciality-form />
+            </div>
         </div>
-      </div>
+
+        <!-- Specialty Services Grid -->
+        <div class="specialty-services-section">
+            <div class="specialty-header">
+                <h2 class="specialty-title">Specialized Urology Treatments</h2>
+                <p class="specialty-subtitle">Expert care across all urological specialties</p>
+            </div>
+
+            <div class="specialty-grid">
+                <div *ngFor="let specialty of specialtyServices" class="specialty-card">
+                    <div class="specialty-icon-bg">
+                        <span class="specialty-icon">{{ specialty.icon }}</span>
+                    </div>
+                    <h3 class="specialty-card-title">{{ specialty.title }}</h3>
+                    <p class="specialty-card-desc">{{ specialty.description }}</p>
+                </div>
+            </div>
+        </div>
 
     </div>
 
@@ -124,10 +130,16 @@
                     <p class="surgery-highlight">{{ surgery.highlight }}</p>
 
                     <div class="surgery-cta-buttons">
-                        <a href="tel:+918069239999" class="cta-button cta-call" (click)="trackPhoneClick()">
-                            <span class="cta-icon"><i class="fa-solid fa-phone"></i></span>
-                            Call Us Now
+                        <a class="cta-button cta-call" *ngIf="surgery?.slug; else callUs" [routerLink]="surgery.slug">
+                            View More
                         </a>
+
+                        <ng-template #callUs>
+                            <a class="cta-button cta-call" href="tel:+918069239999">
+                                 <span class="cta-icon"><i class="fa-solid fa-phone"></i></span>
+                                Call Us
+                            </a>
+                        </ng-template>
                         <button class="cta-button cta-appointment" (click)="scrollToForm()">
                             <span class="cta-icon">📅</span>
                             Book Appointment
@@ -230,12 +242,16 @@
         <!-- Final CTA -->
         <div class="final-action-bar">
             <div class="action-content">
-                <h3><h3>Your Health, Our Prioity</h3></h3>
+                <h3>
+                    <h3>Your Health, Our Prioity</h3>
+                </h3>
                 <p><b>Experience World-Class Urology Care</b></p>
-                <p style="margin-top: 15px; line-height: 25px;">When you choose Rashtrotthana Hospital, you’re choosing a team that believes in healing with empathy and excellence. From modern facilities to genuine human care, every detail is designed around your well-being.</p>
+                <p style="margin-top: 15px; line-height: 25px;">When you choose Rashtrotthana Hospital, you’re choosing
+                    a team that believes in healing with empathy and excellence. From modern facilities to genuine human
+                    care, every detail is designed around your well-being.</p>
             </div>
             <div class="action-buttons">
-                <a href="tel:+918069239999" class="action-btn btn-yellow"  (click)="trackPhoneClick()">
+                <a href="tel:+918069239999" class="action-btn btn-yellow" (click)="trackPhoneClick()">
                     <i class="fa-solid fa-phone"></i> Call +91 80692 39999
                 </a>
                 <button class="action-btn btn-teal" (click)="scrollToForm()">

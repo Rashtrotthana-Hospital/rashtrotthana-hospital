@@ -73,6 +73,11 @@ import { WinterCardiologyComponent } from './winter-cardiology/winter-cardiology
 import { AnnualReportComponent } from './annual-report/annual-report.component';
 import { TonsillectomyComponent } from './tonsillectomy/tonsillectomy.component';
 import { AdenoidectomyComponent } from './adenoidectomy/adenoidectomy.component';
+import { GallstoneRemovalSurgeryComponent } from './gallstone-removal-surgery/gallstone-removal-surgery.component';
+import { KidneyStoneComponent } from './kidney-stone/kidney-stone.component';
+import { HysterectomySurgeryComponent } from './hysterectomy-surgery/hysterectomy-surgery.component';
+import { AclReconstructionComponent } from './acl-reconstruction/acl-reconstruction.component';
+import { SurgeryTreatmentCardComponent } from './surgery-treatment-card/surgery-treatment-card.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -167,6 +172,11 @@ const routes: Routes = [
   { path: 'maternity-care', component: MaternityComponent },
   { path: 'tonsillectomy-surgery-in-bangalore', component: TonsillectomyComponent },
   { path: 'adenoidectomy-surgery-in-bangalore', component: AdenoidectomyComponent },
+  { path: 'gallstone-removal-surgery', component: GallstoneRemovalSurgeryComponent },
+  { path: 'kidney-stone', component: KidneyStoneComponent },
+  { path: 'hysterectomy-surgery', component: HysterectomySurgeryComponent },
+  { path: 'surgery-card', component: SurgeryTreatmentCardComponent },
+  { path: 'acl-reconstruction', component: AclReconstructionComponent },
 
 
 

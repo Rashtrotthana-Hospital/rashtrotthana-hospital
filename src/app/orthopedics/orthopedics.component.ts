@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ViewChild, ElementRef } from '@angular/core';
 import { Title, Meta, DomSanitizer, SafeHtml } from '@angular/platform-browser';
 declare var gtag: Function;
 
@@ -28,44 +28,44 @@ export class OrthopedicsComponent {
   }
 
   formDoctors: any = ['Dr. Mahesh Kulkarni', 'Dr. Sujayendra D. M', 'Dr. Nikhil Hegde', 'Dr. Sandeep K. M']
-  
-doctors: any = [
-  {
-    id: 1,
-    name: 'Dr. Mahesh Kulkarni',
-    experience: '15+ Years',
-    image: '../../assets/Dr-Mahesh-Kulkarni.png',
-    slug: '/doctor/dr-mahesh-kulkarni'
-  },
-  {
-    id: 2,
-    name: 'Dr. Sujayendra D. M',
-    experience: '11 Years',
-    image: '../../assets/Dr-Sujayendra-D-M.png',
-    slug: '/doctor/dr-sujayendra-d-m'
-  },
-  {
-    id: 3,
-    name: 'Dr. Nikhil Hegde',
-    experience: '6 Years',
-    image: '../../assets/Dr-Nikhil-Hegde.png',
-    slug: '/doctor/dr-nikhil-hegde'
-  },
-  {
-    id: 4,
-    name: 'Dr. Sandeep K. M',
-    experience: '11 Years',
-    image: '../../assets/dr-sandeep-k-m-doc-page.png',
-    slug: '/doctor/dr-sandeep-k-m'
-  },
-  // {
-  //   id: 4,
-  //   name: 'Dr. Hemanth Kumar Venkatesh',
-  //   experience: '20 Years',
-  //   image: '../../assets/Dr-Hemanth-kumar-Venkatesh.png',
-  //   slug: '/doctor/dr-hemanth-kumar-venkatesh'
-  // }
-];
+
+  doctors: any = [
+    {
+      id: 1,
+      name: 'Dr. Mahesh Kulkarni',
+      experience: '15+ Years',
+      image: '../../assets/Dr-Mahesh-Kulkarni.png',
+      slug: '/doctor/dr-mahesh-kulkarni'
+    },
+    {
+      id: 2,
+      name: 'Dr. Sujayendra D. M',
+      experience: '11 Years',
+      image: '../../assets/Dr-Sujayendra-D-M.png',
+      slug: '/doctor/dr-sujayendra-d-m'
+    },
+    {
+      id: 3,
+      name: 'Dr. Nikhil Hegde',
+      experience: '6 Years',
+      image: '../../assets/Dr-Nikhil-Hegde.png',
+      slug: '/doctor/dr-nikhil-hegde'
+    },
+    {
+      id: 4,
+      name: 'Dr. Sandeep K. M',
+      experience: '11 Years',
+      image: '../../assets/dr-sandeep-k-m-doc-page.png',
+      slug: '/doctor/dr-sandeep-k-m'
+    },
+    // {
+    //   id: 4,
+    //   name: 'Dr. Hemanth Kumar Venkatesh',
+    //   experience: '20 Years',
+    //   image: '../../assets/Dr-Hemanth-kumar-Venkatesh.png',
+    //   slug: '/doctor/dr-hemanth-kumar-venkatesh'
+    // }
+  ];
 
 
   faqs = [
@@ -125,13 +125,71 @@ doctors: any = [
 
   trackPhoneClick() {
     if (typeof gtag === 'function') {
-    gtag('event', 'conversion', {
-      'send_to': 'AW-16656770043/-YEMCITg09IZEPvHyIY-',
-      'event_callback': () => {
-        console.log('Phone call conversion tracked!');
-      }
-    });
-  }
+      gtag('event', 'conversion', {
+        'send_to': 'AW-16656770043/-YEMCITg09IZEPvHyIY-',
+        'event_callback': () => {
+          console.log('Phone call conversion tracked!');
+        }
+      });
+    }
   }
 
+
+  surgerySection = {
+    heading: 'ENT Surgical Treatments',
+    subHeading: 'Safe, Scar-Free & Child-Friendly Procedures',
+
+    surgeries: [
+      {
+        id: 'acl',
+        title: 'ACL Reconstruction Surgery',
+        subtitle: 'Anterior Cruciate Ligament (ACL) Repair',
+        description:
+          `An ACL injury can cause knee instability, pain, and difficulty with walking, running, or sports activities. Our ACL Reconstruction Surgery restores knee stability by reconstructing the damaged ligament, helping patients regain strength and confident movement.`,
+        procedure:
+          'The procedure is performed using advanced arthroscopic techniques with small incisions. A healthy graft is used to replace the torn ligament, ensuring strong and long-lasting support. With proper rehabilitation, patients can return to normal activities and sports over time.',
+        benefits: [
+          'Arthroscopic, minimally invasive technique',
+          'Restores knee stability and strength',
+          'Reduced pain and quicker recovery',
+          'Safe and commonly performed orthopedic surgery',
+        ],
+        highlight:
+          'Patients often notice steady improvement in mobility, confidence, and knee function—supporting a safe return to an active lifestyle.',
+        icon: '🏃‍♂️',
+        slug: '/acl-reconstruction'
+      },
+
+      {
+        id: 'laparoscopic-cholecystectomy',
+        title: 'Total Knee Replacement',
+        subtitle: 'Total Knee Replacement (TKR Surgery)',
+        description:
+          'Total Knee Replacement is a surgical procedure performed to relieve chronic knee pain and stiffness caused by arthritis, joint damage, or severe wear and tear of the knee joint. TKR helps restore knee function, reduce pain, and improve mobility, allowing patients to return to daily activities with confidence.',
+        procedure:
+          'The procedure is performed using advanced surgical techniques to replace the damaged knee joint with an artificial implant. This restores smooth joint movement and stability. With proper physiotherapy and post-operative care, most patients experience steady recovery and long-term pain relief.',
+        benefits: [
+          'Advanced surgical techniques for better outcomes',
+          'Significant relief from chronic knee pain',
+          'Improved mobility and joint function',
+          'Safe and commonly performed orthopaedic procedure',
+        ],
+        highlight:
+          'Patients often experience improved movement, reduced pain, and a better quality of life, enabling them to resume normal routines comfortably.',
+        icon: '🦵',
+        slug: '/total-knee-replacement-bangalore'
+      },
+    ]
+  };
+
+  @ViewChild('formSection') formSection!: ElementRef;
+
+  scrollToForm() {
+    if (this.formSection) {
+      this.formSection.nativeElement.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  }
 }

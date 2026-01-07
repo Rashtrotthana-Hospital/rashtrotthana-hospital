@@ -269,6 +269,15 @@
   background: #CED7FF;
 }
 
+@media(max-width: 1440px) {
+  .card-1 {
+    top: 212%;
+  }
+
+  .card-2 {}
+}
+
+
 @media (max-width: 1024px) {
   .s_container {
     flex-direction: column;
@@ -286,19 +295,20 @@
   .image {
     width: 100%;
   }
-  .process-container{
+
+  .process-container {
     gap: 16px;
   }
 
-  .process-line{
+  .process-line {
     right: 50px;
   }
 
-  .benefit-item{
+  .benefit-item {
     position: static;
   }
 
-  .card-1{
+  .card-1 {
     top: 0;
     left: 0;
   }
@@ -549,7 +559,7 @@
   border-radius: 10px;
   background: #FFF;
   box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.25);
-  position: absolute;
+  position: relative;
 }
 
 .benefit-item-para {
@@ -561,26 +571,38 @@
   line-height: normal;
 }
 
+.benefits-list {
+  display: flex;
+  align-items: center;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
 
 .card-1 {
-  top: 300%;
-  left: 210px;
+  top: -20px;
+  left: 130px;
 }
 
 .card-2 {
-  top: 320%;
-  left: 256px;
+  top: 90px;
+  left: 142px;
 }
 
 .card-3 {
-  top: 320%;
-  right: 300px;
+  top: -90px;
+  right: 230px;
 }
 
 .card-4 {
-  top: 300%;
-  right: 188px;
+  /* top: 300%; */
+  right: 124px;
 }
+
+
 
 .surgery-cta-buttons {
   display: flex;
@@ -696,6 +718,45 @@
   flex-direction: column;
 }
 
+.img-1 {
+ top: 100%; left: 10%;
+}
+
+.img-2 {
+  top: 120%;
+  left: 5%;
+}
+
+.img-3 {
+  top: 920px;
+  left: 209px;
+}
+
+.img-4 {
+  top: 135%;
+  left: 7%;
+}
+
+.img-5 {
+  top: 115%;
+  right: 20%;
+}
+
+.img-6 {
+  top: 104%;
+  right: 10%;
+}
+
+.img-7 {
+  top: 132%;
+  right: 18%;
+}
+
+.img-8 {
+  top: 143%;
+  right: 5%;
+}
+
 /* Responsive Design */
 @media (max-width: 1024px) {
   .surgery-sections-container {
@@ -728,7 +789,8 @@
   .banner-imgs img {
     position: absolute;
     z-index: -1;
-    opacity: 0.50; /* soft background effect */
+    opacity: 0.50;
+    /* soft background effect */
   }
 
   .intro-content {
@@ -736,29 +798,63 @@
     z-index: 2;
   }
 
-  .intro-content{
+  .intro-content {
     width: 100% !important;
   }
 
-  .benefit-item{
+  .benefit-item {
     position: static;
   }
 
-  .benefits-section{
+  .benefits-section {
     gap: 30px;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
   }
 
-  .benefits-list{
+  .benefits-list {
     display: flex;
     flex-direction: column;
     gap: 30px;
   }
 
+  .img-1 {
+    top: 500px;
+  }
 
-  
+  .img-2 {
+    top: 640px;
+  }
+
+  .img-3 {
+    top: 700px;
+  }
+
+  .img-4 {
+    top: 850px;
+  }
+
+  .img-5 {
+    top: 490px;
+    right: 50px;
+  }
+
+  .img-6 {
+    top: 600px;
+  }
+
+  .img-7 {
+    top: 760px;
+    right: 51px;
+  }
+
+  .img-8 {
+    top: 890px;
+  }
+
+
+
 
 }
 
@@ -822,7 +918,7 @@
     width: 100%;
   }
 
-  .benefit-item-para{
+  .benefit-item-para {
     font-size: 14px;
   }
 
@@ -830,8 +926,9 @@
     flex-direction: column;
   }
 
-  .benefits-main-img{
-    width: 100%;;
+  .benefits-main-img {
+    width: 100%;
+    display: none;
   }
 
   .cta-button {
@@ -850,26 +947,34 @@
     width: 100%;
     height: auto;
   }
-  .benefits-section{
+
+  .benefits-section {
     display: flex;
     flex-direction: column-reverse;
     gap: 20px;
   }
 
-  .benefits-list{
+  .benefits-list {
     display: flex;
     flex-direction: column;
     gap: 20px;
   }
 
   .flex img,
-  .flex1 img{
+  .flex1 img {
     width: 11%;
   }
 
-  .surgery-title-knee{
+  .surgery-title-knee {
     font-size: 18px;
   }
+
+  /* .fl{
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 30px;
+} */
 }
 
 @media (max-width: 600px) {
@@ -905,11 +1010,11 @@
     height: auto;
   }
 
-  .banner-imgs{
+  .banner-imgs {
     display: none;
   }
 
-  .surgery-title-knee{
+  .surgery-title-knee {
     font-size: 18px;
   }
 }
@@ -1224,6 +1329,7 @@
   transform: translateY(-3px);
   box-shadow: 0 8px 25px rgba(255, 255, 255, 0.4);
 }
+
 .fa-phone {
   color: #022B50;
 }
@@ -1284,20 +1390,20 @@
     gap: 40px;
   }
 
-  .action-content p{
+  .action-content p {
     width: 100%;
     line-height: normal;
   }
 
-  .surgery-highlight{
+  .surgery-highlight {
     width: 100%;
   }
 
-  .surgery-description-knee{
+  .surgery-description-knee {
     width: 100%;
   }
 
-  
+
 }
 
 @media (max-width: 768px) {
@@ -1356,7 +1462,7 @@
     width: 50%;
   }
 
-   .surgery-description-knee{
+  .surgery-description-knee {
     width: 100%;
   }
 }
@@ -1392,15 +1498,15 @@
     padding: 14px 24px;
   }
 
-  .surgery-title-knee{
+  .surgery-title-knee {
     font-size: 18px;
   }
 
-  .knee-pain-clinic{
+  .knee-pain-clinic {
     padding: 20px;
   }
 
-  .action-btn{
+  .action-btn {
     width: 100%;
   }
 }
@@ -1758,7 +1864,7 @@
     margin: 0 auto;
   }
 
-   .surgery-description-knee{
+  .surgery-description-knee {
     width: 100%;
   }
 }
@@ -1822,7 +1928,7 @@
     /* width: 100%; */
   }
 
-  .cta-button{
+  .cta-button {
     width: 50%;
   }
 }
@@ -1899,30 +2005,26 @@
     width: 100%;
     height: auto;
   }
-  .surgery-title-knee{
+
+  .surgery-title-knee {
     font-size: 18px;
   }
 
-  .surgery-description-knee{
+  .surgery-description-knee {
     font-size: 12px;
     line-height: 24px;
   }
 
-  .intro-badge{
+  .intro-badge {
     font-size: 18px;
   }
 
-  .cta-button{
+  .cta-button {
     font-size: 14px;
     width: 100%;
   }
 
-  .surgery-highlight span{
+  .surgery-highlight span {
     font-size: 16px;
   }
 }
-
-
-
-
-

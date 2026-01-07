@@ -46,6 +46,10 @@
     gap: 50px;
 }
 
+.sugery-card{
+    margin: 0 50px;
+}
+
 .s_h1 {
     color: #008080;
     font-family: Poppins;
@@ -245,6 +249,10 @@
 
     .form-container img {
         width: 100%;
+    }
+
+    .sugery-card{
+        margin: 0 20px;
     }
 }
 

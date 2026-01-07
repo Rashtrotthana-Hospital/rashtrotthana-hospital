@@ -144,9 +144,9 @@
         </div>
     </div>
     <div class="para_image container-padding container-margin row-reverse">
-        <div class="s_image">
+        <!-- <div class="s_image">
             <img src="../../assets/laparoscopic-surgeon-in-rajarajeshwari-nagar-bangalore.png" alt="">
-        </div>
+        </div> -->
         <div class="s_content">
             <div class="s_subheadings">Why Choose Rashtrotthana Hospital for General Surgery?</div>
 
@@ -158,6 +158,10 @@
                 <li class="s_para">Personalized postoperative care for faster recovery.</li>
             </ul>
             <div class="s_para">We are recognized as a leading general surgery hospital in Bangalore, ensuring safe, effective and patient-centric surgical treatments.</div>
+        </div>
+
+        <div class="form" #formSection>
+            <app-speciality-form  [doctor]="formDoctors"></app-speciality-form>
         </div>
     </div>
 
@@ -174,6 +178,10 @@
             <div class="s_para">Rashtrotthana Hospital takes pride in being the Best Gynaecology Hospital in RR Nagar Bangalore, offering holistic care for women at every stage of life. From adolescence to post-menopause, our services encompass preventive health, maternity care and management of chronic conditions. Whether you’re preparing for childbirth, seeking treatment for gynecological concerns, or focusing on long-term wellness, our OBG department is here to support you with compassionate and personalized care.</div>
         </div>
     </div> -->
+
+    <div class="sugery-card">
+        <app-surgery-treatment-card [data]="surgerySection" (bookAppointment)="scrollToForm()"></app-surgery-treatment-card>
+    </div>
 
     <!-- doctors -->
     <div class="doctors">

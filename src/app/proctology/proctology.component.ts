@@ -1,128 +1,254 @@
-import { Component, OnInit } from '@angular/core';
-import { Title, Meta,DomSanitizer,SafeHtml } from '@angular/platform-browser'; 
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Title, Meta, DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { Router } from '@angular/router';
 
+declare var gtag: Function;
 @Component({
   selector: 'app-proctology',
   templateUrl: './proctology.component.html',
   styleUrl: './proctology.component.css'
 })
 export class ProctologyComponent {
-  constructor(private titleService: Title, private metaService: Meta, private sanitizer: DomSanitizer, private router: Router) {
-    
+  constructor(private titleService: Title,
+    private metaService: Meta,
+    private router: Router) { }
+
+
+  ngOnInit() {
+    this.titleService.setTitle(
+      'Piles Surgery in Bangalore | Laser Piles Treatment'
+    );
+
+    // Set the meta description
+    this.metaService.updateTag({
+      name: 'description',
+      content:
+        "Get advanced piles surgery in Bangalore at Rashtrotthana Hospital. Laser treatment, minimal pain, faster recovery & trusted surgical care.",
+    });
+
+    // Optionally set other meta tags
+    this.metaService.updateTag({
+      name: 'keywords',
+      content:
+        'knee replacement surgery, orthopedic care, best knee surgery Bangalore',
+    });
   }
-  ngOnInit(): void {
-    this.titleService.setTitle("Piles Treatment in Bangalore | Rashtrotthana Hospital");  
-
-  this.metaService.updateTag({ name: 'description', content: 'Get advanced piles treatment in Bangalore at Rashtrotthana Hospital. Expert piles specialists offering painless laser surgery for piles and quick recovery. Book your appointment today!' });
-
-  this.metaService.updateTag({ name: 'keywords', content: 'Proctologist in bangalore,Best proctologist in bangalore,Piles specialist near me,Best doctor for piles in Bangalore,Laser surgery for piles in Bangalore,Piles surgery in RR nagar Bangalore,Best Piles hospital in Bangalore ,Piles hospital in Bangalore ,Internal hemorrhoids treatment,External hemorrhoids treatment,Laser treatment for internal hemorrhoids,Painless surgery for piles in bangalore,Piles hospitals near me,Piles treatment without surgery in Bangalore,Best Proctology Hospital Rajarajeshwari nagar Bangalore ,Advanced laser therapy for external hemorrhoids,Advanced laser treatment for piles in Bangalore,Anal piles treatment in Bangalore,Piles symptoms' });
-
-  }
-  contactus(){
+  contactus() {
     this.router.navigate(['/contact-us-bangalore']);
   }
 
-
   doctors = [
     {
-      image: 'assets/Dr-Atmaram-D-C.png',
+      image: '../../assets/doctor-65.png',
+      name: 'Dr. Vivekanand',
+      // designation: 'Orthopaedics',
+      alt: 'Dr. Nishanth Lakshmikantha | Best General & GI Surgeon in Bangalore | Rashtrotthana Hospital',
+      slug: '/doctor/dr-vivekanand',
+      experience: '25+'
+    },
+
+    {
+      image: '../../assets/Dr-Atmaram-D-C.png',
       name: 'Dr. Atmaram D. C',
-      department : 'GASTROENTEROLOGIST',
-      alt : 'Dr. Atmaram D. C | Best laparoscopic Surgeon in Bangalore | Rashtrotthana Hospital'
+      // designation: 'Orthopaedics',
+      alt: 'Dr. Atmaram D. C | Best laparoscopic Surgeon in Bangalore | Rashtrotthana Hospital',
+      slug: '/doctor/dr-atmaram-d-c',
+      experience: '19+'
     },
     {
-      image: 'assets/Dr-Nishanth-Lakshmikantha.png',
+      image: '../../assets/Dr-Nishanth-Lakshmikantha.png',
       name: 'Dr. Nishanth Lakshmikanth',
-      department : 'SURGERY/GASTROSCIENCES',
-      alt : 'Dr. Nishanth Lakshmikantha | Best General & GI Surgeon in Bangalore | Rashtrotthana Hospital'
+      // designation: 'Orthopaedics',
+      alt: 'Dr. Nishanth Lakshmikantha | Best General & GI Surgeon in Bangalore | Rashtrotthana Hospital',
+      slug: '/doctor/dr-nishanth-lakshmikantha',
+      experience: '5+'
+    },
+  ];
+
+
+
+
+  formdoctors = ['Dr. Vivekanand', 'Dr. Atmaram D. C', 'Dr. Nishanth Lakshmikanth']
+
+
+  mainServices: any[] = [
+    {
+      icon: '🔬',
+      title: 'Laser Piles Surgery',
+      description: `
+              <ul>
+                <li>A modern, minimally invasive procedure that uses laser energy to treat piles with high precision. It causes minimal bleeding, less pain, and allows quicker recovery compared to conventional surgery.</li>
+              </ul>
+            `,
+      color: '#008080',
+    },
+    {
+      icon: '⚕️',
+      title: 'Conventional Piles Surgery',
+      description: `
+              <ul>
+                <li>Recommended in select advanced cases where laser treatment may not be suitable. Planned carefully to ensure safety and effective long-term relief.</li>
+              </ul>
+            `,
+      color: '#00a0a0',
+    },
+  ];
+
+  @ViewChild('formSection') formSection!: ElementRef;
+
+  scrollToForm() {
+    if (this.formSection) {
+      this.formSection.nativeElement.scrollIntoView({
+        // behavior: 'smooth',
+        block: 'start',
+        inline: 'nearest',
+      });
     }
-  ]
+  }
+
+  trackPhoneClick() {
+    if (typeof gtag === 'function') {
+      gtag('event', 'conversion', {
+        send_to: 'AW-16656770043/-YEMCITg09IZEPvHyIY-',
+        event_callback: () => {
+          console.log('Phone call conversion tracked!');
+        },
+      });
+    }
+  }
+
+  sections: any = [
+    {
+      id: 'advanced-facilities',
+      number: '01',
+      title: '1. Advanced Facilities & Experienced Surgical Team',
+      icon: '🏥',
+      color: '#008080',
+      description:
+        'At Rashtrotthana Hospital, piles surgeries are performed using modern laser and minimally invasive techniques by experienced surgeons, ensuring safe and effective outcomes.',
+      features: [
+        {
+          icon: '🔬',
+          title: 'Modern Operation Theatres',
+          description:
+            'Equipped with advanced laser systems and strict infection control standards.',
+        },
+        {
+          icon: '👨‍⚕️',
+          title: 'Highly Skilled Surgeons',
+          description:
+            'Specialists trained in laser piles surgery and complex anorectal procedures.',
+        },
+        {
+          icon: '🦵',
+          title: 'Complete Surgical Care',
+          description:
+            'From diagnosis and treatment to recovery guidance and follow-up care.',
+        },
+        {
+          icon: '⚡',
+          title: 'Faster Recovery, Less Discomfort',
+          description:
+            'Advanced techniques help reduce pain, bleeding, and recovery time.',
+        },
+      ],
+      highlightText:
+        'Every piles procedure is carefully planned and performed using proven techniques focused on patient safety and comfort.',
+    },
+    {
+      id: 'insurance-facility',
+      number: '02',
+      title: '2. Health Insurance Facility',
+      icon: '💳',
+      color: '#008080',
+      description:
+        'We make piles surgery affordable and worry-free with structured insurance support.',
+      features: [
+        {
+          icon: '🏦',
+          title: 'Cashless Insurance Available',
+          description: 'Accepted by most major health insurance providers.',
+        },
+        {
+          icon: '🤝',
+          title: 'Claim Assistance',
+          description:
+            'Our team assists with approvals, documentation, and coordination.',
+        },
+        {
+          icon: '📜',
+          title: 'Transparent Billing',
+          description:
+            'Clear pricing with no hidden charges.',
+        },
+        {
+          icon: '✨',
+          title: 'Smooth Process',
+          description:
+            'Dedicated insurance support to avoid delays and confusion.',
+        },
+      ],
+      highlightText:
+        'Clear billing practices and insurance guidance help patients focus on healing with confidence.',
+    },
+    {
+      id: 'travel-accommodation',
+      number: '03',
+      title: '3. Travel & Stay Convenience',
+      icon: '📍',
+      color: '#00a0a0',
+      description:
+        'Located in Rajarajeshwari Nagar, Bangalore, Rashtrotthana Hospital is easy to access and well supported with nearby essential facilities.',
+      features: [
+        {
+          icon: '🚇',
+          title: 'Easily Accessible',
+          description: 'Close to major roads, metro routes, railway stations, and bus connectivity.',
+        },
+        {
+          icon: '🏨',
+          title: 'Nearby Stay Options',
+          description:
+            'Comfortable accommodation available for patients and attendants.',
+        },
+        {
+          icon: '🏪',
+          title: 'Essential Facilities Around',
+          description:
+            'Pharmacies, food outlets, and transport services located nearby.',
+        },
+        {
+          icon: '👥',
+          title: 'Supportive Environment',
+          description:
+            'Our staff ensures smooth admissions, procedures, and follow-ups.',
+        },
+      ],
+      highlightText:
+        'A well-connected location and coordinated care environment make piles treatment comfortable for patients and families.',
+    },
+  ];
 
   faqs = [
     {
-      ques : "What are piles?",
-      ans : "Piles, also known as hemorrhoids, are swollen veins in the rectum or anus. They can be internal hemorrhoids (inside the rectum) or external hemorrhoids (under the skin around the anus). Common piles symptoms include bleeding, pain and itching. Visit Rashtrotthana Hospital, the best piles hospital in Bangalore, for expert treatment."
+      ques: "When is piles surgery recommended?",
+      ans: "Piles surgery is advised when symptoms such as pain, bleeding, or swelling do not improve with medication or lifestyle changes."
     },
     {
-      ques : "What are the common symptoms of piles?",
-      ans : `
-        <p class = "para">The most common piles symptoms include:</p>
-        <ul>
-          <li class = "para>Bleeding during bowel movements.</li>
-          <li class = "para>Pain or discomfort while sitting.</li>
-          <li class = "para>Swelling or lumps near the anus.</li>
-          <li class = "para>Persistent itching or irritation around the anus.</li>
-        </ul>
-        <p>If you experience any of these symptoms, consult our piles specialists in Bangalore for advanced care.</p>
-      `
+      ques: "Is laser piles surgery safe?",
+      ans: "Yes. Laser piles surgery is a safe and commonly performed procedure when done by experienced surgeons."
     },
     {
-      ques : "How are piles treated at Rashtrotthana Hospital?",
-      ans : `
-        <p class = "para">At Rashtrotthana Hospital, the leading piles hospital in Bangalore, we offer a range of treatments, including:</p>
-        <ul>
-          <li class - "para">Laser surgery for piles: A painless, minimally invasive procedure.</li>
-          <li class - "para">Piles treatment without surgery in Bangalore: Non-invasive methods for mild cases.</li>
-          <li class - "para">Internal hemorrhoids treatment and external hemorrhoids treatment for precise care.</li>
-          <li class - "para">Painless surgery for piles for a comfortable experience.</li>
-        </ul>
-      `
-    },
-    // {
-    //   ques : "",
-    //   ans : `
-    //     <p class = "para"></p>
-    //     <ul>
-    //       <li class - "para"></li>
-    //     </ul>
-    //   `
-    // },
-    {
-      ques : "Can piles be treated without surgery?",
-      ans : "Yes, mild cases of piles can be treated without surgery through lifestyle changes, medication and other non-invasive options. Rashtrotthana Hospital offers effective piles treatment without surgery in Bangalore, ensuring your comfort and recovery."
-    },
-
-    {
-      ques : "What is laser surgery for piles?",
-      ans : "Laser surgery for piles is a modern, minimally invasive procedure that uses laser technology to remove hemorrhoids. It’s painless, quick and allows for a faster recovery. At Rashtrotthana Hospital, our best piles surgeons in Bangalore specialize in this advanced treatment."
-    },
-     {
-      ques : "When should I see a piles specialist?",
-      ans : `
-        <p class = "para">You should consult a piles specialist in Bangalore if you experience:</p>
-        <ul>
-          <li class - "para">Persistent pain or bleeding.</li>
-          <li class - "para">Lumps or swelling near the anus.</li>
-          <li class - "para">Difficulty sitting or performing daily activities due to piles symptoms.</li>
-        </ul>
-        <p class = "para">Our best proctologists in Bangalore can provide accurate diagnosis and personalized treatment options.</para>
-      `
+      ques: "How long does recovery take after piles surgery?",
+      ans: "Most patients return to normal activities within a few days, depending on the treatment method used."
     },
     {
-      ques : "Is Rashtrotthana Hospital the best piles hospital in Bangalore?",
-      ans : "Yes, Rashtrotthana Hospital is recognized as the best piles hospital in Bangalore, offering advanced treatments like laser surgery for piles and expert care for all types of hemorrhoids. Located in Rajarajeshwari Nagar, we’re trusted by patients across the city."
+      ques: "Will piles come back after surgery?",
+      ans: "Proper treatment and lifestyle guidance significantly reduce the chances of recurrence."
     },
     {
-      ques : "",
-      ans : `
-        <p class = "para">To prevent piles, follow these tips:</p>
-        <ul>
-          <li class - "para">Eat a high-fiber diet with plenty of fruits, vegetables and whole grains.</li>
-          <li class - "para">Stay hydrated by drinking enough water.</li>
-          <li class - "para">Avoid straining during bowel movements.</li>
-          <li class - "para">Exercise regularly to maintain healthy bowel movements.</li>
-        </ul>
-        <p class = "para">If you notice any piles symptoms, seek help from the best piles hospital in Bangalore for early treatment.</p>
-      `
-    },
-    {
-      ques : "Does Rashtrotthana Hospital offer affordable piles surgery?",
-      ans : "Yes, we provide affordable piles surgery in Bangalore without compromising on quality. Our team ensures every patient receives advanced care at a cost-effective price"
-    },
-    {
-      ques : " How can I book an appointment for piles treatment in Bangalore?",
-      ans : "Booking an appointment at Rashtrotthana Hospital is simple. Call us or visit our website to schedule a consultation with the best proctologists in Bangalore. We’re here to help you with painless and effective piles treatment in Bangalore."
+      ques: "Is piles surgery painful?",
+      ans: "Modern laser techniques minimize pain and discomfort compared to traditional methods."
     },
   ]
 }

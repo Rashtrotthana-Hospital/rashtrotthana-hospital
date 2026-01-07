@@ -1,178 +1,330 @@
-<div class="root_container">
+<div class="root-container">
 
-    <!-- container 1 -->
-
-    <div class="container_1">
-        <img src="../../assets/Proctology_Hernia_Assets/Rashtrotthana-Hospital-proctology-services.png" alt="Rashtrotthana Hospital proctology services" class="Proctology_Poster_Desktop">
-        <img src="../../assets/Proctology_Hernia_Assets/Best-proctologist-in-Bangalore-Rashtrotthana-Hospital.png" alt="Best proctologist in Bangalore  | Rashtrotthana Hospital" class="Proctology_Poster_Tablet">
-        <img src="../../assets/Proctology_Hernia_Assets/Piles-treatment-in-Bangalore-Rashtrotthana-Hospital.png" alt="Piles treatment in Bangalore  | Rashtrotthana Hospital" class="Proctology_Poster_Mobile">
-    </div>
-
-    <div class="Book_appointment_btn">
-        <button (click)="contactus()" class="container_1_btn">Book your appointment at discounted price <i class="fa-solid fa-angle-right"></i></button>
-    </div>
-
-    <!-- container-2 -->
-
-    <div class="container_2">
-        <h1 class="heading">Piles Hospital in Bangalore</h1>
-        <p class="para">If you’re looking for expert care for <a href="https://en.wikipedia.org/wiki/Hemorrhoid" target="_blank">piles</a> symptoms or the best piles treatment in Bangalore, Rashtrotthana Hospital is your trusted destination. As the best piles hospital in Bangalore, we provide advanced care, ranging from painless procedures like laser surgery for piles to non-invasive treatment options for faster recovery.</p>
-    </div>
-
-
-    <div class="container_2">
-        <h2 class="heading">What Are Piles?</h2>
-        <div class="flex con_margin">
-            <div class="content">
-                <p class="para">Piles, or hemorrhoids, are swollen veins in the rectum or anus that can cause discomfort and pain. They are classified into:</p>
-                <ul>
-                    <li class="para"><b>Internal Hemorrhoids: </b>Found inside the rectum, they are usually painless but may cause bleeding.</li>
-                    <li class="para"><b>External Hemorrhoids: </b>These are located under the skin around the anus and can cause pain, itching and swelling.</li>
-                </ul>
-                <p>At Rashtrotthana Hospital, the best piles hospital in Bangalore, we specialize in treating both internal and external piles with advanced technology like laser treatment for piles.</p>
-            </div>
-            <div class="image">
-                <img src="../../assets/Proctology_Hernia_Assets/laser-treatment-for-internal-hemorrhoids.png" alt="Laser Treatment for internal Hemorrhoids | Bangalore">
-            </div>
+    <!-- hero section -->
+    <div class="speciality-header">
+        <img src="assets/Proctology_Hernia_Assets/piles_desk.png" class="desktop"
+            alt="Maternity Package (Janani Samridhi) Banner of Rashtrotthana Hospital Bangalore" />
+        <img src="assets/Proctology_Hernia_Assets/piles_mob.png" class="mobile"
+            alt="Maternity Package (Janani Samridhi) Banner of Rashtrotthana Hospital Bangalore">
+        <div class="header_button">
+            <button class="appointment" (click)="scrollToForm()">Book an Appointment</button>
+            <a href="tel:+918069239999" class="contact_button" (click)="trackPhoneClick()">Contact Now</a>
         </div>
     </div>
 
-    <div class="container_2">
-        <h2 class="heading">Recognizing Piles Symptoms</h2>
-        <div class="flex con_margin col-rev">
-            <div class="image">
-                <img src="../../assets/Proctology_Hernia_Assets/best-proctologist-in-bangalore.png" alt="Best Proctologist in Bangalore">
-            </div>
-            <div class="content">
-                <p class="para">Identifying piles symptoms early can help you get effective treatment. Common signs include:</p>
-                <ul>
-                    <li class="para">Bleeding during bowel movements.</li>
-                    <li class="para">Pain or discomfort while sitting.</li>
-                    <li class="para">Swelling or lumps near the anus.</li>
-                    <li class="para">Persistent anal itching or irritation.</li>
-                </ul>
-            </div>
-        </div>
-        <p class="para">If you experience any of these piles symptoms, consult a piles specialist near you at Rashtrotthana Hospital for an accurate diagnosis and effective care.</p>
-    </div>
+    <div class="container-2">
 
-    <div class="container_2">
-        <h2 class="heading">Advanced Piles Treatment in Bangalore</h2>
-        <div class="flex con_margin">
-            <div class="content">
-                <p class="para">Rashtrotthana Hospital offers the most advanced and effective piles treatment in Bangalore, tailored to your needs. Our treatments include:</p>
-                <ul>
-                    <li class="para"><b>Laser Surgery for Piles in Bangalore: </b>A minimally invasive, painless procedure performed by the best piles surgeons in Bangalore.</li>
-                    <li class="para"><b>Piles Treatment Without Surgery in Bangalore: </b>Non-invasive solutions designed to provide relief for mild piles symptoms.</li>
-                    <li class="para"><b>Internal Hemorrhoids Treatment: </b>Precision care to address internal piles with lasting results.</li>
-                    <li class="para"><b>External Hemorrhoids Treatment: </b>Advanced treatments for external piles to reduce pain and swelling.</li>
-                    <li class="para"><b>Painless Surgery for Piles in Bangalore: </b>Innovative techniques for a comfortable experience and quick recovery.</li>
-                </ul>
-                <p class="para">As a top-rated piles hospital in Bangalore, we ensure that our treatments prioritize your comfort, health and long-term relief.</p>
-            </div>
-            <div class="image">
-                <img src="../../assets/Proctology_Hernia_Assets/Anal-fissure-treatment-Bangalore-Rashtrotthana-Hospital.png" alt="">
-            </div>
-        </div>
-    </div>
+        <!-- Intro Section -->
 
-    <div class="container_2">
-        <h2 class="heading">Why Choose Rashtrotthana Hospital for Piles Treatment?</h2>
-        <div class="flex con_margin col-rev">
-            <div class="image">
-                <img src="../../assets/Proctology_Hernia_Assets/piles-hospital-in-bangalore.png" alt="Piles Hospital in Bangalore">
+        <div class="intro-section">
+            <h1 class="page-title">Piles Surgery in Bangalore</h1>
+            <div class="line">
+                <svg xmlns="http://www.w3.org/2000/svg" width="372" height="34" viewBox="0 0 372 34" fill="none"
+                    style="width: 100%;">
+                    <path d="M45.0361 1.5H336.402L0.0664062 16.38H371.066L183.068 32.5" stroke="#FFC250"
+                        stroke-width="3" />
+                </svg>
             </div>
-            <div class="content">
-                <p class="para">As the best piles hospital in Bangalore, we stand out for our expertise, advanced technology and compassionate care. Here’s why patients trust us for their piles treatment:</p>
-                <ul>
-                    <li class="para"><b>Expert Proctologists in Bangalore: </b>Our team includes the best proctologist in Bangalore, experienced in diagnosing and treating complex cases of piles.</li>
-                    <li class="para"><b>Advanced Laser Treatment: </b>We specialize in painless procedures like laser surgery for piles, ensuring a faster recovery.</li>
-                    <li class="para"><b>Affordable Piles Surgery: </b>We provide cost-effective options for piles treatment in Bangalore, without compromising on quality.</li>
-                </ul>
-            </div>
-        </div>
-    </div>
 
-    <div class="container_2">
-        <h2 class="heading">When Should You See a Proctologist?</h2>
-        <div class="flex con_margin">
-            <div class="content">
-                <p class="para"><b>It’s important to consult the best proctologist in Bangalore if you experience:</b></p>
-                <ul>
-                    <li class="para">Persistent rectal pain or bleeding.</li>
-                    <li class="para">Difficulty sitting or performing daily activities due to piles symptoms.</li>
-                    <li class="para">Lumps, swelling, or irritation around the anus.</li>
-                    <li class="para">Chronic constipation or diarrhea.</li>
-                </ul>
-                <p class="para">Our team at Rashtrotthana Hospital offers personalized care to ensure you get the best treatment for your condition.</p>
+            <div class="intro-part">
+                <div class="banner-imgs">
+                    <img src="assets/Proctology_Hernia_Assets/best-piles-hospital-rajarajeshwari-nagar-bangalore.png" alt=""
+                        class="float-left float-delay-1 img-1">
+                    <img src="assets/Proctology_Hernia_Assets/3d-model-human-rectum-with-hemorrhoids-piles-polyps-medical-education-healthcare-use.jpg"
+                        alt="" class="float-left float-delay-2 img-2">
+                    <img src="assets/Proctology_Hernia_Assets/close-up-man-s-hand-holding-back-side-concept-hemorrhoids.jpg" alt="" class="float-left float-delay-1 img-3">
+                    <img src="assets/Proctology_Hernia_Assets/doctor-holding-human-colon-anatomy-model-colonic-disease-large-intestine-color.jpg"
+                        alt="" class="float-left float-delay-3 img-4">
+                </div>
+
+                <div class="intro-content">
+                    <div class="flex">
+                        <img src="assets/tkr/comma-left.png" alt="">
+                        <div class="">
+                            <p class="intro-para">Living with piles (hemorrhoids) can be uncomfortable and distressing.
+                                Symptoms such as pain during bowel movements, bleeding, itching, swelling, or a constant
+                                feeling of discomfort can interfere with daily life and affect confidence.
+                            </p>
+                            <p class="intro-para">
+                                At Rashtrotthana Hospital, we provide safe and effective Piles Surgery in Bangalore
+                                using advanced and minimally invasive treatment options. Our experienced surgical team
+                                focuses on accurate diagnosis, minimal pain, and faster recovery, ensuring ethical and
+                                patient-focused care.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex1">
+                        <p class="intro-para">From the first consultation to post-procedure recovery, we guide you at
+                            every step with clarity and sensitivity-helping you return to a comfortable, pain-free, and
+                            confident life.</p>
+                        <img src="assets/tkr/comma-right.png" alt="">
+                    </div>
+                </div>
             </div>
-            <div class="image">
-                <img src="../../assets/Proctology_Hernia_Assets/best-piles-hospital-rajarajeshwari-nagar-bangalore.png" alt="">
+
+            <div class="banner-imgs">
+                <img src="assets/Proctology_Hernia_Assets/laser-treatment-for-internal-hemorrhoids.png" alt=""
+                    class="float-right float-delay-3 img-5">
+                <img src="assets/Proctology_Hernia_Assets/conceptual-3d-illustration-human-hernia.jpg"
+                    alt="" class="float-right float-delay-2 img-6">
+                <img src="assets/Proctology_Hernia_Assets/surgeons-performing-complex-surgery-operation-theater-focus-hands-medical-instruments-bright-surgical-lights.jpg"
+                    alt="" class="float-right float-delay-2 img-7">
+                <img src="assets/Proctology_Hernia_Assets/piles-hospital-in-bangalore.png"
+                    alt="" class="float-right float-delay-1 img-8">
             </div>
         </div>
-    </div>
 
-    <div class="container_2">
-        <h2 class="heading">Diagnostic Procedures at Rashtrotthana Hospital</h2>
-        <div class="flex con_margin col-rev">
-            <div class="image">
-                <img src="../../assets/Proctology_Hernia_Assets/Anal-fissure-treatment-Bangalore-Rashtrotthana-Hospital.png" alt="">
+
+
+
+
+
+        <div class="surgery-sections-container">
+            <div class="surgery-header">
+                <h2 class="surgery-main-title">Surgery Package Section</h2>
+                <p class="surgery-main-subtitle">Experience Advanced Piles Treatment at an Affordable Cost</p>
             </div>
-            <div class="content">
-                <p class="para">As the best <a href="https://en.wikipedia.org/wiki/Colorectal_surgery" target="_blank">proctology</a> hospital in Bangalore, we offer advanced diagnostic tools, including:</p>
-                <ul>
-                    <li class="para"><b>Anoscopy: </b>A simple procedure to examine the anus and rectum.</li>
-                    <li class="para"><b>Colonoscopy: </b>Used to screen for colorectal cancer or remove polyps.</li>
-                    <li class="para"><b>Digital Rectal Exams: </b>A physical exam to detect rectal abnormalities.</li>
-                    <li class="para"><b>Proctoscopy: </b> Examination of the rectum and anus for signs of piles or other conditions.</li>
-                    <li class="para"><b>Endorectal Ultrasound: </b>Imaging for detailed evaluation of the anorectal area.</li>
-                </ul>
-                <p class="para">If you're experiencing piles symptoms or other issues related to the rectum and anus, such as itching, burning, constipation, diarrhea, rectal bleeding, or abdominal discomfort, consulting a piles specialist in Bangalore is highly recommended. At Rashtrotthana Hospital, the best piles hospital in Bangalore, we provide advanced proctology care to ensure accurate diagnosis and effective treatment. Sharing your symptoms openly with our best proctologists in Bangalore is crucial for a thorough evaluation and personalized care.</p>
+
+            <div class="surgeries-grid">
+                <div class="surgery-content">
+                    <!-- <div class="surgery-number">0{{ i + 1 }}</div> -->
+                    <h3 class="surgery-title">What Makes Our Package the Right Choice</h3>
+                    <p class="surgery-subtitle"></p>
+                    <div class="process-part">
+                        <div class="process-line">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="915" height="70" viewBox="0 0 1038 70"
+                                fill="none">
+                                <path
+                                    d="M0.385742 23.4048L10.695 29.5903C88.0005 75.9737 184.029 78.1833 263.386 35.4048C344.046 -6.65146 440.033 -7.24926 521.21 33.7991L524.386 35.4048C601.534 78.5078 695.128 80.1692 773.757 39.8315L782.386 35.4048C852.717 -6.48154 939.273 -10.6518 1013.31 24.2791L1036.89 35.4048"
+                                    stroke="#959292" stroke-width="1.5" stroke-dasharray="6 6" />
+                            </svg>
+                        </div>
+                        <div class="process-container">
+                            <div class="process-card">
+                                <img src="assets/gallstone-removal-surgery/woman-medic-measuring-pulse-patient.jpg"
+                                    alt="">
+                                <div class="card-para-1 card-para">Complete care from consultation to recovery
+                                </div>
+                            </div>
+                            <div class="process-card">
+                                <img src="assets/gallstone-removal-surgery/surgeon-assistant-conducting-abdominoplasty-surgery-clinic.jpg"
+                                    alt="">
+                                <div class="card-para-2 card-para">Experienced surgeons specialized in piles treatment
+                                </div>
+                            </div>
+                            <div class="process-card">
+                                <img src="assets/gallstone-removal-surgery/medic-operating-with-metallic-scalpel.jpg"
+                                    alt="">
+                                <div class="card-para-3 card-para">Minimally invasive and laser-based procedures
+                                </div>
+                            </div>
+                            <div class="process-card">
+                                <img src="assets/gallstone-removal-surgery/senior-man-helping-cancer-patient-woman-wearing-head-scarf-with-walker-hospital-health-care-medical-concept.jpg"
+                                    alt="">
+                                <div class="card-para-4 card-para">Minimal pain and faster recovery
+                                </div>
+                            </div>
+                            <div class="process-card">
+                                <img src="assets/gallstone-removal-surgery/Ellipse 112.png" alt="">
+                                <div class="card-para-5 card-para">Cashless insurance support and dedicated care team
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <p class="surgery-main-subtitle"> Your comfort, safety, and recovery always come first. Our Piles
+                        Surgery Package is designed to deliver transparent, reliable, and high-quality proctology care.
+
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- <div class="doctor-part">
+      <div class="doctor-heading">Meet Our Senior Gynecologist</div>
+      <div class="doctor-img">
+        <img src="assets/Doc-Inv-Page/Dr-Latha-Venkataram.png" alt="">
+        <div class="doctor-name">
+          <li class="doctor-name"><b>Dr. Latha Venkataraman</b></li>
+          <li class="doctor-name-2" style="margin-top: 20px;">MBBS, MRCOG (UK), MRCP(I), FRCOG(UK)</li>
+          <li class="doctor-name-2">Experience: 32+ Years</li>
+          <li class="doctor-name-2">Speciality: Obstetrics & Gynecology</li>
+        </div>
+      </div>
+      <ul style="text-align: left;">
+        <li class="doctor-description_left">30+ years of experience</li>
+        <li class="doctor-description_left">50k+ successful deliveries</li>
+        <li class="doctor-description_left">80% success rate on Normal Delivery</li>
+        <li class="doctor-description_left">Skilled in vaginal surgeries</li>
+        <li class="doctor-description_left">Specializes in safe and normal (vaginal) deliveries</li>
+        <li class="doctor-description_left">Focused on menopause management and related health issues</li>
+        <li class="doctor-description_left">Expertise in managing high-risk pregnancies</li>
+        <li class="doctor-description_left">Provides care for diabetes and medical disorders in pregnancy</li>
+        <li class="doctor-description_left">Offers treatment for recurrent pregnancy loss</li>
+      </ul>
+
+      <button class="appointment-btn" (click)="scrollToForm()">Book an Appointment</button>
+
+    </div> -->
+
+        <!-- <app-doctor-card [doctorCard]="doctorCard"></app-doctor-card> -->
+
+        <div class="main-services-section">
+            <div class="services-content-area">
+                <div class="section-badge">
+                    <span class="badge-icon">🏥</span>
+                    <span>Surgery Types</span>
+                </div>
+
+                <h2 class="section-heading">Types of Piles Surgery</h2>
+
+                <!-- <p class="section-intro">
+                    There are two main types of knee replacement procedures, depending on the extent of joint damage:
+                </p> -->
+
+                <div class="main-services-grid">
+                    <div *ngFor="let service of mainServices" class="main-service-card"
+                        [style.--card-color]="service.color">
+                        <div class="service-icon-circle">
+                            <span>{{ service.icon }}</span>
+                        </div>
+                        <div class="service-card-content">
+                            <h3 class="service-card-title">{{ service.title }}</h3>
+                            <div class="service-card-desc" [innerHTML]="service.description"></div>
+                        </div>
+                        <!-- <div class="service-arrow">→</div> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-sidebar" #formSection>
+                <app-speciality-form [doctor]="formdoctors" />
             </div>
         </div>
-        <p class="para">Our experienced team, renowned for expertise in internal hemorrhoids treatment and external hemorrhoids treatment, uses minimally invasive techniques like laser surgery for piles to achieve optimal outcomes. Visit us today for expert piles treatment in Bangalore and regain your comfort and health!</p>
-    </div>
 
-    <div class="container_2">
-        <h2 class="heading">Your Trusted Piles Specialist Near You</h2>
-        <p class="para">Rashtrotthana Hospital is proud to be recognized as the best piles hospital in Bangalore, offering expert care from the best piles surgeons in Bangalore. Whether you’re experiencing piles symptoms, need internal hemorrhoids treatment, or are looking for laser treatment for piles, we’re here to help.</p>
-    </div>
 
-    <div class="container_2">
-        <h2 class="heading">Book Your Consultation Today</h2>
-        <p class="para">Don’t let piles symptoms disrupt your daily life. Visit Rashtrotthana Hospital, the leading piles hospital in Bangalore, for expert care and advanced piles treatment options.</p>
-        <p class="para">From painless laser surgery for piles to affordable and effective solutions for external hemorrhoids treatment, we ensure that every patient receives world-class care.</p>
-        <p class="para">Take the first step toward relief and comfort. Schedule an appointment with the best proctologists in Bangalore today!</p>
-    </div>
+        <!-- doctors section -->
 
-    <div class="heading">
-        <p class="heading">MEET OUR MEDICAL TEAM</p>
-    </div>
-    <div class="doc_container">
-        <div class="doctors_flex">
-            <div class="doc_details" *ngFor = "let doctor of doctors">
-                <app-speciality-doctors [name]="doctor.name" [alt]="doctor.alt" [department]="doctor.department" [image]="doctor.image" />
+        <div class="container_margin">
+            <h2 class="s_h1 text-center heading-margin">Our Experienced Surgeons</h2>
+            <app-speciality-doc-card [doctors]="doctors" />
+        </div>
+
+        <!-- Why Choose Rashtrotthana Hospital? -->
+
+        <div class="why-choose-wrapper" style="margin-top: 30px;">
+            <!-- Header Section -->
+            <div class="section-intro">
+                <span class="intro-badge">Your Health Partner</span>
+                <h2 class="main-heading">Why Choose Rashtrotthana Hospital?</h2>
+                <p class="main-subheading">Your Health in Trustable Hands</p>
+                <div class="heading-underline">
+                    <span class="line"></span>
+                    <span class="dot"></span>
+                    <span class="line"></span>
+                </div>
+            </div>
+
+            <!-- Sections with alternating layouts -->
+            <div *ngFor="let section of sections; let i = index" class="section-block">
+
+                <!-- Left Layout (Icon Left) -->
+                <div *ngIf="i % 2 === 0" class="layout-container layout-left">
+                    <!-- <div class="icon-column" [style.background]="section.color">
+            <div class="number-badge">{{ section.number }}</div>
+            <div class="main-icon">{{ section.icon }}</div>
+            <div class="vertical-text">{{ section.title.split('.')[1]?.trim() || section.title }}</div>
+          </div> -->
+
+                    <div class="content-column">
+                        <h3 class="section-title" [style.color]="section.color">{{ section.title }}</h3>
+                        <p class="section-desc">{{ section.description }}</p>
+
+                        <div class="features-grid">
+                            <div *ngFor="let feature of section.features" class="feature-item">
+                                <div class="feature-icon-box" [style.border-color]="section.color">
+                                    <span>{{ feature.icon }}</span>
+                                </div>
+                                <div class="feature-text">
+                                    <strong>{{ feature.title }}</strong>
+                                    <p>{{ feature.description }}</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="highlight-box" [style.border-left-color]="section.color">
+                            <span class="bulb-icon">💡</span>
+                            <em>{{ section.highlightText }}</em>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Layout (Icon Right) -->
+                <div *ngIf="i % 2 !== 0" class="layout-container layout-right">
+                    <div class="content-column">
+                        <h3 class="section-title" [style.color]="section.color">{{ section.title }}</h3>
+                        <p class="section-desc">{{ section.description }}</p>
+
+                        <div class="features-grid">
+                            <div *ngFor="let feature of section.features" class="feature-item">
+                                <div class="feature-icon-box" [style.border-color]="section.color">
+                                    <span>{{ feature.icon }}</span>
+                                </div>
+                                <div class="feature-text">
+                                    <strong>{{ feature.title }}</strong>
+                                    <p>{{ feature.description }}</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="highlight-box" [style.border-left-color]="section.color">
+                            <span class="bulb-icon">💡</span>
+                            <em>{{ section.highlightText }}</em>
+                        </div>
+                    </div>
+
+                    <!-- <div class="icon-column" [style.background]="section.color">
+            <div class="number-badge">{{ section.number }}</div>
+            <div class="main-icon">{{ section.icon }}</div>
+            <div class="vertical-text">{{ section.title.split('.')[1]?.trim() || section.title }}</div>
+          </div> -->
+                </div>
+
+                <!-- Separator Line -->
+                <div *ngIf="i < sections.length - 1" class="section-divider">
+                    <span class="divider-circle" [style.background]="section.color"></span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Final CTA -->
+        <div class="final-action-bar">
+            <div class="action-content">
+                <h3>Your Health, Our Priority</h3>
+                <p><b>Experience Trusted Piles Surgery in Bangalore</b></p>
+                <p style="margin-top: 15px; line-height: 25px;">
+                    Don’t ignore piles symptoms or continue living with discomfort. Early treatment can prevent
+                    complications and provide lasting relief. Consult our experienced surgeons at Rashtrotthana Hospital
+                    today and take the first step toward safe piles surgery, faster recovery, and long-term comfort.
+                </p>
+            </div>
+
+            <div class="action-buttons">
+                <a href="tel:+918069239999" class="action-btn btn-yellow" (click)="trackPhoneClick()">
+                    Call +91 80692 39999
+                </a>
+                <button class="action-btn btn-teal" (click)="scrollToForm()">
+                    Book Appointment
+                </button>
             </div>
         </div>
+
+
+        <!-- Faqs -->
+        <app-faqs-new [faqData]="faqs"></app-faqs-new>
     </div>
-
-    <!-- youtube videos -->
-    <div class="container_2">
-        <div class="heading" style="margin-top: 40px;">Patient Education</div>
-        <div class="flex">
-            <iframe style="border-radius: 10px;" src="https://www.youtube.com/embed/3BEgkgV2cNU?si=-SRnUqPNCmBFAc2k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-    </div>
-
-
-    <!-- faq section -->
-
-    <div class="container_2" style="margin-bottom: 50px;">
-        <div class="heading"  style="margin-top: 40px;">FAQs</div>
-        <div class="content" *ngFor = "let faq of faqs">
-            <p class="para" style="color: #008080;"><b>{{faq.ques}}</b></p>
-            <p class="para" [innerHTML]="faq.ans"></p>
-        </div>
-    </div>
-
-</div>
