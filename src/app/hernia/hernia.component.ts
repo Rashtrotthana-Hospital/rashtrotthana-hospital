@@ -112,7 +112,7 @@ export class HerniaComponent implements OnInit {
           description: 'Advanced techniques help reduce pain and speed up healing.'
         }
       ],
-      highlightText: 'Your hernia treatment journey - from consultation to recovery - is guided with care, skill, and compassion.'
+      highlightText: 'Patients receive structured care from initial consultation through surgery and recovery.'
     },
     {
       number: '02',
@@ -142,7 +142,7 @@ export class HerniaComponent implements OnInit {
           description: 'Hassle-free insurance support for peace of mind.'
         }
       ],
-      highlightText: 'Patients appreciate our smooth and supportive insurance process that lets them focus on healing.'
+      highlightText: 'Insurance support is handled in a clear and organized manner to reduce administrative stress.'
     },
     {
       number: '03',
@@ -172,7 +172,7 @@ export class HerniaComponent implements OnInit {
           description: 'Our staff ensures your visit is smooth and stress-free.'
         }
       ],
-      highlightText: 'From travel to treatment to recovery - we take care of everything.'
+      highlightText: 'The hospital location and surrounding facilities help make visits more convenient for patients and families.'
     }
   ];
 

@@ -219,7 +219,7 @@ sections: any = [
       },
     ],
     highlightText:
-      'Every delivery under the Janani Samriddhi package is guided by trust, comfort, and advanced maternity care.',
+      'The Janani Samriddhi package covers antenatal care, delivery, and postnatal support within a structured maternity program.',
   },
   {
     id: 'insurance-facility',
@@ -247,7 +247,7 @@ sections: any = [
       },
     ],
     highlightText:
-      'With transparent pricing and easy claim support, your focus stays on motherhood — not paperwork.',
+      'The package includes clear pricing and assistance with maternity insurance procedures.',
   },
   {
     id: 'comfort-convenience',
@@ -280,7 +280,7 @@ sections: any = [
       },
     ],
     highlightText:
-      'From comfort to care, every aspect of the Janani Samriddhi package is designed for a joyful motherhood experience.',
+      'Facilities and services are organized to support mothers and families throughout the maternity stay.',
   },
 ];
 
