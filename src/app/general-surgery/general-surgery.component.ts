@@ -29,18 +29,18 @@ export class GeneralSurgeryComponent implements OnInit {
     {
       doctor_image: '../../assets/Dr-Nishanth-Lakshmikantha.png',
       doctor_name: 'Dr. Nishanth Lakshmikanth',
-      experience: "5",
+      experience: "9",
       docalt: 'Dr. Nishanth Lakshmikantha | Best General & GI Surgeon in Bangalore | Rashtrotthana Hospital'
     },
-    {
-      doctor_image: '../../assets/doctor-65.png',
-      doctor_name: 'Dr. Vivekanand',
-      experience: " 25+",
-      docalt: 'Dr. Nishanth Lakshmikantha | Best General & GI Surgeon in Bangalore | Rashtrotthana Hospital'
-    },
+    // {
+    //   doctor_image: '../../assets/doctor-65.png',
+    //   doctor_name: 'Dr. Vivekanand',
+    //   experience: " 25+",
+    //   docalt: 'Dr. Nishanth Lakshmikantha | Best General & GI Surgeon in Bangalore | Rashtrotthana Hospital'
+    // },
   ]
 
-  formDoctors: any = ['Dr. Atmaram D. C', 'Dr. Nishanth Lakshmikanth', 'Dr. Vivekanand']
+  formDoctors: any = ['Dr. Atmaram D. C', 'Dr. Nishanth Lakshmikanth']
 
   faqs = [
     {
