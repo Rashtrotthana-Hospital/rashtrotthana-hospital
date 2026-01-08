@@ -41,14 +41,14 @@ export class GallstoneRemovalSurgeryComponent {
 
   doctors = [
 
-    {
-      image: '../../assets/doctor-65.png',
-      name: 'Dr. Vivekanand',
-      // designation: 'Orthopaedics',
-      alt: '',
-      slug: '/doctor/dr-vivekanand',
-      experience: '25+'
-    },
+    // {
+    //   image: '../../assets/doctor-65.png',
+    //   name: 'Dr. Vivekanand',
+    //   // designation: 'Orthopaedics',
+    //   alt: '',
+    //   slug: '/doctor/dr-vivekanand',
+    //   experience: '25+'
+    // },
     {
       image: '../../assets/Dr-Atmaram-D-C.png',
       name: 'Dr. Atmaram D. C',
@@ -63,12 +63,12 @@ export class GallstoneRemovalSurgeryComponent {
       // designation: 'Orthopaedics',
       alt: 'Dr. Nishanth Lakshmikantha | Best General & GI Surgeon in Bangalore | Rashtrotthana Hospital',
       slug: '/doctor/dr-nishanth-lakshmikantha',
-      experience: '5+'
+      experience: '9+'
     },
 
   ];
 
-  formdoctors = ['Dr. Vivekanand', 'Dr. Atmaram D. C', 'Dr. Nishanth Lakshmikanth']
+  formdoctors = ['Dr. Atmaram D. C', 'Dr. Nishanth Lakshmikanth']
 
 
   mainServices: any[] = [
