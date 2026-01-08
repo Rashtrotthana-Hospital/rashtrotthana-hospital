@@ -261,7 +261,7 @@ export class KneeReplacementComponent implements OnInit {
         },
       ],
       highlightText:
-        'Your journey — from consultation to complete recovery — is guided by expertise, care, and advanced technology.',
+        'Care is provided across consultation, surgery, and post-operative recovery using established orthopedic practices.'
     },
     {
       id: 'insurance-facility',
@@ -281,7 +281,7 @@ export class KneeReplacementComponent implements OnInit {
           icon: '🤝',
           title: 'Claim Assistance',
           description:
-            'Our team helps with approvals and paperwork for a hassle-free process.',
+            'Insurance procedures are handled with clarity to reduce administrative effort for patients.',
         },
         {
           icon: '📜',
@@ -291,7 +291,7 @@ export class KneeReplacementComponent implements OnInit {
         },
       ],
       highlightText:
-        'Patients appreciate our transparent and supportive insurance process that keeps their focus on healing, not paperwork.',
+        'The hospital’s location and nearby facilities help make visits more convenient for patients and families.',
     },
     {
       id: 'travel-accommodation',
