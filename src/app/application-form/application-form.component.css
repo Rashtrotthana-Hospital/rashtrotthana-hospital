@@ -1,0 +1,313 @@
+.card {
+    background-color: #0E5A57;
+    color: white;
+    box-shadow: var(--shadow, 0 8px 24px rgba(16, 24, 40, .06));
+    border-radius: 35px;
+    padding: 30px;
+    max-width: 600px;
+    margin: 10% 0;
+    font-family: Montserrat;
+    font-weight: 700;
+}
+
+/* .card:focus-within,
+.card:focus-within input,
+.card:focus-within select{
+ background: white;
+ color: black;
+} */
+
+.heading {
+    font-size: 32px;
+    font-weight: 800;
+    text-align: center;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+input,
+select {
+    background-color: #407B79;
+    border: 1px solid #5FA3A0;
+    color: #E2F1EF;
+    padding: 14px 16px;
+    border-radius: 6px;
+    outline: none;
+
+
+}
+
+select {
+    background-color: transparent;
+    color: black;
+}
+
+/* input:focus-within,
+select:focus-within{
+  color: black;
+} */
+
+.card input::placeholder,
+.card textarea::placeholder {
+    color: white;
+    font-weight: 500;
+}
+
+
+
+/* .card:focus-within input::placeholder,
+.card:focus-within textarea::placeholder{
+  color: black;
+} */
+
+textarea {
+    width: 517px;
+    height: 100px;
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 1px solid #5FA3A0;
+    color: #E2F1EF;
+    background-color: #407B79;
+    outline: none;
+}
+
+
+select {
+    color: #ffffff;
+    font-weight: 600;
+
+}
+
+
+select option {
+    color: #000000;
+    font-weight: 500;
+}
+
+/* Chrome, Edge, Safari */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+
+fieldset {
+    /* border: 1px solid #e5e7eb; */
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 12px;
+}
+
+legend {
+    padding: 8px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(240px, 1fr));
+    gap: 12px;
+}
+
+.grid .wide {
+    grid-column: 1 / -1;
+}
+
+.wide input {
+    /* padding: 20px; */
+    height: 100px;
+    border: 2px dashed rgba(255, 255, 255, 0.35);
+    border-radius: 12px;
+    padding: 28px;
+    text-align: center;
+    color: #E6F2F1;
+    background-color: transparent;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.actions {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    /* padding: 10px 98px; */
+    border-radius: 10px;
+    background: white;
+    width: 250px;
+    height: 50px;
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+.error {
+    color: #dc2626;
+}
+
+.div {
+    display: flex;
+    flex-direction: column;
+}
+
+.spinner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.form-card {
+    position: relative;
+    min-height: 600px;
+    /* Adjust height as needed */
+}
+
+/* Wrapper */
+.file-upload {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Hide native input */
+.file-upload input[type="file"] {
+    display: none;
+}
+
+/* Custom upload box */
+.file-box {
+    height: 100px;
+    border: 2px dashed rgba(255, 255, 255, 0.35);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #E6F2F1;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+/* Hover effect */
+.file-box:hover {
+    border-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+
+
+@media (max-width: 1024px) {
+    .card {
+        max-width: 100%;
+        padding: 24px;
+    }
+
+    .heading {
+        font-size: 28px;
+    }
+
+    textarea {
+        width: 100%;
+    }
+
+    button {
+        width: 220px;
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .card {
+        max-width: 100%;
+        padding: 20px;
+        border-radius: 24px;
+    }
+
+    .heading {
+        font-size: 24px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    input,
+    select,
+    textarea {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    textarea {
+        height: 90px;
+    }
+
+    .wide input {
+        height: 90px;
+        padding: 20px;
+        font-size: 14px;
+    }
+
+    button {
+        width: 100%;
+        max-width: 260px;
+        height: 46px;
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .card {
+        padding: 16px;
+        border-radius: 20px;
+    }
+
+    .heading {
+        font-size: 22px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    input,
+    select,
+    textarea {
+        padding: 12px 14px;
+    }
+
+    .wide input {
+        padding: 16px;
+    }
+
+    button {
+        height: 44px;
+        font-size: 15px;
+    }
+}

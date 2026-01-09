@@ -78,6 +78,8 @@ import { KidneyStoneComponent } from './kidney-stone/kidney-stone.component';
 import { HysterectomySurgeryComponent } from './hysterectomy-surgery/hysterectomy-surgery.component';
 import { AclReconstructionComponent } from './acl-reconstruction/acl-reconstruction.component';
 import { SurgeryTreatmentCardComponent } from './surgery-treatment-card/surgery-treatment-card.component';
+import { TieUpPageComponent } from './tie-up-page/tie-up-page.component';
+import { ApplicationFormComponent } from './application-form/application-form.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -177,6 +179,8 @@ const routes: Routes = [
   { path: 'hysterectomy-surgery', component: HysterectomySurgeryComponent },
   { path: 'surgery-card', component: SurgeryTreatmentCardComponent },
   { path: 'acl-reconstruction', component: AclReconstructionComponent },
+  { path: 'tie-up-page', component: TieUpPageComponent },
+  { path: 'application-form', component: ApplicationFormComponent },
 
 
 

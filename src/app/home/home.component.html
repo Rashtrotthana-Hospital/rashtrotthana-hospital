@@ -464,6 +464,56 @@
     </button>
   </div>
 <app-programms></app-programms> -->
+
+    <div class="tie-up-container">
+        <div class="tie-up-right">
+            <div class="tie-up-heading">Corporate Tie-Ups</div>
+            <div class="tie-up-para">At Rashtrotthana Hospital, we believe that employee health directly impacts
+                productivity, morale, and long-term organizational success. At Rashtrotthana Hospital, we believe that
+                employee health directly impacts productivity, morale, and long-term organizational success. </div>
+            <button class="tie-up-btn" [routerLink]="'/tie-up-page'">Know More</button>
+        </div>
+        <div class="tie-up-left">
+            <div class="vertical-cards-wrapper">
+
+                <div class="vertical-row scroll-up">
+                    <div class="vertical-track">
+
+                        <div class="surgery-card" *ngFor="let card of cards">
+                            <img [src]="card.image" [alt]="card.name" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vertical-row scroll-down line-2" >
+                    <div class="vertical-track">
+
+                        <div class="surgery-card" *ngFor="let card of cards">
+                            <img [src]="card.image" [alt]="card.name" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vertical-row scroll-up line-3">
+                    <div class="vertical-track">
+                        <div class="surgery-card" *ngFor="let card of cards">
+                             <img [src]="card.image" [alt]="card.name" />
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+
+
+
+
     <div class="tenth-container">
         <div class="empty">
 

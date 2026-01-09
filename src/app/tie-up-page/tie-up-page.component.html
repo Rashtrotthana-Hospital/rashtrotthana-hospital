@@ -1,0 +1,86 @@
+<div class="tie-up-container">
+    <div class="banner-part">
+        <img src="assets/tie-up-page/banner.png" alt="" class="laptop">
+        <img src="assets/tie-up-page/banner-resp.png" alt="" class="mobile">
+    </div>
+    <div class="banner-content">
+        <div class="">
+            <div class="banner-heading">Corporate Tie-Ups</div>
+            <div class="banner-para">A strong and healthy workforce is essential to organizational success. Through our
+                corporate partnerships, we ensure employees have seamless access to quality, trusted healthcare,
+                supporting their well-being and productivity.</div>
+        </div>
+        <div class="banner-btns">
+            <button class="btn-1" (click)="scrollToSection()">Know More</button>
+            <button class="btn-2" [routerLink]="'/contact-us-bangalore'">Contact Us</button>
+        </div>
+    </div>
+    <div class="content-part" #knowMoreSection>
+        <div class="header-para">
+            At Rashtrotthana Hospital, we believe that employee health directly impacts productivity, morale, and
+            long-term organizational success. Our Corporate Healthcare Tie-Up Program is designed to support
+            organizations with reliable, accessible and affordable healthcare solutions for employees and their
+            families.
+        </div>
+
+        <div class="service-heading">Scope of Corporate Healthcare Services</div>
+        <div class="service-cards">
+            <div class="" *ngFor="let card of cards">
+                <div class="cards" [style.--hover-bg]="card.hoverBg">
+                    <div class="icon-wrapper" [ngStyle]="{ 'background-color': card.bgColor }">
+                        <img [src]="card.icon" alt="" class="svg-icon" />
+                    </div>
+                    <div class="card-heading">{{ card.heading }}</div>
+                    <div class="card-para">{{ card.para }}</div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="structure-card">
+            <div class="structure-heading">Tie-Up Structure</div>
+            <div class="header-para">Corporate associations are governed through a Memorandum of Understanding (MOU)
+                that clearly defines the scope of services, eligibility criteria and applicable benefits for employees
+                and their dependents.</div>
+        </div>
+
+        <div class="corporates">
+
+            <div class="corporates-heading">Our Prestigious Corporates</div>
+            <div class="vertical-cards-wrapper" style="margin-top: 50px;">
+
+                <div class="vertical-row scroll-left">
+                    <div class="vertical-track">
+                        <div class="surgery-card" *ngFor="let card of card">
+                            <img [src]="card.image" [alt]="" />
+                            <div class="name">{{card.name}}</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vertical-row scroll-right">
+                    <div class="vertical-track">
+                        <div class="surgery-card" *ngFor="let card of card">
+                            <img [src]="card.image" [alt]="" />
+                            <div class="name">{{card.name}}</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vertical-row scroll-left">
+                    <div class="vertical-track">
+                        <div class="surgery-card" *ngFor="let card of card">
+                            <img [src]="card.image" [alt]="" />
+                            <div class="name">{{card.name}}</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</div>

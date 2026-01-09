@@ -1,0 +1,67 @@
+<div class="card form-card" tabindex="0">
+    <h2 class="heading">Create Application</h2>
+
+    <!-- <div *ngIf="loading" class="spinner-overlay">
+    <p-progressSpinner></p-progressSpinner>
+  </div> -->
+
+    <!-- Form -->
+    <form [formGroup]="form" (ngSubmit)="submit()">
+        <label>
+            <span>Job *</span>
+            <select formControlName="jobId">
+                <option [ngValue]="null">Select a job</option>
+                <option *ngFor="let j of jobs" [ngValue]="j.id">{{ j.title }}</option>
+            </select>
+        </label>
+
+        <fieldset formGroupName="candidate">
+            <legend>Candidate</legend>
+            <div class="grid">
+                <div class="div">
+                    <input formControlName="name" placeholder="Full name" />
+                    <small class="error" *ngIf="isInvalid('candidate.name')">Name is required</small>
+                </div>
+                <div class="div">
+                    <input formControlName="email" placeholder="name@example.com" />
+                    <small class="error" *ngIf="isInvalid('candidate.email')">Email is required</small>
+                </div>
+                <div class="div">
+                    <input formControlName="phone" type="number"
+                            placeholder="Phone Number" />
+                    <small class="error" *ngIf="isInvalid('candidate.phone')">Phone Number is required </small>
+                </div>
+                <div class="div">
+                    <input formControlName="qualification"
+                            placeholder="Higher Qualification" />
+                    <small class="error" *ngIf="isInvalid('candidate.qualification')">Higher Qualification is
+                        required</small>
+                </div>
+                <div class="div">
+                    <input formControlName="experience" type="number" min="0"
+                            placeholder="Years of Experience" />
+                    <small class="error" *ngIf="isInvalid('candidate.experience')">Experience is required</small>
+                </div>
+                <input formControlName="source"
+                        placeholder="Referral / LinkedIn / ..." />
+                <textarea formControlName="address" placeholder="Address"></textarea>
+                
+                <label class="wide file-upload">
+                    <span>Resume URL</span>
+
+                    <input type="file" (change)="onFileSelected($event)" />
+
+                    <div class="file-box">
+                        {{ selectedResumeFile?.name || 'Choose file' }}
+                    </div>
+                </label>
+
+            </div>
+        </fieldset>
+
+        <div class="actions">
+            <button type="submit" [disabled]="saving">Submit</button>
+            <span class="error" *ngIf="error">{{ error }}</span>
+        </div>
+    </form>
+</div>

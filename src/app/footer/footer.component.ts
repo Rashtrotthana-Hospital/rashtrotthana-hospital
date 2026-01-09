@@ -38,6 +38,9 @@ export class FooterComponent {
   anualReport() {
     this.router.navigate(['/annual-report']);
   }
+  tieups() {
+    this.router.navigate(['/tie-up-page']);
+  }
   facilities() {
     this.router.navigate(['/facility']);
   }

@@ -146,6 +146,8 @@ import { HysterectomySurgeryComponent } from './hysterectomy-surgery/hysterectom
 // import { PilesComponent } from './piles/piles.component';
 import { AclReconstructionComponent } from './acl-reconstruction/acl-reconstruction.component';
 import { SurgeryTreatmentCardComponent } from './surgery-treatment-card/surgery-treatment-card.component';
+import { TieUpPageComponent } from './tie-up-page/tie-up-page.component';
+import { ApplicationFormComponent } from './application-form/application-form.component';
 
 @NgModule({
   declarations: [
@@ -263,6 +265,8 @@ import { SurgeryTreatmentCardComponent } from './surgery-treatment-card/surgery-
     
     AclReconstructionComponent,
           SurgeryTreatmentCardComponent,
+          TieUpPageComponent,
+          ApplicationFormComponent,
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   imports: [

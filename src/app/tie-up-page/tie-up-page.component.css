@@ -1,0 +1,466 @@
+.tie-up-container {
+    margin-top: 120px;
+    background: #FBFFF5;
+    overflow: hidden;
+}
+
+.laptop {
+    width: 100%;
+    height: 636px;
+}
+
+.banner-content {
+    position: absolute;
+    top: 290px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 180px;
+    left: 200px;
+}
+
+.banner-heading {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+}
+
+.banner-para {
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 710px;
+}
+
+.mobile {
+    display: none;
+}
+
+.banner-btns {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-1 {
+    display: flex;
+    width: 260px;
+    height: 52px;
+    /* padding: 10px 140px; */
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    border: 2px solid #022B50;
+    color: #000;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.btn-2 {
+    display: flex;
+    width: 260px;
+    height: 52px;
+    /* padding: 10px 140px; */
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    background: #FBCA51;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border: none;
+}
+
+.content-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.header-para {
+    color: #0E3672;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 20px;
+}
+
+.service-heading {
+    color: #032977;
+    font-family: Poppins;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.service-cards {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cards {
+    width: 400px;
+    height: 325px;
+    border-radius: 20px;
+    background: #ffffff;
+    box-shadow: 3px 4px 12px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 20px;
+    transition:
+        background-color 0.35s ease,
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+.cards:hover {
+    background-color: var(--hover-bg);
+    transform: translateY(-10px);
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.25);
+}
+
+.card-heading {
+    color: #032E52;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 360px;
+}
+
+.card-para {
+    color: #000;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 360px;
+}
+
+.icon-wrapper {
+    width: 75px;
+    height: 75px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.structure-card {
+    width: 1240px;
+    height: 209px;
+    border-radius: 12px;
+    border: 2px solid #043055;
+    background: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+
+}
+
+.structure-heading {
+    display: inline-flex;
+    padding: 10px 60px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 80px;
+    background: linear-gradient(90deg, #3FB0CE 0%, #022B50 100%);
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.corporates {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.corporates-heading {
+    color: #032977;
+    font-family: Poppins;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+    text-align: center;
+}
+
+.vertical-cards-wrapper {
+    display: flex;
+    flex-direction: column;
+    /* gap: 30px; */
+    height: 420px;
+}
+
+.name {
+    color: #191919;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+.vertical-row {
+    width: 100%;
+    height: 120px;
+}
+
+
+.vertical-track {
+    display: flex;
+    gap: 20px;
+    width: max-content;
+    
+}
+
+
+.surgery-card {
+    display: inline-flex;
+    padding: 16px 20px 16px 15px;
+    align-items: center;
+    gap: 15px;
+    border-radius: 8px;
+    border: 1px solid #022B50;
+    background: #FFF;
+    box-shadow: 0 0 1px 0 rgba(31, 34, 41, 0.24), 1px 1px 6px 0 rgba(31, 34, 41, 0.04);
+}
+
+.surgery-card img {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    min-height: 48px;
+    border-radius: 32px;
+    border: 1px solid rgba(31, 120, 255, 0.16);
+    background: lightgray 50% / cover no-repeat;
+    object-fit: contain;
+}
+
+
+.scroll-left .vertical-track {
+    animation: scrollLeft 60s linear infinite;
+}
+
+@keyframes scrollLeft {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+
+.scroll-right .vertical-track {
+    animation: scrollRight 60s linear infinite;
+}
+
+@keyframes scrollRight {
+    from {
+        transform: translateX(-50%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.vertical-row:hover .vertical-track {
+    animation-play-state: paused;
+}
+
+
+@media(max-width:1439px) {
+    .corporates {
+        overflow: hidden;
+    }
+
+    .banner-content {
+        gap: 140px;
+        left: 10px;
+        top: 190px;
+    }
+
+    .structure-card {
+        width: 100%;
+    }
+
+    .laptop{
+        height:auto ;
+    }
+    
+}
+
+@media(max-width:1023px) {
+    .banner-content {
+        left: 40px;
+        gap: 95px;
+    }
+
+    .banner-heading {
+        font-size: 34px;
+    }
+
+    .banner-para {
+        width: 450px;
+        font-size: 14px;
+    }
+
+    .banner-btns {
+        margin-left: 40px;
+    }
+
+    .btn-1,
+    .btn-2 {
+        width: 140px;
+    }
+
+    .structure-card {
+        gap: 30px;
+        height: auto;
+        padding: 20px;
+    }
+
+    .header-para {
+        font-size: 16px;
+
+    }
+
+    .name{
+        font-size: 16px;
+    }
+
+    .tie-up-container{
+        margin-top: 100px;
+    }
+
+}
+
+@media(max-width: 767px) {
+    .laptop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+        width: 100%;
+    }
+
+    .banner-para {
+        display: none;
+    }
+
+    .banner-heading {
+        display: none;
+    }
+
+    .banner-content {
+        left: 0;
+        top: 280px;
+        gap: 240px;
+    }
+
+    .service-heading,
+    .corporates-heading {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .cards {
+        width: 286px;
+        height: auto;
+    }
+
+    .card-heading {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .card-para {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .structure-heading {
+        font-size: 16px;
+    }
+
+    .icon-wrapper {
+        width: 55px;
+        height: 55px;
+    }
+
+    .btn-1,
+    .btn-2 {
+        width: 140px;
+        height: 40px;
+        font-size: 12px;
+    }
+
+    .banner-btns{
+        margin-left: 5px;
+    }
+
+    .vertical-cards-wrapper{
+        overflow-x: hidden !important;
+    }
+    .surgery-card{
+        padding: 10px;
+    }
+    .name{
+        font-size: 12px;
+    }
+    
+    
+}
