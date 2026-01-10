@@ -148,7 +148,7 @@ import { AclReconstructionComponent } from './acl-reconstruction/acl-reconstruct
 import { SurgeryTreatmentCardComponent } from './surgery-treatment-card/surgery-treatment-card.component';
 import { TieUpPageComponent } from './tie-up-page/tie-up-page.component';
 import { ApplicationFormComponent } from './application-form/application-form.component';
-import { CallbackFormComponent } from './callback-form/callback-form.component';
+// import { CallbackFormComponent } from './callback-form/callback-form.component';
 
 @NgModule({
   declarations: [
@@ -268,7 +268,6 @@ import { CallbackFormComponent } from './callback-form/callback-form.component';
           SurgeryTreatmentCardComponent,
           TieUpPageComponent,
           ApplicationFormComponent,
-          CallbackFormComponent,
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   imports: [

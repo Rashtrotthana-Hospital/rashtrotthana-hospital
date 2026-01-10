@@ -849,7 +849,7 @@ export class NewDocPageComponent {
       qualification: "MBBS, MD in General Medicine ",
       time: "",
       date: "",
-      id: 74,
+      id: 78,
       alt: 'Dr. Harshith K. S | Best Internal Medicine Doctor in Bangalore | Rashtrotthan Hospital',
       ttitle: 'Dr. Harshith K.S. | Consultant Physician in Bangalore',
       description: 'Book a consultation with Dr. Harshith K.S., expert in internal medicine, diabetes care and adult chronic disease management in Bangalore.'
