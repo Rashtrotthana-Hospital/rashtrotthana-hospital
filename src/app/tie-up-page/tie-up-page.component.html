@@ -51,7 +51,11 @@
 
                 <div class="vertical-row scroll-left">
                     <div class="vertical-track">
-                        <div class="surgery-card" *ngFor="let card of card">
+                        <div class="surgery-card" *ngFor="let card of card1">
+                            <img [src]="card.image" [alt]="" />
+                            <div class="name">{{card.name}}</div>
+                        </div>
+                        <div class="surgery-card" *ngFor="let card of card1">
                             <img [src]="card.image" [alt]="" />
                             <div class="name">{{card.name}}</div>
                         </div>
@@ -60,7 +64,11 @@
 
                 <div class="vertical-row scroll-right">
                     <div class="vertical-track">
-                        <div class="surgery-card" *ngFor="let card of card">
+                        <div class="surgery-card" *ngFor="let card of card2">
+                            <img [src]="card.image" [alt]="" />
+                            <div class="name">{{card.name}}</div>
+                        </div>
+                        <div class="surgery-card" *ngFor="let card of card2">
                             <img [src]="card.image" [alt]="" />
                             <div class="name">{{card.name}}</div>
                         </div>
@@ -69,7 +77,11 @@
 
                 <div class="vertical-row scroll-left">
                     <div class="vertical-track">
-                        <div class="surgery-card" *ngFor="let card of card">
+                        <div class="surgery-card" *ngFor="let card of card3">
+                            <img [src]="card.image" [alt]="" />
+                            <div class="name">{{card.name}}</div>
+                        </div>
+                        <div class="surgery-card" *ngFor="let card of card3">
                             <img [src]="card.image" [alt]="" />
                             <div class="name">{{card.name}}</div>
                         </div>

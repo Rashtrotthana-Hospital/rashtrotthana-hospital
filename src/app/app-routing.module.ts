@@ -80,6 +80,7 @@ import { AclReconstructionComponent } from './acl-reconstruction/acl-reconstruct
 import { SurgeryTreatmentCardComponent } from './surgery-treatment-card/surgery-treatment-card.component';
 import { TieUpPageComponent } from './tie-up-page/tie-up-page.component';
 import { ApplicationFormComponent } from './application-form/application-form.component';
+import { CallbackFormComponent } from './callback-form/callback-form.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -181,6 +182,7 @@ const routes: Routes = [
   { path: 'acl-reconstruction', component: AclReconstructionComponent },
   { path: 'tie-up-page', component: TieUpPageComponent },
   { path: 'application-form', component: ApplicationFormComponent },
+  { path: 'callback-form', component: CallbackFormComponent },
 
 
 
