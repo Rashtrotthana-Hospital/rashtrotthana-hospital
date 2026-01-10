@@ -309,4 +309,25 @@ journeyData:any = [
     { title: 'Insurance & Corporate Tie-ups', description: 'Empanelment with leading corporate partners and TPAs.' },
   ]
 
+
+  cards = [
+  { name: 'Toyota', image: 'assets/tie-up-page/img-1.png' },
+  { name: 'Arvind Store', image: 'assets/tie-up-page/img-2.png' },
+  { name: 'Toyota', image: 'assets/tie-up-page/img-3.png' },
+  { name: 'Chinmaya', image: 'assets/tie-up-page/img-4.png' },
+  { name: 'Good Shepherd', image: 'assets/tie-up-page/img-5.png' },
+  { name: 'Chinmaya', image: 'assets/tie-up-page/img-6.png' },
+  { name: 'Toyota', image: 'assets/tie-up-page/img-8.png' },
+  { name: 'Arvind Store', image: 'assets/tie-up-page/img-9.png' },
+  { name: 'Toyota', image: 'assets/tie-up-page/img-10.png' },
+  { name: 'Chinmaya', image: 'assets/tie-up-page/img-11.png' },
+  { name: 'Good Shepherd', image: 'assets/tie-up-page/img-12.png' },
+  { name: 'Chinmaya', image: 'assets/tie-up-page/img-13.png' },
+  { name: 'Chinmaya', image: 'assets/tie-up-page/img-14.png' },
+  { name: 'Chinmaya', image: 'assets/tie-up-page/img-15.png' },
+  { name: 'Chinmaya', image: 'assets/tie-up-page/img-16.png' },
+  
+];
+
+
 }
