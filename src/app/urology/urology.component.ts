@@ -96,7 +96,7 @@ export class UrologyComponent {
       ],
       highlight: 'This procedure helps you get back to normal life quickly, free from the fear and pain of kidney stones.',
       icon: '🔬',
-      slug: '/kidney-stone'
+      slug: '/kidney-stone-surgery-bangalore'
     },
     {
       id: 'ursl',

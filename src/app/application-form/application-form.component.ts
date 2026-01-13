@@ -19,7 +19,7 @@ export class ApplicationFormComponent implements OnInit {
   private messageService = inject(MessageService);
 
   // jobs: Job[] = [];
-  jobs: { id: number; title: string }[] = [];
+  // jobs: { id: number; title: string }[] = [];
   loading = true;
   saving = false;
   error?: string;
@@ -40,32 +40,32 @@ export class ApplicationFormComponent implements OnInit {
     }),
   });
 
-  // ngOnInit(): void {
-  //   const jobIdFromQuery = Number(this.route.snapshot.queryParamMap.get('jobId'));
-  //   if (jobIdFromQuery) {
-  //     this.form.patchValue({ jobId: jobIdFromQuery });
-  //   }
-
-
-
-  //   this.api.listJobs({ status: 'OPEN', pageSize: 100 }).subscribe({
-  //     next: (res) => {
-  //       this.jobs = res.rows;
-  //       this.loading = false;
-  //     },
-  //     error: () => {
-  //       this.loading = false;
-  //     }
-  //   });
-  // }
-
   ngOnInit(): void {
-    // Temporary data for dropdown
-    this.jobs = [
-      { id: 1, title: 'Frontend Developer' },
-      { id: 2, title: 'Backend Developer' }
-    ];
+    const jobIdFromQuery = Number(this.route.snapshot.queryParamMap.get('jobId'));
+    if (jobIdFromQuery) {
+      this.form.patchValue({ jobId: jobIdFromQuery });
+    }
+
+
+
+    // this.api.listJobs({ status: 'OPEN', pageSize: 100 }).subscribe({
+    //   next: (res) => {
+    //     this.jobs = res.rows;
+    //     this.loading = false;
+    //   },
+    //   error: () => {
+    //     this.loading = false;
+    //   }
+    // });
   }
+
+  // ngOnInit(): void {
+  //   // Temporary data for dropdown
+  //   this.jobs = [
+  //     { id: 1, title: 'Frontend Developer' },
+  //     { id: 2, title: 'Backend Developer' }
+  //   ];
+  // }
 
   submit(): void {
     this.error = undefined;
@@ -112,6 +112,46 @@ export class ApplicationFormComponent implements OnInit {
 
     console.log(this.form.value.candidate);
   }
+
+  // submit(): void {
+  //   this.error = undefined;
+
+  //   if (this.form.invalid) {
+  //     this.form.markAllAsTouched();
+  //     return;
+  //   }
+
+  //   if (!this.selectedResumeFile) {
+  //     this.messageService.add({
+  //       severity: 'error',
+  //       summary: 'Error',
+  //       detail: 'Please upload your resume!',
+  //     });
+  //     return;
+  //   }
+
+  //   this.saving = true;
+
+
+  //   setTimeout(() => {
+
+  //     this.messageService.add({
+  //       severity: 'success',
+  //       summary: 'Application Submitted',
+  //       detail: 'Your application has been submitted successfully!',
+  //     });
+
+  //     console.log(this.form.value.candidate);
+  //     this.form.reset();
+  //     this.selectedResumeFile = undefined;
+  //     this.form.patchValue({ jobId: null });
+
+  //     this.saving = false;
+  //   }, 800);
+
+
+  // }
+
 
   onFileSelected(event: Event): void {
     const input = event.target as HTMLInputElement;

@@ -1,0 +1,101 @@
+<div class="callback-container">
+    <header class="callback-header">
+        <h2>Get a Callback</h2>
+        <!-- <p>Enter your details and we’ll call you back shortly</p> -->
+    </header>
+
+    <!-- Loader Overlay -->
+    <div *ngIf="isSending || isVerifying" class="loading-overlay">
+        <div class="spinner"></div>
+        <p class="loading-text">
+            {{ isVerifying ? 'Verifying OTP...' : 'Sending OTP...' }}
+        </p>
+    </div>
+
+    <main class="callback-form">
+
+        <!-- STEP 1 : NAME + MOBILE -->
+        <form #callbackForm="ngForm" *ngIf="!otpSent && !successMessage" novalidate>
+            <!-- Name -->
+            <div class="form-group">
+                <label>Name *</label>
+                <input type="text" name="name" class="form-control" required minlength="3" [(ngModel)]="formData.name"
+                    #name="ngModel" />
+
+                <div class="error" *ngIf="name.invalid && (name.dirty || name.touched)">
+                    <small *ngIf="name.errors?.['required']">
+                        Name is required
+                    </small>
+                    <small *ngIf="name.errors?.['minlength']">
+                        Minimum 3 characters required
+                    </small>
+                </div>
+            </div>
+
+            <!-- Mobile -->
+            <div class="form-group">
+                <label>Mobile Number *</label>
+                <input type="tel" name="mobile" class="form-control" required pattern="^[6-9][0-9]{9}$"
+                    [(ngModel)]="formData.mobile" #mobile="ngModel" />
+
+                <div class="error" *ngIf="mobile.invalid && (mobile.dirty || mobile.touched)">
+                    <small *ngIf="mobile.errors?.['required']">
+                        Mobile number is required
+                    </small>
+                    <small *ngIf="mobile.errors?.['pattern']">
+                        Enter a valid 10-digit mobile number
+                    </small>
+                </div>
+            </div>
+
+            <!-- hCaptcha -->
+            <div class="captcha-box">
+                <ng-hcaptcha [siteKey]="hsiteKey" (verify)="onCaptchaVerify($event)" (expired)="onCaptchaExpire()"
+                    (error)="onCaptchaError($event)">
+                </ng-hcaptcha>
+
+                <small class="error" *ngIf="!captchaVerified">
+                    Please complete the captcha verification
+                </small>
+            </div>
+
+        
+
+            <!-- Send OTP -->
+            <!-- <button type="button" class="submit-btn" [disabled]="!callbackForm.valid || isSending" -->
+            <button type="button" class="submit-btn" [disabled]="!callbackForm.valid || !captchaVerified || isSending"
+                (click)="sendOtp(callbackForm)">
+                {{ isSending ? 'Sending OTP...' : 'Send OTP' }}
+            </button>
+        </form>
+
+        <!-- STEP 2 : OTP -->
+        <div *ngIf="showOTP && !otpVerified && !successMessage" class="otp-section">
+            <h3>Verify OTP</h3>
+            <p>We have sent a 6-digit OTP to your mobile number</p>
+
+            <input type="text" maxlength="6" minlength="6" class="otp-input" placeholder="Enter OTP"
+                [(ngModel)]="formData.otp" />
+
+            <div class="otp-actions">
+                <button class="verify-btn" (click)="verifyOtp()" [disabled]="isVerifying">
+                    {{ isVerifying ? 'Verifying...' : 'Verify OTP' }}
+                </button>
+
+                <button class="resend-btn" (click)="resendOtp()" [disabled]="resendTimer > 0">
+                    Resend OTP
+                    <span *ngIf="resendTimer > 0">
+                        ({{ formattedResendTime }})
+                    </span>
+                </button>
+            </div>
+        </div>
+
+        <!-- STEP 3 : SUCCESS -->
+        <div *ngIf="successMessage" class="success-message">
+            <h3>Success 🎉</h3>
+            <p>{{ successMessage }}</p>
+        </div>
+
+    </main>
+</div>

@@ -134,7 +134,7 @@ export class ObstetricsGynaecologyComponent {
         highlight:
           'Patients often experience lasting relief from symptoms, improved comfort, and a better quality of life after surgery.',
         icon: '⚕️',
-        slug: '/hysterectomy-surgery'
+        slug: '/hysterectomy-surgery-bangalore'
       },
     ]
   };

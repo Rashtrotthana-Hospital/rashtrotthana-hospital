@@ -148,7 +148,8 @@ import { AclReconstructionComponent } from './acl-reconstruction/acl-reconstruct
 import { SurgeryTreatmentCardComponent } from './surgery-treatment-card/surgery-treatment-card.component';
 import { TieUpPageComponent } from './tie-up-page/tie-up-page.component';
 import { ApplicationFormComponent } from './application-form/application-form.component';
-// import { CallbackFormComponent } from './callback-form/callback-form.component';
+import { NgHcaptchaModule } from 'ng-hcaptcha';
+import { CallBackFormComponent } from './call-back-form/call-back-form.component';
 
 @NgModule({
   declarations: [
@@ -268,6 +269,7 @@ import { ApplicationFormComponent } from './application-form/application-form.co
           SurgeryTreatmentCardComponent,
           TieUpPageComponent,
           ApplicationFormComponent,
+          CallBackFormComponent,
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   imports: [
@@ -292,12 +294,14 @@ import { ApplicationFormComponent } from './application-form/application-form.co
     CascadeSelectModule,
     CalendarModule,
     InfiniteScrollModule,
-    CdkAriaLive
+    CdkAriaLive,
+    NgHcaptchaModule.forRoot()
+    
 ],
   providers: [
     MessageService,
     ContactFormService,
-    provideAnimationsAsync()
+    provideAnimationsAsync(),
   ],
   bootstrap: [AppComponent]
 })

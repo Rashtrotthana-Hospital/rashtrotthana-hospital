@@ -156,7 +156,7 @@ export class GeneralSurgeryComponent implements OnInit {
         highlight:
           'Patients often experience immediate relief from pain and digestive discomfort, leading to improved comfort and a better quality of daily life.',
         icon: '🪨',
-        slug: '/gallstone-removal-surgery'
+        slug: '/gallstone-removal-surgery-bangalore'
       },
 
       {

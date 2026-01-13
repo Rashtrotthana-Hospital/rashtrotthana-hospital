@@ -157,7 +157,7 @@ export class OrthopedicsComponent {
         highlight:
           'Patients often notice steady improvement in mobility, confidence, and knee function—supporting a safe return to an active lifestyle.',
         icon: '🏃‍♂️',
-        slug: '/acl-reconstruction'
+        slug: '/acl-reconstruction-surgery-bangalore'
       },
 
       {

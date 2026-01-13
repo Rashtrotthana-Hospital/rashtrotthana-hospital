@@ -221,7 +221,7 @@
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://www.rashtrotthanahospital.com/doctor/dr-sowmya-bhat-s</loc>
+        <loc>https://www.rashtrotthanahospital.com/doctor/dr-sowmya-s-bhat</loc>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -722,6 +722,11 @@
     </url>
     <url>
         <loc>https://www.rashtrotthanahospital.com/blog/diabetic-foot-care-prevention-management-and-advanced-treatment</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.rashtrotthanahospital.com/blog/thyroid-health-what-you-should-know-and-how-to-take-care-of-it</loc>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>

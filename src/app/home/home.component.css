@@ -1383,7 +1383,7 @@ li {
 }
 
 .scroll-up .vertical-track {
-  animation: scrollUp 25s linear infinite;
+  animation: scrollUp 10s linear infinite;
 }
 
 @keyframes scrollUp {
@@ -1397,7 +1397,7 @@ li {
 }
 
 .scroll-down .vertical-track {
-  animation: scrollDown 25s linear infinite;
+  animation: scrollDown 10s linear infinite;
 }
 
 @keyframes scrollDown {

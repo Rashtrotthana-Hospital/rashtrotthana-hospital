@@ -19,14 +19,14 @@ export class HysterectomySurgeryComponent {
 
   ngOnInit() {
     this.titleService.setTitle(
-      'Gall Stone Removal Surgery in Bangalore | Rashtrotthana Hospitall'
+      'Hysterectomy Surgery in Bangalore | Trusted Women’s Carel'
     );
 
     // Set the meta description
     this.metaService.updateTag({
       name: 'description',
       content:
-        "Get safe and advanced gall stone removal surgery in Bangalore at Rashtrotthana Hospital. Experienced surgeons, minimally invasive care & faster recovery.",
+        "Rashtrotthana Hospital provides safe hysterectomy surgery in Bangalore with experienced gynecologists, modern techniques & complete post-op care.",
     });
 
     // Optionally set other meta tags

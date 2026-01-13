@@ -2,9 +2,9 @@
 
   <!-- hero section -->
   <div class="speciality-header">
-    <img src="../../assets/hernia-banner-desktop.png" class="desktop"
+    <img src="assets/hernia/Hernia - Banner - 10-1-26.png" class="desktop"
       alt="Hernia Surgery Package Banner of Rashtrotthana Hospital Bangalore" />
-    <img src="../../assets/hernia-banner.png" class="mobile"
+    <img src="assets/hernia/Hernia Mobile Size -10-1-26.png" class="mobile"
       alt="Hernia Surgery Package Banner of Rashtrotthana Hospital Bangalore">
     <div class="header_button">
       <button class="appointment" (click)="scrollToForm()">Book an Appointment</button>
@@ -146,7 +146,8 @@
       </div>
 
       <div class="form-sidebar" #formSection>
-        <app-speciality-form [doctor]="formdoctors"/>
+        <!-- <app-speciality-form [doctor]="formdoctors"/> -->
+         <app-call-back-form [pageName]="'Hernia Surgery'"></app-call-back-form>
       </div>
     </div>
 
