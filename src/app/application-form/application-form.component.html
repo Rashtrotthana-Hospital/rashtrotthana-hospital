@@ -11,7 +11,7 @@
             <span>Job *</span>
             <select formControlName="jobId">
                 <option [ngValue]="null">Select a job</option>
-                <option *ngFor="let j of jobs" [ngValue]="j.id">{{ j.title }}</option>
+                <!-- <option *ngFor="let j of jobs" [ngValue]="j.id">{{ j.title }}</option> -->
             </select>
         </label>
 
@@ -23,7 +23,7 @@
                     <small class="error" *ngIf="isInvalid('candidate.name')">Name is required</small>
                 </div>
                 <div class="div">
-                    <input formControlName="email" placeholder="name@example.com" />
+                    <input formControlName="email" placeholder="Email ID" />
                     <small class="error" *ngIf="isInvalid('candidate.email')">Email is required</small>
                 </div>
                 <div class="div">

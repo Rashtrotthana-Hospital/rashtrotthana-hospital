@@ -54,53 +54,53 @@ export class HealthCheckupComponent {
   activeIndex: number | null = null;
 
   packages: Package[] = [
-    {
-      slug: '',
-      title: 'Senior Citizen Health Package',
-      price: 1999,
-      packageId: 11,
-      package: [
-        {
-          title: 'BLOOD TEST',
-          items: [
-            'Blood Sugar - Fasting',
-            'Blood Sugar - Post Prandial',
-            'Complete Blood Count',
-            'HBA1C',
-            'TSH',
-            'Creatinine',
-            'SGOT',
-            'SGPT',
-            'Total Cholesterol',
-            'PSA (For Men)',
-            'Urine Complete Analysis',
-          ],
-          icon: 'blood',
-        },
-        {
-          title: 'CARDIAC EVALUATION',
-          items: ['ECG', 'Echo Cardiogram', 'Audiometry'],
-          icon: 'cardiac',
-        },
-        {
-          title: 'RADIOLOGY',
-          items: [
-            'X-ray - Chest',
-            'Ultrasound Whole Abdomen',
-            'Mammography - Bilateral (For Women)',
-          ],
-          icon: 'radiology',
-        },
-        {
-          title: 'CONSULTATIONS',
-          items: ['Physician', 'Ayurveda', 'Lifestyle', 'ENT', 'Homeopathy'],
-          icon: 'speciality',
-        },
-      ],
-      ageGroup: '55 Years & Above',
-      validTill: "31st December, 2025",
-      test: '22',
-    },
+    // {
+    //   slug: '',
+    //   title: 'Senior Citizen Health Package',
+    //   price: 1999,
+    //   packageId: 11,
+    //   package: [
+    //     {
+    //       title: 'BLOOD TEST',
+    //       items: [
+    //         'Blood Sugar - Fasting',
+    //         'Blood Sugar - Post Prandial',
+    //         'Complete Blood Count',
+    //         'HBA1C',
+    //         'TSH',
+    //         'Creatinine',
+    //         'SGOT',
+    //         'SGPT',
+    //         'Total Cholesterol',
+    //         'PSA (For Men)',
+    //         'Urine Complete Analysis',
+    //       ],
+    //       icon: 'blood',
+    //     },
+    //     {
+    //       title: 'CARDIAC EVALUATION',
+    //       items: ['ECG', 'Echo Cardiogram', 'Audiometry'],
+    //       icon: 'cardiac',
+    //     },
+    //     {
+    //       title: 'RADIOLOGY',
+    //       items: [
+    //         'X-ray - Chest',
+    //         'Ultrasound Whole Abdomen',
+    //         'Mammography - Bilateral (For Women)',
+    //       ],
+    //       icon: 'radiology',
+    //     },
+    //     {
+    //       title: 'CONSULTATIONS',
+    //       items: ['Physician', 'Ayurveda', 'Lifestyle', 'ENT', 'Homeopathy'],
+    //       icon: 'speciality',
+    //     },
+    //   ],
+    //   ageGroup: '55 Years & Above',
+    //   validTill: "31st December, 2025",
+    //   test: '22',
+    // },
     {
       slug: "",
       title: 'Basic Diabetic Care',

@@ -216,10 +216,9 @@
 </div> -->
 
 <div class="banner">
-    <div class="">
         <img src="assets/allergy-clinic/allergy-banner.png" alt="" class="banner-img">
         <img src="assets/allergy-clinic/allergy-banner-resp.png" alt="" class="banner-resp">
-    </div>
+    
     <!-- <div class="banner-content">
         <img src="assets/allergy-clinic/Gemini_Generated_Image_9x187i9x187i9x18 1.png" alt="">
         <div class="bannercontent">
@@ -229,47 +228,51 @@
         </div>
     </div> -->
 
-    <button class="banner-btn" (click)="openPopup()">Book an Appointment</button>
+    <div style="background: #FBFFF5; ">
+        <button class="banner-btn" (click)="openPopup()">Book an Appointment</button>
+    </div>
 </div>
 <div class="allergy">
-    <div class="timing-card">
-        <div class="card">
-            <div class="">
-                <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
-                    <path
-                        d="M4.66699 25C4.66699 12.113 15.1133 1.66663 28.0003 1.66663C40.8873 1.66663 51.3337 12.113 51.3337 25C51.3337 37.887 40.8873 48.3333 28.0003 48.3333C15.1133 48.3333 4.66699 37.887 4.66699 25Z"
-                        stroke="black" stroke-width="2" stroke-linecap="square" />
-                    <path d="M28 12.1666V25L35 32" stroke="black" stroke-width="2" stroke-linecap="square" />
-                </svg>
+    <div style="display: flex; align-items: center; justify-content: center; ">
+        <div class="timing-card">
+            <div class="card">
+                <div class="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
+                        <path
+                            d="M4.66699 25C4.66699 12.113 15.1133 1.66663 28.0003 1.66663C40.8873 1.66663 51.3337 12.113 51.3337 25C51.3337 37.887 40.8873 48.3333 28.0003 48.3333C15.1133 48.3333 4.66699 37.887 4.66699 25Z"
+                            stroke="black" stroke-width="2" stroke-linecap="square" />
+                        <path d="M28 12.1666V25L35 32" stroke="black" stroke-width="2" stroke-linecap="square" />
+                    </svg>
+                </div>
+
+                <div class="">
+                    <div class="Clinic-heading">Clinic Timings :</div>
+                    <div class="Clinic-para">Every Friday, 3 PM – 4 PM</div>
+                </div>
             </div>
-    
-            <div class="">
-                <div class="Clinic-heading">Clinic Timings :</div>
-                <div class="Clinic-para">Every Friday, 3 PM – 4 PM</div>
-            </div>
-        </div>
-    
-        <div class="card">
-            <div class="">
-                <svg xmlns="http://www.w3.org/2000/svg" width="59" height="59" viewBox="0 0 59 59" fill="none">
-                    <path
-                        d="M9.02242 21.0679V24.6816H4.20409L1.79492 30.7045L4.20409 36.7274H9.02242V40.3412L13.8408 42.7504L18.6591 40.3412V21.0679L13.8408 18.6587L9.02242 21.0679ZM54.7966 24.6816H49.9783V21.0679L45.1599 18.6587L40.3416 21.0679V40.3412L45.1599 42.7504L49.9783 40.3412V36.7274H54.7966L57.2058 30.7045L54.7966 24.6816Z"
-                        fill="black" />
-                    <path
-                        d="M18.6591 30.7046V40.3413L13.8408 42.7504L9.02242 40.3413V30.7046H18.6591ZM1.79492 30.7046L4.20409 36.7275H9.02242V30.7046H1.79492ZM40.3416 30.7046V40.3413L45.1599 42.7504L49.9783 40.3413V30.7046H40.3416Z"
-                        fill="black" />
-                    <path
-                        d="M57.2059 30.7046L54.7967 36.7275H49.9784V30.7046H57.2059ZM35.5234 51.1825H25.8867V56.0008H35.5234V51.1825Z"
-                        fill="black" />
-                    <path
-                        d="M13.8408 18.6587L9.02242 21.0679V40.3412L13.8408 42.7504L18.6591 40.3412V21.0679L13.8408 18.6587ZM13.8408 18.6587V10.2266L29.5003 2.99915L45.1599 10.2266V18.6587M45.1599 42.7504L49.9783 40.3412V21.0679L45.1599 18.6587M45.1599 42.7504L40.3416 40.3412V21.0679L45.1599 18.6587M45.1599 42.7504V47.5687L40.3416 53.5916H35.5233M9.02242 36.7275H4.20409L1.79492 30.7046L4.20409 24.6816H9.02242V36.7275ZM49.9783 36.7275H54.7966L57.2058 30.7046L54.7966 24.6816H49.9783V36.7275ZM35.5233 51.1825H25.8866V56.0008H35.5233V51.1825Z"
-                        stroke="#092F63" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-            </div>
-    
-            <div class="">
-                <div class="Clinic-heading">Consultations : </div>
-                <div class="Clinic-para">One-on-one sessions with experienced allergy specialists</div>
+
+            <div class="card">
+                <div class="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="59" height="59" viewBox="0 0 59 59" fill="none">
+                        <path
+                            d="M9.02242 21.0679V24.6816H4.20409L1.79492 30.7045L4.20409 36.7274H9.02242V40.3412L13.8408 42.7504L18.6591 40.3412V21.0679L13.8408 18.6587L9.02242 21.0679ZM54.7966 24.6816H49.9783V21.0679L45.1599 18.6587L40.3416 21.0679V40.3412L45.1599 42.7504L49.9783 40.3412V36.7274H54.7966L57.2058 30.7045L54.7966 24.6816Z"
+                            fill="black" />
+                        <path
+                            d="M18.6591 30.7046V40.3413L13.8408 42.7504L9.02242 40.3413V30.7046H18.6591ZM1.79492 30.7046L4.20409 36.7275H9.02242V30.7046H1.79492ZM40.3416 30.7046V40.3413L45.1599 42.7504L49.9783 40.3413V30.7046H40.3416Z"
+                            fill="black" />
+                        <path
+                            d="M57.2059 30.7046L54.7967 36.7275H49.9784V30.7046H57.2059ZM35.5234 51.1825H25.8867V56.0008H35.5234V51.1825Z"
+                            fill="black" />
+                        <path
+                            d="M13.8408 18.6587L9.02242 21.0679V40.3412L13.8408 42.7504L18.6591 40.3412V21.0679L13.8408 18.6587ZM13.8408 18.6587V10.2266L29.5003 2.99915L45.1599 10.2266V18.6587M45.1599 42.7504L49.9783 40.3412V21.0679L45.1599 18.6587M45.1599 42.7504L40.3416 40.3412V21.0679L45.1599 18.6587M45.1599 42.7504V47.5687L40.3416 53.5916H35.5233M9.02242 36.7275H4.20409L1.79492 30.7046L4.20409 24.6816H9.02242V36.7275ZM49.9783 36.7275H54.7966L57.2058 30.7046L54.7966 24.6816H49.9783V36.7275ZM35.5233 51.1825H25.8866V56.0008H35.5233V51.1825Z"
+                            stroke="#092F63" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+
+                <div class="">
+                    <div class="Clinic-heading">Consultations : </div>
+                    <div class="Clinic-para">One-on-one sessions with experienced allergy specialists</div>
+                </div>
             </div>
         </div>
     </div>
@@ -301,7 +304,7 @@
     </div>
 
     <div class="about-part">
-        <div >
+        <div>
             <img src="assets/allergy-clinic/Group 1411.png" alt="" class="about-img">
         </div>
         <div class="">
@@ -328,7 +331,7 @@
     <div class="symtoms-part mt">
         <div class="symtoms-heading">Symptoms</div>
         <div class="symptoms">
-            <div >
+            <div>
                 <img src="assets/allergy-clinic/allergy-symptoms.jpg" alt="" class="symtoms-img">
             </div>
             <div class="symtoms-content">
@@ -353,7 +356,7 @@
     <div class="symtoms-part mt">
         <div class="symtoms-heading">Skin Allergies</div>
         <div class="symptoms">
-            <div >
+            <div>
                 <img src="assets/allergy-clinic/person-dealing-with-rosacea.png" alt="" class="symtoms-img">
             </div>
             <div class="symtoms-content">
@@ -383,7 +386,13 @@
                 design personalized care plans that target your specific triggers and symptoms.</div>
         </div>
         <div class="treatment-box">
-            <img src="assets/allergy-clinic/doctor-holding-sign-his-hands-with-word-allergy 1.png" alt="" class="allergy-img">
+            <!-- <img src="assets/allergy-clinic/doctor-holding-sign-his-hands-with-word-allergy 1.png" alt="" class="allergy-img"> -->
+            <div class="central-media">
+                <video autoplay loop muted playsinline>
+                    <source src="assets/allergy-clinic/allergy-clinic.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+            </div>
             <div class="treatment-cards-1">
                 <div class="">
                     <div class="treatment-card-heading">Allergen Avoidance</div>
@@ -410,7 +419,8 @@
                 <img src="assets/allergy-clinic/imune.png" alt="">
                 <div class="">
                     <div class="treatment-card-heading tr">Immunotherapy</div>
-                    <div class="treatment-card-para tr">Allergy shots or sublingual tablets to build long-term resistance</div>
+                    <div class="treatment-card-para tr">Allergy shots or sublingual tablets to build long-term
+                        resistance</div>
                 </div>
 
             </div>
@@ -430,7 +440,8 @@
             <div class="flex">
                 <div class="timings">
                     <div class="time">Allergy Clinic Timings: <br> <span>Every Friday | 3:00 PM – 4:00 PM</span></div>
-                    <div class="call">Call <span><a href="tel:08069239999">080 6923 9999</a></span> to book your appointment</div>
+                    <div class="call">Call <span><a href="tel:08069239999">080 6923 9999</a></span> to book your
+                        appointment</div>
                 </div>
                 <button class="btn" (click)="openPopup()">Book an Appointment</button>
             </div>

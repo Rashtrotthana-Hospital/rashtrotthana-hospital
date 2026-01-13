@@ -179,7 +179,7 @@
     justify-content: center;
 }
 
-.icon-wrapper img{
+.icon-wrapper img {
     width: 50px;
     height: 50px;
 }
@@ -265,7 +265,7 @@
     display: flex;
     gap: 20px;
     width: max-content;
-    
+
 }
 
 
@@ -297,26 +297,26 @@
 }
 
 @keyframes scrollLeft {
-    from {
+    0% {
         transform: translateX(0);
     }
 
-    to {
+    100% {
         transform: translateX(-50%);
     }
 }
 
-
+/* Scroll Right Animation */
 .scroll-right .vertical-track {
     animation: scrollRight 60s linear infinite;
 }
 
 @keyframes scrollRight {
-    from {
+    0% {
         transform: translateX(-50%);
     }
 
-    to {
+    100% {
         transform: translateX(0);
     }
 }
@@ -341,10 +341,10 @@
         width: 100%;
     }
 
-    .laptop{
-        height:auto ;
+    .laptop {
+        height: auto;
     }
-    
+
 }
 
 @media(max-width:1023px) {
@@ -382,11 +382,11 @@
 
     }
 
-    .name{
+    .name {
         font-size: 16px;
     }
 
-    .tie-up-container{
+    .tie-up-container {
         margin-top: 100px;
     }
 
@@ -453,19 +453,21 @@
         font-size: 12px;
     }
 
-    .banner-btns{
+    .banner-btns {
         margin-left: 5px;
     }
 
-    .vertical-cards-wrapper{
+    .vertical-cards-wrapper {
         overflow-x: hidden !important;
     }
-    .surgery-card{
+
+    .surgery-card {
         padding: 10px;
     }
-    .name{
+
+    .name {
         font-size: 12px;
     }
-    
-    
+
+
 }

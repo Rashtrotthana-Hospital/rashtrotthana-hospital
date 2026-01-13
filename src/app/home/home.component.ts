@@ -1,6 +1,6 @@
-import { Component,OnInit, ElementRef, ViewChild } from '@angular/core';
+import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
-import { Title, Meta,DomSanitizer,SafeHtml } from '@angular/platform-browser'; 
+import { Title, Meta, DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { ActivatedRoute } from '@angular/router';
 import { ViewportScroller } from '@angular/common';
 
@@ -9,73 +9,73 @@ import { ViewportScroller } from '@angular/common';
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
-export class HomeComponent implements OnInit {  
-  constructor(private router: Router, private titleService: Title,  
+export class HomeComponent implements OnInit {
+  constructor(private router: Router, private titleService: Title,
     private metaService: Meta,
-    private route: ActivatedRoute, private viewportScroller: ViewportScroller) {}
+    private route: ActivatedRoute, private viewportScroller: ViewportScroller) { }
   @ViewChild('counterSection', { static: true }) counterSection!: ElementRef;
   stopcounters: any[] = [];
   doctors: number = 0;
-  patients:number=0;
-  established:number=0;
-  bed:number=0;
-  insurance:number=0;
+  patients: number = 0;
+  established: number = 0;
+  bed: number = 0;
+  insurance: number = 0;
   selectedSpecialty: string = '';
   selectedDepartment: string = '';
   isDepartmentDisabled: boolean = true;
 
 
-  
+
   navigateToPage() {
     this.router.navigate(['/about-us']);
     console.log('About Us');
   }
-  donate(){
+  donate() {
 
     this.router.navigate(['/donate-to-hospital-bangalore']);
   }
-  emergency(){
+  emergency() {
     this.router.navigate(['best-emergency-trauma-multispeciality-hospital-bangalore']);
   }
-  lab(){
+  lab() {
     this.router.navigate(['laboratory-services-bangalore']);
   }
-  radiology(){
+  radiology() {
     this.router.navigate(['top-diagnostics-multi-speciality-hospital-bangalore']);
   }
-  pharmacy(){
+  pharmacy() {
     this.router.navigate(['24-hours-pharmacy-store-bangalore']);
   }
-  dialysis(){
+  dialysis() {
     this.router.navigate(['best-kidney-dialysis-multispeciality-hospital-bangalore']);
   }
-  tkr(){
+  tkr() {
     this.router.navigate(['/total-knee-replacement-bangalore']);
   }
-  hernia(){
+  hernia() {
     this.router.navigate(['/hernia-hospital-bangalore']);
   }
-  proctology(){
+  proctology() {
     this.router.navigate(['/piles-hospital-bangalore']);
   }
-  allergyClinic(){
+  allergyClinic() {
     this.router.navigate(['/allergy-clinic-in-bangalore']);
-  } 
-  diabeticFoot(){
+  }
+  diabeticFoot() {
     this.router.navigate(['/diabetic-foot-clinic-in-bangalore']);
   }
-  
+
   showContent: any = 'default';
-  showTitle:any = 'default'
+  showTitle: any = 'default'
   showImage: any = 'default';
 
-// counter:number= 0;
-// stopcounter:any=setInterval(()=>{
-// this.counter++;
-// if(this.counter==100){
-//   clearInterval(this.stopcounter);
-// }
-// },10);
+  // counter:number= 0;
+  // stopcounter:any=setInterval(()=>{
+  // this.counter++;
+  // if(this.counter==100){
+  //   clearInterval(this.stopcounter);
+  // }
+  // },10);
   features = [
     {
       name: 'Yoga',
@@ -84,7 +84,7 @@ export class HomeComponent implements OnInit {
       key: 'yoga',
       image: 'yoga-hover.png',
       url: 'yoga-therapy-bangalore',
-      alt : 'best yoga hospital in rrnagar'
+      alt: 'best yoga hospital in rrnagar'
     },
     {
       name: 'Naturopathy',
@@ -93,7 +93,7 @@ export class HomeComponent implements OnInit {
       key: 'naturopathy',
       image: 'naturopathy-hover.png',
       url: 'lifestyle-medicine-bangalore',
-      alt : 'best naturopathy hospital in rrnagar'
+      alt: 'best naturopathy hospital in rrnagar'
     },
     {
       name: 'Modern Medicine',
@@ -102,7 +102,7 @@ export class HomeComponent implements OnInit {
       key: 'modern-medicine',
       image: 'modern-medicine-hover.png',
       url: '/specialities/best-modern-medicine-hospital-in-bangalore',
-      alt : 'best modern medicine hospital in rrnagar'
+      alt: 'best modern medicine hospital in rrnagar'
     },
     {
       name: 'Ayurveda',
@@ -111,7 +111,7 @@ export class HomeComponent implements OnInit {
       key: 'ayurveda',
       image: 'ayurveda-hover.png',
       url: 'ayurvedic-treatment-bangalore',
-      alt : 'best ayurveda hospital in rrnagar'
+      alt: 'best ayurveda hospital in rrnagar'
     },
     {
       name: 'Homeopathy',
@@ -120,7 +120,7 @@ export class HomeComponent implements OnInit {
       key: 'homeopathy',
       image: 'Homeopaathy-hover.png',
       url: 'homeopathy-treatment-bangalore',
-      alt : 'best homeopathy hospital in rrnagar'
+      alt: 'best homeopathy hospital in rrnagar'
     }
   ];
   navigateTo(url: string) {
@@ -130,10 +130,10 @@ export class HomeComponent implements OnInit {
   onMouseOver(key: string) {
     this.showContent = key;
     this.showTitle = key;
-    this.showImage =  key;
+    this.showImage = key;
   };
 
-  onMouseOut(){
+  onMouseOut() {
     this.showContent = 'default';
     this.showTitle = 'default';
     this.showImage = 'default';
@@ -147,156 +147,156 @@ export class HomeComponent implements OnInit {
     'ayurveda': 'Ayurveda is a system of medicine with historical roots in the Indian subcontinent. Globalized and modernized practices derived from Ayurveda traditions are a type of alternative medicine.',
     'homeopathy': "Homeopathy is a natural healing system that believes ' like cure like ' the idea that a substance causing symptoms in a healthy person can be used in tiny, highly diluted doses to treat similar symptoms in sick person. This gentle approach aims  to stimulate the body's self healing processes using carefully prepared remedies tailored to each person's unique needs. Trusted for centuries, homeopathy offers a holistic, individualised path to wellness by addressing both mind and body with no side effects."
   };
-  
-title:any ={
-  'default': '',
-  'yoga': 'Yoga',
-  'naturopathy': 'Lifestyle',
-  'modern-medicine': 'Modern Medicine',
-  'ayurveda': 'Ayurveda',
-  'homeopathy': 'Homeopathy'
-}
-image:any ={
-  'default': 'assets/best_multispeciality_hospital_near_me.png',
-  'yoga': 'assets/yoga-outline.png',
-  'naturopathy': 'assets/naturopathy-outline.png',
-  'modern-medicine': 'assets/medicine-outline.png',
-  'ayurveda': 'assets/ayurveda-outline.png',
-  'homeopathy': 'assets/homeopathy-outline.png'
-}
-// <div class="box">
-//         <img src="../../assets/doctor-icon.png">
-//         <div class="number">
-//             {{counter}}
-//         </div>
-//         <div class="statement">
-//             Doctors At Work
-//         </div>
-//     </div>
+
+  title: any = {
+    'default': '',
+    'yoga': 'Yoga',
+    'naturopathy': 'Lifestyle',
+    'modern-medicine': 'Modern Medicine',
+    'ayurveda': 'Ayurveda',
+    'homeopathy': 'Homeopathy'
+  }
+  image: any = {
+    'default': 'assets/best_multispeciality_hospital_near_me.png',
+    'yoga': 'assets/yoga-outline.png',
+    'naturopathy': 'assets/naturopathy-outline.png',
+    'modern-medicine': 'assets/medicine-outline.png',
+    'ayurveda': 'assets/ayurveda-outline.png',
+    'homeopathy': 'assets/homeopathy-outline.png'
+  }
+  // <div class="box">
+  //         <img src="../../assets/doctor-icon.png">
+  //         <div class="number">
+  //             {{counter}}
+  //         </div>
+  //         <div class="statement">
+  //             Doctors At Work
+  //         </div>
+  //     </div>
 
 
-onSubmit(form: any) {
-  console.log("form")
-  if (form.valid) {
-    this.router.navigate(['/doctor'], {
-      queryParams: {
-        specialty: this.selectedSpecialty,
-        department: this.selectedDepartment
+  onSubmit(form: any) {
+    console.log("form")
+    if (form.valid) {
+      this.router.navigate(['/doctor'], {
+        queryParams: {
+          specialty: this.selectedSpecialty,
+          department: this.selectedDepartment
+        }
+      });
+    }
+  }
+  onSpecialtyChange() {
+    if (this.selectedSpecialty === 'generalMedicine') {
+      this.isDepartmentDisabled = false;
+    } else {
+      this.isDepartmentDisabled = true;
+      this.selectedDepartment = ''; // Reset department if it's disabled
+    }
+  }
+
+  ngOnInit() {
+    const options = {
+      root: null, // Use the viewport as the root
+      threshold: 0.5 // Trigger when 50% of the section is visible
+    };
+    this.route.fragment.subscribe(fragment => {
+      if (fragment) {
+        setTimeout(() => {
+          this.viewportScroller.scrollToAnchor(fragment);
+        }, 100); // slight delay ensures DOM is ready
       }
     });
-  }
-}
-onSpecialtyChange() {
-  if (this.selectedSpecialty === 'generalMedicine') {
-    this.isDepartmentDisabled = false;
-  } else {
-    this.isDepartmentDisabled = true;
-    this.selectedDepartment = ''; // Reset department if it's disabled
-  }
-}
+    this.titleService.setTitle("Best Multispeciality Hospital In Bangalore");
 
-ngOnInit(){
-  const options = {
-    root: null, // Use the viewport as the root
-    threshold: 0.5 // Trigger when 50% of the section is visible
-  };
-  this.route.fragment.subscribe(fragment => {
-    if (fragment) {
-      setTimeout(() => {
-        this.viewportScroller.scrollToAnchor(fragment);
-      }, 100); // slight delay ensures DOM is ready
-    }
-  });
-  this.titleService.setTitle("Best Multispeciality Hospital In Bangalore");  
-    
-  // Set the meta description
-  this.metaService.updateTag({ name: 'description', content: 'Rashtrotthana Hospital - Best multispeciality hospital in Bangalore offering world-class healthcare and treatments at affordable costs.' });
+    // Set the meta description
+    this.metaService.updateTag({ name: 'description', content: 'Rashtrotthana Hospital - Best multispeciality hospital in Bangalore offering world-class healthcare and treatments at affordable costs.' });
 
-  // Optionally set other meta tags
-  this.metaService.updateTag({ name: 'keywords', content: 'Best Multispeciality Hospital In Bangalore, Top Hospital in Bangalore, Rashtrotthana Hospital' }); 
+    // Optionally set other meta tags
+    this.metaService.updateTag({ name: 'keywords', content: 'Best Multispeciality Hospital In Bangalore, Top Hospital in Bangalore, Rashtrotthana Hospital' });
 
-  const observer = new IntersectionObserver(this.startCounter.bind(this), options);
+    const observer = new IntersectionObserver(this.startCounter.bind(this), options);
     observer.observe(this.counterSection.nativeElement);
 
     console.log('Observer initialized');
-}
-startCounter(entries: IntersectionObserverEntry[], observer: IntersectionObserver) {
-  entries.forEach(entry => {
-    console.log('Intersection entry:', entry);
-    if (entry.isIntersecting) {
-      console.log('Section is intersecting, starting counter');
+  }
+  startCounter(entries: IntersectionObserverEntry[], observer: IntersectionObserver) {
+    entries.forEach(entry => {
+      console.log('Intersection entry:', entry);
+      if (entry.isIntersecting) {
+        console.log('Section is intersecting, starting counter');
 
-      this.incrementCounter(0);
-      this.incrementCounter(1);
-      this.incrementCounter(2);
-      this.incrementCounter(3);
-      this.incrementCounter(4);
+        this.incrementCounter(0);
+        this.incrementCounter(1);
+        this.incrementCounter(2);
+        this.incrementCounter(3);
+        this.incrementCounter(4);
 
-      observer.unobserve(entry.target); // Stop observing once counter starts
-    }
-  });
-}
+        observer.unobserve(entry.target); // Stop observing once counter starts
+      }
+    });
+  }
 
-incrementCounter(index: number) {
-  const target = this.box[index].target;
-  const duration = 2000; // Duration in milliseconds
-  const intervalTime = 10; // Interval time in milliseconds
-  const totalSteps = duration / intervalTime;
-  const incrementStep = Math.ceil(target / totalSteps);
-  this.stopcounters[index] = setInterval(() => {
-    if (this.box[index].number < target) {
-      this.box[index].number = Math.min(this.box[index].number + incrementStep, target);
-    } else {
-      clearInterval(this.stopcounters[index]);
-    }
-  }, intervalTime);
-}
+  incrementCounter(index: number) {
+    const target = this.box[index].target;
+    const duration = 2000; // Duration in milliseconds
+    const intervalTime = 10; // Interval time in milliseconds
+    const totalSteps = duration / intervalTime;
+    const incrementStep = Math.ceil(target / totalSteps);
+    this.stopcounters[index] = setInterval(() => {
+      if (this.box[index].number < target) {
+        this.box[index].number = Math.min(this.box[index].number + incrementStep, target);
+      } else {
+        clearInterval(this.stopcounters[index]);
+      }
+    }, intervalTime);
+  }
 
-box=[{
-  icon:'doctor-icon.png',
-  number:0,
-  target:100,
-  statement:'Doctors at work',
-  showPlus: true 
-},
-{
-  icon:'patient-icon.png',
-  number:0,
-  target:50000,
-  statement:'Happy Patients',
-  showPlus: true 
-},
-{
-  icon:'hospital-icon.png',
-  number:0,
-  target:2022,
-  statement:'Established'
-},
-{
-  icon:'bed-icon.png',
-  number:0,
-  target:150,
-  statement:'Medical Beds',
-  showPlus: true 
-},
-{
-  icon:'Staff.png',
-  number:0,
-  target:25,
-  statement:'Insurance Tie Up '
-}
-]
-slidearray = [
-  { img: '../../assets/testinomials_female_icon.png', review: "Good establishment for medical care. Patients are more likely to place their trust in a physician like Dr. Manisha who demonstrates real concern for her patients. Having the atmosphere of one's own home. exceptional attention paid to the maintaining of cleanliness, as well as really helpful and kind staff members. The entirety of this is satisfactory; but, I do have one suggestion: would it be possible for you to please open all of the other super speciality departments? Because of this, there will be no need for us to locate for another hospital because all of the amenities would be located in the same location. RR Nagar Bengaluru", name: 'Tejaswini Gowda', place: 'Bengaluru' },
-  { img: '../../assets/testinomials_male_icon.png', review: "Two weeks ago, I visited the hospital for my brother's admission. It was a very clean atmosphere. and courteous employees... Doctors as well as nurses are very respectful and qualified", name: 'Sathya Narayana', place: 'Bengaluru' },
-  { img: '../../assets/testinomials_male_icon.png', review: "I have admitted under Dr.Nishanth pai ayurveda, they have treated me very well. Service is too good. I came from Telangana for the treatment.I felt I'm in safe hands. Thank you", name: 'Anil Pawar', place: 'Bengaluru' },
-  { img: '../../assets/testinomials_female_icon.png', review: "I consulted Dr.Manisha (gastro general surgeon). Best in her field. And very helpful. Also consulted Dr.Anand Shankar, Very caring and motivating person. Thank you so much to both doctors and team.", name: 'Seema Katti', place: 'Bengaluru' },
-  { img: '../../assets/testinomials_female_icon.png', review: "We went here for a radiographs and the process was very smooth. Charges were also very reasonable. The infrastructure looks very promising and this hospital has a great future if they get a team of exceptional doctors.", name: 'Hema Rudrappa', place: 'Bengaluru' },
-  { img: '../../assets/testinomials_female_icon.png', review: "Excellent health care services with clean and hygienic conditions token of thanks to the doctors and excellent housekeeping Vinod, Rajini, Snega and others are very cooperating. Good catering and patient wellness. Overall great recovery ", name: 'Sholenkee Mitra', place: 'Bengaluru' },
-  { img: '../../assets/testinomials_male_icon.png', review: "I had a great experience at Rashtrotthana Hospital. The staff were extremely friendly and helpful and the facilities were modern and clean. My mother felt like she was in very safe hands throughout the procedure, thanks to their top-notch medical care. I would highly recommend this hospital to anyone looking for quality health care services.", name: 'Rajeev VK', place: 'California' }
-];
+  box = [{
+    icon: 'doctor-icon.png',
+    number: 0,
+    target: 100,
+    statement: 'Doctors at work',
+    showPlus: true
+  },
+  {
+    icon: 'patient-icon.png',
+    number: 0,
+    target: 50000,
+    statement: 'Happy Patients',
+    showPlus: true
+  },
+  {
+    icon: 'hospital-icon.png',
+    number: 0,
+    target: 2022,
+    statement: 'Established'
+  },
+  {
+    icon: 'bed-icon.png',
+    number: 0,
+    target: 150,
+    statement: 'Medical Beds',
+    showPlus: true
+  },
+  {
+    icon: 'Staff.png',
+    number: 0,
+    target: 25,
+    statement: 'Insurance Tie Up '
+  }
+  ]
+  slidearray = [
+    { img: '../../assets/testinomials_female_icon.png', review: "Good establishment for medical care. Patients are more likely to place their trust in a physician like Dr. Manisha who demonstrates real concern for her patients. Having the atmosphere of one's own home. exceptional attention paid to the maintaining of cleanliness, as well as really helpful and kind staff members. The entirety of this is satisfactory; but, I do have one suggestion: would it be possible for you to please open all of the other super speciality departments? Because of this, there will be no need for us to locate for another hospital because all of the amenities would be located in the same location. RR Nagar Bengaluru", name: 'Tejaswini Gowda', place: 'Bengaluru' },
+    { img: '../../assets/testinomials_male_icon.png', review: "Two weeks ago, I visited the hospital for my brother's admission. It was a very clean atmosphere. and courteous employees... Doctors as well as nurses are very respectful and qualified", name: 'Sathya Narayana', place: 'Bengaluru' },
+    { img: '../../assets/testinomials_male_icon.png', review: "I have admitted under Dr.Nishanth pai ayurveda, they have treated me very well. Service is too good. I came from Telangana for the treatment.I felt I'm in safe hands. Thank you", name: 'Anil Pawar', place: 'Bengaluru' },
+    { img: '../../assets/testinomials_female_icon.png', review: "I consulted Dr.Manisha (gastro general surgeon). Best in her field. And very helpful. Also consulted Dr.Anand Shankar, Very caring and motivating person. Thank you so much to both doctors and team.", name: 'Seema Katti', place: 'Bengaluru' },
+    { img: '../../assets/testinomials_female_icon.png', review: "We went here for a radiographs and the process was very smooth. Charges were also very reasonable. The infrastructure looks very promising and this hospital has a great future if they get a team of exceptional doctors.", name: 'Hema Rudrappa', place: 'Bengaluru' },
+    { img: '../../assets/testinomials_female_icon.png', review: "Excellent health care services with clean and hygienic conditions token of thanks to the doctors and excellent housekeeping Vinod, Rajini, Snega and others are very cooperating. Good catering and patient wellness. Overall great recovery ", name: 'Sholenkee Mitra', place: 'Bengaluru' },
+    { img: '../../assets/testinomials_male_icon.png', review: "I had a great experience at Rashtrotthana Hospital. The staff were extremely friendly and helpful and the facilities were modern and clean. My mother felt like she was in very safe hands throughout the procedure, thanks to their top-notch medical care. I would highly recommend this hospital to anyone looking for quality health care services.", name: 'Rajeev VK', place: 'California' }
+  ];
 
-journeyData:any = [
+  journeyData: any = [
     { title: 'Founded', description: 'December 2022, with a vision to deliver compassionate, high-quality healthcare.' },
     { title: 'Initial Milestone', description: 'Achieved NABH Entry Level Certification in December 2023.' },
     { title: 'Full Accreditation', description: 'Within 3 years, we reached NABH Full Level Accreditation - a rare feat with one of the fewest number of NCs in such a short time.' },
@@ -311,23 +311,43 @@ journeyData:any = [
 
 
   cards = [
-  { name: 'Toyota', image: 'assets/tie-up-page/img-1.png' },
-  { name: 'Arvind Store', image: 'assets/tie-up-page/img-2.png' },
-  { name: 'Toyota', image: 'assets/tie-up-page/img-3.png' },
-  { name: 'Chinmaya', image: 'assets/tie-up-page/img-4.png' },
-  { name: 'Good Shepherd', image: 'assets/tie-up-page/img-5.png' },
-  { name: 'Chinmaya', image: 'assets/tie-up-page/img-6.png' },
-  { name: 'Toyota', image: 'assets/tie-up-page/img-8.png' },
-  { name: 'Arvind Store', image: 'assets/tie-up-page/img-9.png' },
-  { name: 'Toyota', image: 'assets/tie-up-page/img-10.png' },
-  { name: 'Chinmaya', image: 'assets/tie-up-page/img-11.png' },
-  { name: 'Good Shepherd', image: 'assets/tie-up-page/img-12.png' },
-  { name: 'Chinmaya', image: 'assets/tie-up-page/img-13.png' },
-  { name: 'Chinmaya', image: 'assets/tie-up-page/img-14.png' },
-  { name: 'Chinmaya', image: 'assets/tie-up-page/img-15.png' },
-  { name: 'Chinmaya', image: 'assets/tie-up-page/img-16.png' },
-  
-];
+    { name: 'Toyota', image: 'assets/tie-up-page/img-1.png' },
+    { name: 'Arvind Store', image: 'assets/tie-up-page/img-2.png' },
+    { name: 'Toyota', image: 'assets/tie-up-page/img-3.png' },
+    { name: 'Chinmaya', image: 'assets/tie-up-page/img-4.png' },
+    { name: 'Good Shepherd', image: 'assets/tie-up-page/img-5.png' },
+    { name: 'Arvind Store', image: 'assets/tie-up-page/img-9.png' },
+    { name: 'Toyota', image: 'assets/tie-up-page/img-10.png' },
+    { name: 'Chinmaya', image: 'assets/tie-up-page/img-15.png' },
+    { name: 'Chinmaya', image: 'assets/tie-up-page/img-16.png' },
+
+  ];
+
+  cards1 = [
+
+    { name: 'Arvind Store', image: 'assets/tie-up-page/img-2.png' },
+    { name: 'Toyota', image: 'assets/tie-up-page/img-3.png' },
+    { name: 'Good Shepherd', image: 'assets/tie-up-page/img-5.png' },
+    { name: 'Chinmaya', image: 'assets/tie-up-page/img-6.png' },
+    { name: 'Toyota', image: 'assets/tie-up-page/img-8.png' },
+    { name: 'Arvind Store', image: 'assets/tie-up-page/img-9.png' },
+    { name: 'Toyota', image: 'assets/tie-up-page/img-10.png' },
+    { name: 'Chinmaya', image: 'assets/tie-up-page/img-15.png' },
+    { name: 'Chinmaya', image: 'assets/tie-up-page/img-16.png' },
+
+  ]
+
+  cards2 = [
+    { name: 'Toyota', image: 'assets/tie-up-page/img-10.png' },
+    { name: 'Chinmaya', image: 'assets/tie-up-page/img-11.png' },
+    { name: 'Good Shepherd', image: 'assets/tie-up-page/img-12.png' },
+    { name: 'Arvind Store', image: 'assets/tie-up-page/img-2.png' },
+    { name: 'Toyota', image: 'assets/tie-up-page/img-3.png' },
+    { name: 'Chinmaya', image: 'assets/tie-up-page/img-13.png' },
+    { name: 'Chinmaya', image: 'assets/tie-up-page/img-14.png' },
+    { name: 'Chinmaya', image: 'assets/tie-up-page/img-15.png' },
+    { name: 'Chinmaya', image: 'assets/tie-up-page/img-16.png' },
+  ]
 
 
 }

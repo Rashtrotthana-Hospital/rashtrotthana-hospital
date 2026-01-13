@@ -39,7 +39,7 @@
     text-transform: uppercase;
 }
 
-.bannercontent{
+.bannercontent {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -83,10 +83,10 @@
     border-radius: 15px;
     background: #FFD901;
     box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.25);
-    margin-top: 30px;
-    position: absolute;
-    top: 640px;
-    right: 320px;
+    /* margin-top: 30px; */
+    position: relative;
+    top: -300px;
+    left: 63%;
 }
 
 .banner-content img {
@@ -105,8 +105,8 @@
     align-items: center;
     justify-content: space-evenly;
     position: relative;
-    top: -30px;
-    left: 80px;
+    top: -130px;
+    /* left: 80px; */
 }
 
 .card {
@@ -151,6 +151,23 @@
 
 }
 
+.central-media {
+    position: relative;
+    width: 637px;
+    height: 425px;
+    /* aspect-ratio: 637/425; */
+    border-radius: 212.5px;
+    overflow: hidden;
+
+}
+
+.central-media video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
 .service-part {
     width: auto;
     height: auto;
@@ -193,7 +210,7 @@
     display: flex;
     gap: 40px;
     align-items: center;
-    justify-content:center ;
+    justify-content: center;
 }
 
 .service-card {
@@ -281,6 +298,7 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
+    align-items: center;
 }
 
 .symtoms-heading {
@@ -412,28 +430,28 @@
     display: flex;
     align-items: center;
     padding: 20px;
-    position: absolute;
+    position: relative;
     gap: 20px;
 }
 
 .treatment-cards-1 {
-    top: 75%;
-    left: 216px;
+    top: -37%;
+    left: -372px;
 }
 
 .treatment-cards-2 {
-    top: 82%;
-    left: 300px;
+    top: -26%;
+    left: -288px;
 }
 
 .treatment-cards-3 {
-    top: 73%;
-    right: 245px;
+    top: -73%;
+    right: -350px;
 }
 
 .treatment-cards-4 {
-    top: 80%;
-    right: 206px;
+    top: -60%;
+    right: -377px;
 }
 
 .treatment-box {
@@ -583,7 +601,7 @@
     line-height: normal;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -620,9 +638,9 @@ a{
         height: 67px;
         padding: 24px 0px;
         font-size: 28px;
-        top: 50%;
-        
-        right: 13%;
+         position: relative;
+        top: -190px;
+        left: 53%;
     }
 
     .timing-card {
@@ -736,7 +754,7 @@ a{
         font-size: 20px;
     } */
 
-        .bannercontent{
+    .bannercontent {
         /* margin-left: 50px; */
         display: flex;
         flex-direction: column;
@@ -745,7 +763,7 @@ a{
         margin-left: 30px;
     }
 
-    .banner-sub-heading{
+    .banner-sub-heading {
         width: 425px;
     }
 }
@@ -783,8 +801,9 @@ a{
         font-size: 16px;
         padding: 16px;
         margin-top: 0;
-        top: 61%;
-        right: 14%;
+        position: absolute;
+        top: 70%;
+        left: 53%;
     }
 
     .banner-content img {
@@ -793,6 +812,7 @@ a{
 
     .timing-card {
         flex-direction: column;
+        top: 0;
     }
 
     .service-heading {
@@ -930,7 +950,7 @@ a{
         font-size: 16px;
     }
 
-        .bannercontent{
+    .bannercontent {
         margin-left: 70px;
         display: flex;
         flex-direction: column;
@@ -949,9 +969,10 @@ a{
         flex-direction: column-reverse;
     }
 
-    .banner-img{
+    .banner-img {
         display: none;
     }
+
     .banner-resp {
         display: block;
         width: 100%;
@@ -979,26 +1000,28 @@ a{
     .banner-btn {
         font-size: 12px;
         width: 85%;
-        right: 30px;
-        top: 72%;
+        position: relative;
+        top: 61%;
+        left: 13%;
     }
 
-    .card-heading{
+    .card-heading {
         font-size: 18px;
     }
 
-    .service-card{
+    .service-card {
         gap: 10px;
     }
 
-    .card-para{
+    .card-para {
         font-size: 16px;
     }
-    .content{
+
+    .content {
         margin-left: 0;
     }
 
-    .bannercontent{
+    .bannercontent {
         margin-left: 70px;
         display: flex;
         flex-direction: column;
@@ -1006,9 +1029,17 @@ a{
         gap: 30px;
     }
 
-    .allergy{
+    .allergy {
         margin-top: 20px;
     }
+
+    .central-media {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        /* aspect-ratio: 637/425; */
+        border-radius: 212.5px;
+        overflow: hidden;
+
+    }
 }
-
-

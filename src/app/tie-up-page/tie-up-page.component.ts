@@ -68,9 +68,12 @@ export class TieUpPageComponent {
     { name: 'CHINMAYA VIDYALAYA, BANASHANKARI', image: 'assets/tie-up-page/img-3.png' },
     { name: 'ARVIND LIMITED', image: 'assets/tie-up-page/img-4.png' },
     { name: 'Federal Bank', image: 'assets/tie-up-page/img-5.png' },
+    { name: 'GOOD SHEPHERD INSTITUTION', image: 'assets/tie-up-page/img-6.png' },
   ];
 
   card2 = [
+    { name: 'TOYOTA KIRLOSKAR MOTOR PRIVATE LIMITED', image: 'assets/tie-up-page/img-1.png' },
+    { name: 'ARYAN OPULENCE', image: 'assets/tie-up-page/img-2.png' },
     { name: 'GOOD SHEPHERD INSTITUTION', image: 'assets/tie-up-page/img-6.png' },
     { name: 'INDO AMERICAN HIGH BREED SEEDS', image: 'assets/tie-up-page/img-8.png' },
     { name: 'STAFF DISCOUNT POLICY OF RASHTROTTHANA PARISHAT', image: 'assets/tie-up-page/img-9.png' },

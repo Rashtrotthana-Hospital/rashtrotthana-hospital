@@ -80,7 +80,7 @@ import { AclReconstructionComponent } from './acl-reconstruction/acl-reconstruct
 import { SurgeryTreatmentCardComponent } from './surgery-treatment-card/surgery-treatment-card.component';
 import { TieUpPageComponent } from './tie-up-page/tie-up-page.component';
 import { ApplicationFormComponent } from './application-form/application-form.component';
-// import { CallbackFormComponent } from './callback-form/callback-form.component';
+import { CallBackFormComponent } from './call-back-form/call-back-form.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -101,7 +101,7 @@ const routes: Routes = [
       { path: 'best-urology-hospital-in-bangalore', component: UrologyComponent },
       { path: 'best-orthopaedics-hospital-in-bangalore', component: OrthopedicsComponent },
       { path: 'best-gastroenterology-hospital-in-bangalore', component: GastrosciencesComponent },
-      { path: 'best-cardiology-hospital-in-bangalore', component: CardiacComponent},
+      { path: 'best-cardiology-hospital-in-bangalore', component: CardiacComponent },
       { path: 'best-pulmonology-hospital-in-bangalore', component: PulmonologyComponent },
       { path: 'best-eye-hospital-in-bangalore', component: OphthalmologyComponent },
       { path: 'best-dental-hospital-in-bangalore', component: DentalComponent },
@@ -133,7 +133,7 @@ const routes: Routes = [
   { path: 'lifestyle-medicine-bangalore', component: NaturopathyComponent },
   { path: 'advisory-board-members', component: AdvisoryBoardMembersComponent },
   { path: 'ethical-committee', component: EthicCommitteeComponent },
-  { path: 'health-package/:slug', component:HealthCheckComponent },
+  { path: 'health-package/:slug', component: HealthCheckComponent },
 
 
 
@@ -175,22 +175,22 @@ const routes: Routes = [
   { path: 'maternity-care', component: MaternityComponent },
   { path: 'tonsillectomy-surgery-in-bangalore', component: TonsillectomyComponent },
   { path: 'adenoidectomy-surgery-in-bangalore', component: AdenoidectomyComponent },
-  { path: 'gallstone-removal-surgery', component: GallstoneRemovalSurgeryComponent },
-  { path: 'kidney-stone', component: KidneyStoneComponent },
-  { path: 'hysterectomy-surgery', component: HysterectomySurgeryComponent },
+  { path: 'gallstone-removal-surgery-bangalore', component: GallstoneRemovalSurgeryComponent },
+  { path: 'kidney-stone-surgery-bangalore', component: KidneyStoneComponent },
+  { path: 'hysterectomy-surgery-bangalore', component: HysterectomySurgeryComponent },
   { path: 'surgery-card', component: SurgeryTreatmentCardComponent },
-  { path: 'acl-reconstruction', component: AclReconstructionComponent },
+  { path: 'acl-reconstruction-surgery-bangalore', component: AclReconstructionComponent },
   { path: 'tie-up-page', component: TieUpPageComponent },
   { path: 'application-form', component: ApplicationFormComponent },
-  // { path: 'callback-form', component: CallbackFormComponent },
+  { path: 'callback-form', component: CallBackFormComponent },
 
 
 
-  
+
   { path: 'ayurvedic-thyroid-treatment', component: AyurvedaThyroidComponent },
   { path: 'mathrubhava-treatment', component: MuthrubhavaComponent },
   { path: 'thank-you', component: ThankYouComponent },
-  { path: 'annual-report', component: AnnualReportComponent},
+  { path: 'annual-report', component: AnnualReportComponent },
   {
     path: 'doctor/:slug',
     component: NewDocPageComponent
@@ -205,8 +205,8 @@ const routes: Routes = [
   // integrated clinics      
   { path: "diabetic-foot-clinic-in-bangalore", component: DiabeticFoot },
   { path: "allergy-clinic-in-bangalore", component: AllergieClinic },
-  { path: 'heart-problems-in-winter',component: WinterCardiologyComponent },
-  
+  { path: 'heart-problems-in-winter', component: WinterCardiologyComponent },
+
 
   { path: 'blog', component: BlogComponent },
   { path: 'blog/:slug', component: BlogPostComponent },

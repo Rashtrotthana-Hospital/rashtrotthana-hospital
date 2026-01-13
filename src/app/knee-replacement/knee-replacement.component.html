@@ -2,9 +2,9 @@
 
     <!-- hero section -->
     <div class="speciality-header">
-        <img src="../../assets/total-knee-replacement-banner.png" class="desktop"
+        <img src="assets/tkr/JMRH - knee Replacement -10-1-26.png" class="desktop"
             alt="Total Knee Replacement Banner of Rashtrotthana Hospital Bangalore" />
-        <img src="../../assets/total-knee-replacement-mobile-banner.png" class="mobile"
+        <img src="assets/tkr/JMRH - Knee Replacement - mobile size 10-1-26.png" class="mobile"
             alt="Total Knee Replacement Banner of Rashtrotthana Hospital Bangalore">
         <div class="header_button">
             <button class="appointment" (click)="scrollToForm()">Book an Appointment</button>
@@ -225,7 +225,8 @@
             </div>
 
             <div class="form-sidebar" #formSection>
-                <app-speciality-form [doctor]="formdoctors" />
+                <!-- <app-speciality-form [doctor]="formdoctors" /> -->
+                 <app-call-back-form [pageName]="'Total Knee Replacement'"></app-call-back-form>
             </div>
         </div>
 

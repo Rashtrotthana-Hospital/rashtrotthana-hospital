@@ -9,8 +9,8 @@
 
 .header_button {
   display: flex;
-  justify-content: end;
-  margin-right: 18%;
+  justify-content: start;
+  margin-left: 8%;
 }
 
 .contact_button {
@@ -386,6 +386,7 @@
   .header_button {
     justify-content: center;
     width: 100%;
+    margin-left: 0;
   }
 
   .s_h1 {
@@ -405,12 +406,16 @@
     font-size: 16px;
   }
 
-  .contact_button {
+  /* .contact_button {
     height: 62px;
-  }
+  } */
 
-  .appointment {
-    height: 62px;
+  .appointment ,
+  .contact_button{
+    /* height: 62px; */
+    font-size: 12px;
+    padding: 10px;
+
   }
 
   .process-line {
