@@ -185,8 +185,8 @@
 }
 
 .structure-card {
-    width: 1240px;
-    height: 209px;
+    width: 100%;
+    height: auto;
     border-radius: 12px;
     border: 2px solid #043055;
     background: #FFF;
@@ -195,6 +195,7 @@
     align-items: center;
     justify-content: space-evenly;
     padding: 10px;
+    margin-left: 30px;
 
 }
 
@@ -325,6 +326,14 @@
     animation-play-state: paused;
 }
 
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.form-card{
+    width: 100%;
+}
 
 @media(max-width:1439px) {
     .corporates {
@@ -388,6 +397,15 @@
 
     .tie-up-container {
         margin-top: 100px;
+    }
+
+    .structure-card{
+        margin: 10px;
+    }
+
+    .flex{
+        flex-wrap: wrap;
+        gap: 30px;
     }
 
 }

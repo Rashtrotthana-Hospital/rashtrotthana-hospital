@@ -1,4 +1,6 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Component, ElementRef, ViewChild, Renderer2  } from '@angular/core';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
+
 
 @Component({
   selector: 'app-tie-up-page',
@@ -15,6 +17,31 @@ export class TieUpPageComponent {
       block: 'start'
     });
   }
+
+  // elfsightUrl: SafeResourceUrl;
+
+  constructor(private renderer: Renderer2) {
+    // this.elfsightUrl = this.sanitizer.bypassSecurityTrustResourceUrl(
+    //   'https://apps.elfsight.com/p/platform/?p=delay&app=7759e6bd-a4b0-4835-bad7-66c88fc58ec3'
+    // );
+  } 
+
+
+  ngOnInit() {
+    this.loadElfsightScript();
+  }
+
+  loadElfsightScript() {
+    // Check if script already exists to avoid duplicates
+    if (!document.querySelector('script[src="https://elfsightcdn.com/platform.js"]')) {
+      const script = this.renderer.createElement('script');
+      script.src = 'https://elfsightcdn.com/platform.js';
+      script.async = true;
+      this.renderer.appendChild(document.body, script);
+    }
+  }
+
+  
 
 
   cards = [
