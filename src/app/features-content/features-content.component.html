@@ -13,8 +13,20 @@
         <div class="content-container" [innerHTML]="content_1">
         </div>
         <div class="image-container">
-            <img class="image" [src]="'../../assets/' + image_1" [alt]="alt2">
-            <img class="image" [src]="'../../assets/' + image_2" [alt]="alt3">
+            <img
+          *ngIf="image_1"
+          class="image"
+          [src]="'assets/' + image_1"
+          [alt]="alt2"
+        />
+
+        <img
+          *ngIf="image_2"
+          class="image"
+          [src]="'assets/' + image_2"
+          [alt]="alt3"
+        />
+            
         </div>
     </div>
     <div>

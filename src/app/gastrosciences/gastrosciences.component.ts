@@ -24,12 +24,12 @@ export class GastrosciencesComponent {
   }
 
   doctors = [
-    {
-      doctor_image:'../../assets/Dr-Ajay-N.png',
-      doctor_name:'Dr. Ajay N',
-      experience : "2",
-      docalt : 'Dr. Ajay N | Best Gastro Doctor in Bangalore | Rashtrotthana Hospital'
-    },
+    // {
+    //   doctor_image:'../../assets/Dr-Ajay-N.png',
+    //   doctor_name:'Dr. Ajay N',
+    //   experience : "2",
+    //   docalt : 'Dr. Ajay N | Best Gastro Doctor in Bangalore | Rashtrotthana Hospital'
+    // },
     {
       doctor_image : '../../assets/Dr-Man-Mohan-U-S.png',
       doctor_name : 'Dr. Man Mohan U. S',

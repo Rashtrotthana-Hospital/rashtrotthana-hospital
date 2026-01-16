@@ -30,11 +30,11 @@ export class AbulanceComponent {
         heading: 'Ambulance Services',
         content: `Rashtrotthana Hospital provides 24/7 ambulance services with two fully equipped Advanced Life Support (ALS) ambulances to respond promptly to <a href="https://en.wikipedia.org/wiki/Critical_emergency_medicine">critical emergencies</a> across Bangalore. Each ALS ambulance is equipped with advanced life-saving equipment, including cardiac monitors, oxygen support and defibrillators, ensuring thorough pre-hospital care. Trained medical professionals accompany each ambulance, delivering safe and reliable transport to patients in need.`,
         content_1: 'Additionally, our Clinic on Wheels is a mobile healthcare solution that brings essential medical services to rural communities. Equipped for outpatient consultations, health examinations, sample collection and medication dispensing, this innovative initiative expands high-quality healthcare accessibility in underserved areas. Through this program, Rashtrotthana Hospital enhances proactive health management, ensuring that even remote areas benefit from comprehensive healthcare support. Both our ALS ambulance and Clinic on Wheels services demonstrate Rashtrotthana Hospital’s commitment to accessible, community-focused care across all regions.',
-        image_1: 'rashtrotthana-hospital-emergency-ambulance-service.jpeg',
+        // image_1: 'rashtrotthana-hospital-emergency-ambulance-service.jpeg',
         image_2: 'best-ambulance-service-in-bangalore-rashtrotthana-hospital.jpg',
         bg_image: '24x7-emergency-ambulance-rashtrotthana-hospital.png',
         alt1 : '24/7 Emergency Ambulance Rashtrotthana Hospital',
-        alt2 : 'Rashtrotthana Hospital Emergency Ambulance Service',
+        // alt2 : 'Rashtrotthana Hospital Emergency Ambulance Service',
         alt3 : 'Best Ambulance Service in Bangalore Rashtrotthana Hospital',
       }
     ];
