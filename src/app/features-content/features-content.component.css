@@ -76,6 +76,8 @@
     width: 400px;
     height: 400px;
     border-radius: 25px;
+    object-fit: cover;
+    object-position: center center;
 }
 
 .o_menu {

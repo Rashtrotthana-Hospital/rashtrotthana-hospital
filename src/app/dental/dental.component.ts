@@ -40,7 +40,7 @@ export class DentalComponent {
     {
       doctor_image: '../../assets/Dr-H-N-Shyla.png',
       doctor_name: 'Dr. H. N. Shyla',
-      experience: "20",
+      experience: "27",
       docalt: 'Dr. Sushmitha Raj R | Best Dental Surgery in Bangalore | Rashtrotthana Hospital'
     },
     {

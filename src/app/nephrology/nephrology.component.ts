@@ -21,12 +21,12 @@ export class NephrologyComponent {
   }
 
   doctors = [
-    {
-      doctor_image:'../../assets/Dr-Santhosh-S.png',
-      doctor_name:'Dr. Santhosh S',
-      experience : "14",
-      docalt : 'Dr. Santhosh S | Best Nephrologist in Bangalore | Rashtrotthana Hospital'
-    },
+    // {
+    //   doctor_image:'../../assets/Dr-Santhosh-S.png',
+    //   doctor_name:'Dr. Santhosh S',
+    //   experience : "14",
+    //   docalt : 'Dr. Santhosh S | Best Nephrologist in Bangalore | Rashtrotthana Hospital'
+    // },
     {
       doctor_image:'../../assets/dr-nithin-j-dr-page.png',
       doctor_name:'Dr. Nithin J',
