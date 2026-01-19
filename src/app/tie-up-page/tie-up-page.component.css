@@ -9,16 +9,18 @@
     height: 636px;
 }
 
-.banner-content {
+.content-text {
     position: absolute;
     top: 290px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 180px;
-    left: 200px;
+    /* gap: 180px; */
+    left: -363px;
+    right: 0;
 }
+
 
 .banner-heading {
     color: #FFF;
@@ -50,6 +52,10 @@
     gap: 30px;
     align-items: center;
     justify-content: center;
+    position: relative;
+    top: -130px;
+    right:170px;
+
 }
 
 .btn-1 {
@@ -327,12 +333,12 @@
     animation-play-state: paused;
 }
 
-.flex{
+.flex {
     display: flex;
     align-items: center;
 }
 
-.form-card{
+.form-card {
     width: 100%;
 }
 
@@ -341,9 +347,9 @@
         overflow: hidden;
     }
 
-    .banner-content {
-        gap: 140px;
-        left: 10px;
+    .content-text {
+        /* gap: 140px; */
+        left: -340px;
         top: 190px;
     }
 
@@ -355,12 +361,21 @@
         height: auto;
     }
 
+    .banner-para{
+        width: 638px;
+    }
+
+    .banner-btns{
+    top: -60px;
+
+}
+
 }
 
 @media(max-width:1023px) {
-    .banner-content {
-        left: 40px;
-        gap: 95px;
+    .content-text {
+        left: -230px;
+        /* gap: 95px; */
     }
 
     .banner-heading {
@@ -401,11 +416,11 @@
         margin-top: 100px;
     }
 
-    .structure-card{
+    .structure-card {
         margin: 10px;
     }
 
-    .flex{
+    .flex {
         flex-wrap: wrap;
         gap: 30px;
     }
@@ -430,10 +445,10 @@
         display: none;
     }
 
-    .banner-content {
+    .content-text {
         left: 0;
         top: 280px;
-        gap: 240px;
+        /* gap: 240px; */
     }
 
     .service-heading,
@@ -476,6 +491,8 @@
     .banner-btns {
         margin-left: 5px;
         margin-top: 20%;
+        left: 0;
+        right: 0;
     }
 
     .vertical-cards-wrapper {

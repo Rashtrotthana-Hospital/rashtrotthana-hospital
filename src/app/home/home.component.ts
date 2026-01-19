@@ -313,40 +313,30 @@ export class HomeComponent implements OnInit {
   cards = [
     { name: 'Toyota', image: 'assets/tie-up-page/img-1.png' },
     { name: 'Arvind Store', image: 'assets/tie-up-page/img-2.png' },
-    { name: 'Toyota', image: 'assets/tie-up-page/img-3.png' },
+    { name: 'Chinmaya', image: 'assets/tie-up-page/img-3.png' },
     { name: 'Chinmaya', image: 'assets/tie-up-page/img-4.png' },
-    { name: 'Good Shepherd', image: 'assets/tie-up-page/img-5.png' },
-    { name: 'Arvind Store', image: 'assets/tie-up-page/img-9.png' },
-    { name: 'Toyota', image: 'assets/tie-up-page/img-10.png' },
-    { name: 'Chinmaya', image: 'assets/tie-up-page/img-15.png' },
-    { name: 'Chinmaya', image: 'assets/tie-up-page/img-16.png' },
+    { name: 'Kanti Sweets', image: 'assets/tie-up-page/img-5.png' },
 
   ];
 
   cards1 = [
 
-    { name: 'Arvind Store', image: 'assets/tie-up-page/img-2.png' },
-    { name: 'Toyota', image: 'assets/tie-up-page/img-3.png' },
-    { name: 'Good Shepherd', image: 'assets/tie-up-page/img-5.png' },
-    { name: 'Chinmaya', image: 'assets/tie-up-page/img-6.png' },
-    { name: 'Toyota', image: 'assets/tie-up-page/img-8.png' },
-    { name: 'Arvind Store', image: 'assets/tie-up-page/img-9.png' },
-    { name: 'Toyota', image: 'assets/tie-up-page/img-10.png' },
-    { name: 'Chinmaya', image: 'assets/tie-up-page/img-15.png' },
-    { name: 'Chinmaya', image: 'assets/tie-up-page/img-16.png' },
+    { name: 'Aryan Opulence', image: 'assets/tie-up-page/img-6.png' },
+    { name: 'Good Shepherd Institution', image: 'assets/tie-up-page/img-7.png' },
+    { name: 'Federal Bank', image: 'assets/tie-up-page/img-8.png' },
+    { name: 'Federal Bank', image: 'assets/tie-up-page/img-9.png' },
+    { name: 'Indo American High Breed Seeds', image: 'assets/tie-up-page/img-10.png' },
+    
 
   ]
 
   cards2 = [
-    { name: 'Toyota', image: 'assets/tie-up-page/img-10.png' },
-    { name: 'Chinmaya', image: 'assets/tie-up-page/img-11.png' },
-    { name: 'Good Shepherd', image: 'assets/tie-up-page/img-12.png' },
-    { name: 'Arvind Store', image: 'assets/tie-up-page/img-2.png' },
-    { name: 'Toyota', image: 'assets/tie-up-page/img-3.png' },
-    { name: 'Chinmaya', image: 'assets/tie-up-page/img-13.png' },
-    { name: 'Chinmaya', image: 'assets/tie-up-page/img-14.png' },
-    { name: 'Chinmaya', image: 'assets/tie-up-page/img-15.png' },
-    { name: 'Chinmaya', image: 'assets/tie-up-page/img-16.png' },
+    { name: 'IKA - India Private Limited', image: 'assets/tie-up-page/img-11.png' },
+    { name: 'Suguna Upper Crest', image: 'assets/tie-up-page/img-12.png' },
+    { name: 'Indo American High Breed Seeds', image: 'assets/tie-up-page/img-13.png' },
+    { name: 'Kanti Sweets', image: 'assets/tie-up-page/img-14.png' },
+    { name: 'Federal Bank', image: 'assets/tie-up-page/img-15.png' },
+    
   ]
 
 

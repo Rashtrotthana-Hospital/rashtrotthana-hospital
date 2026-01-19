@@ -2,6 +2,7 @@ import { Component, OnInit, inject } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { Router, ActivatedRoute } from '@angular/router';
 import { MessageService } from 'primeng/api';
+import { Application, CareerFormServiceService, Job } from '../career-form-service.service';
 
 // import { Recuriting, Job, Application } from '../../services/recruiting/recuriting';
 
@@ -13,13 +14,12 @@ import { MessageService } from 'primeng/api';
 export class ApplicationFormComponent implements OnInit {
 
   private fb = inject(FormBuilder);
-  // private api = inject(Recuriting);
+  private api = inject(CareerFormServiceService);
   private router = inject(Router);
   private route = inject(ActivatedRoute);
   private messageService = inject(MessageService);
 
-  // jobs: Job[] = [];
-  // jobs: { id: number; title: string }[] = [];
+  jobs: Job[] = [];
   loading = true;
   saving = false;
   error?: string;
@@ -34,134 +34,110 @@ export class ApplicationFormComponent implements OnInit {
       phone: ['', [Validators.required, Validators.pattern(/^[0-9]{10}$/)]],
       source: [''],
       resumeUrl: [''],
-      qualification: ['', Validators.required],
-      experience: ['', Validators.required],
+      qualification: ['', [Validators.required]],
+      experience: ['', [Validators.required]],
       address: [''],
     }),
   });
 
-  ngOnInit(): void {
-    const jobIdFromQuery = Number(this.route.snapshot.queryParamMap.get('jobId'));
-    if (jobIdFromQuery) {
-      this.form.patchValue({ jobId: jobIdFromQuery });
+ngOnInit() {
+  const jobIdFromQuery = Number(this.route.snapshot.queryParamMap.get('jobId'));
+  if (jobIdFromQuery) this.form.patchValue({ jobId: jobIdFromQuery });
+  this.loading = true;
+
+  console.log('Calling API...'); // Add this
+  
+  this.api.listJobs({ status: 'OPEN', pageSize: 100 }).subscribe({
+    next: (res) => {
+      console.log('API Response:', res); // Add this
+      this.jobs = res.rows;
+      this.loading = false;
+    },
+    error: (err) => {
+      console.error('API Error:', err); // Add this
+      console.error('Error Status:', err.status); // Add this
+      console.error('Error Message:', err.message); // Add this
+      console.error('Error Details:', err.error); // Add this
+      this.loading = false;
     }
+  });
+}
 
-
-
-    // this.api.listJobs({ status: 'OPEN', pageSize: 100 }).subscribe({
-    //   next: (res) => {
-    //     this.jobs = res.rows;
-    //     this.loading = false;
-    //   },
-    //   error: () => {
-    //     this.loading = false;
-    //   }
-    // });
-  }
-
-  // ngOnInit(): void {
-  //   // Temporary data for dropdown
-  //   this.jobs = [
-  //     { id: 1, title: 'Frontend Developer' },
-  //     { id: 2, title: 'Backend Developer' }
-  //   ];
+  // submit() {
+  //   this.error = undefined;
+  //   if (this.form.invalid) {
+  //     this.form.markAllAsTouched();
+  //     return;
+  //   }
+  //   this.saving = true;
+  //   this.form.value.candidate?.experience?.toString() // default to 0 if not provided
+  //   this.api.createApplication(this.form.value as any).subscribe({
+  //     next: (_app: Application) => {
+  //       // alert('Application created!');
+  //       this.messageService.add({severity:'success', summary:'Success', detail:'Application created!'});
+  //       this.router.navigate(['/recruitment/jobs']);
+  //       this.form.reset();
+  //     },
+  //     error: (e) => (this.error = e?.error?.error || 'Failed to create'),
+  //     complete: () => (this.saving = false),
+  //   });
   // }
-
-  submit(): void {
+  submit() {
     this.error = undefined;
-
     if (this.form.invalid) {
       this.form.markAllAsTouched();
       return;
     }
-
-    if (!this.selectedResumeFile) {
+    if (this.selectedResumeFile === undefined) {
       this.messageService.add({
-        severity: 'error',
-        summary: 'Error',
-        detail: 'Please upload your resume!',
+        severity: "error",
+        summary: "Error",
+        detail: "Please upload your resume!",
       });
+      this.saving = false;
       return;
     }
 
     this.saving = true;
 
+    // build FormData for multipart
     const formData = new FormData();
-    formData.append('jobId', this.form.value.jobId!.toString());
-    formData.append('candidate', JSON.stringify(this.form.value.candidate));
-    formData.append('resume', this.selectedResumeFile);
+    formData.append("jobId", this.form.value.jobId!.toString());
 
-    // this.api.createApplication(formData).subscribe({
-    //   next: (_app: Application) => {
-    //     this.messageService.add({
-    //       severity: 'success',
-    //       summary: 'Success',
-    //       detail: 'Application created!',
-    //     });
-    //     this.form.reset();
-    //     this.selectedResumeFile = undefined;
-    //     this.router.navigate(['/recruitment/jobs']);
-    //   },
-    //   error: (e) => {
-    //     this.error = e?.error?.error || 'Failed to create';
-    //   },
-    //   complete: () => {
-    //     this.saving = false;
-    //   }
-    // });
+    // stringify candidate group
+    formData.append("candidate", JSON.stringify(this.form.value.candidate));
 
-    console.log(this.form.value.candidate);
+    // attach resume file if selected
+    if (this.selectedResumeFile) {
+      formData.append("resume", this.selectedResumeFile);
+    }
+
+    this.api.createApplication(formData).subscribe({
+      next: (_app: Application) => {
+        this.messageService.add({
+          severity: "success",
+          summary: "Success",
+          detail: "Application created!",
+        });
+        this.router.navigate(["/recruitment/jobs"]);
+        this.form.reset();
+        this.selectedResumeFile = undefined;
+      },
+      error: (e) => (this.error = e?.error?.error || "Failed to create"),
+      complete: () => (this.saving = false),
+    });
   }
 
-  // submit(): void {
-  //   this.error = undefined;
 
-  //   if (this.form.invalid) {
-  //     this.form.markAllAsTouched();
-  //     return;
-  //   }
-
-  //   if (!this.selectedResumeFile) {
-  //     this.messageService.add({
-  //       severity: 'error',
-  //       summary: 'Error',
-  //       detail: 'Please upload your resume!',
-  //     });
-  //     return;
-  //   }
-
-  //   this.saving = true;
-
-
-  //   setTimeout(() => {
-
-  //     this.messageService.add({
-  //       severity: 'success',
-  //       summary: 'Application Submitted',
-  //       detail: 'Your application has been submitted successfully!',
-  //     });
-
-  //     console.log(this.form.value.candidate);
-  //     this.form.reset();
-  //     this.selectedResumeFile = undefined;
-  //     this.form.patchValue({ jobId: null });
-
-  //     this.saving = false;
-  //   }, 800);
-
-
-  // }
-
-
-  onFileSelected(event: Event): void {
+  onFileSelected(event: Event) {
     const input = event.target as HTMLInputElement;
-    if (input.files?.length) {
+    if (input.files && input.files.length > 0) {
       this.selectedResumeFile = input.files[0];
     }
   }
 
-  isInvalid(path: string): boolean {
-    const control = this.form.get(path);
-    return !!(control && control.invalid && (control.dirty || control.touched));
+  isInvalid(form: string) {
+    const control = this.form.get(form);
+    return control?.invalid && (control.touched || control.dirty)
   }
 }
