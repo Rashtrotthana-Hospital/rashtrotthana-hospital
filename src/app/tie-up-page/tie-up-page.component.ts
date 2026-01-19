@@ -90,31 +90,25 @@ export class TieUpPageComponent {
   ];
 
   card1 = [
-    { name: 'TOYOTA KIRLOSKAR MOTOR PRIVATE LIMITED', image: 'assets/tie-up-page/img-1.png' },
-    { name: 'ARYAN OPULENCE', image: 'assets/tie-up-page/img-2.png' },
-    { name: 'CHINMAYA VIDYALAYA, BANASHANKARI', image: 'assets/tie-up-page/img-3.png' },
-    { name: 'ARVIND LIMITED', image: 'assets/tie-up-page/img-4.png' },
-    { name: 'Federal Bank', image: 'assets/tie-up-page/img-5.png' },
-    { name: 'GOOD SHEPHERD INSTITUTION', image: 'assets/tie-up-page/img-6.png' },
-  ];
+  { name: 'Toyota Kirloskar Motor Private Limited', image: 'assets/tie-up-page/img-1.png' },
+  { name: 'Arvind Limited', image: 'assets/tie-up-page/img-4.png' },
+  { name: 'Chinmaya Vidyalaya, Banashankari', image: 'assets/tie-up-page/img-3.png' },
+  { name: 'Good Shepherd Institution', image: 'assets/tie-up-page/img-6.png' },
+  { name: 'Kanti Sweets', image: 'assets/tie-up-page/img-14.png' },
+  { name: 'Staff Discount Policy of Rashtrotthana Parishat', image: 'assets/tie-up-page/img-9.png' },
+  { name: 'Staff Discount Policy of Rashtrotthana Vidya Kendra', image: 'assets/tie-up-page/img-16.png' }
+];
 
-  card2 = [
-    { name: 'TOYOTA KIRLOSKAR MOTOR PRIVATE LIMITED', image: 'assets/tie-up-page/img-1.png' },
-    { name: 'ARYAN OPULENCE', image: 'assets/tie-up-page/img-2.png' },
-    { name: 'GOOD SHEPHERD INSTITUTION', image: 'assets/tie-up-page/img-6.png' },
-    { name: 'INDO AMERICAN HIGH BREED SEEDS', image: 'assets/tie-up-page/img-8.png' },
-    { name: 'STAFF DISCOUNT POLICY OF RASHTROTTHANA PARISHAT', image: 'assets/tie-up-page/img-9.png' },
-    { name: 'IKA - INDIA PRIVATE LIMITED', image: 'assets/tie-up-page/img-10.png' },
-  ]
 
-  card3 = [
-    { name: 'SUGUNA UPPER CREST', image: 'assets/tie-up-page/img-11.png' },
-    { name: 'SUGUNA PRISTINE SQUARE', image: 'assets/tie-up-page/img-12.png' },
-    { name: 'VIJAYA BHARATHI VIDHYALAYA', image: 'assets/tie-up-page/img-13.png' },
-    { name: 'Kanti Sweets', image: 'assets/tie-up-page/img-14.png' },
-    { name: 'NIMHANS', image: 'assets/tie-up-page/img-15.png' },
-    { name: 'STAFF DISCOUNT POLICY OF RVK', image: 'assets/tie-up-page/img-16.png' },
-  ]
+card2 = [
+  { name: 'Aryan Opulence', image: 'assets/tie-up-page/img-2.png' },
+  { name: 'Federal Bank', image: 'assets/tie-up-page/img-5.png' },
+  { name: 'Indo American High Breed Seeds', image: 'assets/tie-up-page/img-8.png' },
+  { name: 'IKA - India Private Limited', image: 'assets/tie-up-page/img-10.png' },
+  { name: 'Suguna Upper Crest', image: 'assets/tie-up-page/img-11.png' },
+  { name: 'Suguna Pristine Square', image: 'assets/tie-up-page/img-12.png' },
+  { name: 'Vijaya Bharathi Vidhyalaya', image: 'assets/tie-up-page/img-13.png' }
+];
 
 
 }

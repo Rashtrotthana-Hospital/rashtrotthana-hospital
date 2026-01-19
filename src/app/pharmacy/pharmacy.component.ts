@@ -31,7 +31,7 @@ export class PharmacyComponent {
         image_2: '24x7-medicine-store-at-rashtrotthana-hospital.png',
         subFacilities: [{
           subHeading: 'Convenient Pharmacy Solutions at Rashtrotthana Hospital:',
-          subContent: `Discover convenience and reliability with our 24X7 <a href="https://en.wikipedia.org/wiki/Pharmacy">Pharmacy</a> services at Rashtrotthana Hospital. Our pharmacy is committed to providing FDA-approved medications and prioritizes GMP-certified drugs to ensure your safety and well-being. With a focus on accessibility and affordability, we offer a 10% discount on outpatient drug prescriptions and vaccinations, making quality healthcare more accessible to all.`
+          subContent: `Discover convenience and reliability with our 24X7 <a href="https://en.wikipedia.org/wiki/Pharmacy" target="_blank">Pharmacy</a> services at Rashtrotthana Hospital. Our pharmacy is committed to providing FDA-approved medications and prioritizes GMP-certified drugs to ensure your safety and well-being. With a focus on accessibility and affordability, we offer a 10% discount on outpatient drug prescriptions and vaccinations, making quality healthcare more accessible to all.`
         },
         {
           subHeading: 'Personalized Care and Home Delivery Options:',

@@ -1435,7 +1435,7 @@ export class NewDocPageComponent {
       // speciality: 'ORTHOPEDICS',
       desgination: 'Consultant - Radiologist',
       about: "",
-      areasOfExpertise: ["Diagnostic Radiologist", "CT and MRI interpretation", "Ultrasound & Doppler imaging", "X-ray", "Women’s imaging (Breast, pelvic US/MRI)", "Neuroimaging (Brain & Spine)", "Musculoskeletal imaging", "Chest imaging", "Abdominal & pelvic imaging", "Emergency & trauma imaging", "Obstetric ultrasound (routine & growth scans)"],
+      areasOfExpertise: ["Diagnostic Radiologist", "CT and MRI interpretation", "Ultrasound & Doppler imaging", "X-ray", "Neuroimaging (Brain & Spine)", "Mammography / Sonography / Ultrasound / MRI Or CT", "Musculoskeletal imaging", "Chest imaging", "Abdominal & pelvic imaging", "Emergency & trauma imaging", "Obstetric ultrasound (routine & growth scans)"],
       // expertise: "Years of Experience: 11+",
       qualification: "MBBS , MD, DNB Radiology",
       time: "",

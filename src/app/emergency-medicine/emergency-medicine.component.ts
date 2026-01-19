@@ -18,7 +18,7 @@ export class EmergencyMedicineComponent {
     this.specialities=[
       {
         main_heading:'Emergency Medicine',
-        content:`The <a href="https://en.wikipedia.org/wiki/Emergency_medicine">Emergency Medicine</a> Department at Rashtrotthana Hospital provides immediate, expert care for patients in critical conditions, ensuring high standards of emergency medical support. Our team of specialized emergency physicians, nurses and support staff is trained to handle a broad spectrum of urgent medical needs, including trauma, cardiac emergencies, respiratory distress and acute illnesses. With state-of-the-art equipment and advanced monitoring systems, we prioritize swift assessment, intervention and stabilization, offering 24/7 availability for critical cases. Our facility is designed to manage life-threatening situations, enabling efficient, high-quality care at every stage of the emergency process.`,
+        content:`The <a href="https://en.wikipedia.org/wiki/Emergency_medicine"  target="_blank">Emergency Medicine</a> Department at Rashtrotthana Hospital provides immediate, expert care for patients in critical conditions, ensuring high standards of emergency medical support. Our team of specialized emergency physicians, nurses and support staff is trained to handle a broad spectrum of urgent medical needs, including trauma, cardiac emergencies, respiratory distress and acute illnesses. With state-of-the-art equipment and advanced monitoring systems, we prioritize swift assessment, intervention and stabilization, offering 24/7 availability for critical cases. Our facility is designed to manage life-threatening situations, enabling efficient, high-quality care at every stage of the emergency process.`,
         heading:'Emergency Medicine',
         content_1:'Our department also focuses on preventive measures, conducting educational initiatives to raise awareness about emergency preparedness and response. From managing minor injuries to complex, multi-disciplinary interventions, we emphasize compassionate, patient-centered care. We aim to support families during distressing times and ensure that each patient receives rapid treatment with the highest level of medical professionalism. By fostering collaborations with other departments and continuously improving our protocols, the Emergency Medicine Department at Rashtrotthana Hospital remains a trusted choice for emergency healthcare in Bangalore.',
         image:'best_emergency_medicine_treatment_in_bengaluru.png',
@@ -48,14 +48,22 @@ export class EmergencyMedicineComponent {
   }
 
   doctors = [
-    {
-      id: 1,
-      name: 'Col (Dr) Anand Shankar K',
-      experience: '31+ Years',
-      image: '../../assets/images/../../assets/Dr-Anand-Shankar.png',
-      slug: '/doctor/col-dr-anand-shankar-k'
-    },
-  ]
+  {
+    id: 1,
+    name: 'Col (Dr) Anand Shankar K',
+    experience: '31+ Years',
+    image: 'assets/Dr-Anand-Shankar.png',
+    slug: '/doctor/col-dr-anand-shankar-k'
+  },
+  {
+    id: 2,
+    name: 'Dr. Srinivas Siddeshwar',
+    experience: '8+ Years',
+    image: 'assets/new-doctor-imgs/dr-srinivas-siddeshwar.png',
+    slug: '/doctor/dr-srinivas-siddeshwar'
+  }
+];
 
-  formDoctors = ['Col (Dr) Anand Shankar K']
+
+  formDoctors = ['Col (Dr) Anand Shankar K', 'Dr. Srinivas Siddeshwar']
 }

@@ -35,7 +35,7 @@ export class InPatientComponent {
       subFacilities: [
         {
           subHeading: 'Comfort and Care at Rashtrotthana Hospital:',
-          subContent: `At Rashtrotthana Hospital, we understand that your comfort and well-being are paramount during your stay with us. Our <a href="https://en.wikipedia.org/wiki/Inpatient_care">in-patient facilities</a> are designed to provide you with a serene and welcoming environment conducive to healing and recovery. We thoughtfully furnish each private room with modern amenities to ensure your comfort throughout your stay. From cozy bedding to personalized care, we strive to create a home-like atmosphere where you can focus on your health with peace of mind.`,
+          subContent: `At Rashtrotthana Hospital, we understand that your comfort and well-being are paramount during your stay with us. Our <a target="_blank" href="https://en.wikipedia.org/wiki/Inpatient_care">in-patient facilities</a> are designed to provide you with a serene and welcoming environment conducive to healing and recovery. We thoughtfully furnish each private room with modern amenities to ensure your comfort throughout your stay. From cozy bedding to personalized care, we strive to create a home-like atmosphere where you can focus on your health with peace of mind.`,
         },
         {
           subHeading: 'Personalized Attention from Our Dedicated Staff:',

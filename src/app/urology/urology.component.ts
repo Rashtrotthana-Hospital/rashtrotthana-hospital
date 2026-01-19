@@ -37,6 +37,13 @@ export class UrologyComponent {
       experience: '14+ years',
       image: 'assets/Dr-Madhu-S-N.png',
       slug : '/doctor/dr-madhu-s-n'
+    },
+    {
+      id: 3,
+      name : "Dr. Mahesh M",
+      experience: '25+ years',
+      image: 'assets/new-doctor-imgs/dr-mahesh-m-doc-page.png',
+      slug : '/doctor/dr-mahesh-m'
     }
   ];
 

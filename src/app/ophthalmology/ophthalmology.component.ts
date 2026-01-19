@@ -34,6 +34,12 @@ export class OphthalmologyComponent {
       doctor_name: 'Dr. Dona Susan John ',
       experience: "18+",
       docalt: 'Dr. Dona Susan John | Best Ophthalmology doctor in Bangalore | Rashtrotthana Hospital'
+    },
+    {
+      doctor_image: '../../assets/new-doctor-imgs/dr-sushma-doc-page.png',
+      doctor_name: 'Dr. Sushma A ',
+      experience: "10+",
+      docalt: 'Dr. Sushma A | Best Ophthalmology doctor in Bangalore | Rashtrotthana Hospital'
     }
   ];
 
