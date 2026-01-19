@@ -1377,10 +1377,10 @@ li {
   justify-content: center;
 }
 
-.icon {
+/* .icon {
   font-size: 32px;
   margin-bottom: 8px;
-}
+} */
 
 .scroll-up .vertical-track {
   animation: scrollUp 10s linear infinite;
