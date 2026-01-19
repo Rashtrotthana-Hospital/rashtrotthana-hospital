@@ -1377,13 +1377,27 @@ li {
   justify-content: center;
 }
 
+.surgery-card img {
+  width: 120px;
+  height: 120px;
+  aspect-ratio: 1/1;
+  /* object-fit: cover; */
+}
+
+.surgery-card img {
+  width: 120px;
+  height: 120px;
+  aspect-ratio: 1/1;
+  /* object-fit: cover; */
+}
+
 /* .icon {
   font-size: 32px;
   margin-bottom: 8px;
 } */
 
 .scroll-up .vertical-track {
-  animation: scrollUp 10s linear infinite;
+  animation: scrollUp 60s linear infinite;
 }
 
 @keyframes scrollUp {
@@ -1397,7 +1411,7 @@ li {
 }
 
 .scroll-down .vertical-track {
-  animation: scrollDown 10s linear infinite;
+  animation: scrollDown 60s linear infinite;
 }
 
 @keyframes scrollDown {
@@ -2402,13 +2416,14 @@ li {
     flex-direction: column;
   }
 
-  .line-2{
+  .line-2 {
     display: block;
   }
 
-  .surgery-card{
+  .surgery-card {
     padding: 10px;
   }
+
   .tie-up-para {
     width: 100%;
     font-size: 12px;
