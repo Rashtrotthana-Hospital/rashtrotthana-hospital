@@ -107,8 +107,11 @@ card2 = [
   { name: 'IKA - India Private Limited', image: 'assets/tie-up-page/img-10.png' },
   { name: 'Suguna Upper Crest', image: 'assets/tie-up-page/img-11.png' },
   { name: 'Suguna Pristine Square', image: 'assets/tie-up-page/img-12.png' },
-  { name: 'Vijaya Bharathi Vidhyalaya', image: 'assets/tie-up-page/img-13.png' }
+  { name: 'Vijaya Bharathi Vidhyalaya', image: 'assets/tie-up-page/img-13.png' },
+  { name: 'Nimhans', image : "assets/tie-up-page/img-15.png"}
 ];
+
+
 
 
 }
