@@ -58,7 +58,7 @@
 
         <div class="corporates">
 
-            <div class="corporates-heading">Our Prestigious Corporates</div>
+            <div class="corporates-heading"> Our Prestigious Tie-Ups</div>
             <div class="vertical-cards-wrapper" style="margin-top: 50px;">
 
                 <div class="vertical-row scroll-left">
@@ -68,6 +68,10 @@
                             <div class="name">{{card.name}}</div>
                         </div>
                         <div class="surgery-card" *ngFor="let card of card1">
+                            <img [src]="card.image" [alt]="" />
+                            <div class="name">{{card.name}}</div>
+                        </div>
+                        <div class="surgery-card" *ngFor="let card of card2">
                             <img [src]="card.image" [alt]="" />
                             <div class="name">{{card.name}}</div>
                         </div>
@@ -84,10 +88,14 @@
                             <img [src]="card.image" [alt]="" />
                             <div class="name">{{card.name}}</div>
                         </div>
+                        <div class="surgery-card" *ngFor="let card of card2">
+                            <img [src]="card.image" [alt]="" />
+                            <div class="name">{{card.name}}</div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="vertical-row scroll-left">
+                <!-- <div class="vertical-row scroll-left">
                     <div class="vertical-track">
                         <div class="surgery-card" *ngFor="let card of card3">
                             <img [src]="card.image" [alt]="" />
@@ -97,8 +105,12 @@
                             <img [src]="card.image" [alt]="" />
                             <div class="name">{{card.name}}</div>
                         </div>
+                        <div class="surgery-card" *ngFor="let card of card2">
+                            <img [src]="card.image" [alt]="" />
+                            <div class="name">{{card.name}}</div>
+                        </div>
                     </div>
-                </div>
+                </div> -->
 
             </div>
 

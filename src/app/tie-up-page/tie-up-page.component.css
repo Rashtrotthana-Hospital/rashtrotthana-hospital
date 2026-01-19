@@ -219,7 +219,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    /* gap: 30px; */
 }
 
 .corporates-heading {
@@ -242,7 +242,7 @@
     display: flex;
     flex-direction: column;
     /* gap: 30px; */
-    height: 420px;
+    /* height: 420px; */
 }
 
 .name {
@@ -266,7 +266,8 @@
     display: flex;
     gap: 20px;
     width: max-content;
-
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -294,7 +295,7 @@
 
 
 .scroll-left .vertical-track {
-    animation: scrollLeft 60s linear infinite;
+    /* animation: scrollLeft 300s linear infinite; */
 }
 
 @keyframes scrollLeft {
@@ -309,7 +310,7 @@
 
 /* Scroll Right Animation */
 .scroll-right .vertical-track {
-    animation: scrollRight 60s linear infinite;
+    /* animation: scrollRight 300s linear infinite; */
 }
 
 @keyframes scrollRight {
@@ -373,6 +374,7 @@
 
     .banner-btns {
         margin-left: 40px;
+        /* margin-top: 10%; */
     }
 
     .btn-1,
@@ -473,6 +475,7 @@
 
     .banner-btns {
         margin-left: 5px;
+        margin-top: 20%;
     }
 
     .vertical-cards-wrapper {
@@ -487,5 +490,160 @@
         font-size: 12px;
     }
 
+}
 
+/* @media(max-width: ){
+
+} */
+
+
+/* Keep all existing styles, only fixing the animation gaps */
+
+.corporates {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 30px; */
+    overflow: hidden; /* Important: hide overflow */
+}
+
+.corporates-heading {
+    color: #032977;
+    font-family: Poppins;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+    text-align: center;
+}
+
+.vertical-cards-wrapper {
+    display: flex;
+    flex-direction: column;
+    /* height: 420px; */
+    width: 100%;
+    overflow: hidden; /* Important: hide overflow */
+}
+
+.name {
+    color: #191919;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.vertical-row {
+    width: 100%;
+    height: 120px;
+    overflow: hidden; /* Important: hide overflow */
+}
+
+.vertical-track {
+    display: flex;
+    gap: 20px;
+    width: max-content;
+}
+
+.surgery-card {
+    display: inline-flex;
+    padding: 16px 20px 16px 15px;
+    align-items: center;
+    gap: 15px;
+    border-radius: 8px;
+    border: 1px solid #022B50;
+    background: #FFF;
+    box-shadow: 0 0 1px 0 rgba(31, 34, 41, 0.24), 1px 1px 6px 0 rgba(31, 34, 41, 0.04);
+    flex-shrink: 0; /* Prevent cards from shrinking */
+}
+
+.surgery-card img {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    min-height: 48px;
+    border-radius: 32px;
+    border: 1px solid rgba(31, 120, 255, 0.16);
+    background: lightgray 50% / cover no-repeat;
+    object-fit: contain;
+}
+
+/* Smooth infinite scroll - Left direction */
+.scroll-left .vertical-track {
+    animation: scrollLeft 80s linear infinite;
+}
+
+@keyframes scrollLeft {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-1500px);
+    }
+}
+
+/* Smooth infinite scroll - Right direction */
+.scroll-right .vertical-track {
+    animation: scrollRight 80s linear infinite;
+}
+
+@keyframes scrollRight {
+    0% {
+        transform: translateX(-1500px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Pause animation on hover */
+.vertical-row:hover .vertical-track {
+    animation-play-state: paused;
+}
+
+/* Responsive adjustments */
+@media(max-width:1439px) {
+    .corporates {
+        overflow: hidden;
+    }
+}
+
+@media(max-width:1023px) {
+    .name {
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 767px) {
+    .service-heading,
+    .corporates-heading {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .vertical-cards-wrapper {
+        overflow: hidden;
+    }
+
+    .surgery-card {
+        padding: 10px;
+    }
+
+    .name {
+        font-size: 12px;
+    }
+    
+    /* Faster animation on mobile */
+    .scroll-left .vertical-track,
+    .scroll-right .vertical-track {
+        animation-duration: 60s;
+    }
 }

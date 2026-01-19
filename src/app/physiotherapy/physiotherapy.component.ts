@@ -25,7 +25,7 @@ export class PhysiotherapyComponent {
       {
         main_heading: 'Physiotherapy',
         heading: 'Physiotherapy',
-        content: `The Department of Physiotherapy addresses problems associated with movement dysfunction and pain that can arise from <a href="https://en.wikipedia.org/wiki/Musculoskeletal_injury">musculoskeletal</a>, neurological, respiratory and chronic disability conditions or from mental illness and intellectual impairment. The physiotherapy department at Rashtrotthana Hospital strives to provide an outpatient service that is based on high standards of care and quality. Treatment Goals are achieved through comprehensive assessment with individual treatment combining education, continuous support, home exercises programs and advice.`,
+        content: `The Department of Physiotherapy addresses problems associated with movement dysfunction and pain that can arise from <a href="https://en.wikipedia.org/wiki/Musculoskeletal_injury" target="_blank">musculoskeletal</a>, neurological, respiratory and chronic disability conditions or from mental illness and intellectual impairment. The physiotherapy department at Rashtrotthana Hospital strives to provide an outpatient service that is based on high standards of care and quality. Treatment Goals are achieved through comprehensive assessment with individual treatment combining education, continuous support, home exercises programs and advice.`,
         image_1: 'rashtrotthana-hospital-physiotherapy-services.jpeg',
         image_2: 'best-physiotherapy-in-bangalore-rashtrotthana-hospital.jpeg',
         bg_image: 'physiotherapy-for-pain-relief-rashtrotthana-hospital.png',

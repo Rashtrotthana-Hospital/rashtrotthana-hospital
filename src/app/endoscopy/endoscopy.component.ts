@@ -40,7 +40,7 @@ export class EndoscopyComponent implements OnInit {
         },
         {
           subHeading:'Comprehensive diagnostic and therapeutic options:',
-          subContent:`Endoscopy is a minimally invasive procedure that allows our specialists to examine the internal organs of the digestive tract using a flexible tube with a camera and light attached. This enables us to visualize and diagnose a wide range of conditions, including ulcers, polyps, inflammation and cancer. In addition to diagnostic procedures, our endoscopy facility also offers therapeutic interventions such as <a href="https://en.wikipedia.org/wiki/Polyp_(medicine)">polyp</a> removal, tissue biopsies and stent placement to address various gastrointestinal issues effectively.`
+          subContent:`Endoscopy is a minimally invasive procedure that allows our specialists to examine the internal organs of the digestive tract using a flexible tube with a camera and light attached. This enables us to visualize and diagnose a wide range of conditions, including ulcers, polyps, inflammation and cancer. In addition to diagnostic procedures, our endoscopy facility also offers therapeutic interventions such as <a href="https://en.wikipedia.org/wiki/Polyp_(medicine)"  target="_blank">polyp</a> removal, tissue biopsies and stent placement to address various gastrointestinal issues effectively.`
         },
         {
           subHeading:'Patient-centered care and support:',

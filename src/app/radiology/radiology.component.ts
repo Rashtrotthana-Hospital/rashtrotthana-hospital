@@ -32,7 +32,7 @@ export class RadiologyComponent {
         image_1: 'radiology-facility-service-1.jpeg',
         image_2: 'radiology-facility-service-2.jpeg',
         subFacilities: [
-          { subHeading: '', subContent: `Rashtrotthana Hospital offers a wide range of radiology services to assist in accurate diagnosis and treatment planning. Cutting-edge imaging technology, including <a href="https://en.wikipedia.org/wiki/X-ray">X-rays</a>, ultrasounds, MRIs and CT scans, equips our advanced radiology department. Our team of experienced radiologists conducts each procedure with precision and care, providing reliable results for informed decision-making by our medical professionals.` }
+          { subHeading: '', subContent: `Rashtrotthana Hospital offers a wide range of radiology services to assist in accurate diagnosis and treatment planning. Cutting-edge imaging technology, including <a href="https://en.wikipedia.org/wiki/X-ray" target="_blank">X-rays</a>, ultrasounds, MRIs and CT scans, equips our advanced radiology department. Our team of experienced radiologists conducts each procedure with precision and care, providing reliable results for informed decision-making by our medical professionals.` }
           , {
             subHeading: 'Comprehensive diagnostic imaging solutions:',
             subContent: 'Our radiology department provides comprehensive diagnostic imaging solutions to meet various medical needs. From detecting fractures and internal injuries to screening for underlying health conditions, our advanced imaging services offer invaluable insights. With a focus on timely and accurate diagnosis, we aim to support effective healthcare management and improve patient outcomes.'

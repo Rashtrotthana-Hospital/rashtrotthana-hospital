@@ -43,6 +43,12 @@ export class PaediatricsComponent {
       doctor_name: 'Dr. Dhanyatha Muninarayan',
       experience: "7",
       docalt: 'Dr. Dhanyatha Muninarayan | Best Pediatrician in Bangalore | Rashtrotthana Hospital'
+    },
+    {
+      doctor_image: 'assets/new-doctor-imgs/dr-ashis-doc-page.png',
+      doctor_name: 'Major (Dr.) Ashish S. Mallige',
+      experience: "15",
+      docalt: 'Major (Dr.) Ashish S. Mallige | Best Pediatrician in Bangalore | Rashtrotthana Hospital'
     }
   ]
 

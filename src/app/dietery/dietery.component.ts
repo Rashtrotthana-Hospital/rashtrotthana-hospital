@@ -26,7 +26,7 @@ export class DieteryComponent {
       {
         main_heading: 'Dietary',
         heading: 'Dietary',
-        content: `At Rashtrotthana Hospital, we prioritize nutritious, hygienic and flavorful meals through our dedicated canteen services. Prepared using high-quality ingredients, our menu caters to patients, visitors and staff, offering a range of wholesome options that support recovery and wellness. Our expert dietary team ensures balanced <a href="https://en.wikipedia.org/wiki/Meal">meal</a> choices for specific dietary needs, all designed to meet hospital-grade standards of health and safety.`,
+        content: `At Rashtrotthana Hospital, we prioritize nutritious, hygienic and flavorful meals through our dedicated canteen services. Prepared using high-quality ingredients, our menu caters to patients, visitors and staff, offering a range of wholesome options that support recovery and wellness. Our expert dietary team ensures balanced <a href="https://en.wikipedia.org/wiki/Meal"  target="_blank">meal</a> choices for specific dietary needs, all designed to meet hospital-grade standards of health and safety.`,
         content_1: 'Whether for a quick snack or a substantial meal, our canteen provides convenient, tasty options throughout the day, enhancing the hospital experience with accessible, satisfying and nourishing food choices.',
         image_1: 'rashtrotthana-hospital-dietary-services.png',
         image_2: 'healthy-meal-services-rashtrotthana-hospital.png',
