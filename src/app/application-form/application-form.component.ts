@@ -119,7 +119,7 @@ ngOnInit() {
           summary: "Success",
           detail: "Application created!",
         });
-        this.router.navigate(["/recruitment/jobs"]);
+        // this.router.navigate(["/recruitment/jobs"]);
         this.form.reset();
         this.selectedResumeFile = undefined;
       },

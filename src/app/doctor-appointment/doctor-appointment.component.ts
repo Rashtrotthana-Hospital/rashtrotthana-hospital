@@ -38,7 +38,8 @@ export class DoctorAppointmentComponent implements OnInit {
   // apiUrl:string = 'https://backend-812956739285.us-east4.run.app/api'
   unavailableSlotsForDate: any[] = [];
   // apiUrl:string = 'http://localhost:3000/api'
-  apiUrl:string= 'https://rashtrotthana-backend-812956739285.us-east4.run.app/api'
+  // apiUrl:string= 'https://rashtrotthana-backend-812956739285.us-east4.run.app/api'
+   apiUrl:string = 'https://docmindsjmrh.imapps.in/api'
 
   constructor(private fb: FormBuilder, private messageService: MessageService, private http: HttpClient) {}
 

@@ -3,12 +3,15 @@ import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 import { environment } from '../../environment';
 import { ChatbotServiceService } from '../chatbot-service.service';
+import { CallBackFormService } from '../call-back-form.service';
+import { MessageService } from 'primeng/api';
 
 
 @Component({
   selector: 'app-call-back-form',
   templateUrl: './call-back-form.component.html',
-  styleUrl: './call-back-form.component.css'
+  styleUrl: './call-back-form.component.css',
+  providers:[MessageService]
 })
 export class CallBackFormComponent {
   @Input() pageName: string = 'Website';
@@ -45,6 +48,8 @@ export class CallBackFormComponent {
     private http: HttpClient,
     private router: Router,
     private chatbotService: ChatbotServiceService,
+    private callbackService: CallBackFormService,
+    private messageService: MessageService
     // private locationService: LocationService
   ) { }
 
@@ -82,8 +87,8 @@ export class CallBackFormComponent {
     this.captchaVerified = false;
     this.captchaSession = null;
   }
-  
-  
+
+
 
   onCaptchaResolved(token: any) {
     // console.log('Captcha verified, token:', token);
@@ -115,7 +120,7 @@ export class CallBackFormComponent {
       });
   }
 
- 
+
 
 
   fetchUserLocation(): void {
@@ -157,7 +162,7 @@ export class CallBackFormComponent {
 
   sendOtp(form: any) {
     if (form.invalid || !this.captchaVerified) {
-    // if (form.invalid) {
+      // if (form.invalid) {
       alert('Please fill details & complete captcha');
       return;
     }
@@ -191,12 +196,18 @@ export class CallBackFormComponent {
         this.otpSent = true;
         this.showOTP = true;
         this.startResendTimer();
-        alert('OTP sent successfully');
+        this.messageService.add({severity:'success', summary:'Success', detail:'OTP sent successfully!'});
+        // alert('OTP sent successfully');
       },
       error: (err) => {
         console.error('OTP error:', err);
         this.isSending = false;
-        alert('OTP send failed');
+        // alert('OTP send failed');
+              this.messageService.add({
+        severity: "error",
+        summary: "Error",
+        detail: "Otp send failed!, Try again",
+      });
       }
     });
   }
@@ -215,6 +226,8 @@ export class CallBackFormComponent {
       this.otpVerified = true;
       this.showOTP = false;
       localStorage.clear();
+      // ✅ SAVE CALLBACK REQUEST
+      this.saveCallbackRequest();
       this.sendEmail();
     } else {
       alert('Invalid OTP');
@@ -255,9 +268,10 @@ export class CallBackFormComponent {
     const emailRequest = {
       // to: ['patientservices@rashtrotthanahospital.com', 'frontoffice@rashtrotthanahospital.com'],
       to: ['patientservices@rashtrotthanahospital.com'],
+      // to:['keerthanasaminathan0805@gmail.com'],
       status: 'Call Back Request',
       appointmentDetails: appointmentDetails,
-      whatsappNumber: ['919164840378']
+      // whatsappNumber: ['919164840378']
       // whatsappNumber: ['916382348092']
     };
 
@@ -271,6 +285,23 @@ export class CallBackFormComponent {
           console.error('Error sending email:', emailError);
         },
       });
+  }
+  saveCallbackRequest() {
+    const payload = {
+      name: this.formData.name,
+      mobile: this.formData.mobile,
+      address: this.userAddress,
+      pageName: this.pageName
+    };
+
+    this.callbackService.createCallback(payload).subscribe({
+      next: () => {
+        console.log('Callback request saved');
+      },
+      error: (err) => {
+        console.error('Failed to save callback request', err);
+      }
+    });
   }
 
 }

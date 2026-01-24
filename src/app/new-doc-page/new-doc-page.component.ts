@@ -47,7 +47,8 @@ export class NewDocPageComponent {
   contactForm: any = FormGroup;
   clicked: boolean = true;
   // apiUrl: string = 'http://localhost:3000/api'
-  apiUrl: string = 'https://rashtrotthana-backend-812956739285.us-east4.run.app/api';
+  // apiUrl: string = 'https://rashtrotthana-backend-812956739285.us-east4.run.app/api';
+  apiUrl:string = 'https://docmindsjmrh.imapps.in/api'
   @ViewChild('formSection') formSection!: ElementRef;
 
   doctorFAQs: FAQ[] = [];
@@ -1916,7 +1917,7 @@ export class NewDocPageComponent {
       qualification: "MBBS, MD in General Medicine ",
       time: "",
       date: "",
-      id: 78,
+      id: 74,
       alt: 'Dr. Harshith K. S | Best Internal Medicine Doctor in Bangalore | Rashtrotthan Hospital',
       ttitle: 'Dr. Harshith K.S. | Consultant Physician in Bangalore',
       description: 'Book a consultation with Dr. Harshith K.S., expert in internal medicine, diabetes care and adult chronic disease management in Bangalore.',
@@ -2779,7 +2780,7 @@ export class NewDocPageComponent {
       time: "",
       date: "Thursday",
       alt: '',
-      id: 76,
+      id:78,
       title: 'Dr. Kavya N | Ayurvedic Specialist in Metabolic & Gut Disorders',
       description: 'Expert in Ayurveda for metabolic disorders, gut health, skin conditions, arthritis, spine care & gynecological issues with 15+ years of clinical experience.',
       faqs: [
@@ -3060,7 +3061,7 @@ export class NewDocPageComponent {
       qualification: "MBBS, DNB (Internal Medicine)",
       time: "",
       date: "",
-      id: 77,
+      id: 73,
       alt: 'Dr. Shruti Suresh| Nephrologist & Transplant Physician Bangalore',
       title: 'Dr. Shruti Suresh - Experienced General Physician in Bangalore',
       description: 'Consult Dr. Shruti Suresh for expert care in general medicine and long-term health management in Rajarajeshwari Nagar.',
@@ -3107,7 +3108,7 @@ export class NewDocPageComponent {
       qualification: "MBBS, MD Internal Medicine, DM Endocrinology",
       time: "",
       date: "",
-      id: 73,
+      id: 75,
       alt: 'Dr. Manasa M. G. | Best Endocrinology Doctor in Bangalore | Rashtrotthan Hospital',
       title: 'Dr. Manasa M. G. | Endocrinologist - Hormone & Diabetes Expert',
       description: 'Meet Dr. Manasa M. G., expert in endocrine care with research-backed experience in treating hormonal and metabolic disorders in Bangalore.',
@@ -3155,7 +3156,7 @@ export class NewDocPageComponent {
       qualification: "MSc. Clinical Psychology, M.Phil Clinical Psychology, Fellowship in Clinical Neuropsychology(NIMHANS)",
       time: "",
       date: "",
-      id: 75,
+      id: 84,
       alt: 'Ms. Samarchitha S | Best Psychology Hospital in Bangalore | Rashtrotthana Hospital',
       title: 'Ms. Samarchitha S | Clinical Psychologist in Bangalore',
       description: 'Ms. Samarchitha S, Clinical Psychologist at Rashtrotthana Hospital Bangalore, offers expert care for mood, anxiety, sleep and personality disorders.',
@@ -3203,7 +3204,7 @@ export class NewDocPageComponent {
       qualification: "MBBS, MS (Orthopedics), Fellowship in Joint Replacemen",
       time: "",
       date: "",
-      id: 74,
+      id: 85,
       alt: 'Dr. Sandeep K M, top orthopedic surgeon in Bangalore | Rashtrotthana Hospital',
       title: 'Dr. Sandeep K M | Expert Orthopedic Surgeon in Bangalore',
       description: 'Expert orthopedic care by Dr. Sandeep K M, with 11+ years in trauma, joint replacement, and arthroscopy. MBBS, MS, Fellowship-trained. At Rashtrotthana Hospital, restoring mobility. Book now!',
@@ -3348,6 +3349,7 @@ export class NewDocPageComponent {
       alt: 'Dr. Sushma A, Ophthalmologist and Oculoplasty specialist at Rashtrotthana Hospital, Bengaluru',
       title: 'Dr. Sushma A | Ophthalmologist & Oculoplasty Surgeon',
       description: 'Dr. Sushma A is a skilled Ophthalmologist and Oculoplasty specialist with 10+ years of experience, treating eye and eyelid disorders at Rashtrotthana Hospital, Bengaluru.',
+      id: 90,
       faqs: [
         {
           question: 'Who is Dr. Sushma A and what is her specialty at Rashtrotthana Hospital, Bangalore?',
@@ -3395,6 +3397,7 @@ export class NewDocPageComponent {
       alt: 'Dr. Mahesh M, senior urologist with 25+ years of experience at Rashtrotthana Hospital, Bengaluru',
       title: 'Dr. Mahesh M | Senior Urologist in Bengaluru',
       description: 'Dr. Mahesh M is a senior Urologist with 25+ years of experience, specializing in laparoscopic, laser and reconstructive urology at Rashtrotthana Hospital, Bengaluru.',
+      id: 95,
       faqs: [
         {
           question: 'Who is Dr. Mahesh M and what is his specialty at Rashtrotthana Hospital, Bangalore?',
@@ -3442,6 +3445,7 @@ export class NewDocPageComponent {
       alt: 'Major Dr. Ashish S. Mallige, senior paediatrician and PICU specialist at Rashtrotthana Hospital, Bengaluru',
       title: 'Dr. Ashish S. Mallige | Paediatrician & PICU Specialist',
       description: 'Dr. Ashish S. Mallige is an experienced Paediatrician and PICU specialist with 15 years of expertise in critical pediatric care at Rashtrotthana Hospital, Bengaluru.',
+      id: 92,
       faqs: [
         {
           question: 'Who is Major Dr. Ashish S Mallige and what is his specialty at Rashtrotthana Hospital, Bangalore?',
@@ -3489,6 +3493,7 @@ export class NewDocPageComponent {
       alt: 'Dr. Madhurya P. K, Consultant Dermatologist treating skin, hair and nail disorders at Rashtrotthana Hospital, Bengaluru',
       title: 'Dr. Madhurya P. K | Consultant Dermatologist in Bengaluru',
       description: 'Dr. Madhurya P. K is a Consultant Dermatologist with 5 years of experience, offering advanced care for skin, hair and nail conditions at Rashtrotthana Hospital, Bengaluru.',
+      id: 94,
       faqs: [
         {
           question: 'Who is Dr. Madhurya P K and what is her specialty at Rashtrotthana Hospital, Bangalore?',

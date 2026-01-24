@@ -16,7 +16,8 @@ export class PopupForm {
  @Output() close = new EventEmitter<void>()
 
   appointmentForm!: FormGroup;
-  apiUrl:string= 'https://rashtrotthana-backend-812956739285.us-east4.run.app/api/email'
+  // apiUrl:string= 'https://rashtrotthana-backend-812956739285.us-east4.run.app/api/email'
+   apiUrl:string = 'https://docmindsjmrh.imapps.in/api/email'
   constructor(private fb: FormBuilder, private http: HttpClient, private router: Router) {}
 
   ngOnInit(): void {
