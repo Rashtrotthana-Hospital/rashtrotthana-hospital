@@ -406,6 +406,7 @@ export class HealthCheckupComponent {
             'Pap Smear',
             'TFT',
             'LFT',
+            'CBC'
           ],
           icon: 'blood',
         },
@@ -426,7 +427,7 @@ export class HealthCheckupComponent {
             'Ophthalmology',
             'ENT',
             'Life Style',
-            'Speciality of Choice',
+            'Specialist of Choice',
             'Dental',
           ],
           icon: 'speciality',
