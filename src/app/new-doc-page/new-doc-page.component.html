@@ -2,190 +2,323 @@
 
     <!-- hero section -->
     <div class="heroSection">
-        <div class="content">
-            <h1 class="docname marginLeft">{{filteredDoctor.name}}</h1>
-            <div class="qualification marginLeft">{{filteredDoctor.qualification}}</div>
-            <div class="department marginLeft">{{filteredDoctor.department}}</div>
-            <div class="experience marginLeft">{{filteredDoctor.expertise}}</div>
-        </div>
 
+        <!-- BACK BUTTON -->
         <div class="back_button">
-            <a routerLink="/best-doctors-bangalore" style="position: relative; cursor: pointer; z-index: 10;"><i
-                    class="fa-solid fa-arrow-left"></i> Back</a>
+            <a routerLink="/best-doctors-bangalore">
+                <i class="fa-solid fa-arrow-left"></i> Back
+            </a>
         </div>
 
+        <!-- MAIN FLEX LAYOUT -->
+        <div class="flex">
 
-        <div class="image">
-            <img src="../../assets/doc-page-banner.png" alt="" class="desktop_bg">
-            <img src="../../assets/doc_page_banner_mobile.png" alt="" class="mobileBg">
-            <img src="../../assets/new-doctor-page-tab-size.png" alt="" class="tabsize">
-        </div>
-        <div class="doctor_image">
-            <div class="image_wrapper">
-                <img [src]="filteredDoctor.image" [alt]="filteredDoctor.alt">
+            <!-- DOCTOR IMAGE -->
+            <div class="flex1">
+                <div class="">
+                    <div class="image_wrapper">
+                        <img [src]="filteredDoctor.image" [alt]="filteredDoctor.name">
+                    </div>
+                </div>
+
+                <div class="experience-card">
+
+                    <div class="stat-box">
+                        <img src="assets/doctor-page-icon/Medical Doctor.png" alt="">
+                        <p>Years of Experience</p>
+                        <h2>{{ filteredDoctor.expertise }}</h2>
+                    </div>
+
+                    <div class="stat-box">
+                        <img src="assets/doctor-page-icon/Winner.png" alt="">
+                        <p>Happy Patients</p>
+                        <h2>1000+</h2>
+                    </div>
+
+                </div>
+
             </div>
+            <!-- CONTENT -->
+            <div class="content">
+
+                <h1 class="docname marginLeft">
+                    {{ filteredDoctor.name }}
+                </h1>
+
+                <div class="qualification marginLeft">
+                    {{ filteredDoctor.qualification }}
+                </div>
+
+                <div class="department marginLeft">
+                    {{ filteredDoctor.department }}
+                </div>
+
+                <!-- STATS CARD -->
+
+            </div>
+
         </div>
-        <div class="appointment_button">
-            <button><span class="btn_text" (click)="scrollToForm()">Book an Appointment</span><span class="arrow"><i
-                        class="fa-solid fa-angle-right"></i></span></button>
+
+        <!-- BACKGROUND IMAGE -->
+        <div class="image">
+            <img src="assets/doctor-page-banner.png" alt="" class="desktop_bg">
+            <!-- <img src="../../assets/doc_page_banner_mobile.png" alt="" class="mobileBg">
+            <img src="../../assets/new-doctor-page-tab-size.png" alt="" class="tabsize"> -->
         </div>
 
     </div>
 
+
     <!-- profile content -->
 
     <div class="profile_content">
-        <div class="briefProfile">
+        <div class="briefProfile" *ngIf="filteredDoctor.about">
             <div class="profileHeading">
-                <img src="../../assets/interest.png" alt="">
+                <!-- <img src="../../assets/interest.png" alt=""> -->
                 <span>Brief Profile</span>
             </div>
             <div class="briefProfilePara" [innerHTML]="filteredDoctor.about"></div>
         </div>
         <div class="areaOfExpertise">
             <div class="profileHeading">
-                <img src="../../assets/benefit.png" alt="">
+                <span class="img">
+                    <img src="assets/medal 1.png" alt="">
+                </span>
                 <span>Areas of Expertise</span>
             </div>
             <div class="list-wrapper">
                 <div class="list1">
                     <div class="lists" *ngFor="let expert of expertiseCol1">
-                        <img src="../../assets/list.png" alt="">
+                        <!-- <img src="../../assets/list.png" alt=""> -->
                         <div class="listItem">{{ expert }}</div>
                     </div>
-                </div>
-                <div class="list1">
+
                     <div class="lists" *ngFor="let expert of expertiseCol2">
-                        <img src="../../assets/list.png" alt="">
+                        <!-- <img src="../../assets/list.png" alt=""> -->
                         <div class="listItem">{{ expert }}</div>
                     </div>
                 </div>
+                <!-- <div class="list1"> -->
+
+                <!-- </div> -->
+
             </div>
+
+            <div class="list-wrapper" *ngIf="filteredDoctor.areasOfExpertise2?.length > 0">
+                <!-- <div class="expertise-groups"> -->
+
+                <div>
+                    <div class="expertise-group" *ngFor="let group of expertise2Col1">
+
+                        <div class="expertise-title">{{ group.title }}</div>
+
+                        <div class="lists" *ngFor="let item of group.items">
+                            <img src="../../assets/list.png" alt="">
+                            <div class="listItem">{{ item }}</div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="expertise-group" *ngFor="let group of expertise2Col2">
+
+                    <div class="expertise-title">{{ group.title }}</div>
+
+                    <div class="lists" *ngFor="let item of group.items">
+                        <img src="../../assets/list.png" alt="">
+                        <div class="listItem">{{ item }}</div>
+                    </div>
+
+                </div>
+                <!-- </div> -->
+            </div>
+
+
+
 
         </div>
     </div>
 
-    <!-- form -->\
+    <!-- form -->
 
-    <div class="form" #formSection>
-        <div class="formWrapper">
-            <div class="formHeading">Book an Appointment for Consultation</div>
+    <div class="bottom-part">
+        <div class="faqs">
+            <div class="faq-heading">FAQ</div>
+            <div class="faq-para">Problems trying to resolve the conflict between
+                the two major realms of Classical physics: Newtonian mechanics </div>
 
-            <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+            <div *ngIf="doctorFAQs.length" class="faq-section">
+                <div class="faq-grid">
 
-                <div class="row-1">
-                    <!-- appointment date -->
-                    <div class="inputField">
-                        <div class="heading"><img src="../../assets/appointment-date.svg" alt=""><span>Appointment
-                                Date</span></div>
-                        <!-- <input type="text" placeholder="Choose a date"> -->
-                        <p-calendar styleClass="date" [(ngModel)]="date" [minDate]="minDate" [iconDisplay]="'input'"
-                            placeholder="Choose a Date" [showIcon]="true" inputId="icondisplay"
-                            formControlName="date_appointment" [disabledDays]="disabledDays"
-                            (onSelect)="onDateChange($event)">
-                            <ng-template pTemplate="date" let-date>
-                                <span>
-                                    {{ date.day }}
-                                </span>
-                            </ng-template>
-                        </p-calendar>
-                    </div>
+                    <div class="faq-card" *ngFor="let faq of doctorFAQs; let i = index" (click)="toggleFAQ(i)"
+                        [class.active]="activeFAQ === i">
+                        <div class="faq-header">
+                            <span class="arrow" [class.open]="activeFAQ === i">›</span>
 
-                    <!-- Appointment Time -->
-                    <div class="inputField">
-                        <div class="heading time"><img src="../../assets/appointment-date.svg" alt=""><span>Appointment
-                                Time</span></div>
-                        <!-- <input type="text" placeholder="Choose a time"> -->
-                        <p-dropdown styleClass="dropdown" [options]="availableTimes" optionLabel="name"
-                            formControlName="time" placeholder="Choose a Time" [disabled]="availableTimes.length === 0"
-                            required></p-dropdown>
-                    </div>
-
-                </div>
-
-                <div class="row-1">
-                    <!-- appointment date -->
-                    <div class="inputField">
-                        <div class="heading"><img src="../../assets/appointment-name.svg" alt=""><span>First Name</span>
+                            <h3 class="question">
+                                {{ faq.question }}
+                            </h3>
                         </div>
-                        <input type="text" class="input" pInputText id="firstName" formControlName="firstName"
-                            placeholder="First Name" required />
-                        <div *ngIf="f['firstName'].touched && f['firstName'].invalid">
-                            <small class="error" *ngIf="f['firstName'].errors?.['required']">First name is
-                                required</small>
-                            <small class="error" *ngIf="f['firstName'].errors?.['minlength']">First name must be at
-                                least 2 characters long</small>
-                            <small class="error" *ngIf="f['firstName'].errors?.['pattern']">First name can only contain
-                                letters</small>
-                        </div>
-                    </div>
 
-                    <!-- Appointment Time -->
-                    <div class="inputField">
-                        <div class="heading"><img src="../../assets/appointment-name.svg" alt=""><span>Last Name</span>
-                        </div>
-                        <input type="text" class="input" pInputText id="lastName" formControlName="lastName"
-                            placeholder="Last Name" required />
-                        <div *ngIf="f['lastName'].touched && f['lastName'].invalid">
-                            <small class="error" *ngIf="f['lastName'].errors?.['required']">Last name is
-                                required</small>
-                            <small class="error" *ngIf="f['lastName'].errors?.['minlength']">Last name must be at least
-                                2 characters long</small>
-                            <small class="error" *ngIf="f['lastName'].errors?.['pattern']">Last name can only contain
-                                letters</small>
+                        <div class="faq-body">
+                            {{ faq.answer }}
                         </div>
                     </div>
 
                 </div>
+            </div>
+        </div>
 
-                <div class="row-1">
-                    <!-- appointment date -->
-                    <div class="inputField">
-                        <div class="heading"><img src="../../assets/appointment-mail.svg" alt=""><span>Email</span>
+
+
+        <div class="form" #formSection>
+            <div class="formWrapper">
+                <!-- <div class="formHeading">Book an Appointment for Consultation</div> -->
+
+                <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+
+                    <div class="row-1">
+                        <!-- appointment date -->
+                        <div class="inputField">
+                            <div class="heading">
+                                <!-- <img src="../../assets/appointment-date.svg" alt=""> -->
+                                <span>Appointment
+                                    Date</span>
+                            </div>
+                            <!-- <input type="text" placeholder="Choose a date"> -->
+                            <p-calendar styleClass="date" [(ngModel)]="date" [minDate]="minDate" [iconDisplay]="'input'"
+                                placeholder="Choose a Date" [showIcon]="true" inputId="icondisplay"
+                                formControlName="date_appointment" [disabledDays]="disabledDays"
+                                (onSelect)="onDateChange($event)">
+                                <ng-template pTemplate="date" let-date>
+                                    <span>
+                                        {{ date.day }}
+                                    </span>
+                                </ng-template>
+                            </p-calendar>
                         </div>
-                        <input type="email" class="input" pInputText id="email" formControlName="email"
-                            placeholder="Email" required />
-                        <div *ngIf="f['email']?.touched && f['email'].invalid">
-                            <small class="error" *ngIf="f['email'].errors?.['required']">Valid email is required</small>
-                            <small class="error" *ngIf="f['email'].errors?.['email']">Invalid email format</small>
+
+                        <!-- Appointment Time -->
+                        <div class="inputField">
+                            <div class="heading time">
+                                <!-- <img src="../../assets/appointment-date.svg"
+                                    alt=""> -->
+                                <span>Appointment
+                                    Time</span>
+                            </div>
+                            <!-- <input type="text" placeholder="Choose a time"> -->
+                            <p-dropdown styleClass="dropdown" [options]="availableTimes" optionLabel="name"
+                                formControlName="time" placeholder="Choose a Time"
+                                [disabled]="availableTimes.length === 0" required></p-dropdown>
+                        </div>
+
+                    </div>
+
+                    <div class="row-1">
+                        <!-- appointment date -->
+                        <div class="inputField">
+                            <div class="heading">
+                                <!-- <img src="../../assets/appointment-name.svg" alt=""> -->
+                                <span>First
+                                    Name</span>
+                            </div>
+                            <input type="text" class="input" pInputText id="firstName" formControlName="firstName"
+                                placeholder="First Name" required />
+                            <div *ngIf="f['firstName'].touched && f['firstName'].invalid">
+                                <small class="error" *ngIf="f['firstName'].errors?.['required']">First name is
+                                    required</small>
+                                <small class="error" *ngIf="f['firstName'].errors?.['minlength']">First name must be at
+                                    least 2 characters long</small>
+                                <small class="error" *ngIf="f['firstName'].errors?.['pattern']">First name can only
+                                    contain
+                                    letters</small>
+                            </div>
+                        </div>
+
+                        <!-- Appointment Time -->
+                        <div class="inputField">
+                            <div class="heading">
+                                <!-- <img src="../../assets/appointment-name.svg" alt=""> -->
+                                <span>Last
+                                    Name</span>
+                            </div>
+                            <input type="text" class="input" pInputText id="lastName" formControlName="lastName"
+                                placeholder="Last Name" required />
+                            <div *ngIf="f['lastName'].touched && f['lastName'].invalid">
+                                <small class="error" *ngIf="f['lastName'].errors?.['required']">Last name is
+                                    required</small>
+                                <small class="error" *ngIf="f['lastName'].errors?.['minlength']">Last name must be at
+                                    least
+                                    2 characters long</small>
+                                <small class="error" *ngIf="f['lastName'].errors?.['pattern']">Last name can only
+                                    contain
+                                    letters</small>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row-1">
+                        <!-- appointment date -->
+                        <div class="inputField">
+                            <div class="heading">
+                                <!-- <img src="../../assets/appointment-mail.svg" alt=""> -->
+                                <span>Email</span>
+                            </div>
+                            <input type="email" class="input" pInputText id="email" formControlName="email"
+                                placeholder="Email" required />
+                            <div *ngIf="f['email']?.touched && f['email'].invalid">
+                                <small class="error" *ngIf="f['email'].errors?.['required']">Valid email is
+                                    required</small>
+                                <small class="error" *ngIf="f['email'].errors?.['email']">Invalid email format</small>
+                            </div>
+                        </div>
+
+                        <!-- Appointment Time -->
+                        <div class="inputField">
+                            <div class="heading">
+                                <!-- <img src="../../assets/appointment-call.svg" alt=""> -->
+                                <span>Contact
+                                    Number</span>
+                            </div>
+                            <input type="text" class="input" pInputText id="contactNumber"
+                                formControlName="contactNumber" placeholder="Enter the 10 digit number" required
+                                minlength="10" maxlength="10" />
+                            <div *ngIf="f['contactNumber'].touched && f['contactNumber'].invalid">
+                                <small class="error" *ngIf="f['contactNumber'].errors?.['required']">Contact Number is
+                                    required</small>
+                                <small class="error" *ngIf="f['contactNumber'].errors?.['pattern']">Contact Number must
+                                    be
+                                    digits
+                                    only</small>
+                                <small class="error" *ngIf="f['contactNumber'].errors?.['minlength']">Contact Number
+                                    must be
+                                    at least 10
+                                    digits long</small>
+                                <small class="error" *ngIf="f['contactNumber'].errors?.['maxlength']">Contact Number
+                                    must be
+                                    no more than
+                                    10 digits long</small>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Appointment Time -->
-                    <div class="inputField">
-                        <div class="heading"><img src="../../assets/appointment-call.svg" alt=""><span>Contact
-                                Number</span></div>
-                        <input type="text" class="input" pInputText id="contactNumber" formControlName="contactNumber"
-                            placeholder="Enter the 10 digit number" required minlength="10" maxlength="10" />
-                        <div *ngIf="f['contactNumber'].touched && f['contactNumber'].invalid">
-                            <small class="error" *ngIf="f['contactNumber'].errors?.['required']">Contact Number is
-                                required</small>
-                            <small class="error" *ngIf="f['contactNumber'].errors?.['pattern']">Contact Number must be
-                                digits
-                                only</small>
-                            <small class="error" *ngIf="f['contactNumber'].errors?.['minlength']">Contact Number must be
-                                at least 10
-                                digits long</small>
-                            <small class="error" *ngIf="f['contactNumber'].errors?.['maxlength']">Contact Number must be
-                                no more than
-                                10 digits long</small>
+                    <div class="textbox">
+                        <textarea type="text" class="text-area" rows="5" cols="30" placeholder="Your Message..."
+                            pInputTextarea formControlName="message" required></textarea>
+                        <div *ngIf="f['message'].touched && f['message'].invalid">
+                            <small class="error">Message is required</small>
                         </div>
                     </div>
-                </div>
-
-                <div class="textbox">
-                    <textarea type="text" class="text-area" rows="5" cols="30" placeholder="Your Message..."
-                        pInputTextarea formControlName="message" required></textarea>
-                    <div *ngIf="f['message'].touched && f['message'].invalid">
-                        <small class="error">Message is required</small>
+                    <div class="book_button">
+                        <button class="appt-btn" type="submit" [disabled]="contactForm.invalid && clicked"><span
+                                class="btn_text">Book an Appointment</span>
+                            <!-- <span class="arrow"><i class="fa-solid fa-angle-right"></i></span> -->
+                        </button>
                     </div>
-                </div>
-                <div class="book_button">
-                    <button class="appt-btn" type="submit" [disabled]="contactForm.invalid && clicked"><span
-                            class="btn_text">Book an Appointment</span><span class="arrow"><i
-                                class="fa-solid fa-angle-right"></i></span></button>
-                </div>
-            </form>
+                </form>
+            </div>
         </div>
     </div>
 
