@@ -1344,6 +1344,7 @@ li {
   gap: 40px;
   height: 420px;
   overflow: hidden;
+  border: none;
 }
 
 
@@ -1377,12 +1378,7 @@ li {
   justify-content: center;
 }
 
-.surgery-card img {
-  width: 120px;
-  height: 120px;
-  aspect-ratio: 1/1;
-  /* object-fit: cover; */
-}
+
 
 .surgery-card img {
   width: 120px;
@@ -1449,6 +1445,12 @@ li {
   .vertical-cards-wrapper {
     /* flex-direction: column; */
     height: 700px;
+    padding: 0 20px;
+    border-top: 2px solid rgba(41, 77, 164, 0.30);
+    border-bottom: 2px solid rgba(41, 77, 164, 0.30);
+  }
+  .tie-up-left{
+    width: 100%;
   }
 
   .vertical-row {
@@ -2414,6 +2416,8 @@ li {
 
   .tie-up-container {
     flex-direction: column;
+    gap: 20px;
+    padding-bottom: 20px;
   }
 
   .line-2 {
@@ -2422,6 +2426,12 @@ li {
 
   .surgery-card {
     padding: 10px;
+   
+  }
+
+  .surgery-card img{
+     width: 80px;
+    height: 80px;
   }
 
   .tie-up-para {
