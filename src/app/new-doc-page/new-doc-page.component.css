@@ -1,6 +1,5 @@
-.root-container {
+.root-container{
     margin-top: 120px;
-    background: #FBFFF5;
 }
 
 .content {
@@ -10,78 +9,10 @@
     flex-direction: column;
     justify-content: center;
     height: 600px;
-    z-index: 2;
-    top: 0px;
-    right: 90px;
-}
-
-.flex {
-    display: flex;
-    margin-top: 15%;
-    align-items: center;
-    justify-content: center;
-}
-
-.flex1 {
-    z-index: 1;
-    display: flex;
-    align-items: end;
-    justify-content: center;
-    border-radius: 30px;
-    background: #008080;
-    width: 1124px;
-    height: 324px;
-    gap: 30px;
-}
-
-.experience-card {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-
-}
-
-.stat-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.stat-box img {
-    flex-shrink: 0;
-    aspect-ratio: 1/1;
-    display: flex;
-    width: 70px;
-    height: 70px;
-    padding: 10px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 60px;
-    background: #FFF;
-}
-
-.stat-box p {
-    color: #FFF;
-    font-family: Poppins;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    padding: 10px;
-}
-
-.stat-box h2 {
-    color: #FFF;
-    font-family: Poppins;
-    font-size: 64px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
 }
 
 .docname {
-    color: #FFF;
+    color: #1C1B1F;
     font-family: Poppins;
     font-size: 48px;
     font-style: normal;
@@ -90,7 +21,7 @@
 }
 
 .qualification {
-    color: #FFF;
+    color: #1C1B1F;
     font-family: Poppins;
     font-size: 20px;
     font-style: normal;
@@ -100,25 +31,13 @@
 }
 
 .department {
-    display: flex;
-    color: #FFF;
+    color: #1E0B9B;
     font-family: Poppins;
-    font-size: 18px;
+    font-size: 22px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    padding: 10px 24px;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    border-radius: 30px;
-    background: rgba(255, 255, 255, 0.30);
-    width: fit-content;
-    margin-top: 20px;
-}
-
-.experience-card {
-    z-index: 1;
+    margin-top: 4%;
 }
 
 .experience {
@@ -137,7 +56,6 @@
 
 .image {
     position: absolute;
-    top: 110px;
 }
 
 .image .desktop_bg {
@@ -149,29 +67,16 @@
     width: 100%;
     height: 600px;
     display: flex;
-    /* justify-content: end; */
-    /* align-items: end; */
-    /* position: relative; */
+    justify-content: end;
+    align-items: end;
+    position: relative;
     z-index: 2;
 }
 
-.expertise-title {
-    color: #008080;
-    font-family: Poppins;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    padding: 10px;
-}
-
 .image_wrapper {
-    width: 100%;
-    /* display: flex; */
-    /* justify-content: center; */
+    width: 45%;
+    display: flex;
+    justify-content: center;
 }
 
 .image_wrapper img {
@@ -205,38 +110,32 @@
     cursor: pointer;
     margin-left: 8%;
 }
-
-.book_button {
+.book_button{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     margin-top: 20px;
 }
-
 .book_button button:disabled {
-    /* background: linear-gradient(90deg, #b0bcc6 0%, #96e6e6 100%) !important; */
+    background: linear-gradient(90deg, #b0bcc6 0%, #96e6e6 100%) !important;
     box-shadow: none !important;
     cursor: not-allowed !important;
     opacity: 0.6;
-}
-
+  }
 .book_button button {
     display: flex;
     align-items: center;
     gap: 15px;
-    padding: 16px 71px;
+    padding: 8px 5px 8px 15px;
+    border-radius: 30px;
     border: none;
     outline: none;
-    border-radius: 50px;
-    background: #013243;
+    background: linear-gradient(90deg, #022b50 0%, #279797 100%);
     box-shadow: 3px 4px 15px rgba(63, 176, 206, 0.65);
     cursor: pointer;
-    /* margin-left: 8%; */
-    width: 100%;
-    justify-content: center;
+    margin-left: 8%;
 }
-
 .btn_text {
     color: #FFF;
     font-family: Inter;
@@ -258,9 +157,9 @@
     background: rgba(255, 255, 255, 0.28);
 }
 
-.back_button a {
+.back_button a{
     width: 100px;
-    color: #FFF;
+    color: #008080;
     font-family: Poppins;
     font-size: 18px;
     font-weight: 600;
@@ -271,54 +170,33 @@
     z-index: 20;
     top: 20px;
     left: 10px;
-    background-color: #008080;
+    background-color: #00808035;
     text-decoration: none;
     padding: 10px 10px;
-    border: 1px solid #FFF;
-
     border-radius: 30px;
 }
 
 .profile_content {
-    /* padding: 0 8%; */
+    padding: 0 8%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-    margin-top: 30px;
+    gap: 100px;
 }
 
 .briefProfile,
 .areaOfExpertise {
-    width: 100%;
-}
-
-.briefProfile {
-    padding: 0 8%;
-}
-
-.areaOfExpertise {
-    width: 100%;
-    height: auto;
-    background: linear-gradient(135deg,
-            #F4FDFF 0%,
-            #DDF6FB 50%,
-            #C9F0F7 100%);
-    padding: 30px;
+    width: 50%;
 }
 
 .profileHeading {
-    color: #032977;
+    color: #008080;
     font-family: Poppins;
-    font-size: 36px;
+    font-size: 24px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     line-height: normal;
     display: flex;
-    gap: 20px;
     align-items: center;
-    justify-content: center;
+    gap: 12px;
 }
 
 .briefProfilePara {
@@ -333,28 +211,14 @@
 }
 
 .profileHeading img {
-    width: 35px;
-    height: 35px;
-}
-
-.img {
-    width: 50px;
-    height: 50px;
-    padding: 10px;
-    border-radius: 31px;
-    background: #032977;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 30px;
+    height: 30px;
 }
 
 .list-wrapper {
     display: flex;
     gap: 30px;
     margin-top: 30px;
-    align-items: center;
-    justify-content: center;
-
 }
 
 .lists {
@@ -378,170 +242,26 @@
 }
 
 .list1 {
-    /* width: 100%; */
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    width: 50%;
 }
-
-.listItem {
-    display: inline-flex;
-    padding: 10px 30px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 50px;
-    border: 1px solid #FFF;
-    background: linear-gradient(90deg, rgba(0, 128, 128, 0.74) 0%, rgba(136, 168, 0, 0.74) 100%);
-    color: #FFF;
-    text-align: center;
-    font-family: Inter;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 28px;
-    /* 175% */
-}
-
-.bottom-part {
-    display: flex;
-    gap: 30px;
-    align-items: center;
-}
-
-
-/* FAQ SECTION */
-
-.faqs {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px;
-}
-
-.faq-heading {
-    color: var(--text-color, #252B42);
-    font-family: Montserrat;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 57px;
-    letter-spacing: 0.2px;
-}
-
-/* TITLE */
-.faq-title {
-    color: var(--text-color, #252B42);
-    font-family: Montserrat;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 24px;
-    /* 150% */
-    letter-spacing: 0.1px;
-}
-
-/* GRID */
-.faq-grid {
-    display: grid;
-    /* grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); */
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-content: center;
-    gap: 25px;
-    padding: 20px 30px;
-}
-
-/* CARD */
-.faq-card {
-    background: white;
-    border-radius: 20px;
-    padding: 25px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
-    overflow: hidden;
-}
-
-.faq-card:hover {
-    transform: translateY(-4px);
-}
-
-/* HEADER */
-.faq-header {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.question {
-    font-size: 18px;
-    font-weight: 600;
-    margin: 0;
-    color: #1f2d3d;
-}
-
-/* ARROW */
-.arrow {
-    font-size: 26px;
-    color: #1aa3ff;
-    transition: transform 0.3s ease;
-}
-
-.arrow.open {
-    transform: rotate(90deg);
-}
-
-/* BODY */
-.faq-body {
-    max-height: 0;
-    overflow: hidden;
-    margin-top: 0;
-    font-size: 15px;
-    color: #6b7280;
-    line-height: 1.6;
-    margin-left: 40px;
-    transition: max-height 0.4s ease, margin-top 0.4s ease;
-}
-
-.faq-card.active .faq-body {
-    max-height: 300px;
-    margin-top: 15px;
-    margin-left: 40px;
-}
-
-.faq-para {
-    color: var(--second-text-color, #737373);
-    text-align: center;
-    font-family: Montserrat;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 20px;
-    /* 142.857% */
-    letter-spacing: 0.2px;
-}
-
 
 /* appointment form */
 
 .form {
-    padding: 4%;
+    padding: 4% 8%;
 }
 
 .formWrapper {
+    background: rgba(0, 128, 128, 0.80);
+    padding: 3%;
+    border-radius: 20px;
     display: flex;
-    width: 540px;
-    height: auto;
-    padding: 50px 30px;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 32px;
-    border-radius: 24px;
-    background: #008080;
+    align-items: center;
+    gap: 30px;
+    border: 4px solid #FFF;
+    box-shadow: 0px 0px 60px 0px #FFF;
+    backdrop-filter: blur(30px);
 }
 
 .formHeading {
@@ -555,49 +275,45 @@
 }
 
 form {
-    width: 100%;
+    width: 70%;
 }
 
 .row-1 {
     display: flex;
-    flex-direction: column;
     gap: 40px;
     margin-top: 30px;
 }
 
 .inputField {
-    width: 100%;
+    width: 50%;
 }
 
 .inputField input {
-    width: 100%;
-    border: none;
-    border-bottom: 1px solid #FFFFFF;
+    width: 99%;
+    border: 1px solid #000;
     height: 50px;
     padding: 0 10px;
     outline: none;
-    border-radius: 0;
+    border-radius: 8px;
     margin-top: 10px;
-    background: transparent;
 }
-
-.time {
+.time{
     margin-bottom: 10px;
 }
-
 .formHeading {
     font-size: 40px;
 }
 
 .heading {
     color: #FFF;
-    font-feature-settings: 'liga' off, 'clig' off;
-    font-family: Nunito;
-    font-size: 18px;
+    font-family: Poppins;
+    font-size: 26px;
     font-style: normal;
     font-weight: 600;
-    line-height: 16px;
-    /* 88.889% */
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .heading img {
@@ -609,76 +325,9 @@ textarea {
     width: 100%;
     margin-top: 30px;
     height: 130px;
-    border-radius: 0px;
-    border: none;
-    border-bottom: 1px solid #FFFF;
+    border-radius: 10px;
+    border: 1px solid #000;
     padding: 10px;
-    background: transparent;
-
-}
-
-input:focus {
-    outline: none;
-    box-shadow: none;
-    border-color: transparent;
-}
-
-textarea:focus {
-    outline: none;
-    box-shadow: none;
-}
-
-::ng-deep .p-dropdown {
-    background: transparent;
-    border: none;
-    border-bottom: 1px solid #FFFF;
-    border-radius: 0;
-}
-
-
-::ng-deep .p-dropdown.p-focus {
-    outline: none;
-    box-shadow: none;
-}
-
-::ng-deep .p-dropdown .p-dropdown-label.p-placeholder {
-    color: #FFF;
-    font-family: Poppins;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-}
-
-::ng-deep .p-calendar {
-    background: transparent;
-    border: none !important;
-    box-shadow: none !important;
-}
-
-::ng-deep .p-calendar .p-inputtext {
-    background: transparent;
-    border: none !important;
-    border-bottom: 2px solid white !important;
-    border-radius: 0 !important;
-    box-shadow: none !important;
-    color: white;
-    /* padding-left: 0; */
-}
-
-
-::ng-deep .p-calendar.p-focus .p-inputtext {
-    border-bottom: 2px solid #00ffff !important;
-}
-
-
-::ng-deep .p-calendar .p-inputtext::placeholder {
-    color: #FFF;
-    font-family: Poppins;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
 }
 
 input::placeholder,
@@ -686,19 +335,17 @@ textarea::placeholder,
 input,
 textarea,
 .dummybava {
-    color: #FFF;
-    font-feature-settings: 'liga' off, 'clig' off;
-    font-family: Nunito;
+    color: #666F77;
+    font-family: Poppins;
     font-size: 16px;
     font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-    /* 150% */
+    font-weight: 500;
+    line-height: normal;
 }
 
 select:invalid,
 select option.placeholder-option {
-    color: #FFF;
+    color: #666F77;
     font-family: Poppins;
     font-size: 16px;
     font-style: normal;
@@ -744,11 +391,11 @@ select::-ms-expand {
     height: 50px;
     border-radius: 6px;
     margin-top: 10px;
-
+    
 }
 
 .p-inputtext::placeholder {
-    color: #FFF;
+    color: #666F77;
     font-family: Poppins;
     font-size: 16px;
     font-style: normal;
@@ -759,75 +406,29 @@ select::-ms-expand {
 .tabsize {
     display: none;
 }
-
-.error {
+.error{
     color: red;
     font-size: 12px;
     margin-top: 5px;
 }
-
-@media(max-width:1024px) {
-    .content {
-        top: -50px;
-        right: 90px;
-    }
-
-    .formWrapper {
-        width: 100%;
-    }
-}
-
 @media (max-width : 1200px) {
     .image_wrapper img {
         width: 390px;
     }
-
-    .faq-grid {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    form {
-        width: 100%;
-    }
-
-    .flex {
-        margin-top: 24%;
-        flex-wrap: wrap;
-        flex-direction: column-reverse;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .flex1 {
-        width: 100%;
-    }
 }
 
 @media (max-width : 800px) {
-    .root-container {
+    .root-container{
         margin-top: 110px;
     }
-
+    
     .profile_content {
         flex-direction: column;
         gap: 50px;
     }
 
     .desktop_bg {
-        width: 100%;
-        height: 100%;
-    }
-
-    .flex1 {
-        width: 100%;
-        height: auto;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .experience-card {
-        flex-wrap: wrap;
+        display: none;
     }
 
     .tabsize {
@@ -874,8 +475,6 @@ select::-ms-expand {
 
     .content {
         height: 510px;
-        justify-content: flex-start;
-        top: 140px;
     }
 
     .appointment_button button {
@@ -904,7 +503,7 @@ select::-ms-expand {
     }
 
     form {
-        width: 100%;
+        width: 90%;
     }
 
     input::placeholder,
@@ -913,11 +512,6 @@ select::-ms-expand {
     textarea {
         font-size: 12px;
     }
-
-    .bottom-part {
-        flex-direction: column;
-    }
-
 }
 
 @media (max-width : 768px) {
@@ -927,28 +521,10 @@ select::-ms-expand {
     }
 }
 
-/* MOBILE */
-@media (max-width: 768px) {
-    .doctor-header {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .doctor-image {
-        width: 120px;
-        height: 120px;
-    }
-
-    .faq-section {
-        padding: 30px 20px;
-    }
-
-}
-
 
 @media (max-width : 700px) {
 
-    .root-container {
+    .root-container{
         margin-top: 130px;
     }
 
@@ -956,18 +532,6 @@ select::-ms-expand {
         position: relative;
         width: 100%;
         height: 165px;
-        display: flex;
-        align-items: center;
-        right: 0;
-        top: -40px;
-    }
-
-    .stat-box p {
-        font-size: 12px;
-    }
-
-    .stat-box h2 {
-        font-size: 40px;
     }
 
     .docname {
@@ -1011,8 +575,7 @@ select::-ms-expand {
     }
 
     .desktop_bg {
-        width: 100%;
-        height: 100%;
+        display: none;
     }
 
     .mobileBg {
@@ -1057,20 +620,15 @@ select::-ms-expand {
     input::placeholder,
     textarea::placeholder,
     input,
-    textarea,
-    select {
+    textarea, select {
         font-size: 12px;
     }
 
     select:invalid,
-    select option.placeholder-option {
+    select option.placeholder-option{
         font-size: 12px;
     }
 
-
-    .formWrapper {
-        width: 100%;
-    }
 }
 
 @media (max-width : 390px) {
@@ -1078,4 +636,3 @@ select::-ms-expand {
         width: 65%;
     }
 }
-
