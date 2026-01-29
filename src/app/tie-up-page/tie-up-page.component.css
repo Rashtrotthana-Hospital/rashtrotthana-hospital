@@ -398,7 +398,7 @@
     }
 
     .structure-card {
-        gap: 30px;
+        gap: 0px;
         height: auto;
         padding: 20px;
     }
@@ -473,7 +473,7 @@
     }
 
     .structure-heading {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .icon-wrapper {

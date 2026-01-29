@@ -19,14 +19,14 @@ export class NaturopathyComponent {
 
   }
   doctors =[
-    {
-      image : '../../assets/yoga/Dr-Suvarnini-Konale.png',
-      name : "Dr. Suvarnini Konale",
-      section : "BNYS",
-      designation : "LIFESTYLE",
-      experience : "15",
-      alt : 'Dr. Suvarnini Konale | Best Lifestyle Consultant in Bangalore | Rashtrotthana Hospital'
-    },
+    // {
+    //   image : '../../assets/yoga/Dr-Suvarnini-Konale.png',
+    //   name : "Dr. Suvarnini Konale",
+    //   section : "BNYS",
+    //   designation : "LIFESTYLE",
+    //   experience : "15",
+    //   alt : 'Dr. Suvarnini Konale | Best Lifestyle Consultant in Bangalore | Rashtrotthana Hospital'
+    // },
     {
       image : '../../assets/Dr-Varsha-P.png',
       name : "Dr. Varsha P",
