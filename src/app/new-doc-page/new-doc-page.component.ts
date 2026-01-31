@@ -156,7 +156,7 @@ export class NewDocPageComponent {
   allDoctors = [
     {
       name: 'Col (Dr) Anand Shankar K',
-      image: 'assets/Doc-Inv-Page/Dr-(Col)Anand-Shankar.png',
+      image: 'assets/Doc-Inv-Page/Dr-(Col)Anand-Shankar.webp',
       department: 'ER HEAD, ICU, ANAESTHESIA',
       about: 'Col (Dr) Anand Shankar K is an alumnus of the prestigious Armed Forces Medical College, Pune. He served in field areas prior to pursuing postgraduation in the field of Anaesthesiology and Intensive Care at AFMC pune. Thereafter he qualified the European Diploma in Intensive Care Medicine. He has an overall experience of more than 31 years, 27 of those years serving with the Armed Forces. He has served within the country and in foreign missions with the United Nations. He also had the unique opportunity to serve as accompanying doctor to the President of India. He has been serving with Rashtrotthana Hospital since its inception in Dec 2022.',
       speciality: ['ANAESTHESIOLOGY', 'EMERGENCY MEDICINE'],
@@ -196,13 +196,14 @@ export class NewDocPageComponent {
         },
         {
           question: 'How can I book an appointment with Col (Dr) Anand Shankar K at Rashtrotthana Hospital?',
-          answer: 'You can book an appointment with Col (Dr) Anand Shankar K by calling Rashtrotthana Hospital’s appointment helpline at 080 6923 9999, visiting the hospital’s front desk, or booking online through the official Rashtrotthana Hospital website, depending on your consultation or treatment requirement.'
+          answer: `You can book an appointment with Col (Dr) Anand Shankar K by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital’s front desk, or booking online through the official Rashtrotthana Hospital website, depending on your consultation or treatment requirement.`
         },
-      ]
+      ],
+      departmentSlug: '/specialities/best-anesthesiology-hospital-in-india',
     },
     {
       name: 'Dr. H. N. Shyla',
-      image: 'assets/Doc-Inv-Page/Dr-H-N-Shyla.png',
+      image: 'assets/Doc-Inv-Page/Dr-H-N-Shyla.webp',
       department: 'DENTAL SCIENCES',
       about: 'An alumini of the prestigious Government Dental college, Bengaluru with a teaching experience of more than 15 yrs with expertise in the field of trauma and implants specially',
       speciality: 'DENTAL SCIENCES',
@@ -238,19 +239,20 @@ export class NewDocPageComponent {
         },
         {
           question: 'How can I book an appointment with Dr. H. N. Shyla at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'You can book an appointment with Dr. H. N. Shyla by calling Rashtrotthana Hospital’s appointment helpline at 080 6923 9999, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.'
+          answer: `You can book an appointment with Dr. H. N. Shyla by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
         },
         {
           question: 'What should I expect during my first consultation with Dr. H. N. Shyla at Rashtrotthana Hospital?',
           answer: 'During your first visit, Dr. H. N. Shyla will evaluate your dental and oral health, review your medical history, and recommend the most suitable treatment plan. The consultation focuses on clear communication, comfort, and long-term oral health.'
         }
-      ]
+      ],
+      departmentSlug: '/specialities/best-dental-hospital-in-bangalore',
 
     },
 
     {
       name: 'Dr. Latha Venkataram',
-      image: 'assets/Doc-Inv-Page/Dr-Latha-Venkataram.png',
+      image: 'assets/Doc-Inv-Page/Dr-Latha-Venkataram.webp',
       department: 'OBSTETRICS & GYNECOLOGY',
       about: 'Maternity Unit at Rashtrotthana Hospital is run by WMN team of OBGYNs headed by Dr. Latha Venkatraman. Dr. Latha Venkatraman is a renowned OBGYN with more than 30 years of experience & specialises in Vaginal deliveries & High Risk Pregnancy. The aim is to provide high quality service at affordable cost. The team of OBGYN run super speciality services through specialised clinics involving many specialists available under one roof jointly in a single clinic for comprehensive care of women striving for the vision.',
       speciality: 'OBSTETRICS & GYNECOLOGY',
@@ -296,14 +298,15 @@ export class NewDocPageComponent {
         },
         {
           question: 'How can I book an appointment with Dr. Latha Venkataram at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'You can book an appointment with Dr. Latha Venkataram by calling Rashtrotthana Hospital’s appointment helpline at 080 6923 9999, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.'
+          answer: `You can book an appointment with Dr. Latha Venkataram by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
         }
-      ]
+      ],
+      departmentSlug: '/specialities/best-obstetrics-and-gynecologist-hospital-in-bangalore',
 
     },
     {
       name: 'Dr. Shekar Patil',
-      image: 'assets/Doc-Inv-Page/Dr-Shekar-Patil.png',
+      image: 'assets/Doc-Inv-Page/Dr-Shekar-Patil.webp',
       department: 'SR. CONSULTANT MEDICAL ONCOLOGIST',
       about: 'Dr. Shekar Patil is a Medical Oncologist in Bangalore. He has been practising medicine for 39 years including over 25 years in medical oncology. He treats conventional and high dose chemotherapy for both solid and haematological malignancies. Dr. Patil s knowledge and expertise spans a vast area including: Intraperitoneal Chemotherapy as consolidation in advanced Ovarian Cancers Concurrent radiation and chemotherapy (BIP) in Carcinoma Cervix Bone Marrow Transplantation Oral recombinant human lactoferrin with Carboplatin Chemotherapy in Gynaecological Malignancies Treatment of Lymphomas Treatment of Acute Myeloid Leukaemia.',
       speciality: 'ONCOLOGY',
@@ -342,14 +345,15 @@ export class NewDocPageComponent {
         },
         {
           question: 'How can I book an appointment with Dr. Shekar Patil at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'You can book an appointment with Dr. Shekar Patil by calling Rashtrotthana Hospital’s appointment helpline at 080 6923 9999, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.'
+          answer: `You can book an appointment with Dr. Shekar Patil by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
         }
-      ]
+      ],
+      departmentSlug: '/specialities/best-oncology-hospital-in-bangalore',
 
     },
     {
       name: 'Dr. Pramod S. Chinder',
-      image: 'assets/Doc-Inv-Page/Dr-Pramod-Cinder.png',
+      image: 'assets/Doc-Inv-Page/Dr-Pramod-Cinder.webp',
       department: 'ORTHOPEDIC ONCOSURGEON',
       about: '',
       speciality: 'ONCOLOGY',
@@ -397,14 +401,15 @@ export class NewDocPageComponent {
         },
         {
           question: 'How can I book a consultation with Dr. Pramod S. Chinder at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'You can book an appointment with Dr. Pramod S. Chinder by calling Rashtrotthana Hospital’s appointment helpline at 080 6923 9999, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.'
+          answer: `You can book an appointment with Dr. Pramod S. Chinder by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
         }
-      ]
+      ],
+      departmentSlug: '/specialities/best-oncology-hospital-in-bangalore',
 
     },
     {
       name: 'Dr. Nagaraj Rao',
-      image: 'assets/Doc-Inv-Page/Dr-Nagaraj-Rao.png',
+      image: 'assets/Doc-Inv-Page/Dr-Nagaraj-Rao.webp',
       department: 'UROLOGY',
       about: 'After obtaining urology training from prestigious PGIMER, Chandigarh, worked in St John\'s medical college hospital for 16 years at different capacities.Headed the department of urology between 2011-2015 Has vast experience in managing day to day as well as complex urological problems both medically and surgically.Now has been associated with various hospitals in Bengaluru as a senior consultant.Has been DNB and MCh examiner for various universities',
       speciality: 'UROLOGY',
@@ -444,14 +449,15 @@ export class NewDocPageComponent {
         },
         {
           question: 'How can I book an appointment with Dr. Nagaraj Rao at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'You can book an appointment with Dr. Nagaraj Rao by calling Rashtrotthana Hospital’s appointment helpline at 080 6923 9999, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.'
+          answer: `You can book an appointment with Dr. Nagaraj Rao by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
         }
-      ]
+      ],
+      departmentSlug: '/specialities/best-urology-hospital-in-bangalore',
 
     },
     {
       name: 'Dr. H. M. Krishnamurthy',
-      image: 'assets/Doc-Inv-Page/Dr-H-M-Krishnamurthy.png',
+      image: 'assets/Doc-Inv-Page/Dr-H-M-Krishnamurthy.webp',
       department: 'Consultant - Internal Medicine',
       about: 'Dr. H. M. Krishnamurthy is a Doctor in Bangalore and has an experience of 40 years in this field. Dr. H. M. Krishnamurthy practices at Various hospitals in Bangalore and He completed MBBS from Bangalore University in 1984.(First Rank to Bangalore University both MBBS & MD) Fellowship in Diabetes- Arhus University Denmark,Been a faculty in Regional & National clinical meetings Authored book.  Diabetes - Patient Education Have Conducted - Multiple patient education programs. under the auspices of Friends of Diabetes Group.',
       speciality: 'INTERNAL MEDICINE',
@@ -491,14 +497,15 @@ export class NewDocPageComponent {
         },
         {
           question: 'How can I book an appointment with Dr. H. M. Krishnamurthy at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'You can book an appointment with Dr. H. M. Krishnamurthy by calling Rashtrotthana Hospital’s appointment helpline at 080 6923 9999, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.'
+          answer: `You can book an appointment with Dr. H. M. Krishnamurthy by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
         }
-      ]
+      ],
+      departmentSlug: '/specialities/internal-medicine-hospital-in-bangalore',
 
     },
     // {
     //   name: 'Dr. Rajeev Vijayakumar',
-    //   image: 'assets/Doc-Inv-Page/Dr-Rajeev-Vijayakumar.png',
+    //   image: 'assets/Doc-Inv-Page/Dr-Rajeev-Vijayakumar.webp',
     //   department: 'Oncologist',
     //   about: 'Dr. Rajeev, the very senior consultant whose expertise in Medical Oncology, Hemato Oncology and Bone Marrow Transplant ensures that your confidence in his ...',
     //   speciality: 'ONCOLOGY',
@@ -514,7 +521,7 @@ export class NewDocPageComponent {
     // },
     // {
     //   name: 'Dr. Shashidhar',
-    //   image: 'assets/Doc-Inv-Page/Dr-Shashidhar.png',
+    //   image: 'assets/Doc-Inv-Page/Dr-Shashidhar.webp',
     //   department: 'Anaesthesia',
     //   about: ' Dr. Shashidhar, our esteemed anesthesiologist with over 20 years of dedicated experience in the field. With qualifications including MBBS and DA, Dr. Shashidhar specializes in intensive care, emergency care and anesthesiology. His expertise ensures the safe and effective management of anesthesia for various medical procedures, providing essential support in critical and emergency situations. Trust him for expert care in anesthesia at every stage of your medical journey.',
     //   speciality: 'ANAESTHESIOLOGY',
@@ -530,11 +537,11 @@ export class NewDocPageComponent {
 
     {
       name: 'Dr. Mahesh Kulkarni',
-      image: 'assets/Doc-Inv-Page/Dr-Mahesh-Kulkarni.png',
+      image: 'assets/Doc-Inv-Page/Dr-Mahesh-Kulkarni.webp',
       department: 'Orthopaedics',
       about: 'Prof Dr. Mahesh Kulkarni is a highly experienced and compassionate Orthopaedic Surgeon with over 15 years of expertise in diagnosing and treating a wide range of conditions related to Musculoskeletal affections. He completed his medical degree at prestigious BMC&RI and pursued specialized training in Orthopaedics at KMC Chennai. Further he has gained advanced skills in Arthroplasty, Arthoscopy, spine surgery and Complex trauma at various centers of excellence.He has been working in prestigious medical colleges as a faculty and contributes actively in imparting quality medical education to the Undergarduate ( MBBS ) and  Postgraduate (MS orthopaedics) students.',
       speciality: 'ORTHOPEDICS',
-      expertise: '15+',
+      expertise: '15',
       time: '18:30-18:50,18:50-19:10,19:10-19:30',
       date: 'Monday-Saturday',
       qualification: 'MS Ortho, DNB Ortho,Fellowship in Arthroplasty/ Arthoscopy/ Spine surgery/  Complex trauma',
@@ -570,15 +577,16 @@ export class NewDocPageComponent {
         },
         {
           question: 'How can I book an appointment with Dr. Mahesh Kulkarni at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'You can book an appointment with Dr. Mahesh Kulkarni by calling Rashtrotthana Hospital’s appointment helpline at 080 6923 9999, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.'
+          answer: `You can book an appointment with Dr. Mahesh Kulkarni by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
         }
-      ]
+      ],
+      departmentSlug: '/specialities/best-orthopaedics-hospital-in-bangalore',
 
     },
 
     {
       name: 'Dr. Geethanjali K. G',
-      image: 'assets/Doc-Inv-Page/Dr-Geethanjali-K-G.png',
+      image: 'assets/Doc-Inv-Page/Dr-Geethanjali-K-G.webp',
       department: 'DENTAL SURGERY',
       about: ' Dr. Geethanjali KG is a dynamic and skilled dentist. She is currently working   as Consultant-Dental Sciences unit at Jayadeva Memorial hospital R.R. Nagar Bengaluru. She has 18 years of clinical experience in the field of dentistry. She is specialised in endodontics and conservative dentistry, general dentistry, minor surgical procedure like extraction and biopsy under LA. Dr. Geethanjali is graduated from KVG dental College Sullia. RGUHS. She also did Post Graduate Certificate in Endodontics and Post Graduate Certificate in Oral Implanting. ',
       speciality: 'DENTAL SCIENCES',
@@ -618,14 +626,15 @@ export class NewDocPageComponent {
         },
         {
           question: 'How can I book an appointment with Dr. Geethanjali K. G at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'You can book an appointment with Dr. Geethanjali K. G by calling Rashtrotthana Hospital’s appointment helpline at 080 6923 9999, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.'
+          answer: `You can book an appointment with Dr. Geethanjali K. G by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
         }
-      ]
+      ],
+      departmentSlug: '/specialities/best-dental-hospital-in-bangalore',
 
     },
     {
       name: 'Dr. Santhosh S',
-      image: 'assets/Doc-Inv-Page/Dr-Santhosh-S.png',
+      image: 'assets/Doc-Inv-Page/Dr-Santhosh-S.webp',
       department: 'CONSULTANT NEPHROLOGIST & TRANSPLANT PHYSICIAN',
       about: 'Dr. Santhosh S is graduated from AJIMS, MANAGALORE in 2008. He finished his post graduation (MD Internal medicine) from KIMS HUBLI. He has also completed DNB Nephrology from MANIPAL HOSPITAL BENGALURU in 2018.',
       speciality: 'NEPHROLOGY',
@@ -642,7 +651,7 @@ export class NewDocPageComponent {
     },
     {
       name: 'Dr. Sowmya S. Bhat',
-      image: 'assets/Doc-Inv-Page/Dr-Sowmya-Bhat-S.png',
+      image: 'assets/Doc-Inv-Page/Dr-Sowmya-Bhat-S.webp',
       department: 'OPHTHALMOLOGIST',
       about: 'Dr. Sowmya S Bhat has completed her basic Medical Education from St. John’s Medical College, Bangalore She has received post graduate training in ophthalmology from the prestigious Aravind Eye Hospital, Madurai and received the Dr. G. Venkataswamy Gold Medal for standing first in Ophthalmology. She has obtained the long term fellowship degree for super specialising in Phacoemulsification surgery and refractive surgeries from Rajiv Gandhi University of Medical Science, Bangalore and received the best outgoing Fellow Award.',
       speciality: 'Ophthalmology',
@@ -682,14 +691,15 @@ export class NewDocPageComponent {
         },
         {
           question: 'How can I book an appointment with Dr. Sowmya S. Bhat at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'You can book an appointment with Dr. Sowmya S. Bhat by calling Rashtrotthana Hospital’s appointment helpline at 080 6923 9999, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.'
+          answer: `You can book an appointment with Dr. Sowmya S. Bhat by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
         }
-      ]
+      ],
+      departmentSlug: '/specialities/best-eye-hospital-in-bangalore',
 
     },
     {
       name: 'Dr. Suhas Raj S',
-      image: 'assets/Doc-Inv-Page/DR-SUHAS-RAJ-S.png',
+      image: 'assets/Doc-Inv-Page/DR-SUHAS-RAJ-S.webp',
       department: 'CARDIOLOGY',
       about: 'Dr. Suhas Raj is graduate from Govt. Stanely Medical College and Hospital,Chennai in 2015. He did his post graduation (MD GENERAL MEDICINE) from KANYAKUMARI GOVT. MEDICAL COLLEGE AND HOSPITAL in 2019. He also completed DM Cardiology in 2022.His precious moment is he got two gold medal in MD GENERAL MEDICINE (2019) & DM Cardiology (2022).',
       speciality: 'CARDIAC SCIENCES',
@@ -729,15 +739,16 @@ export class NewDocPageComponent {
         },
         {
           question: 'How can I book an appointment with Dr. Suhas Raj S at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'You can book an appointment with Dr. Suhas Raj S by calling Rashtrotthana Hospital’s appointment helpline at 080 6923 9999, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.'
+          answer: `You can book an appointment with Dr. Suhas Raj S by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
         }
-      ]
+      ],
+      departmentSlug: '/specialities/best-cardiology-hospital-in-bangalore',
 
     },
 
     {
       name: 'Dr. Atmaram D. C',
-      image: 'assets/Doc-Inv-Page/Dr-Atmaram-D-C.png',
+      image: 'assets/Doc-Inv-Page/Dr-Atmaram-D-C.webp',
       department: 'SURGEON/ LAPAROSCOPY/ GASTROENTEROLOGIST',
       about: 'A dedicated surgeon with 19 years of experience specializing in laparoscopy, proctologist, gastroenterology and oncology. My medical journey began at MS Ramaiah Medical College in Bangalore, where I developed a strong foundation in surgical techniques and patient care. Over the years, I have honed my skills in minimally invasive procedures, which allow for quicker recoveries and reduced patient discomfort.I strongly believe in the existence of divinity, which inspires my approach to medicine. The immense trust my patients place in me is a driving force behind my commitment to serve them better every day. I am passionate about providing compassionate care and fostering trusting relationships with those I treat.',
       speciality: 'GENERAL SURGERY',
@@ -777,14 +788,15 @@ export class NewDocPageComponent {
         },
         {
           question: 'How can I book an appointment with Dr. Atmaram D. C at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'You can book an appointment with Dr. Atmaram D. C by calling Rashtrotthana Hospital’s appointment helpline at 080 6923 9999, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.'
+          answer: `You can book an appointment with Dr. Atmaram D. C by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
         }
-      ]
+      ],
+      departmentSlug: '/specialities/best-general-surgery-hospital-in-bangalore',
 
     },
     {
       name: 'Dr. Kolla Vinod',
-      image: 'assets/Doc-Inv-Page/Dr-Kolla-Vinod.png',
+      image: 'assets/Doc-Inv-Page/Dr-Kolla-Vinod.webp',
       department: 'Pulmonary and sleep medicine',
       about: 'Dr. KOLLA VINOD is a professor in Pulmonary medicine for over a decade. His education, training and extensive experience given special expertise in the diagnosis, treatment and management of disorders of the pulmonary diseases. He has achieved state 2nd rank during his post-graduation. He strives to stay current with medical knowledge and interventional skills in order to provide his patients with the best, up- to-date care available. He is interested in new interventions (Bronchoscopy, Throcoscopy, cryobiopsy rigid bronchoscopy) The majority of his early education was in Lawrence school Ooty, he completed his Pre-University in Lawrence school Ooty. He finished MBBS, MD in Pulmonary Medicine obtained from Narayana Medical College, Nellore. His post- doctoral studies included a critical care, Interventional pulmonology. Dr. Kolla Vinod authored or co- authored peer-reviewed abstracts/articles. He holds multiple Journals and case reports in his field in various Indian and International journals. Upon his return to Bangalore.',
       speciality: 'PULMONOLOGY',
@@ -824,14 +836,15 @@ export class NewDocPageComponent {
         },
         {
           question: 'How can I book an appointment with Dr. Vinod Kolla at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'You can book an appointment with Dr. Vinod Kolla by calling Rashtrotthana Hospital’s appointment helpline at 080 6923 9999, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.'
+          answer: `You can book an appointment with Dr. Vinod Kolla by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
         }
-      ]
+      ],
+      departmentSlug: '/specialities/best-pulmonology-hospital-in-bangalore',
 
     },
     {
       name: 'Dr. Meena H. B',
-      image: 'assets/Doc-Inv-Page/Dr-Meena-H-B.png',
+      image: 'assets/Doc-Inv-Page/Dr-Meena-H-B.webp',
       department: 'DERMATOLOGIST',
       about: 'Dr. Meena H. B is a highly dedicated dermatologist with extensive knowledge in treating various skin, hair and nail conditions. She graduated with an MBBS from MS Ramiah Medical College in 1987 and completed her MD Dermatology at KIMS Bengaluru in 2014, currently working at ESI Hospital Indiranagar as Senior Specialist in Dermatology. She worked as  Cosmetologist at JonRic Oomph International Medispa, Koramangala and as a consultant at Medihope Multispeciality Hospital. Hands-on experience with Lasers, PRP, Chemical peels, Skintag and Wart removal, Nanopore for acne scar and pigmentation, Botox, Fillers and Threadlift. She has Publications in esteemed journals like JCDR, JEMDS.With a patient-centred approach, Dr. Meena ensures her patients receive comprehensive care for long term skin and hair health.',
       speciality: 'DERMATOLOGY',
@@ -872,9 +885,10 @@ export class NewDocPageComponent {
         },
         {
           question: 'How can I book an appointment with Dr. Meena H. B at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'You can book an appointment with Dr. Meena H. B by calling Rashtrotthana Hospital’s appointment helpline at 080 6923 9999, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.'
+          answer: `You can book an appointment with Dr. Meena H. B by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
         }
-      ]
+      ],
+      departmentSlug: '',
 
     },
     {
@@ -922,13 +936,14 @@ export class NewDocPageComponent {
           question: 'Why choose Dr. Kishan G N at Rashtrotthana Hospital for Ayurvedic treatment?',
           answer: 'Dr. Kishan G N brings clinical experience in Panchakarma and chronic disease care, along with expertise in training Ayurvedic therapists. At Rashtrotthana Hospital, patients benefit from authentic Ayurvedic care delivered in a medically supervised hospital environment.'
         }
-      ]
+      ],
+      departmentSlug: '',
 
     },
 
     // {
     //   name: 'Dr. Sindhu P. Madanshetty',
-    //   image: 'assets/Doc-Inv-Page/Dr-Sindhu-P-Madanshetty.png',
+    //   image: 'assets/Doc-Inv-Page/Dr-Sindhu-P-Madanshetty.webp',
     //   department: 'INTERNAL MEDICINE',
     //   about: 'Dr Sindhu has built a reputable career as a recognised expert with superb patient care and medical knowledge. She completed her MBBS from Hubli, then MD in general medicine from Bangalore Medical College and research institute in 2018. She has been a gold medallist in her undergraduate. She has worked in both Internal Medicine and Intensive care and contributed in patient care at BGS global hospitals. Special interest is in critical care, Infection diseases, diabetology, metabolic diseases.',
     //   speciality: 'INTERNAL MEDICINE',
@@ -946,7 +961,7 @@ export class NewDocPageComponent {
 
     {
       name: 'Dr. Sujayendra D. M',
-      image: 'assets/Doc-Inv-Page/Dr-Sujayendra-D-M.png',
+      image: 'assets/Doc-Inv-Page/Dr-Sujayendra-D-M.webp',
       department: 'ORTHOPEDICS',
       about: "Dr. Sujayendra D. M did his MBBS and MS Orthopaedics from the prestigious Kasturba Medical College, Manipal. Being one of the few colleges with different units for Orthopaedic sub-specialities, he gained wide exposure to hand surgeries, paediatric Orthopaedics, spine surgeries, Arthroscopy, Arthroplasty and complex trauma surgeries. After senior residency at St. John's Medical College and KMC, Manipal, he was promoted to Assistant Professor of Orthopaedics at KMC, Manipal. Having completed the basic, advanced and master's course from A.O, he has acquired extensive training in Orthopaedics Trauma. He is also a National Faculty (as table instructor) for AO Trauma India. He was awarded a Fellowship in Arthroplasty (joint replacement surgery) by the India Orthopaedic Association.",
       speciality: 'ORTHOPEDICS',
@@ -986,16 +1001,17 @@ export class NewDocPageComponent {
         },
         {
           question: 'How can I book an appointment with Dr. Sujayendra D. M at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'You can book an appointment with Dr. Sujayendra D. M by calling Rashtrotthana Hospital’s appointment helpline at 080 6923 9999, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.'
+          answer: `You can book an appointment with Dr. Sujayendra D. M by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
         }
-      ]
+      ],
+      departmentSlug: '/specialities/best-orthopaedics-hospital-in-bangalore',
 
     },
 
 
     {
       name: 'Dr. Manasa N. A',
-      image: 'assets/Doc-Inv-Page/Dr-Manasa-N-A.png',
+      image: 'assets/Doc-Inv-Page/Dr-Manasa-N-A.webp',
       department: 'ENT, HEAD & NECK SURGERY',
       about: 'Dr. Manasa. N. A Consultant ENT, Head & Neck Surgeon comes with a vast experience of 10 years. She has done her MBBS from the prestigious M.S. Ramaiah Medical College. She did her post-graduation from JJM medical college, Davangere. She procured her higher studies from Tata Main Hospital.She is immensely knowledgeable, compassionate and skilled in her field of expertise. She is your one stop solutions to all your Ear, nose, throat and Head & Neck related issues. Other than the routine ENT work she also specialises in endoscopic adenoidectomy and endoscopic endonasal sinus surgeries, microscopic hearing restoration surgeries, voice restoration surgery and Head and tumour surgeries.',
       speciality: 'ENT SPECIALITY',
@@ -1035,16 +1051,17 @@ export class NewDocPageComponent {
         },
         {
           question: 'How can I book an appointment with Dr. Manasa N. A at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'You can book an appointment with Dr. Manasa N. A by calling Rashtrotthana Hospital’s appointment helpline at 080 6923 9999, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.'
+          answer: `You can book an appointment with Dr. Manasa N. A by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
         }
-      ]
+      ],
+      departmentSlug: '/specialities/best-ent-hospital-in-bangalore',
 
     },
 
 
     {
       name: 'Dr. Madhu S. N',
-      image: 'assets/Doc-Inv-Page/Dr-Madhu-S-N.png',
+      image: 'assets/Doc-Inv-Page/Dr-Madhu-S-N.webp',
       department: 'UROLOGIST & ANDROLOGIST',
       speciality: 'UROLOGY',
       about: 'Worked as Assistant prof. in the department of urology at St. John’s Medical Collage hospital, a premier high volume territory care hospital in Bangalore.',
@@ -1084,16 +1101,17 @@ export class NewDocPageComponent {
         },
         {
           question: 'How can I book an appointment with Dr. Madhu S. N at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'You can book an appointment with Dr. Madhu S. N by calling Rashtrotthana Hospital’s appointment helpline at 080 6923 9999, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.'
+          answer: `You can book an appointment with Dr. Madhu S. N by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
         }
-      ]
+      ],
+      departmentSlug: '/specialities/best-urology-hospital-in-bangalore',
 
     },
 
 
     {
       name: 'Dr. Jaidev S',
-      image: 'assets/Doc-Inv-Page/Dr-Jaidev-S.png',
+      image: 'assets/Doc-Inv-Page/Dr-Jaidev-S.webp',
       department: 'Neuro Science',
       speciality: 'NEUROSCIENCES',
       about: 'Neurosurgeon with special skills in the management of emergency and elective cases with MCh degree from AIIMS, Bhubaneshwar and MS General surgery degree from King George Medical University, Lucknow. Specialised in brain and spine sugery, endovascular surgery.',
@@ -1133,15 +1151,16 @@ export class NewDocPageComponent {
         },
         {
           question: 'How can I book an appointment with Dr. Jaidev S at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'You can book an appointment with Dr. Jaidev S by calling Rashtrotthana Hospital’s appointment helpline at 080 6923 9999, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.'
+          answer: `You can book an appointment with Dr. Jaidev S by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
         }
-      ]
+      ],
+      departmentSlug: '/specialities/best-neurology-hospital-in-bangalore',
 
     },
 
     {
       name: 'Dr. Nishanth Lakshmikantha',
-      image: 'assets/Doc-Inv-Page/Dr-Nishanth-Lakshmikantha.png',
+      image: 'assets/Doc-Inv-Page/Dr-Nishanth-Lakshmikantha.webp',
       department: 'General, GI and Robotic Surgery',
       speciality: 'GENERAL SURGERY',
       about: ' Dr. Nishanth Lakshmikantha is a highly skilled surgeon known for excellence in both clinical practice and academic achievement. Having secured a rank in the Surgery university exams he has built a reputation for precision, dedication and innovation in the surgical field.His excellent grasp in communication and clinical examination of patients ensures they receive the most effective treatments available.  His forward-thinking approach and commitment to mastering advanced surgical techniques made him embrace laparoscopic surgery early in his career and has made significant strides in the field of minimally invasive procedures such as Laparoscopic and Robotic surgeries.',
@@ -1181,14 +1200,15 @@ export class NewDocPageComponent {
         },
         {
           question: 'How can I book an appointment with Dr. Nishanth Lakshmikantha at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'You can book an appointment with Dr. Nishanth Lakshmikantha by calling Rashtrotthana Hospital’s appointment helpline at 080 6923 9999, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.'
+          answer: `You can book an appointment with Dr. Nishanth Lakshmikantha by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
         }
-      ]
+      ],
+      departmentSlug: '/specialities/best-general-surgery-hospital-in-bangalore',
 
     },
     {
       name: 'Dr. Sameer M. Halageri',
-      image: 'assets/Doc-Inv-Page/Dr-Sameer-M-Halageri.png',
+      image: 'assets/Doc-Inv-Page/Dr-Sameer-M-Halageri.webp',
       department: 'Plastic and Reconstructive Surgery',
       speciality: 'PLASTIC SURGERY',
       about: ' Dr. Sameer M Halageri is a highly skilled Consultant Plastic Surgeon with extensive experience in aesthetic and reconstructive surgeries. Dedicated to providing the highest standards of patient care, he specializes in various advanced procedures aimed at enhancing both form and function. With a strong commitment to continuous learning and innovation in his field, Dr. Halageri is known for his meticulous approach and compassionate patient care. His practice integrates the latest techniques and technologies to deliver exceptional results tailored to individual needs.',
@@ -1233,14 +1253,15 @@ export class NewDocPageComponent {
         },
         {
           question: 'How can I book an appointment with Dr. Sameer M. Halageri at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'You can book an appointment with Dr. Sameer M. Halageri by calling Rashtrotthana Hospital’s appointment helpline at 080 6923 9999, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.'
+          answer: `You can book an appointment with Dr. Sameer M. Halageri by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
         }
-      ]
+      ],
+      departmentSlug: '',
 
     },
     // {
     //   name: 'Dr. Valli Kiran',
-    //   image: 'assets/Dr-Latha-Venkataram7.png',
+    //   image: 'assets/Dr-Latha-Venkataram7.webp',
     //   department: 'PSYCHIATRY',
     //   speciality: 'PSYCHIATRY',
     //   about: 'Dr. Valli Kiran M is graduate from MYSORE UNIVERSITY in 2001. He did DIPLOMA IN PSYCHIATRY in 2005',
@@ -1252,7 +1273,7 @@ export class NewDocPageComponent {
     // },
     {
       name: 'Dr. Vishnuvardhan V',
-      image: 'assets/Doc-Inv-Page/Dr-Vishnuvardhan-V.png',
+      image: 'assets/Doc-Inv-Page/Dr-Vishnuvardhan-V.webp',
       department: 'Ortho Dontics',
       speciality: 'DENTAL SCIENCES',
       about: 'Dr. Vishnu Vardhan has completed BDS and MDS from DAPM RV DENTAL COLLEGE affiliated to Rajiv Gandhi University Bangalore having about 9 years overall experience. Life Member of the Indian Orthodontic Society. Senior Consultant orthodontist. Specialist in metal, ceramic, invisible, lingual and surgical orthodontics.',
@@ -1291,14 +1312,15 @@ export class NewDocPageComponent {
         },
         {
           question: 'How can I book an appointment with Dr. Vishnuvardhan V at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'You can book an appointment with Dr. Vishnuvardhan V by calling Rashtrotthana Hospital’s appointment helpline at 080 6923 9999, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.'
+          answer: `You can book an appointment with Dr. Vishnuvardhan V by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
         }
-      ]
+      ],
+      departmentSlug: '/specialities/best-dental-hospital-in-bangalore',
 
     },
     {
       name: 'Dr. Prakruthi',
-      image: 'assets/Doc-Inv-Page/Dr-Prakruthi.png',
+      image: 'assets/Doc-Inv-Page/Dr-Prakruthi.webp',
       department: 'OBSTETRICS & GYNECOLOGY',
       speciality: 'OBSTETRICS & GYNECOLOGY',
       about: 'Dr. Prakruthi is a dedicated obstetrician and gynecologist committed to enhancing patient safety and care quality in both normal and high-risk pregnancies. With a strong focus on labor ward management, fetal medicine and academic excellence, she strives to promote exceptional standards in maternity services.She has made significant contributions to the field through her research, including publications on recurrent fetal hydrops and the successful management of Guillain-Barre syndrome in pregnancy. Her work emphasizes the importance of genetic testing and innovative treatment strategies and has been featured in prominent medical journals.Dr. Prakruthi has also presented her findings at national conferences, highlighting her commitment to advancing obstetric care and improving patient safety. Known for her strong interpersonal and communication skills, she fosters trusting relationships with her patients and colleagues, ensuring a supportive environment for all those in her care.',
@@ -1338,14 +1360,15 @@ export class NewDocPageComponent {
         },
         {
           question: 'How can I book an appointment with Dr. Prakruthi at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'You can book an appointment with Dr. Prakruthi by calling Rashtrotthana Hospital’s appointment helpline at 080 6923 9999, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.'
+          answer: `You can book an appointment with Dr. Prakruthi by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
         }
-      ]
+      ],
+      departmentSlug: '/specialities/best-obstetrics-and-gynecologist-hospital-in-bangalore',
 
     },
     {
       name: 'Dr. Ravi T',
-      image: 'assets/Doc-Inv-Page/Dr-Ravi-T.png',
+      image: 'assets/Doc-Inv-Page/Dr-Ravi-T.webp',
       department: 'SR. CONSULTANT MEDICAL ONCOLOGIST',
       speciality: 'ONCOLOGY',
       about: 'Dr. Ravi Thippeswamy Senior Medical Oncologist With 20 years of invaluable experience, Dr. Ravi Thippeswamy is a distinguished Medical Oncologist in Bangalore. He is committed to delivering comprehensive care to his patients and maintains affiliations with several hospitals throughout the city. He completed his MBBS from Jagadguru Jayadeva Murugarajendra Medical College (JJMMC) in 2004, his DNB in Medical Oncology from the National Board of Examination in 2012 and his MD in Pediatrics from the University of Mumbai in 2008.As a member of the Karnataka Medical Council, Dr. Thippeswamy specializes in various aspects of Medical Oncology, including Hemato Oncology and Pediatric Oncology. With 11 years of specialization, he brings a wealth of knowledge and expertise to his practice, ensuring the best possible outcomes for his patients.',
@@ -1384,14 +1407,15 @@ export class NewDocPageComponent {
         },
         {
           question: 'How can I book an appointment with Dr. Ravi T at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'You can book an appointment with Dr. Ravi T by calling Rashtrotthana Hospital’s appointment helpline at 080 6923 9999, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.'
+          answer: `You can book an appointment with Dr. Ravi T by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
         }
-      ]
+      ],
+      departmentSlug: '/specialities/best-oncology-hospital-in-bangalore',
 
     },
     {
       name: 'Dr. Suvarnini Konale',
-      image: 'assets/Doc-Inv-Page/Dr-Suvarnini-Konale.png',
+      image: 'assets/Doc-Inv-Page/Dr-Suvarnini-Konale.webp',
       department: 'LIFESTYLE/ YOGA & NATUROPATHY',
       about: 'Her 15 years of experience includes teaching BNYS students and treating thousands of clients through yoga and Naturopathy. She has worked in different hospitals and online fitness firms as a Yoga, Naturopathy and Lifestyle consultant. People from a wide range of socio-economic status and professions, across all age groups, have benefitted from her advice. She follows a holistic approach of lifestyle management and therapy through the principles of Yoga & Naturpathy.',
       speciality: ['YOGA SCIENCE', 'LIFESTYLE MEDICINE'],
@@ -1430,14 +1454,15 @@ export class NewDocPageComponent {
         },
         {
           question: 'How can I book an appointment with Dr. Suvarnini Konale at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'You can book an appointment with Dr. Suvarnini Konale by calling Rashtrotthana Hospital’s appointment helpline at 080 6923 9999, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.'
+          answer: `You can book an appointment with Dr. Suvarnini Konale by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
         }
-      ]
+      ],
+      departmentSlug: '',
 
     },
     {
       name: 'Dr. Vishwanath Sanagoudar',
-      image: 'assets/Doc-Inv-Page/Dr-Vishwanth-Sanagoudar.png',
+      image: 'assets/Doc-Inv-Page/Dr-Vishwanth-Sanagoudar.webp',
       department: 'PAEDIATRIC & NEONATOLOGY',
       about: 'Dr Vishwanath, Paediatrician, has also done fellowship in Paediatric critical care from IGICH, Bangalore. He is trained in treating sick children requiring ICU stay. He has received Bopaiah award for paper presentation at state Paediatric conference. He has also served as visiting mentor for paediatric critical care training program under ECRP-2, NHM, govt of Karnataka. He has mentored the PICU at KRIMS, Karwar. He has been serving in Rashtrotthana hospital since its inception in Dec 2022 .',
       speciality: 'PAEDIATRICS AND NEONATOLOGY',
@@ -1477,14 +1502,15 @@ export class NewDocPageComponent {
         },
         {
           question: 'How can I book an appointment with Dr. Vishwanath Sanagoudar at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'You can book an appointment with Dr. Vishwanath Sanagoudar by calling Rashtrotthana Hospital’s appointment helpline at 080 6923 9999, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.'
+          answer: `You can book an appointment with Dr. Vishwanath Sanagoudar by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
         }
-      ]
+      ],
+      departmentSlug: '',
 
     },
     {
       name: 'Dr. Niveditha C',
-      image: 'assets/Doc-Inv-Page/Dr-Niveditha-C.png',
+      image: 'assets/Doc-Inv-Page/Dr-Niveditha-C.webp',
       department: 'PAEDIATRICS & NEONATOLOGY',
       about: 'Consultation Paediatrician and Neonatologist with expertise in management of Paediatric and Neonates including extreme preterm, birth asphyxia, advanced ventilation and critical interventional procedures.',
       speciality: 'PAEDIATRICS AND NEONATOLOGY',
@@ -1524,14 +1550,15 @@ export class NewDocPageComponent {
         },
         {
           question: 'How can I book an appointment with Dr. Niveditha C at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'You can book an appointment with Dr. Niveditha C by calling Rashtrotthana Hospital’s appointment helpline at 080 6923 9999, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.'
+          answer: `You can book an appointment with Dr. Niveditha C by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
         }
-      ]
+      ],
+      departmentSlug: '',
 
     },
     {
       name: 'Dr. Nikhil Hegde',
-      image: 'assets/Doc-Inv-Page/Dr-Nikhil-Hegde.png',
+      image: 'assets/Doc-Inv-Page/Dr-Nikhil-Hegde.webp',
       department: 'ORTHOPEDICS',
       about: 'Specialised training in sports medicine, Arthroplasty and trauma',
       speciality: 'ORTHOPEDICS',
@@ -1571,14 +1598,15 @@ export class NewDocPageComponent {
         },
         {
           question: 'How can I book an appointment with Dr. Nikhil Hegde at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'You can book an appointment with Dr. Nikhil Hegde by calling Rashtrotthana Hospital’s appointment helpline at 080 6923 9999, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.'
+          answer: `You can book an appointment with Dr. Nikhil Hegde by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
         }
-      ]
+      ],
+      departmentSlug: '/specialities/best-orthopaedics-hospital-in-bangalore',
 
     },
     {
       name: 'Dr. Neelam Saraswat',
-      image: 'assets/Doc-Inv-Page/Dr-Neelam-Saraswat.png',
+      image: 'assets/Doc-Inv-Page/Dr-Neelam-Saraswat.webp',
       department: 'OBSTETRICS & GYNECOLOGY',
       about: 'A skilled obstetrician and gynaecologist.MBBS from KMC, Mangalore and DNB from railway hospital kolkata. She  cleared MRCOG (london) and also worked in NHS  (U.K) briefly..she believes that all women should be cared with highest quality of medical care and should be supported all through out their journey...a keen yoga practitioner herself she would also like to explore field of yoga to help women especially pregnant women. She believes training future generation with evidence based protocols and practices is going to have significant impact in coming years.',
       speciality: 'OBSTETRICS & GYNECOLOGY',
@@ -1618,14 +1646,15 @@ export class NewDocPageComponent {
         },
         {
           question: 'How can I book an appointment with Dr. Neelam Saraswat at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'You can book an appointment with Dr. Neelam Saraswat by calling Rashtrotthana Hospital’s appointment helpline at 080 6923 9999, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.'
+          answer: `You can book an appointment with Dr. Neelam Saraswat by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
         }
-      ]
+      ],
+      departmentSlug: '/specialities/best-obstetrics-and-gynecologist-hospital-in-bangalore',
 
     },
     {
       name: 'Dr. Ashwitha Gundmi',
-      image: 'assets/Doc-Inv-Page/Dr-Ashwitha-Gundmi.png',
+      image: 'assets/Doc-Inv-Page/Dr-Ashwitha-Gundmi.webp',
       department: 'OBSTETRICS & GYNECOLOGY',
       speciality: 'OBSTETRICS & GYNECOLOGY',
       about: 'Working as a consultant in WMN private Ltd. With MS ObGyn and MRCOG (UK), her qualifications reflect her dedication to patient well-being.  She is an experienced Obstetrics and gynaecology Consultant with expertise in managing various pregnancy-related disorders, including medical, genetic conditions, promoting vaginal birth to ensure optimal maternal and foetal health.She is a Gynaecologist with expertise in colposcopy for early detection and intervention of cervical abnormalities, awareness about cervical cancer vaccination and cervical screening, gynaecological surgeries including Minimally Invasive Surgeries including Laparoscopy and Hysteroscopy. Focusing on improving patients\' quality of life by addressing diverse gynaecological conditions.Has worked as faculty in medical College with active participation in research activities and academics of UG and PG students. Played a key role in medical camps and health awareness programmes .Believes in Evidence based practice. Is excellent in verbal and written communication. ',
@@ -1665,14 +1694,15 @@ export class NewDocPageComponent {
         },
         {
           question: 'How can I book an appointment with Dr. Ashwitha Gundmi at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'You can book an appointment with Dr. Ashwitha Gundmi by calling Rashtrotthana Hospital’s appointment helpline at 080 6923 9999, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.'
+          answer: `You can book an appointment with Dr. Ashwitha Gundmi by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
         }
-      ]
+      ],
+      departmentSlug: '/specialities/best-obstetrics-and-gynecologist-hospital-in-bangalore',
 
     },
     {
       name: 'Dr. Vinita Udupa',
-      image: 'assets/Doc-Inv-Page/Dr-Vinita-Udupa.png',
+      image: 'assets/Doc-Inv-Page/Dr-Vinita-Udupa.webp',
       department: 'OBSTETRICS & GYNECOLOGY',
       speciality: 'OBSTETRICS & GYNECOLOGY',
       about: 'Dr. Vinita Udupa is an obstetrician specialised in Maternal and Fetal medicine. She has been trained in prestigious institutions like JIPMER Pondicherry, CMC Vellore and Fernandez hospital, Hyderabad. She believes that every pregnant woman and her fetus deserve high standards of care which is possible by practicing evidence based medicine. Dr. Vinita was the topper of OBG in MBBS. She also has a paper publication and several presentations in National and international conferences to her credit.',
@@ -1711,14 +1741,15 @@ export class NewDocPageComponent {
         },
         {
           question: 'How can I book an appointment with Dr. Vinita Udupa at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'You can book an appointment with Dr. Vinita Udupa by calling Rashtrotthana Hospital’s appointment helpline at 080 6923 9999, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.'
+          answer: `You can book an appointment with Dr. Vinita Udupa by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
         }
-      ]
+      ],
+      departmentSlug: '/specialities/best-obstetrics-and-gynecologist-hospital-in-bangalore',
 
     },
     {
       name: 'Dr. Anusha Mutalik Desai',
-      image: 'assets/Doc-Inv-Page/Dr-Anusha-Mutalik-Desai.png',
+      image: 'assets/Doc-Inv-Page/Dr-Anusha-Mutalik-Desai.webp',
       department: 'Homeopathy',
       speciality: 'HOMEOPATHY',
       about: 'With 10+ years of experience and strong foundation in homeopathic principles, I integrate classical homeopathy with modern insights to deliver personalized care.I believe in treating the whole person, not just the symptoms, to achieve optimal wellness.My goal is to educate and inspire patients to embrace a holistic lifestyle, promoting long-term health and wellness.',
@@ -1758,14 +1789,15 @@ export class NewDocPageComponent {
         },
         {
           question: 'How can I book an appointment with Dr. Anusha Mutalik Desai at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'You can book an appointment with Dr. Anusha Mutalik Desai by calling Rashtrotthana Hospital’s appointment helpline at 080 6923 9999, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.'
+          answer: `You can book an appointment with Dr. Anusha Mutalik Desai by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
         }
-      ]
+      ],
+      departmentSlug: '/specialities/homeopathy-treatment-bangalore',
 
     },
     {
       name: 'Dr. Ajay N',
-      image: 'assets/Doc-Inv-Page/Dr-Ajay-N.png',
+      image: 'assets/Doc-Inv-Page/Dr-Ajay-N.webp',
       department: 'GASTRO SCIENCES',
       speciality: 'GASTRO SCIENCES',
       about: 'Dr. Ajay N is a dedicated surgeon specializing in gastrosciences, known for their expertise and compassionate care. With years of experience, Dr. Ajay N has mastered advanced surgical techniques, focusing on gastrointestinal disorders and innovative treatment approaches. Their commitment to patient outcomes is evident in their meticulous attention to detail and ability to foster trust with patients and families. Outside the operating room, Dr. Ajay N participates in community outreach programs, promoting awareness of gastrointestinal health. Dr. Ajay N continues to make significant impacts in the lives of those they serve.',
@@ -1777,11 +1809,11 @@ export class NewDocPageComponent {
       alt: 'Dr. Ajay N | Best Gastro Doctor in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
       title: 'Dr. Ajay N | Best Gastro Surgeon in Bangalore ',
       description: 'Dr. Ajay N is a skilled gastro surgeon in Bangalore specializing in laparoscopic surgery, proctology, and GI care with a patient-first approach.',
-
+      departmentSlug: '',
     },
     {
       name: 'Dr. Varsha P',
-      image: 'assets/Doc-Inv-Page/Dr-Varsha-P.png',
+      image: 'assets/Doc-Inv-Page/Dr-Varsha-P.webp',
       department: 'LIFESTYLE MEDICINE',
       speciality: 'LIFESTYLE MEDICINE',
       qualification: 'BAMS, MD, YIC',
@@ -1797,12 +1829,13 @@ export class NewDocPageComponent {
       alt: 'Dr. Varsha P | Best Yoga & Lifestyle Consultant in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
       id: 23,
       title: 'Dr. Varsha P | Ayurvedic Lifestyle Doctor in Bangalore',
-      description: 'Dr. Varsha P offers Ayurvedic lifestyle care for diabetes, hypertension, thyroid disorders, diet counselling & preventive health in Bangalore.'
+      description: 'Dr. Varsha P offers Ayurvedic lifestyle care for diabetes, hypertension, thyroid disorders, diet counselling & preventive health in Bangalore.',
+      departmentSlug: '/specialities/lifestyle-medicine-bangalore',
     },
 
     {
       name: 'Dr. Rohith K. R',
-      image: 'assets/Doc-Inv-Page/Dr-Rohith-K-R.png',
+      image: 'assets/Doc-Inv-Page/Dr-Rohith-K-R.webp',
       department: 'AYURVEDA',
       speciality: 'AYURVEDA',
       about: 'Dr. Rohit K. R is graduate from P N Panicker Souhruda Ayurveda Medical College, Kerala. He has one year experience at HOUSE SURGEON.',
@@ -1842,14 +1875,15 @@ export class NewDocPageComponent {
         },
         {
           question: 'How can I book an appointment with Dr. Rohith K. R at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'You can book an appointment with Dr. Rohith K. R by calling Rashtrotthana Hospital’s appointment helpline at 080 6923 9999, visiting the hospital reception, or using the online appointment options on the official Rashtrotthana Hospital website.'
+          answer: `You can book an appointment with Dr. Rohith K. R by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or using the online appointment options on the official Rashtrotthana Hospital website.`
         }
-      ]
+      ],
+      departmentSlug: '/specialities/ayurvedic-treatment-bangalore',
 
     },
     // {
     //   name: 'Dr. Alekhya R',
-    //   image: 'assets/doctor-40.png',
+    //   image: 'assets/doctor-40.webp',
     //   department: 'AYURVEDA',
     //   speciality: 'AYURVEDA',
     //   qualification:'BAMS',
@@ -1861,7 +1895,7 @@ export class NewDocPageComponent {
     // },
     {
       name: 'Dr. Narendranath A',
-      image: 'assets/Doc-Inv-Page/Dr-Narendranath-A.png',
+      image: 'assets/Doc-Inv-Page/Dr-Narendranath-A.webp',
       department: 'Consultant, ENT Head & Neck surgery',
       speciality: 'ENT SPECIALITY',
       about: 'Dr. Narendranath A is graduate from RAJAH MUTHIAH MEDICAL COLLEGE,TAMIL NADU in 2010. He completed his post graduation MS (ENT) from vijayanagar insititute of medical sciences, bellary in 2015.Otology/ tympanoplasty and mastoidectomy surgeries, myringotomy and grommet surgery, FESS (nasal polyp surgery)/sinus surgeries, nasal septum correction surgery, Adenoid and tonsil surgeries, surgeries related to vocal cords (voice box), thyroid and parotid surgeries, tracheostomy.   ',
@@ -1901,9 +1935,10 @@ export class NewDocPageComponent {
         },
         {
           question: 'How can I book an appointment with Dr. Narendranath A at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'You can book an appointment with Dr. Narendranath A by calling Rashtrotthana Hospital’s appointment helpline at 080 6923 9999, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.'
+          answer: `You can book an appointment with Dr. Narendranath A by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
         }
-      ]
+      ],
+      departmentSlug: '/specialities/best-ent-hospital-in-bangalore',
 
     },
     {
@@ -1950,12 +1985,13 @@ export class NewDocPageComponent {
           question: 'Can I consult Dr. Harshith K S for liver-related conditions like toxic hepatitis?',
           answer: 'Yes, Dr. Harshith K S treats toxic hepatitis and other liver-related conditions, focusing on identifying triggers, medical treatment, and recovery monitoring. Timely care helps prevent complications and supports liver healing.'
         }
-      ]
+      ],
+      departmentSlug: '/specialities/internal-medicine-hospital-in-bangalore',
 
     },
     // {
     //   name: 'Dr. Ashika Bagaria',
-    //   image: 'assets/doctor-34.png',
+    //   image: 'assets/doctor-34.webp',
     //   department: 'ENT and head and neck',
     //   speciality: 'ENT SPECIALITY',
     //   about: 'Dr Ashika Bagaria has completed her MBBS from Rajarajeshwari medical college and Hospital in 2019 and then pursued her MS in Otolarhinoyngology from Kempegowda Institute of Medical Sciences. She also has a specialised expertise in diagnosing and managing conditions related to vertigo and balance disorder which is crucial for comprehensive ENT care.',
@@ -1967,7 +2003,7 @@ export class NewDocPageComponent {
     // },
     // {
     //   name: 'Dr. Harshitha R',
-    //   image: 'assets/doctor-46.png',
+    //   image: 'assets/doctor-46.webp',
     //   department: 'Consultant Internal Medicine',
     //   about: 'Internal medicine specialist. Finished undergraduation from Sri devaraj urs medical college with a university gold medal and postgraduate from JSS University. A strong believer of prevention is better than cure with keen interest in lifestyle diseases , diabetes , obesity , women health and adult vaccination. Good communication skills with efficient patient education skills. Holistic approach towards  patient\'s health and medical conditions.',
     //   speciality: 'INTERNAL MEDICINE',
@@ -1980,7 +2016,7 @@ export class NewDocPageComponent {
 
     // {
     //   name: 'Dr. Bhavya',
-    //   image: 'assets/Doc-Inv-Page/Dr-Bhavya.png',
+    //   image: 'assets/Doc-Inv-Page/Dr-Bhavya.webp',
     //   department: 'Consultant Internal Medicine',
     //   about: 'Dr. Bhavya N is a consultant physician and Diabetologist with practicing experience of 7 years in the field of Internal Medicine. She is a gold medalist and state rank holder in MD Internal medicine in RGUHS. She has sound knowledge in her field and practices evidence-based medicine providing patient centred care. Being a female physician she has an extra mile of interest in women and family health care. She has keen interest in research and is updated on newer aspects and recent advancements in treatment modalities.',
     //   speciality: 'INTERNAL MEDICINE',
@@ -1997,7 +2033,7 @@ export class NewDocPageComponent {
 
     {
       name: 'Dr. Shamantha S',
-      image: 'assets/Doc-Inv-Page/Dr-Shamantha-S.png',
+      image: 'assets/Doc-Inv-Page/Dr-Shamantha-S.webp',
       department: 'LIFESTYLE MEDICINE',
       about: ' ',
       speciality: 'LIFESTYLE MEDICINE',
@@ -2009,11 +2045,12 @@ export class NewDocPageComponent {
       alt: 'Dr. Shamantha S | Lifestyle Specialist in Bangalore | Rashtrotthana Hospita | Rajarajeshwari Nagar Bangalore',
       id: 24,
       title: 'Dr. Shamantha S | Lifestyle Medicine Specialist Bangalore',
-      description: 'Dr. Shamantha S is an Ayurveda and lifestyle medicine doctor in Bangalore offering holistic care through diet, preventive wellness, and natural therapies.'
+      description: 'Dr. Shamantha S is an Ayurveda and lifestyle medicine doctor in Bangalore offering holistic care through diet, preventive wellness, and natural therapies.',
+      departmentSlug: '/specialities/lifestyle-medicine-bangalore',
     },
     // {
     //   name: 'Dr. Kavyashree Kulamarva',
-    //   image: 'assets/Doc-Inv-Page/Dr-Kavyashree-Kulamarva.png',
+    //   image: 'assets/Doc-Inv-Page/Dr-Kavyashree-Kulamarva.webp',
     //   department: 'Ayurvedic Psychiatry Consultant',
     //   about: 'Dr. Kavyashree is a seasoned researcher specializing in Ayurveda, Integrative Medicine and Neurology. With a robust background in clinical practice and research, Doctor has published several papers in reputed international journals. She served as a Senior Resident at the National Institute of Mental Health and Neurosciences (NIMHANS) for 3.5 years, contributing significantly to mental health and neurological research. Additionally, she worked as a Senior Research Fellow at the Central Council for Research in Ayurvedic Sciences (CCRAS), which involved several community health surveys and medical camps. Her work aims to bridge ancient wisdom with contemporary science for holistic patient care.',
     //   speciality: 'AYURVEDA',
@@ -2029,7 +2066,7 @@ export class NewDocPageComponent {
     // },
     {
       name: 'Ms. Archana Karthick',
-      image: 'assets/Doc-Inv-Page/Ms-Archana-Karthick.png',
+      image: 'assets/Doc-Inv-Page/Ms-Archana-Karthick.webp',
       department: 'Senior Clinical Dietician',
       about: ' Ms. Archana Karthick has more than 16 years of experience in the field of Clinical Nutrition, dietetics and food service management. Prior Joining to Jaydev memorial Rashtrotthana Hospital she worked as Clinical Nutrition consultant in Cloudnine Hospital Kanakapura Road Bangalore.  Earlier to this she has over 10 years of experience from UAE -as Dubai health authority licensed Paediatric Nutrition & Dietetics from JCI accredited hospital -Al Jalila children’s speciality hospital and as clinical Nutrition & Dietician International Modern Maternity Hospital Dubai, UAE. She also holds life membership of Indian Dietetics association and IAPEN India Association for Parenteral and Enteral nutrition',
       speciality: 'NUTRITION & DIETETICS',
@@ -2069,14 +2106,15 @@ export class NewDocPageComponent {
         },
         {
           question: 'How can I book an appointment with Ms. Archana Karthick at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'Appointments with Ms. Archana Karthick can be booked by calling Rashtrotthana Hospital’s appointment helpline at 080 6923 9999, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.'
+          answer: `Appointments with Ms. Archana Karthick can be booked by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
         }
-      ]
+      ],
+      departmentSlug: '/facility/nutrition-dietetics-services-bangalore',
 
     },
     {
       name: 'Dr. Gopal Das C M',
-      image: 'assets/Doc-Inv-Page/Dr-Gopal-DAS-Cm.png',
+      image: 'assets/Doc-Inv-Page/Dr-Gopal-DAS-Cm.webp',
       department: 'Consultant Psychiatrist',
       about: 'Dr. Gopal Das C M is a distinguished Consultant Psychiatrist with extensive experience in treating a wide range of mental health conditions. His expertise includes managing stress, anxiety, depression, severe mental disorders and addiction issues. Specializing in child and adolescent psychiatry, he also addresses psychiatric concerns in the elderly. Dr. Das employs advanced treatments like ECT, TMS and TDCS, alongside psychotherapies and lifestyle. Dedicated to enhancing mental well-being, he offers comprehensive care tailored to individual needs.',
       speciality: 'PSYCHIATRY',
@@ -2116,14 +2154,15 @@ export class NewDocPageComponent {
         },
         {
           question: 'How can I book an appointment with Dr. Gopal Das C. M at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'You can book an appointment with Dr. Gopal Das C. M by calling Rashtrotthana Hospital’s appointment helpline at 080 6923 9999, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.'
+          answer: `You can book an appointment with Dr. Gopal Das C. M by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
         }
-      ]
+      ],
+      departmentSlug: '/specialities/best-pshychiatry-hospital-in-bangalore',
 
     },
     // {
     //   name: 'Dr. Nishitha A',
-    //   image: 'assets/Doc-Inv-Page/Dr-Nishitha-A.png',
+    //   image: 'assets/Doc-Inv-Page/Dr-Nishitha-A.webp',
     //   department: 'Radiologist',
     //   about: 'Dr. Nishitha A is a recent addition to our  dedicated team of radiologists with a special interest in  women\'s imaging . She graduated summa cum laude in her  M.D Radio-Diagnosis(2023) examinations. Dr. Nishitha has completed her Senior Residency at BGS GIMS Hospital and is currently,  pursuing a fellowship in Fetal Medicine at ADI Advanced Care for Fetal Studies, Bangalore . Dr. Nishitha has  numerous paper presentations at State, national and international conferences to her credit with a Gold medal for the best paper in KCACON-2013 . Outside of her professional work, she is a trained Carnatic vocalist and Bharatanatyam dancer, reflecting her diverse talents and interests.',
     //   speciality: 'RADIOLOGY',
@@ -2138,7 +2177,7 @@ export class NewDocPageComponent {
     // },
     {
       name: 'Dr. Nagesh R',
-      image: 'assets/Doc-Inv-Page/dr-nagesh.png',
+      image: 'assets/Doc-Inv-Page/dr-nagesh.webp',
       department: 'Radiologist',
       about: 'Dr. Nagesh R is an accomplished radiology consultant in jaydev rashtrotthana Hospital, with over a decade of experience in the field. He holds a medical degree in MBBS, DMRD and DNB and he is going to be a Fellow of the Royal College of Radiologists (FRCR), a highly esteemed qualification in the field of radiology. He is an active member of the Indian Radiology and Imaging Association.Dr. Nagesh R is an expert in general radiology and has a special interest in cardiovascular imaging, as well as performing USG and CT-guided interventions. He is highly skilled in interpreting medical images and diagnosing a wide range of medical conditions, from the most common to the most complex.',
       speciality: 'RADIOLOGY',
@@ -2216,14 +2255,15 @@ export class NewDocPageComponent {
         },
         {
           question: 'How can I book an appointment or imaging procedure with Dr. Nagesh R at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'You can book imaging services or consultation with Dr. Nagesh R by calling Rashtrotthana Hospital’s appointment helpline at 080 6923 9999, visiting the radiology department, or booking online through the official Rashtrotthana Hospital website.'
+          answer: `You can book imaging services or consultation with Dr. Nagesh R by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the radiology department, or booking online through the official Rashtrotthana Hospital website.`
         }
-      ]
+      ],
+      departmentSlug: '/facility/top-diagnostics-multi-speciality-hospital-bangalore',
 
     },
     {
       name: 'Dr. Sapna S',
-      image: 'assets/dr-sapna.png',
+      image: 'assets/dr-sapna.webp',
       department: 'AYURVEDA',
       about: 'Dr. Sapna S. is an experienced Ayurvedic professional with over 20 years of teaching and practice in Ayurveda, specializing in Rasashastra, Bhaishajya Kalpana and Panchakarma therapies. She holds an MD from SDM College, Udupi, along with additional qualifications such as a Postgraduate Diploma in Yoga and a Diploma in Medical Astrology. Dr. Sapna has been instrumental in shaping Ayurvedic education, working at renowned institutions including Sushruta Ayurvedic Medical College and Kalabahairaveshwara Ayurvedic Medical College in Bangalore and most recently, as a professor at Sanskriti Ayurvedic Medical College, Mathura.Her 20-year career includes 17 years in Bangalore and 3 years at Sanskriti Ayurvedic College, where she has dedicated herself to making Ayurvedic knowledge engaging and accessible for students. ',
       speciality: 'AYURVEDA',
@@ -2236,7 +2276,7 @@ export class NewDocPageComponent {
       id: 37,
       title: 'Dr. Sapna S | Senior Ayurveda Doctor in Bangalore',
       description: 'Dr. Sapna S is a senior Ayurveda specialist with 20+ years of expertise in Rasashastra, Panchakarma, and medical astrology-based therapies.',
-
+      departmentSlug: '',
     },
     {
       name: 'Dr. Venkatesh H. S',
@@ -2280,14 +2320,15 @@ export class NewDocPageComponent {
         },
         {
           question: 'How can I book an appointment with Dr. Venkatesh H. S at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'You can book an appointment with Dr. Venkatesh H. S by calling Rashtrotthana Hospital’s appointment helpline at 080 6923 9999, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.'
+          answer: `You can book an appointment with Dr. Venkatesh H. S by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
         }
-      ]
+      ],
+      departmentSlug: '/specialities/ayurvedic-treatment-bangalore',
 
     },
     {
       name: 'Dr. Sunil Kumar C',
-      image: 'assets/Doc-Inv-Page/Dr-Sunil.png',
+      image: 'assets/Doc-Inv-Page/Dr-Sunil.webp',
       department: 'ENT, Head and Neck',
       about: 'Dr. Sunil Kumar has extensive experience in ENT and head/neck surgeries, including laser and thyroid procedures. He specializes in anti-aging, hair transplantation and facial trauma treatment. He has led various awareness programs in collaboration with WHO, and his insights on hearing loss have been featured on WHO\'s site.',
       speciality: 'ENT SPECIALITY',
@@ -2327,15 +2368,16 @@ export class NewDocPageComponent {
         },
         {
           question: 'How can I book an appointment with Dr. Sunil Kumar C at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'You can book an appointment with Dr. Sunil Kumar C by calling Rashtrotthana Hospital’s appointment helpline at 080 6923 9999, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.'
+          answer: `You can book an appointment with Dr. Sunil Kumar C by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
         }
-      ]
+      ],
+      departmentSlug: '/specialities/best-ent-hospital-in-bangalore',
 
 
     },
     {
       name: "Dr. Man Mohan U. S",
-      image: "assets/Doc-Inv-Page/Dr-Man-Mohan-U-S.png",
+      image: "assets/Doc-Inv-Page/Dr-Man-Mohan-U-S.webp",
       department: "Gastroenterologist",
       about: `<p>Dr. Manmohan U S is a consultant in Gastroenterology with comprehensive clinical and academic experience. He completed his MBBS from M.S. Ramaiah Medical College, followed by an MD in General Medicine from AIMS, and super-speciality training (DM) in Gastroenterology from Madras Medical Mission Hospital, Chennai.</p> 
               <p>He has also completed an observership at CMC Vellore and worked in Vellore for two years. Additionally, he served as an Assistant Professor at the Institute of Gastroenterology and Organ Transplant, Victoria Hospital campus. He has presented more than six papers at national and international conferences and has served as faculty at two national and two international gastroenterology conferences.</p>`,
@@ -2393,14 +2435,15 @@ export class NewDocPageComponent {
         },
         {
           question: 'How can I book an appointment with Dr. Man Mohan U. S at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'You can book an appointment with Dr. Man Mohan U. S by calling Rashtrotthana Hospital’s appointment helpline at 080 6923 9999, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.'
+          answer: `You can book an appointment with Dr. Man Mohan U. S by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
         }
-      ]
+      ],
+      departmentSlug: '/specialities/best-gastroenterology-hospital-in-bangalore',
 
     },
     {
       name: "Dr. Kalyani Dilip Karkare",
-      image: "assets/Doc-Inv-Page/Dr-Kalyani-Karkare.png",
+      image: "assets/Doc-Inv-Page/Dr-Kalyani-Karkare.webp",
       department: 'Neuro Science',
       speciality: 'NEUROSCIENCES',
       about: "Dr. Kalyani Karkare, a Gold Medalist in DM Neurology from NIMHANS, Bangalore (2010), is an expert in epilepsy and EEG. After gaining experience at Medanta The Medicity Hospital, she pursued a fellowship in EEG at SCTIMST, Thiruvananthapuram (2013). From 2015 to 2018, she worked with the epilepsy surgery team at Nicklaus Children's Hospital, Miami, USA, specializing in advanced techniques like subdural and stereoEEG. She has also set up epilepsy labs in leading hospitals. In addition to epilepsy, she is proficient in acute stroke management, including IV thrombolysis and mechanical thrombectomy, and she emphasizes comprehensive stroke care with rehabilitation. With numerous publications, academic presentations and teaching experience, she combines deep knowledge, empathy and attentive care for her patients.",
@@ -2440,14 +2483,15 @@ export class NewDocPageComponent {
         },
         {
           question: 'How can I book an appointment with Dr. Kalyani Dilip Karkare at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'You can book an appointment with Dr. Kalyani Dilip Karkare by calling Rashtrotthana Hospital’s appointment helpline at 080 6923 9999, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.'
+          answer: `You can book an appointment with Dr. Kalyani Dilip Karkare by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
         }
-      ]
+      ],
+      departmentSlug: '/specialities/best-neurology-hospital-in-bangalore',
 
     },
     {
       name: "Dr. Vivekanand",
-      image: "assets/Doc-Inv-Page/Dr-Vivek.png",
+      image: "assets/Doc-Inv-Page/Dr-Vivek.webp",
       department: 'Consultant Vascular Surgeon',
       speciality: 'GENERAL SURGERY',
       about: "Dr. Vivekanand is a highly experienced vascular surgeon with over two decades of expertise in vascular and endovascular surgery. Currently serving as the Head of the Department at the Jain Institute of Vascular Sciences, Bhagwan Mahaveer Jain Hospital, he has been instrumental in advancing vascular care. He is a recognized leader, having served as the President of the Vascular Surgeons Association of Karnataka and President Elect of the Vascular Society of India. With a strong commitment to education, Dr. Vivekanand has mentored numerous fellows and postgraduates and has authored multiple publications and textbook chapters in vascular surgery and dermatology.",
@@ -2487,14 +2531,15 @@ export class NewDocPageComponent {
         },
         {
           question: 'How can I book an appointment with Dr. Vivekanand at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'You can book an appointment with Dr. Vivekanand by calling Rashtrotthana Hospital’s appointment helpline at 080 6923 9999, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.'
+          answer: `You can book an appointment with Dr. Vivekanand by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
         }
-      ]
+      ],
+      departmentSlug: '/specialities/best-vascular-surgery-hospital-in-bangalore',
 
     },
     {
       name: "Dr. Dhanyatha Muninarayan",
-      image: "assets/Doc-Inv-Page/Dr-Dhanyatha-Muninarayan.png",
+      image: "assets/Doc-Inv-Page/Dr-Dhanyatha-Muninarayan.webp",
       department: 'Consultant Paediatrician',
       speciality: 'PAEDIATRICS AND NEONATOLOGY',
       about: "Dr. Dhanyatha Muninarayan is a compassionate and skilled paediatrician with an MD in Paediatrics from Rajarajeswari Medical College, Bengaluru. With extensive experience in General Paediatrics, Neonatology, and Paediatric Haematology-Oncology, she has worked in reputed hospitals including Cloud Nine, St. John’s Medical College, ESI Medical College and Sakra World Hospital. Currently serving as a Consultant at Belanus Champion Hospital, she is proficient in managing neonatal and paediatric cases, performing critical procedures and mentoring medical students. Her research contributions include award-winning presentations and publications on neonatal and paediatric health issues, reflecting her dedication to advancing paediatric care.",
@@ -2534,14 +2579,15 @@ export class NewDocPageComponent {
         },
         {
           question: 'How can I book an appointment with Dr. Dhanyatha Muninarayan at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'You can book an appointment with Dr. Dhanyatha Muninarayan by calling Rashtrotthana Hospital’s appointment helpline at 080 6923 9999, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.'
+          answer: `You can book an appointment with Dr. Dhanyatha Muninarayan by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
         }
-      ]
+      ],
+      departmentSlug: '/specialities/best-paediatric-hospital-in-bangalore',
 
     },
     // {
     //   name: "Dr. Sunil Shenvi",
-    //   image : "assets/Dr-Sunil-Shenvi.png",
+    //   image : "assets/Dr-Sunil-Shenvi.webp",
     //   department: 'General Sugery',
     //   speciality: 'GASTRO SCIENCES',
     //   about : "Dr. Sunil Shenvi is a distinguished Senior Consultant in Hepato-Biliary-Pancreatic (HPB) Surgery and Multiorgan Transplantation, offering his expertise at Jayadev Memorial Rashtrotthana Hospital and Research Centre in Bengaluru. With extensive experience, he specializes in liver transplantation, including living and deceased donor transplants, blood group-incompatible transplants and positive cross-match transplants. He is also skilled in pancreas transplantation, surgeries for benign pancreatic conditions like acute and chronic pancreatitis and advanced procedures for cancers of the bile duct and gallbladder. Additionally, he performs complex vascular access surgeries for hemodialysis, providing comprehensive care for patients with organ failure and related complications.",
@@ -2554,7 +2600,7 @@ export class NewDocPageComponent {
     // },
     // {
     //   name: "Dr. Hemanth Kumar Venkatesh",
-    //   image: "assets/Doc-Inv-Page/Dr-Hemanth-kumar-Venkatesh.png",
+    //   image: "assets/Doc-Inv-Page/Dr-Hemanth-kumar-Venkatesh.webp",
     //   department: 'ORTHOPEDICS',
     //   speciality: 'ORTHOPEDICS',
     //   about: "<p>With over 20 years of experience in Trauma and Orthopaedics, Dr. Hemanth Kumar Venkatesh is a highly skilled consultant orthopaedic surgeon specializing in hip and knee joint replacement surgeries, robotic arthroplasty, knee sports surgery and joint preservation techniques. He provides comprehensive care for a wide range of musculoskeletal conditions.</p><p>He is adept at managing complex cases, including primary and revision arthroplasty, shoulder and ankle sports injuries, diabetic foot limb salvage and hand and wrist surgeries. His expertise is complemented by contributions to research and leadership roles in healthcare projects.</p><p>Having worked at renowned institutions like University Hospitals of Plymouth NHS Trust and North West Anglia Foundation Trust, he brings advanced knowledge and a patient-centered approach to his practice. His dedication to exceptional care is supported by extensive training and fellowship experience in both the UK and India.</p>",
@@ -2610,23 +2656,26 @@ export class NewDocPageComponent {
         },
         {
           question: 'How can I book an appointment with Dr. Matam Sri Anusha at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'You can book an appointment with Dr. Matam Sri Anusha by calling Rashtrotthana Hospital’s appointment helpline at 080 6923 9999, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.'
+          answer: `You can book an appointment with Dr. Matam Sri Anusha by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
         }
-      ]
+      ],
+      departmentSlug: '/specialities/rheumatology-hospital-bangalore',
 
     },
     {
       name: "Dr. C Rajendran",
-      image: "assets/Doc-Inv-Page/Dr-Rajendran.png",
+      image: "assets/Doc-Inv-Page/Dr-Rajendran.webp",
       department: 'INTERNAL MEDICINE',
       speciality: 'INTERNAL MEDICINE',
       about: "<p>Dr. C Rajendran is a highly experienced physician with 27 years of medical practice, including 19 years post post-graduation. A graduate of the prestigious Armed Forces Medical College and a postgraduate from Mumbai University, he is well-versed in treating a broad spectrum of medical conditions.</p><p>His expertise lies in Diabetes management, Infectious Diseases and General Medicine, with a strong focus on hypertension, asthma, COPD, thyroid disorders and fever management. Known for his exceptional patient communication skills, he believes in dedicating ample time to listen and understand his patient's concerns thoroughly. He is proficient in managing a wide range of conditions, including diabetes, hypertension, asthma, arthritis, anemia and various infections.</p>",
       areasOfExpertise: ["General Medicine", "Diabetes Management", "Infectious Diseases", "Hypertension", "Asthma", "COPD", "Thyroid Disorders", "Fever Management"],
       expertise: " 27",
-      qualification: "MD (General Medicine), MBBS, Fellowship in Diabetology, Fellowship in Infectious Diseases  ",
+      qualification: `MD (General Medicine), 
+      MBBS, Fellowship in Diabetology,
+       Fellowship in Infectious Diseases`,
       time: "",
       date: "Sunday-Tuesday",
-      alt: 'Dr-Rajendran.png | Best Internal Medicine Doctor in Bangalore | Rashtrotthana Hospital',
+      alt: 'Dr-Rajendran.webp | Best Internal Medicine Doctor in Bangalore | Rashtrotthana Hospital',
       id: 58,
       title: 'Dr. C Rajendran | Internal Medicine Doctor in Bangalore',
       description: '27+ years experience in diabetes management, general medicine, infectious diseases, hypertension, asthma, thyroid care and fever treatment.',
@@ -2657,14 +2706,15 @@ export class NewDocPageComponent {
         },
         {
           question: 'How can I book an appointment with Dr. C. Rajendran at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'You can book an appointment with Dr. C. Rajendran by calling Rashtrotthana Hospital’s appointment helpline at 080 6923 9999, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.'
+          answer: `You can book an appointment with Dr. C. Rajendran by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
         }
-      ]
+      ],
+      departmentSlug: '/specialities/internal-medicine-hospital-in-bangalore',
 
     },
     {
       name: "Dr. Sushmitha Raj R",
-      image: "assets/Doc-Inv-Page/Dr-Sushmitha-Raj-R.png",
+      image: "assets/Doc-Inv-Page/Dr-Sushmitha-Raj-R.webp",
       department: 'Dental Surgery',
       speciality: 'DENTAL SCIENCES',
       about: "A dedicated and compassionate dentist with 3+ years of experience in general dentistry, restorative procedures, and minor oral extractions. Proficient in diagnosing and treating a wide range of dental conditions while prioritizing patient-centered care. Known for excellent communication and interpersonal skills, ensuring a positive patient experience for individuals of all ages.",
@@ -2704,9 +2754,10 @@ export class NewDocPageComponent {
         },
         {
           question: 'How can I book an appointment with Dr. Sushmitha Raj R at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'You can book an appointment with Dr. Sushmitha Raj R by calling Rashtrotthana Hospital’s appointment helpline at 080 6923 9999, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.'
+          answer: `You can book an appointment with Dr. Sushmitha Raj R by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
         }
-      ]
+      ],
+      departmentSlug: '/specialities/best-dental-hospital-in-bangalore',
     },
     // {
     //   name: "Dr. S K Ranjani",
@@ -2723,7 +2774,7 @@ export class NewDocPageComponent {
     // },
     {
       name: "Dr. G. V. Giri",
-      image: "assets/Doc-Inv-Page/Dr-Giri.png",
+      image: "assets/Doc-Inv-Page/Dr-Giri.webp",
       department: 'Medical Oncologist',
       speciality: 'ONCOLOGY',
       about: "Dr. G. V. Giri graduated with an MBBS from JN Medical College, Belgaum and completed his MD in Internal Medicine from JJM Medical College, Davangere. He further specialized with a DM in Medical Oncology from Kidwai Cancer Institute. With 10 years of experience as an oncologist in the public sector, he is also a published author in national and international journals.",
@@ -2763,14 +2814,15 @@ export class NewDocPageComponent {
         },
         {
           question: 'How can I book an appointment with Dr. G. V. Giri at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'You can book an appointment with Dr. G. V. Giri by calling Rashtrotthana Hospital’s appointment helpline at 080 6923 9999, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.'
+          answer: `You can book an appointment with Dr. G. V. Giri by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
         }
-      ]
+      ],
+      departmentSlug: '/specialities/best-oncology-hospital-in-bangalore',
 
     },
     {
       name: "Dr. Kavya N",
-      image: "assets/Doc-Inv-Page/Dr-Kavya-N.png",
+      image: "assets/Doc-Inv-Page/Dr-Kavya-N.webp",
       department: 'Ayurveda',
       speciality: 'AYURVEDA',
       about: "Dr. Kavya has completed her BAMS and MD in Dravyaguna Vijnana from Government Ayurveda Medical College, Bengaluru. She has garnered rich clinical experience for over 15 years and specialized in treating various metabolic disorders, diseases of the gut, bone and joint disorders, diseases of the spine, skin health and gynecological wellness. Dr. Kavya comes in with 10 years of experience in Ayurveda and Integrative research from the prestigious Central Council for Research in Ayurvedic Sciences, Ministry of Ayush, Govt of India. She has to her credit a number of publications and has been a reviewer for many reputed peer reviewed journals, multiple awards and recognitions and presentations at National and International conferences. She is well known for her oratory skills and has addressed a wide range of both scientific and general audiences at various occasions.",
@@ -2810,9 +2862,10 @@ export class NewDocPageComponent {
         },
         {
           question: 'How can I book an appointment with Dr. Kavya N at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'You can book an appointment with Dr. Kavya N by calling Rashtrotthana Hospital’s appointment helpline at 080 6923 9999, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.'
+          answer: `You can book an appointment with Dr. Kavya N by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
         }
-      ]
+      ],
+      departmentSlug: '/specialities/ayurvedic-treatment-bangalore',
 
     },
     {
@@ -2859,7 +2912,8 @@ export class NewDocPageComponent {
           question: 'Does Dr. Sandhya S. Patil manage head and neck cancer surgeries?',
           answer: 'Yes, she is involved in the diagnosis and management of head and neck oncologic surgeries, providing comprehensive surgical care in coordination with oncology teams. Early diagnosis and expert surgical planning are crucial for optimal outcomes.'
         }
-      ]
+      ],
+      departmentSlug: '/specialities/best-ent-hospital-in-bangalore',
 
     },
     {
@@ -2904,9 +2958,10 @@ export class NewDocPageComponent {
         },
         {
           question: 'How can I book an appointment with Dr. Dona Susan John at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'You can book an appointment with Dr. Dona Susan John by calling Rashtrotthana Hospital’s appointment helpline at 080 6923 9999, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.'
+          answer: `You can book an appointment with Dr. Dona Susan John by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
         }
-      ]
+      ],
+      departmentSlug: '/specialities/best-eye-hospital-in-bangalore',
 
     },
     {
@@ -2951,9 +3006,10 @@ export class NewDocPageComponent {
         },
         {
           question: 'How can I book an appointment with Dr. Nithin J at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'You can book an appointment with Dr. Nithin J by calling Rashtrotthana Hospital’s appointment helpline at 080 6923 9999, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.'
+          answer: `You can book an appointment with Dr. Nithin J by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
         }
-      ]
+      ],
+      departmentSlug: '/specialities/best-nephrology-hospital-in-bangalore',
 
     },
     {
@@ -2998,9 +3054,10 @@ export class NewDocPageComponent {
         },
         {
           question: 'How can I book an appointment with Dr. Dhruva Ithal at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'You can book an appointment with Dr. Dhruva Ithal by calling Rashtrotthana Hospital’s appointment helpline at 080 6923 9999, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.'
+          answer: `You can book an appointment with Dr. Dhruva Ithal by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
         }
-      ]
+      ],
+      departmentSlug: '/specialities/best-pshychiatry-hospital-in-bangalore',
 
     },
     {
@@ -3045,9 +3102,10 @@ export class NewDocPageComponent {
         },
         {
           question: 'How can I book an appointment with Dr. Limesh M at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'You can book an appointment with Dr. Limesh M by calling Rashtrotthana Hospital’s appointment helpline at 080 6923 9999, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.'
+          answer: `You can book an appointment with Dr. Limesh M by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
         }
-      ]
+      ],
+      departmentSlug: '/specialities/best-nephrology-hospital-in-bangalore',
 
     },
     {
@@ -3092,9 +3150,10 @@ export class NewDocPageComponent {
         },
         {
           question: 'How can I book an appointment with Dr. Shruti Suresh at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'You can book an appointment with Dr. Shruti Suresh by calling Rashtrotthana Hospital’s appointment helpline at 080 6923 9999, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.'
+          answer: `You can book an appointment with Dr. Shruti Suresh by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
         }
-      ]
+      ],
+      departmentSlug: '/specialities/internal-medicine-hospital-in-bangalore',
 
     },
     {
@@ -3141,7 +3200,8 @@ export class NewDocPageComponent {
           question: 'When should I see an endocrinologist like Dr. Manasa M G at Rashtrotthana Hospital?',
           answer: 'You should consult Dr. Manasa M G if you have uncontrolled diabetes, thyroid problems, unexplained weight changes, hormonal blood pressure issues, or bone health concerns. Early endocrine evaluation helps prevent long-term complications.'
         }
-      ]
+      ],
+      departmentSlug: '/specialities/best-endocrinology-hospital-in-bangalore',
 
     },
     {
@@ -3189,7 +3249,8 @@ export class NewDocPageComponent {
           question: 'Why choose Ms. Samarchitha S at Rashtrotthana Hospital for mental health care?',
           answer: 'Ms. Samarchitha S brings clinical experience across a wide range of psychiatric and neuropsychiatric conditions, including personality and neurodegenerative disorders. At Rashtrotthana Hospital, patients receive compassionate mental healthcare in a safe, multidisciplinary hospital environment.'
         }
-      ]
+      ],
+      departmentSlug: '/specialities/best-pshychiatry-hospital-in-bangalore',
 
     },
     {
@@ -3237,12 +3298,13 @@ export class NewDocPageComponent {
           question: 'Why choose Dr. Sandeep K M at Rashtrotthana Hospital for orthopaedic care?',
           answer: 'Dr. Sandeep K M combines clinical experience in trauma, arthroplasty, arthroscopy, and rheumatology with a patient-focused approach. At Rashtrotthana Hospital, patients receive comprehensive orthopaedic care supported by advanced diagnostics and rehabilitation services.'
         }
-      ]
+      ],
+      departmentSlug: '/specialities/best-orthopaedics-hospital-in-bangalore',
 
     },
     {
       name: "Dr. Pooja Prasad",
-      image: "assets/Doc-Inv-Page/Dr-Pooja.png",
+      image: "assets/Doc-Inv-Page/Dr-Pooja.webp",
       department: 'Radiologist',
       // speciality: 'ORTHOPEDICS',
       desgination: 'Consultant - Radiologist',
@@ -3284,7 +3346,8 @@ export class NewDocPageComponent {
           question: 'Why choose Dr. Pooja Prasad at Rashtrotthana Hospital for diagnostic imaging?',
           answer: 'Dr. Pooja Prasad combines clinical experience across multiple imaging modalities with attention to detail and diagnostic accuracy. At Rashtrotthana Hospital, her imaging expertise supports comprehensive, multidisciplinary patient care.'
         }
-      ]
+      ],
+      departmentSlug: '/facility/top-diagnostics-multi-speciality-hospital-bangalore',
 
     },
     {
@@ -3331,7 +3394,8 @@ export class NewDocPageComponent {
           question: 'Why choose Dr. Srinivas Siddeshwar for emergency treatment at Rashtrotthana Hospital?',
           answer: 'Dr. Srinivas Siddeshwar combines hands-on emergency medicine experience with a calm, patient-focused approach during critical moments. Rashtrotthana Hospital provides advanced emergency infrastructure and multidisciplinary support for comprehensive care.'
         }
-      ]
+      ],
+      departmentSlug: '/specialities/best-emergency-medicine-hospital-in-bangalore',
 
     },
     {
@@ -3379,7 +3443,8 @@ export class NewDocPageComponent {
           question: 'Why choose Dr. Sushma A at Rashtrotthana Hospital for eye and eyelid care?',
           answer: 'Dr. Sushma A combines specialised oculoplasty expertise with a patient-centred approach to care. At Rashtrotthana Hospital, patients benefit from advanced diagnostics, surgical precision, and comprehensive ophthalmic support.'
         }
-      ]
+      ],
+      departmentSlug: '/specialities/best-eye-hospital-in-bangalore',
 
     },
     {
@@ -3427,7 +3492,8 @@ export class NewDocPageComponent {
           question: 'Why choose Dr. Mahesh M at Rashtrotthana Hospital for urology care?',
           answer: 'Dr. Mahesh M combines advanced surgical expertise in laparoscopic, reconstructive, and laser urology with a patient-centred approach. At Rashtrotthana Hospital, patients benefit from modern urology infrastructure and multidisciplinary support.'
         }
-      ]
+      ],
+      departmentSlug: '/specialities/best-urology-hospital-in-bangalore',
 
     },
     {
@@ -3475,7 +3541,8 @@ export class NewDocPageComponent {
           question: 'Why choose Major Dr. Ashish S Mallige at Rashtrotthana Hospital for pediatric critical care?',
           answer: 'Major Dr. Ashish S Mallige brings extensive clinical experience in pediatric and neonatal intensive care, supported by Rashtrotthana Hospital’s advanced PICU infrastructure. Parents can trust a structured, compassionate, and evidence-based approach to critical child care.'
         }
-      ]
+      ],
+      departmentSlug: '/specialities/best-paediatric-hospital-in-bangalore',
 
     },
     {
@@ -3523,7 +3590,8 @@ export class NewDocPageComponent {
           question: 'Why choose Dr. Madhurya P K at Rashtrotthana Hospital for dermatology care?',
           answer: 'Dr. Madhurya P K combines clinical dermatology expertise with aesthetic skill, offering both medical and cosmetic skin care under one roof. Rashtrotthana Hospital provides a safe, well-equipped environment for comprehensive dermatology treatment.'
         }
-      ]
+      ],
+      departmentSlug: '',
 
     },
     // {
@@ -3893,6 +3961,13 @@ export class NewDocPageComponent {
   toggleFAQ(index: number) {
     this.activeFAQ = this.activeFAQ === index ? null : index;
   }
+
+  getQualifications(): string[] {
+    return this.filteredDoctor?.qualification
+      ?.split(',')
+      .map((q: string) => q.trim()) || [];
+  }
+
 
 
 
