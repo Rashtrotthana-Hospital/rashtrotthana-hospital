@@ -175,15 +175,15 @@ export class NewDocPageComponent {
         },
         {
           question: 'What medical services does Col (Dr) Anand Shankar K provide at Rashtrotthana Hospital?',
-          answer: 'At Rashtrotthana Hospital, Dr Anand Shankar K oversees anesthesia for surgeries, emergency resuscitation, and ICU management, ensuring patient safety before, during, and after procedures. His role is crucial in handling high-risk and critical patients.'
+          answer: 'At Rashtrotthana Hospital, Col (Dr) Anand Shankar K oversees anesthesia for surgeries, emergency resuscitation, and ICU management, ensuring patient safety before, during, and after procedures. His role is crucial in handling high-risk and critical patients.'
         },
         {
           question: 'When should I consult Col (Dr) Anand Shankar K at Rashtrotthana Hospital, Bangalore?',
-          answer: 'You may need consultation if you are scheduled for surgery requiring anesthesia, have critical medical conditions needing ICU care, or require emergency medical stabilization. Dr Anand Shankar K plays a key role in decision-making for complex and emergency cases at Rashtrotthana Hospital.'
+          answer: 'You may need consultation if you are scheduled for surgery requiring anesthesia, have critical medical conditions needing ICU care, or require emergency medical stabilization. Col (Dr) Anand Shankar K plays a key role in decision-making for complex and emergency cases at Rashtrotthana Hospital.'
         },
         {
-          question: 'How should patients prepare for anesthesia under Dr Anand Shankar K at Rashtrotthana Hospital?',
-          answer: 'Patients are advised to follow fasting instructions, disclose existing medical conditions, allergies, and current medications during the pre-anesthesia evaluation. This helps Dr Anand Shankar K plan safe and personalized anesthesia care at Rashtrotthana Hospital.'
+          question: 'How should patients prepare for anesthesia under Col (Dr) Anand Shankar K at Rashtrotthana Hospital?',
+          answer: 'Patients are advised to follow fasting instructions, disclose existing medical conditions, allergies, and current medications during the pre-anesthesia evaluation. This helps Col (Dr) Anand Shankar K plan safe and personalized anesthesia care at Rashtrotthana Hospital.'
         },
         {
           question: 'Is anesthesia safe for elderly or high-risk patients at Rashtrotthana Hospital?',
@@ -191,7 +191,7 @@ export class NewDocPageComponent {
         },
         {
           question: 'Does Col (Dr) Anand Shankar K handle emergency and ICU cases at Rashtrotthana Hospital, RR Nagar?',
-          answer: 'As the head of Emergency and Critical Care services, Dr Anand Shankar K leads the management of life-threatening emergencies and ICU patients round-the-clock at Rashtrotthana Hospital, RR Nagar, Bangalore.'
+          answer: 'As the head of Emergency and Critical Care services, Col (Dr) Anand Shankar K leads the management of life-threatening emergencies and ICU patients round-the-clock at Rashtrotthana Hospital, RR Nagar, Bangalore.'
         },
         {
           question: 'How can I book an appointment with Col (Dr) Anand Shankar K at Rashtrotthana Hospital?',
@@ -3963,6 +3963,19 @@ export class NewDocPageComponent {
       .map((q: string) => q.trim()) || [];
   }
 
+  formatDepartment(text: string): string {
+    return text
+      .toLowerCase()
+      .split(',') 
+      .map(dept =>
+        dept
+          .trim()
+          .split(' ')
+          .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+          .join(' ')
+      )
+      .join(', ');
+  }
 
 
 

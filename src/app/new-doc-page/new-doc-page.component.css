@@ -118,13 +118,13 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    text-transform: lowercase;
+    /* text-transform: lowercase; */
 }
 
 
-.speciality::first-letter {
+/* .speciality::first-letter {
     text-transform: uppercase;
-}
+} */
 
 .location {
     display: flex;
@@ -258,48 +258,49 @@
 }
 
 .timeline {
-  position: relative;
-  padding-left: 36px;
+    position: relative;
+    padding-left: 36px;
 }
 
 .timeline-item {
-  position: relative;
-  padding-bottom: 32px;
+    position: relative;
+    padding-bottom: 32px;
 }
 
 /* DOT */
 .timeline-dot {
-  position: absolute;
-  left: 0;
-  top: 6px;
-  width: 12px;
-  height: 12px;
-  background: #3b82f6;
-  border-radius: 50%;
-  border: 3px solid #fff;
-  box-shadow: 0 0 0 2px #3b82f6;
-  z-index: 2;
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 12px;
+    height: 12px;
+    background: #3b82f6;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow: 0 0 0 2px #3b82f6;
+    z-index: 2;
 }
 
 /* LINE SEGMENT UNDER EACH DOT */
 .timeline-line {
-  position: absolute;
-  left: 5px;
-  top: 24px;
-  width: 2px;
-  height: 28px; /* controls the gap length */
-  background: #e5e7eb;
+    position: absolute;
+    left: 5px;
+    top: 24px;
+    width: 2px;
+    height: 28px;
+    /* controls the gap length */
+    background: #e5e7eb;
 }
 
 /* TEXT */
 .timeline-content {
-  margin-left: 28px;
+    margin-left: 28px;
 }
 
 .timeline-content h3 {
-  font-size: 16px;
-  font-weight: 600;
-  color: #1a1a1a;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
 }
 
 
@@ -418,7 +419,7 @@ button:active {
 .profileHeading {
     color: #032977;
     font-family: Poppins;
-    font-size: 36px;
+    font-size: 34px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -433,10 +434,10 @@ button:active {
     margin-top: 30px;
     color: #0E3672;
     font-family: Poppins;
-    font-size: 20px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 500;
-    line-height: 36px;
+    line-height: 32px;
     padding: 0 5%;
     /* 180% */
 }
@@ -616,7 +617,7 @@ button:active {
     background: linear-gradient(90deg, #022b50 0%, #279797 100%);
     box-shadow: 3px 4px 15px rgba(63, 176, 206, 0.65);
     cursor: pointer;
-    margin-left: 8%;
+    /* margin-left: 8%; */
 }
 
 .btn_text {
@@ -670,8 +671,8 @@ button:active {
 
 .faq-heading {
     color: var(--text-color, #252B42);
-    font-family: Montserrat;
-    font-size: 40px;
+    font-family: Poppins;
+    font-size: 44px;
     font-style: normal;
     font-weight: 700;
     line-height: 57px;
@@ -730,6 +731,7 @@ button:active {
     font-weight: 600;
     margin: 0;
     color: #1f2d3d;
+    font-family: Poppins;
 }
 
 /* ARROW */
@@ -753,6 +755,7 @@ button:active {
     line-height: 1.6;
     margin-left: 40px;
     transition: max-height 0.4s ease, margin-top 0.4s ease;
+    font-family: Poppins;
 }
 
 .faq-card.active .faq-body {
@@ -764,19 +767,20 @@ button:active {
 .faq-para {
     color: var(--second-text-color, #737373);
     text-align: center;
-    font-family: Montserrat;
-    font-size: 14px;
+    font-family: Poppins;
+    font-size: 18px;
     font-style: normal;
     font-weight: 500;
-    line-height: 20px;
+    line-height: 28px;
     /* 142.857% */
     letter-spacing: 0.2px;
     padding: 20px;
 }
+
 :host ::ng-deep .faq-body a {
-  text-decoration: none;
-  color: #2563eb;
-  font-weight: 500;
+    text-decoration: none;
+    color: #2563eb;
+    font-weight: 500;
 }
 
 
@@ -974,6 +978,7 @@ select::-ms-expand {
         justify-content: center;
         align-items: center;
     }
+
 }
 
 
@@ -1028,6 +1033,8 @@ select::-ms-expand {
     .faq-section {
         padding: 30px 20px;
     }
+
+   
 }
 
 @media (max-width : 800px) {
@@ -1191,10 +1198,12 @@ select::-ms-expand {
     .doc-name {
         font-size: 18px;
         width: 100%;
+        text-align: center;
     }
 
     .speciality {
         font-size: 16px;
+        text-align: center;
     }
 
     .section-title {
@@ -1253,21 +1262,39 @@ select::-ms-expand {
         margin-left: 0;
     }
 
-    .btn-part .btn{
+    .info-card{
+        padding: 0;
+    }
+
+    .container{
+        padding: 0 20px;
+    }
+
+    .faqs{
+        padding: 0 30px 30px;
+    }
+
+    .btn-part{
+        margin-top: 20px;
+        gap: 30px;
+    }
+
+
+    .btn-part .btn {
         width: 100%;
         height: 50px;
         font-size: 12px;
     }
 
-    .stats-card{
+    .stats-card {
         height: 80px;
     }
 
-    .stat h2{
+    .stat h2 {
         font-size: 18px;
     }
 
-    .stat p{
+    .stat p {
         font-size: 12px;
     }
 }
