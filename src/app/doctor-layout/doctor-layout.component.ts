@@ -771,7 +771,7 @@ export class DoctorLayoutComponent {
     // },
     {
       name: 'Dr. Nagesh R',
-      image: 'assets/Doc-Inv-Page/dr-nagesh-sq.webp',
+      image: 'assets/Doc-Inv-Page/dr-nagesh-sq.png',
       desgination: 'Radiologist',
       about: 'Dr. Nagesh R is an accomplished radiology consultant in jaydev rashtrotthana Hospital, with over a decade of experience in the field. He holds a medical degree in MBBS, DMRD and DNB and he is going to be a Fellow of the Royal College of Radiologists (FRCR), a highly esteemed qualification in the field of radiology. He is an active member of the Indian Radiology and Imaging Association.Dr. Nagesh R is an expert in general radiology and has a special interest in cardiovascular imaging, as well as performing USG and CT-guided interventions. He is highly skilled in interpreting medical images and diagnosing a wide range of medical conditions, from the most common to the most complex.',
       speciality: 'RADIOLOGY',
@@ -1160,7 +1160,7 @@ export class DoctorLayoutComponent {
     },
     {
       name: "Dr. Pooja Prasad",
-      image: "assets/Doc-Inv-Page/Dr-Pooja-sq.webp",
+      image: "assets/Doc-Inv-Page/Dr-Pooja-sq.png",
       department: 'Radiologist',
       speciality: '',
       desgination: 'Radiologist',
