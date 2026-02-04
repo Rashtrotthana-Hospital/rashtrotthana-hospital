@@ -655,7 +655,7 @@ export class NewDocPageComponent {
       about: 'Dr. Sowmya S Bhat has completed her basic Medical Education from St. John’s Medical College, Bangalore She has received post graduate training in ophthalmology from the prestigious Aravind Eye Hospital, Madurai and received the Dr. G. Venkataswamy Gold Medal for standing first in Ophthalmology. She has obtained the long term fellowship degree for super specialising in Phacoemulsification surgery and refractive surgeries from Rajiv Gandhi University of Medical Science, Bangalore and received the best outgoing Fellow Award.',
       speciality: 'Ophthalmology',
       areasOfExpertise: ['Cataract surgery with IOL implantation ( MSICS, Phacoemulsification and Advanced MICS )', 'REFRACTIVE SURGERY (PRK, LASIK, SMILE) ', 'GENERAL OPHTHALMOLOGY'],
-      expertise: '14',
+      expertise: '15',
       qualification: 'MBBS, DO, DNB, FPRS, FICO',
       time: '10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00',
       date: 'Tuesday and Friday',
