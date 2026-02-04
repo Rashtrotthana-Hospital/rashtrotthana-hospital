@@ -96,7 +96,8 @@ export class TieUpPageComponent {
   { name: 'Good Shepherd Institution', image: 'assets/tie-up-page/img-6.png' },
   { name: 'Kanti Sweets', image: 'assets/tie-up-page/img-14.png' },
   { name: 'Staff Discount Policy of Rashtrotthana Parishat', image: 'assets/tie-up-page/img-9.png' },
-  { name: 'Staff Discount Policy of Rashtrotthana Vidya Kendra', image: 'assets/tie-up-page/img-16.png' }
+  { name: 'Staff Discount Policy of Rashtrotthana Vidya Kendra', image: 'assets/tie-up-page/img-16.png' },
+  { name: 'Lalith Castle International School', image: 'assets/tie-up-page/LCIS.png' }
 ];
 
 
@@ -108,7 +109,8 @@ card2 = [
   { name: 'Suguna Upper Crest', image: 'assets/tie-up-page/img-11.png' },
   { name: 'Suguna Pristine Square', image: 'assets/tie-up-page/img-12.png' },
   { name: 'Vijaya Bharathi Vidhyalaya', image: 'assets/tie-up-page/img-13.png' },
-  { name: 'Nimhans', image : "assets/tie-up-page/img-15.png"}
+  { name: 'Nimhans', image : "assets/tie-up-page/img-15.png"},
+  { name: 'The Kingdom College', image : "assets/tie-up-page/TKG.png"}
 ];
 
 
