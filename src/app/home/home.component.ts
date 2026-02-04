@@ -316,6 +316,7 @@ export class HomeComponent implements OnInit {
     { name: 'Chinmaya', image: 'assets/tie-up-page/img-3.png' },
     { name: 'Chinmaya', image: 'assets/tie-up-page/img-4.png' },
     { name: 'Kanti Sweets', image: 'assets/tie-up-page/img-5.png' },
+    { name: 'LCIS', image: 'assets/tie-up-page/LCIS.png' },
 
   ];
 
@@ -336,6 +337,7 @@ export class HomeComponent implements OnInit {
     { name: 'Indo American High Breed Seeds', image: 'assets/tie-up-page/img-13.png' },
     { name: 'Kanti Sweets', image: 'assets/tie-up-page/img-14.png' },
     { name: 'Federal Bank', image: 'assets/tie-up-page/img-15.png' },
+    { name: 'TKG', image: 'assets/tie-up-page/TKG.png' },
     
   ]
 
