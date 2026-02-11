@@ -1,8 +1,9 @@
 .banner-img {
     width: 100%;
-    height: 750px;
+    height: 100%;
     /* position: absolute; */
     margin-top: 120px;
+    object-fit: cover;
 
 }
 
@@ -73,10 +74,15 @@
     border-radius: 15px;
     background: #FFD901;
     box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.25);
-    margin-top: 30px;
-    position: absolute;
-    top: 640px;
-    right: 320px;
+    margin-top: 10px;
+    position: relative;
+    top: -125px;
+    left: 70%;
+}
+
+.b-btn {
+    background: #FBFFF5;
+    margin-top: 0;
 }
 
 .banner-content img {
@@ -85,7 +91,7 @@
     aspect-ratio: 619/820;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -99,7 +105,7 @@ a{
     align-items: center;
     justify-content: space-evenly;
     position: relative;
-    top: -50px;
+    top: -120px;
     left: 80px;
 }
 
@@ -614,7 +620,7 @@ a{
 
     }
 
-   
+
 
     .banner-heading {
         font-size: 38px;
@@ -631,12 +637,12 @@ a{
     }
 
     .banner-btn {
-        width: 348px;
-        height: 67px;
-        padding: 24px 0px;
-        font-size: 28px;
-        top: 70%;
-        right: 13%;
+        width: 245px;
+        height: 61px;
+        padding: 13px 0px;
+        font-size: 20px;
+        top: -110px;
+        right: 34%;
     }
 
 
@@ -648,6 +654,7 @@ a{
         height: auto;
         gap: 20px;
         padding: 20px;
+        top: -105px;
     }
 
     .card {
@@ -729,7 +736,7 @@ a{
     }
 
     .btn {
-         font-size: 18px;
+        font-size: 18px;
     }
 
     .treatment-para {
@@ -779,14 +786,13 @@ a{
     }
 
     .banner-btn {
-        width: 34%;
-        height: auto;
-        font-size: 16px;
+        width: 24%;
+        height: 43px;
+        font-size: 14px;
         padding: 16px;
         margin-top: 0;
-        /* position: absolute; */
-        top: 85%;
-        right: 100px;
+        top: -65px;
+        left: 508px;
     }
 
     .banner-content img {
@@ -795,6 +801,7 @@ a{
 
     .timing-card {
         flex-direction: column;
+        top: -60px;
     }
 
     .service-heading {
@@ -973,10 +980,10 @@ a{
 
     .banner-btn {
         font-size: 12px;
-        width: 85%;
-        right: 30px;
-        top: 68%;
-
+        width: 60%;
+         left: 73px;
+        top: -70px;
+        /* position: relative; */
     }
 
     .banner-img {
