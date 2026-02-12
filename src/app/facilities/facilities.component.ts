@@ -35,12 +35,12 @@ export class FacilitiesComponent implements OnInit {
   
     this.observeLaptopSizeChanges();
 
-    this.titleService.setTitle('Medical Services - Rashtrotthana Hospital');
+    this.titleService.setTitle('Hospital Facilities | Rashtrotthana Hospital Bangalore');
 
     this.metaService.updateTag({
       name: 'description',
       content:
-        'Facility | Our aim at Rashtrotthana hospital is to provide high quality, most advanced diagnostic and treatment facilities at affordable price.',
+        'Experience world-class medical facilities at Rashtrotthana Hospital, Bangalore, with advanced diagnostics, modern infrastructure, and quality healthcare services.',
     });
 
     this.metaService.updateTag({

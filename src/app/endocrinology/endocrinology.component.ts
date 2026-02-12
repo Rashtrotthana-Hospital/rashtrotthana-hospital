@@ -8,15 +8,14 @@ declare var gtag: Function;
   styleUrl: './endocrinology.component.css'
 })
 export class EndocrinologyComponent {
-  constructor(private titleService: Title, private metaService: Meta, private sanitizer: DomSanitizer) {
+  constructor(private titleService: Title, private metaService: Meta, private sanitizer: DomSanitizer) {}
 
-  }
   sanitizedContent: SafeHtml = '';
   sanitizedContent1: SafeHtml = '';
   specialities: any[] = [];
   ngOnInit(): void {
-    this.titleService.setTitle("Endocrinology Care in Bangalore | Hormone Health Experts");
-    this.metaService.updateTag({ name: 'description', content: 'Manage diabetes, thyroid & hormonal disorders with expert endocrinologists in Bangalore. Book your consultation today.' });
+    this.titleService.setTitle("Endocrinology Hospital in Bangalore | Rashtrotthana Hospital");
+    this.metaService.updateTag({ name: 'description', content: 'Rashtrotthana Hospital is a leading endocrinology hospital in Bangalore offering expert treatment for diabetes, thyroid disorders, hormonal imbalance, and metabolic conditions.' });
     this.metaService.updateTag({ name: 'keywords', content: 'endocrinology, diabetic hospital near me, hormonal imbalance, hormones, hormonal problems, thyroid carcinoma/tumors, Hypopituitarism, Hyperthyroidism, Hypothyroidism, Turner syndrome, Type 1 and 2 diabetes, Adrenal Gland disorders, Ambiguous genitalia, Klinefelter syndrome, Thyroid cancer issues, childhood Obesity, Pituitary disorders, Parathyroid issues, Bone and mineral issues, Lipid disorders, Prader-Willi syndrome' });
   }
 

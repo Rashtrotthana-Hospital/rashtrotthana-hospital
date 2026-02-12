@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Title, Meta, DomSanitizer, SafeHtml } from '@angular/platform-browser';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-advisory-board-members',
@@ -6,6 +8,25 @@ import { Component } from '@angular/core';
   styleUrl: './advisory-board-members.component.css'
 })
 export class AdvisoryBoardMembersComponent {
+
+     constructor(
+          private router: Router,
+          private titleService: Title,
+          private metaService: Meta
+        ) {
+          this.titleService.setTitle(
+            'Advisory Board Members | Rashtrotthana Hospital Bangalore'
+          );
+      
+          this.metaService.updateTag({
+            name: 'description',
+            content:
+              'Meet the Advisory Board Members of Rashtrotthana Hospital, Bangalore, guiding the hospital with expertise, ethics, and commitment to quality healthcare.',
+          });
+        }
+    
+
+
   photos = [
     { url: '../../assets/mem-1.png', alt: 'Photo 1' },
     { url: '../../assets/mem-5.png', alt: 'Photo 2' },

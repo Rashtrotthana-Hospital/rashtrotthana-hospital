@@ -1,15 +1,47 @@
-import { AfterViewInit, Component, ElementRef, QueryList, ViewChildren, ViewChild } from '@angular/core';
+import {
+  AfterViewInit,
+  Component,
+  ElementRef,
+  QueryList,
+  ViewChildren,
+  ViewChild,
+} from '@angular/core';
+import { Title, Meta, DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-annual-report',
   templateUrl: './annual-report.component.html',
-  styleUrl: './annual-report.component.css'
+  styleUrl: './annual-report.component.css',
 })
 export class AnnualReportComponent implements AfterViewInit {
   @ViewChildren('docCard') docCards!: QueryList<ElementRef<HTMLElement>>;
   @ViewChild('heading') heading!: ElementRef<HTMLElement>;
 
   private isTouchDevice = window.matchMedia('(hover: none)').matches;
+
+  constructor(
+    private titleService: Title,
+    private metaService: Meta,
+    private sanitizer: DomSanitizer,
+  ) {}
+
+  ngOnInit(): void {
+    this.titleService.setTitle(
+      'Annual Report | Rashtrotthana Hospital Bangalore',
+    );
+
+    this.metaService.updateTag({
+      name: 'description',
+      content:
+        'Explore the Annual Report of Rashtrotthana Hospital, Bangalore, highlighting healthcare services, achievements, initiatives, and community impact.',
+    });
+
+    // this.metaService.updateTag({
+    //   name: 'keywords',
+    //   content:
+    //     'anesthesiology hospital near me, spinal anesthesia, general anesthesia drugs, local anesthesia, pain medicine, intensive care medicine, critical emergency medicine',
+    // });
+  }
 
   ngAfterViewInit() {
     // Optional: Add scroll reveal animation
@@ -34,7 +66,8 @@ export class AnnualReportComponent implements AfterViewInit {
   }
 
   onMouseLeave(card: HTMLElement): void {
-    card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale3d(1, 1, 1)';
+    card.style.transform =
+      'perspective(1000px) rotateX(0) rotateY(0) scale3d(1, 1, 1)';
   }
 
   onViewDocument(documentType: string): void {
@@ -52,7 +85,7 @@ export class AnnualReportComponent implements AfterViewInit {
           }
         });
       },
-      { threshold: 0.1 }
+      { threshold: 0.1 },
     );
 
     this.docCards.forEach((card) => {
@@ -65,7 +98,7 @@ export class AnnualReportComponent implements AfterViewInit {
   onViewReports(): void {
     this.reportsSection.nativeElement.scrollIntoView({
       behavior: 'smooth',
-      block: 'start'
+      block: 'start',
     });
   }
 }

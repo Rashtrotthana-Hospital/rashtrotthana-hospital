@@ -1,6 +1,7 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { SafeHtml, DomSanitizer } from '@angular/platform-browser';
 declare var gtag: Function;
+import { Title, Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-general-surgery',
@@ -8,11 +9,18 @@ declare var gtag: Function;
   styleUrl: './general-surgery.component.css'
 })
 export class GeneralSurgeryComponent implements OnInit {
-  constructor(private sanitizer: DomSanitizer) { }
+  // constructor(private sanitizer: DomSanitizer, titleService: Title, private metaService: Meta) { }
+  constructor(private sanitizer: DomSanitizer, private titleService: Title, private metaService: Meta) {}
   sanitizedContent: SafeHtml = '';
   sanitizedContent1: SafeHtml = '';
   specialities: any[] = [];
+
   ngOnInit(): void {
+
+    this.titleService.setTitle("Best General Surgery Hospital in Bangalore | Rashtrotthana");  
+
+    this.metaService.updateTag({ name: 'description', content: 'Looking for the best general surgery hospital in Bangalore? Rashtrotthana Hospital offers expert surgical care with advanced infrastructure.' });
+
     this.sanitizedContent = this.sanitizer.bypassSecurityTrustHtml(this.specialities[0].content);
     this.sanitizedContent1 = this.sanitizer.bypassSecurityTrustHtml(this.specialities[0].content_1);
 

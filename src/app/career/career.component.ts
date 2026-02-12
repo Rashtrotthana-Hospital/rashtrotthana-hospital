@@ -19,7 +19,7 @@ export class CareerComponent {
 
 
   ngOnInit() {
-    this.titleService.setTitle("Careers at Rashtrotthana Hospital | Join Our Healthcare Team");
+    this.titleService.setTitle("Careers at Rashtrotthana Hospital Bangalore");
     this.metaService.updateTag({
       name: 'description',
       content: 'Explore rewarding career opportunities at Rashtrotthana Hospital. Join our team of dedicated healthcare professionals and make a difference in patient care.'

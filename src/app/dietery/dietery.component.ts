@@ -15,9 +15,9 @@ export class DieteryComponent {
   sanitizedContent1: SafeHtml = '';
   facilities: any[] = [];
   ngOnInit(): void {
-    this.titleService.setTitle("Expert Dietary & Clinical Nutrition Services - Rashtrotthana Hospital");
+    this.titleService.setTitle("Best Nutrition & Dietetics Hospital in Bangalore | Rashtrotthana");
 
-    this.metaService.updateTag({ name: 'description', content: 'Rashtrotthana Hospital provides personalized dietary and clinical nutrition services in Bangalore, tailored to support patient health and recovery.' });
+    this.metaService.updateTag({ name: 'description', content: 'Rashtrotthana Hospital offers expert clinical nutrition and dietetics in Bangalore with personalized diet plans for recovery, wellness, and long-term health.' });
 
     this.metaService.updateTag({ name: 'keywords', content: 'dietary services, clinical nutrition, healthy diet, hospital nutrition Bangalore' });
 

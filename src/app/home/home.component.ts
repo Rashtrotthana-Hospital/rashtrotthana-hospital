@@ -207,7 +207,7 @@ export class HomeComponent implements OnInit {
         }, 100); // slight delay ensures DOM is ready
       }
     });
-    this.titleService.setTitle("Best Multispeciality Hospital In Bangalore");
+    this.titleService.setTitle("Best Multispeciality Hospital in Bangalore");
 
     // Set the meta description
     this.metaService.updateTag({ name: 'description', content: 'Rashtrotthana Hospital - Best multispeciality hospital in Bangalore offering world-class healthcare and treatments at affordable costs.' });

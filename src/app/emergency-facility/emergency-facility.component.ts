@@ -17,9 +17,9 @@ export class EmergencyFacilityComponent {
   sanitizedContent1: SafeHtml = '';
   facilities: any[] = [];
   ngOnInit(): void {
-    this.titleService.setTitle("Best Emergency & Trauma Care Hospital in Bangalore - Rashtrotthana");
+    this.titleService.setTitle("Emergency & Trauma Care | Rashtrotthana Hospital Bangalore");
 
-    this.metaService.updateTag({ name: 'description', content: 'Discover top-tier emergency and trauma care services at Rashtrotthana Hospital, Bangalore\'s leading multispeciality healthcare provider.' });
+    this.metaService.updateTag({ name: 'description', content: 'Rashtrotthana Hospital is recognized as the best trauma care hospital in Bangalore, offering 24/7 emergency services with rapid response and expert care.' });
 
     this.metaService.updateTag({ name: 'keywords', content: 'emergency care, trauma center, best hospital Bangalore, 24/7 emergency services' });
 

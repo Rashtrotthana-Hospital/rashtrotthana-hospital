@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 export class AboutUsComponent {
   constructor(private titleService: Title, private metaService: Meta, private sanitizer: DomSanitizer, private router: Router) {}
   ngOnInit(): void {
-  this.titleService.setTitle("About Rashtrotthana Hospital, RR Nagar Bangalore India");  
+  this.titleService.setTitle("About Rashtrotthana Hospital | Bangalore");  
 
   this.metaService.updateTag({ name: 'description', content: 'Experience holistic healing at Rashtrotthana Hospital with Modern Medicine, Ayurveda, Homeopathy, Yoga, and Naturopathy for complete well-being.' });
 

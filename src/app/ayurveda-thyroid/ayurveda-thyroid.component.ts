@@ -8,9 +8,9 @@ import { Title, Meta,DomSanitizer,SafeHtml } from '@angular/platform-browser';
 export class AyurvedaThyroidComponent {
   constructor(private titleService: Title, private metaService: Meta, private sanitizer: DomSanitizer) {}
     ngOnInit(): void {
-    this.titleService.setTitle("Ayurvedic Thyroid Treatment | Rashtrotthana Hospital, RR Nagar Bangalore");  
+    this.titleService.setTitle("Ayurvedic Thyroid Care in Bangalore | Rashtrotthana Hospital");  
   
-    this.metaService.updateTag({ name: 'description', content: 'Discover holistic Ayurvedic treatments for thyroid disorders at Rashtrotthana Hospital RR Nagar Bangalore.' });
+    this.metaService.updateTag({ name: 'description', content: 'Natural Ayurvedic thyroid treatment in RR Nagar, Bangalore, focusing on holistic care for hypothyroidism and hyperthyroidism at Rashtrotthana Hospital.' });
   
     this.metaService.updateTag({ name: 'keywords', content: 'Ayurvedic Thyroid Treatment in RR nagar Bangalore, thyroid treatment in Bangalore, Ayurveda for thyroid, Ayurvedic cure for thyroid, Ayurveda for hypothyroidism, Ayurvedic treatment for hyperthyroidism, Herbal solutions for thyroid disorders, Thyroid care with Ayurveda, Holistic thyroid treatment, Manage thyroid naturally, Best Ayurvedic remedies for thyroid, Thyroid detox in Ayurveda, Ayurvedic lifestyle for thyroid balance, Healing thyroid disorders with Ayurveda, Ayurvedic thyroid management' });
   }

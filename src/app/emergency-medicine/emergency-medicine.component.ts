@@ -1,69 +1,87 @@
 import { Component } from '@angular/core';
-import { SafeHtml,DomSanitizer } from '@angular/platform-browser';
+import { Title, Meta, DomSanitizer, SafeHtml } from '@angular/platform-browser';
 declare var gtag: Function;
 
 @Component({
   selector: 'app-emergency-medicine',
   templateUrl: './emergency-medicine.component.html',
-  styleUrl: './emergency-medicine.component.css'
+  styleUrl: './emergency-medicine.component.css',
 })
-
 export class EmergencyMedicineComponent {
-  sanitizedContent: SafeHtml ='';
+  sanitizedContent: SafeHtml = '';
   sanitizedContent1: SafeHtml = '';
-  specialities:any[] = [];
-  constructor(private sanitizer: DomSanitizer) {
-  }
+  specialities: any[] = [];
+  constructor(
+    private titleService: Title,
+    private metaService: Meta,
+    private sanitizer: DomSanitizer,
+  ) {}
   ngOnInit(): void {
-    this.specialities=[
+    this.titleService.setTitle(
+      '24/7 Emergency Medicine in Bangalore | Rashtrotthana',
+    );
+    this.metaService.updateTag({
+      name: 'description',
+      content:
+        'Rashtrotthana Hospital is the best emergency medicine hospital in Bangalore, providing 24/7 expert care, rapid diagnosis, and life-saving treatment.',
+    });
+    this.metaService.updateTag({
+      name: 'keywords',
+      content:
+        'emergency care, trauma center, best hospital Bangalore, 24/7 emergency services',
+    });
+
+    this.specialities = [
       {
-        main_heading:'Emergency Medicine',
-        content:`The <a href="https://en.wikipedia.org/wiki/Emergency_medicine"  target="_blank">Emergency Medicine</a> Department at Rashtrotthana Hospital provides immediate, expert care for patients in critical conditions, ensuring high standards of emergency medical support. Our team of specialized emergency physicians, nurses and support staff is trained to handle a broad spectrum of urgent medical needs, including trauma, cardiac emergencies, respiratory distress and acute illnesses. With state-of-the-art equipment and advanced monitoring systems, we prioritize swift assessment, intervention and stabilization, offering 24/7 availability for critical cases. Our facility is designed to manage life-threatening situations, enabling efficient, high-quality care at every stage of the emergency process.`,
-        heading:'Emergency Medicine',
-        content_1:'Our department also focuses on preventive measures, conducting educational initiatives to raise awareness about emergency preparedness and response. From managing minor injuries to complex, multi-disciplinary interventions, we emphasize compassionate, patient-centered care. We aim to support families during distressing times and ensure that each patient receives rapid treatment with the highest level of medical professionalism. By fostering collaborations with other departments and continuously improving our protocols, the Emergency Medicine Department at Rashtrotthana Hospital remains a trusted choice for emergency healthcare in Bangalore.',
-        image:'best_emergency_medicine_treatment_in_bengaluru.png',
-        alt : "Best Emergency Medicine Treatment in Bengaluru",
-        Doctors:[
+        main_heading: 'Emergency Medicine',
+        content: `The <a href="https://en.wikipedia.org/wiki/Emergency_medicine"  target="_blank">Emergency Medicine</a> Department at Rashtrotthana Hospital provides immediate, expert care for patients in critical conditions, ensuring high standards of emergency medical support. Our team of specialized emergency physicians, nurses and support staff is trained to handle a broad spectrum of urgent medical needs, including trauma, cardiac emergencies, respiratory distress and acute illnesses. With state-of-the-art equipment and advanced monitoring systems, we prioritize swift assessment, intervention and stabilization, offering 24/7 availability for critical cases. Our facility is designed to manage life-threatening situations, enabling efficient, high-quality care at every stage of the emergency process.`,
+        heading: 'Emergency Medicine',
+        content_1:
+          'Our department also focuses on preventive measures, conducting educational initiatives to raise awareness about emergency preparedness and response. From managing minor injuries to complex, multi-disciplinary interventions, we emphasize compassionate, patient-centered care. We aim to support families during distressing times and ensure that each patient receives rapid treatment with the highest level of medical professionalism. By fostering collaborations with other departments and continuously improving our protocols, the Emergency Medicine Department at Rashtrotthana Hospital remains a trusted choice for emergency healthcare in Bangalore.',
+        image: 'best_emergency_medicine_treatment_in_bengaluru.png',
+        alt: 'Best Emergency Medicine Treatment in Bengaluru',
+        Doctors: [
           {
-            doctor_image:'../../assets/Dr-Anand-Shankar.png',
-            doctor_name:'Col (Dr) Anand Shankar K',
-            experience : '31'
-          }
+            doctor_image: '../../assets/Dr-Anand-Shankar.png',
+            doctor_name: 'Col (Dr) Anand Shankar K',
+            experience: '31',
+          },
           // {
           //   doctor_image:'Dr.Geethanjali K G.png',
           //   doctor_name:'Dr. Geethanjali K G'
           // }
-        ]}];
+        ],
+      },
+    ];
   }
 
   trackPhoneClick() {
     if (typeof gtag === 'function') {
       gtag('event', 'conversion', {
-        'send_to': 'AW-16656770043/-YEMCITg09IZEPvHyIY-',
-        'event_callback': () => {
+        send_to: 'AW-16656770043/-YEMCITg09IZEPvHyIY-',
+        event_callback: () => {
           console.log('Phone call conversion tracked!');
-        }
+        },
       });
     }
   }
 
   doctors = [
-  {
-    id: 1,
-    name: 'Col (Dr) Anand Shankar K',
-    experience: '31+ Years',
-    image: 'assets/Dr-Anand-Shankar.png',
-    slug: '/doctor/col-dr-anand-shankar-k'
-  },
-  {
-    id: 2,
-    name: 'Dr. Srinivas Siddeshwar',
-    experience: '8+ Years',
-    image: 'assets/new-doctor-imgs/dr-srinivas-siddeshwar.png',
-    slug: '/doctor/dr-srinivas-siddeshwar'
-  }
-];
+    {
+      id: 1,
+      name: 'Col (Dr) Anand Shankar K',
+      experience: '31+ Years',
+      image: 'assets/Dr-Anand-Shankar.png',
+      slug: '/doctor/col-dr-anand-shankar-k',
+    },
+    {
+      id: 2,
+      name: 'Dr. Srinivas Siddeshwar',
+      experience: '8+ Years',
+      image: 'assets/new-doctor-imgs/dr-srinivas-siddeshwar.png',
+      slug: '/doctor/dr-srinivas-siddeshwar',
+    },
+  ];
 
-
-  formDoctors = ['Col (Dr) Anand Shankar K', 'Dr. Srinivas Siddeshwar']
+  formDoctors = ['Col (Dr) Anand Shankar K', 'Dr. Srinivas Siddeshwar'];
 }

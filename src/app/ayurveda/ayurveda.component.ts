@@ -9,11 +9,11 @@ import { Title, Meta,DomSanitizer,SafeHtml } from '@angular/platform-browser';
 export class AyurvedaComponent {
   constructor(private titleService: Title, private metaService: Meta, private sanitizer: DomSanitizer) {}
   ngOnInit(): void {
-    this.titleService.setTitle("  Ayurvedic Care in Bangalore | Rashtrotthana Hospital");  
+    this.titleService.setTitle("Ayurvedic Treatment in Bangalore | Rashtrotthana Hospital");  
 
-  this.metaService.updateTag({ name: 'description', content: ' Discover holistic healing with traditional Ayurvedic treatments at Rashtrotthana Hospital, blending ancient wisdom with modern care.' });
+    this.metaService.updateTag({ name: 'description', content: 'Authentic Ayurvedic treatments in Bangalore combining traditional therapies with medical care for natural healing and long-term wellness.' });
 
-  this.metaService.updateTag({ name: 'keywords', content: 'ayurvedic treatment, natural healing, ayurveda hospital Bangalore' });
+    this.metaService.updateTag({ name: 'keywords', content: 'ayurvedic treatment, natural healing, ayurveda hospital Bangalore' });
   }
 
   faqs = [

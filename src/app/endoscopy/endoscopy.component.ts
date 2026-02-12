@@ -17,9 +17,9 @@ export class EndoscopyComponent implements OnInit {
   sanitizedSubFacilities: SubFacility[] = [];
  
   ngOnInit(): void {
-    this.titleService.setTitle("Advanced Endoscopy Services in Bangalore - Rashtrotthana Hospital");  
+    this.titleService.setTitle("Endoscopy Hospital in Bangalore | Rashtrotthana Hospital");  
 
-  this.metaService.updateTag({ name: 'description', content: 'Get advanced endoscopy services at Rashtrotthana Hospital, Bangalore\'s leader in minimally invasive gastroenterology procedures.' });
+  this.metaService.updateTag({ name: 'description', content: 'Rashtrotthana Hospital offers advanced endoscopy services in Bangalore for accurate diagnosis of digestive disorders using safe, modern, minimally invasive techniques.' });
 
   this.metaService.updateTag({ name: 'keywords', content: 'endoscopy services, gastroenterology, hospital Bangalore, minimally invasive procedures' });
 
