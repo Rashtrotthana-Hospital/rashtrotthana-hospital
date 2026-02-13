@@ -33,7 +33,7 @@ export class GastrosciencesComponent {
     {
       doctor_image : '../../assets/Dr-Man-Mohan-U-S.png',
       doctor_name : 'Dr. Man Mohan U. S',
-      experience : '8+',
+      experience : '10+',
       docalt : 'Dr. Man Mohan U. S | Best Gastroenterologist in Bangalore | Rashtrotthana Hospital'
     },
   ]

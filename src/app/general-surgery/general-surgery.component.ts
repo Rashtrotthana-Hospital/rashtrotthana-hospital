@@ -23,13 +23,13 @@ export class GeneralSurgeryComponent implements OnInit {
     {
       doctor_image: '../../assets/Dr-Atmaram-D-C.png',
       doctor_name: 'Dr. Atmaram D. C',
-      experience: "19",
+      experience: "20+",
       docalt: 'Dr. Atmaram D. C | Best laparoscopic Surgeon in Bangalore | Rashtrotthana Hospital'
     },
     {
       doctor_image: '../../assets/Dr-Nishanth-Lakshmikantha.png',
       doctor_name: 'Dr. Nishanth Lakshmikanth',
-      experience: "9",
+      experience: "10+",
       docalt: 'Dr. Nishanth Lakshmikantha | Best General & GI Surgeon in Bangalore | Rashtrotthana Hospital'
     },
     // {

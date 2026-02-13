@@ -24,7 +24,7 @@ export class AnesthesiologyComponent {
     {
       doctor_image: '../../assets/Dr-Anand-Shankar.png',
       doctor_name: 'Col (Dr) Anand Shankar K',
-      experience: "31",
+      experience: "32+",
       docalt: 'Best Anesthediology Doctor in RR Nagar Bangalore'
     }
   ]

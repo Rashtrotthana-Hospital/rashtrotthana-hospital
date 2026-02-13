@@ -24,13 +24,13 @@ export class DentalComponent {
       {
         doctor_image: '../../assets/Dr-Geethanjali-K-G.png',
         doctor_name: 'Dr. Geethanjali K. G',
-        experience: "18",
+        experience: "20+",
         docalt: 'Dr. Geethanjali K. G | Best Dental Surgery Doctor in Bangalore | Rashtrotthana Hospital'
       },
       {
         doctor_image: '../../assets/Dr-Vishnuvardhan-V.png',
         doctor_name: 'Dr. Vishnuvardhan V',
-        experience: "6",
+        experience: "10+",
         docalt: 'Dr. Vishnuvardhan V | Best Orthodontics in Bangalore | Rashtrotthana Hospital'
       },
     ];
@@ -46,7 +46,7 @@ export class DentalComponent {
     {
       doctor_image: '../../assets/Dr-Sushmitha-Raj-R.png',
       doctor_name: 'Dr. Sushmitha Raj R',
-      experience: "3",
+      experience: "7+",
       docalt: 'Dr. Sushmitha Raj R | Best Dental Surgery in Bangalore | Rashtrotthana Hospital'
     },
     {
@@ -58,7 +58,7 @@ export class DentalComponent {
     {
       doctor_image: '../../assets/Dr-Vishnuvardhan-V.png',
       doctor_name: 'Dr. Vishnuvardhan V',
-      experience: "6",
+      experience: "10+",
       docalt: 'Dr. Vishnuvardhan V | Best Orthodontics in Bangalore | Rashtrotthana Hospital'
     },
   ]

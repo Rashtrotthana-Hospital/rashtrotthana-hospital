@@ -1,0 +1,375 @@
+<div class="root-container">
+
+
+    <div class="container-part">
+        <!-- hero section -->
+        <div class="heroSection">
+            <div class="flex2">
+                <div class="back_button">
+                    <a routerLink="/best-doctors-bangalore"><i
+                            class="fa-solid fa-arrow-left"></i> Back</a>
+                </div>
+                <div class="doctor_image">
+                    <div class="image_wrapper">
+                        <img [src]="filteredDoctor.image" [alt]="filteredDoctor.alt">
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="">
+                        <h1 class="docname marginLeft">{{filteredDoctor.name}}</h1>
+                        <div class="qualification marginLeft mat">{{filteredDoctor.qualification}}</div>
+                        <div class="department marginLeft mat">{{filteredDoctor.department}}</div>
+                    </div>
+                    <div class="experience marginLeft">Years of Experience: {{filteredDoctor.expertise}} Years</div>
+                    <div class="flex">
+                        <div class="language-title">Languages</div>
+                        <div class="languages">
+                            <div class="la">English</div>
+                            <div class="la">Kannada</div>
+                            <div class="la">Hindi</div>
+                        </div>
+                    </div>
+
+                    <div class="flex1">
+                        <div class="fl">
+                            <div class="count">{{ filteredDoctor?.happyPatients}}</div>
+                            <div class="title">Happy Patients</div>
+                        </div>
+                        <div class="fl">
+                            <div class="count">4.9 <svg xmlns="http://www.w3.org/2000/svg" width="27" height="26"
+                                    viewBox="0 0 27 26" fill="none">
+                                    <path
+                                        d="M12.3777 0.671489C12.689 -0.224072 13.9555 -0.224071 14.2668 0.671489L16.8556 8.11911C16.9929 8.51418 17.3616 8.78205 17.7798 8.79057L25.6629 8.95122C26.6108 8.97053 27.0022 10.1751 26.2467 10.7479L19.9635 15.5114C19.6302 15.7641 19.4894 16.1975 19.6105 16.5979L21.8938 24.1448C22.1683 25.0523 21.1437 25.7967 20.3654 25.2552L13.8934 20.7516C13.5501 20.5127 13.0944 20.5127 12.7511 20.7516L6.27911 25.2552C5.50087 25.7967 4.47622 25.0523 4.75077 24.1448L7.034 16.5979C7.15512 16.1975 7.01429 15.7641 6.68099 15.5114L0.397864 10.7479C-0.357669 10.1751 0.0337119 8.97053 0.981636 8.95122L8.86472 8.79057C9.28289 8.78205 9.65159 8.51418 9.78891 8.11911L12.3777 0.671489Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+                            <div class="title">Patients Rating</div>
+                        </div>
+
+                        <div class="whatsapp-icon" (click)="openWhatsApp()">
+                            <!-- <img src="assets/whatsapp-icon.png" alt="WhatsApp"> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <g clip-path="url(#clip0_19877_3476)">
+                                    <path
+                                        d="M17.465 14.3765C17.1681 14.2276 15.7076 13.5099 15.4357 13.4099C15.1628 13.3109 14.9649 13.262 14.766 13.5598C14.5691 13.8567 13.9993 14.5255 13.8264 14.7234C13.6534 14.9223 13.4795 14.9463 13.1826 14.7984C12.8857 14.6484 11.9281 14.3355 10.7935 13.3239C9.91086 12.5362 9.31409 11.5636 9.14116 11.2657C8.96822 10.9688 9.12316 10.8079 9.27111 10.66C9.40506 10.527 9.56899 10.3131 9.71694 10.1402C9.86588 9.96622 9.91486 9.84227 10.0148 9.64334C10.1138 9.44542 10.0648 9.27248 9.98983 9.12354C9.91486 8.9746 9.32109 7.51216 9.07418 6.91739C8.83228 6.33861 8.58737 6.41758 8.40544 6.40758C8.23251 6.39959 8.03458 6.39759 7.83566 6.39759C7.63773 6.39759 7.31586 6.47156 7.04396 6.76944C6.77207 7.06633 6.00436 7.78506 6.00436 9.2475C6.00436 10.7089 7.06895 12.1214 7.21689 12.3203C7.36584 12.5182 9.31209 15.5191 12.2919 16.8056C13.0007 17.1115 13.5535 17.2944 13.9853 17.4304C14.697 17.6573 15.3448 17.6253 15.8556 17.5483C16.4264 17.4633 17.6129 16.8296 17.8608 16.1359C18.1087 15.4421 18.1087 14.8473 18.0337 14.7234C17.9598 14.5994 17.7629 14.5255 17.465 14.3765ZM12.045 21.7767H12.041C10.2715 21.7768 8.53447 21.3011 7.01197 20.3992L6.65111 20.1853L2.91155 21.1669L3.90916 17.5203L3.67425 17.1465C2.68507 15.5713 2.16177 13.7485 2.16483 11.8885C2.16583 6.44057 6.59913 2.00827 12.049 2.00827C14.688 2.00827 17.1691 3.03788 19.0344 4.90516C19.9547 5.82142 20.6842 6.91112 21.1805 8.11117C21.6769 9.31123 21.9304 10.5978 21.9263 11.8965C21.9233 17.3444 17.491 21.7767 12.045 21.7767ZM20.4548 3.4867C19.3534 2.37805 18.043 1.499 16.5994 0.900496C15.1558 0.301989 13.6078 -0.00407468 12.045 4.09618e-05C5.49256 4.09618e-05 0.159601 5.333 0.156602 11.8875C0.156602 13.9827 0.703393 16.0279 1.74399 17.8302L0.0566406 23.9908L6.35922 22.3375C8.10215 23.287 10.0552 23.7847 12.04 23.7849H12.045C18.5965 23.7849 23.9305 18.452 23.9335 11.8965C23.9383 10.3344 23.6334 8.78677 23.0363 7.34326C22.4392 5.89974 21.5618 4.58895 20.4548 3.4867Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_19877_3476">
+                                        <rect width="23.9908" height="23.9908" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- profile content -->
+
+        <div class="content-part">
+            <div class="profile_content">
+                <div class="profile_wrapper">
+                    <div class="areaOfExpertise">
+
+
+                        <!-- VIEW ALL -->
+                        <div class="view-btn">
+                            <div class="specialized-title">Specialized Treatments</div>
+                            <div class="view-all" *ngIf="hasMoreThanFive" (click)="showExpertisePopup = true">
+                                VIEW ALL
+                            </div>
+                        </div>
+
+                        <div class="expertise-card-wrapper">
+
+                            <div class="cards">
+                                <div class="expertise-card" *ngFor="let expert of firstFiveExpertise; let i = index">
+                                    <img [src]="getDoctorIcon(i)" alt="">
+                                    <!-- <img src="../../assets/list.png" alt=""> -->
+                                    <div class="card-title">{{ expert }}</div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="expertise-popup-backdrop" *ngIf="showExpertisePopup">
+
+                            <div class="expertise-popup">
+
+                                <!-- HEADER -->
+                                <div class="popup-header">
+                                    <span>Specialized Treatments</span>
+                                    <div class="close-btn" (click)="showExpertisePopup = false">✕</div>
+                                </div>
+
+                                <!-- CONTENT BOX -->
+                                <div class="popup-content">
+
+                                    <!-- COLUMN 1 -->
+                                    <div>
+                                        <div class="lists" *ngFor="let expert of expertiseColumn1">
+                                            <!-- <img src="../../assets/list.png" alt=""> -->
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                                viewBox="0 0 32 32" fill="none">
+                                                <path
+                                                    d="M7.39668 11.7033C7.07391 11.2928 6.74386 10.8881 6.40668 10.4893C5.63335 9.57733 5.88735 8.06267 7.08135 8.006C7.16507 8.00203 7.24887 8.00002 7.33268 8C8.49535 8 9.33268 8.66667 9.33268 8.66667C9.33268 8.66667 10.222 9.33333 12.296 12C12.8015 12.6443 13.2718 13.3155 13.7047 14.0107C14.8553 14.0034 16.006 13.9998 17.1567 14H30.666V18H17.1567C15.8767 18 14.73 17.996 13.7047 17.9893C13.3647 18.544 12.9073 19.214 12.296 20C10.222 22.6667 9.33268 23.3333 9.33268 23.3333C9.33268 23.3333 8.49535 24 7.33268 24C7.24886 24 7.16505 23.9978 7.08135 23.9933C5.88802 23.9367 5.63335 22.4227 6.40668 21.5107C6.72842 21.1304 7.04358 20.7445 7.35201 20.3533C5.47535 22.7267 4.66602 23.3333 4.66602 23.3333C4.66602 23.3333 3.82868 24 2.66602 24C2.58219 24 2.49838 23.9978 2.41468 23.9933C1.22135 23.9367 0.966681 22.4227 1.74002 21.5107C2.15816 21.0158 2.56581 20.5121 2.96268 20C5.03601 17.3333 5.33268 16 5.33268 16C5.33268 16 5.03668 14.6667 2.96268 12C2.49601 11.4 2.08935 10.9013 1.74002 10.4893C0.966681 9.57733 1.22068 8.06267 2.41468 8.006C2.4984 8.00203 2.5822 8.00002 2.66602 8C3.82868 8 4.66602 8.66667 4.66602 8.66667C4.66602 8.66667 5.48868 9.28333 7.39668 11.7033Z"
+                                                    fill="#8FBFFA" />
+                                                <path
+                                                    d="M30.666 18H17.1567C15.8767 18 14.73 17.996 13.7047 17.9893C13.2718 18.6845 12.8015 19.3557 12.296 20C10.222 22.6667 9.33268 23.3333 9.33268 23.3333C9.33268 23.3333 8.49535 24 7.33268 24C7.24887 24 7.16507 23.998 7.08135 23.994C5.88735 23.9373 5.63335 22.4227 6.40668 21.5107C6.65779 21.2151 6.93868 20.8724 7.24935 20.4827L7.39668 20.2967M7.25001 20.4833C5.44601 22.748 4.66601 23.3333 4.66601 23.3333M4.66601 23.3333C4.66601 23.3333 3.82868 24 2.66601 24C2.5822 24 2.4984 23.998 2.41468 23.994C1.22068 23.9373 0.966681 22.4227 1.74001 21.5107C2.08935 21.0987 2.49601 20.6 2.96268 20C5.03668 17.3333 5.33268 16 5.33268 16C5.33268 16 5.03601 14.6667 2.96268 12C2.56581 11.4879 2.15816 10.9842 1.74001 10.4893C0.966681 9.57733 1.22135 8.06333 2.41468 8.00667C2.49838 8.00219 2.58219 7.99997 2.66601 8C3.82868 8 4.66601 8.66667 4.66601 8.66667M4.66601 23.3333C4.66601 23.3333 5.55535 22.6667 7.62935 20C8.0509 19.4622 8.44861 18.9061 8.82135 18.3333M30.666 14H17.1567C15.8767 14 14.73 14.004 13.7047 14.0107C13.2718 13.3155 12.8015 12.6443 12.296 12C10.222 9.33333 9.33268 8.66667 9.33268 8.66667C9.33268 8.66667 8.49535 8 7.33268 8C7.24886 7.99997 7.16505 8.00219 7.08135 8.00667C5.88802 8.06333 5.63335 9.57733 6.40668 10.4893C6.65068 10.7756 6.92246 11.1067 7.22201 11.4827M7.22201 11.4827L7.35201 11.6467M7.22201 11.4827C5.43935 9.246 4.66601 8.66667 4.66601 8.66667M4.66601 8.66667C4.66601 8.66667 5.55535 9.33333 7.62935 12C8.0509 12.5378 8.44861 13.0939 8.82135 13.6667"
+                                                    stroke="#2859C5" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                            <div class="listItem">{{ expert }}</div>
+                                        </div>
+                                    </div>
+
+                                    <!-- COLUMN 2 -->
+                                    <div>
+                                        <div class="lists" *ngFor="let expert of expertiseColumn2">
+                                            <!-- <img src="../../assets/list.png" alt=""> -->
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                                viewBox="0 0 32 32" fill="none">
+                                                <path
+                                                    d="M7.39668 11.7033C7.07391 11.2928 6.74386 10.8881 6.40668 10.4893C5.63335 9.57733 5.88735 8.06267 7.08135 8.006C7.16507 8.00203 7.24887 8.00002 7.33268 8C8.49535 8 9.33268 8.66667 9.33268 8.66667C9.33268 8.66667 10.222 9.33333 12.296 12C12.8015 12.6443 13.2718 13.3155 13.7047 14.0107C14.8553 14.0034 16.006 13.9998 17.1567 14H30.666V18H17.1567C15.8767 18 14.73 17.996 13.7047 17.9893C13.3647 18.544 12.9073 19.214 12.296 20C10.222 22.6667 9.33268 23.3333 9.33268 23.3333C9.33268 23.3333 8.49535 24 7.33268 24C7.24886 24 7.16505 23.9978 7.08135 23.9933C5.88802 23.9367 5.63335 22.4227 6.40668 21.5107C6.72842 21.1304 7.04358 20.7445 7.35201 20.3533C5.47535 22.7267 4.66602 23.3333 4.66602 23.3333C4.66602 23.3333 3.82868 24 2.66602 24C2.58219 24 2.49838 23.9978 2.41468 23.9933C1.22135 23.9367 0.966681 22.4227 1.74002 21.5107C2.15816 21.0158 2.56581 20.5121 2.96268 20C5.03601 17.3333 5.33268 16 5.33268 16C5.33268 16 5.03668 14.6667 2.96268 12C2.49601 11.4 2.08935 10.9013 1.74002 10.4893C0.966681 9.57733 1.22068 8.06267 2.41468 8.006C2.4984 8.00203 2.5822 8.00002 2.66602 8C3.82868 8 4.66602 8.66667 4.66602 8.66667C4.66602 8.66667 5.48868 9.28333 7.39668 11.7033Z"
+                                                    fill="#8FBFFA" />
+                                                <path
+                                                    d="M30.666 18H17.1567C15.8767 18 14.73 17.996 13.7047 17.9893C13.2718 18.6845 12.8015 19.3557 12.296 20C10.222 22.6667 9.33268 23.3333 9.33268 23.3333C9.33268 23.3333 8.49535 24 7.33268 24C7.24887 24 7.16507 23.998 7.08135 23.994C5.88735 23.9373 5.63335 22.4227 6.40668 21.5107C6.65779 21.2151 6.93868 20.8724 7.24935 20.4827L7.39668 20.2967M7.25001 20.4833C5.44601 22.748 4.66601 23.3333 4.66601 23.3333M4.66601 23.3333C4.66601 23.3333 3.82868 24 2.66601 24C2.5822 24 2.4984 23.998 2.41468 23.994C1.22068 23.9373 0.966681 22.4227 1.74001 21.5107C2.08935 21.0987 2.49601 20.6 2.96268 20C5.03668 17.3333 5.33268 16 5.33268 16C5.33268 16 5.03601 14.6667 2.96268 12C2.56581 11.4879 2.15816 10.9842 1.74001 10.4893C0.966681 9.57733 1.22135 8.06333 2.41468 8.00667C2.49838 8.00219 2.58219 7.99997 2.66601 8C3.82868 8 4.66601 8.66667 4.66601 8.66667M4.66601 23.3333C4.66601 23.3333 5.55535 22.6667 7.62935 20C8.0509 19.4622 8.44861 18.9061 8.82135 18.3333M30.666 14H17.1567C15.8767 14 14.73 14.004 13.7047 14.0107C13.2718 13.3155 12.8015 12.6443 12.296 12C10.222 9.33333 9.33268 8.66667 9.33268 8.66667C9.33268 8.66667 8.49535 8 7.33268 8C7.24886 7.99997 7.16505 8.00219 7.08135 8.00667C5.88802 8.06333 5.63335 9.57733 6.40668 10.4893C6.65068 10.7756 6.92246 11.1067 7.22201 11.4827M7.22201 11.4827L7.35201 11.6467M7.22201 11.4827C5.43935 9.246 4.66601 8.66667 4.66601 8.66667M4.66601 8.66667C4.66601 8.66667 5.55535 9.33333 7.62935 12C8.0509 12.5378 8.44861 13.0939 8.82135 13.6667"
+                                                    stroke="#2859C5" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                            <div class="listItem">{{ expert }}</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- form -->
+                    <div class="form" #formSection>
+                        <div class="formWrapper">
+                            <div class="formHeading">Get Appointment</div>
+
+                            <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+
+                                <div class="row-1">
+                                    <!-- appointment date -->
+                                    <div class="inputField">
+                                        <!-- <div class="heading">
+                                <img src="../../assets/appointment-date.svg" alt="">
+                                <span>Appointment
+                                    Date</span></div> -->
+                                        <!-- <input type="text" placeholder="Choose a date"> -->
+                                        <p-calendar styleClass="date" [(ngModel)]="date" [minDate]="minDate"
+                                            [iconDisplay]="'input'" placeholder="Appointment Date *" [showIcon]="true"
+                                            inputId="icondisplay" formControlName="date_appointment"
+                                            [disabledDays]="disabledDays" (onSelect)="onDateChange($event)">
+                                            <ng-template pTemplate="date" let-date>
+                                                <span>
+                                                    {{ date.day }}
+                                                </span>
+                                            </ng-template>
+                                        </p-calendar>
+                                    </div>
+
+                                    <!-- Appointment Time -->
+                                    <div class="inputField">
+                                        <!-- <div class="heading time"><img src="../../assets/appointment-date.svg"
+                                    alt=""><span>Appointment
+                                    Time</span></div> -->
+                                        <!-- <input type="text" placeholder="Choose a time"> -->
+                                        <p-dropdown styleClass="dropdown" [options]="availableTimes" optionLabel="name"
+                                            formControlName="time" placeholder="Appointment Time *"
+                                            [disabled]="availableTimes.length === 0" required></p-dropdown>
+                                    </div>
+
+                                </div>
+
+                                <div class="row-1">
+                                    <!-- appointment date -->
+                                    <div class="inputField">
+                                        <!-- <div class="heading"><img src="../../assets/appointment-name.svg" alt=""><span>First
+                                    Name</span>
+                            </div> -->
+                                        <input type="text" class="input" pInputText id="firstName"
+                                            formControlName="firstName" placeholder="Frist Name *" required />
+                                        <div *ngIf="f['firstName'].touched && f['firstName'].invalid">
+                                            <small class="error" *ngIf="f['firstName'].errors?.['required']">First name
+                                                is
+                                                required</small>
+                                            <small class="error" *ngIf="f['firstName'].errors?.['minlength']">First name
+                                                must be
+                                                at
+                                                least 2 characters long</small>
+                                            <small class="error" *ngIf="f['firstName'].errors?.['pattern']">First name
+                                                can
+                                                only
+                                                contain
+                                                letters</small>
+                                        </div>
+                                    </div>
+
+                                    <!-- Appointment Time -->
+                                    <div class="inputField">
+                                        <!-- <div class="heading"><img src="../../assets/appointment-name.svg" alt=""><span>Last
+                                    Name</span>
+                            </div> -->
+                                        <input type="text" class="input" pInputText id="lastName"
+                                            formControlName="lastName" placeholder="Last Name" required />
+                                        <div *ngIf="f['lastName'].touched && f['lastName'].invalid">
+                                            <small class="error" *ngIf="f['lastName'].errors?.['required']">Last name is
+                                                required</small>
+                                            <small class="error" *ngIf="f['lastName'].errors?.['minlength']">Last name
+                                                must
+                                                be
+                                                at
+                                                least
+                                                2 characters long</small>
+                                            <small class="error" *ngIf="f['lastName'].errors?.['pattern']">Last name can
+                                                only
+                                                contain
+                                                letters</small>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="row-1">
+                                    <!-- appointment date -->
+                                    <div class="inputField">
+                                        <!-- <div class="heading"><img src="../../assets/appointment-mail.svg" alt=""><span>Email</span>
+                            </div> -->
+                                        <input type="email" class="input" pInputText id="email" formControlName="email"
+                                            placeholder="Email *" required />
+                                        <div *ngIf="f['email']?.touched && f['email'].invalid">
+                                            <small class="error" *ngIf="f['email'].errors?.['required']">Valid email is
+                                                required</small>
+                                            <small class="error" *ngIf="f['email'].errors?.['email']">Invalid email
+                                                format</small>
+                                        </div>
+                                    </div>
+
+                                    <!-- Appointment Time -->
+                                    <div class="inputField">
+                                        <!-- <div class="heading"><img src="../../assets/appointment-call.svg" alt=""><span>Contact
+                                    Number</span></div> -->
+                                        <input type="text" class="input" pInputText id="contactNumber"
+                                            formControlName="contactNumber" placeholder="Contact Number *" required
+                                            minlength="10" maxlength="10" />
+                                        <div *ngIf="f['contactNumber'].touched && f['contactNumber'].invalid">
+                                            <small class="error" *ngIf="f['contactNumber'].errors?.['required']">Contact
+                                                Number
+                                                is
+                                                required</small>
+                                            <small class="error" *ngIf="f['contactNumber'].errors?.['pattern']">Contact
+                                                Number
+                                                must
+                                                be
+                                                digits
+                                                only</small>
+                                            <small class="error"
+                                                *ngIf="f['contactNumber'].errors?.['minlength']">Contact
+                                                Number
+                                                must be
+                                                at least 10
+                                                digits long</small>
+                                            <small class="error"
+                                                *ngIf="f['contactNumber'].errors?.['maxlength']">Contact
+                                                Number
+                                                must be
+                                                no more than
+                                                10 digits long</small>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="textbox">
+                                    <textarea type="text" class="text-area" rows="5" cols="30"
+                                        placeholder="Your Message..." pInputTextarea formControlName="message"
+                                        required></textarea>
+                                    <div *ngIf="f['message'].touched && f['message'].invalid">
+                                        <small class="error">Message is required</small>
+                                    </div>
+                                </div>
+                                <div class="book_button">
+                                    <button class="appt-btn" type="submit"
+                                        [disabled]="contactForm.invalid && clicked"><span class="btn_text">Submit</span>
+                                        <!-- <span class="arrow">
+                                        <i
+                                        class="fa-solid fa-angle-right"></i></span> -->
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="center-part" >
+                    <div class="briefProfile mt" *ngIf="filteredDoctor?.about?.trim()">
+                        <div class="profile-title">Brief Profile</div>
+                        <div class="briefProfilePara" [innerHTML]="filteredDoctor.about"></div>
+                    </div>
+
+                    <div class="insurance-available">
+                        <div class="insurance-card">
+
+                            <h2>Insurance Available</h2>
+
+                            <div class="insurance-grid" [class.flip]="isFlipping">
+
+                                <div class="insurance-box" *ngFor="let insurance of visibleInsurances"
+                                    [class.card-flip]="isFlipping">
+                                    {{ insurance }}
+                                </div>
+
+
+                            </div>
+
+                            <button class="view-more-btn" routerLink="/facility/health-insurance-plans-bangalore">
+                                View More >>
+                            </button>
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="faqs">
+                    <div class="faq-heading">Common Questions (FAQ)</div>
+                    <div *ngIf="doctorFAQs.length" class="faq-section">
+                        <div class="faq-grid">
+
+                            <div class="faq-card" *ngFor="let faq of doctorFAQs; let i = index" (click)="toggleFAQ(i)"
+                                [class.active]="activeFAQ === i">
+                                <div class="faq-header">
+                                    <h3 class="question">
+                                        {{ faq.question }}
+                                    </h3>
+                                    <span class="arrow" [class.open]="activeFAQ === i">›</span>
+                                </div>
+
+                                <div class="faq-body" [innerHTML]="faq.answer">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<p-toast position="top-right"></p-toast>

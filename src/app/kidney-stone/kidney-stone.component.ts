@@ -45,7 +45,7 @@ export class KidneyStoneComponent {
       designation: 'Orthopaedics',
       alt: 'Dr. Mahesh Kulkarni | Best Ortho Doctor in Bangalore | Rashtrotthana Hospital',
       slug: '/doctor/dr-nagaraj-rao',
-      experience: '26+'
+      experience: '27+'
     },
     {
       image: 'assets/Dr-Madhu-S-N.png',
@@ -53,7 +53,7 @@ export class KidneyStoneComponent {
       designation: 'Orthopaedics',
       alt: 'Dr. Sujayendra D. M | Best Orthopaedic Doctor in Bangalore | Rashtrotthana Hospital',
       slug: '/doctor/dr-madhu-s-n',
-      experience: '14+'
+      experience: '15+'
     },
 
   ];
