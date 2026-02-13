@@ -92,7 +92,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 28px;
-    width: 50%;
+    width: 100%;
 }
 
 .department {
@@ -164,7 +164,7 @@
 .languages {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
 }
 
 .la {
@@ -204,9 +204,13 @@
 .fl {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
 }
+
+/* .name-card {
+    width: 50%;
+} */
 
 .expertise-card {
     display: flex;
@@ -218,8 +222,17 @@
     border-radius: 16px;
     border: 0.734px solid #E3EAF1;
     background: #FFF;
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.10), 0 1px 2px -1px rgba(0, 0, 0, 0.10);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.10),
+        0 1px 2px -1px rgba(0, 0, 0, 0.10);
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.expertise-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+}
+
 
 .expertise-card img {
     width: 50px;
@@ -324,27 +337,22 @@
 
 .inputField input {
     width: 99%;
-    border: 1px solid #000;
+    border: 2px solid #9E9CAD;
     height: 50px;
     padding: 0 10px;
     outline: none;
     border-radius: 8px;
     /* margin-top: 10px; */
+}
+
+::ng-deep .p-dropdown {
+    border: 2px solid #9E9CAD;
 }
 
 .inputField {
     width: 100%;
 }
 
-.inputField input {
-    width: 99%;
-    border: 1px solid #000;
-    height: 50px;
-    padding: 0 10px;
-    outline: none;
-    border-radius: 8px;
-    /* margin-top: 10px; */
-}
 
 .time {
     margin-bottom: 10px;
@@ -361,7 +369,7 @@ textarea {
     margin-top: 30px;
     height: 130px;
     border-radius: 10px;
-    border: 1px solid #000;
+    border: 2px solid #9E9CAD;
     padding: 10px;
 }
 
@@ -370,9 +378,9 @@ textarea::placeholder,
 input,
 textarea,
 .dummybava {
-    color: #666F77;
-    font-family: Poppins;
-    font-size: 16px;
+    color: #525050;
+    font-family: Inter;
+    font-size: 14px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -380,9 +388,9 @@ textarea,
 
 select:invalid,
 select option.placeholder-option {
-    color: #666F77;
-    font-family: Poppins;
-    font-size: 16px;
+    color: #525050;
+    font-family: Inter;
+    font-size: 14px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -422,19 +430,21 @@ select::-ms-expand {
 
 :host ::ng-deep.date {
     width: 100%;
-    border: 1px solid #000;
+    border: 2px solid #9E9CAD;
     height: 50px;
     border-radius: 6px;
     margin-top: 10px;
 
 }
 
-.p-inputtext::placeholder {
-    color: #666F77;
-    font-family: Poppins;
-    font-size: 16px;
+.p-inputtext::placeholder,
+::ng-deep .p-calendar input::placeholder,
+::ng-deep .p-dropdown .p-dropdown-label {
+    color: #525050;
+    font-family: Inter;
+    font-size: 14px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     line-height: normal;
 }
 
@@ -644,12 +654,13 @@ select::-ms-expand {
 
 
 .listItem {
-    color: #1D2C3D;
-    font-family: Poppins;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
+color: #0B1F33;
+/* text-align: center; */
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 150% */
 }
 
 .view-all {
@@ -774,7 +785,11 @@ select::-ms-expand {
     /* background: #1B76B2; */
     /* box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.10), 0 2px 4px -2px rgba(0, 0, 0, 0.10); */
     position: relative;
-    top: 100px;
+    top:40px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .insurance-card {
@@ -799,11 +814,13 @@ select::-ms-expand {
 
 .insurance-box {
     background: #E3EAF1;
-    color: #333;
-    padding: 12px;
-    border-radius: 12px;
-    font-size: 14px;
+    color: #5F6F81;
+    text-align: center;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
     font-weight: 500;
+    line-height: 16px;
     transition: 0.3s;
 }
 
@@ -965,11 +982,11 @@ select::-ms-expand {
         height: auto;
         width: 100%;
         gap: 20px;
-        padding-bottom: 20px;
+        /* padding-bottom: 20px; */
     }
 
     .flex2 {
-        flex-wrap: wrap;
+        flex-wrap: wrap-reverse;
         align-items: center;
         justify-content: center;
         gap: 20px;
@@ -983,6 +1000,7 @@ select::-ms-expand {
 
     .content {
         align-items: center;
+        text-align: center;
     }
 
     .cards {
@@ -1040,6 +1058,17 @@ select::-ms-expand {
     .qualification {
         width: 100%;
     }
+
+
+    .name-card {
+        width: 100%;
+    }
+
+    .whatsapp-icon {
+        position: relative;
+        top: 420px;
+        left: 120px;
+    }
 }
 
 
@@ -1052,7 +1081,7 @@ select::-ms-expand {
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        gap: 20px;
+        gap: 18px;
     }
 
     .doctor_image img {
@@ -1095,6 +1124,16 @@ select::-ms-expand {
         font-size: 26px;
     }
 
+    .content {
+        text-align: center;
+        margin: 0;
+        gap: 15px;
+    }
+
+    .flex2{
+        gap: 0;
+    }
+
     .qualification,
     .department {
         font-size: 16px;
@@ -1102,6 +1141,8 @@ select::-ms-expand {
 
     .experience {
         font-size: 20px;
+        width: 80%;
+        line-height: 30px;
     }
 
     .faqs {
@@ -1125,12 +1166,27 @@ select::-ms-expand {
         padding: 0;
     }
 
-    /* 
-    .whatsapp-icon{
+
+
+    .whatsapp-icon {
         position: relative;
-        left: 110px;
-        top: 0px;
-    } */
+        top: 300px;
+        left: 120px;
+    }
+
+    .faq-section{
+        padding: 0;
+    }
+
+    .close-btn{
+        width: 25px;
+        height: 25px;
+        font-size: 16px;
+    }
+    .popup-header,
+    .listItem{
+        font-size: 16px;
+    }
 
 
 

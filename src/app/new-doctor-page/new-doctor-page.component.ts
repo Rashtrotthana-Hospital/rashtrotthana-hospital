@@ -110,6 +110,18 @@ export class NewDoctorPageComponent {
       this.filteredDoctor = doctor;
       this.doctorFAQs = doctor.faqs || [];
 
+      // START counter animation
+      if (doctor.happyPatients && !this.hasAnimated) {
+        this.hasAnimated = true;
+
+        // Convert "12000+" → 12000
+        const numericValue = parseInt(
+          doctor.happyPatients.toString().replace(/\D/g, ''),
+          10
+        );
+
+        this.animateCount(numericValue);
+      }
       console
       const expertise = doctor.areasOfExpertise || [];
       const expertise2 = doctor.areasOfExpertise2 || [];
@@ -159,6 +171,30 @@ export class NewDoctorPageComponent {
         }
       );
     }
+
+  }
+
+  displayCount = 0;
+  hasAnimated = false;
+
+  animateCount(target: number) {
+    const duration = 1500;
+    const stepTime = 20;
+    const steps = duration / stepTime;
+    const increment = target / steps;
+
+    let current = 0;
+
+    const timer = setInterval(() => {
+      current += increment;
+
+      if (current >= target) {
+        this.displayCount = target;
+        clearInterval(timer);
+      } else {
+        this.displayCount = Math.floor(current);
+      }
+    }, stepTime);
   }
 
 
@@ -387,7 +423,7 @@ export class NewDoctorPageComponent {
         'assets/icons/ONC-2.png',
         'assets/icons/ONC-3.png',
         'assets/icons/ONC-4.png',
-        'assets/icons/ONC-5.png'
+        ' assets/icons/ONC-5.svg'
       ],
       happyPatients: '10000+'
 
@@ -451,7 +487,7 @@ export class NewDoctorPageComponent {
         'assets/icons/ONC-2.png',
         'assets/icons/ONC-3.png',
         'assets/icons/ONC-4.png',
-        'assets/icons/ONC-5.png'
+        ' assets/icons/ONC-5.svg'
       ],
       happyPatients: '7000+'
 
@@ -910,7 +946,7 @@ export class NewDoctorPageComponent {
       name: 'Dr. Kolla Vinod',
       image: 'assets/Doc-Inv-Page/Dr-Kolla-Vinod.png',
       department: 'Pulmonary and sleep medicine',
-      about: 'Dr. KOLLA VINOD is a professor in Pulmonary medicine for over a decade. His education, training and extensive experience given special expertise in the diagnosis, treatment and management of disorders of the pulmonary diseases. He has achieved state 2nd rank during his post-graduation. He strives to stay current with medical knowledge and interventional skills in order to provide his patients with the best, up- to-date care available. He is interested in new interventions (Bronchoscopy, Throcoscopy, cryobiopsy rigid bronchoscopy) The majority of his early education was in Lawrence school Ooty, he completed his Pre-University in Lawrence school Ooty. He finished MBBS, MD in Pulmonary Medicine obtained from Narayana Medical College, Nellore. His post- doctoral studies included a critical care, Interventional pulmonology. Dr. Kolla Vinod authored or co- authored peer-reviewed abstracts/articles. He holds multiple Journals and case reports in his field in various Indian and International journals. Upon his return to Bangalore.',
+      about: 'Dr. Kolla Vinod is a professor in Pulmonary medicine for over a decade. His education, training and extensive experience given special expertise in the diagnosis, treatment and management of disorders of the pulmonary diseases. He has achieved state 2nd rank during his post-graduation. He strives to stay current with medical knowledge and interventional skills in order to provide his patients with the best, up- to-date care available. He is interested in new interventions (Bronchoscopy, Throcoscopy, cryobiopsy rigid bronchoscopy) The majority of his early education was in Lawrence school Ooty, he completed his Pre-University in Lawrence school Ooty. He finished MBBS, MD in Pulmonary Medicine obtained from Narayana Medical College, Nellore. His post- doctoral studies included a critical care, Interventional pulmonology. Dr. Kolla Vinod authored or co- authored peer-reviewed abstracts/articles. He holds multiple Journals and case reports in his field in various Indian and International journals. Upon his return to Bangalore.',
       speciality: 'PULMONOLOGY',
       areasOfExpertise: ['Copd', 'Pneumonia', 'Tuberculosis', 'Interstitial lung disease', 'Pleural effusion', 'Lung cancer', 'Sleep medicine', 'Flu and allergic bronchitis', 'Pulmonary rehabilitation', 'Interventional pulmonology (Bronchoscopy, Throcoscopy, Cryobiopsy, Rigid bronchoscopy) Asthama'],
       expertise: '20+',
@@ -1616,7 +1652,7 @@ export class NewDoctorPageComponent {
         'assets/icons/ONC-2.png',
         'assets/icons/ONC-3.png',
         'assets/icons/ONC-4.png',
-        'assets/icons/ONC-5.png'
+        ' assets/icons/ONC-5.svg'
       ],
       happyPatients: '5000+'
 
@@ -2392,7 +2428,11 @@ export class NewDoctorPageComponent {
       speciality: 'NUTRITION & DIETETICS',
       areasOfExpertise: ['Prenatal and Post-natal Nutrition', 'Paediatric and geriatric nutrition', 'Enteral nutrition ', 'Diabetic management'],
       expertise: ' 19+',
-      qualification: ' M.Sc. in Dietetics and Food service management B.sc in Clinical Nutrition and Dietetics PG certificate in Diabetes Education (International Diabetes Federation) MICYAN -Indian Institute of public health-Delhi',
+      qualification: `
+      M.Sc. in Dietetics and Food Service Management <br>
+      B.Sc. in Clinical Nutrition and Dietetics <br>
+      PG Certificate in Diabetes Education <br> (International Diabetes Federation) <br>
+      MICYAN – Indian Institute of Public Health, Delhi`,
       time: '12:00-12:20,12:20-12:40,12:40-13:00,14:40-15:00,15:00-15:20,15:20-15:30',
       date: 'Monday-Saturday',
       alt: 'Ms. Archana Karthick | Best Clinical Dietician in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
@@ -3247,7 +3287,7 @@ export class NewDoctorPageComponent {
         'assets/icons/ONC-2.png',
         'assets/icons/ONC-3.png',
         'assets/icons/ONC-4.png',
-        'assets/icons/ONC-5.png'
+        ' assets/icons/ONC-5.svg'
       ],
       happyPatients: '3000+'
 
@@ -4557,19 +4597,13 @@ export class NewDoctorPageComponent {
 
 
   /* ---------- POPUP 2-COLUMN SPLIT ---------- */
-
-  get remainingExpertise(): string[] {
-    return this.filteredDoctor?.areasOfExpertise?.slice(5) || [];
-  }
-
   get expertiseColumn1(): string[] {
-    const remaining = this.remainingExpertise;
-    return remaining.slice(0, Math.ceil(remaining.length / 2));
+    const all = this.filteredDoctor?.areasOfExpertise || [];
+    return all.slice(0, Math.ceil(all.length / 2));
   }
-
   get expertiseColumn2(): string[] {
-    const remaining = this.remainingExpertise;
-    return remaining.slice(Math.ceil(remaining.length / 2));
+    const all = this.filteredDoctor?.areasOfExpertise || [];
+    return all.slice(Math.ceil(all.length / 2));
   }
 
 
@@ -4653,6 +4687,7 @@ export class NewDoctorPageComponent {
 
     window.open(url, '_blank');
   }
+
 
 
 
