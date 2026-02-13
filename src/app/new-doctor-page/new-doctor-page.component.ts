@@ -4639,7 +4639,7 @@ export class NewDoctorPageComponent {
   }
 
 
-  doctorPhone = '916382112241'; // fixed number (no +)
+  doctorPhone = '918904943673'; // fixed number (no +)
 
   openWhatsApp() {
 
