@@ -5,19 +5,19 @@
         <!-- hero section -->
         <div class="heroSection">
             <div class="flex2">
-                <div class="back_button">
+                <!-- <div class="back_button">
                     <a routerLink="/best-doctors-bangalore"><i
                             class="fa-solid fa-arrow-left"></i> Back</a>
-                </div>
+                </div> -->
                 <div class="doctor_image">
                     <div class="image_wrapper">
                         <img [src]="filteredDoctor.image" [alt]="filteredDoctor.alt">
                     </div>
                 </div>
                 <div class="content">
-                    <div class="">
+                    <div class="name-card">
                         <h1 class="docname marginLeft">{{filteredDoctor.name}}</h1>
-                        <div class="qualification marginLeft mat">{{filteredDoctor.qualification}}</div>
+                        <div class="qualification marginLeft mat" [innerHTML]="filteredDoctor?.qualification"></div>
                         <div class="department marginLeft mat">{{filteredDoctor.department}}</div>
                     </div>
                     <div class="experience marginLeft">Years of Experience: {{filteredDoctor.expertise}} Years</div>
@@ -32,7 +32,7 @@
 
                     <div class="flex1">
                         <div class="fl">
-                            <div class="count">{{ filteredDoctor?.happyPatients}}</div>
+                            <div class="count">{{ displayCount}} +</div>
                             <div class="title">Happy Patients</div>
                         </div>
                         <div class="fl">
@@ -201,7 +201,7 @@
                                     Name</span>
                             </div> -->
                                         <input type="text" class="input" pInputText id="firstName"
-                                            formControlName="firstName" placeholder="Frist Name *" required />
+                                            formControlName="firstName" placeholder="First Name *" required />
                                         <div *ngIf="f['firstName'].touched && f['firstName'].invalid">
                                             <small class="error" *ngIf="f['firstName'].errors?.['required']">First name
                                                 is
@@ -313,7 +313,7 @@
                     </div>
                 </div>
 
-                <div class="center-part" >
+                <div class="center-part">
                     <div class="briefProfile mt" *ngIf="filteredDoctor?.about?.trim()">
                         <div class="profile-title">Brief Profile</div>
                         <div class="briefProfilePara" [innerHTML]="filteredDoctor.about"></div>
@@ -335,7 +335,15 @@
                             </div>
 
                             <button class="view-more-btn" routerLink="/facility/health-insurance-plans-bangalore">
-                                View More >>
+                                View More <span><svg xmlns="http://www.w3.org/2000/svg" width="12" height="10"
+                                        viewBox="0 0 12 10" fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M6.29279 0.292787C6.48031 0.105316 6.73462 0 6.99979 0C7.26495 0 7.51926 0.105316 7.70679 0.292787L11.7068 4.29279C11.8943 4.48031 11.9996 4.73462 11.9996 4.99979C11.9996 5.26495 11.8943 5.51926 11.7068 5.70679L7.70679 9.70679C7.51818 9.88895 7.26558 9.98974 7.00339 9.98746C6.74119 9.98518 6.49038 9.88001 6.30497 9.6946C6.11956 9.5092 6.01439 9.25838 6.01211 8.99619C6.00983 8.73399 6.11063 8.48139 6.29279 8.29279L9.58579 4.99979L6.29279 1.70679C6.10532 1.51926 6 1.26495 6 0.999786C6 0.734622 6.10532 0.480314 6.29279 0.292787Z"
+                                            fill="#2070B3" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M0.292787 0.292787C0.480314 0.105316 0.734622 0 0.999786 0C1.26495 0 1.51926 0.105316 1.70679 0.292787L5.70679 4.29279C5.89426 4.48031 5.99957 4.73462 5.99957 4.99979C5.99957 5.26495 5.89426 5.51926 5.70679 5.70679L1.70679 9.70679C1.51818 9.88895 1.26558 9.98974 1.00339 9.98746C0.741188 9.98518 0.490376 9.88001 0.304968 9.6946C0.11956 9.5092 0.0143906 9.25838 0.0121121 8.99619C0.00983372 8.73399 0.110629 8.48139 0.292787 8.29279L3.58579 4.99979L0.292787 1.70679C0.105316 1.51926 0 1.26495 0 0.999786C0 0.734622 0.105316 0.480314 0.292787 0.292787Z"
+                                            fill="#2070B3" />
+                                    </svg></span>
                             </button>
 
                         </div>
