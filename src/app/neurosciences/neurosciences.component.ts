@@ -26,13 +26,13 @@ export class NeurosciencesComponent {
     {
       doctor_image: '../../assets/Dr-Kalyani-Dilip-Karkare.png',
       doctor_name: 'Dr. Kalyani Dilip Karkare',
-      experience: "14+",
+      experience: "16+",
       alt: 'Dr. Kalyani Dilip Karkare | Best Neurologist in Bangalore | Rashtrotthana Hospital'
     },
     {
       doctor_image: '../../assets/Dr-Jaidev-S.png',
       doctor_name: 'Dr. Jaidev S',
-      experience: "4",
+      experience: "7+",
       docalt: 'Dr. Jaidev S | Best Neurosurgeon in Bangalore | Rashtrotthana Hospital'
     }
   ]

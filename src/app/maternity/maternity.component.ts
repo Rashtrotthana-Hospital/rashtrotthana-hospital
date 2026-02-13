@@ -37,14 +37,14 @@ export class MaternityComponent {
     {
       image: 'assets/Dr-Latha-Venkataram.png',
       name: 'Dr. Latha Venkataram',
-      experience: 'Years of Experience: 32',
+      experience: 'Years of Experience: 35+',
       alt: 'Dr. Latha Venkataram | Top Obstetrics & Gynaecologist in banaglore | Rashtrotthana Hospital',
       slug : '/doctor/dr-latha-venkataram'
     },
     {
       image: 'assets/Dr-Prakruthi.png',
       name: 'Dr. Prakruthi',
-      experience: 'Years of Experience: 16',
+      experience: 'Years of Experience: 19+',
       alt: 'Dr. Prakruthi | Best Gynaec Doctor in Bangalore | Rashtrotthana Hospital',
       slug : '/doctor/dr-prakruthi'
     },
@@ -52,21 +52,21 @@ export class MaternityComponent {
     {
       image: 'assets/Dr-Neelam-Saraswat.png',
       name: 'Dr. Neelam Saraswat',
-      experience: 'Years of Experience: 10',
+      experience: 'Years of Experience: 12+',
       alt: 'Dr. Neelam Saraswat | Best Gynaecology Consultant in Bangalore | Rashtrotthana Hospital',
       slug : '/doctor/dr-neelam-saraswat'
     },
     {
       image: 'assets/Dr-Ashwitha-Gundmi.png',
       name: 'Dr. Ashwitha Gundmi',
-      experience: 'Years of Experience: 7+',
+      experience: 'Years of Experience: 9+',
       alt: 'Dr. Ashwitha Gundmi | Best Obstetrics & Gynaecologist in Bangalore | Rashtrotthana Hospital',
       slug : '/doctor/dr-ashwitha-gundmi'
     },
     {
       image: 'assets/Dr-Vinita-Udupa.png',
       name: 'Dr. Vinita Udupa',
-      experience: 'Years of Experience: 8',
+      experience: 'Years of Experience: 10+',
       alt: 'Dr. Vinita Udupa | Best OBG in Bangalore | Rashtrotthana Hospital',
       slug : '/doctor/dr-vinita-udupa'
     },

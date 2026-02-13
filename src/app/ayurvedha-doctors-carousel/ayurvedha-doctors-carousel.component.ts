@@ -33,7 +33,7 @@ export class AyurvedhaDoctorsCarouselComponent {
       section: "BSc, BAMS, FAHO, FAGE",
       designation: "Ayurveda Specialist",
       Department: "Agnivesha Institute Of Ayurveda",
-      experience: "25",
+      experience: "26+",
       alt : 'Dr. Venkatesh H. S | Best Ayurveda Endocrinologist in Bangalore | Rashtrotthana Hospital'
     },
     // {

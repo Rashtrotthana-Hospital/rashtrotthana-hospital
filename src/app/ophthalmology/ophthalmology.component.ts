@@ -26,19 +26,19 @@ export class OphthalmologyComponent {
     {
       doctor_image: '../../assets/Dr-Sowmya-Bhat-S.png',
       doctor_name: 'Dr. Sowmya S. Bhat',
-      experience: "14+",
+      experience: "16+",
       docalt: 'Dr. Sowmya S. Bhat | Best Ophthalmologist in Bangalore | Rashtrotthana Hospital'
     },
     {
       doctor_image: '../../assets/dr-dona-susan-john-dr-page.png',
       doctor_name: 'Dr. Dona Susan John ',
-      experience: "18+",
+      experience: "21+",
       docalt: 'Dr. Dona Susan John | Best Ophthalmology doctor in Bangalore | Rashtrotthana Hospital'
     },
     {
       doctor_image: '../../assets/new-doctor-imgs/dr-sushma-doc-page.png',
       doctor_name: 'Dr. Sushma A ',
-      experience: "10+",
+      experience: "12+",
       docalt: 'Dr. Sushma A | Best Ophthalmology doctor in Bangalore | Rashtrotthana Hospital'
     }
   ];
@@ -74,7 +74,7 @@ export class OphthalmologyComponent {
     },
     {
       ques: "Who is the best eye doctor in RR Nagar for complete eye care?",
-      ans: "At Rashtrotthana Hospital, Dr. Sowmya S. Bhat is widely regarded as one of the best eye doctors in RR Nagar. With over 10 years of experience, she provides personalized care for everything from pediatric vision concerns to glaucoma and diabetic eye management."
+      ans: "At Rashtrotthana Hospital, Dr. Sowmya S. Bhat is widely regarded as one of the best eye doctors in RR Nagar. With over 16 years of experience, she provides personalized care for everything from pediatric vision concerns to glaucoma and diabetic eye management."
     },
   ]
 

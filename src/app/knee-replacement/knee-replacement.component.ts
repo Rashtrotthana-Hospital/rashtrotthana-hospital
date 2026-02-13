@@ -45,7 +45,7 @@ export class KneeReplacementComponent implements OnInit {
       designation: 'Orthopaedics',
       alt: 'Dr. Mahesh Kulkarni | Best Ortho Doctor in Bangalore | Rashtrotthana Hospital',
       slug: '/doctor/dr-mahesh-kulkarni',
-      experience: '15+'
+      experience: '16+'
     },
     {
       image: 'assets/Dr-Sujayendra-D-M.png',
@@ -53,7 +53,7 @@ export class KneeReplacementComponent implements OnInit {
       designation: 'Orthopaedics',
       alt: 'Dr. Sujayendra D. M | Best Orthopaedic Doctor in Bangalore | Rashtrotthana Hospital',
       slug: '/doctor/dr-sujayendra-d-m',
-      experience: '9+'
+      experience: '13+'
     },
     {
       image: 'assets/Dr-Nikhil-Hegde.png',
@@ -61,7 +61,7 @@ export class KneeReplacementComponent implements OnInit {
       designation: 'Orthopaedics',
       alt: 'Dr. Nikhil Hegde | Best Orthopaedic Consultant in Bangalore | Rashtrotthana Hospital',
       slug: '/doctor/dr-nikhil-hegde',
-      experience: '6+'
+      experience: '8+'
     },
   ];
 

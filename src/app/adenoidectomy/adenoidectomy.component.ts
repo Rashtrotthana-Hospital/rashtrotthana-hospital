@@ -52,7 +52,7 @@ export class AdenoidectomyComponent {
       name: 'Dr. Manasa N. A',
       image: 'assets/Doc-Inv-Page/Dr-Manasa-N-A.png',
       qualification: 'MBBS, DLO, DNB(ENT)',
-      experience: '10+ Years',
+      experience: '16+ Years',
       speciality: 'ENT',
       slug: '/doctor/dr-manasa-n-a'
     },
@@ -61,7 +61,7 @@ export class AdenoidectomyComponent {
       name: 'Dr. Narendranath A',
       image: 'assets/Doc-Inv-Page/Dr-Narendranath-A.png',
       qualification: 'MBBS, MS(ENT)',
-      experience: '10',
+      experience: '11+',
       speciality: 'ENT',
       slug: '/doctor/dr-narendranath-a'
     },
@@ -70,7 +70,7 @@ export class AdenoidectomyComponent {
       name: 'Dr. Sunil Kumar C',
       image: 'assets/Doc-Inv-Page/Dr-Sunil.png',
       qualification: 'MS ENT, DHM, IFAAM',
-      experience: '10+',
+      experience: '14+',
       speciality: 'ENT',
       slug: '/doctor/dr-sunil-kumar-c'
     },
@@ -79,7 +79,7 @@ export class AdenoidectomyComponent {
       name: 'Dr. Sandhya S. Patil',
       image: 'assets/dr-sandhaya.png',
       qualification: 'MBBS, DLO, DNB (ENT), AASC',
-      experience: '10+',
+      experience: '12+',
       speciality: 'ENT',
       slug: '/doctor/dr-sandhya-s-patil'
     },

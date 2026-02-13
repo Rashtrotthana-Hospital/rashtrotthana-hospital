@@ -36,7 +36,7 @@ export class EndocrinologyComponent {
     {
       id: 1,
       name: 'Dr. Manasa M. G',
-      experience: '8+ Years',
+      experience: '10+ Years',
       image: '../../assets/dr-manasa-m-g.jpg',
       slug: '/doctor/dr-manasa-m-g'
     },

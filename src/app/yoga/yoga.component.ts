@@ -33,7 +33,7 @@ export class YogaComponent {
       name : "Dr. Varsha P",
       section : "BAMS, MD(Ayu),YIC",
       designation : "LIFESTYLE",
-      experience : "5",
+      experience : "7+",
       alt : 'Dr. Varsha P | Best Yoga & Lifestyle Consultant in Bangalore | Rashtrotthana Hospital'
     },
   ]

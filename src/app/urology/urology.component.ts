@@ -27,14 +27,14 @@ export class UrologyComponent {
     {
       id: 1,
       name: 'Dr. Nagaraj Rao',
-      experience: '26+ Years',
+      experience: '27+ Years',
       image: '../../assets/doctor-31.png',
       slug : '/doctor/dr-nagaraj-rao'
     },
     {
       id: 2,
       name: 'Dr. Madhu S. N',
-      experience: '14+ years',
+      experience: '15+ years',
       image: 'assets/Dr-Madhu-S-N.png',
       slug : '/doctor/dr-madhu-s-n'
     },

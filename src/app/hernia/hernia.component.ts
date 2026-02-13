@@ -68,7 +68,7 @@ export class HerniaComponent implements OnInit {
       name: 'Dr. Atmaram D. C',
       image: 'assets/Doc-Inv-Page/Dr-Atmaram-D-C.png',
       qualification: 'MBBS, MS',
-      experience: '19 Years',
+      experience: '20+ Years',
       speciality: 'General Surgery',
       slug : "/doctor/dr-atmaram-d-c"
     },
@@ -77,7 +77,7 @@ export class HerniaComponent implements OnInit {
       name: 'Dr. Nishanth Lakshmikantha',
       image: 'assets/Doc-Inv-Page/Dr-Nishanth-Lakshmikantha.png',
       qualification: 'MBBS, MS (General Surgery)',
-      experience: '9+ Years',
+      experience: '10+ Years',
       speciality: 'General Surgery',
       slug: "/doctor/dr-nishanth-lakshmikantha"
     }
