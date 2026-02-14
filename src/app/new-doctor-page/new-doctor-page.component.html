@@ -314,9 +314,33 @@
                 </div>
 
                 <div class="center-part">
-                    <div class="briefProfile mt" *ngIf="filteredDoctor?.about?.trim()">
-                        <div class="profile-title">Brief Profile</div>
-                        <div class="briefProfilePara" [innerHTML]="filteredDoctor.about"></div>
+                    <div class="left-section">
+                        <div class="briefProfile mt" *ngIf="filteredDoctor?.about?.trim()">
+                            <div class="profile-title">Brief Profile</div>
+                            <div class="briefProfilePara" [innerHTML]="filteredDoctor.about"></div>
+                        </div>
+
+                        <div class="faqs">
+                            <div class="faq-heading">Common Questions (FAQ)</div>
+                            <div *ngIf="doctorFAQs.length" class="faq-section">
+                                <div class="faq-grid">
+
+                                    <div class="faq-card" *ngFor="let faq of doctorFAQs; let i = index"
+                                        (click)="toggleFAQ(i)" [class.active]="activeFAQ === i">
+                                        <div class="faq-header">
+                                            <h3 class="question">
+                                                {{ faq.question }}
+                                            </h3>
+                                            <span class="arrow" [class.open]="activeFAQ === i">›</span>
+                                        </div>
+
+                                        <div class="faq-body" [innerHTML]="faq.answer">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="insurance-available">
@@ -352,27 +376,7 @@
                     </div>
                 </div>
 
-                <div class="faqs">
-                    <div class="faq-heading">Common Questions (FAQ)</div>
-                    <div *ngIf="doctorFAQs.length" class="faq-section">
-                        <div class="faq-grid">
 
-                            <div class="faq-card" *ngFor="let faq of doctorFAQs; let i = index" (click)="toggleFAQ(i)"
-                                [class.active]="activeFAQ === i">
-                                <div class="faq-header">
-                                    <h3 class="question">
-                                        {{ faq.question }}
-                                    </h3>
-                                    <span class="arrow" [class.open]="activeFAQ === i">›</span>
-                                </div>
-
-                                <div class="faq-body" [innerHTML]="faq.answer">
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
 
 
             </div>
