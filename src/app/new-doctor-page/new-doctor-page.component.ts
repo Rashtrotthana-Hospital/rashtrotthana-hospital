@@ -178,8 +178,8 @@ export class NewDoctorPageComponent {
   hasAnimated = false;
 
   animateCount(target: number) {
-    const duration = 1500;
-    const stepTime = 20;
+    const duration = 4000;
+    const stepTime = 50;
     const steps = duration / stepTime;
     const increment = target / steps;
 
