@@ -645,7 +645,8 @@ export class NewDoctorPageComponent {
       expertise: '16+',
       time: '18:30-18:50,18:50-19:10,19:10-19:30',
       date: 'Monday-Saturday',
-      qualification: 'MS Ortho, DNB Ortho,Fellowship in Arthroplasty/ Arthoscopy/ Spine surgery/  Complex trauma',
+      qualification: `MS Ortho, DNB Ortho, <br>
+      Fellowship in Arthroplasty/ Arthoscopy/ Spine surgery/ <br>  Complex trauma`,
       areasOfExpertise: ['Joint preservation', 'Limb preservation', 'Deformity correction', 'Pelviacetabular fractures', 'Sports injuries', 'Spine affections'],
       alt: 'Dr. Mahesh Kulkarni | Best Ortho Doctor in Bangalore | Rashtrotthana Hospital | RR Nagar Bangalore',
       id: 7,
@@ -1138,7 +1139,8 @@ export class NewDoctorPageComponent {
       speciality: 'ORTHOPEDICS',
       areasOfExpertise: ['Fracture care', 'Joint replacement surgeries and Arthroscopy (keyhole) surgeries'],
       expertise: '13+',
-      qualification: 'MBBS, MS (ORTHO), DNB (Ortho), Diploma SICOT, Fellowship in Arthroplasty',
+      qualification: `MBBS, MS (ORTHO), DNB (Ortho), <br>
+       Diploma SICOT, Fellowship in Arthroplasty`,
       time: '10:30-10:50,10:50-11:10,11:10-11:30,11:30-11:50,11:50-12:10,12:10-12:30,12:30-12:50,12:50-13:10,13:10-13:30,13:30-13:50,13:50-14:10,14:10-14:30',
       date: 'Tuesday,Thursday and Saturday',
       alt: "Dr. Sujayendra D. M | Best Orthopaedic Doctor in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore",
@@ -1608,7 +1610,7 @@ export class NewDoctorPageComponent {
       department: 'SR. CONSULTANT MEDICAL ONCOLOGIST',
       speciality: 'ONCOLOGY',
       about: 'Dr. Ravi Thippeswamy Senior Medical Oncologist With 17+ years of invaluable experience, Dr. Ravi Thippeswamy is a distinguished Medical Oncologist in Bangalore. He is committed to delivering comprehensive care to his patients and maintains affiliations with several hospitals throughout the city. He completed his MBBS from Jagadguru Jayadeva Murugarajendra Medical College (JJMMC) in 2004, his DNB in Medical Oncology from the National Board of Examination in 2012 and his MD in Pediatrics from the University of Mumbai in 2008.As a member of the Karnataka Medical Council, Dr. Thippeswamy specializes in various aspects of Medical Oncology, including Hemato Oncology and Pediatric Oncology. With 11 years of specialization, he brings a wealth of knowledge and expertise to his practice, ensuring the best possible outcomes for his patients.',
-      areasOfExpertise: ['All adult cancers with special interest in precision oncolgy, immuno-oncology'],
+      areasOfExpertise: ['All adult cancers with special interest in precision oncolgy', 'immuno-oncology'],
       expertise: '17+',
       qualification: 'MBBS, MD, DM',
       time: '09:00-09:20,09:20-09:40,09:40-10:00,10:20-10:40,10:40-11:00',
@@ -2154,6 +2156,37 @@ export class NewDoctorPageComponent {
         'assets/icons/LIFE-4.png',
         'assets/icons/LIFE-5.png'
       ],
+      faqs: [
+        {
+          question: 'Who is Dr. Varsha P and what is her specialty at Rashtrotthana Hospital, Bangalore?',
+          answer: 'Dr. Varsha P is a Lifestyle Medicine and Ayurveda Specialist at Rashtrotthana Hospital, Bangalore, with 7+ years of experience in managing lifestyle-related health conditions. She combines Ayurvedic principles, diet counselling, and yoga-based approaches to support long-term wellness.'
+        },
+        {
+          question: 'Can Dr. Varsha P help with diabetes, hypertension, and thyroid disorders at Rashtrotthana Hospital?',
+          answer: 'Yes, Dr. Varsha P provides lifestyle-based management for diabetes, high blood pressure, thyroid disorders, and other metabolic conditions. Her approach focuses on diet changes, daily routine corrections, and natural therapies to improve overall health.'
+        },
+        {
+          question: 'What lifestyle diseases are commonly treated by Dr. Varsha P in Bangalore?',
+          answer: 'Dr. Varsha P treats lifestyle-related conditions such as diabetes, obesity, hypertension, thyroid imbalance, and stress-related disorders. Treatment plans are designed to improve metabolism, energy levels, and overall quality of life.'
+        },
+        {
+          question: 'Does Dr. Varsha P provide diet counselling and preventive health guidance?',
+          answer: 'Yes, Dr. Varsha P offers personalised diet counselling and preventive lifestyle guidance based on Ayurvedic principles. The goal is to prevent disease progression and support sustainable, long-term health habits.'
+        },
+        {
+          question: 'Is yoga and natural therapy included in treatment with Dr. Varsha P?',
+          answer: 'As a certified Yoga Instructor (YIC), Dr. Varsha P integrates yoga, breathing techniques, and natural therapies into her treatment plans. These methods help improve stress levels, metabolism, and overall physical and mental wellbeing.'
+        },
+        {
+          question: 'When should I consult Dr. Varsha P for lifestyle or preventive health care?',
+          answer: 'You should consult Dr. Varsha P if you have early-stage lifestyle diseases, weight issues, thyroid imbalance, fatigue, or stress-related symptoms. Early lifestyle correction can help prevent long-term complications.'
+        },
+        {
+          question: 'Why choose Dr. Varsha P at Rashtrotthana Hospital for lifestyle medicine?',
+          answer: 'Dr. Varsha P brings 7+ years of experience and a holistic approach that combines Ayurveda, diet counselling, and yoga-based wellness. At Rashtrotthana Hospital, patients receive structured, preventive, and natural lifestyle care under expert guidance.'
+        },
+
+      ],
       happyPatients: '2000+'
     },
 
@@ -2163,7 +2196,7 @@ export class NewDoctorPageComponent {
       department: 'AYURVEDA',
       speciality: 'AYURVEDA',
       about: 'Dr. Rohit K. R is graduate from P N Panicker Souhruda Ayurveda Medical College, Kerala. He has one year experience at HOUSE SURGEON.',
-      areasOfExpertise: [''],
+      areasOfExpertise: ['Ayurveda'],
       expertise: '7+',
       qualification: 'BAMS',
       time: '09:30-09:50,09:50-10:10,10:10-10:30,10:30-10:50,10:50-11:10,11:10-11:30,11:30-11:50,11:50-12:10,12:10-12:30,12:30-12:50,12:50-13:10,13:10-13:30,13:30-13:50,13:50-14:10,14:10-14:30,14:30-14:50,14:50-15:10,15:10-15:30,15:30-15:50,15:50-16:10,16:10-16:30,16:30-16:50,16:50-17:00',
@@ -2204,11 +2237,11 @@ export class NewDoctorPageComponent {
       ],
       departmentSlug: '/specialities/ayurvedic-treatment-bangalore',
       expertiseIcons: [
-        'assets/list.png',
-        'assets/list.png',
-        'assets/list.png',
-        'assets/list.png',
-        'assets/list.png'
+        'assets/icons/AY-1.png',
+        'assets/icons/AY-2.png',
+        'assets/icons/AY-3.png',
+        'assets/icons/AY-4.png',
+        'assets/icons/AY-5.png'
       ],
       happyPatients: '3000+'
 
@@ -2383,9 +2416,9 @@ export class NewDoctorPageComponent {
       name: 'Dr. Shamantha S',
       image: 'assets/Doc-Inv-Page/Dr-Shamantha-S.png',
       department: 'LIFESTYLE MEDICINE',
-      about: ' ',
+      about: 'Dr. Shamantha S is a Lifestyle Medicine practitioner at Rashtrotthana Hospital, Bangalore, with a BAMS qualification and 6 years of clinical experience. She focuses on managing lifestyle-related health concerns through natural, preventive, and holistic approaches. Her treatment philosophy combines Ayurvedic principles, diet guidance, and daily routine corrections to help patients achieve sustainable health and long-term wellness.',
       speciality: 'LIFESTYLE MEDICINE',
-      areasOfExpertise: [' '],
+      areasOfExpertise: ['Lifestyle diseases'],
       qualification: 'BAMS',
       expertise: '6+',
       time: '10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00',
@@ -2396,12 +2429,27 @@ export class NewDoctorPageComponent {
       description: 'Dr. Shamantha S is an Ayurveda and lifestyle medicine doctor in Bangalore offering holistic care through diet, preventive wellness, and natural therapies.',
       departmentSlug: '/specialities/lifestyle-medicine-bangalore',
       expertiseIcons: [
-        'assets/list.png',
-        'assets/list.png',
-        'assets/list.png',
-        'assets/list.png',
-        'assets/list.png'
+        'assets/icons/LIFE-1.png',
+        'assets/icons/LIFE-2.png',
+        'assets/icons/LIFE-3.png',
+        'assets/icons/LIFE-4.png',
+        'assets/icons/LIFE-5.png'
       ],
+ faqs: [
+        {
+          question: 'Who is Dr. Shamantha S and what is her specialty at Rashtrotthana Hospital, Bangalore?',
+          answer: 'Dr. Shamantha S is a Lifestyle Medicine doctor at Rashtrotthana Hospital with 6 years of experience in managing lifestyle related health conditions. She focuses on preventive care using Ayurvedic principles, diet, and routine modifications.'
+        },
+        {
+          question: 'What conditions does Dr. Shamantha S treat at Rashtrotthana Hospital?',
+          answer: 'Dr. Shamantha S treats lifestyle diseases such as diabetes, hypertension, thyroid disorders, obesity, and stress related conditions. Her approach aims to correct the root causes through lifestyle and dietary changes.'
+        },
+        {
+          question: 'Dr. Shamantha S is a Lifestyle Medicine practitioner at Rashtrotthana Hospital, Bangalore?',
+          answer: 'with a BAMS qualification and 6 years of clinical experience. She focuses on managing lifestyle related health concerns through natural, preventive, and holistic approaches. Her treatment philosophy combines Ayurvedic principles, diet guidance, and daily routine corrections to help patients achieve sustainable health and long-term wellness.'
+        },
+      ],
+
       happyPatients: '2000+'
     },
     // {
@@ -2557,7 +2605,7 @@ export class NewDoctorPageComponent {
       department: 'Radiologist',
       about: 'Dr. Nagesh R is an accomplished radiology consultant in jaydev rashtrotthana Hospital, with over a decade of experience in the field. He holds a medical degree in MBBS, DMRD and DNB and he is going to be a Fellow of the Royal College of Radiologists (FRCR), a highly esteemed qualification in the field of radiology. He is an active member of the Indian Radiology and Imaging Association.Dr. Nagesh R is an expert in general radiology and has a special interest in cardiovascular imaging, as well as performing USG and CT-guided interventions. He is highly skilled in interpreting medical images and diagnosing a wide range of medical conditions, from the most common to the most complex.',
       speciality: 'RADIOLOGY',
-      // areasOfExpertise: ['Radiology'],
+      areasOfExpertise: ['Routine USG Neurosonogram', 'MSK ultrasounds', 'Paediatric hip scans', 'High Resolution Ultrasound', 'Transrectal and Trans vaginal ultrasound', 'All types of dopplers'],
 
       areasOfExpertise2: [
         {
@@ -3339,11 +3387,11 @@ export class NewDoctorPageComponent {
       ],
       departmentSlug: '/specialities/ayurvedic-treatment-bangalore',
       expertiseIcons: [
-        'assets/list.png',
-        'assets/list.png',
-        'assets/list.png',
-        'assets/list.png',
-        'assets/list.png'
+        'assets/icons/AY-1.png',
+        'assets/icons/AY-2.png',
+        'assets/icons/AY-3.png',
+        'assets/icons/AY-4.png',
+        'assets/icons/AY-5.png'
       ],
       happyPatients: '4000+'
 
@@ -3862,7 +3910,7 @@ export class NewDoctorPageComponent {
       desgination: 'Consultant - Radiologist',
       about: "",
       areasOfExpertise: ["Diagnostic Radiologist", "CT and MRI interpretation", "Ultrasound & Doppler imaging", "X-ray", "Neuroimaging (Brain & Spine)", "Mammography / Sonography / Ultrasound / MRI Or CT", "Musculoskeletal imaging", "Chest imaging", "Abdominal & pelvic imaging", "Emergency & trauma imaging", "Obstetric ultrasound (routine & growth scans)"],
-      expertise: "Years of Experience: 2+",
+      expertise: "2+",
       qualification: "MBBS , MD, DNB Radiology",
       time: "",
       date: "",
@@ -4032,7 +4080,7 @@ export class NewDoctorPageComponent {
       about: "",
       areasOfExpertise: ['Andrology', 'Endo-Urology', 'Reconstructive Urology', 'Uro-Oncology', 'Female Urology', 'Urinary Stone Endoscopic Surgeries', 'Laparoscopic and Reconstructive Urology', 'Renal Transplantation', 'Laser Surgery in Prostate / Urolithiasis / Urology'],
       expertise: "25+ ",
-      qualification: "MBBS, MS, M.Ch (Urology), MRCS (Edinburgh), Diploma in Laparoscopy (Strasbourg, France)",
+      qualification: `MBBS, MS, M.Ch (Urology), <br> MRCS (Edinburgh), Diploma in Laparoscopy (Strasbourg, France)`,
       time: "",
       date: "",
       alt: 'Dr. Mahesh M, senior urologist with 25+ years of experience at Rashtrotthana Hospital, Bengaluru',
@@ -4089,7 +4137,7 @@ export class NewDoctorPageComponent {
       about: "",
       areasOfExpertise: ['Pediatric Intensive Care (PICU)', 'Management of critically ill neonates and children', 'Pediatric infections and sepsis', 'Pediatric respiratory and cardiac emergencies', 'Neonatal and pediatric resuscitation', 'Care of very low birth weight (VLBW) infants'],
       expertise: "15",
-      qualification: "MBBS, MD (Pediatrics), Fellowship in Pediatric Intensive Care (PICU)",
+      qualification: `MBBS, MD (Pediatrics), <br> Fellowship in Pediatric Intensive Care (PICU)`,
       time: "",
       date: "",
       alt: 'Major Dr. Ashish S. Mallige, senior paediatrician and PICU specialist at Rashtrotthana Hospital, Bengaluru',
@@ -4590,6 +4638,27 @@ export class NewDoctorPageComponent {
     return (this.filteredDoctor?.areasOfExpertise?.length || 0) > 5;
   }
 
+  get expertiseGroups() {
+    if (this.filteredDoctor?.areasOfExpertise2?.length) {
+      return this.filteredDoctor.areasOfExpertise2;
+    }
+
+    // fallback for doctors with only string array
+    if (this.filteredDoctor?.areasOfExpertise?.length) {
+      return [
+        {
+          // title: 'Specialized Treatments',
+          items: this.filteredDoctor.areasOfExpertise
+        }
+      ];
+    }
+
+    return [];
+  }
+
+
+
+
   getDoctorIcon(index: number): string {
     return this.filteredDoctor?.expertiseIcons?.[index]
       || 'assets/icons/default.png';
@@ -4687,6 +4756,26 @@ export class NewDoctorPageComponent {
 
     window.open(url, '_blank');
   }
+
+  showFullQualification = false;
+
+  get qualificationLines(): string[] {
+    if (!this.filteredDoctor?.qualification) return [];
+    return this.filteredDoctor.qualification.split('<br>');
+  }
+
+  get showViewMore(): boolean {
+    return this.qualificationLines.length > 2;
+  }
+
+  get displayedQualification(): string {
+    if (this.showFullQualification) {
+      return this.filteredDoctor?.qualification || '';
+    }
+
+    return this.qualificationLines.slice(0, 2).join('<br>');
+  }
+
 
 
 

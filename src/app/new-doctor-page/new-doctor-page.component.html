@@ -17,7 +17,16 @@
                 <div class="content">
                     <div class="name-card">
                         <h1 class="docname marginLeft">{{filteredDoctor.name}}</h1>
-                        <div class="qualification marginLeft mat" [innerHTML]="filteredDoctor?.qualification"></div>
+                        <div class="qualification marginLeft mat" [innerHTML]="displayedQualification">
+                        </div>
+
+                        <div class="viewe-btn" *ngIf="showViewMore"
+                            (click)="showFullQualification = !showFullQualification">
+
+                            {{ showFullQualification ? 'View Less' : 'View More' }}
+
+                        </div>
+
                         <div class="department marginLeft mat">{{filteredDoctor.department}}</div>
                     </div>
                     <div class="experience marginLeft">Years of Experience: {{filteredDoctor.expertise}} Years</div>
@@ -108,31 +117,21 @@
                                     <div class="close-btn" (click)="showExpertisePopup = false">✕</div>
                                 </div>
 
-                                <!-- CONTENT BOX -->
+                                <!-- CONTENT -->
                                 <div class="popup-content">
 
-                                    <!-- COLUMN 1 -->
-                                    <div>
-                                        <div class="lists" *ngFor="let expert of expertiseColumn1">
-                                            <!-- <img src="../../assets/list.png" alt=""> -->
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
-                                                viewBox="0 0 32 32" fill="none">
-                                                <path
-                                                    d="M7.39668 11.7033C7.07391 11.2928 6.74386 10.8881 6.40668 10.4893C5.63335 9.57733 5.88735 8.06267 7.08135 8.006C7.16507 8.00203 7.24887 8.00002 7.33268 8C8.49535 8 9.33268 8.66667 9.33268 8.66667C9.33268 8.66667 10.222 9.33333 12.296 12C12.8015 12.6443 13.2718 13.3155 13.7047 14.0107C14.8553 14.0034 16.006 13.9998 17.1567 14H30.666V18H17.1567C15.8767 18 14.73 17.996 13.7047 17.9893C13.3647 18.544 12.9073 19.214 12.296 20C10.222 22.6667 9.33268 23.3333 9.33268 23.3333C9.33268 23.3333 8.49535 24 7.33268 24C7.24886 24 7.16505 23.9978 7.08135 23.9933C5.88802 23.9367 5.63335 22.4227 6.40668 21.5107C6.72842 21.1304 7.04358 20.7445 7.35201 20.3533C5.47535 22.7267 4.66602 23.3333 4.66602 23.3333C4.66602 23.3333 3.82868 24 2.66602 24C2.58219 24 2.49838 23.9978 2.41468 23.9933C1.22135 23.9367 0.966681 22.4227 1.74002 21.5107C2.15816 21.0158 2.56581 20.5121 2.96268 20C5.03601 17.3333 5.33268 16 5.33268 16C5.33268 16 5.03668 14.6667 2.96268 12C2.49601 11.4 2.08935 10.9013 1.74002 10.4893C0.966681 9.57733 1.22068 8.06267 2.41468 8.006C2.4984 8.00203 2.5822 8.00002 2.66602 8C3.82868 8 4.66602 8.66667 4.66602 8.66667C4.66602 8.66667 5.48868 9.28333 7.39668 11.7033Z"
-                                                    fill="#8FBFFA" />
-                                                <path
-                                                    d="M30.666 18H17.1567C15.8767 18 14.73 17.996 13.7047 17.9893C13.2718 18.6845 12.8015 19.3557 12.296 20C10.222 22.6667 9.33268 23.3333 9.33268 23.3333C9.33268 23.3333 8.49535 24 7.33268 24C7.24887 24 7.16507 23.998 7.08135 23.994C5.88735 23.9373 5.63335 22.4227 6.40668 21.5107C6.65779 21.2151 6.93868 20.8724 7.24935 20.4827L7.39668 20.2967M7.25001 20.4833C5.44601 22.748 4.66601 23.3333 4.66601 23.3333M4.66601 23.3333C4.66601 23.3333 3.82868 24 2.66601 24C2.5822 24 2.4984 23.998 2.41468 23.994C1.22068 23.9373 0.966681 22.4227 1.74001 21.5107C2.08935 21.0987 2.49601 20.6 2.96268 20C5.03668 17.3333 5.33268 16 5.33268 16C5.33268 16 5.03601 14.6667 2.96268 12C2.56581 11.4879 2.15816 10.9842 1.74001 10.4893C0.966681 9.57733 1.22135 8.06333 2.41468 8.00667C2.49838 8.00219 2.58219 7.99997 2.66601 8C3.82868 8 4.66601 8.66667 4.66601 8.66667M4.66601 23.3333C4.66601 23.3333 5.55535 22.6667 7.62935 20C8.0509 19.4622 8.44861 18.9061 8.82135 18.3333M30.666 14H17.1567C15.8767 14 14.73 14.004 13.7047 14.0107C13.2718 13.3155 12.8015 12.6443 12.296 12C10.222 9.33333 9.33268 8.66667 9.33268 8.66667C9.33268 8.66667 8.49535 8 7.33268 8C7.24886 7.99997 7.16505 8.00219 7.08135 8.00667C5.88802 8.06333 5.63335 9.57733 6.40668 10.4893C6.65068 10.7756 6.92246 11.1067 7.22201 11.4827M7.22201 11.4827L7.35201 11.6467M7.22201 11.4827C5.43935 9.246 4.66601 8.66667 4.66601 8.66667M4.66601 8.66667C4.66601 8.66667 5.55535 9.33333 7.62935 12C8.0509 12.5378 8.44861 13.0939 8.82135 13.6667"
-                                                    stroke="#2859C5" stroke-width="1.5" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                            </svg>
-                                            <div class="listItem">{{ expert }}</div>
-                                        </div>
+                                    <div *ngIf="expertiseGroups.length === 0">
+                                        No expertise available.
                                     </div>
 
-                                    <!-- COLUMN 2 -->
-                                    <div>
-                                        <div class="lists" *ngFor="let expert of expertiseColumn2">
-                                            <!-- <img src="../../assets/list.png" alt=""> -->
+                                    <div class="expertise-group" *ngFor="let group of expertiseGroups">
+
+                                        <div class="group-title">
+                                            {{ group.title }}
+                                        </div>
+
+                                        <div class="lists" *ngFor="let item of group.items">
+
                                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
                                                 viewBox="0 0 32 32" fill="none">
                                                 <path
@@ -143,15 +142,22 @@
                                                     stroke="#2859C5" stroke-width="1.5" stroke-linecap="round"
                                                     stroke-linejoin="round" />
                                             </svg>
-                                            <div class="listItem">{{ expert }}</div>
+
+                                            <div class="listItem">
+                                                {{ item }}
+                                            </div>
+
                                         </div>
+
                                     </div>
 
                                 </div>
 
+
                             </div>
 
                         </div>
+
                     </div>
 
                     <!-- form -->
