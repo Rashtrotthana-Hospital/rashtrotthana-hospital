@@ -736,6 +736,12 @@ select::-ms-expand {
     /* 133.333% */
 }
 
+.expertise-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 60px;
+}
+
 .viewe-btn {
     color: #FFF;
     font-weight: 600;
@@ -825,7 +831,7 @@ select::-ms-expand {
 
 .insurance-available {
     position: sticky;
-    top: 120px;
+    top: 250px;
     /* distance from top when fixed */
     align-self: start;
     height: fit-content;
