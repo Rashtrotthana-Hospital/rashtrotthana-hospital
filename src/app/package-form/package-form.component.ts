@@ -73,14 +73,14 @@ export class PackageFormComponent {
             console.error('Failed to send email:', error);
           }
         });
-        this.chatbotService.sendSMSMessageForService(smsPayload).subscribe({
-          next: (response) => {
-            console.log('SMS message sent successfully:', response);
-          },
-          error: (error) => {
-            console.error('Failed to send SMS message:', error);
-          }
-        });
+        // this.chatbotService.sendSMSMessageForService(smsPayload).subscribe({
+        //   next: (response) => {
+        //     console.log('SMS message sent successfully:', response);
+        //   },
+        //   error: (error) => {
+        //     console.error('Failed to send SMS message:', error);
+        //   }
+        // });
         this.closeForm.emit(); // Emit close form event
         this.router.navigate(['/thank-you'])
       },

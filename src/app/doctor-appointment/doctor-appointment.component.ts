@@ -695,15 +695,15 @@ getAvailableSlots(doctorId: number, date: string): Observable<any> {
                 console.error('Error sending WhatsApp message:', whatsappError);
               },
             });
-            this.http.post(`${this.apiUrl}/sms/send-sms`, appointmentDetails)
-            .subscribe({
-              next: (smsResponse) => {
-                console.log('SMS message sent:');
-              },
-              error: (whatsappError) => {
-                console.error('Error sending WhatsApp message:', whatsappError);
-              },
-            });
+            // this.http.post(`${this.apiUrl}/sms/send-sms`, appointmentDetails)
+            // .subscribe({
+            //   next: (smsResponse) => {
+            //     console.log('SMS message sent:');
+            //   },
+            //   error: (whatsappError) => {
+            //     console.error('Error sending WhatsApp message:', whatsappError);
+            //   },
+            // });
             
             this.http.post(`${this.apiUrl}/email/send-email`, emailRequest)
               .subscribe({

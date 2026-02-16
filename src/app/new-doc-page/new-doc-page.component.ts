@@ -3862,6 +3862,7 @@ export class NewDocPageComponent {
 
       const emailRequest = {
         to: ['patientservices@rashtrotthanahospital.com', 'frontoffice@rashtrotthanahospital.com'],
+        // to: 'keerthanasaminathan0805@gmail.com',
         status: 'frontoffice',
         appointmentDetails: emailParams,
       };
@@ -3924,15 +3925,15 @@ export class NewDocPageComponent {
             console.error('Error sending WhatsApp message:', whatsappError);
           },
         });
-      this.http.post(`${this.apiUrl}/sms/send-sms`, appointmentDetails)
-        .subscribe({
-          next: (smsResponse) => {
-            console.log('SMS message sent:');
-          },
-          error: (whatsappError) => {
-            console.error('Error sending WhatsApp message:', whatsappError);
-          },
-        });
+      // this.http.post(`${this.apiUrl}/sms/send-sms`, appointmentDetails)
+      //   .subscribe({
+      //     next: (smsResponse) => {
+      //       console.log('SMS message sent:');
+      //     },
+      //     error: (whatsappError) => {
+      //       console.error('Error sending WhatsApp message:', whatsappError);
+      //     },
+      //   });
 
       this.http.post(`${this.apiUrl}/email/send-email`, emailRequest)
         .subscribe({
