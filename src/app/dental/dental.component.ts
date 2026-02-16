@@ -15,6 +15,14 @@ export class DentalComponent {
   sanitizedContent1: SafeHtml = '';
   specialities: any[] = [];
   ngOnInit(): void {
+
+
+    this.titleService.setTitle("Best Dental Care in Bangalore | Rashtrotthana Hospital");
+    this.metaService.updateTag({
+      name: 'description',
+      content: 'Rashtrotthana Hospital’s Dental Department in Bangalore provides comprehensive dental treatments with modern technology and experienced dentists.'
+    });
+
     Doctors: [
       {
         doctor_image: 'Dr. H N Shyla.png',

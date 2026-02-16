@@ -15,9 +15,9 @@ export class CardiacComponent {
   sanitizedContent1: SafeHtml = '';
   specialities:any[] = [];
   ngOnInit(): void {
-    this.titleService.setTitle("Best Heart | Cardiology Hospital in bangalore India ");  
+    this.titleService.setTitle("Cardiology & Heart Care in Bangalore | Rashtrotthana Hospital ");  
 
-  this.metaService.updateTag({ name: 'description', content: 'Discover world-class cardiac care at Rashtrotthana Hospital, the best heart hospital in India. Offering advanced treatments and expert cardiologists for your heart health.' });
+  this.metaService.updateTag({ name: 'description', content: 'Comprehensive cardiology care in Bangalore with expert heart specialists offering diagnosis, treatment, and long-term management at Rashtrotthana Hospital.' });
 
   this.metaService.updateTag({ name: 'keywords', content: 'cardiology, heart hospital,cardiology hospital near me,heart hospital near me, cardiologists, heart attack, heart failure, heart pain, heart valve disease, congenital heart disease, coronary artery disease, heart rhythm disorders, disorders of heart failure, valvular disease' });
 

@@ -18,12 +18,12 @@ export class ENTComponent {
   specialities: any[] = [];
   ngOnInit(): void {
     this.titleService.setTitle(
-      'ENT Specialist In Bangalore | ENT Specialist In R R Nagar - Rashtrotthana Hospital'
+      'Best ENT Hospital in Bangalore| Rashtrotthana'
     );
     this.metaService.updateTag({
       name: 'description',
       content:
-        'Looking for the best ENT Specialist In R R Nagar or Bangalore? Then look no fur and visit us today. We are the best ENT hospital.',
+        'Rashtrotthana Hospital is a trusted ENT hospital in Bangalore offering expert treatment for ear, nose, and throat disorders with advanced diagnostic care.',
     });
     this.metaService.updateTag({
       name: 'keywords',

@@ -15,11 +15,11 @@ export class GastrosciencesComponent {
   sanitizedContent1: SafeHtml = '';
   specialities:any[] = [];  
   ngOnInit(): void {
-    this.titleService.setTitle("Best Gastroenterology Hospital in bangalore India | Best liver Hospital in India");  
+    this.titleService.setTitle("Best Gastroenterology Hospital in Bangalore | Rashtrotthana ");  
 
-  this.metaService.updateTag({ name: 'description', content: 'Rashtrotthana Hospital is the best Gastro hospital in India with experienced gastroenterologists providing digestive and stomach related problems.' });
+    this.metaService.updateTag({ name: 'description', content: 'Looking for the best gastroenterology hospital in Bangalore? Rashtrotthana Hospital offers expert care for digestive and liver disorders.' });
 
-  this.metaService.updateTag({ name: 'keywords', content: 'Gastroenterology stomach,gastroenterology hospital near me, stomach pain, digestion, digestive care, digestive system, gut, gut health, gut care' });
+    this.metaService.updateTag({ name: 'keywords', content: 'Gastroenterology stomach,gastroenterology hospital near me, stomach pain, digestion, digestive care, digestive system, gut, gut health, gut care' });
 
   }
 
