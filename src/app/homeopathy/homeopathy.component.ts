@@ -25,7 +25,7 @@ export class HomeopathyComponent {
       name : "Dr. Anusha Mutalik Desai",
       section : "BHMS, MD(HOM)",
       designation : "HOMEOPATHY",
-      experience : "10+",
+      experience : "12+",
       alt : 'Dr. Anusha Mutalik Desai | Best Homeopathy Doctor in Bangalore | Rashtrotthana Hospital'
     }
   ]

@@ -24,7 +24,7 @@ export class GeneralMedicineComponent {
   doctors:any = [
     {
       name : 'Dr. H. M. Krishnamurthy',
-      experience : '36',
+      experience : '37+',
       alttext : 'Dr. H. M. Krishnamurthy | Best General Physicians in RR Nagar Bangalore | Rashtrotthana Hospital',
       image : '../../assets/Dr-H-M-Krishnamurthy.png'
     },
@@ -42,19 +42,19 @@ export class GeneralMedicineComponent {
     // },
     {
       name : 'Dr. C Rajendran',
-      experience : '27',
+      experience : '29+',
       alttext : 'Dr. C Rajendran | Best General Physicians in RR Nagar Bangalore | Rashtrotthana Hospital',
       image : '../../assets/Dr-Rajendran.png',
     },
     {
       name : 'Dr. Shruti Suresh',
-      experience : '13',
+      experience : '20+',
       alttext : 'Dr. Shruti Suresh | Best General Physicians in RR Nagar Bangalore | Rashtrotthana Hospital',
       image : '../../assets/dr-shruti-suresh-doc-page.jpg'
     },
     {
       name : 'Dr. Harshith K. S',
-      experience : '18',
+      experience : '20+',
       alttext : 'Dr. Harshith K. S | Best General Physicians in RR Nagar Bangalore | Rashtrotthana Hospital',
       image : '../../assets/Dr-Harshith-K-S.png'
     },

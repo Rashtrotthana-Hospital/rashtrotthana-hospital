@@ -18,7 +18,7 @@ export class AyurvedaThyroidComponent {
       {
         doctor_image:'../../assets/Dr-Venkatesh-H-S.jpg',
         doctor_name:'Dr. Venkatesh H. S',
-        experience : "25+",
+        experience : "26+",
         docalt:'Dr. Venkatesh H. S | Best Ayurveda Endocrinologist in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore'
       },
   ]

@@ -150,6 +150,7 @@ import { TieUpPageComponent } from './tie-up-page/tie-up-page.component';
 import { ApplicationFormComponent } from './application-form/application-form.component';
 import { NgHcaptchaModule } from 'ng-hcaptcha';
 import { CallBackFormComponent } from './call-back-form/call-back-form.component';
+import { NewDoctorPageComponent } from './new-doctor-page/new-doctor-page.component';
 
 @NgModule({
   declarations: [
@@ -270,6 +271,7 @@ import { CallBackFormComponent } from './call-back-form/call-back-form.component
           TieUpPageComponent,
           ApplicationFormComponent,
           CallBackFormComponent,
+          NewDoctorPageComponent,
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   imports: [

@@ -81,6 +81,7 @@ import { SurgeryTreatmentCardComponent } from './surgery-treatment-card/surgery-
 import { TieUpPageComponent } from './tie-up-page/tie-up-page.component';
 import { ApplicationFormComponent } from './application-form/application-form.component';
 import { CallBackFormComponent } from './call-back-form/call-back-form.component';
+import { NewDoctorPageComponent } from './new-doctor-page/new-doctor-page.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -183,6 +184,7 @@ const routes: Routes = [
   { path: 'tie-up-page', component: TieUpPageComponent },
   { path: 'application-form', component: ApplicationFormComponent },
   { path: 'callback-form', component: CallBackFormComponent },
+  // { path: 'new-doc-page', component: NewDoctorPageComponent },
 
 
 
@@ -193,7 +195,8 @@ const routes: Routes = [
   { path: 'annual-report', component: AnnualReportComponent },
   {
     path: 'doctor/:slug',
-    component: NewDocPageComponent
+    // component: NewDocPageComponent
+    component: NewDoctorPageComponent
   },
   { path: 'samraksha', component: SamrakshaComponent },
   { path: 'terms-and-conditions', component: TermsAndConditionsComponent },

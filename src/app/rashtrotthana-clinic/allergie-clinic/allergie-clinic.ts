@@ -22,7 +22,7 @@ export class AllergieClinic {
     name: 'Dr. Sandhya S. Patil',
     degree: `MBBS, DLO, DNB (ENT),
      AASC Consultant – ENT and Head & Neck Surgery`,
-    experience: '10+ Years',
+    experience: '12+ Years',
     timings: 'Every Friday, 3 PM – 4 PM',
     speciality: 'ENT & Allergy Care',
     image: 'assets/Doc-Inv-Page/dr-sandhya-s-sq.png',

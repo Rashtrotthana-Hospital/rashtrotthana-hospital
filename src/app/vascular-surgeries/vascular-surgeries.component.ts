@@ -28,7 +28,7 @@ export class VascularSurgeriesComponent {
     {
       doctor_image: '../../assets/Dr-Vivekanad.png',
       doctor_name: 'Dr. Vivekanand',
-      experience: "25+",
+      experience: "26+",
       docalt: 'Dr. Vivekanand | Best Vascular Surgeon in Bangalore | Rashtrotthana Hospital'
     },
   ]

@@ -41,7 +41,7 @@ export class PaediatricsComponent {
     {
       doctor_image: '../../assets/Dr-Dhanyatha-Muninarayan.png',
       doctor_name: 'Dr. Dhanyatha Muninarayan',
-      experience: "7",
+      experience: "11+",
       docalt: 'Dr. Dhanyatha Muninarayan | Best Pediatrician in Bangalore | Rashtrotthana Hospital'
     },
     {

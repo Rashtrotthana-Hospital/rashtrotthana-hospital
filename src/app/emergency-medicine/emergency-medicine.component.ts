@@ -42,10 +42,10 @@ export class EmergencyMedicineComponent {
         alt: 'Best Emergency Medicine Treatment in Bengaluru',
         Doctors: [
           {
-            doctor_image: '../../assets/Dr-Anand-Shankar.png',
-            doctor_name: 'Col (Dr) Anand Shankar K',
-            experience: '31',
-          },
+            doctor_image:'../../assets/Dr-Anand-Shankar.png',
+            doctor_name:'Col (Dr) Anand Shankar K',
+            experience : '32+'
+          }
           // {
           //   doctor_image:'Dr.Geethanjali K G.png',
           //   doctor_name:'Dr. Geethanjali K G'

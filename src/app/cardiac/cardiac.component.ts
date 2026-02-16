@@ -29,7 +29,7 @@ export class CardiacComponent {
     {
       id: 1,
       name: 'Dr. Suhas Raj S',
-      experience: '8+ Years',
+      experience: '10+ Years',
       image: '../../assets/Dr-Suhas-Raj-S.png',
       slug: '/doctor/dr-suhas-raj-s',
       docalt : 'Dr. Suhas Raj S | Best Cardiologist in Bangalore | Rashtrotthana Hospital'

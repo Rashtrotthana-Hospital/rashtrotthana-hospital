@@ -24,19 +24,19 @@ export class ObstetricsGynaecologyComponent {
   doctors = [
     {
       doctor_name: "Dr. Latha Venkataram",
-      experience: "32",
+      experience: "35+",
       doctor_image: "../../assets/Dr-Latha-Venkataram.png",
       docalt: "Dr. Latha Venkataram | Top Obstetrics & Gynaecologist in banaglore | Rashtrotthana Hospital"
     },
     {
       doctor_name: "Dr. Prakruthi",
-      experience: "16",
+      experience: "19+",
       doctor_image: "../../assets/Dr-Prakruthi.png",
       docalt: "Dr. Prakruthi | Best Gynaec Doctor in Bangalore | Rashtrotthana Hospital"
     },
     {
       doctor_name: "Dr. Neelam",
-      experience: "9",
+      experience: "12+",
       doctor_image: "../../assets/Dr-Neelam-Saraswat.png",
       docalt: "Dr. Neelam Saraswat | Best Gynaecology Consultant in Bangalore | Rashtrotthana Hospital"
     },
@@ -44,13 +44,13 @@ export class ObstetricsGynaecologyComponent {
   doctors2 = [
     {
       doctor_name: "Dr. Vinutha Udupa",
-      experience: "7",
+      experience: "10+",
       doctor_image: "../../assets/Dr-Vinita-Udupa.png",
       docalt: "Dr. Vinita Udupa | Best OBG in Bangalore | Rashtrotthana Hospital"
     },
     {
       doctor_name: "Dr. Ashwitha Gundmi",
-      experience: "7",
+      experience: "9+",
       doctor_image: "../../assets/Dr-Ashwitha-Gundmi.png",
       docalt: "Dr. Ashwitha Gundmi | Best Obstetrics & Gynaecologist in Bangalore | Rashtrotthana Hospital"
     },

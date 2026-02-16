@@ -45,7 +45,7 @@ export class AclReconstructionComponent {
       // designation: 'Orthopaedics',
       alt: '',
       slug: '/doctor/dr-mahesh-kulkarni',
-      experience: '15+'
+      experience: '16+'
     },
 
     {
@@ -54,7 +54,7 @@ export class AclReconstructionComponent {
       // designation: 'Orthopaedics',
       alt: '',
       slug: '/doctor/dr-sujayendra-d-m',
-      experience: '11+'
+      experience: '13+'
     },
     {
       image: '../../assets/Dr-Nikhil-Hegde.png',
@@ -62,7 +62,7 @@ export class AclReconstructionComponent {
       // designation: 'Orthopaedics',
       alt: '',
       slug: '/doctor/dr-nikhil-hegde',
-      experience: '6+'
+      experience: '8+'
     },
     {
       image: '../../assets/dr-sandeep-k-m-doc-page.png',
@@ -70,7 +70,7 @@ export class AclReconstructionComponent {
       // designation: 'Orthopaedics',
       alt: '',
       slug: '/doctor/dr-sandeep-k-m',
-      experience: '11+'
+      experience: '13+'
     },
   ];
 

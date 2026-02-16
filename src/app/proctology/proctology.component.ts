@@ -53,7 +53,7 @@ export class ProctologyComponent {
       // designation: 'Orthopaedics',
       alt: 'Dr. Atmaram D. C | Best laparoscopic Surgeon in Bangalore | Rashtrotthana Hospital',
       slug: '/doctor/dr-atmaram-d-c',
-      experience: '19+'
+      experience: '20+'
     },
     {
       image: '../../assets/Dr-Nishanth-Lakshmikantha.png',
@@ -61,7 +61,7 @@ export class ProctologyComponent {
       // designation: 'Orthopaedics',
       alt: 'Dr. Nishanth Lakshmikantha | Best General & GI Surgeon in Bangalore | Rashtrotthana Hospital',
       slug: '/doctor/dr-nishanth-lakshmikantha',
-      experience: '9+'
+      experience: '10+'
     },
   ];
 

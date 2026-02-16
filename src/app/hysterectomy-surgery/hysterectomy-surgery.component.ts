@@ -48,7 +48,7 @@ export class HysterectomySurgeryComponent {
       // designation: 'Orthopaedics',
       alt: 'Dr. Latha Venkataram | Top Obstetrics & Gynaecologist in banaglore | Rashtrotthana Hospital',
       slug: '/doctor/dr-latha-venkataram',
-      experience: '32+'
+      experience: '35+'
     },
     {
       image: '../../assets/Dr-Prakruthi.png',
@@ -56,7 +56,7 @@ export class HysterectomySurgeryComponent {
       // designation: 'Orthopaedics',
       alt: 'Dr. Prakruthi | Best Gynaec Doctor in Bangalore | Rashtrotthana Hospital',
       slug: '/doctor/dr-prakruthi',
-      experience: '16+'
+      experience: '19+'
     },
     {
       image: '../../assets/Dr-Neelam-Saraswat.png',
@@ -64,7 +64,7 @@ export class HysterectomySurgeryComponent {
       // designation: 'Orthopaedics',
       alt: 'Dr. Neelam Saraswat | Best Gynaecology Consultant in Bangalore | Rashtrotthana Hospital',
       slug: '/doctor/dr-neelam-saraswat',
-      experience: '9+'
+      experience: '12+'
     },
     {
       image: '../../assets/Dr-Vinita-Udupa.png',
@@ -72,7 +72,7 @@ export class HysterectomySurgeryComponent {
       // designation: 'Orthopaedics',
       alt: 'Dr. Vinita Udupa | Best OBG in Bangalore | Rashtrotthana Hospital',
       slug: '/doctor/dr-vinita-udupa',
-      experience: '7+'
+      experience: '10+'
     },
     {
       image: '../../assets/Dr-Ashwitha-Gundmi.png',
@@ -80,7 +80,7 @@ export class HysterectomySurgeryComponent {
       // designation: 'Orthopaedics',
       alt: 'Dr. Ashwitha Gundmi | Best Obstetrics & Gynaecologist in Bangalore | Rashtrotthana Hospital',
       slug: '/doctor/dr-ashwitha-gundmi',
-      experience: '7+'
+      experience: '9+'
     },
 
   ];

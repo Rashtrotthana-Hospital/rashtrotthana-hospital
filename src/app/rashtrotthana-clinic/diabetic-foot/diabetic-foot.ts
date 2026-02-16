@@ -22,7 +22,7 @@ export class DiabeticFoot {
     name: 'Dr. Sameer M. Halageri',
     degree: `MBBS, MS, MCH,
      Plastic and Reconstructive Surgery`,
-    experience: '8+ Years',
+    experience: '12+ Years',
     timings: 'Every Tuesday & Saturday, | 9:00 AM – 11:00 AM',
     speciality: 'Plastic and Reconstructive Surgery',
     image: 'assets/Doc-Inv-Page/Dr-Sameer-M-Halageri-dq.png',
