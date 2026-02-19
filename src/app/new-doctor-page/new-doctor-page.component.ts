@@ -2907,7 +2907,7 @@ export class NewDoctorPageComponent {
     },
     {
       name: "Dr. Kalyani Dilip Karkare",
-      image: "assets/Doc-Inv-Page/Dr-Kalyani-Karkare.png",
+      image: "assets/Doc-Inv-Page/Dr-Kalyani-Dilip-Karkare.png",
       department: 'Neuro Science',
       speciality: 'NEUROSCIENCES',
       about: "Dr. Kalyani Karkare, a Gold Medalist in DM Neurology from NIMHANS, Bangalore (2010), is an expert in epilepsy and EEG. After gaining experience at Medanta The Medicity Hospital, she pursued a fellowship in EEG at SCTIMST, Thiruvananthapuram (2013). From 2015 to 2018, she worked with the epilepsy surgery team at Nicklaus Children's Hospital, Miami, USA, specializing in advanced techniques like subdural and stereoEEG. She has also set up epilepsy labs in leading hospitals. In addition to epilepsy, she is proficient in acute stroke management, including IV thrombolysis and mechanical thrombectomy, and she emphasizes comprehensive stroke care with rehabilitation. With numerous publications, academic presentations and teaching experience, she combines deep knowledge, empathy and attentive care for her patients.",
