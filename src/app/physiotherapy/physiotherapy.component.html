@@ -1,4 +1,4 @@
-<ng-container *ngFor="let facility of facilities">
+<!-- <ng-container *ngFor="let facility of facilities">
     <app-features-content [image_1]="facility.image_1" [image_2]="facility.image_2"
         [main_heading]="facility.main_heading" [heading]="facility.heading"
         [content]="facility.content"
@@ -7,4 +7,263 @@
         [alt2]="facility.alt2"
         [alt3]="facility.alt3"
         ></app-features-content>
-</ng-container>
+</ng-container> -->
+
+<div class="Physiotherapy">
+    <div class="banner-part">
+        <img src="./assets/physiotherapy/physiotherapy - banner.jpg 1.png" alt="" class="banner">
+        <img src="./assets/physiotherapy/physiotherapy-banner-mobile-size.jpg 1.png" alt="" class="mob-banner">
+    </div>
+
+    <div class="video-part">
+        <div class="video">
+            <div class="gradient-ring">
+                <div class="white-ring">
+                    <video src="./assets/physiotherapy/physi0-video.mp4" autoplay loop muted></video>
+                </div>
+            </div>
+            <img src="./assets/physiotherapy/vido-img.png" alt="">
+        </div>
+
+        <div class="video-content">
+            <div class="video-content-heading">Physiotherapy Services at Rashtrotthana Hospital</div>
+            <div class="video-content-para">At Rashtrotthana Hospital, our Physiotherapy Department focuses on restoring
+                movement, reducing pain, and helping patients regain functional independence across all age groups. Our
+                experienced physiotherapists work closely with doctors to deliver evidence-based rehabilitation programs
+                for orthopedic, neurological, cardiopulmonary, pediatric, geriatric, and sports-related conditions. We
+                offer both in-hospital physiotherapy and home physiotherapy services within a 5 km radius of the
+                hospital, ensuring continuity of care even in the comfort of your home.</div>
+        </div>
+    </div>
+
+    <div class="care-part">
+        <div class="care-heading">Physiotherapy Care Under One Roof</div>
+        <div class="page-wrapper">
+            <div class="cards-grid">
+                <div class="card-wrapper" *ngFor="let card of cards" [class.flipped]="flippedCardId === card.id">
+                    <!-- FRONT -->
+                    <div class="card-face card-front" [style.background]="card.gradient">
+                        <h2 class="card-title">{{ card.title }}</h2>
+                        <div class="card-image-wrap">
+                            <img [src]="card.image" [alt]="card.title" class="card-img" />
+                        </div>
+                        <button class="know-more-btn" (click)="flipCard(card.id)">
+                            Know More
+                            <span class="arrow-icon">&#8599;</span>
+                        </button>
+                    </div>
+
+                    <!-- BACK -->
+                    <div class="card-face card-back" [style.background]="card.gradient">
+                        <div class="back-content">
+                            <p class="back-intro">{{ card.description }}</p>
+                            <p class="conditions-title"><strong>{{card.heading}}</strong></p>
+                            <ul class="conditions-list">
+                                <li *ngFor="let condition of card.conditions">{{ condition }}</li>
+                            </ul>
+                            <p class="therapy-note">{{ card.therapyNote }}</p>
+                        </div>
+                        <button class="know-more-btn back-close-btn" (click)="flipCard(card.id)">
+                            Close
+                            <span class="arrow-icon">&#x2715;</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="why-part">
+        <div class="why-heading">Why Home Physiotherapy?</div>
+        <div class="why-para">Physiotherapy plays a crucial role in restoring movement, reducing pain, and improving
+            overall function. For many patients, travelling to the hospital regularly may be difficult or medically
+            inadvisable. Home physiotherapy ensures that rehabilitation continues safely without interruption.</div>
+        <div class="why-card">
+            <div class="why-card-heading">Home physiotherapy is recommended for patients who:</div>
+            <div class="why-card-list">
+                <div class="list"><img src="/assets/physiotherapy/Icon.svg" alt=""> Have difficulty walking or
+                    travelling </div>
+
+                <div class="list"><img src="/assets/physiotherapy/Icon.svg" alt=""> Are recovering after surgery or
+                    hospital discharge</div>
+
+                <div class="list"><img src="/assets/physiotherapy/Icon.svg" alt=""> Require neurological or long-term
+                    rehabilitation </div>
+
+                <div class="list"><img src="/assets/physiotherapy/Icon.svg" alt=""> Are elderly and at risk of falls
+                </div>
+
+                <div class="list"><img src="/assets/physiotherapy/Icon.svg" alt=""><span> Have chronic pain or complex
+                        musculoskeletal conditions</span></div>
+            </div>
+        </div>
+        <div class="why-para">Physiotherapy plays a crucial role in restoring movement, reducing pain, and improving
+            overall function. For many patients, travelling to the hospital regularly may be difficult or medically
+            inadvisable. Home physiotherapy ensures that rehabilitation continues safely without interruption.</div>
+    </div>
+
+    <div class="service-part">
+        <div class="service-heading">Home Physiotherapy Service Categories & Charges</div>
+        <div class="service-para">Home physiotherapy services are categorised based on the type and complexity of the
+            condition, as outlined below.</div>
+        <div class="service-cards">
+            <div class="service-card" *ngFor="let service of services; let i=index" [class.expanded]="service.expanded">
+
+                <div class="icon-img">
+                    <img class="icon" [src]="service.icon" alt="icon">
+                </div>
+
+
+                <div class="summary-heading mt">{{service.title}}</div>
+                <div class="summary-para mt">{{service.desc}}</div>
+
+
+                <div class="price summary-price mt" *ngIf="!service.expanded">
+                    ₹{{service.price}}
+                    <span>/per visit*</span>
+                </div>
+
+
+                <div class="detail-wrapper" [class.show]="service.expanded">
+
+                    <div class="detail-heading">{{service.detailTitle}}</div>
+                    <!-- <div class="detail-para">{{service.detailDesc}}</div> -->
+
+                    <div *ngFor="let item of service.points" class="points"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <g clip-path="url(#clip0_20408_2151)">
+                                <path
+                                    d="M7.9987 14.6663C11.6806 14.6663 14.6654 11.6816 14.6654 7.99967C14.6654 4.31778 11.6806 1.33301 7.9987 1.33301C4.3168 1.33301 1.33203 4.31778 1.33203 7.99967C1.33203 11.6816 4.3168 14.6663 7.9987 14.6663Z"
+                                    stroke="#FFDF20" stroke-width="1.33333" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M6 8.00033L7.33333 9.33366L10 6.66699" stroke="#FFDF20" stroke-width="1.33333"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_20408_2151">
+                                    <rect width="16" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg> {{item}}</div>
+
+
+                    <div class="price detail-price">
+                        ₹{{service.price}}
+                        <span>/per visit*</span>
+                    </div>
+
+                    <button class="btn white" (click)="openCallback(service)">
+                        Book Appointment
+                    </button>
+                </div>
+
+
+                <button class="btn" *ngIf="!service.expanded" (click)="toggleService(i)">
+                    Know More
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="expert">
+        <div class="expert-img">
+            <img src="./assets/physiotherapy/JMRH-new-logo.png" alt="">
+        </div>
+        <div class="expert-content">
+            <div class="expert-heading">Expert Physiotherapy at Your Doorstep!</div>
+            <div class="expert-para">Our home physiotherapy services ensure continuity of care for patients who are
+                unable to visit the hospital regularly due to pain, mobility restrictions, or medical advice.</div>
+
+            <div class="expert-cards">
+                <div class="expert-card-heading">Service Availability</div>
+                <div class="expert-card">
+                    <div class="exp-card" *ngFor="let exp of expert">
+                        <div class="img">
+                            <img [src]="exp.img" alt="">
+                        </div>
+                        <div class="">
+                            <div class="heading">{{exp.expertheading}}</div>
+                            <div class="para">{{exp.expertpara}}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="how-part">
+        <div class="how-heading">How Home Physiotherapy Sessions Are Conducted</div>
+        <div class="how-para">Each home physiotherapy session follows a structured and professional approach:</div>
+
+        <div class="how-content">
+            <div class="flex1">
+                <div class="flex" *ngFor="let how of howPart">
+                    <div class="bg-color"></div>
+                    <div class="how-con">
+                        <img [src]="how.img" alt="">
+                        <div class="how-para">{{how.para}}</div>
+                    </div>
+                </div>
+            </div>
+            <img src="./assets/physiotherapy/how-img.png" alt="" class="how-img">
+        </div>
+    </div>
+
+    <div class="ready-part">
+        <div class="ready-content">
+            <div class="ready-heading">Ready to Start Your Recovery Journey?</div>
+            <div class="ready-para">Book your home physiotherapy session today and experience professional care in the
+                comfort of your home.</div>
+            <div class="ready-btns">
+                <div class="btn-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M8 2V6" stroke="#009689" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M16 2V6" stroke="#009689" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path
+                            d="M19 4H5C3.89543 4 3 4.89543 3 6V20C3 21.1046 3.89543 22 5 22H19C20.1046 22 21 21.1046 21 20V6C21 4.89543 20.1046 4 19 4Z"
+                            stroke="#009689" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M3 10H21" stroke="#009689" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                    <div class="btn-name" (click)="openGeneralCallback()">Book Appointment Now</div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M5 12H19" stroke="#009689" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M12 5L19 12L12 19" stroke="#009689" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <a href="tel:08069239999">
+                    <div class="btn-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M22.0014 16.9201V19.9201C22.0025 20.1986 21.9455 20.4743 21.8339 20.7294C21.7223 20.9846 21.5587 21.2137 21.3535 21.402C21.1483 21.5902 20.906 21.7336 20.6421 21.8228C20.3783 21.912 20.0988 21.9452 19.8214 21.9201C16.7442 21.5857 13.7884 20.5342 11.1914 18.8501C8.77523 17.3148 6.72673 15.2663 5.1914 12.8501C3.50138 10.2413 2.44964 7.27109 2.1214 4.1801C2.09641 3.90356 2.12927 3.62486 2.2179 3.36172C2.30652 3.09859 2.44897 2.85679 2.63616 2.65172C2.82336 2.44665 3.0512 2.28281 3.30519 2.17062C3.55917 2.05843 3.83374 2.00036 4.1114 2.0001H7.1114C7.5967 1.99532 8.06719 2.16718 8.43516 2.48363C8.80313 2.80008 9.04348 3.23954 9.1114 3.7201C9.23802 4.68016 9.47285 5.62282 9.8114 6.5301C9.94594 6.88802 9.97506 7.27701 9.8953 7.65098C9.81555 8.02494 9.63026 8.36821 9.3614 8.6401L8.0914 9.9101C9.51495 12.4136 11.5879 14.4865 14.0914 15.9101L15.3614 14.6401C15.6333 14.3712 15.9766 14.1859 16.3505 14.1062C16.7245 14.0264 17.1135 14.0556 17.4714 14.1901C18.3787 14.5286 19.3213 14.7635 20.2814 14.8901C20.7672 14.9586 21.2108 15.2033 21.5279 15.5776C21.8451 15.9519 22.0136 16.4297 22.0014 16.9201Z"
+                                stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <div class="btn-name">080 6923 9999</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- POPUP OVERLAY -->
+    <div class="popup-overlay" *ngIf="showPopup" (click)="closePopup()">
+
+        <div class="popup-content" (click)="$event.stopPropagation()">
+
+            <button class="close-btn" (click)="closePopup()">✖</button>
+
+            <div class="call-back-form">
+                <app-call-back-form [pageName]="selectedPageName">
+                </app-call-back-form>
+            </div>
+
+        </div>
+    </div>
+
+</div>

@@ -267,12 +267,14 @@ export class CallBackFormComponent {
 
     const emailRequest = {
       // to: ['patientservices@rashtrotthanahospital.com', 'frontoffice@rashtrotthanahospital.com'],
-      to: ['patientservices@rashtrotthanahospital.com'],
+      // to: ['patientservices@rashtrotthanahospital.com'],
+      to: ['govindarajkg222@gmail.com'],
       // to:['keerthanasaminathan0805@gmail.com'],
       status: 'Call Back Request',
       appointmentDetails: appointmentDetails,
       // whatsappNumber: ['919164840378']
       // whatsappNumber: ['916382348092']
+      whatsappNumber: ['916382112241']
     };
 
     this.http.post(`${this.apiUrl}/api/email/send-email`, emailRequest)
