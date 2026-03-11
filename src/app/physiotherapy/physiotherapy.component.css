@@ -393,9 +393,12 @@
     flex-shrink: 0;
 }
 
-.know-more-btn:hover {
+.know-more-btn:hover   {
     background: #2d2d50;
-    transform: scale(1.04);
+    transform: scale(1.04)
+}
+.know-more-btn:hover .arrow-icon  {
+    transform: rotate(45deg);
 }
 
 .arrow-icon {
@@ -1119,6 +1122,10 @@ a {
     .ready-para {
         width: 100%;
         font-size: 18px;
+    }
+
+    .expert-img img{
+        opacity: 0.5;
     }
 
     .btn-1,
