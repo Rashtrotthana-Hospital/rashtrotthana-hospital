@@ -40,6 +40,8 @@
 .doctor_image img {
     width: 417px;
     height: 438px;
+    position: relative;
+    top: 20px;
 }
 
 
@@ -141,6 +143,7 @@
 .flex2 {
     display: flex;
     align-items: center;
+    padding: 20px;
 }
 
 .language-title {
@@ -190,6 +193,7 @@
     flex-direction: column;
     gap: 30px;
     margin-left: 30px;
+    /* padding: 20px; */
 }
 
 .mat {
@@ -737,9 +741,9 @@ select::-ms-expand {
 }
 
 .expertise-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 60px;
 }
 
 .viewe-btn {
