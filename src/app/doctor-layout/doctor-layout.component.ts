@@ -1257,6 +1257,39 @@ export class DoctorLayoutComponent {
       description:'Dr. Madhurya P. K is a Consultant Dermatologist with 7+ years of experience, offering advanced care for skin, hair and nail conditions at Rashtrotthana Hospital, Bengaluru.'
     },
 
+    {
+      name: "Dr. Nirupama Annadanam",
+      image: "/assets/dr-nirupama-annadanam.png", 
+      department: 'OBSTETRICS & GYNECOLOGY',
+      desgination: 'Consultant OBSTETRICS & GYNECOLOGY',
+      speciality: 'OBSTETRICS & GYNECOLOGY',
+      about: "",
+      areasOfExpertise: ['High-Risk Obstetrics','Respectful Maternal Care','Obstetric Medicine','Clinical Research','Medical Teaching and Training'],
+      expertise: "Years Of Experience: 5+",
+      qualification: "MBBS, MS, DNB (Obstetrics & Gynaecology-Gold Medalist),Post-Doctoral Fellowship in Obstetric Medicine from Fernandez Hospital.",
+      time: "",
+      date: "",
+      alt: '',
+      title:'Dr. Nirupama Annadanam | Consultant Obstetrician & Gynaecologist in Bengaluru',
+      description:''
+    },
+    {
+      name: "Dr. Reshma L",
+      image: "/assets/Dr-Reshma-L.png", 
+      department: 'Gynaecologist',
+      desgination: 'Consultant Gynaecologist',
+      speciality: 'OBSTETRICS & GYNECOLOGY',
+      about: "",
+      areasOfExpertise: ['Fetal Medicine','Advanced Fetal Imaging','Antenatal Scans','Fetal Echocardiography','Amniocentesis','Chorionic Villus Sampling (CVS)','-Genetic Counselling','High-Risk Pregnancy Care'],
+      expertise: "Years Of Experience: 4+",
+      qualification: "MBBS, MS (OBG), DNB (OBG), Fellowship in Feto-Maternal Medicine (CIMAR)",
+      time: "",
+      date: "",
+      alt: '',
+      title:'Dr. Reshma L | Consultant Gynaecologist in Bengaluru',
+      description:''
+    },
+
     // {
     //   name: "",
     //   image: "",

@@ -40,18 +40,31 @@ export class ObstetricsGynaecologyComponent {
       doctor_image: "../../assets/Dr-Neelam-Saraswat.png",
       docalt: "Dr. Neelam Saraswat | Best Gynaecology Consultant in Bangalore | Rashtrotthana Hospital"
     },
-  ]
-  doctors2 = [
     {
       doctor_name: "Dr. Vinutha Udupa",
       experience: "10+",
       doctor_image: "../../assets/Dr-Vinita-Udupa.png",
       docalt: "Dr. Vinita Udupa | Best OBG in Bangalore | Rashtrotthana Hospital"
     },
+  ]
+  doctors2 = [
+
     {
       doctor_name: "Dr. Ashwitha Gundmi",
       experience: "9+",
       doctor_image: "../../assets/Dr-Ashwitha-Gundmi.png",
+      docalt: "Dr. Ashwitha Gundmi | Best Obstetrics & Gynaecologist in Bangalore | Rashtrotthana Hospital"
+    },
+    {
+      doctor_name: "Dr. Nirupama Annadanam",
+      experience: "5+",
+      doctor_image: "/assets/dr-nirupama-annadanam.png",
+      docalt: "Dr. Nirupama Annadanam | Best OBG in Bangalore | Rashtrotthana Hospital"
+    },
+    {
+      doctor_name: "Dr. Reshma L",
+      experience: "4+",
+      doctor_image: "/assets/Dr-Reshma-L.png",
       docalt: "Dr. Ashwitha Gundmi | Best Obstetrics & Gynaecologist in Bangalore | Rashtrotthana Hospital"
     },
   ]
