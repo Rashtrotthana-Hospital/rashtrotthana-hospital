@@ -2435,7 +2435,7 @@ export class NewDoctorPageComponent {
         'assets/icons/LIFE-4.png',
         'assets/icons/LIFE-5.png'
       ],
- faqs: [
+      faqs: [
         {
           question: 'Who is Dr. Shamantha S and what is her specialty at Rashtrotthana Hospital, Bangalore?',
           answer: 'Dr. Shamantha S is a Lifestyle Medicine doctor at Rashtrotthana Hospital with 6 years of experience in managing lifestyle related health conditions. She focuses on preventive care using Ayurvedic principles, diet, and routine modifications.'
@@ -4238,6 +4238,118 @@ export class NewDoctorPageComponent {
         'assets/icons/DER-3.png',
         'assets/icons/DER-4.png',
         'assets/icons/DER-5.png'
+      ],
+      happyPatients: '2000+'
+
+    },
+    {
+      name: "Dr. Nirupama Annadanam",
+      image: '/assets/Doc-Inv-Page/dr-nirupama-annadanam.png',
+      department: 'OBSTETRICS & GYNECOLOGY',
+      about: 'Dr. Nirupama Annadanam is a highly skilled Obstetrician and Gynaecologist with strong academic excellence and extensive clinical experience in managing both routine and high-risk pregnancies. A gold medalist from JIPMER, she brings a patient-centric approach focused on safe motherhood and comprehensive women’s healthcare. She has successfully conducted 1000+ vaginal deliveries, including assisted deliveries (vacuum and forceps), and over 500 caesarean sections, with expertise in handling complex and high-risk cases. Her clinical approach emphasizes respectful maternal care, ensuring comfort, safety, and confidence for every patient. Dr. Nirupama also has a keen interest in research and teaching, continuously updating her knowledge to provide evidence-based care.',
+      speciality: 'OBSTETRICS & GYNECOLOGY',
+      areasOfExpertise: ['High-Risk Obstetrics', 'Respectful Maternal Care', 'Obstetric Medicine', 'Clinical Research', 'Medical Teaching and Training'],
+      expertise: '5+',
+      qualification: `MBBS, MS, DNB (Obstetrics & Gynaecology-Gold Medalist), <br> Post-Doctoral Fellowship in Obstetric Medicine <br> from Fernandez Hospital.`,
+      time: '',
+      date: '',
+      alt: 'Dr. Nirupama Annadanam | Top Obstetrics & Gynaecologist in banaglore | Rashtrotthana Hospital | RR Nagar Bangalore',
+      id: 103,
+      title: 'Dr. Nirupama Annadanam | High-Risk Pregnancy & Delivery Expert in RR Nagar Bangalore',
+      description: 'Consult Dr. Nirupama Annadanam, senior gynecologist in RR Nagar with 5+ years of experience in high-risk pregnancy, delivery, and women’s health care.',
+      faqs: [
+        {
+          question: 'Who is Dr. Nirupama Annadanam and what is her specialty at Rashtrotthana Hospital, Bangalore?',
+          answer: 'Dr. Nirupama Annadanam is an Obstetrician & Gynaecologist at Rashtrotthana Hospital, Bangalore, with 5 years of experience and advanced training in obstetric medicine. She specialises in high-risk obstetrics and comprehensive maternal care.'
+        },
+        {
+          question: 'Does Dr. Nirupama Annadanam handle high-risk pregnancies at Rashtrotthana Hospital?',
+          answer: 'Yes, Dr. Nirupama Annadanam has expertise in high-risk obstetrics, managing conditions like hypertension in pregnancy, gestational diabetes, and other complications. She ensures close monitoring for both mother and baby throughout pregnancy.'
+        },
+        {
+          question: 'What is respectful maternal care and how does Dr. Nirupama Annadanam provide it?',
+          answer: 'Dr. Nirupama Annadanam focuses on respectful maternal care, ensuring patients feel heard, supported, and comfortable during pregnancy and delivery. She emphasises informed decision-making and personalised care plans.'
+        },
+        {
+          question: 'Can I consult Dr. Nirupama Annadanam for antenatal and pregnancy care?',
+          answer: 'Yes, she provides complete antenatal care, including regular check-ups, monitoring fetal development, and guiding patients through each stage of pregnancy. Early consultation helps ensure a healthy pregnancy journey.'
+        },
+        {
+          question: 'What obstetric medicine services are offered by Dr. Nirupama Annadanam?',
+          answer: 'Dr. Nirupama Annadanam manages medical conditions during pregnancy, such as thyroid disorders, anemia, and other systemic issues. Her approach integrates medical management with obstetric care for better outcomes.'
+        },
+        {
+          question: 'Does Dr. Nirupama Annadanam support pregnancy-related research and advanced care?',
+          answer: 'Yes, she is involved in clinical research and evidence-based obstetric care, ensuring patients receive updated and scientifically guided treatments. This helps improve safety and outcomes in maternal care.'
+        },
+        {
+          question: 'Why choose Dr. Nirupama Annadanam at Rashtrotthana Hospital for pregnancy care?',
+          answer: `Dr. Nirupama Annadanam combines specialised obstetric expertise with compassionate care. At Rashtrotthana Hospital, patients benefit from structured monitoring, advanced facilities, and a supportive maternity care environment.`
+        }
+      ],
+      departmentSlug: '',
+      expertiseIcons: [
+        'assets/icons/OG-1.png',
+        'assets/icons/OG-2.png',
+        'assets/icons/OG-3.png',
+        'assets/icons/OG-4.png',
+        'assets/icons/OG-5.png'
+      ],
+      happyPatients: '2000+'
+
+    },
+    {
+      name: "Dr. Reshma L",
+      image: '/assets/Doc-Inv-Page/dr-reshma-l.png',
+      department: 'Gynaecologist',
+      about: 'Dr. Reshma L is a highly skilled Obstetrician and Gynaecologist with strong academic excellence and extensive clinical experience in managing both routine and high-risk pregnancies. A gold medalist from JIPMER, she brings a patient-centric approach focused on safe motherhood and comprehensive women’s healthcare. She has successfully conducted 1000+ vaginal deliveries, including assisted deliveries (vacuum and forceps), and over 500 caesarean sections, with expertise in handling complex and high-risk cases. Her clinical approach emphasizes respectful maternal care, ensuring comfort, safety, and confidence for every patient. Dr. Nirupama also has a keen interest in research and teaching, continuously updating her knowledge to provide evidence-based care.',
+      speciality: 'OBSTETRICS & GYNECOLOGY',
+      areasOfExpertise: ['Fetal Medicine','Advanced Fetal Imaging','Antenatal Scans','Fetal Echocardiography','Amniocentesis','Chorionic Villus Sampling (CVS)','-Genetic Counselling','High-Risk Pregnancy Care'],
+      expertise: '4+',
+      qualification: `MBBS, MS (OBG), DNB (OBG), <br> Fellowship in Feto-Maternal Medicine (CIMAR)`,
+      time: '',
+      date: '',
+      alt: 'Dr. Reshma L | Top Obstetrics & Gynaecologist in banaglore | Rashtrotthana Hospital | RR Nagar Bangalore',
+      id: '',
+      title: 'Dr. Reshma L | High-Risk Pregnancy & Delivery Expert in RR Nagar Bangalore',
+      description: 'Consult Dr. Reshma L, senior gynecologist in RR Nagar with 4+ years of experience in high-risk pregnancy, delivery, and women’s health care.',
+      faqs: [
+        {
+          question: 'Who is Dr. Reshma L and what is her specialty at Rashtrotthana Hospital, Bangalore?',
+          answer: 'Dr. Reshma L is a Gynaecologist and Feto-Maternal Medicine Specialist at Rashtrotthana Hospital, Bangalore, with over 4+ years of experience. She specialises in high-risk pregnancy care, fetal medicine, and advanced prenatal diagnostics.'
+        },
+        {
+          question: 'What pregnancy conditions are treated by Dr. Reshma L at Rashtrotthana Hospital?',
+          answer: 'Dr. Reshma L manages high-risk pregnancies, including complications like diabetes in pregnancy, hypertension, fetal growth concerns, and genetic risks. Her care focuses on both maternal health and fetal well-being.'
+        },
+        {
+          question: 'Does Dr. Reshma L perform advanced fetal scans and imaging?',
+          answer: 'Yes, Dr. Reshma L is experienced in advanced fetal imaging, antenatal scans, and detailed anomaly scans. These tests help detect fetal conditions early and guide appropriate care during pregnancy.'
+        },
+        {
+          question: 'Can I consult Dr. Reshma L for genetic counselling during pregnancy?',
+          answer: 'Yes, Dr. Reshma L provides genetic counselling for expectant parents, especially in cases with family history or abnormal screening results. She helps patients understand risks, testing options, and next steps clearly.'
+        },
+        {
+          question: 'What procedures like amniocentesis or CVS are done by Dr. Reshma L?',
+          answer: 'Dr. Reshma L performs amniocentesis and chorionic villus sampling (CVS) for prenatal diagnosis. These procedures are done with precision to evaluate genetic conditions and ensure safe pregnancy management.'
+        },
+        {
+          question: 'Does Dr. Reshma L perform fetal echocardiography?',
+          answer: 'Yes, she conducts fetal echocardiography to assess the baby’s heart development during pregnancy. This helps in early detection of congenital heart conditions and planning appropriate care.'
+        },
+        {
+          question: 'Why choose Dr. Reshma L at Rashtrotthana Hospital for pregnancy care?',
+          answer: `Dr. Reshma L combines specialised fetal medicine expertise with compassionate maternity care. At Rashtrotthana Hospital, patients benefit from advanced diagnostics, personalised monitoring and comprehensive pregnancy support.`
+        }
+      ],
+      departmentSlug: '',
+      expertiseIcons: [
+        'assets/icons/OG-1.png',
+        'assets/icons/OG-2.png',
+        'assets/icons/OG-3.png',
+        'assets/icons/OG-4.png',
+        'assets/icons/OG-5.png'
       ],
       happyPatients: '2000+'
 
