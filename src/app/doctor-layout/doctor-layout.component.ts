@@ -72,7 +72,6 @@ export class DoctorLayoutComponent {
       date: 'Monday-Saturday',
       alt: 'Dr. H. N. Shyla | Best Dental Doctor in Bangalore | Rashtrotthana Hospital | RR Nagar Bangalore'
     },
-
     {
       name: 'Dr. Latha Venkataram',
       image: 'assets/Dr-Latha-Venkataram.png',
@@ -717,6 +716,7 @@ export class DoctorLayoutComponent {
       date: 'Monday-Saturday',
       alt: 'Dr. Shamantha S | Lifestyle Specialist in Bangalore | Rashtrotthana Hospita | Rajarajeshwari Nagar Bangalore'
     },
+    
     // {
     //   name: 'Dr. Kavyashree Kulamarva',
     //   image: 'assets/Dr-Kavyashree-Kulamarva.png',

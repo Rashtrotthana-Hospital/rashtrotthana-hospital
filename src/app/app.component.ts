@@ -7,34 +7,66 @@ import { Meta, Title } from '@angular/platform-browser';
 import { CanonicalUrlService } from './canonical-url.service';
 import { FacebookPixelService } from './facebook-pixel.service';
 
+import { SeoSchema } from './SEO/seo-schema';
+import { SCHEMA_MAP } from './SEO/schema-map';
+
 declare let gtag: Function;
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
 })
 export class AppComponent implements OnInit {
-  constructor(private router: Router, private analyticsService: AnalyticsService, private messageService: MessageService, private meta: Meta, private title: Title, private canonicalService: CanonicalUrlService, private pixelService: FacebookPixelService) { }
-  // title = 'rashtrotthana_hospital';
+  constructor(
+    private router: Router,
+    private analyticsService: AnalyticsService,
+    private messageService: MessageService,
+    private meta: Meta,
+    private title: Title,
+    private canonicalService: CanonicalUrlService,
+    private pixelService: FacebookPixelService,
+    private SeoSchema: SeoSchema,
+  ) {
+    this.router.events
+      .pipe(
+        filter(
+          (event): event is NavigationEnd => event instanceof NavigationEnd,
+        ),
+      )
+      .subscribe((event) => {
+        console.log('NavigationEnd fired');
+
+        const url = event.urlAfterRedirects.split('?')[0];
+        console.log('Current URL:', url);
+
+        console.log('Schema exists:', SCHEMA_MAP[url]);
+
+        if (SCHEMA_MAP[url]) {
+          this.SeoSchema.setSchema(SCHEMA_MAP[url]);
+          console.log('Schema injected');
+        }
+      });
+  }
+
   isCareerPage = false;
   ngOnInit() {
-    // this.router.events.subscribe((event) => { 
-    //     if (!(event instanceof NavigationEnd)) { 
-    //         return; 
-    //     } 
-    //     window.scrollTo(0, 0) 
-    // }); 
-    this.router.events.subscribe(event => {
+    // this.router.events.subscribe((event) => {
+    //     if (!(event instanceof NavigationEnd)) {
+    //         return;
+    //     }
+    //     window.scrollTo(0, 0)
+    // });
+    this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
         this.isCareerPage = event.urlAfterRedirects === '/career';
       }
     });
 
-
-
     document.addEventListener('DOMContentLoaded', () => {
-      const chatBotPopup = document.getElementById('chatBotPopup')
-      const notificationSound = document.getElementById('audio') as HTMLAudioElement
+      const chatBotPopup = document.getElementById('chatBotPopup');
+      const notificationSound = document.getElementById(
+        'audio',
+      ) as HTMLAudioElement;
 
       setTimeout(() => {
         chatBotPopup?.classList.remove('initial');
@@ -42,11 +74,11 @@ export class AppComponent implements OnInit {
 
         if (notificationSound) {
           notificationSound.play().catch((error) => {
-            console.error("Audio playback failed:", error);
-            console.log("This might be due to autoplay restrictions.");
+            console.error('Audio playback failed:', error);
+            console.log('This might be due to autoplay restrictions.');
           });
         } else {
-          console.error("Notification sound element not found.");
+          console.error('Notification sound element not found.');
         }
       }, 7000);
 
@@ -60,22 +92,27 @@ export class AppComponent implements OnInit {
           chatBotPopup.style.display = 'none';
         }
       });
-    })
+    });
 
     this.setMetaTags();
-    this.router.events.pipe(
-      filter((event: Event) => event instanceof NavigationEnd)
-    ).subscribe(() => {
-      window.scrollTo(0, 0);
-    });
-
-    this.router.events.pipe(
-      filter((event: Event): event is NavigationEnd => event instanceof NavigationEnd)
-    ).subscribe((event: NavigationEnd) => {
-      gtag('config', 'G-6T1G50PFJK', {
-        'page_path': event.urlAfterRedirects
+    this.router.events
+      .pipe(filter((event: Event) => event instanceof NavigationEnd))
+      .subscribe(() => {
+        window.scrollTo(0, 0);
       });
-    });
+
+    this.router.events
+      .pipe(
+        filter(
+          (event: Event): event is NavigationEnd =>
+            event instanceof NavigationEnd,
+        ),
+      )
+      .subscribe((event: NavigationEnd) => {
+        gtag('config', 'G-6T1G50PFJK', {
+          page_path: event.urlAfterRedirects,
+        });
+      });
 
     // Set up global rules for special cases
     // this.canonicalService.setCustomRules({
@@ -83,28 +120,43 @@ export class AppComponent implements OnInit {
     //   '/product-detail/:id': '/products/:id',
     //   '/old-about': '/about',
     //   '/legacy/contact': '/contact',
-      
+
     //   // Pagination - point to main page
     //   '/products?page=1': '/products',
     //   '/blog?page=1': '/blog',
-      
+
     //   // Parameter variations that should point to clean URLs
     //   '/search?category=all': '/search',
     // });
-
   }
 
   setMetaTags() {
     this.title.setTitle('Rashtrotthana Hospital');
-    this.meta.updateTag({ name: 'description', content: 'Rashtrotthana Hospital provides exceptional healthcare services. Visit us for quality medical treatment.' });
-    this.meta.updateTag({ property: 'og:title', content: 'Rashtrotthana Hospital' });
-    this.meta.updateTag({ property: 'og:description', content: 'Rashtrotthana Hospital provides exceptional healthcare services. Visit us for quality medical treatment.' });
-    this.meta.updateTag({ property: 'og:image', content: 'https://www.rashtrotthanahospital.com/assets/logo.png' });
-    this.meta.updateTag({ property: 'og:url', content: 'https://www.rashtrotthanahospital.com/' });
+    this.meta.updateTag({
+      name: 'description',
+      content:
+        'Rashtrotthana Hospital provides exceptional healthcare services. Visit us for quality medical treatment.',
+    });
+    this.meta.updateTag({
+      property: 'og:title',
+      content: 'Rashtrotthana Hospital',
+    });
+    this.meta.updateTag({
+      property: 'og:description',
+      content:
+        'Rashtrotthana Hospital provides exceptional healthcare services. Visit us for quality medical treatment.',
+    });
+    this.meta.updateTag({
+      property: 'og:image',
+      content: 'https://www.rashtrotthanahospital.com/assets/logo.png',
+    });
+    this.meta.updateTag({
+      property: 'og:url',
+      content: 'https://www.rashtrotthanahospital.com/',
+    });
   }
   closeChatBot: boolean = true; // Initially closed
   toggleChatBot() {
     this.closeChatBot = !this.closeChatBot; // Toggle the visibility state
   }
 }
-
