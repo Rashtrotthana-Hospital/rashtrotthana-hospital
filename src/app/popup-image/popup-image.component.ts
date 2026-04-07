@@ -15,7 +15,8 @@ export class PopupImageComponent {
     // '../../assets/popup3.jpeg',
     // '../../assets/popup4.jpeg'
     // '../../assets/nabh-website-popup.jpeg'
-    '../../assets/diabetic-popup-2026.png'
+    // '../../assets/diabetic-popup-2026.png'
+    '../../assets/summer-camp-rash.jpeg'
   ];
   currentImage = '';
 

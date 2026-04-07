@@ -49,6 +49,7 @@ export class AppComponent implements OnInit {
   }
 
   isCareerPage = false;
+  isHomePage = false;
   ngOnInit() {
     // this.router.events.subscribe((event) => {
     //     if (!(event instanceof NavigationEnd)) {
@@ -61,6 +62,14 @@ export class AppComponent implements OnInit {
         this.isCareerPage = event.urlAfterRedirects === '/career';
       }
     });
+
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        this.isHomePage = event.urlAfterRedirects === '/';
+      }
+    });
+
+
 
     document.addEventListener('DOMContentLoaded', () => {
       const chatBotPopup = document.getElementById('chatBotPopup');
