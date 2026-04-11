@@ -49,12 +49,12 @@ export class ObstetricsGynaecologyComponent {
   ]
   doctors2 = [
 
-    {
-      doctor_name: "Dr. Ashwitha Gundmi",
-      experience: "9+",
-      doctor_image: "../../assets/Dr-Ashwitha-Gundmi.png",
-      docalt: "Dr. Ashwitha Gundmi | Best Obstetrics & Gynaecologist in Bangalore | Rashtrotthana Hospital"
-    },
+    // {
+    //   doctor_name: "Dr. Ashwitha Gundmi",
+    //   experience: "9+",
+    //   doctor_image: "../../assets/Dr-Ashwitha-Gundmi.png",
+    //   docalt: "Dr. Ashwitha Gundmi | Best Obstetrics & Gynaecologist in Bangalore | Rashtrotthana Hospital"
+    // },
     {
       doctor_name: "Dr. Nirupama Annadanam",
       experience: "5+",

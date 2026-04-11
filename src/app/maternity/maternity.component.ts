@@ -56,13 +56,13 @@ export class MaternityComponent {
       alt: 'Dr. Neelam Saraswat | Best Gynaecology Consultant in Bangalore | Rashtrotthana Hospital',
       slug : '/doctor/dr-neelam-saraswat'
     },
-    {
-      image: 'assets/Dr-Ashwitha-Gundmi.png',
-      name: 'Dr. Ashwitha Gundmi',
-      experience: '9+',
-      alt: 'Dr. Ashwitha Gundmi | Best Obstetrics & Gynaecologist in Bangalore | Rashtrotthana Hospital',
-      slug : '/doctor/dr-ashwitha-gundmi'
-    },
+    // {
+    //   image: 'assets/Dr-Ashwitha-Gundmi.png',
+    //   name: 'Dr. Ashwitha Gundmi',
+    //   experience: '9+',
+    //   alt: 'Dr. Ashwitha Gundmi | Best Obstetrics & Gynaecologist in Bangalore | Rashtrotthana Hospital',
+    //   slug : '/doctor/dr-ashwitha-gundmi'
+    // },
     {
       image: 'assets/Dr-Vinita-Udupa.png',
       name: 'Dr. Vinita Udupa',

@@ -29,7 +29,9 @@
 
                         <div class="department marginLeft mat">{{filteredDoctor.department}}</div>
                     </div>
-                    <div class="experience marginLeft">Years of Experience: {{filteredDoctor.expertise}} Years</div>
+                    <div class="experience marginLeft" *ngIf="filteredDoctor.expertise">
+                        Years of Experience: {{filteredDoctor.expertise}} Years
+                    </div>
                     <div class="flex">
                         <div class="language-title">Languages</div>
                         <div class="languages">

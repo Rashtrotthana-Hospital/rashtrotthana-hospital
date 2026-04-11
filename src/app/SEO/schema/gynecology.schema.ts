@@ -96,15 +96,15 @@ export const GYNECOLOGY_SCHEMA = {
   }
 },
 
-{
-  "@type": "Physician",
-  "name": "Dr. Ashwitha Gundmi",
-  "medicalSpecialty": "Gynecology",
-  "affiliation": {
-    "@type": "Hospital",
-    "name": "Rashtrotthana Hospital"
-  }
-},
+// {
+//   "@type": "Physician",
+//   "name": "Dr. Ashwitha Gundmi",
+//   "medicalSpecialty": "Gynecology",
+//   "affiliation": {
+//     "@type": "Hospital",
+//     "name": "Rashtrotthana Hospital"
+//   }
+// },
 
 {
   "@type": "Physician",
