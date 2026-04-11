@@ -556,19 +556,19 @@ export class DoctorLayoutComponent {
       date: 'Monday-Saturday',
       alt: 'Dr. Neelam Saraswat | Best Gynaecology Consultant in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore'
     },
-    {
-      name: 'Dr. Ashwitha Gundmi',
-      image: 'assets/Dr-Ashwitha-Gundmi.png',
-      desgination: 'OBSTETRICS & GYNECOLOGY',
-      speciality: 'OBSTETRICS & GYNECOLOGY',
-      about: 'Working as a consultant in WMN private Ltd. With MS ObGyn and MRCOG (UK), her qualifications reflect her dedication to patient well-being.  She is an experienced Obstetrics and gynaecology Consultant with expertise in managing various pregnancy-related disorders, including medical, genetic conditions, promoting vaginal birth to ensure optimal maternal and foetal health.She is a Gynaecologist with expertise in colposcopy for early detection and intervention of cervical abnormalities, awareness about cervical cancer vaccination and cervical screening, gynaecological surgeries including Minimally Invasive Surgeries including Laparoscopy and Hysteroscopy. Focusing on improving patients\' quality of life by addressing diverse gynaecological conditions.Has worked as faculty in medical College with active participation in research activities and academics of UG and PG students. Played a key role in medical camps and health awareness programmes .Believes in Evidence based practice. Is excellent in verbal and written communication. ',
-      areasOfExpertise: ['High Risk Obstetrics', 'Protocol based management', 'Gynaecological Surgeries - MIS', 'Fertility Related issues', 'Family planning & Contraception'],
-      expertise: 'Years of Experience: 9+',
-      qualification: 'MBBS, MS OBG, MRCOG(London)',
-      time: '10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00',
-      date: 'Monday-Saturday',
-      alt: 'Dr. Ashwitha Gundmi | Best Obstetrics & Gynaecologist in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore'
-    },
+    // {
+    //   name: 'Dr. Ashwitha Gundmi',
+    //   image: 'assets/Dr-Ashwitha-Gundmi.png',
+    //   desgination: 'OBSTETRICS & GYNECOLOGY',
+    //   speciality: 'OBSTETRICS & GYNECOLOGY',
+    //   about: 'Working as a consultant in WMN private Ltd. With MS ObGyn and MRCOG (UK), her qualifications reflect her dedication to patient well-being.  She is an experienced Obstetrics and gynaecology Consultant with expertise in managing various pregnancy-related disorders, including medical, genetic conditions, promoting vaginal birth to ensure optimal maternal and foetal health.She is a Gynaecologist with expertise in colposcopy for early detection and intervention of cervical abnormalities, awareness about cervical cancer vaccination and cervical screening, gynaecological surgeries including Minimally Invasive Surgeries including Laparoscopy and Hysteroscopy. Focusing on improving patients\' quality of life by addressing diverse gynaecological conditions.Has worked as faculty in medical College with active participation in research activities and academics of UG and PG students. Played a key role in medical camps and health awareness programmes .Believes in Evidence based practice. Is excellent in verbal and written communication. ',
+    //   areasOfExpertise: ['High Risk Obstetrics', 'Protocol based management', 'Gynaecological Surgeries - MIS', 'Fertility Related issues', 'Family planning & Contraception'],
+    //   expertise: 'Years of Experience: 9+',
+    //   qualification: 'MBBS, MS OBG, MRCOG(London)',
+    //   time: '10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00',
+    //   date: 'Monday-Saturday',
+    //   alt: 'Dr. Ashwitha Gundmi | Best Obstetrics & Gynaecologist in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore'
+    // },
     {
       name: 'Dr. Vinita Udupa',
       image: 'assets/Dr-Vinita-Udupa.png',
@@ -1162,7 +1162,7 @@ export class DoctorLayoutComponent {
       name: "Dr. Pooja Prasad",
       image: "assets/Doc-Inv-Page/Dr-Pooja-sq.png",
       department: 'Radiologist',
-      speciality: '',
+      speciality: 'RADIOLOGY',
       desgination: 'Radiologist',
       // about: "Ms. Samarchitha S is a trained clinical psychologist with over six years of experience, specializing in the assessment and treatment of a wide range of psychological and neuropsychological conditions. Her professional journey includes working with diverse patient populations across age groups - including children, adults and the elderly - in both psychiatric and neurological settings.",
       areasOfExpertise: ["Diagnostic Radiology", "CT and MRI interpretation", "Ultrasound & Doppler imaging", "X-ray", "Women’s imaging (Breast, pelvic US/MRI)", "Neuroimaging (Brain & Spine)", "Musculoskeletal imaging", "Chest imaging", "Abdominal & pelvic imaging", "Emergency & trauma imaging", "Obstetric ultrasound (routine & growth scans)"],
@@ -1287,6 +1287,22 @@ export class DoctorLayoutComponent {
       date: "",
       alt: '',
       title:'Dr. Reshma L | Consultant Gynaecologist in Bengaluru',
+      description:''
+    },
+    {
+      name: "Dr. Sharath C Mouli",
+      image: "/assets/sharath_img.png", 
+      department: 'Radiologist',
+      desgination: 'Radiologist',
+      speciality: 'RADIOLOGY',
+      about: "",
+      areasOfExpertise: ['CT & MRI (Cross-sectional Imaging)','Ultrasound & Doppler Studies','Conventional Radiography','Onco-Imaging & Neuroimaging','Musculoskeletal Imaging','Image-Guided Procedures (USG)','Emergency Radiology','Clinical Correlation & Diagnostic Reporting'],
+      expertise: "",
+      qualification: "MBBS, MD, DNB (Radiodiagnosis)",
+      time: "",
+      date: "",
+      alt: '',
+      title:'Dr. Sharath C Mouli | Consultant Radiologist in Bengaluru',
       description:''
     },
 

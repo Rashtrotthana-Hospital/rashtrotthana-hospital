@@ -92,17 +92,17 @@ export const HYSTERECTOMY_SCHEMA = {
       },
     },
 
-    {
-      '@type': 'Physician',
-      name: 'Dr. Ashwitha Gundmi',
-      medicalSpecialty: 'Obstetrics and Gynecology',
-      yearsOfExperience: '9',
-      url: 'https://www.rashtrotthanahospital.com/doctor/dr-ashwitha-gundmi',
-      affiliation: {
-        '@type': 'Hospital',
-        name: 'Rashtrotthana Hospital',
-      },
-    },
+    // {
+    //   '@type': 'Physician',
+    //   name: 'Dr. Ashwitha Gundmi',
+    //   medicalSpecialty: 'Obstetrics and Gynecology',
+    //   yearsOfExperience: '9',
+    //   url: 'https://www.rashtrotthanahospital.com/doctor/dr-ashwitha-gundmi',
+    //   affiliation: {
+    //     '@type': 'Hospital',
+    //     name: 'Rashtrotthana Hospital',
+    //   },
+    // },
 
     {
       '@type': 'BreadcrumbList',

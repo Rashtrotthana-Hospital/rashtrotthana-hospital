@@ -1938,62 +1938,62 @@ export class NewDoctorPageComponent {
       happyPatients: '4000+'
 
     },
-    {
-      name: 'Dr. Ashwitha Gundmi',
-      image: 'assets/Doc-Inv-Page/Dr-Ashwitha-Gundmi.png',
-      department: 'OBSTETRICS & GYNECOLOGY',
-      speciality: 'OBSTETRICS & GYNECOLOGY',
-      about: 'Working as a consultant in WMN private Ltd. With MS ObGyn and MRCOG (UK), her qualifications reflect her dedication to patient well-being.  She is an experienced Obstetrics and gynaecology Consultant with expertise in managing various pregnancy-related disorders, including medical, genetic conditions, promoting vaginal birth to ensure optimal maternal and foetal health.She is a Gynaecologist with expertise in colposcopy for early detection and intervention of cervical abnormalities, awareness about cervical cancer vaccination and cervical screening, gynaecological surgeries including Minimally Invasive Surgeries including Laparoscopy and Hysteroscopy. Focusing on improving patients\' quality of life by addressing diverse gynaecological conditions.Has worked as faculty in medical College with active participation in research activities and academics of UG and PG students. Played a key role in medical camps and health awareness programmes .Believes in Evidence based practice. Is excellent in verbal and written communication. ',
-      areasOfExpertise: ['High Risk Obstetrics', 'Protocol based management', 'Gynaecological Surgeries - MIS', 'Fertility Related issues', 'Family planning & Contraception'],
-      expertise: '9+',
-      qualification: 'MBBS, MS OBG, MRCOG(London)',
-      time: '10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00',
-      date: 'Monday-Saturday',
-      alt: 'Dr. Ashwitha Gundmi | Best Obstetrics & Gynaecologist in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
-      id: 17,
-      title: 'Dr. Ashwitha Gundmi | High-Risk Pregnancy & MIS Specialist',
-      description: 'Dr. Ashwitha Gundmi is an experienced gynecologist skilled in high-risk obstetrics, MIS surgeries, cervical care, and fertility solutions.',
-      faqs: [
-        {
-          question: 'Who is Dr. Ashwitha Gundmi and what is her specialty at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'Dr. Ashwitha Gundmi is an experienced Obstetrician and Gynaecologist at Rashtrotthana Hospital, RR Nagar, Bangalore. She is known for managing high-risk pregnancies, performing minimally invasive gynaecological surgeries, and providing protocol-based women’s healthcare.'
-        },
-        {
-          question: 'Does Dr. Ashwitha Gundmi manage high-risk pregnancies at Rashtrotthana Hospital?',
-          answer: 'Yes, Dr. Ashwitha Gundmi specialises in high-risk obstetrics, including pregnancies complicated by diabetes, hypertension, thyroid disorders, previous pregnancy complications, and advanced maternal age. Her care focuses on close monitoring and safe maternal–fetal outcomes.'
-        },
-        {
-          question: 'What is protocol-based pregnancy and gynaecology management?',
-          answer: 'Protocol-based management follows standardised, evidence-based clinical guidelines to ensure safe and consistent care. Dr. Ashwitha Gundmi uses this approach to minimise risks and improve outcomes during pregnancy and gynaecological treatment.'
-        },
-        {
-          question: 'What gynaecological surgeries does Dr. Ashwitha Gundmi perform?',
-          answer: 'Dr. Ashwitha Gundmi performs minimally invasive (MIS) gynaecological surgeries, including laparoscopic procedures for uterine, ovarian, and pelvic conditions. These techniques offer smaller incisions, less pain, and faster recovery.'
-        },
-        {
-          question: 'Can I consult Dr. Ashwitha Gundmi for fertility-related issues?',
-          answer: 'Yes, Dr. Ashwitha Gundmi evaluates and treats fertility-related concerns, including irregular cycles, ovulation issues, and hormonal imbalances. She provides personalised guidance and treatment planning based on individual needs.'
-        },
-        {
-          question: 'Does Dr. Ashwitha Gundmi provide family planning and contraception counselling?',
-          answer: 'Yes, she offers comprehensive family planning and contraception services, helping women choose suitable birth-control options based on health, lifestyle, and future pregnancy plans. Counselling ensures informed and safe decision-making.'
-        },
-        {
-          question: 'How can I book an appointment with Dr. Ashwitha Gundmi at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: `You can book an appointment with Dr. Ashwitha Gundmi by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
-        }
-      ],
-      departmentSlug: '/specialities/best-obstetrics-and-gynecologist-hospital-in-bangalore',
-      expertiseIcons: [
-        'assets/icons/OG-1.png',
-        'assets/icons/OG-2.png',
-        'assets/icons/OG-3.png',
-        'assets/icons/OG-4.png',
-        'assets/icons/OG-5.png'
-      ],
-      happyPatients: '10000+'
+    // {
+    //   name: 'Dr. Ashwitha Gundmi',
+    //   image: 'assets/Doc-Inv-Page/Dr-Ashwitha-Gundmi.png',
+    //   department: 'OBSTETRICS & GYNECOLOGY',
+    //   speciality: 'OBSTETRICS & GYNECOLOGY',
+    //   about: 'Working as a consultant in WMN private Ltd. With MS ObGyn and MRCOG (UK), her qualifications reflect her dedication to patient well-being.  She is an experienced Obstetrics and gynaecology Consultant with expertise in managing various pregnancy-related disorders, including medical, genetic conditions, promoting vaginal birth to ensure optimal maternal and foetal health.She is a Gynaecologist with expertise in colposcopy for early detection and intervention of cervical abnormalities, awareness about cervical cancer vaccination and cervical screening, gynaecological surgeries including Minimally Invasive Surgeries including Laparoscopy and Hysteroscopy. Focusing on improving patients\' quality of life by addressing diverse gynaecological conditions.Has worked as faculty in medical College with active participation in research activities and academics of UG and PG students. Played a key role in medical camps and health awareness programmes .Believes in Evidence based practice. Is excellent in verbal and written communication. ',
+    //   areasOfExpertise: ['High Risk Obstetrics', 'Protocol based management', 'Gynaecological Surgeries - MIS', 'Fertility Related issues', 'Family planning & Contraception'],
+    //   expertise: '9+',
+    //   qualification: 'MBBS, MS OBG, MRCOG(London)',
+    //   time: '10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00',
+    //   date: 'Monday-Saturday',
+    //   alt: 'Dr. Ashwitha Gundmi | Best Obstetrics & Gynaecologist in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
+    //   id: 17,
+    //   title: 'Dr. Ashwitha Gundmi | High-Risk Pregnancy & MIS Specialist',
+    //   description: 'Dr. Ashwitha Gundmi is an experienced gynecologist skilled in high-risk obstetrics, MIS surgeries, cervical care, and fertility solutions.',
+    //   faqs: [
+    //     {
+    //       question: 'Who is Dr. Ashwitha Gundmi and what is her specialty at Rashtrotthana Hospital, RR Nagar, Bangalore?',
+    //       answer: 'Dr. Ashwitha Gundmi is an experienced Obstetrician and Gynaecologist at Rashtrotthana Hospital, RR Nagar, Bangalore. She is known for managing high-risk pregnancies, performing minimally invasive gynaecological surgeries, and providing protocol-based women’s healthcare.'
+    //     },
+    //     {
+    //       question: 'Does Dr. Ashwitha Gundmi manage high-risk pregnancies at Rashtrotthana Hospital?',
+    //       answer: 'Yes, Dr. Ashwitha Gundmi specialises in high-risk obstetrics, including pregnancies complicated by diabetes, hypertension, thyroid disorders, previous pregnancy complications, and advanced maternal age. Her care focuses on close monitoring and safe maternal–fetal outcomes.'
+    //     },
+    //     {
+    //       question: 'What is protocol-based pregnancy and gynaecology management?',
+    //       answer: 'Protocol-based management follows standardised, evidence-based clinical guidelines to ensure safe and consistent care. Dr. Ashwitha Gundmi uses this approach to minimise risks and improve outcomes during pregnancy and gynaecological treatment.'
+    //     },
+    //     {
+    //       question: 'What gynaecological surgeries does Dr. Ashwitha Gundmi perform?',
+    //       answer: 'Dr. Ashwitha Gundmi performs minimally invasive (MIS) gynaecological surgeries, including laparoscopic procedures for uterine, ovarian, and pelvic conditions. These techniques offer smaller incisions, less pain, and faster recovery.'
+    //     },
+    //     {
+    //       question: 'Can I consult Dr. Ashwitha Gundmi for fertility-related issues?',
+    //       answer: 'Yes, Dr. Ashwitha Gundmi evaluates and treats fertility-related concerns, including irregular cycles, ovulation issues, and hormonal imbalances. She provides personalised guidance and treatment planning based on individual needs.'
+    //     },
+    //     {
+    //       question: 'Does Dr. Ashwitha Gundmi provide family planning and contraception counselling?',
+    //       answer: 'Yes, she offers comprehensive family planning and contraception services, helping women choose suitable birth-control options based on health, lifestyle, and future pregnancy plans. Counselling ensures informed and safe decision-making.'
+    //     },
+    //     {
+    //       question: 'How can I book an appointment with Dr. Ashwitha Gundmi at Rashtrotthana Hospital, RR Nagar, Bangalore?',
+    //       answer: `You can book an appointment with Dr. Ashwitha Gundmi by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
+    //     }
+    //   ],
+    //   departmentSlug: '/specialities/best-obstetrics-and-gynecologist-hospital-in-bangalore',
+    //   expertiseIcons: [
+    //     'assets/icons/OG-1.png',
+    //     'assets/icons/OG-2.png',
+    //     'assets/icons/OG-3.png',
+    //     'assets/icons/OG-4.png',
+    //     'assets/icons/OG-5.png'
+    //   ],
+    //   happyPatients: '10000+'
 
-    },
+    // },
     {
       name: 'Dr. Vinita Udupa',
       image: 'assets/Doc-Inv-Page/Dr-Vinita-Udupa.png',
@@ -4352,6 +4352,65 @@ export class NewDoctorPageComponent {
         'assets/icons/OG-5.png'
       ],
       happyPatients: '2000+'
+
+    },
+    {
+      name: "Dr. Sharath C Mouli",
+      image: '/assets/sharath-banner-img.png',
+      department: 'RADIOLOGY',
+      about: `Dr. Sharath C Mouli is a skilled and dedicated Radiologist with extensive experience in diagnostic imaging across multiple modalities. He has trained in high-volume tertiary care centres, gaining strong expertise in CT, MRI, ultrasound and emergency radiology. <br>
+      With a keen ability to correlate imaging findings with clinical conditions, he plays a vital role in accurate diagnosis and patient management. His academic excellence, including national-level recognitions and active participation in radiology conferences, reflects his commitment to continuous learning and quality care. <br>
+      Dr. Sharath is known for his precision, efficiency and collaborative approach, ensuring timely and reliable diagnostic support for clinicians and patients.
+      `,
+      speciality: 'Radiologist',
+      areasOfExpertise: ['CT & MRI (Cross-sectional Imaging)','Ultrasound & Doppler Studies','Conventional Radiography','Onco-Imaging & Neuroimaging','Musculoskeletal Imaging','Image-Guided Procedures (USG)','Emergency Radiology','Clinical Correlation & Diagnostic Reporting'],
+      expertise: '',
+      qualification: `MBBS, MD, DNB (Radiodiagnosis)`,
+      time: '',
+      date: '',
+      alt: 'Dr. Sharath C Mouli | Top Radiologist in banaglore | Rashtrotthana Hospital | RR Nagar Bangalore',
+      id: '',
+      title: 'Dr. Sharath C Mouli | Radiologist Expert in RR Nagar Bangalore',
+      description: 'Consult Dr. Sharath C Mouli, senior radiologist in RR Nagar with experience in advanced imaging, diagnostic reporting, and image-guided procedures at Rashtrotthana Hospital.',
+      faqs: [
+        {
+          question: 'Who is Dr. Sharath C Mouli and what imaging services does he provide at Rashtrotthana Hospital, Bangalore?',
+          answer: 'Dr. Sharath C Mouli is a Consultant Radiologist at Rashtrotthana Hospital, Bangalore, specialising in CT scans, MRI, ultrasound, Doppler studies, and X-rays. He plays a key role in accurate diagnosis through advanced imaging and clinical correlation.'
+        },
+        {
+          question: 'When should I get a CT scan or MRI with Dr. Sharath C Mouli at Rashtrotthana Hospital?',
+          answer: 'CT and MRI scans are recommended for detailed evaluation of brain, spine, joints, abdomen and internal organs. Dr. Sharath ensures the right imaging modality is chosen based on your symptoms and clinical condition.'
+        },
+        {
+          question: 'Does Dr. Sharath C Mouli perform ultrasound and Doppler studies?',
+          answer: 'Yes, Dr. Sharath C Mouli performs ultrasound and Doppler studies to assess organs, blood flow and vascular conditions. These are safe, non-invasive tests commonly used for abdominal, pregnancy, and vascular evaluations.'
+        },
+        {
+          question: 'What is onco-imaging and how does Dr. Sharath C Mouli help in cancer diagnosis?',
+          answer: 'Onco-imaging involves detecting and monitoring cancers using CT, MRI and other imaging techniques. Dr. Sharath provides precise imaging reports that help doctors plan treatment and track disease progression.'
+        },
+        {
+          question: 'Are image-guided procedures available with Dr. Sharath C Mouli?',
+          answer: 'Yes, he performs image-guided procedures such as ultrasound-guided biopsies and interventions. These procedures improve accuracy and safety while diagnosing or treating specific conditions.'
+        },
+        {
+          question: 'Can I consult Dr. Sharath C Mouli for emergency radiology services in Bangalore?',
+          answer: 'Absolutely, Dr. Sharath has experience in emergency radiology, providing quick and accurate imaging for trauma, stroke and urgent medical conditions. Timely reporting helps in faster treatment decisions.'
+        },
+        {
+          question: 'Why choose Dr. Sharath C Mouli at Rashtrotthana Hospital for diagnostic imaging?',
+          answer: `Dr. Sharath combines advanced imaging expertise with strong clinical correlation skills, ensuring precise and reliable diagnosis. At Rashtrotthana Hospital, patients benefit from accurate reports, modern technology and efficient care.`
+        }
+      ],
+      departmentSlug: '',
+      expertiseIcons: [
+        'assets/icons/RAD-1.png',
+        'assets/icons/RAD-2.png',
+        'assets/icons/RAD-3.png',
+        'assets/icons/RAD-4.png',
+        'assets/icons/RAD-5.png'
+      ],
+      happyPatients: '1000+'
 
     },
     // {
