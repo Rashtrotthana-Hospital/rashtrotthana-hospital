@@ -1,6 +1,6 @@
 <main class="sbp">
   <!-- ─────────────────────────────────────────────────────────────────
-       HERO — shloka, brand mark, breathing rings, drifting petals
+       HERO — split layout, brand mark right, content left, shloka below
        ───────────────────────────────────────────────────────────────── -->
   <section class="sbp-hero" aria-labelledby="sbp-title">
     <!-- Ambient decoration layer -->
@@ -9,33 +9,7 @@
       <span class="sbp-hero__glow sbp-hero__glow--gold"></span>
       <span class="sbp-hero__glow sbp-hero__glow--tulsi"></span>
 
-      <!-- Slow rotating mandala behind the brand mark -->
-      <svg class="sbp-mandala" viewBox="-100 -100 200 200" aria-hidden="true">
-        <g fill="none" stroke="currentColor" stroke-width="0.6" opacity="0.5">
-          <circle r="92" />
-          <circle r="76" stroke-dasharray="2 6" />
-          <circle r="60" />
-          <circle r="44" stroke-dasharray="1 5" />
-          <g>
-            @for (i of [0,1,2,3,4,5,6,7,8,9,10,11]; track i) {
-            <line
-              [attr.x1]="0"
-              [attr.y1]="-92"
-              [attr.x2]="0"
-              [attr.y2]="-76"
-              [attr.transform]="'rotate(' + (i * 30) + ')'"
-            />
-            }
-          </g>
-        </g>
-      </svg>
-
-      <!-- Concentric breathing rings synced to a 6-second inhale/exhale -->
-      <span class="sbp-breath sbp-breath--1"></span>
-      <span class="sbp-breath sbp-breath--2"></span>
-      <span class="sbp-breath sbp-breath--3"></span>
-
-      <!-- Drifting petals -->
+      <!-- Subtle drifting petals -->
       <div class="sbp-petals">
         @for (p of petals; track $index) {
         <span
@@ -61,9 +35,69 @@
     </div>
 
     <div class="sbp-container sbp-hero__inner">
-      <!-- Brand mark: lotus + flame on an open book -->
-      <div class="sbp-hero__mark" aria-hidden="true">
-        <svg viewBox="-150 -150 300 300">
+      <!-- Left column: copy -->
+      <div class="sbp-hero__copy">
+        <p class="sbp-eyebrow" data-reveal>Lifestyle &amp; Wellness Unit</p>
+        <h1 id="sbp-title" class="sbp-hero__title" data-reveal>
+          Swasthya<br /><span class="sbp-hero__title-accent">Bharati</span>
+        </h1>
+        <p class="sbp-hero__sanskrit" lang="sa" data-reveal style="--reveal-delay:0.1s">
+          स्वास्थ्य भारती
+        </p>
+        <p class="sbp-hero__lede" data-reveal style="--reveal-delay:0.15s">
+          A drugless lifestyle unit at Rashtrotthana Hospital — where the heritage
+          wisdom of <strong>Bharath</strong> meets the rigour of conventional
+          medicine to prevent and reverse the chronic conditions of modern life.
+        </p>
+
+        <div class="sbp-hero__cta" data-reveal style="--reveal-delay:0.25s">
+          <button type="button" class="sbp-btn sbp-btn--primary" (click)="bookConsultation()">
+            Book a consultation
+            <span class="sbp-btn__arrow" aria-hidden="true">→</span>
+          </button>
+          <button type="button" class="sbp-btn sbp-btn--ghost" (click)="scrollTo('sbp-services')">
+            Explore services
+          </button>
+        </div>
+
+        <ul class="sbp-hero__chips" data-reveal style="--reveal-delay:0.35s" aria-label="At a glance">
+          <li><span class="sbp-hero__chip-dot sbp-hero__chip-dot--saffron"></span>Drugless · holistic</li>
+          <li><span class="sbp-hero__chip-dot sbp-hero__chip-dot--gold"></span>Est. 2021</li>
+          <li><span class="sbp-hero__chip-dot sbp-hero__chip-dot--tulsi"></span>Yoga · Ayurveda · Modern medicine</li>
+        </ul>
+      </div>
+
+      <!-- Right column: brand visual -->
+      <div class="sbp-hero__visual" data-reveal style="--reveal-delay:0.05s" aria-hidden="true">
+        <!-- Slow rotating mandala behind the brand mark -->
+        <svg class="sbp-mandala" viewBox="-100 -100 200 200">
+          <g fill="none" stroke="currentColor" stroke-width="0.6" opacity="0.55">
+            <circle r="92" />
+            <circle r="76" stroke-dasharray="2 6" />
+            <circle r="60" />
+            <circle r="44" stroke-dasharray="1 5" />
+            <g>
+              @for (i of [0,1,2,3,4,5,6,7,8,9,10,11]; track i) {
+              <line
+                [attr.x1]="0"
+                [attr.y1]="-92"
+                [attr.x2]="0"
+                [attr.y2]="-76"
+                [attr.transform]="'rotate(' + (i * 30) + ')'"
+              />
+              }
+            </g>
+          </g>
+        </svg>
+
+        <!-- Concentric breathing rings — 6s inhale/exhale -->
+        <span class="sbp-breath sbp-breath--1"></span>
+        <span class="sbp-breath sbp-breath--2"></span>
+        <span class="sbp-breath sbp-breath--3"></span>
+
+        <!-- Brand mark: lotus + flame on an open book -->
+        <div class="sbp-hero__mark">
+          <svg viewBox="-150 -150 300 300">
           <defs>
             <radialGradient id="sbp-glow" cx="0" cy="0" r="120">
               <stop offset="0%" stop-color="#F4C572" stop-opacity="0.55" />
@@ -176,16 +210,12 @@
             </g>
           </g>
         </svg>
+        </div>
       </div>
+    </div>
 
-      <p class="sbp-eyebrow" data-reveal>Lifestyle &amp; Wellness Unit</p>
-      <h1 id="sbp-title" class="sbp-hero__title" data-reveal>Swasthya Bharati</h1>
-      <p class="sbp-hero__lede" data-reveal style="--reveal-delay:0.1s">
-        A drugless lifestyle unit at Rashtrotthana Hospital — where the heritage
-        wisdom of Bharath meets the rigour of conventional medicine to prevent
-        and reverse the chronic conditions of modern life.
-      </p>
-
+    <!-- Shloka — placed below the split, full-width container -->
+    <div class="sbp-container sbp-hero__shloka-wrap">
       <figure class="sbp-shloka" data-reveal style="--reveal-delay:0.2s"
               aria-label="Sanskrit verse — Aṣṭāṅga Hṛdayam 4/36">
         <p class="sbp-shloka__sanskrit" lang="sa">
@@ -201,16 +231,6 @@
           <span class="sbp-shloka__source">— Aṣṭāṅga Hṛdayam 4 / 36</span>
         </figcaption>
       </figure>
-
-      <div class="sbp-hero__cta" data-reveal style="--reveal-delay:0.3s">
-        <button type="button" class="sbp-btn sbp-btn--primary" (click)="bookConsultation()">
-          Book a consultation
-          <span class="sbp-btn__arrow" aria-hidden="true">→</span>
-        </button>
-        <button type="button" class="sbp-btn sbp-btn--ghost" (click)="scrollTo('sbp-services')">
-          Explore services
-        </button>
-      </div>
     </div>
 
     <!-- Pranayama waveform at the bottom of the hero -->
