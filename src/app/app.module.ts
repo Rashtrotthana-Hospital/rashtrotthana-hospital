@@ -151,6 +151,7 @@ import { ApplicationFormComponent } from './application-form/application-form.co
 import { NgHcaptchaModule } from 'ng-hcaptcha';
 import { CallBackFormComponent } from './call-back-form/call-back-form.component';
 import { NewDoctorPageComponent } from './new-doctor-page/new-doctor-page.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -272,6 +273,7 @@ import { NewDoctorPageComponent } from './new-doctor-page/new-doctor-page.compon
           ApplicationFormComponent,
           CallBackFormComponent,
           NewDoctorPageComponent,
+          NotFoundComponent,
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   imports: [

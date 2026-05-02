@@ -1,0 +1,923 @@
+<main class="sbp">
+  <!-- ─────────────────────────────────────────────────────────────────
+       HERO — shloka, brand mark, breathing rings, drifting petals
+       ───────────────────────────────────────────────────────────────── -->
+  <section class="sbp-hero" aria-labelledby="sbp-title">
+    <!-- Ambient decoration layer -->
+    <div class="sbp-hero__decor" aria-hidden="true">
+      <span class="sbp-hero__glow sbp-hero__glow--saffron"></span>
+      <span class="sbp-hero__glow sbp-hero__glow--gold"></span>
+      <span class="sbp-hero__glow sbp-hero__glow--tulsi"></span>
+
+      <!-- Slow rotating mandala behind the brand mark -->
+      <svg class="sbp-mandala" viewBox="-100 -100 200 200" aria-hidden="true">
+        <g fill="none" stroke="currentColor" stroke-width="0.6" opacity="0.5">
+          <circle r="92" />
+          <circle r="76" stroke-dasharray="2 6" />
+          <circle r="60" />
+          <circle r="44" stroke-dasharray="1 5" />
+          <g>
+            @for (i of [0,1,2,3,4,5,6,7,8,9,10,11]; track i) {
+            <line
+              [attr.x1]="0"
+              [attr.y1]="-92"
+              [attr.x2]="0"
+              [attr.y2]="-76"
+              [attr.transform]="'rotate(' + (i * 30) + ')'"
+            />
+            }
+          </g>
+        </g>
+      </svg>
+
+      <!-- Concentric breathing rings synced to a 6-second inhale/exhale -->
+      <span class="sbp-breath sbp-breath--1"></span>
+      <span class="sbp-breath sbp-breath--2"></span>
+      <span class="sbp-breath sbp-breath--3"></span>
+
+      <!-- Drifting petals -->
+      <div class="sbp-petals">
+        @for (p of petals; track $index) {
+        <span
+          class="sbp-petal"
+          [class.sbp-petal--saffron]="p.hue === 0"
+          [class.sbp-petal--gold]="p.hue === 1"
+          [class.sbp-petal--tulsi]="p.hue === 2"
+          [style.--p-left.%]="p.left"
+          [style.--p-delay]="p.delay + 's'"
+          [style.--p-duration]="p.duration + 's'"
+          [style.--p-size.px]="p.size"
+          [style.--p-drift.px]="p.drift"
+        >
+          <svg viewBox="-10 -10 20 20">
+            <path
+              d="M0 -9 C 6 -5 6 -1 0 2 C -6 -1 -6 -5 0 -9 Z"
+              fill="currentColor"
+            />
+          </svg>
+        </span>
+        }
+      </div>
+    </div>
+
+    <div class="sbp-container sbp-hero__inner">
+      <!-- Brand mark: lotus + flame on an open book -->
+      <div class="sbp-hero__mark" aria-hidden="true">
+        <svg viewBox="-150 -150 300 300">
+          <defs>
+            <radialGradient id="sbp-glow" cx="0" cy="0" r="120">
+              <stop offset="0%" stop-color="#F4C572" stop-opacity="0.55" />
+              <stop offset="100%" stop-color="#F4C572" stop-opacity="0" />
+            </radialGradient>
+            <linearGradient id="sbp-petal" x1="0" x2="0" y1="0" y2="1">
+              <stop offset="0%" stop-color="#F4A572" />
+              <stop offset="100%" stop-color="#C5572B" />
+            </linearGradient>
+            <linearGradient id="sbp-inner" x1="0" x2="0" y1="0" y2="1">
+              <stop offset="0%" stop-color="#F4C572" />
+              <stop offset="100%" stop-color="#D4A04A" />
+            </linearGradient>
+            <linearGradient id="sbp-flame" x1="0" x2="0" y1="0" y2="1">
+              <stop offset="0%" stop-color="#FFF6D8" />
+              <stop offset="60%" stop-color="#F4C572" />
+              <stop offset="100%" stop-color="#E8743C" />
+            </linearGradient>
+            <linearGradient id="sbp-book" x1="0" x2="0" y1="0" y2="1">
+              <stop offset="0%" stop-color="#B89878" />
+              <stop offset="100%" stop-color="#5C4730" />
+            </linearGradient>
+            <linearGradient id="sbp-page" x1="0" x2="0" y1="0" y2="1">
+              <stop offset="0%" stop-color="#FAF1D8" />
+              <stop offset="100%" stop-color="#ECDCB0" />
+            </linearGradient>
+          </defs>
+
+          <circle r="135" fill="url(#sbp-glow)" />
+
+          <g transform="translate(0, 70)">
+            <path
+              d="M -130 5 L -10 0 L 10 0 L 130 5 L 110 35 L 0 30 L -110 35 Z"
+              fill="url(#sbp-book)"
+            />
+            <path
+              d="M -110 0 L -10 -8 L -10 30 L -108 32 Z"
+              fill="url(#sbp-page)"
+              stroke="#8B6F47"
+              stroke-width="0.8"
+            />
+            <path
+              d="M 110 0 L 10 -8 L 10 30 L 108 32 Z"
+              fill="url(#sbp-page)"
+              stroke="#8B6F47"
+              stroke-width="0.8"
+            />
+            <g stroke="#5C4730" stroke-width="0.8" opacity="0.4" fill="none">
+              <line x1="-95" y1="6" x2="-25" y2="3" />
+              <line x1="-95" y1="13" x2="-25" y2="10" />
+              <line x1="-95" y1="20" x2="-25" y2="17" />
+              <line x1="25" y1="3" x2="95" y2="6" />
+              <line x1="25" y1="10" x2="95" y2="13" />
+              <line x1="25" y1="17" x2="95" y2="20" />
+            </g>
+            <text
+              x="0"
+              y="22"
+              text-anchor="middle"
+              font-family="Tiro Devanagari Sanskrit, serif"
+              font-size="14"
+              fill="#5C4730"
+              opacity="0.75"
+            >
+              स्वास्थ्यभारती
+            </text>
+          </g>
+
+          <!-- Lotus — petals fan out on load -->
+          <g class="sbp-hero__lotus" transform="translate(0, 30)">
+            <g class="sbp-hero__petals-outer">
+              <path class="sbp-hero__petal" style="--p-i:0"
+                    d="M0 -78 C 22 -52 22 -22 0 0 C -22 -22 -22 -52 0 -78 Z"
+                    fill="url(#sbp-petal)"/>
+              <g class="sbp-hero__petal" style="--p-i:1" transform="rotate(45)">
+                <path d="M0 -64 C 18 -42 18 -18 0 0 C -18 -18 -18 -42 0 -64 Z"
+                      fill="url(#sbp-petal)" opacity="0.92"/>
+              </g>
+              <g class="sbp-hero__petal" style="--p-i:2" transform="rotate(-45)">
+                <path d="M0 -64 C 18 -42 18 -18 0 0 C -18 -18 -18 -42 0 -64 Z"
+                      fill="url(#sbp-petal)" opacity="0.92"/>
+              </g>
+              <g class="sbp-hero__petal" style="--p-i:3" transform="rotate(90)">
+                <path d="M0 -52 C 14 -32 14 -12 0 0 C -14 -12 -14 -32 0 -52 Z"
+                      fill="url(#sbp-petal)" opacity="0.85"/>
+              </g>
+              <g class="sbp-hero__petal" style="--p-i:4" transform="rotate(-90)">
+                <path d="M0 -52 C 14 -32 14 -12 0 0 C -14 -12 -14 -32 0 -52 Z"
+                      fill="url(#sbp-petal)" opacity="0.85"/>
+              </g>
+            </g>
+            <g transform="rotate(22)">
+              <path d="M0 -52 C 14 -32 14 -12 0 0 C -14 -12 -14 -32 0 -52 Z"
+                    fill="url(#sbp-inner)"/>
+              <g transform="rotate(72)"><path d="M0 -52 C 14 -32 14 -12 0 0 C -14 -12 -14 -32 0 -52 Z"
+                    fill="url(#sbp-inner)" opacity="0.95"/></g>
+              <g transform="rotate(144)"><path d="M0 -52 C 14 -32 14 -12 0 0 C -14 -12 -14 -32 0 -52 Z"
+                    fill="url(#sbp-inner)" opacity="0.95"/></g>
+              <g transform="rotate(216)"><path d="M0 -52 C 14 -32 14 -12 0 0 C -14 -12 -14 -32 0 -52 Z"
+                    fill="url(#sbp-inner)" opacity="0.95"/></g>
+              <g transform="rotate(288)"><path d="M0 -52 C 14 -32 14 -12 0 0 C -14 -12 -14 -32 0 -52 Z"
+                    fill="url(#sbp-inner)" opacity="0.95"/></g>
+            </g>
+            <ellipse cx="0" cy="0" rx="22" ry="6" fill="#5C4730" />
+            <g class="sbp-hero__flame">
+              <path d="M0 -38 C 10 -28 12 -18 6 -8 C 4 -2 -4 -2 -6 -8 C -12 -18 -10 -28 0 -38 Z"
+                    fill="url(#sbp-flame)"/>
+              <path d="M0 -32 C 5 -24 6 -16 3 -10 C 1 -6 -1 -6 -3 -10 C -6 -16 -5 -24 0 -32 Z"
+                    fill="#FFF6D8" opacity="0.85"/>
+            </g>
+          </g>
+        </svg>
+      </div>
+
+      <p class="sbp-eyebrow" data-reveal>Lifestyle &amp; Wellness Unit</p>
+      <h1 id="sbp-title" class="sbp-hero__title" data-reveal>Swasthya Bharati</h1>
+      <p class="sbp-hero__lede" data-reveal style="--reveal-delay:0.1s">
+        A drugless lifestyle unit at Rashtrotthana Hospital — where the heritage
+        wisdom of Bharath meets the rigour of conventional medicine to prevent
+        and reverse the chronic conditions of modern life.
+      </p>
+
+      <figure class="sbp-shloka" data-reveal style="--reveal-delay:0.2s"
+              aria-label="Sanskrit verse — Aṣṭāṅga Hṛdayam 4/36">
+        <p class="sbp-shloka__sanskrit" lang="sa">
+          नित्यं हिताहारविहारसेवी समीक्ष्यकारी विषयेष्वसक्तः ।<br />
+          दाता समः सत्यपरः क्षमावान् आप्तोपसेवी च भवत्यरोगः ॥
+        </p>
+        <figcaption class="sbp-shloka__caption">
+          <em>
+            “A person of healthy diet and good daily routine — thoughtful,
+            unattached, generous, equal-minded, truthful, forgiving, and
+            service-minded toward elders — does not suffer from disease.”
+          </em>
+          <span class="sbp-shloka__source">— Aṣṭāṅga Hṛdayam 4 / 36</span>
+        </figcaption>
+      </figure>
+
+      <div class="sbp-hero__cta" data-reveal style="--reveal-delay:0.3s">
+        <button type="button" class="sbp-btn sbp-btn--primary" (click)="bookConsultation()">
+          Book a consultation
+          <span class="sbp-btn__arrow" aria-hidden="true">→</span>
+        </button>
+        <button type="button" class="sbp-btn sbp-btn--ghost" (click)="scrollTo('sbp-services')">
+          Explore services
+        </button>
+      </div>
+    </div>
+
+    <!-- Pranayama waveform at the bottom of the hero -->
+    <svg class="sbp-prana" viewBox="0 0 1200 80" preserveAspectRatio="none" aria-hidden="true">
+      <defs>
+        <linearGradient id="sbp-prana-grad" x1="0" x2="1" y1="0" y2="0">
+          <stop offset="0%" stop-color="#E8743C" stop-opacity="0"/>
+          <stop offset="35%" stop-color="#E8743C" stop-opacity="0.7"/>
+          <stop offset="65%" stop-color="#D4A04A" stop-opacity="0.7"/>
+          <stop offset="100%" stop-color="#6E8A22" stop-opacity="0"/>
+        </linearGradient>
+      </defs>
+      <path class="sbp-prana__line"
+            d="M0 40 Q 75 10 150 40 T 300 40 T 450 40 T 600 40 T 750 40 T 900 40 T 1050 40 T 1200 40"
+            fill="none" stroke="url(#sbp-prana-grad)" stroke-width="2"/>
+    </svg>
+  </section>
+
+  <!-- ─────────────────────────────────────────────────────────────────
+       INTRO NARRATIVE
+       ───────────────────────────────────────────────────────────────── -->
+  <section class="sbp-intro" id="sbp-intro" aria-labelledby="sbp-intro-h">
+    <div class="sbp-container sbp-intro__inner">
+      <div class="sbp-intro__copy">
+        <p class="sbp-eyebrow" data-reveal>A Way of Living</p>
+        <h2 id="sbp-intro-h" class="sbp-h" data-reveal>
+          Health begins where the day begins.
+        </h2>
+
+        <p data-reveal style="--reveal-delay:0.05s">
+          For a society that shares a common territory, culture, laws,
+          traditions, and values to remain truly organised and progressive, it
+          must be healthy. Since the individual is the most fundamental unit of
+          society, societal health begins with the health of each individual —
+          and that begins with how we live.
+        </p>
+        <p data-reveal style="--reveal-delay:0.1s">
+          Our ancestors laid down clear principles for holistic living that
+          nurture physical, mental, intellectual, and spiritual well-being —
+          from food habits and daily routines to ethical conduct and disciplined
+          practice. The mission of <strong>Swasthya Bharati</strong> is to study
+          these time-tested practices, support them with scientific evidence,
+          and bring them to people in a clear, practical, and easily
+          understandable manner.
+        </p>
+        <p data-reveal style="--reveal-delay:0.15s">
+          Through this integrative approach, we promote holistic health,
+          encourage lifestyle modification, and focus on disease prevention —
+          empowering individuals to lead healthier, more balanced lives.
+        </p>
+      </div>
+
+      <aside class="sbp-vm" aria-label="Vision and mission">
+        <article class="sbp-vm__card sbp-vm__card--vision" data-reveal>
+          <span class="sbp-vm__tag">Our Vision</span>
+          <p class="sbp-vm__sanskrit" lang="sa">
+            “Svastha-susthira samājanirmāṇam”
+          </p>
+          <p class="sbp-vm__line">
+            To build a healthy, sustainable society by promoting integrative,
+            preventive and promotive healthcare.
+          </p>
+        </article>
+
+        <article class="sbp-vm__card sbp-vm__card--mission" data-reveal style="--reveal-delay:0.1s">
+          <span class="sbp-vm__tag">Our Mission</span>
+          <p class="sbp-vm__line">
+            To promote natural and holistic healing and reduce the impact of
+            lifestyle diseases through preventive care and meaningful lifestyle
+            transformation — guided by the principles of Yoga and Ayurveda, and
+            supported by modern scientific healthcare.
+          </p>
+        </article>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────────────────────────────────
+       NEW: 8 PILLARS OF HEALTHY LIVING
+       ───────────────────────────────────────────────────────────────── -->
+  <section class="sbp-pillars" id="sbp-pillars" aria-labelledby="sbp-pillars-h">
+    <div class="sbp-leaf sbp-leaf--tl" aria-hidden="true">
+      <svg viewBox="0 0 80 80">
+        <path d="M10 70 C 10 30 40 10 70 10 C 70 50 40 70 10 70 Z" fill="currentColor" opacity="0.18"/>
+        <path d="M10 70 L 70 10" stroke="currentColor" stroke-width="1.2" opacity="0.4"/>
+      </svg>
+    </div>
+    <div class="sbp-leaf sbp-leaf--br" aria-hidden="true">
+      <svg viewBox="0 0 80 80">
+        <path d="M70 10 C 70 50 40 70 10 70 C 10 30 40 10 70 10 Z" fill="currentColor" opacity="0.18"/>
+        <path d="M10 70 L 70 10" stroke="currentColor" stroke-width="1.2" opacity="0.4"/>
+      </svg>
+    </div>
+
+    <div class="sbp-container">
+      <header class="sbp-section-head">
+        <p class="sbp-eyebrow" data-reveal>Adhāra · The Foundation</p>
+        <h2 id="sbp-pillars-h" class="sbp-h" data-reveal>
+          The eight pillars of a healthy life.
+        </h2>
+        <p class="sbp-lede" data-reveal style="--reveal-delay:0.1s">
+          Drawn from classical Ayurvedic and yogic teaching — the foundations of
+          health that move with you through every season of life.
+        </p>
+      </header>
+
+      <ul class="sbp-pillars__grid">
+        @for (p of pillars; track p.translit; let i = $index) {
+        <li class="sbp-pillar" data-reveal [style.--reveal-delay]="(i * 0.06) + 's'">
+          <div class="sbp-pillar__glyph" aria-hidden="true">
+            <svg viewBox="0 0 64 64">
+              @switch (p.glyph) {
+              @case ('ahara') {
+              <!-- Bowl of food -->
+              <path d="M10 32 H 54 A 22 22 0 0 1 10 32 Z" fill="none" stroke="currentColor" stroke-width="2"/>
+              <path d="M14 32 Q 32 18 50 32" stroke="currentColor" stroke-width="2" fill="none" opacity="0.6"/>
+              <circle cx="22" cy="22" r="2.5" fill="currentColor"/>
+              <circle cx="32" cy="18" r="2.5" fill="currentColor"/>
+              <circle cx="42" cy="22" r="2.5" fill="currentColor"/>
+              }
+              @case ('vihara') {
+              <!-- Sun & path -->
+              <circle cx="32" cy="22" r="8" fill="none" stroke="currentColor" stroke-width="2"/>
+              <g stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+                <line x1="32" y1="6" x2="32" y2="10"/>
+                <line x1="32" y1="34" x2="32" y2="38"/>
+                <line x1="14" y1="22" x2="18" y2="22"/>
+                <line x1="46" y1="22" x2="50" y2="22"/>
+                <line x1="20" y1="10" x2="22" y2="13"/>
+                <line x1="42" y1="13" x2="44" y2="10"/>
+              </g>
+              <path d="M8 50 Q 32 42 56 50" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              }
+              @case ('nidra') {
+              <!-- Crescent moon + zzz -->
+              <path d="M40 14 A 18 18 0 1 0 50 40 A 14 14 0 0 1 40 14 Z" fill="none" stroke="currentColor" stroke-width="2"/>
+              <text x="46" y="22" font-family="Poppins" font-size="9" fill="currentColor" font-weight="700">z</text>
+              <text x="52" y="16" font-family="Poppins" font-size="6" fill="currentColor" font-weight="700">z</text>
+              }
+              @case ('vyayama') {
+              <!-- Yoga warrior pose figure -->
+              <circle cx="32" cy="14" r="4" fill="none" stroke="currentColor" stroke-width="2"/>
+              <path d="M32 18 L 32 36" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M14 26 L 32 28 L 50 22" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+              <path d="M32 36 L 22 54" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M32 36 L 46 50" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              }
+              @case ('pranayama') {
+              <!-- Breath waveform -->
+              <path d="M6 32 Q 14 18 22 32 T 38 32 T 54 32 H 58" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="58" cy="32" r="2.5" fill="currentColor"/>
+              }
+              @case ('dhyana') {
+              <!-- Seated meditator -->
+              <circle cx="32" cy="18" r="5" fill="none" stroke="currentColor" stroke-width="2"/>
+              <path d="M16 50 C 16 38 24 32 32 32 C 40 32 48 38 48 50 Z" fill="none" stroke="currentColor" stroke-width="2"/>
+              <circle cx="32" cy="42" r="2" fill="currentColor"/>
+              }
+              @case ('vichara') {
+              <!-- Lotus / mind -->
+              <path d="M32 12 C 38 22 38 30 32 36 C 26 30 26 22 32 12 Z" fill="none" stroke="currentColor" stroke-width="2"/>
+              <path d="M14 36 C 22 32 30 32 32 36 C 30 40 22 40 14 36 Z" fill="none" stroke="currentColor" stroke-width="2"/>
+              <path d="M50 36 C 42 32 34 32 32 36 C 34 40 42 40 50 36 Z" fill="none" stroke="currentColor" stroke-width="2"/>
+              <circle cx="32" cy="48" r="2.5" fill="currentColor"/>
+              }
+              @case ('achara') {
+              <!-- Hands joined / namaste -->
+              <path d="M22 50 L 32 18 L 42 50" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M26 50 L 32 26 L 38 50" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" opacity="0.7"/>
+              <circle cx="32" cy="14" r="2.5" fill="currentColor"/>
+              }
+              }
+            </svg>
+          </div>
+          <div class="sbp-pillar__title">
+            <span class="sbp-pillar__sanskrit" lang="sa">{{ p.sanskrit }}</span>
+            <span class="sbp-pillar__translit">{{ p.translit }}</span>
+          </div>
+          <h3 class="sbp-pillar__h">{{ p.english }}</h3>
+          <p class="sbp-pillar__body">{{ p.body }}</p>
+          <span class="sbp-pillar__bloom" aria-hidden="true"></span>
+        </li>
+        }
+      </ul>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────────────────────────────────
+       NEW: DINACHARYA — Daily rhythm arc
+       ───────────────────────────────────────────────────────────────── -->
+  <section class="sbp-daily" id="sbp-daily" aria-labelledby="sbp-daily-h">
+    <div class="sbp-container">
+      <header class="sbp-section-head">
+        <p class="sbp-eyebrow" data-reveal>Dinacharya · Rhythm of the day</p>
+        <h2 id="sbp-daily-h" class="sbp-h" data-reveal>Your day, designed for vitality.</h2>
+        <p class="sbp-lede" data-reveal style="--reveal-delay:0.1s">
+          A simple daily arc — anchored to sunrise, midday and sunset — that
+          quietly rebalances metabolism, mood and immunity.
+        </p>
+      </header>
+
+      <div class="sbp-arc" data-reveal style="--reveal-delay:0.2s">
+        <svg class="sbp-arc__svg" viewBox="0 0 1200 360" preserveAspectRatio="none" aria-hidden="true">
+          <defs>
+            <linearGradient id="sbp-arc-grad" x1="0" x2="1" y1="0" y2="0">
+              <stop offset="0%" stop-color="#E8743C"/>
+              <stop offset="50%" stop-color="#D4A04A"/>
+              <stop offset="100%" stop-color="#5C4730"/>
+            </linearGradient>
+            <linearGradient id="sbp-arc-fill" x1="0" x2="0" y1="0" y2="1">
+              <stop offset="0%" stop-color="#F4A572" stop-opacity="0.55"/>
+              <stop offset="55%" stop-color="#F4C572" stop-opacity="0.32"/>
+              <stop offset="100%" stop-color="#F4C572" stop-opacity="0.08"/>
+            </linearGradient>
+          </defs>
+          <path d="M 40 320 Q 600 -120 1160 320 L 1160 360 L 40 360 Z" fill="url(#sbp-arc-fill)"/>
+          <path d="M 40 320 Q 600 -120 1160 320" fill="none" stroke="url(#sbp-arc-grad)" stroke-width="3.5" stroke-linecap="round"/>
+          <line x1="40" y1="320" x2="1160" y2="320" stroke="#8B6F47" stroke-width="1" stroke-dasharray="3 5" opacity="0.4"/>
+        </svg>
+
+        <!-- Animated sun/moon traveller -->
+        <span class="sbp-arc__sun" aria-hidden="true">
+          <svg viewBox="0 0 60 60">
+            <defs>
+              <radialGradient id="sbp-sun-grad" cx="0.5" cy="0.5" r="0.5">
+                <stop offset="0%" stop-color="#FFF6D8"/>
+                <stop offset="60%" stop-color="#F4C572"/>
+                <stop offset="100%" stop-color="#E8743C"/>
+              </radialGradient>
+            </defs>
+            <circle cx="30" cy="30" r="14" fill="url(#sbp-sun-grad)"/>
+            <g stroke="#E8743C" stroke-width="1.5" stroke-linecap="round" opacity="0.85">
+              <line x1="30" y1="6" x2="30" y2="12"/>
+              <line x1="30" y1="48" x2="30" y2="54"/>
+              <line x1="6" y1="30" x2="12" y2="30"/>
+              <line x1="48" y1="30" x2="54" y2="30"/>
+              <line x1="13" y1="13" x2="17" y2="17"/>
+              <line x1="43" y1="43" x2="47" y2="47"/>
+              <line x1="43" y1="17" x2="47" y2="13"/>
+              <line x1="13" y1="47" x2="17" y2="43"/>
+            </g>
+          </svg>
+        </span>
+
+        <!-- Practice anchors along the arc -->
+        @for (a of dailyRhythm; track a.english; let i = $index) {
+        <div class="sbp-arc__anchor"
+             [style.left.%]="a.pos"
+             [style.--anchor-y.%]="a.yPos"
+             [style.--anchor-delay]="(i * 0.08) + 's'"
+             data-reveal>
+          <span class="sbp-arc__drop" aria-hidden="true"></span>
+          <span class="sbp-arc__pin" aria-hidden="true">
+            <svg viewBox="0 0 32 32">
+              @switch (a.glyph) {
+              @case ('sunrise') {
+              <line x1="16" y1="6" x2="16" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <line x1="6" y1="22" x2="26" y2="22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M9 22 A 7 7 0 0 1 23 22" fill="none" stroke="currentColor" stroke-width="2"/>
+              }
+              @case ('sun') {
+              <circle cx="16" cy="16" r="6" fill="none" stroke="currentColor" stroke-width="2"/>
+              <g stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                <line x1="16" y1="3" x2="16" y2="6"/>
+                <line x1="16" y1="26" x2="16" y2="29"/>
+                <line x1="3" y1="16" x2="6" y2="16"/>
+                <line x1="26" y1="16" x2="29" y2="16"/>
+              </g>
+              }
+              @case ('noon') {
+              <circle cx="16" cy="16" r="8" fill="none" stroke="currentColor" stroke-width="2"/>
+              <g stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                <line x1="16" y1="2" x2="16" y2="5"/>
+                <line x1="16" y1="27" x2="16" y2="30"/>
+                <line x1="2" y1="16" x2="5" y2="16"/>
+                <line x1="27" y1="16" x2="30" y2="16"/>
+                <line x1="6" y1="6" x2="8" y2="8"/>
+                <line x1="24" y1="24" x2="26" y2="26"/>
+                <line x1="24" y1="8" x2="26" y2="6"/>
+                <line x1="6" y1="26" x2="8" y2="24"/>
+              </g>
+              }
+              @case ('evening') {
+              <line x1="6" y1="22" x2="26" y2="22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M9 22 A 7 7 0 0 1 23 22" fill="none" stroke="currentColor" stroke-width="2"/>
+              <line x1="16" y1="22" x2="16" y2="28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              }
+              @case ('dusk') {
+              <path d="M22 8 A 10 10 0 1 0 26 22 A 8 8 0 0 1 22 8 Z" fill="none" stroke="currentColor" stroke-width="2"/>
+              <circle cx="6" cy="24" r="1.5" fill="currentColor"/>
+              }
+              @case ('moon') {
+              <path d="M22 8 A 10 10 0 1 0 26 22 A 8 8 0 0 1 22 8 Z" fill="currentColor" opacity="0.85"/>
+              }
+              }
+            </svg>
+          </span>
+          <div class="sbp-arc__card">
+            <span class="sbp-arc__time">{{ a.time }}</span>
+            <p class="sbp-arc__sanskrit" lang="sa">{{ a.sanskrit }}</p>
+            <h3 class="sbp-arc__title">{{ a.english }}</h3>
+            <p class="sbp-arc__desc">{{ a.desc }}</p>
+          </div>
+        </div>
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────────────────────────────────
+       SERVICES — segmented tabs with sliding indicator
+       ───────────────────────────────────────────────────────────────── -->
+  <section class="sbp-services" id="sbp-services" aria-labelledby="sbp-services-h">
+    <div class="sbp-container">
+      <header class="sbp-section-head">
+        <p class="sbp-eyebrow" data-reveal>Services Offered</p>
+        <h2 id="sbp-services-h" class="sbp-h" data-reveal>
+          A complete map of how we care.
+        </h2>
+        <p class="sbp-lede" data-reveal style="--reveal-delay:0.1s">
+          From early lifestyle assessment to structured drugless programs —
+          designed to meet you where you are and walk with you to where you
+          want to be.
+        </p>
+      </header>
+
+      <div class="sbp-tabs-wrap" data-reveal>
+        <div class="sbp-tabs" role="tablist" aria-label="Service categories" #tabsRow>
+          <span
+            class="sbp-tabs__indicator"
+            [style.--ind-left.px]="tabIndicator().left"
+            [style.--ind-width.px]="tabIndicator().width"
+            aria-hidden="true"
+          ></span>
+          @for (tab of services; track tab.id) {
+          <button
+            #tabBtn
+            type="button"
+            role="tab"
+            [attr.data-id]="tab.id"
+            [id]="'sbp-tab-' + tab.id"
+            [attr.aria-selected]="activeService() === tab.id"
+            [attr.aria-controls]="'sbp-panel-' + tab.id"
+            [class.is-active]="activeService() === tab.id"
+            class="sbp-tab"
+            (click)="setService(tab.id)"
+          >
+            {{ tab.label }}
+          </button>
+          }
+        </div>
+      </div>
+
+      @for (group of services; track group.id) {
+      <div
+        class="sbp-panel"
+        role="tabpanel"
+        [id]="'sbp-panel-' + group.id"
+        [attr.aria-labelledby]="'sbp-tab-' + group.id"
+        [hidden]="activeService() !== group.id"
+      >
+        <p class="sbp-panel__caption" data-reveal>{{ group.caption }}</p>
+        <ul class="sbp-grid">
+          @for (item of group.items; track item.title; let i = $index) {
+          <li class="sbp-card sbp-card--service" data-reveal [style.--reveal-delay]="(i * 0.04) + 's'">
+            <div class="sbp-card__petal" aria-hidden="true">
+              <svg viewBox="-20 -20 40 40">
+                <path
+                  d="M0 -16 C 6 -10 6 -4 0 0 C -6 -4 -6 -10 0 -16 Z"
+                  fill="url(#sbp-petal)"
+                />
+              </svg>
+            </div>
+            <h3 class="sbp-card__title">{{ item.title }}</h3>
+            @if (item.sub) {
+            <p class="sbp-card__sub">{{ item.sub }}</p>
+            }
+          </li>
+          }
+        </ul>
+      </div>
+      }
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────────────────────────────────
+       WHY SWASTHYA BHARATI
+       ───────────────────────────────────────────────────────────────── -->
+  <section class="sbp-why" id="sbp-why" aria-labelledby="sbp-why-h">
+    <div class="sbp-container sbp-why__inner">
+      <div class="sbp-why__copy">
+        <p class="sbp-eyebrow" data-reveal>Why Swasthya Bharati</p>
+        <h2 id="sbp-why-h" class="sbp-h" data-reveal>
+          70–80% of today’s chronic illness traces back to how we live.
+        </h2>
+        <p data-reveal style="--reveal-delay:0.1s">
+          Established in 2021, Swasthya Bharati promotes awareness of healthy
+          lifestyle practices in the community. True health extends far beyond
+          food habits and physical activity — it encompasses emotional
+          well-being, thought patterns, social harmony and spiritual balance.
+          Stress, irregular routines, poor sleep and food habits, and sedentary
+          behaviour quietly alter hormonal balance, metabolism and immunity.
+        </p>
+        <p data-reveal style="--reveal-delay:0.15s">
+          Rooted in the time-tested principles of Yoga and Ayurveda, we focus on
+          identifying and consciously correcting the underlying causes of
+          imbalance — rather than merely addressing symptoms.
+        </p>
+      </div>
+
+      <ul class="sbp-why__points">
+        @for (p of whyPoints; track p.title; let i = $index) {
+        <li class="sbp-card sbp-card--why" data-reveal [style.--reveal-delay]="(i * 0.08) + 's'">
+          <span class="sbp-card__index">{{ '0' + (i + 1) }}</span>
+          <h3 class="sbp-card__title">{{ p.title }}</h3>
+          <p class="sbp-card__body">{{ p.body }}</p>
+        </li>
+        }
+      </ul>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────────────────────────────────
+       BENEFITS
+       ───────────────────────────────────────────────────────────────── -->
+  <section class="sbp-benefits" id="sbp-benefits" aria-labelledby="sbp-benefits-h">
+    <div class="sbp-container">
+      <header class="sbp-section-head">
+        <p class="sbp-eyebrow" data-reveal>How patients benefit</p>
+        <h2 id="sbp-benefits-h" class="sbp-h" data-reveal>Outcomes you can feel — and measure.</h2>
+      </header>
+
+      <div class="sbp-benefits__grid">
+        @for (col of benefits; track col.group; let i = $index) {
+        <article class="sbp-card sbp-card--benefit" data-reveal [style.--reveal-delay]="(i * 0.1) + 's'">
+          <div class="sbp-card__icon" [attr.data-icon]="col.icon" aria-hidden="true">
+            @switch (col.icon) {
+            @case ('physical') {
+            <svg viewBox="0 0 32 32" fill="none">
+              <path
+                d="M16 4 L19 10 L26 11 L21 16 L22 23 L16 20 L10 23 L11 16 L6 11 L13 10 Z"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linejoin="round"
+              />
+            </svg>
+            }
+            @case ('physiological') {
+            <svg viewBox="0 0 32 32" fill="none">
+              <path
+                d="M6 16 L11 16 L13 11 L16 21 L19 13 L21 16 L26 16"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            }
+            @case ('mental') {
+            <svg viewBox="0 0 32 32" fill="none">
+              <path
+                d="M16 26 C 10 26 6 22 6 17 C 6 12 10 8 14 8 C 14 5 18 5 18 8 C 22 8 26 12 26 17 C 26 22 22 26 16 26 Z"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M14 17 L16 19 L20 14"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            }
+            }
+          </div>
+          <h3 class="sbp-card__title">{{ col.group }}</h3>
+          <ul class="sbp-card__list">
+            @for (b of col.items; track b) {
+            <li>{{ b }}</li>
+            }
+          </ul>
+        </article>
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────────────────────────────────
+       IMPACT — animated stats + testimonials
+       ───────────────────────────────────────────────────────────────── -->
+  <section class="sbp-impact" id="sbp-impact" aria-labelledby="sbp-impact-h">
+    <div class="sbp-container">
+      <header class="sbp-section-head">
+        <p class="sbp-eyebrow" data-reveal>Outcomes &amp; voices</p>
+        <h2 id="sbp-impact-h" class="sbp-h" data-reveal>
+          Real change, in real lives.
+        </h2>
+      </header>
+
+      <ul class="sbp-stats" aria-label="Key statistics">
+        @for (s of stats; track s.label; let i = $index) {
+        <li>
+          <p class="sbp-stats__value">
+            <span class="sbp-stats__num">{{ s.prefix }}{{ statValues()[i] }}{{ s.suffix }}</span>
+          </p>
+          <p class="sbp-stats__label">{{ s.label }}</p>
+        </li>
+        }
+      </ul>
+
+      <ul class="sbp-stories">
+        @for (t of testimonials; track t.name; let i = $index) {
+        <li class="sbp-card sbp-card--story" data-reveal [style.--reveal-delay]="(i * 0.08) + 's'">
+          <span class="sbp-card__quote" aria-hidden="true">“</span>
+          <p class="sbp-card__body">{{ t.quote }}</p>
+          <div class="sbp-card__meta">
+            <strong>{{ t.name }}</strong>
+            <span>{{ t.tag }}</span>
+          </div>
+        </li>
+        }
+      </ul>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────────────────────────────────
+       TEAM
+       ───────────────────────────────────────────────────────────────── -->
+  <section class="sbp-team" id="sbp-team" aria-labelledby="sbp-team-h">
+    <div class="sbp-container">
+      <header class="sbp-section-head">
+        <p class="sbp-eyebrow" data-reveal>Our team</p>
+        <h2 id="sbp-team-h" class="sbp-h" data-reveal>
+          Physicians who walk this path with you.
+        </h2>
+      </header>
+
+      <ul class="sbp-team__grid">
+        @for (d of doctors; track d.name; let i = $index) {
+        <li class="sbp-card sbp-card--doctor" data-reveal [style.--reveal-delay]="(i * 0.08) + 's'">
+          <div class="sbp-doctor__avatar" aria-hidden="true">
+            <span>{{ d.initial }}</span>
+          </div>
+          <h3 class="sbp-card__title">{{ d.name }}</h3>
+          <p class="sbp-card__sub">{{ d.role }}</p>
+        </li>
+        }
+      </ul>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────────────────────────────────
+       APPOINTMENT & CONTACT
+       ───────────────────────────────────────────────────────────────── -->
+  <section class="sbp-appt" id="sbp-appt" aria-labelledby="sbp-appt-h">
+    <div class="sbp-container sbp-appt__inner">
+      <div class="sbp-appt__copy">
+        <p class="sbp-eyebrow" data-reveal>Begin your journey</p>
+        <h2 id="sbp-appt-h" class="sbp-h" data-reveal>Book your consultation today.</h2>
+        <p data-reveal style="--reveal-delay:0.1s">
+          A first consultation includes a detailed lifestyle history, a
+          structured assessment, and a personalised plan you can begin
+          immediately. Bring your recent reports — and your questions.
+        </p>
+        <button
+          type="button"
+          class="sbp-btn sbp-btn--primary"
+          data-reveal
+          style="--reveal-delay:0.15s"
+          (click)="bookConsultation()"
+        >
+          Book a consultation
+          <span class="sbp-btn__arrow" aria-hidden="true">→</span>
+        </button>
+      </div>
+
+      <aside class="sbp-appt__card" aria-label="Contact information" data-reveal style="--reveal-delay:0.1s">
+        <div class="sbp-appt__row">
+          <span class="sbp-appt__label">OPD Timings</span>
+          <p>Mon — Sat · 9:00 AM – 5:00 PM</p>
+        </div>
+        <div class="sbp-appt__row">
+          <span class="sbp-appt__label">Phone</span>
+          <a href="tel:+918023213000">+91 80 2321 3000</a>
+        </div>
+        <div class="sbp-appt__row">
+          <span class="sbp-appt__label">Email</span>
+          <a href="mailto:info@rashtrotthanahospital.com"
+            >info&#64;rashtrotthanahospital.com</a
+          >
+        </div>
+        <div class="sbp-appt__row">
+          <span class="sbp-appt__label">Online registration</span>
+          <a routerLink="/contact-us">Open registration form →</a>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────────────────────────────────
+       RESOURCES
+       ───────────────────────────────────────────────────────────────── -->
+  <section class="sbp-resources" id="sbp-resources" aria-labelledby="sbp-resources-h">
+    <div class="sbp-container">
+      <header class="sbp-section-head">
+        <p class="sbp-eyebrow" data-reveal>Downloads &amp; resources</p>
+        <h2 id="sbp-resources-h" class="sbp-h" data-reveal>
+          Take the practice home with you.
+        </h2>
+      </header>
+
+      <ul class="sbp-resources__grid">
+        @for (r of resources; track r.title; let i = $index) {
+        <li class="sbp-card sbp-card--resource" data-reveal [style.--reveal-delay]="(i * 0.08) + 's'">
+          <div class="sbp-card__icon" [attr.data-icon]="r.icon" aria-hidden="true">
+            @switch (r.icon) {
+            @case ('doc') {
+            <svg viewBox="0 0 32 32" fill="none">
+              <path d="M9 5 L19 5 L25 11 L25 27 L9 27 Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+              <path d="M19 5 L19 11 L25 11" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+              <line x1="13" y1="17" x2="21" y2="17" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+              <line x1="13" y1="21" x2="21" y2="21" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+            </svg>
+            }
+            @case ('form') {
+            <svg viewBox="0 0 32 32" fill="none">
+              <rect x="7" y="6" width="18" height="20" rx="2" stroke="currentColor" stroke-width="1.6"/>
+              <line x1="11" y1="12" x2="21" y2="12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+              <line x1="11" y1="16" x2="21" y2="16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+              <line x1="11" y1="20" x2="17" y2="20" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+            </svg>
+            }
+            @case ('mail') {
+            <svg viewBox="0 0 32 32" fill="none">
+              <rect x="5" y="9" width="22" height="14" rx="2" stroke="currentColor" stroke-width="1.6"/>
+              <path d="M5 11 L16 19 L27 11" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+            </svg>
+            }
+            }
+          </div>
+          <h3 class="sbp-card__title">{{ r.title }}</h3>
+          <p class="sbp-card__sub">{{ r.desc }}</p>
+          <p class="sbp-card__meta-line">{{ r.meta }}</p>
+          <span class="sbp-card__link">Download →</span>
+        </li>
+        }
+      </ul>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────────────────────────────────
+       FAQs
+       ───────────────────────────────────────────────────────────────── -->
+  <section class="sbp-faq" id="sbp-faq" aria-labelledby="sbp-faq-h">
+    <div class="sbp-container">
+      <header class="sbp-section-head">
+        <p class="sbp-eyebrow" data-reveal>Frequently asked</p>
+        <h2 id="sbp-faq-h" class="sbp-h" data-reveal>Honest answers, before you walk in.</h2>
+      </header>
+
+      <ul class="sbp-faq__list">
+        @for (f of faqs; track f.q; let i = $index) {
+        <li class="sbp-faq__item" [class.is-open]="openFaq() === i" data-reveal [style.--reveal-delay]="(i * 0.05) + 's'">
+          <button
+            type="button"
+            class="sbp-faq__btn"
+            [attr.aria-expanded]="openFaq() === i"
+            [attr.aria-controls]="'sbp-faq-panel-' + i"
+            (click)="toggleFaq(i)"
+          >
+            <span class="sbp-faq__q">{{ f.q }}</span>
+            <span class="sbp-faq__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M6 9 L12 15 L18 9"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+          </button>
+          <div
+            class="sbp-faq__panel"
+            [id]="'sbp-faq-panel-' + i"
+            [hidden]="openFaq() !== i"
+          >
+            <p>{{ f.a }}</p>
+          </div>
+        </li>
+        }
+      </ul>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────────────────────────────────
+       CLOSING SHLOKA STRIP
+       ───────────────────────────────────────────────────────────────── -->
+  <section class="sbp-close" aria-hidden="true">
+    <div class="sbp-container">
+      <p class="sbp-close__line" lang="sa" data-reveal>सर्वे भवन्तु सुखिनः सर्वे सन्तु निरामयाः ।</p>
+      <p class="sbp-close__sub" data-reveal style="--reveal-delay:0.1s">
+        May all be happy. May all be free from disease.
+      </p>
+    </div>
+  </section>
+</main>

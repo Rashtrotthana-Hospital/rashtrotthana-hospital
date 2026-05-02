@@ -69,8 +69,6 @@ export class AppComponent implements OnInit {
       }
     });
 
-
-
     document.addEventListener('DOMContentLoaded', () => {
       const chatBotPopup = document.getElementById('chatBotPopup');
       const notificationSound = document.getElementById(

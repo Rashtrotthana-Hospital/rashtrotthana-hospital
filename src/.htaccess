@@ -1,25 +1,72 @@
+# ---------------------------------------------------------------
+# Angular SPA on Hostinger (Apache)
+# - Known routes          -> 200 + index.html  (Angular renders them)
+# - Unknown routes        -> 404 + index.html  (Angular renders 404 UI)
+# - Real files / assets   -> served directly
+# Keep this list in sync with src/app/app-routing.module.ts
+# ---------------------------------------------------------------
+
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
-  RewriteRule ^index\.html$ - [L]
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule . /index.html [L]
+
+  # Serve real files and directories as-is (JS, CSS, images, robots.txt, sitemap.xml, etc.)
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # Home
+  RewriteRule ^$ /index.html [L]
+
+  # Known single-segment routes
+  RewriteRule ^(about-us|career|doctor-card|advisory-board-members|ethical-committee|insurance|thank-you|samraksha|terms-and-conditions|annual-report|tie-up-page|application-form|callback-form|maternity-care|surgery-card|contact-us-bangalore|best-doctors-bangalore|donate-to-hospital-bangalore|health-check-up-packages-bangalore|yoga-therapy-bangalore|ayurvedic-treatment-bangalore|homeopathy-treatment-bangalore|lifestyle-medicine-bangalore|ayurvedic-thyroid-treatment|mathrubhava-treatment|total-knee-replacement-bangalore|hernia-hospital-bangalore|piles-hospital-bangalore|tonsillectomy-surgery-in-bangalore|adenoidectomy-surgery-in-bangalore|gallstone-removal-surgery-bangalore|kidney-stone-surgery-bangalore|hysterectomy-surgery-bangalore|acl-reconstruction-surgery-bangalore|laboratory-services-bangalore|best-kidney-dialysis-multispeciality-hospital-bangalore|24-hours-pharmacy-store-bangalore|top-diagnostics-multi-speciality-hospital-bangalore|best-emergency-trauma-multispeciality-hospital-bangalore|diabetic-foot-clinic-in-bangalore|allergy-clinic-in-bangalore|heart-problems-in-winter|blog|swasthya-bharati)/?$ /index.html [L]
+
+  # Known prefix routes (with optional child segment)
+  RewriteRule ^specialities(/[^/]+)?/?$ /index.html [L]
+  RewriteRule ^facility(/[^/]+)?/?$ /index.html [L]
+
+  # Dynamic routes
+  RewriteRule ^blog/[^/]+/?$ /index.html [L]
+  RewriteRule ^doctor/[^/]+/?$ /index.html [L]
+  RewriteRule ^health-package/[^/]+/?$ /index.html [L]
+
+  # Anything else -> real 404 (body comes from ErrorDocument below)
+  RewriteRule ^ - [R=404,L]
 </IfModule>
 
-# Browser caching
-<IfModule mod_expires.c>
-  ExpiresActive On
-  ExpiresByType image/jpg "access plus 6 months"
-  ExpiresByType image/jpeg "access plus 6 months"
-  ExpiresByType image/gif "access plus 6 months"
-  ExpiresByType image/png "access plus 6 months"
-  ExpiresByType image/webp "access plus 6 months"
-  ExpiresByType text/css "access plus 1 month"
-  ExpiresByType application/javascript "access plus 1 month"
-  ExpiresDefault "access plus 1 week"
-</IfModule>
+# Use index.html as the 404 body so Angular still renders the NotFoundComponent UI
+ErrorDocument 404 /index.html
 
+# ---------------------------------------------------------------
+# Compression
+# ---------------------------------------------------------------
 <IfModule mod_deflate.c>
-  AddOutputFilterByType DEFLATE image/svg+xml image/x-icon image/gif image/jpeg image/png text/css text/html application/javascript application/json
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json image/svg+xml
 </IfModule>
+
+# ---------------------------------------------------------------
+# Cache headers - caching disabled for all assets
+# ---------------------------------------------------------------
+<IfModule mod_headers.c>
+  Header set Cache-Control "no-cache, no-store, must-revalidate"
+  Header set Pragma "no-cache"
+  Header set Expires 0
+
+  # ---------------------------------------------------------------
+  # Security / anti-abuse headers (relevant to the phishing misuse)
+  # ---------------------------------------------------------------
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+  # HSTS - only enable after confirming HTTPS works on every subdomain
+  # Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+</IfModule>
+
+# ---------------------------------------------------------------
+# Force HTTPS (uncomment once SSL is confirmed working on Hostinger)
+# ---------------------------------------------------------------
+# <IfModule mod_rewrite.c>
+#   RewriteCond %{HTTPS} !=on
+#   RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# </IfModule>
