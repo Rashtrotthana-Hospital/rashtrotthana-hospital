@@ -365,19 +365,19 @@ export class DoctorLayoutComponent {
     },
 
 
-    {
-      name: 'Dr. Manasa N. A',
-      image: 'assets/Dr-Manasa-N-A.png',
-      desgination: 'ENT, HEAD & NECK SURGERY',
-      about: 'Dr. Manasa. N. A. Consultant ENT, Head & Neck Surgeon comes with a vast experience of 10 years. She has done her MBBS from the prestigious M.S. Ramaiah Medical College. She did her post-graduation from JJM medical college, Davangere. She procured her higher studies from Tata Main Hospital.She is immensely knowledgeable, compassionate and skilled in her field of expertise. She is your one stop solutions to all your Ear, nose, throat and Head & Neck related issues. Other than the routine ENT work she also specialises in endoscopic adenoidectomy and endoscopic endonasal sinus surgeries, microscopic hearing restoration surgeries, voice restoration surgery and Head and tumour surgeries.',
-      speciality: 'ENT SPECIALITY',
-      areasOfExpertise: ['Micro ear surgery for hearing restoration', 'Septoplasty', 'Endoscopic sinus surgery', 'Management of vocal cord and voice disorders', 'Diagnosis and treatment of Head and neck tumors', 'Tracheotomy and airway surgeries', 'Polytrauma management', 'Snoring evaluation and Management of Obstructive sleep apnea', 'Tonsillectomy', 'Adenoidectomy', 'Myringotomy'],
-      expertise: 'Years of Experience: 16+',
-      qualification: 'MBBS, DLO, DNB(ENT)',
-      time: '10:30-10:50,10:50-11:10,11:10-11:30,11:30-11:50,11:50-12:10,12:10-12:30',
-      date: 'Monday,Wednesday,Friday and Saturday',
-      alt: 'Dr. Manasa N. A | Best ENT Consultant in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore'
-    },
+    // {
+    //   name: 'Dr. Manasa N. A',
+    //   image: 'assets/Dr-Manasa-N-A.png',
+    //   desgination: 'ENT, HEAD & NECK SURGERY',
+    //   about: 'Dr. Manasa. N. A. Consultant ENT, Head & Neck Surgeon comes with a vast experience of 10 years. She has done her MBBS from the prestigious M.S. Ramaiah Medical College. She did her post-graduation from JJM medical college, Davangere. She procured her higher studies from Tata Main Hospital.She is immensely knowledgeable, compassionate and skilled in her field of expertise. She is your one stop solutions to all your Ear, nose, throat and Head & Neck related issues. Other than the routine ENT work she also specialises in endoscopic adenoidectomy and endoscopic endonasal sinus surgeries, microscopic hearing restoration surgeries, voice restoration surgery and Head and tumour surgeries.',
+    //   speciality: 'ENT SPECIALITY',
+    //   areasOfExpertise: ['Micro ear surgery for hearing restoration', 'Septoplasty', 'Endoscopic sinus surgery', 'Management of vocal cord and voice disorders', 'Diagnosis and treatment of Head and neck tumors', 'Tracheotomy and airway surgeries', 'Polytrauma management', 'Snoring evaluation and Management of Obstructive sleep apnea', 'Tonsillectomy', 'Adenoidectomy', 'Myringotomy'],
+    //   expertise: 'Years of Experience: 16+',
+    //   qualification: 'MBBS, DLO, DNB(ENT)',
+    //   time: '10:30-10:50,10:50-11:10,11:10-11:30,11:30-11:50,11:50-12:10,12:10-12:30',
+    //   date: 'Monday,Wednesday,Friday and Saturday',
+    //   alt: 'Dr. Manasa N. A | Best ENT Consultant in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore'
+    // },
 
 
     {
@@ -651,19 +651,19 @@ export class DoctorLayoutComponent {
     //   time:'09:30-09:50,09:50-10:10,10:10-10:30,10:30-10:50,10:50-11:10,11:10-11:30,11:30-11:50,11:50-12:10,12:10-12:30,12:30-12:50,12:50-13:10,13:10-13:30,13:30-13:50,13:50-14:10,14:10-14:30,14:30-14:50,14:50-15:10,15:10-15:30,15:30-15:50,15:50-16:10,16:10-16:30,16:30-16:50,16:50-17:00',
     //   date:'Monday-Saturday'
     // },
-    {
-      name: 'Dr. Narendranath A',
-      image: 'assets/Dr-Narendranath-A.png',
-      desgination: 'Consultant, ENT Head & Neck surgery',
-      speciality: 'ENT SPECIALITY',
-      about: 'Dr. Narendranath A is graduate from RAJAH MUTHIAH MEDICAL COLLEGE,TAMIL NADU in 2010. He completed his post graduation MS (ENT) from vijayanagar insititute of medical sciences, bellary in 2015.Otology/ tympanoplasty and mastoidectomy surgeries, myringotomy and grommet surgery, FESS (nasal polyp surgery)/sinus surgeries, nasal septum correction surgery, Adenoid and tonsil surgeries, surgeries related to vocal cords (voice box), thyroid and parotid surgeries, tracheostomy.   ',
-      areasOfExpertise: ['Otology and rhinology', 'Otology/ tympanoplasty', 'Mastoidectomy surgeries', 'Myringotomy and grommet surgery', 'FESS (nasal polyp surgery)/sinus surgeries', 'Nasal septum correction surgery', 'Adenoid and tonsil surgeries, surgeries related to vocal cords (voice box)', 'Thyroid and parotid surgeries', '* Tracheostomy'],
-      expertise: 'Years of Experience: 11+',
-      qualification: 'MBBS, MS(ENT)',
-      time: '13:30-13:50,13:50-14:10,14:10-14:30,14:30-14:50,14:50-15:10,15:10-15:30',
-      date: 'Monday,Wednesday,Thursday and Friday',
-      alt: 'Dr. Narendranath A | Best ENT Doctor in Bangalore | Rashtrotthana Hospita | Rajarajeshwari Nagar Bangalore'
-    },
+    // {
+    //   name: 'Dr. Narendranath A',
+    //   image: 'assets/Dr-Narendranath-A.png',
+    //   desgination: 'Consultant, ENT Head & Neck surgery',
+    //   speciality: 'ENT SPECIALITY',
+    //   about: 'Dr. Narendranath A is graduate from RAJAH MUTHIAH MEDICAL COLLEGE,TAMIL NADU in 2010. He completed his post graduation MS (ENT) from vijayanagar insititute of medical sciences, bellary in 2015.Otology/ tympanoplasty and mastoidectomy surgeries, myringotomy and grommet surgery, FESS (nasal polyp surgery)/sinus surgeries, nasal septum correction surgery, Adenoid and tonsil surgeries, surgeries related to vocal cords (voice box), thyroid and parotid surgeries, tracheostomy.   ',
+    //   areasOfExpertise: ['Otology and rhinology', 'Otology/ tympanoplasty', 'Mastoidectomy surgeries', 'Myringotomy and grommet surgery', 'FESS (nasal polyp surgery)/sinus surgeries', 'Nasal septum correction surgery', 'Adenoid and tonsil surgeries, surgeries related to vocal cords (voice box)', 'Thyroid and parotid surgeries', '* Tracheostomy'],
+    //   expertise: 'Years of Experience: 11+',
+    //   qualification: 'MBBS, MS(ENT)',
+    //   time: '13:30-13:50,13:50-14:10,14:10-14:30,14:30-14:50,14:50-15:10,15:10-15:30',
+    //   date: 'Monday,Wednesday,Thursday and Friday',
+    //   alt: 'Dr. Narendranath A | Best ENT Doctor in Bangalore | Rashtrotthana Hospita | Rajarajeshwari Nagar Bangalore'
+    // },
     // {
     //   name: 'Dr. Ashika Bagaria',
     //   image: 'assets/doctor-34.png',

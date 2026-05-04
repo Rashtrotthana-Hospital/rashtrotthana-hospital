@@ -44,27 +44,27 @@ export class TonsillectomyComponent {
     ]
   };
 
-formdoctors = ['Dr. Manasa N. A', 'Dr. Narendranath A', 'Dr. Sunil Kumar C', 'Dr. Sandhya S. Patil'];
+formdoctors = ['Dr. Sunil Kumar C', 'Dr. Sandhya S. Patil'];
 
   doctors = [
-    {
-      id: 1,
-      name: 'Dr. Manasa N. A',
-      image: 'assets/Doc-Inv-Page/Dr-Manasa-N-A.png',
-      qualification: 'MBBS, DLO, DNB(ENT)',
-      experience: '16+ Years',
-      speciality: 'ENT',
-      slug: '/doctor/dr-manasa-n-a'
-    },
-    {
-      id: 2,
-      name: 'Dr. Narendranath A',
-      image: 'assets/Doc-Inv-Page/Dr-Narendranath-A.png',
-      qualification: 'MBBS, MS(ENT)',
-      experience: '11+',
-      speciality: 'ENT',
-      slug: '/doctor/dr-narendranath-a'
-    },
+    // {
+    //   id: 1,
+    //   name: 'Dr. Manasa N. A',
+    //   image: 'assets/Doc-Inv-Page/Dr-Manasa-N-A.png',
+    //   qualification: 'MBBS, DLO, DNB(ENT)',
+    //   experience: '16+ Years',
+    //   speciality: 'ENT',
+    //   slug: '/doctor/dr-manasa-n-a'
+    // },
+    // {
+    //   id: 2,
+    //   name: 'Dr. Narendranath A',
+    //   image: 'assets/Doc-Inv-Page/Dr-Narendranath-A.png',
+    //   qualification: 'MBBS, MS(ENT)',
+    //   experience: '11+',
+    //   speciality: 'ENT',
+    //   slug: '/doctor/dr-narendranath-a'
+    // },
     {
       id: 3,
       name: 'Dr. Sunil Kumar C',

@@ -43,29 +43,29 @@ export const TONSILLECTOMY_SCHEMA = {
         'Patients are advised rest, medications and follow-up consultations to ensure proper healing after tonsillectomy.',
     },
 
-    {
-      '@type': 'Physician',
-      name: 'Dr. Manasa N. A',
-      medicalSpecialty: 'ENT',
-      yearsOfExperience: '16',
-      url: 'https://www.rashtrotthanahospital.com/doctor/dr-manasa-n-a',
-      affiliation: {
-        '@type': 'Hospital',
-        name: 'Rashtrotthana Hospital',
-      },
-    },
+    // {
+    //   '@type': 'Physician',
+    //   name: 'Dr. Manasa N. A',
+    //   medicalSpecialty: 'ENT',
+    //   yearsOfExperience: '16',
+    //   url: 'https://www.rashtrotthanahospital.com/doctor/dr-manasa-n-a',
+    //   affiliation: {
+    //     '@type': 'Hospital',
+    //     name: 'Rashtrotthana Hospital',
+    //   },
+    // },
 
-    {
-      '@type': 'Physician',
-      name: 'Dr. Narendranath A',
-      medicalSpecialty: 'ENT',
-      yearsOfExperience: '11',
-      url: 'https://www.rashtrotthanahospital.com/doctor/dr-narendranath-a',
-      affiliation: {
-        '@type': 'Hospital',
-        name: 'Rashtrotthana Hospital',
-      },
-    },
+    // {
+    //   '@type': 'Physician',
+    //   name: 'Dr. Narendranath A',
+    //   medicalSpecialty: 'ENT',
+    //   yearsOfExperience: '11',
+    //   url: 'https://www.rashtrotthanahospital.com/doctor/dr-narendranath-a',
+    //   affiliation: {
+    //     '@type': 'Hospital',
+    //     name: 'Rashtrotthana Hospital',
+    //   },
+    // },
 
     {
       '@type': 'Physician',
