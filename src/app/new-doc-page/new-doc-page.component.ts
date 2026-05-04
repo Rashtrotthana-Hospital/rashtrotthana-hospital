@@ -1009,54 +1009,54 @@ export class NewDocPageComponent {
     },
 
 
-    {
-      name: 'Dr. Manasa N. A',
-      image: 'assets/Doc-Inv-Page/Dr-Manasa-N-A.png',
-      department: 'ENT, HEAD & NECK SURGERY',
-      about: 'Dr. Manasa. N. A Consultant ENT, Head & Neck Surgeon comes with a vast experience of 10 years. She has done her MBBS from the prestigious M.S. Ramaiah Medical College. She did her post-graduation from JJM medical college, Davangere. She procured her higher studies from Tata Main Hospital.She is immensely knowledgeable, compassionate and skilled in her field of expertise. She is your one stop solutions to all your Ear, nose, throat and Head & Neck related issues. Other than the routine ENT work she also specialises in endoscopic adenoidectomy and endoscopic endonasal sinus surgeries, microscopic hearing restoration surgeries, voice restoration surgery and Head and tumour surgeries.',
-      speciality: 'ENT SPECIALITY',
-      areasOfExpertise: ['Micro ear surgery for hearing restoration', 'Septoplasty', 'Endoscopic sinus surgery', 'Management of vocal cord and voice disorders', 'Diagnosis and treatment of Head and neck tumors', 'Tracheotomy and airway surgeries', 'Polytrauma management', 'Snoring evaluation and Management of Obstructive sleep apnea', 'Tonsillectomy', 'Adenoidectomy', 'Myringotomy'],
-      expertise: '10',
-      qualification: 'MBBS, DLO, DNB(ENT)',
-      time: '10:30-10:50,10:50-11:10,11:10-11:30,11:30-11:50,11:50-12:10,12:10-12:30',
-      date: 'Monday,Wednesday,Friday and Saturday',
-      alt: 'Dr. Manasa N. A | Best ENT Consultant in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
-      id: 32,
-      title: 'Dr. Manasa N. A | ENT Head & Neck Surgeon in RR Nagar Bangalore',
-      description: 'Consult Dr. Manasa N. A, expert ENT doctor in RR Nagar, Bangalore. Skilled in endoscopic sinus surgery, tonsillectomy, voice & sleep apnea treatment.',
-      faqs: [
-        {
-          question: 'Who is Dr. Manasa N. A and what is her specialty at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'Dr. Manasa N. A is an experienced ENT and Head & Neck Surgeon at Rashtrotthana Hospital, RR Nagar, Bangalore. She specialises in ear, nose, throat, voice, airway, and head-neck tumour management with a strong surgical background.'
-        },
-        {
-          question: 'Does Dr. Manasa N. A perform micro ear surgery for hearing loss at Rashtrotthana Hospital?',
-          answer: 'Yes, Dr. Manasa N. A performs micro ear surgery for hearing restoration, including procedures like myringotomy and middle ear surgeries. These surgeries aim to improve hearing while preserving ear structure and function.'
-        },
-        {
-          question: 'When is septoplasty or endoscopic sinus surgery recommended by Dr. Manasa N. A?',
-          answer: 'Septoplasty is recommended for deviated nasal septum causing breathing difficulty, while endoscopic sinus surgery is advised for chronic sinusitis not responding to medication. Dr. Manasa N. A uses minimally invasive techniques for faster recovery and better outcomes.'
-        },
-        {
-          question: 'Can Dr. Manasa N. A treat voice problems and vocal cord disorders?',
-          answer: 'Yes, Dr. Manasa N. A diagnoses and manages vocal cord and voice disorders such as hoarseness, voice strain, and vocal cord lesions. Treatment may include medical management, voice therapy, or surgery depending on the cause.'
-        },
-        {
-          question: 'Does Dr. Manasa N. A treat head and neck tumors at Rashtrotthana Hospital?',
-          answer: 'Dr. Manasa N. A is experienced in the diagnosis and surgical management of head and neck tumours, including throat, neck, and oral region growths. Early evaluation helps in accurate diagnosis and timely treatment planning.'
-        },
-        {
-          question: 'Is snoring and sleep apnea treatment available with Dr. Manasa N. A in Bangalore?',
-          answer: 'Yes, Dr. Manasa N. A provides snoring evaluation and management of obstructive sleep apnea, including airway assessment and surgical options when required. Proper treatment helps improve sleep quality and overall health.'
-        },
-        {
-          question: 'How can I book an appointment with Dr. Manasa N. A at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: `You can book an appointment with Dr. Manasa N. A by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
-        }
-      ],
-      departmentSlug: '/specialities/best-ent-hospital-in-bangalore',
+    // {
+    //   name: 'Dr. Manasa N. A',
+    //   image: 'assets/Doc-Inv-Page/Dr-Manasa-N-A.png',
+    //   department: 'ENT, HEAD & NECK SURGERY',
+    //   about: 'Dr. Manasa. N. A Consultant ENT, Head & Neck Surgeon comes with a vast experience of 10 years. She has done her MBBS from the prestigious M.S. Ramaiah Medical College. She did her post-graduation from JJM medical college, Davangere. She procured her higher studies from Tata Main Hospital.She is immensely knowledgeable, compassionate and skilled in her field of expertise. She is your one stop solutions to all your Ear, nose, throat and Head & Neck related issues. Other than the routine ENT work she also specialises in endoscopic adenoidectomy and endoscopic endonasal sinus surgeries, microscopic hearing restoration surgeries, voice restoration surgery and Head and tumour surgeries.',
+    //   speciality: 'ENT SPECIALITY',
+    //   areasOfExpertise: ['Micro ear surgery for hearing restoration', 'Septoplasty', 'Endoscopic sinus surgery', 'Management of vocal cord and voice disorders', 'Diagnosis and treatment of Head and neck tumors', 'Tracheotomy and airway surgeries', 'Polytrauma management', 'Snoring evaluation and Management of Obstructive sleep apnea', 'Tonsillectomy', 'Adenoidectomy', 'Myringotomy'],
+    //   expertise: '10',
+    //   qualification: 'MBBS, DLO, DNB(ENT)',
+    //   time: '10:30-10:50,10:50-11:10,11:10-11:30,11:30-11:50,11:50-12:10,12:10-12:30',
+    //   date: 'Monday,Wednesday,Friday and Saturday',
+    //   alt: 'Dr. Manasa N. A | Best ENT Consultant in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
+    //   id: 32,
+    //   title: 'Dr. Manasa N. A | ENT Head & Neck Surgeon in RR Nagar Bangalore',
+    //   description: 'Consult Dr. Manasa N. A, expert ENT doctor in RR Nagar, Bangalore. Skilled in endoscopic sinus surgery, tonsillectomy, voice & sleep apnea treatment.',
+    //   faqs: [
+    //     {
+    //       question: 'Who is Dr. Manasa N. A and what is her specialty at Rashtrotthana Hospital, RR Nagar, Bangalore?',
+    //       answer: 'Dr. Manasa N. A is an experienced ENT and Head & Neck Surgeon at Rashtrotthana Hospital, RR Nagar, Bangalore. She specialises in ear, nose, throat, voice, airway, and head-neck tumour management with a strong surgical background.'
+    //     },
+    //     {
+    //       question: 'Does Dr. Manasa N. A perform micro ear surgery for hearing loss at Rashtrotthana Hospital?',
+    //       answer: 'Yes, Dr. Manasa N. A performs micro ear surgery for hearing restoration, including procedures like myringotomy and middle ear surgeries. These surgeries aim to improve hearing while preserving ear structure and function.'
+    //     },
+    //     {
+    //       question: 'When is septoplasty or endoscopic sinus surgery recommended by Dr. Manasa N. A?',
+    //       answer: 'Septoplasty is recommended for deviated nasal septum causing breathing difficulty, while endoscopic sinus surgery is advised for chronic sinusitis not responding to medication. Dr. Manasa N. A uses minimally invasive techniques for faster recovery and better outcomes.'
+    //     },
+    //     {
+    //       question: 'Can Dr. Manasa N. A treat voice problems and vocal cord disorders?',
+    //       answer: 'Yes, Dr. Manasa N. A diagnoses and manages vocal cord and voice disorders such as hoarseness, voice strain, and vocal cord lesions. Treatment may include medical management, voice therapy, or surgery depending on the cause.'
+    //     },
+    //     {
+    //       question: 'Does Dr. Manasa N. A treat head and neck tumors at Rashtrotthana Hospital?',
+    //       answer: 'Dr. Manasa N. A is experienced in the diagnosis and surgical management of head and neck tumours, including throat, neck, and oral region growths. Early evaluation helps in accurate diagnosis and timely treatment planning.'
+    //     },
+    //     {
+    //       question: 'Is snoring and sleep apnea treatment available with Dr. Manasa N. A in Bangalore?',
+    //       answer: 'Yes, Dr. Manasa N. A provides snoring evaluation and management of obstructive sleep apnea, including airway assessment and surgical options when required. Proper treatment helps improve sleep quality and overall health.'
+    //     },
+    //     {
+    //       question: 'How can I book an appointment with Dr. Manasa N. A at Rashtrotthana Hospital, RR Nagar, Bangalore?',
+    //       answer: `You can book an appointment with Dr. Manasa N. A by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
+    //     }
+    //   ],
+    //   departmentSlug: '/specialities/best-ent-hospital-in-bangalore',
 
-    },
+    // },
 
 
     {
@@ -1893,54 +1893,54 @@ export class NewDocPageComponent {
     //   time:'09:30-09:50,09:50-10:10,10:10-10:30,10:30-10:50,10:50-11:10,11:10-11:30,11:30-11:50,11:50-12:10,12:10-12:30,12:30-12:50,12:50-13:10,13:10-13:30,13:30-13:50,13:50-14:10,14:10-14:30,14:30-14:50,14:50-15:10,15:10-15:30,15:30-15:50,15:50-16:10,16:10-16:30,16:30-16:50,16:50-17:00',
     //   date:'Monday-Saturday'
     // },
-    {
-      name: 'Dr. Narendranath A',
-      image: 'assets/Doc-Inv-Page/Dr-Narendranath-A.png',
-      department: 'Consultant, ENT Head & Neck surgery',
-      speciality: 'ENT SPECIALITY',
-      about: 'Dr. Narendranath A is graduate from RAJAH MUTHIAH MEDICAL COLLEGE,TAMIL NADU in 2010. He completed his post graduation MS (ENT) from vijayanagar insititute of medical sciences, bellary in 2015.Otology/ tympanoplasty and mastoidectomy surgeries, myringotomy and grommet surgery, FESS (nasal polyp surgery)/sinus surgeries, nasal septum correction surgery, Adenoid and tonsil surgeries, surgeries related to vocal cords (voice box), thyroid and parotid surgeries, tracheostomy.   ',
-      areasOfExpertise: ['Otology and rhinology', 'Otology/ tympanoplasty', 'Mastoidectomy surgeries', 'Myringotomy and grommet surgery', 'FESS (nasal polyp surgery)/sinus surgeries', 'Nasal septum correction surgery', 'Adenoid and tonsil surgeries, surgeries related to vocal cords (voice box)', 'Thyroid and parotid surgeries', '* Tracheostomy'],
-      expertise: '10',
-      qualification: 'MBBS, MS(ENT)',
-      time: '13:30-13:50,13:50-14:10,14:10-14:30,14:30-14:50,14:50-15:10,15:10-15:30',
-      date: 'Monday,Wednesday,Thursday and Friday',
-      alt: 'Dr. Narendranath A | Best ENT Doctor in Bangalore | Rashtrotthana Hospita | Rajarajeshwari Nagar Bangalore',
-      id: 31,
-      title: 'Dr. Narendranath A | ENT Head & Neck Surgeon Bangalore',
-      description: 'Dr. Narendranath A is an ENT and Head & Neck Surgeon with 10+ years of experience in advanced ENT surgeries, sinus, voice box, and thyroid procedures.',
-      faqs: [
-        {
-          question: 'Who is Dr. Narendranath A and what is his specialty at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'Dr. Narendranath A is an experienced ENT (Otorhinolaryngology) Surgeon at Rashtrotthana Hospital, RR Nagar, Bangalore. He specialises in otology and rhinology, managing complex ear, nose, throat, and airway conditions with advanced surgical care.'
-        },
-        {
-          question: 'What ear surgeries does Dr. Narendranath A perform at Rashtrotthana Hospital?',
-          answer: 'Dr. Narendranath A performs tympanoplasty, mastoidectomy, myringotomy, and grommet insertion surgeries for chronic ear infections and hearing problems. These procedures aim to control infection, restore hearing, and prevent complications.'
-        },
-        {
-          question: 'Does Dr. Narendranath A treat sinus problems and nasal polyps?',
-          answer: 'Yes, Dr. Narendranath A performs FESS (functional endoscopic sinus surgery) for chronic sinusitis and nasal polyps not responding to medication. He also treats nasal blockage through nasal septum correction (septoplasty) to improve breathing.'
-        },
-        {
-          question: 'When is nasal septum correction surgery recommended by Dr. Narendranath A?',
-          answer: 'Nasal septum correction is recommended for patients with deviated nasal septum causing breathing difficulty, snoring, recurrent sinus infections, or headaches. Surgery helps restore proper airflow and nasal function.'
-        },
-        {
-          question: 'Does Dr. Narendranath A perform tonsil, adenoid and voice box surgeries?',
-          answer: 'Yes, he performs adenoidectomy, tonsillectomy, and surgeries related to the vocal cords (voice box) for conditions like recurrent throat infections, sleep-related breathing issues, and voice disorders. Early treatment helps prevent long-term complications.'
-        },
-        {
-          question: 'Are thyroid, parotid, and tracheostomy procedures handled by Dr. Narendranath A?',
-          answer: 'Dr. Narendranath A is experienced in thyroid and parotid gland surgeries, as well as tracheostomy procedures for airway management in emergency or long-term breathing conditions. These surgeries require precise planning and specialised ENT expertise.'
-        },
-        {
-          question: 'How can I book an appointment with Dr. Narendranath A at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: `You can book an appointment with Dr. Narendranath A by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
-        }
-      ],
-      departmentSlug: '/specialities/best-ent-hospital-in-bangalore',
+    // {
+    //   name: 'Dr. Narendranath A',
+    //   image: 'assets/Doc-Inv-Page/Dr-Narendranath-A.png',
+    //   department: 'Consultant, ENT Head & Neck surgery',
+    //   speciality: 'ENT SPECIALITY',
+    //   about: 'Dr. Narendranath A is graduate from RAJAH MUTHIAH MEDICAL COLLEGE,TAMIL NADU in 2010. He completed his post graduation MS (ENT) from vijayanagar insititute of medical sciences, bellary in 2015.Otology/ tympanoplasty and mastoidectomy surgeries, myringotomy and grommet surgery, FESS (nasal polyp surgery)/sinus surgeries, nasal septum correction surgery, Adenoid and tonsil surgeries, surgeries related to vocal cords (voice box), thyroid and parotid surgeries, tracheostomy.   ',
+    //   areasOfExpertise: ['Otology and rhinology', 'Otology/ tympanoplasty', 'Mastoidectomy surgeries', 'Myringotomy and grommet surgery', 'FESS (nasal polyp surgery)/sinus surgeries', 'Nasal septum correction surgery', 'Adenoid and tonsil surgeries, surgeries related to vocal cords (voice box)', 'Thyroid and parotid surgeries', '* Tracheostomy'],
+    //   expertise: '10',
+    //   qualification: 'MBBS, MS(ENT)',
+    //   time: '13:30-13:50,13:50-14:10,14:10-14:30,14:30-14:50,14:50-15:10,15:10-15:30',
+    //   date: 'Monday,Wednesday,Thursday and Friday',
+    //   alt: 'Dr. Narendranath A | Best ENT Doctor in Bangalore | Rashtrotthana Hospita | Rajarajeshwari Nagar Bangalore',
+    //   id: 31,
+    //   title: 'Dr. Narendranath A | ENT Head & Neck Surgeon Bangalore',
+    //   description: 'Dr. Narendranath A is an ENT and Head & Neck Surgeon with 10+ years of experience in advanced ENT surgeries, sinus, voice box, and thyroid procedures.',
+    //   faqs: [
+    //     {
+    //       question: 'Who is Dr. Narendranath A and what is his specialty at Rashtrotthana Hospital, RR Nagar, Bangalore?',
+    //       answer: 'Dr. Narendranath A is an experienced ENT (Otorhinolaryngology) Surgeon at Rashtrotthana Hospital, RR Nagar, Bangalore. He specialises in otology and rhinology, managing complex ear, nose, throat, and airway conditions with advanced surgical care.'
+    //     },
+    //     {
+    //       question: 'What ear surgeries does Dr. Narendranath A perform at Rashtrotthana Hospital?',
+    //       answer: 'Dr. Narendranath A performs tympanoplasty, mastoidectomy, myringotomy, and grommet insertion surgeries for chronic ear infections and hearing problems. These procedures aim to control infection, restore hearing, and prevent complications.'
+    //     },
+    //     {
+    //       question: 'Does Dr. Narendranath A treat sinus problems and nasal polyps?',
+    //       answer: 'Yes, Dr. Narendranath A performs FESS (functional endoscopic sinus surgery) for chronic sinusitis and nasal polyps not responding to medication. He also treats nasal blockage through nasal septum correction (septoplasty) to improve breathing.'
+    //     },
+    //     {
+    //       question: 'When is nasal septum correction surgery recommended by Dr. Narendranath A?',
+    //       answer: 'Nasal septum correction is recommended for patients with deviated nasal septum causing breathing difficulty, snoring, recurrent sinus infections, or headaches. Surgery helps restore proper airflow and nasal function.'
+    //     },
+    //     {
+    //       question: 'Does Dr. Narendranath A perform tonsil, adenoid and voice box surgeries?',
+    //       answer: 'Yes, he performs adenoidectomy, tonsillectomy, and surgeries related to the vocal cords (voice box) for conditions like recurrent throat infections, sleep-related breathing issues, and voice disorders. Early treatment helps prevent long-term complications.'
+    //     },
+    //     {
+    //       question: 'Are thyroid, parotid, and tracheostomy procedures handled by Dr. Narendranath A?',
+    //       answer: 'Dr. Narendranath A is experienced in thyroid and parotid gland surgeries, as well as tracheostomy procedures for airway management in emergency or long-term breathing conditions. These surgeries require precise planning and specialised ENT expertise.'
+    //     },
+    //     {
+    //       question: 'How can I book an appointment with Dr. Narendranath A at Rashtrotthana Hospital, RR Nagar, Bangalore?',
+    //       answer: `You can book an appointment with Dr. Narendranath A by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
+    //     }
+    //   ],
+    //   departmentSlug: '/specialities/best-ent-hospital-in-bangalore',
 
-    },
+    // },
     {
       name: "Dr. Harshith K. S",
       image: "assets/Dr-Harshith-K-S-doc-page.png",

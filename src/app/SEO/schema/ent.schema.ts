@@ -55,21 +55,21 @@ export const ENT_SCHEMAS = {
       yearsOfExperience: '14',
     },
 
-    {
-      '@type': 'Physician',
-      name: 'Dr. Narendranath A',
-      medicalSpecialty: 'Otolaryngology',
-      url: 'https://www.rashtrotthanahospital.com/doctor/dr-narendranath-a',
-      yearsOfExperience: '11',
-    },
+    // {
+    //   '@type': 'Physician',
+    //   name: 'Dr. Narendranath A',
+    //   medicalSpecialty: 'Otolaryngology',
+    //   url: 'https://www.rashtrotthanahospital.com/doctor/dr-narendranath-a',
+    //   yearsOfExperience: '11',
+    // },
 
-    {
-      '@type': 'Physician',
-      name: 'Dr. Manasa N. A',
-      medicalSpecialty: 'Otolaryngology',
-      url: 'https://www.rashtrotthanahospital.com/doctor/dr-manasa-n-a',
-      yearsOfExperience: '16',
-    },
+    // {
+    //   '@type': 'Physician',
+    //   name: 'Dr. Manasa N. A',
+    //   medicalSpecialty: 'Otolaryngology',
+    //   url: 'https://www.rashtrotthanahospital.com/doctor/dr-manasa-n-a',
+    //   yearsOfExperience: '16',
+    // },
 
     {
       '@type': 'Physician',
@@ -111,7 +111,7 @@ export const ENT_SCHEMAS = {
           name: 'Who are the best ENT specialists in Bangalore?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Rashtrotthana Hospital has experienced ENT specialists including Dr. Manasa N. A., Dr. Narendranath A. and Dr. Sunil Kumar who treat ear, nose and throat conditions using advanced medical and surgical techniques.',
+            text: 'Rashtrotthana Hospital has experienced ENT specialists including Dr. Sunil Kumar who treat ear, nose and throat conditions using advanced medical and surgical techniques.',
           },
         },
 
