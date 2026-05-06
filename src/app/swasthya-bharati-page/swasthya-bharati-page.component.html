@@ -238,9 +238,9 @@
       <defs>
         <linearGradient id="sbp-prana-grad" x1="0" x2="1" y1="0" y2="0">
           <stop offset="0%" stop-color="#097969" stop-opacity="0"/>
-          <stop offset="30%" stop-color="#097969" stop-opacity="0.7"/>
-          <stop offset="55%" stop-color="#E8B339" stop-opacity="0.85"/>
-          <stop offset="80%" stop-color="#3CB3A1" stop-opacity="0.6"/>
+          <stop offset="35%" stop-color="#097969" stop-opacity="0.6"/>
+          <stop offset="50%" stop-color="#E8B339" stop-opacity="0.7"/>
+          <stop offset="65%" stop-color="#3CB3A1" stop-opacity="0.6"/>
           <stop offset="100%" stop-color="#3CB3A1" stop-opacity="0"/>
         </linearGradient>
       </defs>
@@ -434,6 +434,23 @@
       </header>
 
       <div class="sbp-arc" data-reveal style="--reveal-delay:0.2s">
+        <!-- Cosmic backdrop: nebula wash + twinkling stars -->
+        <div class="sbp-arc__cosmos" aria-hidden="true">
+          <span class="sbp-arc__nebula sbp-arc__nebula--gold"></span>
+          <span class="sbp-arc__nebula sbp-arc__nebula--teal"></span>
+          <span class="sbp-arc__nebula sbp-arc__nebula--violet"></span>
+          @for (s of stars; track $index) {
+          <span
+            class="sbp-arc__star"
+            [style.--s-left.%]="s.left"
+            [style.--s-top.%]="s.top"
+            [style.--s-size.px]="s.size"
+            [style.--s-delay]="s.delay + 's'"
+            [style.--s-duration]="s.duration + 's'"
+          ></span>
+          }
+        </div>
+
         <svg class="sbp-arc__svg" viewBox="0 0 1200 360" preserveAspectRatio="none" aria-hidden="true">
           <defs>
             <linearGradient id="sbp-arc-grad" x1="0" x2="1" y1="0" y2="0">
@@ -451,6 +468,23 @@
           <path d="M 40 320 Q 600 -120 1160 320" fill="none" stroke="url(#sbp-arc-grad)" stroke-width="3.5" stroke-linecap="round"/>
           <line x1="40" y1="320" x2="1160" y2="320" stroke="#4D5557" stroke-width="1" stroke-dasharray="3 5" opacity="0.4"/>
         </svg>
+
+        <!-- Moon on the night side (right end of arc) -->
+        <span class="sbp-arc__moon" aria-hidden="true">
+          <svg viewBox="0 0 60 60">
+            <defs>
+              <radialGradient id="sbp-moon-grad" cx="0.4" cy="0.4" r="0.6">
+                <stop offset="0%" stop-color="#F7FBFB"/>
+                <stop offset="55%" stop-color="#CFECEC"/>
+                <stop offset="100%" stop-color="#82C4C3"/>
+              </radialGradient>
+            </defs>
+            <circle cx="30" cy="30" r="13" fill="url(#sbp-moon-grad)"/>
+            <circle cx="26" cy="27" r="2" fill="#82C4C3" opacity="0.5"/>
+            <circle cx="34" cy="32" r="1.5" fill="#82C4C3" opacity="0.4"/>
+            <circle cx="29" cy="34" r="1" fill="#82C4C3" opacity="0.3"/>
+          </svg>
+        </span>
 
         <!-- Animated sun/moon traveller -->
         <span class="sbp-arc__sun" aria-hidden="true">
@@ -557,6 +591,119 @@
           want to be.
         </p>
       </header>
+
+      <!-- Orbital visualization: a meditator at the centre, services orbiting -->
+      <div class="sbp-orbit" data-reveal aria-hidden="true">
+        <!-- Animated decorative rings -->
+        <span class="sbp-orbit__ring sbp-orbit__ring--outer"></span>
+        <span class="sbp-orbit__ring sbp-orbit__ring--mid"></span>
+        <span class="sbp-orbit__ring sbp-orbit__ring--inner"></span>
+
+        <!-- Centre figure: meditator -->
+        <div class="sbp-orbit__center">
+          <svg class="sbp-orbit__figure" viewBox="0 0 100 100">
+            <defs>
+              <linearGradient id="sbp-orbit-fig" x1="0" x2="0" y1="0" y2="1">
+                <stop offset="0%" stop-color="#82C4C3"/>
+                <stop offset="100%" stop-color="#014D4E"/>
+              </linearGradient>
+              <radialGradient id="sbp-orbit-halo" cx="0.5" cy="0.4" r="0.6">
+                <stop offset="0%" stop-color="#FFD86B" stop-opacity="0.55"/>
+                <stop offset="100%" stop-color="#FFD86B" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+
+            <!-- Soft halo behind the figure -->
+            <circle cx="50" cy="42" r="32" fill="url(#sbp-orbit-halo)"/>
+
+            <!-- Meditator silhouette: head + torso + lotus pose legs -->
+            <g fill="url(#sbp-orbit-fig)">
+              <!-- Head -->
+              <circle cx="50" cy="28" r="7"/>
+              <!-- Torso (rounded triangle) -->
+              <path d="M50 36 C 56 36 60 42 60 50 L 60 62 C 60 65 57 67 54 67 L 46 67 C 43 67 40 65 40 62 L 40 50 C 40 42 44 36 50 36 Z"/>
+              <!-- Lotus legs (crossed) -->
+              <path d="M28 70 C 28 65 34 62 42 64 C 50 66 50 70 50 72 C 50 74 48 76 44 76 C 36 76 28 74 28 70 Z"/>
+              <path d="M72 70 C 72 65 66 62 58 64 C 50 66 50 70 50 72 C 50 74 52 76 56 76 C 64 76 72 74 72 70 Z"/>
+              <!-- Arms folded forward / hands resting -->
+              <path d="M40 56 C 36 58 32 60 32 64 C 32 66 34 68 36 68 C 40 68 44 64 44 60 Z" opacity="0.85"/>
+              <path d="M60 56 C 64 58 68 60 68 64 C 68 66 66 68 64 68 C 60 68 56 64 56 60 Z" opacity="0.85"/>
+            </g>
+
+            <!-- Bindi / chakra dot on forehead -->
+            <circle cx="50" cy="26" r="1.5" fill="#E8B339"/>
+
+            <!-- Lotus base under figure -->
+            <g fill="#82C4C3" opacity="0.65" transform="translate(50, 80)">
+              <path d="M0 0 C -10 -3 -16 -8 -18 -2 C -14 4 -6 6 0 4 C 6 6 14 4 18 -2 C 16 -8 10 -3 0 0 Z"/>
+            </g>
+          </svg>
+          <span class="sbp-orbit__center-label" lang="sa">स्वस्थ</span>
+          <span class="sbp-orbit__center-sub">Sva-stha · in balance</span>
+        </div>
+
+        <!-- Orbiting service badges (clickable, sets active tab below) -->
+        <ul class="sbp-orbit__satellites">
+          @for (s of services; track s.id; let i = $index) {
+          <li
+            class="sbp-orbit__sat"
+            [style.--sat-i]="i"
+            [class.is-active]="activeService() === s.id"
+          >
+            <button
+              type="button"
+              class="sbp-orbit__btn"
+              [attr.aria-label]="'Show ' + s.label"
+              (click)="setService(s.id)"
+            >
+              <span class="sbp-orbit__icon">
+                @switch (s.id) {
+                @case ('assessment') {
+                <svg viewBox="0 0 32 32" fill="none">
+                  <circle cx="14" cy="14" r="7" stroke="currentColor" stroke-width="2"/>
+                  <path d="M19 19 L 26 26" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+                  <path d="M11 14 L 13 16 L 17 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                }
+                @case ('ayurveda') {
+                <svg viewBox="0 0 32 32" fill="none">
+                  <path d="M16 4 C 22 8 24 14 22 20 C 20 24 16 26 16 28 C 16 26 12 24 10 20 C 8 14 10 8 16 4 Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                  <path d="M16 8 L 16 26" stroke="currentColor" stroke-width="1.6" opacity="0.6"/>
+                </svg>
+                }
+                @case ('yoga') {
+                <svg viewBox="0 0 32 32" fill="none">
+                  <circle cx="16" cy="9" r="3" stroke="currentColor" stroke-width="2"/>
+                  <path d="M16 12 L 16 22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M8 16 L 16 18 L 24 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M8 26 C 11 24 21 24 24 26" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                }
+                @case ('programs') {
+                <svg viewBox="0 0 32 32" fill="none">
+                  <rect x="6" y="8" width="20" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
+                  <line x1="6" y1="13" x2="26" y2="13" stroke="currentColor" stroke-width="2"/>
+                  <line x1="11" y1="5" x2="11" y2="11" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  <line x1="21" y1="5" x2="21" y2="11" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  <circle cx="12" cy="19" r="1.5" fill="currentColor"/>
+                  <circle cx="20" cy="19" r="1.5" fill="currentColor"/>
+                </svg>
+                }
+                @case ('education') {
+                <svg viewBox="0 0 32 32" fill="none">
+                  <path d="M4 12 L 16 6 L 28 12 L 16 18 Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                  <path d="M9 14 L 9 22 C 9 24 12 26 16 26 C 20 26 23 24 23 22 L 23 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <line x1="28" y1="12" x2="28" y2="20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                }
+                }
+              </span>
+              <span class="sbp-orbit__label">{{ s.label }}</span>
+            </button>
+          </li>
+          }
+        </ul>
+      </div>
 
       <div class="sbp-tabs-wrap" data-reveal>
         <div class="sbp-tabs" role="tablist" aria-label="Service categories" #tabsRow>

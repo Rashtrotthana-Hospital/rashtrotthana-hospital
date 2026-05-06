@@ -105,6 +105,19 @@ export class SwasthyaBharatiPageComponent
     };
   });
 
+  /** Cosmic stars scattered across the dinacharya sky */
+  readonly stars = Array.from({ length: 42 }, (_, i) => {
+    const seed = (i * 73) % 100;
+    const seed2 = (i * 31) % 100;
+    return {
+      left: (seed * 1.07) % 100,
+      top: (seed2 * 0.85) % 92, // keep stars above the horizon
+      size: 1 + (seed % 3), // 1–3 px
+      delay: -((seed * 0.19) % 6),
+      duration: 3 + (seed % 5), // 3–7 s twinkle
+    };
+  });
+
   @ViewChild('tabsRow') tabsRow?: ElementRef<HTMLElement>;
   @ViewChildren('tabBtn') tabBtns?: QueryList<ElementRef<HTMLButtonElement>>;
 

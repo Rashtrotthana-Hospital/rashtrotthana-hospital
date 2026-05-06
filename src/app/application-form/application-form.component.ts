@@ -1,7 +1,8 @@
-import { Component, OnInit, inject } from '@angular/core';
+import { Component, OnDestroy, OnInit, inject } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { Router, ActivatedRoute } from '@angular/router';
 import { MessageService } from 'primeng/api';
+import { Subject, takeUntil } from 'rxjs';
 import { Application, CareerFormServiceService, Job } from '../career-form-service.service';
 
 // import { Recuriting, Job, Application } from '../../services/recruiting/recuriting';
@@ -11,7 +12,7 @@ import { Application, CareerFormServiceService, Job } from '../career-form-servi
   templateUrl: './application-form.component.html',
   styleUrl: './application-form.component.css'
 })
-export class ApplicationFormComponent implements OnInit {
+export class ApplicationFormComponent implements OnInit, OnDestroy {
 
   private fb = inject(FormBuilder);
   private api = inject(CareerFormServiceService);
@@ -19,12 +20,29 @@ export class ApplicationFormComponent implements OnInit {
   private route = inject(ActivatedRoute);
   private messageService = inject(MessageService);
 
+  // Cleanup signal for all subscriptions in this component — prevents leaks
+  // when user navigates away while requests are in flight.
+  private destroy$ = new Subject<void>();
+
   jobs: Job[] = [];
   loading = true;
   saving = false;
   error?: string;
 
   selectedResumeFile?: File;
+
+  // Referral type literals — must match the backend enum exactly. Empty string =
+  // "no referral" (the candidate didn't come via a referral).
+  readonly referralTypes: { value: string; label: string }[] = [
+    { value: '',          label: 'Not a referral' },
+    { value: 'INTERNAL',  label: 'Internal employee referral' },
+    { value: 'EXTERNAL',  label: 'External individual referral' },
+    { value: 'AGENCY',    label: 'Recruitment agency / consultancy' },
+    { value: 'JOB_BOARD', label: 'Job board (Naukri / LinkedIn / Indeed)' },
+    { value: 'SOCIAL',    label: 'Social media' },
+    { value: 'WALK_IN',   label: 'Walk-in' },
+    { value: 'OTHER',     label: 'Other' },
+  ];
 
   form = this.fb.group({
     jobId: [null as number | null, Validators.required],
@@ -38,29 +56,86 @@ export class ApplicationFormComponent implements OnInit {
       experience: ['', [Validators.required]],
       address: [''],
     }),
+    // Referral block — `type` drives which sub-fields become required (see
+    // `applyReferralValidators` below).
+    referral: this.fb.group({
+      type:                 [''],
+      referrerEmployeeCode: [''],   // shown when type=INTERNAL
+      referrerName:         [''],   // shown when type=EXTERNAL/AGENCY
+      referrerEmail:        ['', [Validators.email]],
+      referrerPhone:        ['', [Validators.pattern(/^[0-9]{10}$/)]],
+      referrerCompany:      [''],   // shown when type=AGENCY
+    }),
   });
+
+  // Convenience getter so the template can do `referralType === 'INTERNAL'`
+  get referralType(): string {
+    return this.form.get('referral.type')?.value ?? '';
+  }
 
 ngOnInit() {
   const jobIdFromQuery = Number(this.route.snapshot.queryParamMap.get('jobId'));
   if (jobIdFromQuery) this.form.patchValue({ jobId: jobIdFromQuery });
   this.loading = true;
 
-  console.log('Calling API...'); // Add this
-  
-  this.api.listJobs({ status: 'OPEN', pageSize: 100 }).subscribe({
-    next: (res) => {
-      console.log('API Response:', res); // Add this
-      this.jobs = res.rows;
-      this.loading = false;
-    },
-    error: (err) => {
-      console.error('API Error:', err); // Add this
-      console.error('Error Status:', err.status); // Add this
-      console.error('Error Message:', err.message); // Add this
-      console.error('Error Details:', err.error); // Add this
-      this.loading = false;
-    }
-  });
+  // Whenever referral type changes, re-apply required-validators on the
+  // sub-fields so the form's validity reflects the type's actual requirements.
+  this.form.get('referral.type')!.valueChanges
+    .pipe(takeUntil(this.destroy$))
+    .subscribe((t) => this.applyReferralValidators(t || ''));
+  // Apply once on init so an initial value (e.g. INTERNAL) is honoured.
+  this.applyReferralValidators(this.referralType);
+
+  this.api.listJobs({ status: 'OPEN', pageSize: 100 })
+    .pipe(takeUntil(this.destroy$))
+    .subscribe({
+      next: (res) => {
+        this.jobs = res.rows;
+        this.loading = false;
+      },
+      error: (err) => {
+        console.error('Failed to load jobs', err);
+        this.loading = false;
+        this.messageService.add({
+          severity: 'error',
+          summary: 'Failed to load jobs',
+          detail: err?.error?.error || 'Please try again.',
+        });
+      }
+    });
+}
+
+ngOnDestroy() {
+  this.destroy$.next();
+  this.destroy$.complete();
+}
+
+/**
+ * Type-specific required-validators for referral sub-fields. INTERNAL needs
+ * the employee code; EXTERNAL/AGENCY need the referrer's name; AGENCY also
+ * needs the company name. All other types have no extra requirements.
+ */
+private applyReferralValidators(type: string) {
+  const code    = this.form.get('referral.referrerEmployeeCode')!;
+  const name    = this.form.get('referral.referrerName')!;
+  const company = this.form.get('referral.referrerCompany')!;
+
+  code.clearValidators();
+  name.clearValidators();
+  company.clearValidators();
+
+  if (type === 'INTERNAL') {
+    code.setValidators([Validators.required]);
+  } else if (type === 'EXTERNAL') {
+    name.setValidators([Validators.required]);
+  } else if (type === 'AGENCY') {
+    name.setValidators([Validators.required]);
+    company.setValidators([Validators.required]);
+  }
+
+  code.updateValueAndValidity({ emitEvent: false });
+  name.updateValueAndValidity({ emitEvent: false });
+  company.updateValueAndValidity({ emitEvent: false });
 }
 
   // submit() {
@@ -107,25 +182,51 @@ ngOnInit() {
     // stringify candidate group
     formData.append("candidate", JSON.stringify(this.form.value.candidate));
 
+    // Only attach the referral block if the candidate selected a type. Sending
+    // an empty `type` would otherwise fail backend validation.
+    const referral: any = this.form.value.referral;
+    if (referral && referral.type) {
+      // Strip empty strings so the backend doesn't store them as "" (cleaner
+      // null in the database for unfilled optional fields).
+      const cleaned = Object.fromEntries(
+        Object.entries(referral).filter(([_, v]) => v !== '' && v !== null && v !== undefined),
+      );
+      formData.append("referral", JSON.stringify(cleaned));
+    }
+
     // attach resume file if selected
     if (this.selectedResumeFile) {
       formData.append("resume", this.selectedResumeFile);
     }
 
-    this.api.createApplication(formData).subscribe({
-      next: (_app: Application) => {
-        this.messageService.add({
-          severity: "success",
-          summary: "Success",
-          detail: "Application created!",
-        });
-        // this.router.navigate(["/recruitment/jobs"]);
-        this.form.reset();
-        this.selectedResumeFile = undefined;
-      },
-      error: (e) => (this.error = e?.error?.error || "Failed to create"),
-      complete: () => (this.saving = false),
-    });
+    this.api.createApplication(formData)
+      .pipe(takeUntil(this.destroy$))
+      .subscribe({
+        next: (_app: Application) => {
+          this.messageService.add({
+            severity: "success",
+            summary: "Success",
+            detail: "Application created!",
+          });
+          this.form.reset();
+          this.selectedResumeFile = undefined;
+          this.saving = false;
+        },
+        error: (e) => {
+          this.error = e?.error?.error || "Failed to create";
+          this.saving = false;
+          this.messageService.add({
+            severity: "error",
+            summary: "Submission failed",
+            detail: this.error,
+          });
+        },
+      });
+  }
+
+  removeFile(input: HTMLInputElement) {
+    this.selectedResumeFile = undefined;
+    input.value = '';
   }
 
 

@@ -898,11 +898,17 @@
 }
 
 // ─────────────────────────────────────────────────────────────────────
-// DINACHARYA — daily-rhythm arc
+// DINACHARYA — daily-rhythm arc with cosmic twilight backdrop
 // ─────────────────────────────────────────────────────────────────────
 .sbp-daily {
-  background: var(--sbp-ivory);
+  // Twilight gradient: pale teal at top → deep teal at bottom — sky.
+  background:
+    radial-gradient(ellipse at 80% 18%, rgba(232, 179, 57, 0.10), transparent 50%),
+    radial-gradient(ellipse at 15% 25%, rgba(9, 121, 105, 0.10), transparent 55%),
+    linear-gradient(180deg, #f7fbfb 0%, #d4ebeb 55%, #82c4c3 100%);
   overflow: hidden;
+  position: relative;
+  isolation: isolate;
 }
 
 .sbp-arc {
@@ -910,6 +916,73 @@
   width: 100%;
   height: clamp(440px, 38vw, 540px);
   margin-top: 1rem;
+  isolation: isolate;
+
+  // Cosmic layer — sits behind the SVG arc, holds nebula + stars
+  &__cosmos {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+  }
+
+  &__nebula {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(60px);
+    opacity: 0.55;
+    animation: sbp-nebula-drift 22s ease-in-out infinite alternate;
+
+    &--gold {
+      width: 320px; height: 240px;
+      top: 8%; left: 15%;
+      background: radial-gradient(circle, rgba(255, 216, 107, 0.45), transparent 60%);
+      animation-delay: 0s;
+    }
+    &--teal {
+      width: 380px; height: 260px;
+      top: 25%; right: 12%;
+      background: radial-gradient(circle, rgba(60, 179, 161, 0.35), transparent 60%);
+      animation-delay: -7s;
+    }
+    &--violet {
+      width: 280px; height: 200px;
+      bottom: 30%; left: 45%;
+      background: radial-gradient(circle, rgba(74, 100, 108, 0.32), transparent 60%);
+      animation-delay: -14s;
+    }
+  }
+
+  &__star {
+    position: absolute;
+    left: var(--s-left, 50%);
+    top: var(--s-top, 50%);
+    width: var(--s-size, 2px);
+    height: var(--s-size, 2px);
+    border-radius: 50%;
+    background: #ffffff;
+    box-shadow:
+      0 0 4px rgba(255, 255, 255, 0.9),
+      0 0 10px rgba(255, 216, 107, 0.4);
+    opacity: 0;
+    animation: sbp-star-twinkle var(--s-duration, 4s) ease-in-out infinite;
+    animation-delay: var(--s-delay, 0s);
+  }
+
+  // Moon on the night side of the arc
+  &__moon {
+    position: absolute;
+    right: 4%;
+    top: 16%;
+    width: clamp(38px, 4vw, 54px);
+    height: clamp(38px, 4vw, 54px);
+    z-index: 2;
+    animation: sbp-moon-glow 7s ease-in-out infinite;
+    filter: drop-shadow(0 0 16px rgba(207, 236, 236, 0.7));
+
+    svg { width: 100%; height: 100%; }
+  }
 
   &__svg {
     position: absolute;
@@ -917,6 +990,7 @@
     width: 100%;
     height: 100%;
     pointer-events: none;
+    z-index: 1;
   }
 
   // Sun rides the parabolic arc using keyframes that match
@@ -1097,6 +1171,24 @@
   50%      { transform: scale(1.12); opacity: 0.9; }
 }
 
+@keyframes sbp-nebula-drift {
+  0%   { transform: translate(0, 0) scale(1);    opacity: 0.5; }
+  50%  { opacity: 0.65; }
+  100% { transform: translate(36px, -22px) scale(1.08); opacity: 0.4; }
+}
+
+@keyframes sbp-star-twinkle {
+  0%, 100% { opacity: 0;    transform: scale(0.6); }
+  20%      { opacity: 0.85; transform: scale(1); }
+  50%      { opacity: 0.35; transform: scale(0.85); }
+  80%      { opacity: 1;    transform: scale(1.1); }
+}
+
+@keyframes sbp-moon-glow {
+  0%, 100% { transform: translateY(0); filter: drop-shadow(0 0 12px rgba(207, 236, 236, 0.5)); }
+  50%      { transform: translateY(-3px); filter: drop-shadow(0 0 22px rgba(207, 236, 236, 0.85)); }
+}
+
 @media (max-width: 1100px) {
   .sbp-arc {
     height: auto;
@@ -1165,6 +1257,236 @@
     radial-gradient(900px 400px at 0% 0%, rgba(255, 216, 107, 0.18), transparent 60%),
     radial-gradient(900px 400px at 100% 100%, rgba(9, 121, 105, 0.10), transparent 60%),
     var(--sbp-cream);
+}
+
+// ─────────────────────────────────────────────────────────────────────
+// SERVICES — orbital visualization (above the tabs)
+// ─────────────────────────────────────────────────────────────────────
+.sbp-orbit {
+  position: relative;
+  width: clamp(360px, 46vw, 560px);
+  aspect-ratio: 1;
+  margin: 0 auto clamp(3rem, 5vw, 4rem);
+  isolation: isolate;
+
+  // Decorative concentric rings — slow rotation for cosmic feel
+  &__ring {
+    position: absolute;
+    top: 50%; left: 50%;
+    border-radius: 50%;
+    border: 1px dashed rgba(9, 121, 105, 0.35);
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+
+    &--outer {
+      width: 100%; height: 100%;
+      animation: sbp-orbit-spin 60s linear infinite;
+    }
+    &--mid {
+      width: 70%; height: 70%;
+      border-style: solid;
+      border-color: rgba(232, 179, 57, 0.28);
+      animation: sbp-orbit-spin 90s linear infinite reverse;
+    }
+    &--inner {
+      width: 42%; height: 42%;
+      border-color: rgba(60, 179, 161, 0.4);
+      border-style: dotted;
+      animation: sbp-orbit-spin 45s linear infinite;
+    }
+  }
+
+  &__center {
+    position: absolute;
+    top: 50%; left: 50%;
+    width: clamp(140px, 16vw, 180px);
+    height: clamp(140px, 16vw, 180px);
+    transform: translate(-50%, -50%);
+    background:
+      radial-gradient(circle at 50% 35%, #ffffff 0%, #eef6f6 60%, #d4ebeb 100%);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    box-shadow:
+      0 12px 28px rgba(0, 51, 51, 0.18),
+      0 0 0 6px rgba(255, 255, 255, 0.5),
+      0 0 0 7px rgba(9, 121, 105, 0.18);
+    z-index: 3;
+  }
+
+  &__figure {
+    width: 86%;
+    height: 86%;
+    animation: sbp-fig-breathe 5s ease-in-out infinite;
+  }
+
+  // Caption sits OUTSIDE / overlaid below the centre circle so long
+  // text never gets clipped by the round container.
+  &__center-label {
+    position: absolute;
+    left: 50%;
+    bottom: -14px;
+    transform: translateX(-50%);
+    font-family: 'Tiro Devanagari Sanskrit', serif;
+    font-size: 0.95rem;
+    color: var(--sbp-saffron-deep);
+    line-height: 1;
+    background: var(--sbp-surface);
+    padding: 4px 14px;
+    border-radius: var(--sbp-r-pill);
+    box-shadow: var(--sbp-shadow-sm);
+    z-index: 4;
+    white-space: nowrap;
+  }
+
+  &__center-sub {
+    position: absolute;
+    left: 50%;
+    bottom: -38px;
+    transform: translateX(-50%);
+    font-size: 0.62rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--sbp-text-soft);
+    font-weight: 700;
+    z-index: 4;
+    white-space: nowrap;
+  }
+
+  &__satellites {
+    position: absolute;
+    inset: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    z-index: 2;
+  }
+
+  &__sat {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: clamp(86px, 10vw, 108px);
+    height: clamp(86px, 10vw, 108px);
+    // Position around a circular orbit at 5 evenly-spaced angles
+    // (72° apart, starting from top = -90°). Each satellite is centred
+    // on (50%, 50%) via translate(-50%, -50%), then pushed outward by
+    // an absolute orbit radius (NOT a percentage — % resolves against
+    // the satellite's own size, which is too small).
+    --sat-angle: calc(var(--sat-i) * 72deg - 90deg);
+    --sat-r: clamp(130px, 17vw, 210px);
+    transform:
+      translate(-50%, -50%)
+      rotate(var(--sat-angle))
+      translateY(calc(-1 * var(--sat-r)))
+      rotate(calc(-1 * var(--sat-angle)));
+    animation: sbp-sat-bob 5s ease-in-out infinite;
+    animation-delay: calc(var(--sat-i) * 0.4s);
+  }
+
+  &__btn {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    background: var(--sbp-surface);
+    border: 1.5px solid var(--sbp-line);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25rem;
+    padding: 0.5rem;
+    color: var(--sbp-saffron);
+    cursor: pointer;
+    box-shadow: var(--sbp-shadow-sm);
+    transition:
+      transform var(--sbp-d-base) var(--sbp-ease),
+      background var(--sbp-d-base) var(--sbp-ease),
+      color var(--sbp-d-base) var(--sbp-ease),
+      border-color var(--sbp-d-base) var(--sbp-ease),
+      box-shadow var(--sbp-d-base) var(--sbp-ease);
+
+    &:focus-visible {
+      outline: 2px solid var(--sbp-saffron);
+      outline-offset: 3px;
+    }
+  }
+
+  &__icon {
+    width: 32px;
+    height: 32px;
+    display: grid;
+    place-items: center;
+    color: inherit;
+
+    svg { width: 100%; height: 100%; }
+  }
+
+  &__label {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.66rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-align: center;
+    line-height: 1.15;
+    color: var(--sbp-teal-deep);
+    padding: 0 4px;
+  }
+
+  &__sat:hover &__btn,
+  &__sat.is-active &__btn {
+    transform: scale(1.06);
+    background: var(--sbp-grad-warm);
+    color: #ffffff;
+    border-color: transparent;
+    box-shadow: var(--sbp-shadow-md), 0 0 0 4px rgba(9, 121, 105, 0.18);
+
+    .sbp-orbit__label { color: #ffffff; }
+  }
+
+  &__sat.is-active &__btn {
+    box-shadow: var(--sbp-shadow-md), 0 0 0 4px rgba(232, 179, 57, 0.32);
+  }
+
+  // Pause ring rotation when user hovers any satellite
+  &:has(&__sat:hover) &__ring {
+    animation-play-state: paused;
+  }
+}
+
+@keyframes sbp-orbit-spin {
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to   { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+@keyframes sbp-sat-bob {
+  0%, 100% {
+    transform:
+      translate(-50%, -50%)
+      rotate(var(--sat-angle))
+      translateY(calc(-1 * var(--sat-r)))
+      rotate(calc(-1 * var(--sat-angle)))
+      scale(1);
+  }
+  50% {
+    transform:
+      translate(-50%, -50%)
+      rotate(var(--sat-angle))
+      translateY(calc(-1 * var(--sat-r)))
+      rotate(calc(-1 * var(--sat-angle)))
+      scale(1.05);
+  }
+}
+
+@keyframes sbp-fig-breathe {
+  0%, 100% { transform: translateX(-50%) scale(1); }
+  50%      { transform: translateX(-50%) scale(1.03); }
+}
+
+// Hide orbit on small screens — fall back to the tabs alone (mobile-first)
+@media (max-width: 720px) {
+  .sbp-orbit { display: none; }
 }
 
 .sbp-tabs-wrap {
