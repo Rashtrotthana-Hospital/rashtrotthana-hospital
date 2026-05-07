@@ -1,0 +1,201 @@
+<section class="os-section">
+  <div class="os-container">
+
+    <!-- Section header -->
+    <header class="os-header">
+      <p class="os-eyebrow">Services Offered</p>
+      <h2 class="os-title">A complete map of how we care.</h2>
+      <p class="os-lede">From early lifestyle assessment to structured drugless programs — designed to meet you where you are.</p>
+    </header>
+
+    <!-- Orbit layout -->
+    <div class="os-orbit-wrap">
+
+      <!-- Orange top-center indicator (fixed) -->
+      <div class="os-indicator" aria-hidden="true">
+        <span class="os-indicator__dot"></span>
+        <span class="os-indicator__stem"></span>
+      </div>
+
+      <!-- Orbit ring path (dashed circle) -->
+      <div class="os-ring"></div>
+
+      <!-- Center — meditating woman + active service info -->
+      <div class="os-center">
+        <!-- Expanding aura rings -->
+        <span class="os-aura os-aura--1"></span>
+        <span class="os-aura os-aura--2"></span>
+        <span class="os-aura os-aura--3"></span>
+
+        <!-- Meditating figure SVG (woman in white, namaste pose) -->
+        <svg class="os-figure" viewBox="0 0 140 200" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="os-body" x1="0" x2="0" y1="0" y2="1">
+              <stop offset="0%" stop-color="#e8f4f4"/>
+              <stop offset="100%" stop-color="#b0d8d8"/>
+            </linearGradient>
+            <radialGradient id="os-halo" cx="50%" cy="42%" r="50%">
+              <stop offset="0%" stop-color="#ffe880" stop-opacity="0.55"/>
+              <stop offset="65%" stop-color="#ffe880" stop-opacity="0.12"/>
+              <stop offset="100%" stop-color="#ffe880" stop-opacity="0"/>
+            </radialGradient>
+            <radialGradient id="os-skin" cx="45%" cy="38%" r="60%">
+              <stop offset="0%" stop-color="#f5d5b0"/>
+              <stop offset="100%" stop-color="#d4a070"/>
+            </radialGradient>
+          </defs>
+
+          <!-- Soft golden halo -->
+          <ellipse cx="70" cy="80" rx="52" ry="48" fill="url(#os-halo)"/>
+
+          <!-- White outfit body -->
+          <g fill="url(#os-body)" class="os-breath-anim">
+            <!-- Head -->
+            <ellipse cx="70" cy="36" rx="14" ry="15"/>
+            <!-- Hair top accent -->
+            <ellipse cx="70" cy="24" rx="10" ry="6" fill="#4a3020" opacity="0.7"/>
+            <!-- Neck -->
+            <rect x="65" y="49" width="10" height="10" rx="4"/>
+            <!-- Torso — slight hourglass shape -->
+            <path d="M70 59 C84 59 92 68 92 80 L92 108 C92 114 87 118 82 118 L58 118 C53 118 48 114 48 108 L48 80 C48 68 56 59 70 59 Z"/>
+            <!-- Left leg (lotus) -->
+            <path d="M28 130 C28 118 38 112 52 116 C62 119 64 127 64 130 C64 134 60 138 55 138 C42 138 28 135 28 130 Z"/>
+            <!-- Right leg (lotus) -->
+            <path d="M112 130 C112 118 102 112 88 116 C78 119 76 127 76 130 C76 134 80 138 85 138 C98 138 112 135 112 130 Z"/>
+            <!-- Left arm -->
+            <path d="M48 84 C40 87 32 90 30 97 C29 102 33 105 38 105 C44 105 50 100 52 94 Z"/>
+            <!-- Right arm -->
+            <path d="M92 84 C100 87 108 90 110 97 C111 102 107 105 102 105 C96 105 90 100 88 94 Z"/>
+          </g>
+
+          <!-- Skin — face, hands -->
+          <ellipse cx="70" cy="36" rx="11" ry="12" fill="url(#os-skin)" opacity="0.5"/>
+          <!-- Namaste hands joined at chest -->
+          <ellipse cx="70" cy="90" rx="9" ry="6" fill="url(#os-skin)" opacity="0.75"/>
+          <!-- Finger lines -->
+          <g stroke="#c09060" stroke-width="0.7" opacity="0.5">
+            <line x1="65" y1="87" x2="64" y2="94"/>
+            <line x1="68" y1="86" x2="67" y2="95"/>
+            <line x1="72" y1="86" x2="73" y2="95"/>
+            <line x1="75" y1="87" x2="76" y2="94"/>
+          </g>
+
+          <!-- Bindi -->
+          <circle cx="70" cy="32" r="2" fill="#c80040" opacity="0.85"/>
+
+          <!-- Lotus base petals -->
+          <g fill="#82c4c3" opacity="0.45" transform="translate(70,148)">
+            <path d="M0 0 C-18-5-28-16-30-5 C-24 8-10 11 0 8 C10 11 24 8 30-5 C28-16 18-5 0 0Z"/>
+          </g>
+
+          <!-- Subtle chakra dot at heart -->
+          <circle cx="70" cy="82" r="3.5" fill="#e8b339" opacity="0.55"/>
+
+          <!-- Active service label inside center -->
+        </svg>
+
+        <!-- Active service info below the figure -->
+        <div class="os-center-info">
+          <span class="os-center-icon">
+            @switch (active.icon) {
+            @case ('yoga') {
+            <svg viewBox="0 0 32 32" fill="none">
+              <circle cx="16" cy="9" r="3.5" stroke="currentColor" stroke-width="2"/>
+              <path d="M16 12.5 L16 22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M7 17 L16 19 L25 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M7 27 C11 25 21 25 25 27" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            }
+            @case ('lifestyle') {
+            <svg viewBox="0 0 32 32" fill="none">
+              <rect x="6" y="8" width="20" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
+              <line x1="6" y1="13" x2="26" y2="13" stroke="currentColor" stroke-width="2"/>
+              <line x1="11" y1="5" x2="11" y2="11" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <line x1="21" y1="5" x2="21" y2="11" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="13" cy="20" r="1.5" fill="currentColor"/>
+              <circle cx="20" cy="20" r="1.5" fill="currentColor"/>
+            </svg>
+            }
+            @case ('education') {
+            <svg viewBox="0 0 32 32" fill="none">
+              <path d="M4 12 L16 6 L28 12 L16 18 Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M10 15 L10 23 C10 25 12 27 16 27 C20 27 22 25 22 23 L22 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            }
+            @case ('assessment') {
+            <svg viewBox="0 0 32 32" fill="none">
+              <circle cx="14" cy="14" r="7" stroke="currentColor" stroke-width="2"/>
+              <path d="M19 19 L27 27" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+              <path d="M11 14 L13 16 L17 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            }
+            @case ('ayurveda') {
+            <svg viewBox="0 0 32 32" fill="none">
+              <path d="M16 4 C22 9 24 16 21 22 C19 27 16 29 16 32 C16 29 13 27 11 22 C8 16 10 9 16 4 Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M16 8 L16 30" stroke="currentColor" stroke-width="1.4" opacity="0.55"/>
+            </svg>
+            }
+            }
+          </span>
+          <h3 class="os-center-name">{{ active.label }}</h3>
+        </div>
+      </div>
+
+      <!-- The 5 rotating service cards -->
+      @for (svc of services; track svc.id; let i = $index) {
+      <button
+        type="button"
+        class="os-card"
+        [class.os-card--active]="activeIdx() === i"
+        [style.transform]="cardTransform(cardAngles()[i])"
+        [attr.aria-label]="svc.label"
+        (click)="clickCard(i)">
+
+        <span class="os-card__icon">
+          @switch (svc.icon) {
+          @case ('yoga') {
+          <svg viewBox="0 0 32 32" fill="none">
+            <circle cx="16" cy="9" r="3.5" stroke="currentColor" stroke-width="2"/>
+            <path d="M16 12.5 L16 22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <path d="M7 17 L16 19 L25 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <path d="M7 27 C11 25 21 25 25 27" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          }
+          @case ('lifestyle') {
+          <svg viewBox="0 0 32 32" fill="none">
+            <rect x="6" y="8" width="20" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
+            <line x1="6" y1="13" x2="26" y2="13" stroke="currentColor" stroke-width="2"/>
+            <line x1="11" y1="5" x2="11" y2="11" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <line x1="21" y1="5" x2="21" y2="11" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          }
+          @case ('education') {
+          <svg viewBox="0 0 32 32" fill="none">
+            <path d="M4 12 L16 6 L28 12 L16 18 Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+            <path d="M10 15 L10 23 C10 25 12 27 16 27 C20 27 22 25 22 23 L22 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          }
+          @case ('assessment') {
+          <svg viewBox="0 0 32 32" fill="none">
+            <circle cx="14" cy="14" r="7" stroke="currentColor" stroke-width="2"/>
+            <path d="M19 19 L27 27" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+            <path d="M11 14 L13 16 L17 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          }
+          @case ('ayurveda') {
+          <svg viewBox="0 0 32 32" fill="none">
+            <path d="M16 4 C22 9 24 16 21 22 C19 27 16 29 16 32 C16 29 13 27 11 22 C8 16 10 9 16 4 Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+            <path d="M16 8 L16 30" stroke="currentColor" stroke-width="1.4" opacity="0.55"/>
+          </svg>
+          }
+          }
+        </span>
+        <span class="os-card__label">{{ svc.label }}</span>
+      </button>
+      }
+
+    </div>
+    <!-- end os-orbit-wrap -->
+
+  </div>
+</section>

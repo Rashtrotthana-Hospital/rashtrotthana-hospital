@@ -16,6 +16,9 @@ import {
 import { CommonModule } from '@angular/common';
 import { Router, RouterLink } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
+import { HeroBannerComponent } from './hero-banner/hero-banner.component';
+import { DinacharyaTimelineComponent } from './dinacharya-timeline/dinacharya-timeline.component';
+import { OrbitServicesComponent } from './orbit-services/orbit-services.component';
 
 type ServiceTab =
   | 'assessment'
@@ -65,7 +68,7 @@ interface DailyAnchor {
 @Component({
   selector: 'app-swasthya-bharati-page',
   standalone: true,
-  imports: [CommonModule, RouterLink],
+  imports: [CommonModule, RouterLink, HeroBannerComponent, DinacharyaTimelineComponent, OrbitServicesComponent],
   templateUrl: './swasthya-bharati-page.component.html',
   styleUrls: ['./swasthya-bharati-page.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -85,6 +88,40 @@ export class SwasthyaBharatiPageComponent
   private statsObserver?: IntersectionObserver;
   private statsAnimated = false;
   private rafIds: number[] = [];
+
+  // Dinacharya active anchor + sky background
+  readonly activeAnchorIdx = signal<number>(0);
+  private arcInterval?: ReturnType<typeof setInterval>;
+  private arcResumeTimeout?: ReturnType<typeof setTimeout>;
+  private arcEl?: HTMLElement;
+  private readonly handleArcEnter = () => { clearInterval(this.arcInterval); };
+  private readonly handleArcLeave = () => { this.startArcCycle(); };
+
+  readonly arcBackgrounds = [
+    // 04:30 – 06:00 Brahma Muhurta — deep indigo → coral sunrise
+    'linear-gradient(160deg,#0b1628 0%,#1e3a5f 28%,#c85a2f 62%,#f4a060 82%,#ffd580 100%)',
+    // 06:00 – 08:00 Movement — warm golden morning
+    'linear-gradient(160deg,#2d5896 0%,#5b8fd4 35%,#f4a060 62%,#ffd580 82%,#fff9e0 100%)',
+    // 12:00 – 14:00 Noon — bright sky blue
+    'linear-gradient(180deg,#4fc3d0 0%,#a8e6ef 45%,#fdf9ee 100%)',
+    // 17:00 – 19:00 Sunset — deep magenta → amber
+    'linear-gradient(160deg,#1a0a2e 0%,#a0284e 38%,#f0612a 65%,#f8ab58 100%)',
+    // 19:00 – 21:00 Dusk — twilight navy
+    'linear-gradient(160deg,#05060e 0%,#0d1b40 55%,#1e2d58 100%)',
+    // 21:30 – 22:30 Sleep — deep midnight
+    'linear-gradient(160deg,#020306 0%,#070d1e 100%)',
+  ];
+
+  // Orbit auto-rotation
+  private orbitAngle = 0;
+  private orbitRafId?: number;
+  private lastOrbitTime = 0;
+  private readonly ORBIT_SPEED = 9; // degrees per second (40 s full rotation)
+  private orbitPaused = false;
+  private orbitResumeTimeout?: ReturnType<typeof setTimeout>;
+  private orbitEl?: HTMLElement;
+  private readonly handleOrbitEnter = () => { this.orbitPaused = true; };
+  private readonly handleOrbitLeave = () => { this.orbitPaused = false; this.lastOrbitTime = 0; };
 
   readonly activeService = signal<ServiceTab>('assessment');
   readonly openFaq = signal<number | null>(0);
@@ -519,6 +556,22 @@ export class SwasthyaBharatiPageComponent
 
     // Initial tab indicator
     requestAnimationFrame(() => this.updateTabIndicator());
+
+    // Dinacharya arc: hover listeners + auto-cycle
+    this.arcEl = this.host.nativeElement.querySelector<HTMLElement>('.sbp-arc') ?? undefined;
+    if (this.arcEl) {
+      this.arcEl.addEventListener('mouseenter', this.handleArcEnter);
+      this.arcEl.addEventListener('mouseleave', this.handleArcLeave);
+    }
+    this.startArcCycle();
+
+    // Orbit auto-rotation: attach hover listeners then start loop
+    this.orbitEl = this.host.nativeElement.querySelector<HTMLElement>('.sbp-orbit') ?? undefined;
+    if (this.orbitEl) {
+      this.orbitEl.addEventListener('mouseenter', this.handleOrbitEnter);
+      this.orbitEl.addEventListener('mouseleave', this.handleOrbitLeave);
+    }
+    this.startOrbit();
   }
 
   ngOnDestroy(): void {
@@ -527,11 +580,34 @@ export class SwasthyaBharatiPageComponent
     this.statsObserver?.disconnect();
     this.rafIds.forEach((id) => cancelAnimationFrame(id));
     this.rafIds = [];
+    if (this.orbitRafId != null) cancelAnimationFrame(this.orbitRafId);
+    clearTimeout(this.orbitResumeTimeout);
+    this.orbitEl?.removeEventListener('mouseenter', this.handleOrbitEnter);
+    this.orbitEl?.removeEventListener('mouseleave', this.handleOrbitLeave);
+    clearInterval(this.arcInterval);
+    clearTimeout(this.arcResumeTimeout);
+    this.arcEl?.removeEventListener('mouseenter', this.handleArcEnter);
+    this.arcEl?.removeEventListener('mouseleave', this.handleArcLeave);
   }
 
   setService(id: ServiceTab): void {
     this.activeService.set(id);
     requestAnimationFrame(() => this.updateTabIndicator());
+
+    // Pause orbit for 5 s so the user can read; then resync so clicked
+    // satellite is at the right-side trigger point before resuming.
+    this.orbitPaused = true;
+    clearTimeout(this.orbitResumeTimeout);
+    this.orbitResumeTimeout = setTimeout(() => {
+      const idx = this.services.findIndex((s) => s.id === id);
+      if (idx >= 0) {
+        // Solve for orbitAngle where effectiveAngle of idx === 0° (top):
+        // idx * 72 - 90 + orbitAngle = 0 → orbitAngle = 90 - idx * 72
+        this.orbitAngle = ((90 - idx * 72) % 360 + 360) % 360;
+      }
+      this.lastOrbitTime = 0;
+      this.orbitPaused = false;
+    }, 5000);
   }
 
   toggleFaq(i: number): void {
@@ -576,6 +652,50 @@ export class SwasthyaBharatiPageComponent
     });
     if (btnRect.width > 0) {
       this.tabsRow.nativeElement.classList.add('is-measured');
+    }
+  }
+
+  setActiveAnchor(i: number): void {
+    this.activeAnchorIdx.set(i);
+    clearInterval(this.arcInterval);
+    clearTimeout(this.arcResumeTimeout);
+    this.arcResumeTimeout = setTimeout(() => this.startArcCycle(), 6000);
+  }
+
+  private startArcCycle(): void {
+    clearInterval(this.arcInterval);
+    this.arcInterval = setInterval(() => {
+      this.activeAnchorIdx.update((i) => (i + 1) % this.dailyRhythm.length);
+    }, 4500);
+  }
+
+  private startOrbit(): void {
+    const tick = (now: number) => {
+      if (!this.orbitPaused) {
+        const delta = this.lastOrbitTime ? (now - this.lastOrbitTime) / 1000 : 0;
+        this.orbitAngle = (this.orbitAngle + this.ORBIT_SPEED * delta) % 360;
+        this.orbitEl?.style.setProperty('--orbit-angle', `${this.orbitAngle}deg`);
+        this.checkOrbitActiveService();
+      }
+      this.lastOrbitTime = now;
+      this.orbitRafId = requestAnimationFrame(tick);
+    };
+    this.orbitRafId = requestAnimationFrame(tick);
+  }
+
+  private checkOrbitActiveService(): void {
+    let minDiff = Infinity;
+    let activeIdx = 0;
+    for (let i = 0; i < this.services.length; i++) {
+      const effectiveAngle = ((i * 72 - 90 + this.orbitAngle) % 360 + 360) % 360;
+      // Distance to 0° (top-center) — wraps around correctly
+      const diff = Math.min(effectiveAngle, 360 - effectiveAngle);
+      if (diff < minDiff) { minDiff = diff; activeIdx = i; }
+    }
+    const newId = this.services[activeIdx].id;
+    if (newId !== this.activeService()) {
+      this.activeService.set(newId);
+      requestAnimationFrame(() => this.updateTabIndicator());
     }
   }
 

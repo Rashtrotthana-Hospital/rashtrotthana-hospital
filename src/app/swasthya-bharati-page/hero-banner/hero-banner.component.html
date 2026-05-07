@@ -1,0 +1,326 @@
+<!-- RIGHT SIDE: 3D Lotus Flower Candle — premium cinematic wellness illustration -->
+<div class="hb-stage" aria-hidden="true">
+
+  <!-- Soft background wash -->
+  <div class="hb-bg">
+    <span class="hb-bg__wash"></span>
+    <span class="hb-bg__inner-glow"></span>
+  </div>
+
+  <!-- Multiple transparent glowing orbit circles behind the candle -->
+  <div class="hb-orbits" aria-hidden="true">
+    <span class="hb-orbit hb-orbit--1"></span>
+    <span class="hb-orbit hb-orbit--2"></span>
+    <span class="hb-orbit hb-orbit--3"></span>
+    <span class="hb-orbit hb-orbit--4"></span>
+  </div>
+
+  <!-- Floating golden particles around the flower -->
+  <div class="hb-particles" aria-hidden="true">
+    @for (p of particles; track $index) {
+    <span class="hb-particle"
+          [style.left.%]="p.x"
+          [style.top.%]="p.y"
+          [style.width.px]="p.size"
+          [style.height.px]="p.size"
+          [style.animation-delay]="p.delay + 's'"
+          [style.animation-duration]="p.duration + 's'"></span>
+    }
+  </div>
+
+  <!-- Candle floating assembly -->
+  <div class="hb-float-wrap">
+
+    <!-- Ground soft shadow -->
+    <div class="hb-ground-shadow"></div>
+
+    <!-- LOTUS CANDLE — SVG illustration -->
+    <svg class="hb-lotus-candle" viewBox="0 0 420 460" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <!-- Lotus petal gradient — warm pink/peach/cream -->
+        <radialGradient id="lp1" cx="40%" cy="25%" r="72%">
+          <stop offset="0%"   stop-color="#fff5f0"/>
+          <stop offset="22%"  stop-color="#ffd8c8"/>
+          <stop offset="55%"  stop-color="#f4a080"/>
+          <stop offset="82%"  stop-color="#e07055"/>
+          <stop offset="100%" stop-color="#c84830"/>
+        </radialGradient>
+        <radialGradient id="lp2" cx="52%" cy="30%" r="68%">
+          <stop offset="0%"   stop-color="#fff8f4"/>
+          <stop offset="28%"  stop-color="#ffe4d4"/>
+          <stop offset="60%"  stop-color="#f8b090"/>
+          <stop offset="88%"  stop-color="#e88868"/>
+          <stop offset="100%" stop-color="#d06040"/>
+        </radialGradient>
+        <radialGradient id="lp3" cx="45%" cy="35%" r="65%">
+          <stop offset="0%"   stop-color="#fff8f2"/>
+          <stop offset="32%"  stop-color="#ffe8d8"/>
+          <stop offset="62%"  stop-color="#fac0a0"/>
+          <stop offset="90%"  stop-color="#eca080"/>
+          <stop offset="100%" stop-color="#d87858"/>
+        </radialGradient>
+        <radialGradient id="lp4" cx="48%" cy="40%" r="62%">
+          <stop offset="0%"   stop-color="#fffaf6"/>
+          <stop offset="35%"  stop-color="#ffeee0"/>
+          <stop offset="65%"  stop-color="#fdd0b0"/>
+          <stop offset="92%"  stop-color="#f0b090"/>
+          <stop offset="100%" stop-color="#e09070"/>
+        </radialGradient>
+        <radialGradient id="lp5" cx="50%" cy="45%" r="58%">
+          <stop offset="0%"   stop-color="#fffcf9"/>
+          <stop offset="40%"  stop-color="#fff2e8"/>
+          <stop offset="70%"  stop-color="#fddec8"/>
+          <stop offset="100%" stop-color="#f4c0a0"/>
+        </radialGradient>
+        <radialGradient id="lpInner" cx="50%" cy="50%" r="55%">
+          <stop offset="0%"   stop-color="#fff"/>
+          <stop offset="45%"  stop-color="#fff6f0"/>
+          <stop offset="80%"  stop-color="#ffe8d8"/>
+          <stop offset="100%" stop-color="#ffd0b8"/>
+        </radialGradient>
+
+        <!-- Water/pond base -->
+        <radialGradient id="pondG" cx="48%" cy="38%" r="60%">
+          <stop offset="0%"   stop-color="#c8e8f4"/>
+          <stop offset="45%"  stop-color="#88c8e0"/>
+          <stop offset="80%"  stop-color="#4898b8"/>
+          <stop offset="100%" stop-color="#206880"/>
+        </radialGradient>
+        <radialGradient id="pondShine" cx="30%" cy="28%" r="55%">
+          <stop offset="0%"   stop-color="rgba(255,255,255,0.65)"/>
+          <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+        </radialGradient>
+
+        <!-- Candle body -->
+        <linearGradient id="candleG" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%"   stop-color="#ede0c4"/>
+          <stop offset="28%"  stop-color="#f5edd8"/>
+          <stop offset="52%"  stop-color="#faf4e8"/>
+          <stop offset="75%"  stop-color="#f2e8d0"/>
+          <stop offset="100%" stop-color="#ddd0b0"/>
+        </linearGradient>
+        <linearGradient id="candleTopG" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%"   stop-color="#e8d8b8"/>
+          <stop offset="50%"  stop-color="#f5edd8"/>
+          <stop offset="100%" stop-color="#d8c8a0"/>
+        </linearGradient>
+
+        <!-- Flame gradient -->
+        <linearGradient id="flameG" x1="0" x2="0" y1="0" y2="1">
+          <stop offset="0%"   stop-color="#ffffff"/>
+          <stop offset="12%"  stop-color="#fffce8"/>
+          <stop offset="32%"  stop-color="#ffe060"/>
+          <stop offset="55%"  stop-color="#ff9000"/>
+          <stop offset="78%"  stop-color="#e04800"/>
+          <stop offset="100%" stop-color="#a02000"/>
+        </linearGradient>
+        <radialGradient id="flameGlowG" cx="50%" cy="55%" r="50%">
+          <stop offset="0%"   stop-color="#ffe060" stop-opacity="1"/>
+          <stop offset="40%"  stop-color="#ff8800" stop-opacity="0.45"/>
+          <stop offset="100%" stop-color="#ff5000" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="flameAura" cx="50%" cy="50%" r="50%">
+          <stop offset="0%"   stop-color="#fff4a0" stop-opacity="0.45"/>
+          <stop offset="55%"  stop-color="#ffb040" stop-opacity="0.15"/>
+          <stop offset="100%" stop-color="#ff6000" stop-opacity="0"/>
+        </radialGradient>
+
+        <!-- Ambient golden glow -->
+        <radialGradient id="ambientG" cx="50%" cy="50%" r="50%">
+          <stop offset="0%"   stop-color="#ffd890" stop-opacity="0.28"/>
+          <stop offset="50%"  stop-color="#ffb060" stop-opacity="0.12"/>
+          <stop offset="100%" stop-color="#ff8040" stop-opacity="0"/>
+        </radialGradient>
+
+        <!-- Leaf green gradient -->
+        <linearGradient id="leafG" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%"   stop-color="#68d090"/>
+          <stop offset="50%"  stop-color="#28a060"/>
+          <stop offset="100%" stop-color="#0a6838"/>
+        </linearGradient>
+
+        <!-- Wax drip -->
+        <linearGradient id="dripG" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%"   stop-color="#e8d8b8"/>
+          <stop offset="50%"  stop-color="#f5edd8"/>
+          <stop offset="100%" stop-color="#d8c8a0"/>
+        </linearGradient>
+
+        <!-- Glow filters -->
+        <filter id="hb-flame-bloom" x="-160%" y="-160%" width="420%" height="420%">
+          <feGaussianBlur stdDeviation="16" result="b"/>
+          <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+        <filter id="hb-lotus-glow" x="-20%" y="-20%" width="140%" height="140%">
+          <feGaussianBlur stdDeviation="6" result="g"/>
+          <feMerge><feMergeNode in="g"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+        <filter id="hb-soft-shadow" x="-10%" y="-10%" width="120%" height="130%">
+          <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="rgba(80,30,20,0.25)"/>
+        </filter>
+      </defs>
+
+      <!-- Wide ambient glow behind entire scene -->
+      <ellipse cx="210" cy="270" rx="185" ry="175" fill="url(#ambientG)"/>
+
+      <!-- ── POND / WATER BASE ── -->
+      <ellipse cx="210" cy="390" rx="145" ry="30" fill="rgba(40,100,140,0.18)"/>
+      <ellipse cx="210" cy="385" rx="130" ry="24"  fill="url(#pondG)" opacity="0.88"/>
+      <ellipse cx="210" cy="385" rx="130" ry="24"  fill="url(#pondShine)"/>
+      <!-- Pond rim highlight -->
+      <ellipse cx="210" cy="383" rx="130" ry="23"  fill="none" stroke="rgba(140,200,230,0.45)" stroke-width="1.5"/>
+      <!-- Water ripples -->
+      <ellipse cx="210" cy="386" rx="80"  ry="11"  fill="none" stroke="rgba(255,255,255,0.20)" stroke-width="0.8"/>
+      <ellipse cx="210" cy="387" rx="50"  ry="7"   fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="0.6"/>
+
+      <!-- ── LARGE LOTUS LEAVES (floating on water) ── -->
+      <g opacity="0.90">
+        <!-- Left large leaf -->
+        <ellipse cx="120" cy="383" rx="62" ry="18" fill="#28a060" opacity="0.75" transform="rotate(-15 120 383)"/>
+        <ellipse cx="120" cy="381" rx="62" ry="18" fill="url(#leafG)" opacity="0.65" transform="rotate(-15 120 381)"/>
+        <!-- Leaf vein -->
+        <line x1="80" y1="388" x2="155" y2="375" stroke="#0a5030" stroke-width="1" opacity="0.45"/>
+        <!-- Right large leaf -->
+        <ellipse cx="300" cy="383" rx="62" ry="18" fill="#28a060" opacity="0.75" transform="rotate(15 300 383)"/>
+        <ellipse cx="300" cy="381" rx="62" ry="18" fill="url(#leafG)" opacity="0.65" transform="rotate(15 300 381)"/>
+        <line x1="340" y1="388" x2="265" y2="375" stroke="#0a5030" stroke-width="1" opacity="0.45"/>
+      </g>
+
+      <!-- ── LOTUS STEM ── -->
+      <path d="M210 380 C205 362 203 340 207 315 C208 305 210 298 210 298"
+            fill="none" stroke="#28a060" stroke-width="8" stroke-linecap="round"/>
+      <path d="M210 380 C207 362 206 340 208 315 C209 305 210 298 210 298"
+            fill="none" stroke="#48c880" stroke-width="3" stroke-linecap="round" opacity="0.55"/>
+
+      <!-- ── CANDLE (sits inside lotus center) ── -->
+      <!-- Candle body -->
+      <rect x="188" y="232" width="44" height="66" rx="6" fill="url(#candleG)" filter="url(#hb-soft-shadow)"/>
+      <!-- Candle top oval (wax pool) -->
+      <ellipse cx="210" cy="232" rx="22" ry="7" fill="url(#candleTopG)"/>
+      <!-- Candle edge highlight -->
+      <rect x="188" y="232" width="44" height="66" rx="6"
+            fill="none" stroke="rgba(255,245,220,0.55)" stroke-width="1"/>
+      <!-- Wax drip left -->
+      <path d="M192 248 C190 258 190 268 193 272 C195 268 194 260 196 252 Z"
+            fill="url(#dripG)" opacity="0.72"/>
+      <!-- Wax drip right -->
+      <path d="M228 252 C230 262 230 270 227 274 C225 270 226 262 224 256 Z"
+            fill="url(#dripG)" opacity="0.65"/>
+      <!-- Candle decorative rings -->
+      <line x1="192" y1="252" x2="228" y2="252" stroke="rgba(200,180,130,0.35)" stroke-width="0.8"/>
+      <line x1="192" y1="262" x2="228" y2="262" stroke="rgba(200,180,130,0.28)" stroke-width="0.8"/>
+      <line x1="192" y1="272" x2="228" y2="272" stroke="rgba(200,180,130,0.22)" stroke-width="0.8"/>
+
+      <!-- ── FLAME GLOW HALOS ── -->
+      <ellipse class="hb-glow-ring hb-glow-ring--outer" cx="210" cy="208" rx="62" ry="76" fill="url(#flameAura)"/>
+      <ellipse class="hb-glow-ring hb-glow-ring--mid"   cx="210" cy="212" rx="38" ry="50" fill="url(#flameGlowG)"/>
+      <ellipse class="hb-glow-ring hb-glow-ring--inner"  cx="210" cy="216" rx="20" ry="28" fill="#ff9000" opacity="0.18"/>
+
+      <!-- Wick -->
+      <line x1="210" y1="232" x2="210" y2="213" stroke="#3a1800" stroke-width="2.8" stroke-linecap="round"/>
+      <!-- Wick ember -->
+      <ellipse cx="210" cy="213" rx="3.5" ry="2.2" fill="#ff6000" opacity="0.75"/>
+
+      <!-- ── FLAME ── -->
+      <g class="hb-flame" filter="url(#hb-flame-bloom)">
+        <!-- Warm outer halo -->
+        <ellipse cx="210" cy="195" rx="28" ry="40" fill="#ffaa00" opacity="0.08"/>
+        <!-- Outer flame -->
+        <path d="M210 213 C222 196 226 178 220 163 C216 153 210 150 205 155 C197 162 199 185 210 213 Z"
+              fill="#e05000" opacity="0.55"/>
+        <!-- Main flame body -->
+        <path d="M210 213 C220 198 224 180 218 167 C214 158 210 155 206 159 C199 166 202 188 210 213 Z"
+              fill="url(#flameG)"/>
+        <!-- Bright inner core -->
+        <path d="M210 210 C216 197 219 181 215 170 C213 163 210 161 208 165 C204 172 206 193 210 210 Z"
+              fill="#fff8cc" opacity="0.90"/>
+        <!-- White-hot tip -->
+        <path d="M210 200 C212 191 213 180 211 173 C209 180 208 191 210 200 Z"
+              fill="#ffffff" opacity="0.88"/>
+      </g>
+
+      <!-- ── OUTER LOTUS PETALS (8 large petals around candle) ── -->
+      <g class="hb-outer-petals" filter="url(#hb-lotus-glow)">
+        <!-- Right -->
+        <path d="M210 320 C226 292 262 268 278 238 C286 220 280 198 268 192 C252 184 232 196 226 218 C220 236 215 278 210 320 Z"
+              fill="url(#lp1)" opacity="0.92"/>
+        <!-- Upper-right -->
+        <path d="M210 320 C220 286 240 256 245 228 C248 210 240 192 230 187 C216 180 200 192 198 212 C196 228 200 276 210 320 Z"
+              fill="url(#lp1)" opacity="0.90"/>
+        <!-- Upper -->
+        <path d="M210 320 C204 286 195 252 192 220 C190 202 196 182 205 176 C215 170 226 178 230 194 C235 212 224 264 210 320 Z"
+              fill="url(#lp1)" opacity="0.92"/>
+        <!-- Upper-left -->
+        <path d="M210 320 C198 288 178 258 172 228 C168 210 176 192 187 187 C201 180 217 192 218 212 C220 228 216 276 210 320 Z"
+              fill="url(#lp1)" opacity="0.90"/>
+        <!-- Left -->
+        <path d="M210 320 C192 292 158 268 142 238 C134 220 140 198 152 192 C168 184 188 196 194 218 C200 236 205 278 210 320 Z"
+              fill="url(#lp1)" opacity="0.92"/>
+        <!-- Lower-left -->
+        <path d="M210 320 C196 300 168 286 150 268 C138 254 136 238 145 228 C155 216 178 220 188 236 C196 250 206 292 210 320 Z"
+              fill="url(#lp2)" opacity="0.85"/>
+        <!-- Lower -->
+        <path d="M210 320 C210 304 204 286 200 270 C196 256 198 240 204 232 C210 224 218 228 222 240 C226 254 218 298 210 320 Z"
+              fill="url(#lp2)" opacity="0.82"/>
+        <!-- Lower-right -->
+        <path d="M210 320 C224 300 252 286 270 268 C282 254 284 238 275 228 C265 216 242 220 232 236 C224 250 214 292 210 320 Z"
+              fill="url(#lp2)" opacity="0.85"/>
+      </g>
+
+      <!-- ── MID LOTUS PETALS (6 petals, closer) ── -->
+      <g class="hb-mid-petals">
+        <path d="M210 302 C218 278 236 256 240 234 C243 220 238 206 230 202 C220 197 208 206 206 220 C204 234 206 272 210 302 Z"
+              fill="url(#lp2)" opacity="0.94"/>
+        <path d="M210 302 C210 276 214 252 213 232 C212 216 207 202 200 198 C192 194 185 204 187 218 C188 234 196 268 210 302 Z"
+              fill="url(#lp2)" opacity="0.92"/>
+        <path d="M210 302 C202 278 184 256 180 234 C177 220 182 206 190 202 C200 197 212 206 214 220 C216 234 214 272 210 302 Z"
+              fill="url(#lp2)" opacity="0.94"/>
+        <path d="M210 302 C206 280 192 262 188 244 C184 230 186 216 193 211 C202 205 214 210 216 224 C219 238 214 278 210 302 Z"
+              fill="url(#lp3)" opacity="0.88"/>
+        <path d="M210 302 C214 280 228 262 232 244 C236 230 234 216 227 211 C218 205 206 210 204 224 C201 238 206 278 210 302 Z"
+              fill="url(#lp3)" opacity="0.88"/>
+        <path d="M210 302 C216 282 228 268 232 252 C236 240 232 228 225 224 C216 219 204 226 203 238 C202 252 206 282 210 302 Z"
+              fill="url(#lp3)" opacity="0.82"/>
+      </g>
+
+      <!-- ── INNER PETALS (5 petals, tight cup) ── -->
+      <g class="hb-inner-petals">
+        <path d="M210 285 C215 268 224 254 226 240 C228 230 225 220 220 216 C214 212 207 218 206 228 C204 240 205 266 210 285 Z"
+              fill="url(#lp3)" opacity="0.96"/>
+        <path d="M210 285 C210 266 213 250 212 236 C211 224 206 214 200 212 C193 210 188 218 190 230 C192 244 200 264 210 285 Z"
+              fill="url(#lp3)" opacity="0.94"/>
+        <path d="M210 285 C205 268 196 254 194 240 C192 230 195 220 200 216 C206 212 213 218 214 228 C216 240 215 266 210 285 Z"
+              fill="url(#lp3)" opacity="0.96"/>
+        <path d="M210 285 C212 270 220 258 222 246 C224 236 222 226 217 222 C212 218 205 222 204 232 C202 244 204 270 210 285 Z"
+              fill="url(#lp4)" opacity="0.90"/>
+        <path d="M210 285 C208 270 200 258 198 246 C196 236 198 226 203 222 C208 218 215 222 216 232 C218 244 216 270 210 285 Z"
+              fill="url(#lp4)" opacity="0.90"/>
+      </g>
+
+      <!-- ── BUD CENTER (tight upward petals) ── -->
+      <g class="hb-bud">
+        <path d="M210 268 C213 254 218 242 218 234 C218 227 215 220 211 219 C207 218 204 224 205 232 C205 242 207 256 210 268 Z"
+              fill="url(#lp4)" opacity="0.97"/>
+        <path d="M210 268 C207 254 202 242 202 234 C202 227 205 220 209 219 C213 218 216 224 215 232 C215 242 213 256 210 268 Z"
+              fill="url(#lp4)" opacity="0.95"/>
+        <path d="M210 268 C212 256 215 246 215 240 C215 234 213 228 210 227 C207 226 205 230 206 236 C206 244 208 258 210 268 Z"
+              fill="url(#lp5)"/>
+        <path d="M210 268 C208 256 205 246 205 240 C205 234 207 228 210 227 C213 226 215 230 214 236 C214 244 212 258 210 268 Z"
+              fill="url(#lp5)" opacity="0.90"/>
+        <!-- Stamen bright center -->
+        <ellipse cx="210" cy="228" rx="9" ry="6"  fill="#fff8f0"/>
+        <ellipse cx="210" cy="226" rx="5" ry="3.5" fill="#fffdf8"/>
+        <!-- Golden stamen dots -->
+        <circle cx="206" cy="225" r="1.8" fill="#f0c060" opacity="0.85"/>
+        <circle cx="210" cy="223" r="1.8" fill="#f0c060" opacity="0.88"/>
+        <circle cx="214" cy="225" r="1.8" fill="#f0c060" opacity="0.85"/>
+        <circle cx="208" cy="228" r="1.5" fill="#e8b040" opacity="0.75"/>
+        <circle cx="212" cy="228" r="1.5" fill="#e8b040" opacity="0.75"/>
+      </g>
+
+      <!-- Spiritual glow around candle -->
+      <ellipse cx="210" cy="255" rx="42" ry="60" fill="rgba(255,230,180,0.12)"/>
+
+    </svg>
+  </div>
+</div>

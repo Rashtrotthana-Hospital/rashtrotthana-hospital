@@ -1,0 +1,384 @@
+// ────────────────────────────────────────────────────────────────────────────
+// Orbit Services — premium cinematic wellness UI
+// Five service cards orbit a center meditation figure.
+// Only card exactly at top-center (orange indicator) is active.
+// ────────────────────────────────────────────────────────────────────────────
+
+.os-section {
+  position: relative;
+  padding-block: clamp(3.5rem, 8vw, 6rem);
+  background:
+    radial-gradient(ellipse 80% 60% at 50% 0%,  rgba(0, 90, 80, 0.08), transparent 68%),
+    radial-gradient(ellipse 60% 40% at 50% 100%, rgba(0, 60, 55, 0.05), transparent 72%),
+    #f5fafa;
+  overflow: hidden;
+
+  // Subtle texture overlay
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 120% 35% at 50% 50%, rgba(9,121,105,0.03), transparent 70%);
+    pointer-events: none;
+  }
+}
+
+// ── Container ─────────────────────────────────────────────────────────────────
+.os-container {
+  max-width: 1100px;
+  margin-inline: auto;
+  padding-inline: clamp(1.25rem, 4vw, 2.5rem);
+}
+
+// ── Header ────────────────────────────────────────────────────────────────────
+.os-header {
+  text-align: center;
+  margin-bottom: clamp(2.5rem, 5vw, 4rem);
+}
+
+.os-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #014d4e;
+  margin-bottom: 0.625rem;
+
+  &::before {
+    content: '';
+    width: 22px;
+    height: 1px;
+    background: currentColor;
+  }
+}
+
+.os-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  font-weight: 700;
+  color: #007070;
+  margin: 0 0 0.75rem;
+  letter-spacing: -0.01em;
+}
+
+.os-lede {
+  font-size: 1rem;
+  color: #3d6060;
+  max-width: 560px;
+  margin-inline: auto;
+  line-height: 1.78;
+}
+
+// ── Orbit wrap ────────────────────────────────────────────────────────────────
+// Square coordinate system. Cards use rotate(deg) translateY(-r) rotate(-deg).
+.os-orbit-wrap {
+  position: relative;
+  --os-size: clamp(340px, 68vw, 580px);
+  --os-r:    clamp(150px, 30vw, 248px);
+
+  width:  var(--os-size);
+  height: var(--os-size);
+  margin-inline: auto;
+}
+
+// ── Orange top-center indicator ───────────────────────────────────────────────
+// Fixed at top-center — card becomes active on exact alignment
+.os-indicator {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 20;
+  pointer-events: none;
+
+  &__dot {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 38% 36%, #ffcc50, #e89018);
+    box-shadow:
+      0 0 0 3px rgba(232, 160, 32, 0.22),
+      0 0 12px 5px rgba(232, 160, 32, 0.52),
+      0 0 28px 10px rgba(232, 160, 32, 0.22);
+    animation: os-dot-pulse 2.2s ease-in-out infinite;
+    flex-shrink: 0;
+  }
+
+  &__stem {
+    width: 1.5px;
+    height: 22px;
+    background: linear-gradient(180deg, rgba(232, 160, 32, 0.68), transparent);
+  }
+}
+
+// ── Orbit ring ────────────────────────────────────────────────────────────────
+.os-ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width:  calc(var(--os-r) * 2);
+  height: calc(var(--os-r) * 2);
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 1.5px solid rgba(9, 121, 105, 0.18);
+  box-shadow:
+    0 0 0 1px rgba(9, 121, 105, 0.06),
+    inset 0 0 28px rgba(9, 121, 105, 0.04);
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: -14px;
+    border-radius: 50%;
+    border: 1px dashed rgba(218, 175, 50, 0.14);
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    inset: -28px;
+    border-radius: 50%;
+    border: 0.8px solid rgba(9, 121, 105, 0.06);
+  }
+}
+
+// ── Center area ───────────────────────────────────────────────────────────────
+.os-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  --os-center-size: clamp(185px, 33vw, 268px);
+
+  width:  var(--os-center-size);
+  height: var(--os-center-size);
+  border-radius: 50%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background:
+    radial-gradient(circle at 46% 38%, rgba(255, 232, 160, 0.22) 0%, transparent 60%),
+    radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.98) 0%, rgba(240, 252, 250, 0.96) 100%);
+  box-shadow:
+    0 0 0 1px rgba(9, 121, 105, 0.10),
+    0 0 0 4px rgba(9, 121, 105, 0.04),
+    0 12px 48px rgba(9, 121, 105, 0.12),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.92);
+  z-index: 5;
+  overflow: hidden;
+  padding: 0.5rem 0.75rem 0.75rem;
+}
+
+// Expanding aura rings
+.os-aura {
+  position: absolute;
+  border-radius: 50%;
+  border: 1.5px solid rgba(9, 121, 105, 0.16);
+  animation: os-aura-expand 4.5s ease-out infinite;
+  pointer-events: none;
+
+  &--1 { inset: -10%; animation-delay: 0s;    border-color: rgba(9, 121, 105, 0.20); }
+  &--2 { inset: -24%; animation-delay: 1.5s;  border-color: rgba(9, 121, 105, 0.12); }
+  &--3 { inset: -38%; animation-delay: 3.0s;  border-color: rgba(9, 121, 105, 0.07); }
+}
+
+// Meditating figure
+.os-figure {
+  width: 56%;
+  height: auto;
+  flex-shrink: 0;
+  margin-bottom: 0.1rem;
+  filter: drop-shadow(0 4px 12px rgba(0, 80, 70, 0.12));
+}
+
+// Breathing animation on figure body
+.os-breath-anim {
+  transform-origin: 70px 90px;
+  animation: os-breathe 5.5s ease-in-out infinite;
+}
+
+// Active service info below figure
+.os-center-info {
+  text-align: center;
+  width: 100%;
+  padding: 0 0.25rem;
+}
+
+.os-center-icon {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  color: #097969;
+  margin-bottom: 0.15rem;
+  transition: color 0.5s ease, transform 0.4s ease;
+
+  svg { width: 100%; height: 100%; }
+}
+
+.os-center-name {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: #007070;
+  margin: 0;
+  line-height: 1.25;
+  white-space: pre-line;
+  transition: color 0.45s ease;
+  letter-spacing: 0.01em;
+}
+
+// ── Orbiting service cards ────────────────────────────────────────────────────
+// Each card is centered in orbit-wrap; transform moves it to orbit position.
+.os-card {
+  position: absolute;
+  top:  50%;
+  left: 50%;
+  --os-card-size: clamp(90px, 16vw, 122px);
+
+  width:  var(--os-card-size);
+  height: var(--os-card-size);
+  margin-top:  calc(var(--os-card-size) / -2);
+  margin-left: calc(var(--os-card-size) / -2);
+
+  border-radius: 50%;
+  border: 1.5px solid rgba(9, 121, 105, 0.20);
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow:
+    0 4px 20px rgba(0, 51, 51, 0.09),
+    inset 0 1px 0 rgba(255, 255, 255, 0.95);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.28rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  z-index: 6;
+
+  transition:
+    background    0.45s ease,
+    border-color  0.45s ease,
+    box-shadow    0.45s ease,
+    transform     0.45s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  &:hover:not(.os-card--active) {
+    border-color: rgba(9, 121, 105, 0.40);
+    box-shadow:
+      0 8px 30px rgba(0, 51, 51, 0.14),
+      inset 0 1px 0 rgba(255, 255, 255, 1);
+    z-index: 8;
+  }
+
+  // Active — dark teal fill, glow border, scale up
+  &--active {
+    background: linear-gradient(140deg, #0a8070 0%, #097969 100%);
+    border-color: rgba(130, 200, 196, 0.70);
+    box-shadow:
+      0 0 0 3px rgba(130, 196, 195, 0.45),
+      0 0 0 7px rgba(130, 196, 195, 0.15),
+      0 10px 40px rgba(9, 121, 105, 0.45);
+    animation: os-card-glow 2.4s ease-in-out infinite;
+    z-index: 9;
+
+    .os-card__icon  { color: #c8f0ec; }
+    .os-card__label { color: #daf4f0; }
+  }
+
+  &__icon {
+    width:  clamp(26px, 4.5vw, 34px);
+    height: clamp(26px, 4.5vw, 34px);
+    color: #097969;
+    flex-shrink: 0;
+    transition: color 0.4s ease;
+
+    svg { width: 100%; height: 100%; }
+  }
+
+  &__label {
+    font-size: clamp(0.52rem, 1vw, 0.63rem);
+    font-weight: 600;
+    color: #014d4e;
+    text-align: center;
+    line-height: 1.3;
+    white-space: pre-line;
+    transition: color 0.4s ease;
+  }
+}
+
+// ── Keyframes ─────────────────────────────────────────────────────────────────
+@keyframes os-dot-pulse {
+  0%, 100% {
+    box-shadow:
+      0 0 0 3px  rgba(232, 160, 32, 0.22),
+      0 0 12px 5px rgba(232, 160, 32, 0.52),
+      0 0 28px 10px rgba(232, 160, 32, 0.22);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow:
+      0 0 0 5px  rgba(232, 160, 32, 0.18),
+      0 0 18px 8px rgba(232, 160, 32, 0.40),
+      0 0 40px 16px rgba(232, 160, 32, 0.14);
+    transform: scale(1.30);
+  }
+}
+
+@keyframes os-aura-expand {
+  0%   { opacity: 0.80; transform: scale(1); }
+  65%  { opacity: 0; }
+  100% { opacity: 0; transform: scale(1.35); }
+}
+
+@keyframes os-breathe {
+  0%, 100% { transform: scaleY(1)    scaleX(1); }
+  35%       { transform: scaleY(1.05) scaleX(1.02); }
+  60%       { transform: scaleY(0.96) scaleX(0.99); }
+}
+
+@keyframes os-card-glow {
+  0%, 100% {
+    box-shadow:
+      0 0 0 3px rgba(130, 196, 195, 0.45),
+      0 0 0 7px rgba(130, 196, 195, 0.15),
+      0 10px 40px rgba(9, 121, 105, 0.45);
+  }
+  50% {
+    box-shadow:
+      0 0 0 5px rgba(130, 196, 195, 0.35),
+      0 0 0 12px rgba(130, 196, 195, 0.10),
+      0 14px 52px rgba(9, 121, 105, 0.58);
+  }
+}
+
+// ── Responsive ────────────────────────────────────────────────────────────────
+@media (max-width: 640px) {
+  .os-orbit-wrap {
+    --os-size: 325px;
+    --os-r: 138px;
+  }
+  .os-card       { --os-card-size: 84px; }
+  .os-center     { --os-center-size: 164px; }
+  .os-center-name { font-size: 0.60rem; }
+}
+
+@media (max-width: 400px) {
+  .os-orbit-wrap {
+    --os-size: 295px;
+    --os-r: 122px;
+  }
+  .os-card   { --os-card-size: 74px; }
+  .os-center { --os-center-size: 144px; }
+}

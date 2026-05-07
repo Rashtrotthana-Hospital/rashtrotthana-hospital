@@ -436,10 +436,36 @@
     margin-inline: auto;
     display: grid;
     place-items: center;
-    // Clip the breathing rings (and any other decoration) so they
-    // never spill past the visual area.
     overflow: hidden;
     border-radius: 50%;
+    background: radial-gradient(circle at 46% 42%,
+      rgba(255, 225, 140, 0.65) 0%,
+      rgba(255, 216, 107, 0.42) 28%,
+      rgba(212, 235, 235, 0.38) 58%,
+      rgba(238, 246, 246, 0.35) 100%);
+    box-shadow:
+      inset 0 0 0 1.5px rgba(232, 179, 57, 0.22),
+      0 24px 70px rgba(232, 179, 57, 0.28),
+      0 0 130px rgba(232, 179, 57, 0.14);
+
+    // Candle variant — remove circle clip, let the candle illustration own its shape
+    &--candle {
+      overflow: visible;
+      border-radius: 0;
+      background: transparent;
+      box-shadow: none;
+    }
+  }
+
+  &__aura {
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: radial-gradient(circle at 50% 50%,
+      rgba(255, 216, 107, 0.22) 0%,
+      transparent 65%);
+    animation: sbp-aura-pulse 4s ease-in-out infinite;
+    pointer-events: none;
   }
 
   &__mark {
@@ -578,6 +604,45 @@
 }
 
 // Hero animations
+@keyframes sbp-aura-pulse {
+  0%, 100% { opacity: 0.6; transform: scale(0.95); }
+  50%       { opacity: 1;   transform: scale(1.05); }
+}
+
+// Floating light sparks rising from the lamp
+.sbp-hero__spark {
+  position: absolute;
+  width: clamp(3px, 0.5vw, 5px);
+  height: clamp(3px, 0.5vw, 5px);
+  border-radius: 50%;
+  background: radial-gradient(circle, #fffbf0, #ffd86b);
+  box-shadow: 0 0 8px 3px rgba(255, 216, 107, 0.55);
+  pointer-events: none;
+  z-index: 3;
+  bottom: 50%;
+  left: calc(44% + (var(--sp-i, 0) - 3.5) * 4.5%);
+  animation:
+    sbp-spark-rise   calc(2.2s + var(--sp-i, 0) * 0.38s) ease-in infinite,
+    sbp-spark-sway   calc(1.8s + var(--sp-i, 0) * 0.22s) ease-in-out infinite alternate;
+  animation-delay: calc(var(--sp-i, 0) * -0.65s);
+
+  &:nth-child(even) {
+    background: radial-gradient(circle, #ffffff, #ffe5a0);
+    box-shadow: 0 0 6px 2px rgba(255, 229, 160, 0.5);
+    width: 3px; height: 3px;
+  }
+}
+
+@keyframes sbp-spark-rise {
+  0%   { transform: translateY(0)     scale(1);   opacity: 0.9; }
+  60%  { transform: translateY(-80px) scale(0.7); opacity: 0.5; }
+  100% { transform: translateY(-160px)scale(0.2); opacity: 0;   }
+}
+@keyframes sbp-spark-sway {
+  from { margin-left: -6px; }
+  to   { margin-left:  6px; }
+}
+
 @keyframes sbp-flicker {
   0%, 100% { transform: scaleY(1) translateY(0); opacity: 1; }
   50%      { transform: scaleY(1.04) translateY(-1px); opacity: 0.94; }
@@ -901,7 +966,6 @@
 // DINACHARYA — daily-rhythm arc with cosmic twilight backdrop
 // ─────────────────────────────────────────────────────────────────────
 .sbp-daily {
-  // Twilight gradient: pale teal at top → deep teal at bottom — sky.
   background:
     radial-gradient(ellipse at 80% 18%, rgba(232, 179, 57, 0.10), transparent 50%),
     radial-gradient(ellipse at 15% 25%, rgba(9, 121, 105, 0.10), transparent 55%),
@@ -909,6 +973,15 @@
   overflow: hidden;
   position: relative;
   isolation: isolate;
+  transition: background 1.4s ease;
+
+  // When background turns dark (sunset/night anchors) lighten the text
+  &--dark {
+    .sbp-section-head { color: #ffffff; }
+    .sbp-eyebrow      { color: rgba(255, 216, 107, 0.85); border-color: rgba(255,255,255,0.2); }
+    .sbp-h            { color: #ffffff; background: none; -webkit-text-fill-color: #ffffff; }
+    .sbp-lede         { color: rgba(255, 255, 255, 0.75); }
+  }
 }
 
 .sbp-arc {
@@ -993,21 +1066,36 @@
     z-index: 1;
   }
 
-  // Sun rides the parabolic arc using keyframes that match
-  // y(t) = 11.11% + 244.44% · t · (1 − t) — the same curve drawn in the SVG.
-  &__sun {
+  // Celestial traveller — position driven by JS, transitions smoothly
+  &__celestial {
     position: absolute;
-    left: 0%;
-    bottom: 11.11%;
-    width: clamp(40px, 4.4vw, 56px);
-    height: clamp(40px, 4.4vw, 56px);
-    margin-left: clamp(-28px, -2.2vw, -20px);
-    margin-bottom: clamp(-28px, -2.2vw, -20px);
-    animation: sbp-sun-travel 28s var(--sbp-ease-soft) infinite;
-    filter: drop-shadow(0 0 22px rgba(255, 216, 107, 0.65));
+    width: clamp(42px, 4.6vw, 58px);
+    height: clamp(42px, 4.6vw, 58px);
+    margin-left: clamp(-29px, -2.3vw, -21px);
+    margin-bottom: clamp(-29px, -2.3vw, -21px);
+    filter: drop-shadow(0 0 22px rgba(255, 216, 107, 0.7));
     z-index: 2;
-    will-change: left, bottom, opacity;
+    transition: left 0.8s var(--sbp-ease), bottom 0.8s var(--sbp-ease),
+                filter 0.8s ease;
+
+    &--night {
+      filter: drop-shadow(0 0 24px rgba(207, 236, 236, 0.85));
+    }
   }
+
+  // Sun + Moon bodies — cross-fade between them
+  &__cel-body {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    transition: opacity 0.7s ease, transform 0.7s ease;
+
+    &--sun  { opacity: 1; transform: scale(1);    }
+    &--moon { opacity: 0; transform: scale(0.65); }
+  }
+
+  .sbp-arc__celestial--night &__cel-body--sun  { opacity: 0; transform: scale(0.65); }
+  .sbp-arc__celestial--night &__cel-body--moon { opacity: 1; transform: scale(1);    }
 
   // Each anchor (pin + drop-line + card) rides the arc together — anchor
   // bottom is offset 8px below the curve point so the card's lower edge
@@ -1141,10 +1229,27 @@
     margin-top: auto;
   }
 
-  &__anchor:hover .sbp-arc__card {
-    transform: translateY(-3px);
-    border-color: rgba(9, 121, 105, 0.35);
-    box-shadow: var(--sbp-shadow-md);
+  &__anchor {
+    cursor: pointer;
+  }
+
+  &__anchor:hover .sbp-arc__card,
+  &__anchor.is-active .sbp-arc__card {
+    transform: translateY(-4px);
+    border-color: rgba(9, 121, 105, 0.4);
+    box-shadow: var(--sbp-shadow-md), 0 0 0 2px rgba(9, 121, 105, 0.18), 0 0 24px rgba(9, 121, 105, 0.12);
+
+    .sbp-arc__time  { color: var(--sbp-saffron); }
+    .sbp-arc__title { color: var(--sbp-teal-deep); }
+  }
+
+  &__anchor.is-active .sbp-arc__pin {
+    background: var(--sbp-grad-warm);
+    color: #ffffff;
+    border-color: transparent;
+    box-shadow: 0 0 0 4px rgba(9, 121, 105, 0.25), 0 6px 20px rgba(9, 121, 105, 0.4);
+
+    &::after { border-color: rgba(9, 121, 105, 0.5); animation-duration: 1.4s; }
   }
 }
 
@@ -1268,6 +1373,25 @@
   aspect-ratio: 1;
   margin: 0 auto clamp(3rem, 5vw, 4rem);
   isolation: isolate;
+  // Shared orbit radius — used by satellites AND the right-side indicator
+  --sat-r: clamp(130px, 17vw, 210px);
+
+  // Top-center active-zone glowing dot (cards activate when they reach here)
+  // &::after {
+  //   content: '';
+  //   position: absolute;
+  //   top: calc(50% - var(--sat-r));
+  //   left: 50%;
+  //   width: 0px;
+  //   height: 0px;
+  //   background: rgba(232, 179, 57, 0.9);
+  //   border-radius: 50%;
+  //   transform: translate(-50%, -50%);
+  //   z-index: 1;
+  //   pointer-events: none;
+  //   box-shadow: 0 0 10px 4px rgba(232, 179, 57, 0.45);
+  //   animation: sbp-zone-pulse 1.8s ease-in-out infinite;
+  // }
 
   // Decorative concentric rings — slow rotation for cosmic feel
   &__ring {
@@ -1320,6 +1444,53 @@
     animation: sbp-fig-breathe 5s ease-in-out infinite;
   }
 
+  // Dynamic center face — replaces the static meditator
+  &__center-face {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+    width: 100%;
+    height: 100%;
+    padding: 0.8rem 0.5rem 0.6rem;
+    animation: sbp-center-face-in 0.45s var(--sbp-ease) both;
+  }
+
+  &__center-icon {
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    color: var(--sbp-saffron);
+    filter: drop-shadow(0 2px 8px rgba(9, 121, 105, 0.35));
+    svg { width: 100%; height: 100%; }
+  }
+
+  &__center-name {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.58rem;
+    font-weight: 800;
+    text-align: center;
+    line-height: 1.25;
+    color: var(--sbp-teal-deep);
+    letter-spacing: 0.03em;
+    padding: 0 0.2rem;
+  }
+
+  &__center-sub {
+    font-size: 0.5rem;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: var(--sbp-text-soft);
+    line-height: 1.3;
+    padding: 0 0.2rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
   // Caption sits OUTSIDE / overlaid below the centre circle so long
   // text never gets clipped by the round container.
   &__center-label {
@@ -1368,20 +1539,14 @@
     left: 50%;
     width: clamp(86px, 10vw, 108px);
     height: clamp(86px, 10vw, 108px);
-    // Position around a circular orbit at 5 evenly-spaced angles
-    // (72° apart, starting from top = -90°). Each satellite is centred
-    // on (50%, 50%) via translate(-50%, -50%), then pushed outward by
-    // an absolute orbit radius (NOT a percentage — % resolves against
-    // the satellite's own size, which is too small).
-    --sat-angle: calc(var(--sat-i) * 72deg - 90deg);
-    --sat-r: clamp(130px, 17vw, 210px);
+    // Angle = base spacing + live orbit offset written by JS via --orbit-angle
+    --sat-angle: calc(var(--sat-i) * 72deg - 90deg + var(--orbit-angle, 0deg));
     transform:
       translate(-50%, -50%)
       rotate(var(--sat-angle))
       translateY(calc(-1 * var(--sat-r)))
       rotate(calc(-1 * var(--sat-angle)));
-    animation: sbp-sat-bob 5s ease-in-out infinite;
-    animation-delay: calc(var(--sat-i) * 0.4s);
+    transition: filter 0.3s ease;
   }
 
   &__btn {
@@ -1453,6 +1618,30 @@
   &:has(&__sat:hover) &__ring {
     animation-play-state: paused;
   }
+
+  // Pulsing aura rings around the center circle
+  &__center-aura {
+    position: absolute;
+    border-radius: 50%;
+    border: 1.5px solid rgba(9, 121, 105, 0.3);
+    pointer-events: none;
+
+    &--1 {
+      inset: -10px;
+      animation: sbp-orbit-center-aura 3.2s ease-in-out infinite;
+    }
+    &--2 {
+      inset: -22px;
+      border-color: rgba(232, 179, 57, 0.22);
+      animation: sbp-orbit-center-aura 3.2s ease-in-out infinite;
+      animation-delay: -1.1s;
+    }
+  }
+}
+
+@keyframes sbp-orbit-center-aura {
+  0%, 100% { transform: scale(0.94); opacity: 0.3;  }
+  50%       { transform: scale(1.06); opacity: 1;    }
 }
 
 @keyframes sbp-orbit-spin {
@@ -1460,28 +1649,30 @@
   to   { transform: translate(-50%, -50%) rotate(360deg); }
 }
 
-@keyframes sbp-sat-bob {
-  0%, 100% {
-    transform:
-      translate(-50%, -50%)
-      rotate(var(--sat-angle))
-      translateY(calc(-1 * var(--sat-r)))
-      rotate(calc(-1 * var(--sat-angle)))
-      scale(1);
-  }
-  50% {
-    transform:
-      translate(-50%, -50%)
-      rotate(var(--sat-angle))
-      translateY(calc(-1 * var(--sat-r)))
-      rotate(calc(-1 * var(--sat-angle)))
-      scale(1.05);
-  }
+@keyframes sbp-zone-pulse {
+  0%, 100% { opacity: 0.65; transform: translate(-50%, -50%) scale(1);   }
+  50%       { opacity: 1;    transform: translate(-50%, -50%) scale(2.2); }
+}
+
+@keyframes sbp-center-face-in {
+  from { opacity: 0; transform: scale(0.78) translateY(8px); }
+  to   { opacity: 1; transform: scale(1)    translateY(0);   }
 }
 
 @keyframes sbp-fig-breathe {
-  0%, 100% { transform: translateX(-50%) scale(1); }
-  50%      { transform: translateX(-50%) scale(1.03); }
+  0%, 100% { transform: scale(1);    }
+  50%      { transform: scale(1.03); }
+}
+
+// SVG meditator group — gentle breath cycle
+.sbp-orbit__meditator {
+  transform-origin: 50px 55px;
+  animation: sbp-med-breathe 5s ease-in-out infinite;
+}
+
+@keyframes sbp-med-breathe {
+  0%, 100% { transform: scaleY(1);     opacity: 1;    }
+  50%       { transform: scaleY(1.03); opacity: 0.95; }
 }
 
 // Hide orbit on small screens — fall back to the tabs alone (mobile-first)

@@ -1,0 +1,287 @@
+<section class="dt-section" [class.dt-night]="isNight()">
+
+  <!-- Sky crossfade layers -->
+  <div class="dt-bg dt-bg--a" [style.background]="bgA()"></div>
+  <div class="dt-bg dt-bg--b" [style.background]="bgB()" [style.opacity]="bgFade()"></div>
+  <div class="dt-atm"></div>
+
+  <!-- Stars (night only) -->
+  <div class="dt-stars">
+    @for (s of stars; track $index) {
+    <span class="dt-star"
+          [style.left.%]="s.left" [style.top.%]="s.top"
+          [style.width.px]="s.size" [style.height.px]="s.size"
+          [style.--dur]="s.dur+'s'" [style.--del]="s.delay+'s'"></span>
+    }
+  </div>
+
+  <!-- Clouds (day only) -->
+  <div class="dt-clouds">
+    @for (c of clouds; track $index) {
+    <div class="dt-cloud"
+         [style.left.%]="c.x" [style.top.%]="c.y"
+         [style.width.px]="c.w" [style.height.px]="c.h"
+         [style.filter]="'blur('+c.blur+'px)'"
+         [style.opacity]="c.op"
+         [style.animation-delay]="c.delay+'s'"
+         [style.animation-duration]="c.dur+'s'"></div>
+    }
+  </div>
+
+  <!-- Ambient particles -->
+  <div class="dt-particles">
+    @for (p of particles; track $index) {
+    <span class="dt-particle"
+          [style.left.%]="p.x" [style.top.%]="p.y"
+          [style.width.px]="p.size" [style.height.px]="p.size"
+          [style.--dur]="p.dur+'s'" [style.--del]="p.delay+'s'"></span>
+    }
+  </div>
+
+  <!-- Section header -->
+  <header class="dt-hdr">
+    <p class="dt-eyebrow">Dinacharya · Rhythm of the day</p>
+    <h2 class="dt-title">Your day, designed for vitality.</h2>
+  </header>
+
+  <!--
+    SINGLE SVG — arc + sun/moon + stems + cards all in one coordinate space.
+    viewBox="0 0 1400 560"  (wider for 6 evenly-spaced cards)
+    Cards are centred on their arc-dot X (cx). The card rect spans cx-CW/2 → cx+CW/2.
+    The foreignObject for text also uses that same centred X, so text is always
+    visually centred inside the card regardless of screen width.
+  -->
+  <svg class="dt-svg"
+       [attr.viewBox]="'0 0 ' + VW + ' ' + VH"
+       preserveAspectRatio="xMidYMid meet"
+       xmlns="http://www.w3.org/2000/svg">
+
+    <defs>
+      <!-- Arc gradient: teal → gold → orange → crimson → navy -->
+      <linearGradient id="dt-arc-g" x1="0" x2="1" y1="0" y2="0">
+        <stop offset="0%"   stop-color="#48b080"/>
+        <stop offset="20%"  stop-color="#e8c840"/>
+        <stop offset="42%"  stop-color="#f09020"/>
+        <stop offset="66%"  stop-color="#c82858"/>
+        <stop offset="100%" stop-color="#1428a8"/>
+      </linearGradient>
+
+      <!-- Soft fill under arc -->
+      <linearGradient id="dt-fill-g" x1="0" x2="0" y1="0" y2="1">
+        <stop offset="0%"   stop-color="rgba(255,215,90,0.07)"/>
+        <stop offset="100%" stop-color="rgba(0,0,0,0)"/>
+      </linearGradient>
+
+      <!-- Sun radial gradient -->
+      <radialGradient id="dt-sun-rg" cx="50%" cy="38%" r="62%">
+        <stop offset="0%"   stop-color="#fffee0"/>
+        <stop offset="36%"  stop-color="#ffe860"/>
+        <stop offset="100%" stop-color="#f09010" stop-opacity="0.04"/>
+      </radialGradient>
+
+      <!-- Moon radial gradient -->
+      <radialGradient id="dt-moon-rg" cx="42%" cy="36%" r="60%">
+        <stop offset="0%"   stop-color="#eafaff"/>
+        <stop offset="48%"  stop-color="#b8deed"/>
+        <stop offset="100%" stop-color="#4888aa" stop-opacity="0.04"/>
+      </radialGradient>
+
+      <!-- Arc glow filter -->
+      <filter id="dt-arc-glow" x="-2%" y="-80%" width="104%" height="260%">
+        <feGaussianBlur stdDeviation="3.5" result="g"/>
+        <feMerge><feMergeNode in="g"/><feMergeNode in="SourceGraphic"/></feMerge>
+      </filter>
+
+      <!-- Sun bloom -->
+      <filter id="dt-sun-f" x="-140%" y="-140%" width="380%" height="380%">
+        <feGaussianBlur stdDeviation="20" result="b"/>
+        <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+      </filter>
+
+      <!-- Moon bloom -->
+      <filter id="dt-moon-f" x="-120%" y="-120%" width="340%" height="340%">
+        <feGaussianBlur stdDeviation="14" result="mb"/>
+        <feMerge><feMergeNode in="mb"/><feMergeNode in="SourceGraphic"/></feMerge>
+      </filter>
+
+      <!-- Card drop-shadow -->
+      <filter id="dt-card-f" x="-12%" y="-10%" width="124%" height="132%">
+        <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="rgba(0,0,0,0.35)"/>
+      </filter>
+
+      <!-- Active card extra glow -->
+      <filter id="dt-card-active-f" x="-14%" y="-12%" width="128%" height="136%">
+        <feDropShadow dx="0" dy="0"  stdDeviation="8"  flood-color="rgba(255,180,80,0.30)"/>
+        <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="rgba(0,0,0,0.38)"/>
+      </filter>
+    </defs>
+
+    <!-- Soft fill below arc -->
+    <path [attr.d]="arcFill" fill="url(#dt-fill-g)"/>
+
+    <!-- Arc line with glow -->
+    <path [attr.d]="arcPath"
+          fill="none"
+          stroke="url(#dt-arc-g)"
+          stroke-width="3"
+          stroke-linecap="round"
+          filter="url(#dt-arc-glow)"/>
+
+    <!-- ── Cards loop ── -->
+    @for (card of cards; track card.arcT; let i = $index) {
+
+      <!-- Dashed stem from arc dot down to card top -->
+      <line [attr.x1]="layouts[i].cx"
+            [attr.y1]="layouts[i].dotY"
+            [attr.x2]="layouts[i].cx"
+            [attr.y2]="layouts[i].cardY"
+            stroke="rgba(255,255,255,0.38)"
+            stroke-width="1.5"
+            stroke-dasharray="3 4"/>
+
+      <!-- Card background rect — centred on cx -->
+      <rect [attr.x]="layouts[i].cardX"
+            [attr.y]="layouts[i].cardY"
+            [attr.width]="CW"
+            [attr.height]="CH"
+            rx="16" ry="16"
+            [attr.fill]="cardBg(i)"
+            [attr.stroke]="cardBorder(i)"
+            stroke-width="1.2"
+            [attr.filter]="isActive(i) ? 'url(#dt-card-active-f)' : 'url(#dt-card-f)'"
+            class="dt-card-rect"
+            (click)="clickCard(i)"
+            (mouseenter)="hoverCard(true)"
+            (mouseleave)="hoverCard(false)"/>
+
+      <!-- Icon circle — centred on cx, sits at top of card -->
+      <circle [attr.cx]="layouts[i].cx"
+              [attr.cy]="layouts[i].cardY + IR + 16"
+              [attr.r]="IR"
+              fill="rgba(255,255,255,0.10)"
+              [attr.stroke]="cardBorder(i)"
+              stroke-width="1.2"/>
+
+      <!-- Icon paths — translate so (0,0) of icon = top-left of a 22×22 box centred on cx -->
+      <g [attr.transform]="'translate('+(layouts[i].cx-11)+','+(layouts[i].cardY+IR+5)+')'"
+         fill="none"
+         [attr.stroke]="iconColor()"
+         stroke-linecap="round" stroke-linejoin="round"
+         stroke-width="2">
+        @switch (card.icon) {
+        @case ('sunrise') {
+          <path d="M2 15 A9 9 0 0 1 20 15"/>
+          <line x1="11" y1="2"  x2="11" y2="7"/>
+          <line x1="1"  y1="15" x2="21" y2="15"/>
+          <line x1="3"  y1="6"  x2="6"  y2="9"  stroke-width="1.6"/>
+          <line x1="19" y1="6"  x2="16" y2="9"  stroke-width="1.6"/>
+        }
+        @case ('sun') {
+          <circle cx="11" cy="11" r="5"/>
+          <line x1="11" y1="1"  x2="11" y2="4"/>
+          <line x1="11" y1="18" x2="11" y2="21"/>
+          <line x1="1"  y1="11" x2="4"  y2="11"/>
+          <line x1="18" y1="11" x2="21" y2="11"/>
+          <line x1="3.5"  y1="3.5"  x2="5.8"  y2="5.8"  stroke-width="1.6"/>
+          <line x1="16.2" y1="16.2" x2="18.5" y2="18.5" stroke-width="1.6"/>
+          <line x1="16.2" y1="5.8"  x2="18.5" y2="3.5"  stroke-width="1.6"/>
+          <line x1="3.5"  y1="18.5" x2="5.8"  y2="16.2" stroke-width="1.6"/>
+        }
+        @case ('noon') {
+          <circle cx="11" cy="11" r="7"/>
+          <line x1="11" y1="1"  x2="11" y2="3.5"/>
+          <line x1="11" y1="18.5" x2="11" y2="21"/>
+          <line x1="1"  y1="11" x2="3.5" y2="11"/>
+          <line x1="18.5" y1="11" x2="21" y2="11"/>
+        }
+        @case ('sunset') {
+          <path d="M2 15 A9 9 0 0 1 20 15"/>
+          <line x1="1"  y1="15" x2="21" y2="15"/>
+          <line x1="11" y1="2"  x2="11" y2="7"  stroke-width="1.8"/>
+          <line x1="3"  y1="5"  x2="6"  y2="8"  stroke-width="1.6"/>
+          <line x1="19" y1="5"  x2="16" y2="8"  stroke-width="1.6"/>
+        }
+        @case ('dusk') {
+          <path d="M18 5 A10 10 0 1 0 20 18 A8 8 0 0 1 18 5 Z"/>
+        }
+        @case ('moon') {
+          <path d="M18 5 A10 10 0 1 0 20 18 A8 8 0 0 1 18 5 Z"
+                [attr.fill]="iconColor()" stroke-width="0"/>
+        }
+        }
+      </g>
+
+      <!--
+        Card text via foreignObject.
+        x = cardX (left edge of card), width = CW (full card width).
+        text-align:center inside .dt-inner ensures perfect horizontal centering.
+      -->
+      <foreignObject
+          [attr.x]="layouts[i].cardX"
+          [attr.y]="layouts[i].cardY + IR*2 + 24"
+          [attr.width]="CW"
+          [attr.height]="CH - IR*2 - 30"
+          class="dt-fo"
+          (click)="clickCard(i)"
+          (mouseenter)="hoverCard(true)"
+          (mouseleave)="hoverCard(false)">
+        <div xmlns="http://www.w3.org/1999/xhtml" class="dt-inner">
+          <span class="dt-t-time"  [style.color]="timeColor()">{{ card.time }}</span>
+          <span class="dt-t-sans"  [style.color]="subColor()">{{ card.sanskrit }}</span>
+          <strong class="dt-t-eng" [style.color]="titleColor(i)">{{ card.english }}</strong>
+          <span class="dt-t-desc"  [style.color]="subColor()">{{ card.desc }}</span>
+        </div>
+      </foreignObject>
+
+      <!-- Arc dot — drawn on top so it's always visible above the card stem -->
+      <circle [attr.cx]="layouts[i].cx"
+              [attr.cy]="layouts[i].dotY"
+              [attr.r]="dotR(i)"
+              [attr.fill]="dotFill(i)"
+              [attr.stroke]="isActive(i) ? 'rgba(255,255,255,0.95)' : 'rgba(255,255,255,0.58)'"
+              stroke-width="1.8"
+              class="dt-dot"/>
+    }
+
+    <!-- ── SUN ── (fades out as moon fades in) -->
+    <g [style.opacity]="1 - moonOpacity()" filter="url(#dt-sun-f)">
+      <circle [attr.cx]="sunX()" [attr.cy]="sunY()"
+              [attr.r]="62 * sunGlow()" fill="rgba(255,200,28,0.07)"/>
+      <circle [attr.cx]="sunX()" [attr.cy]="sunY()"
+              [attr.r]="42 * sunGlow()" fill="rgba(255,215,48,0.14)"/>
+      <circle [attr.cx]="sunX()" [attr.cy]="sunY()"
+              r="24" fill="url(#dt-sun-rg)" class="dt-sun"/>
+      <circle [attr.cx]="sunX()" [attr.cy]="sunY()"
+              r="12" fill="#fffee0" opacity="0.84"/>
+      <!-- Sun rays -->
+      <g [attr.stroke]="'#e8c030'" stroke-linecap="round">
+        <line [attr.x1]="sunX()"    [attr.y1]="sunY()-30" [attr.x2]="sunX()"    [attr.y2]="sunY()-40" stroke-width="2.6"/>
+        <line [attr.x1]="sunX()"    [attr.y1]="sunY()+30" [attr.x2]="sunX()"    [attr.y2]="sunY()+40" stroke-width="2.6"/>
+        <line [attr.x1]="sunX()-30" [attr.y1]="sunY()"    [attr.x2]="sunX()-40" [attr.y2]="sunY()"    stroke-width="2.6"/>
+        <line [attr.x1]="sunX()+30" [attr.y1]="sunY()"    [attr.x2]="sunX()+40" [attr.y2]="sunY()"    stroke-width="2.6"/>
+        <line [attr.x1]="sunX()-21" [attr.y1]="sunY()-21" [attr.x2]="sunX()-28" [attr.y2]="sunY()-28" stroke-width="2.0"/>
+        <line [attr.x1]="sunX()+21" [attr.y1]="sunY()+21" [attr.x2]="sunX()+28" [attr.y2]="sunY()+28" stroke-width="2.0"/>
+        <line [attr.x1]="sunX()+21" [attr.y1]="sunY()-21" [attr.x2]="sunX()+28" [attr.y2]="sunY()-28" stroke-width="2.0"/>
+        <line [attr.x1]="sunX()-21" [attr.y1]="sunY()+21" [attr.x2]="sunX()-28" [attr.y2]="sunY()+28" stroke-width="2.0"/>
+      </g>
+    </g>
+
+    <!-- ── MOON ── (fades in exactly when sun reaches card 4 = 19:00–21:00) -->
+    <g [style.opacity]="moonOpacity()" filter="url(#dt-moon-f)">
+      <circle [attr.cx]="sunX()" [attr.cy]="sunY()" r="54" fill="rgba(155,218,238,0.08)"/>
+      <circle [attr.cx]="sunX()" [attr.cy]="sunY()" r="36" fill="rgba(155,218,238,0.16)"/>
+      <circle [attr.cx]="sunX()" [attr.cy]="sunY()" r="22" fill="url(#dt-moon-rg)" class="dt-moon"/>
+      <!-- Shadow crescent -->
+      <circle [attr.cx]="sunX()+8" [attr.cy]="sunY()-4" r="17" fill="rgba(6,10,42,0.46)"/>
+      <!-- Moon surface craters -->
+      <circle [attr.cx]="sunX()-8" [attr.cy]="sunY()-5"  r="3.2" fill="#68aaba" opacity="0.28"/>
+      <circle [attr.cx]="sunX()+3" [attr.cy]="sunY()+8"  r="2.2" fill="#68aaba" opacity="0.20"/>
+      <!-- Star sparkles near moon -->
+      <circle [attr.cx]="sunX()+46" [attr.cy]="sunY()-24" r="1.8" fill="#c5ecff" opacity="0.85"/>
+      <circle [attr.cx]="sunX()-42" [attr.cy]="sunY()-18" r="1.2" fill="#c5ecff" opacity="0.68"/>
+      <circle [attr.cx]="sunX()+30" [attr.cy]="sunY()+20" r="1.0" fill="#c5ecff" opacity="0.55"/>
+    </g>
+
+  </svg>
+
+</section>
