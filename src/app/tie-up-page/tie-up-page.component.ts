@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewChild, Renderer2  } from '@angular/core';
+import { Component, ElementRef, ViewChild, Renderer2 } from '@angular/core';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 
@@ -24,7 +24,7 @@ export class TieUpPageComponent {
     // this.elfsightUrl = this.sanitizer.bypassSecurityTrustResourceUrl(
     //   'https://apps.elfsight.com/p/platform/?p=delay&app=7759e6bd-a4b0-4835-bad7-66c88fc58ec3'
     // );
-  } 
+  }
 
 
   ngOnInit() {
@@ -41,7 +41,7 @@ export class TieUpPageComponent {
     }
   }
 
-  
+
 
 
   cards = [
@@ -90,28 +90,36 @@ export class TieUpPageComponent {
   ];
 
   card1 = [
-  { name: 'Toyota Kirloskar Motor Private Limited', image: 'assets/tie-up-page/img-1.png' },
-  { name: 'Arvind Limited', image: 'assets/tie-up-page/img-4.png' },
-  { name: 'Chinmaya Vidyalaya, Banashankari', image: 'assets/tie-up-page/img-3.png' },
-  { name: 'Good Shepherd Institution', image: 'assets/tie-up-page/img-6.png' },
-  { name: 'Kanti Sweets', image: 'assets/tie-up-page/img-14.png' },
-  { name: 'Staff Discount Policy of Rashtrotthana Parishat', image: 'assets/tie-up-page/img-9.png' },
-  { name: 'Staff Discount Policy of Rashtrotthana Vidya Kendra', image: 'assets/tie-up-page/img-16.png' },
-  { name: 'Lalith Castle International School', image: 'assets/tie-up-page/LCIS.png' }
-];
+    { name: 'Toyota Kirloskar Motor Private Limited', image: 'assets/tie-up-page/img-1.png' },
+    { name: 'Arvind Limited', image: 'assets/tie-up-page/img-4.png' },
+    { name: 'Chinmaya Vidyalaya, Banashankari', image: 'assets/tie-up-page/img-3.png' },
+    { name: 'Good Shepherd Institution', image: 'assets/tie-up-page/img-6.png' },
+    { name: 'Kanti Sweets', image: 'assets/tie-up-page/img-14.png' },
+    { name: 'Staff Discount Policy of Rashtrotthana Parishat', image: 'assets/tie-up-page/img-9.png' },
+    { name: 'Staff Discount Policy of Rashtrotthana Vidya Kendra', image: 'assets/tie-up-page/img-16.png' },
+    { name: 'Lalith Castle International School', image: 'assets/tie-up-page/LCIS.png' },
+    { name: 'Sri Durga Parameshwari Layout Owner Welfare Association (SDPLOWA)', image: 'assets/tie-up-page/Durga-parameshwari-welfare-association.jpeg' },
+    { name: 'Britannia Industries', image: 'assets/tie-up-page/Britania.jpeg' },
+
+  ];
 
 
-card2 = [
-  { name: 'Aryan Opulence', image: 'assets/tie-up-page/img-2.png' },
-  { name: 'Federal Bank', image: 'assets/tie-up-page/img-5.png' },
-  { name: 'Indo American High Breed Seeds', image: 'assets/tie-up-page/img-8.png' },
-  { name: 'IKA - India Private Limited', image: 'assets/tie-up-page/img-10.png' },
-  { name: 'Suguna Upper Crest', image: 'assets/tie-up-page/img-11.png' },
-  { name: 'Suguna Pristine Square', image: 'assets/tie-up-page/img-12.png' },
-  { name: 'Vijaya Bharathi Vidhyalaya', image: 'assets/tie-up-page/img-13.png' },
-  { name: 'Nimhans', image : "assets/tie-up-page/img-15.png"},
-  { name: 'The Kingdom College', image : "assets/tie-up-page/TKG.png"}
-];
+  card2 = [
+    { name: 'Aryan Opulence', image: 'assets/tie-up-page/img-2.png' },
+    { name: 'Federal Bank', image: 'assets/tie-up-page/img-5.png' },
+    { name: 'Indo American High Breed Seeds', image: 'assets/tie-up-page/img-8.png' },
+    { name: 'IKA - India Private Limited', image: 'assets/tie-up-page/img-10.png' },
+    { name: 'Suguna Upper Crest', image: 'assets/tie-up-page/img-11.png' },
+    { name: 'Suguna Pristine Square', image: 'assets/tie-up-page/img-12.png' },
+    { name: 'Vijaya Bharathi Vidhyalaya', image: 'assets/tie-up-page/img-13.png' },
+    { name: 'Nimhans', image: "assets/tie-up-page/img-15.png" },
+    { name: 'The Kingdom College', image: "assets/tie-up-page/TKG.png" },
+    { name: `NCC GP HQ 'A' Bengaluru 4/28`, image: "assets/tie-up-page/NCC.jpeg" },
+    { name: 'Tata Promont', image: "assets/tie-up-page/Tata-promont.jpeg" },
+    { name: 'RR nagar welfare association', image: "assets/tie-up-page/RRWA.jpeg" },
+    { name: 'RNS First Grade College', image: 'assets/tie-up-page/RNS.jpeg' },
+    { name: 'Malenadu Janashakthi Vedike', image: 'assets/tie-up-page/malenadu-janashakthi-vedike.png' },
+  ];
 
 
 

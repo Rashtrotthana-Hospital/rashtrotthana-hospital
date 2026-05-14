@@ -38,6 +38,9 @@ interface Doctor {
   name: string;
   role: string;
   initial: string;
+  color: string;
+  bg: string;
+  dept: string;
 }
 
 interface Faq {
@@ -98,17 +101,17 @@ export class SwasthyaBharatiPageComponent
   private readonly handleArcLeave = () => { this.startArcCycle(); };
 
   readonly arcBackgrounds = [
-    // 04:30 – 06:00 Brahma Muhurta — deep indigo → coral sunrise
+    // 04:30 – 06:00 Brahma Muhurta - deep indigo → coral sunrise
     'linear-gradient(160deg,#0b1628 0%,#1e3a5f 28%,#c85a2f 62%,#f4a060 82%,#ffd580 100%)',
-    // 06:00 – 08:00 Movement — warm golden morning
+    // 06:00 – 08:00 Movement - warm golden morning
     'linear-gradient(160deg,#2d5896 0%,#5b8fd4 35%,#f4a060 62%,#ffd580 82%,#fff9e0 100%)',
-    // 12:00 – 14:00 Noon — bright sky blue
+    // 12:00 – 14:00 Noon - bright sky blue
     'linear-gradient(180deg,#4fc3d0 0%,#a8e6ef 45%,#fdf9ee 100%)',
-    // 17:00 – 19:00 Sunset — deep magenta → amber
+    // 17:00 – 19:00 Sunset - deep magenta → amber
     'linear-gradient(160deg,#1a0a2e 0%,#a0284e 38%,#f0612a 65%,#f8ab58 100%)',
-    // 19:00 – 21:00 Dusk — twilight navy
+    // 19:00 – 21:00 Dusk - twilight navy
     'linear-gradient(160deg,#05060e 0%,#0d1b40 55%,#1e2d58 100%)',
-    // 21:30 – 22:30 Sleep — deep midnight
+    // 21:30 – 22:30 Sleep - deep midnight
     'linear-gradient(160deg,#020306 0%,#070d1e 100%)',
   ];
 
@@ -129,7 +132,7 @@ export class SwasthyaBharatiPageComponent
   /** index of active service tab (used by SCSS via inline style for slide indicator) */
   readonly tabIndicator = signal({ left: 0, width: 0 });
 
-  /** 12 floating petals — fixed pseudo-random parameters keep SSR stable */
+  /** 12 floating petals - fixed pseudo-random parameters keep SSR stable */
   readonly petals = Array.from({ length: 14 }, (_, i) => {
     const seed = (i * 47) % 100;
     return {
@@ -163,21 +166,21 @@ export class SwasthyaBharatiPageComponent
       sanskrit: 'आहार',
       translit: 'Āhāra',
       english: 'Mindful Diet',
-      body: 'Food as medicine — eaten with awareness, in season, in balance.',
+      body: 'Food as medicine - eaten with awareness, in season, in balance.',
       glyph: 'ahara',
     },
     {
       sanskrit: 'विहार',
       translit: 'Vihāra',
       english: 'Daily Routine',
-      body: 'Dinacharya — anchoring waking, working and resting to natural rhythms.',
+      body: 'Dinacharya - anchoring waking, working and resting to natural rhythms.',
       glyph: 'vihara',
     },
     {
       sanskrit: 'निद्रा',
       translit: 'Nidrā',
       english: 'Restorative Sleep',
-      body: 'Sleep is the greatest healer — quality, timing and quietude before dawn.',
+      body: 'Sleep is the greatest healer - quality, timing and quietude before dawn.',
       glyph: 'nidra',
     },
     {
@@ -198,7 +201,7 @@ export class SwasthyaBharatiPageComponent
       sanskrit: 'ध्यान',
       translit: 'Dhyāna',
       english: 'Meditation',
-      body: 'A daily seat of stillness — focus, clarity and equanimity.',
+      body: 'A daily seat of stillness - focus, clarity and equanimity.',
       glyph: 'dhyana',
     },
     {
@@ -212,7 +215,7 @@ export class SwasthyaBharatiPageComponent
       sanskrit: 'आचार',
       translit: 'Āchāra',
       english: 'Conduct',
-      body: 'Truth, generosity and forgiveness — ethics as everyday medicine.',
+      body: 'Truth, generosity and forgiveness - ethics as everyday medicine.',
       glyph: 'achara',
     },
   ];
@@ -226,7 +229,7 @@ export class SwasthyaBharatiPageComponent
       time: '04:30 – 06:00',
       sanskrit: 'ब्राह्म मुहूर्त',
       english: 'Brahma Muhūrta',
-      desc: 'Wake before sunrise — the calmest, most absorbent hour of the mind.',
+      desc: 'Wake before sunrise - the calmest, most absorbent hour of the mind.',
       pos: 8,
       yPos: 23,
       glyph: 'sunrise',
@@ -253,7 +256,7 @@ export class SwasthyaBharatiPageComponent
       time: '17:00 – 19:00',
       sanskrit: 'सायं संध्या',
       english: 'Sāyaṁ Sandhyā',
-      desc: 'Walk, gratitude practice and a light supper — wind the day down.',
+      desc: 'Walk, gratitude practice and a light supper - wind the day down.',
       pos: 65,
       yPos: 41,
       glyph: 'evening',
@@ -262,7 +265,7 @@ export class SwasthyaBharatiPageComponent
       time: '19:00 – 21:00',
       sanskrit: 'ध्यान · स्वाध्याय',
       english: 'Dhyāna · Svādhyāya',
-      desc: 'Meditation and self-study — settle the mind before sleep.',
+      desc: 'Meditation and self-study - settle the mind before sleep.',
       pos: 79,
       yPos: 20,
       glyph: 'dusk',
@@ -271,7 +274,7 @@ export class SwasthyaBharatiPageComponent
       time: '21:30 – 22:30',
       sanskrit: 'निद्रा',
       english: 'Nidrā',
-      desc: 'Sleep early — let the body restore in alignment with the night.',
+      desc: 'Sleep early - let the body restore in alignment with the night.',
       pos: 95,
       yPos: -2,
       glyph: 'moon',
@@ -282,7 +285,7 @@ export class SwasthyaBharatiPageComponent
     {
       id: 'assessment',
       label: 'Lifestyle Assessment',
-      caption: 'Identify silent imbalances early — before they become disease.',
+      caption: 'Identify silent imbalances early - before they become disease.',
       items: [
         { title: 'Diabetes risk assessment', sub: 'Glycaemic & metabolic screen' },
         { title: 'Hypertension risk assessment', sub: 'BP, vascular & stress load' },
@@ -385,7 +388,7 @@ export class SwasthyaBharatiPageComponent
     },
     {
       title: 'Evidence-based protocols',
-      body: 'Stress reduction, metabolic balance and mental wellbeing — measured, not assumed.',
+      body: 'Stress reduction, metabolic balance and mental wellbeing - measured, not assumed.',
     },
     {
       title: 'Personalised plans',
@@ -393,11 +396,11 @@ export class SwasthyaBharatiPageComponent
     },
     {
       title: 'Preventive orientation',
-      body: 'We identify imbalance early — and reduce long-term disease risk before it sets.',
+      body: 'We identify imbalance early - and reduce long-term disease risk before it sets.',
     },
     {
       title: 'Sustainable change',
-      body: 'Modifications that fit your day, your kitchen, your work — and last for years.',
+      body: 'Modifications that fit your day, your kitchen, your work - and last for years.',
     },
   ];
 
@@ -415,13 +418,13 @@ export class SwasthyaBharatiPageComponent
       name: 'Diabetes reversed',
       tag: 'Fasting glucose normalised',
       quote:
-        'Within months of supervised lifestyle correction, my fasting sugars and HbA1c came back to normal — without adding new medication.',
+        'Within months of supervised lifestyle correction, my fasting sugars and HbA1c came back to normal - without adding new medication.',
     },
     {
       name: 'Lasting weight loss',
       tag: 'Sustained for over a year',
       quote:
-        'The plan was personal, kind, and rooted in habits I could actually keep. The weight stayed off — and so did the fatigue.',
+        'The plan was personal, kind, and rooted in habits I could actually keep. The weight stayed off - and so did the fatigue.',
     },
     {
       name: 'Calm restored',
@@ -433,22 +436,22 @@ export class SwasthyaBharatiPageComponent
       name: 'PCOS regulated',
       tag: 'Cycle restored naturally',
       quote:
-        'My cycle returned and my skin cleared. The team explained the why behind every change — that made me trust the process.',
+        'My cycle returned and my skin cleared. The team explained the why behind every change - that made me trust the process.',
     },
   ];
 
   readonly doctors: Doctor[] = [
-    { name: 'Dr. Sindu', role: 'Lifestyle Physician', initial: 'S' },
-    { name: 'Dr. Varsha', role: 'Yoga & Lifestyle', initial: 'V' },
-    { name: 'Dr. Rachana', role: 'Ayurveda & Wellness', initial: 'R' },
-    { name: 'Dr. Shamanta', role: 'Integrative Medicine', initial: 'S' },
-    { name: 'Dr. Ramya', role: 'Preventive Health', initial: 'R' },
+    { name: 'Dr. Sindu',    role: 'Lifestyle Physician',  initial: 'S', dept: 'Lifestyle',  color: '#3ddba8', bg: 'linear-gradient(135deg,#3ddba8,#1faf82)' },
+    { name: 'Dr. Varsha',   role: 'Yoga & Lifestyle',     initial: 'V', dept: 'Yoga',        color: '#a78bfa', bg: 'linear-gradient(135deg,#a78bfa,#7c3aed)' },
+    { name: 'Dr. Rachana',  role: 'Ayurveda & Wellness',  initial: 'R', dept: 'Ayurveda',    color: '#f59e0b', bg: 'linear-gradient(135deg,#f59e0b,#b45309)' },
+    { name: 'Dr. Shamanta', role: 'Integrative Medicine', initial: 'S', dept: 'Integrative', color: '#38bdf8', bg: 'linear-gradient(135deg,#38bdf8,#0369a1)' },
+    { name: 'Dr. Ramya',    role: 'Preventive Health',    initial: 'R', dept: 'Preventive',  color: '#fb7185', bg: 'linear-gradient(135deg,#fb7185,#be123c)' },
   ];
 
   readonly faqs: Faq[] = [
     {
       q: 'What is a lifestyle clinic?',
-      a: 'A lifestyle clinic works on preventing and managing disease by correcting underlying factors — diet, daily routine, sleep, behaviour, thought process and stress — rather than only treating symptoms.',
+      a: 'A lifestyle clinic works on preventing and managing disease by correcting underlying factors - diet, daily routine, sleep, behaviour, thought process and stress - rather than only treating symptoms.',
     },
     {
       q: 'Will I be prescribed medicine?',
@@ -456,11 +459,11 @@ export class SwasthyaBharatiPageComponent
     },
     {
       q: 'Is it safe for all ages?',
-      a: 'Yes — children, adults and elderly. Plans are tailored to age, constitution and current health status.',
+      a: 'Yes - children, adults and elderly. Plans are tailored to age, constitution and current health status.',
     },
     {
       q: 'Can it reverse diabetes or PCOS?',
-      a: 'Many patients experience significant, sometimes complete improvement with supervised lifestyle changes. Outcomes depend on duration of disease, adherence and individual factors — your physician will be honest about what to expect.',
+      a: 'Many patients experience significant, sometimes complete improvement with supervised lifestyle changes. Outcomes depend on duration of disease, adherence and individual factors - your physician will be honest about what to expect.',
     },
     {
       q: 'How is a session structured?',
@@ -483,7 +486,7 @@ export class SwasthyaBharatiPageComponent
     },
     {
       title: 'Monthly Newsletter',
-      desc: 'Seasonal practices, recipes, research notes — to your inbox.',
+      desc: 'Seasonal practices, recipes, research notes - to your inbox.',
       meta: 'Email • Free',
       icon: 'mail',
     },
@@ -492,12 +495,12 @@ export class SwasthyaBharatiPageComponent
   ngOnInit(): void {
     this.prevTitle = this.title.getTitle();
     this.title.setTitle(
-      'Swasthya Bharati — Lifestyle & Drugless Wellness | Rashtrotthana Hospital'
+      'Swasthya Bharati - Lifestyle & Drugless Wellness | Rashtrotthana Hospital'
     );
     this.meta.updateTag({
       name: 'description',
       content:
-        'Swasthya Bharati is the drugless lifestyle unit of Rashtrotthana Hospital — integrating Ayurveda, Yoga, nutrition and modern preventive medicine to address the root causes of chronic disease.',
+        'Swasthya Bharati is the drugless lifestyle unit of Rashtrotthana Hospital - integrating Ayurveda, Yoga, nutrition and modern preventive medicine to address the root causes of chronic disease.',
     });
     this.meta.updateTag({
       name: 'keywords',
@@ -615,7 +618,7 @@ export class SwasthyaBharatiPageComponent
   }
 
   bookConsultation(): void {
-    this.router.navigate(['/contact-us']);
+    this.router.navigate(['/contact-us-bangalore']);
   }
 
   scrollTo(id: string): void {
@@ -688,7 +691,7 @@ export class SwasthyaBharatiPageComponent
     let activeIdx = 0;
     for (let i = 0; i < this.services.length; i++) {
       const effectiveAngle = ((i * 72 - 90 + this.orbitAngle) % 360 + 360) % 360;
-      // Distance to 0° (top-center) — wraps around correctly
+      // Distance to 0° (top-center) - wraps around correctly
       const diff = Math.min(effectiveAngle, 360 - effectiveAngle);
       if (diff < minDiff) { minDiff = diff; activeIdx = i; }
     }
@@ -717,5 +720,21 @@ export class SwasthyaBharatiPageComponent
       }
     };
     this.rafIds.push(requestAnimationFrame(tick));
+  }
+
+  onDocCardMove(e: MouseEvent): void {
+    const card = e.currentTarget as HTMLElement;
+    const inner = card.querySelector('.sbp-doc-card__inner') as HTMLElement;
+    if (!inner) return;
+    const r = card.getBoundingClientRect();
+    const x = (e.clientX - r.left) / r.width - 0.5;
+    const y = (e.clientY - r.top) / r.height - 0.5;
+    inner.style.transform = `rotateX(${-y * 14}deg) rotateY(${x * 14}deg) translateY(-8px) scale(1.02)`;
+  }
+
+  onDocCardLeave(e: MouseEvent): void {
+    const card = e.currentTarget as HTMLElement;
+    const inner = card.querySelector('.sbp-doc-card__inner') as HTMLElement;
+    if (inner) inner.style.transform = '';
   }
 }

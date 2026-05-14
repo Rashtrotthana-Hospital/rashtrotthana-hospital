@@ -1,6 +1,6 @@
 import {
   AfterViewInit, ChangeDetectionStrategy, Component,
-  ElementRef, NgZone, OnDestroy, OnInit,
+  NgZone, OnDestroy, OnInit,
   ViewEncapsulation, inject, signal, computed,
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -123,7 +123,6 @@ const MOON_FADE_SPAN = 0.05;          // fully moon by MOON_START_T+0.05
 })
 export class DinacharyaTimelineComponent implements OnInit, AfterViewInit, OnDestroy {
   private readonly zone = inject(NgZone);
-  private readonly host: ElementRef<HTMLElement> = inject(ElementRef);
 
   readonly arcPath = `M ${P0.x} ${P0.y} Q ${P1.x} ${P1.y} ${P2.x} ${P2.y}`;
   readonly arcFill = `M ${P0.x} ${P0.y} Q ${P1.x} ${P1.y} ${P2.x} ${P2.y} L ${P2.x} ${VH} L ${P0.x} ${VH} Z`;
@@ -162,7 +161,7 @@ export class DinacharyaTimelineComponent implements OnInit, AfterViewInit, OnDes
 
   private rafId?: number;
   private paused = false;
-  private speed  = 0.000016;
+  private speed  = 0.000048;
   private lastTime = 0;
   private resumeTO?: ReturnType<typeof setTimeout>;
   private prevBgIdx = -1;
@@ -191,6 +190,18 @@ export class DinacharyaTimelineComponent implements OnInit, AfterViewInit, OnDes
       icon:'moon',    isNight:true,  arcT: CARD_T[5] },
   ];
 
+  // Per-card accent colors (matches reference image order)
+  private readonly MOBILE_ACCENTS = [
+    '#48c890', // 0 dawn   — teal-green
+    '#f8c832', // 1 morning — amber-gold
+    '#28c8f0', // 2 noon   — sky-blue
+    '#f59e0b', // 3 sunset — orange-amber
+    '#b870f8', // 4 dusk   — violet
+    '#6898f8', // 5 night  — navy-blue
+  ];
+
+  mobileAccent(i: number): string { return this.MOBILE_ACCENTS[i] ?? '#ffffff'; }
+
   // Static card layouts — pre-computed once
   readonly layouts = this.cards.map(c => cardLayout(c.arcT));
 
@@ -200,9 +211,15 @@ export class DinacharyaTimelineComponent implements OnInit, AfterViewInit, OnDes
              size:0.8+(s%3)*0.6, delay:(s*0.16)%6, dur:2+(s%5) };
   });
   readonly clouds = [
-    { x:3,  y:6,  w:260, h:48, blur:20, delay:0,   dur:60, op:0.18 },
-    { x:30, y:2,  w:200, h:36, blur:14, delay:-22, dur:74, op:0.14 },
-    { x:62, y:14, w:170, h:32, blur:12, delay:-40, dur:84, op:0.11 },
+    { x: -8,  y: 4,  scale: 1.4, op: 0.82, delay: 0,   dur: 55, type: 'large'  },
+    { x: 18,  y: 1,  scale: 0.9, op: 0.65, delay: -18, dur: 68, type: 'medium' },
+    { x: 40,  y: 8,  scale: 1.1, op: 0.55, delay: -30, dur: 72, type: 'small'  },
+    { x: 58,  y: 2,  scale: 1.3, op: 0.75, delay: -10, dur: 60, type: 'large'  },
+    { x: 72,  y: 10, scale: 0.8, op: 0.50, delay: -42, dur: 80, type: 'medium' },
+    { x: 85,  y: 5,  scale: 1.0, op: 0.60, delay: -25, dur: 65, type: 'small'  },
+    { x: -5,  y: 18, scale: 0.7, op: 0.35, delay: -50, dur: 90, type: 'small'  },
+    { x: 30,  y: 20, scale: 1.2, op: 0.40, delay: -8,  dur: 78, type: 'medium' },
+    { x: 68,  y: 22, scale: 0.9, op: 0.30, delay: -35, dur: 85, type: 'small'  },
   ];
   readonly particles = Array.from({ length: 18 }, (_, i) => {
     const s = (i*61+5)%100;
@@ -212,9 +229,6 @@ export class DinacharyaTimelineComponent implements OnInit, AfterViewInit, OnDes
   ngOnInit()        { this.bgA.set(SKY[0]); this.bgB.set(SKY[0]); this.bgFade.set(1); }
   ngAfterViewInit() {
     this.zone.runOutsideAngular(() => this.tick(performance.now()));
-    const sec = this.host.nativeElement.querySelector<HTMLElement>('.dt-section');
-    sec?.addEventListener('mouseenter', () => { this.paused = true; });
-    sec?.addEventListener('mouseleave', () => { this.paused = false; this.lastTime = 0; });
   }
   ngOnDestroy() {
     if (this.rafId) cancelAnimationFrame(this.rafId);
@@ -288,6 +302,15 @@ export class DinacharyaTimelineComponent implements OnInit, AfterViewInit, OnDes
   timeColor() { return this.p().time; }
   iconColor() { return this.p().icon; }
   dotR(i: number) { return this.isActive(i) ? 9 : 5.5; }
+
+  // Mobile card colors — each card uses its own fixed phase palette
+  // so the card color matches the sky phase it represents (not the global animated phase)
+  mobileBg(i: number)     { return this.isActive(i) ? PHASE[i].activeBg     : PHASE[i].cardBg; }
+  mobileBorder(i: number) { return this.isActive(i) ? PHASE[i].activeBorder : PHASE[i].border; }
+  mobileTitle(i: number)  { return this.isActive(i) ? PHASE[i].activeTitle  : PHASE[i].title; }
+  mobileSub(i: number)    { return PHASE[i].sub; }
+  mobileTime(i: number)   { return PHASE[i].time; }
+  mobileIcon(i: number)   { return PHASE[i].icon; }
 
   clickCard(i: number): void {
     this.paused = true;

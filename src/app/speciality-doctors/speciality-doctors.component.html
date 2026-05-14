@@ -1,8 +1,10 @@
 <div class="doc-container">
     <div class="doc_details">
-        <img [src]=image [alt]=alt>   <!-- doctor image -->
+        <img [src]=image [alt]=alt> <!-- doctor image -->
         <p class="doc_name">{{name}}</p>
-        <p class="exp">Years of Experience: {{experience}}</p>
+        <p class="exp" *ngIf="experience">
+            Years of Experience: {{ experience }}
+        </p>
         <p class="exp">{{department}}</p>
     </div>
 </div>

@@ -317,6 +317,8 @@ export class HomeComponent implements OnInit {
     { name: 'Chinmaya', image: 'assets/tie-up-page/img-4.png' },
     { name: 'Kanti Sweets', image: 'assets/tie-up-page/img-5.png' },
     { name: 'LCIS', image: 'assets/tie-up-page/LCIS.png' },
+    { name: 'Durga Parameshwari Welfare Association', image: 'assets/tie-up-page/Durga-parameshwari-welfare-association.jpeg' },
+    { name: 'Britania', image: 'assets/tie-up-page/Britania.jpeg' },
 
   ];
 
@@ -327,6 +329,9 @@ export class HomeComponent implements OnInit {
     { name: 'Federal Bank', image: 'assets/tie-up-page/img-8.png' },
     { name: 'Federal Bank', image: 'assets/tie-up-page/img-9.png' },
     { name: 'Indo American High Breed Seeds', image: 'assets/tie-up-page/img-10.png' },
+    { name: 'RNS', image: 'assets/tie-up-page/RNS.jpeg' },
+    { name: 'RRWA', image: 'assets/tie-up-page/RRWA.jpeg' },
+    { name: 'Malenadu Janashakthi Vedike', image: 'assets/tie-up-page/malenadu-janashakthi-vedike.png' },
     
 
   ]
@@ -338,6 +343,8 @@ export class HomeComponent implements OnInit {
     { name: 'Kanti Sweets', image: 'assets/tie-up-page/img-14.png' },
     { name: 'Federal Bank', image: 'assets/tie-up-page/img-15.png' },
     { name: 'TKG', image: 'assets/tie-up-page/TKG.png' },
+    { name: 'Tata Promont', image: 'assets/tie-up-page/Tata-promont.jpeg' },
+    { name: 'NCC', image: 'assets/tie-up-page/NCC.jpeg' },
     
   ]
 
