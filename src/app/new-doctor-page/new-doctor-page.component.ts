@@ -3626,7 +3626,7 @@ export class NewDoctorPageComponent {
       department: 'Nephrology',
       speciality: 'NEPHROLOGY',
       about: "<p>Dr. Limesh M is a nephrologist and transplant physician with a strong foundation in both clinical care and academic nephrology. His core strengths include vascular access procedures, kidney biopsies and the comprehensive management of transplant patients. He has a keen interest in CKD prevention, acute kidney injury in critical care settings and post-transplant immunosuppression monitoring.</p> <p>posters presented at reputed national forums on topics such as CRBSI incidence, the safety of ACE inhibitors in CKD, MMF level monitoring and rare conditions like Dent’s disease and nephrogenic systemic fibrosis. Known for his systematic and patient-centered approach, Dr. Limesh integrates evidence-based medicine with procedural expertise to support high-quality kidney care.</p>",
-      areasOfExpertise: ['Management of chronic kidney disease (CKD) and acute kidney injury (AKI)', 'Critical care nephrology and ICU monitoring', 'Kidney transplantation (live and cadaveric)', 'Renal biopsies and vascular access procedures', 'Catheterization techniques (jugular and femoral)', 'Post-transplant care and immunosuppressive therapy monitoring', 'Nephrology-related emergency and casualty care'],
+      areasOfExpertise: ['Management of chronic kidney disease (CKD) and acute kidney injury (AKI)', 'Critical care nephrology and ICU monitoring', 'Kidney transplantation (liver and cadaveric)', 'Renal biopsies and vascular access procedures', 'Catheterization techniques (jugular and femoral)', 'Post-transplant care and immunosuppressive therapy monitoring', 'Nephrology-related emergency and casualty care'],
       expertise: "16+",
       qualification: "MBBS, MD in General Medicine, DNB (Nephrology)",
       time: "",
@@ -4409,6 +4409,65 @@ export class NewDoctorPageComponent {
         'assets/icons/RAD-3.png',
         'assets/icons/RAD-4.png',
         'assets/icons/RAD-5.png'
+      ],
+      happyPatients: '1000+'
+
+    },
+    {
+      name: "Dr. Saicharan Ganesh Chitrak",
+      image: '/assets/Doc-Inv-Page/saicharan-ganesh-chitrak.png',
+      department: 'NEPHROLOGY',
+      about: `Dr. Saicharan Ganesh Chitrak is a dedicated Nephrologist and Renal Transplant Physician at Rashtrotthana Hospital, Bangalore, specialising in the management of chronic kidney disease (CKD), acute kidney injury (AKI), dialysis therapies and kidney transplantation.
+      He has expertise in hemodialysis, peritoneal dialysis, renal biopsies, vascular access procedures, and post-transplant care. Known for his evidence-based and patient-focused approach, Dr. Saicharan is committed to providing comprehensive kidney care with emphasis on early diagnosis and long-term health outcomes.
+      `,
+      speciality: 'Nephrologist',
+      areasOfExpertise: ['Renal Disorders Management (CKD, Glomerular Diseases, AKI)','Dialysis & Renal Replacement Therapy','Vascular Access Assessment and Monitoring','Renal Transplantation (Deceased and Live Donor)','Post-transplant Surveillance and Rejection Management','Advanced Therapeutics & Emerging Treatments (Biomarkers, Novel molecules)','Clinical Procedures (Renal Biopsy, Ultrasound-guided procedures, Vascular Access Creation)','(Hemodialysis, Peritoneal Dialysis, Hemodiafiltration, CRRT)'],
+      expertise: '',
+      qualification: `MBBS, MD (Internal Medicine), DNB (Internal Medicine), <br>
+      DM (Nephrology)`,
+      time: '',
+      date: '',
+      alt: 'Dr. Saicharan Ganesh Chitrak | Top Nephrologist in banaglore | Rashtrotthana Hospital | RR Nagar Bangalore',
+      id: '',
+      title: 'Dr. Saicharan Ganesh Chitrak | Nephrologist Expert in RR Nagar Bangalore',
+      description: 'Consult Dr. Saicharan Ganesh Chitrak, senior nephrologist in RR Nagar with experience in advanced kidney care, dialysis therapies, and renal transplantation at Rashtrotthana Hospital.',
+      faqs: [
+        {
+          question: 'Who is Dr. Saicharan Ganesh Chitrak and what is his specialty at Rashtrotthana Hospital, Bangalore?',
+          answer: 'Dr. Saicharan Ganesh Chitrak is a Nephrologist and Renal Transplant Physician at Rashtrotthana Hospital, Bangalore. He specialises in the management of chronic kidney disease (CKD), acute kidney injury (AKI), dialysis, and kidney transplantation.'
+        },
+        {
+          question: 'What kidney diseases are treated by Dr. Saicharan Ganesh Chitrak at Rashtrotthana Hospital?',
+          answer: 'Dr. Saicharan treats CKD, glomerular diseases, AKI, electrolyte imbalances, and complex renal disorders. His approach focuses on early diagnosis, slowing disease progression and improving long-term kidney health.'
+        },
+        {
+          question: 'Does Dr. Saicharan Ganesh Chitrak provide dialysis and renal replacement therapy?',
+          answer: 'Yes, he provides comprehensive dialysis and renal replacement therapies, including hemodialysis, peritoneal dialysis, hemodiafiltration and CRRT. Treatment plans are tailored based on the patient’s condition and stage of kidney disease.'
+        },
+        {
+          question: 'Can I consult Dr. Saicharan Ganesh Chitrak for kidney transplantation in Bangalore?',
+          answer: 'Absolutely. Dr. Saicharan has expertise in live donor and deceased donor renal transplantation, including pre-transplant evaluation and post-transplant monitoring. He focuses on safe transplantation and long-term graft survival.'
+        },
+        {
+          question: 'Does Dr. Saicharan Ganesh Chitrak manage post-transplant rejection and complications?',
+          answer: 'Yes, he specialises in post-transplant surveillance and rejection management, ensuring close monitoring after kidney transplantation. Early detection of complications helps improve transplant outcomes.'
+        },
+        {
+          question: 'What procedures are performed by Dr. Saicharan Ganesh Chitrak?',
+          answer: 'Dr. Saicharan performs renal biopsies, ultrasound-guided procedures, and vascular access creation for dialysis patients. These procedures support accurate diagnosis and effective long-term kidney care.'
+        },
+        {
+          question: 'Why choose Dr. Saicharan Ganesh Chitrak at Rashtrotthana Hospital for nephrology care?',
+          answer: `Dr. Saicharan combines advanced expertise in nephrology, dialysis, and renal transplantation with evidence-based patient care. At Rashtrotthana Hospital, patients benefit from modern renal care infrastructure and comprehensive multidisciplinary support.`
+        }
+      ],
+      departmentSlug: '',
+      expertiseIcons: [
+        'assets/icons/N-1.png',
+        'assets/icons/N-2.png',
+        'assets/icons/N-3.png',
+        'assets/icons/N-4.png',
+        'assets/icons/N-5.png'
       ],
       happyPatients: '1000+'
 

@@ -38,6 +38,12 @@ export class NephrologyComponent {
       doctor_name:'Dr. Limesh M',
       experience : "16+",
       docalt : 'Dr. Limesh M | Nephrologist & Transplant Physician Bangalore'
+    },
+    {
+      doctor_image:'/assets/saicharan-ganesh-chitrak.png',
+      doctor_name:'Dr. Saicharan Ganesh Chitrak',
+      experience : "",
+      docalt : 'Dr. Saicharan Ganesh Chitrak | Nephrologist & Transplant Physician Bangalore'
     }
   ]
 

@@ -1305,6 +1305,22 @@ export class DoctorLayoutComponent {
       title:'Dr. Sharath C Mouli | Consultant Radiologist in Bengaluru',
       description:''
     },
+    {
+      name: "Dr. Saicharan Ganesh Chitrak",
+      image: "/assets/saicharan-ganesh-chitrak.png", 
+      department: 'Nephrology',
+      desgination: 'Nephrology',
+      speciality: 'NEPHROLOGY',
+      about: "",
+      areasOfExpertise: ['CT & MRI (Cross-sectional Imaging)','Ultrasound & Doppler Studies','Conventional Radiography','Onco-Imaging & Neuroimaging','Musculoskeletal Imaging','Image-Guided Procedures (USG)','Emergency Radiology','Clinical Correlation & Diagnostic Reporting'],
+      expertise: "",
+      qualification: "MBBS, MD (Internal Medicine), DNB (Internal Medicine), DM (Nephrology)",
+      time: "",
+      date: "",
+      alt: '',
+      title:'Dr. Saicharan Ganesh Chitrak | Consultant Nephrologist in Bengaluru',
+      description:''
+    },
 
     // {
     //   name: "",

@@ -113,65 +113,26 @@
     hb-speck-fade  var(--dur, 4s) ease-in-out infinite;
 }
 
-// ── Candle floating assembly ──────────────────────────────────────────────────
+// ── Video wrap ────────────────────────────────────────────────────────────────
 .hb-float-wrap {
   position: relative;
   z-index: 3;
-  width: 86%;
-  max-width: 400px;
+  width: 92%;
+  max-width: 460px;
   animation: hb-float 6s ease-in-out infinite;
-  filter:
-    drop-shadow(0 32px 56px rgba(130, 70, 20, 0.20))
-    drop-shadow(0 10px 22px rgba(255, 160, 50, 0.14));
-}
-
-.hb-ground-shadow {
-  position: absolute;
-  bottom: -14px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 60%;
-  height: 28px;
   border-radius: 50%;
-  background: radial-gradient(ellipse, rgba(80, 60, 20, 0.28) 0%, transparent 70%);
-  filter: blur(12px);
-  animation: hb-shadow-breathe 6s ease-in-out infinite;
+  overflow: hidden;
+  box-shadow:
+    0 24px 60px rgba(130, 70, 20, 0.18),
+    0 8px 24px rgba(255, 160, 50, 0.12);
 }
 
-.hb-lotus-candle {
+.hb-video {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
-}
-
-// ── Flame animation ───────────────────────────────────────────────────────────
-.hb-flame {
-  transform-origin: 210px 213px;
-  animation: hb-flicker 2.5s ease-in-out infinite;
-}
-
-.hb-glow-ring {
-  &--outer { animation: hb-glow-outer 2.5s ease-in-out infinite; }
-  &--mid   { animation: hb-glow-mid   2.5s ease-in-out infinite 0.4s; }
-  &--inner { animation: hb-glow-inner 2.5s ease-in-out infinite 0.8s; }
-}
-
-// ── Petal sway animations ─────────────────────────────────────────────────────
-.hb-outer-petals {
-  transform-origin: 210px 320px;
-  animation: hb-petals-sway 8s ease-in-out infinite;
-}
-.hb-mid-petals {
-  transform-origin: 210px 302px;
-  animation: hb-petals-sway 8s ease-in-out infinite 0.8s;
-}
-.hb-inner-petals {
-  transform-origin: 210px 285px;
-  animation: hb-petals-sway 8s ease-in-out infinite 1.6s;
-}
-.hb-bud {
-  transform-origin: 210px 268px;
-  animation: hb-petals-sway 8s ease-in-out infinite 2.4s;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 // ── Keyframes ─────────────────────────────────────────────────────────────────
@@ -185,49 +146,14 @@
   50%       { transform: translateY(-16px); }
 }
 
-@keyframes hb-shadow-breathe {
-  0%, 100% { transform: translateX(-50%) scale(1);     opacity: 0.7; }
-  50%       { transform: translateX(-50%) scale(0.78);  opacity: 0.30; }
-}
-
 @keyframes hb-inner-breathe {
   0%, 100% { opacity: 0.6; transform: scale(1); }
   50%       { opacity: 1.0; transform: scale(1.10); }
 }
 
-@keyframes hb-flicker {
-  0%   { transform: scaleX(1)    scaleY(1)    skewX(0deg);    opacity: 1;    }
-  12%  { transform: scaleX(0.85) scaleY(1.08) skewX(-3deg);   opacity: 0.88; }
-  26%  { transform: scaleX(1.12) scaleY(0.94) skewX(2deg);    opacity: 0.95; }
-  42%  { transform: scaleX(0.90) scaleY(1.06) skewX(-1.5deg); opacity: 0.91; }
-  58%  { transform: scaleX(1.08) scaleY(0.96) skewX(2.5deg);  opacity: 0.96; }
-  74%  { transform: scaleX(0.93) scaleY(1.03) skewX(-1deg);   opacity: 0.94; }
-  88%  { transform: scaleX(1.04) scaleY(0.98) skewX(1deg);    opacity: 0.97; }
-  100% { transform: scaleX(1)    scaleY(1)    skewX(0deg);    opacity: 1;    }
-}
-
-@keyframes hb-glow-outer {
-  0%, 100% { opacity: 0.55; transform: scale(1); }
-  50%       { opacity: 0.80; transform: scale(1.12); }
-}
-@keyframes hb-glow-mid {
-  0%, 100% { opacity: 0.72; transform: scale(1); }
-  50%       { opacity: 1.00; transform: scale(1.18); }
-}
-@keyframes hb-glow-inner {
-  0%, 100% { opacity: 0.80; transform: scale(1); }
-  50%       { opacity: 1.00; transform: scale(1.22); }
-}
-
 @keyframes hb-orbit-rotate {
   from { transform: translate(-50%, -50%) rotate(0deg); }
   to   { transform: translate(-50%, -50%) rotate(360deg); }
-}
-
-@keyframes hb-petals-sway {
-  0%, 100% { transform: rotate(0deg); }
-  30%       { transform: rotate(0.8deg); }
-  65%       { transform: rotate(-0.6deg); }
 }
 
 @keyframes hb-speck-float {
