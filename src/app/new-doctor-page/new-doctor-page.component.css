@@ -38,7 +38,8 @@
 }
 
 .doctor_image img {
-    width: 417px;
+    /* width: 417px; */
+    width: auto;
     height: 438px;
     position: relative;
     top: 20px;

@@ -44,10 +44,24 @@ export class UrologyComponent {
       experience: '25+ years',
       image: 'assets/new-doctor-imgs/dr-mahesh-m-doc-page.png',
       slug : '/doctor/dr-mahesh-m'
-    }
+    },
+    {
+      id: 4,
+      name : "Dr. Chaithanya J",
+      experience: '11+ years',
+      image: 'assets/Doc-Inv-Page/chaitanya-sq.png',
+      slug : '/doctor/dr-chaithanya-j'
+    },
+    {
+      id: 5,
+      name : "Dr. Dhruva G. Prakash",
+      experience: '11+ years',
+      image: 'assets/Doc-Inv-Page/dhruva-sq.png',
+      slug : '/doctor/dr-dhruva-g-prakash'
+    },
   ];
 
-  formDoctors = ['Dr. Nagaraj Rao', 'Dr. Madhu S. N']
+  formDoctors = ['Dr. Nagaraj Rao', 'Dr. Madhu S. N', 'Dr. Chaithanya J', 'Dr. Dhruva G. Prakash']
 
   faqs = [
     {

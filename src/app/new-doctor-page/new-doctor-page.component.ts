@@ -2258,62 +2258,62 @@ export class NewDoctorPageComponent {
     //   time:'09:30-09:50,09:50-10:10,10:10-10:30,10:30-10:50,10:50-11:10,11:10-11:30,11:30-11:50,11:50-12:10,12:10-12:30,12:30-12:50,12:50-13:10,13:10-13:30,13:30-13:50,13:50-14:10,14:10-14:30,14:30-14:50,14:50-15:10,15:10-15:30,15:30-15:50,15:50-16:10,16:10-16:30,16:30-16:50,16:50-17:00',
     //   date:'Monday-Saturday'
     // },
-      // {
-      //   name: 'Dr. Narendranath A',
-      //   image: 'assets/Doc-Inv-Page/Dr-Narendranath-A.png',
-      //   department: 'Consultant, ENT Head & Neck surgery',
-      //   speciality: 'ENT SPECIALITY',
-      //   about: 'Dr. Narendranath A is graduate from RAJAH MUTHIAH MEDICAL COLLEGE,TAMIL NADU in 2010. He completed his post graduation MS (ENT) from vijayanagar insititute of medical sciences, bellary in 2015.Otology/ tympanoplasty and mastoidectomy surgeries, myringotomy and grommet surgery, FESS (nasal polyp surgery)/sinus surgeries, nasal septum correction surgery, Adenoid and tonsil surgeries, surgeries related to vocal cords (voice box), thyroid and parotid surgeries, tracheostomy.   ',
-      //   areasOfExpertise: ['Otology and rhinology', 'Otology/ tympanoplasty', 'Mastoidectomy surgeries', 'Myringotomy and grommet surgery', 'Thyroid and parotid surgeries', 'FESS (nasal polyp surgery)/sinus surgeries', 'Nasal septum correction surgery', 'Adenoid and tonsil surgeries, surgeries related to vocal cords (voice box)', '* Tracheostomy'],
-      //   expertise: '11+',
-      //   qualification: 'MBBS, MS(ENT)',
-      //   time: '13:30-13:50,13:50-14:10,14:10-14:30,14:30-14:50,14:50-15:10,15:10-15:30',
-      //   date: 'Monday,Wednesday,Thursday and Friday',
-      //   alt: 'Dr. Narendranath A | Best ENT Doctor in Bangalore | Rashtrotthana Hospita | Rajarajeshwari Nagar Bangalore',
-      //   id: 31,
-      //   title: 'Dr. Narendranath A | ENT Head & Neck Surgeon Bangalore',
-      //   description: 'Dr. Narendranath A is an ENT and Head & Neck Surgeon with 10+ years of experience in advanced ENT surgeries, sinus, voice box, and thyroid procedures.',
-      //   faqs: [
-      //     {
-      //       question: 'Who is Dr. Narendranath A and what is his specialty at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-      //       answer: 'Dr. Narendranath A is an experienced ENT (Otorhinolaryngology) Surgeon at Rashtrotthana Hospital, RR Nagar, Bangalore. He specialises in otology and rhinology, managing complex ear, nose, throat, and airway conditions with advanced surgical care.'
-      //     },
-      //     {
-      //       question: 'What ear surgeries does Dr. Narendranath A perform at Rashtrotthana Hospital?',
-      //       answer: 'Dr. Narendranath A performs tympanoplasty, mastoidectomy, myringotomy, and grommet insertion surgeries for chronic ear infections and hearing problems. These procedures aim to control infection, restore hearing, and prevent complications.'
-      //     },
-      //     {
-      //       question: 'Does Dr. Narendranath A treat sinus problems and nasal polyps?',
-      //       answer: 'Yes, Dr. Narendranath A performs FESS (functional endoscopic sinus surgery) for chronic sinusitis and nasal polyps not responding to medication. He also treats nasal blockage through nasal septum correction (septoplasty) to improve breathing.'
-      //     },
-      //     {
-      //       question: 'When is nasal septum correction surgery recommended by Dr. Narendranath A?',
-      //       answer: 'Nasal septum correction is recommended for patients with deviated nasal septum causing breathing difficulty, snoring, recurrent sinus infections, or headaches. Surgery helps restore proper airflow and nasal function.'
-      //     },
-      //     {
-      //       question: 'Does Dr. Narendranath A perform tonsil, adenoid and voice box surgeries?',
-      //       answer: 'Yes, he performs adenoidectomy, tonsillectomy, and surgeries related to the vocal cords (voice box) for conditions like recurrent throat infections, sleep-related breathing issues, and voice disorders. Early treatment helps prevent long-term complications.'
-      //     },
-      //     {
-      //       question: 'Are thyroid, parotid, and tracheostomy procedures handled by Dr. Narendranath A?',
-      //       answer: 'Dr. Narendranath A is experienced in thyroid and parotid gland surgeries, as well as tracheostomy procedures for airway management in emergency or long-term breathing conditions. These surgeries require precise planning and specialised ENT expertise.'
-      //     },
-      //     {
-      //       question: 'How can I book an appointment with Dr. Narendranath A at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-      //       answer: `You can book an appointment with Dr. Narendranath A by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
-      //     }
-      //   ],
-      //   departmentSlug: '/specialities/best-ent-hospital-in-bangalore',
-      //   expertiseIcons: [
-      //     'assets/icons/ENT-1.png',
-      //     'assets/icons/ENT-2.png',
-      //     'assets/icons/ENT-3.png',
-      //     'assets/icons/ENT-4.png',
-      //     'assets/icons/ENT-5.png'
-      //   ],
-      //   happyPatients: '5000+'
+    // {
+    //   name: 'Dr. Narendranath A',
+    //   image: 'assets/Doc-Inv-Page/Dr-Narendranath-A.png',
+    //   department: 'Consultant, ENT Head & Neck surgery',
+    //   speciality: 'ENT SPECIALITY',
+    //   about: 'Dr. Narendranath A is graduate from RAJAH MUTHIAH MEDICAL COLLEGE,TAMIL NADU in 2010. He completed his post graduation MS (ENT) from vijayanagar insititute of medical sciences, bellary in 2015.Otology/ tympanoplasty and mastoidectomy surgeries, myringotomy and grommet surgery, FESS (nasal polyp surgery)/sinus surgeries, nasal septum correction surgery, Adenoid and tonsil surgeries, surgeries related to vocal cords (voice box), thyroid and parotid surgeries, tracheostomy.   ',
+    //   areasOfExpertise: ['Otology and rhinology', 'Otology/ tympanoplasty', 'Mastoidectomy surgeries', 'Myringotomy and grommet surgery', 'Thyroid and parotid surgeries', 'FESS (nasal polyp surgery)/sinus surgeries', 'Nasal septum correction surgery', 'Adenoid and tonsil surgeries, surgeries related to vocal cords (voice box)', '* Tracheostomy'],
+    //   expertise: '11+',
+    //   qualification: 'MBBS, MS(ENT)',
+    //   time: '13:30-13:50,13:50-14:10,14:10-14:30,14:30-14:50,14:50-15:10,15:10-15:30',
+    //   date: 'Monday,Wednesday,Thursday and Friday',
+    //   alt: 'Dr. Narendranath A | Best ENT Doctor in Bangalore | Rashtrotthana Hospita | Rajarajeshwari Nagar Bangalore',
+    //   id: 31,
+    //   title: 'Dr. Narendranath A | ENT Head & Neck Surgeon Bangalore',
+    //   description: 'Dr. Narendranath A is an ENT and Head & Neck Surgeon with 10+ years of experience in advanced ENT surgeries, sinus, voice box, and thyroid procedures.',
+    //   faqs: [
+    //     {
+    //       question: 'Who is Dr. Narendranath A and what is his specialty at Rashtrotthana Hospital, RR Nagar, Bangalore?',
+    //       answer: 'Dr. Narendranath A is an experienced ENT (Otorhinolaryngology) Surgeon at Rashtrotthana Hospital, RR Nagar, Bangalore. He specialises in otology and rhinology, managing complex ear, nose, throat, and airway conditions with advanced surgical care.'
+    //     },
+    //     {
+    //       question: 'What ear surgeries does Dr. Narendranath A perform at Rashtrotthana Hospital?',
+    //       answer: 'Dr. Narendranath A performs tympanoplasty, mastoidectomy, myringotomy, and grommet insertion surgeries for chronic ear infections and hearing problems. These procedures aim to control infection, restore hearing, and prevent complications.'
+    //     },
+    //     {
+    //       question: 'Does Dr. Narendranath A treat sinus problems and nasal polyps?',
+    //       answer: 'Yes, Dr. Narendranath A performs FESS (functional endoscopic sinus surgery) for chronic sinusitis and nasal polyps not responding to medication. He also treats nasal blockage through nasal septum correction (septoplasty) to improve breathing.'
+    //     },
+    //     {
+    //       question: 'When is nasal septum correction surgery recommended by Dr. Narendranath A?',
+    //       answer: 'Nasal septum correction is recommended for patients with deviated nasal septum causing breathing difficulty, snoring, recurrent sinus infections, or headaches. Surgery helps restore proper airflow and nasal function.'
+    //     },
+    //     {
+    //       question: 'Does Dr. Narendranath A perform tonsil, adenoid and voice box surgeries?',
+    //       answer: 'Yes, he performs adenoidectomy, tonsillectomy, and surgeries related to the vocal cords (voice box) for conditions like recurrent throat infections, sleep-related breathing issues, and voice disorders. Early treatment helps prevent long-term complications.'
+    //     },
+    //     {
+    //       question: 'Are thyroid, parotid, and tracheostomy procedures handled by Dr. Narendranath A?',
+    //       answer: 'Dr. Narendranath A is experienced in thyroid and parotid gland surgeries, as well as tracheostomy procedures for airway management in emergency or long-term breathing conditions. These surgeries require precise planning and specialised ENT expertise.'
+    //     },
+    //     {
+    //       question: 'How can I book an appointment with Dr. Narendranath A at Rashtrotthana Hospital, RR Nagar, Bangalore?',
+    //       answer: `You can book an appointment with Dr. Narendranath A by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
+    //     }
+    //   ],
+    //   departmentSlug: '/specialities/best-ent-hospital-in-bangalore',
+    //   expertiseIcons: [
+    //     'assets/icons/ENT-1.png',
+    //     'assets/icons/ENT-2.png',
+    //     'assets/icons/ENT-3.png',
+    //     'assets/icons/ENT-4.png',
+    //     'assets/icons/ENT-5.png'
+    //   ],
+    //   happyPatients: '5000+'
 
-      // },
+    // },
     {
       name: "Dr. Harshith K. S",
       image: "assets/Dr-Harshith-K-S-doc-page.png",
@@ -4080,7 +4080,7 @@ export class NewDoctorPageComponent {
       about: "",
       areasOfExpertise: ['Andrology', 'Endo-Urology', 'Reconstructive Urology', 'Uro-Oncology', 'Female Urology', 'Urinary Stone Endoscopic Surgeries', 'Laparoscopic and Reconstructive Urology', 'Renal Transplantation', 'Laser Surgery in Prostate / Urolithiasis / Urology'],
       expertise: "25+ ",
-      qualification: `MBBS, MS, M.Ch (Urology), <br> MRCS (Edinburgh), Diploma in Laparoscopy (Strasbourg, France)`,
+      qualification: `MBBS, MS, M.Ch (Urology), <br> MRCS (Edinburgh), Diploma in Laparoscopy <br> (Strasbourg, France)`,
       time: "",
       date: "",
       alt: 'Dr. Mahesh M, senior urologist with 25+ years of experience at Rashtrotthana Hospital, Bengaluru',
@@ -4304,7 +4304,7 @@ export class NewDoctorPageComponent {
       department: 'OBSTETRICS & GYNAECOLOGY',
       about: 'Dr. Reshma L is a highly skilled Obstetrician and Gynaecologist with strong academic excellence and extensive clinical experience in managing both routine and high-risk pregnancies. A gold medalist from JIPMER, she brings a patient-centric approach focused on safe motherhood and comprehensive women’s healthcare. She has successfully conducted 1000+ vaginal deliveries, including assisted deliveries (vacuum and forceps), and over 500 caesarean sections, with expertise in handling complex and high-risk cases. Her clinical approach emphasizes respectful maternal care, ensuring comfort, safety, and confidence for every patient. Dr. Nirupama also has a keen interest in research and teaching, continuously updating her knowledge to provide evidence-based care.',
       speciality: 'OBSTETRICS & GYNAECOLOGY',
-      areasOfExpertise: ['Fetal Medicine','Advanced Fetal Imaging','Antenatal Scans','Fetal Echocardiography','Amniocentesis','Chorionic Villus Sampling (CVS)','-Genetic Counselling','High-Risk Pregnancy Care'],
+      areasOfExpertise: ['Fetal Medicine', 'Advanced Fetal Imaging', 'Antenatal Scans', 'Fetal Echocardiography', 'Amniocentesis', 'Chorionic Villus Sampling (CVS)', '-Genetic Counselling', 'High-Risk Pregnancy Care'],
       expertise: '4+',
       qualification: `MBBS, MS (OBG), DNB (OBG), <br> Fellowship in Feto-Maternal Medicine (CIMAR)`,
       time: '',
@@ -4363,7 +4363,7 @@ export class NewDoctorPageComponent {
       Dr. Sharath is known for his precision, efficiency and collaborative approach, ensuring timely and reliable diagnostic support for clinicians and patients.
       `,
       speciality: 'Radiologist',
-      areasOfExpertise: ['CT & MRI (Cross-sectional Imaging)','Ultrasound & Doppler Studies','Conventional Radiography','Onco-Imaging & Neuroimaging','Musculoskeletal Imaging','Image-Guided Procedures (USG)','Emergency Radiology','Clinical Correlation & Diagnostic Reporting'],
+      areasOfExpertise: ['CT & MRI (Cross-sectional Imaging)', 'Ultrasound & Doppler Studies', 'Conventional Radiography', 'Onco-Imaging & Neuroimaging', 'Musculoskeletal Imaging', 'Image-Guided Procedures (USG)', 'Emergency Radiology', 'Clinical Correlation & Diagnostic Reporting'],
       expertise: '',
       qualification: `MBBS, MD, DNB (Radiodiagnosis)`,
       time: '',
@@ -4421,7 +4421,7 @@ export class NewDoctorPageComponent {
       He has expertise in hemodialysis, peritoneal dialysis, renal biopsies, vascular access procedures, and post-transplant care. Known for his evidence-based and patient-focused approach, Dr. Saicharan is committed to providing comprehensive kidney care with emphasis on early diagnosis and long-term health outcomes.
       `,
       speciality: 'Nephrologist',
-      areasOfExpertise: ['Renal Disorders Management (CKD, Glomerular Diseases, AKI)','Dialysis & Renal Replacement Therapy','Vascular Access Assessment and Monitoring','Renal Transplantation (Deceased and Live Donor)','Post-transplant Surveillance and Rejection Management','Advanced Therapeutics & Emerging Treatments (Biomarkers, Novel molecules)','Clinical Procedures (Renal Biopsy, Ultrasound-guided procedures, Vascular Access Creation)','(Hemodialysis, Peritoneal Dialysis, Hemodiafiltration, CRRT)'],
+      areasOfExpertise: ['Renal Disorders Management (CKD, Glomerular Diseases, AKI)', 'Dialysis & Renal Replacement Therapy', 'Vascular Access Assessment and Monitoring', 'Renal Transplantation (Deceased and Live Donor)', 'Post-transplant Surveillance and Rejection Management', 'Advanced Therapeutics & Emerging Treatments (Biomarkers, Novel molecules)', 'Clinical Procedures (Renal Biopsy, Ultrasound-guided procedures, Vascular Access Creation)', '(Hemodialysis, Peritoneal Dialysis, Hemodiafiltration, CRRT)'],
       expertise: '',
       qualification: `MBBS, MD (Internal Medicine), DNB (Internal Medicine), <br>
       DM (Nephrology)`,
@@ -4470,6 +4470,120 @@ export class NewDoctorPageComponent {
         'assets/icons/N-5.png'
       ],
       happyPatients: '1000+'
+
+    },
+    {
+      name: "Dr. Dhruva G. Prakash",
+      image: 'assets/Doc-Inv-Page/dhruva.png',
+      department: 'Urologist',
+      about: `Dr. Dhruva G. Prakash is an experienced Consultant Urologist at Rashtrotthana Hospital, Bangalore, with over 11 years of expertise in diagnosing and treating a wide range of urological conditions. He specialises in general urology, kidney stone management, endourology, reconstructive urology, uro-oncology and minimally invasive laparoscopic urological procedures.
+      He is skilled in managing both routine and emergency urological conditions, with a strong focus on advanced, patient-friendly treatment approaches that support faster recovery and better outcomes. Dr. Dhruva is known for his precise clinical approach, compassionate care and commitment to evidence-based urology practice. `,
+      speciality: 'Urologist',
+      areasOfExpertise: ['Renal Disorders Management (CKD, Glomerular Diseases, AKI)', 'Dialysis & Renal Replacement Therapy', 'Vascular Access Assessment and Monitoring', 'Renal Transplantation (Deceased and Liver Donor)', 'Post-transplant Surveillance and Rejection Management', 'Advanced Therapeutics & Emerging Treatments (Biomarkers, Novel molecules)', 'Clinical Procedures (Renal Biopsy, Ultrasound-guided procedures, Vascular Access Creation)', '(Hemodialysis, Peritoneal Dialysis, Hemodiafiltration, CRRT)'],
+      expertise: '11+',
+      qualification: `MBBS, MS - General Surgery, <br> MCh - Urology Consultant Urologist`,
+      time: '',
+      date: '',
+      alt: 'Dr. Dhruva G. Prakash | Top Urologist in Bangalore | Rashtrotthana Hospital | RR Nagar Bangalore',
+      id: '',
+      title: 'Dr. Dhruva G. Prakash | Urologist Expert in RR Nagar Bangalore',
+      description: 'Consult Dr. Dhruva G. Prakash, senior urologist in RR Nagar with experience in advanced urological care, dialysis therapies, and renal transplantation at Rashtrotthana Hospital.',
+      faqs: [
+        {
+          question: 'Who is Dr. Dhruva G. Prakash and what is his specialty at Rashtrotthana Hospital, Bangalore?',
+          answer: 'Dr. Dhruva G. Prakash is a Consultant Urologist at Rashtrotthana Hospital, Bangalore, with 11+ years of experience in advanced urology care. He specialises in kidney stone treatment, endourology, reconstructive urology, uro-oncology, and minimally invasive laparoscopic urological procedures.'
+        },
+        {
+          question: 'Can Dr. Dhruva G. Prakash treat kidney stones without open surgery?',
+          answer: 'Yes, Dr. Dhruva G. Prakash offers minimally invasive and endoscopic kidney stone treatments that help reduce pain, recovery time, and hospital stay. Treatment is planned based on the size and location of the stone.'
+        },
+        {
+          question: 'What urological conditions are treated by Dr. Dhruva G. Prakash at Rashtrotthana Hospital?',
+          answer: 'He treats conditions such as kidney stones, urinary tract problems, enlarged prostate, bladder disorders, urinary infections, and urological cancers. His approach focuses on accurate diagnosis and personalised treatment.'
+        },
+        {
+          question: 'Does Dr. Dhruva G. Prakash perform laparoscopic and minimally invasive urology surgeries?',
+          answer: 'Yes, Dr. Dhruva G. Prakash specialises in laparoscopic and minimally invasive urological procedures for faster healing and reduced post-surgical discomfort. These techniques are commonly used for kidney, bladder and prostate surgeries.'
+        },
+        {
+          question: 'Can I consult Dr. Dhruva G. Prakash for overactive bladder (OAB) and urinary symptoms?',
+          answer: 'Absolutely. He provides treatment for overactive bladder (OAB), urinary urgency, frequency, and bladder control issues. Early treatment can significantly improve comfort and quality of life.'
+        },
+        {
+          question: 'Does Dr. Dhruva G. Prakash handle emergency urology cases in Bangalore?',
+          answer: 'Yes, he has expertise in emergency and surgical urology care, including severe kidney stone pain, urinary retention, bleeding, and trauma-related urological emergencies.'
+        },
+        {
+          question: 'Why choose Dr. Dhruva G. Prakash at Rashtrotthana Hospital for urology care?',
+          answer: `Dr. Dhruva G. Prakash combines 11+ years of clinical and surgical experience with advanced minimally invasive urology expertise. At Rashtrotthana Hospital, patients receive comprehensive and patient-focused urological care supported by modern technology.`
+        }
+      ],
+      departmentSlug: '',
+      expertiseIcons: [
+        'assets/icons/U-1.png',
+        'assets/icons/U-2.png',
+        'assets/icons/U-3.png',
+        'assets/icons/U-4.png',
+        'assets/icons/U-5.png'
+      ],
+      happyPatients: '2000+'
+
+    },
+    {
+      name: "Dr. Chaithanya J",
+      image: 'assets/Doc-Inv-Page/chaitanya.png',
+      department: 'Urologist',
+      about: `Dr. Chaithanya J is an experienced Consultant Urologist at Rashtrotthana Hospital, Bangalore, with over 11 years of experience in the diagnosis and treatment of complex urological conditions. He specialises in kidney stone management, endourology, reconstructive urology, uro-oncology and minimally invasive laparoscopic urological procedures.
+              He is skilled in managing both routine and emergency urological conditions, including bladder disorders and advanced surgical urology care. Known for his patient-centric approach and precision in treatment, Dr. Chaithanya focuses on delivering safe, effective and evidence-based urology care with emphasis on faster recovery and long-term wellbeing. `,
+      speciality: 'Urologist',
+      areasOfExpertise: ['Renal Disorders Management (CKD, Glomerular Diseases, AKI)', 'Dialysis & Renal Replacement Therapy', 'Vascular Access Assessment and Monitoring', 'Renal Transplantation (Deceased and Liver Donor)', 'Post-transplant Surveillance and Rejection Management', 'Advanced Therapeutics & Emerging Treatments (Biomarkers, Novel molecules)', 'Clinical Procedures (Renal Biopsy, Ultrasound-guided procedures, Vascular Access Creation)', '(Hemodialysis, Peritoneal Dialysis, Hemodiafiltration, CRRT)'],
+      expertise: '11+',
+      qualification: `MBBS, MS-General Surgery, <br> MCH - Urology Conslutant - Urologist`,
+      time: '',
+      date: '',
+      alt: 'Dr. Chaithanya J | Top Urologist in Bangalore | Rashtrotthana Hospital | RR Nagar Bangalore',
+      id: '',
+      title: 'Dr. Chaithanya J | Urologist Expert in RR Nagar Bangalore',
+      description: 'Consult Dr. Chaithanya J, senior urologist in RR Nagar with experience in advanced urological care, dialysis therapies, and renal transplantation at Rashtrotthana Hospital.',
+      faqs: [
+        {
+          question: 'Who is Dr. Chaithanya J and what is his specialty at Rashtrotthana Hospital, Bangalore?',
+          answer: 'Dr. Chaithanya J is a Consultant Urologist at Rashtrotthana Hospital, Bangalore, with 11+ years of experience in advanced urology care. He specialises in kidney stone treatment, endourology, reconstructive urology, uro-oncology, and minimally invasive urological procedures.'
+        },
+        {
+          question: 'Can Dr. Chaithanya J treat kidney stones without major surgery?',
+          answer: 'Yes, Dr. Chaithanya J specialises in kidney stone management using minimally invasive and endoscopic techniques. These procedures help reduce pain, hospital stay, and recovery time compared to traditional surgery.'
+        },
+        {
+          question: 'What urological conditions are treated by Dr. Chaithanya J at Rashtrotthana Hospital?',
+          answer: 'Dr. Chaithanya J treats a wide range of conditions including urinary infections, kidney stones, enlarged prostate, bladder problems, urinary obstruction, and urological cancers. Treatment plans are customised based on the patient’s condition and severity.'
+        },
+        {
+          question: 'Does Dr. Chaithanya J perform laparoscopic and minimally invasive urology procedures?',
+          answer: 'Yes, he performs laparoscopic and minimally invasive urological surgeries for faster recovery and reduced surgical discomfort. These advanced techniques are commonly used for kidney, bladder, and prostate conditions.'
+        },
+        {
+          question: 'Can I consult Dr. Chaithanya J for overactive bladder (OAB) and urinary symptoms?',
+          answer: 'Absolutely. Dr. Chaithanya J provides treatment for overactive bladder (OAB), urinary frequency, urgency and bladder control issues. Early evaluation helps improve urinary function and quality of life.'
+        },
+        {
+          question: 'Does Dr. Chaithanya J manage emergency urology conditions in Bangalore?',
+          answer: 'Yes, Dr. Chaithanya J has expertise in emergency and surgical urology care, including acute urinary retention, severe stone pain, bleeding, and trauma-related urological emergencies.'
+        },
+        {
+          question: 'Why choose Dr. Chaithanya J at Rashtrotthana Hospital for urology treatment?',
+          answer: `Dr. Chaithanya J combines 11+ years of surgical and clinical expertise with a patient-focused approach to advanced urology care. At Rashtrotthana Hospital, patients benefit from modern diagnostic facilities, minimally invasive treatments, and comprehensive urological support.`
+        }
+      ],
+      departmentSlug: '',
+      expertiseIcons: [
+        'assets/icons/U-1.png',
+        'assets/icons/U-2.png',
+        'assets/icons/U-3.png',
+        'assets/icons/U-4.png',
+        'assets/icons/U-5.png'
+      ],
+      happyPatients: '2000+'
 
     },
     // {
