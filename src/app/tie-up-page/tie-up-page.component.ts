@@ -116,7 +116,7 @@ export class TieUpPageComponent {
     { name: 'The Kingdom College', image: "assets/tie-up-page/TKG.png" },
     { name: `NCC GP HQ 'A' Bengaluru 4/28`, image: "assets/tie-up-page/NCC.jpeg" },
     { name: 'Tata Promont', image: "assets/tie-up-page/Tata-promont.jpeg" },
-    { name: 'RR nagar welfare association', image: "assets/tie-up-page/RRWA.jpeg" },
+    { name: 'RR Nagar Welfare Association', image: "assets/tie-up-page/RRWA.jpeg" },
     { name: 'RNS First Grade College', image: 'assets/tie-up-page/RNS.jpeg' },
     { name: 'Malenadu Janashakthi Vedike', image: 'assets/tie-up-page/malenadu-janashakthi-vedike.png' },
   ];

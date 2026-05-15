@@ -716,7 +716,7 @@ export class DoctorLayoutComponent {
       date: 'Monday-Saturday',
       alt: 'Dr. Shamantha S | Lifestyle Specialist in Bangalore | Rashtrotthana Hospita | Rajarajeshwari Nagar Bangalore'
     },
-    
+
     // {
     //   name: 'Dr. Kavyashree Kulamarva',
     //   image: 'assets/Dr-Kavyashree-Kulamarva.png',
@@ -1174,7 +1174,7 @@ export class DoctorLayoutComponent {
       title: '',
       description: ''
     },
-     {
+    {
       name: "Dr. Srinivas Siddeshwar",
       image: "assets/new-doctor-imgs/dr-srinivas-siddeshwar-doc-page.png",
       department: 'Emergency Medicine',
@@ -1187,12 +1187,12 @@ export class DoctorLayoutComponent {
       time: "",
       date: "",
       alt: 'Emergency Medicine Doctor | Bangalore ',
-      title:'Dr. Srinivas Siddeshwar | Emergency Medicine Doctor',
-      description:'Dr. Srinivas Siddeshwar is an experienced Emergency Medicine doctor with 8+ years of expertise, providing advanced emergency care at Rashtrotthana Hospital, Bengaluru.'
+      title: 'Dr. Srinivas Siddeshwar | Emergency Medicine Doctor',
+      description: 'Dr. Srinivas Siddeshwar is an experienced Emergency Medicine doctor with 8+ years of expertise, providing advanced emergency care at Rashtrotthana Hospital, Bengaluru.'
     },
     {
       name: "Dr. Sushma A",
-      image: "assets/new-doctor-imgs/dr-sushma-doc-page.png", 
+      image: "assets/new-doctor-imgs/dr-sushma-doc-page.png",
       department: 'Ophthalmology & Oculoplasty',
       speciality: 'OPHTHALMOLOGY',
       desgination: 'Ophthalmology',
@@ -1203,12 +1203,12 @@ export class DoctorLayoutComponent {
       time: "",
       date: "",
       alt: 'Dr. Sushma A, Ophthalmologist and Oculoplasty specialist at Rashtrotthana Hospital, Bengaluru',
-      title:'Dr. Sushma A | Ophthalmologist & Oculoplasty Surgeon',
-      description:'Dr. Sushma A is a skilled Ophthalmologist and Oculoplasty specialist with 12+ years of experience, treating eye and eyelid disorders at Rashtrotthana Hospital, Bengaluru.'
+      title: 'Dr. Sushma A | Ophthalmologist & Oculoplasty Surgeon',
+      description: 'Dr. Sushma A is a skilled Ophthalmologist and Oculoplasty specialist with 12+ years of experience, treating eye and eyelid disorders at Rashtrotthana Hospital, Bengaluru.'
     },
     {
       name: "Dr. Mahesh M",
-      image: "assets/new-doctor-imgs/dr-mahesh-m-doc-page.png", 
+      image: "assets/new-doctor-imgs/dr-mahesh-m-doc-page.png",
       department: 'UROLOGY',
       desgination: 'Urologist',
       speciality: 'UROLOGY',
@@ -1219,13 +1219,13 @@ export class DoctorLayoutComponent {
       time: "",
       date: "",
       alt: 'Dr. Mahesh M, senior urologist with 25+ years of experience at Rashtrotthana Hospital, Bengaluru',
-      title:'Dr. Mahesh M | Senior Urologist in Bengaluru',
-      description:'Dr. Mahesh M is a senior Urologist with 25+ years of experience, specializing in laparoscopic, laser and reconstructive urology at Rashtrotthana Hospital, Bengaluru.'
+      title: 'Dr. Mahesh M | Senior Urologist in Bengaluru',
+      description: 'Dr. Mahesh M is a senior Urologist with 25+ years of experience, specializing in laparoscopic, laser and reconstructive urology at Rashtrotthana Hospital, Bengaluru.'
     },
 
     {
       name: "Major (Dr.) Ashish S. Mallige",
-      image: "assets/new-doctor-imgs/dr-ashis-doc-page.png", 
+      image: "assets/new-doctor-imgs/dr-ashis-doc-page.png",
       department: 'PAEDIATRICS AND NEONATOLOGY',
       desgination: 'Consultant – Paediatrics',
       speciality: 'PAEDIATRICS AND NEONATOLOGY',
@@ -1236,13 +1236,13 @@ export class DoctorLayoutComponent {
       time: "",
       date: "",
       alt: 'Major Dr. Ashish S. Mallige, senior paediatrician and PICU specialist at Rashtrotthana Hospital, Bengaluru',
-      title:'Dr. Ashish S. Mallige | Paediatrician & PICU Specialist',
-      description:'Dr. Ashish S. Mallige is an experienced Paediatrician and PICU specialist with 15 years of expertise in critical pediatric care at Rashtrotthana Hospital, Bengaluru.'
+      title: 'Dr. Ashish S. Mallige | Paediatrician & PICU Specialist',
+      description: 'Dr. Ashish S. Mallige is an experienced Paediatrician and PICU specialist with 15 years of expertise in critical pediatric care at Rashtrotthana Hospital, Bengaluru.'
     },
 
     {
       name: "Dr. Madhurya P. K",
-      image: "assets/new-doctor-imgs/dr-madhurya-doc-page.png", 
+      image: "assets/new-doctor-imgs/dr-madhurya-doc-page.png",
       department: 'DERMATOLOGY',
       desgination: 'Consultant Dermatologist',
       speciality: 'DERMATOLOGY',
@@ -1253,74 +1253,123 @@ export class DoctorLayoutComponent {
       time: "",
       date: "",
       alt: 'Dr. Madhurya P. K, Consultant Dermatologist treating skin, hair and nail disorders at Rashtrotthana Hospital, Bengaluru',
-      title:'Dr. Madhurya P. K | Consultant Dermatologist in Bengaluru',
-      description:'Dr. Madhurya P. K is a Consultant Dermatologist with 7+ years of experience, offering advanced care for skin, hair and nail conditions at Rashtrotthana Hospital, Bengaluru.'
+      title: 'Dr. Madhurya P. K | Consultant Dermatologist in Bengaluru',
+      description: 'Dr. Madhurya P. K is a Consultant Dermatologist with 7+ years of experience, offering advanced care for skin, hair and nail conditions at Rashtrotthana Hospital, Bengaluru.'
     },
 
     {
       name: "Dr. Nirupama Annadanam",
-      image: "/assets/dr-nirupama-annadanam.png", 
+      image: "/assets/dr-nirupama-annadanam.png",
       department: 'OBSTETRICS & GYNECOLOGY',
       desgination: 'OBSTETRICS & GYNECOLOGY',
       speciality: 'OBSTETRICS & GYNECOLOGY',
       about: "",
-      areasOfExpertise: ['High-Risk Obstetrics','Respectful Maternal Care','Obstetric Medicine','Clinical Research','Medical Teaching and Training'],
+      areasOfExpertise: ['High-Risk Obstetrics', 'Respectful Maternal Care', 'Obstetric Medicine', 'Clinical Research', 'Medical Teaching and Training'],
       expertise: "Years Of Experience: 5+",
       qualification: "MBBS, MS, DNB (Obstetrics & Gynaecology-Gold Medalist),Post-Doctoral Fellowship in Obstetric Medicine from Fernandez Hospital.",
       time: "",
       date: "",
       alt: '',
-      title:'Dr. Nirupama Annadanam | Consultant Obstetrician & Gynaecologist in Bengaluru',
-      description:''
+      title: 'Dr. Nirupama Annadanam | Consultant Obstetrician & Gynaecologist in Bengaluru',
+      description: ''
     },
     {
       name: "Dr. Reshma L",
-      image: "/assets/Dr-Reshma-L.png", 
+      image: "/assets/Dr-Reshma-L.png",
       department: 'OBSTETRICS & GYNAECOLOGY',
       desgination: 'OBSTETRICS & GYNAECOLOGY',
       speciality: 'OBSTETRICS & GYNECOLOGY',
       about: "",
-      areasOfExpertise: ['Fetal Medicine','Advanced Fetal Imaging','Antenatal Scans','Fetal Echocardiography','Amniocentesis','Chorionic Villus Sampling (CVS)','-Genetic Counselling','High-Risk Pregnancy Care'],
+      areasOfExpertise: ['Fetal Medicine', 'Advanced Fetal Imaging', 'Antenatal Scans', 'Fetal Echocardiography', 'Amniocentesis', 'Chorionic Villus Sampling (CVS)', '-Genetic Counselling', 'High-Risk Pregnancy Care'],
       expertise: "Years Of Experience: 4+",
       qualification: "MBBS, MS (OBG), DNB (OBG), Fellowship in Feto-Maternal Medicine (CIMAR)",
       time: "",
       date: "",
       alt: '',
-      title:'Dr. Reshma L | Consultant Gynaecologist in Bengaluru',
-      description:''
+      title: 'Dr. Reshma L | Consultant Gynaecologist in Bengaluru',
+      description: ''
     },
     {
       name: "Dr. Sharath C Mouli",
-      image: "/assets/sharath_img.png", 
+      image: "/assets/sharath_img.png",
       department: 'Radiologist',
       desgination: 'Radiologist',
       speciality: 'RADIOLOGY',
       about: "",
-      areasOfExpertise: ['CT & MRI (Cross-sectional Imaging)','Ultrasound & Doppler Studies','Conventional Radiography','Onco-Imaging & Neuroimaging','Musculoskeletal Imaging','Image-Guided Procedures (USG)','Emergency Radiology','Clinical Correlation & Diagnostic Reporting'],
+      areasOfExpertise: ['CT & MRI (Cross-sectional Imaging)', 'Ultrasound & Doppler Studies', 'Conventional Radiography', 'Onco-Imaging & Neuroimaging', 'Musculoskeletal Imaging', 'Image-Guided Procedures (USG)', 'Emergency Radiology', 'Clinical Correlation & Diagnostic Reporting'],
       expertise: "",
       qualification: "MBBS, MD, DNB (Radiodiagnosis)",
       time: "",
       date: "",
       alt: '',
-      title:'Dr. Sharath C Mouli | Consultant Radiologist in Bengaluru',
-      description:''
+      title: 'Dr. Sharath C Mouli | Consultant Radiologist in Bengaluru',
+      description: ''
     },
     {
       name: "Dr. Saicharan Ganesh Chitrak",
-      image: "/assets/saicharan-ganesh-chitrak.png", 
+      image: "/assets/saicharan-ganesh-chitrak.png",
       department: 'Nephrology',
       desgination: 'Nephrology',
       speciality: 'NEPHROLOGY',
       about: "",
-      areasOfExpertise: ['CT & MRI (Cross-sectional Imaging)','Ultrasound & Doppler Studies','Conventional Radiography','Onco-Imaging & Neuroimaging','Musculoskeletal Imaging','Image-Guided Procedures (USG)','Emergency Radiology','Clinical Correlation & Diagnostic Reporting'],
+      areasOfExpertise: ['CT & MRI (Cross-sectional Imaging)', 'Ultrasound & Doppler Studies', 'Conventional Radiography', 'Onco-Imaging & Neuroimaging', 'Musculoskeletal Imaging', 'Image-Guided Procedures (USG)', 'Emergency Radiology', 'Clinical Correlation & Diagnostic Reporting'],
       expertise: "",
       qualification: "MBBS, MD (Internal Medicine), DNB (Internal Medicine), DM (Nephrology)",
       time: "",
       date: "",
       alt: '',
-      title:'Dr. Saicharan Ganesh Chitrak | Consultant Nephrologist in Bengaluru',
-      description:''
+      title: 'Dr. Saicharan Ganesh Chitrak | Consultant Nephrologist in Bengaluru',
+      description: ''
     },
+    {
+      name: "Dr. Chaithanya J",
+      image: "/assets/Doc-Inv-Page/chaitanya-sq.png",
+      department: 'UROLOGY',
+      desgination: 'Urologist',
+      speciality: 'UROLOGY',
+      about: "",
+      areasOfExpertise: ['General Urology',
+        'Kidney Stone Management',
+        'Uro-Oncology',
+        'Minimally Invasive Urological Procedures',
+        'Overactive Bladder (OAB) Management',
+        'Endourology',
+        'Reconstructive Urology',
+        'Emergency & Surgical Urology Care',
+        'Laparoscopic Urological Procedures'],
+      expertise: "Years Of Experience: 11+",
+      qualification: "MBBS, MS-General Surgery. MCH - Urology Conslutant - Urologist",
+      time: "",
+      date: "",
+      alt: '',
+      title: 'Dr. Chaithanya J | Consultant Urologist in Bengaluru',
+      description: ''
+    },
+    {
+      name: "Dr. Dhruva G. Prakash",
+      image: "/assets/Doc-Inv-Page/dhruva-sq.png",
+      department: 'UROLOGY',
+      desgination: 'Urologist',
+      speciality: 'UROLOGY',
+      about: "",
+      areasOfExpertise: ['General Urology',
+        'Kidney Stone Management',
+        'Uro-Oncology',
+        'Minimally Invasive Urological Procedures',
+        'Overactive Bladder (OAB) Management',
+        'Endourology',
+        'Reconstructive Urology',
+        'Emergency & Surgical Urology Care',
+        'Laparoscopic Urological Procedures'],
+      expertise: "Years Of Experience: 11+",
+      qualification: "MBBS, MS- General Surgery, MCH - Urology Consultant Urologist",
+      time: "",
+      date: "",
+      alt: '',
+      title: 'Dr. Dhruva G. Prakash | Consultant Urologist in Bengaluru',
+      description: ''
+    },
+    
 
     // {
     //   name: "",

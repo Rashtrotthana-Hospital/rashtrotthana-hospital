@@ -42,7 +42,7 @@ export class KidneyStoneComponent {
     {
       image: '../../assets/doctor-31.png',
       name: 'Dr. Nagaraj Rao',
-      designation: 'Orthopaedics',
+      designation: 'UROLOGY',
       alt: 'Dr. Mahesh Kulkarni | Best Ortho Doctor in Bangalore | Rashtrotthana Hospital',
       slug: '/doctor/dr-nagaraj-rao',
       experience: '27+'
@@ -50,15 +50,39 @@ export class KidneyStoneComponent {
     {
       image: 'assets/Dr-Madhu-S-N.png',
       name: 'Dr. Madhu S. N',
-      designation: 'Orthopaedics',
-      alt: 'Dr. Sujayendra D. M | Best Orthopaedic Doctor in Bangalore | Rashtrotthana Hospital',
+      designation: 'UROLOGY',
+      alt: 'Dr. Madhu S. N | Best Urology Doctor in Bangalore | Rashtrotthana Hospital',
       slug: '/doctor/dr-madhu-s-n',
+      experience: '15+'
+    },
+    {
+      image: 'assets/new-doctor-imgs/dr-mahesh-m-doc-page.png',
+      name: 'Dr. Mahesh M',
+      designation: 'UROLOGY',
+      alt: 'Dr. Mahesh M | Best Urology Doctor in Bangalore | Rashtrotthana Hospital',
+      slug: '/doctor/dr-mahesh-m',
+      experience: '25+'
+    },
+    {
+      image: 'assets/Doc-Inv-Page/chaitanya-sq.png',
+      name: 'Dr. Chaithanya J',
+      designation: 'UROLOGY',
+      alt: 'Dr. Chaithanya J | Best Urology Doctor in Bangalore | Rashtrotthana Hospital',
+      slug: '/doctor/dr-chaithanya-j',
+      experience: '15+'
+    },
+    {
+      image: 'assets/Doc-Inv-Page/dhruva-sq.png',
+      name: 'Dr. Dhruva G. Prakash',
+      designation: 'UROLOGY',
+      alt: 'Dr. Dhruva G. Prakash | Best Urology Doctor in Bangalore | Rashtrotthana Hospital',
+      slug: '/doctor/dr-dhruva-g-prakash',
       experience: '15+'
     },
 
   ];
 
-  formdoctors = ['Dr. Nagaraj Rao', 'Dr. Madhu S. N']
+  formdoctors = ['Dr. Nagaraj Rao', 'Dr. Madhu S. N', 'Dr. Chaithanya J', 'Dr. Dhruva G. Prakash']
 
 
   mainServices: any[] = [
