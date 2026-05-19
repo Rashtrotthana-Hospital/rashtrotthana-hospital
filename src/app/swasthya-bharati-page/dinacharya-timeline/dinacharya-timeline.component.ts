@@ -143,6 +143,26 @@ export class DinacharyaTimelineComponent implements OnInit, AfterViewInit, OnDes
   readonly sunX = computed(() => bezierXY(this.celestialT()).x);
   readonly sunY = computed(() => bezierXY(this.celestialT()).y);
 
+  // Mobile: map celestialT → even vertical % (0% = first card, 100% = last card)
+  // Each card gets an equally spaced vertical slot regardless of arcT spacing,
+  // so the sun/moon moves at constant visual speed and never jumps back.
+  readonly mobilePct = computed(() => {
+    const t = this.celestialT();
+    const n = CARD_T.length;                       // 6 cards
+    // Find which segment t is in
+    for (let i = 0; i < n - 1; i++) {
+      if (t >= CARD_T[i] && t < CARD_T[i + 1]) {
+        // interpolate evenly within this segment
+        const segT = (t - CARD_T[i]) / (CARD_T[i + 1] - CARD_T[i]);
+        return ((i + segT) / (n - 1)) * 100;
+      }
+    }
+    // Before first card → clamp to top
+    if (t < CARD_T[0]) return 0;
+    // After last card (wrapping phase) → clamp to bottom
+    return 100;
+  });
+
   // Moon starts fading in EXACTLY at card 4 (19:00–21:00), arcT=MOON_START_T
   readonly moonOpacity = computed(() =>
     Math.max(0, Math.min(1, (this.celestialT() - MOON_START_T) / MOON_FADE_SPAN))
