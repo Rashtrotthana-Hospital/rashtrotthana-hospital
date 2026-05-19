@@ -295,7 +295,7 @@
 
     <!-- Traveling celestial body (sun/moon) -->
     <div class="dt-mobile__celestial"
-         [style.top]="'calc(' + (celestialT() * 100) + '% - 24px)'"
+         [style.top]="'calc(' + mobilePct() + '% - 24px)'"
          [class.dt-mobile__celestial--moon]="moonOpacity() > 0.5">
       <div class="dt-mobile__sun-glow" [style.opacity]="1 - moonOpacity()"></div>
       <div class="dt-mobile__moon-glow" [style.opacity]="moonOpacity()"></div>

@@ -285,15 +285,48 @@ export class SwasthyaBharatiPageComponent
     {
       id: 'assessment',
       label: 'Lifestyle Assessment',
-      caption: 'Identify silent imbalances early - before they become disease.',
+      caption: 'Identify silent imbalances early — before they become disease.',
       items: [
-        { title: 'Diabetes risk assessment', sub: 'Glycaemic & metabolic screen' },
-        { title: 'Hypertension risk assessment', sub: 'BP, vascular & stress load' },
-        { title: 'Obesity & metabolic health', sub: 'Body composition & insulin response' },
-        { title: 'Sleep assessment', sub: 'Quality, rhythm and recovery' },
-        { title: 'Stress profile', sub: 'Autonomic & emotional balance' },
-        { title: 'Gut health assessment', sub: 'Digestion, microbiome, agni' },
-        { title: 'Nutrition evaluation', sub: 'Diet quality & nutrient gaps' },
+        { title: 'Dinacharya (daily regimen) and Ritucharya (seasonal regimen) guidance' },
+        { title: 'Ayurvedic diet & lifestyle counselling' },
+        { title: 'Immunity enhancement guidance' },
+        { title: 'Diabetes risk assessment' },
+        { title: 'Hypertension risk assessment' },
+        { title: 'Obesity and metabolic health assessment' },
+        { title: 'Sleep assessment' },
+        { title: 'Stress profile assessment' },
+        { title: 'Gut health assessment' },
+      ],
+    },
+    {
+      id: 'yoga',
+      label: 'Yoga Therapies',
+      caption: 'Guided practice for body, breath and mind.',
+      items: [
+        { title: 'Therapeutic Yoga for various disease conditions' },
+        { title: 'Breathing practices (Pranayama)' },
+        { title: 'Relaxation techniques' },
+        { title: 'Meditation' },
+        { title: 'Stress reduction session' },
+      ],
+    },
+    {
+      id: 'education',
+      label: 'Health Education & Awareness',
+      caption: 'Bringing prevention into homes, schools and workplaces.',
+      items: [
+        { title: 'Workshops for various sectors' },
+        { title: 'Patient education sessions' },
+        { title: 'School / Community programs' },
+      ],
+    },
+    {
+      id: 'programs',
+      label: 'Training',
+      caption: 'Structured training programmes in lifestyle health.',
+      items: [
+        { title: 'Curriculum: Swasthya Bharati Lifestyle Program', sub: 'View curriculum details →' },
+        { title: 'Enrolment', sub: 'Apply via Google Form →' },
       ],
     },
     {
@@ -306,43 +339,6 @@ export class SwasthyaBharatiPageComponent
         { title: 'Ayurvedic diet counselling', sub: 'Foods that heal, not harm' },
         { title: 'Lifestyle counselling', sub: 'Habit redesign with classical roots' },
         { title: 'Immunity enhancement', sub: 'Ojas-building protocols' },
-      ],
-    },
-    {
-      id: 'yoga',
-      label: 'Yoga & Mind-Body',
-      caption: 'Guided practice for body, breath and mind.',
-      items: [
-        { title: 'Therapeutic yoga', sub: 'For specific disease conditions' },
-        { title: 'Pranayama', sub: 'Breathwork for nervous-system reset' },
-        { title: 'Relaxation techniques', sub: 'Yoga nidra & guided release' },
-        { title: 'Meditation', sub: 'Focus, clarity, equanimity' },
-        { title: 'Stress reduction sessions', sub: 'Group & one-on-one' },
-      ],
-    },
-    {
-      id: 'programs',
-      label: 'Lifestyle Programs',
-      caption: 'Structured journeys for the conditions of modern life.',
-      items: [
-        { title: 'Diabetes management', sub: 'Reverse, regulate, sustain' },
-        { title: 'Weight management', sub: 'Sustainable, drug-free' },
-        { title: 'PCOS & menstrual health', sub: 'Hormone balance protocol' },
-        { title: 'Hypertension', sub: 'Lifestyle-first BP control' },
-        { title: 'Anxiety & sleep disorders', sub: 'Mind-body recovery' },
-        { title: 'Bone & joint health', sub: 'Mobility & strength program' },
-        { title: 'Stress management', sub: 'Resilience & nervous system' },
-      ],
-    },
-    {
-      id: 'education',
-      label: 'Education & Awareness',
-      caption: 'Bringing prevention into homes, schools and workplaces.',
-      items: [
-        { title: 'Workshops for sectors', sub: 'Corporate, schools, communities' },
-        { title: 'Patient education sessions', sub: 'Empowered self-care' },
-        { title: 'School & community programs', sub: 'Lifelong healthy habits' },
-        { title: 'Intervention training', sub: 'Lifestyle-based curricula' },
       ],
     },
   ];
@@ -384,23 +380,23 @@ export class SwasthyaBharatiPageComponent
   readonly whyPoints = [
     {
       title: 'Integrative approach',
-      body: 'Heritage wisdom of Yoga & Ayurveda woven with modern scientific understanding.',
+      body: 'Combining traditional wisdom of Ayurveda and Yoga with modern scientific understanding.',
     },
     {
-      title: 'Evidence-based protocols',
-      body: 'Stress reduction, metabolic balance and mental wellbeing - measured, not assumed.',
-    },
-    {
-      title: 'Personalised plans',
-      body: 'Built around your individual constitution (prakṛti) and lifestyle pattern.',
+      title: 'Personalised health plans',
+      body: 'Built around your individual constitution and lifestyle patterns.',
     },
     {
       title: 'Preventive orientation',
-      body: 'We identify imbalance early - and reduce long-term disease risk before it sets.',
+      body: 'Identifying and consciously correcting the underlying causes of lifestyle imbalance to reduce long-term disease risk.',
     },
     {
-      title: 'Sustainable change',
-      body: 'Modifications that fit your day, your kitchen, your work - and last for years.',
+      title: 'Health Education & Awareness',
+      body: 'Workshops for various sectors, patient education sessions, school and community programs, and lifestyle-based training.',
+    },
+    {
+      title: 'Sustainable lifestyle modifications',
+      body: 'Changes that enhance daily vitality and overall quality of life.',
     },
   ];
 
@@ -444,30 +440,26 @@ export class SwasthyaBharatiPageComponent
     { name: 'Dr. Sindu',    role: 'Lifestyle Physician',  initial: 'S', dept: 'Lifestyle',  color: '#3ddba8', bg: 'linear-gradient(135deg,#3ddba8,#1faf82)' },
     { name: 'Dr. Varsha',   role: 'Yoga & Lifestyle',     initial: 'V', dept: 'Yoga',        color: '#a78bfa', bg: 'linear-gradient(135deg,#a78bfa,#7c3aed)' },
     { name: 'Dr. Rachana',  role: 'Ayurveda & Wellness',  initial: 'R', dept: 'Ayurveda',    color: '#f59e0b', bg: 'linear-gradient(135deg,#f59e0b,#b45309)' },
-    { name: 'Dr. Shamanta', role: 'Integrative Medicine', initial: 'S', dept: 'Integrative', color: '#38bdf8', bg: 'linear-gradient(135deg,#38bdf8,#0369a1)' },
+    { name: 'Dr. Shamantha', role: 'Integrative Medicine', initial: 'S', dept: 'Integrative', color: '#38bdf8', bg: 'linear-gradient(135deg,#38bdf8,#0369a1)' },
     { name: 'Dr. Ramya',    role: 'Preventive Health',    initial: 'R', dept: 'Preventive',  color: '#fb7185', bg: 'linear-gradient(135deg,#fb7185,#be123c)' },
   ];
 
   readonly faqs: Faq[] = [
     {
       q: 'What is a lifestyle clinic?',
-      a: 'A lifestyle clinic works on preventing and managing disease by correcting underlying factors - diet, daily routine, sleep, behaviour, thought process and stress - rather than only treating symptoms.',
+      a: 'Lifestyle clinics work on preventing and managing diseases by correcting various factors like diet, daily routine, behaviour, thought process and more.',
     },
     {
       q: 'Will I be prescribed medicine?',
-      a: 'No. Swasthya Bharati is a drugless unit. We focus on counselling and structured lifestyle correction. Where you already take medication, we work alongside your treating physician.',
+      a: 'No, we focus on counselling for lifestyle corrections.',
     },
     {
       q: 'Is it safe for all ages?',
-      a: 'Yes - children, adults and elderly. Plans are tailored to age, constitution and current health status.',
+      a: 'Yes, suitable for children, adults, and elderly.',
     },
     {
       q: 'Can it reverse diabetes or PCOS?',
-      a: 'Many patients experience significant, sometimes complete improvement with supervised lifestyle changes. Outcomes depend on duration of disease, adherence and individual factors - your physician will be honest about what to expect.',
-    },
-    {
-      q: 'How is a session structured?',
-      a: 'A first consultation includes detailed lifestyle history, assessment and a tailored plan. Follow-ups review progress, refine the plan and add yoga, pranayama, dietary or behavioural modules as needed.',
+      a: 'Many patients experience significant improvement with supervised lifestyle changes.',
     },
   ];
 
