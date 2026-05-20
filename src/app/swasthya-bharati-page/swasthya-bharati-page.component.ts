@@ -329,18 +329,18 @@ export class SwasthyaBharatiPageComponent
         { title: 'Enrolment', sub: 'Apply via Google Form →' },
       ],
     },
-    {
-      id: 'ayurveda',
-      label: 'Ayurveda-Based',
-      caption: 'Time-tested daily, seasonal and constitutional guidance.',
-      items: [
-        { title: 'Dinacharya', sub: 'Daily regimen attuned to your prakṛti' },
-        { title: 'Ritucharya', sub: 'Seasonal regimen for sustained balance' },
-        { title: 'Ayurvedic diet counselling', sub: 'Foods that heal, not harm' },
-        { title: 'Lifestyle counselling', sub: 'Habit redesign with classical roots' },
-        { title: 'Immunity enhancement', sub: 'Ojas-building protocols' },
-      ],
-    },
+    // {
+    //   id: 'ayurveda',
+    //   label: 'Ayurveda-Based',
+    //   caption: 'Time-tested daily, seasonal and constitutional guidance.',
+    //   items: [
+    //     { title: 'Dinacharya', sub: 'Daily regimen attuned to your prakṛti' },
+    //     { title: 'Ritucharya', sub: 'Seasonal regimen for sustained balance' },
+    //     { title: 'Ayurvedic diet counselling', sub: 'Foods that heal, not harm' },
+    //     { title: 'Lifestyle counselling', sub: 'Habit redesign with classical roots' },
+    //     { title: 'Immunity enhancement', sub: 'Ojas-building protocols' },
+    //   ],
+    // },
   ];
 
   readonly benefits = [
@@ -379,24 +379,44 @@ export class SwasthyaBharatiPageComponent
 
   readonly whyPoints = [
     {
-      title: 'Integrative approach',
-      body: 'Combining traditional wisdom of Ayurveda and Yoga with modern scientific understanding.',
+      title: '',
+      body: 'An integrative approach combining traditional wisdom with scientific understanding. ',
+      icon: 'integrate',
     },
     {
-      title: 'Personalised health plans',
-      body: 'Built around your individual constitution and lifestyle patterns.',
+      title: '',
+      body: 'Personalised health plans based on individual constitution and lifestyle patterns',
+      icon: 'person',
     },
     {
-      title: 'Preventive orientation',
-      body: 'Identifying and consciously correcting the underlying causes of lifestyle imbalance to reduce long-term disease risk.',
+      title: '',
+      body: 'A preventive orientation to reduce long-term disease risk. Health Education & Awarenes. ',
+      icon: 'shield',
     },
     {
-      title: 'Health Education & Awareness',
-      body: 'Workshops for various sectors, patient education sessions, school and community programs, and lifestyle-based training.',
+      title: '',
+      body: 'Workshops for various sectors ',
+      icon: 'workshop',
     },
     {
-      title: 'Sustainable lifestyle modifications',
-      body: 'Changes that enhance daily vitality and overall quality of life.',
+      title: '',
+      body: 'Patient education sessions ',
+      icon: 'education',
+    },
+    {
+      title: '',
+      body: 'School/Community programs ',
+      icon: 'community',
+    },
+    {
+      title: '',
+      body: 'Lifestyle-based training ',
+      icon: 'training',
+    },
+    {
+      title: '',
+      body: 'Sustainable lifestyle modifications that enhance daily vitality and overall quality of life.',
+      icon: 'leaf',
     },
   ];
 
@@ -597,8 +617,8 @@ export class SwasthyaBharatiPageComponent
       const idx = this.services.findIndex((s) => s.id === id);
       if (idx >= 0) {
         // Solve for orbitAngle where effectiveAngle of idx === 0° (top):
-        // idx * 72 - 90 + orbitAngle = 0 → orbitAngle = 90 - idx * 72
-        this.orbitAngle = ((90 - idx * 72) % 360 + 360) % 360;
+        // idx * 90 - 90 + orbitAngle = 0 → orbitAngle = 90 - idx * 90
+        this.orbitAngle = ((90 - idx * 90) % 360 + 360) % 360;
       }
       this.lastOrbitTime = 0;
       this.orbitPaused = false;
@@ -682,7 +702,7 @@ export class SwasthyaBharatiPageComponent
     let minDiff = Infinity;
     let activeIdx = 0;
     for (let i = 0; i < this.services.length; i++) {
-      const effectiveAngle = ((i * 72 - 90 + this.orbitAngle) % 360 + 360) % 360;
+      const effectiveAngle = ((i * 90 - 90 + this.orbitAngle) % 360 + 360) % 360;
       // Distance to 0° (top-center) - wraps around correctly
       const diff = Math.min(effectiveAngle, 360 - effectiveAngle);
       if (diff < minDiff) { minDiff = diff; activeIdx = i; }

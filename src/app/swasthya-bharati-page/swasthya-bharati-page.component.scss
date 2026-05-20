@@ -727,8 +727,7 @@
     font-size: clamp(1.05rem, 2.2vw, 1.35rem);
     line-height: 2;
     color: var(--sbp-earth-deep);
-    // text-align: center;
-    text-align: center;
+    text-align: left;
   }
 
   &__translit {
@@ -736,14 +735,14 @@
     font-size: clamp(0.82rem, 1.6vw, 0.95rem);
     line-height: 1.9;
     color: var(--sbp-text-soft);
-    text-align: center;
+    text-align: left;
     font-style: italic;
     letter-spacing: 0.01em;
   }
 
   &__caption {
     margin-top: 1.25rem;
-    text-align: center;
+    text-align: left;
     color: var(--sbp-text-soft);
     font-size: 0.95rem;
     line-height: 1.7;
@@ -760,6 +759,7 @@
     color: var(--sbp-saffron-deep);
     font-style: normal;
     font-weight: 600;
+    text-align: left;
   }
 }
 
@@ -780,7 +780,11 @@
   position: relative;
   padding-block: clamp(4rem, 9vw, 7rem);
 }
-
+.banner-left{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
 .faqs{
   display: flex;
   flex-direction: column;
@@ -791,6 +795,17 @@
 }
 .pt{
   padding-top: 10px;
+}
+
+.heading{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.h1{
+  display: flex;
+  gap: 10px;
 }
 
 .pb{
@@ -1444,7 +1459,7 @@
     position: absolute;
     top: 50%; left: 50%;
     border-radius: 50%;
-    border: 1px dashed rgba(9, 121, 105, 0.35);
+    border: 1px dashed rgba(9, 121, 105, 0.75);
     pointer-events: none;
     transform: translate(-50%, -50%);
 
@@ -1455,12 +1470,12 @@
     &--mid {
       width: 70%; height: 70%;
       border-style: solid;
-      border-color: rgba(232, 179, 57, 0.28);
+      border-color: rgba(232, 179, 57, 0.70);
       animation: sbp-orbit-spin 90s linear infinite reverse;
     }
     &--inner {
       width: 42%; height: 42%;
-      border-color: rgba(60, 179, 161, 0.4);
+      border-color: rgba(60, 179, 161, 0.80);
       border-style: dotted;
       animation: sbp-orbit-spin 45s linear infinite;
     }
@@ -1598,7 +1613,7 @@
     width: clamp(86px, 10vw, 108px);
     height: clamp(86px, 10vw, 108px);
     // Angle = base spacing + live orbit offset written by JS via --orbit-angle
-    --sat-angle: calc(var(--sat-i) * 72deg - 90deg + var(--orbit-angle, 0deg));
+    --sat-angle: calc(var(--sat-i) * 90deg - 90deg + var(--orbit-angle, 0deg));
     transform:
       translate(-50%, -50%)
       rotate(var(--sat-angle))
@@ -1988,7 +2003,7 @@
   &__title {
     font-family: 'Poppins', sans-serif;
     font-size: 1.08rem;
-    font-weight: 600;
+    font-weight: 400 !important;
     color: var(--sbp-teal-deep);
     margin-bottom: 0.5rem;
     line-height: 1.4;
@@ -2120,10 +2135,28 @@
     linear-gradient(180deg, var(--sbp-surface), var(--sbp-cream)) padding-box;
   border: 1px solid var(--sbp-line);
 
+  .sbp-card__icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: var(--sbp-grad-parchment);
+    border: 1.5px solid var(--sbp-line);
+    color: var(--sbp-teal-deep);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 8px rgba(9, 121, 105, 0.10);
+    transition: transform 0.3s var(--sbp-ease);
+    svg { width: 22px; height: 22px; }
+  }
+
   &:hover {
     transform: translateY(-3px);
     border-color: rgba(9, 121, 105, 0.35);
     box-shadow: var(--sbp-shadow-md);
+
+    .sbp-card__icon { transform: rotate(8deg) scale(1.1); }
   }
 }
 
@@ -2178,6 +2211,10 @@
 // ─────────────────────────────────────────────────────────────────────
 .sbp-impact {
   background: var(--sbp-ivory);
+
+  * {
+    text-align: center !important;
+  }
 }
 
 .sbp-stats {

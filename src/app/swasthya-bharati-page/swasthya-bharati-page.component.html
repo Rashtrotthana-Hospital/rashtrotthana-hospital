@@ -34,19 +34,30 @@
     <div class="sbp-container sbp-hero__inner">
       <!-- Left column: copy -->
       <div class="sbp-hero__copy">
-        <p class="sbp-eyebrow" data-reveal>Lifestyle &amp; Wellness Unit</p>
-        <h1 id="sbp-title" class="sbp-hero__title" data-reveal>
-          Swasthya<br /><span class="sbp-hero__title-accent">Bharati</span>
-        </h1>
-        <p class="sbp-hero__sanskrit" lang="sa" data-reveal style="--reveal-delay:0.1s">
-          स्वास्थ्य भारती
-        </p>
-        <p class="sbp-hero__lede" data-reveal style="--reveal-delay:0.15s">
-          &#8220;Swasthya Bharati&#8221; is our hospital&#8217;s unique, drugless lifestyle unit that integrates the heritage
-          wisdom of <strong>Ayurveda</strong> with the strengths of other systems of medicine. Through this integrative
-          approach, it aims to promote holistic health, encourage lifestyle modification, and focus on
-          disease prevention, thereby empowering individuals to lead healthier and more balanced lives.
-        </p>
+        <p class="sbp-eyebrow hero-card" data-reveal>Lifestyle &amp; Wellness Unit</p>
+        <div class="banner-left">
+          <!-- <p class="sbp-hero__sanskrit" lang="sa" data-reveal style="--reveal-delay:0.1s">
+            स्वास्थ्य भारती
+          </p> -->
+          <p class="sbp-shloka__sanskrit" lang="sa">
+            नित्यं हिताहारविहारसेवी समीक्ष्यकारी विषयेष्वसक्तः ।<br />
+            दाता समः सत्यपरः क्षमावान् आप्तोपसेवी च भवत्यरोगः ॥
+          </p>
+          <p class="sbp-shloka__translit">
+            Nityaṃ hitāhāra-vihāra-sevī samīkṣya-kārī viṣayeṣv asaktaḥ |<br />
+            dātā samaḥ satya-paraḥ kṣamāvān āptopasevī ca bhavaty arogah ||
+          </p>
+          <figcaption class="sbp-shloka__caption">
+            <em>
+              A person who always follows a wholesome diet and lifestyle, thinks before acting, is not
+              attached to sense pleasures, is generous, calm, truthful, forgiving, and keeps the company of
+              wise people remains free from disease.
+            </em>
+            <span class="sbp-shloka__source hero-card">— Ashtanga Sangraha · Sutrasthaana · 5.63</span>
+          </figcaption>
+        </div>
+
+
 
         <div class="sbp-hero__cta" data-reveal style="--reveal-delay:0.25s">
           <button type="button" class="sbp-btn sbp-btn--primary" (click)="bookConsultation()">
@@ -73,25 +84,7 @@
 
     <!-- Shloka - placed below the split, full-width container -->
     <div class="sbp-container sbp-hero__shloka-wrap">
-      <figure class="sbp-shloka" data-reveal style="--reveal-delay:0.2s"
-        aria-label="Sanskrit verse - Ashtanga Sangraha Sutrasthaana 5.63">
-        <p class="sbp-shloka__sanskrit hero-card" lang="sa">
-          नित्यं हिताहारविहारसेवी समीक्ष्यकारी विषयेष्वसक्तः ।<br />
-          दाता समः सत्यपरः क्षमावान् आप्तोपसेवी च भवत्यरोगः ॥
-        </p>
-        <p class="sbp-shloka__translit">
-          Nityaṃ hitāhāra-vihāra-sevī samīkṣya-kārī viṣayeṣv asaktaḥ |<br />
-          dātā samaḥ satya-paraḥ kṣamāvān āptopasevī ca bhavaty arogah ||
-        </p>
-        <figcaption class="sbp-shloka__caption pa">
-          <em>
-            A person who always follows a wholesome diet and lifestyle, thinks before acting, is not
-            attached to sense pleasures, is generous, calm, truthful, forgiving, and keeps the company of
-            wise people remains free from disease.
-          </em>
-          <span class="sbp-shloka__source pb">— Ashtanga Sangraha · Sutrasthaana · 5.63</span>
-        </figcaption>
-      </figure>
+
     </div>
 
     <!-- Pranayama waveform at the bottom of the hero -->
@@ -118,11 +111,14 @@
     <div class="sbp-container sbp-intro__inner">
       <div class="sbp-intro__copy">
         <p class="sbp-eyebrow" data-reveal>A Way of Living</p>
-        <h2 id="sbp-intro-h" class="sbp-h" data-reveal>
+        <!-- <h2 id="sbp-intro-h" class="sbp-h" data-reveal>
           Health begins where the day begins.
-        </h2>
+        </h2> -->
+        <h1 id="sbp-title" class="sbp-hero__title h1" data-reveal>
+           Swasthya<span class="sbp-hero__title-accent">Bharati</span>
+        </h1>
 
-        <p data-reveal style="--reveal-delay:0.05s">
+        <p data-reveal style="--reveal-delay:0.05s" class="pt">
           For a society that shares a common territory, culture, laws, traditions, and values to remain truly
           organised and progressive, it must be healthy. Every individual who is the most important element
           of society must become healthy. To achieve this, an individual's way of leading life must be
@@ -137,6 +133,14 @@
           this clearly to people in an easily understandable manner through a detailed study of the lifestyle
           laid down by our ancestors, supported by scientific evidence, is the work plan of
           <strong>Swasthya Bharati</strong>.
+        </p>
+
+        <p class="sbp-hero__lede" data-reveal style="--reveal-delay:0.15s">
+          &#8220;Swasthya Bharati&#8221; is our hospital&#8217;s unique, drugless lifestyle unit that integrates the
+          heritage
+          wisdom of <strong>Ayurveda</strong> with the strengths of other systems of medicine. Through this integrative
+          approach, it aims to promote holistic health, encourage lifestyle modification, and focus on
+          disease prevention, thereby empowering individuals to lead healthier and more balanced lives.
         </p>
       </div>
 
@@ -171,7 +175,7 @@
   <!-- ─────────────────────────────────────────────────────────────────
        NEW: 8 PILLARS OF HEALTHY LIVING
        ───────────────────────────────────────────────────────────────── -->
-  <section class="sbp-pillars" id="sbp-pillars" aria-labelledby="sbp-pillars-h">
+  <!-- <section class="sbp-pillars" id="sbp-pillars" aria-labelledby="sbp-pillars-h">
     <div class="sbp-leaf sbp-leaf--tl" aria-hidden="true">
       <svg viewBox="0 0 80 80">
         <path d="M10 70 C 10 30 40 10 70 10 C 70 50 40 70 10 70 Z" fill="currentColor" opacity="0.18" />
@@ -204,7 +208,7 @@
             <svg viewBox="0 0 64 64">
               @switch (p.glyph) {
               @case ('ahara') {
-              <!-- Bowl of food -->
+              Bowl of food ---
               <path d="M10 32 H 54 A 22 22 0 0 1 10 32 Z" fill="none" stroke="currentColor" stroke-width="2" />
               <path d="M14 32 Q 32 18 50 32" stroke="currentColor" stroke-width="2" fill="none" opacity="0.6" />
               <circle cx="22" cy="22" r="2.5" fill="currentColor" />
@@ -212,7 +216,7 @@
               <circle cx="42" cy="22" r="2.5" fill="currentColor" />
               }
               @case ('vihara') {
-              <!-- Sun & path -->
+              Sun & path ---
               <circle cx="32" cy="22" r="8" fill="none" stroke="currentColor" stroke-width="2" />
               <g stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
                 <line x1="32" y1="6" x2="32" y2="10" />
@@ -225,14 +229,14 @@
               <path d="M8 50 Q 32 42 56 50" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
               }
               @case ('nidra') {
-              <!-- Crescent moon + zzz -->
+              Crescent moon + zzz ---
               <path d="M40 14 A 18 18 0 1 0 50 40 A 14 14 0 0 1 40 14 Z" fill="none" stroke="currentColor"
                 stroke-width="2" />
               <text x="46" y="22" font-family="Poppins" font-size="9" fill="currentColor" font-weight="700">z</text>
               <text x="52" y="16" font-family="Poppins" font-size="6" fill="currentColor" font-weight="700">z</text>
               }
               @case ('vyayama') {
-              <!-- Yoga warrior pose figure -->
+              Yoga warrior pose figure  ---
               <circle cx="32" cy="14" r="4" fill="none" stroke="currentColor" stroke-width="2" />
               <path d="M32 18 L 32 36" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
               <path d="M14 26 L 32 28 L 50 22" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -241,20 +245,20 @@
               <path d="M32 36 L 46 50" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
               }
               @case ('pranayama') {
-              <!-- Breath waveform -->
+              Breath waveform ---
               <path d="M6 32 Q 14 18 22 32 T 38 32 T 54 32 H 58" fill="none" stroke="currentColor" stroke-width="2"
                 stroke-linecap="round" />
               <circle cx="58" cy="32" r="2.5" fill="currentColor" />
               }
               @case ('dhyana') {
-              <!-- Seated meditator -->
+              Seated meditator --
               <circle cx="32" cy="18" r="5" fill="none" stroke="currentColor" stroke-width="2" />
               <path d="M16 50 C 16 38 24 32 32 32 C 40 32 48 38 48 50 Z" fill="none" stroke="currentColor"
                 stroke-width="2" />
               <circle cx="32" cy="42" r="2" fill="currentColor" />
               }
               @case ('vichara') {
-              <!-- Lotus / mind -->
+              Lotus / mind --
               <path d="M32 12 C 38 22 38 30 32 36 C 26 30 26 22 32 12 Z" fill="none" stroke="currentColor"
                 stroke-width="2" />
               <path d="M14 36 C 22 32 30 32 32 36 C 30 40 22 40 14 36 Z" fill="none" stroke="currentColor"
@@ -264,7 +268,7 @@
               <circle cx="32" cy="48" r="2.5" fill="currentColor" />
               }
               @case ('achara') {
-              <!-- Hands joined / namaste -->
+              Hands joined / namaste --
               <path d="M22 50 L 32 18 L 42 50" fill="none" stroke="currentColor" stroke-width="2"
                 stroke-linejoin="round" />
               <path d="M26 50 L 32 26 L 38 50" fill="none" stroke="currentColor" stroke-width="2"
@@ -285,7 +289,7 @@
         }
       </ul>
     </div>
-  </section>
+  </section> -->
 
   <!-- ─────────────────────────────────────────────────────────────────
        DINACHARYA - Cinematic sun/moon timeline
@@ -308,7 +312,8 @@
 
     <div class="sbp-container" style="position:relative;z-index:2">
       <header class="sbp-section-head">
-        <p class="sbp-eyebrow" data-reveal>Services Offered</p>
+        <!-- <p class="sbp-eyebrow" data-reveal>Services Offered</p> -->
+        <p class="sbp-eyebrow" data-reveal>Our wellness Services</p>
         <h2 id="sbp-services-h" class="sbp-h pt" data-reveal>
           A complete map of how we care.
         </h2>
@@ -440,9 +445,9 @@
     <div class="sbp-container sbp-why__inner">
       <div class="sbp-why__copy">
         <p class="sbp-eyebrow" data-reveal>Why Swasthya Bharati</p>
-        <h2 id="sbp-why-h" class="sbp-h" data-reveal>
+        <!-- <h2 id="sbp-why-h" class="sbp-h" data-reveal>
           70–80% of today’s chronic illness traces back to how we live.
-        </h2>
+        </h2> -->
         <p data-reveal style="--reveal-delay:0.1s">
           Modern research consistently shows that nearly 70–80% of today's chronic diseases such as
           diabetes, hypertension, obesity, and mental health disorders, are closely linked to lifestyle
@@ -465,7 +470,57 @@
       <ul class="sbp-why__points">
         @for (p of whyPoints; track p.title; let i = $index) {
         <li class="sbp-card sbp-card--why" data-reveal [style.--reveal-delay]="(i * 0.08) + 's'">
-          <span class="sbp-card__index">{{ '0' + (i + 1) }}</span>
+          <span class="sbp-card__icon" aria-hidden="true">
+            @switch (p.icon) {
+              @case ('integrate') {
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="3"/>
+                  <path d="M12 2v3M12 19v3M4.22 4.22l2.12 2.12M17.66 17.66l2.12 2.12M2 12h3M19 12h3M4.22 19.78l2.12-2.12M17.66 6.34l2.12-2.12"/>
+                </svg>
+              }
+              @case ('person') {
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                  <circle cx="12" cy="7" r="4"/>
+                </svg>
+              }
+              @case ('shield') {
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+              }
+              @case ('workshop') {
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="3" width="18" height="13" rx="2"/>
+                  <path d="M8 21h8M12 17v4"/>
+                </svg>
+              }
+              @case ('education') {
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                </svg>
+              }
+              @case ('community') {
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                  <circle cx="9" cy="7" r="4"/>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
+                </svg>
+              }
+              @case ('training') {
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                </svg>
+              }
+              @case ('leaf') {
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/>
+                  <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+                </svg>
+              }
+            }
+          </span>
           <h3 class="sbp-card__title">{{ p.title }}</h3>
           <p class="sbp-card__body">{{ p.body }}</p>
         </li>
@@ -527,38 +582,13 @@
   <!-- ─────────────────────────────────────────────────────────────────
        IMPACT - animated stats + testimonials
        ───────────────────────────────────────────────────────────────── -->
-  <section class="sbp-impact" id="sbp-impact" aria-labelledby="sbp-impact-h">
-    <div class="sbp-container">
-      <header class="sbp-section-head">
-        <p class="sbp-eyebrow" data-reveal>Outcomes &amp; voices</p>
-        <h2 id="sbp-impact-h" class="sbp-h" data-reveal>
-          Real change, in real lives.
-        </h2>
+  <section class=”sbp-impact” id=”sbp-impact” aria-labelledby=”sbp-impact-h”>
+    <div class=”sbp-container”>
+      <header class=”sbp-section-head sbp-impact__head”>
+        <!-- <h2 id="sbp-benefits-h" class="sbp-h" data-reveal>
+          Success Stories / Outcomes
+        </h2> -->
       </header>
-
-      <ul class="sbp-stats" aria-label="Key statistics">
-        @for (s of stats; track s.label; let i = $index) {
-        <li>
-          <p class="sbp-stats__value">
-            <span class="sbp-stats__num">{{ s.prefix }}{{ statValues()[i] }}{{ s.suffix }}</span>
-          </p>
-          <p class="sbp-stats__label">{{ s.label }}</p>
-        </li>
-        }
-      </ul>
-
-      <ul class="sbp-stories" style="margin-top: 20px;">
-        @for (t of testimonials; track t.name; let i = $index) {
-        <li class="sbp-card sbp-card--story" data-reveal [style.--reveal-delay]="(i * 0.08) + 's'">
-          <span class="sbp-card__quote" aria-hidden="true">“</span>
-          <p class="sbp-card__body">{{ t.quote }}</p>
-          <div class="sbp-card__meta">
-            <strong>{{ t.name }}</strong>
-            <span>{{ t.tag }}</span>
-          </div>
-        </li>
-        }
-      </ul>
     </div>
   </section>
 
@@ -577,19 +607,21 @@
       <ul class="sbp-team__grid">
 
         <!-- ── CARD 1: LIFESTYLE PHYSICIAN ── -->
-        <li class="sbp-doc-card d1" data-reveal [style.--reveal-delay]="'0s'"
-            (mousemove)="onDocCardMove($event)" (mouseleave)="onDocCardLeave($event)">
+        <li class="sbp-doc-card d1" data-reveal [style.--reveal-delay]="'0s'" (mousemove)="onDocCardMove($event)"
+          (mouseleave)="onDocCardLeave($event)">
           <div class="sbp-doc-card__inner">
             <span class="sbp-doc-card__glow"></span>
             <span class="sbp-doc-card__badge">Lifestyle</span>
             <div class="sbp-doc-card__scene">
               <div class="sbp-doc-card__photo-wrap">
-                <img class="sbp-doc-card__photo"
-                     src="assets/swastya-page/dr-sindu.webp"
-                     alt="Dr. Sindu"
-                     onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+                <img class="sbp-doc-card__photo" src="assets/swastya-page/dr-sindu.webp" alt="Dr. Sindu"
+                  onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
                 <div class="sbp-doc-card__photo-placeholder" style="display:none">
-                  <svg viewBox="0 0 64 64" fill="none"><circle cx="32" cy="22" r="12" stroke="currentColor" stroke-width="2"/><path d="M8 56c0-13 11-22 24-22s24 9 24 22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                  <svg viewBox="0 0 64 64" fill="none">
+                    <circle cx="32" cy="22" r="12" stroke="currentColor" stroke-width="2" />
+                    <path d="M8 56c0-13 11-22 24-22s24 9 24 22" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" />
+                  </svg>
                 </div>
               </div>
             </div>
@@ -602,19 +634,21 @@
         </li>
 
         <!-- ── CARD 2: YOGA & LIFESTYLE ── -->
-        <li class="sbp-doc-card d2" data-reveal [style.--reveal-delay]="'0.1s'"
-            (mousemove)="onDocCardMove($event)" (mouseleave)="onDocCardLeave($event)">
+        <li class="sbp-doc-card d2" data-reveal [style.--reveal-delay]="'0.1s'" (mousemove)="onDocCardMove($event)"
+          (mouseleave)="onDocCardLeave($event)">
           <div class="sbp-doc-card__inner">
             <span class="sbp-doc-card__glow"></span>
             <span class="sbp-doc-card__badge">Yoga</span>
             <div class="sbp-doc-card__scene">
               <div class="sbp-doc-card__photo-wrap">
-                <img class="sbp-doc-card__photo"
-                     src="assets/Doc-Inv-Page/Dr-Varsha-P.png"
-                     alt="Dr. Varsha"
-                     onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+                <img class="sbp-doc-card__photo" src="assets/Doc-Inv-Page/Dr-Varsha-P.png" alt="Dr. Varsha"
+                  onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
                 <div class="sbp-doc-card__photo-placeholder" style="display:none">
-                  <svg viewBox="0 0 64 64" fill="none"><circle cx="32" cy="22" r="12" stroke="currentColor" stroke-width="2"/><path d="M8 56c0-13 11-22 24-22s24 9 24 22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                  <svg viewBox="0 0 64 64" fill="none">
+                    <circle cx="32" cy="22" r="12" stroke="currentColor" stroke-width="2" />
+                    <path d="M8 56c0-13 11-22 24-22s24 9 24 22" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" />
+                  </svg>
                 </div>
               </div>
             </div>
@@ -627,19 +661,21 @@
         </li>
 
         <!-- ── CARD 3: AYURVEDA & WELLNESS ── -->
-        <li class="sbp-doc-card d3" data-reveal [style.--reveal-delay]="'0.2s'"
-            (mousemove)="onDocCardMove($event)" (mouseleave)="onDocCardLeave($event)">
+        <li class="sbp-doc-card d3" data-reveal [style.--reveal-delay]="'0.2s'" (mousemove)="onDocCardMove($event)"
+          (mouseleave)="onDocCardLeave($event)">
           <div class="sbp-doc-card__inner">
             <span class="sbp-doc-card__glow"></span>
             <span class="sbp-doc-card__badge">Ayurveda</span>
             <div class="sbp-doc-card__scene">
               <div class="sbp-doc-card__photo-wrap">
-                <img class="sbp-doc-card__photo"
-                     src="assets/swastya-page/dr-rachana.webp"
-                     alt="Dr. Rachana"
-                     onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+                <img class="sbp-doc-card__photo" src="assets/swastya-page/dr-rachana.webp" alt="Dr. Rachana"
+                  onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
                 <div class="sbp-doc-card__photo-placeholder" style="display:none">
-                  <svg viewBox="0 0 64 64" fill="none"><circle cx="32" cy="22" r="12" stroke="currentColor" stroke-width="2"/><path d="M8 56c0-13 11-22 24-22s24 9 24 22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                  <svg viewBox="0 0 64 64" fill="none">
+                    <circle cx="32" cy="22" r="12" stroke="currentColor" stroke-width="2" />
+                    <path d="M8 56c0-13 11-22 24-22s24 9 24 22" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" />
+                  </svg>
                 </div>
               </div>
             </div>
@@ -652,19 +688,21 @@
         </li>
 
         <!-- ── CARD 4: INTEGRATIVE MEDICINE ── -->
-        <li class="sbp-doc-card d4" data-reveal [style.--reveal-delay]="'0.3s'"
-            (mousemove)="onDocCardMove($event)" (mouseleave)="onDocCardLeave($event)">
+        <li class="sbp-doc-card d4" data-reveal [style.--reveal-delay]="'0.3s'" (mousemove)="onDocCardMove($event)"
+          (mouseleave)="onDocCardLeave($event)">
           <div class="sbp-doc-card__inner">
             <span class="sbp-doc-card__glow"></span>
             <span class="sbp-doc-card__badge">Integrative</span>
             <div class="sbp-doc-card__scene">
               <div class="sbp-doc-card__photo-wrap">
-                <img class="sbp-doc-card__photo"
-                     src="assets/Doc-Inv-Page/Dr-Shamantha-S.png"
-                     alt="Dr. Shamantha"
-                     onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+                <img class="sbp-doc-card__photo" src="assets/Doc-Inv-Page/Dr-Shamantha-S.png" alt="Dr. Shamantha"
+                  onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
                 <div class="sbp-doc-card__photo-placeholder" style="display:none">
-                  <svg viewBox="0 0 64 64" fill="none"><circle cx="32" cy="22" r="12" stroke="currentColor" stroke-width="2"/><path d="M8 56c0-13 11-22 24-22s24 9 24 22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                  <svg viewBox="0 0 64 64" fill="none">
+                    <circle cx="32" cy="22" r="12" stroke="currentColor" stroke-width="2" />
+                    <path d="M8 56c0-13 11-22 24-22s24 9 24 22" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" />
+                  </svg>
                 </div>
               </div>
             </div>
@@ -677,19 +715,21 @@
         </li>
 
         <!-- ── CARD 5: PREVENTIVE HEALTH ── -->
-        <li class="sbp-doc-card d5" data-reveal [style.--reveal-delay]="'0.4s'"
-            (mousemove)="onDocCardMove($event)" (mouseleave)="onDocCardLeave($event)">
+        <li class="sbp-doc-card d5" data-reveal [style.--reveal-delay]="'0.4s'" (mousemove)="onDocCardMove($event)"
+          (mouseleave)="onDocCardLeave($event)">
           <div class="sbp-doc-card__inner">
             <span class="sbp-doc-card__glow"></span>
             <span class="sbp-doc-card__badge">Preventive</span>
             <div class="sbp-doc-card__scene">
               <div class="sbp-doc-card__photo-wrap">
-                <img class="sbp-doc-card__photo"
-                     src="assets/swastya-page/dr-ramya.webp"
-                     alt="Dr. Ramya"
-                     onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+                <img class="sbp-doc-card__photo" src="assets/swastya-page/dr-ramya.webp" alt="Dr. Ramya"
+                  onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
                 <div class="sbp-doc-card__photo-placeholder" style="display:none">
-                  <svg viewBox="0 0 64 64" fill="none"><circle cx="32" cy="22" r="12" stroke="currentColor" stroke-width="2"/><path d="M8 56c0-13 11-22 24-22s24 9 24 22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                  <svg viewBox="0 0 64 64" fill="none">
+                    <circle cx="32" cy="22" r="12" stroke="currentColor" stroke-width="2" />
+                    <path d="M8 56c0-13 11-22 24-22s24 9 24 22" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" />
+                  </svg>
                 </div>
               </div>
             </div>
@@ -724,7 +764,7 @@
           <span class="sbp-btn__arrow" aria-hidden="true">→</span>
         </button>
         <a href="mailto:info@rashtrotthanahospital.com?subject=Career%20in%20Swasthya%20Bharati"
-           class="sbp-btn sbp-btn--ghost" data-reveal style="--reveal-delay:0.2s">
+          class="sbp-btn sbp-btn--ghost" data-reveal style="--reveal-delay:0.2s">
           Career in Swasthya Bharati
           <span class="sbp-btn__arrow" aria-hidden="true">→</span>
         </a>
