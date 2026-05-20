@@ -31,9 +31,9 @@
   border-radius: 50%;
   background: radial-gradient(
     ellipse at 50% 48%,
-    rgba(255, 248, 225, 0.62) 0%,
-    rgba(255, 235, 200, 0.40) 32%,
-    rgba(240, 252, 248, 0.22) 65%,
+    rgba(255, 220, 140, 0.82) 0%,
+    rgba(255, 200, 100, 0.65) 32%,
+    rgba(220, 240, 230, 0.42) 65%,
     transparent 100%
   );
 }
@@ -44,8 +44,8 @@
   border-radius: 50%;
   background: radial-gradient(
     ellipse at 50% 42%,
-    rgba(255, 210, 120, 0.22) 0%,
-    rgba(255, 180, 80, 0.10) 50%,
+    rgba(255, 190, 80, 0.60) 0%,
+    rgba(255, 160, 50, 0.35) 50%,
     transparent 100%
   );
   animation: hb-inner-breathe 4s ease-in-out infinite;
@@ -72,24 +72,24 @@
 
   &--1 {
     width: 94%;
-    border: 1.5px solid rgba(218, 170, 50, 0.32);
-    box-shadow: 0 0 18px rgba(218, 170, 50, 0.10) inset;
+    border: 1.5px solid rgba(218, 170, 50, 0.75);
+    box-shadow: 0 0 18px rgba(218, 170, 50, 0.28) inset;
     animation: hb-orbit-rotate 28s linear infinite;
   }
   &--2 {
     width: 76%;
-    border: 1px solid rgba(218, 170, 50, 0.22);
-    box-shadow: 0 0 12px rgba(218, 170, 50, 0.08) inset;
+    border: 1px solid rgba(218, 170, 50, 0.65);
+    box-shadow: 0 0 12px rgba(218, 170, 50, 0.22) inset;
     animation: hb-orbit-rotate 20s linear infinite reverse;
   }
   &--3 {
     width: 58%;
-    border: 1px dashed rgba(218, 170, 50, 0.18);
+    border: 1px dashed rgba(218, 170, 50, 0.60);
     animation: hb-orbit-rotate 14s linear infinite;
   }
   &--4 {
     width: 40%;
-    border: 0.8px solid rgba(255, 200, 80, 0.15);
+    border: 0.8px solid rgba(255, 200, 80, 0.55);
     animation: hb-orbit-rotate 36s linear infinite reverse;
   }
 }
