@@ -266,7 +266,7 @@ export class HealthCheckComponent {
           doctor_name: 'Dr. Sowmya S. Bhat',
           experience: '16+',
           docalt: 'Dr. Sowmya S. Bhat | Best Ophthalmologist in Bangalore | Rashtrotthana Hospital',
-          slug: 'dr-sowmya-bhat-s',
+          slug: 'dr-sowmya-s-bhat',
         },
         {
           doctor_image: '../../assets/dr-limesh-dr-page.png',

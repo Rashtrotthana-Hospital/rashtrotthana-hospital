@@ -72,7 +72,7 @@ export class InsuranceComponent {
     },
     {
       image: '../../assets/Health_Insurance_TPA_of_India_Ltd.png',
-      pdfUrl: '../../assets/Insurance PDF/Health Insurance.pdf',
+      pdfUrl: '../../assets/Insurance PDF/HERITAGE Health Insurance.pdf',
       alt: 'Health Insurance TPA of India Ltd'
     },
     {

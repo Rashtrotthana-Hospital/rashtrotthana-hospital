@@ -61,7 +61,7 @@ export class UrologyComponent {
     },
   ];
 
-  formDoctors = ['Dr. Nagaraj Rao', 'Dr. Madhu S. N', 'Dr. Chaithanya J', 'Dr. Dhruva G. Prakash']
+  formDoctors = ['Dr. Nagaraj Rao', 'Dr. Madhu S. N', 'Dr. Chaithanya J', 'Dr. Dhruva G. Prakash','Dr. Mahesh M']
 
   faqs = [
     {

@@ -155,27 +155,37 @@ export class SwasthyaBharatiPageComponent
   private flipTimeout?: ReturnType<typeof setTimeout>;
 
   readonly CARDS_PER_PAGE = 4;
+  readonly MOBILE_BREAKPOINT = 600;
+
+  /** On mobile we show all cards (no pagination); desktop paginates. */
+  private isMobile(): boolean {
+    return typeof window !== 'undefined' && window.innerWidth <= this.MOBILE_BREAKPOINT;
+  }
 
   get visibleCards() {
     const group = this.services.find(s => s.id === this.activeService());
     if (!group) return [];
+    if (this.isMobile()) return group.items;
     const start = this.cardPage() * this.CARDS_PER_PAGE;
     return group.items.slice(start, start + this.CARDS_PER_PAGE);
   }
 
   getPagedItems(group: ServiceGroup): { title: string; sub?: string; icon?: string }[] {
+    if (this.isMobile()) return group.items;
     if (group.id !== this.activeService()) return group.items.slice(0, this.CARDS_PER_PAGE);
     const start = this.cardPage() * this.CARDS_PER_PAGE;
     return group.items.slice(start, start + this.CARDS_PER_PAGE);
   }
 
   getTotalPages(group: ServiceGroup): number {
+    if (this.isMobile()) return 1;
     return Math.ceil(group.items.length / this.CARDS_PER_PAGE);
   }
 
   get totalPages(): number {
     const group = this.services.find(s => s.id === this.activeService());
     if (!group) return 1;
+    if (this.isMobile()) return 1;
     return Math.ceil(group.items.length / this.CARDS_PER_PAGE);
   }
 
