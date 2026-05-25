@@ -15,10 +15,10 @@ export interface TimelineCard {
 export const VW = 1400;   // wider canvas for better card spacing
 export const VH = 560;
 
-// Arc control points — gentle curve, cards hang below it with good clearance
-const P0 = { x: 40,   y: 200 };   // left end
-const P1 = { x: 700,  y: 20  };   // peak (centre-top)
-const P2 = { x: 1360, y: 200 };   // right end
+// Arc control points — tails extend ~60px beyond first/last card dot
+const P0 = { x: 30,   y: 200 };   // left tail
+const P1 = { x: 667,  y: 20  };   // peak
+const P2 = { x: 1370, y: 200 };   // right tail
 
 export function bezierXY(t: number): { x: number; y: number } {
   const u = 1 - t;
@@ -33,19 +33,44 @@ const CW = 165;    // card width
 const CH = 190;    // card height
 const IR = 22;     // icon circle radius
 
-// ── arcT values — 6 evenly spaced positions across t=0.04..0.96 ───────────────
-// Spread across the arc so cards are visually centred under their dot.
-// t=0 is leftmost, t=1 is rightmost.
-const CARD_T = [0.04, 0.20, 0.37, 0.54, 0.70, 0.87];
+// ── arcT values — evenly spaced by X position across the arc ─────────────────
+// Card centers are placed at equal horizontal gaps.
+// X_START / X_END = card center x of first/last card, each inset by CW/2 + margin
+// so cards don't clip either SVG edge.
+const MARGIN  = 20;                      // gap between card edge and SVG edge
+const X_START = CW / 2 + MARGIN;        // = 102.5 — first card center
+const X_END   = VW - CW / 2 - MARGIN;   // = 1297.5 — last card center
+const N_CARDS = 6;
+
+// Solve t for a target x on the quadratic bezier (P0, P1, P2):
+// x(t) = (1-t)^2*P0.x + 2*(1-t)*t*P1.x + t^2*P2.x
+// Rearrange to: (P0-2P1+P2)*t^2 + 2*(P1-P0)*t + (P0-x) = 0
+function tForX(targetX: number): number {
+  const a = P0.x - 2*P1.x + P2.x;
+  const b = 2*(P1.x - P0.x);
+  const c = P0.x - targetX;
+  if (Math.abs(a) < 1e-9) return -c / b;
+  const disc = b*b - 4*a*c;
+  const sqrtD = Math.sqrt(Math.max(0, disc));
+  const t1 = (-b + sqrtD) / (2*a);
+  const t2 = (-b - sqrtD) / (2*a);
+  if (t1 >= 0 && t1 <= 1) return t1;
+  return t2;
+}
+
+const CARD_T: number[] = Array.from({ length: N_CARDS }, (_, i) => {
+  const x = X_START + (i / (N_CARDS - 1)) * (X_END - X_START);
+  return tForX(x);
+});
 
 // STEM: how far below the arc dot the card top sits
 const STEM = 28;
 
-// Compute card layout: cx follows arc x, card is centred on cx
+// Compute card layout — no clamping needed since X_START/X_END already
+// ensure card centers are safely inside the SVG viewport.
 export function cardLayout(t: number) {
   const pt = bezierXY(t);
-  // Clamp so card never clips the SVG edge
-  const cx = Math.max(CW / 2 + 12, Math.min(VW - CW / 2 - 12, pt.x));
+  const cx = pt.x;
   return {
     cx,
     dotY:  pt.y,
