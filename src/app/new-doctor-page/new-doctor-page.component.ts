@@ -221,15 +221,15 @@ export class NewDoctorPageComponent {
         },
         {
           question: 'What medical services does Col (Dr) Anand Shankar K provide at Rashtrotthana Hospital?',
-          answer: 'At Rashtrotthana Hospital, Col (Dr) Anand Shankar K oversees anesthesia for surgeries, emergency resuscitation, and ICU management, ensuring patient safety before, during, and after procedures. His role is crucial in handling high-risk and critical patients.'
+          answer: 'At Rashtrotthana Hospital, Col (Dr) Anand Shankar K oversees anesthesia for surgeries, emergency resuscitation and ICU management, ensuring patient safety before, during and after procedures. His role is crucial in handling high-risk and critical patients.'
         },
         {
           question: 'When should I consult Col (Dr) Anand Shankar K at Rashtrotthana Hospital, Bangalore?',
-          answer: 'You may need consultation if you are scheduled for surgery requiring anesthesia, have critical medical conditions needing ICU care, or require emergency medical stabilization. Col (Dr) Anand Shankar K plays a key role in decision-making for complex and emergency cases at Rashtrotthana Hospital.'
+          answer: 'You may need consultation if you are scheduled for surgery requiring anesthesia, have critical medical conditions needing ICU care or require emergency medical stabilization. Col (Dr) Anand Shankar K plays a key role in decision-making for complex and emergency cases at Rashtrotthana Hospital.'
         },
         {
           question: 'How should patients prepare for anesthesia under Col (Dr) Anand Shankar K at Rashtrotthana Hospital?',
-          answer: 'Patients are advised to follow fasting instructions, disclose existing medical conditions, allergies, and current medications during the pre-anesthesia evaluation. This helps Col (Dr) Anand Shankar K plan safe and personalized anesthesia care at Rashtrotthana Hospital.'
+          answer: 'Patients are advised to follow fasting instructions, disclose existing medical conditions, allergies and current medications during the pre-anesthesia evaluation. This helps Col (Dr) Anand Shankar K plan safe and personalized anesthesia care at Rashtrotthana Hospital.'
         },
         {
           question: 'Is anesthesia safe for elderly or high-risk patients at Rashtrotthana Hospital?',
@@ -241,7 +241,7 @@ export class NewDoctorPageComponent {
         },
         {
           question: 'How can I book an appointment with Col (Dr) Anand Shankar K at Rashtrotthana Hospital?',
-          answer: `You can book an appointment with Col (Dr) Anand Shankar K by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital’s front desk, or booking online through the official Rashtrotthana Hospital website, depending on your consultation or treatment requirement.`
+          answer: `You can book an appointment with Col (Dr) Anand Shankar K by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital’s front desk or booking online through the official Rashtrotthana Hospital website, depending on your consultation or treatment requirement.`
         },
       ],
       departmentSlug: '/specialities/best-anesthesiology-hospital-in-india',
@@ -268,35 +268,35 @@ export class NewDoctorPageComponent {
       alt: 'Dr. H. N. Shyla | Best Dental Doctor in Bangalore | Rashtrotthana Hospital | RR Nagar Bangalore',
       id: 34,
       title: 'Dr. H. N. Shyla | Dentist & Implantologist in RR Nagar',
-      description: 'Book with Dr. H. N. Shyla, senior dentist in RR Nagar Bangalore with 27+ years of experience in implants, maxillofacial surgery, and cosmetic dentistry.',
+      description: 'Book with Dr. H. N. Shyla, senior dentist in RR Nagar Bangalore with 27+ years of experience in implants, maxillofacial surgery and cosmetic dentistry.',
       faqs: [
         {
           question: 'Who is Dr. H. N. Shyla, Dental and Oral & Maxillofacial Surgery Specialist at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'Dr. H. N. Shyla is a senior Dental Specialist and Oral & Maxillofacial Surgeon at Rashtrotthana Hospital, RR Nagar, Bangalore. She is experienced in diagnosing and treating a wide range of dental, jaw, and facial conditions with a patient-focused approach.'
+          answer: 'Dr. H. N. Shyla is a senior Dental Specialist and Oral & Maxillofacial Surgeon at Rashtrotthana Hospital, RR Nagar, Bangalore. She is experienced in diagnosing and treating a wide range of dental, jaw and facial conditions with a patient-focused approach.'
         },
         {
           question: 'What dental and oral surgery services does Dr. H. N. Shyla provide at Rashtrotthana Hospital?',
-          answer: 'Dr. H. N. Shyla offers comprehensive care including tooth extractions, impacted wisdom tooth removal, oral surgery, jaw-related procedures, and advanced dental treatments at Rashtrotthana Hospital. She manages both routine and complex dental conditions safely.'
+          answer: 'Dr. H. N. Shyla offers comprehensive care including tooth extractions, impacted wisdom tooth removal oral surgery, jaw-related procedures and advanced dental treatments at Rashtrotthana Hospital. She manages both routine and complex dental conditions safely.'
         },
         {
           question: 'When should I consult Dr. H. N. Shyla at Rashtrotthana Hospital, Bangalore?',
-          answer: 'You should consult Dr. H. N. Shyla if you experience persistent tooth pain, gum infections, impacted teeth, jaw pain, facial swelling, or oral lesions. Early consultation helps prevent complications and ensures timely treatment.'
+          answer: 'You should consult Dr. H. N. Shyla if you experience persistent tooth pain, gum infections, impacted teeth, jaw pain, facial swelling or oral lesions. Early consultation helps prevent complications and ensures timely treatment.'
         },
         {
           question: 'How are surgical dental procedures performed by Dr. H. N. Shyla at Rashtrotthana Hospital?',
-          answer: 'Surgical dental procedures are carried out using modern techniques, proper pain control, and strict safety protocols. Dr. H. N. Shyla ensures patient comfort, minimal discomfort, and clear post-procedure care instructions.'
+          answer: 'Surgical dental procedures are carried out using modern techniques, proper pain control and strict safety protocols. Dr. H. N. Shyla ensures patient comfort, minimal discomfort and clear post-procedure care instructions.'
         },
         {
           question: 'Is oral and maxillofacial surgery safe with Dr. H. N. Shyla at Rashtrotthana Hospital, RR Nagar?',
-          answer: 'Yes, oral and maxillofacial surgeries are safely performed under expert supervision with appropriate anesthesia support and hospital infrastructure. Rashtrotthana Hospital provides a controlled clinical environment for safe recovery.'
+          answer: 'Yes oral and maxillofacial surgeries are safely performed under expert supervision with appropriate anesthesia support and hospital infrastructure. Rashtrotthana Hospital provides a controlled clinical environment for safe recovery.'
         },
         {
           question: 'How can I book an appointment with Dr. H. N. Shyla at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: `You can book an appointment with Dr. H. N. Shyla by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
+          answer: `You can book an appointment with Dr. H. N. Shyla by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception or booking online through the official Rashtrotthana Hospital website.`
         },
         {
           question: 'What should I expect during my first consultation with Dr. H. N. Shyla at Rashtrotthana Hospital?',
-          answer: 'During your first visit, Dr. H. N. Shyla will evaluate your dental and oral health, review your medical history, and recommend the most suitable treatment plan. The consultation focuses on clear communication, comfort, and long-term oral health.'
+          answer: 'During your first visit, Dr. H. N. Shyla will evaluate your dental and oral health, review your medical history and recommend the most suitable treatment plan. The consultation focuses on clear communication, comfort and long-term oral health.'
         }
       ],
       departmentSlug: '/specialities/best-dental-hospital-in-bangalore',
@@ -331,23 +331,23 @@ export class NewDoctorPageComponent {
       alt: 'Dr. Latha Venkataram | Top Obstetrics & Gynaecologist in banaglore | Rashtrotthana Hospital | RR Nagar Bangalore',
       id: 14,
       title: 'Dr. Latha Venkataram | High-Risk Pregnancy & Delivery Expert in RR Nagar Bangalore',
-      description: 'Consult Dr. Latha Venkataram, senior gynecologist in RR Nagar with 32+ years of experience in high-risk pregnancy, delivery, and women’s health care.',
+      description: 'Consult Dr. Latha Venkataram, senior gynecologist in RR Nagar with 32+ years of experience in high-risk pregnancy, delivery and women’s health care.',
       faqs: [
         {
           question: 'Who is Dr. Latha Venkataram and what is her specialty at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'Dr. Latha Venkataram is a senior Obstetrician and Gynaecologist at Rashtrotthana Hospital, RR Nagar, Bangalore, with over 32 years of clinical experience in women’s health, pregnancy care, and childbirth. She is widely trusted for her experience-driven and compassionate approach.'
+          answer: 'Dr. Latha Venkataram is a senior Obstetrician and Gynaecologist at Rashtrotthana Hospital, RR Nagar, Bangalore, with over 32 years of clinical experience in women’s health, pregnancy care and childbirth. She is widely trusted for her experience-driven and compassionate approach.'
         },
         {
           question: 'What pregnancy and gynaecology services does Dr. Latha Venkataram offer at Rashtrotthana Hospital?',
-          answer: 'With 32+ years of experience, Dr. Latha Venkataram provides antenatal care, normal delivery care, C-section planning, high-risk pregnancy management, and gynaecological consultations for women across different age groups.'
+          answer: 'With 32+ years of experience, Dr. Latha Venkataram provides antenatal care, normal delivery care, C-section planning, high-risk pregnancy management and gynaecological consultations for women across different age groups.'
         },
         {
           question: 'When should I consult Dr. Latha Venkataram for pregnancy-related concerns in Bangalore?',
-          answer: 'You should consult Dr. Latha Venkataram if you are planning a pregnancy, newly pregnant, or facing issues such as gestational diabetes, high blood pressure, abnormal scans, or previous pregnancy complications. Early consultation allows timely intervention and safer outcomes.'
+          answer: 'You should consult Dr. Latha Venkataram if you are planning a pregnancy, newly pregnant or facing issues such as gestational diabetes, high blood pressure, abnormal scans or previous pregnancy complications. Early consultation allows timely intervention and safer outcomes.'
         },
         {
           question: 'Does Dr. Latha Venkataram manage high-risk pregnancies at Rashtrotthana Hospital, RR Nagar?',
-          answer: 'Dr. Latha Venkataram has over three decades of experience managing high-risk pregnancies, including cases involving diabetes, hypertension, thyroid disorders, advanced maternal age, and previous C-sections, with close monitoring throughout pregnancy.'
+          answer: 'Dr. Latha Venkataram has over three decades of experience managing high-risk pregnancies, including cases involving diabetes, hypertension, thyroid disorders, advanced maternal age and previous C-sections, with close monitoring throughout pregnancy.'
         },
         {
           question: 'What delivery options are available under Dr. Latha Venkataram’s care at Rashtrotthana Hospital?',
@@ -355,11 +355,11 @@ export class NewDoctorPageComponent {
         },
         {
           question: 'What tests and preparations are included in antenatal care with Dr. Latha Venkataram?',
-          answer: 'Antenatal care includes regular check-ups, ultrasound scans, blood tests, blood pressure monitoring, and guidance on nutrition and lifestyle, structured around protocols refined through Dr. Latha Venkataram’s 32+ years of obstetric practice.'
+          answer: 'Antenatal care includes regular check-ups, ultrasound scans, blood tests, blood pressure monitoring and guidance on nutrition and lifestyle, structured around protocols refined through Dr. Latha Venkataram’s 32+ years of obstetric practice.'
         },
         {
           question: 'How can I book an appointment with Dr. Latha Venkataram at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: `You can book an appointment with Dr. Latha Venkataram by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
+          answer: `You can book an appointment with Dr. Latha Venkataram by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception or booking online through the official Rashtrotthana Hospital website.`
         }
       ],
       departmentSlug: '/specialities/best-obstetrics-and-gynecologist-hospital-in-bangalore',
@@ -386,7 +386,7 @@ export class NewDoctorPageComponent {
       date: 'Friday',
       alt: 'Dr. Shekar Patil | Best Medical Oncologist Doctor in Bangalore | Rashtrotthana Hospital | RR Nagar Bangalore',
       title: 'Dr. Shekar Patil | Medical Oncologist in RR Nagar Bangalore',
-      description: 'Consult Dr. Shekar Patil, senior medical oncologist in RR Nagar with 35+ years of experience in treating adult cancers, precision oncology, and immunotherapy.',
+      description: 'Consult Dr. Shekar Patil, senior medical oncologist in RR Nagar with 35+ years of experience in treating adult cancers, precision oncology and immunotherapy.',
       faqs: [
         {
           question: 'Who is Dr. Shekar Patil and what is his specialty at Rashtrotthana Hospital, RR Nagar, Bangalore?',
@@ -394,27 +394,27 @@ export class NewDoctorPageComponent {
         },
         {
           question: 'What types of cancer does Dr. Shekar Patil treat at Rashtrotthana Hospital?',
-          answer: 'With 35+ years of oncology experience, Dr. Shekar Patil treats a wide range of cancers, including breast cancer, ovarian cancer, lung cancer, gastrointestinal cancers, and blood cancers such as leukemia and lymphoma, using evidence-based medical oncology treatments.'
+          answer: 'With 35+ years of oncology experience, Dr. Shekar Patil treats a wide range of cancers, including breast cancer, ovarian cancer, lung cancer, gastrointestinal cancers and blood cancers such as leukemia and lymphoma, using evidence-based medical oncology treatments.'
         },
         {
           question: 'When should I consult Dr. Shekar Patil for cancer symptoms or diagnosis?',
-          answer: 'You should consult Dr. Shekar Patil if you notice persistent lumps, unexplained weight loss, prolonged pain, abnormal bleeding, fatigue, or changes in bowel or bladder habits. Early consultation with an experienced medical oncologist can help in timely diagnosis and better treatment outcomes.'
+          answer: 'You should consult Dr. Shekar Patil if you notice persistent lumps, unexplained weight loss, prolonged pain, abnormal bleeding, fatigue or changes in bowel or bladder habits. Early consultation with an experienced medical oncologist can help in timely diagnosis and better treatment outcomes.'
         },
         {
           question: 'What cancer treatments are offered by Dr. Shekar Patil at Rashtrotthana Hospital, Bangalore?',
-          answer: 'Dr. Shekar Patil provides advanced cancer treatments including chemotherapy, immunotherapy, targeted therapy, and hormonal therapy, based on the type and stage of cancer. Treatment plans are individualized to balance effectiveness and quality of life.'
+          answer: 'Dr. Shekar Patil provides advanced cancer treatments including chemotherapy, immunotherapy, targeted therapy and hormonal therapy, based on the type and stage of cancer. Treatment plans are individualized to balance effectiveness and quality of life.'
         },
         {
           question: 'How does Dr. Shekar Patil support patients undergoing chemotherapy at Rashtrotthana Hospital?',
-          answer: 'Patients undergoing chemotherapy receive close monitoring, side-effect management, nutritional guidance, and supportive care, backed by Dr. Shekar Patil’s 35+ years of clinical experience in managing complex oncology cases.'
+          answer: 'Patients undergoing chemotherapy receive close monitoring, side-effect management, nutritional guidance and supportive care, backed by Dr. Shekar Patil’s 35+ years of clinical experience in managing complex oncology cases.'
         },
         {
           question: 'What should patients expect during their first oncology consultation with Dr. Shekar Patil?',
-          answer: 'During the first consultation, Dr. Shekar Patil reviews medical reports, confirms diagnosis and staging, explains treatment options clearly, and addresses patient concerns to help them make informed decisions about cancer care.'
+          answer: 'During the first consultation, Dr. Shekar Patil reviews medical reports, confirms diagnosis and staging, explains treatment options clearly and addresses patient concerns to help them make informed decisions about cancer care.'
         },
         {
           question: 'How can I book an appointment with Dr. Shekar Patil at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: `You can book an appointment with Dr. Shekar Patil by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
+          answer: `You can book an appointment with Dr. Shekar Patil by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception or booking online through the official Rashtrotthana Hospital website.`
         }
       ],
       departmentSlug: '/specialities/best-oncology-hospital-in-bangalore',
@@ -450,14 +450,14 @@ export class NewDoctorPageComponent {
       date: 'Friday',
       alt: 'Dr. Pramod S. Chinder | Best Orthopaedic Oncosurgeon in Bangalore | Rashtrotthana Hospital | RR Nagar Bangalore',
       title: 'Dr. Pramod S. Chinder | Bone Cancer Surgeon in RR Nagar',
-      description: 'Consult Dr. Pramod Chinder, orthopedic oncosurgeon in RR Nagar with 20+ years of expertise in bone tumor surgery, limb salvage, and complex reconstructions.',
+      description: 'Consult Dr. Pramod Chinder orthopedic oncosurgeon in RR Nagar with 20+ years of expertise in bone tumor surgery, limb salvage and complex reconstructions.',
       faqs: [
         {
           question: 'Who is Dr. Pramod S. Chinder and what is his expertise at Rashtrotthana Hospital, RR Nagar, Bangalore?',
           answer: 'Dr. Pramod S. Chinder is a highly specialised Orthopaedic Onco Surgeon at Rashtrotthana Hospital, RR Nagar, Bangalore, with extensive experience in treating complex bone and soft-tissue tumours. He is known for limb-preserving surgeries using advanced reconstruction and precision technologies.'
         },
         {
-          question: 'What is limb salvage surgery with biological reconstruction, and does Dr. Pramod S. Chinder perform it at Rashtrotthana Hospital?',
+          question: 'What is limb salvage surgery with biological reconstruction and does Dr. Pramod S. Chinder perform it at Rashtrotthana Hospital?',
           answer: 'Limb salvage surgery aims to remove bone tumours while preserving the limb instead of amputation. Dr. Pramod S. Chinder specialises in biological reconstruction techniques, including bone grafts and advanced fixation, helping patients retain function and mobility.'
         },
         {
@@ -466,19 +466,19 @@ export class NewDoctorPageComponent {
         },
         {
           question: 'Does Dr. Pramod S. Chinder use advanced reconstruction techniques like allografts and microsurgery?',
-          answer: 'Yes, Dr. Pramod S. Chinder performs microsurgical reconstruction and Fresh Frozen Allograft procedures to restore bone structure after tumour removal. These techniques support better stability, healing, and long-term limb function.'
+          answer: 'Yes, Dr. Pramod S. Chinder performs microsurgical reconstruction and Fresh Frozen Allograft procedures to restore bone structure after tumour removal. These techniques support better stability, healing and long-term limb function.'
         },
         {
           question: 'What types of complex bone tumours does Dr. Pramod S. Chinder treat at Rashtrotthana Hospital?',
-          answer: 'He treats complex conditions such as chondrosarcoma, osteosarcoma, Ewing’s sarcoma, giant cell tumours, and pelvic bone tumours, including cases requiring extensive reconstruction and joint preservation.'
+          answer: 'He treats complex conditions such as chondrosarcoma, osteosarcoma, Ewing’s sarcoma, giant cell tumours and pelvic bone tumours, including cases requiring extensive reconstruction and joint preservation.'
         },
         {
           question: 'Are targeted therapies and advanced technology used in tumour management by Dr. Pramod S. Chinder?',
-          answer: 'Yes, Dr. Chinder integrates molecular and targeted agents like Denosumab for giant cell tumours, along with 3D printing navigation, robotic pelvic surgery (Da Vinci), and Virtual Reality-assisted physiotherapy to improve surgical accuracy and rehabilitation outcomes.'
+          answer: 'Yes, Dr. Chinder integrates molecular and targeted agents like Denosumab for giant cell tumours, along with 3D printing navigation, robotic pelvic surgery (Da Vinci) and Virtual Reality-assisted physiotherapy to improve surgical accuracy and rehabilitation outcomes.'
         },
         {
           question: 'How can I book a consultation with Dr. Pramod S. Chinder at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: `You can book an appointment with Dr. Pramod S. Chinder by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
+          answer: `You can book an appointment with Dr. Pramod S. Chinder by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception or booking online through the official Rashtrotthana Hospital website.`
         }
       ],
       departmentSlug: '/specialities/best-oncology-hospital-in-bangalore',
@@ -506,7 +506,7 @@ export class NewDoctorPageComponent {
       alt: 'Dr. Nagaraj Rao | Best Urologist in Bangalore | Rashtrotthana Hospital | RR Nagar Bangalore',
       id: 18,
       title: 'Dr. Nagaraj Rao | Senior Urologist in RR Nagar Bangalore',
-      description: 'Consult Dr. Nagaraj Rao, urologist in RR Nagar with 26+ years of expertise in endourology, stone disease, uro-oncology, and complex genito-urinary care.',
+      description: 'Consult Dr. Nagaraj Rao, urologist in RR Nagar with 26+ years of expertise in endourology, stone disease, uro-oncology and complex genito-urinary care.',
       faqs: [
         {
           question: 'Who is Dr. Nagaraj Rao and what is his specialty at Rashtrotthana Hospital, RR Nagar, Bangalore?',
@@ -514,27 +514,27 @@ export class NewDoctorPageComponent {
         },
         {
           question: 'What urological conditions does Dr. Nagaraj Rao treat at Rashtrotthana Hospital?',
-          answer: 'Dr. Nagaraj Rao treats conditions such as kidney stones, urinary tract obstruction, prostate problems, urological cancers, and reconstructive urinary issues. His approach combines minimally invasive techniques with long-term functional outcomes.'
+          answer: 'Dr. Nagaraj Rao treats conditions such as kidney stones, urinary tract obstruction, prostate problems, urological cancers and reconstructive urinary issues. His approach combines minimally invasive techniques with long-term functional outcomes.'
         },
         {
           question: 'What is EndoUrology and how does Dr. Nagaraj Rao use it in treatment?',
-          answer: 'EndoUrology involves minimally invasive procedures performed through natural urinary pathways to treat stones and blockages. Dr. Nagaraj Rao uses EndoUrology techniques to reduce pain, hospital stay, and recovery time for patients at Rashtrotthana Hospital.'
+          answer: 'EndoUrology involves minimally invasive procedures performed through natural urinary pathways to treat stones and blockages. Dr. Nagaraj Rao uses EndoUrology techniques to reduce pain, hospital stay and recovery time for patients at Rashtrotthana Hospital.'
         },
         {
           question: 'Does Dr. Nagaraj Rao treat kidney stone disease at Rashtrotthana Hospital, Bangalore?',
-          answer: 'Yes, Dr. Nagaraj Rao has significant experience in managing kidney, ureter and bladder stones using modern techniques such as endoscopic stone removal. Treatment is selected based on stone size, location, and patient comfort.'
+          answer: 'Yes, Dr. Nagaraj Rao has significant experience in managing kidney, ureter and bladder stones using modern techniques such as endoscopic stone removal. Treatment is selected based on stone size, location and patient comfort.'
         },
         {
           question: 'What urological cancers are managed by Dr. Nagaraj Rao at Rashtrotthana Hospital?',
-          answer: 'Dr. Nagaraj Rao provides expert care for urological cancers, including prostate, bladder, kidney, and ureteric cancers. His uro-oncology care focuses on early diagnosis, precise treatment, and preserving urinary function wherever possible.'
+          answer: 'Dr. Nagaraj Rao provides expert care for urological cancers, including prostate, bladder, kidney and ureteric cancers. His uro-oncology care focuses on early diagnosis, precise treatment and preserving urinary function wherever possible.'
         },
         {
           question: 'What is genito-urinary reconstruction and when is it required?',
-          answer: 'Genito-urinary reconstruction is performed to restore normal urinary function after injury, obstruction, infection, or cancer treatment. Dr. Nagaraj Rao performs reconstructive procedures to improve quality of life and long-term urinary control.'
+          answer: 'Genito-urinary reconstruction is performed to restore normal urinary function after injury, obstruction, infection or cancer treatment. Dr. Nagaraj Rao performs reconstructive procedures to improve quality of life and long-term urinary control.'
         },
         {
           question: 'How can I book an appointment with Dr. Nagaraj Rao at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: `You can book an appointment with Dr. Nagaraj Rao by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
+          answer: `You can book an appointment with Dr. Nagaraj Rao by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception or booking online through the official Rashtrotthana Hospital website.`
         }
       ],
       departmentSlug: '/specialities/best-urology-hospital-in-bangalore',
@@ -566,31 +566,31 @@ export class NewDoctorPageComponent {
       faqs: [
         {
           question: 'Who is Dr. H. M. Krishnamurthy and what is his specialty at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'Dr. H. M. Krishnamurthy is a senior Physician and Internal Medicine Specialist at Rashtrotthana Hospital, RR Nagar, Bangalore, with decades of experience in managing complex adult medical conditions. He is widely consulted for chronic diseases, metabolic disorders, and geriatric care.'
+          answer: 'Dr. H. M. Krishnamurthy is a senior Physician and Internal Medicine Specialist at Rashtrotthana Hospital, RR Nagar, Bangalore, with decades of experience in managing complex adult medical conditions. He is widely consulted for chronic diseases, metabolic disorders and geriatric care.'
         },
         {
           question: 'What medical conditions does Dr. H. M. Krishnamurthy treat at Rashtrotthana Hospital?',
-          answer: 'Dr. H. M. Krishnamurthy treats a wide range of conditions including diabetes, thyroid disorders, metabolic diseases, infections, respiratory illnesses, kidney-related issues, and clinical cardiology conditions. His approach focuses on long-term disease control and overall patient wellbeing.'
+          answer: 'Dr. H. M. Krishnamurthy treats a wide range of conditions including diabetes, thyroid disorders, metabolic diseases, infections, respiratory illnesses, kidney-related issues and clinical cardiology conditions. His approach focuses on long-term disease control and overall patient wellbeing.'
         },
         {
           question: 'Can I consult Dr. H. M. Krishnamurthy for diabetes and thyroid problems in Bangalore?',
-          answer: 'Yes, Dr. H. M. Krishnamurthy has extensive experience in managing diabetes, thyroid imbalance, and other hormonal and metabolic disorders. Treatment includes medication optimisation, lifestyle guidance, and regular monitoring to prevent complications.'
+          answer: 'Yes, Dr. H. M. Krishnamurthy has extensive experience in managing diabetes, thyroid imbalance and other hormonal and metabolic disorders. Treatment includes medication optimisation, lifestyle guidance and regular monitoring to prevent complications.'
         },
         {
           question: 'Does Dr. H. M. Krishnamurthy treat elderly patients and age-related health problems?',
-          answer: 'Yes, he specialises in geriatric care, managing multiple chronic conditions commonly seen in older adults such as diabetes, heart disease, kidney issues, and infections. His care focuses on improving quality of life while minimizing medication-related risks.'
+          answer: 'Yes, he specialises in geriatric care, managing multiple chronic conditions commonly seen in older adults such as diabetes, heart disease, kidney issues and infections. His care focuses on improving quality of life while minimizing medication-related risks.'
         },
         {
           question: 'What infectious diseases are treated by Dr. H. M. Krishnamurthy at Rashtrotthana Hospital?',
-          answer: 'Dr. H. M. Krishnamurthy treats common and complex infectious diseases, including prolonged fever, respiratory infections, urinary infections, and systemic infections, with accurate diagnosis and evidence-based treatment.'
+          answer: 'Dr. H. M. Krishnamurthy treats common and complex infectious diseases, including prolonged fever, respiratory infections, urinary infections and systemic infections, with accurate diagnosis and evidence-based treatment.'
         },
         {
           question: 'Can Dr. H. M. Krishnamurthy help with chronic respiratory and heart-related conditions?',
-          answer: 'Yes, he manages non-interventional respiratory diseases such as asthma, COPD, and chronic cough, along with clinical cardiology conditions like hypertension and heart-related risk factors, ensuring coordinated medical care without invasive procedures.'
+          answer: 'Yes, he manages non-interventional respiratory diseases such as asthma, COPD and chronic cough, along with clinical cardiology conditions like hypertension and heart-related risk factors, ensuring coordinated medical care without invasive procedures.'
         },
         {
           question: 'How can I book an appointment with Dr. H. M. Krishnamurthy at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: `You can book an appointment with Dr. H. M. Krishnamurthy by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
+          answer: `You can book an appointment with Dr. H. M. Krishnamurthy by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception or booking online through the official Rashtrotthana Hospital website.`
         }
       ],
       departmentSlug: '/specialities/internal-medicine-hospital-in-bangalore',
@@ -618,7 +618,7 @@ export class NewDoctorPageComponent {
     //   alt: 'Dr. Rajeev Vijayakumar | Best Medical Oncologist in Bangalore | Rashtrotthana Hospital | RR Nagar Bangalore',
     //   id: 53,
     //   title:'Dr. Rajeev Vijayakumar | Medical Oncologist in RR Nagar Bangalore',
-    //   description:'Book with Dr. Rajeev Vijayakumar, oncologist in RR Nagar with 20+ years of experience in medical oncology, hemato-oncology, and bone marrow transplant care.'
+    //   description:'Book with Dr. Rajeev Vijayakumar, oncologist in RR Nagar with 20+ years of experience in medical oncology, hemato-oncology and bone marrow transplant care.'
     // },
     // {
     //   name: 'Dr. Shashidhar',
@@ -633,7 +633,7 @@ export class NewDoctorPageComponent {
     //   areasOfExpertise: ['Intensive Care', 'Emergency Care', 'Anesthesiology'],
     //   alt: 'Dr. Shashidhar | Best Anesthesiologist in Bangalore | Rashtrotthana Hospital | RR Nagar Bangalore',
     //   title:'Dr. Shashidhar | Anesthesiologist & ICU Care in RR Nagar',
-    //   description:'Consult Dr. Shashidhar, anesthesiologist in RR Nagar with 20+ years’ experience in intensive care, emergency management, and safe anesthesia procedures.'
+    //   description:'Consult Dr. Shashidhar, anesthesiologist in RR Nagar with 20+ years’ experience in intensive care, emergency management and safe anesthesia procedures.'
     // },
 
     {
@@ -651,7 +651,7 @@ export class NewDoctorPageComponent {
       alt: 'Dr. Mahesh Kulkarni | Best Ortho Doctor in Bangalore | Rashtrotthana Hospital | RR Nagar Bangalore',
       id: 7,
       title: 'Dr. Mahesh Kulkarni | Orthopedic Surgeon in RR Nagar Bangalore',
-      description: 'Consult Dr. Mahesh Kulkarni, orthopedic surgeon in RR Nagar with 15+ years’ experience in joint preservation, spine surgery, trauma, and sports injuries.',
+      description: 'Consult Dr. Mahesh Kulkarni orthopedic surgeon in RR Nagar with 15+ years’ experience in joint preservation, spine surgery, trauma and sports injuries.',
       faqs: [
         {
           question: 'Who is Dr. Mahesh Kulkarni and what is his specialty at Rashtrotthana Hospital, RR Nagar, Bangalore?',
@@ -659,15 +659,15 @@ export class NewDoctorPageComponent {
         },
         {
           question: 'What orthopaedic conditions does Dr. Mahesh Kulkarni treat at Rashtrotthana Hospital?',
-          answer: 'Dr. Mahesh Kulkarni treats conditions such as joint degeneration, limb deformities, complex fractures, sports injuries, and spine-related problems. His treatment approach emphasizes function preservation and long-term mobility.'
+          answer: 'Dr. Mahesh Kulkarni treats conditions such as joint degeneration, limb deformities, complex fractures, sports injuries and spine-related problems. His treatment approach emphasizes function preservation and long-term mobility.'
         },
         {
           question: 'What is joint preservation treatment and when should I consult Dr. Mahesh Kulkarni?',
-          answer: 'Joint preservation aims to delay or avoid joint replacement surgery by correcting alignment, cartilage damage, or early arthritis. Dr. Mahesh Kulkarni recommends joint preservation techniques for patients with joint pain who are young or physically active.'
+          answer: 'Joint preservation aims to delay or avoid joint replacement surgery by correcting alignment, cartilage damage or early arthritis. Dr. Mahesh Kulkarni recommends joint preservation techniques for patients with joint pain who are young or physically active.'
         },
         {
           question: 'Does Dr. Mahesh Kulkarni manage limb preservation and deformity correction surgeries?',
-          answer: 'Yes, Dr. Mahesh Kulkarni has significant experience in limb preservation and deformity correction, helping patients regain alignment, stability, and function after injury, infection, or congenital deformities. These procedures aim to restore movement while maintaining limb integrity.'
+          answer: 'Yes, Dr. Mahesh Kulkarni has significant experience in limb preservation and deformity correction, helping patients regain alignment, stability and function after injury, infection or congenital deformities. These procedures aim to restore movement while maintaining limb integrity.'
         },
         {
           question: 'Are pelvic and acetabular fractures treated by Dr. Mahesh Kulkarni at Rashtrotthana Hospital?',
@@ -675,11 +675,11 @@ export class NewDoctorPageComponent {
         },
         {
           question: 'Can I consult Dr. Mahesh Kulkarni for sports injuries and spine problems in Bangalore?',
-          answer: 'Dr. Mahesh Kulkarni treats sports-related injuries such as ligament tears and overuse injuries, as well as spine affections including back pain and degenerative spine conditions. Care focuses on accurate diagnosis, rehabilitation, and prevention of recurrence.'
+          answer: 'Dr. Mahesh Kulkarni treats sports-related injuries such as ligament tears and overuse injuries, as well as spine affections including back pain and degenerative spine conditions. Care focuses on accurate diagnosis, rehabilitation and prevention of recurrence.'
         },
         {
           question: 'How can I book an appointment with Dr. Mahesh Kulkarni at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: `You can book an appointment with Dr. Mahesh Kulkarni by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
+          answer: `You can book an appointment with Dr. Mahesh Kulkarni by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception or booking online through the official Rashtrotthana Hospital website.`
         }
       ],
       departmentSlug: '/specialities/best-orthopaedics-hospital-in-bangalore',
@@ -708,35 +708,35 @@ export class NewDoctorPageComponent {
       alt: 'Dr. Geethanjali K. G | Best Dental Surgery Doctor in Bangalore | Rashtrotthana Hospital | RR Nagar Bangalore',
       id: 35,
       title: 'Dr. Geethanjali K. G | Dentist & Endodontist in RR Nagar Bangalore',
-      description: 'Book with Dr. Geethanjali K. G, dentist in RR Nagar with 20+ years’ experience in endodontics, general dentistry, cosmetic procedures, and smile correction.',
+      description: 'Book with Dr. Geethanjali K. G, dentist in RR Nagar with 20+ years’ experience in endodontics, general dentistry, cosmetic procedures and smile correction.',
       faqs: [
         {
           question: 'Who is Dr. Geethanjali K. G and what is her dental specialty at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'Dr. Geethanjali K. G is an experienced Dental Specialist at Rashtrotthana Hospital, RR Nagar, Bangalore, with expertise in general dentistry, endodontics, and cosmetic dentistry. She focuses on preserving natural teeth while improving oral health and smile aesthetics.'
+          answer: 'Dr. Geethanjali K. G is an experienced Dental Specialist at Rashtrotthana Hospital, RR Nagar, Bangalore, with expertise in general dentistry, endodontics and cosmetic dentistry. She focuses on preserving natural teeth while improving oral health and smile aesthetics.'
         },
         {
           question: 'What general dental treatments does Dr. Geethanjali K. G provide at Rashtrotthana Hospital?',
-          answer: 'Dr. Geethanjali K. G offers comprehensive general dentistry services, including dental check-ups, fillings, scaling, gum care, and preventive dental treatments. These services help maintain long-term oral hygiene and prevent future dental problems.'
+          answer: 'Dr. Geethanjali K. G offers comprehensive general dentistry services, including dental check-ups, fillings, scaling, gum care and preventive dental treatments. These services help maintain long-term oral hygiene and prevent future dental problems.'
         },
         {
           question: 'Can Dr. Geethanjali K. G treat tooth pain and infections with root canal treatment?',
-          answer: 'Yes, Dr. Geethanjali K. G specialises in endodontic treatments, including root canal therapy for infected or severely decayed teeth. Root canal treatment helps relieve pain, remove infection, and save the natural tooth.'
+          answer: 'Yes, Dr. Geethanjali K. G specialises in endodontic treatments, including root canal therapy for infected or severely decayed teeth. Root canal treatment helps relieve pain, remove infection and save the natural tooth.'
         },
         {
           question: 'Is cosmetic dentistry available with Dr. Geethanjali K. G at Rashtrotthana Hospital, Bangalore?',
-          answer: 'Yes, Dr. Geethanjali K. G provides cosmetic dentistry treatments such as teeth whitening, smile correction, and aesthetic restorations. These treatments are designed to improve the appearance of teeth while maintaining proper dental function.'
+          answer: 'Yes, Dr. Geethanjali K. G provides cosmetic dentistry treatments such as teeth whitening, smile correction and aesthetic restorations. These treatments are designed to improve the appearance of teeth while maintaining proper dental function.'
         },
         {
           question: 'When should I consult Dr. Geethanjali K. G for dental problems?',
-          answer: 'You should consult Dr. Geethanjali K. G if you experience tooth pain, sensitivity, bleeding gums, broken or discoloured teeth, or cosmetic concerns about your smile. Early dental consultation helps prevent complications and more extensive treatment later.'
+          answer: 'You should consult Dr. Geethanjali K. G if you experience tooth pain, sensitivity, bleeding gums, broken or discoloured teeth or cosmetic concerns about your smile. Early dental consultation helps prevent complications and more extensive treatment later.'
         },
         {
           question: 'What is the recovery like after dental procedures with Dr. Geethanjali K. G?',
-          answer: 'Most dental procedures involve minimal downtime, and patients can usually return to daily activities quickly. Dr. Geethanjali K. G provides clear post-treatment care instructions to ensure comfort and proper healing.'
+          answer: 'Most dental procedures involve minimal downtime and patients can usually return to daily activities quickly. Dr. Geethanjali K. G provides clear post-treatment care instructions to ensure comfort and proper healing.'
         },
         {
           question: 'How can I book an appointment with Dr. Geethanjali K. G at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: `You can book an appointment with Dr. Geethanjali K. G by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
+          answer: `You can book an appointment with Dr. Geethanjali K. G by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception or booking online through the official Rashtrotthana Hospital website.`
         }
       ],
       departmentSlug: '/specialities/best-dental-hospital-in-bangalore',
@@ -764,7 +764,7 @@ export class NewDoctorPageComponent {
       alt: 'Dr. Santhosh S | Best Nephrologist in Bangalore | Rashtrotthana Hospital | RR Nagar Bangalore',
       id: 20,
       title: 'Dr. Santhosh S | Nephrologist & Kidney Specialist in RR Nagar',
-      description: 'Consult Dr. Santhosh S, nephrologist in RR Nagar with 14+ years’ experience in kidney transplantation, dialysis, diabetic kidney disease, and hypertension care.',
+      description: 'Consult Dr. Santhosh S, nephrologist in RR Nagar with 14+ years’ experience in kidney transplantation, dialysis, diabetic kidney disease and hypertension care.',
       expertiseIcons: [
         'assets/list.png',
         'assets/list.png',
@@ -789,23 +789,23 @@ export class NewDoctorPageComponent {
       alt: 'Dr. Sowmya S. Bhat | Best Ophthalmologist in Bangalore | Rashtrotthana Hospital | RR Nagar Bangalore',
       id: 36,
       title: 'Dr. Sowmya S. Bhat | Cataract & LASIK Eye Surgeon in RR Nagar',
-      description: 'Consult Dr. Sowmya S. Bhat, eye specialist in RR Nagar with 16+ years’ experience in cataract surgery, LASIK, SMILE, and comprehensive ophthalmic care.',
+      description: 'Consult Dr. Sowmya S. Bhat, eye specialist in RR Nagar with 16+ years’ experience in cataract surgery, LASIK, SMILE and comprehensive ophthalmic care.',
       faqs: [
         {
           question: 'Who is Dr. Sowmya S. Bhat and what is her specialty at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'Dr. Sowmya S. Bhat is an experienced Ophthalmologist (Eye Specialist) at Rashtrotthana Hospital, RR Nagar, Bangalore, with expertise in cataract surgery, refractive vision correction, and general eye care. She is known for combining advanced surgical techniques with patient-centric care.'
+          answer: 'Dr. Sowmya S. Bhat is an experienced Ophthalmologist (Eye Specialist) at Rashtrotthana Hospital, RR Nagar, Bangalore, with expertise in cataract surgery, refractive vision correction and general eye care. She is known for combining advanced surgical techniques with patient-centric care.'
         },
         {
           question: 'What types of cataract surgery does Dr. Sowmya S. Bhat perform at Rashtrotthana Hospital?',
-          answer: 'Dr. Sowmya S. Bhat performs cataract surgery with IOL implantation, including MSICS, Phacoemulsification, and Advanced MICS. The choice of technique depends on eye condition, cataract density, and visual requirements, ensuring safe surgery and faster recovery.'
+          answer: 'Dr. Sowmya S. Bhat performs cataract surgery with IOL implantation, including MSICS, Phacoemulsification and Advanced MICS. The choice of technique depends on eye condition, cataract density and visual requirements, ensuring safe surgery and faster recovery.'
         },
         {
           question: 'Is LASIK or other refractive surgery available with Dr. Sowmya S. Bhat in Bangalore?',
-          answer: 'Yes, Dr. Sowmya S. Bhat offers refractive surgery options such as PRK, LASIK, and SMILE for suitable candidates. These procedures help reduce or eliminate dependency on glasses or contact lenses after proper evaluation.'
+          answer: 'Yes, Dr. Sowmya S. Bhat offers refractive surgery options such as PRK, LASIK and SMILE for suitable candidates. These procedures help reduce or eliminate dependency on glasses or contact lenses after proper evaluation.'
         },
         {
           question: 'When should I consult Dr. Sowmya S. Bhat for eye problems?',
-          answer: 'You should consult Dr. Sowmya S. Bhat if you experience blurred vision, difficulty seeing at night, eye strain, headaches, frequent change of glasses, or age-related vision changes. Early consultation helps prevent progression of eye conditions.'
+          answer: 'You should consult Dr. Sowmya S. Bhat if you experience blurred vision, difficulty seeing at night, eye strain, headaches, frequent change of glasses or age-related vision changes. Early consultation helps prevent progression of eye conditions.'
         },
         {
           question: 'What is the recovery time after cataract or refractive surgery with Dr. Sowmya S. Bhat?',
@@ -813,11 +813,11 @@ export class NewDoctorPageComponent {
         },
         {
           question: 'Does Dr. Sowmya S. Bhat provide general ophthalmology care at Rashtrotthana Hospital?',
-          answer: 'Yes, she offers comprehensive general ophthalmology services, including routine eye check-ups, vision testing, diagnosis of eye infections, dry eye treatment, and long-term eye health monitoring for all age groups.'
+          answer: 'Yes, she offers comprehensive general ophthalmology services, including routine eye check-ups, vision testing, diagnosis of eye infections, dry eye treatment and long-term eye health monitoring for all age groups.'
         },
         {
           question: 'How can I book an appointment with Dr. Sowmya S. Bhat at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: `You can book an appointment with Dr. Sowmya S. Bhat by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
+          answer: `You can book an appointment with Dr. Sowmya S. Bhat by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception or booking online through the official Rashtrotthana Hospital website.`
         }
       ],
       departmentSlug: '/specialities/best-eye-hospital-in-bangalore',
@@ -845,11 +845,11 @@ export class NewDoctorPageComponent {
       alt: 'Dr. Suhas Raj S | Best Cardiologist in Bangalore | Rashtrotthana Hospital | RR Nagar Bangalore',
       id: 25,
       title: 'Dr. Suhas Raj S | Interventional Cardiologist in RR Nagar',
-      description: 'Consult Dr. Suhas Raj, interventional cardiologist in RR Nagar with 10+ years’ experience in angioplasty, high-risk PCI, heart failure, and hypertension care.',
+      description: 'Consult Dr. Suhas Raj, interventional cardiologist in RR Nagar with 10+ years’ experience in angioplasty, high-risk PCI, heart failure and hypertension care.',
       faqs: [
         {
           question: 'Who is Dr. Suhas Raj S and what is his specialty at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'Dr. Suhas Raj S is an experienced Interventional Cardiologist at Rashtrotthana Hospital, RR Nagar, Bangalore, with expertise in managing heart attacks, complex coronary artery disease, and advanced cardiac conditions. He is known for handling high-risk cardiac procedures with precision and timely intervention.'
+          answer: 'Dr. Suhas Raj S is an experienced Interventional Cardiologist at Rashtrotthana Hospital, RR Nagar, Bangalore, with expertise in managing heart attacks, complex coronary artery disease and advanced cardiac conditions. He is known for handling high-risk cardiac procedures with precision and timely intervention.'
         },
         {
           question: 'Does Dr. Suhas Raj S treat heart attacks with primary angioplasty at Rashtrotthana Hospital?',
@@ -857,23 +857,23 @@ export class NewDoctorPageComponent {
         },
         {
           question: 'What is high-risk PCI and when is it recommended by Dr. Suhas Raj S?',
-          answer: 'High-risk PCI (Percutaneous Coronary Intervention) is performed in patients with complex blockages, weak heart function, or multiple medical conditions. Dr. Suhas Raj S performs high-risk PCI using advanced techniques and close monitoring at Rashtrotthana Hospital.'
+          answer: 'High-risk PCI (Percutaneous Coronary Intervention) is performed in patients with complex blockages, weak heart function or multiple medical conditions. Dr. Suhas Raj S performs high-risk PCI using advanced techniques and close monitoring at Rashtrotthana Hospital.'
         },
         {
           question: 'Can I consult Dr. Suhas Raj S for heart failure management in Bangalore?',
-          answer: 'Yes, Dr. Suhas Raj S provides comprehensive care for heart failure, including medication optimisation, lifestyle guidance, and long-term monitoring. Early management helps reduce hospital admissions and improves quality of life.'
+          answer: 'Yes, Dr. Suhas Raj S provides comprehensive care for heart failure, including medication optimisation, lifestyle guidance and long-term monitoring. Early management helps reduce hospital admissions and improves quality of life.'
         },
         {
           question: 'Does Dr. Suhas Raj S treat heart rhythm problems and electrophysiology conditions?',
-          answer: 'Dr. Suhas Raj S evaluates and manages electrophysiology conditions such as abnormal heart rhythms, palpitations, and unexplained fainting. Treatment plans are based on accurate diagnosis and individual patient risk.'
+          answer: 'Dr. Suhas Raj S evaluates and manages electrophysiology conditions such as abnormal heart rhythms, palpitations and unexplained fainting. Treatment plans are based on accurate diagnosis and individual patient risk.'
         },
         {
           question: 'Are peripheral vascular diseases and hypertension treated by Dr. Suhas Raj S at Rashtrotthana Hospital?',
-          answer: 'Yes, Dr. Suhas Raj S treats peripheral vascular diseases affecting blood vessels outside the heart, along with hypertension (high blood pressure). Proper management helps prevent complications like stroke, heart attack, and limb circulation problems.'
+          answer: 'Yes, Dr. Suhas Raj S treats peripheral vascular diseases affecting blood vessels outside the heart, along with hypertension (high blood pressure). Proper management helps prevent complications like stroke, heart attack and limb circulation problems.'
         },
         {
           question: 'How can I book an appointment with Dr. Suhas Raj S at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: `You can book an appointment with Dr. Suhas Raj S by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
+          answer: `You can book an appointment with Dr. Suhas Raj S by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception or booking online through the official Rashtrotthana Hospital website.`
         }
       ],
       departmentSlug: '/specialities/best-cardiology-hospital-in-bangalore',
@@ -901,27 +901,27 @@ export class NewDoctorPageComponent {
       alt: 'Dr. Atmaram D. C | Best laparoscopic Surgeon in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
       id: 9,
       title: 'Dr. Atmaram D. C | Laparoscopic & GI Surgeon in RR Nagar',
-      description: 'Book with Dr. Atmaram D. C, laparoscopic and GI surgeon in RR Nagar with 20+ years’ experience in gastroenterology, proctology, and minimally invasive care.',
+      description: 'Book with Dr. Atmaram D. C, laparoscopic and GI surgeon in RR Nagar with 20+ years’ experience in gastroenterology, proctology and minimally invasive care.',
       faqs: [
         {
           question: 'Who is Dr. Atmaram D. C and what is his specialty at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'Dr. Atmaram D. C is a senior Laparoscopic and Gastrointestinal Surgeon at Rashtrotthana Hospital, RR Nagar, Bangalore, with extensive experience in treating abdominal, colorectal, and gastrointestinal conditions. He is also involved in surgical oncology and proctology care.'
+          answer: 'Dr. Atmaram D. C is a senior Laparoscopic and Gastrointestinal Surgeon at Rashtrotthana Hospital, RR Nagar, Bangalore, with extensive experience in treating abdominal, colorectal and gastrointestinal conditions. He is also involved in surgical oncology and proctology care.'
         },
         {
           question: 'What laparoscopic surgeries does Dr. Atmaram D. C perform at Rashtrotthana Hospital?',
-          answer: 'Dr. Atmaram D. C performs minimally invasive laparoscopic surgeries for various abdominal and gastrointestinal conditions, which involve smaller cuts, reduced pain, and faster recovery compared to open surgery. These procedures are planned based on patient condition and safety.'
+          answer: 'Dr. Atmaram D. C performs minimally invasive laparoscopic surgeries for various abdominal and gastrointestinal conditions, which involve smaller cuts, reduced pain and faster recovery compared to open surgery. These procedures are planned based on patient condition and safety.'
         },
         {
           question: 'Can I consult Dr. Atmaram D. C for gastroenterology-related surgical problems?',
-          answer: 'Yes, Dr. Atmaram D. C treats gastrointestinal conditions such as abdominal pain, digestive tract disorders, intestinal obstructions, and surgically manageable GI diseases. Early evaluation helps in accurate diagnosis and timely treatment.'
+          answer: 'Yes, Dr. Atmaram D. C treats gastrointestinal conditions such as abdominal pain, digestive tract disorders, intestinal obstructions and surgically manageable GI diseases. Early evaluation helps in accurate diagnosis and timely treatment.'
         },
         {
           question: 'Does Dr. Atmaram D. C manage cancer-related surgical conditions at Rashtrotthana Hospital?',
-          answer: 'Dr. Atmaram D. C is involved in oncology-related surgeries, including the surgical management of gastrointestinal and abdominal cancers. Treatment planning focuses on safe tumour removal, recovery, and coordination with other cancer care specialists when required.'
+          answer: 'Dr. Atmaram D. C is involved in oncology-related surgeries, including the surgical management of gastrointestinal and abdominal cancers. Treatment planning focuses on safe tumour removal, recovery and coordination with other cancer care specialists when required.'
         },
         {
           question: 'What proctology conditions are treated by Dr. Atmaram D. C?',
-          answer: 'Dr. Atmaram D. C treats proctology conditions such as piles (haemorrhoids), fissures, fistula, and other anorectal problems. These conditions are managed using modern surgical techniques to reduce discomfort and improve long-term outcomes.'
+          answer: 'Dr. Atmaram D. C treats proctology conditions such as piles (haemorrhoids), fissures, fistula and other anorectal problems. These conditions are managed using modern surgical techniques to reduce discomfort and improve long-term outcomes.'
         },
         {
           question: 'What is the recovery time after laparoscopic or proctology surgery with Dr. Atmaram D. C?',
@@ -929,7 +929,7 @@ export class NewDoctorPageComponent {
         },
         {
           question: 'How can I book an appointment with Dr. Atmaram D. C at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: `You can book an appointment with Dr. Atmaram D. C by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
+          answer: `You can book an appointment with Dr. Atmaram D. C by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception or booking online through the official Rashtrotthana Hospital website.`
         }
       ],
       departmentSlug: '/specialities/best-general-surgery-hospital-in-bangalore',
@@ -965,27 +965,27 @@ export class NewDoctorPageComponent {
         },
         {
           question: 'What lung conditions does Dr. Vinod Kolla treat at Rashtrotthana Hospital?',
-          answer: 'Dr. Vinod Kolla treats a wide range of respiratory conditions including asthma, COPD, pneumonia, tuberculosis, interstitial lung disease (ILD), pleural effusion, lung cancer, flu, and allergic bronchitis. His treatment plans focus on accurate diagnosis, symptom control, and long-term lung health.'
+          answer: 'Dr. Vinod Kolla treats a wide range of respiratory conditions including asthma, COPD, pneumonia, tuberculosis, interstitial lung disease (ILD), pleural effusion, lung cancer, flu and allergic bronchitis. His treatment plans focus on accurate diagnosis, symptom control and long-term lung health.'
         },
         {
           question: 'What is interventional pulmonology and how does Dr. Vinod Kolla use it in treatment?',
-          answer: 'Interventional pulmonology involves advanced procedures such as bronchoscopy, thoracoscopy, cryobiopsy, and rigid bronchoscopy to diagnose and manage lung diseases. Dr. Vinod Kolla uses these minimally invasive techniques to achieve precise diagnosis and targeted treatment.'
+          answer: 'Interventional pulmonology involves advanced procedures such as bronchoscopy, thoracoscopy, cryobiopsy and rigid bronchoscopy to diagnose and manage lung diseases. Dr. Vinod Kolla uses these minimally invasive techniques to achieve precise diagnosis and targeted treatment.'
         },
         {
           question: 'Can Dr. Vinod Kolla help manage asthma and COPD long term?',
-          answer: 'Yes, Dr. Vinod Kolla has significant experience in managing chronic respiratory conditions like asthma and COPD, including medication optimisation, inhaler guidance, trigger control, and pulmonary rehabilitation to improve breathing and quality of life.'
+          answer: 'Yes, Dr. Vinod Kolla has significant experience in managing chronic respiratory conditions like asthma and COPD, including medication optimisation, inhaler guidance, trigger control and pulmonary rehabilitation to improve breathing and quality of life.'
         },
         {
           question: 'Does Dr. Vinod Kolla treat sleep-related breathing disorders at Rashtrotthana Hospital?',
-          answer: 'Yes, as a Sleep Medicine Specialist, Dr. Vinod Kolla evaluates and treats sleep-related breathing disorders such as sleep apnea, snoring-related breathing issues, and sleep-related respiratory problems that affect daytime alertness and heart health.'
+          answer: 'Yes, as a Sleep Medicine Specialist, Dr. Vinod Kolla evaluates and treats sleep-related breathing disorders such as sleep apnea, snoring-related breathing issues and sleep-related respiratory problems that affect daytime alertness and heart health.'
         },
         {
           question: 'What role does pulmonary rehabilitation play in treatment under Dr. Vinod Kolla?',
-          answer: 'Pulmonary rehabilitation includes breathing exercises, physical conditioning, and lifestyle guidance to help patients with chronic lung diseases breathe better and stay active. Dr. Vinod Kolla integrates rehabilitation into long-term care for conditions like COPD and ILD.'
+          answer: 'Pulmonary rehabilitation includes breathing exercises, physical conditioning and lifestyle guidance to help patients with chronic lung diseases breathe better and stay active. Dr. Vinod Kolla integrates rehabilitation into long-term care for conditions like COPD and ILD.'
         },
         {
           question: 'How can I book an appointment with Dr. Vinod Kolla at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: `You can book an appointment with Dr. Vinod Kolla by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
+          answer: `You can book an appointment with Dr. Vinod Kolla by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception or booking online through the official Rashtrotthana Hospital website.`
         }
       ],
       departmentSlug: '/specialities/best-pulmonology-hospital-in-bangalore',
@@ -1013,27 +1013,27 @@ export class NewDoctorPageComponent {
       alt: 'Dr. Meena H. B | Best Skin Doctor in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
       id: 42,
       title: 'Dr. Meena H. B | Dermatologist & Skin Specialist in RR Nagar',
-      description: 'Consult Dr. Meena H. B, dermatologist in RR Nagar with 30+ years’ experience in acne scars, pigmentation, PRP therapy, chemical peels, and laser hair removal.',
+      description: 'Consult Dr. Meena H. B, dermatologist in RR Nagar with 30+ years’ experience in acne scars, pigmentation, PRP therapy, chemical peels and laser hair removal.',
       faqs: [
         {
           question: 'Who is Dr. Meena H. B and what is her specialty at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'Dr. Meena H. B is an experienced Dermatologist at Rashtrotthana Hospital, RR Nagar, Bangalore, specialising in clinical dermatology and advanced aesthetic skin procedures. She treats a wide range of skin, hair, and cosmetic concerns with a patient-focused approach.'
+          answer: 'Dr. Meena H. B is an experienced Dermatologist at Rashtrotthana Hospital, RR Nagar, Bangalore, specialising in clinical dermatology and advanced aesthetic skin procedures. She treats a wide range of skin, hair and cosmetic concerns with a patient-focused approach.'
         },
         {
           question: 'What skin conditions are treated by Dr. Meena H. B at Rashtrotthana Hospital?',
-          answer: 'Dr. Meena H. B treats common and chronic skin conditions such as acne, pigmentation, skin tags, warts, DPN, corns, callosities, and acne scars. Her treatments focus on improving skin health while maintaining safety and natural results.'
+          answer: 'Dr. Meena H. B treats common and chronic skin conditions such as acne, pigmentation, skin tags, warts, DPN, corns, callosities and acne scars. Her treatments focus on improving skin health while maintaining safety and natural results.'
         },
         {
           question: 'Does Dr. Meena H. B provide acne and acne scar treatments in Bangalore?',
-          answer: 'Yes, Dr. Meena H. B offers chemical peels, microdermabrasion, derma-roller, PRP therapy, and advanced skin rejuvenation procedures to treat acne and acne scars. Treatment plans are selected based on skin type, severity, and recovery expectations.'
+          answer: 'Yes, Dr. Meena H. B offers chemical peels, microdermabrasion, derma-roller, PRP therapy and advanced skin rejuvenation procedures to treat acne and acne scars. Treatment plans are selected based on skin type, severity and recovery expectations.'
         },
         {
           question: 'Is laser hair removal available with Dr. Meena H. B at Rashtrotthana Hospital?',
-          answer: 'Yes, Dr. Meena H. B provides laser hair removal for unwanted hair with a focus on safety, skin suitability, and long-term hair reduction. Proper evaluation ensures effective results with minimal discomfort.'
+          answer: 'Yes, Dr. Meena H. B provides laser hair removal for unwanted hair with a focus on safety, skin suitability and long-term hair reduction. Proper evaluation ensures effective results with minimal discomfort.'
         },
         {
           question: 'What treatments are available for pigmentation and skin brightening with Dr. Meena H. B?',
-          answer: 'Dr. Meena H. B offers treatments such as chemical peels, nanopore skin brightening, PRP therapy, and pigmentation-focused microdermabrasion. These procedures help improve skin tone, texture, and overall radiance.'
+          answer: 'Dr. Meena H. B offers treatments such as chemical peels, nanopore skin brightening, PRP therapy and pigmentation-focused microdermabrasion. These procedures help improve skin tone, texture and overall radiance.'
         },
         {
           question: 'Can Dr. Meena H. B help with hair fall and hair thinning problems?',
@@ -1041,7 +1041,7 @@ export class NewDoctorPageComponent {
         },
         {
           question: 'How can I book an appointment with Dr. Meena H. B at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: `You can book an appointment with Dr. Meena H. B by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
+          answer: `You can book an appointment with Dr. Meena H. B by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception or booking online through the official Rashtrotthana Hospital website.`
         }
       ],
       departmentSlug: '',
@@ -1061,7 +1061,7 @@ export class NewDoctorPageComponent {
       department: 'Ayurveda (Panchakarma and Ayurvedic Medicine)',
       speciality: 'AYURVEDA',
       desgination: 'Ayurveda (Panchakarma and Ayurvedic Medicine)',
-      about: "Dr. Kishan G. N is an experienced Ayurvedic practitioner with over a decade of expertise in Panchakarma and holistic healthcare. He has served as a consultant across reputed Ayurvedic institutions, conducted extensive clinical documentation and research, and trained hundreds of therapists in therapeutic practices. His work includes participation in national and international seminars, representing Ayurveda at global platforms and integrating traditional knowledge with modern healthcare approaches.",
+      about: "Dr. Kishan G. N is an experienced Ayurvedic practitioner with over a decade of expertise in Panchakarma and holistic healthcare. He has served as a consultant across reputed Ayurvedic institutions, conducted extensive clinical documentation and research and trained hundreds of therapists in therapeutic practices. His work includes participation in national and international seminars, representing Ayurveda at global platforms and integrating traditional knowledge with modern healthcare approaches.",
       areasOfExpertise: ["Specialized in Panchakarma therapies (detoxification and rejuvenation treatments)", "Ayurvedic management of chronic, lifestyle-related conditions", "Uttarabasti", ' Autoimmune disorders', 'Gastrointestinal disorders,', 'Neuro-Musculoskeletal disorders', "Training and mentoring Ayurvedic therapists and students"],
       expertise: " 15+",
       qualification: "CCPT, PGCPK, BAMS",
@@ -1070,7 +1070,7 @@ export class NewDoctorPageComponent {
       id: '',
       alt: 'Dr. Kishan G. N – Ayurveda, Rashtrotthana Hospital Bangalore',
       title: 'Dr. Kishan G. N - Expert in Ayurveda & Panchakarma Care',
-      description: 'Consult Dr. Kishan G. N for holistic healing, detox therapies, and lifestyle care rooted in Ayurveda.',
+      description: 'Consult Dr. Kishan G. N for holistic healing, detox therapies and lifestyle care rooted in Ayurveda.',
       faqs: [
         {
           question: 'Who is Dr. Kishan G N and what is his specialty at Rashtrotthana Hospital, Bangalore?',
@@ -1078,11 +1078,11 @@ export class NewDoctorPageComponent {
         },
         {
           question: 'What Panchakarma treatments are offered by Dr. Kishan G N at Rashtrotthana Hospital?',
-          answer: 'Dr. Kishan G N specialises in Panchakarma detoxification and rejuvenation therapies, designed to cleanse toxins and restore balance in the body. These therapies are customised based on the patient’s constitution, condition, and recovery goals.'
+          answer: 'Dr. Kishan G N specialises in Panchakarma detoxification and rejuvenation therapies, designed to cleanse toxins and restore balance in the body. These therapies are customised based on the patient’s constitution, condition and recovery goals.'
         },
         {
           question: 'Can Dr. Kishan G N treat chronic lifestyle-related diseases through Ayurveda?',
-          answer: 'Yes, Dr. Kishan G N provides Ayurvedic management for chronic lifestyle disorders such as stress-related illnesses, metabolic imbalances, and long-standing health conditions. Treatment focuses on root-cause correction, diet guidance, and sustainable lifestyle changes.'
+          answer: 'Yes, Dr. Kishan G N provides Ayurvedic management for chronic lifestyle disorders such as stress-related illnesses, metabolic imbalances and long-standing health conditions. Treatment focuses on root-cause correction, diet guidance and sustainable lifestyle changes.'
         },
         {
           question: 'Does Dr. Kishan G N manage autoimmune and gastrointestinal disorders?',
@@ -1090,11 +1090,11 @@ export class NewDoctorPageComponent {
         },
         {
           question: 'Can I consult Dr. Kishan G N for neuro-musculoskeletal problems?',
-          answer: 'Yes, he manages neuro-musculoskeletal disorders such as joint pain, nerve-related conditions, and mobility issues through Ayurvedic therapies. Treatments may include Panchakarma, external therapies, and corrective lifestyle guidance.'
+          answer: 'Yes, he manages neuro-musculoskeletal disorders such as joint pain, nerve-related conditions and mobility issues through Ayurvedic therapies. Treatments may include Panchakarma, external therapies and corrective lifestyle guidance.'
         },
         {
           question: 'What is Uttarabasti and when is it recommended by Dr. Kishan G N?',
-          answer: 'Uttarabasti is a specialised Ayurvedic procedure used for certain urogenital and reproductive health conditions. Dr. Kishan G N recommends it only after detailed evaluation to ensure safety, effectiveness, and suitability for the patient.'
+          answer: 'Uttarabasti is a specialised Ayurvedic procedure used for certain urogenital and reproductive health conditions. Dr. Kishan G N recommends it only after detailed evaluation to ensure safety, effectiveness and suitability for the patient.'
         },
         {
           question: 'Why choose Dr. Kishan G N at Rashtrotthana Hospital for Ayurvedic treatment?',
@@ -1127,7 +1127,7 @@ export class NewDoctorPageComponent {
     //   alt: 'Dr. Sindhu P. Madanshetty | Best Physician in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
     //   id: 1,
     //   title:'Dr. Sindhu P. Madanshetty | Internal Medicine in RR Nagar',
-    //   description:'Book with Dr. Sindhu P. Madanshetty, RR Nagar-based internal medicine doctor with 7+ years’ experience in critical care, diabetes, thyroid, and infections.'
+    //   description:'Book with Dr. Sindhu P. Madanshetty, RR Nagar-based internal medicine doctor with 7+ years’ experience in critical care, diabetes, thyroid and infections.'
     // },
 
 
@@ -1146,23 +1146,23 @@ export class NewDoctorPageComponent {
       alt: "Dr. Sujayendra D. M | Best Orthopaedic Doctor in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore",
       id: 5,
       title: 'Dr. Sujayendra D. M | Orthopedic Surgeon & Joint Specialist RR Nagar',
-      description: 'Book with Dr. Sujayendra D. M, orthopedic surgeon in RR Nagar with 13+ years’ experience in fracture care, arthroscopy, trauma surgery, and joint replacement.',
+      description: 'Book with Dr. Sujayendra D. M orthopedic surgeon in RR Nagar with 13+ years’ experience in fracture care, arthroscopy, trauma surgery and joint replacement.',
       faqs: [
         {
           question: 'Who is Dr. Sujayendra D. M and what is his specialty at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'Dr. Sujayendra D. M is an experienced Orthopaedic Surgeon at Rashtrotthana Hospital, RR Nagar, Bangalore. He specialises in fracture care, joint replacement surgeries, and minimally invasive arthroscopy (keyhole) procedures.'
+          answer: 'Dr. Sujayendra D. M is an experienced Orthopaedic Surgeon at Rashtrotthana Hospital, RR Nagar, Bangalore. He specialises in fracture care, joint replacement surgeries and minimally invasive arthroscopy (keyhole) procedures.'
         },
         {
           question: 'What types of fractures does Dr. Sujayendra D. M treat at Rashtrotthana Hospital?',
-          answer: 'Dr. Sujayendra D. M manages simple and complex fractures, including injuries from falls, road traffic accidents, and sports trauma. Treatment is planned to ensure proper bone healing, alignment, and early return to function.'
+          answer: 'Dr. Sujayendra D. M manages simple and complex fractures, including injuries from falls, road traffic accidents and sports trauma. Treatment is planned to ensure proper bone healing, alignment and early return to function.'
         },
         {
           question: 'Does Dr. Sujayendra D. M perform joint replacement surgery in Bangalore?',
-          answer: 'Yes, Dr. Sujayendra D. M performs joint replacement surgeries for conditions like advanced knee or hip arthritis when conservative treatments fail. The goal is to relieve pain, restore movement, and improve quality of life.'
+          answer: 'Yes, Dr. Sujayendra D. M performs joint replacement surgeries for conditions like advanced knee or hip arthritis when conservative treatments fail. The goal is to relieve pain, restore movement and improve quality of life.'
         },
         {
           question: 'What is arthroscopy and when is it recommended by Dr. Sujayendra D. M?',
-          answer: 'Arthroscopy is a keyhole surgical technique used to diagnose and treat joint problems with smaller incisions and faster recovery. Dr. Sujayendra D. M commonly recommends arthroscopy for ligament injuries, meniscus tears, and persistent joint pain.'
+          answer: 'Arthroscopy is a keyhole surgical technique used to diagnose and treat joint problems with smaller incisions and faster recovery. Dr. Sujayendra D. M commonly recommends arthroscopy for ligament injuries, meniscus tears and persistent joint pain.'
         },
         {
           question: 'How long is recovery after fracture treatment or orthopaedic surgery with Dr. Sujayendra D. M?',
@@ -1170,11 +1170,11 @@ export class NewDoctorPageComponent {
         },
         {
           question: 'When should I consult Dr. Sujayendra D. M for orthopaedic problems?',
-          answer: 'You should consult Dr. Sujayendra D. M if you experience severe joint pain, swelling, difficulty walking, suspected fractures, or limited joint movement. Early orthopaedic evaluation helps prevent complications and long-term damage.'
+          answer: 'You should consult Dr. Sujayendra D. M if you experience severe joint pain, swelling, difficulty walking, suspected fractures or limited joint movement. Early orthopaedic evaluation helps prevent complications and long-term damage.'
         },
         {
           question: 'How can I book an appointment with Dr. Sujayendra D. M at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: `You can book an appointment with Dr. Sujayendra D. M by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
+          answer: `You can book an appointment with Dr. Sujayendra D. M by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception or booking online through the official Rashtrotthana Hospital website.`
         }
       ],
       departmentSlug: '/specialities/best-orthopaedics-hospital-in-bangalore',
@@ -1208,7 +1208,7 @@ export class NewDoctorPageComponent {
     //   faqs: [
     //     {
     //       question: 'Who is Dr. Manasa N. A and what is her specialty at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-    //       answer: 'Dr. Manasa N. A is an experienced ENT and Head & Neck Surgeon at Rashtrotthana Hospital, RR Nagar, Bangalore. She specialises in ear, nose, throat, voice, airway, and head-neck tumour management with a strong surgical background.'
+    //       answer: 'Dr. Manasa N. A is an experienced ENT and Head & Neck Surgeon at Rashtrotthana Hospital, RR Nagar, Bangalore. She specialises in ear, nose, throat, voice, airway and head-neck tumour management with a strong surgical background.'
     //     },
     //     {
     //       question: 'Does Dr. Manasa N. A perform micro ear surgery for hearing loss at Rashtrotthana Hospital?',
@@ -1220,11 +1220,11 @@ export class NewDoctorPageComponent {
     //     },
     //     {
     //       question: 'Can Dr. Manasa N. A treat voice problems and vocal cord disorders?',
-    //       answer: 'Yes, Dr. Manasa N. A diagnoses and manages vocal cord and voice disorders such as hoarseness, voice strain, and vocal cord lesions. Treatment may include medical management, voice therapy, or surgery depending on the cause.'
+    //       answer: 'Yes, Dr. Manasa N. A diagnoses and manages vocal cord and voice disorders such as hoarseness, voice strain and vocal cord lesions. Treatment may include medical management, voice therapy or surgery depending on the cause.'
     //     },
     //     {
     //       question: 'Does Dr. Manasa N. A treat head and neck tumors at Rashtrotthana Hospital?',
-    //       answer: 'Dr. Manasa N. A is experienced in the diagnosis and surgical management of head and neck tumours, including throat, neck, and oral region growths. Early evaluation helps in accurate diagnosis and timely treatment planning.'
+    //       answer: 'Dr. Manasa N. A is experienced in the diagnosis and surgical management of head and neck tumours, including throat, neck and oral region growths. Early evaluation helps in accurate diagnosis and timely treatment planning.'
     //     },
     //     {
     //       question: 'Is snoring and sleep apnea treatment available with Dr. Manasa N. A in Bangalore?',
@@ -1232,7 +1232,7 @@ export class NewDoctorPageComponent {
     //     },
     //     {
     //       question: 'How can I book an appointment with Dr. Manasa N. A at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-    //       answer: `You can book an appointment with Dr. Manasa N. A by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
+    //       answer: `You can book an appointment with Dr. Manasa N. A by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception or booking online through the official Rashtrotthana Hospital website.`
     //     }
     //   ],
     //   departmentSlug: '/specialities/best-ent-hospital-in-bangalore',
@@ -1262,35 +1262,35 @@ export class NewDoctorPageComponent {
       alt: 'Dr. Madhu S. N | Best Urologist & Andrologist in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
       id: 19,
       title: 'Dr. Madhu S. N | Urologist & Andrologist in Bangalore',
-      description: 'Dr. Madhu S. N is a senior urologist with 15+ years of experience in endourology, kidney transplant, laparoscopic uro oncology, and stone disease care.',
+      description: 'Dr. Madhu S. N is a senior urologist with 15+ years of experience in endourology, kidney transplant, laparoscopic uro oncology and stone disease care.',
       faqs: [
         {
           question: 'Who is Dr. Madhu S. N and what is his specialty at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'Dr. Madhu S. N is a senior Urologist and Renal Transplant Specialist at Rashtrotthana Hospital, RR Nagar, Bangalore, with extensive experience in endourology, kidney transplantation, and complex urological conditions. He is known for managing both adult and pediatric urology cases.'
+          answer: 'Dr. Madhu S. N is a senior Urologist and Renal Transplant Specialist at Rashtrotthana Hospital, RR Nagar, Bangalore, with extensive experience in endourology, kidney transplantation and complex urological conditions. He is known for managing both adult and pediatric urology cases.'
         },
         {
           question: 'What urological conditions does Dr. Madhu S. N treat at Rashtrotthana Hospital?',
-          answer: 'Dr. Madhu S. N treats a wide range of conditions including kidney stones, urinary obstruction, prostate disorders, male infertility issues, urological cancers, and reconstructive urology problems. His approach focuses on minimally invasive and organ-preserving treatments.'
+          answer: 'Dr. Madhu S. N treats a wide range of conditions including kidney stones, urinary obstruction, prostate disorders, male infertility issues, urological cancers and reconstructive urology problems. His approach focuses on minimally invasive and organ-preserving treatments.'
         },
         {
           question: 'Does Dr. Madhu S. N perform kidney stone treatment using minimally invasive methods?',
-          answer: 'Yes, Dr. Madhu S. N specialises in endourology and laparoscopic urology for kidney, ureter, and bladder stones. These techniques allow stone removal with smaller incisions, less pain, and faster recovery compared to open surgery.'
+          answer: 'Yes, Dr. Madhu S. N specialises in endourology and laparoscopic urology for kidney, ureter and bladder stones. These techniques allow stone removal with smaller incisions, less pain and faster recovery compared to open surgery.'
         },
         {
           question: 'Can I consult Dr. Madhu S. N for kidney transplantation at Rashtrotthana Hospital?',
-          answer: 'Yes, Dr. Madhu S. N is experienced in kidney transplantation, including pre-transplant evaluation, surgical planning, and post-transplant care. He works closely with a multidisciplinary team to ensure long-term graft function and patient safety.'
+          answer: 'Yes, Dr. Madhu S. N is experienced in kidney transplantation, including pre-transplant evaluation, surgical planning and post-transplant care. He works closely with a multidisciplinary team to ensure long-term graft function and patient safety.'
         },
         {
           question: 'Does Dr. Madhu S. N treat male infertility and sexual health problems?',
-          answer: 'Dr. Madhu S. N provides expert care in andrology, treating conditions such as male infertility, erectile dysfunction, and hormonal urological disorders. Treatment plans are personalised based on detailed evaluation and patient goals.'
+          answer: 'Dr. Madhu S. N provides expert care in andrology, treating conditions such as male infertility, erectile dysfunction and hormonal urological disorders. Treatment plans are personalised based on detailed evaluation and patient goals.'
         },
         {
           question: 'Are urological cancers and reconstructive urology managed by Dr. Madhu S. N?',
-          answer: 'Yes, Dr. Madhu S. N treats uro-oncology conditions involving the kidney, bladder, prostate, and urinary tract. He also performs reconstructive urology surgeries to restore urinary function after injury, obstruction, or cancer treatment.'
+          answer: 'Yes, Dr. Madhu S. N treats uro-oncology conditions involving the kidney, bladder, prostate and urinary tract. He also performs reconstructive urology surgeries to restore urinary function after injury, obstruction or cancer treatment.'
         },
         {
           question: 'How can I book an appointment with Dr. Madhu S. N at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: `You can book an appointment with Dr. Madhu S. N by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
+          answer: `You can book an appointment with Dr. Madhu S. N by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception or booking online through the official Rashtrotthana Hospital website.`
         }
       ],
       departmentSlug: '/specialities/best-urology-hospital-in-bangalore',
@@ -1320,19 +1320,19 @@ export class NewDoctorPageComponent {
       alt: 'Dr. Jaidev S | Best Neurosurgeon in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
       id: 26,
       title: 'Dr. Jaidev S | Neurosurgeon in RR Nagar Bangalore',
-      description: 'Consult Dr. Jaidev S, expert neurosurgeon in RR Nagar, Bangalore. Specialised in spine surgery, brain surgery, stroke care, and endovascular interventions.',
+      description: 'Consult Dr. Jaidev S, expert neurosurgeon in RR Nagar, Bangalore. Specialised in spine surgery, brain surgery, stroke care and endovascular interventions.',
       faqs: [
         {
           question: 'Who is Dr. Jaidev S and what is his specialty at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'Dr. Jaidev S is a highly experienced Neurosurgeon at Rashtrotthana Hospital, RR Nagar, Bangalore, specialising in brain surgery, spine surgery, and endovascular interventions. He is known for managing complex neurological conditions with advanced surgical and minimally invasive techniques.'
+          answer: 'Dr. Jaidev S is a highly experienced Neurosurgeon at Rashtrotthana Hospital, RR Nagar, Bangalore, specialising in brain surgery, spine surgery and endovascular interventions. He is known for managing complex neurological conditions with advanced surgical and minimally invasive techniques.'
         },
         {
           question: 'What brain and spine conditions does Dr. Jaidev S treat at Rashtrotthana Hospital?',
-          answer: 'Dr. Jaidev S treats conditions such as brain tumours, spinal disorders, slipped discs, nerve compression, traumatic brain injury, and degenerative spine diseases. Treatment is planned to relieve symptoms, protect nerve function, and improve quality of life.'
+          answer: 'Dr. Jaidev S treats conditions such as brain tumours, spinal disorders, slipped discs, nerve compression, traumatic brain injury and degenerative spine diseases. Treatment is planned to relieve symptoms, protect nerve function and improve quality of life.'
         },
         {
           question: 'When should I consult Dr. Jaidev S for neck pain or back pain?',
-          answer: 'You should consult Dr. Jaidev S if you have persistent neck pain, back pain, radiating pain to arms or legs, numbness, weakness, or difficulty walking. Early neurosurgical evaluation helps determine whether medical management or surgery is required.'
+          answer: 'You should consult Dr. Jaidev S if you have persistent neck pain, back pain, radiating pain to arms or legs, numbness, weakness or difficulty walking. Early neurosurgical evaluation helps determine whether medical management or surgery is required.'
         },
         {
           question: 'Does Dr. Jaidev S treat stroke and blood vessel-related brain conditions?',
@@ -1340,15 +1340,15 @@ export class NewDoctorPageComponent {
         },
         {
           question: 'What is endovascular intervention and how does Dr. Jaidev S use it?',
-          answer: 'Endovascular intervention involves minimally invasive treatment through blood vessels to manage stroke and other vascular brain conditions. Dr. Jaidev S uses these techniques to reduce surgical risk, hospital stay, and recovery time.'
+          answer: 'Endovascular intervention involves minimally invasive treatment through blood vessels to manage stroke and other vascular brain conditions. Dr. Jaidev S uses these techniques to reduce surgical risk, hospital stay and recovery time.'
         },
         {
           question: 'Can Dr. Jaidev S help with neuropathy and nerve-related problems?',
-          answer: 'Yes, Dr. Jaidev S evaluates and treats neuropathy and nerve-related disorders, including numbness, tingling, and weakness caused by nerve compression or damage. Treatment focuses on identifying the cause and preventing further nerve injury.'
+          answer: 'Yes, Dr. Jaidev S evaluates and treats neuropathy and nerve-related disorders, including numbness, tingling and weakness caused by nerve compression or damage. Treatment focuses on identifying the cause and preventing further nerve injury.'
         },
         {
           question: 'How can I book an appointment with Dr. Jaidev S at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: `You can book an appointment with Dr. Jaidev S by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
+          answer: `You can book an appointment with Dr. Jaidev S by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception or booking online through the official Rashtrotthana Hospital website.`
         }
       ],
       departmentSlug: '/specialities/best-neurology-hospital-in-bangalore',
@@ -1386,11 +1386,11 @@ export class NewDoctorPageComponent {
         },
         {
           question: 'What conditions are treated by Dr. Nishanth Lakshmikantha using laparoscopic and robotic surgery?',
-          answer: 'Dr. Nishanth Lakshmikantha treats a range of abdominal and colorectal conditions using laparoscopic and robotic surgery, which allow precise treatment through small incisions. These techniques help reduce pain, hospital stay, and recovery time.'
+          answer: 'Dr. Nishanth Lakshmikantha treats a range of abdominal and colorectal conditions using laparoscopic and robotic surgery, which allow precise treatment through small incisions. These techniques help reduce pain, hospital stay and recovery time.'
         },
         {
           question: 'What is laser proctology and when is it recommended by Dr. Nishanth Lakshmikantha?',
-          answer: 'Laser proctology is a modern, minimally invasive treatment used for piles (haemorrhoids), fissures, fistula, and other anorectal conditions. Dr. Nishanth Lakshmikantha recommends laser procedures for eligible patients to ensure minimal bleeding, less pain, and quicker return to daily activities.'
+          answer: 'Laser proctology is a modern, minimally invasive treatment used for piles (haemorrhoids), fissures, fistula and other anorectal conditions. Dr. Nishanth Lakshmikantha recommends laser procedures for eligible patients to ensure minimal bleeding, less pain and quicker return to daily activities.'
         },
         {
           question: 'Is laser treatment for piles and fistula safe at Rashtrotthana Hospital?',
@@ -1402,11 +1402,11 @@ export class NewDoctorPageComponent {
         },
         {
           question: 'When should I consult Dr. Nishanth Lakshmikantha for proctology or abdominal surgery problems?',
-          answer: 'You should consult Dr. Nishanth Lakmikantha if you have persistent rectal pain, bleeding, swelling, difficulty passing stools, or abdominal symptoms that may require surgical evaluation. Early consultation helps prevent complications.'
+          answer: 'You should consult Dr. Nishanth Lakmikantha if you have persistent rectal pain, bleeding, swelling, difficulty passing stools or abdominal symptoms that may require surgical evaluation. Early consultation helps prevent complications.'
         },
         {
           question: 'How can I book an appointment with Dr. Nishanth Lakshmikantha at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: `You can book an appointment with Dr. Nishanth Lakshmikantha by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
+          answer: `You can book an appointment with Dr. Nishanth Lakshmikantha by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception or booking online through the official Rashtrotthana Hospital website.`
         }
       ],
       departmentSlug: '/specialities/best-general-surgery-hospital-in-bangalore',
@@ -1439,35 +1439,35 @@ export class NewDoctorPageComponent {
       alt: 'Dr. Sameer M. Halageri | Best Consultant Plastic Surgeon in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
       id: 48,
       title: 'Dr. Sameer Halageri | Plastic and Reconstructive Surgeon',
-      description: 'Consult Dr. Sameer Halageri, expert plastic surgeon in Bangalore. Skilled in microvascular, cosmetic, cleft, diabetic foot, and trauma reconstruction.',
+      description: 'Consult Dr. Sameer Halageri, expert plastic surgeon in Bangalore. Skilled in microvascular, cosmetic, cleft, diabetic foot and trauma reconstruction.',
       faqs: [
         {
           question: 'Who is Dr. Sameer M. Halageri and what is his specialty at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'Dr. Sameer M. Halageri is a highly experienced Plastic, Reconstructive, and Microvascular Surgeon at Rashtrotthana Hospital, RR Nagar, Bangalore. He specialises in complex reconstructive surgeries, limb salvage, and functional restoration following trauma, cancer, and chronic wounds.'
+          answer: 'Dr. Sameer M. Halageri is a highly experienced Plastic, Reconstructive and Microvascular Surgeon at Rashtrotthana Hospital, RR Nagar, Bangalore. He specialises in complex reconstructive surgeries, limb salvage and functional restoration following trauma, cancer and chronic wounds.'
         },
         {
           question: 'What is microvascular surgery and how does Dr. Sameer M. Halageri use it in reconstruction?',
-          answer: 'Microvascular surgery involves reconnecting tiny blood vessels using advanced techniques to restore tissue circulation. Dr. Sameer M. Halageri uses microvascular surgery for onco-reconstruction, limb salvage, and complex wound coverage, helping achieve better healing and functional outcomes.'
+          answer: 'Microvascular surgery involves reconnecting tiny blood vessels using advanced techniques to restore tissue circulation. Dr. Sameer M. Halageri uses microvascular surgery for onco-reconstruction, limb salvage and complex wound coverage, helping achieve better healing and functional outcomes.'
         },
         {
           question: 'Does Dr. Sameer M. Halageri treat diabetic foot and non-healing wounds at Rashtrotthana Hospital?',
-          answer: 'Yes, Dr. Sameer M. Halageri is experienced in diabetic foot care and complex wound management, including limb-saving procedures. Early intervention helps prevent infections, amputations, and long-term disability.'
+          answer: 'Yes, Dr. Sameer M. Halageri is experienced in diabetic foot care and complex wound management, including limb-saving procedures. Early intervention helps prevent infections, amputations and long-term disability.'
         },
         {
           question: 'Can I consult Dr. Sameer M. Halageri for hand injuries and brachial plexus problems?',
-          answer: 'Dr. Sameer M. Halageri treats hand injuries, nerve damage, and brachial plexus injuries caused by trauma or compression. Surgical treatment focuses on restoring movement, sensation, and hand function.'
+          answer: 'Dr. Sameer M. Halageri treats hand injuries, nerve damage and brachial plexus injuries caused by trauma or compression. Surgical treatment focuses on restoring movement, sensation and hand function.'
         },
         {
           question: 'Is breast reconstruction and lymphedema treatment available with Dr. Sameer M. Halageri?',
           answer: 'Yes, Dr. Sameer M. Halageri provides breast reconstruction after cancer surgery and treatment for lymphedema, helping improve both physical function and quality of life. Care is planned in coordination with oncology teams when required.'
         },
         {
-          question: 'Does Dr. Sameer M. Halageri perform cleft, craniofacial, and trauma reconstruction surgeries?',
-          answer: 'Yes, he performs cleft lip and palate surgeries, craniofacial reconstruction, and burns or trauma reconstruction, focusing on both functional recovery and aesthetic improvement. These procedures often require staged and specialised surgical care.'
+          question: 'Does Dr. Sameer M. Halageri perform cleft, craniofacial and trauma reconstruction surgeries?',
+          answer: 'Yes, he performs cleft lip and palate surgeries, craniofacial reconstruction and burns or trauma reconstruction, focusing on both functional recovery and aesthetic improvement. These procedures often require staged and specialised surgical care.'
         },
         {
           question: 'How can I book an appointment with Dr. Sameer M. Halageri at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: `You can book an appointment with Dr. Sameer M. Halageri by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
+          answer: `You can book an appointment with Dr. Sameer M. Halageri by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception or booking online through the official Rashtrotthana Hospital website.`
         }
       ],
       departmentSlug: '',
@@ -1506,19 +1506,19 @@ export class NewDoctorPageComponent {
       date: 'Monday-Saturday',
       alt: 'Dr. Vishnuvardhan V | Best Orthodontics in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
       title: 'Dr. Vishnuvardhan V | Best Orthodontist in Bangalore',
-      description: 'Meet Dr. Vishnuvardhan V, expert orthodontist in Bangalore. Skilled in metal, ceramic, invisible, lingual braces, and surgical orthodontics.',
+      description: 'Meet Dr. Vishnuvardhan V, expert orthodontist in Bangalore. Skilled in metal, ceramic, invisible, lingual braces and surgical orthodontics.',
       faqs: [
         {
           question: 'Who is Dr. Vishnuvardhan V and what is his specialty at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'Dr. Vishnuvardhan V is an experienced Orthodontist at Rashtrotthana Hospital, RR Nagar, Bangalore, specialising in corrective dental alignment and bite correction. He offers modern orthodontic solutions for children, teenagers, and adults.'
+          answer: 'Dr. Vishnuvardhan V is an experienced Orthodontist at Rashtrotthana Hospital, RR Nagar, Bangalore, specialising in corrective dental alignment and bite correction. He offers modern orthodontic solutions for children, teenagers and adults.'
         },
         {
           question: 'What types of braces are available with Dr. Vishnuvardhan V at Rashtrotthana Hospital?',
-          answer: 'Dr. Vishnuvardhan V provides metal braces, ceramic braces, and lingual braces, depending on the patient’s dental condition and aesthetic preference. Each option is chosen to ensure effective alignment with comfort and durability.'
+          answer: 'Dr. Vishnuvardhan V provides metal braces, ceramic braces and lingual braces, depending on the patient’s dental condition and aesthetic preference. Each option is chosen to ensure effective alignment with comfort and durability.'
         },
         {
           question: 'Is invisible aligner treatment available with Dr. Vishnuvardhan V in Bangalore?',
-          answer: 'Yes, Dr. Vishnuvardhan V offers invisible aligner treatment for patients looking for a discreet way to straighten teeth. Aligners are removable, comfortable, and suitable for mild to moderate alignment issues after proper evaluation.'
+          answer: 'Yes, Dr. Vishnuvardhan V offers invisible aligner treatment for patients looking for a discreet way to straighten teeth. Aligners are removable, comfortable and suitable for mild to moderate alignment issues after proper evaluation.'
         },
         {
           question: 'What are myofunctional appliances and who needs them?',
@@ -1534,7 +1534,7 @@ export class NewDoctorPageComponent {
         },
         {
           question: 'How can I book an appointment with Dr. Vishnuvardhan V at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: `You can book an appointment with Dr. Vishnuvardhan V by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
+          answer: `You can book an appointment with Dr. Vishnuvardhan V by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception or booking online through the official Rashtrotthana Hospital website.`
         }
       ],
       departmentSlug: '/specialities/best-dental-hospital-in-bangalore',
@@ -1562,7 +1562,7 @@ export class NewDoctorPageComponent {
       alt: 'Dr. Prakruthi | Best Gynaec Doctor in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
       id: 16,
       title: 'Dr. Prakruthi | High-Risk Pregnancy Expert | 19+ Years',
-      description: 'Dr. Prakruthi is an experienced obstetrician and gynecologist with expertise in high-risk pregnancy care, fetal medicine, and labor ward management.',
+      description: 'Dr. Prakruthi is an experienced obstetrician and gynecologist with expertise in high-risk pregnancy care, fetal medicine and labor ward management.',
       faqs: [
         {
           question: 'Who is Dr. Prakruthi and what is her specialty at Rashtrotthana Hospital, RR Nagar, Bangalore?',
@@ -1570,19 +1570,19 @@ export class NewDoctorPageComponent {
         },
         {
           question: 'What pregnancy and maternity services does Dr. Prakruthi provide at Rashtrotthana Hospital?',
-          answer: 'Dr. Prakruthi provides comprehensive antenatal care, labour ward management, delivery planning, and fetal monitoring, ensuring safe and well-coordinated maternity care. Her approach emphasises timely decision-making and evidence-based protocols.'
+          answer: 'Dr. Prakruthi provides comprehensive antenatal care, labour ward management, delivery planning and fetal monitoring, ensuring safe and well-coordinated maternity care. Her approach emphasises timely decision-making and evidence-based protocols.'
         },
         {
           question: 'Does Dr. Prakruthi manage high-risk pregnancies at Rashtrotthana Hospital, Bangalore?',
-          answer: 'Yes, Dr. Prakruthi specialises in high-risk pregnancy management, including conditions such as gestational diabetes, pregnancy-induced hypertension, thyroid disorders, and previous pregnancy complications. Close monitoring helps reduce risks for both mother and baby.'
+          answer: 'Yes, Dr. Prakruthi specialises in high-risk pregnancy management, including conditions such as gestational diabetes, pregnancy-induced hypertension, thyroid disorders and previous pregnancy complications. Close monitoring helps reduce risks for both mother and baby.'
         },
         {
           question: 'What is labour ward management and why is it important during delivery?',
-          answer: 'Labour ward management involves continuous monitoring of the mother and baby during labour, timely interventions, and emergency preparedness. Dr. Prakruthi’s experience ensures safe progression of labour and prompt response to complications.'
+          answer: 'Labour ward management involves continuous monitoring of the mother and baby during labour, timely interventions and emergency preparedness. Dr. Prakruthi’s experience ensures safe progression of labour and prompt response to complications.'
         },
         {
           question: 'Are fetal scans and pregnancy monitoring done under Dr. Prakruthi’s care?',
-          answer: 'Yes, Dr. Prakruthi oversees fetal scans and pregnancy monitoring to assess the baby’s growth, wellbeing, and placental health. These scans help detect potential issues early and guide delivery planning.'
+          answer: 'Yes, Dr. Prakruthi oversees fetal scans and pregnancy monitoring to assess the baby’s growth, wellbeing and placental health. These scans help detect potential issues early and guide delivery planning.'
         },
         {
           question: 'How does Dr. Prakruthi ensure safe delivery outcomes at Rashtrotthana Hospital?',
@@ -1590,7 +1590,7 @@ export class NewDoctorPageComponent {
         },
         {
           question: 'How can I book an appointment with Dr. Prakruthi at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: `You can book an appointment with Dr. Prakruthi by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
+          answer: `You can book an appointment with Dr. Prakruthi by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception or booking online through the official Rashtrotthana Hospital website.`
         }
       ],
       departmentSlug: '/specialities/best-obstetrics-and-gynecologist-hospital-in-bangalore',
@@ -1625,7 +1625,7 @@ export class NewDoctorPageComponent {
         },
         {
           question: 'What types of cancer does Dr. Ravi T treat at Rashtrotthana Hospital?',
-          answer: 'Dr. Ravi T treats all adult cancers, including breast cancer, lung cancer, gastrointestinal cancers, genitourinary cancers, and blood-related malignancies. Treatment is tailored based on cancer type, stage, and individual patient factors.'
+          answer: 'Dr. Ravi T treats all adult cancers, including breast cancer, lung cancer, gastrointestinal cancers, genitourinary cancers and blood-related malignancies. Treatment is tailored based on cancer type, stage and individual patient factors.'
         },
         {
           question: 'What is precision oncology and how does Dr. Ravi T use it in cancer treatment?',
@@ -1637,15 +1637,15 @@ export class NewDoctorPageComponent {
         },
         {
           question: 'When should I consult Dr. Ravi T for cancer evaluation or treatment?',
-          answer: 'You should consult Dr. Ravi T if you have a confirmed cancer diagnosis, suspicious biopsy report, persistent symptoms like unexplained weight loss or lumps, or if you are seeking advanced treatment options or a second opinion.'
+          answer: 'You should consult Dr. Ravi T if you have a confirmed cancer diagnosis, suspicious biopsy report, persistent symptoms like unexplained weight loss or lumps or if you are seeking advanced treatment options or a second opinion.'
         },
         {
           question: 'What should patients expect during the first consultation with Dr. Ravi T?',
-          answer: 'During the first consultation, Dr. Ravi T reviews medical reports, explains the diagnosis clearly, discusses available treatment options, and outlines a personalised cancer care plan. Patients and families are encouraged to ask questions and understand each step of treatment.'
+          answer: 'During the first consultation, Dr. Ravi T reviews medical reports, explains the diagnosis clearly, discusses available treatment options and outlines a personalised cancer care plan. Patients and families are encouraged to ask questions and understand each step of treatment.'
         },
         {
           question: 'How can I book an appointment with Dr. Ravi T at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: `You can book an appointment with Dr. Ravi T by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
+          answer: `You can book an appointment with Dr. Ravi T by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception or booking online through the official Rashtrotthana Hospital website.`
         }
       ],
       departmentSlug: '/specialities/best-oncology-hospital-in-bangalore',
@@ -1680,27 +1680,27 @@ export class NewDoctorPageComponent {
         },
         {
           question: 'What health conditions does Dr. Suvarnini Konale treat through yoga and naturopathy?',
-          answer: 'Dr. Suvarnini Konale helps manage conditions such as stress, obesity, lifestyle disorders, diabetes, thyroid issues, digestive problems, joint pain, and sleep disturbances. Her treatment focuses on addressing the root cause through lifestyle correction rather than symptom control alone.'
+          answer: 'Dr. Suvarnini Konale helps manage conditions such as stress, obesity, lifestyle disorders, diabetes, thyroid issues, digestive problems, joint pain and sleep disturbances. Her treatment focuses on addressing the root cause through lifestyle correction rather than symptom control alone.'
         },
         {
           question: 'How does yoga and naturopathy help in managing chronic lifestyle diseases?',
-          answer: 'Yoga and naturopathy support long-term control of chronic conditions by improving metabolism, reducing stress, enhancing immunity, and promoting mind–body balance. Dr. Suvarnini Konale designs personalised plans combining yoga practices, diet guidance, and daily routine modifications.'
+          answer: 'Yoga and naturopathy support long-term control of chronic conditions by improving metabolism, reducing stress, enhancing immunity and promoting mind–body balance. Dr. Suvarnini Konale designs personalised plans combining yoga practices, diet guidance and daily routine modifications.'
         },
         {
           question: 'Can I consult Dr. Suvarnini Konale for stress management and mental wellbeing?',
-          answer: 'Yes, Dr. Suvarnini Konale has extensive experience in stress management, anxiety reduction, and mental wellbeing using therapeutic yoga, breathing techniques, and relaxation practices. These methods help improve focus, sleep quality, and emotional balance.'
+          answer: 'Yes, Dr. Suvarnini Konale has extensive experience in stress management, anxiety reduction and mental wellbeing using therapeutic yoga, breathing techniques and relaxation practices. These methods help improve focus, sleep quality and emotional balance.'
         },
         {
           question: 'Does Dr. Suvarnini Konale provide lifestyle counselling along with therapy?',
-          answer: 'Yes, lifestyle counselling is a core part of her approach, covering diet habits, physical activity, sleep patterns, and work–life balance. Her holistic guidance is suitable for people from diverse professions and age groups.'
+          answer: 'Yes, lifestyle counselling is a core part of her approach, covering diet habits, physical activity, sleep patterns and work–life balance. Her holistic guidance is suitable for people from diverse professions and age groups.'
         },
         {
           question: 'Is yoga and naturopathy safe for elderly patients and beginners?',
-          answer: 'Yes, Dr. Suvarnini Konale customises yoga and naturopathy programs based on age, medical history, and physical ability, making them safe for elderly individuals and beginners. Sessions are designed to be gentle, progressive, and sustainable.'
+          answer: 'Yes, Dr. Suvarnini Konale customises yoga and naturopathy programs based on age, medical history and physical ability, making them safe for elderly individuals and beginners. Sessions are designed to be gentle, progressive and sustainable.'
         },
         {
           question: 'How can I book an appointment with Dr. Suvarnini Konale at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: `You can book an appointment with Dr. Suvarnini Konale by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
+          answer: `You can book an appointment with Dr. Suvarnini Konale by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception or booking online through the official Rashtrotthana Hospital website.`
         }
       ],
       departmentSlug: '',
@@ -1728,35 +1728,35 @@ export class NewDoctorPageComponent {
       alt: 'Dr. Vishwanath Sanagoudar | Best Paediatrician and Neonatologist in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
       id: 12,
       title: 'Dr. Vishwanath Sanagoudar | Pediatric & NICU Expert Bangalore',
-      description: 'With 9 years of experience, Dr. Vishwanath Sanagoudar specializes in pediatric ICU, newborn care, and child emergencies with fellowship from IGICH.',
+      description: 'With 9 years of experience, Dr. Vishwanath Sanagoudar specializes in pediatric ICU, newborn care and child emergencies with fellowship from IGICH.',
       faqs: [
         {
           question: 'Who is Dr. Vishwanath Sanagoudar and what is his specialty at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'Dr. Vishwanath Sanagoudar is an experienced Paediatrician at Rashtrotthana Hospital, RR Nagar, Bangalore, specialising in general paediatrics, newborn care, and paediatric emergencies. He is known for his calm, evidence-based approach to child healthcare.'
+          answer: 'Dr. Vishwanath Sanagoudar is an experienced Paediatrician at Rashtrotthana Hospital, RR Nagar, Bangalore, specialising in general paediatrics, newborn care and paediatric emergencies. He is known for his calm, evidence-based approach to child healthcare.'
         },
         {
           question: 'What paediatric conditions does Dr. Vishwanath Sanagoudar treat at Rashtrotthana Hospital?',
-          answer: 'Dr. Vishwanath Sanagoudar treats common childhood illnesses such as fever, infections, respiratory problems, digestive issues, growth concerns, and nutritional deficiencies. He also manages long-term paediatric health and development.'
+          answer: 'Dr. Vishwanath Sanagoudar treats common childhood illnesses such as fever, infections, respiratory problems, digestive issues, growth concerns and nutritional deficiencies. He also manages long-term paediatric health and development.'
         },
         {
           question: 'Does Dr. Vishwanath Sanagoudar provide newborn care at Rashtrotthana Hospital?',
-          answer: 'Yes, Dr. Vishwanath Sanagoudar offers comprehensive newborn care, including feeding guidance, growth monitoring, vaccination support, and early identification of neonatal health issues. Early newborn care plays a key role in healthy development.'
+          answer: 'Yes, Dr. Vishwanath Sanagoudar offers comprehensive newborn care, including feeding guidance, growth monitoring, vaccination support and early identification of neonatal health issues. Early newborn care plays a key role in healthy development.'
         },
         {
           question: 'When should parents consult Dr. Vishwanath Sanagoudar for paediatric emergencies?',
-          answer: 'You should seek immediate consultation if a child has high fever, breathing difficulty, seizures, dehydration, severe infections, or sudden worsening of health. Dr. Vishwanath Sanagoudar is experienced in managing paediatric emergencies and critical care.'
+          answer: 'You should seek immediate consultation if a child has high fever, breathing difficulty, seizures, dehydration, severe infections or sudden worsening of health. Dr. Vishwanath Sanagoudar is experienced in managing paediatric emergencies and critical care.'
         },
         {
           question: 'Does Dr. Vishwanath Sanagoudar handle paediatric critical care cases at Rashtrotthana Hospital?',
           answer: 'Yes, he is trained in paediatric critical care, managing serious illnesses that require close monitoring and intensive treatment. Care is provided in coordination with advanced hospital support systems to ensure child safety.'
         },
         {
-          question: 'Can Dr. Vishwanath Sanagoudar guide parents on child growth, nutrition, and vaccination?',
-          answer: 'Yes, Dr. Vishwanath Sanagoudar provides guidance on child growth milestones, nutrition planning, immunisation schedules, and preventive healthcare. This helps parents support their child’s physical and developmental wellbeing.'
+          question: 'Can Dr. Vishwanath Sanagoudar guide parents on child growth, nutrition and vaccination?',
+          answer: 'Yes, Dr. Vishwanath Sanagoudar provides guidance on child growth milestones, nutrition planning, immunisation schedules and preventive healthcare. This helps parents support their child’s physical and developmental wellbeing.'
         },
         {
           question: 'How can I book an appointment with Dr. Vishwanath Sanagoudar at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: `You can book an appointment with Dr. Vishwanath Sanagoudar by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
+          answer: `You can book an appointment with Dr. Vishwanath Sanagoudar by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception or booking online through the official Rashtrotthana Hospital website.`
         }
       ],
       departmentSlug: '',
@@ -1784,11 +1784,11 @@ export class NewDoctorPageComponent {
       alt: 'Dr. Niveditha C | Best Pediatrician in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
       id: 13,
       title: 'Dr. Niveditha C | Pediatric & Neonatal Nutrition Expert',
-      description: 'Dr. Niveditha C specializes in neonatology, critical newborn care, and pediatric nutrition with 7.5 years of experience and multiple fellowships in child care.',
+      description: 'Dr. Niveditha C specializes in neonatology, critical newborn care and pediatric nutrition with 7.5 years of experience and multiple fellowships in child care.',
       faqs: [
         {
           question: 'Who is Dr. Niveditha C and what is her specialty at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'Dr. Niveditha C is an experienced Paediatrician and Neonatologist at Rashtrotthana Hospital, RR Nagar, Bangalore. She specialises in general paediatrics, advanced neonatology, and critical newborn and paediatric care, with a strong focus on evidence-based treatment.'
+          answer: 'Dr. Niveditha C is an experienced Paediatrician and Neonatologist at Rashtrotthana Hospital, RR Nagar, Bangalore. She specialises in general paediatrics, advanced neonatology and critical newborn and paediatric care, with a strong focus on evidence-based treatment.'
         },
         {
           question: 'What paediatric conditions does Dr. Niveditha C treat at Rashtrotthana Hospital?',
@@ -1796,23 +1796,23 @@ export class NewDoctorPageComponent {
         },
         {
           question: 'Does Dr. Niveditha C provide advanced newborn and neonatal care?',
-          answer: 'Yes, Dr. Niveditha C is trained in advanced neonatology, offering specialised care for premature babies, low birth-weight infants, and newborns with medical complications. Early, expert neonatal care plays a key role in improving long-term outcomes.'
+          answer: 'Yes, Dr. Niveditha C is trained in advanced neonatology, offering specialised care for premature babies, low birth-weight infants and newborns with medical complications. Early, expert neonatal care plays a key role in improving long-term outcomes.'
         },
         {
           question: 'When should parents seek critical paediatric or newborn care with Dr. Niveditha C?',
-          answer: 'Parents should seek immediate care if a child or newborn shows breathing difficulty, feeding problems, seizures, high fever, lethargy, or sudden health deterioration. Dr. Niveditha C is experienced in handling paediatric and neonatal emergencies.'
+          answer: 'Parents should seek immediate care if a child or newborn shows breathing difficulty, feeding problems, seizures, high fever, lethargy or sudden health deterioration. Dr. Niveditha C is experienced in handling paediatric and neonatal emergencies.'
         },
         {
           question: 'Can Dr. Niveditha C help with paediatric nutrition and growth concerns?',
-          answer: 'Yes, Dr. Niveditha C provides guidance on paediatric nutrition, including feeding practices, weight gain issues, and dietary planning for infants and children. Nutritional counselling is tailored to the child’s age and medical needs.'
+          answer: 'Yes, Dr. Niveditha C provides guidance on paediatric nutrition, including feeding practices, weight gain issues and dietary planning for infants and children. Nutritional counselling is tailored to the child’s age and medical needs.'
         },
         {
           question: 'What makes Dr. Niveditha C’s approach to child care at Rashtrotthana Hospital unique?',
-          answer: 'Her approach combines clinical expertise, careful monitoring, and family-centred communication, ensuring parents understand every step of their child’s care. This helps build confidence and supports healthy child development.'
+          answer: 'Her approach combines clinical expertise, careful monitoring and family-centred communication, ensuring parents understand every step of their child’s care. This helps build confidence and supports healthy child development.'
         },
         {
           question: 'How can I book an appointment with Dr. Niveditha C at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: `You can book an appointment with Dr. Niveditha C by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
+          answer: `You can book an appointment with Dr. Niveditha C by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception or booking online through the official Rashtrotthana Hospital website.`
         }
       ],
       departmentSlug: '',
@@ -1840,15 +1840,15 @@ export class NewDoctorPageComponent {
       alt: 'Dr. Nikhil Hegde | Best Orthopaedic Consultant in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
       id: 6,
       title: 'Dr. Nikhil Hegde | Sports Injury & Trauma Orthopedic Surgeon',
-      description: 'Dr. Nikhil Hegde is an orthopedic surgeon with 8+ years of experience, specializing in sports medicine, arthroplasty, arthroscopy, and trauma care.',
+      description: 'Dr. Nikhil Hegde is an orthopedic surgeon with 8+ years of experience, specializing in sports medicine, arthroplasty, arthroscopy and trauma care.',
       faqs: [
         {
           question: 'Who is Dr. Nikhil Hegde and what is his specialty at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'Dr. Nikhil Hegde is an experienced Orthopaedic Surgeon and Sports Medicine Specialist at Rashtrotthana Hospital, RR Nagar, Bangalore. He specialises in managing sports injuries, joint problems, arthroscopy procedures, and orthopaedic trauma with a focus on restoring mobility and function.'
+          answer: 'Dr. Nikhil Hegde is an experienced Orthopaedic Surgeon and Sports Medicine Specialist at Rashtrotthana Hospital, RR Nagar, Bangalore. He specialises in managing sports injuries, joint problems, arthroscopy procedures and orthopaedic trauma with a focus on restoring mobility and function.'
         },
         {
           question: 'What sports injuries are treated by Dr. Nikhil Hegde at Rashtrotthana Hospital?',
-          answer: 'Dr. Nikhil Hegde treats ligament injuries, meniscus tears, muscle injuries, tendon problems, and overuse injuries commonly seen in athletes and active individuals. Treatment plans are designed to help patients return safely to sports and daily activities.'
+          answer: 'Dr. Nikhil Hegde treats ligament injuries, meniscus tears, muscle injuries, tendon problems and overuse injuries commonly seen in athletes and active individuals. Treatment plans are designed to help patients return safely to sports and daily activities.'
         },
         {
           question: 'What is arthroscopy and when is it recommended by Dr. Nikhil Hegde?',
@@ -1860,7 +1860,7 @@ export class NewDoctorPageComponent {
         },
         {
           question: 'Can I consult Dr. Nikhil Hegde for fracture and orthopaedic trauma care?',
-          answer: 'Yes, Dr. Nikhil Hegde manages orthopaedic trauma, including fractures caused by accidents, falls, or sports injuries. Timely treatment ensures proper bone healing and prevents long-term complications.'
+          answer: 'Yes, Dr. Nikhil Hegde manages orthopaedic trauma, including fractures caused by accidents, falls or sports injuries. Timely treatment ensures proper bone healing and prevents long-term complications.'
         },
         {
           question: 'What is the recovery time after arthroscopy or joint surgery with Dr. Nikhil Hegde?',
@@ -1868,7 +1868,7 @@ export class NewDoctorPageComponent {
         },
         {
           question: 'How can I book an appointment with Dr. Nikhil Hegde at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: `You can book an appointment with Dr. Nikhil Hegde by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
+          answer: `You can book an appointment with Dr. Nikhil Hegde by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception or booking online through the official Rashtrotthana Hospital website.`
         }
       ],
       departmentSlug: '/specialities/best-orthopaedics-hospital-in-bangalore',
@@ -1896,35 +1896,35 @@ export class NewDoctorPageComponent {
       alt: 'Dr. Neelam Saraswat | Best Gynaecology Consultant in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
       id: 15,
       title: 'Dr. Neelam Saraswat | Expert in High-Risk Pregnancy & Women\'s Health',
-      description: 'Dr. Neelam Saraswat is a gynecologist with 12+ years’ experience in high-risk pregnancy, adolescent care, yoga in women’s health, and integrative care.',
+      description: 'Dr. Neelam Saraswat is a gynecologist with 12+ years’ experience in high-risk pregnancy, adolescent care, yoga in women’s health and integrative care.',
       faqs: [
         {
           question: 'Who is Dr. Neelam Saraswat and what is her specialty at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'Dr. Neelam Saraswat is an experienced Obstetrician and Women’s Health Specialist at Rashtrotthana Hospital, RR Nagar, Bangalore. She is known for managing high-risk pregnancies, adolescent health concerns, and integrating yoga and lifestyle practices into women’s healthcare.'
+          answer: 'Dr. Neelam Saraswat is an experienced Obstetrician and Women’s Health Specialist at Rashtrotthana Hospital, RR Nagar, Bangalore. She is known for managing high-risk pregnancies, adolescent health concerns and integrating yoga and lifestyle practices into women’s healthcare.'
         },
         {
           question: 'Does Dr. Neelam Saraswat manage high-risk pregnancies at Rashtrotthana Hospital?',
-          answer: 'Yes, Dr. Neelam Saraswat has extensive experience in high-risk pregnancy management, including cases with gestational diabetes, hypertension, thyroid disorders, anemia, and previous pregnancy complications. Care focuses on close monitoring and safe maternal–fetal outcomes.'
+          answer: 'Yes, Dr. Neelam Saraswat has extensive experience in high-risk pregnancy management, including cases with gestational diabetes, hypertension, thyroid disorders, anemia and previous pregnancy complications. Care focuses on close monitoring and safe maternal–fetal outcomes.'
         },
         {
           question: 'What adolescent health issues are treated by Dr. Neelam Saraswat?',
-          answer: 'Dr. Neelam Saraswat provides specialised adolescent care for concerns such as irregular periods, hormonal changes, anemia, nutritional issues, and menstrual pain. Early guidance helps young girls build a strong foundation for long-term reproductive health.'
+          answer: 'Dr. Neelam Saraswat provides specialised adolescent care for concerns such as irregular periods, hormonal changes, anemia, nutritional issues and menstrual pain. Early guidance helps young girls build a strong foundation for long-term reproductive health.'
         },
         {
           question: 'What are integrated medicine protocols in women’s healthcare?',
-          answer: 'Integrated medicine protocols combine modern medical treatment with lifestyle, nutrition, and supportive therapies for holistic care. Dr. Neelam Saraswat uses this approach to improve overall wellbeing while managing pregnancy and gynecological concerns safely.'
+          answer: 'Integrated medicine protocols combine modern medical treatment with lifestyle, nutrition and supportive therapies for holistic care. Dr. Neelam Saraswat uses this approach to improve overall wellbeing while managing pregnancy and gynecological concerns safely.'
         },
         {
           question: 'How does yoga help in women’s health and pregnancy care?',
-          answer: 'Yoga plays an important role in stress reduction, posture improvement, hormonal balance, and pregnancy comfort. Dr. Neelam Saraswat incorporates yoga-based guidance where appropriate to support both physical and emotional health in women.'
+          answer: 'Yoga plays an important role in stress reduction, posture improvement, hormonal balance and pregnancy comfort. Dr. Neelam Saraswat incorporates yoga-based guidance where appropriate to support both physical and emotional health in women.'
         },
         {
           question: 'When should I consult Dr. Neelam Saraswat for pregnancy or women’s health issues?',
-          answer: 'You should consult Dr. Neelam Saraswat if you are planning pregnancy, experiencing high-risk pregnancy symptoms, menstrual irregularities, adolescent health concerns, or looking for holistic women’s healthcare. Early consultation allows better planning and prevention of complications.'
+          answer: 'You should consult Dr. Neelam Saraswat if you are planning pregnancy, experiencing high-risk pregnancy symptoms, menstrual irregularities, adolescent health concerns or looking for holistic women’s healthcare. Early consultation allows better planning and prevention of complications.'
         },
         {
           question: 'How can I book an appointment with Dr. Neelam Saraswat at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: `You can book an appointment with Dr. Neelam Saraswat by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
+          answer: `You can book an appointment with Dr. Neelam Saraswat by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception or booking online through the official Rashtrotthana Hospital website.`
         }
       ],
       departmentSlug: '/specialities/best-obstetrics-and-gynecologist-hospital-in-bangalore',
@@ -1952,15 +1952,15 @@ export class NewDoctorPageComponent {
     //   alt: 'Dr. Ashwitha Gundmi | Best Obstetrics & Gynaecologist in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
     //   id: 17,
     //   title: 'Dr. Ashwitha Gundmi | High-Risk Pregnancy & MIS Specialist',
-    //   description: 'Dr. Ashwitha Gundmi is an experienced gynecologist skilled in high-risk obstetrics, MIS surgeries, cervical care, and fertility solutions.',
+    //   description: 'Dr. Ashwitha Gundmi is an experienced gynecologist skilled in high-risk obstetrics, MIS surgeries, cervical care and fertility solutions.',
     //   faqs: [
     //     {
     //       question: 'Who is Dr. Ashwitha Gundmi and what is her specialty at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-    //       answer: 'Dr. Ashwitha Gundmi is an experienced Obstetrician and Gynaecologist at Rashtrotthana Hospital, RR Nagar, Bangalore. She is known for managing high-risk pregnancies, performing minimally invasive gynaecological surgeries, and providing protocol-based women’s healthcare.'
+    //       answer: 'Dr. Ashwitha Gundmi is an experienced Obstetrician and Gynaecologist at Rashtrotthana Hospital, RR Nagar, Bangalore. She is known for managing high-risk pregnancies, performing minimally invasive gynaecological surgeries and providing protocol-based women’s healthcare.'
     //     },
     //     {
     //       question: 'Does Dr. Ashwitha Gundmi manage high-risk pregnancies at Rashtrotthana Hospital?',
-    //       answer: 'Yes, Dr. Ashwitha Gundmi specialises in high-risk obstetrics, including pregnancies complicated by diabetes, hypertension, thyroid disorders, previous pregnancy complications, and advanced maternal age. Her care focuses on close monitoring and safe maternal–fetal outcomes.'
+    //       answer: 'Yes, Dr. Ashwitha Gundmi specialises in high-risk obstetrics, including pregnancies complicated by diabetes, hypertension, thyroid disorders, previous pregnancy complications and advanced maternal age. Her care focuses on close monitoring and safe maternal–fetal outcomes.'
     //     },
     //     {
     //       question: 'What is protocol-based pregnancy and gynaecology management?',
@@ -1968,19 +1968,19 @@ export class NewDoctorPageComponent {
     //     },
     //     {
     //       question: 'What gynaecological surgeries does Dr. Ashwitha Gundmi perform?',
-    //       answer: 'Dr. Ashwitha Gundmi performs minimally invasive (MIS) gynaecological surgeries, including laparoscopic procedures for uterine, ovarian, and pelvic conditions. These techniques offer smaller incisions, less pain, and faster recovery.'
+    //       answer: 'Dr. Ashwitha Gundmi performs minimally invasive (MIS) gynaecological surgeries, including laparoscopic procedures for uterine, ovarian and pelvic conditions. These techniques offer smaller incisions, less pain and faster recovery.'
     //     },
     //     {
     //       question: 'Can I consult Dr. Ashwitha Gundmi for fertility-related issues?',
-    //       answer: 'Yes, Dr. Ashwitha Gundmi evaluates and treats fertility-related concerns, including irregular cycles, ovulation issues, and hormonal imbalances. She provides personalised guidance and treatment planning based on individual needs.'
+    //       answer: 'Yes, Dr. Ashwitha Gundmi evaluates and treats fertility-related concerns, including irregular cycles, ovulation issues and hormonal imbalances. She provides personalised guidance and treatment planning based on individual needs.'
     //     },
     //     {
     //       question: 'Does Dr. Ashwitha Gundmi provide family planning and contraception counselling?',
-    //       answer: 'Yes, she offers comprehensive family planning and contraception services, helping women choose suitable birth-control options based on health, lifestyle, and future pregnancy plans. Counselling ensures informed and safe decision-making.'
+    //       answer: 'Yes, she offers comprehensive family planning and contraception services, helping women choose suitable birth-control options based on health, lifestyle and future pregnancy plans. Counselling ensures informed and safe decision-making.'
     //     },
     //     {
     //       question: 'How can I book an appointment with Dr. Ashwitha Gundmi at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-    //       answer: `You can book an appointment with Dr. Ashwitha Gundmi by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
+    //       answer: `You can book an appointment with Dr. Ashwitha Gundmi by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception or booking online through the official Rashtrotthana Hospital website.`
     //     }
     //   ],
     //   departmentSlug: '/specialities/best-obstetrics-and-gynecologist-hospital-in-bangalore',
@@ -2015,19 +2015,19 @@ export class NewDoctorPageComponent {
         },
         {
           question: 'Does Dr. Vinita Udupa treat high-risk pregnancies at Rashtrotthana Hospital?',
-          answer: 'Yes, Dr. Vinita Udupa specialises in high-risk pregnancy management, including cases involving diabetes, hypertension, thyroid disorders, heart disease, and previous pregnancy complications. Close monitoring helps reduce risks and improve pregnancy outcomes.'
+          answer: 'Yes, Dr. Vinita Udupa specialises in high-risk pregnancy management, including cases involving diabetes, hypertension, thyroid disorders, heart disease and previous pregnancy complications. Close monitoring helps reduce risks and improve pregnancy outcomes.'
         },
         {
           question: 'What is obstetric medicine and how does Dr. Vinita Udupa help pregnant women with medical conditions?',
-          answer: 'Obstetric medicine focuses on managing medical disorders during pregnancy. Dr. Vinita Udupa treats conditions such as anemia, hypertension, diabetes, and autoimmune disorders while ensuring the safety of both mother and baby.'
+          answer: 'Obstetric medicine focuses on managing medical disorders during pregnancy. Dr. Vinita Udupa treats conditions such as anemia, hypertension, diabetes and autoimmune disorders while ensuring the safety of both mother and baby.'
         },
         {
           question: 'What fetal medicine services are provided by Dr. Vinita Udupa at Rashtrotthana Hospital?',
-          answer: 'Dr. Vinita Udupa provides advanced fetal medicine services, including detailed fetal assessments, growth monitoring, and evaluation of fetal wellbeing. Early detection helps guide pregnancy care and delivery planning.'
+          answer: 'Dr. Vinita Udupa provides advanced fetal medicine services, including detailed fetal assessments, growth monitoring and evaluation of fetal wellbeing. Early detection helps guide pregnancy care and delivery planning.'
         },
         {
           question: 'When should a pregnant woman consult Dr. Vinita Udupa?',
-          answer: 'You should consult Dr. Vinita Udupa if you have a high-risk pregnancy, abnormal scan findings, existing medical illness, or concerns about fetal growth and development. Early specialist care helps prevent complications.'
+          answer: 'You should consult Dr. Vinita Udupa if you have a high-risk pregnancy, abnormal scan findings, existing medical illness or concerns about fetal growth and development. Early specialist care helps prevent complications.'
         },
         {
           question: 'How does Dr. Vinita Udupa ensure safe outcomes in complex pregnancies?',
@@ -2035,7 +2035,7 @@ export class NewDoctorPageComponent {
         },
         {
           question: 'How can I book an appointment with Dr. Vinita Udupa at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: `You can book an appointment with Dr. Vinita Udupa by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
+          answer: `You can book an appointment with Dr. Vinita Udupa by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception or booking online through the official Rashtrotthana Hospital website.`
         }
       ],
       departmentSlug: '/specialities/best-obstetrics-and-gynecologist-hospital-in-bangalore',
@@ -2063,7 +2063,7 @@ export class NewDoctorPageComponent {
       alt: 'Dr. Anusha Mutalik Desai | Best Homeopathy Doctor in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
       id: 28,
       title: 'Dr. Anusha Mutalik Desai | Best Homeopathy Specialist ',
-      description: 'Dr. Anusha Desai blends classical homeopathy with modern care to treat conditions like hypothyroidism, PCOD, asthma, and mental wellness.',
+      description: 'Dr. Anusha Desai blends classical homeopathy with modern care to treat conditions like hypothyroidism, PCOD, asthma and mental wellness.',
       faqs: [
         {
           question: 'Who is Dr. Anusha Mutalik Desai and what is her specialty at Rashtrotthana Hospital, RR Nagar, Bangalore?',
@@ -2071,27 +2071,27 @@ export class NewDoctorPageComponent {
         },
         {
           question: 'What chronic medical conditions does Dr. Anusha Mutalik Desai treat at Rashtrotthana Hospital?',
-          answer: 'Dr. Anusha Mutalik Desai treats diabetes (DM), hypertension (HTN), hypothyroidism, PCOD, rheumatoid arthritis, asthma, and gastritis. Her care focuses on accurate diagnosis, medication optimisation, and lifestyle modification.'
+          answer: 'Dr. Anusha Mutalik Desai treats diabetes (DM), hypertension (HTN), hypothyroidism, PCOD, rheumatoid arthritis, asthma and gastritis. Her care focuses on accurate diagnosis, medication optimisation and lifestyle modification.'
         },
         {
           question: 'Can I consult Dr. Anusha Mutalik Desai for thyroid and hormonal problems like hypothyroidism and PCOD?',
-          answer: 'Yes, Dr. Anusha Mutalik Desai has extensive experience in managing hypothyroidism and PCOD, including symptom control, hormonal balance, and long-term follow-up. Early treatment helps prevent complications such as weight gain, fatigue, and menstrual irregularities.'
+          answer: 'Yes, Dr. Anusha Mutalik Desai has extensive experience in managing hypothyroidism and PCOD, including symptom control, hormonal balance and long-term follow-up. Early treatment helps prevent complications such as weight gain, fatigue and menstrual irregularities.'
         },
         {
-          question: 'Does Dr. Anusha Mutalik Desai treat anxiety, depression, and migraine?',
-          answer: 'Yes, she manages anxiety disorders, depression, and migraine with a combination of medical treatment, counselling guidance, and lifestyle support. Early intervention helps improve daily functioning and quality of life.'
+          question: 'Does Dr. Anusha Mutalik Desai treat anxiety, depression and migraine?',
+          answer: 'Yes, she manages anxiety disorders, depression and migraine with a combination of medical treatment, counselling guidance and lifestyle support. Early intervention helps improve daily functioning and quality of life.'
         },
         {
           question: 'Is treatment available for piles (haemorrhoids) and digestive issues like gastritis?',
-          answer: 'Dr. Anusha Mutalik Desai evaluates and treats haemorrhoids and gastritis, focusing on symptom relief, dietary advice, and preventing recurrence. Patients are guided on when medical management is sufficient and when referral is needed.'
+          answer: 'Dr. Anusha Mutalik Desai evaluates and treats haemorrhoids and gastritis, focusing on symptom relief, dietary advice and preventing recurrence. Patients are guided on when medical management is sufficient and when referral is needed.'
         },
         {
           question: 'Can Dr. Anusha Mutalik Desai help manage asthma and long-term breathing problems?',
-          answer: 'Yes, she provides ongoing care for asthma, including medication planning, trigger control, and monitoring to prevent frequent attacks. Proper asthma management helps maintain normal daily activity.'
+          answer: 'Yes, she provides ongoing care for asthma, including medication planning, trigger control and monitoring to prevent frequent attacks. Proper asthma management helps maintain normal daily activity.'
         },
         {
           question: 'How can I book an appointment with Dr. Anusha Mutalik Desai at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: `You can book an appointment with Dr. Anusha Mutalik Desai by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
+          answer: `You can book an appointment with Dr. Anusha Mutalik Desai by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception or booking online through the official Rashtrotthana Hospital website.`
         }
       ],
       departmentSlug: '/specialities/homeopathy-treatment-bangalore',
@@ -2118,7 +2118,7 @@ export class NewDoctorPageComponent {
       date: 'Monday-Saturday',
       alt: 'Dr. Ajay N | Best Gastro Doctor in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
       title: 'Dr. Ajay N | Best Gastro Surgeon in Bangalore ',
-      description: 'Dr. Ajay N is a skilled gastro surgeon in Bangalore specializing in laparoscopic surgery, proctology, and GI care with a patient-first approach.',
+      description: 'Dr. Ajay N is a skilled gastro surgeon in Bangalore specializing in laparoscopic surgery, proctology and GI care with a patient-first approach.',
       departmentSlug: '',
       expertiseIcons: [
         'assets/list.png',
@@ -2159,15 +2159,15 @@ export class NewDoctorPageComponent {
       faqs: [
         {
           question: 'Who is Dr. Varsha P and what is her specialty at Rashtrotthana Hospital, Bangalore?',
-          answer: 'Dr. Varsha P is a Lifestyle Medicine and Ayurveda Specialist at Rashtrotthana Hospital, Bangalore, with 7+ years of experience in managing lifestyle-related health conditions. She combines Ayurvedic principles, diet counselling, and yoga-based approaches to support long-term wellness.'
+          answer: 'Dr. Varsha P is a Lifestyle Medicine and Ayurveda Specialist at Rashtrotthana Hospital, Bangalore, with 7+ years of experience in managing lifestyle-related health conditions. She combines Ayurvedic principles, diet counselling and yoga-based approaches to support long-term wellness.'
         },
         {
-          question: 'Can Dr. Varsha P help with diabetes, hypertension, and thyroid disorders at Rashtrotthana Hospital?',
-          answer: 'Yes, Dr. Varsha P provides lifestyle-based management for diabetes, high blood pressure, thyroid disorders, and other metabolic conditions. Her approach focuses on diet changes, daily routine corrections, and natural therapies to improve overall health.'
+          question: 'Can Dr. Varsha P help with diabetes, hypertension and thyroid disorders at Rashtrotthana Hospital?',
+          answer: 'Yes, Dr. Varsha P provides lifestyle-based management for diabetes, high blood pressure, thyroid disorders and other metabolic conditions. Her approach focuses on diet changes, daily routine corrections and natural therapies to improve overall health.'
         },
         {
           question: 'What lifestyle diseases are commonly treated by Dr. Varsha P in Bangalore?',
-          answer: 'Dr. Varsha P treats lifestyle-related conditions such as diabetes, obesity, hypertension, thyroid imbalance, and stress-related disorders. Treatment plans are designed to improve metabolism, energy levels, and overall quality of life.'
+          answer: 'Dr. Varsha P treats lifestyle-related conditions such as diabetes, obesity, hypertension, thyroid imbalance and stress-related disorders. Treatment plans are designed to improve metabolism, energy levels and overall quality of life.'
         },
         {
           question: 'Does Dr. Varsha P provide diet counselling and preventive health guidance?',
@@ -2175,15 +2175,15 @@ export class NewDoctorPageComponent {
         },
         {
           question: 'Is yoga and natural therapy included in treatment with Dr. Varsha P?',
-          answer: 'As a certified Yoga Instructor (YIC), Dr. Varsha P integrates yoga, breathing techniques, and natural therapies into her treatment plans. These methods help improve stress levels, metabolism, and overall physical and mental wellbeing.'
+          answer: 'As a certified Yoga Instructor (YIC), Dr. Varsha P integrates yoga, breathing techniques and natural therapies into her treatment plans. These methods help improve stress levels, metabolism and overall physical and mental wellbeing.'
         },
         {
           question: 'When should I consult Dr. Varsha P for lifestyle or preventive health care?',
-          answer: 'You should consult Dr. Varsha P if you have early-stage lifestyle diseases, weight issues, thyroid imbalance, fatigue, or stress-related symptoms. Early lifestyle correction can help prevent long-term complications.'
+          answer: 'You should consult Dr. Varsha P if you have early-stage lifestyle diseases, weight issues, thyroid imbalance, fatigue or stress-related symptoms. Early lifestyle correction can help prevent long-term complications.'
         },
         {
           question: 'Why choose Dr. Varsha P at Rashtrotthana Hospital for lifestyle medicine?',
-          answer: 'Dr. Varsha P brings 7+ years of experience and a holistic approach that combines Ayurveda, diet counselling, and yoga-based wellness. At Rashtrotthana Hospital, patients receive structured, preventive, and natural lifestyle care under expert guidance.'
+          answer: 'Dr. Varsha P brings 7+ years of experience and a holistic approach that combines Ayurveda, diet counselling and yoga-based wellness. At Rashtrotthana Hospital, patients receive structured, preventive and natural lifestyle care under expert guidance.'
         },
 
       ],
@@ -2208,23 +2208,23 @@ export class NewDoctorPageComponent {
       faqs: [
         {
           question: 'Who is Dr. Rohith K. R and what is his specialty at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'Dr. Rohith K. R is a qualified Ayurveda Physician at Rashtrotthana Hospital, RR Nagar, Bangalore, with training in traditional Ayurvedic practice, wellness, and holistic disease management. He focuses on natural treatment strategies to support long-term health and wellbeing.'
+          answer: 'Dr. Rohith K. R is a qualified Ayurveda Physician at Rashtrotthana Hospital, RR Nagar, Bangalore, with training in traditional Ayurvedic practice, wellness and holistic disease management. He focuses on natural treatment strategies to support long-term health and wellbeing.'
         },
         {
           question: 'What health conditions does Dr. Rohith K. R treat at Rashtrotthana Hospital?',
-          answer: 'Dr. Rohith K. R treats a range of chronic and lifestyle-related conditions such as stress, digestive disorders, chronic pain, arthritis, skin issues, and metabolic imbalance using Ayurvedic therapies tailored to individual constitution and symptoms.'
+          answer: 'Dr. Rohith K. R treats a range of chronic and lifestyle-related conditions such as stress, digestive disorders, chronic pain, arthritis, skin issues and metabolic imbalance using Ayurvedic therapies tailored to individual constitution and symptoms.'
         },
         {
           question: 'Can Dr. Rohith K. R help with digestive problems and gastritis using Ayurveda?',
-          answer: 'Yes, Dr. Rohith K. R provides Ayurvedic care for digestive problems including gastritis, bloating, and irregular bowel habits, combining herbal formulations, diet advice, and lifestyle changes to restore digestive balance and comfort.'
+          answer: 'Yes, Dr. Rohith K. R provides Ayurvedic care for digestive problems including gastritis, bloating and irregular bowel habits, combining herbal formulations, diet advice and lifestyle changes to restore digestive balance and comfort.'
         },
         {
-          question: 'Is Dr. Rohith K. R experienced in managing stress, anxiety, and lifestyle-related health concerns?',
-          answer: 'Dr. Rohith K. R uses Ayurvedic lifestyle counselling, therapeutic herbs, and mind–body approaches to help manage stress, anxiety, and other lifestyle-related issues, promoting overall wellness in coordination with daily habits.'
+          question: 'Is Dr. Rohith K. R experienced in managing stress, anxiety and lifestyle-related health concerns?',
+          answer: 'Dr. Rohith K. R uses Ayurvedic lifestyle counselling, therapeutic herbs and mind–body approaches to help manage stress, anxiety and other lifestyle-related issues, promoting overall wellness in coordination with daily habits.'
         },
         {
           question: 'What Ayurvedic treatments are available at Rashtrotthana Hospital with Dr. Rohith K. R?',
-          answer: 'At Rashtrotthana Hospital, Dr. Rohith K. R offers herbal therapies, panchakarma procedures, personalised diet plans, and lifestyle guidance aimed at addressing the root cause of illness and supporting natural healing.'
+          answer: 'At Rashtrotthana Hospital, Dr. Rohith K. R offers herbal therapies, panchakarma procedures, personalised diet plans and lifestyle guidance aimed at addressing the root cause of illness and supporting natural healing.'
         },
         {
           question: 'How long does it take to see results from Ayurvedic treatment with Dr. Rohith K. R?',
@@ -2232,7 +2232,7 @@ export class NewDoctorPageComponent {
         },
         {
           question: 'How can I book an appointment with Dr. Rohith K. R at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: `You can book an appointment with Dr. Rohith K. R by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or using the online appointment options on the official Rashtrotthana Hospital website.`
+          answer: `You can book an appointment with Dr. Rohith K. R by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception or using the online appointment options on the official Rashtrotthana Hospital website.`
         }
       ],
       departmentSlug: '/specialities/ayurvedic-treatment-bangalore',
@@ -2272,15 +2272,15 @@ export class NewDoctorPageComponent {
     //   alt: 'Dr. Narendranath A | Best ENT Doctor in Bangalore | Rashtrotthana Hospita | Rajarajeshwari Nagar Bangalore',
     //   id: 31,
     //   title: 'Dr. Narendranath A | ENT Head & Neck Surgeon Bangalore',
-    //   description: 'Dr. Narendranath A is an ENT and Head & Neck Surgeon with 10+ years of experience in advanced ENT surgeries, sinus, voice box, and thyroid procedures.',
+    //   description: 'Dr. Narendranath A is an ENT and Head & Neck Surgeon with 10+ years of experience in advanced ENT surgeries, sinus, voice box and thyroid procedures.',
     //   faqs: [
     //     {
     //       question: 'Who is Dr. Narendranath A and what is his specialty at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-    //       answer: 'Dr. Narendranath A is an experienced ENT (Otorhinolaryngology) Surgeon at Rashtrotthana Hospital, RR Nagar, Bangalore. He specialises in otology and rhinology, managing complex ear, nose, throat, and airway conditions with advanced surgical care.'
+    //       answer: 'Dr. Narendranath A is an experienced ENT (Otorhinolaryngology) Surgeon at Rashtrotthana Hospital, RR Nagar, Bangalore. He specialises in otology and rhinology, managing complex ear, nose, throat and airway conditions with advanced surgical care.'
     //     },
     //     {
     //       question: 'What ear surgeries does Dr. Narendranath A perform at Rashtrotthana Hospital?',
-    //       answer: 'Dr. Narendranath A performs tympanoplasty, mastoidectomy, myringotomy, and grommet insertion surgeries for chronic ear infections and hearing problems. These procedures aim to control infection, restore hearing, and prevent complications.'
+    //       answer: 'Dr. Narendranath A performs tympanoplasty, mastoidectomy, myringotomy and grommet insertion surgeries for chronic ear infections and hearing problems. These procedures aim to control infection, restore hearing and prevent complications.'
     //     },
     //     {
     //       question: 'Does Dr. Narendranath A treat sinus problems and nasal polyps?',
@@ -2288,19 +2288,19 @@ export class NewDoctorPageComponent {
     //     },
     //     {
     //       question: 'When is nasal septum correction surgery recommended by Dr. Narendranath A?',
-    //       answer: 'Nasal septum correction is recommended for patients with deviated nasal septum causing breathing difficulty, snoring, recurrent sinus infections, or headaches. Surgery helps restore proper airflow and nasal function.'
+    //       answer: 'Nasal septum correction is recommended for patients with deviated nasal septum causing breathing difficulty, snoring, recurrent sinus infections or headaches. Surgery helps restore proper airflow and nasal function.'
     //     },
     //     {
     //       question: 'Does Dr. Narendranath A perform tonsil, adenoid and voice box surgeries?',
-    //       answer: 'Yes, he performs adenoidectomy, tonsillectomy, and surgeries related to the vocal cords (voice box) for conditions like recurrent throat infections, sleep-related breathing issues, and voice disorders. Early treatment helps prevent long-term complications.'
+    //       answer: 'Yes, he performs adenoidectomy, tonsillectomy and surgeries related to the vocal cords (voice box) for conditions like recurrent throat infections, sleep-related breathing issues and voice disorders. Early treatment helps prevent long-term complications.'
     //     },
     //     {
-    //       question: 'Are thyroid, parotid, and tracheostomy procedures handled by Dr. Narendranath A?',
+    //       question: 'Are thyroid, parotid and tracheostomy procedures handled by Dr. Narendranath A?',
     //       answer: 'Dr. Narendranath A is experienced in thyroid and parotid gland surgeries, as well as tracheostomy procedures for airway management in emergency or long-term breathing conditions. These surgeries require precise planning and specialised ENT expertise.'
     //     },
     //     {
     //       question: 'How can I book an appointment with Dr. Narendranath A at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-    //       answer: `You can book an appointment with Dr. Narendranath A by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
+    //       answer: `You can book an appointment with Dr. Narendranath A by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception or booking online through the official Rashtrotthana Hospital website.`
     //     }
     //   ],
     //   departmentSlug: '/specialities/best-ent-hospital-in-bangalore',
@@ -2332,15 +2332,15 @@ export class NewDoctorPageComponent {
       faqs: [
         {
           question: 'Who is Dr. Harshith K S and what is his specialty at Rashtrotthana Hospital, Bangalore?',
-          answer: 'Dr. Harshith K S is a General Physician at Rashtrotthana Hospital, RR Nagar, Bangalore, with experience in managing a wide range of medical conditions, preventive care, and vaccinations. His practice combines clinical evaluation with evidence-based treatment and patient education.'
+          answer: 'Dr. Harshith K S is a General Physician at Rashtrotthana Hospital, RR Nagar, Bangalore, with experience in managing a wide range of medical conditions, preventive care and vaccinations. His practice combines clinical evaluation with evidence-based treatment and patient education.'
         },
         {
           question: 'Can I consult Dr. Harshith K S for hand injuries and ganglion cysts?',
-          answer: 'Yes, Dr. Harshith K S evaluates and manages hand injuries, including soft-tissue injuries and ganglion cysts, and guides patients on conservative care or further intervention when required. Early assessment helps prevent long-term discomfort or functional limitation.'
+          answer: 'Yes, Dr. Harshith K S evaluates and manages hand injuries, including soft-tissue injuries and ganglion cysts and guides patients on conservative care or further intervention when required. Early assessment helps prevent long-term discomfort or functional limitation.'
         },
         {
           question: 'Does Dr. Harshith K S provide vaccination and immunization services at Rashtrotthana Hospital?',
-          answer: 'Yes, Dr. Harshith K S offers vaccination and immunization services, including MMR vaccination, following recommended safety protocols. He also counsels patients and families on vaccine schedules, benefits, and possible side effects.'
+          answer: 'Yes, Dr. Harshith K S offers vaccination and immunization services, including MMR vaccination, following recommended safety protocols. He also counsels patients and families on vaccine schedules, benefits and possible side effects.'
         },
         {
           question: 'Can Dr. Harshith K S treat excessive sweating (hyperhidrosis)?',
@@ -2348,15 +2348,15 @@ export class NewDoctorPageComponent {
         },
         {
           question: 'Does Dr. Harshith K S manage rare or metabolic conditions like Marfan syndrome and hemochromatosis?',
-          answer: 'Yes, Dr. Harshith K S is experienced in the evaluation and long-term medical management of conditions such as Marfan syndrome and hemochromatosis. He emphasizes regular monitoring, lifestyle guidance, and coordinated care when specialist input is required.'
+          answer: 'Yes, Dr. Harshith K S is experienced in the evaluation and long-term medical management of conditions such as Marfan syndrome and hemochromatosis. He emphasizes regular monitoring, lifestyle guidance and coordinated care when specialist input is required.'
         },
         {
-          question: 'When is capsule endoscopy advised, and does Dr. Harshith K S handle such cases?',
+          question: 'When is capsule endoscopy advised and does Dr. Harshith K S handle such cases?',
           answer: 'Capsule endoscopy is advised for evaluating unexplained gastrointestinal symptoms or bleeding when routine tests are inconclusive. Dr. Harshith K S assesses patients for suitability and coordinates appropriate diagnostic pathways.'
         },
         {
           question: 'Can I consult Dr. Harshith K S for liver-related conditions like toxic hepatitis?',
-          answer: 'Yes, Dr. Harshith K S treats toxic hepatitis and other liver-related conditions, focusing on identifying triggers, medical treatment, and recovery monitoring. Timely care helps prevent complications and supports liver healing.'
+          answer: 'Yes, Dr. Harshith K S treats toxic hepatitis and other liver-related conditions, focusing on identifying triggers, medical treatment and recovery monitoring. Timely care helps prevent complications and supports liver healing.'
         }
       ],
       departmentSlug: '/specialities/internal-medicine-hospital-in-bangalore',
@@ -2409,14 +2409,14 @@ export class NewDoctorPageComponent {
     //   alt: 'Dr. Bhavya | Best Diabetologist in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
     //   id: 2,
     //   title:'Dr. Bhavya N | Consultant Physician & Diabetologist Bangalore',
-    //   description:'Dr. Bhavya N is a gold medalist physician and diabetologist in Bangalore, experienced in diabetes reversal, thyroid care, and internal medicine.'
+    //   description:'Dr. Bhavya N is a gold medalist physician and diabetologist in Bangalore, experienced in diabetes reversal, thyroid care and internal medicine.'
     // },
 
     {
       name: 'Dr. Shamantha S',
       image: 'assets/Doc-Inv-Page/Dr-Shamantha-S.png',
       department: 'LIFESTYLE MEDICINE',
-      about: 'Dr. Shamantha S is a Lifestyle Medicine practitioner at Rashtrotthana Hospital, Bangalore, with a BAMS qualification and 6 years of clinical experience. She focuses on managing lifestyle-related health concerns through natural, preventive, and holistic approaches. Her treatment philosophy combines Ayurvedic principles, diet guidance, and daily routine corrections to help patients achieve sustainable health and long-term wellness.',
+      about: 'Dr. Shamantha S is a Lifestyle Medicine practitioner at Rashtrotthana Hospital, Bangalore, with a BAMS qualification and 6 years of clinical experience. She focuses on managing lifestyle-related health concerns through natural, preventive and holistic approaches. Her treatment philosophy combines Ayurvedic principles, diet guidance and daily routine corrections to help patients achieve sustainable health and long-term wellness.',
       speciality: 'LIFESTYLE MEDICINE',
       areasOfExpertise: ['Lifestyle diseases'],
       qualification: 'BAMS',
@@ -2426,7 +2426,7 @@ export class NewDoctorPageComponent {
       alt: 'Dr. Shamantha S | Lifestyle Specialist in Bangalore | Rashtrotthana Hospita | Rajarajeshwari Nagar Bangalore',
       id: 24,
       title: 'Dr. Shamantha S | Lifestyle Medicine Specialist Bangalore',
-      description: 'Dr. Shamantha S is an Ayurveda and lifestyle medicine doctor in Bangalore offering holistic care through diet, preventive wellness, and natural therapies.',
+      description: 'Dr. Shamantha S is an Ayurveda and lifestyle medicine doctor in Bangalore offering holistic care through diet, preventive wellness and natural therapies.',
       departmentSlug: '/specialities/lifestyle-medicine-bangalore',
       expertiseIcons: [
         'assets/icons/LIFE-1.png',
@@ -2438,15 +2438,15 @@ export class NewDoctorPageComponent {
       faqs: [
         {
           question: 'Who is Dr. Shamantha S and what is her specialty at Rashtrotthana Hospital, Bangalore?',
-          answer: 'Dr. Shamantha S is a Lifestyle Medicine doctor at Rashtrotthana Hospital with 6 years of experience in managing lifestyle related health conditions. She focuses on preventive care using Ayurvedic principles, diet, and routine modifications.'
+          answer: 'Dr. Shamantha S is a Lifestyle Medicine doctor at Rashtrotthana Hospital with 6 years of experience in managing lifestyle related health conditions. She focuses on preventive care using Ayurvedic principles, diet and routine modifications.'
         },
         {
           question: 'What conditions does Dr. Shamantha S treat at Rashtrotthana Hospital?',
-          answer: 'Dr. Shamantha S treats lifestyle diseases such as diabetes, hypertension, thyroid disorders, obesity, and stress related conditions. Her approach aims to correct the root causes through lifestyle and dietary changes.'
+          answer: 'Dr. Shamantha S treats lifestyle diseases such as diabetes, hypertension, thyroid disorders, obesity and stress related conditions. Her approach aims to correct the root causes through lifestyle and dietary changes.'
         },
         {
           question: 'Dr. Shamantha S is a Lifestyle Medicine practitioner at Rashtrotthana Hospital, Bangalore?',
-          answer: 'with a BAMS qualification and 6 years of clinical experience. She focuses on managing lifestyle related health concerns through natural, preventive, and holistic approaches. Her treatment philosophy combines Ayurvedic principles, diet guidance, and daily routine corrections to help patients achieve sustainable health and long-term wellness.'
+          answer: 'with a BAMS qualification and 6 years of clinical experience. She focuses on managing lifestyle related health concerns through natural, preventive and holistic approaches. Her treatment philosophy combines Ayurvedic principles, diet guidance and daily routine corrections to help patients achieve sustainable health and long-term wellness.'
         },
       ],
 
@@ -2486,22 +2486,22 @@ export class NewDoctorPageComponent {
       alt: 'Ms. Archana Karthick | Best Clinical Dietician in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
       id: 41,
       title: 'Ms. Archana Karthick | Senior Clinical Dietician',
-      description: 'Ms. Archana Karthick is a Senior Clinical Dietician with 19+ years of expertise in pediatric, prenatal, diabetic, and enteral nutrition management.',
+      description: 'Ms. Archana Karthick is a Senior Clinical Dietician with 19+ years of expertise in pediatric, prenatal, diabetic and enteral nutrition management.',
       faqs: [
         {
           question: 'Who is Ms. Archana Karthick and what is her role at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'Ms. Archana Karthick is a Clinical Nutritionist at Rashtrotthana Hospital, RR Nagar, Bangalore. She specialises in medical nutrition therapy for different age groups, supporting recovery, disease management, and overall health through evidence-based dietary planning.'
+          answer: 'Ms. Archana Karthick is a Clinical Nutritionist at Rashtrotthana Hospital, RR Nagar, Bangalore. She specialises in medical nutrition therapy for different age groups, supporting recovery, disease management and overall health through evidence-based dietary planning.'
         },
         {
           question: 'Does Ms. Archana Karthick provide prenatal and post-natal nutrition counselling?',
-          answer: 'Yes, Ms. Archana Karthick offers prenatal and post-natal nutrition guidance to support maternal health, fetal growth, and post-delivery recovery. Diet plans are customised to meet nutritional needs during pregnancy and breastfeeding.'
+          answer: 'Yes, Ms. Archana Karthick offers prenatal and post-natal nutrition guidance to support maternal health, fetal growth and post-delivery recovery. Diet plans are customised to meet nutritional needs during pregnancy and breastfeeding.'
         },
         {
           question: 'Can I consult Ms. Archana Karthick for paediatric and geriatric nutrition?',
-          answer: 'Yes, she provides specialised paediatric nutrition for growth, immunity, and development, as well as geriatric nutrition to manage age-related concerns such as weakness, poor appetite, and chronic illnesses.'
+          answer: 'Yes, she provides specialised paediatric nutrition for growth, immunity and development, as well as geriatric nutrition to manage age-related concerns such as weakness, poor appetite and chronic illnesses.'
         },
         {
-          question: 'What is enteral nutrition, and when does Ms. Archana Karthick recommend it?',
+          question: 'What is enteral nutrition and when does Ms. Archana Karthick recommend it?',
           answer: 'Enteral nutrition is recommended when patients are unable to meet nutritional needs through regular oral intake. Ms. Archana Karthick plans and monitors enteral feeding to ensure adequate nutrition and prevent complications.'
         },
         {
@@ -2510,11 +2510,11 @@ export class NewDoctorPageComponent {
         },
         {
           question: 'When should I consult a clinical nutritionist like Ms. Archana Karthick at Rashtrotthana Hospital?',
-          answer: 'You should consult her if you have medical conditions requiring dietary support, pregnancy-related nutrition needs, diabetes, poor appetite, or recovery after illness or surgery. Early nutritional intervention improves outcomes and recovery.'
+          answer: 'You should consult her if you have medical conditions requiring dietary support, pregnancy-related nutrition needs, diabetes, poor appetite or recovery after illness or surgery. Early nutritional intervention improves outcomes and recovery.'
         },
         {
           question: 'How can I book an appointment with Ms. Archana Karthick at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: `Appointments with Ms. Archana Karthick can be booked by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
+          answer: `Appointments with Ms. Archana Karthick can be booked by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception or booking online through the official Rashtrotthana Hospital website.`
         }
       ],
       departmentSlug: '/facility/nutrition-dietetics-services-bangalore',
@@ -2542,7 +2542,7 @@ export class NewDoctorPageComponent {
       alt: 'Dr. Gopal Das C M | Best Psychiatrist in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
       id: 22,
       title: 'Dr. Gopal Das C M | Consultant Psychiatrist in Bangalore',
-      description: 'Dr. Gopal Das C M is an experienced psychiatrist treating anxiety, depression, schizophrenia, addictions, and elderly mental health concerns in Bangalore.',
+      description: 'Dr. Gopal Das C M is an experienced psychiatrist treating anxiety, depression, schizophrenia, addictions and elderly mental health concerns in Bangalore.',
       faqs: [
         {
           question: 'Who is Dr. Gopal Das C. M and what is his specialty at Rashtrotthana Hospital, RR Nagar, Bangalore?',
@@ -2550,27 +2550,27 @@ export class NewDoctorPageComponent {
         },
         {
           question: 'What mental health conditions does Dr. Gopal Das C. M commonly treat?',
-          answer: 'Dr. Gopal Das C. M treats anxiety disorders, depression, stress-related psychological distress, OCD, bipolar disorder, schizophrenia, and other psychotic disorders. His approach combines accurate diagnosis, medication management, and supportive therapy.'
+          answer: 'Dr. Gopal Das C. M treats anxiety disorders, depression, stress-related psychological distress, OCD, bipolar disorder, schizophrenia and other psychotic disorders. His approach combines accurate diagnosis, medication management and supportive therapy.'
         },
         {
           question: 'Does Dr. Gopal Das C. M help with addiction and substance use disorders?',
-          answer: 'Yes, he has extensive experience in managing alcohol dependence, smoking and tobacco addiction, drug use disorders, and behavioural addictions such as internet, gaming, and smartphone addiction. Treatment focuses on recovery, relapse prevention, and long-term mental wellbeing.'
+          answer: 'Yes, he has extensive experience in managing alcohol dependence, smoking and tobacco addiction, drug use disorders and behavioural addictions such as internet, gaming and smartphone addiction. Treatment focuses on recovery, relapse prevention and long-term mental wellbeing.'
         },
         {
           question: 'Can Dr. Gopal Das C. M treat sleep problems and insomnia caused by stress or anxiety?',
-          answer: 'Yes, Dr. Gopal Das C. M evaluates and treats sleep disorders related to psychological causes, including primary insomnia. Proper management helps improve sleep quality, mood, and daily functioning.'
+          answer: 'Yes, Dr. Gopal Das C. M evaluates and treats sleep disorders related to psychological causes, including primary insomnia. Proper management helps improve sleep quality, mood and daily functioning.'
         },
         {
-          question: 'Does Dr. Gopal Das C. M manage mental health issues in children, adolescents, and the elderly?',
+          question: 'Does Dr. Gopal Das C. M manage mental health issues in children, adolescents and the elderly?',
           answer: 'Yes, he treats child and adolescent behavioural problems including ADHD, as well as psychiatric conditions in the elderly such as cognitive impairment and dementia. Care plans are age-appropriate and family-oriented.'
         },
         {
-          question: 'Can I consult Dr. Gopal Das C. M for relationship, marital, or sexual health concerns?',
-          answer: 'Yes, Dr. Gopal Das C. M provides professional support for relationship issues, marital conflicts, sexual disorders, and emotional distress. Early psychiatric consultation can help improve communication, mental health, and quality of life.'
+          question: 'Can I consult Dr. Gopal Das C. M for relationship, marital or sexual health concerns?',
+          answer: 'Yes, Dr. Gopal Das C. M provides professional support for relationship issues, marital conflicts, sexual disorders and emotional distress. Early psychiatric consultation can help improve communication, mental health and quality of life.'
         },
         {
           question: 'How can I book an appointment with Dr. Gopal Das C. M at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: `You can book an appointment with Dr. Gopal Das C. M by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
+          answer: `You can book an appointment with Dr. Gopal Das C. M by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception or booking online through the official Rashtrotthana Hospital website.`
         }
       ],
       departmentSlug: '/specialities/best-pshychiatry-hospital-in-bangalore',
@@ -2651,11 +2651,11 @@ export class NewDoctorPageComponent {
       alt: 'Dr. Nagesh R | Radiology Consultant in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
       id: 43,
       title: 'Dr. Nagesh R | Senior Radiologist in Bangalore',
-      description: 'Dr. Nagesh R is a radiologist in Bangalore with 16+ years of expertise in USG, CT-guided interventions, and cardiovascular imaging.',
+      description: 'Dr. Nagesh R is a radiologist in Bangalore with 16+ years of expertise in USG, CT-guided interventions and cardiovascular imaging.',
       faqs: [
         {
           question: 'Who is Dr. Nagesh R and what is his specialty at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'Dr. Nagesh R is an experienced Radiologist and Imaging Specialist at Rashtrotthana Hospital, RR Nagar, Bangalore. He specialises in advanced ultrasound, CT, MRI imaging, and image-guided diagnostic and interventional procedures.'
+          answer: 'Dr. Nagesh R is an experienced Radiologist and Imaging Specialist at Rashtrotthana Hospital, RR Nagar, Bangalore. He specialises in advanced ultrasound, CT, MRI imaging and image-guided diagnostic and interventional procedures.'
         },
         {
           question: 'What types of ultrasound (USG) scans does Dr. Nagesh R perform?',
@@ -2663,11 +2663,11 @@ export class NewDoctorPageComponent {
         },
         {
           question: 'Does Dr. Nagesh R perform Doppler studies and cardiovascular imaging?',
-          answer: 'Yes, he performs all types of Doppler studies, including vascular Dopplers, to assess blood flow and vessel health. He also has special interest in cardiovascular imaging such as coronary angiograms, aortograms, and venograms.'
+          answer: 'Yes, he performs all types of Doppler studies, including vascular Dopplers, to assess blood flow and vessel health. He also has special interest in cardiovascular imaging such as coronary angiograms, aortograms and venograms.'
         },
         {
           question: 'Are image-guided procedures like FNAC and biopsy done by Dr. Nagesh R?',
-          answer: 'Yes, Dr. Nagesh R performs ultrasound- and CT-guided FNACs, biopsies, and drainage procedures, including pigtail and Mallicot drainage. These minimally invasive procedures help in accurate diagnosis and effective treatment planning.'
+          answer: 'Yes, Dr. Nagesh R performs ultrasound- and CT-guided FNACs, biopsies and drainage procedures, including pigtail and Mallicot drainage. These minimally invasive procedures help in accurate diagnosis and effective treatment planning.'
         },
         {
           question: 'Does Dr. Nagesh R perform TRUS prostate biopsy and pain-relief injections?',
@@ -2675,11 +2675,11 @@ export class NewDoctorPageComponent {
         },
         {
           question: 'What advanced imaging services are available with Dr. Nagesh R at Rashtrotthana Hospital?',
-          answer: 'Dr. Nagesh R specialises in CT and MRI imaging of the abdomen and pelvis, thoracic imaging, neuro imaging, and musculoskeletal (MSK) imaging. These scans play a crucial role in accurate diagnosis and treatment monitoring.'
+          answer: 'Dr. Nagesh R specialises in CT and MRI imaging of the abdomen and pelvis, thoracic imaging, neuro imaging and musculoskeletal (MSK) imaging. These scans play a crucial role in accurate diagnosis and treatment monitoring.'
         },
         {
           question: 'How can I book an appointment or imaging procedure with Dr. Nagesh R at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: `You can book imaging services or consultation with Dr. Nagesh R by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the radiology department, or booking online through the official Rashtrotthana Hospital website.`
+          answer: `You can book imaging services or consultation with Dr. Nagesh R by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the radiology department or booking online through the official Rashtrotthana Hospital website.`
         }
       ],
       departmentSlug: '/facility/top-diagnostics-multi-speciality-hospital-bangalore',
@@ -2707,7 +2707,7 @@ export class NewDoctorPageComponent {
       alt: 'Dr. Sapna S | Best Ayurveda Specialist in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
       id: 37,
       title: 'Dr. Sapna S | Senior Ayurveda Doctor in Bangalore',
-      description: 'Dr. Sapna S is a senior Ayurveda specialist with 20+ years of expertise in Rasashastra, Panchakarma, and medical astrology-based therapies.',
+      description: 'Dr. Sapna S is a senior Ayurveda specialist with 20+ years of expertise in Rasashastra, Panchakarma and medical astrology-based therapies.',
       departmentSlug: '',
       expertiseIcons: [
         'assets/list.png',
@@ -2732,7 +2732,7 @@ export class NewDoctorPageComponent {
       alt: 'Dr. Venkatesh H. S | Best Ayurveda Endocrinologist in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
       id: 38,
       title: 'Dr. Venkatesh H. S | Senior Ayurveda Expert in Bangalore',
-      description: 'Dr. Venkatesh H. S is a senior Ayurveda specialist with 26+ years of experience in thyroid disorders, arthritis, and Ayurvedic endocrinology.',
+      description: 'Dr. Venkatesh H. S is a senior Ayurveda specialist with 26+ years of experience in thyroid disorders, arthritis and Ayurvedic endocrinology.',
       faqs: [
         {
           question: 'Who is Dr. Venkatesh H. S and what is his specialty at Rashtrotthana Hospital, RR Nagar, Bangalore?',
@@ -2740,11 +2740,11 @@ export class NewDoctorPageComponent {
         },
         {
           question: 'What thyroid disorders are treated by Dr. Venkatesh H. S with Ayurveda?',
-          answer: 'Dr. Venkatesh H. S treats hypothyroidism and hyperthyroidism using personalised Ayurvedic treatment plans that address metabolism, digestion, and hormonal balance. Care is aimed at symptom control and long-term regulation.'
+          answer: 'Dr. Venkatesh H. S treats hypothyroidism and hyperthyroidism using personalised Ayurvedic treatment plans that address metabolism, digestion and hormonal balance. Care is aimed at symptom control and long-term regulation.'
         },
         {
           question: 'Can Ayurveda help in managing arthritis under Dr. Venkatesh H. S?',
-          answer: 'Yes, Dr. Venkatesh H. S provides Ayurvedic care for arthritis and joint pain, focusing on inflammation control, pain relief, and improved mobility. Treatment may include herbal medicines, lifestyle guidance, and supportive therapies.'
+          answer: 'Yes, Dr. Venkatesh H. S provides Ayurvedic care for arthritis and joint pain, focusing on inflammation control, pain relief and improved mobility. Treatment may include herbal medicines, lifestyle guidance and supportive therapies.'
         },
         {
           question: 'How does Ayurveda endocrinology differ from conventional hormone treatment?',
@@ -2752,7 +2752,7 @@ export class NewDoctorPageComponent {
         },
         {
           question: 'Is Ayurvedic treatment suitable for long-term thyroid and metabolic conditions?',
-          answer: 'Yes, Ayurvedic treatment under Dr. Venkatesh H. S is designed for safe long-term management with regular monitoring. Patients are guided on diet, lifestyle, and therapy adjustments to maintain hormonal stability.'
+          answer: 'Yes, Ayurvedic treatment under Dr. Venkatesh H. S is designed for safe long-term management with regular monitoring. Patients are guided on diet, lifestyle and therapy adjustments to maintain hormonal stability.'
         },
         {
           question: 'Does Dr. Venkatesh H. S follow a research-based approach in Ayurvedic treatment?',
@@ -2760,7 +2760,7 @@ export class NewDoctorPageComponent {
         },
         {
           question: 'How can I book an appointment with Dr. Venkatesh H. S at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: `You can book an appointment with Dr. Venkatesh H. S by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
+          answer: `You can book an appointment with Dr. Venkatesh H. S by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception or booking online through the official Rashtrotthana Hospital website.`
         }
       ],
       departmentSlug: '/specialities/ayurvedic-treatment-bangalore',
@@ -2778,7 +2778,7 @@ export class NewDoctorPageComponent {
       name: 'Dr. Sunil Kumar C',
       image: 'assets/Doc-Inv-Page/Dr-Sunil.png',
       department: 'ENT, Head and Neck',
-      about: 'Dr. Sunil Kumar has extensive experience in ENT and head/neck surgeries, including laser and thyroid procedures. He specializes in anti-aging, hair transplantation and facial trauma treatment. He has led various awareness programs in collaboration with WHO, and his insights on hearing loss have been featured on WHO\'s site.',
+      about: 'Dr. Sunil Kumar has extensive experience in ENT and head/neck surgeries, including laser and thyroid procedures. He specializes in anti-aging, hair transplantation and facial trauma treatment. He has led various awareness programs in collaboration with WHO and his insights on hearing loss have been featured on WHO\'s site.',
       speciality: 'ENT SPECIALITY',
       areasOfExpertise: ['Vertigo treatment', 'Laser surgery', 'Emergency ENT procedures', 'Coablation surgery', 'Vocal cord surgery', 'Thyroid surgery', 'Cosmetic ENT surgery', 'Endoscopic sinus surgery', 'Microscopic ear surgery', 'Ear, nose, throat (ENT) and head/neck surgery'],
       expertise: '14+',
@@ -2792,11 +2792,11 @@ export class NewDoctorPageComponent {
       faqs: [
         {
           question: 'Who is Dr. Sunil Kumar C and what is his specialty at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'Dr. Sunil Kumar C is a highly experienced ENT and Head–Neck Surgeon at Rashtrotthana Hospital, RR Nagar, Bangalore. He manages a wide range of ear, nose, throat, voice, and head–neck conditions using advanced surgical techniques.'
+          answer: 'Dr. Sunil Kumar C is a highly experienced ENT and Head–Neck Surgeon at Rashtrotthana Hospital, RR Nagar, Bangalore. He manages a wide range of ear, nose, throat, voice and head–neck conditions using advanced surgical techniques.'
         },
         {
           question: 'Does Dr. Sunil Kumar C provide treatment for vertigo and balance disorders?',
-          answer: 'Yes, Dr. Sunil Kumar C specialises in vertigo evaluation and treatment, identifying inner ear and balance-related causes. Proper diagnosis helps reduce dizziness, imbalance, and associated symptoms effectively.'
+          answer: 'Yes, Dr. Sunil Kumar C specialises in vertigo evaluation and treatment, identifying inner ear and balance-related causes. Proper diagnosis helps reduce dizziness, imbalance and associated symptoms effectively.'
         },
         {
           question: 'What sinus and nasal surgeries are performed by Dr. Sunil Kumar C?',
@@ -2804,19 +2804,19 @@ export class NewDoctorPageComponent {
         },
         {
           question: 'Is laser and coblation surgery available with Dr. Sunil Kumar C at Rashtrotthana Hospital?',
-          answer: 'Yes, Dr. Sunil Kumar C performs laser surgery and coblation surgery for various ENT conditions, including tonsils, nasal tissues, and throat disorders. These techniques allow precise treatment with less pain and faster recovery.'
+          answer: 'Yes, Dr. Sunil Kumar C performs laser surgery and coblation surgery for various ENT conditions, including tonsils, nasal tissues and throat disorders. These techniques allow precise treatment with less pain and faster recovery.'
         },
         {
           question: 'Does Dr. Sunil Kumar C treat voice problems and perform vocal cord surgery?',
-          answer: 'Yes, he treats voice disorders and performs vocal cord surgeries for hoarseness, voice strain, and structural vocal cord issues. Early treatment helps restore voice quality and prevent long-term damage.'
+          answer: 'Yes, he treats voice disorders and performs vocal cord surgeries for hoarseness, voice strain and structural vocal cord issues. Early treatment helps restore voice quality and prevent long-term damage.'
         },
         {
-          question: 'Are thyroid, cosmetic ENT, and emergency ENT surgeries handled by Dr. Sunil Kumar C?',
-          answer: 'Dr. Sunil Kumar C is experienced in thyroid surgeries, cosmetic ENT procedures, and emergency ENT interventions. He also performs microscopic ear surgeries for chronic ear infections and hearing-related conditions.'
+          question: 'Are thyroid, cosmetic ENT and emergency ENT surgeries handled by Dr. Sunil Kumar C?',
+          answer: 'Dr. Sunil Kumar C is experienced in thyroid surgeries, cosmetic ENT procedures and emergency ENT interventions. He also performs microscopic ear surgeries for chronic ear infections and hearing-related conditions.'
         },
         {
           question: 'How can I book an appointment with Dr. Sunil Kumar C at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: `You can book an appointment with Dr. Sunil Kumar C by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
+          answer: `You can book an appointment with Dr. Sunil Kumar C by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception or booking online through the official Rashtrotthana Hospital website.`
         }
       ],
       departmentSlug: '/specialities/best-ent-hospital-in-bangalore',
@@ -2835,7 +2835,7 @@ export class NewDoctorPageComponent {
       name: "Dr. Man Mohan U. S",
       image: "assets/Doc-Inv-Page/Dr-Man-Mohan-U-S.png",
       department: "Gastroenterologist",
-      about: `<p>Dr. Manmohan U S is a consultant in Gastroenterology with comprehensive clinical and academic experience. He completed his MBBS from M.S. Ramaiah Medical College, followed by an MD in General Medicine from AIMS, and super-speciality training (DM) in Gastroenterology from Madras Medical Mission Hospital, Chennai.</p> 
+      about: `<p>Dr. Manmohan U S is a consultant in Gastroenterology with comprehensive clinical and academic experience. He completed his MBBS from M.S. Ramaiah Medical College, followed by an MD in General Medicine from AIMS and super-speciality training (DM) in Gastroenterology from Madras Medical Mission Hospital, Chennai.</p> 
                 <p>He has also completed an observership at CMC Vellore and worked in Vellore for two years. Additionally, he served as an Assistant Professor at the Institute of Gastroenterology and Organ Transplant, Victoria Hospital campus. He has presented more than six papers at national and international conferences and has served as faculty at two national and two international gastroenterology conferences.</p>`,
       speciality: "GASTRO SCIENCES",
       areasOfExpertise: [
@@ -2867,31 +2867,31 @@ export class NewDoctorPageComponent {
       faqs: [
         {
           question: 'Who is Dr. Man Mohan U. S and what is his specialty at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'Dr. Man Mohan U. S is an experienced Gastroenterologist at Rashtrotthana Hospital, RR Nagar, Bangalore. He manages a wide spectrum of digestive, liver, pancreatic, and bowel disorders with advanced diagnostic and endoscopic care.'
+          answer: 'Dr. Man Mohan U. S is an experienced Gastroenterologist at Rashtrotthana Hospital, RR Nagar, Bangalore. He manages a wide spectrum of digestive, liver, pancreatic and bowel disorders with advanced diagnostic and endoscopic care.'
         },
         {
-          question: 'Does Dr. Man Mohan U. S treat acid reflux (GERD), gastritis, and peptic ulcer disease?',
-          answer: 'Yes, Dr. Man Mohan U. S treats acid reflux/GERD, gastritis, and peptic ulcer disease, focusing on accurate diagnosis, medication optimisation, and lifestyle guidance to control symptoms and prevent recurrence.'
+          question: 'Does Dr. Man Mohan U. S treat acid reflux (GERD), gastritis and peptic ulcer disease?',
+          answer: 'Yes, Dr. Man Mohan U. S treats acid reflux/GERD, gastritis and peptic ulcer disease, focusing on accurate diagnosis, medication optimisation and lifestyle guidance to control symptoms and prevent recurrence.'
         },
         {
-          question: 'Can I consult Dr. Man Mohan U. S for chronic constipation, diarrhea, or IBS?',
-          answer: 'Yes, Dr. Man Mohan U. S evaluates and treats chronic constipation, chronic diarrhea, irritable bowel syndrome (IBS), and motility disorders, using targeted investigations to identify the cause and tailor treatment.'
+          question: 'Can I consult Dr. Man Mohan U. S for chronic constipation, diarrhea or IBS?',
+          answer: 'Yes, Dr. Man Mohan U. S evaluates and treats chronic constipation, chronic diarrhea, irritable bowel syndrome (IBS) and motility disorders, using targeted investigations to identify the cause and tailor treatment.'
         },
         {
           question: 'Does Dr. Man Mohan U. S manage inflammatory bowel diseases like ulcerative colitis and Crohn’s disease?',
-          answer: 'Yes, he has extensive experience in managing ulcerative colitis, Crohn’s disease, and other inflammatory bowel disorders (IBD). Care includes long-term disease control, flare prevention, and advanced endoscopic assessment when needed.'
+          answer: 'Yes, he has extensive experience in managing ulcerative colitis, Crohn’s disease and other inflammatory bowel disorders (IBD). Care includes long-term disease control, flare prevention and advanced endoscopic assessment when needed.'
         },
         {
-          question: 'Are liver conditions like fatty liver, cirrhosis, and hepatitis treated by Dr. Man Mohan U. S?',
-          answer: 'Dr. Man Mohan U. S treats fatty liver disease, alcoholic liver disease, cirrhosis, liver fibrosis, and hepatitis with a comprehensive approach that includes lifestyle modification, medical management, and regular monitoring.'
+          question: 'Are liver conditions like fatty liver, cirrhosis and hepatitis treated by Dr. Man Mohan U. S?',
+          answer: 'Dr. Man Mohan U. S treats fatty liver disease, alcoholic liver disease, cirrhosis, liver fibrosis and hepatitis with a comprehensive approach that includes lifestyle modification, medical management and regular monitoring.'
         },
         {
           question: 'What advanced endoscopy services are available with Dr. Man Mohan U. S at Rashtrotthana Hospital?',
-          answer: 'He performs advanced endoscopy, including evaluation for colon polyps, GI bleeding, suspected malignancy, and specialised tests such as manometry. These procedures help in early diagnosis and precise treatment planning.'
+          answer: 'He performs advanced endoscopy, including evaluation for colon polyps, GI bleeding, suspected malignancy and specialised tests such as manometry. These procedures help in early diagnosis and precise treatment planning.'
         },
         {
           question: 'How can I book an appointment with Dr. Man Mohan U. S at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: `You can book an appointment with Dr. Man Mohan U. S by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
+          answer: `You can book an appointment with Dr. Man Mohan U. S by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception or booking online through the official Rashtrotthana Hospital website.`
         }
       ],
       departmentSlug: '/specialities/best-gastroenterology-hospital-in-bangalore',
@@ -2910,7 +2910,7 @@ export class NewDoctorPageComponent {
       image: "assets/Doc-Inv-Page/Dr-Kalyani-Dilip-Karkare.png",
       department: 'Neuro Science',
       speciality: 'NEUROSCIENCES',
-      about: "Dr. Kalyani Karkare, a Gold Medalist in DM Neurology from NIMHANS, Bangalore (2010), is an expert in epilepsy and EEG. After gaining experience at Medanta The Medicity Hospital, she pursued a fellowship in EEG at SCTIMST, Thiruvananthapuram (2013). From 2015 to 2018, she worked with the epilepsy surgery team at Nicklaus Children's Hospital, Miami, USA, specializing in advanced techniques like subdural and stereoEEG. She has also set up epilepsy labs in leading hospitals. In addition to epilepsy, she is proficient in acute stroke management, including IV thrombolysis and mechanical thrombectomy, and she emphasizes comprehensive stroke care with rehabilitation. With numerous publications, academic presentations and teaching experience, she combines deep knowledge, empathy and attentive care for her patients.",
+      about: "Dr. Kalyani Karkare, a Gold Medalist in DM Neurology from NIMHANS, Bangalore (2010), is an expert in epilepsy and EEG. After gaining experience at Medanta The Medicity Hospital, she pursued a fellowship in EEG at SCTIMST, Thiruvananthapuram (2013). From 2015 to 2018, she worked with the epilepsy surgery team at Nicklaus Children's Hospital, Miami, USA, specializing in advanced techniques like subdural and stereoEEG. She has also set up epilepsy labs in leading hospitals. In addition to epilepsy, she is proficient in acute stroke management, including IV thrombolysis and mechanical thrombectomy and she emphasizes comprehensive stroke care with rehabilitation. With numerous publications, academic presentations and teaching experience, she combines deep knowledge, empathy and attentive care for her patients.",
       areasOfExpertise: ["Epilepsy", "Stroke", "Neuropathy"],
       expertise: " 16+",
       qualification: "MBBS, DM Neurology, PDF EEG",
@@ -2919,7 +2919,7 @@ export class NewDoctorPageComponent {
       alt: 'Dr. Kalyani Dilip Karkare | Best Neurologist in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
       id: 29,
       title: 'Dr. Kalyani Karkare | Expert Neurologist for Epilepsy & Stroke',
-      description: 'Dr. Kalyani Karkare is a senior neurologist with 16+ years of experience in epilepsy care, stroke treatment, neuropathy, and EEG interpretation.',
+      description: 'Dr. Kalyani Karkare is a senior neurologist with 16+ years of experience in epilepsy care, stroke treatment, neuropathy and EEG interpretation.',
       faqs: [
         {
           question: 'Who is Dr. Kalyani Dilip Karkare and what is her specialty at Rashtrotthana Hospital, RR Nagar, Bangalore?',
@@ -2931,23 +2931,23 @@ export class NewDoctorPageComponent {
         },
         {
           question: 'Can I consult Dr. Kalyani Dilip Karkare for stroke evaluation and recovery care?',
-          answer: 'Yes, she provides comprehensive care for stroke patients, including early diagnosis, post-stroke management, and guidance for rehabilitation to reduce the risk of recurrence.'
+          answer: 'Yes, she provides comprehensive care for stroke patients, including early diagnosis, post-stroke management and guidance for rehabilitation to reduce the risk of recurrence.'
         },
         {
           question: 'What types of nerve problems and neuropathy does Dr. Kalyani Dilip Karkare manage?',
-          answer: 'Dr. Kalyani Dilip Karkare treats peripheral neuropathy, including nerve damage caused by diabetes, vitamin deficiencies, and other medical conditions. Treatment focuses on symptom relief, nerve protection, and addressing the underlying cause.'
+          answer: 'Dr. Kalyani Dilip Karkare treats peripheral neuropathy, including nerve damage caused by diabetes, vitamin deficiencies and other medical conditions. Treatment focuses on symptom relief, nerve protection and addressing the underlying cause.'
         },
         {
           question: 'When should I see a neurologist like Dr. Kalyani Dilip Karkare?',
-          answer: 'You should consult her if you experience recurrent seizures, sudden weakness, numbness, tingling, difficulty speaking, or unexplained neurological symptoms. Early neurological evaluation helps prevent complications.'
+          answer: 'You should consult her if you experience recurrent seizures, sudden weakness, numbness, tingling, difficulty speaking or unexplained neurological symptoms. Early neurological evaluation helps prevent complications.'
         },
         {
           question: 'Does Dr. Kalyani Dilip Karkare provide long-term care for chronic neurological conditions?',
-          answer: 'Yes, she offers ongoing care for chronic neurological disorders such as epilepsy and neuropathy, focusing on symptom control, medication management, and regular follow-up for stable outcomes.'
+          answer: 'Yes, she offers ongoing care for chronic neurological disorders such as epilepsy and neuropathy, focusing on symptom control, medication management and regular follow-up for stable outcomes.'
         },
         {
           question: 'How can I book an appointment with Dr. Kalyani Dilip Karkare at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: `You can book an appointment with Dr. Kalyani Dilip Karkare by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
+          answer: `You can book an appointment with Dr. Kalyani Dilip Karkare by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception or booking online through the official Rashtrotthana Hospital website.`
         }
       ],
       departmentSlug: '/specialities/best-neurology-hospital-in-bangalore',
@@ -2975,11 +2975,11 @@ export class NewDoctorPageComponent {
       alt: 'Dr. Vivekanand | Consultant Vascular Surgeon in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
       id: 50,
       title: 'Dr. Vivekanand | Senior Vascular Surgeon with 26+ Years',
-      description: 'Dr. Vivekanand is a renowned vascular surgeon with 26+ years of expertise in diabetic foot infections, DVT care, wound healing, and thrombosis management.',
+      description: 'Dr. Vivekanand is a renowned vascular surgeon with 26+ years of expertise in diabetic foot infections, DVT care, wound healing and thrombosis management.',
       faqs: [
         {
           question: 'Who is Dr. Vivekanand and what is his specialty at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'Dr. Vivekanand is an experienced Vascular and Wound Care Specialist at Rashtrotthana Hospital, RR Nagar, Bangalore. He focuses on limb preservation, thrombosis management, and advanced wound healing for complex vascular conditions.'
+          answer: 'Dr. Vivekanand is an experienced Vascular and Wound Care Specialist at Rashtrotthana Hospital, RR Nagar, Bangalore. He focuses on limb preservation, thrombosis management and advanced wound healing for complex vascular conditions.'
         },
         {
           question: 'Does Dr. Vivekanand treat diabetic foot infections and help prevent amputations?',
@@ -2995,15 +2995,15 @@ export class NewDoctorPageComponent {
         },
         {
           question: 'Does Dr. Vivekanand manage thrombosis and hemostasis disorders?',
-          answer: 'Yes, he provides comprehensive care for thrombosis and hemostasis disorders, focusing on clot prevention, safe blood flow, and long-term vascular health. Treatment is customised based on individual risk factors.'
+          answer: 'Yes, he provides comprehensive care for thrombosis and hemostasis disorders, focusing on clot prevention, safe blood flow and long-term vascular health. Treatment is customised based on individual risk factors.'
         },
         {
           question: 'When should I see a vascular specialist like Dr. Vivekanand?',
-          answer: 'You should consult Dr. Vivekanand if you have diabetic foot ulcers, leg pain or swelling, non-healing wounds, suspected blood clots, or a history of thrombosis. Early vascular evaluation helps prevent serious complications.'
+          answer: 'You should consult Dr. Vivekanand if you have diabetic foot ulcers, leg pain or swelling, non-healing wounds, suspected blood clots or a history of thrombosis. Early vascular evaluation helps prevent serious complications.'
         },
         {
           question: 'How can I book an appointment with Dr. Vivekanand at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: `You can book an appointment with Dr. Vivekanand by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
+          answer: `You can book an appointment with Dr. Vivekanand by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception or booking online through the official Rashtrotthana Hospital website.`
         }
       ],
       departmentSlug: '/specialities/best-vascular-surgery-hospital-in-bangalore',
@@ -3022,7 +3022,7 @@ export class NewDoctorPageComponent {
       image: "assets/Doc-Inv-Page/Dr-Dhanyatha-Muninarayan.png",
       department: 'Consultant Paediatrician',
       speciality: 'PAEDIATRICS AND NEONATOLOGY',
-      about: "Dr. Dhanyatha Muninarayan is a compassionate and skilled paediatrician with an MD in Paediatrics from Rajarajeswari Medical College, Bengaluru. With extensive experience in General Paediatrics, Neonatology, and Paediatric Haematology-Oncology, she has worked in reputed hospitals including Cloud Nine, St. John’s Medical College, ESI Medical College and Sakra World Hospital. Currently serving as a Consultant at Belanus Champion Hospital, she is proficient in managing neonatal and paediatric cases, performing critical procedures and mentoring medical students. Her research contributions include award-winning presentations and publications on neonatal and paediatric health issues, reflecting her dedication to advancing paediatric care.",
+      about: "Dr. Dhanyatha Muninarayan is a compassionate and skilled paediatrician with an MD in Paediatrics from Rajarajeswari Medical College, Bengaluru. With extensive experience in General Paediatrics, Neonatology and Paediatric Haematology-Oncology, she has worked in reputed hospitals including Cloud Nine, St. John’s Medical College, ESI Medical College and Sakra World Hospital. Currently serving as a Consultant at Belanus Champion Hospital, she is proficient in managing neonatal and paediatric cases, performing critical procedures and mentoring medical students. Her research contributions include award-winning presentations and publications on neonatal and paediatric health issues, reflecting her dedication to advancing paediatric care.",
       areasOfExpertise: ["General Paediatrics and Neonatology", "Medical Student Coaching and Interactive Teaching", "Managing Outpatients and Inpatients", "Resuscitation of Normal and High-Risk Patients", "Patient Counselling", "Medical Procedures: Intubation, Lumbar Puncture, Bone Marrow Aspirations"],
       expertise: "11+",
       qualification: "MBBS, (MD) Paediatrics",
@@ -3035,7 +3035,7 @@ export class NewDoctorPageComponent {
       faqs: [
         {
           question: 'Who is Dr. Dhanyatha Muninarayan and what is her specialty at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'Dr. Dhanyatha Muninarayan is an experienced Paediatrician and Neonatologist at Rashtrotthana Hospital, RR Nagar, Bangalore. She provides comprehensive medical care for newborns, infants, children, and adolescents with a strong focus on safety and family counselling.'
+          answer: 'Dr. Dhanyatha Muninarayan is an experienced Paediatrician and Neonatologist at Rashtrotthana Hospital, RR Nagar, Bangalore. She provides comprehensive medical care for newborns, infants, children and adolescents with a strong focus on safety and family counselling.'
         },
         {
           question: 'Does Dr. Dhanyatha Muninarayan treat newborns and high-risk babies?',
@@ -3051,15 +3051,15 @@ export class NewDoctorPageComponent {
         },
         {
           question: 'What medical procedures does Dr. Dhanyatha Muninarayan perform for children?',
-          answer: 'She is experienced in performing medical procedures such as intubation, lumbar puncture, and bone marrow aspiration when clinically indicated. These procedures are done with strict safety protocols and parental counselling.'
+          answer: 'She is experienced in performing medical procedures such as intubation, lumbar puncture and bone marrow aspiration when clinically indicated. These procedures are done with strict safety protocols and parental counselling.'
         },
         {
           question: 'Does Dr. Dhanyatha Muninarayan provide counselling for parents and caregivers?',
-          answer: 'Yes, patient and parent counselling is a key part of her practice. She helps parents understand their child’s condition, treatment plan, and follow-up care in a clear and reassuring manner.'
+          answer: 'Yes, patient and parent counselling is a key part of her practice. She helps parents understand their child’s condition, treatment plan and follow-up care in a clear and reassuring manner.'
         },
         {
           question: 'How can I book an appointment with Dr. Dhanyatha Muninarayan at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: `You can book an appointment with Dr. Dhanyatha Muninarayan by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
+          answer: `You can book an appointment with Dr. Dhanyatha Muninarayan by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception or booking online through the official Rashtrotthana Hospital website.`
         }
       ],
       departmentSlug: '/specialities/best-paediatric-hospital-in-bangalore',
@@ -3107,7 +3107,7 @@ export class NewDoctorPageComponent {
       image: "assets/dummy-doc-female.svg",
       department: 'Rheumatology',
       speciality: 'RHEUMATOLOGY',
-      about: "<p>Dr. Matam Sri Anusha is a compassionate and experienced Rheumatologist specializing in the diagnosis and treatment of a wide range of inflammatory and autoimmune conditions. She provides expert care for conditions such as rheumatoid arthritis, psoriatic arthritis, lupus, spondyloarthritis and osteoporosis, as well as recurrent pregnancy losses and vasculitis.</p<p>She offers personalized treatment plans using the latest advancements in rheumatology to help patients manage chronic pain, joint issues and systemic inflammatory disorders. If you're experiencing symptoms like joint pain, swelling, stiffness, skin rashes, fatigue, or unexplained weight loss, Dr. Anusha is dedicated to providing the care and support you need for improved health and well-being.</p>",
+      about: "<p>Dr. Matam Sri Anusha is a compassionate and experienced Rheumatologist specializing in the diagnosis and treatment of a wide range of inflammatory and autoimmune conditions. She provides expert care for conditions such as rheumatoid arthritis, psoriatic arthritis, lupus, spondyloarthritis and osteoporosis, as well as recurrent pregnancy losses and vasculitis.</p<p>She offers personalized treatment plans using the latest advancements in rheumatology to help patients manage chronic pain, joint issues and systemic inflammatory disorders. If you're experiencing symptoms like joint pain, swelling, stiffness, skin rashes, fatigue or unexplained weight loss, Dr. Anusha is dedicated to providing the care and support you need for improved health and well-being.</p>",
       areasOfExpertise: ["Inflammatory arthritis", "Vasculitis", "Gout", "Sarcoidosis", "Osteoporosis", "Recurrent pregnancy losses", "Connective tissue diseases (Lupus, Sjogren's, Systemic sclerosis)"],
       expertise: "11+",
       qualification: "Qualification: MBBS, MD (Internal Medicine) DM (Clinical Immunology and Rheumatology) MRCP-SCE (UK) Rheumatology, EULAR Fellow",
@@ -3124,27 +3124,27 @@ export class NewDoctorPageComponent {
         },
         {
           question: 'Does Dr. Matam Sri Anusha treat inflammatory arthritis and chronic joint pain?',
-          answer: 'Yes, Dr. Matam Sri Anusha treats inflammatory arthritis, helping patients control pain, stiffness, and swelling. Early diagnosis and disease-modifying treatment can prevent joint damage and improve quality of life.'
+          answer: 'Yes, Dr. Matam Sri Anusha treats inflammatory arthritis, helping patients control pain, stiffness and swelling. Early diagnosis and disease-modifying treatment can prevent joint damage and improve quality of life.'
         },
         {
-          question: 'Can I consult Dr. Matam Sri Anusha for lupus, Sjögren’s syndrome, or systemic sclerosis?',
-          answer: 'Yes, she has extensive experience managing connective tissue diseases such as lupus, Sjögren’s syndrome, and systemic sclerosis, focusing on symptom control, organ protection, and regular monitoring.'
+          question: 'Can I consult Dr. Matam Sri Anusha for lupus, Sjögren’s syndrome or systemic sclerosis?',
+          answer: 'Yes, she has extensive experience managing connective tissue diseases such as lupus, Sjögren’s syndrome and systemic sclerosis, focusing on symptom control organ protection and regular monitoring.'
         },
         {
           question: 'Does Dr. Matam Sri Anusha manage vasculitis and rare autoimmune conditions?',
           answer: 'Yes, she evaluates and treats vasculitis and other complex autoimmune disorders, which require careful assessment and specialist-guided therapy. Timely treatment helps reduce complications and disease progression.'
         },
         {
-          question: 'Can recurrent pregnancy loss be related to autoimmune disease, and does Dr. Matam Sri Anusha treat it?',
+          question: 'Can recurrent pregnancy loss be related to autoimmune disease and does Dr. Matam Sri Anusha treat it?',
           answer: 'Yes, certain autoimmune conditions can contribute to recurrent pregnancy losses. Dr. Matam Sri Anusha evaluates underlying immune causes and works with a multidisciplinary team to improve pregnancy outcomes.'
         },
         {
-          question: 'Does Dr. Matam Sri Anusha treat osteoporosis, gout, and sarcoidosis?',
-          answer: 'Yes, she manages osteoporosis to reduce fracture risk, treats gout to control uric acid levels, and provides specialised care for sarcoidosis. Treatment plans are individualised based on disease severity and patient needs.'
+          question: 'Does Dr. Matam Sri Anusha treat osteoporosis, gout and sarcoidosis?',
+          answer: 'Yes, she manages osteoporosis to reduce fracture risk, treats gout to control uric acid levels and provides specialised care for sarcoidosis. Treatment plans are individualised based on disease severity and patient needs.'
         },
         {
           question: 'How can I book an appointment with Dr. Matam Sri Anusha at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: `You can book an appointment with Dr. Matam Sri Anusha by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
+          answer: `You can book an appointment with Dr. Matam Sri Anusha by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception or booking online through the official Rashtrotthana Hospital website.`
         }
       ],
       departmentSlug: '/specialities/rheumatology-hospital-bangalore',
@@ -3178,11 +3178,11 @@ export class NewDoctorPageComponent {
       faqs: [
         {
           question: 'Who is Dr. C. Rajendran and what is his specialty at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'Dr. C. Rajendran is a senior General Physician at Rashtrotthana Hospital, RR Nagar, Bangalore, with extensive experience in managing adult medical conditions. He focuses on accurate diagnosis, holistic care, and long-term disease control.'
+          answer: 'Dr. C. Rajendran is a senior General Physician at Rashtrotthana Hospital, RR Nagar, Bangalore, with extensive experience in managing adult medical conditions. He focuses on accurate diagnosis, holistic care and long-term disease control.'
         },
         {
           question: 'Does Dr. C. Rajendran provide diabetes management at Rashtrotthana Hospital?',
-          answer: 'Yes, Dr. C. Rajendran offers comprehensive diabetes management, including blood sugar control, medication planning, and lifestyle guidance. Early and consistent care helps prevent diabetes-related complications.'
+          answer: 'Yes, Dr. C. Rajendran offers comprehensive diabetes management, including blood sugar control, medication planning and lifestyle guidance. Early and consistent care helps prevent diabetes-related complications.'
         },
         {
           question: 'Can I consult Dr. C. Rajendran for fever and infectious diseases?',
@@ -3194,15 +3194,15 @@ export class NewDoctorPageComponent {
         },
         {
           question: 'Is treatment available for asthma and COPD under Dr. C. Rajendran?',
-          answer: 'Yes, Dr. C. Rajendran provides ongoing care for asthma and COPD, focusing on symptom control, inhaler optimisation, and prevention of acute attacks. Long-term management improves breathing and daily activity.'
+          answer: 'Yes, Dr. C. Rajendran provides ongoing care for asthma and COPD, focusing on symptom control, inhaler optimisation and prevention of acute attacks. Long-term management improves breathing and daily activity.'
         },
         {
           question: 'When should I consult a general physician like Dr. C. Rajendran?',
-          answer: 'You should consult Dr. C. Rajendran if you have persistent fever, breathing problems, high blood sugar, high blood pressure, thyroid symptoms, or multiple ongoing health concerns. Early medical evaluation leads to better outcomes.'
+          answer: 'You should consult Dr. C. Rajendran if you have persistent fever, breathing problems, high blood sugar, high blood pressure, thyroid symptoms or multiple ongoing health concerns. Early medical evaluation leads to better outcomes.'
         },
         {
           question: 'How can I book an appointment with Dr. C. Rajendran at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: `You can book an appointment with Dr. C. Rajendran by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
+          answer: `You can book an appointment with Dr. C. Rajendran by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception or booking online through the official Rashtrotthana Hospital website.`
         }
       ],
       departmentSlug: '/specialities/internal-medicine-hospital-in-bangalore',
@@ -3221,7 +3221,7 @@ export class NewDoctorPageComponent {
       image: "assets/Doc-Inv-Page/Dr-Sushmitha-Raj-R.png",
       department: 'Dental Surgery',
       speciality: 'DENTAL SCIENCES',
-      about: "A dedicated and compassionate dentist with 7+ years of experience in general dentistry, restorative procedures, and minor oral extractions. Proficient in diagnosing and treating a wide range of dental conditions while prioritizing patient-centered care. Known for excellent communication and interpersonal skills, ensuring a positive patient experience for individuals of all ages.",
+      about: "A dedicated and compassionate dentist with 7+ years of experience in general dentistry, restorative procedures and minor oral extractions. Proficient in diagnosing and treating a wide range of dental conditions while prioritizing patient-centered care. Known for excellent communication and interpersonal skills, ensuring a positive patient experience for individuals of all ages.",
       areasOfExpertise: ["General Dentistry", "Endodontics", "Cosmetic Dentistry"],
       expertise: "7+",
       qualification: "BDS, FRCD",
@@ -3230,35 +3230,35 @@ export class NewDoctorPageComponent {
       alt: 'Dr. Sushmitha Raj R | Best Dentist in Bangalore | Rashtrotthana Hospital',
       id: 55,
       title: 'Dr. Sushmitha Raj R | Dentist in RR Nagar Bangalore',
-      description: 'Experienced in general, cosmetic, and restorative dentistry. Skilled in endodontics, extractions, and patient-centered dental care for all age groups.',
+      description: 'Experienced in general, cosmetic and restorative dentistry. Skilled in endodontics, extractions and patient-centered dental care for all age groups.',
       faqs: [
         {
           question: 'Who is Dr. Sushmitha Raj R and what dental services does she offer at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'Dr. Sushmitha Raj R is an experienced Dentist at Rashtrotthana Hospital, RR Nagar, Bangalore, providing comprehensive general dentistry, endodontic care, and cosmetic dental treatments. She focuses on precise diagnosis and comfortable, patient-centred care.'
+          answer: 'Dr. Sushmitha Raj R is an experienced Dentist at Rashtrotthana Hospital, RR Nagar, Bangalore, providing comprehensive general dentistry, endodontic care and cosmetic dental treatments. She focuses on precise diagnosis and comfortable, patient-centred care.'
         },
         {
           question: 'Does Dr. Sushmitha Raj R perform root canal treatment (RCT)?',
-          answer: 'Yes, Dr. Sushmitha Raj R specialises in endodontics, including root canal treatment for tooth pain, infection, and deep decay. RCT helps save the natural tooth and relieve pain effectively.'
+          answer: 'Yes, Dr. Sushmitha Raj R specialises in endodontics, including root canal treatment for tooth pain, infection and deep decay. RCT helps save the natural tooth and relieve pain effectively.'
         },
         {
           question: 'What cosmetic dentistry treatments are available with Dr. Sushmitha Raj R?',
-          answer: 'She offers cosmetic dentistry options such as teeth whitening, smile enhancement, and aesthetic restorations. Treatments are planned to improve appearance while maintaining oral health and function.'
+          answer: 'She offers cosmetic dentistry options such as teeth whitening, smile enhancement and aesthetic restorations. Treatments are planned to improve appearance while maintaining oral health and function.'
         },
         {
           question: 'Can I visit Dr. Sushmitha Raj R for routine dental check-ups and preventive care?',
-          answer: 'Yes, Dr. Sushmitha Raj R provides routine dental check-ups, scaling, fillings, and preventive advice to maintain healthy teeth and gums and prevent future dental problems.'
+          answer: 'Yes, Dr. Sushmitha Raj R provides routine dental check-ups, scaling, fillings and preventive advice to maintain healthy teeth and gums and prevent future dental problems.'
         },
         {
-          question: 'Is root canal treatment painful, and how is recovery managed?',
+          question: 'Is root canal treatment painful and how is recovery managed?',
           answer: 'Modern root canal treatment is typically comfortable with local anaesthesia. Dr. Sushmitha Raj R ensures proper post-procedure guidance so patients can recover quickly with minimal discomfort.'
         },
         {
           question: 'When should I consult Dr. Sushmitha Raj R for dental problems?',
-          answer: 'You should consult her if you experience tooth pain, sensitivity, swelling, cavities, gum issues, or cosmetic concerns. Early dental care helps avoid complications and preserves natural teeth.'
+          answer: 'You should consult her if you experience tooth pain, sensitivity, swelling, cavities, gum issues or cosmetic concerns. Early dental care helps avoid complications and preserves natural teeth.'
         },
         {
           question: 'How can I book an appointment with Dr. Sushmitha Raj R at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: `You can book an appointment with Dr. Sushmitha Raj R by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
+          answer: `You can book an appointment with Dr. Sushmitha Raj R by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception or booking online through the official Rashtrotthana Hospital website.`
         }
       ],
       departmentSlug: '/specialities/best-dental-hospital-in-bangalore',
@@ -3274,7 +3274,7 @@ export class NewDoctorPageComponent {
     // {
     //   name: "Dr. S K Ranjani",
     //   image : "assets/dummy-doc-female.svg",
-    //   department: 'ENT (Ear, Nose, and Throat) ',
+    //   department: 'ENT (Ear, Nose and Throat) ',
     //   speciality: 'ENT SPECIALITY',
     //   about : "Dr. S K Ranjani specializes in both general and complex ENT conditions, with a particular focus on airway disorders in children. She is committed to providing comprehensive care for a range of airway issues, including allergies, obstructive sleep apnea and voice alterations.",
     //   areasOfExpertise : ["Airway disorders, particularly in the pediatric age group","Allergy-related airway issues","Obstructive sleep apnea","Altered voice conditions","General ear, nose and throat complaints (both medical and surgical treatment)"],
@@ -3298,15 +3298,15 @@ export class NewDoctorPageComponent {
       alt: 'Dr. G. V. Giri | Best Oncologist Bangalore | Rashtrotthana Hospital',
       id: 61,
       title: 'Dr. G. V. Giri | Cancer Specialist in RR Nagar Bangalore',
-      description: 'Expert in head, neck, lung, breast, GI, and genitourinary cancers. 15+ years of oncology experience with DM in Medical Oncology from Kidwai Institute.',
+      description: 'Expert in head, neck, lung, breast, GI and genitourinary cancers. 15+ years of oncology experience with DM in Medical Oncology from Kidwai Institute.',
       faqs: [
         {
           question: 'Who is Dr. G. V. Giri and what cancers does he treat at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'Dr. G. V. Giri is an experienced Medical Oncologist at Rashtrotthana Hospital, RR Nagar, Bangalore. He treats head and neck cancer, lung cancer, breast cancer, gastrointestinal cancers, and genito-urinary cancers with evidence-based, personalised care.'
+          answer: 'Dr. G. V. Giri is an experienced Medical Oncologist at Rashtrotthana Hospital, RR Nagar, Bangalore. He treats head and neck cancer, lung cancer, breast cancer, gastrointestinal cancers and genito-urinary cancers with evidence-based, personalised care.'
         },
         {
           question: 'Does Dr. G. V. Giri treat head and neck cancers at Rashtrotthana Hospital?',
-          answer: 'Yes, Dr. G. V. Giri manages head and neck cancers, including cancers of the oral cavity, throat, and related regions. Treatment plans are individualised based on cancer stage, patient health, and response to therapy.'
+          answer: 'Yes, Dr. G. V. Giri manages head and neck cancers, including cancers of the oral cavity, throat and related regions. Treatment plans are individualised based on cancer stage, patient health and response to therapy.'
         },
         {
           question: 'Can I consult Dr. G. V. Giri for lung cancer diagnosis and treatment?',
@@ -3318,15 +3318,15 @@ export class NewDoctorPageComponent {
         },
         {
           question: 'Does Dr. G. V. Giri manage gastrointestinal and genito-urinary cancers?',
-          answer: 'Yes, Dr. G. V. Giri treats gastrointestinal cancers such as stomach and colorectal cancers, as well as genito-urinary cancers including prostate and bladder cancers. Management includes systemic therapy, monitoring, and supportive care.'
+          answer: 'Yes, Dr. G. V. Giri treats gastrointestinal cancers such as stomach and colorectal cancers, as well as genito-urinary cancers including prostate and bladder cancers. Management includes systemic therapy, monitoring and supportive care.'
         },
         {
           question: 'When should I see a medical oncologist like Dr. G. V. Giri?',
-          answer: 'You should consult Dr. G. V. Giri if you have a confirmed cancer diagnosis, suspected malignancy, or need guidance on cancer treatment options and follow-up care. Early oncology consultation helps plan timely and effective treatment.'
+          answer: 'You should consult Dr. G. V. Giri if you have a confirmed cancer diagnosis, suspected malignancy or need guidance on cancer treatment options and follow-up care. Early oncology consultation helps plan timely and effective treatment.'
         },
         {
           question: 'How can I book an appointment with Dr. G. V. Giri at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: `You can book an appointment with Dr. G. V. Giri by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
+          answer: `You can book an appointment with Dr. G. V. Giri by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception or booking online through the official Rashtrotthana Hospital website.`
         }
       ],
       departmentSlug: '/specialities/best-oncology-hospital-in-bangalore',
@@ -3358,15 +3358,15 @@ export class NewDoctorPageComponent {
       faqs: [
         {
           question: 'Who is Dr. Kavya N and what is her specialty at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'Dr. Kavya N is an experienced Physician at Rashtrotthana Hospital, RR Nagar, Bangalore, with expertise in managing a wide range of medical conditions affecting metabolism, gut health, skin, joints, spine, and women’s health.'
+          answer: 'Dr. Kavya N is an experienced Physician at Rashtrotthana Hospital, RR Nagar, Bangalore, with expertise in managing a wide range of medical conditions affecting metabolism, gut health, skin, joints, spine and women’s health.'
         },
         {
           question: 'Does Dr. Kavya N treat metabolic disorders like diabetes and hormonal imbalance?',
-          answer: 'Yes, Dr. Kavya N treats metabolic disorders, including diabetes and related hormonal imbalances. Her approach focuses on accurate diagnosis, medical management, and lifestyle guidance to achieve long-term control.'
+          answer: 'Yes, Dr. Kavya N treats metabolic disorders, including diabetes and related hormonal imbalances. Her approach focuses on accurate diagnosis, medical management and lifestyle guidance to achieve long-term control.'
         },
         {
           question: 'Can I consult Dr. Kavya N for digestive and gut-related problems?',
-          answer: 'Yes, she manages diseases of the gut, such as acidity, indigestion, bloating, constipation, and chronic abdominal discomfort, with a structured evaluation and treatment plan.'
+          answer: 'Yes, she manages diseases of the gut, such as acidity, indigestion, bloating, constipation and chronic abdominal discomfort, with a structured evaluation and treatment plan.'
         },
         {
           question: 'Does Dr. Kavya N treat skin diseases and chronic skin conditions?',
@@ -3374,15 +3374,15 @@ export class NewDoctorPageComponent {
         },
         {
           question: 'Is treatment available for arthritis and spine-related pain under Dr. Kavya N?',
-          answer: 'Yes, Dr. Kavya N provides care for arthritis and diseases of the spine, focusing on pain relief, inflammation control, and improving mobility. Management is personalised based on the severity and cause of symptoms.'
+          answer: 'Yes, Dr. Kavya N provides care for arthritis and diseases of the spine, focusing on pain relief, inflammation control and improving mobility. Management is personalised based on the severity and cause of symptoms.'
         },
         {
           question: 'Can Dr. Kavya N help with gynecological problems?',
-          answer: 'Yes, she evaluates and treats gynecological problems such as menstrual irregularities, hormonal issues, and related systemic symptoms, offering coordinated and patient-centred care.'
+          answer: 'Yes, she evaluates and treats gynecological problems such as menstrual irregularities, hormonal issues and related systemic symptoms, offering coordinated and patient-centred care.'
         },
         {
           question: 'How can I book an appointment with Dr. Kavya N at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: `You can book an appointment with Dr. Kavya N by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
+          answer: `You can book an appointment with Dr. Kavya N by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception or booking online through the official Rashtrotthana Hospital website.`
         }
       ],
       departmentSlug: '/specialities/ayurvedic-treatment-bangalore',
@@ -3401,7 +3401,7 @@ export class NewDoctorPageComponent {
       image: "assets/dr-sandhaya.png",
       department: 'ENT and Head & Neck Surgery',
       speciality: 'ENT',
-      about: "Dr. Sandhya S. Patil is a skilled ENT and Head & Neck Surgeon with over a decade of experience in managing a wide range of ENT conditions. She has trained at prestigious institutions such as KEM Hospital, Pune, and St. John's Medical College, Bengaluru. Her clinical expertise spans endoscopic sinus surgeries, pediatric ENT procedures, allergy management, and complex head and neck surgeries. Dr. Sandhya Patil currently practices as a Consultant at multiple reputed hospitals in Bengaluru and also runs her own ENT clinic, Swasthya ENT Centre. She is known for her thorough patient care, surgical precision and commitment to academic excellence.",
+      about: "Dr. Sandhya S. Patil is a skilled ENT and Head & Neck Surgeon with over a decade of experience in managing a wide range of ENT conditions. She has trained at prestigious institutions such as KEM Hospital, Pune and St. John's Medical College, Bengaluru. Her clinical expertise spans endoscopic sinus surgeries, pediatric ENT procedures, allergy management and complex head and neck surgeries. Dr. Sandhya Patil currently practices as a Consultant at multiple reputed hospitals in Bengaluru and also runs her own ENT clinic, Swasthya ENT Centre. She is known for her thorough patient care, surgical precision and commitment to academic excellence.",
       areasOfExpertise: ['Septoplasty', 'Turbinectomy', 'Turbinoplasty', 'Functional Endoscopic Sinus Surgery (FESS)', 'Nasal Endoscopy and Biopsy', 'Skin Prick Test', 'Allergen Immunotherapy', 'Tympanoplasty', 'Cortical Mastoidectomy', 'Modified Radical Mastoidectomy', 'Auroplasty', 'Myringotomy and Grommet Insertion', 'Tonsillectomy', 'Coblation Adenoidectomy', 'Conventional Adenoidectomy', 'Direct Laryngoscopy', 'Microlaryngeal Surgery', 'Tracheostomy', 'Incision and Drainage', 'Submandibular Gland Excision', 'Hemithyroidectomy', 'Total Thyroidectomy', 'Diagnosis and Management of Head and Neck Oncologic Surgeries'],
       expertise: "12+",
       qualification: "MBBS, DLO, DNB (ENT), AASC",
@@ -3410,15 +3410,15 @@ export class NewDoctorPageComponent {
       alt: 'Dr. Sandhya S. Patil | Best ENT Consultant in Bangalore | Rashtrotthana Hospital',
       title: 'Dr. Sandhya S. Patil | ENT Specialist & Head-Neck Surgeon in Bengaluru',
       id: 68,
-      description: 'Consult Dr. Sandhya S. Patil, ENT & Head-Neck Surgeon in Bengaluru. Expert in sinus surgery, pediatric ENT, allergy care, and thyroid surgeries.',
+      description: 'Consult Dr. Sandhya S. Patil, ENT & Head-Neck Surgeon in Bengaluru. Expert in sinus surgery, pediatric ENT, allergy care and thyroid surgeries.',
       faqs: [
         {
           question: 'Who is Dr. Sandhya S. Patil and what is her specialty at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'Dr. Sandhya S. Patil is an experienced ENT and Head–Neck Surgeon at Rashtrotthana Hospital, RR Nagar, Bangalore. She specialises in advanced nasal, ear, throat, and head–neck surgeries with a strong focus on precision and patient safety.'
+          answer: 'Dr. Sandhya S. Patil is an experienced ENT and Head–Neck Surgeon at Rashtrotthana Hospital, RR Nagar, Bangalore. She specialises in advanced nasal, ear, throat and head–neck surgeries with a strong focus on precision and patient safety.'
         },
         {
           question: 'Does Dr. Sandhya S. Patil perform septoplasty and sinus surgery for nasal blockage?',
-          answer: 'Yes, Dr. Sandhya S. Patil performs septoplasty, turbinectomy, turbinoplasty, and Functional Endoscopic Sinus Surgery (FESS) for chronic nasal blockage and sinusitis. These procedures help improve breathing and reduce recurrent infections.'
+          answer: 'Yes, Dr. Sandhya S. Patil performs septoplasty, turbinectomy, turbinoplasty and Functional Endoscopic Sinus Surgery (FESS) for chronic nasal blockage and sinusitis. These procedures help improve breathing and reduce recurrent infections.'
         },
         {
           question: 'Is allergy testing and immunotherapy available with Dr. Sandhya S. Patil?',
@@ -3426,15 +3426,15 @@ export class NewDoctorPageComponent {
         },
         {
           question: 'What ear surgeries are treated by Dr. Sandhya S. Patil at Rashtrotthana Hospital?',
-          answer: 'Dr. Sandhya S. Patil performs tympanoplasty, cortical and modified radical mastoidectomy, myringotomy with grommet insertion, and auralplasty. These surgeries address chronic ear infections, hearing loss, and middle ear disease.'
+          answer: 'Dr. Sandhya S. Patil performs tympanoplasty, cortical and modified radical mastoidectomy, myringotomy with grommet insertion and auralplasty. These surgeries address chronic ear infections, hearing loss and middle ear disease.'
         },
         {
-          question: 'Does Dr. Sandhya S. Patil treat tonsil, adenoid, and voice box disorders?',
+          question: 'Does Dr. Sandhya S. Patil treat tonsil, adenoid and voice box disorders?',
           answer: 'Yes, she performs tonsillectomy, coblation and conventional adenoidectomy, as well as direct laryngoscopy and microlaryngeal surgery for voice disorders. Early treatment helps prevent speech and breathing complications.'
         },
         {
-          question: 'Are thyroid, salivary gland, and tracheostomy procedures handled by Dr. Sandhya S. Patil?',
-          answer: 'Dr. Sandhya S. Patil is experienced in submandibular gland excision, hemithyroidectomy, total thyroidectomy, and tracheostomy procedures. These surgeries require specialised ENT and head–neck surgical expertise.'
+          question: 'Are thyroid, salivary gland and tracheostomy procedures handled by Dr. Sandhya S. Patil?',
+          answer: 'Dr. Sandhya S. Patil is experienced in submandibular gland excision, hemithyroidectomy, total thyroidectomy and tracheostomy procedures. These surgeries require specialised ENT and head–neck surgical expertise.'
         },
         {
           question: 'Does Dr. Sandhya S. Patil manage head and neck cancer surgeries?',
@@ -3482,7 +3482,7 @@ export class NewDoctorPageComponent {
         },
         {
           question: 'What medical retina conditions are treated by Dr. Dona Susan John?',
-          answer: 'Dr. Dona Susan John treats a wide range of medical retina conditions, including diabetic eye disease, macular disorders, and retinal vascular problems. Her approach combines accurate diagnosis with evidence-based treatment.'
+          answer: 'Dr. Dona Susan John treats a wide range of medical retina conditions, including diabetic eye disease, macular disorders and retinal vascular problems. Her approach combines accurate diagnosis with evidence-based treatment.'
         },
         {
           question: 'Are laser treatments and intravitreal injections performed by Dr. Dona Susan John?',
@@ -3490,11 +3490,11 @@ export class NewDoctorPageComponent {
         },
         {
           question: 'When should I see a medical retina specialist like Dr. Dona Susan John?',
-          answer: 'You should consult Dr. Dona Susan John if you have diabetes, blurred vision, sudden vision changes, floaters, or age-related vision issues. Early retinal evaluation is key to preserving eyesight.'
+          answer: 'You should consult Dr. Dona Susan John if you have diabetes, blurred vision, sudden vision changes, floaters or age-related vision issues. Early retinal evaluation is key to preserving eyesight.'
         },
         {
           question: 'How can I book an appointment with Dr. Dona Susan John at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: `You can book an appointment with Dr. Dona Susan John by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
+          answer: `You can book an appointment with Dr. Dona Susan John by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception or booking online through the official Rashtrotthana Hospital website.`
         }
       ],
       departmentSlug: '/specialities/best-eye-hospital-in-bangalore',
@@ -3522,23 +3522,23 @@ export class NewDoctorPageComponent {
       id: 71,
       alt: 'Dr. Nithin J | Best Nephrology doctor in Bangalore | Rashtrotthana Hospital',
       title: 'Dr. Nithin J | Trusted Nephrologist for Transplant & Dialysis',
-      description: 'Expert in renal biopsies, dialysis, glomerular diseases, and transplant care. 1000+ procedures performed. Trusted nephrologist with 13+ years of experience.',
+      description: 'Expert in renal biopsies, dialysis, glomerular diseases and transplant care. 1000+ procedures performed. Trusted nephrologist with 13+ years of experience.',
       faqs: [
         {
           question: 'Who is Dr. Nithin J and what is his specialty at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'Dr. Nithin J is an experienced Nephrologist at Rashtrotthana Hospital, RR Nagar, Bangalore. He specialises in kidney diseases, dialysis care, and comprehensive pre- and post-renal transplant management.'
+          answer: 'Dr. Nithin J is an experienced Nephrologist at Rashtrotthana Hospital, RR Nagar, Bangalore. He specialises in kidney diseases, dialysis care and comprehensive pre- and post-renal transplant management.'
         },
         {
           question: 'Does Dr. Nithin J treat chronic kidney disease and other renal disorders?',
-          answer: 'Yes, Dr. Nithin J provides expert care for chronic kidney disease (CKD), acute kidney injury, and glomerular diseases. Early diagnosis and regular monitoring help slow disease progression and reduce complications.'
+          answer: 'Yes, Dr. Nithin J provides expert care for chronic kidney disease (CKD), acute kidney injury and glomerular diseases. Early diagnosis and regular monitoring help slow disease progression and reduce complications.'
         },
         {
           question: 'Can I consult Dr. Nithin J for dialysis treatment at Rashtrotthana Hospital?',
-          answer: 'Yes, Dr. Nithin J manages both hemodialysis and peritoneal dialysis, ensuring safe dialysis planning, access care, and long-term monitoring tailored to each patient’s condition.'
+          answer: 'Yes, Dr. Nithin J manages both hemodialysis and peritoneal dialysis, ensuring safe dialysis planning, access care and long-term monitoring tailored to each patient’s condition.'
         },
         {
           question: 'Does Dr. Nithin J handle kidney transplant care before and after surgery?',
-          answer: 'Yes, he has extensive experience in renal transplantation, providing thorough evaluation before transplant and close follow-up after surgery. Post-transplant care focuses on graft health, infection prevention, and medication management.'
+          answer: 'Yes, he has extensive experience in renal transplantation, providing thorough evaluation before transplant and close follow-up after surgery. Post-transplant care focuses on graft health, infection prevention and medication management.'
         },
         {
           question: 'Are renal biopsies and catheter placements performed by Dr. Nithin J?',
@@ -3546,11 +3546,11 @@ export class NewDoctorPageComponent {
         },
         {
           question: 'Can Dr. Nithin J manage complications after kidney transplantation?',
-          answer: 'Yes, he specialises in post-transplant complication management, including rejection, infections, and medication-related issues. Timely intervention helps protect kidney function and improve long-term transplant outcomes.'
+          answer: 'Yes, he specialises in post-transplant complication management, including rejection, infections and medication-related issues. Timely intervention helps protect kidney function and improve long-term transplant outcomes.'
         },
         {
           question: 'How can I book an appointment with Dr. Nithin J at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: `You can book an appointment with Dr. Nithin J by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
+          answer: `You can book an appointment with Dr. Nithin J by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception or booking online through the official Rashtrotthana Hospital website.`
         }
       ],
       departmentSlug: '/specialities/best-nephrology-hospital-in-bangalore',
@@ -3569,8 +3569,8 @@ export class NewDoctorPageComponent {
       image: "assets/dr-dhruva-ithal.png",
       department: 'Psychiatry',
       speciality: 'PSYCHIATRY',
-      about: "<p>Dr. Dhruva Ithal is a highly accomplished psychiatrist with extensive experience across clinical care, academic research and mental health training. A graduate of NIMHANS with an MD and Ph.D. in Psychiatry, he has also held a prestigious Research Training Fellowship from the Wellcome Trust-DBT India Alliance. His expertise spans a wide range of psychiatric conditions, with a strong focus on treatment-resistant schizophrenia, adolescent mental health, substance use disorders and neurostimulation therapies such as ECT and TMS.</p> <p>Dr. Dhruva has been associated with leading institutions including NIMHANS and Harvard Medical School (as a visiting research scholar), and has contributed to several national and international research projects. He integrates neuroscience, psychotherapy and holistic practices like yoga and art therapy into patient care. Passionate about advancing mental health awareness and evidence-based treatment, he is also actively involved in training young professionals and engaging with the community through public education initiatives.</p>",
-      areasOfExpertise: ['General & Adult Psychiatry', 'Schizophrenia', 'Adolescent Psychiatry', 'Perinatal Psychiatry', 'Brain Stimulation Techniques (ECT, TMS)', 'Neuroimaging and Functional MRI', 'Substance Use Disorders', 'Psychotherapy (CBT, Psychodynamic, Trauma-focused)', 'Dance, Art, and Yoga-based therapies'],
+      about: "<p>Dr. Dhruva Ithal is a highly accomplished psychiatrist with extensive experience across clinical care, academic research and mental health training. A graduate of NIMHANS with an MD and Ph.D. in Psychiatry, he has also held a prestigious Research Training Fellowship from the Wellcome Trust-DBT India Alliance. His expertise spans a wide range of psychiatric conditions, with a strong focus on treatment-resistant schizophrenia, adolescent mental health, substance use disorders and neurostimulation therapies such as ECT and TMS.</p> <p>Dr. Dhruva has been associated with leading institutions including NIMHANS and Harvard Medical School (as a visiting research scholar) and has contributed to several national and international research projects. He integrates neuroscience, psychotherapy and holistic practices like yoga and art therapy into patient care. Passionate about advancing mental health awareness and evidence-based treatment, he is also actively involved in training young professionals and engaging with the community through public education initiatives.</p>",
+      areasOfExpertise: ['General & Adult Psychiatry', 'Schizophrenia', 'Adolescent Psychiatry', 'Perinatal Psychiatry', 'Brain Stimulation Techniques (ECT, TMS)', 'Neuroimaging and Functional MRI', 'Substance Use Disorders', 'Psychotherapy (CBT, Psychodynamic, Trauma-focused)', 'Dance, Art and Yoga-based therapies'],
       expertise: "15+",
       qualification: "MBBS, MD (NIMHANS), Ph.D. in Psychiatry (NIMHANS)",
       time: "",
@@ -3578,11 +3578,11 @@ export class NewDoctorPageComponent {
       alt: 'Dr. Dhruva Ithal - Expert Psychiatrist in Bangalore',
       title: 'Dr. Dhruva Ithal - Expert Psychiatrist in Bangalore',
       id: 69,
-      description: 'Dr. Dhruva Ithal specializes in schizophrenia, adolescent psychiatry, neurostimulation therapies, and psychotherapy with 13+ years of clinical experience.',
+      description: 'Dr. Dhruva Ithal specializes in schizophrenia, adolescent psychiatry, neurostimulation therapies and psychotherapy with 13+ years of clinical experience.',
       faqs: [
         {
           question: 'Who is Dr. Dhruva Ithal and what is his specialty at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'Dr. Dhruva Ithal is an experienced Psychiatrist at Rashtrotthana Hospital, RR Nagar, Bangalore. He provides comprehensive care for adult and adolescent mental health conditions using medication, psychotherapy, and advanced brain-stimulation techniques.'
+          answer: 'Dr. Dhruva Ithal is an experienced Psychiatrist at Rashtrotthana Hospital, RR Nagar, Bangalore. He provides comprehensive care for adult and adolescent mental health conditions using medication, psychotherapy and advanced brain-stimulation techniques.'
         },
         {
           question: 'Does Dr. Dhruva Ithal treat schizophrenia and severe mental illnesses?',
@@ -3594,19 +3594,19 @@ export class NewDoctorPageComponent {
         },
         {
           question: 'Can I consult Dr. Dhruva Ithal for substance use and addiction-related problems?',
-          answer: 'Yes, Dr. Dhruva Ithal treats substance use disorders, including alcohol and drug dependence, with evidence-based treatment plans focused on recovery, relapse prevention, and mental wellbeing.'
+          answer: 'Yes, Dr. Dhruva Ithal treats substance use disorders, including alcohol and drug dependence, with evidence-based treatment plans focused on recovery, relapse prevention and mental wellbeing.'
         },
         {
           question: 'Does Dr. Dhruva Ithal provide psychotherapy and counselling?',
-          answer: 'Yes, he offers psychotherapy, including CBT, psychodynamic therapy, and trauma-focused approaches, based on individual needs. Therapy helps patients develop coping skills and address underlying emotional difficulties.'
+          answer: 'Yes, he offers psychotherapy, including CBT, psychodynamic therapy and trauma-focused approaches, based on individual needs. Therapy helps patients develop coping skills and address underlying emotional difficulties.'
         },
         {
           question: 'Is care available for adolescents and mental health concerns during pregnancy or after delivery?',
-          answer: 'Yes, Dr. Dhruva Ithal provides specialised care in adolescent psychiatry and perinatal psychiatry, addressing emotional, behavioural, and psychological concerns during adolescence, pregnancy, and the post-partum period.'
+          answer: 'Yes, Dr. Dhruva Ithal provides specialised care in adolescent psychiatry and perinatal psychiatry, addressing emotional, behavioural and psychological concerns during adolescence, pregnancy and the post-partum period.'
         },
         {
           question: 'How can I book an appointment with Dr. Dhruva Ithal at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: `You can book an appointment with Dr. Dhruva Ithal by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
+          answer: `You can book an appointment with Dr. Dhruva Ithal by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception or booking online through the official Rashtrotthana Hospital website.`
         }
       ],
       departmentSlug: '/specialities/best-pshychiatry-hospital-in-bangalore',
@@ -3634,19 +3634,19 @@ export class NewDoctorPageComponent {
       id: 70,
       alt: 'Dr. Limesh M | Nephrologist & Transplant Physician Bangalore',
       title: 'Dr. Limesh M | Nephrologist & Transplant Physician',
-      description: 'Dr. Limesh M offers expert care in CKD, AKI, dialysis, renal biopsies, and kidney transplantation. 15+ years of experience in nephrology and ICU care.',
+      description: 'Dr. Limesh M offers expert care in CKD, AKI, dialysis, renal biopsies and kidney transplantation. 15+ years of experience in nephrology and ICU care.',
       faqs: [
         {
           question: 'Who is Dr. Limesh M and what is his specialty at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: 'Dr. Limesh M is an experienced Nephrologist and Renal Transplant Specialist at Rashtrotthana Hospital, RR Nagar, Bangalore. He manages complex kidney diseases, dialysis care, and kidney transplantation with a strong focus on critical care nephrology.'
+          answer: 'Dr. Limesh M is an experienced Nephrologist and Renal Transplant Specialist at Rashtrotthana Hospital, RR Nagar, Bangalore. He manages complex kidney diseases, dialysis care and kidney transplantation with a strong focus on critical care nephrology.'
         },
         {
           question: 'Does Dr. Limesh M treat chronic kidney disease (CKD) and acute kidney injury (AKI)?',
-          answer: 'Yes, Dr. Limesh M specialises in the management of CKD and AKI, including early diagnosis, medical stabilisation, and long-term monitoring. Timely treatment helps slow disease progression and prevent complications.'
+          answer: 'Yes, Dr. Limesh M specialises in the management of CKD and AKI, including early diagnosis, medical stabilisation and long-term monitoring. Timely treatment helps slow disease progression and prevent complications.'
         },
         {
           question: 'Is critical care nephrology and ICU kidney monitoring available with Dr. Limesh M?',
-          answer: 'Yes, Dr. Limesh M provides critical care nephrology services, closely monitoring kidney function in ICU patients with severe illness, sepsis, or multi-organ involvement. This expertise is crucial in life-threatening situations.'
+          answer: 'Yes, Dr. Limesh M provides critical care nephrology services, closely monitoring kidney function in ICU patients with severe illness, sepsis or multi-organ involvement. This expertise is crucial in life-threatening situations.'
         },
         {
           question: 'Does Dr. Limesh M perform kidney transplantation and post-transplant care?',
@@ -3658,11 +3658,11 @@ export class NewDoctorPageComponent {
         },
         {
           question: 'Can Dr. Limesh M manage kidney-related emergencies?',
-          answer: 'Yes, he provides nephrology-related emergency and casualty care, including sudden kidney failure, electrolyte imbalances, and dialysis emergencies. Rapid intervention is essential for patient stabilisation.'
+          answer: 'Yes, he provides nephrology-related emergency and casualty care, including sudden kidney failure, electrolyte imbalances and dialysis emergencies. Rapid intervention is essential for patient stabilisation.'
         },
         {
           question: 'How can I book an appointment with Dr. Limesh M at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: `You can book an appointment with Dr. Limesh M by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
+          answer: `You can book an appointment with Dr. Limesh M by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception or booking online through the official Rashtrotthana Hospital website.`
         }
       ],
       departmentSlug: '/specialities/best-nephrology-hospital-in-bangalore',
@@ -3698,10 +3698,10 @@ export class NewDoctorPageComponent {
         },
         {
           question: 'Does Dr. Shruti Suresh treat diabetes at Rashtrotthana Hospital?',
-          answer: 'Yes, Dr. Shruti Suresh provides comprehensive diabetes management, including blood sugar control, medication planning, lifestyle counselling, and long-term monitoring. Early and consistent care helps prevent diabetes-related complications.'
+          answer: 'Yes, Dr. Shruti Suresh provides comprehensive diabetes management, including blood sugar control, medication planning, lifestyle counselling and long-term monitoring. Early and consistent care helps prevent diabetes-related complications.'
         },
         {
-          question: 'Can I consult Dr. Shruti Suresh for fever, infections, and communicable diseases?',
+          question: 'Can I consult Dr. Shruti Suresh for fever, infections and communicable diseases?',
           answer: 'Yes, she evaluates and treats communicable diseases, including fever and common infections, ensuring timely diagnosis and appropriate treatment to support quick recovery.'
         },
         {
@@ -3710,15 +3710,15 @@ export class NewDoctorPageComponent {
         },
         {
           question: 'When should I see Dr. Shruti Suresh for diabetes-related symptoms?',
-          answer: 'You should consult Dr. Shruti Suresh if you experience frequent urination, excessive thirst, unexplained weight changes, fatigue, or abnormal blood sugar reports. Early evaluation helps achieve better glucose control.'
+          answer: 'You should consult Dr. Shruti Suresh if you experience frequent urination, excessive thirst, unexplained weight changes, fatigue or abnormal blood sugar reports. Early evaluation helps achieve better glucose control.'
         },
         {
           question: 'Does Dr. Shruti Suresh provide preventive health advice along with treatment?',
-          answer: 'Yes, preventive care is an important part of her practice. She guides patients on diet, physical activity, infection prevention, and regular health monitoring to reduce disease risk and recurrence.'
+          answer: 'Yes, preventive care is an important part of her practice. She guides patients on diet, physical activity, infection prevention and regular health monitoring to reduce disease risk and recurrence.'
         },
         {
           question: 'How can I book an appointment with Dr. Shruti Suresh at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: `You can book an appointment with Dr. Shruti Suresh by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
+          answer: `You can book an appointment with Dr. Shruti Suresh by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception or booking online through the official Rashtrotthana Hospital website.`
         }
       ],
       departmentSlug: '/specialities/internal-medicine-hospital-in-bangalore',
@@ -3737,7 +3737,7 @@ export class NewDoctorPageComponent {
       image: "assets/dr-manasa-m-g-doc-page.png",
       department: 'Endocrinology',
       speciality: 'ENDOCRINOLOGY',
-      about: "Dr. Manasa M. G. is an accomplished endocrinologist-in-training with extensive experience in managing complex hormonal disorders. She completed her M.D. in Internal Medicine as the university topper and secured an All India 3rd rank in NEET-SS for DM Endocrinology. She has presented and won awards at national conferences on topics ranging from hypothyroid myopathy to pituitary disorders, and has published multiple case reports in reputed journals. She is skilled in a wide range of diagnostic and interventional procedures, committed to evidence-based endocrine care, and dedicated to advancing her expertise to provide comprehensive management for patients with endocrine and metabolic diseases.",
+      about: "Dr. Manasa M. G. is an accomplished endocrinologist-in-training with extensive experience in managing complex hormonal disorders. She completed her M.D. in Internal Medicine as the university topper and secured an All India 3rd rank in NEET-SS for DM Endocrinology. She has presented and won awards at national conferences on topics ranging from hypothyroid myopathy to pituitary disorders and has published multiple case reports in reputed journals. She is skilled in a wide range of diagnostic and interventional procedures, committed to evidence-based endocrine care and dedicated to advancing her expertise to provide comprehensive management for patients with endocrine and metabolic diseases.",
       areasOfExpertise: ["Diabetes and thyroid disorders", "Hypertension with hormonal causes", "Adrenal and pituitary diseases", "Bone metabolism and osteoporosis", "Rare endocrine syndromes", "General endocrine care"],
       expertise: " 10+",
       qualification: "MBBS, MD Internal Medicine, DM Endocrinology",
@@ -3754,7 +3754,7 @@ export class NewDoctorPageComponent {
         },
         {
           question: 'Can I consult Dr. Manasa M G for diabetes and thyroid disorders?',
-          answer: 'Yes, Dr. Manasa M G provides comprehensive care for diabetes and thyroid disorders, including hypothyroidism, hyperthyroidism, and long-term diabetes management. Treatment focuses on accurate diagnosis, medication optimisation, and lifestyle guidance.'
+          answer: 'Yes, Dr. Manasa M G provides comprehensive care for diabetes and thyroid disorders, including hypothyroidism, hyperthyroidism and long-term diabetes management. Treatment focuses on accurate diagnosis, medication optimisation and lifestyle guidance.'
         },
         {
           question: 'Does Dr. Manasa M G treat hormonal causes of high blood pressure?',
@@ -3762,11 +3762,11 @@ export class NewDoctorPageComponent {
         },
         {
           question: 'What adrenal and pituitary disorders are treated by Dr. Manasa M G?',
-          answer: 'She treats adrenal and pituitary diseases, including hormonal excess or deficiency states that affect growth, metabolism, and blood pressure. Early diagnosis and targeted treatment are key components of her endocrine care.'
+          answer: 'She treats adrenal and pituitary diseases, including hormonal excess or deficiency states that affect growth, metabolism and blood pressure. Early diagnosis and targeted treatment are key components of her endocrine care.'
         },
         {
           question: 'Can Dr. Manasa M G help with osteoporosis and bone metabolism disorders?',
-          answer: 'Yes, Dr. Manasa M G manages bone metabolism disorders, including osteoporosis, focusing on fracture prevention and bone health. Treatment plans may include hormonal evaluation, medications, and nutritional guidance.'
+          answer: 'Yes, Dr. Manasa M G manages bone metabolism disorders, including osteoporosis, focusing on fracture prevention and bone health. Treatment plans may include hormonal evaluation, medications and nutritional guidance.'
         },
         {
           question: 'Does Dr. Manasa M G treat rare endocrine syndromes?',
@@ -3774,7 +3774,7 @@ export class NewDoctorPageComponent {
         },
         {
           question: 'When should I see an endocrinologist like Dr. Manasa M G at Rashtrotthana Hospital?',
-          answer: 'You should consult Dr. Manasa M G if you have uncontrolled diabetes, thyroid problems, unexplained weight changes, hormonal blood pressure issues, or bone health concerns. Early endocrine evaluation helps prevent long-term complications.'
+          answer: 'You should consult Dr. Manasa M G if you have uncontrolled diabetes, thyroid problems, unexplained weight changes, hormonal blood pressure issues or bone health concerns. Early endocrine evaluation helps prevent long-term complications.'
         }
       ],
       departmentSlug: '/specialities/best-endocrinology-hospital-in-bangalore',
@@ -3807,15 +3807,15 @@ export class NewDoctorPageComponent {
       faqs: [
         {
           question: 'Who is Ms. Samarchitha S and what mental health conditions does she treat at Rashtrotthana Hospital, Bangalore?',
-          answer: 'Ms. Samarchitha S is a Mental Health Specialist at Rashtrotthana Hospital, Bangalore, with experience in treating mood disorders, anxiety disorders, OCD, sleep disorders, and neurodevelopmental conditions. She follows evidence-based, patient-centred mental healthcare.'
+          answer: 'Ms. Samarchitha S is a Mental Health Specialist at Rashtrotthana Hospital, Bangalore, with experience in treating mood disorders, anxiety disorders, OCD, sleep disorders and neurodevelopmental conditions. She follows evidence-based, patient-centred mental healthcare.'
         },
         {
-          question: 'Can I consult Ms. Samarchitha S for depression, mood swings, or bipolar disorder?',
-          answer: 'Yes, Ms. Samarchitha S provides structured care for mood disorders, including depression and bipolar spectrum conditions. Treatment focuses on symptom control, emotional stability, and long-term mental wellbeing.'
+          question: 'Can I consult Ms. Samarchitha S for depression, mood swings or bipolar disorder?',
+          answer: 'Yes, Ms. Samarchitha S provides structured care for mood disorders, including depression and bipolar spectrum conditions. Treatment focuses on symptom control, emotional stability and long-term mental wellbeing.'
         },
         {
           question: 'Does Ms. Samarchitha S treat anxiety disorders and OCD?',
-          answer: 'Yes, Ms. Samarchitha S offers comprehensive treatment for anxiety disorders and obsessive-compulsive disorder (OCD). Care plans may include psychotherapy, behavioural strategies, and medical management when required.'
+          answer: 'Yes, Ms. Samarchitha S offers comprehensive treatment for anxiety disorders and obsessive-compulsive disorder (OCD). Care plans may include psychotherapy, behavioural strategies and medical management when required.'
         },
         {
           question: 'Is treatment available for sleep disorders and stress-related conditions?',
@@ -3823,11 +3823,11 @@ export class NewDoctorPageComponent {
         },
         {
           question: 'Can Ms. Samarchitha S help with substance-related and addiction disorders?',
-          answer: 'Yes, Ms. Samarchitha S treats substance-related disorders, including alcohol and behavioural addictions, with a focus on recovery and relapse prevention. Treatment is supportive, confidential, and individualised.'
+          answer: 'Yes, Ms. Samarchitha S treats substance-related disorders, including alcohol and behavioural addictions, with a focus on recovery and relapse prevention. Treatment is supportive, confidential and individualised.'
         },
         {
-          question: 'Does she treat autism, ADHD, and other neurodevelopmental disorders?',
-          answer: 'Yes, Ms. Samarchitha S has experience managing neurodevelopmental disorders such as Autism Spectrum Disorder, ADHD, and intellectual developmental disorders (IDD). Care includes assessment, counselling, and long-term behavioural support.'
+          question: 'Does she treat autism, ADHD and other neurodevelopmental disorders?',
+          answer: 'Yes, Ms. Samarchitha S has experience managing neurodevelopmental disorders such as Autism Spectrum Disorder, ADHD and intellectual developmental disorders (IDD). Care includes assessment, counselling and long-term behavioural support.'
         },
         {
           question: 'Why choose Ms. Samarchitha S at Rashtrotthana Hospital for mental health care?',
@@ -3851,7 +3851,7 @@ export class NewDoctorPageComponent {
       department: 'Orthopedics',
       speciality: 'ORTHOPEDICS',
       desgination: 'Consultant - Orthopaedic Surgeon',
-      about: "Dr. Sandeep K M is an experienced orthopedic surgeon with over a decade of clinical expertise in trauma care, joint replacement (arthroplasty), and arthroscopy. He completed his MBBS from Mysore Medical College and MS in Orthopedics from Bangalore Medical College & Research Institute. He further specialized with a Fellowship in Joint Replacement at Sparsh Hospital, Bangalore. Dr. Sandeep has previously worked at Apollo Hospital, Bangalore, and currently serves as an Associate Professor at RajaRajeswari Medical College, alongside his clinical practice.",
+      about: "Dr. Sandeep K M is an experienced orthopedic surgeon with over a decade of clinical expertise in trauma care, joint replacement (arthroplasty) and arthroscopy. He completed his MBBS from Mysore Medical College and MS in Orthopedics from Bangalore Medical College & Research Institute. He further specialized with a Fellowship in Joint Replacement at Sparsh Hospital, Bangalore. Dr. Sandeep has previously worked at Apollo Hospital, Bangalore and currently serves as an Associate Professor at RajaRajeswari Medical College, alongside his clinical practice.",
       areasOfExpertise: ["Trauma", "Arthroplasty", "Arthroscopy", "Rheumatology"],
       expertise: "13+",
       qualification: "MBBS, MS (Orthopedics), Fellowship in Joint Replacemen",
@@ -3860,15 +3860,15 @@ export class NewDoctorPageComponent {
       id: 85,
       alt: 'Dr. Sandeep K M, top orthopedic surgeon in Bangalore | Rashtrotthana Hospital',
       title: 'Dr. Sandeep K M | Expert Orthopedic Surgeon in Bangalore',
-      description: 'Expert orthopedic care by Dr. Sandeep K M, with 13+ years in trauma, joint replacement, and arthroscopy. MBBS, MS, Fellowship-trained. At Rashtrotthana Hospital, restoring mobility. Book now!',
+      description: 'Expert orthopedic care by Dr. Sandeep K M, with 13+ years in trauma, joint replacement and arthroscopy. MBBS, MS, Fellowship-trained. At Rashtrotthana Hospital, restoring mobility. Book now!',
       faqs: [
         {
           question: 'Who is Dr. Sandeep K M and what is his specialty at Rashtrotthana Hospital, Bangalore?',
-          answer: 'Dr. Sandeep K M is an Orthopaedic specialist at Rashtrotthana Hospital, Bangalore, with expertise in trauma care, joint replacement (arthroplasty), arthroscopy, and rheumatology. He is experienced in managing both acute injuries and long-term joint conditions.'
+          answer: 'Dr. Sandeep K M is an Orthopaedic specialist at Rashtrotthana Hospital, Bangalore, with expertise in trauma care, joint replacement (arthroplasty), arthroscopy and rheumatology. He is experienced in managing both acute injuries and long-term joint conditions.'
         },
         {
           question: 'Can Dr. Sandeep K M treat fractures and accident-related injuries?',
-          answer: 'Yes, Dr. Sandeep K M specialises in orthopaedic trauma care, including fractures, dislocations, and complex accident-related injuries. Treatment focuses on restoring bone alignment, joint stability, and early functional recovery.'
+          answer: 'Yes, Dr. Sandeep K M specialises in orthopaedic trauma care, including fractures, dislocations and complex accident-related injuries. Treatment focuses on restoring bone alignment, joint stability and early functional recovery.'
         },
         {
           question: 'Does Dr. Sandeep K M perform joint replacement surgeries (arthroplasty)?',
@@ -3876,19 +3876,19 @@ export class NewDoctorPageComponent {
         },
         {
           question: 'What conditions are treated using arthroscopy by Dr. Sandeep K M?',
-          answer: 'Dr. Sandeep K M uses arthroscopy (keyhole surgery) to treat knee, shoulder, and other joint problems such as ligament injuries, meniscus tears, and cartilage damage. Arthroscopic surgery usually allows faster recovery and smaller incisions.'
+          answer: 'Dr. Sandeep K M uses arthroscopy (keyhole surgery) to treat knee, shoulder and other joint problems such as ligament injuries, meniscus tears and cartilage damage. Arthroscopic surgery usually allows faster recovery and smaller incisions.'
         },
         {
           question: 'Can I consult Dr. Sandeep K M for arthritis and rheumatology-related problems?',
-          answer: 'Yes, Dr. Sandeep K M manages rheumatological conditions, including inflammatory and degenerative arthritis. Treatment plans are personalised to control pain, reduce inflammation, and preserve joint function.'
+          answer: 'Yes, Dr. Sandeep K M manages rheumatological conditions, including inflammatory and degenerative arthritis. Treatment plans are personalised to control pain, reduce inflammation and preserve joint function.'
         },
         {
           question: 'When should I see Dr. Sandeep K M for joint pain or movement problems?',
-          answer: 'You should consult Dr. Sandeep K M if you experience persistent joint pain, stiffness, swelling, limited movement, or difficulty walking. Early orthopaedic evaluation can prevent further joint damage and improve long-term outcomes.'
+          answer: 'You should consult Dr. Sandeep K M if you experience persistent joint pain, stiffness, swelling, limited movement or difficulty walking. Early orthopaedic evaluation can prevent further joint damage and improve long-term outcomes.'
         },
         {
           question: 'Why choose Dr. Sandeep K M at Rashtrotthana Hospital for orthopaedic care?',
-          answer: 'Dr. Sandeep K M combines clinical experience in trauma, arthroplasty, arthroscopy, and rheumatology with a patient-focused approach. At Rashtrotthana Hospital, patients receive comprehensive orthopaedic care supported by advanced diagnostics and rehabilitation services.'
+          answer: 'Dr. Sandeep K M combines clinical experience in trauma, arthroplasty, arthroscopy and rheumatology with a patient-focused approach. At Rashtrotthana Hospital, patients receive comprehensive orthopaedic care supported by advanced diagnostics and rehabilitation services.'
         }
       ],
       departmentSlug: '/specialities/best-orthopaedics-hospital-in-bangalore',
@@ -3916,23 +3916,23 @@ export class NewDoctorPageComponent {
       date: "",
       alt: 'Dr.Pooja Prasad, top Radiologist surgeon in Bangalore | Rashtrotthana Hospital',
       title: 'Dr.Pooja Prasad | Expert Radiologist Surgeon in Bangalore',
-      // description:'Expert orthopedic care by Dr. Sandeep K M, with 11+ years in trauma, joint replacement, and arthroscopy. MBBS, MS, Fellowship-trained. At Rashtrotthana Hospital, restoring mobility. Book now!',
+      // description:'Expert orthopedic care by Dr. Sandeep K M, with 11+ years in trauma, joint replacement and arthroscopy. MBBS, MS, Fellowship-trained. At Rashtrotthana Hospital, restoring mobility. Book now!',
       faqs: [
         {
           question: 'Who is Dr. Pooja Prasad and what is her role at Rashtrotthana Hospital, Bangalore?',
-          answer: 'Dr. Pooja Prasad is a Diagnostic Radiologist at Rashtrotthana Hospital, Bangalore, with experience in advanced medical imaging. She specialises in accurate interpretation of CT, MRI, ultrasound, Doppler, X-ray, and mammography studies to support timely diagnosis and treatment.'
+          answer: 'Dr. Pooja Prasad is a Diagnostic Radiologist at Rashtrotthana Hospital, Bangalore, with experience in advanced medical imaging. She specialises in accurate interpretation of CT, MRI, ultrasound, Doppler, X-ray and mammography studies to support timely diagnosis and treatment.'
         },
         {
           question: 'What imaging services are handled by Dr. Pooja Prasad at Rashtrotthana Hospital?',
-          answer: 'Dr. Pooja Prasad reports CT scans, MRI scans, ultrasound, Doppler studies, X-rays, and mammography. Her work plays a crucial role in diagnosing neurological, abdominal, chest, musculoskeletal, and emergency conditions.'
+          answer: 'Dr. Pooja Prasad reports CT scans, MRI scans, ultrasound, Doppler studies, X-rays and mammography. Her work plays a crucial role in diagnosing neurological, abdominal, chest, musculoskeletal and emergency conditions.'
         },
         {
           question: 'Can Dr. Pooja Prasad interpret CT and MRI scans for brain and spine problems?',
-          answer: 'Yes, she has expertise in neuroimaging, including brain and spine CT and MRI, used to detect stroke, tumors, spine disorders, and nerve-related conditions. Accurate imaging interpretation helps clinicians plan appropriate treatment quickly.'
+          answer: 'Yes, she has expertise in neuroimaging, including brain and spine CT and MRI, used to detect stroke, tumors, spine disorders and nerve-related conditions. Accurate imaging interpretation helps clinicians plan appropriate treatment quickly.'
         },
         {
           question: 'Does Dr. Pooja Prasad perform and report ultrasound and Doppler scans?',
-          answer: 'Yes, Dr. Pooja Prasad performs and interprets ultrasound and Doppler imaging, including abdominal, pelvic, vascular, and soft tissue scans. Doppler studies are especially useful for evaluating blood flow and vascular conditions.'
+          answer: 'Yes, Dr. Pooja Prasad performs and interprets ultrasound and Doppler imaging, including abdominal, pelvic, vascular and soft tissue scans. Doppler studies are especially useful for evaluating blood flow and vascular conditions.'
         },
         {
           question: 'Is obstetric ultrasound and pregnancy scan reporting done by Dr. Pooja Prasad?',
@@ -3976,23 +3976,23 @@ export class NewDoctorPageComponent {
       faqs: [
         {
           question: 'Who is Dr. Srinivas Siddeshwar and what is his role at Rashtrotthana Hospital, Bangalore?',
-          answer: 'Dr. Srinivas Siddeshwar is an Emergency Medicine Specialist at Rashtrotthana Hospital, Bangalore, trained to manage medical and surgical emergencies round the clock. He brings strong clinical experience in rapid assessment, stabilisation, and life-saving interventions.'
+          answer: 'Dr. Srinivas Siddeshwar is an Emergency Medicine Specialist at Rashtrotthana Hospital, Bangalore, trained to manage medical and surgical emergencies round the clock. He brings strong clinical experience in rapid assessment, stabilisation and life-saving interventions.'
         },
         {
           question: 'What types of emergencies does Dr. Srinivas Siddeshwar treat?',
-          answer: 'He treats heart attacks, strokes, trauma, accidents, breathing emergencies, severe infections, and poisoning cases. Prompt decision-making and coordinated care help improve outcomes during critical situations.'
+          answer: 'He treats heart attacks, strokes, trauma, accidents, breathing emergencies, severe infections and poisoning cases. Prompt decision-making and coordinated care help improve outcomes during critical situations.'
         },
         {
           question: 'Can Dr. Srinivas Siddeshwar manage accident and trauma cases?',
-          answer: 'Yes, Dr. Srinivas Siddeshwar is experienced in trauma and accident management, including fractures, head injuries, and polytrauma. Early stabilisation, pain control, and swift referral to specialty teams are prioritised.'
+          answer: 'Yes, Dr. Srinivas Siddeshwar is experienced in trauma and accident management, including fractures, head injuries and polytrauma. Early stabilisation, pain control and swift referral to specialty teams are prioritised.'
         },
         {
           question: 'Does Dr. Srinivas Siddeshwar handle cardiac and respiratory emergencies?',
-          answer: 'Yes, Dr. Srinivas Siddeshwar manages acute chest pain, heart attacks, severe asthma, COPD exacerbations, and respiratory distress. Immediate interventions and continuous monitoring are key parts of emergency care.'
+          answer: 'Yes, Dr. Srinivas Siddeshwar manages acute chest pain, heart attacks, severe asthma, COPD exacerbations and respiratory distress. Immediate interventions and continuous monitoring are key parts of emergency care.'
         },
         {
           question: 'What should patients expect during an emergency visit under Dr. Srinivas Siddeshwar’s care?',
-          answer: 'Patients receive rapid triage, immediate investigations, and prompt treatment based on the severity of their condition. Care is streamlined to minimise delays and ensure patient safety.'
+          answer: 'Patients receive rapid triage, immediate investigations and prompt treatment based on the severity of their condition. Care is streamlined to minimise delays and ensure patient safety.'
         },
         {
           question: 'Is emergency care available 24/7 with Dr. Srinivas Siddeshwar at Rashtrotthana Hospital?',
@@ -4033,19 +4033,19 @@ export class NewDoctorPageComponent {
       faqs: [
         {
           question: 'Who is Dr. Sushma A and what is her specialty at Rashtrotthana Hospital, Bangalore?',
-          answer: 'Dr. Sushma A is an Ophthalmology and Oculoplasty specialist at Rashtrotthana Hospital, Bangalore, with focused expertise in eyelid disorders, orbital diseases, lacrimal surgery, and facial aesthetics. She brings extensive clinical experience in managing both functional and cosmetic eye conditions.'
+          answer: 'Dr. Sushma A is an Ophthalmology and Oculoplasty specialist at Rashtrotthana Hospital, Bangalore, with focused expertise in eyelid disorders orbital diseases, lacrimal surgery and facial aesthetics. She brings extensive clinical experience in managing both functional and cosmetic eye conditions.'
         },
         {
           question: 'What eyelid problems are treated by Dr. Sushma A at Rashtrotthana Hospital?',
-          answer: 'Dr. Sushma A treats droopy eyelids (ptosis), eyelid malpositions, eyelid swellings, and eyelid infections. Treatment aims to restore eye function, comfort, and appearance through precise medical or surgical care.'
+          answer: 'Dr. Sushma A treats droopy eyelids (ptosis), eyelid malpositions, eyelid swellings and eyelid infections. Treatment aims to restore eye function, comfort and appearance through precise medical or surgical care.'
         },
         {
           question: 'Can Dr. Sushma A manage thyroid eye disease (TED)?',
-          answer: 'Yes, Dr. Sushma A has experience in treating thyroid eye disease, including eye bulging, eyelid retraction, and discomfort related to thyroid disorders. Management focuses on protecting vision, reducing inflammation, and improving eye alignment and appearance.'
+          answer: 'Yes, Dr. Sushma A has experience in treating thyroid eye disease, including eye bulging, eyelid retraction and discomfort related to thyroid disorders. Management focuses on protecting vision, reducing inflammation and improving eye alignment and appearance.'
         },
         {
           question: 'What orbital diseases are treated by Dr. Sushma A?',
-          answer: 'She manages orbital diseases such as orbital inflammation, tumors, and trauma-related conditions affecting the eye socket. Accurate diagnosis and timely intervention help preserve vision and eye movement.'
+          answer: 'She manages orbital diseases such as orbital inflammation, tumors and trauma-related conditions affecting the eye socket. Accurate diagnosis and timely intervention help preserve vision and eye movement.'
         },
         {
           question: 'Does Dr. Sushma A perform lacrimal (tear duct) surgery?',
@@ -4057,7 +4057,7 @@ export class NewDoctorPageComponent {
         },
         {
           question: 'Why choose Dr. Sushma A at Rashtrotthana Hospital for eye and eyelid care?',
-          answer: 'Dr. Sushma A combines specialised oculoplasty expertise with a patient-centred approach to care. At Rashtrotthana Hospital, patients benefit from advanced diagnostics, surgical precision, and comprehensive ophthalmic support.'
+          answer: 'Dr. Sushma A combines specialised oculoplasty expertise with a patient-centred approach to care. At Rashtrotthana Hospital, patients benefit from advanced diagnostics, surgical precision and comprehensive ophthalmic support.'
         }
       ],
       departmentSlug: '/specialities/best-eye-hospital-in-bangalore',
@@ -4090,7 +4090,7 @@ export class NewDoctorPageComponent {
       faqs: [
         {
           question: 'Who is Dr. Mahesh M and what is his specialty at Rashtrotthana Hospital, Bangalore?',
-          answer: 'Dr. Mahesh M is a Urologist at Rashtrotthana Hospital, Bangalore, with experience in managing complex urological conditions. His expertise spans endo-urology, reconstructive urology, uro-oncology, and renal transplantation.'
+          answer: 'Dr. Mahesh M is a Urologist at Rashtrotthana Hospital, Bangalore, with experience in managing complex urological conditions. His expertise spans endo-urology, reconstructive urology, uro-oncology and renal transplantation.'
         },
         {
           question: 'Can I consult Dr. Mahesh M for urinary stone treatment and laser surgery?',
@@ -4102,7 +4102,7 @@ export class NewDoctorPageComponent {
         },
         {
           question: 'What andrology and male reproductive problems are treated by Dr. Mahesh M?',
-          answer: 'He treats andrology-related conditions such as male infertility, erectile dysfunction, and other reproductive health issues. Treatment is personalised, focusing on both medical and surgical solutions when required.'
+          answer: 'He treats andrology-related conditions such as male infertility, erectile dysfunction and other reproductive health issues. Treatment is personalised, focusing on both medical and surgical solutions when required.'
         },
         {
           question: 'Does Dr. Mahesh M manage female urology and urinary incontinence?',
@@ -4110,11 +4110,11 @@ export class NewDoctorPageComponent {
         },
         {
           question: 'Can Dr. Mahesh M treat urological cancers at Rashtrotthana Hospital?',
-          answer: 'Dr. Mahesh M has experience in uro-oncology, including cancers of the kidney, bladder, prostate, and urinary tract. Care is coordinated with oncology teams to ensure comprehensive cancer management.'
+          answer: 'Dr. Mahesh M has experience in uro-oncology, including cancers of the kidney, bladder, prostate and urinary tract. Care is coordinated with oncology teams to ensure comprehensive cancer management.'
         },
         {
           question: 'Why choose Dr. Mahesh M at Rashtrotthana Hospital for urology care?',
-          answer: 'Dr. Mahesh M combines advanced surgical expertise in laparoscopic, reconstructive, and laser urology with a patient-centred approach. At Rashtrotthana Hospital, patients benefit from modern urology infrastructure and multidisciplinary support.'
+          answer: 'Dr. Mahesh M combines advanced surgical expertise in laparoscopic, reconstructive and laser urology with a patient-centred approach. At Rashtrotthana Hospital, patients benefit from modern urology infrastructure and multidisciplinary support.'
         }
       ],
       departmentSlug: '/specialities/best-urology-hospital-in-bangalore',
@@ -4147,15 +4147,15 @@ export class NewDoctorPageComponent {
       faqs: [
         {
           question: 'Who is Major Dr. Ashish S Mallige and what is his specialty at Rashtrotthana Hospital, Bangalore?',
-          answer: 'Major Dr. Ashish S Mallige is a Pediatric Intensivist at Rashtrotthana Hospital, Bangalore, with extensive experience in pediatric and neonatal critical care. He specialises in managing critically ill newborns, infants, and children in intensive care settings.'
+          answer: 'Major Dr. Ashish S Mallige is a Pediatric Intensivist at Rashtrotthana Hospital, Bangalore, with extensive experience in pediatric and neonatal critical care. He specialises in managing critically ill newborns, infants and children in intensive care settings.'
         },
         {
           question: 'What conditions are treated by Major Dr. Ashish S Mallige in the Pediatric ICU (PICU)?',
-          answer: 'He treats severe infections, sepsis, respiratory failure, cardiac emergencies, and multi-organ conditions in children. Care focuses on continuous monitoring, advanced life support, and timely interventions.'
+          answer: 'He treats severe infections, sepsis, respiratory failure, cardiac emergencies and multi-organ conditions in children. Care focuses on continuous monitoring, advanced life support and timely interventions.'
         },
         {
           question: 'Can Major Dr. Ashish S Mallige manage critically ill newborns and premature babies?',
-          answer: 'Yes, he has strong experience in the care of critically ill neonates, including very low birth weight (VLBW) infants. Treatment involves specialised neonatal support, infection control, and careful growth monitoring.'
+          answer: 'Yes, he has strong experience in the care of critically ill neonates, including very low birth weight (VLBW) infants. Treatment involves specialised neonatal support, infection control and careful growth monitoring.'
         },
         {
           question: 'Does Major Dr. Ashish S Mallige treat pediatric infections and sepsis?',
@@ -4167,11 +4167,11 @@ export class NewDoctorPageComponent {
         },
         {
           question: 'Can he manage pediatric respiratory and cardiac emergencies?',
-          answer: 'Major Dr. Ashish S Mallige treats acute respiratory distress, severe pneumonia, asthma attacks, and pediatric cardiac emergencies. Advanced ventilatory and cardiac support is provided when required.'
+          answer: 'Major Dr. Ashish S Mallige treats acute respiratory distress, severe pneumonia, asthma attacks and pediatric cardiac emergencies. Advanced ventilatory and cardiac support is provided when required.'
         },
         {
           question: 'Why choose Major Dr. Ashish S Mallige at Rashtrotthana Hospital for pediatric critical care?',
-          answer: 'Major Dr. Ashish S Mallige brings extensive clinical experience in pediatric and neonatal intensive care, supported by Rashtrotthana Hospital’s advanced PICU infrastructure. Parents can trust a structured, compassionate, and evidence-based approach to critical child care.'
+          answer: 'Major Dr. Ashish S Mallige brings extensive clinical experience in pediatric and neonatal intensive care, supported by Rashtrotthana Hospital’s advanced PICU infrastructure. Parents can trust a structured, compassionate and evidence-based approach to critical child care.'
         }
       ],
       departmentSlug: '/specialities/best-paediatric-hospital-in-bangalore',
@@ -4204,19 +4204,19 @@ export class NewDoctorPageComponent {
       faqs: [
         {
           question: 'Who is Dr. Madhurya P K and what is her specialty at Rashtrotthana Hospital, Bangalore?',
-          answer: 'Dr. Madhurya P K is a Dermatologist at Rashtrotthana Hospital, Bangalore, with clinical experience in medical dermatology, cosmetology, trichology, and aesthetic procedures. She manages a wide range of skin, hair, and nail disorders with evidence-based care.'
+          answer: 'Dr. Madhurya P K is a Dermatologist at Rashtrotthana Hospital, Bangalore, with clinical experience in medical dermatology, cosmetology, trichology and aesthetic procedures. She manages a wide range of skin, hair and nail disorders with evidence-based care.'
         },
         {
-          question: 'Can I consult Dr. Madhurya P K for acne, pigmentation, and skin infections?',
-          answer: 'Yes, Dr. Madhurya P K treats acne, pigmentary disorders, fungal skin infections (dermatophytosis), and chronic skin conditions. Treatment is personalised based on skin type, severity, and long-term skin health.'
+          question: 'Can I consult Dr. Madhurya P K for acne, pigmentation and skin infections?',
+          answer: 'Yes, Dr. Madhurya P K treats acne, pigmentary disorders, fungal skin infections (dermatophytosis) and chronic skin conditions. Treatment is personalised based on skin type, severity and long-term skin health.'
         },
         {
           question: 'Does Dr. Madhurya P K treat hair fall and scalp disorders?',
-          answer: 'Dr. Madhurya P K specialises in trichology, including treatment for hair fall, androgenetic alopecia, and scalp disorders. Management may include medical therapy, procedural treatments, and lifestyle guidance.'
+          answer: 'Dr. Madhurya P K specialises in trichology, including treatment for hair fall androgenetic alopecia and scalp disorders. Management may include medical therapy, procedural treatments and lifestyle guidance.'
         },
         {
           question: 'Are cosmetic and aesthetic skin treatments available with Dr. Madhurya P K?',
-          answer: 'Yes, she provides cosmetology and aesthetic dermatology services, focusing on skin rejuvenation, acne scar treatment, pigmentation correction, and overall skin health. Treatments aim for natural and safe results.'
+          answer: 'Yes, she provides cosmetology and aesthetic dermatology services, focusing on skin rejuvenation, acne scar treatment, pigmentation correction and overall skin health. Treatments aim for natural and safe results.'
         },
         {
           question: 'Does Dr. Madhurya P K perform laser treatments and advanced skin procedures?',
@@ -4224,7 +4224,7 @@ export class NewDoctorPageComponent {
         },
         {
           question: 'Can Dr. Madhurya P K manage sexually transmitted infections and leprosy?',
-          answer: 'Yes, she treats venereological conditions, including sexually transmitted infections and leprosy, following standard clinical protocols. Care is confidential, sensitive, and medically supervised.'
+          answer: 'Yes, she treats venereological conditions, including sexually transmitted infections and leprosy, following standard clinical protocols. Care is confidential, sensitive and medically supervised.'
         },
         {
           question: 'Why choose Dr. Madhurya P K at Rashtrotthana Hospital for dermatology care?',
@@ -4246,7 +4246,7 @@ export class NewDoctorPageComponent {
       name: "Dr. Nirupama Annadanam",
       image: '/assets/Doc-Inv-Page/dr-nirupama-annadanam.png',
       department: 'OBSTETRICS & GYNECOLOGY',
-      about: 'Dr. Nirupama Annadanam is a highly skilled Obstetrician and Gynaecologist with strong academic excellence and extensive clinical experience in managing both routine and high-risk pregnancies. A gold medalist from JIPMER, she brings a patient-centric approach focused on safe motherhood and comprehensive women’s healthcare. She has successfully conducted 1000+ normal deliveries, including assisted deliveries (vacuum and forceps), and over 500 caesarean sections, with expertise in handling complex and high-risk cases. Her clinical approach emphasizes respectful maternal care, ensuring comfort, safety, and confidence for every patient. Dr. Nirupama also has a keen interest in research and teaching, continuously updating her knowledge to provide evidence-based care.',
+      about: 'Dr. Nirupama Annadanam is a highly skilled Obstetrician and Gynaecologist with strong academic excellence and extensive clinical experience in managing both routine and high-risk pregnancies. A gold medalist from JIPMER, she brings a patient-centric approach focused on safe motherhood and comprehensive women’s healthcare. She has successfully conducted 1000+ normal deliveries, including assisted deliveries (vacuum and forceps) and over 500 caesarean sections, with expertise in handling complex and high-risk cases. Her clinical approach emphasizes respectful maternal care, ensuring comfort, safety and confidence for every patient. Dr. Nirupama also has a keen interest in research and teaching, continuously updating her knowledge to provide evidence-based care.',
       speciality: 'OBSTETRICS & GYNAECOLOGY',
       areasOfExpertise: ['High-Risk Obstetrics', 'Respectful Maternal Care', 'Obstetric Medicine', 'Clinical Research', 'Medical Teaching and Training'],
       expertise: '5+',
@@ -4256,7 +4256,7 @@ export class NewDoctorPageComponent {
       alt: 'Dr. Nirupama Annadanam | Top Obstetrics & Gynaecologist in banaglore | Rashtrotthana Hospital | RR Nagar Bangalore',
       id: 103,
       title: 'Dr. Nirupama Annadanam | High-Risk Pregnancy & Delivery Expert in RR Nagar Bangalore',
-      description: 'Consult Dr. Nirupama Annadanam, senior gynecologist in RR Nagar with 5+ years of experience in high-risk pregnancy, delivery, and women’s health care.',
+      description: 'Consult Dr. Nirupama Annadanam, senior gynecologist in RR Nagar with 5+ years of experience in high-risk pregnancy, delivery and women’s health care.',
       faqs: [
         {
           question: 'Who is Dr. Nirupama Annadanam and what is her specialty at Rashtrotthana Hospital, Bangalore?',
@@ -4264,19 +4264,19 @@ export class NewDoctorPageComponent {
         },
         {
           question: 'Does Dr. Nirupama Annadanam handle high-risk pregnancies at Rashtrotthana Hospital?',
-          answer: 'Yes, Dr. Nirupama Annadanam has expertise in high-risk obstetrics, managing conditions like hypertension in pregnancy, gestational diabetes, and other complications. She ensures close monitoring for both mother and baby throughout pregnancy.'
+          answer: 'Yes, Dr. Nirupama Annadanam has expertise in high-risk obstetrics, managing conditions like hypertension in pregnancy, gestational diabetes and other complications. She ensures close monitoring for both mother and baby throughout pregnancy.'
         },
         {
           question: 'What is respectful maternal care and how does Dr. Nirupama Annadanam provide it?',
-          answer: 'Dr. Nirupama Annadanam focuses on respectful maternal care, ensuring patients feel heard, supported, and comfortable during pregnancy and delivery. She emphasises informed decision-making and personalised care plans.'
+          answer: 'Dr. Nirupama Annadanam focuses on respectful maternal care, ensuring patients feel heard, supported and comfortable during pregnancy and delivery. She emphasises informed decision-making and personalised care plans.'
         },
         {
           question: 'Can I consult Dr. Nirupama Annadanam for antenatal and pregnancy care?',
-          answer: 'Yes, she provides complete antenatal care, including regular check-ups, monitoring fetal development, and guiding patients through each stage of pregnancy. Early consultation helps ensure a healthy pregnancy journey.'
+          answer: 'Yes, she provides complete antenatal care, including regular check-ups, monitoring fetal development and guiding patients through each stage of pregnancy. Early consultation helps ensure a healthy pregnancy journey.'
         },
         {
           question: 'What obstetric medicine services are offered by Dr. Nirupama Annadanam?',
-          answer: 'Dr. Nirupama Annadanam manages medical conditions during pregnancy, such as thyroid disorders, anemia, and other systemic issues. Her approach integrates medical management with obstetric care for better outcomes.'
+          answer: 'Dr. Nirupama Annadanam manages medical conditions during pregnancy, such as thyroid disorders, anemia and other systemic issues. Her approach integrates medical management with obstetric care for better outcomes.'
         },
         {
           question: 'Does Dr. Nirupama Annadanam support pregnancy-related research and advanced care?',
@@ -4284,7 +4284,7 @@ export class NewDoctorPageComponent {
         },
         {
           question: 'Why choose Dr. Nirupama Annadanam at Rashtrotthana Hospital for pregnancy care?',
-          answer: `Dr. Nirupama Annadanam combines specialised obstetric expertise with compassionate care. At Rashtrotthana Hospital, patients benefit from structured monitoring, advanced facilities, and a supportive maternity care environment.`
+          answer: `Dr. Nirupama Annadanam combines specialised obstetric expertise with compassionate care. At Rashtrotthana Hospital, patients benefit from structured monitoring, advanced facilities and a supportive maternity care environment.`
         }
       ],
       departmentSlug: '',
@@ -4302,7 +4302,7 @@ export class NewDoctorPageComponent {
       name: "Dr. Reshma L",
       image: '/assets/Doc-Inv-Page/dr-reshma-l.png',
       department: 'OBSTETRICS & GYNAECOLOGY',
-      about: 'Dr. Reshma L is a highly skilled Obstetrician and Gynaecologist with strong academic excellence and extensive clinical experience in managing both routine and high-risk pregnancies. A gold medalist from JIPMER, she brings a patient-centric approach focused on safe motherhood and comprehensive women’s healthcare. She has successfully conducted 1000+ vaginal deliveries, including assisted deliveries (vacuum and forceps), and over 500 caesarean sections, with expertise in handling complex and high-risk cases. Her clinical approach emphasizes respectful maternal care, ensuring comfort, safety, and confidence for every patient. Dr. Nirupama also has a keen interest in research and teaching, continuously updating her knowledge to provide evidence-based care.',
+      about: 'Dr. Reshma L is a highly skilled Obstetrician and Gynaecologist with strong academic excellence and extensive clinical experience in managing both routine and high-risk pregnancies. A gold medalist from JIPMER, she brings a patient-centric approach focused on safe motherhood and comprehensive women’s healthcare. She has successfully conducted 1000+ vaginal deliveries, including assisted deliveries (vacuum and forceps) and over 500 caesarean sections, with expertise in handling complex and high-risk cases. Her clinical approach emphasizes respectful maternal care, ensuring comfort, safety and confidence for every patient. Dr. Nirupama also has a keen interest in research and teaching, continuously updating her knowledge to provide evidence-based care.',
       speciality: 'OBSTETRICS & GYNAECOLOGY',
       areasOfExpertise: ['Fetal Medicine', 'Advanced Fetal Imaging', 'Antenatal Scans', 'Fetal Echocardiography', 'Amniocentesis', 'Chorionic Villus Sampling (CVS)', '-Genetic Counselling', 'High-Risk Pregnancy Care'],
       expertise: '4+',
@@ -4312,23 +4312,23 @@ export class NewDoctorPageComponent {
       alt: 'Dr. Reshma L | Top Obstetrics & Gynaecologist in banaglore | Rashtrotthana Hospital | RR Nagar Bangalore',
       id: '',
       title: 'Dr. Reshma L | High-Risk Pregnancy & Delivery Expert in RR Nagar Bangalore',
-      description: 'Consult Dr. Reshma L, senior gynecologist in RR Nagar with 4+ years of experience in high-risk pregnancy, delivery, and women’s health care.',
+      description: 'Consult Dr. Reshma L, senior gynecologist in RR Nagar with 4+ years of experience in high-risk pregnancy, delivery and women’s health care.',
       faqs: [
         {
           question: 'Who is Dr. Reshma L and what is her specialty at Rashtrotthana Hospital, Bangalore?',
-          answer: 'Dr. Reshma L is a Gynaecologist and Feto-Maternal Medicine Specialist at Rashtrotthana Hospital, Bangalore, with over 4+ years of experience. She specialises in high-risk pregnancy care, fetal medicine, and advanced prenatal diagnostics.'
+          answer: 'Dr. Reshma L is a Gynaecologist and Feto-Maternal Medicine Specialist at Rashtrotthana Hospital, Bangalore, with over 4+ years of experience. She specialises in high-risk pregnancy care, fetal medicine and advanced prenatal diagnostics.'
         },
         {
           question: 'What pregnancy conditions are treated by Dr. Reshma L at Rashtrotthana Hospital?',
-          answer: 'Dr. Reshma L manages high-risk pregnancies, including complications like diabetes in pregnancy, hypertension, fetal growth concerns, and genetic risks. Her care focuses on both maternal health and fetal well-being.'
+          answer: 'Dr. Reshma L manages high-risk pregnancies, including complications like diabetes in pregnancy, hypertension, fetal growth concerns and genetic risks. Her care focuses on both maternal health and fetal well-being.'
         },
         {
           question: 'Does Dr. Reshma L perform advanced fetal scans and imaging?',
-          answer: 'Yes, Dr. Reshma L is experienced in advanced fetal imaging, antenatal scans, and detailed anomaly scans. These tests help detect fetal conditions early and guide appropriate care during pregnancy.'
+          answer: 'Yes, Dr. Reshma L is experienced in advanced fetal imaging, antenatal scans and detailed anomaly scans. These tests help detect fetal conditions early and guide appropriate care during pregnancy.'
         },
         {
           question: 'Can I consult Dr. Reshma L for genetic counselling during pregnancy?',
-          answer: 'Yes, Dr. Reshma L provides genetic counselling for expectant parents, especially in cases with family history or abnormal screening results. She helps patients understand risks, testing options, and next steps clearly.'
+          answer: 'Yes, Dr. Reshma L provides genetic counselling for expectant parents, especially in cases with family history or abnormal screening results. She helps patients understand risks, testing options and next steps clearly.'
         },
         {
           question: 'What procedures like amniocentesis or CVS are done by Dr. Reshma L?',
@@ -4371,11 +4371,11 @@ export class NewDoctorPageComponent {
       alt: 'Dr. Sharath C Mouli | Top Radiologist in banaglore | Rashtrotthana Hospital | RR Nagar Bangalore',
       id: '',
       title: 'Dr. Sharath C Mouli | Radiologist Expert in RR Nagar Bangalore',
-      description: 'Consult Dr. Sharath C Mouli, senior radiologist in RR Nagar with experience in advanced imaging, diagnostic reporting, and image-guided procedures at Rashtrotthana Hospital.',
+      description: 'Consult Dr. Sharath C Mouli, senior radiologist in RR Nagar with experience in advanced imaging, diagnostic reporting and image-guided procedures at Rashtrotthana Hospital.',
       faqs: [
         {
           question: 'Who is Dr. Sharath C Mouli and what imaging services does he provide at Rashtrotthana Hospital, Bangalore?',
-          answer: 'Dr. Sharath C Mouli is a Consultant Radiologist at Rashtrotthana Hospital, Bangalore, specialising in CT scans, MRI, ultrasound, Doppler studies, and X-rays. He plays a key role in accurate diagnosis through advanced imaging and clinical correlation.'
+          answer: 'Dr. Sharath C Mouli is a Consultant Radiologist at Rashtrotthana Hospital, Bangalore, specialising in CT scans, MRI, ultrasound, Doppler studies and X-rays. He plays a key role in accurate diagnosis through advanced imaging and clinical correlation.'
         },
         {
           question: 'When should I get a CT scan or MRI with Dr. Sharath C Mouli at Rashtrotthana Hospital?',
@@ -4383,7 +4383,7 @@ export class NewDoctorPageComponent {
         },
         {
           question: 'Does Dr. Sharath C Mouli perform ultrasound and Doppler studies?',
-          answer: 'Yes, Dr. Sharath C Mouli performs ultrasound and Doppler studies to assess organs, blood flow and vascular conditions. These are safe, non-invasive tests commonly used for abdominal, pregnancy, and vascular evaluations.'
+          answer: 'Yes, Dr. Sharath C Mouli performs ultrasound and Doppler studies to assess organs, blood flow and vascular conditions. These are safe, non-invasive tests commonly used for abdominal, pregnancy and vascular evaluations.'
         },
         {
           question: 'What is onco-imaging and how does Dr. Sharath C Mouli help in cancer diagnosis?',
@@ -4418,7 +4418,7 @@ export class NewDoctorPageComponent {
       image: '/assets/Doc-Inv-Page/saicharan-ganesh-chitrak.png',
       department: 'NEPHROLOGY',
       about: `Dr. Saicharan Ganesh Chitrak is a dedicated Nephrologist and Renal Transplant Physician at Rashtrotthana Hospital, Bangalore, specialising in the management of chronic kidney disease (CKD), acute kidney injury (AKI), dialysis therapies and kidney transplantation.
-      He has expertise in hemodialysis, peritoneal dialysis, renal biopsies, vascular access procedures, and post-transplant care. Known for his evidence-based and patient-focused approach, Dr. Saicharan is committed to providing comprehensive kidney care with emphasis on early diagnosis and long-term health outcomes.
+      He has expertise in hemodialysis, peritoneal dialysis, renal biopsies, vascular access procedures and post-transplant care. Known for his evidence-based and patient-focused approach, Dr. Saicharan is committed to providing comprehensive kidney care with emphasis on early diagnosis and long-term health outcomes.
       `,
       speciality: 'Nephrologist',
       areasOfExpertise: ['Renal Disorders Management (CKD, Glomerular Diseases, AKI)', 'Dialysis & Renal Replacement Therapy', 'Vascular Access Assessment and Monitoring', 'Renal Transplantation (Deceased and Live Donor)', 'Post-transplant Surveillance and Rejection Management', 'Advanced Therapeutics & Emerging Treatments (Biomarkers, Novel molecules)', 'Clinical Procedures (Renal Biopsy, Ultrasound-guided procedures, Vascular Access Creation)', '(Hemodialysis, Peritoneal Dialysis, Hemodiafiltration, CRRT)'],
@@ -4430,15 +4430,15 @@ export class NewDoctorPageComponent {
       alt: 'Dr. Saicharan Ganesh Chitrak | Top Nephrologist in banaglore | Rashtrotthana Hospital | RR Nagar Bangalore',
       id: '',
       title: 'Dr. Saicharan Ganesh Chitrak | Nephrologist Expert in RR Nagar Bangalore',
-      description: 'Consult Dr. Saicharan Ganesh Chitrak, senior nephrologist in RR Nagar with experience in advanced kidney care, dialysis therapies, and renal transplantation at Rashtrotthana Hospital.',
+      description: 'Consult Dr. Saicharan Ganesh Chitrak, senior nephrologist in RR Nagar with experience in advanced kidney care, dialysis therapies and renal transplantation at Rashtrotthana Hospital.',
       faqs: [
         {
           question: 'Who is Dr. Saicharan Ganesh Chitrak and what is his specialty at Rashtrotthana Hospital, Bangalore?',
-          answer: 'Dr. Saicharan Ganesh Chitrak is a Nephrologist and Renal Transplant Physician at Rashtrotthana Hospital, Bangalore. He specialises in the management of chronic kidney disease (CKD), acute kidney injury (AKI), dialysis, and kidney transplantation.'
+          answer: 'Dr. Saicharan Ganesh Chitrak is a Nephrologist and Renal Transplant Physician at Rashtrotthana Hospital, Bangalore. He specialises in the management of chronic kidney disease (CKD), acute kidney injury (AKI), dialysis and kidney transplantation.'
         },
         {
           question: 'What kidney diseases are treated by Dr. Saicharan Ganesh Chitrak at Rashtrotthana Hospital?',
-          answer: 'Dr. Saicharan treats CKD, glomerular diseases, AKI, electrolyte imbalances, and complex renal disorders. His approach focuses on early diagnosis, slowing disease progression and improving long-term kidney health.'
+          answer: 'Dr. Saicharan treats CKD, glomerular diseases, AKI, electrolyte imbalances and complex renal disorders. His approach focuses on early diagnosis, slowing disease progression and improving long-term kidney health.'
         },
         {
           question: 'Does Dr. Saicharan Ganesh Chitrak provide dialysis and renal replacement therapy?',
@@ -4454,11 +4454,11 @@ export class NewDoctorPageComponent {
         },
         {
           question: 'What procedures are performed by Dr. Saicharan Ganesh Chitrak?',
-          answer: 'Dr. Saicharan performs renal biopsies, ultrasound-guided procedures, and vascular access creation for dialysis patients. These procedures support accurate diagnosis and effective long-term kidney care.'
+          answer: 'Dr. Saicharan performs renal biopsies, ultrasound-guided procedures and vascular access creation for dialysis patients. These procedures support accurate diagnosis and effective long-term kidney care.'
         },
         {
           question: 'Why choose Dr. Saicharan Ganesh Chitrak at Rashtrotthana Hospital for nephrology care?',
-          answer: `Dr. Saicharan combines advanced expertise in nephrology, dialysis, and renal transplantation with evidence-based patient care. At Rashtrotthana Hospital, patients benefit from modern renal care infrastructure and comprehensive multidisciplinary support.`
+          answer: `Dr. Saicharan combines advanced expertise in nephrology, dialysis and renal transplantation with evidence-based patient care. At Rashtrotthana Hospital, patients benefit from modern renal care infrastructure and comprehensive multidisciplinary support.`
         }
       ],
       departmentSlug: '',
@@ -4487,19 +4487,19 @@ export class NewDoctorPageComponent {
       alt: 'Dr. Dhruva G. Prakash | Top Urologist in Bangalore | Rashtrotthana Hospital | RR Nagar Bangalore',
       id: '',
       title: 'Dr. Dhruva G. Prakash | Urologist Expert in RR Nagar Bangalore',
-      description: 'Consult Dr. Dhruva G. Prakash, senior urologist in RR Nagar with experience in advanced urological care, dialysis therapies, and renal transplantation at Rashtrotthana Hospital.',
+      description: 'Consult Dr. Dhruva G. Prakash, senior urologist in RR Nagar with experience in advanced urological care, dialysis therapies and renal transplantation at Rashtrotthana Hospital.',
       faqs: [
         {
           question: 'Who is Dr. Dhruva G. Prakash and what is his specialty at Rashtrotthana Hospital, Bangalore?',
-          answer: 'Dr. Dhruva G. Prakash is a Consultant Urologist at Rashtrotthana Hospital, Bangalore, with 11+ years of experience in advanced urology care. He specialises in kidney stone treatment, endourology, reconstructive urology, uro-oncology, and minimally invasive laparoscopic urological procedures.'
+          answer: 'Dr. Dhruva G. Prakash is a Consultant Urologist at Rashtrotthana Hospital, Bangalore, with 11+ years of experience in advanced urology care. He specialises in kidney stone treatment, endourology, reconstructive urology, uro-oncology and minimally invasive laparoscopic urological procedures.'
         },
         {
           question: 'Can Dr. Dhruva G. Prakash treat kidney stones without open surgery?',
-          answer: 'Yes, Dr. Dhruva G. Prakash offers minimally invasive and endoscopic kidney stone treatments that help reduce pain, recovery time, and hospital stay. Treatment is planned based on the size and location of the stone.'
+          answer: 'Yes, Dr. Dhruva G. Prakash offers minimally invasive and endoscopic kidney stone treatments that help reduce pain, recovery time and hospital stay. Treatment is planned based on the size and location of the stone.'
         },
         {
           question: 'What urological conditions are treated by Dr. Dhruva G. Prakash at Rashtrotthana Hospital?',
-          answer: 'He treats conditions such as kidney stones, urinary tract problems, enlarged prostate, bladder disorders, urinary infections, and urological cancers. His approach focuses on accurate diagnosis and personalised treatment.'
+          answer: 'He treats conditions such as kidney stones, urinary tract problems, enlarged prostate, bladder disorders, urinary infections and urological cancers. His approach focuses on accurate diagnosis and personalised treatment.'
         },
         {
           question: 'Does Dr. Dhruva G. Prakash perform laparoscopic and minimally invasive urology surgeries?',
@@ -4507,11 +4507,11 @@ export class NewDoctorPageComponent {
         },
         {
           question: 'Can I consult Dr. Dhruva G. Prakash for overactive bladder (OAB) and urinary symptoms?',
-          answer: 'Absolutely. He provides treatment for overactive bladder (OAB), urinary urgency, frequency, and bladder control issues. Early treatment can significantly improve comfort and quality of life.'
+          answer: 'Absolutely. He provides treatment for overactive bladder (OAB), urinary urgency, frequency and bladder control issues. Early treatment can significantly improve comfort and quality of life.'
         },
         {
           question: 'Does Dr. Dhruva G. Prakash handle emergency urology cases in Bangalore?',
-          answer: 'Yes, he has expertise in emergency and surgical urology care, including severe kidney stone pain, urinary retention, bleeding, and trauma-related urological emergencies.'
+          answer: 'Yes, he has expertise in emergency and surgical urology care, including severe kidney stone pain, urinary retention, bleeding and trauma-related urological emergencies.'
         },
         {
           question: 'Why choose Dr. Dhruva G. Prakash at Rashtrotthana Hospital for urology care?',
@@ -4544,23 +4544,23 @@ export class NewDoctorPageComponent {
       alt: 'Dr. Chaithanya J | Top Urologist in Bangalore | Rashtrotthana Hospital | RR Nagar Bangalore',
       id: '',
       title: 'Dr. Chaithanya J | Urologist Expert in RR Nagar Bangalore',
-      description: 'Consult Dr. Chaithanya J, senior urologist in RR Nagar with experience in advanced urological care, dialysis therapies, and renal transplantation at Rashtrotthana Hospital.',
+      description: 'Consult Dr. Chaithanya J, senior urologist in RR Nagar with experience in advanced urological care, dialysis therapies and renal transplantation at Rashtrotthana Hospital.',
       faqs: [
         {
           question: 'Who is Dr. Chaithanya J and what is his specialty at Rashtrotthana Hospital, Bangalore?',
-          answer: 'Dr. Chaithanya J is a Consultant Urologist at Rashtrotthana Hospital, Bangalore, with 11+ years of experience in advanced urology care. He specialises in kidney stone treatment, endourology, reconstructive urology, uro-oncology, and minimally invasive urological procedures.'
+          answer: 'Dr. Chaithanya J is a Consultant Urologist at Rashtrotthana Hospital, Bangalore, with 11+ years of experience in advanced urology care. He specialises in kidney stone treatment, endourology, reconstructive urology, uro-oncology and minimally invasive urological procedures.'
         },
         {
           question: 'Can Dr. Chaithanya J treat kidney stones without major surgery?',
-          answer: 'Yes, Dr. Chaithanya J specialises in kidney stone management using minimally invasive and endoscopic techniques. These procedures help reduce pain, hospital stay, and recovery time compared to traditional surgery.'
+          answer: 'Yes, Dr. Chaithanya J specialises in kidney stone management using minimally invasive and endoscopic techniques. These procedures help reduce pain, hospital stay and recovery time compared to traditional surgery.'
         },
         {
           question: 'What urological conditions are treated by Dr. Chaithanya J at Rashtrotthana Hospital?',
-          answer: 'Dr. Chaithanya J treats a wide range of conditions including urinary infections, kidney stones, enlarged prostate, bladder problems, urinary obstruction, and urological cancers. Treatment plans are customised based on the patient’s condition and severity.'
+          answer: 'Dr. Chaithanya J treats a wide range of conditions including urinary infections, kidney stones, enlarged prostate, bladder problems, urinary obstruction and urological cancers. Treatment plans are customised based on the patient’s condition and severity.'
         },
         {
           question: 'Does Dr. Chaithanya J perform laparoscopic and minimally invasive urology procedures?',
-          answer: 'Yes, he performs laparoscopic and minimally invasive urological surgeries for faster recovery and reduced surgical discomfort. These advanced techniques are commonly used for kidney, bladder, and prostate conditions.'
+          answer: 'Yes, he performs laparoscopic and minimally invasive urological surgeries for faster recovery and reduced surgical discomfort. These advanced techniques are commonly used for kidney, bladder and prostate conditions.'
         },
         {
           question: 'Can I consult Dr. Chaithanya J for overactive bladder (OAB) and urinary symptoms?',
@@ -4568,11 +4568,11 @@ export class NewDoctorPageComponent {
         },
         {
           question: 'Does Dr. Chaithanya J manage emergency urology conditions in Bangalore?',
-          answer: 'Yes, Dr. Chaithanya J has expertise in emergency and surgical urology care, including acute urinary retention, severe stone pain, bleeding, and trauma-related urological emergencies.'
+          answer: 'Yes, Dr. Chaithanya J has expertise in emergency and surgical urology care, including acute urinary retention, severe stone pain, bleeding and trauma-related urological emergencies.'
         },
         {
           question: 'Why choose Dr. Chaithanya J at Rashtrotthana Hospital for urology treatment?',
-          answer: `Dr. Chaithanya J combines 11+ years of surgical and clinical expertise with a patient-focused approach to advanced urology care. At Rashtrotthana Hospital, patients benefit from modern diagnostic facilities, minimally invasive treatments, and comprehensive urological support.`
+          answer: `Dr. Chaithanya J combines 11+ years of surgical and clinical expertise with a patient-focused approach to advanced urology care. At Rashtrotthana Hospital, patients benefit from modern diagnostic facilities, minimally invasive treatments and comprehensive urological support.`
         }
       ],
       departmentSlug: '',
