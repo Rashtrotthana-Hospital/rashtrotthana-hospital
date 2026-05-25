@@ -368,21 +368,57 @@
 }
 
 // ── Responsive ────────────────────────────────────────────────────────────────
+// Geometry rule: --os-size must be >= 2 * --os-r + --os-card-size
+// so cards (centered on the orbit radius) stay inside the wrap.
+
 @media (max-width: 640px) {
+  .os-section   { padding-block: 3rem; }
+  .os-container { padding-inline: 0.75rem; }
   .os-orbit-wrap {
-    --os-size: 325px;
-    --os-r: 138px;
+    --os-size: 360px;
+    --os-r: 130px;
+    margin-block: 2rem;
   }
   .os-card       { --os-card-size: 84px; }
-  .os-center     { --os-center-size: 164px; }
+  .os-center     { --os-center-size: 150px; }
   .os-center-name { font-size: 0.60rem; }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 425px) {
+  .os-section   { padding-block: 2.5rem 3rem; }
+  .os-container { padding-inline: 0.5rem; }
   .os-orbit-wrap {
-    --os-size: 295px;
-    --os-r: 122px;
+    --os-size: 320px;
+    --os-r: 115px;
+    margin-block: 2rem 2.5rem;
   }
-  .os-card   { --os-card-size: 74px; }
-  .os-center { --os-center-size: 144px; }
+  .os-card       { --os-card-size: 78px; }
+  .os-center     { --os-center-size: 130px; }
+  .os-center-name { font-size: 0.58rem; }
+}
+
+@media (max-width: 360px) {
+  .os-section   { padding-block: 2rem 2.5rem; }
+  .os-container { padding-inline: 0.25rem; }
+  .os-orbit-wrap {
+    --os-size: 290px;
+    --os-r: 104px;
+    margin-block: 1.75rem 2.25rem;
+  }
+  .os-card       { --os-card-size: 72px; }
+  .os-center     { --os-center-size: 118px; }
+  .os-center-name { font-size: 0.55rem; }
+}
+
+@media (max-width: 320px) {
+  .os-section   { padding-block: 1.75rem 2.25rem; }
+  .os-container { padding-inline: 0.25rem; }
+  .os-orbit-wrap {
+    --os-size: 270px;
+    --os-r: 96px;
+    margin-block: 1.5rem 2rem;
+  }
+  .os-card       { --os-card-size: 68px; }
+  .os-center     { --os-center-size: 108px; }
+  .os-center-name { font-size: 0.52rem; }
 }

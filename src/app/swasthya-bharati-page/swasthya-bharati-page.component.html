@@ -245,7 +245,7 @@
             <span class="sbp-orbit__ring sbp-orbit__ring--mid"></span>
             <span class="sbp-orbit__ring sbp-orbit__ring--inner"></span>
             <div class="sbp-orbit__center">
-              <video class="sbp-orbit__center-video" autoplay muted loop playsinline preload="none">
+              <video class="sbp-orbit__center-video" autoplay muted loop playsinline preload="auto" disablepictureinpicture (loadedmetadata)="$any($event.target).play()">
                 <source src="assets/swastya-page/yoga-3.mp4" type="video/mp4">
               </video>
               <span class="sbp-orbit__center-label" lang="sa">स्वस्थ</span>
@@ -402,7 +402,7 @@
           <h2 id="sbp-why-h" class="sbp-h" data-reveal>Why Swasthya Bharati</h2>
           <p data-reveal style="--reveal-delay:0.1s">
             Modern research consistently shows that nearly 70–80% of today's chronic diseases such as
-            diabetes, hypertension, obesity, and mental health disorders, are closely linked to lifestyle
+            diabetes, hypertension, obesity, and mental health disorders are closely linked to lifestyle
             choices rather than genetics alone. Stress, irregular routines, poor sleep and food habits,
             emotional distress, and sedentary behaviour significantly alter hormonal balance, metabolism,
             and immunity.

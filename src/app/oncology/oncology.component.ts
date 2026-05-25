@@ -25,11 +25,13 @@ export class OncologyComponent {
     {
       doctor_image: '../../assets/Dr-Shekar-Patil.png',
       doctor_name: 'Dr. Shekar Patil',
+      experience: "36+",
       alt: 'Dr. Shekar Patil | Best Medical Oncologist Doctor in Bangalore | Rashtrotthana Hospital'
     },
     {
       doctor_image: '../../assets/Dr-Pramod-S-Chinder.png',
       doctor_name: 'Dr. Pramod S. Chinder',
+      experience: "20",
       alt: 'Dr. Pramod S. Chinder | Best Orthopaedic Oncosurgeon in Bangalore | Rashtrotthana Hospital'
     },
     // {
@@ -40,11 +42,13 @@ export class OncologyComponent {
     {
       doctor_image: '../../assets/Dr-Ravi-T.png',
       doctor_name: 'Dr. Ravi T',
+      experience: "17+",
       alt: 'Dr. Ravi T | Best Cancer Doctor in Bangalore | Rashtrotthana Hospital'
     },
     {
       doctor_image: '../../assets/Dr-Giri.png',
       doctor_name: 'Dr. G. V. Giri',
+      experience: "15+",
       alt: 'Dr. G. V. Giri | Best Cancer Doctor in Bangalore | Rashtrotthana Hospital'
     }
   ];
