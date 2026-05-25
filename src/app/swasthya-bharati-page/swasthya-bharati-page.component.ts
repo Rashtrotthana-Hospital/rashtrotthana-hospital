@@ -31,7 +31,7 @@ interface ServiceGroup {
   id: ServiceTab;
   label: string;
   caption: string;
-  items: { title: string; sub?: string }[];
+  items: { title: string; sub?: string; icon?: string }[];
 }
 
 interface Doctor {
@@ -127,7 +127,89 @@ export class SwasthyaBharatiPageComponent
   private readonly handleOrbitLeave = () => { this.orbitPaused = false; this.lastOrbitTime = 0; };
 
   readonly activeService = signal<ServiceTab>('assessment');
+
+  // Vision / Mission toggle
+  readonly vmActive = signal<'vision' | 'mission'>('vision');
+  readonly vmAnimating = signal<boolean>(false);
+  readonly vmExpanded = signal<boolean>(false);
+  private vmTimeout?: ReturnType<typeof setTimeout>;
+
+  toggleVm(): void {
+    if (this.vmAnimating()) return;
+    this.vmAnimating.set(true);
+    this.vmExpanded.set(false);
+    clearTimeout(this.vmTimeout);
+    this.vmTimeout = setTimeout(() => {
+      this.vmActive.set(this.vmActive() === 'vision' ? 'mission' : 'vision');
+      setTimeout(() => this.vmAnimating.set(false), 350);
+    }, 300);
+  }
+
+  toggleVmExpand(): void {
+    this.vmExpanded.set(!this.vmExpanded());
+  }
   readonly openFaq = signal<number | null>(0);
+
+  readonly cardPage = signal<number>(0);
+  readonly isFlipping = signal<boolean>(false);
+  private flipTimeout?: ReturnType<typeof setTimeout>;
+
+  readonly CARDS_PER_PAGE = 4;
+
+  get visibleCards() {
+    const group = this.services.find(s => s.id === this.activeService());
+    if (!group) return [];
+    const start = this.cardPage() * this.CARDS_PER_PAGE;
+    return group.items.slice(start, start + this.CARDS_PER_PAGE);
+  }
+
+  getPagedItems(group: ServiceGroup): { title: string; sub?: string; icon?: string }[] {
+    if (group.id !== this.activeService()) return group.items.slice(0, this.CARDS_PER_PAGE);
+    const start = this.cardPage() * this.CARDS_PER_PAGE;
+    return group.items.slice(start, start + this.CARDS_PER_PAGE);
+  }
+
+  getTotalPages(group: ServiceGroup): number {
+    return Math.ceil(group.items.length / this.CARDS_PER_PAGE);
+  }
+
+  get totalPages(): number {
+    const group = this.services.find(s => s.id === this.activeService());
+    if (!group) return 1;
+    return Math.ceil(group.items.length / this.CARDS_PER_PAGE);
+  }
+
+  get hasPrev(): boolean {
+    return this.cardPage() > 0;
+  }
+
+  get hasNext(): boolean {
+    return this.cardPage() < this.totalPages - 1;
+  }
+
+  cycleService(dir: 1 | -1): void {
+    const ids = this.services.map(s => s.id);
+    const current = ids.indexOf(this.activeService());
+    const next = (current + dir + ids.length) % ids.length;
+    this.setService(ids[next]);
+  }
+
+  navigateCards(dir: 1 | -1): void {
+    if (this.isFlipping()) return;
+    const newPage = this.cardPage() + dir;
+    if (newPage < 0 || newPage >= this.totalPages) return;
+
+    this.isFlipping.set(true);
+    clearTimeout(this.flipTimeout);
+    // After half the flip duration (300ms), swap the page content
+    this.flipTimeout = setTimeout(() => {
+      this.cardPage.set(newPage);
+    }, 300);
+    // After full flip (600ms), clear the flipping state
+    setTimeout(() => {
+      this.isFlipping.set(false);
+    }, 600);
+  }
 
   /** index of active service tab (used by SCSS via inline style for slide indicator) */
   readonly tabIndicator = signal({ left: 0, width: 0 });
@@ -287,15 +369,15 @@ export class SwasthyaBharatiPageComponent
       label: 'Lifestyle Assessment',
       caption: 'Identify silent imbalances early — before they become disease.',
       items: [
-        { title: 'Dinacharya (daily regimen) and Ritucharya (seasonal regimen) guidance' },
-        { title: 'Ayurvedic diet & lifestyle counselling' },
-        { title: 'Immunity enhancement guidance' },
-        { title: 'Diabetes risk assessment' },
-        { title: 'Hypertension risk assessment' },
-        { title: 'Obesity and metabolic health assessment' },
-        { title: 'Sleep assessment' },
-        { title: 'Stress profile assessment' },
-        { title: 'Gut health assessment' },
+        { title: 'Dinacharya (daily regimen) and Ritucharya (seasonal regimen) guidance', icon: 'sun' },
+        { title: 'Ayurvedic diet & lifestyle counselling', icon: 'leaf' },
+        { title: 'Immunity enhancement guidance', icon: 'shield' },
+        { title: 'Diabetes risk assessment', icon: 'drop' },
+        { title: 'Hypertension risk assessment', icon: 'heart' },
+        { title: 'Obesity and metabolic health assessment', icon: 'scale' },
+        { title: 'Sleep assessment', icon: 'moon' },
+        { title: 'Stress profile assessment', icon: 'wave' },
+        { title: 'Gut health assessment', icon: 'gut' },
       ],
     },
     {
@@ -303,11 +385,11 @@ export class SwasthyaBharatiPageComponent
       label: 'Yoga Therapies',
       caption: 'Guided practice for body, breath and mind.',
       items: [
-        { title: 'Therapeutic Yoga for various disease conditions' },
-        { title: 'Breathing practices (Pranayama)' },
-        { title: 'Relaxation techniques' },
-        { title: 'Meditation' },
-        { title: 'Stress reduction session' },
+        { title: 'Therapeutic Yoga for various disease conditions', icon: 'yoga' },
+        { title: 'Breathing practices (Pranayama)', icon: 'breath' },
+        { title: 'Relaxation techniques', icon: 'relax' },
+        { title: 'Meditation', icon: 'meditate' },
+        { title: 'Stress reduction session', icon: 'wave' },
       ],
     },
     {
@@ -315,9 +397,9 @@ export class SwasthyaBharatiPageComponent
       label: 'Health Education & Awareness',
       caption: 'Bringing prevention into homes, schools and workplaces.',
       items: [
-        { title: 'Workshops for various sectors' },
-        { title: 'Patient education sessions' },
-        { title: 'School / Community programs' },
+        { title: 'Workshops for various sectors', icon: 'workshop' },
+        { title: 'Patient education sessions', icon: 'education' },
+        { title: 'School / Community programs', icon: 'community' },
       ],
     },
     {
@@ -325,8 +407,8 @@ export class SwasthyaBharatiPageComponent
       label: 'Training',
       caption: 'Structured training programmes in lifestyle health.',
       items: [
-        { title: 'Curriculum: Swasthya Bharati Lifestyle Program', sub: 'View curriculum details →' },
-        { title: 'Enrolment', sub: 'Apply via Google Form →' },
+        { title: 'Curriculum: Swasthya Bharati Lifestyle Program', sub: 'View curriculum details →', icon: 'curriculum' },
+        { title: 'Enrolment', sub: 'Apply via Google Form →', icon: 'enrol' },
       ],
     },
     // {
@@ -580,6 +662,7 @@ export class SwasthyaBharatiPageComponent
     }
     this.startArcCycle();
 
+
     // Orbit auto-rotation: attach hover listeners then start loop
     this.orbitEl = this.host.nativeElement.querySelector<HTMLElement>('.sbp-orbit') ?? undefined;
     if (this.orbitEl) {
@@ -601,12 +684,16 @@ export class SwasthyaBharatiPageComponent
     this.orbitEl?.removeEventListener('mouseleave', this.handleOrbitLeave);
     clearInterval(this.arcInterval);
     clearTimeout(this.arcResumeTimeout);
+    clearTimeout(this.flipTimeout);
+    clearTimeout(this.vmTimeout);
     this.arcEl?.removeEventListener('mouseenter', this.handleArcEnter);
     this.arcEl?.removeEventListener('mouseleave', this.handleArcLeave);
   }
 
   setService(id: ServiceTab): void {
     this.activeService.set(id);
+    this.cardPage.set(0);
+    this.isFlipping.set(false);
     requestAnimationFrame(() => this.updateTabIndicator());
 
     // Pause orbit for 5 s so the user can read; then resync so clicked
@@ -637,6 +724,12 @@ export class SwasthyaBharatiPageComponent
     if (typeof document === 'undefined') return;
     const el = document.getElementById(id);
     if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  scrollTabs(dir: 1 | -1): void {
+    const el = this.tabsRow?.nativeElement;
+    if (!el) return;
+    el.scrollBy({ left: dir * 160, behavior: 'smooth' });
   }
 
   trackByIndex(i: number): number {
