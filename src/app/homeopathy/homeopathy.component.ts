@@ -33,7 +33,7 @@ export class HomeopathyComponent {
   faqs = [
     {
       questions : "Why is Rashtrotthana Hospital the Best Homeopathy Hospital in RR Nagar Bangalore?",
-      answer : "Rashtrotthana Hospital is recognized as the Best Homeopathy Hospital in RR Nagar Bangalore for its holistic approach to healthcare. Led by Dr. Anusha Mutalik Desai, a highly skilled practitioner, we specialize in advanced homeopathy treatment in Bangalore, focusing on conditions like diabetes, PCOD, and other chronic illnesses. Our hospital combines traditional medicine with modern techniques to ensure effective and long-lasting results."
+      answer : "Rashtrotthana Hospital is recognized as the Best Homeopathy Hospital in RR Nagar Bangalore for its holistic approach to healthcare. Led by Dr. Anusha Mutalik Desai, a highly skilled practitioner, we specialize in advanced homeopathy treatment in Bangalore, focusing on conditions like diabetes, PCOD and other chronic illnesses. Our hospital combines traditional medicine with modern techniques to ensure effective and long-lasting results."
     },
     {
       questions : "What is the best homeopathy treatment for diabetes in RR Nagar Bangalore?",
@@ -52,8 +52,8 @@ export class HomeopathyComponent {
       answer : "As the Best Homeopathy Hospital in RR Nagar Bangalore, we provide affordable homeopathy treatment in Bangalore for a wide range of conditions. Our treatments are customized for each patient, combining herbal-based treatments in RR Nagar Bangalore with a focus on holistic wellness, ensuring optimal outcomes."
     },
     {
-      questions : "Who is Dr. Anusha Mutalik Desai, and what is her expertise?",
-      answer : "Dr. Anusha Mutalik Desai, one of the Best Homeopathy Doctors in Bangalore, has extensive experience in managing conditions like diabetes, PCOD, and other chronic disorders. Her expertise in natural homeopathy treatment in Rajarajeshwari Nagar Bangalore ensures personalized care that addresses the root causes of ailments for long-lasting relief."
+      questions : "Who is Dr. Anusha Mutalik Desai and what is her expertise?",
+      answer : "Dr. Anusha Mutalik Desai, one of the Best Homeopathy Doctors in Bangalore, has extensive experience in managing conditions like diabetes, PCOD and other chronic disorders. Her expertise in natural homeopathy treatment in Rajarajeshwari Nagar Bangalore ensures personalized care that addresses the root causes of ailments for long-lasting relief."
     },
     {
       questions : "What conditions can be treated with homeopathy at Rashtrotthana Hospital?",
@@ -69,7 +69,7 @@ export class HomeopathyComponent {
     },
     {
       questions : "What makes Rashtrotthana Hospital a top choice for homeopathy in Bangalore?",
-      answer : "Rashtrotthana Hospital is one of the leading homeopathy centres in RR Nagar Bangalore, providing advanced homeopathy treatment in Bangalore that integrates traditional medicine with modern practices. With the expertise of Dr. Anusha Mutalik Desai, we ensure affordable, personalized, and effective treatments for every patient."
+      answer : "Rashtrotthana Hospital is one of the leading homeopathy centres in RR Nagar Bangalore, providing advanced homeopathy treatment in Bangalore that integrates traditional medicine with modern practices. With the expertise of Dr. Anusha Mutalik Desai, we ensure affordable, personalized and effective treatments for every patient."
     },
   ]
 }

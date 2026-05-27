@@ -17,7 +17,7 @@ export class CardiacComponent {
   ngOnInit(): void {
     this.titleService.setTitle("Cardiology & Heart Care in Bangalore | Rashtrotthana Hospital ");  
 
-  this.metaService.updateTag({ name: 'description', content: 'Comprehensive cardiology care in Bangalore with expert heart specialists offering diagnosis, treatment, and long-term management at Rashtrotthana Hospital.' });
+  this.metaService.updateTag({ name: 'description', content: 'Comprehensive cardiology care in Bangalore with expert heart specialists offering diagnosis, treatment and long-term management at Rashtrotthana Hospital.' });
 
   this.metaService.updateTag({ name: 'keywords', content: 'cardiology, heart hospital,cardiology hospital near me,heart hospital near me, cardiologists, heart attack, heart failure, heart pain, heart valve disease, congenital heart disease, coronary artery disease, heart rhythm disorders, disorders of heart failure, valvular disease' });
 
@@ -39,15 +39,15 @@ export class CardiacComponent {
   faqs = [
     {
       ques : "Who is the best cardiologist in RR Nagar, Bangalore?",
-      ans : "At Rashtrotthana Hospital, our best cardiologists in Bangalore provide advanced cardiac care for heart conditions such as hypertension, chest pain, and cardiovascular disease. Patients searching for a good cardiologist near me often choose our facility for its combination of expertise, technology and affordable cardiology treatment in Bangalore."
+      ans : "At Rashtrotthana Hospital, our best cardiologists in Bangalore provide advanced cardiac care for heart conditions such as hypertension, chest pain and cardiovascular disease. Patients searching for a good cardiologist near me often choose our facility for its combination of expertise, technology and affordable cardiology treatment in Bangalore."
     },
     {
       ques : "When should I see a cardiologist?",
-      ans : "You should consult a heart specialist in Bangalore if you experience symptoms like chest discomfort, irregular heartbeat, shortness of breath, or high blood pressure. These may indicate heart problems and symptoms requiring early diagnosis and treatment. Regular visits also help in preventing congestive heart disease or complications from atrial fibrillation."
+      ans : "You should consult a heart specialist in Bangalore if you experience symptoms like chest discomfort, irregular heartbeat, shortness of breath or high blood pressure. These may indicate heart problems and symptoms requiring early diagnosis and treatment. Regular visits also help in preventing congestive heart disease or complications from atrial fibrillation."
     },
     {
       ques : "What are the early symptoms of heart disease?",
-      ans : "Early warning signs include fatigue, swelling in the legs, dizziness, palpitations, and chest tightness. These symptoms may point to conditions like congestive heart failure or cardiac valve problems. Our best hospital for congestive heart failure treatment in Bangalore offers early detection and intervention to prevent progression."
+      ans : "Early warning signs include fatigue, swelling in the legs, dizziness, palpitations and chest tightness. These symptoms may point to conditions like congestive heart failure or cardiac valve problems. Our best hospital for congestive heart failure treatment in Bangalore offers early detection and intervention to prevent progression."
     },
     {
       ques : "What tests are done to diagnose heart problems?",
@@ -65,7 +65,7 @@ export class CardiacComponent {
     },
     {
       ques : "How often should I get my heart checked?",
-      ans : "If you’re over 40 or have risk factors like diabetes, high blood pressure, high cholesterol, or family history of heart disease, annual cardiac checkups are advised. Others can undergo screening every 2-3 years. Preventive monitoring ensures timely management of cardiovascular disease and reduces the risk of cardiac arrest."
+      ans : "If you’re over 40 or have risk factors like diabetes, high blood pressure, high cholesterol or family history of heart disease, annual cardiac checkups are advised. Others can undergo screening every 2-3 years. Preventive monitoring ensures timely management of cardiovascular disease and reduces the risk of cardiac arrest."
     },
     {
       ques : "What are the common risk factors for heart disease?",

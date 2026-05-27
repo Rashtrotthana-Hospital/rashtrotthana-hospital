@@ -9,7 +9,7 @@ export const TONSILLECTOMY_SCHEMA = {
       medicalSpecialty: 'Otolaryngology',
       bodyLocation: 'Tonsils',
       description:
-        'Tonsillectomy is a surgical procedure to remove the tonsils, usually performed to treat recurrent throat infections, chronic tonsillitis, or breathing difficulties caused by enlarged tonsils.',
+        'Tonsillectomy is a surgical procedure to remove the tonsils, usually performed to treat recurrent throat infections, chronic tonsillitis or breathing difficulties caused by enlarged tonsils.',
 
       provider: {
         '@type': 'Hospital',

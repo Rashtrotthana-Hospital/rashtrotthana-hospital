@@ -23,7 +23,7 @@ export class ENTComponent {
     this.metaService.updateTag({
       name: 'description',
       content:
-        'Rashtrotthana Hospital is a trusted ENT hospital in Bangalore offering expert treatment for ear, nose, and throat disorders with advanced diagnostic care.',
+        'Rashtrotthana Hospital is a trusted ENT hospital in Bangalore offering expert treatment for ear, nose and throat disorders with advanced diagnostic care.',
     });
     this.metaService.updateTag({
       name: 'keywords',
@@ -80,15 +80,15 @@ export class ENTComponent {
   faqs = [
     {
       ques: 'Who are the Best ENT Specialists in Bangalore?',
-      ans: 'Rashtrotthana Hospital is home to some of the best ENT specialists in Bangalore, including Dr. Sunil Kumar. They are highly experienced in diagnosing and treating conditions such as ear pain, nasal congestion, sinus infections, and head and neck cancers using advanced diagnostic and surgical techniques.  ',
+      ans: 'Rashtrotthana Hospital is home to some of the best ENT specialists in Bangalore, including Dr. Sunil Kumar. They are highly experienced in diagnosing and treating conditions such as ear pain, nasal congestion, sinus infections and head and neck cancers using advanced diagnostic and surgical techniques.  ',
     },
     {
       ques: 'Why is Rashtrotthana Hospital considered the Best ENT Hospital in Bangalore?',
-      ans: 'Our hospital stands out for offering comprehensive ENT care delivered by a team of expert ENT doctors in Bangalore. We provide specialized treatments such as endoscopic sinus surgery, snoring treatment, and effective solutions for throat pain and nasal polyps, supported by state-of-the-art equipment and personalized care.',
+      ans: 'Our hospital stands out for offering comprehensive ENT care delivered by a team of expert ENT doctors in Bangalore. We provide specialized treatments such as endoscopic sinus surgery, snoring treatment and effective solutions for throat pain and nasal polyps, supported by state-of-the-art equipment and personalized care.',
     },
     {
       ques: 'What treatments are available for ear pain at Rashtrotthana Hospital?',
-      ans: 'We offer expert treatment for ear pain caused by conditions like Otitis Media and Tinnitus. Our ENT specialists, including Dr. Sunil Kumar, perform procedures such as mastoidectomy, ear tube surgery, and micro ear surgery for hearing restoration.',
+      ans: 'We offer expert treatment for ear pain caused by conditions like Otitis Media and Tinnitus. Our ENT specialists, including Dr. Sunil Kumar, perform procedures such as mastoidectomy, ear tube surgery and micro ear surgery for hearing restoration.',
     },
     {
       ques: 'Who provides the best care for sinus infections in Bangalore?',
@@ -96,15 +96,15 @@ export class ENTComponent {
     },
     {
       ques: 'Can Rashtrotthana Hospital treat throat-related conditions like chronic coughing?',
-      ans: 'Yes, our hospital is well-equipped to treat throat-related conditions including chronic cough, tonsillitis, sore throat, and throat cancer. Dr. Sunil Kumar provide a comprehensive approach to throat care and long-term treatment solutions.',
+      ans: 'Yes, our hospital is well-equipped to treat throat-related conditions including chronic cough, tonsillitis, sore throat and throat cancer. Dr. Sunil Kumar provide a comprehensive approach to throat care and long-term treatment solutions.',
     },
     {
       ques: 'What ENT services are available for nasal blockage or nasal discharge?',
-      ans: 'Our ENT team, including Dr. Sunil Kumar, offers advanced care for nasal issues such as nasal congestion, nasal blockage, and nasal polyps. Surgical options like nasal septum correction surgery are available for patients requiring long-term relief.',
+      ans: 'Our ENT team, including Dr. Sunil Kumar, offers advanced care for nasal issues such as nasal congestion, nasal blockage and nasal polyps. Surgical options like nasal septum correction surgery are available for patients requiring long-term relief.',
     },
     {
       ques: 'What advanced ENT surgeries are performed at Rashtrotthana Hospital?',
-      ans: 'We provide a wide range of advanced ENT surgeries including endoscopic sinus surgery, tracheotomy, adenoidectomy, and tonsillectomy. Dr. Sunil Kumar is skilled in mastoidectomy and tympanoplasty, while Dr. Sunil Kumar specializes in voice restoration and head and neck tumor surgeries.',
+      ans: 'We provide a wide range of advanced ENT surgeries including endoscopic sinus surgery, tracheotomy, adenoidectomy and tonsillectomy. Dr. Sunil Kumar is skilled in mastoidectomy and tympanoplasty, while Dr. Sunil Kumar specializes in voice restoration and head and neck tumor surgeries.',
     },
     {
       ques: 'How does Rashtrotthana Hospital treat hearing loss?',
@@ -137,17 +137,17 @@ export class ENTComponent {
       title: 'Tonsil Removal Surgery',
       subtitle: 'Tonsillectomy',
       description:
-        'Frequent throat infections, difficulty swallowing, snoring, or repeated fever episodes are often caused by infected or enlarged tonsils. Our Tonsil Removal Surgery (Tonsillectomy) is a safe and effective procedure to permanently relieve these symptoms and improve overall throat health.',
+        'Frequent throat infections, difficulty swallowing, snoring or repeated fever episodes are often caused by infected or enlarged tonsils. Our Tonsil Removal Surgery (Tonsillectomy) is a safe and effective procedure to permanently relieve these symptoms and improve overall throat health.',
       procedure:
-        'The surgery is performed through the mouth, without any external cuts. The infected tonsils are carefully removed under anesthesia using advanced surgical techniques. The procedure is quick, precise, and designed to minimize pain and bleeding, especially in children.',
+        'The surgery is performed through the mouth, without any external cuts. The infected tonsils are carefully removed under anesthesia using advanced surgical techniques. The procedure is quick, precise and designed to minimize pain and bleeding, especially in children.',
       benefits: [
         'No external cuts or visible scars',
         'Reduces frequent throat infections permanently',
-        'Improves breathing, swallowing, and sleep quality',
+        'Improves breathing, swallowing and sleep quality',
         'Quick recovery with minimal hospital stay',
       ],
       highlight:
-        'After tonsil surgery, patients often experience fewer infections, better sleep, and a noticeable improvement in overall comfort and quality of life.',
+        'After tonsil surgery, patients often experience fewer infections, better sleep and a noticeable improvement in overall comfort and quality of life.',
       icon: '🦠',
       slug : '/tonsillectomy-surgery-in-bangalore'
     },
@@ -156,9 +156,9 @@ export class ENTComponent {
       title: 'Adenoid Removal Surgery',
       subtitle: 'Adenoidectomy',
       description:
-        'Blocked nose, mouth breathing, loud snoring, recurrent ear infections, and disturbed sleep in children are commonly caused by enlarged adenoids. Our Adenoid Removal Surgery (Adenoidectomy) helps restore normal breathing and prevents repeated infections.',
+        'Blocked nose, mouth breathing, loud snoring, recurrent ear infections and disturbed sleep in children are commonly caused by enlarged adenoids. Our Adenoid Removal Surgery (Adenoidectomy) helps restore normal breathing and prevents repeated infections.',
       procedure:
-        'The enlarged adenoids are removed through the mouth using specialized instruments under anesthesia. There are no external incisions, and the procedure is usually completed within a short time. Children typically recover quickly and return to normal activities soon.',
+        'The enlarged adenoids are removed through the mouth using specialized instruments under anesthesia. There are no external incisions and the procedure is usually completed within a short time. Children typically recover quickly and return to normal activities soon.',
       benefits: [
         'Scar-free and painless procedure',
         'Improves nasal breathing and sleep quality',
@@ -166,7 +166,7 @@ export class ENTComponent {
         'Safe and commonly performed in children',
       ],
       highlight:
-        'Parents often notice immediate improvement—better breathing, quieter sleep, and fewer infections—bringing relief to both the child and the family.',
+        'Parents often notice immediate improvement—better breathing, quieter sleep and fewer infections—bringing relief to both the child and the family.',
       icon: '🌬️',
       slug: "/adenoidectomy-surgery-in-bangalore"
     },

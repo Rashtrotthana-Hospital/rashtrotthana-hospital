@@ -40,7 +40,7 @@ export class FacilitiesComponent implements OnInit {
     this.metaService.updateTag({
       name: 'description',
       content:
-        'Experience world-class medical facilities at Rashtrotthana Hospital, Bangalore, with advanced diagnostics, modern infrastructure, and quality healthcare services.',
+        'Experience world-class medical facilities at Rashtrotthana Hospital, Bangalore, with advanced diagnostics, modern infrastructure and quality healthcare services.',
     });
 
     this.metaService.updateTag({

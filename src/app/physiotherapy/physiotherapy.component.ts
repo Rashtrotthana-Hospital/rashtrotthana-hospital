@@ -85,8 +85,8 @@ export class PhysiotherapyComponent {
       title: 'Comprehensive Physiotherapy',
       image: './assets/physiotherapy/img-11.png',
       heading: 'Our services aim to:',
-      description: 'Physiotherapy plays a vital role in recovery from injury, surgery, neurological conditions, and long-term medical illnesses. Each treatment plan is designed based on the patient’s condition, medical advice, and rehabilitation goals.',
-      conditions: ['Reduce pain and inflammation', 'Improve mobility, strength, and balance', 'Restore functional movement', 'Prevent complications and recurrence', 'Enhance overall quality of life'],
+      description: 'Physiotherapy plays a vital role in recovery from injury, surgery, neurological conditions and long-term medical illnesses. Each treatment plan is designed based on the patient’s condition, medical advice and rehabilitation goals.',
+      conditions: ['Reduce pain and inflammation', 'Improve mobility, strength and balance', 'Restore functional movement', 'Prevent complications and recurrence', 'Enhance overall quality of life'],
       therapyNote: '',
       gradient: this.gradients[0]
     },
@@ -95,9 +95,9 @@ export class PhysiotherapyComponent {
       title: 'Musculoskeletal Physiotherapy',
       image: './assets/physiotherapy/img-1.png',
       heading: 'Conditions managed include:',
-      description: 'Musculoskeletal physiotherapy focuses on conditions affecting muscles, joints, ligaments, tendons, and the spine. Our team provides targeted therapy to relieve pain, restore mobility, and improve physical function.',
+      description: 'Musculoskeletal physiotherapy focuses on conditions affecting muscles, joints, ligaments, tendons and the spine. Our team provides targeted therapy to relieve pain, restore mobility and improve physical function.',
       conditions: ['Management of acute and chronic pain', 'Low back pain and neck pain', 'Joint injuries and arthritis', 'Post-fracture rehabilitation', 'Post-surgical rehabilitation', 'Soft tissue injuries', 'Sports-related musculoskeletal injuries', 'Spine disorders such as disc prolapse and spondylosis'],
-      therapyNote: 'Treatment includes pain management, joint mobilisation, strengthening exercises, posture correction, and functional training.',
+      therapyNote: 'Treatment includes pain management, joint mobilisation, strengthening exercises, posture correction and functional training.',
       gradient: this.gradients[1]
     },
     {
@@ -105,9 +105,9 @@ export class PhysiotherapyComponent {
       title: 'Neurological Physiotherapy',
       image: './assets/physiotherapy/img-2.png',
       heading: 'Conditions treated include:',
-      description: 'Neurological physiotherapy is essential for patients recovering from conditions affecting the brain, spinal cord, and peripheral nerves. Our goal is to improve movement, balance, coordination, and independence.',
+      description: 'Neurological physiotherapy is essential for patients recovering from conditions affecting the brain, spinal cord and peripheral nerves. Our goal is to improve movement, balance, coordination and independence.',
       conditions: ['Stroke rehabilitation', 'Spinal cord injury rehabilitation', 'Traumatic brain injury management', 'Cerebral palsy management', 'Parkinson’s disease rehabilitation', 'Multiple sclerosis management', 'Peripheral nerve injuries', 'Balance and coordination disorders'],
-      therapyNote: 'Therapy focuses on muscle re-education, gait training, balance improvement, and functional activity training.',
+      therapyNote: 'Therapy focuses on muscle re-education, gait training, balance improvement and functional activity training.',
       gradient: this.gradients[2]
     },
     {
@@ -115,7 +115,7 @@ export class PhysiotherapyComponent {
       title: 'Cardiopulmonary Physiotherapy',
       image: './assets/physiotherapy/img-3.png',
       heading: 'Services include:',
-      description: 'Cardiopulmonary physiotherapy supports patients with heart and lung conditions and those recovering from surgery or critical illness. These services help improve breathing efficiency, lung capacity, and overall endurance.',
+      description: 'Cardiopulmonary physiotherapy supports patients with heart and lung conditions and those recovering from surgery or critical illness. These services help improve breathing efficiency, lung capacity and overall endurance.',
       conditions: ['Chest physiotherapy', 'Pulmonary rehabilitation', 'Post-operative respiratory care', 'ICU and critical care physiotherapy', 'Cardiac rehabilitation', 'Breathing exercises and airway clearance techniques', 'Pre- and post-thoracic surgery care'],
       therapyNote: '',
       gradient: this.gradients[3]
@@ -125,7 +125,7 @@ export class PhysiotherapyComponent {
       title: 'Paediatric Physiotherapy',
       image: './assets/physiotherapy/img-4.png',
       heading: 'Conditions managed include:',
-      description: 'Paediatric physiotherapy focuses on improving movement, strength, posture, and functional abilities in children with developmental or neurological conditions.',
+      description: 'Paediatric physiotherapy focuses on improving movement, strength, posture and functional abilities in children with developmental or neurological conditions.',
       conditions: ['Developmental delay', 'Cerebral palsy', 'Congenital deformities', 'Neuromuscular disorders'],
       therapyNote: 'Therapy is designed to support physical development and improve functional independence in children.',
       gradient: this.gradients[4]
@@ -135,7 +135,7 @@ export class PhysiotherapyComponent {
       title: 'Geriatric Physiotherapy',
       image: './assets/physiotherapy/img-5.png',
       heading: 'Services include:',
-      description: 'Geriatric physiotherapy addresses age-related conditions that affect mobility, balance, and independence in older adults.',
+      description: 'Geriatric physiotherapy addresses age-related conditions that affect mobility, balance and independence in older adults.',
       conditions: ['Management of age-related musculoskeletal disorders', 'Osteoporosis and osteopenia management', 'Balance training and fall prevention', 'Mobility and gait training', 'Arthritis management', 'Functional independence training'],
       therapyNote: 'The focus is on improving quality of life and reducing the risk of falls and complications.',
       gradient: this.gradients[5]
@@ -155,7 +155,7 @@ export class PhysiotherapyComponent {
       title: 'Orthopaedic Post-Operative Rehabilitation',
       image: './assets/physiotherapy/img-7.png',
       heading: 'Rehabilitation includes:',
-      description: 'Post-operative physiotherapy is a critical part of recovery following orthopaedic surgeries. Our structured rehabilitation programs help patients regain movement, strength, and function safely.',
+      description: 'Post-operative physiotherapy is a critical part of recovery following orthopaedic surgeries. Our structured rehabilitation programs help patients regain movement, strength and function safely.',
       conditions: ['Joint replacement rehabilitation (Total Knee Replacement – TKR, Total Hip Replacement – THR)', 'Arthroscopy rehabilitation', 'Ligament reconstruction rehabilitation', 'Fracture fixation rehabilitation', 'Spine surgery '],
       therapyNote: '',
       gradient: this.gradients[7]
@@ -165,7 +165,7 @@ export class PhysiotherapyComponent {
       title: 'Manual Therapy',
       image: './assets/physiotherapy/img-8.png',
       heading: 'Techniques include:',
-      description: 'Manual therapy techniques are used to improve joint mobility, reduce muscle tightness, and enhance functional movement.',
+      description: 'Manual therapy techniques are used to improve joint mobility, reduce muscle tightness and enhance functional movement.',
       conditions: ['Joint mobilisation and manipulation', 'Soft tissue mobilisation', 'Myofascial release', 'Muscle energy techniques', 'Trigger point therapy'],
       therapyNote: '',
       gradient: this.gradients[8]
@@ -187,7 +187,7 @@ export class PhysiotherapyComponent {
       heading: 'Services include:',
       description: 'Women’s health physiotherapy focuses on musculoskeletal and functional recovery during and after pregnancy.',
       conditions: ['Post-pregnancy recovery programs', 'Low back pain management', 'Pelvic floor strengthening exercises'],
-      therapyNote: 'These programs support safe recovery, core strengthening, and long-term musculoskeletal health.',
+      therapyNote: 'These programs support safe recovery, core strengthening and long-term musculoskeletal health.',
       gradient: this.gradients[10]
     },
   ];
@@ -300,7 +300,7 @@ export class PhysiotherapyComponent {
     },
     {
       img: './assets/physiotherapy/how-img-2.png',
-      para: 'Safe, structured, and monitored recovery'
+      para: 'Safe, structured and monitored recovery'
     },
     {
       img: './assets/physiotherapy/how-img-3.png',

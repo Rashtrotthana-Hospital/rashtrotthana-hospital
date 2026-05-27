@@ -49,27 +49,27 @@ export class PsychiatryComponent {
   faqs : any = [
     {
       ques : "What is mental health?",
-      ans : "Mental health refers to emotional, psychological, and social well-being, affecting how we think, feel, and respond to stress and relationships."
+      ans : "Mental health refers to emotional, psychological and social well-being, affecting how we think, feel and respond to stress and relationships."
     },
     {
       ques : "How do I know if I need psychiatric help?",
-      ans : "Signs like persistent sadness, anxiety, sleep trouble, or mood swings may suggest the need for help. Visit Rashtrotthana Hospital’s Psychiatry Department for a professional evaluation"
+      ans : "Signs like persistent sadness, anxiety, sleep trouble or mood swings may suggest the need for help. Visit Rashtrotthana Hospital’s Psychiatry Department for a professional evaluation"
     },
     {
       ques : "What causes mental health problems?",
-      ans : "Genetics, life stress, trauma, chemical imbalances, and environmental triggers are common causes."
+      ans : "Genetics, life stress, trauma, chemical imbalances and environmental triggers are common causes."
     },
     {
       ques : "Can mental health issues be treated?",
-      ans : "Yes, with the right combination of therapy, medication, and support, most mental health conditions can be effectively managed or fully treated."
+      ans : "Yes, with the right combination of therapy, medication and support, most mental health conditions can be effectively managed or fully treated."
     },
     {
       ques : "How can I support someone struggling emotionally?",
-      ans : "Be present, listen patiently, and encourage them to seek expert help. Our psychiatrists also offer family counseling sessions."
+      ans : "Be present, listen patiently and encourage them to seek expert help. Our psychiatrists also offer family counseling sessions."
     },
     {
       ques : "Is therapy really effective?",
-      ans : "Absolutely. Therapies like CBT, offered by our psychiatry team, are highly effective in treating anxiety, depression, and stress-related issues."
+      ans : "Absolutely. Therapies like CBT, offered by our psychiatry team are highly effective in treating anxiety, depression and stress-related issues."
     },
     {
       ques : "Will medication be necessary?",
@@ -77,11 +77,11 @@ export class PsychiatryComponent {
     },
     {
       ques : "How can I improve my mental health naturally?",
-      ans : "Good sleep, healthy eating, physical activity, and mindfulness practices help. But if symptoms persist, consult our Department of Psychiatry without delay."
+      ans : "Good sleep, healthy eating, physical activity and mindfulness practices help. But if symptoms persist, consult our Department of Psychiatry without delay."
     },
     {
       ques : "Who is the best psychiatrist in RR Nagar Bangalore?",
-      ans : "One of the most respected names in the field is Dr. Gopal Das C M, a senior consultant in the Department of Psychiatry at Rashtrotthana Hospital. With over 11 years of experience, he is known for his patient-centered approach, clinical accuracy, and compassionate care. Patients appreciate his expertise in managing conditions like depression, anxiety, stress, and complex mood disorders, making him one of the best psychiatrists in RR Nagar Bangalore."
+      ans : "One of the most respected names in the field is Dr. Gopal Das C M, a senior consultant in the Department of Psychiatry at Rashtrotthana Hospital. With over 11 years of experience, he is known for his patient-centered approach, clinical accuracy and compassionate care. Patients appreciate his expertise in managing conditions like depression, anxiety, stress and complex mood disorders, making him one of the best psychiatrists in RR Nagar Bangalore."
     }
   ]
 

@@ -19,31 +19,31 @@ export class AyurvedaComponent {
   faqs = [
     {
       questions : "What makes Rashtrotthana Hospital the Best Ayurvedic Hospital in RR Nagar Bangalore?",
-      answer : "At Rashtrotthana Hospital, we offer authentic and holistic Ayurvedic treatments under the guidance of experienced Ayurvedic doctors. Our personalized therapies, including Panchakarma treatments in Bangalore, are designed to promote natural healing and wellness, ensuring comprehensive care for every individual."
+      answer : "At Rashtrotthana Hospital, we offer authentic and holistic Ayurvedic treatments under the guidance of experienced Ayurvedic doctors. Our personalized therapies, including Panchakarma treatments in Bangalore are designed to promote natural healing and wellness, ensuring comprehensive care for every individual."
     },
     {
       questions : "What services are provided at your Ayurveda hospital in Rajarajeshwari Nagar Bangalore?",
-      answer : "We provide a wide range of services, including Kaya Chikitsa treatments, Ayurvedic internal medicine, Shalakya Tantra Treatment in Bangalore, detoxification therapies like Panchakarma, and rejuvenation therapies. Additionally, our Ayurvedic spa in Bangalore offers relaxing and therapeutic massages."
+      answer : "We provide a wide range of services, including Kaya Chikitsa treatments, Ayurvedic internal medicine, Shalakya Tantra Treatment in Bangalore, detoxification therapies like Panchakarma and rejuvenation therapies. Additionally, our Ayurvedic spa in Bangalore offers relaxing and therapeutic massages."
     },
     {
       questions : "How does Ayurveda promote natural healing therapy?",
-      answer : "Ayurveda focuses on the body’s innate ability to heal itself through natural methods. Our treatments utilize herbal medicines, detoxification processes like Panchakarma, and rejuvenation therapies to restore balance and promote long-lasting wellness."
+      answer : "Ayurveda focuses on the body’s innate ability to heal itself through natural methods. Our treatments utilize herbal medicines, detoxification processes like Panchakarma and rejuvenation therapies to restore balance and promote long-lasting wellness."
     },
     {
       questions : "Do you provide affordable Ayurvedic treatment?",
-      answer : "Yes, Rashtrotthana Hospital offers affordable Ayurvedic treatments without compromising quality. Our therapies, including Ayurvedic massages in RR Nagar Bangalore and wellness programs, are designed to fit various budgets."
+      answer : "Yes, Rashtrotthana Hospital offers affordable Ayurvedic treatments without compromising quality. Our therapies, including Ayurvedic massages in RR Nagar Bangalore and wellness programs are designed to fit various budgets."
     },
     {
-      questions : "What is Panchakarma, and how can it help me?",
-      answer : "Panchakarma is a comprehensive detoxification and rejuvenation therapy that eliminates toxins from the body, balances the doshas, and promotes overall health. At our panchkarma centre in Bangalore, we offer customized treatments for detoxification and rejuvenation under expert supervision."
+      questions : "What is Panchakarma and how can it help me?",
+      answer : "Panchakarma is a comprehensive detoxification and rejuvenation therapy that eliminates toxins from the body, balances the doshas and promotes overall health. At our panchkarma centre in Bangalore, we offer customized treatments for detoxification and rejuvenation under expert supervision."
     },
     {
-      questions : "Who is Dr. Sapna S., and what is her expertise in Ayurveda?",
-      answer : "Dr. Sapna S. is a renowned Ayurvedic professional with over 20 years of teaching and practice. She specializes in Rasa Shastra and Bhaishajya Kalpana, Panchakarma, Medical Astrology (Daiva Vyapashraya Chikitsa), infertility cases, and chronic conditions like PCOD and hypothyroidism. At Rashtrotthana Hospital, her expertise plays a crucial role in offering personalized and effective Ayurvedic treatments."
+      questions : "Who is Dr. Sapna S. and what is her expertise in Ayurveda?",
+      answer : "Dr. Sapna S. is a renowned Ayurvedic professional with over 20 years of teaching and practice. She specializes in Rasa Shastra and Bhaishajya Kalpana, Panchakarma, Medical Astrology (Daiva Vyapashraya Chikitsa), infertility cases and chronic conditions like PCOD and hypothyroidism. At Rashtrotthana Hospital, her expertise plays a crucial role in offering personalized and effective Ayurvedic treatments."
     },
     {
       questions : "What services does Dr. H. S. Venkatesh provide at Rashtrotthana Hospital?",
-      answer : "Dr. H. S. Venkatesh, with over 25 years of experience, is a leading practitioner in Ayurveda Endocrinology, specializing in managing thyroid disorders, arthritis, and conducting extensive research in Ayurvedic treatment and therapies. His contributions to natural healing therapy have been widely recognized, making him a trusted name in the field."
+      answer : "Dr. H. S. Venkatesh, with over 25 years of experience, is a leading practitioner in Ayurveda Endocrinology, specializing in managing thyroid disorders, arthritis and conducting extensive research in Ayurvedic treatment and therapies. His contributions to natural healing therapy have been widely recognized, making him a trusted name in the field."
     },
     {
       questions : "Can Dr. Sapna S. help with infertility and hormonal issues like PCOD?",
@@ -63,7 +63,7 @@ export class AyurvedaComponent {
     },
     {
       questions : "What makes Rashtrotthana Hospital the Best Ayurvedic Hospital in RR Nagar Bangalore?",
-      answer : "Rashtrotthana Hospital is home to leading Ayurvedic experts like Dr. Sapna S. and Dr. H.S. Venkatesh. With specialties ranging from Panchakarma treatment in Bangalore to managing thyroid disorders, infertility, and chronic skin diseases, the hospital offers a comprehensive range of holistic healthcare services."
+      answer : "Rashtrotthana Hospital is home to leading Ayurvedic experts like Dr. Sapna S. and Dr. H.S. Venkatesh. With specialties ranging from Panchakarma treatment in Bangalore to managing thyroid disorders, infertility and chronic skin diseases, the hospital offers a comprehensive range of holistic healthcare services."
     },
     {
       questions : "How does Dr. Sapna S. help with geriatric care?",
@@ -79,7 +79,7 @@ export class AyurvedaComponent {
     },
     {
       questions : "Can I find affordable treatments in Ayurveda hospitals in Bangalore?",
-      answer : "Many Ayurveda hospitals in Bangalore offer affordable Ayurvedic treatments without compromising on quality. Rashtrotthana Hospital is a great example, providing cost-effective therapies such as Panchakarma, Ayurvedic massages, and wellness programs."
+      answer : "Many Ayurveda hospitals in Bangalore offer affordable Ayurvedic treatments without compromising on quality. Rashtrotthana Hospital is a great example, providing cost-effective therapies such as Panchakarma, Ayurvedic massages and wellness programs."
     },
   ]
 

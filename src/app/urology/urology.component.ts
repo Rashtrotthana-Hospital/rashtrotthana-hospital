@@ -66,11 +66,11 @@ export class UrologyComponent {
   faqs = [
     {
       ques : "What is genito-urinary reconstruction surgery?",
-      ans : "Genito-urinary reconstruction is a specialized surgical field focused on repairing, rebuilding, or replacing parts of the urinary or reproductive systems that have been damaged by disease, injury, or are congenitally malformed."
+      ans : "Genito-urinary reconstruction is a specialized surgical field focused on repairing, rebuilding or replacing parts of the urinary or reproductive systems that have been damaged by disease, injury or are congenitally malformed."
     },
     {
       ques : "Who is a candidate for genito-urinary reconstruction?",
-      ans : "Patients who may benefit from this surgery include those with congenital abnormalities, men who have suffered trauma to the urinary system, or patients who need their urinary organs reconstructed after cancer surgery. Our specialists in Bangalore can provide a thorough evaluation to determine if you are a suitable candidate."
+      ans : "Patients who may benefit from this surgery include those with congenital abnormalities, men who have suffered trauma to the urinary system or patients who need their urinary organs reconstructed after cancer surgery. Our specialists in Bangalore can provide a thorough evaluation to determine if you are a suitable candidate."
     },
     {
       ques : "Is genito-urinary reconstruction a major surgery?",
@@ -78,7 +78,7 @@ export class UrologyComponent {
     },
     {
       ques : "What types of conditions does this surgery treat?",
-      ans : "This surgery can treat a wide range of conditions, including urethral strictures, bladder exstrophy, penile deformities and injuries to the kidneys, bladder, and urethra."
+      ans : "This surgery can treat a wide range of conditions, including urethral strictures, bladder exstrophy, penile deformities and injuries to the kidneys, bladder and urethra."
     },
     {
       ques : "How long is the recovery time?",
@@ -110,7 +110,7 @@ export class UrologyComponent {
       description: 'Kidney stones can cause sharp back pain and discomfort. Our Laser Kidney Stone Removal (technically called Retrograde Intrarenal Surgery – RIRS) is a scar-free and painless way to clear kidney stones using advanced laser technology.',
       procedure: 'During the procedure, a very thin flexible scope is gently passed through the natural urinary passage to reach the kidney. The stones are broken into fine dust using a laser and removed safely. A small DJ stent is placed temporarily to help the kidney heal and ensure smooth urine flow.',
       benefits: [
-        'No external cuts, stitches, or scars',
+        'No external cuts, stitches or scars',
         'Laser precision – completely safe and effective',
         'Minimal pain, faster recovery, short hospital stay',
         'Ideal even for hard-to-reach stones'
@@ -138,7 +138,7 @@ export class UrologyComponent {
       id: 'turp',
       title: 'Prostate Enlargement Treatment',
       subtitle: 'TURP – Transurethral Resection of the Prostate',
-      description: 'Difficulty passing urine, frequent night urination, or a weak urine stream are often signs of prostate enlargement in men. Our Prostate Enlargement Treatment, medically known as TURP (Transurethral Resection of the Prostate), is a proven and effective solution that restores easy urine flow without any cuts or external wounds.',
+      description: 'Difficulty passing urine, frequent night urination or a weak urine stream are often signs of prostate enlargement in men. Our Prostate Enlargement Treatment, medically known as TURP (Transurethral Resection of the Prostate), is a proven and effective solution that restores easy urine flow without any cuts or external wounds.',
       procedure: 'Using a small instrument inserted through the urinary passage, the surgeon removes only the excess prostate tissue causing the blockage. It\'s a safe, hospital-based procedure trusted by thousands of men for long-term relief.',
       benefits: [
         'No external incision',
@@ -146,7 +146,7 @@ export class UrologyComponent {
         'Restores confidence and normal lifestyle',
         'Significant improvement in urinary flow and comfort'
       ],
-      highlight: 'Many of our patients share that the relief is almost immediate — the constant urge to urinate reduces, the urine flow feels normal again, and the anxiety of sleepless nights finally fades away.',
+      highlight: 'Many of our patients share that the relief is almost immediate — the constant urge to urinate reduces, the urine flow feels normal again and the anxiety of sleepless nights finally fades away.',
       icon: '🩺'
     }
   ];
@@ -164,7 +164,7 @@ export class UrologyComponent {
         {
           icon: '🔬',
           title: 'Specialized Urology Units',
-          description: 'Dedicated units for kidney, ureter, and prostate surgeries.'
+          description: 'Dedicated units for kidney, ureter and prostate surgeries.'
         },
         {
           icon: '👨‍⚕️',
@@ -174,7 +174,7 @@ export class UrologyComponent {
         {
           icon: '💊',
           title: 'End-to-End Medical Support',
-          description: 'From diagnosis, anesthesia, and surgery to guided recovery.'
+          description: 'From diagnosis, anesthesia and surgery to guided recovery.'
         },
         {
           icon: '⚡',
@@ -182,7 +182,7 @@ export class UrologyComponent {
           description: 'Modern, minimally invasive methods.'
         }
       ],
-      highlightText: 'Your entire journey — from the first consultation to complete recovery — is guided with care, comfort, and clinical excellence.'
+      highlightText: 'Your entire journey — from the first consultation to complete recovery — is guided with care, comfort and clinical excellence.'
     },
     {
       id: 'affordable-packages',
@@ -190,7 +190,7 @@ export class UrologyComponent {
       title: '2. Transparent & Affordable Packages',
       icon: '💰',
       color: '#008080',
-      description: 'We believe quality healthcare should never feel out of reach. At Rashtrotthana Hospital, every patient receives ethical, affordable, and transparent care — without compromising on quality or safety.',
+      description: 'We believe quality healthcare should never feel out of reach. At Rashtrotthana Hospital, every patient receives ethical, affordable and transparent care — without compromising on quality or safety.',
       features: [
         {
           icon: '📋',
@@ -205,7 +205,7 @@ export class UrologyComponent {
         {
           icon: '🤝',
           title: 'Dedicated Insurance Assistance Desk',
-          description: 'Guides through approvals, claims, and paperwork.'
+          description: 'Guides through approvals, claims and paperwork.'
         },
         {
           icon: '✓',
@@ -226,7 +226,7 @@ export class UrologyComponent {
         {
           icon: '🚇',
           title: 'Well Connected',
-          description: 'By Metro, Bus, and Railway routes.'
+          description: 'By Metro, Bus and Railway routes.'
         },
         {
           icon: '🏨',
@@ -236,7 +236,7 @@ export class UrologyComponent {
         {
           icon: '🏪',
           title: 'Essential Amenities',
-          description: 'Pharmacies, cafés, and transport facilities.'
+          description: 'Pharmacies, cafés and transport facilities.'
         },
         {
           icon: '👥',
@@ -244,7 +244,7 @@ export class UrologyComponent {
           description: 'Assist throughout your hospital journey.'
         }
       ],
-      highlightText: 'We make sure your experience — from admission to discharge — remains smooth, convenient, and worry-free.'
+      highlightText: 'We make sure your experience — from admission to discharge — remains smooth, convenient and worry-free.'
     }
   ];
   

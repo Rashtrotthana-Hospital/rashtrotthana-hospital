@@ -36,11 +36,11 @@ export class PulmonologyComponent {
   faqs = [
     {
       ques : 'What are the common symptoms of lung diseases?',
-      ans : 'Lung diseases often present with chronic cough, wheezing, breathlessness, chest congestion, and persistent respiratory infections. If you experience recurring breathing problems, consult Dr. Kolla Vinod, best pulmonologist in RR Nagar Bangalore, for early diagnosis and treatment.'
+      ans : 'Lung diseases often present with chronic cough, wheezing, breathlessness, chest congestion and persistent respiratory infections. If you experience recurring breathing problems, consult Dr. Kolla Vinod, best pulmonologist in RR Nagar Bangalore, for early diagnosis and treatment.'
     },
     {
       ques : ' How is COPD diagnosed and treated?',
-      ans : 'COPD (Chronic Obstructive Pulmonary Disease) is diagnosed using Lung Function Tests (PFT), spirometry, and imaging tests. Treatment includes inhalers, medication, pulmonary rehabilitation and lifestyle modifications to improve breathing. At Rashtrotthana Hospital, the best lung hospital in RR Nagar Bangalore, Dr. Kolla Vinod provides comprehensive COPD cough treatment and breathlessness management.'
+      ans : 'COPD (Chronic Obstructive Pulmonary Disease) is diagnosed using Lung Function Tests (PFT), spirometry and imaging tests. Treatment includes inhalers, medication, pulmonary rehabilitation and lifestyle modifications to improve breathing. At Rashtrotthana Hospital, the best lung hospital in RR Nagar Bangalore, Dr. Kolla Vinod provides comprehensive COPD cough treatment and breathlessness management.'
     },
     {
       ques : 'What is the best treatment for chronic cough?',
@@ -48,15 +48,15 @@ export class PulmonologyComponent {
     },
     {
       ques : 'When should I see a doctor for breathing difficulties?',
-      ans : 'If you experience shortness of breath, wheezing, chest tightness, or difficulty breathing, it’s important to seek medical attention immediately. Dr. Kolla Vinod specializes in effective treatment for breathing difficulty, wheezing, and lung infections.'
+      ans : 'If you experience shortness of breath, wheezing, chest tightness or difficulty breathing, it’s important to seek medical attention immediately. Dr. Kolla Vinod specializes in effective treatment for breathing difficulty, wheezing and lung infections.'
     },
     {
       ques : 'What treatments are available for tuberculosis (TB)?',
-      ans : 'Tuberculosis (TB) treatment includes antibiotic therapy, lung function monitoring, and supportive care. Our expert pulmonologist, Dr. Kolla Vinod, ensures precise diagnosis and effective treatment plans for TB patients in Bangalore.'
+      ans : 'Tuberculosis (TB) treatment includes antibiotic therapy, lung function monitoring and supportive care. Our expert pulmonologist, Dr. Kolla Vinod, ensures precise diagnosis and effective treatment plans for TB patients in Bangalore.'
     },
     {
       ques : 'How can I prevent lung infections and respiratory diseases?',
-      ans : 'Preventing lung diseases involves avoiding allergens, quitting smoking, maintaining good hygiene, and getting vaccinated against flu and pneumonia. Regular lung check-ups with Dr. Kolla Vinod at the best pulmonology hospital in Bangalore can help detect issues early.'
+      ans : 'Preventing lung diseases involves avoiding allergens, quitting smoking, maintaining good hygiene and getting vaccinated against flu and pneumonia. Regular lung check-ups with Dr. Kolla Vinod at the best pulmonology hospital in Bangalore can help detect issues early.'
     },
     // {
     //   ques : 'What tests are done to diagnose lung diseases?',
@@ -71,7 +71,7 @@ export class PulmonologyComponent {
           <li class = "s_para">Chest pain and breathing difficulty (requires immediate attention from a breathing problem doctor in RR Nagar Bangalore).</li>
           <li class = "s_para">Wheezing and breathlessness (consult a wheezing problem specialist for early intervention).</li>
           <li class = "s_para">Unexplained weight loss and fatigue (may indicate a worsening lung condition).</li>
-          <li class = "s_para">Fever, chills, and night sweats (requires flu specialist doctor consultation for proper evaluation).</li>
+          <li class = "s_para">Fever, chills and night sweats (requires flu specialist doctor consultation for proper evaluation).</li>
           <li class = "s_para">Coughing up blood (hemoptysis) (seek urgent care from an expert pulmonologist for lung diseases).</li>
         </ul>
       `

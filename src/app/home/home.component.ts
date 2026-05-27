@@ -143,7 +143,7 @@ export class HomeComponent implements OnInit {
     'default': 'India\'s First Integrated Multi Speciality Hospital Blending Modern And Indian Medicine For Holistic Healing',
     'yoga': 'Yoga is a group of physical, mental and spiritual practices or disciplines which originated in ancient India. Yoga is one of the six Āstika schools of Indian philosophical traditions.',
     'naturopathy': '',
-    'modern-medicine': 'Modern medicine, or medicine as we know it, started to emerge after the Industrial Revolution in the 18th century. At this time, there was rapid growth in economic activity in Modern Europe and the Americas.',
+    'modern-medicine': 'Modern medicine or medicine as we know it, started to emerge after the Industrial Revolution in the 18th century. At this time, there was rapid growth in economic activity in Modern Europe and the Americas.',
     'ayurveda': 'Ayurveda is a system of medicine with historical roots in the Indian subcontinent. Globalized and modernized practices derived from Ayurveda traditions are a type of alternative medicine.',
     'homeopathy': "Homeopathy is a natural healing system that believes ' like cure like ' the idea that a substance causing symptoms in a healthy person can be used in tiny, highly diluted doses to treat similar symptoms in sick person. This gentle approach aims  to stimulate the body's self healing processes using carefully prepared remedies tailored to each person's unique needs. Trusted for centuries, homeopathy offers a holistic, individualised path to wellness by addressing both mind and body with no side effects."
   };

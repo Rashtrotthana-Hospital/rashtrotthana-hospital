@@ -27,7 +27,7 @@ export class OperationTheatreComponent {
         main_heading: 'Operation Theatre',
         heading: 'Operation Theatre',
         content: `Rashtrotthana Hospital’s Operation Theatre (OT) facilities are designed to support <a href="https://en.wikipedia.org/wiki/Surgery" target="_blank">complex surgeries</a> with precision and safety. With five major and one minor modular OT, our facility is fully equipped with advanced medical technology, ensuring all essential surgical procedures are carried out seamlessly. Our modular OTs meet high standards of hygiene, efficiency and safety, making them ideal for various major surgeries across specialities. Each OT is staffed by certified and experienced professionals trained to manage surgical needs round the clock.`,
-        content_1: 'Our OT facility prioritizes patient safety and optimal outcomes by maintaining stringent infection control measures and utilizing state-of-the-art equipment for high precision. The dedicated OT staff, including expert surgeons, anesthesiologists and nurses, are committed to providing reliable and compassionate care. Rashtrotthana Hospital’s modular OT setup ensures patients have access to top-tier surgical services, reinforcing our mission to deliver accessible, high-quality healthcare in Bangalore.',
+        content_1: 'Our OT facility prioritizes patient safety and optimal outcomes by maintaining stringent infection control measures and utilizing state-of-the-art equipment for high precision. The dedicated OT staff, including expert surgeons, anesthesiologists and nurses are committed to providing reliable and compassionate care. Rashtrotthana Hospital’s modular OT setup ensures patients have access to top-tier surgical services, reinforcing our mission to deliver accessible, high-quality healthcare in Bangalore.',
         image_1: 'best-surgical-facilities-in-bangalore-rashtrotthana-hospital.png',
         image_2: 'advanced-surgical-care-at-rashtrotthana-hospital.png',
         bg_image: 'facilities-bg.png',
@@ -50,7 +50,7 @@ export class OperationTheatreComponent {
     {
       img: 'assets/facility/ayurveda.png',
       heading: 'Ayurveda',
-      para: 'Personalized herbal therapies, detoxification, and preventive wellness programs that restore balance and promote natural healing.'
+      para: 'Personalized herbal therapies, detoxification and preventive wellness programs that restore balance and promote natural healing.'
     },
     {
       img: 'assets/facility/homeopathy.png',
@@ -60,12 +60,12 @@ export class OperationTheatreComponent {
     {
       img: 'assets/facility/yoga.png',
       heading: 'Yoga & Lifestyle Therapy',
-      para: 'Therapeutic yoga, breathwork, and lifestyle guidance to enhance flexibility, mental clarity and stress resilience.'
+      para: 'Therapeutic yoga, breathwork and lifestyle guidance to enhance flexibility, mental clarity and stress resilience.'
     },
     {
       img: 'assets/facility/naturopathy.png',
       heading: 'Naturopathy ',
-      para: 'Natural therapies combined with expert nutritional guidance to strengthen immunity, correct metabolic imbalances, and support long-term wellness.'
+      para: 'Natural therapies combined with expert nutritional guidance to strengthen immunity, correct metabolic imbalances and support long-term wellness.'
     },
   ]
 

@@ -26,31 +26,31 @@ export class AyurvedaThyroidComponent {
   faqs = [
     {
       ques : "Why should I choose Ayurvedic Thyroid Treatment at RR Nagar, Bangalore?",
-      ans : "Rashtrotthana Hospital offers personalized Ayurvedic care tailored to your specific thyroid condition. Our treatments are led by Dr. Venkatesh H.S., a leading Ayurvedic specialist with decades of experience, and focus on balancing hormones naturally."
+      ans : "Rashtrotthana Hospital offers personalized Ayurvedic care tailored to your specific thyroid condition. Our treatments are led by Dr. Venkatesh H.S., a leading Ayurvedic specialist with decades of experience and focus on balancing hormones naturally."
     },
     {
       ques : "How does Ayurvedic Thyroid Treatment in Bangalore differ from conventional treatments?",
-      ans : "Ayurveda treats thyroid disorders by addressing the root causes of hormonal imbalances. The treatment includes herbal remedies like Ashwagandha and Guggul, detox therapies such as Panchakarma, and dietary adjustments to restore balance and improve overall health."
+      ans : "Ayurveda treats thyroid disorders by addressing the root causes of hormonal imbalances. The treatment includes herbal remedies like Ashwagandha and Guggul, detox therapies such as Panchakarma and dietary adjustments to restore balance and improve overall health."
     },
     {
       ques : "Do you provide treatments for all types of thyroid disorders?",
-      ans : "Yes, we treat all major thyroid disorders, including hypothyroidism, hyperthyroidism, and goiter. We also offer specialized procedures like thyroid gland removal surgery in RR Nagar, if necessary."
+      ans : "Yes, we treat all major thyroid disorders, including hypothyroidism, hyperthyroidism and goiter. We also offer specialized procedures like thyroid gland removal surgery in RR Nagar, if necessary."
     },
     {
       ques : "What makes Rashtrotthana Hospital the Best Hospital for Thyroid in RR Nagar, Bangalore?",
-      ans : "Our hospital combines the expertise of seasoned specialists, advanced diagnostic tools, and holistic Ayurvedic therapies to deliver the most effective thyroid care. We are also committed to providing affordable thyroid treatment in Bangalore without compromising on quality."
+      ans : "Our hospital combines the expertise of seasoned specialists, advanced diagnostic tools and holistic Ayurvedic therapies to deliver the most effective thyroid care. We are also committed to providing affordable thyroid treatment in Bangalore without compromising on quality."
     },
     {
       ques : "Are your treatments suitable for women experiencing thyroid disorders due to hormonal changes?",
-      ans : "Absolutely. Thyroid disorders are more common in women, especially during pregnancy, menopause, or puberty. Our Ayurvedic therapies focus on balancing hormones naturally and effectively."
+      ans : "Absolutely. Thyroid disorders are more common in women, especially during pregnancy, menopause or puberty. Our Ayurvedic therapies focus on balancing hormones naturally and effectively."
     },
     {
       ques : "How does Ayurvedic Thyroid Treatment in Bangalore help with long-term management?",
-      ans : "Ayurvedic treatments provide sustainable results by addressing the root causes of thyroid disorders. This approach includes lifestyle modifications, detox therapies, and the use of natural herbs to maintain balance and prevent recurrence."
+      ans : "Ayurvedic treatments provide sustainable results by addressing the root causes of thyroid disorders. This approach includes lifestyle modifications, detox therapies and the use of natural herbs to maintain balance and prevent recurrence."
     },
     {
       ques : "What role does diet play in Ayurvedic Thyroid Treatment in Bangalore?",
-      ans : "Diet plays a crucial role in managing thyroid disorders. Our experts recommend warm, nourishing foods, including whole grains, cooked vegetables, and spices like turmeric and cumin, while avoiding processed and cold foods. This helps balance the doshas and supports thyroid function."
+      ans : "Diet plays a crucial role in managing thyroid disorders. Our experts recommend warm, nourishing foods, including whole grains, cooked vegetables and spices like turmeric and cumin, while avoiding processed and cold foods. This helps balance the doshas and supports thyroid function."
     },
     {
       ques : "Can Ayurvedic treatments replace thyroid medications?",

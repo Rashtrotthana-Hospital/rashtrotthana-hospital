@@ -17,7 +17,7 @@ export class RheumatologyComponent {
       this.titleService.setTitle("Rheumatology hospital | Arthritis & Joint Pain Treatment Bangalore");  
       
     // Set the meta description
-    this.metaService.updateTag({ name: 'description', content: 'Rashtrotthana Hospital offers expert rheumatology care for arthritis, joint pain, and autoimmune diseases, with advanced rheumatoid arthritis treatment.' });
+    this.metaService.updateTag({ name: 'description', content: 'Rashtrotthana Hospital offers expert rheumatology care for arthritis, joint pain and autoimmune diseases, with advanced rheumatoid arthritis treatment.' });
   
     // Optionally set other meta tags
     this.metaService.updateTag({ name: 'keywords', content: '' }); 

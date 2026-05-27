@@ -77,7 +77,7 @@ export class ProctologyComponent {
       title: 'Laser Piles Surgery',
       description: `
               <ul>
-                <li>A modern, minimally invasive procedure that uses laser energy to treat piles with high precision. It causes minimal bleeding, less pain, and allows quicker recovery compared to conventional surgery.</li>
+                <li>A modern, minimally invasive procedure that uses laser energy to treat piles with high precision. It causes minimal bleeding, less pain and allows quicker recovery compared to conventional surgery.</li>
               </ul>
             `,
       color: '#008080',
@@ -149,7 +149,7 @@ export class ProctologyComponent {
           icon: '⚡',
           title: 'Faster Recovery, Less Discomfort',
           description:
-            'Advanced techniques help reduce pain, bleeding, and recovery time.',
+            'Advanced techniques help reduce pain, bleeding and recovery time.',
         },
       ],
       highlightText:
@@ -173,7 +173,7 @@ export class ProctologyComponent {
           icon: '🤝',
           title: 'Claim Assistance',
           description:
-            'Our team assists with approvals, documentation, and coordination.',
+            'Our team assists with approvals, documentation and coordination.',
         },
         {
           icon: '📜',
@@ -203,7 +203,7 @@ export class ProctologyComponent {
         {
           icon: '🚇',
           title: 'Easily Accessible',
-          description: 'Close to major roads, metro routes, railway stations, and bus connectivity.',
+          description: 'Close to major roads, metro routes, railway stations and bus connectivity.',
         },
         {
           icon: '🏨',
@@ -215,13 +215,13 @@ export class ProctologyComponent {
           icon: '🏪',
           title: 'Essential Facilities Around',
           description:
-            'Pharmacies, food outlets, and transport services located nearby.',
+            'Pharmacies, food outlets and transport services located nearby.',
         },
         {
           icon: '👥',
           title: 'Supportive Environment',
           description:
-            'Our staff ensures smooth admissions, procedures, and follow-ups.',
+            'Our staff ensures smooth admissions, procedures and follow-ups.',
         },
       ],
       highlightText:
@@ -232,7 +232,7 @@ export class ProctologyComponent {
   faqs = [
     {
       ques: "When is piles surgery recommended?",
-      ans: "Piles surgery is advised when symptoms such as pain, bleeding, or swelling do not improve with medication or lifestyle changes."
+      ans: "Piles surgery is advised when symptoms such as pain, bleeding or swelling do not improve with medication or lifestyle changes."
     },
     {
       ques: "Is laser piles surgery safe?",

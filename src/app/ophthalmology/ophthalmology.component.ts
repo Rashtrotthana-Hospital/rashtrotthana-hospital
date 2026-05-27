@@ -46,7 +46,7 @@ export class OphthalmologyComponent {
   faqs = [
     {
       ques: "1. What age is best for a pediatric eye checkup?",
-      ans: "We recommend screenings at 6 months, 3 years, and 4-5 years. Visit earlier if your child shows eye pain, itchy eyes, or frequent blinking."
+      ans: "We recommend screenings at 6 months, 3 years and 4-5 years. Visit earlier if your child shows eye pain, itchy eyes or frequent blinking."
     },
     {
       ques: "Is glaucoma screening necessary even without symptoms?",
@@ -54,7 +54,7 @@ export class OphthalmologyComponent {
     },
     {
       ques: "What symptoms signal cataracts?",
-      ans: "Cloudy vision, glare at night, eye pain, or burning sensation in eyes. We offer complete cataract evaluations without surgery."
+      ans: "Cloudy vision, glare at night, eye pain or burning sensation in eyes. We offer complete cataract evaluations without surgery."
     },
     {
       ques: "How often should diabetic patients have retina checks?",
@@ -62,7 +62,7 @@ export class OphthalmologyComponent {
     },
     {
       ques: "What causes red eyes and how is it treated?",
-      ans: "Red eyes can be caused by dryness, infection, or allergies. We offer medical care and eye irritation home remedies for relief."
+      ans: "Red eyes can be caused by dryness, infection or allergies. We offer medical care and eye irritation home remedies for relief."
     },
     {
       ques: "Can macular degeneration be stopped?",
@@ -70,7 +70,7 @@ export class OphthalmologyComponent {
     },
     {
       ques: "What helps with itchy eyes and watery eyes?",
-      ans: "Avoid allergens, use prescribed drops, and limit screen exposure. If it persists, consult our best eye doctor in RR Nagar Bangalore."
+      ans: "Avoid allergens, use prescribed drops and limit screen exposure. If it persists, consult our best eye doctor in RR Nagar Bangalore."
     },
     {
       ques: "Who is the best eye doctor in RR Nagar for complete eye care?",

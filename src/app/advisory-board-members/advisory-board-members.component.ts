@@ -21,7 +21,7 @@ export class AdvisoryBoardMembersComponent {
           this.metaService.updateTag({
             name: 'description',
             content:
-              'Meet the Advisory Board Members of Rashtrotthana Hospital, Bangalore, guiding the hospital with expertise, ethics, and commitment to quality healthcare.',
+              'Meet the Advisory Board Members of Rashtrotthana Hospital, Bangalore, guiding the hospital with expertise, ethics and commitment to quality healthcare.',
           });
         }
     

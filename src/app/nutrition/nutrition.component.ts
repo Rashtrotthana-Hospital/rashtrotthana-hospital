@@ -33,7 +33,7 @@ export class NutritionComponent {
       subFacilities:[
         {
           subHeading:'Optimizing Health Through Nutrition at Rashtrotthana Hospital:',
-        subContent:'At Rashtrotthana Hospital, we recognize the vital role that nutrition plays in overall health and well-being. We dedicate our Nutrition & Dietetics facility to creating personalized nutrition plans that cater to each patient s unique needs. Our team of experienced dietitians works closely with patients to develop comprehensive nutrition strategies aimed at promoting optimal health and recovery. Whether you re managing a chronic condition, recovering from surgery, or simply looking to improve your overall wellness, our expert guidance can help you achieve your nutritional goals.'
+        subContent:'At Rashtrotthana Hospital, we recognize the vital role that nutrition plays in overall health and well-being. We dedicate our Nutrition & Dietetics facility to creating personalized nutrition plans that cater to each patient s unique needs. Our team of experienced dietitians works closely with patients to develop comprehensive nutrition strategies aimed at promoting optimal health and recovery. Whether you re managing a chronic condition, recovering from surgery or simply looking to improve your overall wellness, our expert guidance can help you achieve your nutritional goals.'
         },
         {
           subHeading:'Customized Nutrition Plans for Your Unique Needs',
@@ -70,7 +70,7 @@ export class NutritionComponent {
         {
           img: 'assets/facility/ayurveda.png',
           heading: 'Ayurveda',
-          para: 'Personalized herbal therapies, detoxification, and preventive wellness programs that restore balance and promote natural healing.'
+          para: 'Personalized herbal therapies, detoxification and preventive wellness programs that restore balance and promote natural healing.'
         },
         {
           img: 'assets/facility/homeopathy.png',
@@ -80,12 +80,12 @@ export class NutritionComponent {
         {
           img: 'assets/facility/yoga.png',
           heading: 'Yoga & Lifestyle Therapy',
-          para: 'Therapeutic yoga, breathwork, and lifestyle guidance to enhance flexibility, mental clarity and stress resilience.'
+          para: 'Therapeutic yoga, breathwork and lifestyle guidance to enhance flexibility, mental clarity and stress resilience.'
         },
         {
           img: 'assets/facility/naturopathy.png',
           heading: 'Naturopathy ',
-          para: 'Natural therapies combined with expert nutritional guidance to strengthen immunity, correct metabolic imbalances, and support long-term wellness.'
+          para: 'Natural therapies combined with expert nutritional guidance to strengthen immunity, correct metabolic imbalances and support long-term wellness.'
         },
       ]
     

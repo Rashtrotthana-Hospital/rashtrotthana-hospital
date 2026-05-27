@@ -96,7 +96,7 @@ export class HysterectomySurgeryComponent {
       title: 'Laparoscopic Hysterectomy',
       description: `
             <ul>
-              <li>A minimally invasive procedure performed through small incisions. It causes less pain, minimal scarring, and allows faster recovery compared to traditional surgery.</li>
+              <li>A minimally invasive procedure performed through small incisions. It causes less pain, minimal scarring and allows faster recovery compared to traditional surgery.</li>
             </ul>
           `,
       color: '#008080',
@@ -166,7 +166,7 @@ export class HysterectomySurgeryComponent {
           icon: '👨‍⚕️',
           title: 'Highly Skilled Gynecologists',
           description:
-            'Specialists trained in laparoscopic, abdominal, and vaginal hysterectomy procedures.',
+            'Specialists trained in laparoscopic, abdominal and vaginal hysterectomy procedures.',
         },
         {
           icon: '🦵',
@@ -178,11 +178,11 @@ export class HysterectomySurgeryComponent {
           icon: '⚡',
           title: 'Faster Recovery, Less Discomfort',
           description:
-            'Minimally invasive approaches help reduce pain, scarring, and recovery time.',
+            'Minimally invasive approaches help reduce pain, scarring and recovery time.',
         },
       ],
       highlightText:
-        'Every hysterectomy procedure is carefully planned and performed with precision, experience, and patient safety as the highest priority.',
+        'Every hysterectomy procedure is carefully planned and performed with precision, experience and patient safety as the highest priority.',
     },
     {
       id: 'insurance-facility',
@@ -202,7 +202,7 @@ export class HysterectomySurgeryComponent {
           icon: '🤝',
           title: 'Claim Assistance',
           description:
-            'Our team assists with approvals, paperwork, and coordination.',
+            'Our team assists with approvals, paperwork and coordination.',
         },
         {
           icon: '📜',
@@ -232,7 +232,7 @@ export class HysterectomySurgeryComponent {
         {
           icon: '🚇',
           title: 'Easily Accessible',
-          description: 'Close to major roads, metro connectivity, railway stations, and bus routes.',
+          description: 'Close to major roads, metro connectivity, railway stations and bus routes.',
         },
         {
           icon: '🏨',
@@ -244,13 +244,13 @@ export class HysterectomySurgeryComponent {
           icon: '🏪',
           title: 'Essential Facilities Around',
           description:
-            'Pharmacies, food outlets, and transport services located nearby.',
+            'Pharmacies, food outlets and transport services located nearby.',
         },
         {
           icon: '👥',
           title: 'Supportive Environment',
           description:
-            'Our staff ensures smooth admissions, procedures, and follow-ups.',
+            'Our staff ensures smooth admissions, procedures and follow-ups.',
         },
       ],
       highlightText:
@@ -261,7 +261,7 @@ export class HysterectomySurgeryComponent {
   faqs = [
     {
       ques: "When is hysterectomy surgery recommended?",
-      ans: "Hysterectomy is advised when conditions such as fibroids, heavy bleeding, chronic pelvic pain, or uterine disorders do not respond to other treatments."
+      ans: "Hysterectomy is advised when conditions such as fibroids, heavy bleeding, chronic pelvic pain or uterine disorders do not respond to other treatments."
     },
     {
       ques: "Is hysterectomy surgery safe?",

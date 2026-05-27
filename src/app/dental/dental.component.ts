@@ -74,7 +74,7 @@ export class DentalComponent {
   faqs = [
     {
       ques : 'What causes recurring tooth pain?',
-      ans : 'Decay, infection, or a damaged nerve could be the cause. We offer effective dental cavity treatment, root canal or restoration depending on your condition.'
+      ans : 'Decay, infection or a damaged nerve could be the cause. We offer effective dental cavity treatment, root canal or restoration depending on your condition.'
     },
     {
       ques : 'How often should I get my teeth cleaned?',
@@ -86,7 +86,7 @@ export class DentalComponent {
     },
     {
       ques : 'Which is the best dental hospital in RR Nagar for root canal and implants?',
-      ans : 'Rashtrotthana Hospital is widely regarded as the best dental hospital in RR Nagar Bangalore, especially for patients seeking ethical, expert-led care for conditions like tooth pain, dental cavities, and root canal infections. Our Dental Sciences Department is known for advanced diagnostic tools, painless dental root canal treatment, and high-quality restorations. While we do not perform surgical dental implants, we provide detailed evaluations, guide you on dental implant cost in RR Nagar Bangalore, and connect you with reliable implantologists when needed.'
+      ans : 'Rashtrotthana Hospital is widely regarded as the best dental hospital in RR Nagar Bangalore, especially for patients seeking ethical, expert-led care for conditions like tooth pain, dental cavities and root canal infections. Our Dental Sciences Department is known for advanced diagnostic tools, painless dental root canal treatment and high-quality restorations. While we do not perform surgical dental implants, we provide detailed evaluations, guide you on dental implant cost in RR Nagar Bangalore and connect you with reliable implantologists when needed.'
     },
     {
       ques : 'Do you offer laser treatment for dental cavities?',
@@ -98,7 +98,7 @@ export class DentalComponent {
     },
     {
       ques : 'Is Rashtrotthana Hospital good for root canal and dental implants?',
-      ans : 'Yes. Rashtrotthana Hospital is considered the best dental hospital for root canal in RR Nagar Bangalore, known for precision, painless procedures, and excellent outcomes. While we do not perform surgical dental implant placements, we provide accurate pre-implant evaluations and refer patients to trusted specialists. Our team ensures you understand the dental implant cost in RR Nagar Bangalore and guides you on choosing the right treatment pathway.'
+      ans : 'Yes. Rashtrotthana Hospital is considered the best dental hospital for root canal in RR Nagar Bangalore, known for precision, painless procedures and excellent outcomes. While we do not perform surgical dental implant placements, we provide accurate pre-implant evaluations and refer patients to trusted specialists. Our team ensures you understand the dental implant cost in RR Nagar Bangalore and guides you on choosing the right treatment pathway.'
     },
   ]
 

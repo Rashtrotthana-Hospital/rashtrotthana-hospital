@@ -57,7 +57,7 @@ export class CareerComponent {
     },
     {
       title: 'Career Growth and Development:',
-      description: 'We support your professional growth through continuous learning opportunities, including workshops, certifications, and advanced training programs. Our mentorship programs help you reach your full potential.',
+      description: 'We support your professional growth through continuous learning opportunities, including workshops, certifications and advanced training programs. Our mentorship programs help you reach your full potential.',
       color: '#FAB517'
     },
     {
