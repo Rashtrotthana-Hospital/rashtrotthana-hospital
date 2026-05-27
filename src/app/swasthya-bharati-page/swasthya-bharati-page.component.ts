@@ -532,7 +532,7 @@ export class SwasthyaBharatiPageComponent
       name: 'Lasting weight loss',
       tag: 'Sustained for over a year',
       quote:
-        'The plan was personal, kind, and rooted in habits I could actually keep. The weight stayed off - and so did the fatigue.',
+        'The plan was personal, kind and rooted in habits I could actually keep. The weight stayed off - and so did the fatigue.',
     },
     {
       name: 'Calm restored',
@@ -567,7 +567,7 @@ export class SwasthyaBharatiPageComponent
     },
     {
       q: 'Is it safe for all ages?',
-      a: 'Yes, suitable for children, adults, and elderly.',
+      a: 'Yes, suitable for children, adults and elderly.',
     },
     {
       q: 'Can it reverse diabetes or PCOS?',

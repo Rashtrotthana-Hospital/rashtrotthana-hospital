@@ -33,7 +33,7 @@ export class AnnualReportComponent implements AfterViewInit {
     this.metaService.updateTag({
       name: 'description',
       content:
-        'Explore the Annual Report of Rashtrotthana Hospital, Bangalore, highlighting healthcare services, achievements, initiatives, and community impact.',
+        'Explore the Annual Report of Rashtrotthana Hospital, Bangalore, highlighting healthcare services, achievements, initiatives and community impact.',
     });
 
     // this.metaService.updateTag({

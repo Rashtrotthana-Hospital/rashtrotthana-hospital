@@ -164,7 +164,7 @@ export class HerniaComponent implements OnInit {
         {
           icon: '🍽️',
           title: 'Essential Facilities Around',
-          description: 'Pharmacies, restaurants, and transport services close by.'
+          description: 'Pharmacies, restaurants and transport services close by.'
         },
         {
           icon: '🤝',

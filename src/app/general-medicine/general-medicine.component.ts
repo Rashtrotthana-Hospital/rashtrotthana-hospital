@@ -65,7 +65,7 @@ export class GeneralMedicineComponent {
   faqs : any = [
     {
       ques : 'Who are the best physicians at Rashtrotthana Hospital?',
-      ans : 'At Rashtrotthana Hospital, we have a team of highly skilled internal medicine specialists. Our expert doctors, including Dr. H. M. Krishnamurthy, and Dr. C. Rajendran, provide comprehensive care for a wide range of health conditions.'
+      ans : 'At Rashtrotthana Hospital, we have a team of highly skilled internal medicine specialists. Our expert doctors, including Dr. H. M. Krishnamurthy and Dr. C. Rajendran, provide comprehensive care for a wide range of health conditions.'
     },
     {
       ques : 'Which is the best Internal Medicine hospital in Bangalore?',
@@ -77,15 +77,15 @@ export class GeneralMedicineComponent {
     },
     {
       ques : 'Can I consult a family health specialist at Rashtrotthana Hospital?',
-      ans : 'Yes! Our experienced general physicians in RR Nagar, Bangalore, including Dr. H. M. Krishnamurthy, and Dr. C. Rajendran, offers family health consultations, managing common illnesses, chronic diseases and preventive healthcare needs.'
+      ans : 'Yes! Our experienced general physicians in RR Nagar, Bangalore, including Dr. H. M. Krishnamurthy and Dr. C. Rajendran, offers family health consultations, managing common illnesses, chronic diseases and preventive healthcare needs.'
     },
     {
       ques : 'Who is the best doctor for diabetes treatment in RR Nagar?',
       ans : 'If you are looking for the best diabetes hospital in RR Nagar, Bangalore, Rashtrotthana Hospital provides specialized diabetes care. Our internal medicine doctors, including Dr. H. M. Krishnamurthy and Dr. Bhavya, focus on effective diabetes management and long-term wellness.'
     },
     {
-      ques : 'Which hospital is best for fever, cold, and flu treatment in RR Nagar?',
-      ans : 'Rashtrotthana Hospital is among the best hospitals in RR Nagar, Bangalore, for fever, cold, and flu treatment. Our doctors, including Dr. C. Rajendran and Dr. H. M. Krishnamurthy, provides expert care for viral infections, respiratory illnesses and seasonal flu.'
+      ques : 'Which hospital is best for fever, cold and flu treatment in RR Nagar?',
+      ans : 'Rashtrotthana Hospital is among the best hospitals in RR Nagar, Bangalore, for fever, cold and flu treatment. Our doctors, including Dr. C. Rajendran and Dr. H. M. Krishnamurthy, provides expert care for viral infections, respiratory illnesses and seasonal flu.'
     },
   ]
 

@@ -50,14 +50,14 @@ export class NephrologyComponent {
   faqs = [
     {
       ques : 'Who is the best nephrologist in RR Nagar Bangalore?',
-      ans : 'If you are looking for the best nephrologist in RR Nagar Bangalore, Dr. Santhosh S at Rashtrotthana Hospital is an experienced specialist with 14 years of expertise in treating Kidney Disease, Kidney Failure, Kidney Stones, and Kidney Transplants.'
+      ans : 'If you are looking for the best nephrologist in RR Nagar Bangalore, Dr. Santhosh S at Rashtrotthana Hospital is an experienced specialist with 14 years of expertise in treating Kidney Disease, Kidney Failure, Kidney Stones and Kidney Transplants.'
     },
     {
       ques : 'What are the common symptoms of kidney disease?',
       ans : `
         <div class = 's_para'>Common signs of Kidney Disease include:</div>
         <ul>
-          <li class = 's_para'>Persistent stomach pain, swelling in the legs, and changes in urination</li>
+          <li class = 's_para'>Persistent stomach pain, swelling in the legs and changes in urination</li>
           <li class = 's_para'>High blood pressure and fatigue</li>
           <li class = 's_para'>Recurrent kidney infections or blood in the urine</li>
         </ul>
@@ -82,7 +82,7 @@ export class NephrologyComponent {
     },
     {
       ques : 'What is the best hospital for nephrology in Bangalore?',
-      ans : 'Rashtrotthana Hospital is rated as the Best Nephrology Hospital in Bangalore, providing advanced treatment for Kidney Stones in RR Nagar Bangalore, Renal Failure, and Kidney Cancer.  '
+      ans : 'Rashtrotthana Hospital is rated as the Best Nephrology Hospital in Bangalore, providing advanced treatment for Kidney Stones in RR Nagar Bangalore, Renal Failure and Kidney Cancer.  '
     },
     {
       ques : 'How can I prevent kidney disease?',

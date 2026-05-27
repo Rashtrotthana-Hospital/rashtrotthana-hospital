@@ -60,7 +60,7 @@ export class OncologyComponent {
     },
     {
       ques : "What symptoms should prompt a cancer screening?",
-      ans : "If you're experiencing unexplained weight loss, persistent fatigue, swelling or lumps, non-healing sores, prolonged cough, changes in skin texture, or abnormal bleeding, it’s best to consult an oncologist. Early evaluation helps in timely diagnosis and better treatment outcomes."
+      ans : "If you're experiencing unexplained weight loss, persistent fatigue, swelling or lumps, non-healing sores, prolonged cough, changes in skin texture or abnormal bleeding, it’s best to consult an oncologist. Early evaluation helps in timely diagnosis and better treatment outcomes."
     },
     {
       ques : "How is cancer diagnosed at your hospital?",

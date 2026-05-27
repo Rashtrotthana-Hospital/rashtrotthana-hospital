@@ -27,7 +27,7 @@ export class DialysisComponent {
     {
       img: 'assets/facility/ayurveda.png',
       heading: 'Ayurveda',
-      para: 'Personalized herbal therapies, detoxification, and preventive wellness programs that restore balance and promote natural healing.'
+      para: 'Personalized herbal therapies, detoxification and preventive wellness programs that restore balance and promote natural healing.'
     },
     {
       img: 'assets/facility/homeopathy.png',
@@ -37,12 +37,12 @@ export class DialysisComponent {
     {
       img: 'assets/facility/yoga.png',
       heading: 'Yoga & Lifestyle Therapy',
-      para: 'Therapeutic yoga, breathwork, and lifestyle guidance to enhance flexibility, mental clarity and stress resilience.'
+      para: 'Therapeutic yoga, breathwork and lifestyle guidance to enhance flexibility, mental clarity and stress resilience.'
     },
     {
       img: 'assets/facility/naturopathy.png',
       heading: 'Naturopathy ',
-      para: 'Natural therapies combined with expert nutritional guidance to strengthen immunity, correct metabolic imbalances, and support long-term wellness.'
+      para: 'Natural therapies combined with expert nutritional guidance to strengthen immunity, correct metabolic imbalances and support long-term wellness.'
     },
   ]
   @ViewChild('track', { static: true }) track!: ElementRef;

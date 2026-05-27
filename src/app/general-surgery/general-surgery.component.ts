@@ -53,15 +53,15 @@ export class GeneralSurgeryComponent implements OnInit {
   faqs = [
     {
       ques: 'Which is the best general surgery hospital in Bangalore?',
-      ans: 'Rashtrotthana Hospital is one of the best general surgery hospitals in Bangalore, known for advanced surgical care, including laparoscopic surgery, endoscopic surgery, and minimally invasive procedures. Our experienced surgeons, like Dr. Atmaram D. C, Dr. Nishanth Lakshmikanth, and Dr. Vivekanand, ensure safe and successful outcomes.'
+      ans: 'Rashtrotthana Hospital is one of the best general surgery hospitals in Bangalore, known for advanced surgical care, including laparoscopic surgery, endoscopic surgery and minimally invasive procedures. Our experienced surgeons, like Dr. Atmaram D. C, Dr. Nishanth Lakshmikanth and Dr. Vivekanand, ensure safe and successful outcomes.'
     },
     {
       ques: 'Who is the best general surgeon in RR Nagar, Bangalore?',
-      ans: 'At Rashtrotthana Hospital, you will find some of the best general surgeons in RR Nagar, Bangalore, including Dr. Atmaram D. C, Dr. Nishanth Lakshmikanth, and Dr. Vivekanand, who specialize in laparoscopic and open surgeries for various conditions like hernia, gallbladder diseases, and appendicitis'
+      ans: 'At Rashtrotthana Hospital, you will find some of the best general surgeons in RR Nagar, Bangalore, including Dr. Atmaram D. C, Dr. Nishanth Lakshmikanth and Dr. Vivekanand, who specialize in laparoscopic and open surgeries for various conditions like hernia, gallbladder diseases and appendicitis'
     },
     {
       ques: 'Where can I get the best hospital for laparoscopic surgery in RR Nagar, Bangalore?',
-      ans: 'If you are looking for the best hospital for laparoscopic surgery in RR Nagar, Bangalore, Rashtrotthana Hospital offers state-of-the-art minimally invasive procedures, ensuring quicker recovery and minimal discomfort. Our laparoscopic surgeons in Rajarajeshwari Nagar, Bangalore, use cutting-edge techniques to treat conditions like gallstones, hernia, and appendix removal.'
+      ans: 'If you are looking for the best hospital for laparoscopic surgery in RR Nagar, Bangalore, Rashtrotthana Hospital offers state-of-the-art minimally invasive procedures, ensuring quicker recovery and minimal discomfort. Our laparoscopic surgeons in Rajarajeshwari Nagar, Bangalore, use cutting-edge techniques to treat conditions like gallstones, hernia and appendix removal.'
     },
     {
       ques: 'Does Rashtrotthana Hospital offer endoscopic surgery in RR Nagar, Bangalore?',
@@ -81,7 +81,7 @@ export class GeneralSurgeryComponent implements OnInit {
     },
     {
       ques: 'Are emergency general surgery services available at Rashtrotthana Hospital?',
-      ans: 'Yes, our general surgery hospital in Bangalore provides 24/7 emergency surgical services for conditions such as appendicitis, hernia complications, and trauma cases. Our experienced team, led by Dr. Atmaram D. C, Dr. Nishanth Lakshmikanth, and Dr. Vivekanand, ensures immediate and expert care.'
+      ans: 'Yes, our general surgery hospital in Bangalore provides 24/7 emergency surgical services for conditions such as appendicitis, hernia complications and trauma cases. Our experienced team, led by Dr. Atmaram D. C, Dr. Nishanth Lakshmikanth and Dr. Vivekanand, ensures immediate and expert care.'
     },
     {
       ques: 'What types of surgeries does Rashtrotthana Hospital specialize in?',
@@ -101,7 +101,7 @@ export class GeneralSurgeryComponent implements OnInit {
       ans: `
         <div class = 's_para'>Rashtrotthana Hospital is among the top general surgery hospitals in Bangalore, offering</div>
         <ul>
-          <li class = 's_para'>Experienced surgeons like Dr. Atmaram D. C, Dr. Nishanth Lakshmikanth, and Dr. Vivekanand</li>
+          <li class = 's_para'>Experienced surgeons like Dr. Atmaram D. C, Dr. Nishanth Lakshmikanth and Dr. Vivekanand</li>
           <li class = 's_para'>Advanced surgical facilities with modern OT and ICU</li>
           <li class = 's_para'>Minimally invasive and laparoscopic techniques</li>
           <li class = 's_para'>24/7 emergency surgical care</li>
@@ -132,7 +132,7 @@ export class GeneralSurgeryComponent implements OnInit {
         title: 'Hernia Surgery ',
         subtitle: 'Hernia Repair',
         description:
-          `A hernia occurs when an internal organ or tissue pushes through a weak spot in the muscle wall, causing a visible bulge, discomfort, or pain—especially while lifting, coughing, or standing for long periods. Our Hernia Surgery helps repair the weakened area, relieving pain and preventing complications.`,
+          `A hernia occurs when an internal organ or tissue pushes through a weak spot in the muscle wall, causing a visible bulge, discomfort or pain—especially while lifting, coughing or standing for long periods. Our Hernia Surgery helps repair the weakened area, relieving pain and preventing complications.`,
         procedure:
           'The procedure is performed using advanced surgical techniques, either minimally invasive (laparoscopic) or open surgery, based on the patient’s condition. The weakened muscle is strengthened, often using a surgical mesh, to ensure long-lasting results. Most patients experience minimal discomfort and return to daily activities within a short recovery period.',
         benefits: [
@@ -142,7 +142,7 @@ export class GeneralSurgeryComponent implements OnInit {
           'Safe and commonly performed surgery',
         ],
         highlight:
-          'Patients often experience significant relief-reduced pain, improved mobility, and a better quality of life-allowing them to return to normal routines with confidence.',
+          'Patients often experience significant relief-reduced pain, improved mobility and a better quality of life-allowing them to return to normal routines with confidence.',
         icon: '🪡',
         slug: '/hernia-hospital-bangalore'
       },
@@ -152,9 +152,9 @@ export class GeneralSurgeryComponent implements OnInit {
         title: 'Gallstone Removal Surgery',
         subtitle: 'Laparoscopic Cholecystectomy',
         description:
-          'Gallstones can cause severe abdominal pain, nausea, bloating, and digestive discomfort—especially after meals. Our Gallstone Removal Surgery safely removes the gallbladder to provide lasting relief and prevent repeated gallstone attacks.',
+          'Gallstones can cause severe abdominal pain, nausea, bloating and digestive discomfort—especially after meals. Our Gallstone Removal Surgery safely removes the gallbladder to provide lasting relief and prevent repeated gallstone attacks.',
         procedure:
-          'The procedure is performed using minimally invasive laparoscopic techniques through small keyhole incisions. This allows for less pain, minimal scarring, and faster recovery. Most patients can resume normal activities within a few days after surgery.',
+          'The procedure is performed using minimally invasive laparoscopic techniques through small keyhole incisions. This allows for less pain, minimal scarring and faster recovery. Most patients can resume normal activities within a few days after surgery.',
         benefits: [
           'Minimally invasive, keyhole surgery',
           'Quick relief from gallstone pain',
@@ -172,17 +172,17 @@ export class GeneralSurgeryComponent implements OnInit {
         title: 'Piles Surgery',
         subtitle: 'Piles Surgery (Hemorrhoids)',
         description:
-          'Piles are swollen veins in the rectal area that can cause pain, itching, bleeding during bowel movements, and discomfort while sitting. Our Piles Surgery provides effective relief by treating the affected veins and restoring comfort in daily life.',
+          'Piles are swollen veins in the rectal area that can cause pain, itching, bleeding during bowel movements and discomfort while sitting. Our Piles Surgery provides effective relief by treating the affected veins and restoring comfort in daily life.',
         procedure:
-          'The procedure is performed using advanced, minimally invasive techniques based on the severity of the condition. These methods reduce pain, minimize bleeding, and support faster recovery. Most patients can return to normal activities in a short time with proper care.',
+          'The procedure is performed using advanced, minimally invasive techniques based on the severity of the condition. These methods reduce pain, minimize bleeding and support faster recovery. Most patients can return to normal activities in a short time with proper care.',
         benefits: [
           'Minimally invasive treatment options',
-          'Relief from pain, bleeding, and discomfort',
+          'Relief from pain, bleeding and discomfort',
           'Faster recovery with minimal downtime',
           'Safe and commonly performed procedure',
         ],
         highlight:
-          'Patients often experience quick relief from symptoms, improved comfort, and better quality of life after treatment.',
+          'Patients often experience quick relief from symptoms, improved comfort and better quality of life after treatment.',
         icon: '⚕️',
         slug: '/piles-hospital-bangalore'
       }

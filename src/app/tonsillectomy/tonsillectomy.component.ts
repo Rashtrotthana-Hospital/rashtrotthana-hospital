@@ -115,7 +115,7 @@ formdoctors = ['Dr. Sunil Kumar C', 'Dr. Sandhya S. Patil'];
           description: 'Advanced techniques help reduce pain and promote quicker healing.'
         }
       ],
-      highlightText: 'Your tonsil treatment journey - from consultation to recovery — is guided with skill, care, and attention to comfort.'
+      highlightText: 'Your tonsil treatment journey - from consultation to recovery — is guided with skill, care and attention to comfort.'
     },
     {
       number: '02',
@@ -157,7 +157,7 @@ formdoctors = ['Dr. Sunil Kumar C', 'Dr. Sandhya S. Patil'];
         {
           icon: '📍',
           title: 'Easily Accessible',
-          description: 'Close to metro stations, railway stations, and major bus routes.'
+          description: 'Close to metro stations, railway stations and major bus routes.'
         },
         {
           icon: '🏨',
@@ -167,12 +167,12 @@ formdoctors = ['Dr. Sunil Kumar C', 'Dr. Sandhya S. Patil'];
         {
           icon: '🍽️',
           title: 'Essential Facilities Around',
-          description: 'Pharmacies, restaurants, and transport services nearby.'
+          description: 'Pharmacies, restaurants and transport services nearby.'
         },
         {
           icon: '🤝',
           title: 'Supportive Environment',
-          description: 'Our staff ensures every visit is smooth, comfortable, and worry-free.'
+          description: 'Our staff ensures every visit is smooth, comfortable and worry-free.'
         }
       ],
       highlightText: 'From travel to treatment to recovery — we take care of every detail.'

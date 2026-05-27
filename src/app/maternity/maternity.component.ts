@@ -117,7 +117,7 @@ export class MaternityComponent {
       subtitle: '',
       description: `A moment this special deserves care that feels personal`,
       procedure:
-        'Every mother’s journey is unique. That’s why the Janani Samridhi Maternity Package at Rashtrotthana Hospital is designed to give you a safe, calm and joy-filled delivery experience — guided by warmth, expertise, and trust.',
+        'Every mother’s journey is unique. That’s why the Janani Samridhi Maternity Package at Rashtrotthana Hospital is designed to give you a safe, calm and joy-filled delivery experience — guided by warmth, expertise and trust.',
       benefits: [
         'Simple & Safe Yoga Sessions – gentle pre-delivery wellness',
         'Physiotherapy Counseling – regain strength after childbirth',
@@ -157,7 +157,7 @@ export class MaternityComponent {
       description: `
         <ul>
           <li>Partial Knee Replacement replaces only the damaged compartment of the knee, leaving the healthy part intact.</li>
-          <li>This is suitable for patients whose damage is limited to one area of the knee, and it can offer a quicker recovery with a smaller incision.</li>
+          <li>This is suitable for patients whose damage is limited to one area of the knee and it can offer a quicker recovery with a smaller incision.</li>
         </ul>
       `,
       color: '#00a0a0',
@@ -200,7 +200,7 @@ sections: any = [
       {
         icon: '🤰',
         title: 'Comprehensive Antenatal Care',
-        description: 'Regular check-ups, scans, and counselling for a healthy pregnancy journey.',
+        description: 'Regular check-ups, scans and counselling for a healthy pregnancy journey.',
       },
       {
         icon: '👩‍⚕️',
@@ -219,7 +219,7 @@ sections: any = [
       },
     ],
     highlightText:
-      'The Janani Samriddhi package covers antenatal care, delivery, and postnatal support within a structured maternity program.',
+      'The Janani Samriddhi package covers antenatal care, delivery and postnatal support within a structured maternity program.',
   },
   {
     id: 'insurance-facility',
@@ -238,7 +238,7 @@ sections: any = [
       {
         icon: '💰',
         title: 'Affordable Maternity Package',
-        description: 'Inclusive pricing for consultations, delivery, and postnatal care.',
+        description: 'Inclusive pricing for consultations, delivery and postnatal care.',
       },
       {
         icon: '🤝',
@@ -261,7 +261,7 @@ sections: any = [
       {
         icon: '🛏️',
         title: 'Comfortable Maternity Rooms',
-        description: 'Spacious, hygienic, and designed for mother’s comfort and rest.',
+        description: 'Spacious, hygienic and designed for mother’s comfort and rest.',
       },
       {
         icon: '👨‍👩‍👧',

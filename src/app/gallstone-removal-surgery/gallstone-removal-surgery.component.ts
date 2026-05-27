@@ -77,7 +77,7 @@ export class GallstoneRemovalSurgeryComponent {
       title: 'Laparoscopic Cholecystectomy',
       description: `
           <ul>
-            <li>The most commonly recommended procedure for gallstones. Performed through small incisions, it causes less pain, minimal scarring, and allows faster recovery.</li>
+            <li>The most commonly recommended procedure for gallstones. Performed through small incisions, it causes less pain, minimal scarring and allows faster recovery.</li>
           </ul>
         `,
       color: '#008080',
@@ -131,7 +131,7 @@ export class GallstoneRemovalSurgeryComponent {
           icon: '🔬',
           title: 'Modern Operation Theatres',
           description:
-            'Equipped with advanced laparoscopic systems, high safety standards, and infection-controlled environments.',
+            'Equipped with advanced laparoscopic systems, high safety standards and infection-controlled environments.',
         },
         {
           icon: '👨‍⚕️',
@@ -149,11 +149,11 @@ export class GallstoneRemovalSurgeryComponent {
           icon: '⚡',
           title: 'Faster Recovery, Less Discomfort',
           description:
-            'Minimally invasive techniques help reduce pain, scarring, and hospital stay.',
+            'Minimally invasive techniques help reduce pain, scarring and hospital stay.',
         },
       ],
       highlightText:
-        'Every gall stone surgery is planned carefully, performed safely, and supported by experienced hands and modern infrastructure.',
+        'Every gall stone surgery is planned carefully, performed safely and supported by experienced hands and modern infrastructure.',
     },
     {
       id: 'insurance-facility',
@@ -173,7 +173,7 @@ export class GallstoneRemovalSurgeryComponent {
           icon: '🤝',
           title: 'Claim Assistance',
           description:
-            'Our team supports patients with approvals, documentation, and coordination.',
+            'Our team supports patients with approvals, documentation and coordination.',
         },
         {
           icon: '📜',
@@ -203,7 +203,7 @@ export class GallstoneRemovalSurgeryComponent {
         {
           icon: '🚇',
           title: 'Easily Accessible',
-          description: 'Close to major roads, metro connectivity, railway stations, and bus routes.',
+          description: 'Close to major roads, metro connectivity, railway stations and bus routes.',
         },
         {
           icon: '🏨',
@@ -215,13 +215,13 @@ export class GallstoneRemovalSurgeryComponent {
           icon: '🏪',
           title: 'Essential Facilities Around',
           description:
-            'Pharmacies, food options, and transport services located nearby.',
+            'Pharmacies, food options and transport services located nearby.',
         },
         {
           icon: '👥',
           title: 'Supportive Environment',
           description:
-            'Our staff ensures hospital visits, admissions, and follow-ups are smooth and well-coordinated.',
+            'Our staff ensures hospital visits, admissions and follow-ups are smooth and well-coordinated.',
         },
       ],
       highlightText:
@@ -232,7 +232,7 @@ export class GallstoneRemovalSurgeryComponent {
   faqs = [
     {
       ques: "When is gall stone removal surgery needed?",
-      ans: " Gall stone surgery is advised when stones cause pain, infection, inflammation, or repeated digestive problems that do not improve with medication."
+      ans: " Gall stone surgery is advised when stones cause pain, infection, inflammation or repeated digestive problems that do not improve with medication."
     },
     {
       ques: "Is gall stone surgery safe?",

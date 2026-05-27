@@ -151,19 +151,19 @@ export class KidneyStoneComponent {
           icon: '👨‍⚕️',
           title: 'Highly Skilled Urologists',
           description:
-            'Specialists trained in RIRS, laser stone removal, and complex kidney stone management.',
+            'Specialists trained in RIRS, laser stone removal and complex kidney stone management.',
         },
         {
           icon: '🦵',
           title: 'Complete Urology Care',
           description:
-            'From diagnosis and imaging to surgery, stent care, and follow-up support.',
+            'From diagnosis and imaging to surgery, stent care and follow-up support.',
         },
         {
           icon: '⚡',
           title: 'Faster Recovery, Less Discomfort',
           description:
-            'Minimally invasive techniques reduce pain, scarring, and downtime.',
+            'Minimally invasive techniques reduce pain, scarring and downtime.',
         },
       ],
       highlightText:
@@ -217,7 +217,7 @@ export class KidneyStoneComponent {
         {
           icon: '🚇',
           title: 'Easily Accessible',
-          description: 'Close to major roads, metro routes, railway stations, and bus connectivity.',
+          description: 'Close to major roads, metro routes, railway stations and bus connectivity.',
         },
         {
           icon: '🏨',
@@ -229,13 +229,13 @@ export class KidneyStoneComponent {
           icon: '🏪',
           title: 'Essential Facilities Around',
           description:
-            'Pharmacies, food outlets, and transport services nearby.',
+            'Pharmacies, food outlets and transport services nearby.',
         },
         {
           icon: '👥',
           title: 'Supportive Environment',
           description:
-            'Staff assistance ensures smooth admissions, procedures, and follow-ups.',
+            'Staff assistance ensures smooth admissions, procedures and follow-ups.',
         },
       ],
       highlightText:
@@ -246,7 +246,7 @@ export class KidneyStoneComponent {
   faqs = [
     {
       ques: "When is kidney stone surgery needed?",
-      ans: "Kidney stone surgery is recommended when stones cause severe pain, infection, blockage, or do not pass naturally with medication."
+      ans: "Kidney stone surgery is recommended when stones cause severe pain, infection, blockage or do not pass naturally with medication."
     },
     {
       ques: "Is laser kidney stone surgery safe?",

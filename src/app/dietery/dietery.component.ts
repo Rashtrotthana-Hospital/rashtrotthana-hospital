@@ -18,7 +18,7 @@ export class DieteryComponent {
   ngOnInit(): void {
     this.titleService.setTitle("Best Nutrition & Dietetics Hospital in Bangalore | Rashtrotthana");
 
-    this.metaService.updateTag({ name: 'description', content: 'Rashtrotthana Hospital offers expert clinical nutrition and dietetics in Bangalore with personalized diet plans for recovery, wellness, and long-term health.' });
+    this.metaService.updateTag({ name: 'description', content: 'Rashtrotthana Hospital offers expert clinical nutrition and dietetics in Bangalore with personalized diet plans for recovery, wellness and long-term health.' });
 
     this.metaService.updateTag({ name: 'keywords', content: 'dietary services, clinical nutrition, healthy diet, hospital nutrition Bangalore' });
 
@@ -50,7 +50,7 @@ export class DieteryComponent {
     {
       img: 'assets/facility/ayurveda.png',
       heading: 'Ayurveda',
-      para: 'Personalized herbal therapies, detoxification, and preventive wellness programs that restore balance and promote natural healing.'
+      para: 'Personalized herbal therapies, detoxification and preventive wellness programs that restore balance and promote natural healing.'
     },
     {
       img: 'assets/facility/homeopathy.png',
@@ -60,12 +60,12 @@ export class DieteryComponent {
     {
       img: 'assets/facility/yoga.png',
       heading: 'Yoga & Lifestyle Therapy',
-      para: 'Therapeutic yoga, breathwork, and lifestyle guidance to enhance flexibility, mental clarity and stress resilience.'
+      para: 'Therapeutic yoga, breathwork and lifestyle guidance to enhance flexibility, mental clarity and stress resilience.'
     },
     {
       img: 'assets/facility/naturopathy.png',
       heading: 'Naturopathy ',
-      para: 'Natural therapies combined with expert nutritional guidance to strengthen immunity, correct metabolic imbalances, and support long-term wellness.'
+      para: 'Natural therapies combined with expert nutritional guidance to strengthen immunity, correct metabolic imbalances and support long-term wellness.'
     },
   ]
 

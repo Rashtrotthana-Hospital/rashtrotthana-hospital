@@ -23,7 +23,7 @@ export class EmergencyMedicineComponent {
     this.metaService.updateTag({
       name: 'description',
       content:
-        'Rashtrotthana Hospital is the best emergency medicine hospital in Bangalore, providing 24/7 expert care, rapid diagnosis, and life-saving treatment.',
+        'Rashtrotthana Hospital is the best emergency medicine hospital in Bangalore, providing 24/7 expert care, rapid diagnosis and life-saving treatment.',
     });
     this.metaService.updateTag({
       name: 'keywords',

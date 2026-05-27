@@ -157,7 +157,7 @@ export class HealthCheckComponent {
       heading: "Annual Master Diabetes Care",
       heroText: "Track your blood sugar, heart, kidney, liver and overall health through a single, annual diabetes package - designed to prevent complications and support long-term wellbeing.",
       aboutheading: "Diabetes affects more than just your sugar.",
-      lead: "It can silently damage your kidneys, eyes, nerves, heart, joints, and immunity without showing symptoms.",
+      lead: "It can silently damage your kidneys, eyes, nerves, heart, joints and immunity without showing symptoms.",
       subtext: "That’s why your check-up must be full-body, not just a sugar test.Our Annual Master Diabetes Care Package covers everything diabetes touches - helping you catch problems early and stay in control.",
       aboutImg: "assets/health-package/top-view-diabetic-woman-checking-her-glucose-level.jpg",
       aboutAlt: "Diabetes multi-organ impact illustration",
@@ -293,7 +293,7 @@ export class HealthCheckComponent {
       faqs: [
         {
           q: 'Who should opt for the Annual Master Diabetes Care Package?',
-          a: 'Anyone with diabetes, prediabetes, family history of diabetes, obesity, or lifestyle risk factors will benefit from this annual package.',
+          a: 'Anyone with diabetes, prediabetes, family history of diabetes, obesity or lifestyle risk factors will benefit from this annual package.',
         },
         {
           q: 'How many visits are covered in a year?',

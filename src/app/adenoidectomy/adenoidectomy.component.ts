@@ -114,7 +114,7 @@ export class AdenoidectomyComponent {
           description: 'Advanced techniques ensure quick healing and less pain.'
         }
       ],
-      highlightText: 'Your child\'s journey - from consultation to recovery - is guided with patience, care, and reassurance.'
+      highlightText: 'Your child\'s journey - from consultation to recovery - is guided with patience, care and reassurance.'
     },
     {
       number: '02',
@@ -156,7 +156,7 @@ export class AdenoidectomyComponent {
         {
           icon: '📍',
           title: 'Easily Accessible',
-          description: 'Close to metro stations, railway stations, and major bus routes.'
+          description: 'Close to metro stations, railway stations and major bus routes.'
         },
         {
           icon: '🏨',
@@ -166,7 +166,7 @@ export class AdenoidectomyComponent {
         {
           icon: '🍽️',
           title: 'Essential Facilities Around',
-          description: 'Pharmacies, food options, and transport services nearby.'
+          description: 'Pharmacies, food options and transport services nearby.'
         },
         {
           icon: '🤝',

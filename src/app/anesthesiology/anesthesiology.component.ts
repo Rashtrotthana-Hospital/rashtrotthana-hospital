@@ -32,11 +32,11 @@ export class AnesthesiologyComponent {
   faqs : any = [
     {
       ques : "What are the different types of anesthesia used in surgeries?",
-      ans : "Anesthesia types include general anesthesia (inducing unconsciousness), regional anesthesia (numbing a specific body region), and local anesthesia (numbing a small area). The choice depends on the procedure and patient health.​"
+      ans : "Anesthesia types include general anesthesia (inducing unconsciousness), regional anesthesia (numbing a specific body region) and local anesthesia (numbing a small area). The choice depends on the procedure and patient health.​"
     },
     {
       ques : "How is anesthesia administered?",
-      ans : "Anesthesia can be administered through inhalation, intravenous (IV) injection, or regional blocks. The method is selected based on the type of surgery and patient needs.​"
+      ans : "Anesthesia can be administered through inhalation, intravenous (IV) injection or regional blocks. The method is selected based on the type of surgery and patient needs.​"
     },
     {
       ques : "What should I expect during a pre-anesthesia consultation?",
@@ -44,11 +44,11 @@ export class AnesthesiologyComponent {
     },
     {
       ques : "Are there risks associated with anesthesia?",
-      ans : "While modern anesthesia is generally safe, risks can include allergic reactions, breathing difficulties, or postoperative nausea. Our team takes all necessary precautions to minimize these risks.​"
+      ans : "While modern anesthesia is generally safe, risks can include allergic reactions, breathing difficulties or postoperative nausea. Our team takes all necessary precautions to minimize these risks.​"
     },
     {
       ques : "How can I prepare for anesthesia?",
-      ans : "Preparation may involve fasting, adjusting medications, and following specific instructions provided by your healthcare team to ensure safety during the procedure.​"
+      ans : "Preparation may involve fasting, adjusting medications and following specific instructions provided by your healthcare team to ensure safety during the procedure.​"
     },
     {
       ques : "Will I feel pain during or after the surgery?",

@@ -88,17 +88,17 @@ export class KneeReplacementComponent implements OnInit {
     {
       questions: 'Do You Offer Free Knee Pain Consultations in Bangalore?',
       answer:
-        'Yes, <b>Rashtrotthana Hospital</b> offers a <b>free knee pain consultation clinic</b> every <b>Monday and Thursday from 10 AM to 1 PM</b>. This service is available for individuals experiencing knee pain, stiffness, or mobility issues and provides an opportunity to consult with expert orthopedic specialists, including <b>Dr. Nikhil Hegde</b> and <b>Dr. Sujayendra.</b>',
+        'Yes, <b>Rashtrotthana Hospital</b> offers a <b>free knee pain consultation clinic</b> every <b>Monday and Thursday from 10 AM to 1 PM</b>. This service is available for individuals experiencing knee pain, stiffness or mobility issues and provides an opportunity to consult with expert orthopedic specialists, including <b>Dr. Nikhil Hegde</b> and <b>Dr. Sujayendra.</b>',
     },
     {
       questions:
         'Are There Advanced Knee Replacement Options Available in Bangalore?',
       answer:
-        'Yes, <b>advanced knee replacement in Bangalore</b>, including robotic-assisted surgery and minimally invasive techniques, are available at <b>Rashtrotthana Hospital</b>, ensuring quicker recovery and better outcomes.',
+        'Yes, <b>advanced knee replacement in Bangalore</b>, including robotic-assisted surgery and minimally invasive techniques are available at <b>Rashtrotthana Hospital</b>, ensuring quicker recovery and better outcomes.',
     },
     {
       questions:
-        'What is Joint Replacement Surgery, and Is it Offered in Bangalore?',
+        'What is Joint Replacement Surgery and Is it Offered in Bangalore?',
       answer:
         '<b>Joint replacement surgery in Bangalore</b> includes procedures like <b>knee replacement</b> and <b>hip replacement</b>, where damaged joints are replaced with artificial implants. <b>Rashtrotthana Hospital</b> specializes in these surgeries with expert care.',
     },
@@ -134,19 +134,19 @@ export class KneeReplacementComponent implements OnInit {
       questions:
         'What Makes Rashtrotthana Hospital the Best Choice for Knee Replacement in Bangalore?',
       answer:
-        'With a team of top orthopedic surgeons like <b>Dr. Nikhil Hegde</b>, advanced surgical facilities, and a patient-centered approach, <b>Rashtrotthana Hospital</b> is recognized as one of the <b>best hospitals for knee replacement in Bangalore</b>.',
+        'With a team of top orthopedic surgeons like <b>Dr. Nikhil Hegde</b>, advanced surgical facilities and a patient-centered approach, <b>Rashtrotthana Hospital</b> is recognized as one of the <b>best hospitals for knee replacement in Bangalore</b>.',
     },
     {
       questions:
         'What Post-Surgery Care is Required After a Total Knee Replacement?',
       answer:
-        'Post-operative care at <b>Rashtrotthana Hospital in RR Nagar</b> includes physical therapy, regular follow-ups, and pain management to ensure long-term success after the procedure.',
+        'Post-operative care at <b>Rashtrotthana Hospital in RR Nagar</b> includes physical therapy, regular follow-ups and pain management to ensure long-term success after the procedure.',
     },
     {
       questions:
         'Are There Side Effects After Knee Replacement Surgery in Bangalore?',
       answer:
-        'Side effects such as swelling, pain, or a <b>rash after knee replacement</b> are rare but manageable. The experienced team at <b>Rashtrotthana Hospital</b> ensures proper care and guidance.',
+        'Side effects such as swelling, pain or a <b>rash after knee replacement</b> are rare but manageable. The experienced team at <b>Rashtrotthana Hospital</b> ensures proper care and guidance.',
     },
     {
       questions: 'Who Can Attend the Free Knee Pain Consultation Clinic?',
@@ -160,7 +160,7 @@ export class KneeReplacementComponent implements OnInit {
   //     id: '1',
   //     title: 'Experience world-class knee replacement at an affordable price.',
   //     subtitle: '',
-  //     description: ` Your comfort, safety, and recovery come first - always. At Rashtrotthana Hospital, our Total Knee Replacement Package is designed to make advanced orthopedic care accessible, transparent, and completely reliable.
+  //     description: ` Your comfort, safety and recovery come first - always. At Rashtrotthana Hospital, our Total Knee Replacement Package is designed to make advanced orthopedic care accessible, transparent and completely reliable.
   //       `,
   //     procedure:
   //       'Starting at just ₹1,00,000* (T&C applied), this all-inclusive package ensures that every stage of your surgery - from consultation to recovery - is handled by an experienced team with proven success in helping patients walk pain-free again.',
@@ -195,7 +195,7 @@ export class KneeReplacementComponent implements OnInit {
       description: `
         <ul>
           <li>Partial Knee Replacement replaces only the damaged compartment of the knee, leaving the healthy part intact.</li>
-          <li>This is suitable for patients whose damage is limited to one area of the knee, and it can offer a quicker recovery with a smaller incision.</li>
+          <li>This is suitable for patients whose damage is limited to one area of the knee and it can offer a quicker recovery with a smaller incision.</li>
         </ul>
       `,
       color: '#00a0a0',
@@ -261,7 +261,7 @@ export class KneeReplacementComponent implements OnInit {
         },
       ],
       highlightText:
-        'Care is provided across consultation, surgery, and post-operative recovery using established orthopedic practices.'
+        'Care is provided across consultation, surgery and post-operative recovery using established orthopedic practices.'
     },
     {
       id: 'insurance-facility',
@@ -305,7 +305,7 @@ export class KneeReplacementComponent implements OnInit {
         {
           icon: '🚇',
           title: 'Easily Accessible',
-          description: 'Close to Metro, Railway Station, and major bus routes.',
+          description: 'Close to Metro, Railway Station and major bus routes.',
         },
         {
           icon: '🏨',
@@ -317,7 +317,7 @@ export class KneeReplacementComponent implements OnInit {
           icon: '🏪',
           title: 'Essential Facilities Around',
           description:
-            'Access to pharmacies, restaurants, and transport services.',
+            'Access to pharmacies, restaurants and transport services.',
         },
         {
           icon: '👥',
@@ -327,7 +327,7 @@ export class KneeReplacementComponent implements OnInit {
         },
       ],
       highlightText:
-        'We ensure that every aspect of your visit — from travel to stay — is convenient, safe, and stress-free.',
+        'We ensure that every aspect of your visit — from travel to stay — is convenient, safe and stress-free.',
     },
   ];
 }

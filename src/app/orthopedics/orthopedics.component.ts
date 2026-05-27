@@ -107,7 +107,7 @@ export class OrthopedicsComponent {
     },
     {
       ques: "What does a bone doctor do?",
-      ans: "A bones doctor, or orthopedic specialist, diagnoses and treats conditions related to the skeletal system, including fractures, bone diseases and joint disorders."
+      ans: "A bones doctor or orthopedic specialist, diagnoses and treats conditions related to the skeletal system, including fractures, bone diseases and joint disorders."
     },
     {
       ques: "Who is the Best Knee Replacement Surgeon in RR Nagar?",
@@ -145,7 +145,7 @@ export class OrthopedicsComponent {
         title: 'ACL Reconstruction Surgery',
         subtitle: 'Anterior Cruciate Ligament (ACL) Repair',
         description:
-          `An ACL injury can cause knee instability, pain, and difficulty with walking, running, or sports activities. Our ACL Reconstruction Surgery restores knee stability by reconstructing the damaged ligament, helping patients regain strength and confident movement.`,
+          `An ACL injury can cause knee instability, pain and difficulty with walking, running or sports activities. Our ACL Reconstruction Surgery restores knee stability by reconstructing the damaged ligament, helping patients regain strength and confident movement.`,
         procedure:
           'The procedure is performed using advanced arthroscopic techniques with small incisions. A healthy graft is used to replace the torn ligament, ensuring strong and long-lasting support. With proper rehabilitation, patients can return to normal activities and sports over time.',
         benefits: [
@@ -155,7 +155,7 @@ export class OrthopedicsComponent {
           'Safe and commonly performed orthopedic surgery',
         ],
         highlight:
-          'Patients often notice steady improvement in mobility, confidence, and knee function—supporting a safe return to an active lifestyle.',
+          'Patients often notice steady improvement in mobility, confidence and knee function—supporting a safe return to an active lifestyle.',
         icon: '🏃‍♂️',
         slug: '/acl-reconstruction-surgery-bangalore'
       },
@@ -165,7 +165,7 @@ export class OrthopedicsComponent {
         title: 'Total Knee Replacement',
         subtitle: 'Total Knee Replacement (TKR Surgery)',
         description:
-          'Total Knee Replacement is a surgical procedure performed to relieve chronic knee pain and stiffness caused by arthritis, joint damage, or severe wear and tear of the knee joint. TKR helps restore knee function, reduce pain, and improve mobility, allowing patients to return to daily activities with confidence.',
+          'Total Knee Replacement is a surgical procedure performed to relieve chronic knee pain and stiffness caused by arthritis, joint damage or severe wear and tear of the knee joint. TKR helps restore knee function, reduce pain and improve mobility, allowing patients to return to daily activities with confidence.',
         procedure:
           'The procedure is performed using advanced surgical techniques to replace the damaged knee joint with an artificial implant. This restores smooth joint movement and stability. With proper physiotherapy and post-operative care, most patients experience steady recovery and long-term pain relief.',
         benefits: [
@@ -175,7 +175,7 @@ export class OrthopedicsComponent {
           'Safe and commonly performed orthopaedic procedure',
         ],
         highlight:
-          'Patients often experience improved movement, reduced pain, and a better quality of life, enabling them to resume normal routines comfortably.',
+          'Patients often experience improved movement, reduced pain and a better quality of life, enabling them to resume normal routines comfortably.',
         icon: '🦵',
         slug: '/total-knee-replacement-bangalore'
       },

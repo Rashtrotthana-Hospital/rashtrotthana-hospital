@@ -135,9 +135,9 @@ export class ObstetricsGynaecologyComponent {
         title: 'Hysterectomy Surgery',
         subtitle: 'Uterus Removal Surgery',
         description:
-          `Hysterectomy is a surgical procedure to remove the uterus, commonly recommended for conditions such as fibroids, heavy menstrual bleeding, chronic pelvic pain, or uterine disorders. Our Hysterectomy Surgery helps relieve symptoms and improve overall quality of life.`,
+          `Hysterectomy is a surgical procedure to remove the uterus, commonly recommended for conditions such as fibroids, heavy menstrual bleeding, chronic pelvic pain or uterine disorders. Our Hysterectomy Surgery helps relieve symptoms and improve overall quality of life.`,
         procedure:
-          'The procedure is performed using advanced techniques such as laparoscopic or minimally invasive surgery, depending on the patient’s condition. These methods ensure less pain, minimal scarring, and faster recovery, allowing patients to resume daily activities comfortably.',
+          'The procedure is performed using advanced techniques such as laparoscopic or minimally invasive surgery, depending on the patient’s condition. These methods ensure less pain, minimal scarring and faster recovery, allowing patients to resume daily activities comfortably.',
         benefits: [
           'Minimally invasive surgical options',
           'Effective relief from pain and excessive bleeding',
@@ -145,7 +145,7 @@ export class ObstetricsGynaecologyComponent {
           'Safe and commonly performed gynecological surgery',
         ],
         highlight:
-          'Patients often experience lasting relief from symptoms, improved comfort, and a better quality of life after surgery.',
+          'Patients often experience lasting relief from symptoms, improved comfort and a better quality of life after surgery.',
         icon: '⚕️',
         slug: '/hysterectomy-surgery-bangalore'
       },

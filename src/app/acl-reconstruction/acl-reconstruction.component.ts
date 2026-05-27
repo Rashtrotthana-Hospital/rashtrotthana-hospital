@@ -88,7 +88,7 @@ export class AclReconstructionComponent {
       title: 'Arthroscopic ACL Reconstruction',
       description: `
                 <ul>
-                  <li>A minimally invasive procedure where a damaged ACL is reconstructed using a graft through small keyhole incisions. This technique offers less pain, minimal scarring, and faster recovery.</li>
+                  <li>A minimally invasive procedure where a damaged ACL is reconstructed using a graft through small keyhole incisions. This technique offers less pain, minimal scarring and faster recovery.</li>
                 </ul>
               `,
       color: '#008080',
@@ -98,7 +98,7 @@ export class AclReconstructionComponent {
       title: 'ACL Reconstruction with Hamstring / Patellar Graft',
       description: `
                 <ul>
-                  <li>The choice of graft depends on patient activity level, age, and knee condition. Our surgeons recommend the most suitable option after careful evaluation.</li>
+                  <li>The choice of graft depends on patient activity level, age and knee condition. Our surgeons recommend the most suitable option after careful evaluation.</li>
                 </ul>
               `,
       color: '#00a0a0',
@@ -148,13 +148,13 @@ export class AclReconstructionComponent {
           icon: '👨‍⚕️',
           title: 'Highly Skilled Orthopedic Surgeons',
           description:
-            'Specialists trained in sports injuries, ligament reconstruction, and knee preservation.',
+            'Specialists trained in sports injuries, ligament reconstruction and knee preservation.',
         },
         {
           icon: '🦵',
           title: 'Complete Orthopedic Care',
           description:
-            'From diagnosis and imaging to surgery, physiotherapy, and follow-up care.',
+            'From diagnosis and imaging to surgery, physiotherapy and follow-up care.',
         },
         {
           icon: '⚡',
@@ -184,7 +184,7 @@ export class AclReconstructionComponent {
           icon: '🤝',
           title: 'Claim Assistance',
           description:
-            'Dedicated support for approvals, documentation, and coordination.',
+            'Dedicated support for approvals, documentation and coordination.',
         },
         {
           icon: '📜',
@@ -214,7 +214,7 @@ export class AclReconstructionComponent {
         {
           icon: '🚇',
           title: 'Easily Accessible',
-          description: 'Close to major roads, metro connectivity, railway stations, and bus routes.',
+          description: 'Close to major roads, metro connectivity, railway stations and bus routes.',
         },
         {
           icon: '🏨',
@@ -226,13 +226,13 @@ export class AclReconstructionComponent {
           icon: '🏪',
           title: 'Essential Facilities Around',
           description:
-            'Pharmacies, food outlets, and transport services close by.',
+            'Pharmacies, food outlets and transport services close by.',
         },
         {
           icon: '👥',
           title: 'Supportive Environment',
           description:
-            'Our staff ensures smooth admissions, procedures, and follow-up visits.',
+            'Our staff ensures smooth admissions, procedures and follow-up visits.',
         },
       ],
       highlightText:
@@ -255,7 +255,7 @@ export class AclReconstructionComponent {
     },
     {
       ques: "Will I need physiotherapy after ACL surgery?",
-      ans: "Yes. Physiotherapy is essential for restoring strength, flexibility, and knee stability."
+      ans: "Yes. Physiotherapy is essential for restoring strength, flexibility and knee stability."
     },
     {
       ques: "Can I return to sports after ACL reconstruction?",

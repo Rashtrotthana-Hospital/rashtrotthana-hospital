@@ -180,7 +180,7 @@ export class NewDocPageComponent {
         },
         {
           question: 'When should I consult Col (Dr) Anand Shankar K at Rashtrotthana Hospital, Bangalore?',
-          answer: 'You may need consultation if you are scheduled for surgery requiring anesthesia, have critical medical conditions needing ICU care, or require emergency medical stabilization. Col (Dr) Anand Shankar K plays a key role in decision-making for complex and emergency cases at Rashtrotthana Hospital.'
+          answer: 'You may need consultation if you are scheduled for surgery requiring anesthesia, have critical medical conditions needing ICU care or require emergency medical stabilization. Col (Dr) Anand Shankar K plays a key role in decision-making for complex and emergency cases at Rashtrotthana Hospital.'
         },
         {
           question: 'How should patients prepare for anesthesia under Col (Dr) Anand Shankar K at Rashtrotthana Hospital?',
@@ -196,7 +196,7 @@ export class NewDocPageComponent {
         },
         {
           question: 'How can I book an appointment with Col (Dr) Anand Shankar K at Rashtrotthana Hospital?',
-          answer: `You can book an appointment with Col (Dr) Anand Shankar K by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital’s front desk, or booking online through the official Rashtrotthana Hospital website, depending on your consultation or treatment requirement.`
+          answer: `You can book an appointment with Col (Dr) Anand Shankar K by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital’s front desk or booking online through the official Rashtrotthana Hospital website, depending on your consultation or treatment requirement.`
         },
       ],
       departmentSlug: '/specialities/best-anesthesiology-hospital-in-india',
@@ -227,7 +227,7 @@ export class NewDocPageComponent {
         },
         {
           question: 'When should I consult Dr. H. N. Shyla at Rashtrotthana Hospital, Bangalore?',
-          answer: 'You should consult Dr. H. N. Shyla if you experience persistent tooth pain, gum infections, impacted teeth, jaw pain, facial swelling, or oral lesions. Early consultation helps prevent complications and ensures timely treatment.'
+          answer: 'You should consult Dr. H. N. Shyla if you experience persistent tooth pain, gum infections, impacted teeth, jaw pain, facial swelling or oral lesions. Early consultation helps prevent complications and ensures timely treatment.'
         },
         {
           question: 'How are surgical dental procedures performed by Dr. H. N. Shyla at Rashtrotthana Hospital?',
@@ -239,7 +239,7 @@ export class NewDocPageComponent {
         },
         {
           question: 'How can I book an appointment with Dr. H. N. Shyla at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: `You can book an appointment with Dr. H. N. Shyla by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
+          answer: `You can book an appointment with Dr. H. N. Shyla by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception or booking online through the official Rashtrotthana Hospital website.`
         },
         {
           question: 'What should I expect during my first consultation with Dr. H. N. Shyla at Rashtrotthana Hospital?',
@@ -282,7 +282,7 @@ export class NewDocPageComponent {
         },
         {
           question: 'When should I consult Dr. Latha Venkataram for pregnancy-related concerns in Bangalore?',
-          answer: 'You should consult Dr. Latha Venkataram if you are planning a pregnancy, newly pregnant, or facing issues such as gestational diabetes, high blood pressure, abnormal scans, or previous pregnancy complications. Early consultation allows timely intervention and safer outcomes.'
+          answer: 'You should consult Dr. Latha Venkataram if you are planning a pregnancy, newly pregnant or facing issues such as gestational diabetes, high blood pressure, abnormal scans or previous pregnancy complications. Early consultation allows timely intervention and safer outcomes.'
         },
         {
           question: 'Does Dr. Latha Venkataram manage high-risk pregnancies at Rashtrotthana Hospital, RR Nagar?',
@@ -298,7 +298,7 @@ export class NewDocPageComponent {
         },
         {
           question: 'How can I book an appointment with Dr. Latha Venkataram at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: `You can book an appointment with Dr. Latha Venkataram by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
+          answer: `You can book an appointment with Dr. Latha Venkataram by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception or booking online through the official Rashtrotthana Hospital website.`
         }
       ],
       departmentSlug: '/specialities/best-obstetrics-and-gynecologist-hospital-in-bangalore',
@@ -329,7 +329,7 @@ export class NewDocPageComponent {
         },
         {
           question: 'When should I consult Dr. Shekar Patil for cancer symptoms or diagnosis?',
-          answer: 'You should consult Dr. Shekar Patil if you notice persistent lumps, unexplained weight loss, prolonged pain, abnormal bleeding, fatigue, or changes in bowel or bladder habits. Early consultation with an experienced medical oncologist can help in timely diagnosis and better treatment outcomes.'
+          answer: 'You should consult Dr. Shekar Patil if you notice persistent lumps, unexplained weight loss, prolonged pain, abnormal bleeding, fatigue or changes in bowel or bladder habits. Early consultation with an experienced medical oncologist can help in timely diagnosis and better treatment outcomes.'
         },
         {
           question: 'What cancer treatments are offered by Dr. Shekar Patil at Rashtrotthana Hospital, Bangalore?',
@@ -345,7 +345,7 @@ export class NewDocPageComponent {
         },
         {
           question: 'How can I book an appointment with Dr. Shekar Patil at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: `You can book an appointment with Dr. Shekar Patil by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
+          answer: `You can book an appointment with Dr. Shekar Patil by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception or booking online through the official Rashtrotthana Hospital website.`
         }
       ],
       departmentSlug: '/specialities/best-oncology-hospital-in-bangalore',
@@ -401,7 +401,7 @@ export class NewDocPageComponent {
         },
         {
           question: 'How can I book a consultation with Dr. Pramod S. Chinder at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: `You can book an appointment with Dr. Pramod S. Chinder by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
+          answer: `You can book an appointment with Dr. Pramod S. Chinder by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception or booking online through the official Rashtrotthana Hospital website.`
         }
       ],
       departmentSlug: '/specialities/best-oncology-hospital-in-bangalore',
@@ -445,11 +445,11 @@ export class NewDocPageComponent {
         },
         {
           question: 'What is genito-urinary reconstruction and when is it required?',
-          answer: 'Genito-urinary reconstruction is performed to restore normal urinary function after injury, obstruction, infection, or cancer treatment. Dr. Nagaraj Rao performs reconstructive procedures to improve quality of life and long-term urinary control.'
+          answer: 'Genito-urinary reconstruction is performed to restore normal urinary function after injury, obstruction, infection or cancer treatment. Dr. Nagaraj Rao performs reconstructive procedures to improve quality of life and long-term urinary control.'
         },
         {
           question: 'How can I book an appointment with Dr. Nagaraj Rao at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: `You can book an appointment with Dr. Nagaraj Rao by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
+          answer: `You can book an appointment with Dr. Nagaraj Rao by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception or booking online through the official Rashtrotthana Hospital website.`
         }
       ],
       departmentSlug: '/specialities/best-urology-hospital-in-bangalore',
@@ -497,7 +497,7 @@ export class NewDocPageComponent {
         },
         {
           question: 'How can I book an appointment with Dr. H. M. Krishnamurthy at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: `You can book an appointment with Dr. H. M. Krishnamurthy by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
+          answer: `You can book an appointment with Dr. H. M. Krishnamurthy by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception or booking online through the official Rashtrotthana Hospital website.`
         }
       ],
       departmentSlug: '/specialities/internal-medicine-hospital-in-bangalore',
@@ -561,11 +561,11 @@ export class NewDocPageComponent {
         },
         {
           question: 'What is joint preservation treatment and when should I consult Dr. Mahesh Kulkarni?',
-          answer: 'Joint preservation aims to delay or avoid joint replacement surgery by correcting alignment, cartilage damage, or early arthritis. Dr. Mahesh Kulkarni recommends joint preservation techniques for patients with joint pain who are young or physically active.'
+          answer: 'Joint preservation aims to delay or avoid joint replacement surgery by correcting alignment, cartilage damage or early arthritis. Dr. Mahesh Kulkarni recommends joint preservation techniques for patients with joint pain who are young or physically active.'
         },
         {
           question: 'Does Dr. Mahesh Kulkarni manage limb preservation and deformity correction surgeries?',
-          answer: 'Yes, Dr. Mahesh Kulkarni has significant experience in limb preservation and deformity correction, helping patients regain alignment, stability, and function after injury, infection, or congenital deformities. These procedures aim to restore movement while maintaining limb integrity.'
+          answer: 'Yes, Dr. Mahesh Kulkarni has significant experience in limb preservation and deformity correction, helping patients regain alignment, stability, and function after injury, infection or congenital deformities. These procedures aim to restore movement while maintaining limb integrity.'
         },
         {
           question: 'Are pelvic and acetabular fractures treated by Dr. Mahesh Kulkarni at Rashtrotthana Hospital?',
@@ -577,7 +577,7 @@ export class NewDocPageComponent {
         },
         {
           question: 'How can I book an appointment with Dr. Mahesh Kulkarni at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: `You can book an appointment with Dr. Mahesh Kulkarni by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
+          answer: `You can book an appointment with Dr. Mahesh Kulkarni by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception or booking online through the official Rashtrotthana Hospital website.`
         }
       ],
       departmentSlug: '/specialities/best-orthopaedics-hospital-in-bangalore',
@@ -618,7 +618,7 @@ export class NewDocPageComponent {
         },
         {
           question: 'When should I consult Dr. Geethanjali K. G for dental problems?',
-          answer: 'You should consult Dr. Geethanjali K. G if you experience tooth pain, sensitivity, bleeding gums, broken or discoloured teeth, or cosmetic concerns about your smile. Early dental consultation helps prevent complications and more extensive treatment later.'
+          answer: 'You should consult Dr. Geethanjali K. G if you experience tooth pain, sensitivity, bleeding gums, broken or discoloured teeth or cosmetic concerns about your smile. Early dental consultation helps prevent complications and more extensive treatment later.'
         },
         {
           question: 'What is the recovery like after dental procedures with Dr. Geethanjali K. G?',
@@ -626,7 +626,7 @@ export class NewDocPageComponent {
         },
         {
           question: 'How can I book an appointment with Dr. Geethanjali K. G at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: `You can book an appointment with Dr. Geethanjali K. G by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
+          answer: `You can book an appointment with Dr. Geethanjali K. G by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception or booking online through the official Rashtrotthana Hospital website.`
         }
       ],
       departmentSlug: '/specialities/best-dental-hospital-in-bangalore',
@@ -679,7 +679,7 @@ export class NewDocPageComponent {
         },
         {
           question: 'When should I consult Dr. Sowmya S. Bhat for eye problems?',
-          answer: 'You should consult Dr. Sowmya S. Bhat if you experience blurred vision, difficulty seeing at night, eye strain, headaches, frequent change of glasses, or age-related vision changes. Early consultation helps prevent progression of eye conditions.'
+          answer: 'You should consult Dr. Sowmya S. Bhat if you experience blurred vision, difficulty seeing at night, eye strain, headaches, frequent change of glasses or age-related vision changes. Early consultation helps prevent progression of eye conditions.'
         },
         {
           question: 'What is the recovery time after cataract or refractive surgery with Dr. Sowmya S. Bhat?',
@@ -691,7 +691,7 @@ export class NewDocPageComponent {
         },
         {
           question: 'How can I book an appointment with Dr. Sowmya S. Bhat at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: `You can book an appointment with Dr. Sowmya S. Bhat by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
+          answer: `You can book an appointment with Dr. Sowmya S. Bhat by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception or booking online through the official Rashtrotthana Hospital website.`
         }
       ],
       departmentSlug: '/specialities/best-eye-hospital-in-bangalore',
@@ -723,7 +723,7 @@ export class NewDocPageComponent {
         },
         {
           question: 'What is high-risk PCI and when is it recommended by Dr. Suhas Raj S?',
-          answer: 'High-risk PCI (Percutaneous Coronary Intervention) is performed in patients with complex blockages, weak heart function, or multiple medical conditions. Dr. Suhas Raj S performs high-risk PCI using advanced techniques and close monitoring at Rashtrotthana Hospital.'
+          answer: 'High-risk PCI (Percutaneous Coronary Intervention) is performed in patients with complex blockages, weak heart function or multiple medical conditions. Dr. Suhas Raj S performs high-risk PCI using advanced techniques and close monitoring at Rashtrotthana Hospital.'
         },
         {
           question: 'Can I consult Dr. Suhas Raj S for heart failure management in Bangalore?',
@@ -739,7 +739,7 @@ export class NewDocPageComponent {
         },
         {
           question: 'How can I book an appointment with Dr. Suhas Raj S at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: `You can book an appointment with Dr. Suhas Raj S by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
+          answer: `You can book an appointment with Dr. Suhas Raj S by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception or booking online through the official Rashtrotthana Hospital website.`
         }
       ],
       departmentSlug: '/specialities/best-cardiology-hospital-in-bangalore',
@@ -788,7 +788,7 @@ export class NewDocPageComponent {
         },
         {
           question: 'How can I book an appointment with Dr. Atmaram D. C at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: `You can book an appointment with Dr. Atmaram D. C by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
+          answer: `You can book an appointment with Dr. Atmaram D. C by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception or booking online through the official Rashtrotthana Hospital website.`
         }
       ],
       departmentSlug: '/specialities/best-general-surgery-hospital-in-bangalore',
@@ -836,7 +836,7 @@ export class NewDocPageComponent {
         },
         {
           question: 'How can I book an appointment with Dr. Vinod Kolla at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: `You can book an appointment with Dr. Vinod Kolla by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
+          answer: `You can book an appointment with Dr. Vinod Kolla by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception or booking online through the official Rashtrotthana Hospital website.`
         }
       ],
       departmentSlug: '/specialities/best-pulmonology-hospital-in-bangalore',
@@ -885,7 +885,7 @@ export class NewDocPageComponent {
         },
         {
           question: 'How can I book an appointment with Dr. Meena H. B at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: `You can book an appointment with Dr. Meena H. B by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
+          answer: `You can book an appointment with Dr. Meena H. B by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception or booking online through the official Rashtrotthana Hospital website.`
         }
       ],
       departmentSlug: '',
@@ -997,11 +997,11 @@ export class NewDocPageComponent {
         },
         {
           question: 'When should I consult Dr. Sujayendra D. M for orthopaedic problems?',
-          answer: 'You should consult Dr. Sujayendra D. M if you experience severe joint pain, swelling, difficulty walking, suspected fractures, or limited joint movement. Early orthopaedic evaluation helps prevent complications and long-term damage.'
+          answer: 'You should consult Dr. Sujayendra D. M if you experience severe joint pain, swelling, difficulty walking, suspected fractures or limited joint movement. Early orthopaedic evaluation helps prevent complications and long-term damage.'
         },
         {
           question: 'How can I book an appointment with Dr. Sujayendra D. M at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: `You can book an appointment with Dr. Sujayendra D. M by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
+          answer: `You can book an appointment with Dr. Sujayendra D. M by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception or booking online through the official Rashtrotthana Hospital website.`
         }
       ],
       departmentSlug: '/specialities/best-orthopaedics-hospital-in-bangalore',
@@ -1097,11 +1097,11 @@ export class NewDocPageComponent {
         },
         {
           question: 'Are urological cancers and reconstructive urology managed by Dr. Madhu S. N?',
-          answer: 'Yes, Dr. Madhu S. N treats uro-oncology conditions involving the kidney, bladder, prostate, and urinary tract. He also performs reconstructive urology surgeries to restore urinary function after injury, obstruction, or cancer treatment.'
+          answer: 'Yes, Dr. Madhu S. N treats uro-oncology conditions involving the kidney, bladder, prostate, and urinary tract. He also performs reconstructive urology surgeries to restore urinary function after injury, obstruction or cancer treatment.'
         },
         {
           question: 'How can I book an appointment with Dr. Madhu S. N at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: `You can book an appointment with Dr. Madhu S. N by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
+          answer: `You can book an appointment with Dr. Madhu S. N by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception or booking online through the official Rashtrotthana Hospital website.`
         }
       ],
       departmentSlug: '/specialities/best-urology-hospital-in-bangalore',
@@ -1135,7 +1135,7 @@ export class NewDocPageComponent {
         },
         {
           question: 'When should I consult Dr. Jaidev S for neck pain or back pain?',
-          answer: 'You should consult Dr. Jaidev S if you have persistent neck pain, back pain, radiating pain to arms or legs, numbness, weakness, or difficulty walking. Early neurosurgical evaluation helps determine whether medical management or surgery is required.'
+          answer: 'You should consult Dr. Jaidev S if you have persistent neck pain, back pain, radiating pain to arms or legs, numbness, weakness or difficulty walking. Early neurosurgical evaluation helps determine whether medical management or surgery is required.'
         },
         {
           question: 'Does Dr. Jaidev S treat stroke and blood vessel-related brain conditions?',
@@ -1151,7 +1151,7 @@ export class NewDocPageComponent {
         },
         {
           question: 'How can I book an appointment with Dr. Jaidev S at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: `You can book an appointment with Dr. Jaidev S by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
+          answer: `You can book an appointment with Dr. Jaidev S by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception or booking online through the official Rashtrotthana Hospital website.`
         }
       ],
       departmentSlug: '/specialities/best-neurology-hospital-in-bangalore',
@@ -1196,11 +1196,11 @@ export class NewDocPageComponent {
         },
         {
           question: 'When should I consult Dr. Nishanth Lakshmikantha for proctology or abdominal surgery problems?',
-          answer: 'You should consult Dr. Nishanth Lakmikantha if you have persistent rectal pain, bleeding, swelling, difficulty passing stools, or abdominal symptoms that may require surgical evaluation. Early consultation helps prevent complications.'
+          answer: 'You should consult Dr. Nishanth Lakmikantha if you have persistent rectal pain, bleeding, swelling, difficulty passing stools or abdominal symptoms that may require surgical evaluation. Early consultation helps prevent complications.'
         },
         {
           question: 'How can I book an appointment with Dr. Nishanth Lakshmikantha at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: `You can book an appointment with Dr. Nishanth Lakshmikantha by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
+          answer: `You can book an appointment with Dr. Nishanth Lakshmikantha by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception or booking online through the official Rashtrotthana Hospital website.`
         }
       ],
       departmentSlug: '/specialities/best-general-surgery-hospital-in-bangalore',
@@ -1253,7 +1253,7 @@ export class NewDocPageComponent {
         },
         {
           question: 'How can I book an appointment with Dr. Sameer M. Halageri at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: `You can book an appointment with Dr. Sameer M. Halageri by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
+          answer: `You can book an appointment with Dr. Sameer M. Halageri by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception or booking online through the official Rashtrotthana Hospital website.`
         }
       ],
       departmentSlug: '',
@@ -1312,7 +1312,7 @@ export class NewDocPageComponent {
         },
         {
           question: 'How can I book an appointment with Dr. Vishnuvardhan V at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: `You can book an appointment with Dr. Vishnuvardhan V by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
+          answer: `You can book an appointment with Dr. Vishnuvardhan V by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception or booking online through the official Rashtrotthana Hospital website.`
         }
       ],
       departmentSlug: '/specialities/best-dental-hospital-in-bangalore',
@@ -1360,7 +1360,7 @@ export class NewDocPageComponent {
         },
         {
           question: 'How can I book an appointment with Dr. Prakruthi at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-          answer: `You can book an appointment with Dr. Prakruthi by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception, or booking online through the official Rashtrotthana Hospital website.`
+          answer: `You can book an appointment with Dr. Prakruthi by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception or booking online through the official Rashtrotthana Hospital website.`
         }
       ],
       departmentSlug: '/specialities/best-obstetrics-and-gynecologist-hospital-in-bangalore',

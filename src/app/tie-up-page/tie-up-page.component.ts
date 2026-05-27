@@ -56,7 +56,7 @@ export class TieUpPageComponent {
       bgColor: '#42ED33',
       hoverBg: '#B3FFAC',
       heading: 'Outpatient & Inpatient Care',
-      para: 'Access to OPD consultations, diagnostic services, and inpatient treatment across hospital departments as per agreed terms under the corporate tie-up.',
+      para: 'Access to OPD consultations, diagnostic services and inpatient treatment across hospital departments as per agreed terms under the corporate tie-up.',
       icon: `assets/tie-up-page/mdi_patient.png`
     },
     {
@@ -70,7 +70,7 @@ export class TieUpPageComponent {
       bgColor: '#DCF900',
       hoverBg: '#F4FFB3',
       heading: 'Health Screening & Awareness Programs',
-      para: 'Organization-level health camps, screening programs and awareness sessions focusing on lifestyle diseases, occupational health, and preventive healthcare.',
+      para: 'Organization-level health camps, screening programs and awareness sessions focusing on lifestyle diseases, occupational health and preventive healthcare.',
       icon: `assets/tie-up-page/ri_mini-program-fill.png`
     },
     {
@@ -84,7 +84,7 @@ export class TieUpPageComponent {
       bgColor: '#9476FF',
       hoverBg: '#BEACFF',
       heading: 'Corporate Concessions',
-      para: 'Preferential pricing on consultations, investigations, and select services for employees of empanelled organizations.',
+      para: 'Preferential pricing on consultations, investigations and select services for employees of empanelled organizations.',
       icon: `assets/tie-up-page/ic_baseline-business-center.png`
     },
   ];
