@@ -1,332 +1,552 @@
-<div class="root-container">
+<div class="acl-root-container">
 
-    <!-- hero section -->
+    <!-- ══ MODAL OVERLAY ══ -->
+    <div class="tkr-modal-overlay" [class.tkr-modal-open]="isModalOpen" (click)="closeModalOnBackdrop($event)">
+        <div class="tkr-modal-box" role="dialog" aria-modal="true" aria-labelledby="tkr-modal-title">
+
+            <!-- Modal Header -->
+            <div class="tkr-modal-header">
+                <div class="tkr-modal-header-left">
+                    <div class="tkr-modal-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#B7D7A8" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="4" width="18" height="18" rx="2" />
+                            <line x1="16" y1="2" x2="16" y2="6" />
+                            <line x1="8" y1="2" x2="8" y2="6" />
+                            <line x1="3" y1="10" x2="21" y2="10" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h2 class="tkr-modal-title" id="tkr-modal-title">Book Appointment</h2>
+                        <p class="tkr-modal-sub">Schedule your visit with our orthopaedic specialists</p>
+                    </div>
+                </div>
+                <button class="tkr-modal-close" (click)="closeModal()" aria-label="Close appointment form">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                        stroke-linecap="round">
+                        <line x1="18" y1="6" x2="6" y2="18" />
+                        <line x1="6" y1="6" x2="18" y2="18" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Modal Body -->
+            <div class="tkr-modal-body">
+                <app-call-back-form [pageName]="'ACL Reconstruction'"></app-call-back-form>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- Section 1: Header Banner -->
     <div class="speciality-header">
-        <img src="assets/acl-imgs/acl_desk.png" class="desktop"
-            alt="Maternity Package (Janani Samridhi) Banner of Rashtrotthana Hospital Bangalore" />
-        <img src="assets/acl-imgs/acl_mob.png" class="mobile"
-            alt="Maternity Package (Janani Samridhi) Banner of Rashtrotthana Hospital Bangalore">
+        <img src="../../assets/acl-imgs/acl-reconstrution-desktop.png" class="desktop"
+            alt="ACL Reconstruction Surgery Banner - Rashtrotthana Hospital Bangalore" />
+        <img src="../../assets/acl-imgs/acl-reconstruction-banner.png" class="mobile"
+            alt="ACL Reconstruction Surgery Banner - Rashtrotthana Hospital Bangalore">
         <div class="header_button">
             <button class="appointment" (click)="scrollToForm()">Book an Appointment</button>
             <a href="tel:+918069239999" class="contact_button" (click)="trackPhoneClick()">Contact Now</a>
         </div>
     </div>
 
-    <div class="container-2">
 
-        <!-- Intro Section -->
+    <!-- Section 2: What is ACL -->
+    <section class="a2-section" id="what-is-acl" itemscope itemtype="https://schema.org/MedicalProcedure">
+        <h2 class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);">
+            What is ACL Reconstruction Surgery - Rashtrotthana Hospital Bangalore</h2>
+        <div class="a2-inner">
 
-        <div class="intro-section">
-            <h1 class="page-title">ACL Reconstruction Surgery in Bangalore</h1>
-            <div class="line">
-                <svg xmlns="http://www.w3.org/2000/svg" width="372" height="34" viewBox="0 0 372 34" fill="none"
-                    style="width: 100%;">
-                    <path d="M45.0361 1.5H336.402L0.0664062 16.38H371.066L183.068 32.5" stroke="#FFC250"
-                        stroke-width="3" />
-                </svg>
-            </div>
+            <div class="a2-content-col">
+                <h1 class="a2-eyebrow">Advanced ACL Reconstruction Surgery in Bangalore</h1>
+                <h2 class="a2-main-heading" itemprop="name">What is ACL Reconstruction?</h2>
+                <div class="a2-divider"></div>
 
-            <div class="intro-part">
-                <div class="banner-imgs">
-                    <img src="assets/acl-imgs/front-view-doctor-helping-patient.jpg" alt=""
-                        class="float-left float-delay-1 img-1">
-                    <img src="assets/acl-imgs/healthcare-professional-demonstrating-knee-joint-anatomy-with-model.jpg"
-                        alt="" class="float-left float-delay-2 img-2">
-                    <img src="assets/acl-imgs/person-with-leg-brace-is-walking-with-patient-hospital.jpg" alt="" class="float-left float-delay-1 img-3">
-                    <img src="assets/acl-imgs/orthopedic-doctor-evaluates-knee-xray.jpg"
-                        alt="" class="float-left float-delay-3 img-4">
+                <p class="a2-body-text" itemprop="description">
+                    ACL (Anterior Cruciate Ligament) Reconstruction is a surgical procedure to rebuild the torn or
+                    ruptured anterior cruciate ligament - one of the key ligaments that stabilises the knee joint. It is
+                    most commonly required after <strong>sports injuries, sudden twisting movements or high-impact
+                        trauma</strong> that causes the ligament to tear completely.
+                </p>
+
+                <div class="a2-highlight-box">
+                    If you experience sudden knee instability, a "popping" sensation, severe swelling or inability
+                    to bear weight after a knee injury - consult a sports medicine specialist immediately to prevent
+                    long-term joint damage.
                 </div>
 
-                <div class="intro-content">
-                    <div class="flex">
-                        <img src="assets/tkr/comma-left.png" alt="">
-                        <div class="">
-                            <p class="intro-para">An ACL (Anterior Cruciate Ligament) injury can significantly affect
-                                knee stability, movement and confidence-especially during walking, running or sports
-                                activities. Persistent knee pain, swelling, instability or repeated giving-way episodes
-                                can make daily activities challenging.
-                            </p>
-                            <p class="intro-para">
-                                At Rashtrotthana Hospital, we provide safe and effective ACL Reconstruction Surgery in
-                                Bangalore using advanced arthroscopic techniques. Our experienced orthopedic surgeons
-                                focus on precise ligament reconstruction, minimal discomfort and structured
-                                rehabilitation to help patients regain knee strength and stability.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="flex1">
-                        <p class="intro-para">From the initial diagnosis to surgery and post-operative physiotherapy, we
-                            guide you through every stage-helping you return to an active, confident and pain-free
-                            lifestyle.</p>
-                        <img src="assets/tkr/comma-right.png" alt="">
-                    </div>
-                </div>
-            </div>
-
-            <div class="banner-imgs">
-                <!-- <img src="" alt=""
-                    class="float-right float-delay-3 img-5"> -->
-                <img src="assets/acl-imgs/bone-fracture-foot-leg-male-patient-being-examined-by-woman-doctor-hospital.jpg"
-                    alt="" class="float-right float-delay-2 img-6">
-                <img src="assets/acl-imgs/close-up-hand-wear-medical-gloves-doctor-medical-gloves-holds-artificial-boneof-foot-examines-sore-leg-with-heel-spur-woman-close-up-osteophytes-heel-fascia.jpg"
-                    alt="" class="float-right float-delay-2 img-7">
-                <img src="assets/acl-imgs/spine-model-standing-desk-unrecognizable-doctor.jpg"
-                    alt="" class="float-right float-delay-1 img-8">
-            </div>
-        </div>
-
-
-
-
-
-
-        <div class="surgery-sections-container">
-            <div class="surgery-header">
-                <h2 class="surgery-main-title">Surgery Package Section</h2>
-                <p class="surgery-main-subtitle">Experience Advanced ACL Reconstruction at an Affordable Cost</p>
-            </div>
-
-            <div class="surgeries-grid">
-                <div class="surgery-content">
-                    <!-- <div class="surgery-number">0{{ i + 1 }}</div> -->
-                    <h3 class="surgery-title">What Makes Our Package the Right Choice</h3>
-                    <p class="surgery-subtitle"></p>
-                    <div class="process-part">
-                        <div class="process-line">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="915" height="70" viewBox="0 0 1038 70"
-                                fill="none">
-                                <path
-                                    d="M0.385742 23.4048L10.695 29.5903C88.0005 75.9737 184.029 78.1833 263.386 35.4048C344.046 -6.65146 440.033 -7.24926 521.21 33.7991L524.386 35.4048C601.534 78.5078 695.128 80.1692 773.757 39.8315L782.386 35.4048C852.717 -6.48154 939.273 -10.6518 1013.31 24.2791L1036.89 35.4048"
-                                    stroke="#959292" stroke-width="1.5" stroke-dasharray="6 6" />
-                            </svg>
-                        </div>
-                        <div class="process-container">
-                            <div class="process-card">
-                                <img src="assets/gallstone-removal-surgery/woman-medic-measuring-pulse-patient.jpg"
-                                    alt="">
-                                <div class="card-para-1 card-para">Complete care from consultation to rehabilitation
-                                </div>
-                            </div>
-                            <div class="process-card">
-                                <img src="assets/gallstone-removal-surgery/surgeon-assistant-conducting-abdominoplasty-surgery-clinic.jpg"
-                                    alt="">
-                                <div class="card-para-2 card-para">Experienced orthopedic and sports injury specialists
-                                </div>
-                            </div>
-                            <div class="process-card">
-                                <img src="assets/gallstone-removal-surgery/medic-operating-with-metallic-scalpel.jpg"
-                                    alt="">
-                                <div class="card-para-3 card-para">Minimally invasive arthroscopic surgery
-                                </div>
-                            </div>
-                            <div class="process-card">
-                                <img src="assets/gallstone-removal-surgery/senior-man-helping-cancer-patient-woman-wearing-head-scarf-with-walker-hospital-health-care-medical-concept.jpg"
-                                    alt="">
-                                <div class="card-para-4 card-para">Structured physiotherapy and recovery guidance
-                                </div>
-                            </div>
-                            <div class="process-card">
-                                <img src="assets/gallstone-removal-surgery/Ellipse 112.png" alt="">
-                                <div class="card-para-5 card-para">Cashless insurance support and dedicated care team
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <p class="surgery-main-subtitle">Your knee stability, safety and recovery are our priority. Our ACL
-                        Reconstruction Surgery Package is designed to deliver transparent, reliable and high-quality
-                        orthopedic care.</p>
-
-                </div>
-            </div>
-
-        </div>
-
-
-        <!-- <div class="doctor-part">
-      <div class="doctor-heading">Meet Our Senior Gynecologist</div>
-      <div class="doctor-img">
-        <img src="assets/Doc-Inv-Page/Dr-Latha-Venkataram.png" alt="">
-        <div class="doctor-name">
-          <li class="doctor-name"><b>Dr. Latha Venkataraman</b></li>
-          <li class="doctor-name-2" style="margin-top: 20px;">MBBS, MRCOG (UK), MRCP(I), FRCOG(UK)</li>
-          <li class="doctor-name-2">Experience: 32+ Years</li>
-          <li class="doctor-name-2">Speciality: Obstetrics & Gynecology</li>
-        </div>
-      </div>
-      <ul style="text-align: left;">
-        <li class="doctor-description_left">30+ years of experience</li>
-        <li class="doctor-description_left">50k+ successful deliveries</li>
-        <li class="doctor-description_left">80% success rate on Normal Delivery</li>
-        <li class="doctor-description_left">Skilled in vaginal surgeries</li>
-        <li class="doctor-description_left">Specializes in safe and normal (vaginal) deliveries</li>
-        <li class="doctor-description_left">Focused on menopause management and related health issues</li>
-        <li class="doctor-description_left">Expertise in managing high-risk pregnancies</li>
-        <li class="doctor-description_left">Provides care for diabetes and medical disorders in pregnancy</li>
-        <li class="doctor-description_left">Offers treatment for recurrent pregnancy loss</li>
-      </ul>
-
-      <button class="appointment-btn" (click)="scrollToForm()">Book an Appointment</button>
-
-    </div> -->
-
-        <!-- <app-doctor-card [doctorCard]="doctorCard"></app-doctor-card> -->
-
-        <div class="main-services-section">
-            <div class="services-content-area">
-                <div class="section-badge">
-                    <span class="badge-icon">🏥</span>
-                    <span>Surgery Types</span>
-                </div>
-
-                <h2 class="section-heading">Types of ACL Reconstruction Surgery</h2>
-
-                <!-- <p class="section-intro">
-                    There are two main types of knee replacement procedures, depending on the extent of joint damage:
-                </p> -->
-
-                <div class="main-services-grid">
-                    <div *ngFor="let service of mainServices" class="main-service-card"
-                        [style.--card-color]="service.color">
-                        <div class="service-icon-circle">
-                            <span>{{ service.icon }}</span>
-                        </div>
-                        <div class="service-card-content">
-                            <h3 class="service-card-title">{{ service.title }}</h3>
-                            <div class="service-card-desc" [innerHTML]="service.description"></div>
-                        </div>
-                        <!-- <div class="service-arrow">→</div> -->
-                    </div>
-                </div>
-            </div>
-
-            <div class="form-sidebar" #formSection>
-                <!-- <app-speciality-form [doctor]="formdoctors" /> -->
-                 <app-call-back-form [pageName]="'ACL Reconstruction Surgery'"></app-call-back-form>
-            </div>
-        </div>
-
-
-        <!-- doctors section -->
-
-        <div class="container_margin">
-            <h2 class="s_h1 text-center heading-margin">Our Experienced Orthopedic Surgeons</h2>
-            <app-speciality-doc-card [doctors]="doctors" />
-        </div>
-
-        <!-- Why Choose Rashtrotthana Hospital? -->
-
-        <div class="why-choose-wrapper" style="margin-top: 30px;">
-            <!-- Header Section -->
-            <div class="section-intro">
-                <span class="intro-badge">Your Health Partner</span>
-                <h2 class="main-heading">Why Choose Rashtrotthana Hospital?</h2>
-                <p class="main-subheading">Your Health in Trustable Hands</p>
-                <div class="heading-underline">
-                    <span class="line"></span>
-                    <span class="dot"></span>
-                    <span class="line"></span>
-                </div>
-            </div>
-
-            <!-- Sections with alternating layouts -->
-            <div *ngFor="let section of sections; let i = index" class="section-block">
-
-                <!-- Left Layout (Icon Left) -->
-                <div *ngIf="i % 2 === 0" class="layout-container layout-left">
-                    <!-- <div class="icon-column" [style.background]="section.color">
-            <div class="number-badge">{{ section.number }}</div>
-            <div class="main-icon">{{ section.icon }}</div>
-            <div class="vertical-text">{{ section.title.split('.')[1]?.trim() || section.title }}</div>
-          </div> -->
-
-                    <div class="content-column">
-                        <h3 class="section-title" [style.color]="section.color">{{ section.title }}</h3>
-                        <p class="section-desc">{{ section.description }}</p>
-
-                        <div class="features-grid">
-                            <div *ngFor="let feature of section.features" class="feature-item">
-                                <div class="feature-icon-box" [style.border-color]="section.color">
-                                    <span>{{ feature.icon }}</span>
-                                </div>
-                                <div class="feature-text">
-                                    <strong>{{ feature.title }}</strong>
-                                    <p>{{ feature.description }}</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="highlight-box" [style.border-left-color]="section.color">
-                            <span class="bulb-icon">💡</span>
-                            <em>{{ section.highlightText }}</em>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Right Layout (Icon Right) -->
-                <div *ngIf="i % 2 !== 0" class="layout-container layout-right">
-                    <div class="content-column">
-                        <h3 class="section-title" [style.color]="section.color">{{ section.title }}</h3>
-                        <p class="section-desc">{{ section.description }}</p>
-
-                        <div class="features-grid">
-                            <div *ngFor="let feature of section.features" class="feature-item">
-                                <div class="feature-icon-box" [style.border-color]="section.color">
-                                    <span>{{ feature.icon }}</span>
-                                </div>
-                                <div class="feature-text">
-                                    <strong>{{ feature.title }}</strong>
-                                    <p>{{ feature.description }}</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="highlight-box" [style.border-left-color]="section.color">
-                            <span class="bulb-icon">💡</span>
-                            <em>{{ section.highlightText }}</em>
-                        </div>
-                    </div>
-
-                    <!-- <div class="icon-column" [style.background]="section.color">
-            <div class="number-badge">{{ section.number }}</div>
-            <div class="main-icon">{{ section.icon }}</div>
-            <div class="vertical-text">{{ section.title.split('.')[1]?.trim() || section.title }}</div>
-          </div> -->
-                </div>
-
-                <!-- Separator Line -->
-                <div *ngIf="i < sections.length - 1" class="section-divider">
-                    <span class="divider-circle" [style.background]="section.color"></span>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- Final CTA -->
-        <div class="final-action-bar">
-            <div class="action-content">
-                <h3>Your Health, Our Priority</h3>
-                <p><b>Experience Trusted ACL Reconstruction Surgery in Bangalore</b></p>
-                <p style="margin-top: 15px; line-height: 25px;">
-                    Don’t ignore knee instability or ongoing pain after an ACL injury. Early surgical intervention can
-                    prevent further damage and support long-term joint health. Consult our experienced orthopedic
-                    surgeons at Rashtrotthana Hospital today and take the first step toward safe ACL reconstruction,
-                    faster recovery and confident movement.
+                <p class="a2-body-text">
+                    At Rashtrotthana Hospital, we provide advanced ACL Reconstruction Surgery in Bangalore using
+                    arthroscopic (keyhole) techniques - performed by experienced orthopaedic and sports medicine
+                    surgeons - with personalised rehabilitation focused on full functional recovery and return to sport.
                 </p>
             </div>
 
-            <div class="action-buttons">
-                <a href="tel:+918069239999" class="action-btn btn-yellow" (click)="trackPhoneClick()">
-                    Call +91 80692 39999
-                </a>
-                <button class="action-btn btn-teal" (click)="scrollToForm()">
-                    Book Appointment
-                </button>
+            <div class="a2-image-col">
+                <div class="a2-img-placeholder">
+                    <img src="../../assets/acl-imgs/acl-recontruction-surgery-at-rashtrotthana-hospital-bangalore.png"
+                        alt="ACL Reconstruction Surgery in Bangalore at Rashtrotthana Hospital" />
+                </div>
+                <!-- <div class="a2-accent-pill">
+                    <i class="ti ti-shield-check" aria-hidden="true"></i>
+                    Sports Medicine &amp; Orthopaedics · RR Nagar, Bangalore
+                </div> -->
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Section 3: Free Consultation Form -->
+    <section class="c3-section" id="free-consultation" itemscope itemtype="https://schema.org/Event">
+        <div class="c3-bg-circle-1"></div>
+        <div class="c3-bg-circle-2"></div>
+
+        <h2 style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);">Free Knee Pain
+            Consultation - Rashtrotthana Hospital, Bangalore</h2>
+
+        <div class="c3-inner">
+
+            <div class="c3-left">
+                <p class="c3-eyebrow">Free Knee Pain Clinic · Bangalore</p>
+                <h2 class="c3-heading" itemprop="name">Free Knee Pain Consultation in Bangalore</h2>
+                <h3 class="c3-subheading">Visit Our Knee Pain Clinic at Rashtrotthana Hospital</h3>
+                <div class="c3-divider"></div>
+
+                <p class="c3-body">
+                    Are you struggling with knee pain while walking, climbing stairs or standing for long periods? Our
+                    specialised Knee Pain Clinic offers a <strong style="color:#ffffff;">free consultation</strong> to
+                    help you understand the cause of your pain and explore the right treatment options.
+                </p>
+
+                <div class="c3-schedule-row">
+                    <span class="c3-badge-free">
+                        <i class="ti ti-gift" aria-hidden="true"></i>
+                        Free Consultation
+                    </span>
+                    <span class="c3-schedule-chip">
+                        <i class="ti ti-calendar-event" aria-hidden="true"></i>
+                        Every Monday &amp; Thursday
+                    </span>
+                    <span class="c3-schedule-chip">
+                        <i class="ti ti-clock" aria-hidden="true"></i>
+                        10 AM – 1 PM
+                    </span>
+                </div>
+
+                <ul class="c3-list">
+                    <li>
+                        <span class="c3-list-icon"><i class="fa-solid fa-check"
+                                style="color: rgb(242, 243, 246);"></i></span>
+                        Knee pain evaluation and mobility assessment
+                    </li>
+                    <li>
+                        <span class="c3-list-icon"><i class="fa-solid fa-check"
+                                style="color: rgb(242, 243, 246);"></i></span>
+                        Guidance on non-surgical and surgical treatment options
+                    </li>
+                    <li>
+                        <span class="c3-list-icon"><i class="fa-solid fa-check"
+                                style="color: rgb(242, 243, 246);"></i></span>
+                        Expert advice on Total Knee Replacement (TKR) if required
+                    </li>
+                    <li>
+                        <span class="c3-list-icon"><i class="fa-solid fa-check"
+                                style="color: rgb(242, 243, 246);"></i></span>
+                        Personalised treatment planning for faster recovery
+                    </li>
+                </ul>
+
+                <p class="c3-note">
+                    Not every knee pain requires surgery. Early consultation can help you reduce pain, improve mobility,
+                    and avoid further joint damage.
+                </p>
+            </div>
+
+            <div class="c3-right">
+                <app-call-back-form [pageName]="'ACL Reconstruction'" />
             </div>
         </div>
 
+    </section>
 
-        <!-- Faqs -->
-        <app-faqs-new [faqData]="faqs"></app-faqs-new>
-    </div>
+    <!-- doctor section -->
+    <section class="doctor-section" style="padding: 50px 0; background-color: #f4fafa;">
+        <h2 class="a2-main-heading" style="text-align: center; margin-bottom: 50px;">Meet Our Experienced Surgeons</h2>
+        <app-speciality-doc-card [doctors]="doctors" />
+    </section>
+
+
+    <!-- Section 4: ACL Surgery Types -->
+    <section class="a4-section" id="acl-surgery-types">
+        <div class="a4-inner">
+
+            <div class="a4-header">
+                <p class="a4-eyebrow">Procedures We Offer</p>
+                <h2 class="a4-heading">ACL Reconstruction Surgical Options at Rashtrotthana Hospital</h2>
+                <p class="a4-header-sub">Our sports medicine and orthopaedic surgeons assess your injury grade,
+                    activity level, and goals to recommend the most suitable graft and surgical technique.</p>
+            </div>
+
+            <div class="a4-grid">
+
+                <!-- Card 1: Arthroscopic ACL Reconstruction -->
+                <div class="a4-card">
+                    <div class="a4-card-img">
+                        <img src="../../assets/acl-imgs/acl-reconstruction.png"
+                            alt="Arthroscopic ACL Reconstruction Surgery at Rashtrotthana Hospital Bangalore" />
+                    </div>
+                    <div class="a4-card-content">
+                        <span class="a4-card-tag">
+                            <i class="ti ti-stethoscope" aria-hidden="true"></i>
+                            Minimally Invasive
+                        </span>
+                        <h3 class="a4-card-title">Arthroscopic ACL Reconstruction</h3>
+                        <div class="a4-card-divider"></div>
+                        <p class="a4-card-text">
+                            The gold standard for ACL repair - performed through small keyhole incisions using an
+                            arthroscope and camera. A graft (from the patient's own tendon or a donor) is used to
+                            reconstruct the torn ligament, restoring knee stability with minimal tissue disruption.
+                        </p>
+                        <ul class="a4-card-points">
+                            <li>
+                                <span class="a4-point-dot"><i class="fa-solid fa-check"></i></span>
+                                Minimal scarring and faster recovery
+                            </li>
+                            <li>
+                                <span class="a4-point-dot"><i class="fa-solid fa-check"></i></span>
+                                Autograft (own tendon) or allograft options
+                            </li>
+                            <li>
+                                <span class="a4-point-dot"><i class="fa-solid fa-check"></i></span>
+                                Return to sport in 6–9 months with rehab
+                            </li>
+                        </ul>
+                        <button (click)="openModal()" class="a4-card-cta">
+                            <i class="ti ti-calendar-plus" aria-hidden="true"></i>
+                            Book Consultation
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 2: ACL Repair with Meniscus Treatment -->
+                <div class="a4-card">
+                    <div class="a4-card-img">
+                        <img src="../../assets/acl-imgs/acl-repair-with-meniscus-cartilage.png"
+                            alt="ACL Repair with Meniscus Treatment at Rashtrotthana Hospital Bangalore" />
+                    </div>
+                    <div class="a4-card-content">
+                        <span class="a4-card-tag">
+                            <i class="ti ti-circle-filled" style="font-size:7px;" aria-hidden="true"></i>
+                            Combined Knee Procedure
+                        </span>
+                        <h3 class="a4-card-title">ACL Repair with Meniscus &amp; Cartilage Treatment</h3>
+                        <div class="a4-card-divider"></div>
+                        <p class="a4-card-text">
+                            Many ACL injuries occur alongside meniscus tears or cartilage damage. Our surgeons
+                            address all concurrent injuries in a single arthroscopic procedure - ACL reconstruction
+                            combined with meniscus repair or cartilage restoration - for comprehensive knee recovery.
+                        </p>
+                        <ul class="a4-card-points">
+                            <li>
+                                <span class="a4-point-dot"><i class="fa-solid fa-check"></i></span>
+                                Simultaneous ACL + meniscus repair
+                            </li>
+                            <li>
+                                <span class="a4-point-dot"><i class="fa-solid fa-check"></i></span>
+                                Cartilage preservation and restoration
+                            </li>
+                            <li>
+                                <span class="a4-point-dot"><i class="fa-solid fa-check"></i></span>
+                                Single surgery - fewer procedures and faster overall recovery
+                            </li>
+                        </ul>
+                        <button (click)="openModal()" class="a4-card-cta">
+                            <i class="ti ti-calendar-plus" aria-hidden="true"></i>
+                            Book Consultation
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Graft Options Sub-Section -->
+            <!-- <div class="a4-graft-section">
+                <p class="a4-graft-label">Graft Options Used in ACL Reconstruction</p>
+                <div class="a4-graft-grid">
+                    <div class="a4-graft-chip">
+                        <i class="fa-solid fa-circle-dot"></i>
+                        Patellar Tendon Graft (BTB)
+                    </div>
+                    <div class="a4-graft-chip">
+                        <i class="fa-solid fa-circle-dot"></i>
+                        Hamstring Tendon Graft
+                    </div>
+                    <div class="a4-graft-chip">
+                        <i class="fa-solid fa-circle-dot"></i>
+                        Quadriceps Tendon Graft
+                    </div>
+                    <div class="a4-graft-chip">
+                        <i class="fa-solid fa-circle-dot"></i>
+                        Allograft (Donor Tissue)
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- Bottom Note -->
+            <div class="a4-bottom-note">
+                <div class="a4-note-icon">
+                    <img src="../../assets/orthopedic-icon.png" style="width: 80px; height: auto; margin-top: 6%;"
+                        alt="orthopedic icon">
+                </div>
+                <p class="a4-note-text">
+                    At <strong>Rashtrotthana Hospital</strong>, our orthopaedic and sports medicine surgeons provide
+                    advanced ACL Reconstruction Surgery in Bangalore with <strong>individualised treatment
+                        plans</strong> tailored to each patient's injury severity, age, activity level, and
+                    return-to-sport goals.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Section 5: Why Choose Rashtrotthana -->
+    <section class="a5-section" id="why-rashtrotthana-acl">
+        <div class="a5-bg-blob-1"></div>
+        <div class="a5-bg-blob-2"></div>
+
+        <div class="a5-inner">
+
+            <div class="a5-header">
+                <p class="a5-eyebrow">Why Choose Us</p>
+                <h2 class="a5-heading">Why Choose Rashtrotthana Hospital for ACL Reconstruction Surgery in
+                    Bangalore?</h2>
+            </div>
+
+            <div class="a5-grid">
+
+                <!-- Card 1 -->
+                <div class="a5-card">
+                    <div class="a5-icon-wrap">
+                        <img src="../../assets/sheild-icon-1.png" alt="Advanced Sports Surgery Care Icon" />
+                    </div>
+                    <h3 class="a5-card-title">Arthroscopic Expertise &amp; Sports Medicine Specialists</h3>
+                    <div class="a5-card-divider"></div>
+                    <p class="a5-card-sub">We combine arthroscopic surgical precision with sports medicine expertise
+                        to deliver safe, accurate, and athlete-centred ACL care - from diagnosis to full recovery.</p>
+                    <ul class="a5-points">
+                        <li>
+                            <span class="a5-check"><i class="fa-solid fa-check"></i></span>
+                            Advanced arthroscopic OTs with high-definition imaging
+                        </li>
+                        <li>
+                            <span class="a5-check"><i class="fa-solid fa-check"></i></span>
+                            Experienced orthopaedic and sports injury surgeons
+                        </li>
+                        <li>
+                            <span class="a5-check"><i class="fa-solid fa-check"></i></span>
+                            End-to-end care from injury to return-to-sport
+                        </li>
+                        <li>
+                            <span class="a5-check"><i class="fa-solid fa-check"></i></span>
+                            Minimally invasive techniques for faster healing
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="a5-card">
+                    <div class="a5-icon-wrap">
+                        <img src="../../assets/insurance-icon-1.png" alt="Insurance Support Icon" />
+                    </div>
+                    <h3 class="a5-card-title">Cashless Insurance &amp; Patient Support</h3>
+                    <div class="a5-card-divider"></div>
+                    <p class="a5-card-sub">We make ACL Surgery in Bangalore accessible and affordable with smooth
+                        insurance coordination and transparent billing at every step.</p>
+                    <ul class="a5-points">
+                        <li>
+                            <span class="a5-check"><i class="fa-solid fa-check"></i></span>
+                            Cashless insurance facility available
+                        </li>
+                        <li>
+                            <span class="a5-check"><i class="fa-solid fa-check"></i></span>
+                            Pre-authorisation and claim processing support
+                        </li>
+                        <li>
+                            <span class="a5-check"><i class="fa-solid fa-check"></i></span>
+                            Transparent treatment and billing process
+                        </li>
+                        <li>
+                            <span class="a5-check"><i class="fa-solid fa-check"></i></span>
+                            Dedicated patient assistance throughout treatment
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="a5-card">
+                    <div class="a5-icon-wrap">
+                        <img src="../../assets/location-icon-1.png" alt="Location Icon" />
+                    </div>
+                    <h3 class="a5-card-title">Convenient Location &amp; Structured Rehabilitation</h3>
+                    <div class="a5-card-divider"></div>
+                    <p class="a5-card-sub">Located in Rajarajeshwari Nagar, Bangalore - with in-house physiotherapy
+                        and sports rehabilitation support for a complete recovery journey after ACL surgery.</p>
+                    <ul class="a5-points">
+                        <li>
+                            <span class="a5-check"><i class="fa-solid fa-check"></i></span>
+                            Easy access via Metro, bus, and major roads
+                        </li>
+                        <li>
+                            <span class="a5-check"><i class="fa-solid fa-check"></i></span>
+                            In-house physiotherapy and rehabilitation support
+                        </li>
+                        <li>
+                            <span class="a5-check"><i class="fa-solid fa-check"></i></span>
+                            Supportive, patient-friendly care environment
+                        </li>
+                        <li>
+                            <span class="a5-check"><i class="fa-solid fa-check"></i></span>
+                            Structured return-to-sport rehabilitation programme
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Section 6: ACL Treatment Journey -->
+    <section class="a6-section" id="acl-treatment-journey">
+        <div class="a6-inner">
+
+            <div class="a6-header">
+                <p class="a6-eyebrow">Step-by-Step Process</p>
+                <h2 class="a6-heading">What to Expect During ACL Reconstruction Surgery at Rashtrotthana
+                    Hospital?</h2>
+                <p class="a6-header-sub">Your Step-by-Step ACL Treatment &amp; Recovery Journey in Bangalore</p>
+            </div>
+
+            <div class="a6-cards">
+
+                <div class="a6-card">
+                    <div class="a6-card-top">
+                        <div class="a6-icon-wrap">
+                            <i class="fa-solid fa-user-doctor"></i>
+                        </div>
+                        <div class="a6-num">01</div>
+                    </div>
+                    <div class="a6-card-body">
+                        <h3 class="a6-card-title">Consultation &amp; Injury Evaluation</h3>
+                        <div class="a6-card-divider"></div>
+                        <p class="a6-card-text">Our sports medicine specialists perform clinical examination, review
+                            MRI scans, and assess ligament stability to confirm ACL tear grade and determine the
+                            optimal surgical plan.</p>
+                    </div>
+                </div>
+
+                <div class="a6-card">
+                    <div class="a6-card-top">
+                        <div class="a6-icon-wrap">
+                            <i class="fa-solid fa-scissors"></i>
+                        </div>
+                        <div class="a6-num">02</div>
+                    </div>
+                    <div class="a6-card-body">
+                        <h3 class="a6-card-title">Arthroscopic ACL Surgery</h3>
+                        <div class="a6-card-divider"></div>
+                        <p class="a6-card-text">Minimally invasive arthroscopic ACL reconstruction is performed
+                            using the chosen graft - with precision graft placement to restore full knee stability
+                            and function.</p>
+                    </div>
+                </div>
+
+                <div class="a6-card">
+                    <div class="a6-card-top">
+                        <div class="a6-icon-wrap">
+                            <i class="fa-solid fa-bed-pulse"></i>
+                        </div>
+                        <div class="a6-num">03</div>
+                    </div>
+                    <div class="a6-card-body">
+                        <h3 class="a6-card-title">Post-Surgery Recovery &amp; Care</h3>
+                        <div class="a6-card-divider"></div>
+                        <p class="a6-card-text">Patients receive structured pain management, cryotherapy, and early
+                            mobilisation guidance to reduce swelling, prevent stiffness, and begin a safe healing
+                            process.</p>
+                    </div>
+                </div>
+
+                <div class="a6-card">
+                    <div class="a6-card-top">
+                        <div class="a6-icon-wrap">
+                            <i class="fa-solid fa-person-running"></i>
+                        </div>
+                        <div class="a6-num">04</div>
+                    </div>
+                    <div class="a6-card-body">
+                        <h3 class="a6-card-title">Rehabilitation &amp; Return to Sport</h3>
+                        <div class="a6-card-divider"></div>
+                        <p class="a6-card-text">A progressive physiotherapy and sports rehabilitation programme
+                            rebuilds strength, proprioception, and confidence - guiding patients back to sport,
+                            exercise, and active daily life.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="a6-bottom-note">
+                <div class="a6-note-icon">
+                    <img src="../../assets/orthopedic-icon.png" style="width: 80px; height: auto; margin-top: 6%;"
+                        alt="orthopedic icon">
+                </div>
+                <p class="a6-note-text">
+                    At <strong>Rashtrotthana Hospital</strong>, our team is dedicated to safe surgical outcomes,
+                    structured rehabilitation, and helping patients achieve <strong>full return to sport after ACL
+                        Reconstruction Surgery in Bangalore</strong>.
+                </p>
+                <button (click)="openModal()" class="a6-note-cta">
+                    <i class="ti ti-calendar-plus" aria-hidden="true"></i>
+                    BooK Consultation
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Section 7: FAQ -->
+    <section class="a7-section" id="acl-faq" itemscope itemtype="https://schema.org/FAQPage">
+        <div class="a7-inner">
+
+            <div class="a7-header">
+                <p class="a7-eyebrow">Patient Questions</p>
+                <h2 class="a7-heading">Frequently Asked Questions About ACL Reconstruction Surgery in Bangalore</h2>
+                <p class="a7-header-sub">Answers to the most common questions about ACL tears, surgery, and recovery.
+                </p>
+            </div>
+
+            <div class="a7-faq-list">
+
+                <div *ngFor="let faq of faqs; let i = index" class="a7-faq-item" [class.is-open]="faq.open" itemscope
+                    itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <button class="a7-faq-q" (click)="toggleFaq(i)" itemprop="name" [attr.aria-expanded]="faq.open">
+                        <span>{{ faq.ques }}</span>
+                        <i class="fa-solid fa-angle-down" style="color: rgb(36, 36, 37);"></i>
+                    </button>
+
+                    <div class="a7-faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">{{ faq.ans }}</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+</div>

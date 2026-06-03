@@ -1,12 +1,12 @@
 .callback-container {
-  background-color: #008080;
+  background-color: #1F4E5F;
   max-width: 500px;
-  margin: 50px auto;
+  margin: 0px auto;
   padding: 40px 30px;
   border-radius: 15px;
   box-shadow: 0 6px 20px rgba(0, 86, 179, 0.2);
   font-family: 'Poppins', sans-serif;
-  margin-top: 130px;
+  /* margin-top: 130px; */
 }
 
 header h2 {
