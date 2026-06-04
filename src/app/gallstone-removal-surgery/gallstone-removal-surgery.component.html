@@ -1,328 +1,323 @@
-<div class="root-container">
+<div class="hernia-root">
 
-    <!-- hero section -->
-    <div class="speciality-header">
-        <img src="assets/gallstone-removal-surgery/gallstone_desk.png" class="desktop"
-            alt="Maternity Package (Janani Samridhi) Banner of Rashtrotthana Hospital Bangalore" />
-        <img src="assets/gallstone-removal-surgery/gallstone_mob.png" class="mobile"
-            alt="Maternity Package (Janani Samridhi) Banner of Rashtrotthana Hospital Bangalore">
-        <div class="header_button">
-            <button class="appointment" (click)="scrollToForm()">Book an Appointment</button>
-            <a href="tel:+918069239999" class="contact_button" (click)="trackPhoneClick()">Contact Now</a>
-        </div>
+  <!-- ═══════════════════════════════════════════════════════════
+       MODAL
+  ═══════════════════════════════════════════════════════════ -->
+  <div class="modal-overlay" [class.modal-open]="isModalOpen" (click)="closeModalOnBackdrop($event)">
+    <div class="modal-box">
+      <div class="button-wrapper">
+         <button class="modal-close" (click)="closeModal()" aria-label="Close">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <path d="M1 1l14 14M15 1L1 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+      </div>
+      <app-call-back-form [pageName]="'Gallstone Removal'" />
     </div>
+  </div>
 
-    <div class="container-2">
 
-        <!-- Intro Section -->
+  <!-- ═══════════════════════════════════════════════════════════
+       Section 1: Hero Banner
+  ═══════════════════════════════════════════════════════════ -->
+  <div class="speciality-header">
+    <img src="../../assets/gallstone-removal-surgery/gallstone_desk.png" class="desktop"
+      alt="Gallstone Removal Surgery in Bangalore - Rashtrotthana Hospital" />
+    <img src="../../assets/gallstone-removal-surgery/gallstone_mob.png" class="mobile"
+      alt="Gallstone Removal Surgery Bangalore - Rashtrotthana Hospital">
+    <div class="header_button">
+      <button class="appointment" (click)="openModal()">Book an Appointment</button>
+      <a href="tel:+918069239999" class="contact_button" (click)="trackPhoneClick()">Contact Now</a>
+    </div>
+  </div>
 
-        <div class="intro-section">
-            <h1 class="page-title">Gall Stone Removal Surgery in Bangalore</h1>
-            <div class="line">
-                <svg xmlns="http://www.w3.org/2000/svg" width="372" height="34" viewBox="0 0 372 34" fill="none"
-                    style="width: 100%;">
-                    <path d="M45.0361 1.5H336.402L0.0664062 16.38H371.066L183.068 32.5" stroke="#FFC250"
-                        stroke-width="3" />
-                </svg>
-            </div>
 
-            <div class="intro-part">
-                <div class="banner-imgs">
-                    <img src="assets/gallstone-removal-surgery/different-doctors-doing-surgical-procedure.jpg" alt="" class="float-left float-delay-1 img-1"
-                        >
-                    <img src="assets/gallstone-removal-surgery/close-up-metallic-medical-scalpel-tweezers-with-organ.jpg" alt="" class="float-left float-delay-2 img-2"
-                        >
-                    <img src="assets/gallstone-removal-surgery/33169.jpg" alt="" class="float-left float-delay-1 img-3"
-                        >
-                    <img src="assets/gallstone-removal-surgery/liver-with-gallbladder-pancreas-spleen-duodenum-asian-doctor-holding-human-anatomy-model-study-diagnosis-treatment-hospital.jpg" alt=""
-                        class="float-left float-delay-3 img-4">
-                </div>
+  <!-- ═══════════════════════════════════════════════════════════
+       Section 2: What is Gallstone Surgery  →  sec-what
+  ═══════════════════════════════════════════════════════════ -->
+  <section class="sec-what" id="what-is-gallstone-surgery" itemscope itemtype="https://schema.org/MedicalProcedure">
+    <h2 class="sr-only">Gallstone Removal Surgery in Bangalore - Rashtrotthana Hospital</h2>
 
-                <div class="intro-content">
-                    <div class="flex">
-                        <img src="assets/tkr/comma-left.png" alt="">
-                        <div class="">
-                            <p class="intro-para">Living with gallstones can be painful and disruptive. Recurrent upper
-                                abdominal pain, bloating, nausea and digestive discomfort often make daily activities
-                                and meals stressful.
-                            </p>
-                            <p class="intro-para">
-                                At Rashtrotthana Hospital, we provide safe and effective gall stone removal surgery
-                                using advanced laparoscopic techniques. Our experienced surgical team focuses on
-                                accurate diagnosis, minimal discomfort and faster recovery, ensuring patients receive
-                                reliable and ethical care.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="flex1">
-                        <p class="intro-para">From the first consultation to post-surgery recovery, we guide you at
-                            every step with clarity and compassion-helping you return to a comfortable, active and
-                            healthy life with confidence.</p>
-                        <img src="assets/tkr/comma-right.png" alt="">
-                    </div>
-                </div>
-            </div>
+    <div class="what-inner">
 
-            <div class="banner-imgs">
-                <img src="assets/gallstone-removal-surgery/midsection-man-working.jpg" alt="" class="float-right float-delay-3 img-5"
-                   >
-                <img src="assets/gallstone-removal-surgery/surgeons-team-hands-laparoscopic-abdominal-operation-patient-surgery-operating-room.jpg" alt=""
-                    class="float-right float-delay-2 img-6" >
-                <img src="assets/gallstone-removal-surgery/surgeon-assistant-conducting-abdominoplasty-surgery-clinic.jpg" alt=""
-                    class="float-right float-delay-2 img-7" >
-                <img src="assets/gallstone-removal-surgery/pain-stomache-old-senior-asian-grandfather-patient-uniform-suffer-from-body-problem-health-ideas-concept.jpg" alt="" class="float-right float-delay-1 img-8"
-                    >
-            </div>
+      <div>
+        <span class="eyebrow teal-ey"><span class="ey-line"></span>Advanced Gallstone Surgery in Bangalore</span>
+        <h1 class="disp-head dark" itemprop="name">What is Gallstone Removal Surgery?</h1>
+        <div class="gold-bar"></div>
+
+        <p class="body-p" itemprop="description">
+          Gallstone removal surgery - medically known as <strong>Cholecystectomy</strong> - is a surgical procedure
+          to remove the gallbladder when it is affected by gallstones (cholelithiasis). Gallstones are hardened
+          deposits of digestive fluid that form in the gallbladder, causing <strong>severe abdominal pain, nausea,
+          vomiting, jaundice and recurrent digestive discomfort</strong> that can significantly impact quality of life.
+        </p>
+
+        <div class="alert-callout">
+          <div class="alert-icon">!</div>
+          <p>If you experience sudden, intense pain in your upper right abdomen - especially after fatty meals - along
+            with fever, jaundice (yellowing of eyes or skin) or persistent nausea, consult a surgeon immediately.
+            Untreated gallstones can lead to serious complications including acute cholecystitis, pancreatitis or
+            bile duct obstruction.</p>
         </div>
 
+        <p class="body-p">
+          At Rashtrotthana Hospital, we perform advanced <strong>Laparoscopic Cholecystectomy in Bangalore</strong>
+          - a minimally invasive, keyhole procedure - with experienced general and laparoscopic surgeons committed
+          to safe outcomes, shorter hospital stays and a smooth return to daily life.
+        </p>
 
-
-
-
-
-        <div class="surgery-sections-container">
-            <div class="surgery-header">
-                <h2 class="surgery-main-title">Surgery Package Section</h2>
-                <p class="surgery-main-subtitle">Experience Advanced Gall Stone Surgery at an Affordable Cost</p>
-            </div>
-
-            <div class="surgeries-grid">
-                <div class="surgery-content">
-                    <!-- <div class="surgery-number">0{{ i + 1 }}</div> -->
-                    <h3 class="surgery-title">What Makes Our Package the Right Choice</h3>
-                    <p class="surgery-subtitle"></p>
-                    <div class="process-part">
-                        <div class="process-line">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="915" height="70" viewBox="0 0 1038 70"
-                                fill="none">
-                                <path
-                                    d="M0.385742 23.4048L10.695 29.5903C88.0005 75.9737 184.029 78.1833 263.386 35.4048C344.046 -6.65146 440.033 -7.24926 521.21 33.7991L524.386 35.4048C601.534 78.5078 695.128 80.1692 773.757 39.8315L782.386 35.4048C852.717 -6.48154 939.273 -10.6518 1013.31 24.2791L1036.89 35.4048"
-                                    stroke="#959292" stroke-width="1.5" stroke-dasharray="6 6" />
-                            </svg>
-                        </div>
-                        <div class="process-container">
-                            <div class="process-card">
-                                <img src="assets/gallstone-removal-surgery/woman-medic-measuring-pulse-patient.jpg" alt="">
-                                <div class="card-para-1 card-para">Complete care from consultation to recovery
-                                </div>
-                            </div>
-                            <div class="process-card">
-                                <img src="assets/gallstone-removal-surgery/surgeon-assistant-conducting-abdominoplasty-surgery-clinic.jpg" alt="">
-                                <div class="card-para-2 card-para">Experienced laparoscopic surgeons</div>
-                            </div>
-                            <div class="process-card">
-                                <img src="assets/gallstone-removal-surgery/medic-operating-with-metallic-scalpel.jpg" alt="">
-                                <div class="card-para-3 card-para">Minimally invasive surgery with smaller cuts</div>
-                            </div>
-                            <div class="process-card">
-                                <img src="assets/gallstone-removal-surgery/senior-man-helping-cancer-patient-woman-wearing-head-scarf-with-walker-hospital-health-care-medical-concept.jpg" alt="">
-                                <div class="card-para-4 card-para">Faster recovery and shorter hospital stay
-                                </div>
-                            </div>
-                            <div class="process-card">
-                                <img src="assets/gallstone-removal-surgery/Ellipse 112.png" alt="">
-                                <div class="card-para-5 card-para">Cashless insurance support and dedicated care team
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <p class="surgery-main-subtitle">Your safety, comfort and recovery always come first. Our Gall
-                        Stone Removal Surgery Package is designed to provide transparent, reliable and high-quality
-                        surgical care.
-
-                    </p>
-
-                </div>
-            </div>
-
+        <div class="stats-row">
+          <div class="stat-pill">
+            <span class="s-num">30<span style="font-size:14px;font-weight:400">min</span></span>
+            <span class="s-lbl">Procedure Time</span>
+          </div>
+          <div class="stat-pill">
+            <span class="s-num">1–2<span style="font-size:14px;font-weight:400"> days</span></span>
+            <span class="s-lbl">Hospital Stay</span>
+          </div>
+          <div class="stat-pill">
+            <span class="s-num">1<span style="font-size:14px;font-weight:400">wk</span></span>
+            <span class="s-lbl">Return to Work</span>
+          </div>
         </div>
 
-
-        <!-- <div class="doctor-part">
-      <div class="doctor-heading">Meet Our Senior Gynecologist</div>
-      <div class="doctor-img">
-        <img src="assets/Doc-Inv-Page/Dr-Latha-Venkataram.png" alt="">
-        <div class="doctor-name">
-          <li class="doctor-name"><b>Dr. Latha Venkataraman</b></li>
-          <li class="doctor-name-2" style="margin-top: 20px;">MBBS, MRCOG (UK), MRCP(I), FRCOG(UK)</li>
-          <li class="doctor-name-2">Experience: 32+ Years</li>
-          <li class="doctor-name-2">Speciality: Obstetrics & Gynecology</li>
+        <div class="cta-open-modal">
+          <button class="btn-link-modal" (click)="openModal()">
+            <i class="ti ti-calendar-plus" aria-hidden="true"></i>
+            Book a Consultation
+          </button>
         </div>
       </div>
-      <ul style="text-align: left;">
-        <li class="doctor-description_left">30+ years of experience</li>
-        <li class="doctor-description_left">50k+ successful deliveries</li>
-        <li class="doctor-description_left">80% success rate on Normal Delivery</li>
-        <li class="doctor-description_left">Skilled in vaginal surgeries</li>
-        <li class="doctor-description_left">Specializes in safe and normal (vaginal) deliveries</li>
-        <li class="doctor-description_left">Focused on menopause management and related health issues</li>
-        <li class="doctor-description_left">Expertise in managing high-risk pregnancies</li>
-        <li class="doctor-description_left">Provides care for diabetes and medical disorders in pregnancy</li>
-        <li class="doctor-description_left">Offers treatment for recurrent pregnancy loss</li>
-      </ul>
 
-      <button class="appointment-btn" (click)="scrollToForm()">Book an Appointment</button>
-
-    </div> -->
-
-        <!-- <app-doctor-card [doctorCard]="doctorCard"></app-doctor-card> -->
-
-        <div class="main-services-section">
-            <div class="services-content-area">
-                <div class="section-badge">
-                    <span class="badge-icon">🏥</span>
-                    <span>Surgery Types</span>
-                </div>
-
-                <h2 class="section-heading">Types of Gall Stone Removal Surgery</h2>
-
-                <!-- <p class="section-intro">
-                    There are two main types of knee replacement procedures, depending on the extent of joint damage:
-                </p> -->
-
-                <div class="main-services-grid">
-                    <div *ngFor="let service of mainServices" class="main-service-card"
-                        [style.--card-color]="service.color">
-                        <div class="service-icon-circle">
-                            <span>{{ service.icon }}</span>
-                        </div>
-                        <div class="service-card-content">
-                            <h3 class="service-card-title">{{ service.title }}</h3>
-                            <div class="service-card-desc" [innerHTML]="service.description"></div>
-                        </div>
-                        <!-- <div class="service-arrow">→</div> -->
-                    </div>
-                </div>
-            </div>
-
-            <div class="form-sidebar" #formSection>
-                <!-- <app-speciality-form [doctor]="formdoctors" /> -->
-                <app-call-back-form [pageName]="'Gallstone Removal Surgery'"></app-call-back-form>
-            </div>
+      <div class="what-img-col">
+        <div class="img-frame">
+          <img src="../../assets/gallbladder-stone-removal-at-rashtrotthana-hospital-bangalore.png"
+            alt="Gallstone Removal Surgery Laparoscopic Cholecystectomy Bangalore Rashtrotthana Hospital"
+            itemprop="image" />
         </div>
+        <!-- <div class="img-pill">
+          <i class="ti ti-shield-check" aria-hidden="true"></i>
+          General &amp; Laparoscopic Surgery · RR Nagar, Bangalore
+        </div> -->
+      </div>
 
-
-        <!-- doctors section -->
-
-        <div class="container_margin">
-            <h2 class="s_h1 text-center heading-margin">Our Experienced Surgeons</h2>
-            <app-speciality-doc-card [doctors]="doctors" />
-        </div>
-
-        <!-- Why Choose Rashtrotthana Hospital? -->
-
-        <div class="why-choose-wrapper" style="margin-top: 30px;">
-            <!-- Header Section -->
-            <div class="section-intro">
-                <span class="intro-badge">Your Health Partner</span>
-                <h2 class="main-heading">Why Choose Rashtrotthana Hospital?</h2>
-                <p class="main-subheading">Your Health in Trustable Hands</p>
-                <div class="heading-underline">
-                    <span class="line"></span>
-                    <span class="dot"></span>
-                    <span class="line"></span>
-                </div>
-            </div>
-
-            <!-- Sections with alternating layouts -->
-            <div *ngFor="let section of sections; let i = index" class="section-block">
-
-                <!-- Left Layout (Icon Left) -->
-                <div *ngIf="i % 2 === 0" class="layout-container layout-left">
-                    <!-- <div class="icon-column" [style.background]="section.color">
-            <div class="number-badge">{{ section.number }}</div>
-            <div class="main-icon">{{ section.icon }}</div>
-            <div class="vertical-text">{{ section.title.split('.')[1]?.trim() || section.title }}</div>
-          </div> -->
-
-                    <div class="content-column">
-                        <h3 class="section-title" [style.color]="section.color">{{ section.title }}</h3>
-                        <p class="section-desc">{{ section.description }}</p>
-
-                        <div class="features-grid">
-                            <div *ngFor="let feature of section.features" class="feature-item">
-                                <div class="feature-icon-box" [style.border-color]="section.color">
-                                    <span>{{ feature.icon }}</span>
-                                </div>
-                                <div class="feature-text">
-                                    <strong>{{ feature.title }}</strong>
-                                    <p>{{ feature.description }}</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="highlight-box" [style.border-left-color]="section.color">
-                            <span class="bulb-icon">💡</span>
-                            <em>{{ section.highlightText }}</em>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Right Layout (Icon Right) -->
-                <div *ngIf="i % 2 !== 0" class="layout-container layout-right">
-                    <div class="content-column">
-                        <h3 class="section-title" [style.color]="section.color">{{ section.title }}</h3>
-                        <p class="section-desc">{{ section.description }}</p>
-
-                        <div class="features-grid">
-                            <div *ngFor="let feature of section.features" class="feature-item">
-                                <div class="feature-icon-box" [style.border-color]="section.color">
-                                    <span>{{ feature.icon }}</span>
-                                </div>
-                                <div class="feature-text">
-                                    <strong>{{ feature.title }}</strong>
-                                    <p>{{ feature.description }}</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="highlight-box" [style.border-left-color]="section.color">
-                            <span class="bulb-icon">💡</span>
-                            <em>{{ section.highlightText }}</em>
-                        </div>
-                    </div>
-
-                    <!-- <div class="icon-column" [style.background]="section.color">
-            <div class="number-badge">{{ section.number }}</div>
-            <div class="main-icon">{{ section.icon }}</div>
-            <div class="vertical-text">{{ section.title.split('.')[1]?.trim() || section.title }}</div>
-          </div> -->
-                </div>
-
-                <!-- Separator Line -->
-                <div *ngIf="i < sections.length - 1" class="section-divider">
-                    <span class="divider-circle" [style.background]="section.color"></span>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- Final CTA -->
-        <div class="final-action-bar">
-            <div class="action-content">
-                <h3>Your Health, Our Priority</h3>
-                <p><b>Experience Trusted Gall Stone Removal Surgery in Bangalore</b></p>
-                <p style="margin-top: 15px; line-height: 25px;">
-                    Don’t ignore recurring abdominal pain, digestive discomfort or gall stone symptoms. Timely
-                    treatment can prevent complications and support a smoother recovery. Consult our experienced
-                    surgeons at Rashtrotthana Hospital today and take the first step toward safe gall stone removal,
-                    faster healing and long-term digestive comfort.
-                </p>
-            </div>
-
-            <div class="action-buttons">
-                <a href="tel:+918069239999" class="action-btn btn-yellow" (click)="trackPhoneClick()">
-                    Call +91 80692 39999
-                </a>
-                <button class="action-btn btn-teal" (click)="scrollToForm()">
-                    Book Appointment
-                </button>
-            </div>
-        </div>
-
-
-        <!-- Faqs -->
-        <app-faqs-new [faqData]="faqs"></app-faqs-new>
     </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════════════════
+       Section 3: Surgery Types + Sticky CTA Panel  →  surg-section
+  ═══════════════════════════════════════════════════════════ -->
+  <section class="surg-section" id="gallstone-surgery-types">
+    <div class="surg-layout">
+
+      <!-- Left: procedure cards -->
+      <div class="surg-left">
+
+        <span class="eyebrow teal-ey surg-eyebrow"><span class="ey-line"></span>Procedures We Offer</span>
+        <h2 class="surg-title-main">Gallstone Surgery Options at Rashtrotthana Hospital, Bangalore</h2>
+        <p class="surg-subtitle">Our experienced general and laparoscopic surgeons assess your condition, overall
+          health and gallstone severity to recommend the most appropriate surgical approach for you.</p>
+
+        <!-- Card 1 -->
+        <div class="svc-card">
+          <div class="svc-card-text">
+            <h3 class="svc-title">Laparoscopic Cholecystectomy</h3>
+            <p class="svc-desc">The gold standard for gallstone removal - performed through 3–4 small keyhole
+              incisions using a laparoscope and HD camera. The gallbladder is removed entirely, eliminating the
+              source of stones with minimal trauma. Same-day or next-day discharge with return to normal activity
+              in 5–7 days.</p>
+            <!-- <button class="btn-teal" (click)="openModal()">
+              <i class="ti ti-calendar-plus" aria-hidden="true"></i>Book Consultation
+            </button> -->
+          </div>
+          <div class="svc-card-img">
+            <img src="../../assets/laparoscopy-image.png"
+              alt="Laparoscopic Cholecystectomy Gallstone Removal Surgery Bangalore" />
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="svc-card">
+          <div class="svc-card-text">
+            <h3 class="svc-title">Open Cholecystectomy</h3>
+            <p class="svc-desc">In cases of severely inflamed gallbladders, acute cholecystitis or bile duct
+              complications where laparoscopy is not feasible, open cholecystectomy provides direct surgical
+              access for complete and safe gallbladder removal.</p>
+            <!-- <button class="btn-teal" (click)="openModal()">
+              <i class="ti ti-calendar-plus" aria-hidden="true"></i>Book Consultation
+            </button> -->
+          </div>
+          <div class="svc-card-img">
+            <img src="../../assets/open-surgery.jpg"
+              alt="Open Cholecystectomy Gallstone Surgery Bangalore" />
+          </div>
+        </div>
+
+        
+
+      </div>
+
+      <!-- Right: sticky CTA card -->
+      <div class="surg-right">
+        <app-call-back-form [pageName]="'Cholecystectomy'" />
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- doctor section -->
+     <section class="doctor-section" style="padding: 50px 0; background-color: #f4fafa;">
+    <h2 class="surg-title-main" style="text-align: center; margin-bottom: 50px;">Meet Our Experienced Surgeons</h2>
+    <app-speciality-doc-card [doctors]="doctors" />
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════════════════
+       Section 4: Why Choose Us  →  sec-why
+  ═══════════════════════════════════════════════════════════ -->
+  <section class="sec-why" id="why-rashtrotthana-gallstone">
+    <div class="why-blob wb1"></div>
+    <div class="why-blob wb2"></div>
+
+    <div class="sec-inner">
+
+      <div class="sec-head center-head">
+        <span class="eyebrow sage-ey center-ey"><span class="ey-line"></span>Why Choose Us</span>
+        <h2 class="disp-head white">Why Choose Rashtrotthana Hospital for Gallstone Surgery in Bangalore?</h2>
+        <div class="gold-bar" style="margin:0 auto 0;"></div>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-card" *ngFor="let card of whyCards">
+          <div class="why-card-top">
+            <div class="why-icon">
+              <img [src]="card.icon" [alt]="card.iconAlt" />
+            </div>
+            <div class="why-num">{{ card.num }}</div>
+          </div>
+          <h3 class="why-title">{{ card.title }}</h3>
+          <p class="why-sub">{{ card.sub }}</p>
+          <ul class="why-pts">
+            <li *ngFor="let pt of card.points">
+              <span class="tcheck"></span>{{ pt }}
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mid-cta">
+        <div>
+          <h3>Ready to Get Rid of Gallstone Pain?</h3>
+          <p>Talk to our laparoscopic surgeons - get a clear diagnosis, treatment plan and cost estimate today.</p>
+        </div>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;">
+          <button class="btn-gold" (click)="openModal()">
+            <i class="ti ti-calendar-plus" aria-hidden="true"></i>Book Appointment
+          </button>
+          <a href="tel:+918069239999" class="btn-outline-gold" (click)="trackPhoneClick()">
+            <i class="ti ti-phone" aria-hidden="true"></i>Call Now
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════════════════
+       Section 5: Treatment Journey  →  sec-journey
+  ═══════════════════════════════════════════════════════════ -->
+  <section class="sec-journey" id="gallstone-treatment-journey">
+    <div class="sec-inner">
+
+      <div class="sec-head center-head">
+        <span class="eyebrow teal-ey center-ey"><span class="ey-line"></span>Step-by-Step Process</span>
+        <h2 class="disp-head dark">What to Expect During Gallstone Surgery at Rashtrotthana Hospital</h2>
+        <div class="gold-bar" style="margin:0 auto 22px;"></div>
+        <p class="head-sub">Your complete care journey - from first consultation to full recovery after
+          Laparoscopic Cholecystectomy in Bangalore.</p>
+      </div>
+
+      <div class="journey-grid">
+        <div class="j-step" *ngFor="let step of journeySteps; let last = last">
+          <div class="j-step-head">
+            <div class="j-icon" [innerHTML]="step.svgIcon"></div>
+            <div class="j-num">{{ step.num }}</div>
+          </div>
+          <h3 class="j-title">{{ step.title }}</h3>
+          <p class="j-desc">{{ step.desc }}</p>
+          <!-- <div class="j-connector" *ngIf="!last"></div> -->
+        </div>
+      </div>
+
+      <div class="mid-cta" style="background:#1F4E5F;border-color:rgba(77,183,179,.25);margin-top:24px;">
+        <div>
+          <h3 style="color:#fff;">Safe, Smooth &amp; Swift Recovery</h3>
+          <p style="color:rgba(255,255,255,.65);">Most laparoscopic gallstone surgeries are completed in under
+            45 minutes - patients walk within hours and are discharged in 1–2 days.</p>
+        </div>
+        <button class="btn-gold" (click)="openModal()">
+          <i class="ti ti-calendar-plus" aria-hidden="true"></i>Book Consultation
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════════════════
+       Section 6: FAQ  →  sec-faq
+  ═══════════════════════════════════════════════════════════ -->
+  <section class="sec-faq" id="gallstone-surgery-faq" itemscope itemtype="https://schema.org/FAQPage">
+    <div class="sec-inner narrow">
+
+      <div class="sec-head center-head">
+        <span class="eyebrow teal-ey center-ey"><span class="ey-line"></span>Patient Questions</span>
+        <h2 class="disp-head dark">Frequently Asked Questions About Gallstone Removal Surgery in Bangalore</h2>
+        <div class="gold-bar" style="margin:0 auto 22px;"></div>
+        <p class="head-sub">Answers to the most common questions about gallstones, laparoscopic cholecystectomy,
+          costs, insurance and recovery.</p>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item"
+          *ngFor="let faq of faqs; let i = index"
+          [class.faq-open]="openFaq === i"
+          itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+
+          <button class="faq-q"
+            itemprop="name"
+            [attr.aria-expanded]="openFaq === i"
+            (click)="toggleFaq(i)">
+            <span>{{ faq.q }}</span>
+            <svg class="faq-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"/>
+            </svg>
+          </button>
+
+          <div class="faq-ans" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <div class="faq-ans-inner" itemprop="text">{{ faq.a }}</div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="faq-footer-cta">
+        <p>Still have questions about gallstone surgery in Bangalore?</p>
+        <div class="faq-cta-row">
+          <button class="btn-teal" (click)="openModal()">
+            <i class="ti ti-calendar-check" aria-hidden="true"></i>Book a Consultation
+          </button>
+          <a href="tel:+918069239999" class="btn-outline-gold" style="color:#0C8A8F;border-color:#0C8A8F;" (click)="trackPhoneClick()">
+            <i class="ti ti-phone" aria-hidden="true"></i>Call +91 80692 39999
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+</div>

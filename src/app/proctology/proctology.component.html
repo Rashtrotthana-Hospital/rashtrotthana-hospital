@@ -1,331 +1,321 @@
-<div class="root-container">
+<div class="hernia-root">
 
-    <!-- hero section -->
-    <div class="speciality-header">
-        <img src="assets/Proctology_Hernia_Assets/piles_desk.png" class="desktop"
-            alt="Maternity Package (Janani Samridhi) Banner of Rashtrotthana Hospital Bangalore" />
-        <img src="assets/Proctology_Hernia_Assets/piles_mob.png" class="mobile"
-            alt="Maternity Package (Janani Samridhi) Banner of Rashtrotthana Hospital Bangalore">
-        <div class="header_button">
-            <button class="appointment" (click)="scrollToForm()">Book an Appointment</button>
-            <a href="tel:+918069239999" class="contact_button" (click)="trackPhoneClick()">Contact Now</a>
-        </div>
+  <!-- ═══════════════════════════════════════════════════════════
+       MODAL
+  ═══════════════════════════════════════════════════════════ -->
+  <div class="modal-overlay" [class.modal-open]="isModalOpen" (click)="closeModalOnBackdrop($event)">
+    <div class="modal-box">
+      <div class="button-wrapper">
+        <button class="modal-close" (click)="closeModal()" aria-label="Close">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M1 1l14 14M15 1L1 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </button>
+      </div>
+      <app-call-back-form [pageName]="'Piles Surgery'" />
     </div>
+  </div>
 
-    <div class="container-2">
 
-        <!-- Intro Section -->
+  <!-- ═══════════════════════════════════════════════════════════
+       Section 1: Hero Banner
+  ═══════════════════════════════════════════════════════════ -->
+  <div class="speciality-header">
+    <img src="../../assets/Proctology_Hernia_Assets/piles-banner-desktop.png" class="desktop"
+      alt="Piles Surgery Treatment in Bangalore - Rashtrotthana Hospital" />
+    <img src="../../assets/Proctology_Hernia_Assets/piles_mob.png" class="mobile"
+      alt="Piles Surgery Treatment Bangalore - Rashtrotthana Hospital">
+    <div class="header_button">
+      <button class="appointment" (click)="openModal()">Book an Appointment</button>
+      <a href="tel:+918069239999" class="contact_button" (click)="trackPhoneClick()">Contact Now</a>
+    </div>
+  </div>
 
-        <div class="intro-section">
-            <h1 class="page-title">Piles Surgery in Bangalore</h1>
-            <div class="line">
-                <svg xmlns="http://www.w3.org/2000/svg" width="372" height="34" viewBox="0 0 372 34" fill="none"
-                    style="width: 100%;">
-                    <path d="M45.0361 1.5H336.402L0.0664062 16.38H371.066L183.068 32.5" stroke="#FFC250"
-                        stroke-width="3" />
-                </svg>
-            </div>
 
-            <div class="intro-part">
-                <div class="banner-imgs">
-                    <img src="assets/Proctology_Hernia_Assets/best-piles-hospital-rajarajeshwari-nagar-bangalore.png" alt=""
-                        class="float-left float-delay-1 img-1">
-                    <img src="assets/Proctology_Hernia_Assets/3d-model-human-rectum-with-hemorrhoids-piles-polyps-medical-education-healthcare-use.jpg"
-                        alt="" class="float-left float-delay-2 img-2">
-                    <img src="assets/Proctology_Hernia_Assets/close-up-man-s-hand-holding-back-side-concept-hemorrhoids.jpg" alt="" class="float-left float-delay-1 img-3">
-                    <img src="assets/Proctology_Hernia_Assets/doctor-holding-human-colon-anatomy-model-colonic-disease-large-intestine-color.jpg"
-                        alt="" class="float-left float-delay-3 img-4">
-                </div>
+  <!-- ═══════════════════════════════════════════════════════════
+       Section 2: What is Piles Surgery  →  sec-what
+  ═══════════════════════════════════════════════════════════ -->
+  <section class="sec-what" id="what-is-piles-surgery" itemscope itemtype="https://schema.org/MedicalProcedure">
+    <h2 class="sr-only">Piles Surgery Treatment in Bangalore - Rashtrotthana Hospital</h2>
 
-                <div class="intro-content">
-                    <div class="flex">
-                        <img src="assets/tkr/comma-left.png" alt="">
-                        <div class="">
-                            <p class="intro-para">Living with piles (hemorrhoids) can be uncomfortable and distressing.
-                                Symptoms such as pain during bowel movements, bleeding, itching, swelling or a constant
-                                feeling of discomfort can interfere with daily life and affect confidence.
-                            </p>
-                            <p class="intro-para">
-                                At Rashtrotthana Hospital, we provide safe and effective Piles Surgery in Bangalore
-                                using advanced and minimally invasive treatment options. Our experienced surgical team
-                                focuses on accurate diagnosis, minimal pain and faster recovery, ensuring ethical and
-                                patient-focused care.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="flex1">
-                        <p class="intro-para">From the first consultation to post-procedure recovery, we guide you at
-                            every step with clarity and sensitivity-helping you return to a comfortable, pain-free and
-                            confident life.</p>
-                        <img src="assets/tkr/comma-right.png" alt="">
-                    </div>
-                </div>
-            </div>
+    <div class="what-inner">
 
-            <div class="banner-imgs">
-                <img src="assets/Proctology_Hernia_Assets/laser-treatment-for-internal-hemorrhoids.png" alt=""
-                    class="float-right float-delay-3 img-5">
-                <img src="assets/Proctology_Hernia_Assets/conceptual-3d-illustration-human-hernia.jpg"
-                    alt="" class="float-right float-delay-2 img-6">
-                <img src="assets/Proctology_Hernia_Assets/surgeons-performing-complex-surgery-operation-theater-focus-hands-medical-instruments-bright-surgical-lights.jpg"
-                    alt="" class="float-right float-delay-2 img-7">
-                <img src="assets/Proctology_Hernia_Assets/piles-hospital-in-bangalore.png"
-                    alt="" class="float-right float-delay-1 img-8">
-            </div>
+      <div>
+        <span class="eyebrow teal-ey"><span class="ey-line"></span>Advanced Piles Treatment in Bangalore</span>
+        <h1 class="disp-head dark" itemprop="name">What is Piles Surgery?</h1>
+        <div class="gold-bar"></div>
+
+        <p class="body-p" itemprop="description">
+          Piles - medically known as <strong>Haemorrhoids</strong> - are swollen and inflamed veins in the rectum
+          or around the anus that cause pain, bleeding and discomfort. When conservative treatments fail to provide
+          relief, <strong>surgical intervention</strong> becomes the most effective and permanent solution. At
+          Rashtrotthana Hospital, we offer advanced piles surgery in Bangalore including <strong>Laser
+            Haemorrhoidectomy, Stapler Surgery (MIPH) and conventional procedures</strong> - tailored to the grade
+          and severity of your condition.
+        </p>
+
+        <div class="alert-callout">
+          <div class="alert-icon">!</div>
+          <p>If you experience rectal bleeding, severe anal pain, persistent itching or a lump around the anus -
+            do not ignore these symptoms. Untreated piles can progress from Grade I to Grade IV, making treatment
+            more complex and recovery longer. Early consultation leads to faster, simpler treatment.</p>
         </div>
 
+        <p class="body-p">
+          At Rashtrotthana Hospital, our experienced general and colorectal surgeons provide <strong>minimally
+            invasive piles treatment in Bangalore</strong> - with day-care procedures, minimal post-operative pain,
+          and quick return to daily routines.
+        </p>
 
-
-
-
-
-        <div class="surgery-sections-container">
-            <div class="surgery-header">
-                <h2 class="surgery-main-title">Surgery Package Section</h2>
-                <p class="surgery-main-subtitle">Experience Advanced Piles Treatment at an Affordable Cost</p>
-            </div>
-
-            <div class="surgeries-grid">
-                <div class="surgery-content">
-                    <!-- <div class="surgery-number">0{{ i + 1 }}</div> -->
-                    <h3 class="surgery-title">What Makes Our Package the Right Choice</h3>
-                    <p class="surgery-subtitle"></p>
-                    <div class="process-part">
-                        <div class="process-line">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="915" height="70" viewBox="0 0 1038 70"
-                                fill="none">
-                                <path
-                                    d="M0.385742 23.4048L10.695 29.5903C88.0005 75.9737 184.029 78.1833 263.386 35.4048C344.046 -6.65146 440.033 -7.24926 521.21 33.7991L524.386 35.4048C601.534 78.5078 695.128 80.1692 773.757 39.8315L782.386 35.4048C852.717 -6.48154 939.273 -10.6518 1013.31 24.2791L1036.89 35.4048"
-                                    stroke="#959292" stroke-width="1.5" stroke-dasharray="6 6" />
-                            </svg>
-                        </div>
-                        <div class="process-container">
-                            <div class="process-card">
-                                <img src="assets/gallstone-removal-surgery/woman-medic-measuring-pulse-patient.jpg"
-                                    alt="">
-                                <div class="card-para-1 card-para">Complete care from consultation to recovery
-                                </div>
-                            </div>
-                            <div class="process-card">
-                                <img src="assets/gallstone-removal-surgery/surgeon-assistant-conducting-abdominoplasty-surgery-clinic.jpg"
-                                    alt="">
-                                <div class="card-para-2 card-para">Experienced surgeons specialized in piles treatment
-                                </div>
-                            </div>
-                            <div class="process-card">
-                                <img src="assets/gallstone-removal-surgery/medic-operating-with-metallic-scalpel.jpg"
-                                    alt="">
-                                <div class="card-para-3 card-para">Minimally invasive and laser-based procedures
-                                </div>
-                            </div>
-                            <div class="process-card">
-                                <img src="assets/gallstone-removal-surgery/senior-man-helping-cancer-patient-woman-wearing-head-scarf-with-walker-hospital-health-care-medical-concept.jpg"
-                                    alt="">
-                                <div class="card-para-4 card-para">Minimal pain and faster recovery
-                                </div>
-                            </div>
-                            <div class="process-card">
-                                <img src="assets/gallstone-removal-surgery/Ellipse 112.png" alt="">
-                                <div class="card-para-5 card-para">Cashless insurance support and dedicated care team
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <p class="surgery-main-subtitle"> Your comfort, safety and recovery always come first. Our Piles
-                        Surgery Package is designed to deliver transparent, reliable and high-quality proctology care.
-
-                    </p>
-
-                </div>
-            </div>
-
+        <div class="stats-row">
+          <div class="stat-pill">
+            <span class="s-num">30<span style="font-size:14px;font-weight:400">min</span></span>
+            <span class="s-lbl">Procedure Time</span>
+          </div>
+          <div class="stat-pill">
+            <span class="s-num">Day<span style="font-size:14px;font-weight:400"> Care</span></span>
+            <span class="s-lbl">Most Cases</span>
+          </div>
+          <div class="stat-pill">
+            <span class="s-num">2–3<span style="font-size:14px;font-weight:400">days</span></span>
+            <span class="s-lbl">Return to Work</span>
+          </div>
         </div>
 
-
-        <!-- <div class="doctor-part">
-      <div class="doctor-heading">Meet Our Senior Gynecologist</div>
-      <div class="doctor-img">
-        <img src="assets/Doc-Inv-Page/Dr-Latha-Venkataram.png" alt="">
-        <div class="doctor-name">
-          <li class="doctor-name"><b>Dr. Latha Venkataraman</b></li>
-          <li class="doctor-name-2" style="margin-top: 20px;">MBBS, MRCOG (UK), MRCP(I), FRCOG(UK)</li>
-          <li class="doctor-name-2">Experience: 32+ Years</li>
-          <li class="doctor-name-2">Speciality: Obstetrics & Gynecology</li>
+        <div class="cta-open-modal">
+          <button class="btn-link-modal" (click)="openModal()">
+            <i class="ti ti-calendar-plus" aria-hidden="true"></i>
+            Book a Consultation
+          </button>
         </div>
       </div>
-      <ul style="text-align: left;">
-        <li class="doctor-description_left">30+ years of experience</li>
-        <li class="doctor-description_left">50k+ successful deliveries</li>
-        <li class="doctor-description_left">80% success rate on Normal Delivery</li>
-        <li class="doctor-description_left">Skilled in vaginal surgeries</li>
-        <li class="doctor-description_left">Specializes in safe and normal (vaginal) deliveries</li>
-        <li class="doctor-description_left">Focused on menopause management and related health issues</li>
-        <li class="doctor-description_left">Expertise in managing high-risk pregnancies</li>
-        <li class="doctor-description_left">Provides care for diabetes and medical disorders in pregnancy</li>
-        <li class="doctor-description_left">Offers treatment for recurrent pregnancy loss</li>
-      </ul>
 
-      <button class="appointment-btn" (click)="scrollToForm()">Book an Appointment</button>
-
-    </div> -->
-
-        <!-- <app-doctor-card [doctorCard]="doctorCard"></app-doctor-card> -->
-
-        <div class="main-services-section">
-            <div class="services-content-area">
-                <div class="section-badge">
-                    <span class="badge-icon">🏥</span>
-                    <span>Surgery Types</span>
-                </div>
-
-                <h2 class="section-heading">Types of Piles Surgery</h2>
-
-                <!-- <p class="section-intro">
-                    There are two main types of knee replacement procedures, depending on the extent of joint damage:
-                </p> -->
-
-                <div class="main-services-grid">
-                    <div *ngFor="let service of mainServices" class="main-service-card"
-                        [style.--card-color]="service.color">
-                        <div class="service-icon-circle">
-                            <span>{{ service.icon }}</span>
-                        </div>
-                        <div class="service-card-content">
-                            <h3 class="service-card-title">{{ service.title }}</h3>
-                            <div class="service-card-desc" [innerHTML]="service.description"></div>
-                        </div>
-                        <!-- <div class="service-arrow">→</div> -->
-                    </div>
-                </div>
-            </div>
-
-            <div class="form-sidebar" #formSection>
-                <!-- <app-speciality-form [doctor]="formdoctors" /> -->
-                <app-call-back-form [pageName]="'Piles Surgery'"></app-call-back-form>
-            </div>
+      <div class="what-img-col">
+        <div class="img-frame">
+          <img src="../../assets/Proctology_Hernia_Assets/piles-treatment-at-rashtrotthana-hospital-bangalore.png"
+            alt="Piles Surgery Haemorrhoid Treatment Bangalore Rashtrotthana Hospital" itemprop="image" />
         </div>
+      </div>
 
-
-        <!-- doctors section -->
-
-        <div class="container_margin">
-            <h2 class="s_h1 text-center heading-margin">Our Experienced Surgeons</h2>
-            <app-speciality-doc-card [doctors]="doctors" />
-        </div>
-
-        <!-- Why Choose Rashtrotthana Hospital? -->
-
-        <div class="why-choose-wrapper" style="margin-top: 30px;">
-            <!-- Header Section -->
-            <div class="section-intro">
-                <span class="intro-badge">Your Health Partner</span>
-                <h2 class="main-heading">Why Choose Rashtrotthana Hospital?</h2>
-                <p class="main-subheading">Your Health in Trustable Hands</p>
-                <div class="heading-underline">
-                    <span class="line"></span>
-                    <span class="dot"></span>
-                    <span class="line"></span>
-                </div>
-            </div>
-
-            <!-- Sections with alternating layouts -->
-            <div *ngFor="let section of sections; let i = index" class="section-block">
-
-                <!-- Left Layout (Icon Left) -->
-                <div *ngIf="i % 2 === 0" class="layout-container layout-left">
-                    <!-- <div class="icon-column" [style.background]="section.color">
-            <div class="number-badge">{{ section.number }}</div>
-            <div class="main-icon">{{ section.icon }}</div>
-            <div class="vertical-text">{{ section.title.split('.')[1]?.trim() || section.title }}</div>
-          </div> -->
-
-                    <div class="content-column">
-                        <h3 class="section-title" [style.color]="section.color">{{ section.title }}</h3>
-                        <p class="section-desc">{{ section.description }}</p>
-
-                        <div class="features-grid">
-                            <div *ngFor="let feature of section.features" class="feature-item">
-                                <div class="feature-icon-box" [style.border-color]="section.color">
-                                    <span>{{ feature.icon }}</span>
-                                </div>
-                                <div class="feature-text">
-                                    <strong>{{ feature.title }}</strong>
-                                    <p>{{ feature.description }}</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="highlight-box" [style.border-left-color]="section.color">
-                            <span class="bulb-icon">💡</span>
-                            <em>{{ section.highlightText }}</em>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Right Layout (Icon Right) -->
-                <div *ngIf="i % 2 !== 0" class="layout-container layout-right">
-                    <div class="content-column">
-                        <h3 class="section-title" [style.color]="section.color">{{ section.title }}</h3>
-                        <p class="section-desc">{{ section.description }}</p>
-
-                        <div class="features-grid">
-                            <div *ngFor="let feature of section.features" class="feature-item">
-                                <div class="feature-icon-box" [style.border-color]="section.color">
-                                    <span>{{ feature.icon }}</span>
-                                </div>
-                                <div class="feature-text">
-                                    <strong>{{ feature.title }}</strong>
-                                    <p>{{ feature.description }}</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="highlight-box" [style.border-left-color]="section.color">
-                            <span class="bulb-icon">💡</span>
-                            <em>{{ section.highlightText }}</em>
-                        </div>
-                    </div>
-
-                    <!-- <div class="icon-column" [style.background]="section.color">
-            <div class="number-badge">{{ section.number }}</div>
-            <div class="main-icon">{{ section.icon }}</div>
-            <div class="vertical-text">{{ section.title.split('.')[1]?.trim() || section.title }}</div>
-          </div> -->
-                </div>
-
-                <!-- Separator Line -->
-                <div *ngIf="i < sections.length - 1" class="section-divider">
-                    <span class="divider-circle" [style.background]="section.color"></span>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- Final CTA -->
-        <div class="final-action-bar">
-            <div class="action-content">
-                <h3>Your Health, Our Priority</h3>
-                <p><b>Experience Trusted Piles Surgery in Bangalore</b></p>
-                <p style="margin-top: 15px; line-height: 25px;">
-                    Don’t ignore piles symptoms or continue living with discomfort. Early treatment can prevent
-                    complications and provide lasting relief. Consult our experienced surgeons at Rashtrotthana Hospital
-                    today and take the first step toward safe piles surgery, faster recovery and long-term comfort.
-                </p>
-            </div>
-
-            <div class="action-buttons">
-                <a href="tel:+918069239999" class="action-btn btn-yellow" (click)="trackPhoneClick()">
-                    Call +91 80692 39999
-                </a>
-                <button class="action-btn btn-teal" (click)="scrollToForm()">
-                    Book Appointment
-                </button>
-            </div>
-        </div>
-
-
-        <!-- Faqs -->
-        <app-faqs-new [faqData]="faqs"></app-faqs-new>
     </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════════════════
+       Section 3: Surgery Types + Sticky Form  →  surg-section
+  ═══════════════════════════════════════════════════════════ -->
+  <section class="surg-section" id="piles-surgery-types">
+    <div class="surg-layout">
+
+      <!-- Left: procedure cards -->
+      <div class="surg-left">
+
+        <span class="eyebrow teal-ey surg-eyebrow"><span class="ey-line"></span>Procedures We Offer</span>
+        <h2 class="surg-title-main">Piles Surgery Options at Rashtrotthana Hospital, Bangalore</h2>
+        <p class="surg-subtitle">Our experienced surgeons evaluate the grade of haemorrhoids, your symptoms and
+          overall health to recommend the most effective and least invasive treatment approach.</p>
+
+        <!-- Card 1 -->
+        <div class="svc-card">
+          <div class="svc-card-text">
+            <h3 class="svc-title">Laser Haemorrhoidectomy</h3>
+            <p class="svc-desc">The most advanced and preferred piles treatment - a precise laser beam is used to
+              shrink and seal haemorrhoidal tissue with no cuts, no stitches and minimal bleeding. Performed as a
+              day-care procedure with very little post-operative pain and return to work in 2–3 days.</p>
+          </div>
+          <div class="svc-card-img">
+            <img src="../../assets/Proctology_Hernia_Assets/laser-haemorrhoidectomy.png"
+              alt="Laser Haemorrhoidectomy Piles Surgery Bangalore" />
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="svc-card">
+          <div class="svc-card-text">
+            <h3 class="svc-title">Stapler Haemorrhoidopexy (MIPH)</h3>
+            <p class="svc-desc">Minimally Invasive Procedure for Haemorrhoids (MIPH) - a circular stapler device
+              removes the excess haemorrhoidal tissue and repositions the remaining tissue. Ideal for Grade III
+              and IV piles, with less pain than conventional surgery and faster recovery.</p>
+          </div>
+          <div class="svc-card-img">
+            <img src="../../assets/Proctology_Hernia_Assets/stapler-haemorrhoidopexy.png"
+              alt="Stapler Haemorrhoidopexy MIPH Piles Surgery Bangalore" />
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="svc-card">
+          <div class="svc-card-text">
+            <h3 class="svc-title">Conventional Haemorrhoidectomy</h3>
+            <p class="svc-desc">Traditional open surgical removal of haemorrhoids - recommended for large,
+              complex or mixed haemorrhoids where other approaches are not suitable. Provides a definitive,
+              long-term cure with complete removal of haemorrhoidal tissue.</p>
+          </div>
+          <div class="svc-card-img">
+            <img src="../../assets/Proctology_Hernia_Assets/open-surgery.png"
+              alt="Conventional Haemorrhoidectomy Piles Surgery Bangalore" />
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right: sticky callback form -->
+      <div class="surg-right">
+
+        <app-call-back-form [pageName]="'Piles Surgery'" />
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- doctors section -->
+
+  <section class="doctor-section" style="padding-bottom: 50px; background-color: #f4fafa;">
+    <h2 class="surg-title-main" style="text-align: center; margin-bottom: 50px;">Meet Our Experienced Surgeons</h2>
+    <app-speciality-doc-card [doctors]="doctors" />
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════════════════
+       Section 4: Why Choose Us  →  sec-why
+  ═══════════════════════════════════════════════════════════ -->
+  <section class="sec-why" id="why-rashtrotthana-piles">
+    <div class="why-blob wb1"></div>
+    <div class="why-blob wb2"></div>
+
+    <div class="sec-inner">
+
+      <div class="sec-head center-head">
+        <span class="eyebrow sage-ey center-ey"><span class="ey-line"></span>Why Choose Us</span>
+        <h2 class="disp-head white">Why Choose Rashtrotthana Hospital for Piles Surgery in Bangalore?</h2>
+        <div class="gold-bar" style="margin:0 auto 0;"></div>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-card" *ngFor="let card of whyCards">
+          <div class="why-card-top">
+            <div class="why-icon">
+              <img [src]="card.icon" [alt]="card.iconAlt" />
+            </div>
+            <div class="why-num">{{ card.num }}</div>
+          </div>
+          <h3 class="why-title">{{ card.title }}</h3>
+          <p class="why-sub">{{ card.sub }}</p>
+          <ul class="why-pts">
+            <li *ngFor="let pt of card.points">
+              <span class="tcheck"></span>{{ pt }}
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mid-cta">
+        <div>
+          <h3>Ready to Get Permanent Relief from Piles?</h3>
+          <p>Talk to our specialists - get a diagnosis, treatment recommendation and cost estimate today.</p>
+        </div>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;">
+          <button class="btn-gold" (click)="openModal()">
+            <i class="ti ti-calendar-plus" aria-hidden="true"></i>Book Appointment
+          </button>
+          <a href="tel:+918069239999" class="btn-outline-gold" (click)="trackPhoneClick()">
+            <i class="ti ti-phone" aria-hidden="true"></i>Call Now
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════════════════
+       Section 5: Treatment Journey  →  sec-journey
+  ═══════════════════════════════════════════════════════════ -->
+  <section class="sec-journey" id="piles-treatment-journey">
+    <div class="sec-inner">
+
+      <div class="sec-head center-head">
+        <span class="eyebrow teal-ey center-ey"><span class="ey-line"></span>Step-by-Step Process</span>
+        <h2 class="disp-head dark">What to Expect During Piles Surgery at Rashtrotthana Hospital</h2>
+        <div class="gold-bar" style="margin:0 auto 22px;"></div>
+        <p class="head-sub">Your complete care journey - from first consultation to full recovery after
+          piles surgery in Bangalore.</p>
+      </div>
+
+      <div class="journey-grid">
+        <div class="j-step" *ngFor="let step of journeySteps; let last = last">
+          <div class="j-step-head">
+            <div class="j-icon" [innerHTML]="step.svgIcon"></div>
+            <div class="j-num">{{ step.num }}</div>
+          </div>
+          <h3 class="j-title">{{ step.title }}</h3>
+          <p class="j-desc">{{ step.desc }}</p>
+        </div>
+      </div>
+
+      <div class="mid-cta" style="background:#1F4E5F;border-color:rgba(77,183,179,.25);margin-top:30px;">
+        <div>
+          <h3 style="color:#fff;">Quick, Comfortable &amp; Lasting Relief</h3>
+          <p style="color:rgba(255,255,255,.65);">Most piles procedures are completed in under 30 minutes -
+            patients go home the same day and return to normal routines in 2–3 days.</p>
+        </div>
+        <button class="btn-gold" (click)="openModal()">
+          <i class="ti ti-calendar-plus" aria-hidden="true"></i>Book Consultation
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════════════════
+       Section 6: FAQ  →  sec-faq
+  ═══════════════════════════════════════════════════════════ -->
+  <section class="sec-faq" id="piles-surgery-faq" itemscope itemtype="https://schema.org/FAQPage">
+    <div class="sec-inner narrow">
+
+      <div class="sec-head center-head">
+        <span class="eyebrow teal-ey center-ey"><span class="ey-line"></span>Patient Questions</span>
+        <h2 class="disp-head dark">Frequently Asked Questions About Piles Surgery in Bangalore</h2>
+        <div class="gold-bar" style="margin:0 auto 22px;"></div>
+        <p class="head-sub">Answers to the most common questions about haemorrhoids, treatment options,
+          costs, insurance and recovery.</p>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item" *ngFor="let faq of faqs; let i = index" [class.faq-open]="openFaq === i" itemscope
+          itemprop="mainEntity" itemtype="https://schema.org/Question">
+
+          <button class="faq-q" itemprop="name" [attr.aria-expanded]="openFaq === i" (click)="toggleFaq(i)">
+            <span>{{ faq.q }}</span>
+            <svg class="faq-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </button>
+
+          <div class="faq-ans" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <div class="faq-ans-inner" itemprop="text">{{ faq.a }}</div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="faq-footer-cta">
+        <p>Still have questions about piles surgery in Bangalore?</p>
+        <div class="faq-cta-row">
+          <button class="btn-teal" (click)="openModal()">
+            <i class="ti ti-calendar-check" aria-hidden="true"></i>Book a Consultation
+          </button>
+          <a href="tel:+918069239999" class="btn-outline-gold" style="color:#0C8A8F;border-color:#0C8A8F;"
+            (click)="trackPhoneClick()">
+            <i class="ti ti-phone" aria-hidden="true"></i>Call +91 80692 39999
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+</div>

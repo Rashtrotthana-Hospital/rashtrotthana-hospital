@@ -1,259 +1,470 @@
-<div class="root-container">
+<div class="hernia-root">
 
-  <!-- hero section -->
+
+
+
+  <div class="modal-overlay" [class.modal-open]="isModalOpen" (click)="closeModalOnBackdrop($event)">
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <div class="modal-header-left">
+          <div class="modal-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#B7D7A8" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2" />
+              <line x1="16" y1="2" x2="16" y2="6" />
+              <line x1="8" y1="2" x2="8" y2="6" />
+              <line x1="3" y1="10" x2="21" y2="10" />
+            </svg>
+          </div>
+          <div>
+            <h2 class="modal-title" id="modal-title">Book Appointment</h2>
+            <p class="modal-sub">Schedule your visit with our Hernia specialists</p>
+          </div>
+        </div>
+        <button class="modal-close" (click)="closeModal()" aria-label="Close appointment form">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round">
+            <line x1="18" y1="6" x2="6" y2="18" />
+            <line x1="6" y1="6" x2="18" y2="18" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Modal Body - callback form -->
+      <div class="modal-body">
+        <app-call-back-form [pageName]="'Hernia'"></app-call-back-form>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <!-- ══ HERO (unchanged) ══ -->
   <div class="speciality-header">
-    <img src="assets/hernia/Hernia - Banner - 10-1-26.png" class="desktop"
-      alt="Hernia Surgery Package Banner of Rashtrotthana Hospital Bangalore" />
-    <img src="assets/hernia/Hernia Mobile Size -10-1-26.png" class="mobile"
-      alt="Hernia Surgery Package Banner of Rashtrotthana Hospital Bangalore">
+    <img src="../../assets/hernia/hernia-banner-desktop.png" class="desktop"
+      alt="Hernia Treatment and Surgery Banner - Rashtrotthana Hospital Bangalore" />
+    <img src="../../assets/hernia/hernia-banner.png" class="mobile"
+      alt="Hernia Treatment and Surgery Banner - Rashtrotthana Hospital Bangalore" />
     <div class="header_button">
-      <button class="appointment" (click)="scrollToForm()">Book an Appointment</button>
+      <button class="appointment" (click)="openModal()">Book an Appointment</button>
       <a href="tel:+918069239999" class="contact_button" (click)="trackPhoneClick()">Contact Now</a>
     </div>
   </div>
 
-  <div class="container-2">
 
-    <!-- Intro Section -->
+  <!-- ══════════════════════════════════════
+       A - WHAT IS A HERNIA
+  ══════════════════════════════════════ -->
+  <section class="sec-what" id="what-is-hernia" itemscope itemtype="https://schema.org/MedicalCondition">
+    <h2 class="sr-only">What is Hernia – Hernia Treatment in Bangalore – Rashtrotthana Hospital</h2>
 
-    <div class="intro-section">
-      <h1 class="page-title">About Hernia Surgery Package</h1>
-      <div class="line">
-        <svg xmlns="http://www.w3.org/2000/svg" width="372" height="34" viewBox="0 0 372 34" fill="none"
-          style="width: 100%;">
-          <path d="M45.0361 1.5H336.402L0.0664062 16.38H371.066L183.068 32.5" stroke="#FFC250" stroke-width="3" />
-        </svg>
-      </div>
+    <div class="what-inner">
 
-      <div class="intro-part">
-        <div class="banner-imgs">
-          <img src="../../assets/hernia/hernia-element-1.jpg" alt="" class="float-left float-delay-1 img-1" style="top: 100%; left: 10%; ">
-          <img src="../../assets/hernia/hernia-element-2.jpg" alt="" class="float-left float-delay-2 img-2" style="top: 120%; left: 5%;">
-          <img src="../../assets/hernia/hernia-element-3.jpg" alt="" class="float-left float-delay-1 img-3"
-            style="top: 920px; left: 209px;">
-          <!-- <img src="assets/Surgery/hernia-img-4.jpg" alt="" class="float-left float-delay-3 img-4" style="top: 135%; left: 7%;"> -->
-        </div>
+      <div class="what-text">
+        <span class="eyebrow teal-ey">
+          <span class="ey-line"></span>
+          Affordable Hernia Treatment &amp; Surgery in Bangalore
+        </span>
+        <h1 class="disp-head" itemprop="name">What is a&nbsp;Hernia?</h1>
+        <div class="gold-bar"></div>
 
-        <div class="intro-content">
-          <div class="flex">
-            <img src="assets/tkr/comma-left.png" alt="">
-            <div class="">
-              <p class="intro-para">Living with a hernia can be uncomfortable and worrying. Simple daily activities like bending, lifting, coughing or even standing for long hours can become painful and stressful. At Rashtrotthana Hospital, we believe no one should live with constant discomfort or fear of complications.
-              </p>
-              <p class="intro-para">
-                Our experienced surgical team has helped many patients recover safely through advanced and affordable hernia treatment. From the first consultation to complete recovery, we guide you at every step.
-              </p>
-            </div>
-          </div>
-          <div class="flex1">
-            <p class="intro-para">With the right diagnosis, expert care and modern surgical techniques, we help you return to a comfortable and active life with confidence.</p>
-            <img src="assets/tkr/comma-right.png" alt="">
-          </div>
-        </div>
-      </div>
-
-      <div class="banner-imgs">
-        <img src="../../assets/hernia/hernia-element-4.jpg" alt="" class="float-right float-delay-3 img-5" style="top: 120%; right: 15%;">
-        <img src="../../assets/hernia/hernia-element-5.jpg" alt="" class="float-right float-delay-2 img-6" style="top: 104%; right: 10%;">
-        <!-- <img src="../../assets/hernia/hernia-element-6.jpg" alt="" class="float-right float-delay-2 img-7" style="top: 135%; right: 18%;"> -->
-        <img src="assets/hernia/hernia-element-6.jpg" alt="" class="float-right float-delay-1 img-8" style="top: 143%; right: 5%;">
-      </div>
-    </div>
-
-
-    <!-- surgery -->
-    <div class="surgery-sections-container">
-      <div class="surgery-header">
-        <h2 class="surgery-main-title">Our Hernia Surgery Package</h2>
-        <p class="surgery-main-subtitle">Safe Treatment. Faster Recovery. Peace of Mind.</p>
-      </div>
-
-      <div class="surgeries-grid">
-        <div class="surgery-content">
-          <h3 class="surgery-title">Experience advanced hernia surgery at an affordable price</h3>
-          <p class="surgery-subtitle"></p>
-          <div class="process-part">
-            <div class="process-line">
-              <svg xmlns="http://www.w3.org/2000/svg" width="915" height="70" viewBox="0 0 1038 70" fill="none">
-                <path
-                  d="M0.385742 23.4048L10.695 29.5903C88.0005 75.9737 184.029 78.1833 263.386 35.4048C344.046 -6.65146 440.033 -7.24926 521.21 33.7991L524.386 35.4048C601.534 78.5078 695.128 80.1692 773.757 39.8315L782.386 35.4048C852.717 -6.48154 939.273 -10.6518 1013.31 24.2791L1036.89 35.4048"
-                  stroke="#959292" stroke-width="1.5" stroke-dasharray="6 6" />
-              </svg>
-            </div>
-            <div class="process-container">
-              <div class="process-card">
-                <img src="../../assets/package/maternity-consultation.jpg" alt="">
-                <div class="card-para-1 card-para">Complete care from consultation to recovery
-                </div>
-              </div>
-              <div class="process-card">
-                <img src="assets/tkr/package-img-2.webp" alt="">
-                <div class="card-para-2 card-para">Experienced surgeons for safe and successful hernia surgery</div>
-              </div>
-              <div class="process-card">
-                <img src="assets/tkr/package-img-3.webp" alt="">
-                <div class="card-para-3 card-para">Advanced surgical techniques for less pain and faster healing</div>
-              </div>
-              <div class="process-card">
-                <img src="assets/tkr/package-img-4.webp" alt="">
-                <div class="card-para-4 card-para">Personalized post-surgery guidance for smooth recovery
-                </div>
-              </div>
-              <div class="process-card">
-                <img src="assets/tkr/package-img-5.webp" alt="">
-                <div class="card-para-5 card-para">Cashless insurance support and clear billing for peace of mind
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-          <div style="text-align: center; margin: 40px 0;">
-            <p class="surgery-highlight">
-              <span>Hernia surgery package starts at just ₹40,000</span> (T&C apply*). This all-inclusive package covers every stage of treatment - from diagnosis and surgery to post-operative care - handled by experienced surgeons using proven techniques.
-            </p>
-          </div>
-
-        </div>
-      </div>
-
-    </div>
-
-
-    <!-- <app-doctor-card [doctorCard]="doctorCard"></app-doctor-card> -->
-
-    <div class="main-services-section">
-      <div class="services-content-area">
-        <div class="section-badge">
-          <span class="badge-icon">🏥</span>
-          <span>General Surgery</span>
-        </div>
-
-        <h2 class="section-heading">Types of Hernia We Treat</h2>
-
-        <p class="service-card-desc">There are different types of hernias depending on where the weakness occurs in the body. Our doctors carefully evaluate your condition and suggest the most suitable treatment.</p>
-
-        <ul>
-          <li class="service-card-title" style="margin-top: 15px;">Inguinal Hernia (Groin Hernia)</li>
-          <li class="service-card-title" style="margin-top: 15px;">Umbilical Hernia (Belly Button Hernia)</li>
-          <li class="service-card-title" style="margin-top: 15px;">Hiatal Hernia (Stomach Hernia)</li>
-          <li class="service-card-title" style="margin-top: 15px;">Femoral Hernia (Upper Thigh Hernia)</li>
-          <li class="service-card-title" style="margin-top: 15px;">Incisional Hernia (Post-Surgery Hernia)</li>
-          <li class="service-card-title" style="margin-top: 15px;">Epigastric Hernia (Upper Abdomen)</li>
-        </ul>
-
-
-      </div>
-
-      <div class="form-sidebar" #formSection>
-        <!-- <app-speciality-form [doctor]="formdoctors"/> -->
-         <app-call-back-form [pageName]="'Hernia Surgery'"></app-call-back-form>
-      </div>
-    </div>
-
-    <!-- doctors section -->
-
-    <div class="container_margin">
-      <h2 class="s_h1 text-center heading-margin">Our General Surgery Experts</h2>
-      <app-speciality-doc-card [doctors]="doctors" />
-    </div>
-
-
-    <!-- Why Choose Rashtrotthana Hospital? -->
-
-    <div class="why-choose-wrapper" style="margin-top: 30px;">
-      <!-- Header Section -->
-      <div class="section-intro">
-        <span class="intro-badge">Your Health Partner</span>
-        <h2 class="main-heading">Why Choose Rashtrotthana Hospital?</h2>
-        <p class="main-subheading">Your Health in Trustable Hands</p>
-        <div class="heading-underline">
-          <span class="line"></span>
-          <span class="dot"></span>
-          <span class="line"></span>
-        </div>
-      </div>
-
-      <!-- Sections with alternating layouts -->
-      <div *ngFor="let section of sections; let i = index" class="section-block">
-
-        <!-- Left Layout (Icon Left) -->
-        <div *ngIf="i % 2 === 0" class="layout-container layout-left">
-
-          <div class="content-column">
-            <h3 class="section-title" [style.color]="section.color">{{ section.title }}</h3>
-            <p class="section-desc">{{ section.description }}</p>
-
-            <div class="features-grid">
-              <div *ngFor="let feature of section.features" class="feature-item">
-                <div class="feature-icon-box" [style.border-color]="section.color">
-                  <span>{{ feature.icon }}</span>
-                </div>
-                <div class="feature-text">
-                  <strong>{{ feature.title }}</strong>
-                  <p>{{ feature.description }}</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="highlight-box" [style.border-left-color]="section.color">
-              <span class="bulb-icon">💡</span>
-              <em>{{ section.highlightText }}</em>
-            </div>
-          </div>
-        </div>
-
-        <!-- Right Layout (Icon Right) -->
-        <div *ngIf="i % 2 !== 0" class="layout-container layout-right">
-          <div class="content-column">
-            <h3 class="section-title" [style.color]="section.color">{{ section.title }}</h3>
-            <p class="section-desc">{{ section.description }}</p>
-
-            <div class="features-grid">
-              <div *ngFor="let feature of section.features" class="feature-item">
-                <div class="feature-icon-box" [style.border-color]="section.color">
-                  <span>{{ feature.icon }}</span>
-                </div>
-                <div class="feature-text">
-                  <strong>{{ feature.title }}</strong>
-                  <p>{{ feature.description }}</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="highlight-box" [style.border-left-color]="section.color">
-              <span class="bulb-icon">💡</span>
-              <em>{{ section.highlightText }}</em>
-            </div>
-          </div>
-        </div>
-
-        <!-- Separator Line -->
-        <div *ngIf="i < sections.length - 1" class="section-divider">
-          <span class="divider-circle" [style.background]="section.color"></span>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- Final CTA -->
-    <div class="final-action-bar">
-      <div class="action-content">
-        <h3>Your Health, Our Priority</h3>
-        <p><b>Experience Trusted Hernia Treatment in Bangalore</b></p>
-        <p style="margin-top: 15px; line-height: 25px;">
-          Don't ignore hernia symptoms or live with discomfort. Early treatment can prevent complications and improve quality of life. Book a consultation with our expert surgeons at Rashtrotthana Hospital today and take the first step toward safe recovery and long-term relief.
+        <p class="body-p" itemprop="description">
+          A hernia occurs when an internal organ or fatty tissue pushes through a weak spot in the surrounding muscle
+          or connective tissue - causing <strong>pain, discomfort and visible bulging</strong>, especially during
+          physical activity, coughing or prolonged standing.
         </p>
-      </div>
 
-      <div class="action-buttons">
-        <a href="tel:+918069239999" class="action-btn btn-yellow" (click)="trackPhoneClick()">
-          Call +91 80692 39999
-        </a>
-        <button class="action-btn btn-teal" (click)="scrollToForm()">
-          Book Appointment
+        <div class="alert-callout">
+          <div class="alert-icon">!</div>
+          <p>If you notice a bulge in your abdomen, groin or chest - especially one that worsens with activity or
+            causes persistent pain - consult a general surgeon at the earliest to prevent complications.</p>
+        </div>
+
+        <p class="body-p">
+          At <strong>Rashtrotthana Hospital</strong>, we offer advanced hernia treatment with experienced general
+          surgeons, laparoscopic expertise and personalised care focused on safe recovery and long-term results.
+        </p>
+
+        <div class="stats-row">
+          <div class="stat-pill">
+            <span class="s-num">15+</span>
+            <span class="s-lbl">Years Experience</span>
+          </div>
+          <div class="stat-pill">
+            <span class="s-num">5000+</span>
+            <span class="s-lbl">Surgeries Done</span>
+          </div>
+          <div class="stat-pill">
+            <span class="s-num">98%</span>
+            <span class="s-lbl">Success Rate</span>
+          </div>
+        </div>
+
+        <!-- CTA below stats -->
+        <button class="btn-teal cta-open-modal" (click)="openModal()">
+          Book Consultation →
         </button>
       </div>
+
+      <div class="what-img-col">
+        <div class="img-frame">
+          <img src="assets/hernia/hernia-surgery-at-rashtortthana-hospital.png"
+            alt="Hernia Treatment in Bangalore at Rashtrotthana Hospital" />
+        </div>
+        <div class="img-pill">
+          <svg width="14" height="14" viewBox="0 0 20 20" fill="#B7D7A8">
+            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          Advanced General Surgery · RR Nagar, Bangalore
+        </div>
+      </div>
+
     </div>
-  </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       C - SURGERY TYPES
+  ══════════════════════════════════════ -->
+  <section class="surg-section" id="hernia-surgery-types">
+    <div class="surg-layout">
+
+      <div class="surg-left">
+
+        <div class="surg-heading">
+          <span class="surg-eyebrow">
+            <span class="ey-line"></span>Procedures We Offer
+          </span>
+          <h2 class="surg-title-main">Types of Hernia Surgeries We Provide</h2>
+          <p class="surg-subtitle">Our general surgeons assess your hernia type, size and condition to recommend
+            the most suitable and safest surgical approach.</p>
+        </div>
+
+        <div class="svc-card">
+          <div class="svc-card-text">
+            <h3 class="svc-title">Laparoscopic Hernia Repair</h3>
+            <p class="svc-desc">Uses keyhole incisions and a HD camera to repair the hernia with mesh - ideal for
+              inguinal, umbilical and incisional hernias with faster recovery, minimal pain and near-invisible
+              scarring.</p>
+            <button class="btn-link-modal" (click)="openModal()">Book Consultation →</button>
+          </div>
+          <div class="svc-card-img">
+            <img src="assets/laparoscopy-image.png"
+              alt="Laparoscopic Hernia Repair at Rashtrotthana Hospital Bangalore" />
+          </div>
+        </div>
+
+        <div class="svc-card">
+          <div class="svc-card-text">
+            <h3 class="svc-title">Open Hernia Repair (Hernioplasty)</h3>
+            <p class="svc-desc">A single incision at the hernia site provides direct access - preferred for large,
+              complex or recurrent hernias where precision and repair durability are paramount.</p>
+            <button class="btn-link-modal" (click)="openModal()">Book Consultation →</button>
+          </div>
+          <div class="svc-card-img">
+            <img src="assets/open-surgery.jpg" alt="Open Hernia Repair at Rashtrotthana Hospital Bangalore" />
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right side: teaser card that opens modal -->
+      <div class="surg-right">
+        <!-- <div class="form-teaser-card">
+          <div class="ftc-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none"
+              stroke="#B7D7A8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2"/>
+              <line x1="16" y1="2" x2="16" y2="6"/>
+              <line x1="8"  y1="2" x2="8"  y2="6"/>
+              <line x1="3"  y1="10" x2="21" y2="10"/>
+            </svg>
+          </div>
+          <h3 class="ftc-title">Book a Free Consultation</h3>
+          <p class="ftc-sub">Schedule your visit with our Hernia specialists. No charges for initial consultation.</p>
+
+          <div class="ftc-schedule">
+            <span class="ftc-chip">📅 Every Tue &amp; Fri</span>
+            <span class="ftc-chip">🕐 10 AM – 1 PM</span>
+          </div>
+
+          <ul class="ftc-list">
+            <li><span class="tcheck"></span>Hernia evaluation &amp; examination</li>
+            <li><span class="tcheck"></span>Surgical &amp; non-surgical guidance</li>
+            <li><span class="tcheck"></span>Laparoscopic repair advice</li>
+            <li><span class="tcheck"></span>Personalised treatment plan</li>
+          </ul>
+
+          <div class="ftc-badges">
+            <span class="ftc-badge">✅ Cashless Insurance</span>
+            <span class="ftc-badge">✅ NABH Accredited</span>
+          </div>
+
+          <button class="ftc-btn" (click)="openModal()">
+            Book Appointment →
+          </button>
+        </div> -->
+        <app-call-back-form [pageName]="'Hernia'" />
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       D - WHY CHOOSE US
+  ══════════════════════════════════════ -->
+  <section class="sec-why" id="why-rashtrotthana-hernia">
+    <div class="why-blob wb1"></div>
+    <div class="why-blob wb2"></div>
+
+    <div class="sec-inner">
+
+      <div class="sec-head center-head">
+        <span class="eyebrow sage-ey center-ey">
+          <span class="ey-line"></span>Why Choose Us<span class="ey-line"></span>
+        </span>
+        <h2 class="disp-head white">Why Rashtrotthana Hospital for Hernia Surgery?</h2>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-card" *ngFor="let c of whyCards">
+          <div class="why-card-top">
+            <div class="why-icon">
+              <img [src]="c.icon" [alt]="c.iconAlt" />
+            </div>
+            <span class="why-num">{{ c.num }}</span>
+          </div>
+          <h3 class="why-title">{{ c.title }}</h3>
+          <div class="gold-bar slim"></div>
+          <p class="why-sub">{{ c.sub }}</p>
+          <ul class="why-pts">
+            <li *ngFor="let p of c.points"><span class="tcheck"></span>{{ p }}</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!--Doctors section -->
+  <section class="doctor-section" style="padding: 50px 0; background-color: #f4fafa;">
+    <h2 class="surg-title-main" style="text-align: center; margin-bottom: 50px;">Meet Our Experienced Surgeons</h2>
+    <app-speciality-doc-card [doctors]="doctors" />
+  </section>
+
+  <!-- ══════════════════════════════════════
+     B - TYPES OF HERNIA WE TREAT
+══════════════════════════════════════ -->
+  <section class="sec-types" id="types-of-hernia">
+    <div class="sec-inner">
+
+      <div class="sec-head center-head">
+        <span class="eyebrow teal-ey center-ey">
+          <span class="ey-line"></span>Conditions We Treat<span class="ey-line"></span>
+        </span>
+        <h2 class="disp-head dark">Types of Hernia We Treat</h2>
+        <p class="head-sub">Our general surgeons are experienced in diagnosing and treating all major types of hernias -
+          from common to complex cases.</p>
+      </div>
+
+      <div class="types-grid">
+
+        <div class="type-card">
+          <div class="type-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0C8A8F" stroke-width="1.8"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z" />
+              <circle cx="12" cy="9" r="2.5" />
+            </svg>
+          </div>
+          <div class="type-badge">Most Common</div>
+          <h3 class="type-title">Inguinal Hernia</h3>
+          <div class="gold-bar slim"></div>
+          <p class="type-desc">Occurs when tissue (often part of the intestine) pushes through a weak spot in the
+            abdominal muscles into the inguinal canal in the groin. More prevalent in men.</p>
+          <ul class="type-pts">
+            <li><span class="tcheck"></span>Groin bulge, especially when bending</li>
+            <li><span class="tcheck"></span>Pain or discomfort in the groin</li>
+            <li><span class="tcheck"></span>Treatable with laparoscopic repair</li>
+          </ul>
+        </div>
+
+        <div class="type-card">
+          <div class="type-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0C8A8F" stroke-width="1.8"
+              stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="9" />
+              <path d="M9 12h6M12 9v6" />
+            </svg>
+          </div>
+          <h3 class="type-title">Umbilical Hernia</h3>
+          <div class="gold-bar slim"></div>
+          <p class="type-desc">Fatty tissue or part of the bowel pushes through the abdominal wall near the navel.
+            Common in infants and overweight adults and typically painless initially.</p>
+          <ul class="type-pts">
+            <li><span class="tcheck"></span>Soft bulge near the belly button</li>
+            <li><span class="tcheck"></span>Often visible when straining</li>
+            <li><span class="tcheck"></span>Day-care laparoscopic procedure</li>
+          </ul>
+        </div>
+
+        <div class="type-card">
+          <div class="type-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0C8A8F" stroke-width="1.8"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="8" width="18" height="8" rx="2" />
+              <path d="M7 8V6a5 5 0 0110 0v2" />
+            </svg>
+          </div>
+          <h3 class="type-title">Hiatal Hernia</h3>
+          <div class="gold-bar slim"></div>
+          <p class="type-desc">The upper part of the stomach bulges through the diaphragm into the chest cavity. Often
+            associated with acid reflux and heartburn symptoms.</p>
+          <ul class="type-pts">
+            <li><span class="tcheck"></span>Heartburn and acid reflux</li>
+            <li><span class="tcheck"></span>Difficulty swallowing</li>
+            <li><span class="tcheck"></span>Managed medically or surgically</li>
+          </ul>
+        </div>
+
+        <div class="type-card">
+          <div class="type-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0C8A8F" stroke-width="1.8"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </div>
+          <h3 class="type-title">Incisional Hernia</h3>
+          <div class="gold-bar slim"></div>
+          <p class="type-desc">Develops at the site of a previous abdominal surgery where the muscles have weakened.
+            Tissue pushes through the scar tissue at or near the surgical incision.</p>
+          <ul class="type-pts">
+            <li><span class="tcheck"></span>Bulge at or near a surgical scar</li>
+            <li><span class="tcheck"></span>Discomfort during activity</li>
+            <li><span class="tcheck"></span>Requires mesh-reinforced repair</li>
+          </ul>
+        </div>
+
+        <div class="type-card">
+          <div class="type-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0C8A8F" stroke-width="1.8"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2v20M2 12h20" />
+              <circle cx="12" cy="12" r="4" />
+            </svg>
+          </div>
+          <h3 class="type-title">Epigastric Hernia</h3>
+          <div class="gold-bar slim"></div>
+          <p class="type-desc">Fat pushes through a weakness in the abdominal wall between the navel and lower
+            breastbone (epigastric region). Often small but can cause persistent discomfort.</p>
+          <ul class="type-pts">
+            <li><span class="tcheck"></span>Small lump in upper abdomen</li>
+            <li><span class="tcheck"></span>Pain when pressing the area</li>
+            <li><span class="tcheck"></span>Surgically corrected with mesh</li>
+          </ul>
+        </div>
+
+        <div class="type-card type-card-cta">
+          <div class="type-cta-inner">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#B7D7A8" stroke-width="1.6"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 12l2 2 4-4" />
+              <path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <h3 class="type-cta-title">Not sure which type you have?</h3>
+            <p class="type-cta-sub">Our specialists will evaluate your condition and recommend the right treatment -
+              laparoscopic or open surgery.</p>
+            <button class="ftc-btn" (click)="openModal()">Book Consultation →</button>
+            <div class="type-cta-badges">
+              <span class="ftc-badge">✅ Cashless Insurance</span>
+              <span class="ftc-badge">✅ NABH Accredited</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       E - TREATMENT JOURNEY
+  ══════════════════════════════════════ -->
+  <section class="sec-journey" id="hernia-treatment-journey">
+    <div class="sec-inner">
+
+      <div class="sec-head center-head">
+        <span class="eyebrow teal-ey center-ey">
+          <span class="ey-line"></span>Step-by-Step Process<span class="ey-line"></span>
+        </span>
+        <h2 class="disp-head dark">Your Hernia Treatment Journey</h2>
+        <p class="head-sub">What to expect - from first consultation to full recovery at Rashtrotthana Hospital.</p>
+      </div>
+
+      <div class="journey-grid">
+        <div class="j-step" *ngFor="let s of journeySteps; let last = last">
+          <div class="j-step-head">
+            <div class="j-icon" [innerHTML]="s.svgIcon"></div>
+            <span class="j-num">{{ s.num }}</span>
+          </div>
+          <!-- <div class="j-connector" *ngIf="!last"></div> -->
+          <h3 class="j-title">{{ s.title }}</h3>
+          <div class="gold-bar slim"></div>
+          <p class="j-desc">{{ s.desc }}</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       G - FAQ
+  ══════════════════════════════════════ -->
+  <section class="sec-faq" id="hernia-faq" itemscope itemtype="https://schema.org/FAQPage">
+    <div class="sec-inner narrow">
+
+      <div class="sec-head center-head">
+        <span class="eyebrow teal-ey center-ey">
+          <span class="ey-line"></span>Patient Questions<span class="ey-line"></span>
+        </span>
+        <h2 class="disp-head dark">Frequently Asked Questions About Hernia Surgery in Bangalore</h2>
+        <p class="head-sub">Get answers to the most common questions about hernia treatment, surgery and recovery.</p>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item" *ngFor="let f of faqs; let i = index" [class.faq-open]="openFaq === i" itemscope
+          itemprop="mainEntity" itemtype="https://schema.org/Question">
+
+          <button class="faq-q" (click)="toggleFaq(i)" [attr.aria-expanded]="openFaq === i" itemprop="name">
+            <span>{{ f.q }}</span>
+            <svg class="faq-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </button>
+
+          <div class="faq-ans" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <div class="faq-ans-inner" itemprop="text">{{ f.a }}</div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- FAQ footer CTA -->
+      <div class="faq-footer-cta">
+        <p>Still have questions? Our specialists are happy to help - call us or book online.</p>
+        <div class="faq-cta-row">
+          <button class="btn-teal" (click)="openModal()">Book Consultation</button>
+          <a href="tel:+918069239999" class="btn-outline-gold"> +91 80 6923 9999</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
 </div>

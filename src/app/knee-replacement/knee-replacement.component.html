@@ -1,6 +1,44 @@
-<div class="root-container">
+<div class="tkr-root-container">
 
-    <!-- hero section -->
+    <!-- ══ MODAL OVERLAY ══ -->
+    <div class="tkr-modal-overlay" [class.tkr-modal-open]="isModalOpen" (click)="closeModalOnBackdrop($event)">
+        <div class="tkr-modal-box" role="dialog" aria-modal="true" aria-labelledby="tkr-modal-title">
+
+            <!-- Modal Header -->
+            <div class="tkr-modal-header">
+                <div class="tkr-modal-header-left">
+                    <div class="tkr-modal-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#B7D7A8" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="4" width="18" height="18" rx="2" />
+                            <line x1="16" y1="2" x2="16" y2="6" />
+                            <line x1="8" y1="2" x2="8" y2="6" />
+                            <line x1="3" y1="10" x2="21" y2="10" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h2 class="tkr-modal-title" id="tkr-modal-title">Book Appointment</h2>
+                        <p class="tkr-modal-sub">Schedule your visit with our Knee Replacement specialists</p>
+                    </div>
+                </div>
+                <button class="tkr-modal-close" (click)="closeModal()" aria-label="Close appointment form">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                        stroke-linecap="round">
+                        <line x1="18" y1="6" x2="6" y2="18" />
+                        <line x1="6" y1="6" x2="18" y2="18" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Modal Body -->
+            <div class="tkr-modal-body">
+                <app-call-back-form [pageName]="'Total Knee Replacement'"></app-call-back-form>
+            </div>
+
+        </div>
+    </div>
+
+
     <div class="speciality-header">
         <img src="assets/tkr/JMRH - knee Replacement -10-1-26.png" class="desktop"
             alt="Total Knee Replacement Banner of Rashtrotthana Hospital Bangalore" />
@@ -12,340 +50,485 @@
         </div>
     </div>
 
-    <div class="container-2">
+
+    <!-- section 2 -->
+    <section class="tkr-section" id="what-is-tkr" itemscope itemtype="https://schema.org/MedicalProcedure">
+        <h2 class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);">What is
+            Total Knee Replacement - Rashtrotthana Hospital Bangalore</h2>
+        <div class="tkr-inner">
 
 
-        <!-- Intro Section -->
-        <div class="intro-section">
-            <h1 class="page-title">Say <span>Goodbye</span> to Pain with Advanced Knee Replacement</h1>
-            <div class="line">
-                <svg xmlns="http://www.w3.org/2000/svg" width="372" height="34" viewBox="0 0 372 34" fill="none"
-                    style="width: 100%;">
-                    <path d="M45.0361 1.5H336.402L0.0664062 16.38H371.066L183.068 32.5" stroke="#FFC250"
-                        stroke-width="3" />
-                </svg>
-            </div>
 
-            <div class="intro-part">
-                <div class="banner-imgs">
-                    <img src="assets/tkr/header-img-1.webp" alt="" class="float-left float-delay-1 img-1"
-                        >
-                    <img src="assets/tkr/header-img-2.webp" alt="" class="float-left float-delay-2 img-2"
-                        >
-                    <img src="assets/tkr/header-img-3.webp" alt="" class="float-left float-delay-1 img-3"
-                        >
-                    <img src="assets/tkr/header-img-4.webp" alt="" class="float-left float-delay-3 img-4"
-                        >
+            <div class="tkr-content-col">
+                <h1 class="eyebrow">Affordable Knee Replacement Surgery in Bangalore</h1>
+                <h2 class="main-heading" itemprop="name">What is Total Knee Replacement?</h2>
+                <!-- <h3 class="sub-heading">What is Total Knee Replacement?</h3> -->
+                <div class="divider"></div>
+
+                <p class="body-text" itemprop="description">
+                    Total Knee Replacement (TKR) is a surgical procedure in which a damaged knee joint is replaced with
+                    an artificial implant to reduce pain, improve mobility and help patients walk comfortably again. It
+                    is commonly recommended for people suffering from <strong>severe arthritis, knee joint damage or
+                        chronic knee pain.</strong>
+                </p>
+
+                <div class="highlight-box">
+                    If knee pain is affecting your daily activities - walking, climbing stairs or standing for long
+                    periods - consulting an orthopedic specialist can help you find the right treatment at the right
+                    time.
                 </div>
 
-                <div class="intro-content">
-                    <div class="flex">
-                        <img src="assets/tkr/comma-left.png" alt="">
-                        <p class="intro-para">Living with constant knee pain can be frustrating - every step feels like
-                            a
-                            struggle.
-                            At Rashtrotthana Hospital, we believe no one should compromise on their quality of life.
+                <p class="body-text">
+                    At Rashtrotthana Hospital, we provide advanced Knee Replacement Surgery in Bangalore with
+                    experienced orthopedic specialists, modern treatment facilities and personalised recovery care
+                    focused on long-term mobility and patient comfort.
+                </p>
+
+                <!-- <div class="cta-group">
+                    <a href="#lead-form" class="btn-primary">
+                        <i class="ti ti-calendar-plus" aria-hidden="true"></i>
+                        Book Free Consultation
+                    </a>
+                    <a href="tel:+918069239999" class="btn-ghost">
+                        <i class="ti ti-phone" aria-hidden="true"></i>
+                        +91 80692 39999
+                    </a>
+                </div> -->
+            </div>
+
+            <div class="tkr-image-col">
+                <div class="tkr-img-placeholder">
+                    <img src="../../assets/total-knee-replacement-in-bangalore.png" alt="">
+                </div>
+                <!-- <div class="accent-pill">
+                    <i class="ti ti-shield-check" aria-hidden="true"></i>
+                    Advanced Orthopedic Care · RR Nagar, Bangalore
+                </div> -->
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Container 3 -->
+
+    <section class="c3-section" id="free-consultation" itemscope itemtype="https://schema.org/Event">
+        <div class="c3-bg-circle-1"></div>
+        <div class="c3-bg-circle-2"></div>
+
+        <h2 style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);">Free Knee Pain
+            Consultation — Rashtrotthana Hospital, Bangalore</h2>
+
+        <div class="c3-inner">
+
+            <div class="c3-left">
+                <p class="c3-eyebrow">Free Knee Pain Clinic · Bangalore</p>
+                <h2 class="c3-heading" itemprop="name">Free Knee Pain Consultation in Bangalore</h2>
+                <h3 class="c3-subheading">Visit Our Knee Pain Clinic at Rashtrotthana Hospital</h3>
+                <div class="c3-divider"></div>
+
+                <p class="c3-body">
+                    Are you struggling with knee pain while walking, climbing stairs or standing for long periods? Our
+                    specialised Knee Pain Clinic offers a <strong style="color:#ffffff;">free consultation</strong> to
+                    help you understand the cause of your pain and explore the right treatment options.
+                </p>
+
+                <div class="c3-schedule-row">
+                    <span class="c3-badge-free">
+                        <i class="ti ti-gift" aria-hidden="true"></i>
+                        Free Consultation
+                    </span>
+                    <span class="c3-schedule-chip">
+                        <i class="ti ti-calendar-event" aria-hidden="true"></i>
+                        Every Monday &amp; Thursday
+                    </span>
+                    <span class="c3-schedule-chip">
+                        <i class="ti ti-clock" aria-hidden="true"></i>
+                        10 AM – 1 PM
+                    </span>
+                </div>
+
+                <ul class="c3-list">
+                    <li>
+                        <span class="c3-list-icon"><i class="fa-solid fa-check"
+                                style="color: rgb(242, 243, 246);"></i></span>
+                        Knee pain evaluation and mobility assessment
+                    </li>
+                    <li>
+                        <span class="c3-list-icon"><i class="fa-solid fa-check"
+                                style="color: rgb(242, 243, 246);"></i></span>
+                        Guidance on non-surgical and surgical treatment options
+                    </li>
+                    <li>
+                        <span class="c3-list-icon"><i class="fa-solid fa-check"
+                                style="color: rgb(242, 243, 246);"></i></span>
+                        Expert advice on Total Knee Replacement (TKR) if required
+                    </li>
+                    <li>
+                        <span class="c3-list-icon"><i class="fa-solid fa-check"
+                                style="color: rgb(242, 243, 246);"></i></span>
+                        Personalised treatment planning for faster recovery
+                    </li>
+                </ul>
+
+                <p class="c3-note">
+                    Not every knee pain requires surgery. Early consultation can help you reduce pain, improve mobility,
+                    and avoid further joint damage.
+                </p>
+            </div>
+
+            <div class="c3-right">
+                <app-call-back-form [pageName]="'Total Knee Replacement'" />
+            </div>
+
+        </div>
+    </section>
+
+    <!-- doctor section -->
+    <section class="doctor-section" style="padding: 50px 0; background-color: #f4fafa;">
+        <h2 class="main-heading" style="text-align: center; margin-bottom: 50px;">Meet Our Experienced Surgeons</h2>
+        <app-speciality-doc-card [doctors]="doctors" />
+    </section>
+
+    <!-- container 4 -->
+
+    <section class="c4-section" id="knee-replacement-types">
+        <div class="c4-inner">
+
+            <div class="c4-header">
+                <p class="c4-eyebrow">Procedures We Offer</p>
+                <h2 class="c4-heading">Which Knee Replacement Is Right for You?</h2>
+                <p class="c4-header-sub">Our orthopedic specialists assess your condition and recommend the most
+                    suitable procedure for your needs.</p>
+            </div>
+
+            <div class="c4-grid">
+
+                <!-- Card 1: Total Knee Replacement -->
+                <div class="c4-card">
+                    <div class="c4-card-img">
+                        <img src="../../assets/total-knee-replacement-surgery-at-rashtrotthana-hospital.png" alt="">
+                    </div>
+                    <div class="c4-card-content">
+                        <span class="c4-card-tag">
+                            <i class="ti ti-stethoscope" aria-hidden="true"></i>
+                        </span>
+                        <h3 class="c4-card-title">Total Knee Replacement (TKR)</h3>
+                        <div class="c4-card-divider"></div>
+                        <p class="c4-card-text">
+                            Recommended when the entire knee joint is severely damaged due to arthritis, injury or
+                            long-term wear and tear. The damaged joint is replaced with an artificial implant to reduce
+                            pain and improve mobility.
                         </p>
-                    </div>
-                    <div class="flex1">
-                        <p class="intro-para">Our expert orthopedic team has successfully helped hundreds of patients
-                            walk
-                            pain-free
-                            again through advanced, safe and affordable Total Knee Replacement (TKR) procedures. From
-                            consultation
-                            to recovery, we make your knee replacement journey smooth, safe and stress-free. We work
-                            closely
-                            with
-                            each patient to rebuild mobility, reduce pain and regain the confidence to move freely and
-                            live
-                            independently again.</p>
-                        <img src="assets/tkr/comma-right.png" alt="">
+                        <ul class="c4-card-points">
+                            <li>
+                                <span class="c4-point-dot"><i class="fa-solid fa-check"
+                                        style="color: #4DB7B3"></i></span>
+                                Severe osteoarthritis or rheumatoid arthritis
+                            </li>
+                            <li>
+                                <span class="c4-point-dot"><i class="fa-solid fa-check"
+                                        style="color: #4DB7B3"></i></span>
+                                Whole joint damage from injury or wear
+                            </li>
+                            <li>
+                                <span class="c4-point-dot"><i class="fa-solid fa-check"
+                                        style="color: #4DB7B3"></i></span>
+                                Implants lasting 15–20 years
+                            </li>
+                        </ul>
+                        <button (click)="openModal()" class="c4-card-cta">
+                            <i class="ti ti-calendar-plus" aria-hidden="true"></i>
+                            Book Consultation
+                        </button>
                     </div>
                 </div>
 
-                <div class="banner-imgs">
-                    <img src="assets/tkr/header-img-5.webp" alt="" class="float-right float-delay-3 img-5" 
-                        >
-                    <img src="assets/tkr/header-img-6.webp" alt="" class="float-right float-delay-2 img-6"
-                        >
-                    <img src="assets/tkr/header-img-7.webp" alt="" class="float-right float-delay-2 img-7"
-                        >
-                    <img src="assets/tkr/header-img-8.webp" alt="" class="float-right float-delay-1 img-8"
-                       >
+                <!-- Card 2: Partial Knee Replacement -->
+                <div class="c4-card">
+                    <div class="c4-card-img">
+                        <img src="../../assets/partial-knee-replacement-at-rashtrotthana-hospital-bangalore.png" alt="">
+                    </div>
+                    <div class="c4-card-content">
+                        <span class="c4-card-tag">
+                            <i class="ti ti-circle-filled" style="font-size:7px;" aria-hidden="true"></i>
+                            Single Compartment
+                        </span>
+                        <h3 class="c4-card-title">Partial Knee Replacement</h3>
+                        <div class="c4-card-divider"></div>
+                        <p class="c4-card-text">
+                            Performed when only one part of the knee joint is affected. This procedure helps preserve
+                            healthy bone and ligaments while providing faster recovery and improved knee function.
+                        </p>
+                        <ul class="c4-card-points">
+                            <li>
+                                <span class="c4-point-dot"><i class="fa-solid fa-check"
+                                        style="color: #4DB7B3"></i></span>
+                                Only one compartment damaged
+                            </li>
+                            <li>
+                                <span class="c4-point-dot"><i class="fa-solid fa-check"
+                                        style="color: #4DB7B3"></i></span>
+                                Healthy bone and ligaments preserved
+                            </li>
+                            <li>
+                                <span class="c4-point-dot"><i class="fa-solid fa-check"
+                                        style="color: #4DB7B3"></i></span>
+                                Faster recovery, more natural feel
+                            </li>
+                        </ul>
+                        <button (click)="openModal()" class="c4-card-cta">
+                            <i class="ti ti-calendar-plus" aria-hidden="true"></i>
+                            Book Consultation
+                        </button>
+                    </div>
                 </div>
+
             </div>
-        </div>
 
-
-        <div class="surgery-sections-container">
-            <div class="surgery-header">
-                <h2 class="surgery-main-title">Experience world-class knee replacement at an affordable price</h2>
-                <p class="surgery-main-subtitle">Your comfort, safety and recovery come first - always. At
-                    Rashtrotthana Hospital, our Total Knee Replacement Package is designed to make advanced orthopedic
-                    care accessible, transparent and completely reliable. <br>
-                    <span>Starting at just ₹1,00,000* (T&C applied)</span>, this all-inclusive package ensures that
-                    every stage of
-                    your surgery - from consultation to recovery - is handled by an experienced team with proven success
-                    in helping patients walk pain-free again.
+            <!-- Bottom Note -->
+            <div class="c4-bottom-note">
+                <div class="c4-note-icon">
+                    <img src="../../assets/orthopedic-icon.png" style="width: 80px; height: auto; margin-top: 6%;"
+                        alt="orthopedic icon">
+                </div>
+                <p class="c4-note-text">
+                    At <strong>Rashtrotthana Hospital</strong>, our orthopedic specialists provide advanced Knee
+                    Replacement Surgery in Bangalore with <strong>personalised treatment plans</strong> based on each
+                    patient's condition and mobility needs.
                 </p>
             </div>
 
-            <div class="surgeries-grid">
-                <div class="surgery-content">
-                    <!-- <div class="surgery-number">0{{ i + 1 }}</div> -->
-                    <h3 class="surgery-title">What Makes Our Package the Right Choice</h3>
-                    <div class="process-part">
-                        <div class="process-line">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="915" height="70" viewBox="0 0 1038 70"
-                                fill="none">
-                                <path
-                                    d="M0.385742 23.4048L10.695 29.5903C88.0005 75.9737 184.029 78.1833 263.386 35.4048C344.046 -6.65146 440.033 -7.24926 521.21 33.7991L524.386 35.4048C601.534 78.5078 695.128 80.1692 773.757 39.8315L782.386 35.4048C852.717 -6.48154 939.273 -10.6518 1013.31 24.2791L1036.89 35.4048"
-                                    stroke="#959292" stroke-width="1.5" stroke-dasharray="6 6" />
-                            </svg>
-                        </div>
-                        <div class="process-container">
-                            <div class="process-card">
-                                <img src="assets/tkr/package-img-1.webp" alt="">
-                                <div class="card-para-1 card-para">Our package includes complete care from consultation
-                                    to recovery
-                                </div>
-                            </div>
-                            <div class="process-card">
-                                <img src="assets/tkr/package-img-2.webp" alt="">
-                                <div class="card-para-2 card-para">Expert surgeons ensure safe and successful knee</div>
-                            </div>
-                            <div class="process-card">
-                                <img src="assets/tkr/package-img-3.webp" alt="">
-                                <div class="card-para-3 card-para">Advanced techniques mean less pain and faster</div>
-                            </div>
-                            <div class="process-card">
-                                <img src="assets/tkr/package-img-4.webp" alt="">
-                                <div class="card-para-4 card-para">Personalized rehab helps you walk comfortably</div>
-                            </div>
-                            <div class="process-card">
-                                <img src="assets/tkr/package-img-5.webp" alt="">
-                                <div class="card-para-5 card-para">Cashless insurance and caring support make recovery
-                                    stress-free
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        </div>
+    </section>
 
-                </div>
+    <!-- container 5 -->
+
+    <section class="c5-section" id="why-rashtrotthana">
+        <div class="c5-bg-blob-1"></div>
+        <div class="c5-bg-blob-2"></div>
+
+        <div class="c5-inner">
+
+            <div class="c5-header">
+                <p class="c5-eyebrow">Why Choose Us</p>
+                <h2 class="c5-heading">Why Choose Rashtrotthana Hospital for Knee Replacement Surgery in Bangalore?</h2>
             </div>
 
-        </div>
+            <div class="c5-grid">
 
-        <!-- knee pain clinic -->
-
-        <div class="knee-pain-clinic">
-            <h2 class="surgery-title-knee">Visit Our Free Knee Pain Clinic</h2>
-            <p class="surgery-description-knee">If you’re experiencing any of the symptoms above, our Knee Pain Clinic
-                is
-                here
-                to help. Every Monday and Thursday from 10 AM to 1 PM, our expert orthopedic specialists provide free
-                consultations to evaluate your knee condition and guide you toward the most suitable treatment.</p>
-
-            <div class="benefits-section">
-
-                <div class="benefits-list">
-                    <div class="list">
-                        <div class="benefit-item card-1">
-                            <span class="checkmark"><img src="assets/tkr/knee-img-1.webp" alt=""></span>
-                            <span class="benefit-item-para">Personalized assessment of your knee pain and mobility
-                                issues</span>
-                        </div>
-                        <div class="benefit-item card-2">
-                            <span class="checkmark"><img src="assets/tkr/knee-img-2.webp" alt=""></span>
-                            <span class="benefit-item-para">Expert evaluation to determine if Total Knee Replacement
-                                (TKR)
-                                is necessary - not every
-                                patient requires surgery</span>
-                        </div>
+                <!-- Card 1 -->
+                <div class="c5-card">
+                    <div class="c5-icon-wrap">
+                        <img src="../../assets/sheild-icon-1.png" alt="">
                     </div>
-                    <div class="">
-                        <img src="assets/tkr/knee-main-img.webp" alt="" class="benefits-main-img">
-                    </div>
-                    <div class="list">
-                        <div class="benefit-item card-3">
-                            <span class="checkmark"><img src="assets/tkr/knee-img-3.webp" alt=""></span>
-                            <span class="benefit-item-para">Guidance on non-surgical options and preventive care if TKR
-                                is
-                                not needed</span>
-                        </div>
-                        <div class="benefit-item card-4">
-                            <span class="checkmark"><img src="assets/tkr/knee-img-4.webp" alt=""></span>
-                            <span class="benefit-item-para">Clear next steps to reduce pain, improve function and
-                                restore
-                                mobility</span>
-                        </div>
-                    </div>
+                    <h3 class="c5-card-title">Advanced Orthopedic Care with Experienced Specialists</h3>
+                    <div class="c5-card-divider"></div>
+                    <p class="c5-card-sub">We combine advanced orthopedic technology with experienced knee replacement
+                        specialists to provide safe, precise and patient-focused care.</p>
+                    <ul class="c5-points">
+                        <li>
+                            <span class="c5-check"><i class="fa-solid fa-check" style="color: #4DB7B3"></i></span>
+                            Modern operation theatres with advanced surgical technology
+                        </li>
+                        <li>
+                            <span class="c5-check"><i class="fa-solid fa-check" style="color: #4DB7B3"></i></span>
+                            Experienced orthopedic and knee replacement surgeons
+                        </li>
+                        <li>
+                            <span class="c5-check"><i class="fa-solid fa-check" style="color: #4DB7B3"></i></span>
+                            Complete care from consultation to rehabilitation
+                        </li>
+                        <li>
+                            <span class="c5-check"><i class="fa-solid fa-check" style="color: #4DB7B3"></i></span>
+                            Advanced techniques focused on faster recovery and mobility
+                        </li>
+                    </ul>
                 </div>
+
+                <!-- Card 2 -->
+                <div class="c5-card">
+                    <div class="c5-icon-wrap">
+                        <img src="../../assets/insurance-icon-1.png" alt="">
+                    </div>
+                    <h3 class="c5-card-title">Cashless Insurance & Patient Support</h3>
+                    <div class="c5-card-divider"></div>
+                    <p class="c5-card-sub">We help make Knee Replacement Surgery in Bangalore more accessible with
+                        smooth insurance support and transparent care.</p>
+                    <ul class="c5-points">
+                        <li>
+                            <span class="c5-check"><i class="fa-solid fa-check" style="color: #4DB7B3"></i></span>
+                            Cashless insurance facility available
+                        </li>
+                        <li>
+                            <span class="c5-check"><i class="fa-solid fa-check" style="color: #4DB7B3"></i></span>
+                            Guidance for insurance and claim support
+                        </li>
+                        <li>
+                            <span class="c5-check"><i class="fa-solid fa-check" style="color: #4DB7B3"></i></span>
+                            Transparent treatment and billing process
+                        </li>
+                        <li>
+                            <span class="c5-check"><i class="fa-solid fa-check" style="color: #4DB7B3"></i></span>
+                            Dedicated patient assistance throughout treatment
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="c5-card">
+                    <div class="c5-icon-wrap">
+                        <img src="../../assets/location-icon-1.png" alt="">
+                    </div>
+                    <h3 class="c5-card-title">Convenient Location & Comfortable Patient Experience</h3>
+                    <div class="c5-card-divider"></div>
+                    <p class="c5-card-sub">Located in Rajarajeshwari Nagar, Bangalore — easily accessible for patients
+                        and families visiting for TKR, Partial Knee Replacement and other orthopedic treatments.</p>
+                    <ul class="c5-points">
+                        <li>
+                            <span class="c5-check"><i class="fa-solid fa-check" style="color: #4DB7B3"></i></span>
+                            Easy access via Metro, bus and major roads
+                        </li>
+                        <li>
+                            <span class="c5-check"><i class="fa-solid fa-check" style="color: #4DB7B3"></i></span>
+                            Nearby accommodation and essential facilities
+                        </li>
+                        <li>
+                            <span class="c5-check"><i class="fa-solid fa-check" style="color: #4DB7B3"></i></span>
+                            Supportive staff and patient-friendly environment
+                        </li>
+                        <li>
+                            <span class="c5-check"><i class="fa-solid fa-check" style="color: #4DB7B3"></i></span>
+                            Comfortable care focused on patient safety and convenience
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="c6-section" id="tkr-journey">
+        <div class="c6-inner">
+
+            <div class="c6-header">
+                <p class="c6-eyebrow">Step-by-Step Process</p>
+                <h2 class="c6-heading">What to Expect During Total Knee Replacement Surgery</h2>
+                <p class="c6-header-sub">Your Step-by-Step Knee Replacement Journey</p>
             </div>
 
-            <p class="surgery-highlight">Your knee health is unique - our experts will carefully
-                assess your condition and recommend the best solution for you. <span>Book your free consultation</span>
-                at our Knee
-                Pain Clinic today. <span>Every Monday & Thursday from 10am to 1pm.</span></p>
+            <div class="c6-cards">
 
-            <button class="cta-button cta-appointment-free " style="margin-top: 3%;" (click)="scrollToForm()">
-                <!-- <span class="cta-icon">📅</span> -->
-                Book Your Free consultation
-            </button>
-
-        </div>
-
-
-        <div class="main-services-section">
-            <div class="services-content-area">
-                <div class="section-badge">
-                    <span class="badge-icon">🏥</span>
-                    <span>Surgery Types</span>
+                <div class="c6-card">
+                    <div class="c6-card-top">
+                        <div class="c6-icon-wrap">
+                            <!-- <i class="ti ti-stethoscope" aria-hidden="true"></i> -->
+                            <i class="fa-solid fa-user-doctor"></i>
+                        </div>
+                        <div class="c6-num">01</div>
+                    </div>
+                    <div class="c6-card-body">
+                        <h3 class="c6-card-title">Consultation &amp; Knee Evaluation</h3>
+                        <div class="c6-card-divider"></div>
+                        <p class="c6-card-text">Our orthopedic specialists evaluate your symptoms, scans and knee
+                            condition to understand the right treatment plan for you.</p>
+                    </div>
                 </div>
 
-                <h2 class="section-heading">Types of Knee Replacement Surgery</h2>
+                <div class="c6-card">
+                    <div class="c6-card-top">
+                        <div class="c6-icon-wrap">
+                            <!-- <i class="ti ti-surgery" aria-hidden="true"></i> -->
+                            <i class="fa-solid fa-scissors"></i>
+                        </div>
+                        <div class="c6-num">02</div>
+                    </div>
+                    <div class="c6-card-body">
+                        <h3 class="c6-card-title">Surgery Procedure</h3>
+                        <div class="c6-card-divider"></div>
+                        <p class="c6-card-text">Advanced Total Knee Replacement Surgery is performed using modern
+                            surgical techniques focused on precision, safety and improved mobility.</p>
+                    </div>
+                </div>
 
-                <p class="section-intro">
-                    There are two main types of knee replacement procedures, depending on the extent of joint damage:
+                <div class="c6-card">
+                    <div class="c6-card-top">
+                        <div class="c6-icon-wrap">
+                            <!-- <i class="ti ti-heart-rate-monitor" aria-hidden="true"></i> -->
+                            <i class="fa-solid fa-bed-pulse"></i>
+                        </div>
+                        <div class="c6-num">03</div>
+                    </div>
+                    <div class="c6-card-body">
+                        <h3 class="c6-card-title">Hospital Recovery &amp; Care</h3>
+                        <div class="c6-card-divider"></div>
+                        <p class="c6-card-text">Patients are supported with pain management, early movement guidance,
+                            and personalised care for a smooth recovery experience.</p>
+                    </div>
+                </div>
+
+                <div class="c6-card">
+                    <div class="c6-card-top">
+                        <div class="c6-icon-wrap">
+                            <!-- <i class="ti ti-walk" aria-hidden="true"></i> -->
+                            <i class="fa-solid fa-person-walking"></i>
+                        </div>
+                        <div class="c6-num">04</div>
+                    </div>
+                    <div class="c6-card-body">
+                        <h3 class="c6-card-title">Rehabilitation &amp; Mobility Improvement</h3>
+                        <div class="c6-card-divider"></div>
+                        <p class="c6-card-text">Physiotherapy and rehabilitation help improve strength, flexibility and
+                            confidence in walking and daily activities after surgery.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="c6-bottom-note">
+                <div class="c6-note-icon">
+                    <img src="../../assets/orthopedic-icon.png" style="width: 80px; height: auto; margin-top: 6%;"
+                        alt="orthopedic icon">
+                </div>
+                <p class="c6-note-text">
+                    At <strong>Rashtrotthana Hospital</strong>, our team focuses on comfortable recovery, patient
+                    safety and long-term mobility outcomes for patients undergoing <strong>Knee Replacement Surgery in
+                        Bangalore</strong>.
                 </p>
-
-                <div class="main-services-grid">
-                    <div *ngFor="let service of mainServices" class="main-service-card"
-                        [style.--card-color]="service.color">
-                        <div class="service-icon-circle">
-                            <span>{{ service.icon }}</span>
-                        </div>
-                        <div class="service-card-content">
-                            <h3 class="service-card-title">{{ service.title }}</h3>
-                            <div class="service-card-desc" [innerHTML]="service.description"></div>
-                        </div>
-                        <!-- <div class="service-arrow">→</div> -->
-                    </div>
-                </div>
-            </div>
-
-            <div class="form-sidebar" #formSection>
-                <!-- <app-speciality-form [doctor]="formdoctors" /> -->
-                 <app-call-back-form [pageName]="'Total Knee Replacement'"></app-call-back-form>
-            </div>
-        </div>
-
-        <!-- doctors section -->
-
-        <div class="container_margin">
-            <h2 class="s_h1 text-center heading-margin">Our orthopedic Experts</h2>
-            <app-speciality-doc-card [doctors]="doctors" />
-        </div>
-
-        <!-- Why Choose Rashtrotthana Hospital? -->
-
-        <div class="why-choose-wrapper" style="margin-top: 30px;">
-            <!-- Header Section -->
-            <div class="section-intro">
-                <span class="intro-badge">Your Health Partner</span>
-                <h2 class="main-heading">Why Choose Rashtrotthana Hospital?</h2>
-                <p class="main-subheading">Your Health in Trustable Hands</p>
-                <div class="heading-underline">
-                    <span class="line"></span>
-                    <span class="dot"></span>
-                    <span class="line"></span>
-                </div>
-            </div>
-
-            <!-- Sections with alternating layouts -->
-            <div *ngFor="let section of sections; let i = index" class="section-block">
-
-                <!-- Left Layout (Icon Left) -->
-                <div *ngIf="i % 2 === 0" class="layout-container layout-left">
-                    <!-- <div class="icon-column" [style.background]="section.color">
-            <div class="number-badge">{{ section.number }}</div>
-            <div class="main-icon">{{ section.icon }}</div>
-            <div class="vertical-text">{{ section.title.split('.')[1]?.trim() || section.title }}</div>
-          </div> -->
-
-                    <div class="content-column">
-                        <h3 class="section-title" [style.color]="section.color">{{ section.title }}</h3>
-                        <p class="section-desc">{{ section.description }}</p>
-
-                        <div class="features-grid">
-                            <div *ngFor="let feature of section.features" class="feature-item">
-                                <div class="feature-icon-box" [style.border-color]="section.color">
-                                    <span>{{ feature.icon }}</span>
-                                </div>
-                                <div class="feature-text">
-                                    <strong>{{ feature.title }}</strong>
-                                    <p>{{ feature.description }}</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="highlight-box" [style.border-left-color]="section.color">
-                            <span class="bulb-icon">💡</span>
-                            <em>{{ section.highlightText }}</em>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Right Layout (Icon Right) -->
-                <div *ngIf="i % 2 !== 0" class="layout-container layout-right">
-                    <div class="content-column">
-                        <h3 class="section-title" [style.color]="section.color">{{ section.title }}</h3>
-                        <p class="section-desc">{{ section.description }}</p>
-
-                        <div class="features-grid">
-                            <div *ngFor="let feature of section.features" class="feature-item">
-                                <div class="feature-icon-box" [style.border-color]="section.color">
-                                    <span>{{ feature.icon }}</span>
-                                </div>
-                                <div class="feature-text">
-                                    <strong>{{ feature.title }}</strong>
-                                    <p>{{ feature.description }}</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="highlight-box" [style.border-left-color]="section.color">
-                            <span class="bulb-icon">💡</span>
-                            <em>{{ section.highlightText }}</em>
-                        </div>
-                    </div>
-
-                    <!-- <div class="icon-column" [style.background]="section.color">
-            <div class="number-badge">{{ section.number }}</div>
-            <div class="main-icon">{{ section.icon }}</div>
-            <div class="vertical-text">{{ section.title.split('.')[1]?.trim() || section.title }}</div>
-          </div> -->
-                </div>
-
-                <!-- Separator Line -->
-                <div *ngIf="i < sections.length - 1" class="section-divider">
-                    <span class="divider-circle" [style.background]="section.color"></span>
-                </div>
-            </div>
-
-            <!-- Final CTA -->
-        </div>
-
-        <div class="final-action-bar">
-            <div class="action-content">
-                <h3>
-                    <h3>Your Health, Our Prioity</h3>
-                </h3>
-                <p><b>Experience World-Class Orthopedic Care</b></p>
-                <p style="margin-top: 15px; line-height: 25px;">Your mobility is your freedom. Don’t let knee pain
-                    stop
-                    you from enjoying life to the fullest. Book a consultation with our expert orthopedic surgeons
-                    today
-                    and take the first step toward a pain-free active and confident tomorrow.</p>
-            </div>
-            <div class="action-buttons">
-                <a href="tel:+918069239999" class="action-btn btn-yellow" (click)="trackPhoneClick()">
-                    Call +91 80692 39999
-                </a>
-                <button class="action-btn btn-teal" (click)="scrollToForm()">
-                    Book Appointment
+                <button (click)="openModal()" class="c6-note-cta">
+                    <i class="ti ti-calendar-plus" aria-hidden="true"></i>
+                    Book Free Consultation
                 </button>
             </div>
+
         </div>
-    </div>
+    </section>
+
+
+    <!-- Section 7: FAQ -->
+    <section class="a7-section" id="acl-faq" itemscope itemtype="https://schema.org/FAQPage">
+        <div class="a7-inner">
+
+            <div class="a7-header">
+                <p class="a7-eyebrow">Patient Questions</p>
+                <h2 class="a7-heading">Frequently Asked Questions About ACL Reconstruction Surgery in Bangalore</h2>
+                <p class="a7-header-sub">Answers to the most common questions about ACL tears, surgery, and recovery.
+                </p>
+            </div>
+
+            <div *ngFor="let faq of faqs; let i = index" class="a7-faq-item" style="margin-top: 10px;" [class.is-open]="faq.open" itemscope
+                itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <button class="a7-faq-q" (click)="toggleFaq(i)" itemprop="name" [attr.aria-expanded]="faq.open">
+                    <span>{{ faq.questions }}</span>
+                    <i class="fa-solid fa-angle-down" style="color: rgb(36, 36, 37);"></i>
+                </button>
+
+                <div class="a7-faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text" [innerHTML]="faq.answer"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
 </div>

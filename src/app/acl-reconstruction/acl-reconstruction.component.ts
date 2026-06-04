@@ -6,32 +6,31 @@ declare var gtag: Function;
 @Component({
   selector: 'app-acl-reconstruction',
   templateUrl: './acl-reconstruction.component.html',
-  styleUrl: './acl-reconstruction.component.css'
+  styleUrl: './acl-reconstruction.component.css',
 })
 export class AclReconstructionComponent {
-
-  constructor(private titleService: Title,
+  constructor(
+    private titleService: Title,
     private metaService: Meta,
-    private router: Router) { }
-
+    private router: Router,
+  ) {}
 
   ngOnInit() {
     this.titleService.setTitle(
-      'ACL Reconstruction Surgery in Bangalore | Knee Ligament Care'
+      'ACL Reconstruction Surgery in Bangalore | Expert ACL Care',
     );
 
     // Set the meta description
     this.metaService.updateTag({
       name: 'description',
       content:
-        "Rashtrotthana Hospital offers ACL reconstruction surgery in Bangalore using advanced arthroscopic techniques for safe recovery & knee stability.",
+        'Get advanced ACL reconstruction surgery in Bangalore at Rashtrotthana Hospital with expert orthopaedic surgeons, arthroscopic treatment, and personalized knee ligament care.',
     });
 
     // Optionally set other meta tags
     this.metaService.updateTag({
       name: 'keywords',
-      content:
-        'knee replacement surgery, orthopedic care, best knee surgery Bangalore',
+      content: 'ACL reconstruction in Bangalore, Ligament tear surgery in Bangalore, Sport Injury Treatment in Bangalore'
     });
   }
   contactus() {
@@ -45,7 +44,7 @@ export class AclReconstructionComponent {
       // designation: 'Orthopaedics',
       alt: '',
       slug: '/doctor/dr-mahesh-kulkarni',
-      experience: '16+'
+      experience: '16+',
     },
 
     {
@@ -54,15 +53,7 @@ export class AclReconstructionComponent {
       // designation: 'Orthopaedics',
       alt: '',
       slug: '/doctor/dr-sujayendra-d-m',
-      experience: '13+'
-    },
-    {
-      image: '../../assets/Dr-Nikhil-Hegde.png',
-      name: 'Dr. Nikhil Hegde',
-      // designation: 'Orthopaedics',
-      alt: '',
-      slug: '/doctor/dr-nikhil-hegde',
-      experience: '8+'
+      experience: '13+',
     },
     {
       image: '../../assets/dr-sandeep-k-m-doc-page.png',
@@ -70,17 +61,24 @@ export class AclReconstructionComponent {
       // designation: 'Orthopaedics',
       alt: '',
       slug: '/doctor/dr-sandeep-k-m',
-      experience: '13+'
+      experience: '13+',
+    },
+    {
+      image: '../../assets/Dr-Nikhil-Hegde.png',
+      name: 'Dr. Nikhil Hegde',
+      // designation: 'Orthopaedics',
+      alt: '',
+      slug: '/doctor/dr-nikhil-hegde',
+      experience: '8+',
     },
   ];
 
-
-
-
-
-
-  formdoctors = ['Dr. Mahesh Kulkarni', 'Dr. Sujayendra D. M', 'Dr. Nikhil Hegde', 'Dr. Sandeep K. M']
-
+  formdoctors = [
+    'Dr. Mahesh Kulkarni',
+    'Dr. Sujayendra D. M',
+    'Dr. Nikhil Hegde',
+    'Dr. Sandeep K. M',
+  ];
 
   mainServices: any[] = [
     {
@@ -107,15 +105,15 @@ export class AclReconstructionComponent {
 
   @ViewChild('formSection') formSection!: ElementRef;
 
-  scrollToForm() {
-    if (this.formSection) {
-      this.formSection.nativeElement.scrollIntoView({
-        // behavior: 'smooth',
-        block: 'start',
-        inline: 'nearest',
-      });
-    }
-  }
+  // scrollToForm() {
+  //   if (this.formSection) {
+  //     this.formSection.nativeElement.scrollIntoView({
+  //       // behavior: 'smooth',
+  //       block: 'start',
+  //       inline: 'nearest',
+  //     });
+  //   }
+  // }
 
   trackPhoneClick() {
     if (typeof gtag === 'function') {
@@ -189,14 +187,12 @@ export class AclReconstructionComponent {
         {
           icon: '📜',
           title: 'Transparent Billing',
-          description:
-            'Clear pricing with no hidden costs.',
+          description: 'Clear pricing with no hidden costs.',
         },
         {
           icon: '✨',
           title: 'Smooth Process',
-          description:
-            'Well-managed insurance handling to avoid delays.',
+          description: 'Well-managed insurance handling to avoid delays.',
         },
       ],
       highlightText:
@@ -214,13 +210,13 @@ export class AclReconstructionComponent {
         {
           icon: '🚇',
           title: 'Easily Accessible',
-          description: 'Close to major roads, metro connectivity, railway stations and bus routes.',
+          description:
+            'Close to major roads, metro connectivity, railway stations and bus routes.',
         },
         {
           icon: '🏨',
           title: 'Nearby Stay Options',
-          description:
-            'Comfortable accommodation for patients and attendants.',
+          description: 'Comfortable accommodation for patients and attendants.',
         },
         {
           icon: '🏪',
@@ -242,24 +238,61 @@ export class AclReconstructionComponent {
 
   faqs = [
     {
-      ques: "When is ACL reconstruction surgery needed?",
-      ans: "ACL reconstruction is recommended when knee instability persists and affects daily activities or sports despite conservative treatment."
+      ques: 'What are the signs of an ACL tear?',
+      ans: 'Common signs of an ACL tear include a sudden "popping" sound or sensation in the knee at the time of injury, immediate and severe swelling within a few hours, intense pain, a feeling of knee instability or "giving way," and difficulty bearing weight or straightening the leg. An MRI scan is the most accurate tool to confirm an ACL tear and assess associated ligament or meniscus damage.',
+      open: false,
     },
     {
-      ques: "Is ACL reconstruction surgery safe?",
-      ans: "Yes. Arthroscopic ACL reconstruction is a safe and commonly performed procedure when done by experienced orthopedic surgeons."
+      ques: 'Does every ACL tear require surgery?',
+      ans: 'Not always. Partial ACL tears in older, less active patients may be managed with physiotherapy, bracing and activity modification. However, complete ACL tears - especially in athletes, young patients or those with significant knee instability - generally require surgical reconstruction to restore full stability and prevent secondary injuries such as meniscus tears or cartilage damage over time.',
+      open: false,
     },
     {
-      ques: "How long does recovery take after ACL reconstruction?",
-      ans: "Initial recovery takes a few weeks, while complete rehabilitation and return to sports may take several months."
+      ques: 'What graft is used in ACL reconstruction surgery?',
+      ans: "The most commonly used grafts are the patellar tendon (bone-tendon-bone), hamstring tendon (semitendinosus / gracilis) and quadriceps tendon - all taken from the patient's own body (autograft). Donor tissue (allograft) may be used in certain cases. Your surgeon will recommend the most appropriate graft based on your age, activity level, sport and associated injuries.",
+      open: false,
     },
     {
-      ques: "Will I need physiotherapy after ACL surgery?",
-      ans: "Yes. Physiotherapy is essential for restoring strength, flexibility and knee stability."
+      ques: 'How long does recovery take after ACL reconstruction?',
+      ans: 'Most patients can walk with support within a few days and resume light activities in 4-6 weeks. Return to jogging typically occurs around 3-4 months and a full return to competitive sport is generally expected between 6-9 months with a dedicated rehabilitation programme. The timeline varies based on graft type, overall fitness and presence of additional knee injuries.',
+      open: false,
     },
     {
-      ques: "Can I return to sports after ACL reconstruction?",
-      ans: "Most patients can return to sports with proper rehabilitation and medical guidance."
+      ques: 'Is ACL surgery covered by health insurance in India?',
+      ans: 'Yes, ACL reconstruction surgery is generally covered under most health insurance policies in India, including government health schemes. Coverage may vary based on policy terms, the cause of injury (sports vs accident) and hospitalisation requirements. At Rashtrotthana Hospital, we offer cashless insurance facility and dedicated support for pre-authorisation, documentation and claim processing.',
+      open: false,
     },
-  ]
+    {
+      ques: 'What is the cost of ACL reconstruction surgery in Bangalore?',
+      ans: 'The cost of ACL reconstruction surgery in Bangalore depends on factors including the type of graft used, any concurrent procedures (meniscus repair, cartilage treatment), duration of hospital stay and implant selection. At Rashtrotthana Hospital, we offer affordable, transparent pricing with cashless insurance support. Book a free consultation for a detailed treatment plan and personalised cost estimate.',
+      open: false,
+    },
+  ];
+
+  toggleFaq(index: number) {
+    this.faqs[index].open = !this.faqs[index].open;
+  }
+
+  isModalOpen = false;
+
+  openModal(): void {
+    this.isModalOpen = true;
+    document.body.classList.add('tkr-modal-body-lock');
+  }
+
+  closeModal(): void {
+    this.isModalOpen = false;
+    document.body.classList.remove('tkr-modal-body-lock');
+  }
+
+  closeModalOnBackdrop(event: MouseEvent): void {
+    if ((event.target as HTMLElement).classList.contains('tkr-modal-overlay')) {
+      this.closeModal();
+    }
+  }
+
+  // Replace scrollToForm() or keep it alongside:
+  scrollToForm(): void {
+    this.openModal();
+  }
 }
