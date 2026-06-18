@@ -49,6 +49,12 @@ export class PaediatricsComponent {
       doctor_name: 'Major (Dr.) Ashish S. Mallige',
       experience: "15",
       docalt: 'Major (Dr.) Ashish S. Mallige | Best Pediatrician in Bangalore | Rashtrotthana Hospital'
+    },
+    {
+      doctor_image: 'assets/new-doctor-imgs/JMRH-Dr-Surabhi-img.png',
+      doctor_name: 'Dr. Surabhi H. S',
+      experience: "4",
+      docalt: 'Dr. Surabhi H. S | Best Pediatrician in Bangalore | Rashtrotthana Hospital'
     }
   ]
 

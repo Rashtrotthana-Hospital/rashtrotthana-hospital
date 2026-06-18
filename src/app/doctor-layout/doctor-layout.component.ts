@@ -1369,6 +1369,54 @@ export class DoctorLayoutComponent {
       title: 'Dr. Dhruva G. Prakash | Consultant Urologist in Bengaluru',
       description: ''
     },
+
+    {
+      name: "Dr. K Nishanth Pai",
+      image: "assets/new-doctor-imgs/JMRH-Dr-Nishanth-img.png",
+      department: 'AYURVEDA',
+      desgination: 'AYURVEDA PHYSICIAN',
+      speciality: 'AYURVEDA',
+      about: "",
+      areasOfExpertise: ['Disease Specific Rejuvenation (Rasyana)',
+        'Detoxofication (Panchakarma)',
+        'Chronic illness',
+        'Musculoskeletal Disorders',
+        'Neurological Disorders',
+        'Metabolic Disorders',
+        ],
+      expertise: "Years Of Experience: 15",
+      qualification: "MD(kayachikitsa) Consultant Ayurveda Physician",
+      time: "",
+      date: "",
+      alt: '',
+      title: 'Dr. K Nishanth Pai | Consultant Ayurveda Physician in Bengaluru',
+      description: ''
+    },
+
+    {
+      name: "Dr. Surabhi H. S",
+      image: "assets/new-doctor-imgs/JMRH-Dr-Surabhi-img.png",
+      department: 'Consultant Paediatrician',
+      desgination: 'Consultant Paediatrician',
+      speciality: 'PAEDIATRICS AND NEONATOLOGY',
+      about: "",
+      areasOfExpertise: ['Newborn & Preterm Baby Care',
+        'Neonatal Ventilation & Emergency Management',
+        'Jaundice, Respiratory Distress & Infection Management',
+        'Intubation, PICC Line & Lumbar Puncture',
+        'Pediatric Asthma, Allergies & Common Childhood Illnesses',
+        'Growth, Development & Nutrition Care',
+        'Vaccination & Preventive Pediatrics',
+        'High-Risk Newborn Follow-up',
+        ],
+      expertise: "Years Of Experience: 4",
+      qualification: "MBBS, MD (Pediatrics), Fellowship in Perinatal Medicine (Neonatology) Consultant - Pediatrics & Neonatology",
+      time: "",
+      date: "",
+      alt: '',
+      title: 'Dr. Surabhi H. S | Consultant Urologist in Bengaluru',
+      description: ''
+    },
     
 
     // {

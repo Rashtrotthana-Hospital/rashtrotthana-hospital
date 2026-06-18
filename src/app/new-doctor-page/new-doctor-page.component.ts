@@ -4586,6 +4586,137 @@ export class NewDoctorPageComponent {
       happyPatients: '2000+'
 
     },
+
+    {
+      name: "Dr. K Nishanth Pai",
+      image: 'assets/new-doctor-imgs/JMRH-Dr-Nishanth-png.png',
+      department: 'Ayurveda Physician',
+      about: `Dr. K Nishanth Pai is a highly experienced Consultant Ayurveda Physician at Rashtrotthana Hospital, Bangalore, with over 15 years of clinical experience in Ayurvedic healthcare. He specialises in Panchakarma (detoxification therapies), Rasayana (rejuvenation treatments), chronic disease management, neurological disorders, metabolic conditions and musculoskeletal disorders.
+      With a holistic and patient-centred approach, Dr. Nishanth Pai focuses on identifying the root cause of illness and restoring health through personalised Ayurvedic treatments, lifestyle modifications and preventive care. His expertise helps patients achieve long-term wellness, improved quality of life and sustainable health outcomes. `,
+      speciality: 'AYURVEDA',
+      areasOfExpertise: ['Disease Specific Rejuvenation (Rasyana)',
+        'Detoxofication (Panchakarma)',
+        'Chronic illness',
+        'Musculoskeletal Disorders',
+        'Neurological Disorders',
+        'Metabolic Disorders',
+      ],
+      expertise: '15',
+      qualification: `MBBS, MD (Kayachikitsa), <br> Consultant Ayurveda Physician`,
+      time: '',
+      date: '',
+      alt: 'Dr. K Nishanth Pai | Top Ayurveda Physician in Bangalore | Rashtrotthana Hospital | RR Nagar Bangalore',
+      id: '',
+      title: 'Dr. K Nishanth Pai | Ayurveda Physician Expert in RR Nagar Bangalore',
+      description: 'Consult Dr. K Nishanth Pai, senior Ayurveda physician in RR Nagar with experience in advanced Ayurvedic care, detoxification therapies and chronic disease management at Rashtrotthana Hospital.',
+      faqs: [
+        {
+          question: 'Who is Dr. K Nishanth Pai and what is his specialty at Rashtrotthana Hospital, Bangalore?',
+          answer: 'Dr. K Nishanth Pai is a Consultant Ayurveda Physician at Rashtrotthana Hospital, Bangalore, with 15 years of experience in Ayurvedic medicine. He specialises in Panchakarma, Rasayana (rejuvenation therapy), chronic disease management, and metabolic disorders.'
+        },
+        {
+          question: 'What conditions does Dr. K Nishanth Pai treat using Ayurveda?',
+          answer: 'Dr. K Nishanth Pai treats a variety of conditions including chronic illnesses, neurological disorders, musculoskeletal problems and metabolic disorders. His treatment plans focus on addressing the root cause while improving overall health and quality of life.'
+        },
+        {
+          question: 'What is Panchakarma and can Dr. K Nishanth Pai help with detoxification treatment?',
+          answer: 'Yes, Dr. K Nishanth Pai specialises in Panchakarma, a traditional Ayurvedic detoxification therapy designed to eliminate toxins and restore balance in the body. Treatment is customised based on the individual\'s health condition and constitution.'
+        },
+        {
+          question: 'Can Dr. K Nishanth Pai help with joint pain, arthritis, and musculoskeletal disorders?',
+          answer: 'Yes, he provides Ayurvedic management for joint pain, arthritis, back pain and other musculoskeletal disorders. Treatment may include Panchakarma therapies, herbal medications, dietary guidance and lifestyle modifications.'
+        },
+        {
+          question: 'Does Dr. K Nishanth Pai provide Ayurvedic treatment for neurological disorders?',
+          answer: 'Yes, Dr. K Nishanth Pai has expertise in managing neurological conditions through Ayurvedic therapies aimed at improving nerve function, mobility and overall wellbeing. Treatment plans are tailored to each patient\'s needs.'
+        },
+        {
+          question: 'What is Rasayana therapy and when is it recommended?',
+          answer: 'Rasayana therapy is an Ayurvedic rejuvenation treatment that helps improve immunity, vitality and overall health. Dr. K Nishanth Pai may recommend it for patients recovering from chronic illness, fatigue or age-related health concerns.'
+        },
+        {
+          question: 'Why choose Dr. K Nishanth Pai at Rashtrotthana Hospital for Ayurvedic treatment?',
+          answer: `With 15 years of experience, Dr. K Nishanth Pai combines traditional Ayurvedic wisdom with a patient-centred approach to holistic healing. At Rashtrotthana Hospital, patients receive personalised care focused on long-term health, prevention and wellness.`
+        }
+      ],
+      departmentSlug: '',
+      expertiseIcons: [
+        'assets/icons/AY-1.png',
+        'assets/icons/AY-2.png',
+        'assets/icons/AY-3.png',
+        'assets/icons/AY-4.png',
+        'assets/icons/AY-5.png'
+      ],
+      happyPatients: '4000+'
+
+    },
+
+    {
+      name: "Dr. Surabhi H. S",
+      image: 'assets/new-doctor-imgs/JMRH-Dr-Surabhi-png.png',
+      department: 'Consultant Paediatrician',
+      about: `Dr. Surabhi H. S is a dedicated Consultant Paediatrician and Neonatologist at Rashtrotthana Hospital, Bangalore, with expertise in the care of newborns, preterm babies, infants and children. She specialises in neonatal intensive care, newborn emergencies, jaundice management, respiratory distress, infections, growth and developmental monitoring, and preventive paediatric care.
+      With fellowship training in Perinatal Medicine (Neonatology), Dr. Surabhi is skilled in managing high-risk newborns and providing comprehensive child healthcare. She is committed to delivering compassionate, evidence-based care that supports healthy growth, development and long-term wellbeing for children.`,
+      speciality: 'PAEDIATRICS AND NEONATOLOGY',
+      areasOfExpertise:  ['Newborn & Preterm Baby Care',
+        'Neonatal Ventilation & Emergency Management',
+        'Jaundice, Respiratory Distress & Infection Management',
+        'Intubation, PICC Line & Lumbar Puncture',
+        'Pediatric Asthma, Allergies & Common Childhood Illnesses',
+        'Growth, Development & Nutrition Care',
+        'Vaccination & Preventive Pediatrics',
+        'High-Risk Newborn Follow-up',
+        ],
+      expertise: '4',
+      qualification: `MBBS, MD (Pediatrics), Fellowship in Perinatal Medicine <br>
+       (Neonatology) Consultant - Pediatrics & Neonatology`,
+      time: '',
+      date: '',
+      alt: 'Dr. Surabhi H. S | Top Paediatrician and Neonatologist in Bangalore | Rashtrotthana Hospital | RR Nagar Bangalore',
+      id: '',
+      title: 'Dr. Surabhi H. S | Paediatrician and Neonatologist Expert in RR Nagar Bangalore',
+      description: 'Consult Dr. K Nishanth Pai, senior Ayurveda physician in RR Nagar with experience in advanced Ayurvedic care, detoxification therapies and chronic disease management at Rashtrotthana Hospital.',
+      faqs: [
+        {
+          question: 'Who is Dr. Surabhi H. S and what is her specialty at Rashtrotthana Hospital, Bangalore?',
+          answer: 'Dr. Surabhi H. S is a Paediatrician and Neonatologist at Rashtrotthana Hospital, Bangalore, with 4 years of experience in child healthcare and newborn care. She specialises in neonatology, high-risk newborn management, growth monitoring, vaccination and common childhood illnesses.'
+        },
+        {
+          question: 'Can Dr. Surabhi H. S provide care for newborn and premature babies?',
+          answer: 'Yes, Dr. Surabhi H. S has expertise in newborn and preterm baby care, including monitoring growth, feeding, development and medical complications associated with premature birth. She also provides follow-up care for high-risk newborns.'
+        },
+        {
+          question: 'Does Dr. Surabhi H. S treat neonatal jaundice, infections and breathing problems?',
+          answer: 'Yes, she manages neonatal jaundice, respiratory distress, infections and other newborn emergencies. Early diagnosis and timely treatment are essential for ensuring healthy development in newborns.'
+        },
+        {
+          question: 'Can I consult Dr. Surabhi H. S for childhood asthma, allergies, and recurrent infections?',
+          answer: 'Absolutely. Dr. Surabhi H. S treats paediatric asthma, allergies, respiratory infections, fever and other common childhood illnesses. She focuses on both treatment and prevention to support long-term child health.'
+        },
+        {
+          question: 'Does Dr. Surabhi H. S provide vaccination and preventive child healthcare?',
+          answer: 'Yes, she offers vaccination services and preventive paediatric care according to recommended immunisation schedules. Regular vaccinations help protect children from serious infectious diseases.'
+        },
+        {
+          question: 'Can Dr. Surabhi H. S help monitor my child’s growth, nutrition, and development?',
+          answer: 'Yes, Dr. Surabhi H. S provides comprehensive growth, developmental and nutrition assessments for infants and children. Early identification of developmental concerns helps ensure timely intervention and support.'
+        },
+        {
+          question: 'Why choose Dr. Surabhi H. S at Rashtrotthana Hospital for paediatric and newborn care?',
+          answer: `Dr. Surabhi H. S combines expertise in paediatrics and neonatology with a compassionate, family-centred approach to care. At Rashtrotthana Hospital, children and newborns benefit from comprehensive medical support, preventive care, and specialised neonatal services.`
+        }
+      ],
+      departmentSlug: '',
+      expertiseIcons:[
+        'assets/icons/PN-1.png',
+        'assets/icons/PN-2.png',
+        'assets/icons/PN-3.png',
+        'assets/icons/PN-4.png',
+        'assets/icons/PN-5.png'
+      ],
+      happyPatients: '1000+'
+
+    },
     // {
     //   name: "",
     //   image: "", 
