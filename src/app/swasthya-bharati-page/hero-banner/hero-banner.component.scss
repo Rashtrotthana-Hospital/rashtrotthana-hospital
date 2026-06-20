@@ -6,7 +6,7 @@
 
 .hb-stage {
   position: relative;
-  top: 30px;
+  top: 0px;
   width: 100%;
   aspect-ratio: 1;
   max-width: 500px;
@@ -118,11 +118,11 @@
 .hb-float-wrap {
   position: relative;
   z-index: 3;
-  width: 92%;
-  max-width: 460px;
+  width: 85%;
+  max-width: 420px;
   animation: hb-float 6s ease-in-out infinite;
-  border-radius: 50%;
-  overflow: hidden;
+  border-radius: 0;
+  overflow: visible;
   // box-shadow:
   //   0 24px 60px rgba(130, 70, 20, 0.18),
   //   0 8px 24px rgba(255, 160, 50, 0.12);
