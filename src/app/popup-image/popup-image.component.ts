@@ -17,7 +17,8 @@ export class PopupImageComponent {
     // '../../assets/nabh-website-popup.jpeg'
     // '../../assets/diabetic-popup-2026.png'
     // '../../assets/summer-camp-rash.jpeg'
-    '../../assets/homeopathy-consultation.png'
+    // '../../assets/homeopathy-consultation.png'
+    'assets/Integrated-diabetic.png'
   ];
   currentImage = '';
 
