@@ -8,6 +8,7 @@ import { CommonModule } from '@angular/common';
 export interface TimelineCard {
   time: string; sanskrit: string; english: string;
   desc: string; icon: 'sunrise'|'sun'|'noon'|'sunset'|'dusk'|'moon';
+  img: string;
   isNight: boolean; arcT: number;
 }
 
@@ -79,20 +80,20 @@ export function cardLayout(t: number) {
   };
 }
 
-// ── Sky gradients (6 phases) ──────────────────────────────────────────────────
+// ── Sky gradients (6 seasons) ──────────────────────────────────────────────────
 const SKY = [
-  // 0 pre-dawn / early morning
-  'linear-gradient(155deg,#0a0618 0%,#25103a 20%,#841545 46%,#e04228 66%,#f46c35 86%,#f89e2c 100%)',
-  // 1 morning golden hour
-  'linear-gradient(155deg,#161e60 0%,#2b4490 26%,#dc5d26 54%,#ee9826 76%,#ffd060 100%)',
-  // 2 midday blue sky
-  'linear-gradient(155deg,#0962a4 0%,#1e94ce 28%,#64c2ea 56%,#b0e2f4 82%,#eaf8ff 100%)',
-  // 3 sunset
-  'linear-gradient(155deg,#1a0628 0%,#680ea4 24%,#c81c4c 46%,#e64a1a 66%,#f68628 84%,#fcbe3c 100%)',
-  // 4 evening / dusk
-  'linear-gradient(155deg,#010210 0%,#04092a 32%,#0b1a48 62%,#162664 100%)',
-  // 5 night
-  'linear-gradient(155deg,#000108 0%,#020410 46%,#04091e 100%)',
+  // 0 Shishira — Late Winter: icy silver-blue mist
+  'linear-gradient(155deg,#0d1a2e 0%,#1a2e45 28%,#2a4a6a 54%,#4a7a9a 78%,#8ab8cc 100%)',
+  // 1 Vasanta — Spring: fresh green dawn
+  'linear-gradient(155deg,#061a0e 0%,#0e3a1e 26%,#1a6a34 52%,#2eaa58 76%,#7ad48a 100%)',
+  // 2 Grishma — Summer: blazing amber-orange heat
+  'linear-gradient(155deg,#1a0a00 0%,#5a1e00 22%,#c04800 46%,#e87a00 68%,#ffc040 86%,#ffe090 100%)',
+  // 3 Varsha — Rainy Season: deep monsoon blue-grey
+  'linear-gradient(155deg,#060c18 0%,#0c1a30 28%,#162848 54%,#1e3860 76%,#2a5080 100%)',
+  // 4 Sharad — Autumn: warm russet gold
+  'linear-gradient(155deg,#18080a 0%,#4a1808 26%,#8a3010 50%,#c46018 72%,#e89840 88%,#f8c870 100%)',
+  // 5 Hemanta — Early Winter: cool deep teal-midnight
+  'linear-gradient(155deg,#020c10 0%,#061820 32%,#0c2a34 60%,#124050 82%,#1e5a6a 100%)',
 ];
 
 interface Ph {
@@ -101,36 +102,36 @@ interface Ph {
   activeBg:string; activeBorder:string; activeTitle:string; activeDot:string;
 }
 const PHASE: Ph[] = [
-  // 0 Dawn
-  { cardBg:'rgba(70,16,55,0.62)',  border:'rgba(255,145,75,0.52)',
-    title:'#ffe0bc', time:'rgba(255,195,145,0.90)', sub:'rgba(255,185,135,0.70)', icon:'rgba(255,155,85,0.96)',
-    dot:'rgba(225,105,45,0.88)', activeBg:'rgba(135,35,8,0.80)', activeBorder:'rgba(255,135,65,0.90)',
-    activeTitle:'#ffeed5', activeDot:'#f88845' },
-  // 1 Morning
-  { cardBg:'rgba(25,45,108,0.58)', border:'rgba(238,195,55,0.45)',
-    title:'#fff6d8', time:'rgba(255,228,132,0.90)', sub:'rgba(255,212,115,0.70)', icon:'rgba(255,208,75,0.96)',
-    dot:'rgba(218,172,30,0.88)', activeBg:'rgba(105,65,0,0.76)', activeBorder:'rgba(255,210,65,0.90)',
-    activeTitle:'#fff9e5', activeDot:'#f8cc38' },
-  // 2 Noon
-  { cardBg:'rgba(8,55,105,0.52)',  border:'rgba(45,185,235,0.42)',
-    title:'#e5f5ff', time:'rgba(175,230,252,0.92)', sub:'rgba(155,220,252,0.70)', icon:'rgba(135,218,252,0.96)',
-    dot:'rgba(25,165,220,0.88)', activeBg:'rgba(0,65,125,0.72)', activeBorder:'rgba(25,175,235,0.90)',
-    activeTitle:'#ccf0ff', activeDot:'#25bcee' },
-  // 3 Sunset
-  { cardBg:'rgba(55,6,68,0.60)',   border:'rgba(228,85,35,0.45)',
-    title:'#ffd5bc', time:'rgba(255,170,108,0.90)', sub:'rgba(255,160,98,0.70)', icon:'rgba(255,135,75,0.96)',
-    dot:'rgba(212,80,30,0.88)', activeBg:'rgba(125,22,4,0.78)', activeBorder:'rgba(255,110,48,0.90)',
-    activeTitle:'#ffe5cc', activeDot:'#ee5c28' },
-  // 4 Dusk / evening (moon starts here)
-  { cardBg:'rgba(4,10,48,0.65)',   border:'rgba(85,125,218,0.40)',
-    title:'#bccefc', time:'rgba(148,180,240,0.90)', sub:'rgba(128,162,228,0.70)', icon:'rgba(118,170,240,0.96)',
-    dot:'rgba(70,120,208,0.88)', activeBg:'rgba(8,20,95,0.80)', activeBorder:'rgba(90,148,238,0.90)',
-    activeTitle:'#d2e4ff', activeDot:'#7ca8ec' },
-  // 5 Night
-  { cardBg:'rgba(2,4,20,0.70)',    border:'rgba(60,100,178,0.35)',
-    title:'#a5bcda', time:'rgba(128,158,208,0.86)', sub:'rgba(110,142,198,0.65)', icon:'rgba(100,158,228,0.96)',
-    dot:'rgba(50,110,198,0.82)', activeBg:'rgba(4,10,62,0.84)', activeBorder:'rgba(70,130,218,0.86)',
-    activeTitle:'#bcd4f8', activeDot:'#5ca2d8' },
+  // 0 Shishira — Late Winter: icy silver-blue
+  { cardBg:'rgba(10,28,50,0.65)',  border:'rgba(130,185,215,0.55)',
+    title:'#d8eef8', time:'rgba(165,215,240,0.92)', sub:'rgba(140,195,225,0.72)', icon:'rgba(160,220,245,0.96)',
+    dot:'rgba(80,160,210,0.90)', activeBg:'rgba(18,55,90,0.82)', activeBorder:'rgba(140,200,235,0.92)',
+    activeTitle:'#eaf6ff', activeDot:'#80c8e8' },
+  // 1 Vasanta — Spring: fresh green
+  { cardBg:'rgba(8,40,20,0.65)',   border:'rgba(80,185,110,0.55)',
+    title:'#c8f0d8', time:'rgba(120,220,155,0.92)', sub:'rgba(100,200,135,0.72)', icon:'rgba(110,215,145,0.96)',
+    dot:'rgba(50,175,90,0.90)', activeBg:'rgba(14,70,35,0.82)', activeBorder:'rgba(90,200,125,0.92)',
+    activeTitle:'#dff8e8', activeDot:'#5ece88' },
+  // 2 Grishma — Summer: fiery amber-orange
+  { cardBg:'rgba(60,22,0,0.65)',   border:'rgba(240,140,30,0.55)',
+    title:'#ffe8b0', time:'rgba(255,200,80,0.92)', sub:'rgba(255,185,70,0.72)', icon:'rgba(255,195,75,0.96)',
+    dot:'rgba(235,140,20,0.90)', activeBg:'rgba(110,42,0,0.82)', activeBorder:'rgba(255,165,40,0.92)',
+    activeTitle:'#fff4cc', activeDot:'#f8b828' },
+  // 3 Varsha — Rainy Season: monsoon blue
+  { cardBg:'rgba(8,20,45,0.68)',   border:'rgba(70,130,200,0.52)',
+    title:'#c0d8f8', time:'rgba(140,185,240,0.92)', sub:'rgba(120,165,225,0.72)', icon:'rgba(110,175,240,0.96)',
+    dot:'rgba(55,125,210,0.90)', activeBg:'rgba(12,35,75,0.82)', activeBorder:'rgba(80,150,220,0.92)',
+    activeTitle:'#d8eaff', activeDot:'#60a8e8' },
+  // 4 Sharad — Autumn: warm rust-gold
+  { cardBg:'rgba(50,15,5,0.68)',   border:'rgba(220,130,40,0.55)',
+    title:'#ffd8a0', time:'rgba(245,185,90,0.92)', sub:'rgba(230,168,78,0.72)', icon:'rgba(240,175,80,0.96)',
+    dot:'rgba(210,118,28,0.90)', activeBg:'rgba(95,28,8,0.82)', activeBorder:'rgba(238,148,48,0.92)',
+    activeTitle:'#ffe8c0', activeDot:'#e8a030' },
+  // 5 Hemanta — Early Winter: deep teal
+  { cardBg:'rgba(4,20,28,0.70)',   border:'rgba(50,145,155,0.48)',
+    title:'#a8dce5', time:'rgba(120,195,210,0.88)', sub:'rgba(100,175,192,0.68)', icon:'rgba(95,185,200,0.96)',
+    dot:'rgba(38,138,155,0.85)', activeBg:'rgba(6,38,50,0.85)', activeBorder:'rgba(60,165,180,0.90)',
+    activeTitle:'#c5eaf0', activeDot:'#48b8c8' },
 ];
 
 // Card 4 (19:00–21:00) is at arcT 0.70 — moon starts exactly here
@@ -215,34 +216,40 @@ export class DinacharyaTimelineComponent implements OnInit, AfterViewInit, OnDes
 
   // 6 timeline cards — arcT mapped to CARD_T array for even visual spacing
   readonly cards: TimelineCard[] = [
-    { time:'04:30 – 06:00', sanskrit:'ब्राह्म मुहूर्त',      english:'Brahma Muhūrta',
-      desc:'Wake before sunrise — the calmest, most absorbent hour.',
+    { time:'Shishira Ritu', sanskrit:'शिशिर ऋतु',  english:'Late Winter',
+      desc:'Cold and dry season — strengthen agni with warm, nourishing foods.',
+      img:'https://images.unsplash.com/photo-1516912481808-3406841bd33c?w=80&h=80&fit=crop',
       icon:'sunrise', isNight:false, arcT: CARD_T[0] },
-    { time:'06:00 – 08:00', sanskrit:'व्यायाम · प्राणायाम',  english:'Movement & Breath',
-      desc:'Yoga, pranayama and a meditative seat as the body warms.',
+    { time:'Vasanta Ritu',  sanskrit:'वसंत ऋतु',   english:'Spring',
+      desc:'Kapha accumulates — favour light, bitter and pungent foods.',
+      img:'https://images.unsplash.com/photo-1462275646964-a0e3386b89fa?w=80&h=80&fit=crop',
       icon:'sun',     isNight:false, arcT: CARD_T[1] },
-    { time:'12:00 – 14:00', sanskrit:'मध्याह्न आहार',         english:'Madhyāhna Āhāra',
-      desc:'Largest meal at midday when digestive fire (agni) is strongest.',
+    { time:'Grishma Ritu',  sanskrit:'ग्रीष्म ऋतु', english:'Summer',
+      desc:'Intense heat — favour cool, sweet and liquid-rich foods.',
+      img:'https://images.unsplash.com/photo-1504701954957-2010ec3bcec1?w=80&h=80&fit=crop',
       icon:'noon',    isNight:false, arcT: CARD_T[2] },
-    { time:'17:00 – 19:00', sanskrit:'सायं संध्या',            english:'Sāyaṁ Sandhyā',
-      desc:'Walk, gratitude practice and a light supper — wind the day down.',
+    { time:'Varsha Ritu',   sanskrit:'वर्षा ऋतु',   english:'Rainy Season',
+      desc:'Vata aggravates — favour sour, salty and easily digestible foods.',
+      img:'assets/swastya-page/images.jpeg',
       icon:'sunset',  isNight:false, arcT: CARD_T[3] },
-    { time:'19:00 – 21:00', sanskrit:'ध्यान · स्वाध्याय',     english:'Dhyāna · Svādhyāya',
-      desc:'Meditation and self-study — settle the mind before sleep.',
-      icon:'dusk',    isNight:true,  arcT: CARD_T[4] },
-    { time:'21:30 – 22:30', sanskrit:'निद्रा',                 english:'Nidrā',
-      desc:'Deep sleep for restoration and repair.',
-      icon:'moon',    isNight:true,  arcT: CARD_T[5] },
+    { time:'Sharad Ritu',   sanskrit:'शरद् ऋतु',   english:'Autumn',
+      desc:'Pitta flares — favour sweet, bitter and cooling foods.',
+      img:'assets/swastya-page/Sharat-Ritu.jpeg',
+      icon:'dusk',    isNight:false,  arcT: CARD_T[4] },
+    { time:'Hemanta Ritu',  sanskrit:'हेमंत ऋतु',  english:'Early Winter',
+      desc:'Agni is strongest — favour unctuous, heavy and nourishing foods.',
+      img:'https://images.unsplash.com/photo-1418985991508-e47386d96a71?w=80&h=80&fit=crop',
+      icon:'moon',    isNight:false,  arcT: CARD_T[5] },
   ];
 
-  // Per-card accent colors (matches reference image order)
+  // Per-card accent colors — season-matched
   private readonly MOBILE_ACCENTS = [
-    '#48c890', // 0 dawn   — teal-green
-    '#f8c832', // 1 morning — amber-gold
-    '#28c8f0', // 2 noon   — sky-blue
-    '#f59e0b', // 3 sunset — orange-amber
-    '#b870f8', // 4 dusk   — violet
-    '#6898f8', // 5 night  — navy-blue
+    '#80c8e8', // 0 Shishira — icy blue
+    '#5ece88', // 1 Vasanta  — spring green
+    '#f8b828', // 2 Grishma  — summer amber
+    '#60a8e8', // 3 Varsha   — monsoon blue
+    '#e8a030', // 4 Sharad   — autumn rust-gold
+    '#48b8c8', // 5 Hemanta  — winter teal
   ];
 
   mobileAccent(i: number): string { return this.MOBILE_ACCENTS[i] ?? '#ffffff'; }
@@ -347,6 +354,19 @@ export class DinacharyaTimelineComponent implements OnInit, AfterViewInit, OnDes
   timeColor() { return this.p().time; }
   iconColor() { return this.p().icon; }
   dotR(i: number) { return this.isActive(i) ? 9 : 5.5; }
+
+  // Season-tinted sun/moon gradient colors
+  private readonly SUN_INNER = ['#d0eeff','#a8f0c0','#fffee0','#c0d8ff','#ffe8a0','#a0e8f0'];
+  private readonly SUN_OUTER = ['#60a8e8','#38c870','#f09010','#4888cc','#e89020','#30a8c0'];
+  private readonly MOON_INNER = ['#d8eef8','#c8f0d8','#ffe8b0','#c0d8f8','#ffd8a0','#c5eaf0'];
+  private readonly MOON_MID   = ['#80b8d8','#78d898','#e8b028','#70a8d8','#d89030','#70c0cc'];
+  private readonly MOON_OUTER = ['#2068a8','#1e8848','#b87010','#2058a8','#b86010','#186880'];
+
+  sunInnerColor()  { return this.SUN_INNER[this.activeIdx()] ?? '#ffe860'; }
+  sunOuterColor()  { return this.SUN_OUTER[this.activeIdx()] ?? '#f09010'; }
+  moonInnerColor() { return this.MOON_INNER[this.activeIdx()] ?? '#eafaff'; }
+  moonMidColor()   { return this.MOON_MID[this.activeIdx()]   ?? '#b8deed'; }
+  moonOuterColor() { return this.MOON_OUTER[this.activeIdx()] ?? '#4888aa'; }
 
   // Mobile card colors — each card uses its own fixed phase palette
   // so the card color matches the sky phase it represents (not the global animated phase)
