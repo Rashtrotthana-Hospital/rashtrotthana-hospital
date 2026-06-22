@@ -1176,7 +1176,7 @@ export class DoctorLayoutComponent {
     },
     {
       name: "Dr. Srinivas Siddeshwar",
-      image: "assets/new-doctor-imgs/dr-srinivas-siddeshwar-doc-page.png",
+      image: "assets/new-doctor-imgs/JMRH-Dr-shrinivas-emergency.png",
       department: 'Emergency Medicine',
       speciality: 'EMERGENCY MEDICINE',
       desgination: 'Emergency Medicine',

@@ -78,7 +78,7 @@ export class EmergencyMedicineComponent {
       id: 2,
       name: 'Dr. Srinivas Siddeshwar',
       experience: '8+ Years',
-      image: 'assets/new-doctor-imgs/dr-srinivas-siddeshwar.png',
+      image: 'assets/new-doctor-imgs/JMRH-Dr-shrinivas-emergency.png',
       slug: '/doctor/dr-srinivas-siddeshwar',
     },
   ];
