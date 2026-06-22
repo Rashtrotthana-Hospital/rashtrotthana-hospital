@@ -20,7 +20,7 @@
 // ── Sticky header ────────────────────────────────────────────────────────────
 .wh-sticky {
   position: sticky;
-  top: 70px;
+  top: -50px;
   z-index: 200;          // above any card (cards top out at ~60 when active)
   background: #e8e9eb;   // fully opaque so cards can't bleed through
   padding: 16px 12px 12px;
@@ -260,7 +260,8 @@
   .wh-note__title { font-size: 14.5px; }
   .wh-note__desc { font-size: 11.8px; }
 
-  .wh-sticky { padding: 13px 10px 11px; }
+  .wh-sticky { padding: 13px 10px 11px;
+  top: -80px; }
   .wh-head {
     margin-bottom: 11px;
     &__eyebrow { font-size: 10px; margin-bottom: 4px; }
@@ -283,7 +284,7 @@
   .wh-root { padding: 22px 12px 50px; }
 
   .wh-sticky {
-    top: 40px;
+    top: -150px;
     padding: 10px 8px 9px;
     border-radius: 0 0 14px 14px;
   }
