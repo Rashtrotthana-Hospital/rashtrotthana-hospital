@@ -3960,7 +3960,7 @@ export class NewDoctorPageComponent {
     },
     {
       name: "Dr. Srinivas Siddeshwar",
-      image: "assets/new-doctor-imgs/dr-srinivas-siddeshwar.png",
+      image: "assets/new-doctor-imgs/JMRH-Dr-shrinivas-emergency-img.png",
       department: 'Emergency Medicine',
       speciality: 'EMERGENCY MEDICINE',
       // desgination: 'Emergency Medicine',
