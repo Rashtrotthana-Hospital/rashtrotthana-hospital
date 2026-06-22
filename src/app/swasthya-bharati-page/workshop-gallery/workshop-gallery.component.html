@@ -1,0 +1,73 @@
+<section class="wg3-root" aria-labelledby="wg3-title">
+
+  <header class="wg3-head">
+    <!-- <p class="wg3-eyebrow">Workshops &amp; programs</p> -->
+    <h2 id="wg3-title" class="wg3-title">Workshops &amp; Programs</h2>
+    <!-- <p class="wg3-sub">Hover the carousel to spin — move your cursor up or down to tilt.</p> -->
+  </header>
+
+  <!-- Workshop tabs -->
+  <div class="wg3-tabs" role="tablist">
+    @for (w of workshops; track w.id; let i = $index) {
+      <button class="wg3-tab"
+              role="tab"
+              [class.wg3-tab--active]="activeWorkshop() === i"
+              [attr.aria-selected]="activeWorkshop() === i"
+              (click)="selectWorkshop(i)">
+        <span class="wg3-tab__id">{{ w.id }}</span>
+        <span class="wg3-tab__label">{{ w.title }}</span>
+      </button>
+    }
+  </div>
+
+  <!-- Active workshop caption above the stage -->
+  <div class="wg3-meta">
+    <span class="wg3-meta__chip">{{ current().id }} · {{ current().date }}</span>
+    <h3 class="wg3-meta__title">{{ current().title }}</h3>
+    <p class="wg3-meta__sub">{{ current().subtitle }}</p>
+  </div>
+
+  <!-- 3D Stage -->
+  <div class="wg3-stage" #stage>
+    <!-- Perspective container -->
+    <div class="wg3-scene">
+      <!-- Carousel cylinder -->
+      <div class="wg3-carousel"
+           [style.transform]="'translateZ(' + (-radius() + zoom()) + 'px) rotateX(' + rotX() + 'deg) rotateY(' + rotY() + 'deg)'">
+        @for (img of items(); track img; let i = $index) {
+          <figure class="wg3-item"
+                  [style.transform]="'rotateY(' + itemAngle(i) + 'deg) translateZ(' + radius() + 'px)'"
+                  (click)="openLightbox(i)">
+            <img class="wg3-item__img" [src]="img" [alt]="current().title + ' photo ' + (i + 1)" loading="lazy" draggable="false"/>
+            <span class="wg3-item__index">{{ i + 1 }}</span>
+          </figure>
+        }
+      </div>
+    </div>
+    <!-- Floor reflection / shadow -->
+    <span class="wg3-floor" aria-hidden="true"></span>
+  </div>
+
+  <!-- ── Lightbox preview ── -->
+  @if (lightboxOpen()) {
+    <div class="wg3-lb" role="dialog" aria-modal="true" aria-label="Image preview"
+         (click)="closeLightbox()">
+
+      <!-- <button class="wg3-lb__close" type="button" aria-label="Close preview"
+              (click)="stopProp($event); closeLightbox()">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round">
+          <line x1="6" y1="6" x2="18" y2="18"/>
+          <line x1="18" y1="6" x2="6" y2="18"/>
+        </svg>
+      </button> -->
+
+      <figure class="wg3-lb__figure" (click)="stopProp($event)">
+        <img class="wg3-lb__img" [src]="lightboxImg()" [alt]="current().title + ' preview'" draggable="false"/>
+        <figcaption class="wg3-lb__caption">
+          <span class="wg3-lb__chip">{{ current().id }} · {{ current().date }}</span>
+        </figcaption>
+      </figure>
+    </div>
+  }
+
+</section>

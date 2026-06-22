@@ -1196,7 +1196,9 @@ body:has(.sbp-root) {
 }
 
 @media (max-width: 600px) {
-  // Guarantee no horizontal overflow on the entire page on mobile
+  // Guarantee no horizontal overflow on the entire page on mobile.
+  // NB: overflow-x: clip (not hidden) — clip prevents scrolling without making
+  // the element a scroll container, so position:sticky inside still works.
   .sbp,
   .sbp-root,
   .sbp-intro,
@@ -1204,7 +1206,7 @@ body:has(.sbp-root) {
   .sbp-intro__inner,
   .sbp-intro__copy {
     max-width: 100vw !important;
-    overflow-x: hidden;
+    overflow-x: clip;
     box-sizing: border-box;
   }
 

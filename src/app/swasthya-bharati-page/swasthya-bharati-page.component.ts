@@ -20,6 +20,7 @@ import { HeroBannerComponent } from './hero-banner/hero-banner.component';
 import { DinacharyaTimelineComponent } from './dinacharya-timeline/dinacharya-timeline.component';
 import { OrbitServicesComponent } from './orbit-services/orbit-services.component';
 import { WellnessHandbookComponent } from './wellness-handbook/wellness-handbook.component';
+import { WorkshopGalleryComponent } from './workshop-gallery/workshop-gallery.component';
 
 type ServiceTab =
   | 'assessment'
@@ -72,7 +73,7 @@ interface DailyAnchor {
 @Component({
   selector: 'app-swasthya-bharati-page',
   standalone: true,
-  imports: [CommonModule, RouterLink, HeroBannerComponent, DinacharyaTimelineComponent, OrbitServicesComponent, WellnessHandbookComponent],
+  imports: [CommonModule, RouterLink, HeroBannerComponent, DinacharyaTimelineComponent, OrbitServicesComponent, WellnessHandbookComponent, WorkshopGalleryComponent],
   templateUrl: './swasthya-bharati-page.component.html',
   styleUrls: ['./swasthya-bharati-page.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,

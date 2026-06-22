@@ -1,4 +1,7 @@
-import { Component, signal, ChangeDetectionStrategy, ViewEncapsulation } from '@angular/core';
+import {
+  Component, signal, computed, ChangeDetectionStrategy,
+  ViewEncapsulation, ElementRef, ViewChild, AfterViewInit, OnDestroy
+} from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 interface KanbanItem { n: string; t: string; d: string; }
@@ -16,6 +19,17 @@ interface KanbanSection {
   cols: KanbanCol[];
 }
 
+// ── Pinboard view-model ──────────────────────────────────────────────────────
+interface PinPalette { tint: string; pin: string; num: string; label: string; }
+interface PinNote {
+  n: string;             // badge label / number
+  t: string;             // title
+  d: string;             // description
+  label: string;         // category label (e.g. "Daily routine", "Uttarayana")
+  showLabel: boolean;    // hide label when section has only one category
+  pal: PinPalette;
+}
+
 @Component({
   selector: 'app-wellness-handbook',
   standalone: true,
@@ -25,9 +39,29 @@ interface KanbanSection {
   changeDetection: ChangeDetectionStrategy.OnPush,
   encapsulation: ViewEncapsulation.None,
 })
-export class WellnessHandbookComponent {
+export class WellnessHandbookComponent implements AfterViewInit, OnDestroy {
+
+  @ViewChild('boardEl') boardEl?: ElementRef<HTMLDivElement>;
 
   readonly current = signal(0);
+  readonly active  = signal<number>(-1);
+  // 'two' = desktop two-column layout, 'one' = mobile single column
+  readonly cols = signal<'two' | 'one'>('two');
+
+  // map column.labelColor → pinboard palette (kept consistent with old colours)
+  private readonly PAL_MAP: Record<string, PinPalette> = {
+    // greens (Daily routine / What to eat / Diet eat / Recommended)
+    '#166534': { tint: '#dcfce7', pin: '#2f9e6a', num: '#15803d', label: '#166534' },
+    // amber (Uttarayana / How to eat / Life balance / Scientific correlations)
+    '#92400e': { tint: '#fef3c7', pin: '#d98324', num: '#b45309', label: '#92400e' },
+    // indigo (Dakshinayana / Daily habits / Practices / Key markers)
+    '#3730a3': { tint: '#e0e7ff', pin: '#5b63d6', num: '#4338ca', label: '#3730a3' },
+    // rose (What to avoid / Traits to control / Foods to avoid)
+    '#9f1239': { tint: '#ffe4e6', pin: '#e0476f', num: '#be123c', label: '#9f1239' },
+  };
+
+  private readonly DEFAULT_PAL: PinPalette =
+    { tint: '#dcfce7', pin: '#2f9e6a', num: '#15803d', label: '#166534' };
 
   readonly sections: KanbanSection[] = [
     {
@@ -71,8 +105,8 @@ export class WellnessHandbookComponent {
           cardBorder: '#fde68a', numBg: '#fffbeb', numColor: '#b45309',
           items: [
             { n: '1', t: 'Shishira Ritu', d: 'Late winter — cold and dry; strengthen agni with warm, nourishing foods' },
-            { n: '2', t: 'Vasanta Ritu', d: 'Spring — kapha accumulates; favour light, bitter, pungent foods' },
-            { n: '3', t: 'Grishma Ritu', d: 'Summer — intense heat; favour cool, sweet, liquid-rich foods' },
+            { n: '2', t: 'Vasanta Ritu',  d: 'Spring — kapha accumulates; favour light, bitter, pungent foods' },
+            { n: '3', t: 'Grishma Ritu',  d: 'Summer — intense heat; favour cool, sweet, liquid-rich foods' },
           ],
         },
         {
@@ -80,217 +114,13 @@ export class WellnessHandbookComponent {
           labelColor: '#3730a3', countBg: '#c7d2fe', countColor: '#3730a3',
           cardBorder: '#e0e7ff', numBg: '#eef2ff', numColor: '#4338ca',
           items: [
-            { n: '4', t: 'Varsha Ritu', d: 'Rainy season — vata aggravates; favour sour, salty, easily digestible foods' },
-            { n: '5', t: 'Sharad Ritu', d: 'Autumn — pitta flares; favour sweet, bitter, cooling foods' },
+            { n: '4', t: 'Varsha Ritu',  d: 'Rainy season — vata aggravates; favour sour, salty, easily digestible foods' },
+            { n: '5', t: 'Sharad Ritu',  d: 'Autumn — pitta flares; favour sweet, bitter, cooling foods' },
             { n: '6', t: 'Hemanta Ritu', d: 'Early winter — agni strongest; favour unctuous, heavy, nourishing foods' },
           ],
         },
       ],
     },
-    // {
-    //   icon: 'snowflake', img: 'https://images.unsplash.com/photo-1516912481808-3406841bd33c?w=160&h=160&fit=crop', tag: 'Late winter',
-    //   title: 'Shishira Ritu (Late Winter)',
-    //   desc: 'Seasonal foods and practices for late winter',
-    //   cols: [
-    //     {
-    //       label: 'Recommended foods', colIcon: 'leaf', bg: '#f0fdf4', headBg: '#dcfce7', iconBg: '#bbf7d0', iconColor: '#166534',
-    //       labelColor: '#166534', countBg: '#bbf7d0', countColor: '#166534',
-    //       cardBorder: '#bbf7d0', numBg: '#f0fdf4', numColor: '#15803d',
-    //       items: [
-    //         { n: '✓', t: 'Sour-taste foods',         d: 'Cereals, pulses, wheat, corn' },
-    //         { n: '✓', t: 'Ginger, garlic, haritaki', d: 'Pippali, sugarcane, milk products' },
-    //         { n: '✓', t: 'New rice and corn',         d: 'Wheat and gram flour products' },
-    //       ],
-    //     },
-    //     {
-    //       label: 'Foods to avoid', colIcon: 'ban', bg: '#fff1f2', headBg: '#ffe4e6', iconBg: '#fecdd3', iconColor: '#9f1239',
-    //       labelColor: '#9f1239', countBg: '#fecdd3', countColor: '#9f1239',
-    //       cardBorder: '#fecdd3', numBg: '#fff1f2', numColor: '#be123c',
-    //       items: [
-    //         { n: '✗', t: 'Pungent, bitter foods', d: 'Astringent taste foods' },
-    //         { n: '✗', t: 'Light foods',            d: 'Cold foods' },
-    //       ],
-    //     },
-    //     {
-    //       label: 'Practices', colIcon: 'activity', bg: '#eef2ff', headBg: '#e0e7ff', iconBg: '#c7d2fe', iconColor: '#3730a3',
-    //       labelColor: '#3730a3', countBg: '#c7d2fe', countColor: '#3730a3',
-    //       cardBorder: '#e0e7ff', numBg: '#eef2ff', numColor: '#4338ca',
-    //       items: [
-    //         { n: '✓', t: 'Oil or paste massage',  d: 'Lukewarm bath; sunlight exposure; warm clothing' },
-    //         { n: '✗', t: 'Avoid cold wind',        d: 'Excessive walking and exercise; late-night sleep; travelling' },
-    //       ],
-    //     },
-    //   ],
-    // },
-    // {
-    //   icon: 'tree', img: 'https://images.unsplash.com/photo-1462275646964-a0e3386b89fa?w=160&h=160&fit=crop', tag: 'Spring',
-    //   title: 'Vasanta Ritu (Spring)',
-    //   desc: 'Seasonal foods and practices for spring',
-    //   cols: [
-    //     {
-    //       label: 'Recommended foods', colIcon: 'leaf', bg: '#f0fdf4', headBg: '#dcfce7', iconBg: '#bbf7d0', iconColor: '#166534',
-    //       labelColor: '#166534', countBg: '#bbf7d0', countColor: '#166534',
-    //       cardBorder: '#bbf7d0', numBg: '#f0fdf4', numColor: '#15803d',
-    //       items: [
-    //         { n: '✓', t: 'Easily digestible foods',  d: 'Old barley, wheat, rice, lentil' },
-    //         { n: '✓', t: 'Mudga (green gram)',        d: 'Bitter, pungent, and astringent foods' },
-    //         { n: '✓', t: 'Honey',                    d: 'Easily digestible meat' },
-    //       ],
-    //     },
-    //     {
-    //       label: 'Foods to avoid', colIcon: 'ban', bg: '#fff1f2', headBg: '#ffe4e6', iconBg: '#fecdd3', iconColor: '#9f1239',
-    //       labelColor: '#9f1239', countBg: '#fecdd3', countColor: '#9f1239',
-    //       cardBorder: '#fecdd3', numBg: '#fff1f2', numColor: '#be123c',
-    //       items: [
-    //         { n: '✗', t: 'Hard-to-digest foods', d: 'Cold, heavy, oily, sour, sweet foods' },
-    //         { n: '✗', t: 'New grains',            d: 'Curd, cold drinks' },
-    //       ],
-    //     },
-    //     {
-    //       label: 'Practices', colIcon: 'activity', bg: '#eef2ff', headBg: '#e0e7ff', iconBg: '#c7d2fe', iconColor: '#3730a3',
-    //       labelColor: '#3730a3', countBg: '#c7d2fe', countColor: '#3730a3',
-    //       cardBorder: '#e0e7ff', numBg: '#eef2ff', numColor: '#4338ca',
-    //       items: [
-    //         { n: '✓', t: 'Warm water bath',  d: 'Regular exercise, Udvartana, Kavala, Dhooma, Anjana' },
-    //         { n: '✗', t: 'Day sleep',         d: 'To be avoided during spring season' },
-    //       ],
-    //     },
-    //   ],
-    // },
-    // {
-    //   icon: 'sun', img: 'assets/swastya-page/maharashtra-times.avif', tag: 'Summer',
-    //   title: 'Grishma Ritu (Summer)',
-    //   desc: 'Seasonal foods and practices for summer',
-    //   cols: [
-    //     {
-    //       label: 'Recommended foods', colIcon: 'leaf', bg: '#f0fdf4', headBg: '#dcfce7', iconBg: '#bbf7d0', iconColor: '#166534',
-    //       labelColor: '#166534', countBg: '#bbf7d0', countColor: '#166534',
-    //       cardBorder: '#bbf7d0', numBg: '#f0fdf4', numColor: '#15803d',
-    //       items: [
-    //         { n: '✓', t: 'Light, sweet-tasting foods', d: 'Rice, lentils, cold water, buttermilk' },
-    //         { n: '✓', t: 'Fruit juices',               d: 'Mango juice, churned buttermilk with pepper' },
-    //         { n: '✓', t: 'Meat soups, milk',           d: 'Light and easily digestible' },
-    //       ],
-    //     },
-    //     {
-    //       label: 'Foods to avoid', colIcon: 'ban', bg: '#fff1f2', headBg: '#ffe4e6', iconBg: '#fecdd3', iconColor: '#9f1239',
-    //       labelColor: '#9f1239', countBg: '#fecdd3', countColor: '#9f1239',
-    //       cardBorder: '#fecdd3', numBg: '#fff1f2', numColor: '#be123c',
-    //       items: [
-    //         { n: '✗', t: 'Salty, pungent, sour foods', d: 'Hot and warm foods' },
-    //       ],
-    //     },
-    //     {
-    //       label: 'Practices', colIcon: 'activity', bg: '#eef2ff', headBg: '#e0e7ff', iconBg: '#c7d2fe', iconColor: '#3730a3',
-    //       labelColor: '#3730a3', countBg: '#c7d2fe', countColor: '#3730a3',
-    //       cardBorder: '#e0e7ff', numBg: '#eef2ff', numColor: '#4338ca',
-    //       items: [
-    //         { n: '✓', t: 'Cool places; sandalwood paste', d: 'Light clothing; daytime sleep; moonlight at night' },
-    //         { n: '✗', t: 'Excessive exercise',            d: 'Hard physical work; alcohol consumption' },
-    //       ],
-    //     },
-    //   ],
-    // },
-    // {
-    //   icon: 'cloud', img: 'assets/swastya-page/images.jpeg', tag: 'Rainy season',
-    //   title: 'Varsha Ritu (Rainy Season)',
-    //   desc: 'Seasonal foods and practices for the monsoon',
-    //   cols: [
-    //     {
-    //       label: 'Recommended foods', colIcon: 'leaf', bg: '#f0fdf4', headBg: '#dcfce7', iconBg: '#bbf7d0', iconColor: '#166534',
-    //       labelColor: '#166534', countBg: '#bbf7d0', countColor: '#166534',
-    //       cardBorder: '#bbf7d0', numBg: '#f0fdf4', numColor: '#15803d',
-    //       items: [
-    //         { n: '✓', t: 'Sour and salty foods',     d: 'Old barley, rice, wheat' },
-    //         { n: '✓', t: 'Meat and vegetable soups', d: 'Boiled or medicated drinking water' },
-    //       ],
-    //     },
-    //     {
-    //       label: 'Foods to avoid', colIcon: 'ban', bg: '#fff1f2', headBg: '#ffe4e6', iconBg: '#fecdd3', iconColor: '#9f1239',
-    //       labelColor: '#9f1239', countBg: '#fecdd3', countColor: '#9f1239',
-    //       cardBorder: '#fecdd3', numBg: '#fff1f2', numColor: '#be123c',
-    //       items: [
-    //         { n: '✗', t: 'River water; excessive liquid', d: 'Wine and alcoholic beverages' },
-    //         { n: '✗', t: 'Heavy meats',                  d: 'Fried and processed foods' },
-    //       ],
-    //     },
-    //     {
-    //       label: 'Practices', colIcon: 'activity', bg: '#eef2ff', headBg: '#e0e7ff', iconBg: '#c7d2fe', iconColor: '#3730a3',
-    //       labelColor: '#3730a3', countBg: '#c7d2fe', countColor: '#3730a3',
-    //       cardBorder: '#e0e7ff', numBg: '#eef2ff', numColor: '#4338ca',
-    //       items: [
-    //         { n: '✓', t: 'Boiled water bath; oil rub after bath', d: 'Traditional Abyanga; aromatic herbs' },
-    //         { n: '✗', t: 'Getting wet in rain; day sleep',        d: 'Hard exercise; staying at river-bank' },
-    //       ],
-    //     },
-    //   ],
-    // },
-    // {
-    //   icon: 'wind', img: 'assets/swastya-page/Sharat-Ritu.jpeg', tag: 'Autumn',
-    //   title: 'Sharat Ritu (Autumn)',
-    //   desc: 'Seasonal foods and practices for autumn',
-    //   cols: [
-    //     {
-    //       label: 'Recommended foods', colIcon: 'leaf', bg: '#f0fdf4', headBg: '#dcfce7', iconBg: '#bbf7d0', iconColor: '#166534',
-    //       labelColor: '#166534', countBg: '#bbf7d0', countColor: '#166534',
-    //       cardBorder: '#bbf7d0', numBg: '#f0fdf4', numColor: '#15803d',
-    //       items: [
-    //         { n: '✓', t: 'Sweet and bitter-tasting foods', d: 'Light and cooling; wheat, green gram' },
-    //         { n: '✓', t: 'Sugar candy, honey',             d: 'Pointed gourd; meat of dry land animals' },
-    //       ],
-    //     },
-    //     {
-    //       label: 'Foods to avoid', colIcon: 'ban', bg: '#fff1f2', headBg: '#ffe4e6', iconBg: '#fecdd3', iconColor: '#9f1239',
-    //       labelColor: '#9f1239', countBg: '#fecdd3', countColor: '#9f1239',
-    //       cardBorder: '#fecdd3', numBg: '#fff1f2', numColor: '#be123c',
-    //       items: [
-    //         { n: '✗', t: 'Hot foods; fatty foods and oils', d: 'Meat of aquatic animals; curds' },
-    //       ],
-    //     },
-    //     {
-    //       label: 'Practices', colIcon: 'activity', bg: '#eef2ff', headBg: '#e0e7ff', iconBg: '#c7d2fe', iconColor: '#3730a3',
-    //       labelColor: '#3730a3', countBg: '#c7d2fe', countColor: '#3730a3',
-    //       cardBorder: '#e0e7ff', numBg: '#eef2ff', numColor: '#4338ca',
-    //       items: [
-    //         { n: '✓', t: 'Sun- and moon-purified water', d: 'Sandalwood paste; moonlight in early night' },
-    //         { n: '✗', t: 'Day sleep; excessive eating',  d: 'Excess sun exposure' },
-    //       ],
-    //     },
-    //   ],
-    // },
-    // {
-    //   icon: 'flame', img: 'https://images.unsplash.com/photo-1418985991508-e47386d96a71?w=160&h=160&fit=crop', tag: 'Early winter',
-    //   title: 'Hemanta Ritu (Early Winter)',
-    //   desc: 'Seasonal foods and practices for early winter',
-    //   cols: [
-    //     {
-    //       label: 'Recommended foods', colIcon: 'leaf', bg: '#f0fdf4', headBg: '#dcfce7', iconBg: '#bbf7d0', iconColor: '#166534',
-    //       labelColor: '#166534', countBg: '#bbf7d0', countColor: '#166534',
-    //       cardBorder: '#bbf7d0', numBg: '#f0fdf4', numColor: '#15803d',
-    //       items: [
-    //         { n: '✓', t: 'Unctuous, sweet, sour, salty foods', d: 'New rice, green and black gram' },
-    //         { n: '✓', t: 'Various meats, oils, fats',          d: 'Milk products, sugarcane, fermented prep, sesame' },
-    //       ],
-    //     },
-    //     {
-    //       label: 'Foods to avoid', colIcon: 'ban', bg: '#fff1f2', headBg: '#ffe4e6', iconBg: '#fecdd3', iconColor: '#9f1239',
-    //       labelColor: '#9f1239', countBg: '#fecdd3', countColor: '#9f1239',
-    //       cardBorder: '#fecdd3', numBg: '#fff1f2', numColor: '#be123c',
-    //       items: [
-    //         { n: '✗', t: 'Light, cold, dry foods', d: 'Cold drinks' },
-    //       ],
-    //     },
-    //     {
-    //       label: 'Practices', colIcon: 'activity', bg: '#eef2ff', headBg: '#e0e7ff', iconBg: '#c7d2fe', iconColor: '#3730a3',
-    //       labelColor: '#3730a3', countBg: '#c7d2fe', countColor: '#3730a3',
-    //       cardBorder: '#e0e7ff', numBg: '#eef2ff', numColor: '#4338ca',
-    //       items: [
-    //         { n: '✓', t: 'Regular exercise; body and head massage', d: 'Warm bath; sunbathing; aromatic substances' },
-    //         { n: '✗', t: 'Strong cold wind exposure',              d: 'Day sleep' },
-    //       ],
-    //     },
-    //   ],
-    // },
     {
       icon: 'bowl', img: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=160&h=160&fit=crop', tag: 'Food',
       title: 'Ahara (Food) — guidelines for healthy eating',
@@ -301,11 +131,11 @@ export class WellnessHandbookComponent {
           labelColor: '#166534', countBg: '#bbf7d0', countColor: '#166534',
           cardBorder: '#bbf7d0', numBg: '#f0fdf4', numColor: '#15803d',
           items: [
-            { n: '1',  t: 'Choose food by season and health', d: 'Season, time of day, age, digestion strength' },
-            { n: '2',  t: 'Eat freshly prepared food',        d: 'Freshly cooked and warm; avoid stale or reheated' },
-            { n: '5',  t: 'Respect regional staples',         d: 'Prefer unpolished, locally grown grains' },
-            { n: '6',  t: 'Consume a balanced meal',          d: 'Include all six tastes in each meal' },
-            { n: '10', t: 'Include milk and ghee',            d: 'Ethically sourced; in proper quantity' },
+            { n: '1',  t: 'Choose food by season and health',   d: 'Season, time of day, age, digestion strength' },
+            { n: '2',  t: 'Eat freshly prepared food',          d: 'Freshly cooked and warm; avoid stale or reheated' },
+            { n: '5',  t: 'Respect regional staples',           d: 'Prefer unpolished, locally grown grains' },
+            { n: '6',  t: 'Consume a balanced meal',            d: 'Include all six tastes in each meal' },
+            { n: '10', t: 'Include milk and ghee',              d: 'Ethically sourced; in proper quantity' },
             { n: '11', t: 'Consume local and seasonal produce', d: 'Eat what grows in your region and season' },
           ],
         },
@@ -315,10 +145,10 @@ export class WellnessHandbookComponent {
           cardBorder: '#fde68a', numBg: '#fffbeb', numColor: '#b45309',
           items: [
             { n: '7',  t: 'Follow proper eating conduct',        d: 'Eat mindfully without distractions' },
-            { n: '8',  t: 'Eat only after proper digestion',    d: 'Do not eat until the previous meal is digested' },
-            { n: '9',  t: 'Maintain proper quantity',           d: 'Stomach division rule — leave space' },
-            { n: '12', t: 'Cook food properly',                 d: 'Avoid overcooked or undercooked food' },
-            { n: '13', t: 'Eat with mindfulness and gratitude', d: 'Mental state influences digestion' },
+            { n: '8',  t: 'Eat only after proper digestion',     d: 'Do not eat until the previous meal is digested' },
+            { n: '9',  t: 'Maintain proper quantity',            d: 'Stomach division rule — leave space' },
+            { n: '12', t: 'Cook food properly',                  d: 'Avoid overcooked or undercooked food' },
+            { n: '13', t: 'Eat with mindfulness and gratitude',  d: 'Mental state influences digestion' },
           ],
         },
         {
@@ -343,10 +173,10 @@ export class WellnessHandbookComponent {
           labelColor: '#3730a3', countBg: '#c7d2fe', countColor: '#3730a3',
           cardBorder: '#e0e7ff', numBg: '#eef2ff', numColor: '#4338ca',
           items: [
-            { n: '→', t: 'Follow a planned daily routine',    d: 'Avoid last-minute pressure with a timetable' },
-            { n: '→', t: 'Prepare comprehensive plans',       d: 'Daily, weekly, monthly, and yearly roadmap' },
-            { n: '→', t: 'Write down goals and thoughts',     d: 'Clarity in planning reduces confusion and stress' },
-            { n: '→', t: 'Spend quality time with family',   d: 'Without television or mobile phones' },
+            { n: '→', t: 'Follow a planned daily routine', d: 'Avoid last-minute pressure with a timetable' },
+            { n: '→', t: 'Prepare comprehensive plans',    d: 'Daily, weekly, monthly, and yearly roadmap' },
+            { n: '→', t: 'Write down goals and thoughts',  d: 'Clarity in planning reduces confusion and stress' },
+            { n: '→', t: 'Spend quality time with family', d: 'Without television or mobile phones' },
           ],
         },
         {
@@ -373,83 +203,277 @@ export class WellnessHandbookComponent {
         },
       ],
     },
-    // {
-    //   icon: 'female', img: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=160&h=160&fit=crop', tag: 'Special topic',
-    //   title: 'Rutusrava Paricharya (Guidelines during Menstruation)',
-    //   desc: 'Dietary and lifestyle practices during menstruation',
-    //   cols: [
-    //     {
-    //       label: 'Diet — eat', colIcon: 'leaf', bg: '#f0fdf4', headBg: '#dcfce7', iconBg: '#bbf7d0', iconColor: '#166534',
-    //       labelColor: '#166534', countBg: '#bbf7d0', countColor: '#166534',
-    //       cardBorder: '#bbf7d0', numBg: '#f0fdf4', numColor: '#15803d',
-    //       items: [
-    //         { n: '✓', t: 'Simple, freshly prepared, warm foods', d: 'Include slightly more ghee in meals' },
-    //         { n: '✓', t: 'Drink plenty of warm fluids',          d: 'To reduce discomfort' },
-    //       ],
-    //     },
-    //     {
-    //       label: 'Diet — avoid', colIcon: 'ban', bg: '#fff1f2', headBg: '#ffe4e6', iconBg: '#fecdd3', iconColor: '#9f1239',
-    //       labelColor: '#9f1239', countBg: '#fecdd3', countColor: '#9f1239',
-    //       cardBorder: '#fecdd3', numBg: '#fff1f2', numColor: '#be123c',
-    //       items: [
-    //         { n: '✗', t: 'Heavy meals and overeating',         d: 'Non-vegetarian food during this time' },
-    //         { n: '✗', t: 'Curd, coffee, tea, chocolates',      d: 'Excess spices, deep-fried, baked, processed foods' },
-    //       ],
-    //     },
-    //     {
-    //       label: 'Rest and activity', colIcon: 'activity', bg: '#eef2ff', headBg: '#e0e7ff', iconBg: '#c7d2fe', iconColor: '#3730a3',
-    //       labelColor: '#3730a3', countBg: '#c7d2fe', countColor: '#3730a3',
-    //       cardBorder: '#e0e7ff', numBg: '#eef2ff', numColor: '#4338ca',
-    //       items: [
-    //         { n: '✓', t: 'Minimise physical and mental exertion', d: 'Gentle deep breathing; sleep adequately at night' },
-    //         { n: '✗', t: 'Strenuous activities',                  d: 'Workouts, gym, yoga asanas, pranayama, swimming, long walks' },
-    //       ],
-    //     },
-    //   ],
-    // },
-    // {
-    //   icon: 'clock', img: 'https://images.unsplash.com/photo-1501139083538-0139583c060f?w=160&h=160&fit=crop', tag: 'Science',
-    //   title: 'Circadian Rhythm — the body\'s internal clock',
-    //   desc: 'Science behind waking before dawn and biological rhythm',
-    //   cols: [
-    //     {
-    //       label: 'Key markers', colIcon: 'clock', bg: '#eef2ff', headBg: '#e0e7ff', iconBg: '#c7d2fe', iconColor: '#3730a3',
-    //       labelColor: '#3730a3', countBg: '#c7d2fe', countColor: '#3730a3',
-    //       cardBorder: '#e0e7ff', numBg: '#eef2ff', numColor: '#4338ca',
-    //       items: [
-    //         { n: '…', t: 'Melatonin',        d: 'Released by the pineal gland at night; helps initiate sleep' },
-    //         { n: '…', t: 'Body temperature', d: 'Lowest around 5 am, a few hours before natural wake time' },
-    //         { n: '…', t: 'Cortisol',         d: 'Stress hormone; highest in the morning; promotes alertness' },
-    //       ],
-    //     },
-    //     {
-    //       label: 'Scientific correlations', colIcon: 'zap', bg: '#fffbeb', headBg: '#fef3c7', iconBg: '#fde68a', iconColor: '#92400e',
-    //       labelColor: '#92400e', countBg: '#fde68a', countColor: '#92400e',
-    //       cardBorder: '#fde68a', numBg: '#fffbeb', numColor: '#b45309',
-    //       items: [
-    //         { n: '→', t: 'Cognition',   d: 'Early cortisol spike improves focus, alertness, and problem-solving' },
-    //         { n: '→', t: 'Entrainment', d: 'Consistent early waking + morning light synchronises the biological clock' },
-    //       ],
-    //     },
-    //     {
-    //       label: 'Appetite hormones', colIcon: 'droplet', bg: '#f0fdf4', headBg: '#dcfce7', iconBg: '#bbf7d0', iconColor: '#166534',
-    //       labelColor: '#166534', countBg: '#bbf7d0', countColor: '#166534',
-    //       cardBorder: '#bbf7d0', numBg: '#f0fdf4', numColor: '#15803d',
-    //       items: [
-    //         { n: '→', t: 'Ghrelin (hunger hormone)', d: 'Suppressed during sleep' },
-    //         { n: '→', t: 'Leptin (satiety hormone)',  d: 'Rises during the night' },
-    //         { n: '→', t: 'Aligned rhythm',            d: 'Supports proper appetite regulation and weight management' },
-    //       ],
-    //     },
-    //   ],
-    // },
+    // ── Vyayama (Physical Activity) ────────────────────────────────────────
+    {
+      icon: 'sun', img: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=160&h=160&fit=crop',
+      tag: 'Vyayama',
+      title: 'Vyayama (Physical Activity)',
+      desc: 'Regular physical exercise to strengthen body, sharpen mind and stabilise health',
+      cols: [
+        {
+          label: 'Benefits', colIcon: 'leaf', bg: '#f0fdf4', headBg: '#dcfce7', iconBg: '#bbf7d0', iconColor: '#166534',
+          labelColor: '#166534', countBg: '#bbf7d0', countColor: '#166534',
+          cardBorder: '#bbf7d0', numBg: '#f0fdf4', numColor: '#15803d',
+          items: [
+            { n: '1', t: 'Improves lightness of body',     d: 'Laghava — feeling agile and energetic' },
+            { n: '2', t: 'Enhances digestion (agni)',       d: 'Strengthens metabolism and tissue assimilation' },
+            { n: '3', t: 'Builds strength & stamina',       d: 'Increases muscle tone and endurance (sthairya, bala)' },
+            { n: '4', t: 'Sharpens body firmness',          d: 'Improves proportionate growth of body parts' },
+            { n: '5', t: 'Cleanses toxins via sweat',       d: 'Helps in elimination of ama (metabolic waste)' },
+            { n: '6', t: 'Stabilises mind',                 d: 'Reduces anxiety, depression and lethargy' },
+          ],
+        },
+        {
+          label: 'How to practise', colIcon: 'activity', bg: '#fffbeb', headBg: '#fef3c7', iconBg: '#fde68a', iconColor: '#92400e',
+          labelColor: '#92400e', countBg: '#fde68a', countColor: '#92400e',
+          cardBorder: '#fde68a', numBg: '#fffbeb', numColor: '#b45309',
+          items: [
+            { n: '7',  t: 'Exercise to half your strength', d: 'Ardha-shakti — until sweat appears on forehead, nose, axilla' },
+            { n: '8',  t: 'Best time — early morning',       d: 'Before sunrise during Kapha period (6–10 am)' },
+            { n: '9',  t: 'Daily, consistent practice',     d: 'Short daily sessions over occasional heavy bouts' },
+            { n: '10', t: 'Include yogasana & pranayama',    d: 'Combines physical strength with breath control' },
+            { n: '11', t: 'Cool down after exercise',        d: 'Gentle stretching, normal breathing, water sip' },
+          ],
+        },
+        {
+          label: 'What to avoid', colIcon: 'ban', bg: '#fff1f2', headBg: '#ffe4e6', iconBg: '#fecdd3', iconColor: '#9f1239',
+          labelColor: '#9f1239', countBg: '#fecdd3', countColor: '#9f1239',
+          cardBorder: '#fecdd3', numBg: '#fff1f2', numColor: '#be123c',
+          items: [
+            { n: '✗', t: 'Over-exertion',                   d: 'Causes fatigue, breathlessness, joint pain, immunity loss' },
+            { n: '✗', t: 'Exercise on a full stomach',       d: 'Disturbs digestion; wait 2–3 hours after meals' },
+            { n: '✗', t: 'Exercise when ill or weak',        d: 'Skip during fever, indigestion, after blood loss' },
+            { n: '✗', t: 'Vigorous exercise in extreme heat', d: 'Aggravates pitta and dehydration in summer' },
+          ],
+        },
+      ],
+    },
+    // ── Nidra (Sleep) ──────────────────────────────────────────────────────
+    {
+      icon: 'moon', img: 'https://images.unsplash.com/photo-1455642305367-68834a1f7eea?w=160&h=160&fit=crop',
+      tag: 'Nidra',
+      title: 'Nidra (Sleep)',
+      desc: 'Restorative sleep is one of the three pillars (trayopastambha) of life',
+      cols: [
+        {
+          label: 'Benefits of good sleep', colIcon: 'leaf', bg: '#f0fdf4', headBg: '#dcfce7', iconBg: '#bbf7d0', iconColor: '#166534',
+          labelColor: '#166534', countBg: '#bbf7d0', countColor: '#166534',
+          cardBorder: '#bbf7d0', numBg: '#f0fdf4', numColor: '#15803d',
+          items: [
+            { n: '1', t: 'Pushti — proper nourishment',   d: 'Restores body tissues and growth' },
+            { n: '2', t: 'Bala — strength & immunity',    d: 'Repairs and re-energises the body' },
+            { n: '3', t: 'Jnana — clarity of mind',       d: 'Improves memory, learning and focus' },
+            { n: '4', t: 'Happiness & life-longevity',    d: 'Sukha-ayushya — emotional balance and longevity' },
+          ],
+        },
+        {
+          label: 'Healthy practices', colIcon: 'calendar', bg: '#eef2ff', headBg: '#e0e7ff', iconBg: '#c7d2fe', iconColor: '#3730a3',
+          labelColor: '#3730a3', countBg: '#c7d2fe', countColor: '#3730a3',
+          cardBorder: '#e0e7ff', numBg: '#eef2ff', numColor: '#4338ca',
+          items: [
+            { n: '5', t: 'Sleep before 10 pm',            d: 'Align with the natural Kapha-night cycle' },
+            { n: '6', t: '6–8 hours of restful sleep',     d: 'Wake before sunrise (Brahma Muhurta)' },
+            { n: '7', t: 'Padabhyanga before bed',         d: 'Foot massage with sesame oil or ghee' },
+            { n: '8', t: 'Light meals at night',           d: 'Easy-to-digest, warm food 2–3 hours before bed' },
+            { n: '9', t: 'Calm environment',               d: 'Dim lights, no screens, comfortable bedding' },
+          ],
+        },
+        {
+          label: 'Avoid these habits', colIcon: 'ban', bg: '#fff1f2', headBg: '#ffe4e6', iconBg: '#fecdd3', iconColor: '#9f1239',
+          labelColor: '#9f1239', countBg: '#fecdd3', countColor: '#9f1239',
+          cardBorder: '#fecdd3', numBg: '#fff1f2', numColor: '#be123c',
+          items: [
+            { n: '✗', t: 'Day sleep (Divasvapna)',          d: 'Aggravates kapha — avoid except in summer or after illness' },
+            { n: '✗', t: 'Late-night sleep (Ratri-jagarana)', d: 'Aggravates vata, causes dryness, anxiety, fatigue' },
+            { n: '✗', t: 'Heavy meals before bed',           d: 'Disturbs digestion and quality of sleep' },
+            { n: '✗', t: 'Screens & stimulants at night',    d: 'Caffeine, mobile screens disturb melatonin cycle' },
+          ],
+        },
+      ],
+    },
+    // ── Sadvritta (Code of Ethical Conduct) ─────────────────────────────────
+    {
+      icon: 'heart', img: 'https://images.unsplash.com/photo-1499209974431-9dddcece7f88?w=160&h=160&fit=crop',
+      tag: 'Sadvritta',
+      title: 'Sadvritta (Code of Ethical Conduct)',
+      desc: 'Right conduct that nurtures harmony in body, mind, family and society',
+      cols: [
+        {
+          label: 'Personal conduct', colIcon: 'leaf', bg: '#f0fdf4', headBg: '#dcfce7', iconBg: '#bbf7d0', iconColor: '#166534',
+          labelColor: '#166534', countBg: '#bbf7d0', countColor: '#166534',
+          cardBorder: '#bbf7d0', numBg: '#f0fdf4', numColor: '#15803d',
+          items: [
+            { n: '1', t: 'Speak the truth (Satya)',         d: 'Words should be honest, gentle and beneficial' },
+            { n: '2', t: 'Practise non-violence (Ahimsa)',  d: 'In thought, word and deed' },
+            { n: '3', t: 'Be clean & well-groomed',         d: 'Daily hygiene of body, clothing and surroundings' },
+            { n: '4', t: 'Cultivate self-discipline',       d: 'Control over the senses (Indriya-nigraha)' },
+            { n: '5', t: 'Practise gratitude',              d: 'Towards parents, teachers, elders and nature' },
+          ],
+        },
+        {
+          label: 'Social conduct', colIcon: 'community', bg: '#fffbeb', headBg: '#fef3c7', iconBg: '#fde68a', iconColor: '#92400e',
+          labelColor: '#92400e', countBg: '#fde68a', countColor: '#92400e',
+          cardBorder: '#fde68a', numBg: '#fffbeb', numColor: '#b45309',
+          items: [
+            { n: '6',  t: 'Respect elders & teachers',     d: 'Acknowledge wisdom and guidance' },
+            { n: '7',  t: 'Be charitable & compassionate', d: 'Daana — share with those in need' },
+            { n: '8',  t: 'Avoid harsh or hurtful speech', d: 'Practise kind, measured, helpful words' },
+            { n: '9',  t: 'Help the sick and elderly',     d: 'Show care and patience' },
+            { n: '10', t: 'Maintain harmonious relations', d: 'In family, workplace and community' },
+          ],
+        },
+        {
+          label: 'Avoid', colIcon: 'ban', bg: '#fff1f2', headBg: '#ffe4e6', iconBg: '#fecdd3', iconColor: '#9f1239',
+          labelColor: '#9f1239', countBg: '#fecdd3', countColor: '#9f1239',
+          cardBorder: '#fecdd3', numBg: '#fff1f2', numColor: '#be123c',
+          items: [
+            { n: '✗', t: 'Stealing or dishonesty',          d: 'Asteya — never take what is not yours' },
+            { n: '✗', t: 'Cruelty to living beings',         d: 'Causes guilt, mental disturbance and karma' },
+            { n: '✗', t: 'Gossip or back-biting',            d: 'Disturbs relationships and inner peace' },
+            { n: '✗', t: 'Ego, pride, arrogance',            d: 'Block humility and learning' },
+          ],
+        },
+      ],
+    },
+    // ── Manasika Arogya (Mental Well-being) ─────────────────────────────────
+    {
+      icon: 'heart', img: 'https://images.unsplash.com/photo-1545205597-3d9d02c29597?w=160&h=160&fit=crop',
+      tag: 'Manasika Arogya',
+      title: 'Manasika Arogya (Mental Well-being)',
+      desc: 'Cultivating a calm, content and resilient mind through Ayurvedic principles',
+      cols: [
+        {
+          label: 'Cultivate', colIcon: 'leaf', bg: '#f0fdf4', headBg: '#dcfce7', iconBg: '#bbf7d0', iconColor: '#166534',
+          labelColor: '#166534', countBg: '#bbf7d0', countColor: '#166534',
+          cardBorder: '#bbf7d0', numBg: '#f0fdf4', numColor: '#15803d',
+          items: [
+            { n: '1', t: 'Dhyana (meditation)',            d: 'Calms the mind, builds inner awareness' },
+            { n: '2', t: 'Pranayama (breath control)',     d: 'Regulates prana, stabilises emotions' },
+            { n: '3', t: 'Satsanga (good company)',         d: 'Spend time with positive, wise people' },
+            { n: '4', t: 'Reading & self-study (Swadhyaya)', d: 'Sacred texts, biographies, reflective writing' },
+            { n: '5', t: 'Service (Seva) to others',       d: 'Gives purpose and reduces self-centred worry' },
+            { n: '6', t: 'Time in nature',                 d: 'Sunlight, greenery, fresh air, walking barefoot' },
+          ],
+        },
+        {
+          label: 'Daily habits', colIcon: 'calendar', bg: '#eef2ff', headBg: '#e0e7ff', iconBg: '#c7d2fe', iconColor: '#3730a3',
+          labelColor: '#3730a3', countBg: '#c7d2fe', countColor: '#3730a3',
+          cardBorder: '#e0e7ff', numBg: '#eef2ff', numColor: '#4338ca',
+          items: [
+            { n: '7',  t: 'Sattvic diet',                 d: 'Fresh, light, nourishing foods; minimal stimulants' },
+            { n: '8',  t: 'Regular sleep & wake times',   d: 'Steady circadian rhythm steadies the mind' },
+            { n: '9',  t: 'Journal feelings & thoughts',  d: 'Brings clarity, reduces mental load' },
+            { n: '10', t: 'Limit screen & news intake',   d: 'Protects from overstimulation and anxiety' },
+            { n: '11', t: 'Connect with family & friends', d: 'Spend quality time without distractions' },
+          ],
+        },
+        {
+          label: 'Mental disturbers — avoid', colIcon: 'ban', bg: '#fff1f2', headBg: '#ffe4e6', iconBg: '#fecdd3', iconColor: '#9f1239',
+          labelColor: '#9f1239', countBg: '#fecdd3', countColor: '#9f1239',
+          cardBorder: '#fecdd3', numBg: '#fff1f2', numColor: '#be123c',
+          items: [
+            { n: '✗', t: 'Kama (excessive desire)',         d: 'Leads to restlessness and dissatisfaction' },
+            { n: '✗', t: 'Krodha (anger)',                  d: 'Destroys peace, judgement and relationships' },
+            { n: '✗', t: 'Lobha (greed)',                   d: 'Breeds anxiety and unethical conduct' },
+            { n: '✗', t: 'Moha (delusion / attachment)',    d: 'Clouds discrimination (viveka)' },
+            { n: '✗', t: 'Mada (pride) & Matsarya (envy)', d: 'Generate inner conflict and isolation' },
+          ],
+        },
+      ],
+    },
   ];
 
   get total() { return this.sections.length; }
   get section() { return this.sections[this.current()]; }
   get itemCount() { return this.section.cols.reduce((a, c) => a + c.items.length, 0); }
 
-  goto(i: number) { this.current.set(i); }
-  prev() { if (this.current() > 0) this.current.update(v => v - 1); }
-  next() { if (this.current() < this.total - 1) this.current.update(v => v + 1); }
+  // Flat ordered list of pin notes for the active section
+  readonly notes = computed<PinNote[]>(() => {
+    const s = this.sections[this.current()];
+    const multi = s.cols.length > 1;
+    const out: PinNote[] = [];
+    for (const c of s.cols) {
+      const pal = this.PAL_MAP[c.labelColor] ?? this.DEFAULT_PAL;
+      for (const it of c.items) {
+        out.push({ n: it.n, t: it.t, d: it.d, label: c.label, showLabel: multi, pal });
+      }
+    }
+    return out;
+  });
+
+  // ── Percentage-based pinboard geometry (matches reference design) ──────────
+  // Reference design used a fixed 900px board with: cardW=262 (29.1%),
+  // leftCol=92 (10.2%), rightCol=506 (56.2%), jitter 0..26 (0..2.9%),
+  // step=128px. We keep step in pixels (so card overlap is consistent)
+  // and express x-positions as % of board width so the layout fluidly fits
+  // any board width — no transform:scale, no overflow tricks.
+  readonly CARD_W_PCT  = 29.1;
+  readonly LEFT_X_PCT  = 10.2;
+  readonly RIGHT_X_PCT = 56.2;
+  readonly TOP0        = 46;
+  readonly STEP        = 128;
+  private readonly JITTER_PCT = [0, 2.0, -1.3, 2.9, -0.7, 2.4, -1.8, 1.1];
+
+  // Position of note i within the board.
+  // x positions in %, y positions in px (so the vertical rhythm is stable).
+  notePos(i: number) {
+    if (this.cols() === 'one') {
+      // Mobile: single centred column, wider card, no jitter, no overlap
+      const top   = this.TOP0 + i * (this.STEP + 28);
+      const leftPct  = 6;
+      const widthPct = 88;
+      return { leftPct, top, widthPct, pinXPct: leftPct + widthPct / 2, pinY: top - 4 };
+    }
+    const isLeft = i % 2 === 0;
+    const leftPct = (isLeft ? this.LEFT_X_PCT : this.RIGHT_X_PCT)
+                  + this.JITTER_PCT[i % this.JITTER_PCT.length];
+    const top     = this.TOP0 + i * this.STEP;
+    return { leftPct, top, widthPct: this.CARD_W_PCT,
+             pinXPct: leftPct + this.CARD_W_PCT / 2, pinY: top - 4 };
+  }
+
+  // Total board height — last note's top + room for the card body + padding
+  readonly boardH = computed(() => {
+    if (this.cols() === 'one') {
+      return this.TOP0 + this.notes().length * (this.STEP + 28) + 40;
+    }
+    return this.TOP0 + this.notes().length * this.STEP + 84;
+  });
+
+  // SVG path connecting consecutive pin heads with a smooth S-curve.
+  // viewBox is 100×boardH so x is % of width, y is px.
+  readonly paths = computed<string[]>(() => {
+    const n = this.notes().length;
+    if (n < 2) return [];
+    const out: string[] = [];
+    for (let i = 0; i < n - 1; i++) {
+      const a = this.notePos(i);
+      const b = this.notePos(i + 1);
+      const midY = (a.pinY + b.pinY) / 2;
+      out.push(`M${a.pinXPct},${a.pinY} C${a.pinXPct},${midY} ${b.pinXPct},${midY} ${b.pinXPct},${b.pinY}`);
+    }
+    return out;
+  });
+
+  goto(i: number) { this.current.set(i); this.active.set(-1); }
+  prev() { if (this.current() > 0) { this.current.update(v => v - 1); this.active.set(-1); } }
+  next() { if (this.current() < this.total - 1) { this.current.update(v => v + 1); this.active.set(-1); } }
+  setActive(i: number) { this.active.set(this.active() === i ? -1 : i); }
+
+  // ── Responsive layout switching ──────────────────────────────────────────
+  private resizeHandler = () => this.updateCols();
+
+  ngAfterViewInit() {
+    this.updateCols();
+    window.addEventListener('resize', this.resizeHandler, { passive: true });
+  }
+
+  ngOnDestroy() {
+    window.removeEventListener('resize', this.resizeHandler);
+  }
+
+  private updateCols() {
+    const w = window.innerWidth;
+    this.cols.set(w < 720 ? 'one' : 'two');
+  }
 }
