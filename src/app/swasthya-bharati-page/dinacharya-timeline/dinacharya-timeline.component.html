@@ -24,10 +24,11 @@
   <!-- Section header -->
   <header class="dt-hdr">
     <p class="dt-eyebrow">Ritucharya · Rhythm of the seasons</p>
-    <h2 class="dt-title">Six seasons, one rhythm of life.</h2>
+    <h2 class="dt-title pt">Six seasons, one rhythm of life.</h2>
   </header>
 
   <!-- ─── DESKTOP: single SVG arc layout ─── -->
+  <div class="dt-svg-wrap">
   <svg class="dt-svg" [attr.viewBox]="'0 0 ' + VW + ' ' + VH" preserveAspectRatio="xMidYMid meet"
     xmlns="http://www.w3.org/2000/svg">
 
@@ -168,50 +169,64 @@
       [attr.x2]="layouts[i].cx" [attr.y2]="layouts[i].cardY"
       stroke="rgba(255,255,255,0.38)" stroke-width="1.5" stroke-dasharray="3 4" />
 
-    <!-- Card background rect -->
-    <rect [attr.x]="layouts[i].cardX" [attr.y]="layouts[i].cardY"
-      [attr.width]="CW" [attr.height]="CH" rx="16" ry="16"
-      [attr.fill]="cardBg(i)" [attr.stroke]="cardBorder(i)" stroke-width="1.5"
-      [attr.filter]="isActive(i) ? 'url(#dt-caf-'+i+')' : 'url(#dt-card-f)'" class="dt-card-rect"
-      (click)="clickCard(i)" (mouseenter)="hoverCard(true)" (mouseleave)="hoverCard(false)" />
+    <!-- Single foreignObject — true CSS 3D flip, both faces always in DOM -->
+    <foreignObject [attr.x]="layouts[i].cardX" [attr.y]="layouts[i].cardY"
+      [attr.width]="CW" [attr.height]="CH" class="dt-fo"
+      (mouseenter)="hoverCard(true)" (mouseleave)="hoverCard(false)">
+      <div xmlns="http://www.w3.org/1999/xhtml" class="dt-flip-scene" (click)="clickCard(i)">
+        <div class="dt-flip-card" [class.dt-flip-card--flipped]="isFlipped(i)">
 
-    <!-- Per-card radial color glow overlay at card bottom -->
-    <rect [attr.x]="layouts[i].cardX" [attr.y]="layouts[i].cardY"
-      [attr.width]="CW" [attr.height]="CH" rx="16" ry="16"
-      [attr.fill]="'url(#dt-cg-'+i+')'" pointer-events="none" opacity="0.55" />
+          <!-- FRONT face -->
+          <div class="dt-flip-face dt-flip-face--front"
+               [style.background]="cardBg(i)"
+               [style.border-color]="cardBorder(i)">
+            <div class="dt-flip-img-ring" [style.border-color]="cardBorder(i)">
+              <img [src]="card.img" [alt]="card.english" class="dt-flip-img" />
+            </div>
+            <div class="dt-flip-front-text">
+              <span class="dt-t-time" [style.color]="timeColor()">{{ card.time }}</span>
+              <span class="dt-t-sans" [style.color]="subColor()">{{ card.sanskrit }}</span>
+              <strong class="dt-t-eng" [style.color]="titleColor(i)">{{ card.english }}</strong>
+              <span class="dt-t-desc" [style.color]="subColor()">{{ card.desc }}</span>
+            </div>
+            <span class="dt-flip-accent" [style.background]="cardBorder(i)"></span>
+          </div>
 
-    <!-- Colored bottom accent line -->
-    <line [attr.x1]="layouts[i].cardX + 28" [attr.y1]="layouts[i].cardY + CH - 10"
-      [attr.x2]="layouts[i].cardX + CW - 28" [attr.y2]="layouts[i].cardY + CH - 10"
-      [attr.stroke]="cardBorder(i)" stroke-width="2.5" stroke-linecap="round"
-      [attr.filter]="'url(#dt-caf-'+i+')'" opacity="0.85" class="dt-accent-line" />
+          <!-- BACK face — 2× size container scaled to 50% for crisp text -->
+          <div class="dt-flip-face dt-flip-face--back">
+            <div class="dt-back-inner">
+              <strong class="dt-bi__title">{{ card.english }}</strong>
+              <div class="dt-bi__scroll">
+                <div class="dt-bi__row">
+                  <span class="dt-bi__label dt-bi__label--eat">Eat</span>
+                  <ul class="dt-bi__list">
+                    @for (item of card.detail.eat; track $index) {
+                      <li>{{ item }}</li>
+                    }
+                  </ul>
+                </div>
+                <div class="dt-bi__row">
+                  <span class="dt-bi__label dt-bi__label--avoid">Avoid</span>
+                  <ul class="dt-bi__list">
+                    @for (item of card.detail.avoid; track $index) {
+                      <li>{{ item }}</li>
+                    }
+                  </ul>
+                </div>
+                <div class="dt-bi__row">
+                  <span class="dt-bi__label dt-bi__label--practice">Practice</span>
+                  <ul class="dt-bi__list">
+                    @for (item of card.detail.practices; track $index) {
+                      <li>{{ item }}</li>
+                    }
+                  </ul>
+                </div>
+              </div>
+              <span class="dt-bi__hint">tap to close ✕</span>
+            </div>
+          </div>
 
-    <!-- Icon circle -->
-    <circle [attr.cx]="layouts[i].cx" [attr.cy]="layouts[i].cardY + IR + 16"
-      [attr.r]="IR" [attr.fill]="'rgba(0,0,0,0.22)'"
-      [attr.stroke]="cardBorder(i)" stroke-width="1.8" class="dt-icon-ring" />
-
-    <!-- Season image inside icon circle -->
-    <clipPath [attr.id]="'dt-clip-'+i">
-      <circle [attr.cx]="layouts[i].cx" [attr.cy]="layouts[i].cardY + IR + 16" [attr.r]="IR - 2" />
-    </clipPath>
-    <image
-      [attr.x]="layouts[i].cx - IR + 2"
-      [attr.y]="layouts[i].cardY + 18"
-      [attr.width]="(IR - 2) * 2"
-      [attr.height]="(IR - 2) * 2"
-      [attr.href]="card.img"
-      [attr.clip-path]="'url(#dt-clip-'+i+')'"
-      preserveAspectRatio="xMidYMid slice" />
-
-    <foreignObject [attr.x]="layouts[i].cardX" [attr.y]="layouts[i].cardY + IR*2 + 24"
-      [attr.width]="CW" [attr.height]="CH - IR*2 - 30" class="dt-fo"
-      (click)="clickCard(i)" (mouseenter)="hoverCard(true)" (mouseleave)="hoverCard(false)">
-      <div xmlns="http://www.w3.org/1999/xhtml" class="dt-inner">
-        <span class="dt-t-time" [style.color]="timeColor()">{{ card.time }}</span>
-        <span class="dt-t-sans" [style.color]="subColor()">{{ card.sanskrit }}</span>
-        <strong class="dt-t-eng" [style.color]="titleColor(i)">{{ card.english }}</strong>
-        <span class="dt-t-desc" [style.color]="subColor()">{{ card.desc }}</span>
+        </div>
       </div>
     </foreignObject>
 
@@ -241,6 +256,8 @@
     </g>
 
   </svg>
+
+  </div><!-- /dt-svg-wrap -->
 
   <!-- ─── MOBILE: vertical HTML timeline ─── -->
   <div class="dt-mobile">
@@ -281,30 +298,62 @@
               [class.dt-mobile__dot--active]="isActive(i)"></span>
       </div>
 
-      <!-- Card -->
+      <!-- Card (flip wrapper) -->
       <div class="dt-mobile__card"
-           [style.--mc]="mobileAccent(i)"
-           [style.background]="mobileBg(i)"
-           [style.border-color]="mobileBorder(i)">
-        <!-- Season image circle -->
-        <div class="dt-mobile__icon"
-             [style.border-color]="mobileAccent(i)"
-             [style.background]="'rgba(0,0,0,0.22)'"
-             [style.overflow]="'hidden'"
-             [style.padding]="'0'">
-          <img [src]="card.img" [alt]="card.english"
-               style="width:100%;height:100%;object-fit:cover;display:block;border-radius:50%" />
-        </div>
+           [class.dt-mobile__card--flipped]="isFlipped(i)"
+           [style.--mc]="mobileAccent(i)">
+        <div class="dt-mobile__flip-inner">
 
-        <!-- Text content -->
-        <div class="dt-mobile__text">
-          <span class="dt-mobile__sanskrit" [style.color]="mobileSub(i)">{{ card.sanskrit }}</span>
-          <strong class="dt-mobile__english" [style.color]="mobileTitle(i)">{{ card.english }}</strong>
-          <p class="dt-mobile__desc" [style.color]="mobileSub(i)">{{ card.desc }}</p>
-        </div>
+          <!-- FRONT face -->
+          <div class="dt-mobile__face dt-mobile__face--front"
+               [style.background]="mobileBg(i)"
+               [style.border-color]="mobileBorder(i)">
+            <div class="dt-mobile__icon"
+                 [style.border-color]="mobileAccent(i)">
+              <img [src]="card.img" [alt]="card.english"
+                   style="width:100%;height:100%;object-fit:cover;display:block;border-radius:50%" />
+            </div>
+            <div class="dt-mobile__text">
+              <span class="dt-mobile__sanskrit" [style.color]="mobileSub(i)">{{ card.sanskrit }}</span>
+              <strong class="dt-mobile__english" [style.color]="mobileTitle(i)">{{ card.english }}</strong>
+              <p class="dt-mobile__desc" [style.color]="mobileSub(i)">{{ card.desc }}</p>
+            </div>
+            <span class="dt-mobile__accent-bar" [style.background]="mobileAccent(i)"></span>
+          </div>
 
-        <!-- Bottom accent line -->
-        <span class="dt-mobile__accent-bar" [style.background]="mobileAccent(i)"></span>
+          <!-- BACK face — white bg, black text, scrollable -->
+          <div class="dt-mobile__face dt-mobile__face--back">
+            <div class="dt-mobile__detail">
+              <strong class="dt-mobile__detail-title">{{ card.english }}</strong>
+              <div class="dt-mobile__detail-row">
+                <span class="dt-back__label dt-back__label--eat">Eat</span>
+                <ul class="dt-mobile__detail-list">
+                  @for (item of card.detail.eat; track $index) {
+                    <li>{{ item }}</li>
+                  }
+                </ul>
+              </div>
+              <div class="dt-mobile__detail-row">
+                <span class="dt-back__label dt-back__label--avoid">Avoid</span>
+                <ul class="dt-mobile__detail-list">
+                  @for (item of card.detail.avoid; track $index) {
+                    <li>{{ item }}</li>
+                  }
+                </ul>
+              </div>
+              <div class="dt-mobile__detail-row">
+                <span class="dt-back__label dt-back__label--practice">Practice</span>
+                <ul class="dt-mobile__detail-list">
+                  @for (item of card.detail.practices; track $index) {
+                    <li>{{ item }}</li>
+                  }
+                </ul>
+              </div>
+            </div>
+            <span class="dt-back__hint">scroll · tap to close ✕</span>
+          </div>
+
+        </div>
       </div>
 
     </div>

@@ -5,11 +5,18 @@ import {
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+export interface SeasonDetail {
+  eat: string[];
+  avoid: string[];
+  practices: string[];
+}
+
 export interface TimelineCard {
   time: string; sanskrit: string; english: string;
   desc: string; icon: 'sunrise'|'sun'|'noon'|'sunset'|'dusk'|'moon';
   img: string;
   isNight: boolean; arcT: number;
+  detail: SeasonDetail;
 }
 
 // ── SVG coordinate space ───────────────────────────────────────────────────────
@@ -33,6 +40,10 @@ export function bezierXY(t: number): { x: number; y: number } {
 const CW = 165;    // card width
 const CH = 190;    // card height
 const IR = 22;     // icon circle radius
+
+// Back panel dimensions (larger popup)
+export const BW = 260;   // back panel width
+export const BH = 340;   // back panel height
 
 // ── arcT values — evenly spaced by X position across the arc ─────────────────
 // Card centers are placed at equal horizontal gaps.
@@ -157,9 +168,11 @@ export class DinacharyaTimelineComponent implements OnInit, AfterViewInit, OnDes
   readonly VW = VW; readonly VH = VH;
   readonly CW = CW; readonly CH = CH;
   readonly IR = IR;
+  readonly BW = BW; readonly BH = BH;
 
-  readonly celestialT  = signal(0);
-  readonly activeIdx   = signal(0);
+  readonly celestialT     = signal(0);
+  readonly activeIdx      = signal(0);
+  readonly flippedIdx = signal<number | null>(null);
   readonly isNight     = signal(false);
   readonly bgA         = signal(SKY[0]);
   readonly bgB         = signal(SKY[0]);
@@ -219,27 +232,57 @@ export class DinacharyaTimelineComponent implements OnInit, AfterViewInit, OnDes
     { time:'Shishira Ritu', sanskrit:'शिशिर ऋतु',  english:'Late Winter',
       desc:'Cold and dry season — strengthen agni with warm, nourishing foods.',
       img:'https://images.unsplash.com/photo-1516912481808-3406841bd33c?w=80&h=80&fit=crop',
-      icon:'sunrise', isNight:false, arcT: CARD_T[0] },
+      icon:'sunrise', isNight:false, arcT: CARD_T[0],
+      detail: {
+        eat:      ['Sesame seeds & oil','Jaggery & honey','Wheat & black gram','Warm milk & ghee','Root vegetables'],
+        avoid:    ['Cold & raw foods','Light salads','Dry & rough foods','Cold water','Fasting'],
+        practices:['Abhyanga (oil massage)','Warm water baths','Light exercise','Warm clothing','Nasya (nasal oil)'],
+      }},
     { time:'Vasanta Ritu',  sanskrit:'वसंत ऋतु',   english:'Spring',
       desc:'Kapha accumulates — favour light, bitter and pungent foods.',
       img:'https://images.unsplash.com/photo-1462275646964-a0e3386b89fa?w=80&h=80&fit=crop',
-      icon:'sun',     isNight:false, arcT: CARD_T[1] },
+      icon:'sun',     isNight:false, arcT: CARD_T[1],
+      detail: {
+        eat:      ['Bitter greens & herbs','Barley & millet','Honey (unheated)','Ginger & pepper','Light legumes'],
+        avoid:    ['Heavy oily foods','Sweet & sour foods','Cold dairy','Excess sleep','Kapha-aggravating diet'],
+        practices:['Vyayama (exercise)','Udvartana (dry massage)','Vamana therapy','Early rising','Herbal decoctions'],
+      }},
     { time:'Grishma Ritu',  sanskrit:'ग्रीष्म ऋतु', english:'Summer',
       desc:'Intense heat — favour cool, sweet and liquid-rich foods.',
-      img:'https://images.unsplash.com/photo-1504701954957-2010ec3bcec1?w=80&h=80&fit=crop',
-      icon:'noon',    isNight:false, arcT: CARD_T[2] },
+      img:'assets/swastya-page/maharashtra-times.avif',
+      icon:'noon',    isNight:false, arcT: CARD_T[2],
+      detail: {
+        eat:      ['Coconut water','Sweet juicy fruits','Rice & mung dal','Cool buttermilk','Sugarcane juice'],
+        avoid:    ['Pungent & spicy foods','Heavy exercise','Sour & salty foods','Alcohol','Excessive fasting'],
+        practices:['Stay in cool shade','Moon-bathing at night','Light cool clothing','Sandalwood paste','Short midday rest'],
+      }},
     { time:'Varsha Ritu',   sanskrit:'वर्षा ऋतु',   english:'Rainy Season',
       desc:'Vata aggravates — favour sour, salty and easily digestible foods.',
       img:'assets/swastya-page/images.jpeg',
-      icon:'sunset',  isNight:false, arcT: CARD_T[3] },
+      icon:'sunset',  isNight:false, arcT: CARD_T[3],
+      detail: {
+        eat:      ['Old rice & wheat','Sour fruits & tamarind','Rock salt','Warm soups & stews','Ginger & cumin'],
+        avoid:    ['River water (unboiled)','Heavy meats','Excess exercise','Day sleeping','Raw leafy greens'],
+        practices:['Basti (enema therapy)','Fumigation of home','Wear dry clothes','Avoid river wading','Light Agni-kindling herbs'],
+      }},
     { time:'Sharad Ritu',   sanskrit:'शरद् ऋतु',   english:'Autumn',
       desc:'Pitta flares — favour sweet, bitter and cooling foods.',
       img:'assets/swastya-page/Sharat-Ritu.jpeg',
-      icon:'dusk',    isNight:false,  arcT: CARD_T[4] },
+      icon:'dusk',    isNight:false,  arcT: CARD_T[4],
+      detail: {
+        eat:      ['Amla & pomegranate','Green gram & rice','Ghee & sugar candy','Bitter gourd','Cow milk (boiled)'],
+        avoid:    ['Pungent & oily foods','Curd & sour foods','Alcohol','Heavy exercise in sun','Day sleeping'],
+        practices:['Virechana (purgation)','Moon-gazing at night','Wear light cool clothes','Raktamokshana','Avoid harsh sun'],
+      }},
     { time:'Hemanta Ritu',  sanskrit:'हेमंत ऋतु',  english:'Early Winter',
       desc:'Agni is strongest — favour unctuous, heavy and nourishing foods.',
       img:'https://images.unsplash.com/photo-1418985991508-e47386d96a71?w=80&h=80&fit=crop',
-      icon:'moon',    isNight:false,  arcT: CARD_T[5] },
+      icon:'moon',    isNight:false,  arcT: CARD_T[5],
+      detail: {
+        eat:      ['Meat & fish soups','Urad dal & sesame','Sugarcane & jaggery','Warm milk & ghee','Garlic & ginger'],
+        avoid:    ['Dry & light foods','Cold drinks','Vata-aggravating diet','Exposure to cold wind','Fasting'],
+        practices:['Full body oil massage','Warm clothing & sun-bathing','Strength exercises','Herbal wine (Arishtam)','Steam therapy'],
+      }},
   ];
 
   // Per-card accent colors — season-matched
@@ -344,6 +387,14 @@ export class DinacharyaTimelineComponent implements OnInit, AfterViewInit, OnDes
   }
 
   // ── Template helpers ────────────────────────────────────────────────────────
+
+  // Convert SVG card position → CSS % for the HTML overlay panel
+  // SVG viewBox: VW × VH. The overlay sits on top of the SVG element.
+  cardLeftPct(i: number)  { return (this.layouts[i].cardX / VW) * 100; }
+  cardTopPct(i: number)   { return (this.layouts[i].cardY / VH) * 100; }
+  cardWidthPct()          { return (CW / VW) * 100; }
+  cardHeightPct()         { return (CH / VH) * 100; }
+
   p()                   { return this.palette(); }
   isActive(i: number)   { return this.activeIdx() === i; }
   cardBg(i: number)     { const p = this.p(); return this.isActive(i) ? p.activeBg    : p.cardBg; }
@@ -378,6 +429,7 @@ export class DinacharyaTimelineComponent implements OnInit, AfterViewInit, OnDes
   mobileIcon(i: number)   { return PHASE[i].icon; }
 
   clickCard(i: number): void {
+    this.flippedIdx.set(this.flippedIdx() === i ? null : i);
     this.paused = true;
     clearTimeout(this.resumeTO);
     this.celestialT.set(this.cards[i].arcT);
@@ -396,6 +448,8 @@ export class DinacharyaTimelineComponent implements OnInit, AfterViewInit, OnDes
     setTimeout(fade, 20);
     this.resumeTO = setTimeout(() => { this.paused = false; }, 6000);
   }
+
+  isFlipped(i: number) { return this.flippedIdx() === i; }
 
   hoverCard(p: boolean) { this.paused = p; if (!p) this.lastTime = 0; }
   trackBy(i: number)    { return i; }
