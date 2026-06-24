@@ -112,45 +112,58 @@ interface Ph {
   sub:string; icon:string; dot:string;
   activeBg:string; activeBorder:string; activeTitle:string; activeDot:string;
 }
-// Card palette — uniform dark translucent navy across all seasons (matches the
-// Six Seasons reference). Each season keeps its own accent hue for the time
-// label, dot and *active* border so it still reads as season-specific.
-// Higher alpha so the dark navy section background doesn't bleed through and
-// make the card centre look black.
-const CARD_BG        = 'rgba(22,38,55,0.92)';      // base card background
-const CARD_BG_ACTIVE = 'rgba(28,48,70,0.96)';      // active card slightly more solid
-const CARD_BORDER    = 'rgba(120,160,180,0.28)';   // muted neutral rim
+// Card palette — solid per-season fills matching the reference image:
+// teal · gold · lavender · mint · periwinkle · coral. Each card is its own
+// distinct flat colour with a subtle vertical gradient and a soft glow border.
 const PHASE: Ph[] = [
-  // 0 Shishira — Late Winter: icy silver-blue
-  { cardBg: CARD_BG, border: CARD_BORDER,
-    title:'#f3f8fb', time:'#9fd4e6', sub:'rgba(190,210,222,0.62)', icon:'rgba(159,212,230,0.96)',
-    dot:'rgba(159,212,230,0.90)', activeBg: CARD_BG_ACTIVE, activeBorder:'rgba(150,200,230,0.65)',
-    activeTitle:'#f3f8fb', activeDot:'#bfe6f0' },
-  // 1 Vasanta — Spring: fresh green
-  { cardBg: CARD_BG, border: CARD_BORDER,
-    title:'#f3f8fb', time:'#9fe6b8', sub:'rgba(190,210,222,0.62)', icon:'rgba(159,230,184,0.96)',
-    dot:'rgba(143,230,168,0.90)', activeBg: CARD_BG_ACTIVE, activeBorder:'rgba(150,220,170,0.65)',
-    activeTitle:'#f3f8fb', activeDot:'#8fe6a8' },
-  // 2 Grishma — Summer: warm amber-gold
-  { cardBg: CARD_BG, border: CARD_BORDER,
-    title:'#f3f8fb', time:'#f0c878', sub:'rgba(190,210,222,0.62)', icon:'rgba(240,200,120,0.96)',
-    dot:'rgba(240,200,120,0.90)', activeBg: CARD_BG_ACTIVE, activeBorder:'rgba(240,200,120,0.70)',
-    activeTitle:'#f3f8fb', activeDot:'#f0c878' },
-  // 3 Varsha — Rainy Season: monsoon blue
-  { cardBg: CARD_BG, border: CARD_BORDER,
-    title:'#f3f8fb', time:'#9cc2ea', sub:'rgba(190,210,222,0.62)', icon:'rgba(156,194,234,0.96)',
-    dot:'rgba(156,194,234,0.90)', activeBg: CARD_BG_ACTIVE, activeBorder:'rgba(140,180,225,0.70)',
-    activeTitle:'#f3f8fb', activeDot:'#9cc2ea' },
-  // 4 Sharad — Autumn: warm rust-gold
-  { cardBg: CARD_BG, border: CARD_BORDER,
-    title:'#f3f8fb', time:'#ec9a63', sub:'rgba(190,210,222,0.62)', icon:'rgba(236,154,99,0.96)',
-    dot:'rgba(236,154,99,0.90)', activeBg: CARD_BG_ACTIVE, activeBorder:'rgba(225,150,95,0.70)',
-    activeTitle:'#f3f8fb', activeDot:'#ec9a63' },
-  // 5 Hemanta — Early Winter: deep teal
-  { cardBg: CARD_BG, border: CARD_BORDER,
-    title:'#f3f8fb', time:'#b3d7ee', sub:'rgba(190,210,222,0.62)', icon:'rgba(179,215,238,0.96)',
-    dot:'rgba(179,215,238,0.90)', activeBg: CARD_BG_ACTIVE, activeBorder:'rgba(170,210,235,0.70)',
-    activeTitle:'#f3f8fb', activeDot:'#b3d7ee' },
+  // 0 Shishira — Late Winter: teal
+  { cardBg:'linear-gradient(180deg, #4ba2a8 0%, #316f76 100%)',
+    border:'rgba(180,225,228,0.55)',
+    title:'#ffffff', time:'#eaf7f8', sub:'rgba(235,247,248,0.88)', icon:'#ffffff',
+    dot:'#bff2f5',
+    activeBg:'linear-gradient(180deg, #58b8be 0%, #3a838b 100%)',
+    activeBorder:'rgba(220,245,247,0.95)',
+    activeTitle:'#ffffff', activeDot:'#e0f8fa' },
+  // 1 Vasanta — Spring: warm gold
+  { cardBg:'linear-gradient(180deg, #e4b95a 0%, #b88a30 100%)',
+    border:'rgba(255,225,150,0.60)',
+    title:'#ffffff', time:'#fff7e2', sub:'rgba(255,247,226,0.90)', icon:'#ffffff',
+    dot:'#ffe6a6',
+    activeBg:'linear-gradient(180deg, #f0c66a 0%, #c89a3a 100%)',
+    activeBorder:'rgba(255,238,180,0.95)',
+    activeTitle:'#ffffff', activeDot:'#fff1c0' },
+  // 2 Grishma — Summer: lavender / purple
+  { cardBg:'linear-gradient(180deg, #a78ad3 0%, #7558ad 100%)',
+    border:'rgba(218,200,245,0.55)',
+    title:'#ffffff', time:'#f3eaff', sub:'rgba(243,234,255,0.90)', icon:'#ffffff',
+    dot:'#e2d2ff',
+    activeBg:'linear-gradient(180deg, #b89dde 0%, #8867be 100%)',
+    activeBorder:'rgba(232,218,250,0.95)',
+    activeTitle:'#ffffff', activeDot:'#efe4ff' },
+  // 3 Varsha — Rainy Season: mint green
+  { cardBg:'linear-gradient(180deg, #5fc197 0%, #2f8e69 100%)',
+    border:'rgba(190,240,212,0.55)',
+    title:'#ffffff', time:'#eaf9f1', sub:'rgba(234,249,241,0.90)', icon:'#ffffff',
+    dot:'#bff0d2',
+    activeBg:'linear-gradient(180deg, #71d2a8 0%, #3aa179 100%)',
+    activeBorder:'rgba(210,247,225,0.95)',
+    activeTitle:'#ffffff', activeDot:'#d7f5e3' },
+  // 4 Sharad — Autumn: periwinkle blue
+  { cardBg:'linear-gradient(180deg, #8aa3da 0%, #5874bd 100%)',
+    border:'rgba(195,215,250,0.55)',
+    title:'#ffffff', time:'#edf2ff', sub:'rgba(237,242,255,0.90)', icon:'#ffffff',
+    dot:'#c8d4f8',
+    activeBg:'linear-gradient(180deg, #9bb3e8 0%, #6580c8 100%)',
+    activeBorder:'rgba(215,228,253,0.95)',
+    activeTitle:'#ffffff', activeDot:'#dde7fc' },
+  // 5 Hemanta — Early Winter: coral / salmon
+  { cardBg:'linear-gradient(180deg, #e58e88 0%, #b65953 100%)',
+    border:'rgba(250,200,195,0.55)',
+    title:'#ffffff', time:'#ffefec', sub:'rgba(255,239,236,0.90)', icon:'#ffffff',
+    dot:'#ffc4bc',
+    activeBg:'linear-gradient(180deg, #ee9d96 0%, #c5675f 100%)',
+    activeBorder:'rgba(254,215,210,0.95)',
+    activeTitle:'#ffffff', activeDot:'#ffd9d3' },
 ];
 
 // Card 4 (19:00–21:00) is at arcT 0.70 — moon starts exactly here
@@ -170,7 +183,10 @@ const SEASON_FX: { mode: FxMode; glow: [number, number, number]; count: number }
   { mode: 'snow',  glow: [120, 180, 225], count: 130 },
   { mode: 'petal', glow: [120, 210, 150], count: 140 },
   { mode: 'heat',  glow: [232, 165,  75], count:  70 },
-  { mode: 'rain',  glow: [110, 160, 215], count: 150 },
+  // Varsha (Rainy) — keep the original deep monsoon-blue glow for the
+  // background animation so the season still feels rainy/overcast even
+  // though the card itself is mint green.
+  { mode: 'rain',  glow: [ 40,  70, 130], count: 200 },
   { mode: 'leaf',  glow: [210, 120,  65], count:  90 },
   { mode: 'frost', glow: [150, 195, 230], count: 110 },
 ];
@@ -735,13 +751,18 @@ export class DinacharyaTimelineComponent implements OnInit, AfterViewInit, OnDes
 
   p()                   { return this.palette(); }
   isActive(i: number)   { return this.activeIdx() === i; }
-  cardBg(i: number)     { const p = this.p(); return this.isActive(i) ? p.activeBg    : p.cardBg; }
-  cardBorder(i: number) { const p = this.p(); return this.isActive(i) ? p.activeBorder: p.border; }
-  titleColor(i: number) { const p = this.p(); return this.isActive(i) ? p.activeTitle : p.title; }
-  dotFill(i: number)    { const p = this.p(); return this.isActive(i) ? p.activeDot   : p.dot; }
-  subColor()  { return this.p().sub; }
-  timeColor() { return this.p().time; }
-  iconColor() { return this.p().icon; }
+  // Each card uses its OWN PHASE entry (PHASE[i]) so the 6 cards keep their
+  // distinct colours regardless of which card is currently "active" via the
+  // sun's animated phase. Active state still bumps each card to its own
+  // brighter active variant.
+  cardBg(i: number)     { const p = PHASE[i]; return this.isActive(i) ? p.activeBg     : p.cardBg; }
+  cardBorder(i: number) { const p = PHASE[i]; return this.isActive(i) ? p.activeBorder : p.border; }
+  titleColor(i: number) { const p = PHASE[i]; return this.isActive(i) ? p.activeTitle  : p.title; }
+  dotFill(i: number)    { const p = PHASE[i]; return this.isActive(i) ? p.activeDot    : p.dot; }
+  // Sub/time/icon helpers stay scoped to each card's own palette too.
+  subColor(i: number = this.activeIdx())  { return PHASE[i]?.sub  ?? PHASE[0].sub;  }
+  timeColor(i: number = this.activeIdx()) { return PHASE[i]?.time ?? PHASE[0].time; }
+  iconColor(i: number = this.activeIdx()) { return PHASE[i]?.icon ?? PHASE[0].icon; }
   dotR(i: number) { return this.isActive(i) ? 9 : 5.5; }
 
   // Season-tinted sun/moon gradient colors
