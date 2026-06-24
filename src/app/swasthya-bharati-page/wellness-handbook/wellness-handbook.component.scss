@@ -20,7 +20,7 @@
 // ── Sticky header ────────────────────────────────────────────────────────────
 .wh-sticky {
   position: sticky;
-  top: -50px;
+  top: 0px;
   z-index: 200;          // above any card (cards top out at ~60 when active)
   background: #e8e9eb;   // fully opaque so cards can't bleed through
   padding: 16px 12px 12px;

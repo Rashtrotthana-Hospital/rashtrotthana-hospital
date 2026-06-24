@@ -56,11 +56,11 @@
 .hb-orbits {
   position: absolute;
   inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   pointer-events: none;
   z-index: 1;
+  // Lock dimensions to the parent stage so rings are never off-centre
+  // during initial layout / before the stage has measured.
+  display: block;
 }
 
 .hb-orbit {
@@ -68,30 +68,40 @@
   top: 50%;
   left: 50%;
   border-radius: 50%;
-  transform: translate(-50%, -50%);
   aspect-ratio: 1;
+  // Initial centred state — translate(-50%,-50%) is the visual baseline;
+  // rotation is added on top via the keyframe (kept idempotent).
+  transform: translate(-50%, -50%) rotate(0deg);
+  // Fade orbits in along with the stage so they don't flash off-position
+  // on first paint before the stage's fadein animation kicks in.
+  opacity: 0;
+  animation:
+    hb-orbit-rotate var(--orbit-dur, 28s) linear infinite,
+    hb-orbit-appear 1.2s ease 0.3s forwards;
 
   &--1 {
     width: 94%;
     border: 1.5px solid rgba(30, 120, 180, 0.55);
     box-shadow: 0 0 18px rgba(30, 120, 180, 0.20) inset;
-    animation: hb-orbit-rotate 28s linear infinite;
+    --orbit-dur: 28s;
   }
   &--2 {
     width: 76%;
     border: 1px solid rgba(70, 160, 210, 0.60);
     box-shadow: 0 0 12px rgba(70, 160, 210, 0.18) inset;
-    animation: hb-orbit-rotate 20s linear infinite reverse;
+    --orbit-dur: 20s;
+    animation-direction: reverse, normal;
   }
   &--3 {
     width: 58%;
     border: 1px dashed rgba(30, 120, 180, 0.45);
-    animation: hb-orbit-rotate 14s linear infinite;
+    --orbit-dur: 14s;
   }
   &--4 {
     width: 40%;
     border: 0.8px solid rgba(70, 160, 210, 0.40);
-    animation: hb-orbit-rotate 36s linear infinite reverse;
+    --orbit-dur: 36s;
+    animation-direction: reverse, normal;
   }
 }
 
@@ -155,6 +165,11 @@
 @keyframes hb-orbit-rotate {
   from { transform: translate(-50%, -50%) rotate(0deg); }
   to   { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+@keyframes hb-orbit-appear {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
 
 @keyframes hb-speck-float {

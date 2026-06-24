@@ -1,256 +1,184 @@
 // ──────────────────────────────────────────────────────────────────────────────
-// Workshop gallery — 3D rotating carousel (CSS3D, no TweenMax)
-// Inspired by codepen.io/johnblazek/pen/nxgVPR  — Angular + signals port.
+// Workshop gallery — flat horizontal carousel with rotating beam-light borders
+// Inspired by the Gallery Carousel reference; pure CSS3 animation, no JS deps
 // ──────────────────────────────────────────────────────────────────────────────
 
-.wg3-root {
+.wg-root {
   position: relative;
-  padding: clamp(2rem, 5vw, 3.5rem) clamp(1rem, 3vw, 2rem);
+  padding: 60px 32px;
+  // Matches the Dinacharya timeline's deep night-sky gradient for a consistent
+  // dark cinematic flow between sections.
   background:
-    radial-gradient(70% 40% at 50% -6%, rgba(9, 121, 105, 0.12), transparent 70%),
-    linear-gradient(180deg, #f7fbfb 0%, #e8f2f1 60%, #d4ebeb 100%);
+    radial-gradient(130% 90% at 50% 8%, #11283a 0%, #0b1a28 38%, #060f18 70%, #04090f 100%),
+    #060d15;
+  color: #ffffff;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   overflow: hidden;
 }
 
 // ── Header ───────────────────────────────────────────────────────────────────
-.wg3-head {
-  max-width: 760px;
-  margin: 0 auto 1.4rem;
+.wg-head {
+  max-width: 900px;
+  margin: 0 auto 28px;
   text-align: center;
 }
-.wg3-eyebrow {
+.wg-eyebrow {
   display: inline-block;
-  font-size: 0.75rem;
-  letter-spacing: 0.22em;
+  font-size: 0.72rem;
+  letter-spacing: 0.24em;
   text-transform: uppercase;
   font-weight: 600;
-  color: #097969;
-  margin: 0 0 0.55rem;
+  color: rgba(255, 255, 255, 0.55);
+  margin: 0 0 0.5rem;
 }
-.wg3-title {
+.wg-title {
   font-family: 'Newsreader', 'Poppins', serif;
-  font-size: clamp(1.6rem, 3vw, 2.4rem);
-  font-weight: 600;
-  margin: 0 0 0.55rem;
-  color: #1e293b;
-  letter-spacing: -0.01em;
-}
-.wg3-sub {
-  font-size: 0.95rem;
-  line-height: 1.55;
-  color: #64748b;
+  font-size: clamp(26px, 4.2vw, 40px);
+  font-weight: 700;
   margin: 0;
+  color: #ffffff;
+  letter-spacing: -0.015em;
+  line-height: 1.1;
 }
 
-// ── Tabs ─────────────────────────────────────────────────────────────────────
-.wg3-tabs {
+// ── Stage (prev / viewport / next) ───────────────────────────────────────────
+.wg-stage {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-  margin: 0 auto 1.2rem;
-  max-width: 760px;
-}
-.wg3-tab {
-  display: inline-flex;
   align-items: center;
-  gap: 8px;
-  padding: 10px 16px;
-  border-radius: 999px;
-  border: 1px solid #dbe3df;
-  background: #ffffff;
-  color: #4a6a60;
-  font-size: 14px;
-  font-weight: 600;
-  cursor: pointer;
-  line-height: 1;
-  white-space: nowrap;
-  transition: all 0.18s;
-
-  &__id {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 26px; height: 26px;
-    border-radius: 8px;
-    background: #f1f5f9;
-    color: #475569;
-    font-size: 12px;
-    font-weight: 800;
-    transition: all 0.18s;
-  }
-
-  &:hover:not(.wg3-tab--active) {
-    border-color: #097969;
-    color: #097969;
-    .wg3-tab__id { background: #d4ebeb; color: #014d4e; }
-  }
-
-  &--active {
-    background: #097969;
-    border-color: #097969;
-    color: #ffffff;
-    box-shadow: 0 4px 14px rgba(9, 121, 105, 0.25);
-
-    .wg3-tab__id {
-      background: rgba(255, 255, 255, 0.22);
-      color: #ffffff;
-    }
-  }
-}
-
-// ── Active workshop meta ─────────────────────────────────────────────────────
-.wg3-meta {
-  text-align: center;
-  margin: 0 auto 10px;
-  max-width: 720px;
-
-  &__chip {
-    display: inline-block;
-    padding: 4px 12px;
-    background: rgba(9, 121, 105, 0.10);
-    border: 1px solid rgba(9, 121, 105, 0.18);
-    color: #014d4e;
-    border-radius: 999px;
-    font-size: 11px;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    font-weight: 700;
-    margin-bottom: 8px;
-  }
-  &__title {
-    font-family: 'Newsreader', 'Poppins', serif;
-    font-size: clamp(1.25rem, 2.4vw, 1.8rem);
-    color: #1e293b;
-    margin: 0 0 4px;
-    font-weight: 600;
-  }
-  &__sub {
-    font-size: 0.92rem;
-    color: #64748b;
-    margin: 0;
-  }
-}
-
-// ── 3D stage ─────────────────────────────────────────────────────────────────
-.wg3-stage {
-  position: relative;
+  gap: 16px;
+  width: 100%;
+  max-width: 100%;
   margin: 0 auto;
-  max-width: 1100px;
-  height: clamp(260px, 34vw, 360px);
-  cursor: grab;
-  // Avoid text-selection / image-drag during interaction
-  user-select: none;
-  -webkit-user-select: none;
-
-  &:active { cursor: grabbing; }
 }
 
-.wg3-scene {
-  position: absolute;
-  inset: 0;
-  perspective: 1200px;
-  perspective-origin: 50% 50%;
-  transform-style: preserve-3d;
-  top:-50px
+// ── Viewport + auto-scrolling marquee track ─────────────────────────────────
+.wg-viewport {
+  flex: 1;
+  max-width: 100%;
+  overflow: hidden;
+  padding: 40px 0;
 }
 
-.wg3-carousel {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 280px;
-  height: 200px;
-  margin-left: -140px;
-  margin-top: -100px;
-  transform-style: preserve-3d;
-  // NB: actual transform is bound inline so the spin stays smooth (no CSS-transition).
+.wg-track {
+  display: flex;
+  gap: 48px;
+  // No CSS transition — the RAF loop drives `transform` directly each frame.
   will-change: transform;
 }
 
-.wg3-item {
-  position: absolute;
-  width: 280px;
-  height: 200px;
-  margin: 0;
-  border-radius: 14px;
-  overflow: hidden;
-  background: #0a1626;
-  border: 6px solid rgba(255, 255, 255, 0.92);
-  box-shadow:
-    0 18px 40px rgba(15, 23, 42, 0.35),
-    0 4px 14px rgba(15, 23, 42, 0.18);
-  backface-visibility: visible;
-  cursor: pointer;
-  transition: box-shadow 0.25s ease;
-
-  &:hover {
-    box-shadow:
-      0 24px 60px rgba(9, 121, 105, 0.55),
-      0 8px 22px rgba(15, 23, 42, 0.30);
-  }
+.wg-slot {
+  flex: none;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.wg3-item__img {
-  width: 100%; height: 100%;
+// ── Card frame (image + rotating beam halo) ─────────────────────────────────
+.wg-card-frame {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  cursor: zoom-in;
+}
+
+.wg-card-halo {
+  // Outer halo ring — only the bright beam shows, no solid black inset.
+  // Thicker ring for a more dramatic spinning-light effect.
+  position: absolute;
+  inset: -22px;
+  border-radius: 52px;
+  overflow: hidden;
+  pointer-events: none;
+  // Cut out the centre so the image isn't covered — same shape, transparent.
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+          mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  padding: 8px;
+
+  // No black mask layer — it stays clear so the image is fully visible.
+  &__mask { display: none; }
+}
+
+.wg-card-beam {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 165%;
+  aspect-ratio: 1;
+  transform: translate(-50%, -50%);
+  background: conic-gradient(
+    from 0deg,
+    transparent 35deg,
+    rgba(255, 255, 255, 0.18) 52deg,
+    rgba(255, 255, 255, 0.95) 62deg,
+    rgba(255, 255, 255, 0.18) 72deg,
+    transparent 90deg,
+    transparent 215deg,
+    rgba(255, 255, 255, 0.18) 232deg,
+    rgba(255, 255, 255, 0.95) 242deg,
+    rgba(255, 255, 255, 0.18) 252deg,
+    transparent 270deg
+  );
+  animation: wg-beamspin 4s linear infinite;
+}
+
+.wg-card-frame:hover .wg-card-beam {
+  animation-direction: reverse;
+}
+
+.wg-card-inner {
+  position: absolute;
+  inset: 0;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 22px 48px rgba(0, 0, 0, 0.55);
+  background: transparent;
+}
+
+.wg-card-img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   display: block;
-  pointer-events: none;
+  transition: transform 0.5s ease;
 }
 
-.wg3-item__index {
-  position: absolute;
-  top: 8px; left: 8px;
-  width: 26px; height: 26px;
-  border-radius: 50%;
-  background: rgba(0, 0, 0, 0.55);
-  color: #ffffff;
-  font-size: 12px;
-  font-weight: 800;
-  display: flex; align-items: center; justify-content: center;
-  letter-spacing: 0.04em;
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+.wg-card-frame:hover .wg-card-img {
+  transform: scale(1.04);
 }
 
-// ── Floor shadow / reflection plate ──────────────────────────────────────────
-.wg3-floor {
-  position: absolute;
-  left: 50%;
-  bottom: 8%;
-  transform: translateX(-50%);
-  width: min(680px, 80%);
-  height: 60px;
-  border-radius: 50%;
-  pointer-events: none;
-  background: radial-gradient(ellipse at center, rgba(9, 121, 105, 0.25) 0%, rgba(9, 121, 105, 0.05) 55%, transparent 80%);
-  filter: blur(4px);
-  z-index: 0;
+@keyframes wg-beamspin {
+  to { transform: translate(-50%, -50%) rotate(360deg); }
 }
 
 // ── Lightbox preview ────────────────────────────────────────────────────────
-.wg3-lb {
+.wg-lb {
   position: fixed;
   inset: 0;
   z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: center;
-  // Top padding clears the fixed site navbar; bottom keeps the caption visible.
   padding: 110px clamp(16px, 4vw, 48px) clamp(24px, 4vw, 48px);
-  background: rgba(8, 14, 24, 0.86);
+  background: rgba(0, 0, 0, 0.88);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-  animation: wg3-lb-fade 0.22s ease both;
+  animation: wg-lb-fade 0.22s ease both;
   cursor: zoom-out;
 }
 
-@keyframes wg3-lb-fade {
+@keyframes wg-lb-fade {
   from { opacity: 0; }
   to   { opacity: 1; }
 }
 
-.wg3-lb__figure {
+.wg-lb__figure {
   position: relative;
   margin: 0;
   max-width: min(1100px, 92vw);
@@ -260,50 +188,27 @@
   align-items: center;
   gap: 12px;
   cursor: default;
-  animation: wg3-lb-pop 0.32s cubic-bezier(0.2, 0.7, 0.3, 1.1) both;
+  animation: wg-lb-pop 0.32s cubic-bezier(0.2, 0.7, 0.3, 1.1) both;
 }
 
-@keyframes wg3-lb-pop {
+@keyframes wg-lb-pop {
   from { opacity: 0; transform: scale(0.92); }
   to   { opacity: 1; transform: scale(1); }
 }
 
-.wg3-lb__img {
+.wg-lb__img {
   max-width: 100%;
-  // Use min-height calc so the chip+gap below still fits inside the figure.
-  max-height: calc(100vh - 110px - 80px); // 110 top pad + ~80 for chip + gap + bottom pad
+  max-height: calc(100vh - 110px - 40px);
   object-fit: contain;
   border-radius: 12px;
   box-shadow:
     0 30px 80px rgba(0, 0, 0, 0.55),
     0 4px 20px rgba(0, 0, 0, 0.30);
   background: #0a1626;
-  margin-top: 40px;
+  margin-top: 35px;
 }
 
-.wg3-lb__caption {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  color: #ffffff;
-  font-size: 13px;
-  letter-spacing: 0.06em;
-}
-
-.wg3-lb__chip {
-  display: inline-block;
-  padding: 5px 12px;
-  background: rgba(255, 255, 255, 0.14);
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  border-radius: 999px;
-  text-transform: uppercase;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  font-size: 11px;
-}
-
-// Close button — high-contrast pill so it stays obvious over any image
-.wg3-lb__close {
+.wg-lb__close {
   position: fixed;
   z-index: 1100;
   top: clamp(90px, 12vw, 130px);
@@ -327,8 +232,6 @@
 
   svg { width: 18px; height: 18px; }
 
-  &::after { content: 'Close'; }
-
   &:hover {
     background: #b91c1c;
     border-color: #ffffff;
@@ -337,46 +240,56 @@
 }
 
 // ── Responsive ───────────────────────────────────────────────────────────────
-// Tablet — keep cards visually closer to the heading
-@media (max-width: 900px) {
-  .wg3-stage { height: 280px; }
-  .wg3-scene { top: -60px; }
-  .wg3-carousel {
-    width: 220px; height: 150px;
-    margin-left: -110px; margin-top: -75px;
-  }
-  .wg3-item { width: 220px; height: 150px; border-width: 5px; }
+// Large tablet (≤1100px) — shrink card width so 2 cards visible cleanly
+@media (max-width: 1100px) {
+  .wg-slot { width: 280px; }
+  .wg-card-frame { width: 280px; height: 280px; }
 }
 
-// Mobile — even tighter
+// Tablet (≤900px) — single column or near-single column
+@media (max-width: 900px) {
+  .wg-root { padding: 50px 18px; }
+  .wg-viewport { max-width: 100%; padding: 32px 0; }
+  .wg-track { gap: 24px; }
+  .wg-nav { width: 44px; height: 44px; font-size: 22px; }
+  .wg-slot { width: 260px; }
+  .wg-card-frame { width: 260px; height: 260px; }
+  .wg-card-halo { inset: -12px; border-radius: 38px; &__mask { inset: 2px; border-radius: 36px; } }
+  .wg-card-inner { border-radius: 26px; }
+  .wg-title { font-size: 30px; }
+  .wg-eyebrow { font-size: 0.68rem; letter-spacing: 0.2em; }
+}
+
 @media (max-width: 600px) {
-  .wg3-stage { height: 230px; }
-  .wg3-scene { top: -40px; }
-  .wg3-carousel {
-    width: 180px; height: 125px;
-    margin-left: -90px; margin-top: -62px;
+  // Cards become full-width on phones — one card per viewport.
+  .wg-root { padding: 40px 12px; }
+  .wg-stage { gap: 6px; }
+  .wg-nav { width: 36px; height: 36px; font-size: 20px; flex: none; }
+  .wg-viewport { padding: 24px 0; }
+  .wg-track { gap: 16px; }
+  .wg-title { font-size: 24px; }
+  .wg-eyebrow { font-size: 0.62rem; letter-spacing: 0.18em; }
+
+  .wg-slot {
+    width: calc(100vw - 100px); // leave room for prev/next + gaps
+    max-width: 360px;
   }
-  .wg3-item {
-    width: 180px; height: 125px;
-    border-width: 4px;
-    border-radius: 10px;
-  }
-  .wg3-item__index { width: 22px; height: 22px; font-size: 10.5px; }
-  .wg3-tab {
-    padding: 8px 12px;
-    font-size: 12.5px;
-    &__id { min-width: 22px; height: 22px; font-size: 10.5px; border-radius: 6px; }
+  .wg-card-frame {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1; // keep the square frame
   }
 
-  .wg3-lb { padding: 80px 12px 16px; }
-  .wg3-lb__close {
-    top: 70px;
-    right: 12px;
+  .wg-card-halo { inset: -10px; border-radius: 32px; &__mask { inset: 2px; border-radius: 30px; } }
+  .wg-card-inner { border-radius: 22px; }
+
+  .wg-lb { padding: 80px 12px 16px; }
+  .wg-lb__close {
+    top: 70px; right: 12px;
     padding: 8px 14px 8px 10px;
     font-size: 12.5px;
     gap: 6px;
     svg { width: 15px; height: 15px; }
   }
-  .wg3-lb__img { max-height: calc(100vh - 80px - 70px); }
-  .wg3-lb__chip { font-size: 10px; padding: 4px 10px; }
+  .wg-lb__img { max-height: calc(100vh - 80px - 40px); }
 }

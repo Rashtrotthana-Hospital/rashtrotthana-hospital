@@ -1,6 +1,6 @@
 import {
   AfterViewInit, ChangeDetectionStrategy, Component,
-  NgZone, OnDestroy, OnInit,
+  ElementRef, NgZone, OnDestroy, OnInit, ViewChild,
   ViewEncapsulation, inject, signal, computed,
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -112,43 +112,82 @@ interface Ph {
   sub:string; icon:string; dot:string;
   activeBg:string; activeBorder:string; activeTitle:string; activeDot:string;
 }
+// Card palette — uniform dark translucent navy across all seasons (matches the
+// Six Seasons reference). Each season keeps its own accent hue for the time
+// label, dot and *active* border so it still reads as season-specific.
+// Higher alpha so the dark navy section background doesn't bleed through and
+// make the card centre look black.
+const CARD_BG        = 'rgba(22,38,55,0.92)';      // base card background
+const CARD_BG_ACTIVE = 'rgba(28,48,70,0.96)';      // active card slightly more solid
+const CARD_BORDER    = 'rgba(120,160,180,0.28)';   // muted neutral rim
 const PHASE: Ph[] = [
   // 0 Shishira — Late Winter: icy silver-blue
-  { cardBg:'rgba(10,28,50,0.65)',  border:'rgba(130,185,215,0.55)',
-    title:'#d8eef8', time:'rgba(165,215,240,0.92)', sub:'rgba(140,195,225,0.72)', icon:'rgba(160,220,245,0.96)',
-    dot:'rgba(80,160,210,0.90)', activeBg:'rgba(18,55,90,0.82)', activeBorder:'rgba(140,200,235,0.92)',
-    activeTitle:'#eaf6ff', activeDot:'#80c8e8' },
+  { cardBg: CARD_BG, border: CARD_BORDER,
+    title:'#f3f8fb', time:'#9fd4e6', sub:'rgba(190,210,222,0.62)', icon:'rgba(159,212,230,0.96)',
+    dot:'rgba(159,212,230,0.90)', activeBg: CARD_BG_ACTIVE, activeBorder:'rgba(150,200,230,0.65)',
+    activeTitle:'#f3f8fb', activeDot:'#bfe6f0' },
   // 1 Vasanta — Spring: fresh green
-  { cardBg:'rgba(8,40,20,0.65)',   border:'rgba(80,185,110,0.55)',
-    title:'#c8f0d8', time:'rgba(120,220,155,0.92)', sub:'rgba(100,200,135,0.72)', icon:'rgba(110,215,145,0.96)',
-    dot:'rgba(50,175,90,0.90)', activeBg:'rgba(14,70,35,0.82)', activeBorder:'rgba(90,200,125,0.92)',
-    activeTitle:'#dff8e8', activeDot:'#5ece88' },
-  // 2 Grishma — Summer: fiery amber-orange
-  { cardBg:'rgba(60,22,0,0.65)',   border:'rgba(240,140,30,0.55)',
-    title:'#ffe8b0', time:'rgba(255,200,80,0.92)', sub:'rgba(255,185,70,0.72)', icon:'rgba(255,195,75,0.96)',
-    dot:'rgba(235,140,20,0.90)', activeBg:'rgba(110,42,0,0.82)', activeBorder:'rgba(255,165,40,0.92)',
-    activeTitle:'#fff4cc', activeDot:'#f8b828' },
+  { cardBg: CARD_BG, border: CARD_BORDER,
+    title:'#f3f8fb', time:'#9fe6b8', sub:'rgba(190,210,222,0.62)', icon:'rgba(159,230,184,0.96)',
+    dot:'rgba(143,230,168,0.90)', activeBg: CARD_BG_ACTIVE, activeBorder:'rgba(150,220,170,0.65)',
+    activeTitle:'#f3f8fb', activeDot:'#8fe6a8' },
+  // 2 Grishma — Summer: warm amber-gold
+  { cardBg: CARD_BG, border: CARD_BORDER,
+    title:'#f3f8fb', time:'#f0c878', sub:'rgba(190,210,222,0.62)', icon:'rgba(240,200,120,0.96)',
+    dot:'rgba(240,200,120,0.90)', activeBg: CARD_BG_ACTIVE, activeBorder:'rgba(240,200,120,0.70)',
+    activeTitle:'#f3f8fb', activeDot:'#f0c878' },
   // 3 Varsha — Rainy Season: monsoon blue
-  { cardBg:'rgba(8,20,45,0.68)',   border:'rgba(70,130,200,0.52)',
-    title:'#c0d8f8', time:'rgba(140,185,240,0.92)', sub:'rgba(120,165,225,0.72)', icon:'rgba(110,175,240,0.96)',
-    dot:'rgba(55,125,210,0.90)', activeBg:'rgba(12,35,75,0.82)', activeBorder:'rgba(80,150,220,0.92)',
-    activeTitle:'#d8eaff', activeDot:'#60a8e8' },
+  { cardBg: CARD_BG, border: CARD_BORDER,
+    title:'#f3f8fb', time:'#9cc2ea', sub:'rgba(190,210,222,0.62)', icon:'rgba(156,194,234,0.96)',
+    dot:'rgba(156,194,234,0.90)', activeBg: CARD_BG_ACTIVE, activeBorder:'rgba(140,180,225,0.70)',
+    activeTitle:'#f3f8fb', activeDot:'#9cc2ea' },
   // 4 Sharad — Autumn: warm rust-gold
-  { cardBg:'rgba(50,15,5,0.68)',   border:'rgba(220,130,40,0.55)',
-    title:'#ffd8a0', time:'rgba(245,185,90,0.92)', sub:'rgba(230,168,78,0.72)', icon:'rgba(240,175,80,0.96)',
-    dot:'rgba(210,118,28,0.90)', activeBg:'rgba(95,28,8,0.82)', activeBorder:'rgba(238,148,48,0.92)',
-    activeTitle:'#ffe8c0', activeDot:'#e8a030' },
+  { cardBg: CARD_BG, border: CARD_BORDER,
+    title:'#f3f8fb', time:'#ec9a63', sub:'rgba(190,210,222,0.62)', icon:'rgba(236,154,99,0.96)',
+    dot:'rgba(236,154,99,0.90)', activeBg: CARD_BG_ACTIVE, activeBorder:'rgba(225,150,95,0.70)',
+    activeTitle:'#f3f8fb', activeDot:'#ec9a63' },
   // 5 Hemanta — Early Winter: deep teal
-  { cardBg:'rgba(4,20,28,0.70)',   border:'rgba(50,145,155,0.48)',
-    title:'#a8dce5', time:'rgba(120,195,210,0.88)', sub:'rgba(100,175,192,0.68)', icon:'rgba(95,185,200,0.96)',
-    dot:'rgba(38,138,155,0.85)', activeBg:'rgba(6,38,50,0.85)', activeBorder:'rgba(60,165,180,0.90)',
-    activeTitle:'#c5eaf0', activeDot:'#48b8c8' },
+  { cardBg: CARD_BG, border: CARD_BORDER,
+    title:'#f3f8fb', time:'#b3d7ee', sub:'rgba(190,210,222,0.62)', icon:'rgba(179,215,238,0.96)',
+    dot:'rgba(179,215,238,0.90)', activeBg: CARD_BG_ACTIVE, activeBorder:'rgba(170,210,235,0.70)',
+    activeTitle:'#f3f8fb', activeDot:'#b3d7ee' },
 ];
 
 // Card 4 (19:00–21:00) is at arcT 0.70 — moon starts exactly here
 // moonOpacity goes 0→1 between t=CARD_T[4] and t=CARD_T[4]+0.06
 const MOON_START_T = CARD_T[4];       // 0.70
 const MOON_FADE_SPAN = 0.05;          // fully moon by MOON_START_T+0.05
+
+// ── Per-season FX modes for canvas particles ────────────────────────────────
+// 0 Shishira (late winter) → snow, icy blue glow
+// 1 Vasanta  (spring)      → petal, fresh green glow
+// 2 Grishma  (summer)      → heat shimmer, amber glow
+// 3 Varsha   (rainy)       → rain, deep blue glow
+// 4 Sharad   (autumn)      → leaf, rust gold glow
+// 5 Hemanta  (early winter) → frost, deep teal glow
+type FxMode = 'snow' | 'petal' | 'heat' | 'rain' | 'leaf' | 'frost';
+const SEASON_FX: { mode: FxMode; glow: [number, number, number]; count: number }[] = [
+  { mode: 'snow',  glow: [120, 180, 225], count: 130 },
+  { mode: 'petal', glow: [120, 210, 150], count: 140 },
+  { mode: 'heat',  glow: [232, 165,  75], count:  70 },
+  { mode: 'rain',  glow: [110, 160, 215], count: 150 },
+  { mode: 'leaf',  glow: [210, 120,  65], count:  90 },
+  { mode: 'frost', glow: [150, 195, 230], count: 110 },
+];
+
+interface FxParticle {
+  type: FxMode;
+  x: number; y: number;
+  vx: number; vy: number;
+  size: number;
+  rot?: number; vr?: number;
+  a: number;
+  ph?: number; sw?: number;
+  len?: number;
+  col?: [number, number, number];
+}
+
+interface FxStar { x: number; y: number; r: number; p: number; s: number; }
 
 @Component({
   selector: 'app-dinacharya-timeline',
@@ -160,6 +199,8 @@ const MOON_FADE_SPAN = 0.05;          // fully moon by MOON_START_T+0.05
 })
 export class DinacharyaTimelineComponent implements OnInit, AfterViewInit, OnDestroy {
   private readonly zone = inject(NgZone);
+
+  @ViewChild('fxCanvas', { static: false }) fxCanvas?: ElementRef<HTMLCanvasElement>;
 
   readonly arcPath = `M ${P0.x} ${P0.y} Q ${P1.x} ${P1.y} ${P2.x} ${P2.y}`;
   readonly arcFill = `M ${P0.x} ${P0.y} Q ${P1.x} ${P1.y} ${P2.x} ${P2.y} L ${P2.x} ${VH} L ${P0.x} ${VH} Z`;
@@ -220,12 +261,29 @@ export class DinacharyaTimelineComponent implements OnInit, AfterViewInit, OnDes
 
   private rafId?: number;
   private paused = false;
-  private speed  = 0.000048;
+  private speed  = 0.000030;   // slower sun travel (~33s for one full arc loop)
   private lastTime = 0;
   private resumeTO?: ReturnType<typeof setTimeout>;
   private prevBgIdx = -1;
   private fadeId    = 0;
   private fadeCurrent = 1;
+
+  // ── FX canvas state ────────────────────────────────────────────────────────
+  private fxCtx?: CanvasRenderingContext2D | null;
+  private fxRafId?: number;
+  private fxW = 0;
+  private fxH = 0;
+  private fxLast = 0;
+  private fxT = 0;
+  private fxParts: FxParticle[] = [];
+  private fxStars: FxStar[] = [];
+  private fxMode: FxMode = SEASON_FX[0].mode;
+  private fxGlow: [number, number, number] = [...SEASON_FX[0].glow];
+  private fxGlowTarget: [number, number, number] = [...SEASON_FX[0].glow];
+  private fxGlowAlpha = 1;
+  private fxGlowAlphaTarget = 1;
+  private fxActiveIdx = 0;
+  private fxResizeHandler = () => this.resizeFxCanvas();
 
   // 6 timeline cards — arcT mapped to CARD_T array for even visual spacing
   readonly cards: TimelineCard[] = [
@@ -323,12 +381,286 @@ export class DinacharyaTimelineComponent implements OnInit, AfterViewInit, OnDes
 
   ngOnInit()        { this.bgA.set(SKY[0]); this.bgB.set(SKY[0]); this.bgFade.set(1); }
   ngAfterViewInit() {
-    this.zone.runOutsideAngular(() => this.tick(performance.now()));
+    this.zone.runOutsideAngular(() => {
+      this.tick(performance.now());
+      this.initFxCanvas();
+    });
   }
   ngOnDestroy() {
     if (this.rafId) cancelAnimationFrame(this.rafId);
+    if (this.fxRafId) cancelAnimationFrame(this.fxRafId);
+    window.removeEventListener('resize', this.fxResizeHandler);
     clearTimeout(this.resumeTO);
     this.fadeId++;
+  }
+
+  // ── FX canvas: stars + per-season particles + season-coloured glow wash ───
+  private initFxCanvas() {
+    const cvs = this.fxCanvas?.nativeElement;
+    if (!cvs) return;
+    this.fxCtx = cvs.getContext('2d');
+    this.resizeFxCanvas();
+    window.addEventListener('resize', this.fxResizeHandler, { passive: true });
+
+    // Seed stars (positioned in canvas-pixel coordinates)
+    const STAR_COUNT = 90;
+    this.fxStars = [];
+    for (let i = 0; i < STAR_COUNT; i++) {
+      this.fxStars.push({
+        x: Math.random() * this.fxW,
+        y: Math.random() * this.fxH * 0.7,
+        r: Math.random() * 1.2 + 0.3,
+        p: Math.random() * Math.PI * 2,
+        s: Math.random() * 0.7 + 0.3,
+      });
+    }
+
+    // Sync to current active season
+    this.setFxSeason(this.activeIdx());
+
+    this.fxLast = performance.now();
+    this.fxRafId = requestAnimationFrame(ts => this.fxLoop(ts));
+  }
+
+  private resizeFxCanvas() {
+    const cvs = this.fxCanvas?.nativeElement;
+    if (!cvs) return;
+    const rect = cvs.getBoundingClientRect();
+    const dpr = Math.min(window.devicePixelRatio || 1, 2);
+    this.fxW = Math.max(1, rect.width);
+    this.fxH = Math.max(1, rect.height);
+    cvs.width  = Math.round(this.fxW * dpr);
+    cvs.height = Math.round(this.fxH * dpr);
+    if (this.fxCtx) this.fxCtx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  }
+
+  // Switch the FX mode + glow target to the given season index (0..5).
+  // Called from updateActive() when the sun crosses to a new card.
+  // Hard-wipes the particle pool so no leftover leaves/petals/etc from the
+  // previous season linger on screen during the next card's animation.
+  private setFxSeason(i: number) {
+    if (i === this.fxActiveIdx && this.fxParts.length > 0) return;
+    this.fxActiveIdx = i;
+    const fx = SEASON_FX[i] ?? SEASON_FX[0];
+    this.fxMode = fx.mode;
+    this.fxGlowTarget = [...fx.glow];
+    // Clear leftover particles so each card only shows its own FX
+    this.fxParts.length = 0;
+  }
+
+  // Radiant summer sun — drawn at the top-left of the canvas during Grishma.
+  // Replaces the rising heat bubbles with a static, glowing celestial body.
+  // Drawn with bright opaque core so no dark hole shows in the centre, then
+  // rays + soft outer halo blend out into the warm season wash.
+  private drawSummerSun(ctx: CanvasRenderingContext2D, W: number, H: number) {
+    const cx = W * 0.12;
+    const cy = H * 0.18;
+    const a = this.fxGlowAlpha;
+    const pulse = 0.5 + 0.5 * Math.sin(this.fxT * 0.04);
+    const r = 36 + pulse * 4;
+
+    // Soft outer halo (large, low alpha — bleeds into the surrounding wash)
+    const halo = ctx.createRadialGradient(cx, cy, r * 0.6, cx, cy, r * 4.2);
+    halo.addColorStop(0,    `rgba(255,232,170,${0.45 * a})`);
+    halo.addColorStop(0.45, `rgba(255,200,110,${0.18 * a})`);
+    halo.addColorStop(1,    'rgba(255,180,80,0)');
+    ctx.fillStyle = halo;
+    ctx.beginPath();
+    ctx.arc(cx, cy, r * 4.2, 0, Math.PI * 2);
+    ctx.fill();
+
+    // Mid disc — warm yellow/orange, fully opaque so no dark hole shows.
+    const disc = ctx.createRadialGradient(cx, cy, 0, cx, cy, r);
+    disc.addColorStop(0,    `rgba(255,246,210,${1.00 * a})`);
+    disc.addColorStop(0.55, `rgba(255,212,130,${0.95 * a})`);
+    disc.addColorStop(1,    `rgba(255,180, 70,${0.85 * a})`);
+    ctx.fillStyle = disc;
+    ctx.beginPath();
+    ctx.arc(cx, cy, r, 0, Math.PI * 2);
+    ctx.fill();
+
+    // Bright cream core
+    ctx.fillStyle = `rgba(255,252,240,${0.98 * a})`;
+    ctx.beginPath();
+    ctx.arc(cx, cy, r * 0.45, 0, Math.PI * 2);
+    ctx.fill();
+
+    // Rays — 12 spokes that pulse out from the core
+    const rays = 12;
+    const rot = this.fxT * 0.004;
+    ctx.strokeStyle = `rgba(255,224,150,${0.8 * a})`;
+    ctx.lineWidth = 2.5;
+    ctx.lineCap = 'round';
+    for (let i = 0; i < rays; i++) {
+      const ang = rot + i * (Math.PI * 2 / rays);
+      const r1 = r * 1.15;
+      const r2 = r1 + 16 + (i % 2) * 7 + pulse * 7;
+      ctx.beginPath();
+      ctx.moveTo(cx + Math.cos(ang) * r1, cy + Math.sin(ang) * r1);
+      ctx.lineTo(cx + Math.cos(ang) * r2, cy + Math.sin(ang) * r2);
+      ctx.stroke();
+    }
+  }
+
+  private spawnFxParticle(mode: FxMode): FxParticle {
+    const W = this.fxW, H = this.fxH, R = Math.random;
+    if (mode === 'heat') {
+      return { type: 'heat', x: R()*W, y: H + R()*40, vx: (R()-0.5)*0.3, vy: -(0.5 + R()*1.1),
+               size: 5 + R()*9, a: 0.05 + R()*0.12, ph: R()*Math.PI*2 };
+    }
+    if (mode === 'rain') {
+      return { type: 'rain', x: R()*W, y: -R()*H, vx: 0.8, vy: 10 + R()*7,
+               size: 0, len: 10 + R()*12, a: 0.30 + R()*0.30 };
+    }
+    if (mode === 'snow' || mode === 'frost') {
+      const small = mode === 'frost';
+      return { type: 'snow', x: R()*W, y: -R()*H, vx: 0, vy: (small?0.4:0.6) + R()*(small?0.7:1.0),
+               size: (small?1:1.4) + R()*(small?1.4:2.0), a: 0.55 + R()*0.4,
+               ph: R()*Math.PI*2, sw: 0.4 + R()*0.9,
+               col: small ? [225,238,250] : [255,255,255] };
+    }
+    if (mode === 'petal') {
+      // Spring greens — fresh foliage palette (light lime → mid green → deep leaf)
+      const pal: [number,number,number][] = [
+        [180, 230, 150],  // soft lime
+        [140, 215, 120],  // fresh green
+        [108, 195,  95],  // leaf green
+        [200, 240, 170],  // pale spring
+      ];
+      return { type: 'petal', x: R()*W, y: -R()*H, vx: (R()-0.5)*1.0, vy: 0.8 + R()*1.1,
+               size: 4 + R()*4, rot: R()*Math.PI*2, vr: (R()-0.5)*0.12, a: 0.7 + R()*0.3,
+               ph: R()*Math.PI*2, sw: 0.6 + R()*1.0, col: pal[(R()*pal.length)|0] };
+    }
+    // leaf (sharad)
+    const pal: [number,number,number][] = [[214,120,60],[228,150,70],[196,80,52],[180,110,60]];
+    return { type: 'leaf', x: R()*W, y: -R()*H, vx: (R()-0.5)*1.2, vy: 1.0 + R()*1.3,
+             size: 5 + R()*6, rot: R()*Math.PI*2, vr: (R()-0.5)*0.14, a: 0.7 + R()*0.3,
+             ph: R()*Math.PI*2, sw: 0.8 + R()*1.2, col: pal[(R()*pal.length)|0] };
+  }
+
+  private fxLoop(now: number) {
+    this.fxRafId = requestAnimationFrame(ts => this.fxLoop(ts));
+    const dt = Math.min(2.4, (now - this.fxLast) / 16.67);
+    this.fxLast = now;
+    this.fxT += dt;
+    const ctx = this.fxCtx;
+    if (!ctx) return;
+    const W = this.fxW, H = this.fxH;
+
+    // Ease glow colour toward target season (faster on click → snappier change)
+    for (let k = 0; k < 3; k++) this.fxGlow[k] += (this.fxGlowTarget[k] - this.fxGlow[k]) * 0.12 * dt;
+
+    // Ease the glow brightness toward its target so the FX never pops in/out
+    // when the sun crosses card boundaries.
+    this.fxGlowAlpha += (this.fxGlowAlphaTarget - this.fxGlowAlpha) * 0.06 * dt;
+
+    ctx.clearRect(0, 0, W, H);
+
+    // Season glow wash (centred low so it tints from the horizon up).
+    // Summer (heat) gets a much brighter / warmer wash plus a top-left sun glow
+    // so the scene feels noticeably hot, not just amber-tinted.
+    if (this.fxGlowAlpha > 0.01) {
+      const [r,g,b] = this.fxGlow.map(v => v | 0);
+      const ga = this.fxGlowAlpha;
+      const isHeat = this.fxMode === 'heat';
+      const baseA  = isHeat ? 0.85 : 0.45;
+
+      // Bottom-up wash
+      const rg = ctx.createRadialGradient(W/2, H + 40, 60, W/2, H*0.8, Math.max(W, H));
+      rg.addColorStop(0,    `rgba(${r},${g},${b},${baseA * ga})`);
+      rg.addColorStop(0.55, `rgba(${r},${g},${b},${baseA * 0.45 * ga})`);
+      rg.addColorStop(1,    `rgba(${r},${g},${b},0)`);
+      ctx.fillStyle = rg;
+      ctx.fillRect(0, 0, W, H);
+
+      if (isHeat) {
+        // Extra warm-amber top-left blast emanating from where the sun sits.
+        const sx = W * 0.12;
+        const sy = H * 0.18;
+        const sun = ctx.createRadialGradient(sx, sy, 0, sx, sy, Math.max(W, H) * 0.85);
+        sun.addColorStop(0,    `rgba(255,210,120,${0.70 * ga})`);
+        sun.addColorStop(0.30, `rgba(255,170, 80,${0.32 * ga})`);
+        sun.addColorStop(1,    'rgba(255,170,80,0)');
+        ctx.fillStyle = sun;
+        ctx.fillRect(0, 0, W, H);
+
+        // Subtle full-frame golden veil so the sky/cards read as sun-baked.
+        ctx.fillStyle = `rgba(255,196,120,${0.18 * ga})`;
+        ctx.fillRect(0, 0, W, H);
+      }
+    }
+
+    // Stars
+    for (const s of this.fxStars) {
+      const tw = 0.45 + 0.55 * (0.5 + 0.5 * Math.sin(this.fxT * 0.03 * s.s + s.p));
+      ctx.beginPath();
+      ctx.fillStyle = `rgba(220,236,246,${tw * 0.55})`;
+      ctx.arc(s.x, s.y, s.r, 0, Math.PI*2);
+      ctx.fill();
+    }
+
+    // Summer (Grishma) gets a dedicated radiant sun overlay at the top of the
+    // canvas instead of rising heat bubbles.
+    if (this.fxMode === 'heat' && this.fxGlowAlpha > 0.05) {
+      this.drawSummerSun(ctx, W, H);
+    }
+
+    // Spawn particles up to target count (higher per-frame budget so a fresh
+    // season fills the screen quickly when the user clicks a card).
+    // 'heat' has no rising particles — its visual is the radiant sun above.
+    if (this.fxMode !== 'heat') {
+      const targetN = (SEASON_FX[this.fxActiveIdx]?.count ?? 80) * this.fxGlowAlpha;
+      let guard = 0;
+      while (this.fxParts.length < targetN && guard++ < 30) {
+        this.fxParts.push(this.spawnFxParticle(this.fxMode));
+      }
+    }
+
+    // Update + draw particles
+    for (let i = this.fxParts.length - 1; i >= 0; i--) {
+      const p = this.fxParts[i];
+      if (p.type === 'heat') {
+        p.y += p.vy * dt; p.x += Math.sin(this.fxT * 0.05 + (p.ph ?? 0)) * 0.4 * dt;
+        if (p.y < -30) { this.fxParts.splice(i, 1); continue; }
+        const rg = ctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, p.size);
+        rg.addColorStop(0, `rgba(255,200,110,${p.a})`);
+        rg.addColorStop(1, 'rgba(255,200,110,0)');
+        ctx.fillStyle = rg; ctx.beginPath(); ctx.arc(p.x, p.y, p.size, 0, Math.PI*2); ctx.fill();
+      } else if (p.type === 'rain') {
+        p.y += p.vy * dt; p.x += p.vx * dt;
+        if (p.y - (p.len ?? 0) > H) { this.fxParts.splice(i, 1); continue; }
+        ctx.strokeStyle = `rgba(175,205,235,${p.a})`; ctx.lineWidth = 1.1;
+        ctx.beginPath();
+        ctx.moveTo(p.x, p.y);
+        ctx.lineTo(p.x - p.vx * 1.3, p.y - (p.len ?? 0));
+        ctx.stroke();
+      } else if (p.type === 'snow') {
+        p.y += p.vy * dt;
+        p.x += Math.sin(this.fxT * 0.04 * (p.sw ?? 1) + (p.ph ?? 0)) * (p.sw ?? 1) * 0.5 * dt;
+        if (p.y > H + 10) { this.fxParts.splice(i, 1); continue; }
+        const [r,g,b] = p.col ?? [255,255,255];
+        ctx.beginPath();
+        ctx.fillStyle = `rgba(${r},${g},${b},${p.a})`;
+        ctx.arc(p.x, p.y, p.size, 0, Math.PI*2);
+        ctx.fill();
+      } else {
+        // petal / leaf
+        p.y += p.vy * dt;
+        p.x += (p.vx + Math.sin(this.fxT * 0.03 * (p.sw ?? 1) + (p.ph ?? 0)) * (p.sw ?? 1)) * dt;
+        if (p.rot !== undefined && p.vr !== undefined) p.rot += p.vr * dt;
+        if (p.y > H + 16) { this.fxParts.splice(i, 1); continue; }
+        ctx.save();
+        ctx.translate(p.x, p.y);
+        ctx.rotate(p.rot ?? 0);
+        const [r,g,b] = p.col ?? [220,160,90];
+        ctx.fillStyle = `rgba(${r},${g},${b},${p.a})`;
+        ctx.beginPath();
+        if (p.type === 'leaf') ctx.ellipse(0, 0, p.size, p.size * 0.55, 0, 0, Math.PI*2);
+        else                    ctx.ellipse(0, 0, p.size * 0.7, p.size, 0, 0, Math.PI*2);
+        ctx.fill();
+        ctx.restore();
+      }
+    }
   }
 
   private tick(now: number): void {
@@ -364,10 +696,16 @@ export class DinacharyaTimelineComponent implements OnInit, AfterViewInit, OnDes
       const d = Math.abs(this.cards[i].arcT - t);
       if (d < bestD) { bestD = d; best = i; }
     }
+    // Keep the season glow at full strength at ALL times — between cards the
+    // colour simply stays on the previous season until the sun arrives at the
+    // next card and the colour eases toward the new target. No black gaps.
+    this.fxGlowAlphaTarget = 1;
+
     // Activate card only when sun/moon is within 0.05 of the card's arcT
     if (bestD < 0.05 && this.activeIdx() !== best) {
       this.activeIdx.set(best);
       this.isNight.set(this.cards[best].isNight);
+      this.setFxSeason(best);
       if (this.prevBgIdx !== best) {
         this.prevBgIdx = best;
         this.bgA.set(this.bgB()); this.bgB.set(SKY[best]);
@@ -435,6 +773,7 @@ export class DinacharyaTimelineComponent implements OnInit, AfterViewInit, OnDes
     this.celestialT.set(this.cards[i].arcT);
     this.activeIdx.set(i);
     this.isNight.set(this.cards[i].isNight);
+    this.setFxSeason(i);                 // switch canvas particles + glow
     this.bgA.set(this.bgB()); this.bgB.set(SKY[i]);
     this.fadeCurrent = 0; this.bgFade.set(0);
     this.prevBgIdx = i; this.phaseBlend.set(i);
