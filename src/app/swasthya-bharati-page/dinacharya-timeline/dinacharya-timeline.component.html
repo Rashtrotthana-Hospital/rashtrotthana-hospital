@@ -190,10 +190,10 @@
               <img [src]="card.img" [alt]="card.english" class="dt-flip-img" />
             </div>
             <div class="dt-flip-front-text">
-              <span class="dt-t-time" [style.color]="timeColor()">{{ card.time }}</span>
-              <span class="dt-t-sans" [style.color]="subColor()">{{ card.sanskrit }}</span>
+              <span class="dt-t-time" [style.color]="timeColor(i)">{{ card.time }}</span>
+              <span class="dt-t-sans" [style.color]="subColor(i)">{{ card.sanskrit }}</span>
               <strong class="dt-t-eng" [style.color]="titleColor(i)">{{ card.english }}</strong>
-              <span class="dt-t-desc" [style.color]="subColor()">{{ card.desc }}</span>
+              <span class="dt-t-desc" [style.color]="subColor(i)">{{ card.desc }}</span>
             </div>
             <span class="dt-flip-accent" [style.background]="cardBorder(i)"></span>
           </div>
