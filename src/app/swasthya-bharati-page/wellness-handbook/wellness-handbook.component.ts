@@ -65,7 +65,7 @@ export class WellnessHandbookComponent implements AfterViewInit, OnDestroy {
 
   readonly sections: KanbanSection[] = [
     {
-      icon: 'sun', img: 'https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=160&h=160&fit=crop', tag: 'Daily regimen',
+      icon: 'sun', img: 'https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=160&h=160&fit=crop', tag: 'Dinacharya',
       title: 'Dinacharya (Daily Regimen)',
       desc: 'Structured daily routines for health and vitality',
       hideColHead: true,
@@ -122,7 +122,7 @@ export class WellnessHandbookComponent implements AfterViewInit, OnDestroy {
       ],
     },
     {
-      icon: 'bowl', img: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=160&h=160&fit=crop', tag: 'Food',
+      icon: 'bowl', img: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=160&h=160&fit=crop', tag: 'Ahara',
       title: 'Ahara (Food) — guidelines for healthy eating',
       desc: 'Food as the foundation of physical, mental, and spiritual well-being',
       cols: [
@@ -159,46 +159,6 @@ export class WellnessHandbookComponent implements AfterViewInit, OnDestroy {
             { n: '3',  t: 'Maintain purity in preparation',             d: 'Cleanliness of utensils, place, cook\'s mental state' },
             { n: '4',  t: 'Avoid incompatible combinations (Viruddha)', d: 'E.g. milk should not be combined with salty or sour' },
             { n: '14', t: 'Avoid processed foods; prefer organic',      d: 'Highly processed items harm long-term health' },
-          ],
-        },
-      ],
-    },
-    {
-      icon: 'heart', img: 'https://images.unsplash.com/photo-1499209974431-9dddcece7f88?w=160&h=160&fit=crop', tag: 'Wellness code',
-      title: 'Sadvritta (Code of Conduct for Complete Well-being)',
-      desc: 'True wellness includes mental, emotional, and spiritual dimensions',
-      cols: [
-        {
-          label: 'Daily habits', colIcon: 'calendar', bg: '#eef2ff', headBg: '#e0e7ff', iconBg: '#c7d2fe', iconColor: '#3730a3',
-          labelColor: '#3730a3', countBg: '#c7d2fe', countColor: '#3730a3',
-          cardBorder: '#e0e7ff', numBg: '#eef2ff', numColor: '#4338ca',
-          items: [
-            { n: '→', t: 'Follow a planned daily routine', d: 'Avoid last-minute pressure with a timetable' },
-            { n: '→', t: 'Prepare comprehensive plans',    d: 'Daily, weekly, monthly, and yearly roadmap' },
-            { n: '→', t: 'Write down goals and thoughts',  d: 'Clarity in planning reduces confusion and stress' },
-            { n: '→', t: 'Spend quality time with family', d: 'Without television or mobile phones' },
-          ],
-        },
-        {
-          label: 'Life balance', colIcon: 'balance', bg: '#fffbeb', headBg: '#fef3c7', iconBg: '#fde68a', iconColor: '#92400e',
-          labelColor: '#92400e', countBg: '#fde68a', countColor: '#92400e',
-          cardBorder: '#fde68a', numBg: '#fffbeb', numColor: '#b45309',
-          items: [
-            { n: '→', t: 'Give equal importance to all life spheres', d: 'Professional, personal, family, social, spiritual' },
-            { n: '→', t: 'Choose satisfying work',                    d: 'Not just financial gain' },
-            { n: '→', t: 'Pursue activities beyond profession',       d: 'Art, travel, music, social activities' },
-            { n: '→', t: 'Follow a spiritual path',                   d: 'Self-reflection reduces inner conflicts and stress' },
-          ],
-        },
-        {
-          label: 'Traits to control', colIcon: 'shield', bg: '#fff1f2', headBg: '#ffe4e6', iconBg: '#fecdd3', iconColor: '#9f1239',
-          labelColor: '#9f1239', countBg: '#fecdd3', countColor: '#9f1239',
-          cardBorder: '#fecdd3', numBg: '#fff1f2', numColor: '#be123c',
-          items: [
-            { n: '✗', t: 'Greed',                               d: 'Difference between need and want; harms self and others' },
-            { n: '✗', t: 'Uncontrolled anger',                  d: 'Destroys peace and relationships' },
-            { n: '✗', t: 'Wrong desires',                       d: 'Unrighteous desires lead to suffering' },
-            { n: '✗', t: 'Jealousy, ego, excessive attachment', d: 'Lead to hatred, inner unrest, and suffering' },
           ],
         },
       ],
@@ -291,59 +251,15 @@ export class WellnessHandbookComponent implements AfterViewInit, OnDestroy {
         },
       ],
     },
-    // ── Sadvritta (Code of Ethical Conduct) ─────────────────────────────────
-    {
-      icon: 'heart', img: 'https://images.unsplash.com/photo-1499209974431-9dddcece7f88?w=160&h=160&fit=crop',
-      tag: 'Sadvritta',
-      title: 'Sadvritta (Code of Ethical Conduct)',
-      desc: 'Right conduct that nurtures harmony in body, mind, family and society',
-      cols: [
-        {
-          label: 'Personal conduct', colIcon: 'leaf', bg: '#f0fdf4', headBg: '#dcfce7', iconBg: '#bbf7d0', iconColor: '#166534',
-          labelColor: '#166534', countBg: '#bbf7d0', countColor: '#166534',
-          cardBorder: '#bbf7d0', numBg: '#f0fdf4', numColor: '#15803d',
-          items: [
-            { n: '1', t: 'Speak the truth (Satya)',         d: 'Words should be honest, gentle and beneficial' },
-            { n: '2', t: 'Practise non-violence (Ahimsa)',  d: 'In thought, word and deed' },
-            { n: '3', t: 'Be clean & well-groomed',         d: 'Daily hygiene of body, clothing and surroundings' },
-            { n: '4', t: 'Cultivate self-discipline',       d: 'Control over the senses (Indriya-nigraha)' },
-            { n: '5', t: 'Practise gratitude',              d: 'Towards parents, teachers, elders and nature' },
-          ],
-        },
-        {
-          label: 'Social conduct', colIcon: 'community', bg: '#fffbeb', headBg: '#fef3c7', iconBg: '#fde68a', iconColor: '#92400e',
-          labelColor: '#92400e', countBg: '#fde68a', countColor: '#92400e',
-          cardBorder: '#fde68a', numBg: '#fffbeb', numColor: '#b45309',
-          items: [
-            { n: '6',  t: 'Respect elders & teachers',     d: 'Acknowledge wisdom and guidance' },
-            { n: '7',  t: 'Be charitable & compassionate', d: 'Daana — share with those in need' },
-            { n: '8',  t: 'Avoid harsh or hurtful speech', d: 'Practise kind, measured, helpful words' },
-            { n: '9',  t: 'Help the sick and elderly',     d: 'Show care and patience' },
-            { n: '10', t: 'Maintain harmonious relations', d: 'In family, workplace and community' },
-          ],
-        },
-        {
-          label: 'Avoid', colIcon: 'ban', bg: '#fff1f2', headBg: '#ffe4e6', iconBg: '#fecdd3', iconColor: '#9f1239',
-          labelColor: '#9f1239', countBg: '#fecdd3', countColor: '#9f1239',
-          cardBorder: '#fecdd3', numBg: '#fff1f2', numColor: '#be123c',
-          items: [
-            { n: '✗', t: 'Stealing or dishonesty',          d: 'Asteya — never take what is not yours' },
-            { n: '✗', t: 'Cruelty to living beings',         d: 'Causes guilt, mental disturbance and karma' },
-            { n: '✗', t: 'Gossip or back-biting',            d: 'Disturbs relationships and inner peace' },
-            { n: '✗', t: 'Ego, pride, arrogance',            d: 'Block humility and learning' },
-          ],
-        },
-      ],
-    },
-    // ── Manasika Arogya (Mental Well-being) ─────────────────────────────────
+    // ── Manasika Arogya (incl. Sadvritta — code of ethical conduct) ─────────
     {
       icon: 'heart', img: 'https://images.unsplash.com/photo-1545205597-3d9d02c29597?w=160&h=160&fit=crop',
       tag: 'Manasika Arogya',
-      title: 'Manasika Arogya (Mental Well-being)',
-      desc: 'Cultivating a calm, content and resilient mind through Ayurvedic principles',
+      title: 'Manasika Arogya (Mental Well-being & Sadvritta)',
+      desc: 'Cultivating a calm, resilient mind through Ayurvedic mental practices and the code of ethical conduct (Sadvritta)',
       cols: [
         {
-          label: 'Cultivate', colIcon: 'leaf', bg: '#f0fdf4', headBg: '#dcfce7', iconBg: '#bbf7d0', iconColor: '#166534',
+          label: 'Cultivate (Manasika)', colIcon: 'leaf', bg: '#f0fdf4', headBg: '#dcfce7', iconBg: '#bbf7d0', iconColor: '#166534',
           labelColor: '#166534', countBg: '#bbf7d0', countColor: '#166534',
           cardBorder: '#bbf7d0', numBg: '#f0fdf4', numColor: '#15803d',
           items: [
@@ -356,15 +272,18 @@ export class WellnessHandbookComponent implements AfterViewInit, OnDestroy {
           ],
         },
         {
-          label: 'Daily habits', colIcon: 'calendar', bg: '#eef2ff', headBg: '#e0e7ff', iconBg: '#c7d2fe', iconColor: '#3730a3',
-          labelColor: '#3730a3', countBg: '#c7d2fe', countColor: '#3730a3',
-          cardBorder: '#e0e7ff', numBg: '#eef2ff', numColor: '#4338ca',
+          label: 'Sadvritta — Personal conduct', colIcon: 'shield', bg: '#fffbeb', headBg: '#fef3c7', iconBg: '#fde68a', iconColor: '#92400e',
+          labelColor: '#92400e', countBg: '#fde68a', countColor: '#92400e',
+          cardBorder: '#fde68a', numBg: '#fffbeb', numColor: '#b45309',
           items: [
-            { n: '7',  t: 'Sattvic diet',                 d: 'Fresh, light, nourishing foods; minimal stimulants' },
-            { n: '8',  t: 'Regular sleep & wake times',   d: 'Steady circadian rhythm steadies the mind' },
-            { n: '9',  t: 'Journal feelings & thoughts',  d: 'Brings clarity, reduces mental load' },
-            { n: '10', t: 'Limit screen & news intake',   d: 'Protects from overstimulation and anxiety' },
-            { n: '11', t: 'Connect with family & friends', d: 'Spend quality time without distractions' },
+            { n: '7',  t: 'Speak the truth (Satya)',        d: 'Words should be honest, gentle and beneficial' },
+            { n: '8',  t: 'Practise non-violence (Ahimsa)', d: 'In thought, word and deed' },
+            { n: '9',  t: 'Be clean & well-groomed',        d: 'Daily hygiene of body, clothing and surroundings' },
+            { n: '10', t: 'Cultivate self-discipline',      d: 'Control over the senses (Indriya-nigraha)' },
+            { n: '11', t: 'Practise gratitude',             d: 'Towards parents, teachers, elders and nature' },
+            { n: '12', t: 'Respect elders & teachers',      d: 'Acknowledge wisdom and guidance' },
+            { n: '13', t: 'Be charitable & compassionate',  d: 'Daana — share with those in need' },
+            { n: '14', t: 'Maintain harmonious relations',  d: 'In family, workplace and community' },
           ],
         },
         {
@@ -376,7 +295,10 @@ export class WellnessHandbookComponent implements AfterViewInit, OnDestroy {
             { n: '✗', t: 'Krodha (anger)',                  d: 'Destroys peace, judgement and relationships' },
             { n: '✗', t: 'Lobha (greed)',                   d: 'Breeds anxiety and unethical conduct' },
             { n: '✗', t: 'Moha (delusion / attachment)',    d: 'Clouds discrimination (viveka)' },
-            { n: '✗', t: 'Mada (pride) & Matsarya (envy)', d: 'Generate inner conflict and isolation' },
+            { n: '✗', t: 'Mada (pride) & Matsarya (envy)',  d: 'Generate inner conflict and isolation' },
+            { n: '✗', t: 'Stealing or dishonesty',           d: 'Asteya — never take what is not yours' },
+            { n: '✗', t: 'Cruelty to living beings',          d: 'Causes guilt and mental disturbance' },
+            { n: '✗', t: 'Gossip or back-biting',             d: 'Disturbs relationships and inner peace' },
           ],
         },
       ],

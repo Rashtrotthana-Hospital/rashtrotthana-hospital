@@ -1,9 +1,15 @@
 <section class="dt-section" [class.dt-night]="isNight()">
 
-  <!-- Sky crossfade layers -->
+  <!-- Sky crossfade layers — disabled in favour of the fixed night-sky base
+       background on .dt-section (matches Six Seasons reference design). -->
+  <!--
   <div class="dt-bg dt-bg--a" [style.background]="bgA()"></div>
   <div class="dt-bg dt-bg--b" [style.background]="bgB()" [style.opacity]="bgFade()"></div>
+  -->
   <div class="dt-atm"></div>
+
+  <!-- Canvas-based season particle FX layer (stars + per-card weather) -->
+  <canvas #fxCanvas class="dt-fx-canvas" aria-hidden="true"></canvas>
 
   <!-- Stars (night only) -->
   <div class="dt-stars">
