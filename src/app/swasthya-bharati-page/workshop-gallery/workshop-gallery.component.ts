@@ -49,12 +49,10 @@ export class WorkshopGalleryComponent implements AfterViewInit, OnDestroy {
     { src: 'assets/swastya-page/S2/20250327_124931PMByGPSMapCamera.jpg', alt: 'Session Two — photo 4' },
     { src: 'assets/swastya-page/S2/20250327_124946PMByGPSMapCamera.jpg', alt: 'Session Two — photo 5' },
     { src: 'assets/swastya-page/S2/20250327_125014PMByGPSMapCamera.jpg', alt: 'Session Two — photo 6' },
-    { src: 'assets/swastya-page/S2/20250327_125023PMByGPSMapCamera.jpg', alt: 'Session Two — photo 7' },
-    { src: 'assets/swastya-page/S2/20250327_21901PMByGPSMapCamera.jpg', alt: 'Session Two — photo 8' },
-    { src: 'assets/swastya-page/S2/20250327_21914PMByGPSMapCamera.jpg', alt: 'Session Two — photo 9' },
-    { src: 'assets/swastya-page/S2/IMG-20250327-WA0019.jpg', alt: 'Session Two — photo 10' },
-    { src: 'assets/swastya-page/S2/IMG-20250327-WA0020.jpg', alt: 'Session Two — photo 11' },
-    { src: 'assets/swastya-page/S2/IMG-20250327-WA0021.jpg', alt: 'Session Two — photo 12' },
+    { src: 'assets/swastya-page/S2/20250327_21914PMByGPSMapCamera.jpg', alt: 'Session Two — photo 7' },
+    { src: 'assets/swastya-page/S2/IMG-20250327-WA0019.jpg', alt: 'Session Two — photo 8' },
+    { src: 'assets/swastya-page/S2/IMG-20250327-WA0020.jpg', alt: 'Session Two — photo 9' },
+    { src: 'assets/swastya-page/S2/IMG-20250327-WA0021.jpg', alt: 'Session Two — photo 10' },
 
     // ── S3 ──
     { src: 'assets/swastya-page/S3/20250327_22146pmByGPSMapCamera.jpg', alt: 'Session Three — photo 1' },
