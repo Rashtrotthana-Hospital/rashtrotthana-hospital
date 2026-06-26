@@ -136,6 +136,7 @@ const routes: Routes = [
   { path: 'advisory-board-members', component: AdvisoryBoardMembersComponent },
   { path: 'ethical-committee', component: EthicCommitteeComponent },
   { path: 'health-package/:slug', component: HealthCheckComponent },
+  { path: 'research-center', component: ResearchComponent },
 
 
 

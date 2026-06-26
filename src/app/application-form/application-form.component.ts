@@ -7,6 +7,11 @@ import { Application, CareerFormServiceService, Job } from '../career-form-servi
 
 // import { Recuriting, Job, Application } from '../../services/recruiting/recuriting';
 
+// Job titles arrive from HRMinds with the requisition's experience and reason
+// baked into the string, e.g. "NURSING AID (2-4 yrs) – New Opening". For the
+// public form we show a clean role name and surface the experience on its own.
+type JobOption = Job & { displayTitle: string; experience: string | null };
+
 @Component({
   selector: 'app-application-form',
   templateUrl: './application-form.component.html',
@@ -24,7 +29,7 @@ export class ApplicationFormComponent implements OnInit, OnDestroy {
   // when user navigates away while requests are in flight.
   private destroy$ = new Subject<void>();
 
-  jobs: Job[] = [];
+  jobs: JobOption[] = [];
   loading = true;
   saving = false;
   error?: string;
@@ -73,6 +78,39 @@ export class ApplicationFormComponent implements OnInit, OnDestroy {
     return this.form.get('referral.type')?.value ?? '';
   }
 
+  // The currently selected job (for the requirements panel under the dropdown).
+  get selectedJob(): JobOption | null {
+    const id = this.form.get('jobId')?.value;
+    return this.jobs.find((j) => j.id === id) ?? null;
+  }
+
+  // Experience of the currently selected job, shown separately under the dropdown.
+  get selectedExperience(): string | null {
+    return this.selectedJob?.experience ?? null;
+  }
+
+  // ── Job title parsing ──────────────────────────────────────────────────────
+  // HRMinds bakes "(2-4 yrs)" / "(Fresher)" / "(5+ yrs)" and a reason suffix
+  // ("– New Opening" / "– Replacement" / "– Planned Addition") into Job.title.
+  // The public form shouldn't expose the internal reason, and shows experience
+  // on its own — so we strip both out of the displayed title.
+  private readonly REASON_SUFFIX =
+    /\s*[–-]\s*(New Opening|Replacement|Planned Addition|NEW_OPENING|REPLACEMENT|PLANNED_ADDITION)\s*$/i;
+  private readonly EXPERIENCE_PAREN = /\s*\(([^)]*\b(?:yrs?|Fresher)\b[^)]*)\)/i;
+
+  private cleanJobTitle(title: string): string {
+    return (title || '')
+      .replace(this.REASON_SUFFIX, '')
+      .replace(this.EXPERIENCE_PAREN, '')
+      .replace(/\s{2,}/g, ' ')
+      .trim();
+  }
+
+  private extractExperience(title: string): string | null {
+    const m = (title || '').match(this.EXPERIENCE_PAREN);
+    return m ? m[1].trim() : null;
+  }
+
 ngOnInit() {
   const jobIdFromQuery = Number(this.route.snapshot.queryParamMap.get('jobId'));
   if (jobIdFromQuery) this.form.patchValue({ jobId: jobIdFromQuery });
@@ -90,7 +128,11 @@ ngOnInit() {
     .pipe(takeUntil(this.destroy$))
     .subscribe({
       next: (res) => {
-        this.jobs = res.rows;
+        this.jobs = res.rows.map((j) => ({
+          ...j,
+          displayTitle: this.cleanJobTitle(j.title),
+          experience: this.extractExperience(j.title),
+        }));
         this.loading = false;
       },
       error: (err) => {

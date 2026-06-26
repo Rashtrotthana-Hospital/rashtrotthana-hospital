@@ -11,9 +11,22 @@
             <span>Job *</span>
             <select formControlName="jobId">
                 <option [ngValue]="null">Select a job</option>
-                <option *ngFor="let j of jobs" [ngValue]="j.id">{{ j.title }}</option>
+                <option *ngFor="let j of jobs" [ngValue]="j.id">
+                    {{ j.experience ? (j.displayTitle + ' — ' + j.experience) : j.displayTitle }}
+                </option>
             </select>
         </label>
+
+        <!-- Requirements for the selected job. Experience comes from the title
+             (all jobs); skills/education only exist on jobs created after the
+             backend started snapshotting them. -->
+        <div class="job-requirements"
+             *ngIf="selectedJob && (selectedExperience || selectedJob.education || selectedJob.skills)">
+            <h4>Requirements</h4>
+            <p *ngIf="selectedExperience"><strong>Experience:</strong> {{ selectedExperience }}</p>
+            <p *ngIf="selectedJob.education"><strong>Education:</strong> {{ selectedJob.education }}</p>
+            <p *ngIf="selectedJob.skills"><strong>Skills:</strong> {{ selectedJob.skills }}</p>
+        </div>
 
         <fieldset formGroupName="candidate">
             <legend>Candidate</legend>

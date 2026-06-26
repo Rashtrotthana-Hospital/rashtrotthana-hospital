@@ -9,6 +9,9 @@ export type JobStatus = 'OPEN' | 'ON_HOLD' | 'CLOSED' | 'DRAFT';
 export interface Job {
   id: number; title: string; departmentId: number; location?: string | null; departmentName?: string;
   headcount: number; status: JobStatus; createdAt: string; updatedAt: string;
+  // Requirements shown on the public form. Null for jobs created before the
+  // backend started snapshotting these (experience stays encoded in the title).
+  skills?: string | null; education?: string | null;
 }
 
 export interface Paged<T> { total: number; rows: T[]; }
