@@ -69,7 +69,7 @@ export class KneeReplacementComponent implements OnInit {
       designation: 'Orthopaedics',
       alt: 'Dr. Nikhil Hegde | Best Orthopaedic Consultant in Bangalore | Rashtrotthana Hospital',
       slug: '/doctor/dr-nikhil-hegde',
-      experience: '8+'
+      experience: '10'
     },
   ];
 

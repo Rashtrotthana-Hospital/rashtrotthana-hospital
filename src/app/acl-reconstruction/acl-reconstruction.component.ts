@@ -69,7 +69,7 @@ export class AclReconstructionComponent {
       // designation: 'Orthopaedics',
       alt: '',
       slug: '/doctor/dr-nikhil-hegde',
-      experience: '8+',
+      experience: '10',
     },
   ];
 

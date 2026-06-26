@@ -537,7 +537,7 @@ export class DoctorLayoutComponent {
       about: 'Specialised training in sports medicine, Arthroplasty and trauma',
       speciality: 'ORTHOPEDICS',
       areasOfExpertise: ['Sports Medicine', 'Artgroplasty', 'Arthroscopy & Trauma'],
-      expertise: 'Years of Experience: 8+',
+      expertise: 'Years of Experience: 10',
       qualification: 'MBBS, MS Orthopaedicss',
       time: '10:30-10:50,10:50-11:10,11:10-11:30,11:30-11:50,11:50-12:10,12:10-12:30,12:30-12:50,12:50-13:10,13:10-13:30,13:30-13:50,13:50-14:10,14:10-14:30,14:30-14:50,14:50-15:10,15:10-15:30',
       date: 'Monday,Wednesday and Friday',
