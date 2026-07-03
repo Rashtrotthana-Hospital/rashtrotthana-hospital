@@ -64,7 +64,7 @@ export class AclReconstructionComponent {
       experience: '13+',
     },
     {
-      image: '../../assets/Dr-Nikhil-Hegde.png',
+      image: 'assets/new-doctor-imgs/JMRH-Dr-nikhil-hegde-img.png',
       name: 'Dr. Nikhil Hegde',
       // designation: 'Orthopaedics',
       alt: '',

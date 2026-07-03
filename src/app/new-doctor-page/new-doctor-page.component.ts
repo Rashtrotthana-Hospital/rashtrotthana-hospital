@@ -1828,7 +1828,7 @@ export class NewDoctorPageComponent {
     },
     {
       name: 'Dr. Nikhil Hegde',
-      image: 'assets/Doc-Inv-Page/Dr-Nikhil-Hegde.png',
+      image: 'assets/new-doctor-imgs/JMRH-Dr-nikhil-hegde-png.png',
       department: 'ORTHOPEDICS',
       about: 'Dr. Nikhil Hegde is a consultant orthopaedic surgeon with over 10 years of experience in the field of orthopaedics, trauma care, joint replacement and sports injuries. He completed his orthopaedic training from Kasturba Medical College (KMC), Manipal , where he received comprehensive exposure to general orthopaedics and various orthopaedic subspecialties. Following his graduation, he continued at KMC, Manipal as a Senior Resident and was subsequently appointed as Assistant Professor in the Department of Orthopaedics. During his tenure at KMC, he underwent focused subspecialty training in arthroplasty, complex joint replacements, arthroscopy, and sports medicine. His clinical practice involves the management of fractures, ligament injuries, arthritis, sports-related conditions and degenerative joint disorders, with an emphasis on evidence-based treatment and patient-centered care. Dr. Nikhil Hegde is known for his approachable nature, clear communication and commitment to helping patients return safely and confidently to their daily activities and active lifestyles.',
       speciality: 'ORTHOPEDICS',
