@@ -47,8 +47,8 @@ export class OrthopedicsComponent {
     {
       id: 3,
       name: 'Dr. Nikhil Hegde',
-      experience: '8+ Years',
-      image: '../../assets/Dr-Nikhil-Hegde.png',
+      experience: '10 Years',
+      image: 'assets/new-doctor-imgs/JMRH-Dr-nikhil-hegde-img.png',
       slug: '/doctor/dr-nikhil-hegde'
     },
     {

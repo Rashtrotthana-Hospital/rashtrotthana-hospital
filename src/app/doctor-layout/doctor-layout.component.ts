@@ -532,7 +532,7 @@ export class DoctorLayoutComponent {
     // },
     {
       name: 'Dr. Nikhil Hegde',
-      image: 'assets/Dr-Nikhil-Hegde.png',
+      image: 'assets/new-doctor-imgs/JMRH-Dr-nikhil-hegde-img.png',
       desgination: 'ORTHOPEDICS',
       about: 'Specialised training in sports medicine, Arthroplasty and trauma',
       speciality: 'ORTHOPEDICS',

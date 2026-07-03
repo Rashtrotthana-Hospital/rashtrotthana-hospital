@@ -64,7 +64,7 @@ export class KneeReplacementComponent implements OnInit {
       experience: '13+',
     },
     {
-      image: 'assets/Dr-Nikhil-Hegde.png',
+      image: 'assets/new-doctor-imgs/JMRH-Dr-nikhil-hegde-img.png',
       name: 'Dr. Nikhil Hegde',
       designation: 'Orthopaedics',
       alt: 'Dr. Nikhil Hegde | Best Orthopaedic Consultant in Bangalore | Rashtrotthana Hospital',
