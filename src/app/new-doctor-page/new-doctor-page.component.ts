@@ -1832,7 +1832,7 @@ export class NewDoctorPageComponent {
       department: 'ORTHOPEDICS',
       about: 'Dr. Nikhil Hegde is a consultant orthopaedic surgeon with over 10 years of experience in the field of orthopaedics, trauma care, joint replacement and sports injuries. He completed his orthopaedic training from Kasturba Medical College (KMC), Manipal , where he received comprehensive exposure to general orthopaedics and various orthopaedic subspecialties. Following his graduation, he continued at KMC, Manipal as a Senior Resident and was subsequently appointed as Assistant Professor in the Department of Orthopaedics. During his tenure at KMC, he underwent focused subspecialty training in arthroplasty, complex joint replacements, arthroscopy, and sports medicine. His clinical practice involves the management of fractures, ligament injuries, arthritis, sports-related conditions and degenerative joint disorders, with an emphasis on evidence-based treatment and patient-centered care. Dr. Nikhil Hegde is known for his approachable nature, clear communication and commitment to helping patients return safely and confidently to their daily activities and active lifestyles.',
       speciality: 'ORTHOPEDICS',
-      areasOfExpertise: ['Arthroscopy', 'Joint Replacement ','Sports Medicine',],
+      areasOfExpertise: ['Arthroscopy', 'Joint Replacement ', 'Sports Medicine',],
       expertise: '10',
       qualification: 'MBBS, MS Orthopaedics',
       time: '10:30-10:50,10:50-11:10,11:10-11:30,11:30-11:50,11:50-12:10,12:10-12:30,12:30-12:50,12:50-13:10,13:10-13:30,13:30-13:50,13:50-14:10,14:10-14:30,14:30-14:50,14:50-15:10,15:10-15:30',
@@ -2472,15 +2472,16 @@ export class NewDoctorPageComponent {
       name: 'Ms. Archana Karthick',
       image: 'assets/Doc-Inv-Page/Ms-Archana-Karthick.png',
       department: 'Senior Clinical Dietician',
-      about: ' Ms. Archana Karthick has more than 19+ years of experience in the field of Clinical Nutrition, dietetics and food service management. Prior Joining to Jaydev memorial Rashtrotthana Hospital she worked as Clinical Nutrition consultant in Cloudnine Hospital Kanakapura Road Bangalore.  Earlier to this she has over 10 years of experience from UAE -as Dubai health authority licensed Paediatric Nutrition & Dietetics from JCI accredited hospital -Al Jalila children’s speciality hospital and as clinical Nutrition & Dietician International Modern Maternity Hospital Dubai, UAE. She also holds life membership of Indian Dietetics association and IAPEN India Association for Parenteral and Enteral nutrition',
-      speciality: 'NUTRITION & DIETETICS',
-      areasOfExpertise: ['Prenatal and Post-natal Nutrition', 'Paediatric and geriatric nutrition', 'Enteral nutrition ', 'Diabetic management'],
+      about: 'Ms. Archana Karthick is a Senior Clinical Dietitian at Rashtrotthana Hospital with approximately 19 years of experience in clinical nutrition, dietetics and food service management. She provides evidence-based nutrition care across a wide range of medical specialties, supporting comprehensive patient management and recovery. Prior to this role, she worked as a Clinical Nutrition Consultant at Cloudnine Hospital, Kanakapura Road, Bengaluru. She also brings over 10 years of international experience in the UAE, where she served as a Dubai Health Authority (DHA)-licensed Paediatric Dietitian at the JCI-accredited Al Jalila Children’s Specialty Hospital and as a Clinical Dietitian at International Modern Hospital, Dubai. She is a life member of the Indian Dietetic Association (IDA) and IAPEN India (Indian Association for Parenteral and Enteral Nutrition).',
+      speciality: 'CLINICAL NUTRITION & DIETETICS',
+      areasOfExpertise: ['Maternal Nutrition (Preconception, Antenatal & Postnatal)', 'Paediatric Nutrition', 'Clinical Nutrition & Medical Nutrition Therapy', 'Diabetes Management','Enteral and Therapeutic Nutrition','Geriatric Nutrition','Weight Management & Lifestyle Modification'],
       expertise: ' 19+',
       qualification: `
       M.Sc. in Dietetics and Food Service Management <br>
       B.Sc. in Clinical Nutrition and Dietetics <br>
-      PG Certificate in Diabetes Education <br> (International Diabetes Federation) <br>
-      MICYAN – Indian Institute of Public Health, Delhi`,
+      Postgraduate Certificate in Diabetes Education <br> (International Diabetes Federation) <br>
+      MICYAN – Indian Institute of Public Health, Delhi <br>
+      Certificate in Critical Care Nutrition – Nutri World`,
       time: '12:00-12:20,12:20-12:40,12:40-13:00,14:40-15:00,15:00-15:20,15:20-15:30',
       date: 'Monday-Saturday',
       alt: 'Ms. Archana Karthick | Best Clinical Dietician in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
@@ -4658,7 +4659,7 @@ export class NewDoctorPageComponent {
       about: `Dr. Surabhi H. S is a dedicated Consultant Paediatrician and Neonatologist at Rashtrotthana Hospital, Bangalore, with expertise in the care of newborns, preterm babies, infants and children. She specialises in neonatal intensive care, newborn emergencies, jaundice management, respiratory distress, infections, growth and developmental monitoring, and preventive paediatric care.
       With fellowship training in Perinatal Medicine (Neonatology), Dr. Surabhi is skilled in managing high-risk newborns and providing comprehensive child healthcare. She is committed to delivering compassionate, evidence-based care that supports healthy growth, development and long-term wellbeing for children.`,
       speciality: 'PAEDIATRICS AND NEONATOLOGY',
-      areasOfExpertise:  ['Newborn & Preterm Baby Care',
+      areasOfExpertise: ['Newborn & Preterm Baby Care',
         'Neonatal Ventilation & Emergency Management',
         'Jaundice, Respiratory Distress & Infection Management',
         'Intubation, PICC Line & Lumbar Puncture',
@@ -4666,7 +4667,7 @@ export class NewDoctorPageComponent {
         'Growth, Development & Nutrition Care',
         'Vaccination & Preventive Pediatrics',
         'High-Risk Newborn Follow-up',
-        ],
+      ],
       expertise: '4',
       qualification: `MBBS, MD (Pediatrics), Fellowship in Perinatal Medicine <br>
        (Neonatology) Consultant - Pediatrics & Neonatology`,
@@ -4707,7 +4708,7 @@ export class NewDoctorPageComponent {
         }
       ],
       departmentSlug: '',
-      expertiseIcons:[
+      expertiseIcons: [
         'assets/icons/PN-1.png',
         'assets/icons/PN-2.png',
         'assets/icons/PN-3.png',

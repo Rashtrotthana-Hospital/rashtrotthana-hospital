@@ -197,7 +197,7 @@ export class HealthCheckComponent {
             'Physician / Diabetologist Consultation (4 times / year)',
             'Lifestyle Consultation (4 times / year)',
             'Lifestyle Management Sessions (4 times / year)',
-            'Nutrition & Dietetics Consultation (4 times / year)',
+            'Clinical Nutrition & Dietetics Consultation (4 times / year)',
           ],
         },
         {

@@ -155,7 +155,7 @@ export class HealthCheckupComponent {
             'Physician / Diabetologist Consultation (Avail 4 times a year)',
             'Lifestyle Consultation (Avail 4 times a year)',
             'Lifestyle Management (Avail 4 times a year)',
-            'Nutrition & Dietetics Consultation (Avail 4 times a year)',
+            'Clinical Nutrition & Dietetics Consultation (Avail 4 times a year)',
           ],
           icon: 'speciality',
         },

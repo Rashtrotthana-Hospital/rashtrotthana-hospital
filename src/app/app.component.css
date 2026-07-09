@@ -63,6 +63,7 @@
     bottom: 26px;
     right: 26px;
     gap: 10px;
+    z-index: 9999;
 }
 
 .bot_hand{

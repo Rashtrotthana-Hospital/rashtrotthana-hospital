@@ -298,48 +298,53 @@
 }
 
 .gallery-wrapper {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  padding: 20px 40px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding: 20px 40px;
 }
 
 .gallery-track {
-  display: flex;
-  gap: 20px;
-  transition: transform 0.6s ease;
+    display: flex;
+    gap: 20px;
+    transition: transform 0.6s ease;
 }
 
 .gallery-card img {
-  width: 250px;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 20px;
-  box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.25);
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.25);
 }
 
 /* Arrows */
 .arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: white;
-  border: none;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  font-size: 20px;
-  cursor: pointer;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-  z-index: 10;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    z-index: 10;
 }
 
-.left { left: 10px; }
-.right { right: 10px; }
+.left {
+    left: 10px;
+}
+
+.right {
+    right: 10px;
+}
 
 .arrow:disabled {
-  opacity: 0.4;
-  cursor: not-allowed;
+    opacity: 0.4;
+    cursor: not-allowed;
 }
 
 .more-part {
@@ -408,6 +413,30 @@
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
 }
 
+.doctors {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.doc-heading {
+    color: #222;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.doctor-container {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 /* 🔥 Infinite Scroll Animation */
 @keyframes scroll {
     0% {
@@ -467,6 +496,10 @@
 
     .care-part {
         padding: 20px;
+    }
+
+    .doc-heading {
+        font-size: 32px;
     }
 }
 
@@ -572,5 +605,9 @@
 
     .choose-card {
         height: 300px;
+    }
+
+    .doc-heading {
+        font-size: 24px;
     }
 }

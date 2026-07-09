@@ -735,7 +735,7 @@ export class DoctorLayoutComponent {
       image: 'assets/Ms-Archana-Karthick.png',
       desgination: 'Senior Clinical Dietician',
       about: ' Ms. Archana Karthick has more than 19+ years of experience in the field of Clinical Nutrition, dietetics and food service management. Prior Joining to Jaydev memorial Rashtrotthana Hospital she worked as Clinical Nutrition consultant in Cloudnine Hospital Kanakapura Road Bangalore.  Earlier to this she has over 10 years of experience from UAE -as Dubai health authority licensed Paediatric Nutrition & Dietetics from JCI accredited hospital -Al Jalila children’s speciality hospital and as clinical Nutrition & Dietician International Modern Maternity Hospital Dubai, UAE. She also holds life membership of Indian Dietetics association and IAPEN India Association for Parenteral and Enteral nutrition',
-      speciality: 'NUTRITION & DIETETICS',
+      speciality: 'CLINICAL NUTRITION & DIETETICS',
       areasOfExpertise: ['Prenatal and Post-natal Nutrition', 'Paediatric and geriatric nutrition', 'Enteral nutrition ', 'Diabetic management'],
       expertise: 'Years of Experience: 19+',
       qualification: ' M.Sc. in Dietetics and Food service management B.sc in Clinical Nutrition and Dietetics PG certificate in Diabetes Education (International Diabetes Federation) MICYAN -Indian Institute of public health-Delhi',
@@ -1514,7 +1514,7 @@ export class DoctorLayoutComponent {
             cname: 'EMERGENCY MEDICINE', code: 'GM-ON'
           },
           {
-            cname: 'NUTRITION & DIETETICS', code: 'GM-ON'
+            cname: 'CLINICAL NUTRITION & DIETETICS', code: 'GM-ON'
           },
           {
             cname: 'RADIOLOGY', code: 'GM-ON'

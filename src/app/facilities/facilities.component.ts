@@ -181,7 +181,7 @@ export class FacilitiesComponent implements OnInit {
       name: 'card',
       image:
         '../../assets/rashtrotthana_hospital_nutrition_dietetics-services_bangalore.png',
-      title: 'Nutrition & Dietetics',
+      title: 'Clinical Nutrition & Dietetics',
       button_text: 'Read More',
       route: 'nutrition-dietetics-services-bangalore',
       alt: 'Rashtrotthana Hospital | Best Nutrition Dietetics Services Bangalore',
