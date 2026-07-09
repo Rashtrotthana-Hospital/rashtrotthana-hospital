@@ -1,7 +1,7 @@
 <div class="full-component">
     <div class="banner-part">
         <div class="left-side">
-            <div class="banner-heading">World-Class Nutrition & Dietetics For <span>Your Well-Being</span></div>
+            <div class="banner-heading">World-Class Clinical Nutrition & Dietetics For <span>Your Well-Being</span></div>
             <div class="banner-para">Experience exceptional healthcare in our state-of-the-art facility. Personalized
                 care, advanced technology and compassionate professionals.</div>
             <div class="banner-btns">
@@ -43,10 +43,10 @@
     </div>
 
     <div class="in-patient-part">
-        <div class="in-heading">Nutrition & Dietetics</div>
+        <div class="in-heading">Clinical Nutrition & Dietetics</div>
         <div class="in-card">
             <div class="in-card-heading">Comfort and Care at Rashtrotthana Hospital:</div>
-            <div class="in-card-para">At Rashtrotthana Hospital, our Nutrition & Dietetics Department provides a full
+            <div class="in-card-para">At Rashtrotthana Hospital, our Clinical Nutrition & Dietetics Department provides a full
                 range of dietary services that are patient-centred and designed to promote long-term health. With a
                 focus on disease management and preventive care, our dietitians work closely with patients to develop
                 nutrition plans tailored to their specific health conditions, such as diabetes, heart disease and
@@ -109,6 +109,16 @@
                 <img [src]="card.img" alt="">
                 <div class="card-heading mt">{{card.heading}}</div>
                 <div class="card-para mt">{{card.para}}</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="doctors">
+        <div class="doc-heading">Meet Our Medical Team</div>
+        <div class="doctor-container">
+            <div *ngFor="let doctor of doctors">
+                <app-speciality-doctors [name]="doctor.doctor_name" [experience]="doctor.experience"
+                    [image]="doctor.doctor_image" [alt]="doctor.docalt"></app-speciality-doctors>
             </div>
         </div>
     </div>
