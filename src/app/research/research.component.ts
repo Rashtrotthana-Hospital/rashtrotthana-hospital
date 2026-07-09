@@ -167,6 +167,10 @@ export class ResearchComponent {
     }
   ];
 
+  scrollToPublications() {
+    document.getElementById('publications-section')?.scrollIntoView({ behavior: 'smooth' });
+  }
+
   prevObjective() {
     if (this.objectiveIndex > 0) this.objectiveIndex--;
   }
