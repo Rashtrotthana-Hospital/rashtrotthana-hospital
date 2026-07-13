@@ -242,6 +242,10 @@
   }
 }
 
+.pt{
+  padding-top: 10px;
+}
+
 // ── Responsive ───────────────────────────────────────────────────────────────
 // Large tablet (≤1100px) — shrink card width so 2 cards visible cleanly
 @media (max-width: 1100px) {

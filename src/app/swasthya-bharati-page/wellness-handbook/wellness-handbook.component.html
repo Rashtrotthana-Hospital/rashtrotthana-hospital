@@ -19,41 +19,7 @@
             (click)="goto(i)"
             role="tab"
             [attr.aria-selected]="i === current()">
-            <span class="wh-tab__icon" aria-hidden="true">
-              @switch (sec.icon) {
-                @case ('sun') {
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="12" cy="12" r="4"/>
-                    <path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.4 1.4M17.6 17.6L19 19M19 5l-1.4 1.4M6.4 17.6L5 19"/>
-                  </svg>
-                }
-                @case ('seasons') {
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/>
-                  </svg>
-                }
-                @case ('bowl') {
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M3.5 10.5h17"/><path d="M5 10.5a7 7 0 0 0 14 0"/><path d="M12 4.5c-1 1-1 2 0 3"/>
-                  </svg>
-                }
-                @case ('heart') {
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M12 20s-7-4.6-9.3-9C1.2 8 3.2 4.6 6.6 4.6c2 0 3.4 1.5 5.4 3.4 2-1.9 3.4-3.4 5.4-3.4 3.4 0 5.4 3.4 3.9 6.4C19 15.4 12 20 12 20z"/>
-                  </svg>
-                }
-                @case ('moon') {
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
-                  </svg>
-                }
-                @default {
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="12" cy="12" r="5"/>
-                  </svg>
-                }
-              }
-            </span>
+            <img class="wh-tab__img" [src]="sec.img" [alt]="sec.tag" aria-hidden="true">
             <span class="wh-tab__label">{{ sec.tag }}</span>
           </button>
         }
@@ -69,55 +35,69 @@
 
     <div class="wh-spacer"></div>
 
-    <!-- ── Pinboard (fluid width, percent-positioned cards) ── -->
-    <div class="wh-board" #boardEl
-         [class.wh-board--one]="cols() === 'one'"
-         [style.height.px]="boardH()">
+    <!-- ── Vertical center-line timeline ── -->
+    <div class="wh-timeline">
+      <div class="wh-tl__line"></div>
 
-      <!-- Dashed connector curves between consecutive pins -->
-      <svg class="wh-board__svg"
-           [attr.viewBox]="'0 0 100 ' + boardH()"
-           preserveAspectRatio="none" aria-hidden="true">
-        @for (p of paths(); track pi; let pi = $index) {
-          <path [attr.d]="p" fill="none" stroke="#cdccd6" stroke-width="1.6"
-                stroke-dasharray="4 7" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
-        }
-      </svg>
-
-      <!-- Pinned cards — percent-positioned so they fit any board width -->
-      @for (note of notes(); track i; let i = $index) {
-        <div class="wh-note"
-             [class.wh-note--active]="active() === i"
-             [style.left.%]="notePos(i).leftPct"
-             [style.top.px]="notePos(i).top"
-             [style.width.%]="notePos(i).widthPct"
-             [style.z-index]="active() === i ? 60 : (40 - i)"
-             (click)="setActive(i)">
-
-          <!-- Pin head -->
-          <span class="wh-note__pin"
-                [style.background]="'radial-gradient(circle at 34% 30%, #ffffff 0%, ' + note.pal.pin + ' 47%, ' + note.pal.pin + ' 100%)'"
-                aria-hidden="true"></span>
-
-          <!-- Card body -->
-          <div class="wh-note__card"
-               [style.background]="'radial-gradient(130% 130% at 14% 0%, ' + note.pal.tint + ' 0%, #ffffff 60%)'">
-            <span class="wh-note__badge"
-                  [style.border-color]="note.pal.pin"
-                  [style.color]="note.pal.num">{{ note.n }}</span>
-            <div class="wh-note__body">
-              @if (note.showLabel) {
-                <div class="wh-note__label" [style.color]="note.pal.label">{{ note.label }}</div>
-              }
-              <div class="wh-note__title">{{ note.t }}</div>
-              <div class="wh-note__desc">{{ note.d }}</div>
-            </div>
+      @for (row of timelineRows(); track ri; let ri = $index) {
+        @if (row.type === 'heading') {
+          <div class="wh-tl__group-head"
+               [style.color]="row.pal.label"
+               [style.background]="'color-mix(in srgb, ' + row.pal.label + ' 12%, #ffffff)'"
+               [style.border-color]="'color-mix(in srgb, ' + row.pal.label + ' 35%, transparent)'">
+            {{ row.label }}
           </div>
-        </div>
+        }
+        @if (row.type === 'card') {
+          <div class="wh-tl__row"
+               [class.wh-tl__row--left]="row.side === 'left'"
+               [class.wh-tl__row--right]="row.side === 'right'"
+               [class.wh-tl__row--active]="active() === row.index"
+               (click)="setActive(row.index)">
+
+            <!-- Left cell: card if side=left, empty otherwise -->
+            <div class="wh-tl__cell wh-tl__cell--left">
+              @if (row.side === 'left') {
+                <div class="wh-tl__card"
+                     [style.background]="'radial-gradient(130% 130% at 90% 0%, ' + row.pal.tint + ' 0%, #ffffff 60%)'">
+                  <span class="wh-tl__badge"
+                        [style.border-color]="row.pal.pin"
+                        [style.color]="row.pal.num">{{ row.n }}</span>
+                  <div class="wh-tl__body">
+                    <div class="wh-tl__title">{{ row.t }}</div>
+                    <div class="wh-tl__desc">{{ row.d }}</div>
+                  </div>
+                </div>
+                <div class="wh-tl__connector"></div>
+              }
+            </div>
+
+            <!-- Center dot on the line -->
+            <div class="wh-tl__dot"
+                 [style.background]="'radial-gradient(circle at 34% 30%, #fff 0%, ' + row.pal.pin + ' 47%)'">
+            </div>
+
+            <!-- Right cell: card if side=right, empty otherwise -->
+            <div class="wh-tl__cell wh-tl__cell--right">
+              @if (row.side === 'right') {
+                <div class="wh-tl__connector"></div>
+                <div class="wh-tl__card"
+                     [style.background]="'radial-gradient(130% 130% at 14% 0%, ' + row.pal.tint + ' 0%, #ffffff 60%)'">
+                  <span class="wh-tl__badge"
+                        [style.border-color]="row.pal.pin"
+                        [style.color]="row.pal.num">{{ row.n }}</span>
+                  <div class="wh-tl__body">
+                    <div class="wh-tl__title">{{ row.t }}</div>
+                    <div class="wh-tl__desc">{{ row.d }}</div>
+                  </div>
+                </div>
+              }
+            </div>
+
+          </div>
+        }
       }
     </div>
-
-    <div class="wh-foot">Switch tabs to change the content · the same board, every time</div>
 
   </div>
 </section>

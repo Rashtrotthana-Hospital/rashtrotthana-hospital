@@ -96,6 +96,189 @@
           for disease prevention, well-being and longevity.
         </p>
 
+        <!-- See more / See less toggle -->
+        <div class="sbp-hero__see-more-wrap">
+          <button type="button" class="sbp-see-more-btn" (click)="toggleHeroExpanded()" [attr.aria-expanded]="heroExpanded()">
+            <span>{{ heroExpanded() ? 'Read less' : 'Read more' }}</span>
+            <svg class="sbp-see-more-btn__icon" [class.sbp-see-more-btn__icon--open]="heroExpanded()"
+              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="6 9 12 15 18 9"/>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Expanded content block -->
+        <div class="sbp-hero__expanded-content" [class.sbp-hero__expanded-content--open]="heroExpanded()">
+          <div class="sbp-hero__expanded-inner">
+
+          <div class="sbp-ec-block">
+            <h3 class="sbp-ec-heading">What is Health?</h3>
+            <p>Ayurveda defines health as much more than the absence of disease.</p>
+            <div class="sbp-shloka-block">
+              <p class="sbp-shloka__sanskrit" lang="sa">
+                समदोषः समाग्निश्च समधातुमलक्रियाः ।<br>
+                प्रसन्नात्मेन्द्रियमनाः स्वस्थ इत्यभिधीयते ॥
+              </p>
+              <p class="sbp-ec-source">SUSHRUTA SAMHITA · SUTRA STHANA · 15.38</p>
+              <p class="sbp-shloka__translit">
+                Samadoṣaḥ Samāgniśca Samadhātu-Malakriyāḥ ।<br>
+                Prasannātmendriya-Manāḥ Swastha Ityabhidhīyate ॥
+              </p>
+            </div>
+            <p>According to Ayurveda, a person is healthy when:</p>
+            <ul class="sbp-ec-list">
+              <li>the three Doshas (Vata, Pitta, and Kapha) are in balance;</li>
+              <li>digestion and metabolism (Agni) function efficiently;</li>
+              <li>the body tissues (Dhatus) are properly nourished;</li>
+              <li>waste products (Malas) are eliminated normally; and</li>
+              <li>the mind, senses, and self remain peaceful and content.</li>
+            </ul>
+            <p class="sbp-ec-kannada">ದೇಹದ ದೋಷಗಳು, ಧಾತುಗಳು ಸಮತೋಲನದಲ್ಲಿದ್ದು, ಜೀರ್ಣಕ್ರಿಯೆ ಸರಿಯಾಗಿದ್ದು, ಮಲವಿಸರ್ಜನೆ ಸಮರ್ಪಕವಾಗಿ ನಡೆಯುತ್ತಿದ್ದು, ಆತ್ಮ, ಇಂದ್ರಿಯಗಳು ಮತ್ತು ಮನಸ್ಸು ಸಂತೋಷ ಹಾಗೂ ಶಾಂತ ಸ್ಥಿತಿಯಲ್ಲಿದ್ದರೆ ಆ ವ್ಯಕ್ತಿಯೇ ನಿಜವಾದ ಆರೋಗ್ಯವಂತ.</p>
+            <p class="sbp-ec-highlight">This harmonious state is known as <strong>Swasthya</strong>.</p>
+          </div>
+
+          <div class="sbp-ec-block">
+            <h3 class="sbp-ec-heading">Understanding the Human Body:</h3>
+            <p>Ayurveda teaches that everything in the universe, including the human body, is composed of the five great elements (Panchamahabhutas):</p>
+            <ul class="sbp-ec-list">
+              <li>Akasha (Space)</li>
+              <li>Vayu (Air)</li>
+              <li>Agni (Fire)</li>
+              <li>Jala (Water)</li>
+              <li>Prithvi (Earth)</li>
+            </ul>
+            <p>The human body is a reflection of nature itself. Every organ, tissue, function, and physiological process depends upon the harmonious interaction of these five elements.</p>
+            <p>Likewise, the food we consume is also composed of these elements. When properly digested, it nourishes the body and supports physical and mental health.</p>
+            <p>When unhealthy food, poor lifestyle, disturbed sleep, emotional stress, or environmental pollution disturb this elemental balance, disease develops.</p>
+            <p>Thus, health is maintained by preserving harmony among these elemental forces.</p>
+          </div>
+
+          <div class="sbp-ec-block">
+            <h3 class="sbp-ec-heading">What is Life?</h3>
+            <p>Ayurveda explains life as the harmonious integration of four essential components.</p>
+            <div class="sbp-shloka-block">
+              <p class="sbp-shloka__sanskrit" lang="sa">
+                शरीरेन्द्रियसत्त्वात्मसंयोगो धारि जीवितम् ॥
+              </p>
+              <p class="sbp-ec-source">CHARAKA SAMHITA · SUTRA STHANA · 1.42</p>
+              <p class="sbp-shloka__translit">Śarīrendriya-Sattvātma-Saṁyogo Dhāri Jīvitam ॥</p>
+            </div>
+            <p>Life is sustained through the union of:</p>
+            <ul class="sbp-ec-list">
+              <li>Body (Sharira)</li>
+              <li>Sense Organs (Indriyas)</li>
+              <li>Mind (Manas)</li>
+              <li>Self (Atman)</li>
+            </ul>
+            <p class="sbp-ec-kannada">ಶರೀರ, ಇಂದ್ರಿಯ, ಮನಸ್ಸು ಮತ್ತು ಆತ್ಮಗಳ ಸಂಯೋಗವೇ ಜೀವನ.</p>
+            <p class="sbp-ec-highlight">True health requires balance among all four dimensions.</p>
+          </div>
+
+          <div class="sbp-ec-block">
+            <h3 class="sbp-ec-heading">The Key to Health:</h3>
+            <p>Our lifestyle determines our health. Healthy living includes:</p>
+            <ul class="sbp-ec-list">
+              <li>healthy food</li>
+              <li>physical activity</li>
+              <li>sound sleep</li>
+              <li>emotional balance</li>
+              <li>healthy relationships</li>
+              <li>ethical conduct</li>
+              <li>spiritual growth</li>
+            </ul>
+            <p>Healthy choices preserve the balance of the Panchamahabhutas. Unhealthy habits gradually disturb this balance and contribute to disease.</p>
+          </div>
+
+          <div class="sbp-ec-block">
+            <h3 class="sbp-ec-heading">Qualities of a Healthy Person:</h3>
+            <p>Ayurveda beautifully summarizes the qualities of a healthy individual.</p>
+            <div class="sbp-shloka-block">
+              <p class="sbp-shloka__sanskrit" lang="sa">
+                नित्यं हिताहारविहारसेवी समीक्ष्यकारी विषयेष्वसक्तः ।<br>
+                दाता समः सत्यपरः क्षमावान् आप्तोपसेवी च भवत्यरोगः ॥
+              </p>
+              <p class="sbp-ec-source">ASHTANGA SANGRAHA · SUTRA STHANA · 5.63</p>
+              <p class="sbp-shloka__translit">
+                Nityaṃ hitāhāra-vihāra-sevī samīkṣya-kārī viṣayeṣv asaktaḥ |<br>
+                dātā samaḥ satya-paraḥ kṣamāvān āptopasevī ca bhavaty arogah ||
+              </p>
+            </div>
+            <p>A healthy person:</p>
+            <ul class="sbp-ec-list">
+              <li>follows wholesome food and lifestyle,</li>
+              <li>thinks before acting,</li>
+              <li>avoids excessive attachment to sensory pleasures,</li>
+              <li>is generous,</li>
+              <li>remains calm,</li>
+              <li>speaks the truth,</li>
+              <li>forgives others, and</li>
+              <li>associates with wise people.</li>
+            </ul>
+            <p class="sbp-ec-highlight">Such a person remains free from disease.</p>
+          </div>
+
+          <div class="sbp-ec-block">
+            <h3 class="sbp-ec-heading">The Mind and Health:</h3>
+            <p>The mind is one of the greatest determinants of health. Ayurveda identifies six inner tendencies that require regulation:</p>
+            <ul class="sbp-ec-list">
+              <li>Desire (Kama)</li>
+              <li>Anger (Krodha)</li>
+              <li>Greed (Lobha)</li>
+              <li>Attachment (Moha)</li>
+              <li>Ego/Pride (Mada)</li>
+              <li>Jealousy (Matsarya)</li>
+            </ul>
+            <p>When these dominate the mind, stress, anxiety, and unhealthy behaviours arise.</p>
+            <p>Swasthyabharati promotes mental well-being through education, research, counselling, and practical lifestyle interventions.</p>
+          </div>
+
+          <div class="sbp-ec-block">
+            <h3 class="sbp-ec-heading">Living in Harmony with Nature:</h3>
+            <p>Human health and environmental health are inseparable. The quality of the air we breathe, the water we drink, the food we eat, the soil we cultivate, and the environment in which we live directly influence our health.</p>
+            <p>Protecting nature is therefore an essential part of protecting ourselves. By living responsibly and sustainably, we preserve the Panchamahabhutas both within us and around us.</p>
+          </div>
+
+          <div class="sbp-ec-block">
+            <h3 class="sbp-ec-heading">Health Through the Indian Perspective:</h3>
+            <p>Indian Knowledge Tradition teaches that the purpose of life is not merely to live longer, but to live meaningfully. Health includes:</p>
+            <ul class="sbp-ec-list">
+              <li>Physical well-being</li>
+              <li>Mental balance</li>
+              <li>Ethical conduct</li>
+              <li>Social responsibility</li>
+              <li>Spiritual growth</li>
+            </ul>
+            <p>Every action influences our future. Healthy food, good thoughts, compassionate actions, and responsible living contribute not only to personal well-being but also to the welfare of society.</p>
+            <div class="sbp-shloka-block">
+              <p class="sbp-shloka__sanskrit" lang="sa">परोपकारार्थम् इदं शरीरम् ॥</p>
+              <p class="sbp-ec-source">Rigveda</p>
+              <p class="sbp-shloka__translit">Paropakārārtham Idaṁ Śarīram ॥</p>
+            </div>
+            <p>This body is meant for the service of others.</p>
+            <p class="sbp-ec-kannada">ಈ ದೇಹವು ಪರೋಪಕಾರಕ್ಕಾಗಿ ಮೀಸಲಾಗಿದೆ.</p>
+            <p>A healthy society is built upon compassion, cooperation, and service.</p>
+          </div>
+
+          <div class="sbp-ec-block sbp-ec-block--commitment">
+            <h3 class="sbp-ec-heading">Our Commitment:</h3>
+            <p>At Swasthyabharati, we are committed to building a healthier society through:</p>
+            <ul class="sbp-ec-list">
+              <li>Health education</li>
+              <li>Lifestyle awareness programmes</li>
+              <li>Workshops and Wellness guidance</li>
+              <li>Research</li>
+              <li>Community outreach</li>
+              <li>Capacity building</li>
+              <li>Environmental responsibility</li>
+              <li>Promotion of Indian Knowledge Systems</li>
+            </ul>
+            <p class="sbp-ec-highlight sbp-ec-highlight--closing">Together, let us create a society where health is preserved, disease is prevented, and every individual is empowered to lead a balanced, purposeful, and fulfilling life.</p>
+          </div>
+
+          </div><!-- end expanded-inner -->
+        </div><!-- end expanded content -->
+
         <div class="sbp-hero__cta" data-reveal style="--reveal-delay:0.25s">
           <button type="button" class="sbp-btn sbp-btn--primary" (click)="bookConsultation()">
             Book a consultation
@@ -191,32 +374,32 @@
 
       <!-- LEFT: text copy -->
       <div class="sbp-intro__copy">
-        <p class="sbp-eyebrow" data-reveal>A Way of Living</p>
-        <h1 id="sbp-title" class="sbp-hero__title h1" data-reveal>
-          Swasthya<span class="sbp-hero__title-accent">Bharati</span>
-        </h1>
+
+        <div class="sbp-title-row">
+          <h1 id="sbp-title" class="sbp-hero__title h1" data-reveal>
+            Swasthya<span class="sbp-hero__title-accent">Bharati</span>
+          </h1>
+          <span class="sbp-title-tagline" data-reveal>— A Way of Living</span>
+        </div>
         <p data-reveal style="--reveal-delay:0.05s" class="pt">
-          For a society that shares a common territory, culture, laws, traditions and values to remain truly
-          organised and progressive, it must be healthy. Every individual who is the most important element
-          of society must become healthy. To achieve this, an individual's way of leading life must be healthy.
+          Health is the supreme foundation for fulfilling the four goals of life: righteousness (Dharma), wealth
+          (Artha), desires (Kama), and spiritual liberation (Moksha).
         </p>
         <p data-reveal style="--reveal-delay:0.1s">
-          What is healthy lifestyle? What are the ways to adopt a healthy lifestyle?
-        </p>
+          Swasthyabharati is a health movement inspired by the wisdom of the Indian Traditional Knowledge Systems and
+          supported by scientific evidence. Our mission is to preserve health, prevent disease, and promote holistic
+          well-being through education, research, healthy lifestyle practices, and community participation. </p>
         <p data-reveal style="--reveal-delay:0.15s">
-          To attain physical, mental, intellectual, social and spiritual well-being, our ancestors have laid
-          down the path of a healthy lifestyle starting from food habits to ethical conduct. Communicating
-          this clearly to people in an easily understandable manner through a detailed study of the lifestyle
-          laid down by our ancestors, supported by scientific evidence, is the work plan of
-          <strong>Swasthya Bharati</strong>.
+          We believe that health is maintained every day through right food, right activities, right thinking, and
+          living in harmony with nature.
         </p>
-        <p class="sbp-hero__lede" data-reveal style="--reveal-delay:0.15s">
+        <!-- <p class="sbp-hero__lede" data-reveal style="--reveal-delay:0.15s">
           <strong>&#8220;Swasthya Bharati&#8221;</strong> is our hospital&#8217;s unique, drugless lifestyle unit that
           integrates the
           heritage wisdom of Ayurveda with the strengths of other systems of medicine. Through this
           integrative approach, it aims to promote holistic health, encourage lifestyle modification and focus on
           disease prevention, thereby empowering individuals to lead healthier and more balanced lives.
-        </p>
+        </p> -->
       </div>
 
       <!-- RIGHT: Vision/Mission orbit widget -->
@@ -283,19 +466,25 @@
           [class.sbp-vm2__card--expanded]="vmExpanded()">
           @if (vmActive() === "vision") {
           <span class="sbp-vm2__tag">Our Vision</span>
-          <p class="sbp-vm2__sanskrit" lang="sa"><strong class="sbp-vm2__sanskrit--bold">&#8220;Swastha-susthira
+          <p class="sbp-vm2__sanskrit" lang="sa"><strong
+              class="sbp-vm2__sanskrit--bold">&#8220;स्वस्थ–सुस्थिर–समाजनिर्माणम् | Swastha-susthira
               sam&#257;janirm&#257;&#7751;am&#8221;</strong></p>
-          <p class="sbp-vm2__body">To build a healthy, sustainable society by promoting integrative, preventive and
-            promotive healthcare.</p>
+          <p class="sbp-vm2__body">To build a healthy, sustainable society. </p>
+          <p class="sbp-vm2__kannada">ಆರೋಗ್ಯವಂತ ಹಾಗೂ ಸುಸ್ಥಿರ ಸಮಾಜದ ನಿರ್ಮಾಣ</p>
           } @else {
           <span class="sbp-vm2__tag">Our Mission</span>
           <div class="sbp-vm2__body-wrap" [class.sbp-vm2__body-wrap--expanded]="vmExpanded()">
-            <p class="sbp-vm2__body">Our mission is to reduce the impact of lifestyle diseases through preventive care
-              and meaningful lifestyle changes. We believe true health, <em>Swastha</em>, means being established in
-              one&#39;s natural state of balance. The body constantly works to maintain this balance. However, unhealthy
-              habits and stress can disturb harmony and lead to Vyadhi (disease). Guided by the principles of Ayurveda
-              and Yoga, we combine traditional wisdom with modern scientific healthcare. We empower individuals through
-              education, early assessment and conscious lifestyle correction to restore and maintain balance.</p>
+            <p class="sbp-vm2__body">
+              <li>Promote holistic health awareness through education, counselling, workshops and community outreach.
+              </li>
+              <li>Encourage healthy lifestyle practices for disease prevention, health promotion, and overall mental,
+                social, ethical, and environmental well-being.</li>
+              <li>Empower individuals to take responsibility for their own health. </li>
+              <li>Develop evidence-based lifestyle resources and programs.</li>
+              <li>Build capacity through training and volunteer development.</li>
+              <li>Conduct research and documentation to evaluate impact.</li>
+
+            </p>
             @if (!vmExpanded()) {
             <span class="sbp-vm2__fade" aria-hidden="true"></span>
             }
@@ -329,6 +518,109 @@
 
       </aside>
     </div>
+  </section>
+
+  <!-- ─────────────────────────────────────────────────────────────────
+       WHY SWASTHYA BHARATI
+       ───────────────────────────────────────────────────────────────── -->
+  <section class="sbp-why" id="sbp-why" aria-labelledby="sbp-why-h">
+    <div class="sbp-why__inner">
+
+      <!-- LEFT: sticky copy -->
+      <div class="sbp-why__copy">
+        <h2 id="sbp-why-h" class="sbp-h" data-reveal>Why Swasthya Bharati</h2>
+        <p data-reveal style="--reveal-delay:0.1s">
+          Ayurveda defines its primary purpose in a profound statement:
+        </p>
+        <p data-reveal style="--reveal-delay:0.15s">
+          स्वस्थस्य स्वास्थ्य रक्षणम् । आतुरस्य विकार प्रशमनम् च ॥ CHARAKA SAHMITA • SUTRA STHANA • 30.26
+        </p>
+        <p data-reveal style="--reveal-delay:0.2s">
+          Swasthasya Swāsthya Rakṣaṇam । Āturasya Vikāra Praśamanam ca॥
+        </p>
+        <p>To preserve the health of the healthy and to cure the diseases of the sick.</p>
+        <p class="sbp-shloka__sanskrit">ಆರೋಗ್ಯವಂತನ ಆರೋಗ್ಯವನ್ನು ಸಂರಕ್ಷಿಸುವುದು ಹಾಗೂ ರೋಗಿಯ ರೋಗವನ್ನು ಶಮನಗೊಳಿಸುವುದು.</p>
+        <p data-reveal style="--reveal-delay:0.1s">Modern medicine has made remarkable advances in diagnosing and
+          treating diseases. However, preventing illness deserve much attention.</p>
+        <p data-reveal style="--reveal-delay:0.15s">This Ayurvedic principle forms the foundation of Swasthyabharati's
+          work. Swasthyabharati was established in 2021 with this aim to help individuals and communities understand the
+          importance of health (physical and mental), recultivate forgotten healthy lifestyles, and create a healthier
+          society through knowledge, awareness, and action.</p>
+      </div>
+
+      <!-- RIGHT: scrolling cards -->
+      <div class="sbp-why__points-wrap">
+        <ul class="sbp-why__points">
+          @for (p of whyPoints; track p.body; let i = $index) {
+          <li class="sbp-card sbp-card--why" [style.--reveal-delay]="(i * 0.08) + 's'">
+            <span class="sbp-card__icon" aria-hidden="true">
+              @switch (p.icon) {
+              @case ('integrate') {
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round">
+                <circle cx="12" cy="12" r="3" />
+                <path
+                  d="M12 2v3M12 19v3M4.22 4.22l2.12 2.12M17.66 17.66l2.12 2.12M2 12h3M19 12h3M4.22 19.78l2.12-2.12M17.66 6.34l2.12-2.12" />
+              </svg>
+              }
+              @case ('person') {
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                <circle cx="12" cy="7" r="4" />
+              </svg>
+              }
+              @case ('shield') {
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+              }
+              @case ('workshop') {
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round">
+                <rect x="3" y="3" width="18" height="13" rx="2" />
+                <path d="M8 21h8M12 17v4" />
+              </svg>
+              }
+              @case ('education') {
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                <path d="M6 12v5c3 3 9 3 12 0v-5" />
+              </svg>
+              }
+              @case ('community') {
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg>
+              }
+              @case ('training') {
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+              </svg>
+              }
+              @case ('leaf') {
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z" />
+                <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" />
+              </svg>
+              }
+              }
+            </span>
+            <h3 class="sbp-card__title">{{ p.title }}</h3>
+            <p class="sbp-card__body">{{ p.body }}</p>
+          </li>
+          }
+        </ul>
+      </div><!-- /.sbp-why__points-wrap -->
+
+    </div><!-- /.sbp-why__inner -->
   </section>
 
 
@@ -370,7 +662,6 @@
 
     </div>
   </section>
-
   <!-- ─────────────────────────────────────────────────────────────────
        WELLNESS HANDBOOK REFERENCE — kanban board
        ───────────────────────────────────────────────────────────────── -->
@@ -381,6 +672,74 @@
        ───────────────────────────────────────────────────────────────── -->
   <app-dinacharya-timeline id="sbp-daily"></app-dinacharya-timeline>
 
+
+  <!-- ─────────────────────────────────────────────────────────────────
+       BENEFITS
+       ───────────────────────────────────────────────────────────────── -->
+  <section class="sbp-benefits" id="sbp-benefits" aria-labelledby="sbp-benefits-h">
+    <div class="sbp-container">
+      <header class="sbp-section-head">
+        <!-- <p class="sbp-eyebrow" data-reveal>How patients benefit</p> -->
+        <h2 id="sbp-benefits-h" class="sbp-h" data-reveal>Outcomes you can feel - and measure.</h2>
+      </header>
+
+      <div class="sbp-benefits__grid">
+        @for (col of benefits; track col.group; let i = $index) {
+        <article class="sbp-card sbp-card--benefit" data-reveal [style.--reveal-delay]="(i * 0.1) + 's'">
+          <div class="sbp-card__icon" [attr.data-icon]="col.icon" aria-hidden="true">
+            @switch (col.icon) {
+            @case ('physical') {
+            <svg viewBox="0 0 32 32" fill="none">
+              <path d="M16 4 L19 10 L26 11 L21 16 L22 23 L16 20 L10 23 L11 16 L6 11 L13 10 Z" stroke="currentColor"
+                stroke-width="1.6" stroke-linejoin="round" />
+            </svg>
+            }
+            @case ('physiological') {
+            <svg viewBox="0 0 32 32" fill="none">
+              <path d="M6 16 L11 16 L13 11 L16 21 L19 13 L21 16 L26 16" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            }
+            @case ('mental') {
+            <svg viewBox="0 0 32 32" fill="none">
+              <path
+                d="M16 26 C 10 26 6 22 6 17 C 6 12 10 8 14 8 C 14 5 18 5 18 8 C 22 8 26 12 26 17 C 26 22 22 26 16 26 Z"
+                stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" />
+              <path d="M14 17 L16 19 L20 14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+            }
+            }
+          </div>
+          <h3 class="sbp-card__title">{{ col.group }}</h3>
+          <ul class="sbp-card__list">
+            @for (b of col.items; track b) {
+            <li>{{ b }}</li>
+            }
+          </ul>
+        </article>
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────────────────────────────────
+       SUCCESS STORIES / OUTCOMES
+       ───────────────────────────────────────────────────────────────── -->
+  <!-- <section class="sbp-benefits" id="sbp-benefits" aria-labelledby="sbp-benefits-h">
+    <div class="sbp-container">
+      <header class="sbp-section-head">
+        <p class="sbp-eyebrow" data-reveal>How patients benefit</p>
+        <h2 id="sbp-benefits-h" class="sbp-h" data-reveal>Success stories/ outcomes</h2>
+      </header>
+    </div>
+  </section> -->
+
+  <!-- ─────────────────────────────────────────────────────────────────
+       WORKSHOPS / PROGRAMS — slideshow gallery
+       ───────────────────────────────────────────────────────────────── -->
+  <app-workshop-gallery></app-workshop-gallery>
+
   <!-- ─────────────────────────────────────────────────────────────────
        ORBIT SERVICES - premium circular layout matching reference image
        ───────────────────────────────────────────────────────────────── -->
@@ -390,15 +749,15 @@
 
       <!-- TOP: section heading -->
       <header class="sbp-section-head">
-        <p class="sbp-eyebrow" data-reveal>Our wellness Services</p>
+        <!-- <p class="sbp-eyebrow" data-reveal>Our wellness Services</p> -->
         <h2 id="sbp-services-h" class="sbp-h pt" data-reveal>
-          A complete map of how we care.
+          “Swasthyabharati Wellness Programs at Rashtrotthana Hospital”
         </h2>
-        <p class="sbp-lede pt" data-reveal style="--reveal-delay:0.1s">
+        <!-- <p class="sbp-lede pt" data-reveal style="--reveal-delay:0.1s">
           From early lifestyle assessment to structured drugless programs -
           designed to meet you where you are and walk with you to where you
           want to be.
-        </p>
+        </p> -->
       </header>
 
       <!-- FLEX ROW: orbit LEFT, tabs+cards RIGHT -->
@@ -520,8 +879,7 @@
               <ul class="sbp-grid" [class.sbp-grid--flipping]="isFlipping()">
                 @for (item of getPagedItems(group); track item.title; let i = $index) {
                 <li class="sbp-card sbp-card--service sbp-card--flip" [class.sbp-card--is-flipping]="isFlipping()"
-                  [style.--flip-delay]="(i * 0.04) + 's'"
-                  (mouseenter)="pauseOrbit()" (mouseleave)="resumeOrbit()">
+                  [style.--flip-delay]="(i * 0.04) + 's'" (mouseenter)="pauseOrbit()" (mouseleave)="resumeOrbit()">
                   <div class="sbp-card__petal" aria-hidden="true">
                     @switch (item.icon) {
                     @case ('sun') { <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
@@ -573,13 +931,13 @@
                     }
                   </div>
                   @if (item.sub && !item.link) {
-                    <ul class="sbp-card__points">
-                      <li><span class="sbp-card__bullet"></span><span>{{ item.title }}</span></li>
-                      <li><span class="sbp-card__bullet"></span><span>{{ item.sub }}</span></li>
-                    </ul>
+                  <ul class="sbp-card__points">
+                    <li><span class="sbp-card__bullet"></span><span>{{ item.title }}</span></li>
+                    <li><span class="sbp-card__bullet"></span><span>{{ item.sub }}</span></li>
+                  </ul>
                   } @else {
-                    <h3 class="sbp-card__title">{{ item.title }}</h3>
-                    @if (item.sub) { <p class="sbp-card__sub">{{ item.sub }}</p> }
+                  <h3 class="sbp-card__title">{{ item.title }}</h3>
+                  @if (item.sub) { <p class="sbp-card__sub">{{ item.sub }}</p> }
                   }
                 </li>
                 }
@@ -598,8 +956,8 @@
               <li class="sbp-card sbp-card--service" data-reveal [style.--reveal-delay]="(i * 0.04) + 's'"
                 [class.sbp-card--linked]="!!item.link"
                 (click)="item.link && openLink(item.link, item.linkTarget, item.download)"
-                [style.cursor]="item.link ? 'pointer' : 'default'"
-                (mouseenter)="pauseOrbit()" (mouseleave)="resumeOrbit()">
+                [style.cursor]="item.link ? 'pointer' : 'default'" (mouseenter)="pauseOrbit()"
+                (mouseleave)="resumeOrbit()">
                 <div class="sbp-card__petal" aria-hidden="true">
                   @switch (item.icon) {
                   @case ('yoga') { <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
@@ -662,15 +1020,15 @@
                   </svg> }
                   }
                 </div>
-                  @if (item.sub && !item.link) {
-                    <ul class="sbp-card__points">
-                      <li><span class="sbp-card__bullet"></span><span>{{ item.title }}</span></li>
-                      <li><span class="sbp-card__bullet"></span><span>{{ item.sub }}</span></li>
-                    </ul>
-                  } @else {
-                    <h3 class="sbp-card__title">{{ item.title }}</h3>
-                    @if (item.sub) { <p class="sbp-card__sub">{{ item.sub }}</p> }
-                  }
+                @if (item.sub && !item.link) {
+                <ul class="sbp-card__points">
+                  <li><span class="sbp-card__bullet"></span><span>{{ item.title }}</span></li>
+                  <li><span class="sbp-card__bullet"></span><span>{{ item.sub }}</span></li>
+                </ul>
+                } @else {
+                <h3 class="sbp-card__title">{{ item.title }}</h3>
+                @if (item.sub) { <p class="sbp-card__sub">{{ item.sub }}</p> }
+                }
               </li>
               }
             </ul>
@@ -684,176 +1042,6 @@
   </section>
 
   <!-- ─────────────────────────────────────────────────────────────────
-       WHY SWASTHYA BHARATI
-       ───────────────────────────────────────────────────────────────── -->
-  <section class="sbp-why" id="sbp-why" aria-labelledby="sbp-why-h">
-    <div class="sbp-why__inner">
-
-      <!-- LEFT: sticky copy -->
-      <div class="sbp-why__copy">
-        <h2 id="sbp-why-h" class="sbp-h" data-reveal>Why Swasthya Bharati</h2>
-        <p data-reveal style="--reveal-delay:0.1s">
-          Modern research consistently shows that nearly 70–80% of today's chronic diseases such as
-          diabetes, hypertension, obesity and mental health disorders are closely linked to lifestyle
-          choices rather than genetics alone. Stress, irregular routines, poor sleep and food habits,
-          emotional distress and sedentary behaviour significantly alter hormonal balance, metabolism,
-          and immunity.
-        </p>
-        <p data-reveal style="--reveal-delay:0.15s">
-          Swasthya Bharati, established in 2021, is an initiative dedicated to promote awareness about
-          healthy lifestyle practices among the community. It recognises that true health extends far
-          beyond food habits and physical activity, encompassing emotional wellbeing, thought patterns,
-          social harmony and spiritual balance.
-        </p>
-        <p data-reveal style="--reveal-delay:0.2s">
-          By bridging ancient holistic knowledge with modern scientific insights, Swasthya Bharati aims to
-          cultivate healthier individuals, harmonious families and a more resilient society.
-        </p>
-      </div>
-
-      <!-- RIGHT: scrolling cards -->
-      <div class="sbp-why__points-wrap">
-        <ul class="sbp-why__points">
-          @for (p of whyPoints; track p.body; let i = $index) {
-          <li class="sbp-card sbp-card--why" [style.--reveal-delay]="(i * 0.08) + 's'">
-            <span class="sbp-card__icon" aria-hidden="true">
-              @switch (p.icon) {
-              @case ('integrate') {
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
-                stroke-linejoin="round">
-                <circle cx="12" cy="12" r="3" />
-                <path
-                  d="M12 2v3M12 19v3M4.22 4.22l2.12 2.12M17.66 17.66l2.12 2.12M2 12h3M19 12h3M4.22 19.78l2.12-2.12M17.66 6.34l2.12-2.12" />
-              </svg>
-              }
-              @case ('person') {
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
-                stroke-linejoin="round">
-                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-                <circle cx="12" cy="7" r="4" />
-              </svg>
-              }
-              @case ('shield') {
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
-                stroke-linejoin="round">
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-              </svg>
-              }
-              @case ('workshop') {
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
-                stroke-linejoin="round">
-                <rect x="3" y="3" width="18" height="13" rx="2" />
-                <path d="M8 21h8M12 17v4" />
-              </svg>
-              }
-              @case ('education') {
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
-                stroke-linejoin="round">
-                <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
-                <path d="M6 12v5c3 3 9 3 12 0v-5" />
-              </svg>
-              }
-              @case ('community') {
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
-                stroke-linejoin="round">
-                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-                <circle cx="9" cy="7" r="4" />
-                <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
-              </svg>
-              }
-              @case ('training') {
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
-                stroke-linejoin="round">
-                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
-              </svg>
-              }
-              @case ('leaf') {
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
-                stroke-linejoin="round">
-                <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z" />
-                <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" />
-              </svg>
-              }
-              }
-            </span>
-            <h3 class="sbp-card__title">{{ p.title }}</h3>
-            <p class="sbp-card__body">{{ p.body }}</p>
-          </li>
-          }
-        </ul>
-      </div><!-- /.sbp-why__points-wrap -->
-
-    </div><!-- /.sbp-why__inner -->
-  </section>
-
-  <!-- ─────────────────────────────────────────────────────────────────
-       BENEFITS
-       ───────────────────────────────────────────────────────────────── -->
-  <section class="sbp-benefits" id="sbp-benefits" aria-labelledby="sbp-benefits-h">
-    <div class="sbp-container">
-      <header class="sbp-section-head">
-        <p class="sbp-eyebrow" data-reveal>How patients benefit</p>
-        <h2 id="sbp-benefits-h" class="sbp-h" data-reveal>Outcomes you can feel - and measure.</h2>
-      </header>
-
-      <div class="sbp-benefits__grid">
-        @for (col of benefits; track col.group; let i = $index) {
-        <article class="sbp-card sbp-card--benefit" data-reveal [style.--reveal-delay]="(i * 0.1) + 's'">
-          <div class="sbp-card__icon" [attr.data-icon]="col.icon" aria-hidden="true">
-            @switch (col.icon) {
-            @case ('physical') {
-            <svg viewBox="0 0 32 32" fill="none">
-              <path d="M16 4 L19 10 L26 11 L21 16 L22 23 L16 20 L10 23 L11 16 L6 11 L13 10 Z" stroke="currentColor"
-                stroke-width="1.6" stroke-linejoin="round" />
-            </svg>
-            }
-            @case ('physiological') {
-            <svg viewBox="0 0 32 32" fill="none">
-              <path d="M6 16 L11 16 L13 11 L16 21 L19 13 L21 16 L26 16" stroke="currentColor" stroke-width="1.8"
-                stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-            }
-            @case ('mental') {
-            <svg viewBox="0 0 32 32" fill="none">
-              <path
-                d="M16 26 C 10 26 6 22 6 17 C 6 12 10 8 14 8 C 14 5 18 5 18 8 C 22 8 26 12 26 17 C 26 22 22 26 16 26 Z"
-                stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" />
-              <path d="M14 17 L16 19 L20 14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
-                stroke-linejoin="round" />
-            </svg>
-            }
-            }
-          </div>
-          <h3 class="sbp-card__title">{{ col.group }}</h3>
-          <ul class="sbp-card__list">
-            @for (b of col.items; track b) {
-            <li>{{ b }}</li>
-            }
-          </ul>
-        </article>
-        }
-      </div>
-    </div>
-  </section>
-
-  <!-- ─────────────────────────────────────────────────────────────────
-       SUCCESS STORIES / OUTCOMES
-       ───────────────────────────────────────────────────────────────── -->
-  <!-- <section class="sbp-benefits" id="sbp-benefits" aria-labelledby="sbp-benefits-h">
-    <div class="sbp-container">
-      <header class="sbp-section-head">
-        <p class="sbp-eyebrow" data-reveal>How patients benefit</p>
-        <h2 id="sbp-benefits-h" class="sbp-h" data-reveal>Success stories/ outcomes</h2>
-      </header>
-    </div>
-  </section> -->
-
-   <!-- ─────────────────────────────────────────────────────────────────
-       WORKSHOPS / PROGRAMS — slideshow gallery
-       ───────────────────────────────────────────────────────────────── -->
-  <app-workshop-gallery></app-workshop-gallery>
-
-  <!-- ─────────────────────────────────────────────────────────────────
        TEAM
        ───────────────────────────────────────────────────────────────── -->
   <section class="sbp-team" id="sbp-team" aria-labelledby="sbp-team-h">
@@ -861,7 +1049,7 @@
       <header class="sbp-section-head">
         <p class="sbp-eyebrow" data-reveal>Our team</p>
         <h2 id="sbp-team-h" class="sbp-h" data-reveal>
-          Physicians who walk this path with you.
+          Doctors who walk this path with you.
         </h2>
       </header>
 
@@ -889,7 +1077,7 @@
             <span class="sbp-doc-card__divider"></span>
             <div class="sbp-doc-card__info">
               <h3 class="sbp-doc-card__name">Dr. Sindu</h3>
-              <p class="sbp-doc-card__role">Yoga and lifestyle</p>
+              <!-- <p class="sbp-doc-card__role">Yoga and lifestyle</p> -->
             </div>
           </div>
         </li>
@@ -916,7 +1104,7 @@
             <span class="sbp-doc-card__divider"></span>
             <div class="sbp-doc-card__info">
               <h3 class="sbp-doc-card__name">Dr. Varsha</h3>
-              <p class="sbp-doc-card__role">Yoga &amp; Lifestyle</p>
+              <!-- <p class="sbp-doc-card__role">Yoga &amp; Lifestyle</p> -->
             </div>
           </div>
         </li>
@@ -943,7 +1131,7 @@
             <span class="sbp-doc-card__divider"></span>
             <div class="sbp-doc-card__info">
               <h3 class="sbp-doc-card__name">Dr. Rachana</h3>
-              <p class="sbp-doc-card__role">Ayurveda &amp; Wellness</p>
+              <!-- <p class="sbp-doc-card__role">Ayurveda &amp; Wellness</p> -->
             </div>
           </div>
         </li>
@@ -970,7 +1158,7 @@
             <span class="sbp-doc-card__divider"></span>
             <div class="sbp-doc-card__info">
               <h3 class="sbp-doc-card__name">Dr. Shamantha</h3>
-              <p class="sbp-doc-card__role">Integrative Medicine</p>
+              <!-- <p class="sbp-doc-card__role">Integrative Medicine</p> -->
             </div>
           </div>
         </li>
@@ -997,7 +1185,32 @@
             <span class="sbp-doc-card__divider"></span>
             <div class="sbp-doc-card__info">
               <h3 class="sbp-doc-card__name">Dr. Ramya</h3>
-              <p class="sbp-doc-card__role">Preventive Health</p>
+              <!-- <p class="sbp-doc-card__role">Preventive Health</p> -->
+            </div>
+          </div>
+        </li>
+
+        <!-- ── CARD 6: DR. ANUSHA ── -->
+        <li class="sbp-doc-card d6" data-reveal [style.--reveal-delay]="'0.5s'" (mousemove)="onDocCardMove($event)"
+          (mouseleave)="onDocCardLeave($event)">
+          <div class="sbp-doc-card__inner">
+            <span class="sbp-doc-card__glow"></span>
+            <div class="sbp-doc-card__scene">
+              <div class="sbp-doc-card__photo-wrap">
+                <img class="sbp-doc-card__photo" src="assets/Doc-Inv-Page/Dr-Anusha-Mutalik-Desai.png"
+                  alt="Dr. Anusha" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                <div class="sbp-doc-card__photo-placeholder">
+                  <svg viewBox="0 0 64 64" fill="none">
+                    <circle cx="32" cy="22" r="12" stroke="currentColor" stroke-width="2" />
+                    <path d="M8 56c0-13 11-22 24-22s24 9 24 22" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <span class="sbp-doc-card__divider"></span>
+            <div class="sbp-doc-card__info">
+              <h3 class="sbp-doc-card__name">Dr. Anusha</h3>
             </div>
           </div>
         </li>
@@ -1037,7 +1250,7 @@
         </div>
         <div class="sbp-appt__row">
           <span class="sbp-appt__label">Phone</span>
-          <a href="tel:+918023213000">+91 80 2321 3000</a>
+          <a href="tel:+918904404746">+91 8904404746</a>
         </div>
         <div class="sbp-appt__row">
           <span class="sbp-appt__label">Email</span>

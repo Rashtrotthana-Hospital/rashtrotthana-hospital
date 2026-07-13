@@ -208,6 +208,29 @@ body:has(.sbp-root) {
   }
 }
 
+.sbp-title-row {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.25rem;
+
+  .sbp-hero__title {
+    margin-bottom: 0;
+  }
+}
+
+.sbp-title-tagline {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.85rem;
+  letter-spacing: 0.2em;
+  color: var(--sbp-saffron-deep);
+  white-space: nowrap;
+
+  &::before { display: none; }
+}
+
 .sbp-lede {
   max-width: 640px;
   font-size: 1.05rem;
@@ -285,6 +308,137 @@ body:has(.sbp-root) {
 }
 
 .sbp-btn:hover .sbp-btn__arrow { transform: translateX(3px); }
+
+// ─────────────────────────────────────────────────────────────────────
+// HERO — "See more" toggle + expanded content
+// ─────────────────────────────────────────────────────────────────────
+.sbp-hero__see-more-wrap {
+  margin-top: 1.25rem;
+}
+
+.sbp-see-more-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: none;
+  border: none;
+  padding: 0;
+  color: var(--sbp-teal-deep);
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color var(--sbp-d-fast) var(--sbp-ease);
+
+  &:hover { color: var(--sbp-saffron); }
+
+  &__icon {
+    width: 18px;
+    height: 18px;
+    transition: transform 0.3s var(--sbp-ease);
+    &--open { transform: rotate(180deg); }
+  }
+}
+
+.sbp-hero__expanded-content {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.5s var(--sbp-ease);
+  overflow: hidden;
+
+  &--open {
+    grid-template-rows: 1fr;
+  }
+}
+
+.sbp-hero__expanded-inner {
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.sbp-ec-block {
+  padding-top: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+
+  &--commitment {
+    padding-bottom: 1rem;
+  }
+}
+
+.sbp-ec-heading {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--sbp-teal-deep);
+  font-family: 'Poppins', sans-serif;
+}
+
+.sbp-shloka-block {
+  background: rgba(9, 121, 105, 0.05);
+  border-left: 3px solid var(--sbp-gold);
+  border-radius: 0 var(--sbp-r-sm) var(--sbp-r-sm) 0;
+  padding: 0.85rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.sbp-ec-source {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--sbp-gold);
+  text-transform: uppercase;
+}
+
+.sbp-ec-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+
+  li {
+    padding-left: 1.1rem;
+    position: relative;
+    color: var(--sbp-text-soft);
+    font-size: 0.95rem;
+    line-height: 1.7;
+
+    &::before {
+      content: '•';
+      position: absolute;
+      left: 0;
+      color: var(--sbp-teal);
+      font-weight: 700;
+    }
+  }
+}
+
+.sbp-ec-kannada {
+  font-family: 'Noto Sans Kannada', 'Noto Serif Kannada', serif;
+  font-size: 0.95rem;
+  color: var(--sbp-text-soft);
+  font-style: italic;
+  background: var(--sbp-cream);
+  border-radius: var(--sbp-r-sm);
+  padding: 0.6rem 0.9rem;
+}
+
+.sbp-ec-highlight {
+  color: var(--sbp-teal-deep);
+  font-weight: 500;
+
+  &--closing {
+    font-style: italic;
+    font-size: 1rem;
+    border-top: 1px solid var(--sbp-line);
+    padding-top: 0.75rem;
+    margin-top: 0.5rem;
+  }
+}
 
 // ─────────────────────────────────────────────────────────────────────
 // HERO — split layout (copy left, brand visual right) with shloka below
@@ -646,6 +800,10 @@ body:has(.sbp-root) {
     .sbp-shloka__translit,
     .sbp-shloka__caption,
     .sbp-banner__body { text-align: center; }
+
+    // Lists inside expanded content always left-aligned
+    .sbp-ec-list,
+    .sbp-ec-list li { text-align: left; }
   }
   .banner-left {
     align-items: center;
@@ -1199,6 +1357,10 @@ body:has(.sbp-root) {
       justify-content: center;
       flex-wrap: wrap;
     }
+
+    .sbp-title-row {
+      justify-content: center;
+    }
   }
 
   .sbp-vm2 { margin-inline: auto; }
@@ -1255,6 +1417,10 @@ body:has(.sbp-root) {
     h1.h1 {
       justify-content: center;
       flex-wrap: wrap;
+    }
+
+    .sbp-title-row {
+      justify-content: center;
     }
   }
 
@@ -2512,7 +2678,7 @@ body:has(.sbp-root) {
     width: clamp(86px, 10vw, 108px);
     height: clamp(86px, 10vw, 108px);
     // Angle = base spacing + live orbit offset written by JS via --orbit-angle
-    --sat-angle: calc(var(--sat-i) * 90deg - 90deg + var(--orbit-angle, 0deg));
+    --sat-angle: calc(var(--sat-i) * 120deg - 90deg + var(--orbit-angle, 0deg));
     transform:
       translate(-50%, -50%)
       rotate(var(--sat-angle))
@@ -3525,8 +3691,9 @@ body:has(.sbp-root) {
   .sbp-section-head { margin-bottom: clamp(1.5rem, 3vw, 2.25rem); }
 
   &__grid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
     padding: 0 clamp(1rem, 4vw, 3rem);
     margin: 0;
@@ -3534,22 +3701,25 @@ body:has(.sbp-root) {
     max-width: 1200px;
     margin-inline: auto;
 
+    & > * {
+      flex: 0 0 calc(20% - 16px);
+      min-width: 180px;
+    }
+
     @media (min-width: 681px) and (max-width: 1100px) {
-      grid-template-columns: repeat(6, 1fr);
       gap: 16px;
-      & > * { grid-column: span 2; }
-      & > *:nth-child(4) { grid-column: 2 / span 2; }
-      & > *:nth-child(5) { grid-column: 4 / span 2; }
+      & > * { flex: 0 0 calc(33.333% - 14px); }
     }
     @media (max-width: 680px) {
-      grid-template-columns: 1fr;
+      flex-direction: column;
+      align-items: center;
       gap: 16px;
       padding: 0 1.25rem;
       max-width: 460px;
       margin-left: auto !important;
       margin-right: auto !important;
-      justify-items: center;
       width: 100%;
+      & > * { flex: 0 0 100%; width: 100%; }
     }
     @media (max-width: 480px) {
       grid-template-columns: 1fr;
@@ -3791,6 +3961,10 @@ body:has(.sbp-root) {
 .arm-r {
   animation: sbp-arm-swing 3s ease-in-out infinite;
   transform-origin: 72px 82px;
+}
+
+.sbp-vm2__body li{
+  margin-left: 20px;
 }
 
 // Card 2 — yoga: aura rings + energy dots + lotus petals

@@ -30,6 +30,12 @@ interface PinNote {
   pal: PinPalette;
 }
 
+// ── Timeline view-model ───────────────────────────────────────────────────────
+type TimelineRow =
+  | { type: 'heading'; label: string; pal: PinPalette }
+  | { type: 'card'; n: string; t: string; d: string; pal: PinPalette; side: 'left' | 'right'; index: number };
+
+
 @Component({
   selector: 'app-wellness-handbook',
   standalone: true,
@@ -65,7 +71,7 @@ export class WellnessHandbookComponent implements AfterViewInit, OnDestroy {
 
   readonly sections: KanbanSection[] = [
     {
-      icon: 'sun', img: 'https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=160&h=160&fit=crop', tag: 'Dinacharya',
+      icon: 'sun', img: 'assets/swastya-page/Dinacharya.png', tag: 'Dinacharya',
       title: 'Dinacharya (Daily Regimen)',
       desc: 'Structured daily routines for health and vitality',
       hideColHead: true,
@@ -77,8 +83,8 @@ export class WellnessHandbookComponent implements AfterViewInit, OnDestroy {
           items: [
             { n: '1',  t: 'Pratarutthana',               d: 'Waking up before sunrise (Brahma Muhurta)' },
             { n: '2',  t: 'Mala Mutra Visarjana',         d: 'Timely evacuation of bladder and bowels' },
-            { n: '3',  t: 'Dantdhavana & Jihvanirlekana', d: 'Oral hygiene — herbal brushing & tongue scraping' },
-            { n: '4',  t: 'Ushapana',                     d: 'Drinking one glass of water on empty stomach' },
+            { n: '3',  t: 'Dantadhavana & Jihvanirlekana', d: 'Oral hygiene — herbal brushing & tongue scraping' },
+            { n: '4',  t: 'Ushapana',                     d: 'Drinking water on empty stomach' },
             { n: '5',  t: 'Anjana and Nasya',             d: 'Herbal collyrium to eyes; medicated nasal drops' },
             { n: '6',  t: 'Kavala & Gandusha',            d: 'Oral Detox — swishing herbal oil in the mouth' },
             { n: '7',  t: 'Abhyanga and Udvarthana',      d: 'Oil application on the body before bath' },
@@ -95,7 +101,7 @@ export class WellnessHandbookComponent implements AfterViewInit, OnDestroy {
       ],
     },
     {
-      icon: 'seasons', img: 'assets/swastya-page/swsthyabharathi-logo.png', tag: 'Ritucharya',
+      icon: 'seasons', img: 'assets/swastya-page/Ritucharya.png', tag: 'Ritucharya',
       title: 'Ritucharya (Seasonal Regimen)',
       desc: 'Ayurvedic seasonal regimen — six seasons across two solstice periods',
       cols: [
@@ -122,7 +128,7 @@ export class WellnessHandbookComponent implements AfterViewInit, OnDestroy {
       ],
     },
     {
-      icon: 'bowl', img: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=160&h=160&fit=crop', tag: 'Ahara',
+      icon: 'bowl', img: 'assets/swastya-page/Ahara.png', tag: 'Ahara',
       title: 'Ahara (Food) — guidelines for healthy eating',
       desc: 'Food as the foundation of physical, mental, and spiritual well-being',
       cols: [
@@ -131,12 +137,12 @@ export class WellnessHandbookComponent implements AfterViewInit, OnDestroy {
           labelColor: '#166534', countBg: '#bbf7d0', countColor: '#166534',
           cardBorder: '#bbf7d0', numBg: '#f0fdf4', numColor: '#15803d',
           items: [
-            { n: '1',  t: 'Choose food by season and health',   d: 'Season, time of day, age, digestion strength' },
-            { n: '2',  t: 'Eat freshly prepared food',          d: 'Freshly cooked and warm; avoid stale or reheated' },
-            { n: '5',  t: 'Respect regional staples',           d: 'Prefer unpolished, locally grown grains' },
-            { n: '6',  t: 'Consume a balanced meal',            d: 'Include all six tastes in each meal' },
-            { n: '10', t: 'Include milk and ghee',              d: 'Ethically sourced; in proper quantity' },
-            { n: '11', t: 'Consume local and seasonal produce', d: 'Eat what grows in your region and season' },
+            { n: '1', t: 'Choose food by season and health',   d: 'Season, time of day, age, digestion strength' },
+            { n: '2', t: 'Eat freshly prepared food',          d: 'Freshly cooked and warm; avoid stale or reheated' },
+            { n: '3', t: 'Respect regional staples',           d: 'Prefer unpolished, locally grown grains' },
+            { n: '4', t: 'Consume a balanced meal',            d: 'Include all six tastes in each meal' },
+            { n: '5', t: 'Include milk and ghee',              d: 'Ethically sourced; in proper quantity' },
+            { n: '6', t: 'Consume native, locally grown, and seasonal foods, Organic Desi', d: 'Eat what grows in your region and season' },
           ],
         },
         {
@@ -144,11 +150,11 @@ export class WellnessHandbookComponent implements AfterViewInit, OnDestroy {
           labelColor: '#92400e', countBg: '#fde68a', countColor: '#92400e',
           cardBorder: '#fde68a', numBg: '#fffbeb', numColor: '#b45309',
           items: [
-            { n: '7',  t: 'Follow proper eating conduct',        d: 'Eat mindfully without distractions' },
-            { n: '8',  t: 'Eat only after proper digestion',     d: 'Do not eat until the previous meal is digested' },
-            { n: '9',  t: 'Maintain proper quantity',            d: 'Stomach division rule — leave space' },
-            { n: '12', t: 'Cook food properly',                  d: 'Avoid overcooked or undercooked food' },
-            { n: '13', t: 'Eat with mindfulness and gratitude',  d: 'Mental state influences digestion' },
+            { n: '1', t: 'Follow proper eating conduct',        d: 'Eat mindfully without distractions' },
+            { n: '2', t: 'Eat only after proper digestion',     d: 'Do not eat until the previous meal is digested' },
+            { n: '3', t: 'Maintain proper quantity',            d: 'Stomach division rule — leave space' },
+            { n: '4', t: 'Cook food properly',                  d: 'Avoid overcooked or undercooked food' },
+            { n: '5', t: 'Eat with mindfulness and gratitude',  d: 'Mental state influences digestion' },
           ],
         },
         {
@@ -156,16 +162,16 @@ export class WellnessHandbookComponent implements AfterViewInit, OnDestroy {
           labelColor: '#9f1239', countBg: '#fecdd3', countColor: '#9f1239',
           cardBorder: '#fecdd3', numBg: '#fff1f2', numColor: '#be123c',
           items: [
-            { n: '3',  t: 'Maintain purity in preparation',             d: 'Cleanliness of utensils, place, cook\'s mental state' },
-            { n: '4',  t: 'Avoid incompatible combinations (Viruddha)', d: 'E.g. milk should not be combined with salty or sour' },
-            { n: '14', t: 'Avoid processed foods; prefer organic',      d: 'Highly processed items harm long-term health' },
+            { n: '1', t: 'Maintain purity in preparation',             d: 'Cleanliness of utensils, place, cook\'s mental state' },
+            { n: '2', t: 'Avoid incompatible combinations (Viruddha)', d: 'E.g. milk should not be combined with salty or sour' },
+            { n: '3', t: 'Avoid processed foods; prefer organic',      d: 'Highly processed items harm long-term health' },
           ],
         },
       ],
     },
     // ── Vyayama (Physical Activity) ────────────────────────────────────────
     {
-      icon: 'sun', img: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=160&h=160&fit=crop',
+      icon: 'sun', img: 'assets/swastya-page/Vyayama.png',
       tag: 'Vyayama',
       title: 'Vyayama (Physical Activity)',
       desc: 'Regular physical exercise to strengthen body, sharpen mind and stabilise health',
@@ -178,7 +184,7 @@ export class WellnessHandbookComponent implements AfterViewInit, OnDestroy {
             { n: '1', t: 'Improves lightness of body',     d: 'Laghava — feeling agile and energetic' },
             { n: '2', t: 'Enhances digestion (agni)',       d: 'Strengthens metabolism and tissue assimilation' },
             { n: '3', t: 'Builds strength & stamina',       d: 'Increases muscle tone and endurance (sthairya, bala)' },
-            { n: '4', t: 'Sharpens body firmness',          d: 'Improves proportionate growth of body parts' },
+            { n: '4', t: 'Improves muscular strength and body tone',          d: 'Improves proportionate growth of body parts' },
             { n: '5', t: 'Cleanses toxins via sweat',       d: 'Helps in elimination of ama (metabolic waste)' },
             { n: '6', t: 'Stabilises mind',                 d: 'Reduces anxiety, depression and lethargy' },
           ],
@@ -210,7 +216,7 @@ export class WellnessHandbookComponent implements AfterViewInit, OnDestroy {
     },
     // ── Nidra (Sleep) ──────────────────────────────────────────────────────
     {
-      icon: 'moon', img: 'https://images.unsplash.com/photo-1455642305367-68834a1f7eea?w=160&h=160&fit=crop',
+      icon: 'moon', img: 'assets/swastya-page/Nidra.png',
       tag: 'Nidra',
       title: 'Nidra (Sleep)',
       desc: 'Restorative sleep is one of the three pillars (trayopastambha) of life',
@@ -235,7 +241,7 @@ export class WellnessHandbookComponent implements AfterViewInit, OnDestroy {
             { n: '6', t: '6–8 hours of restful sleep',     d: 'Wake before sunrise (Brahma Muhurta)' },
             { n: '7', t: 'Padabhyanga before bed',         d: 'Foot massage with sesame oil or ghee' },
             { n: '8', t: 'Light meals at night',           d: 'Easy-to-digest, warm food 2–3 hours before bed' },
-            { n: '9', t: 'Calm environment',               d: 'Dim lights, no screens, comfortable bedding' },
+            { n: '9', t: 'Calm environment',               d: 'No lights, no screens, comfortable bedding' },
           ],
         },
         {
@@ -243,23 +249,23 @@ export class WellnessHandbookComponent implements AfterViewInit, OnDestroy {
           labelColor: '#9f1239', countBg: '#fecdd3', countColor: '#9f1239',
           cardBorder: '#fecdd3', numBg: '#fff1f2', numColor: '#be123c',
           items: [
-            { n: '✗', t: 'Day sleep (Divasvapna)',          d: 'Aggravates kapha — avoid except in summer or after illness' },
+            { n: '✗', t: 'Day sleep (Diwasvapna)',          d: 'Aggravates kapha — avoid except in summer or after illness' },
             { n: '✗', t: 'Late-night sleep (Ratri-jagarana)', d: 'Aggravates vata, causes dryness, anxiety, fatigue' },
             { n: '✗', t: 'Heavy meals before bed',           d: 'Disturbs digestion and quality of sleep' },
-            { n: '✗', t: 'Screens & stimulants at night',    d: 'Caffeine, mobile screens disturb melatonin cycle' },
+            { n: '✗', t: 'Screens, exercise & stimulants at night',    d: 'Caffeine, exposure to mobile screens, and late-night exercise can disrupt the body/s melatonin cycle and interfere with healthy sleep.' },
           ],
         },
       ],
     },
     // ── Manasika Arogya (incl. Sadvritta — code of ethical conduct) ─────────
     {
-      icon: 'heart', img: 'https://images.unsplash.com/photo-1545205597-3d9d02c29597?w=160&h=160&fit=crop',
+      icon: 'heart', img: 'assets/swastya-page/Manasika-Arogya.png',
       tag: 'Manasika Arogya',
       title: 'Manasika Arogya (Mental Well-being & Sadvritta)',
       desc: 'Cultivating a calm, resilient mind through Ayurvedic mental practices and the code of ethical conduct (Sadvritta)',
       cols: [
         {
-          label: 'Cultivate (Manasika)', colIcon: 'leaf', bg: '#f0fdf4', headBg: '#dcfce7', iconBg: '#bbf7d0', iconColor: '#166534',
+          label: 'Practices', colIcon: 'leaf', bg: '#f0fdf4', headBg: '#dcfce7', iconBg: '#bbf7d0', iconColor: '#166534',
           labelColor: '#166534', countBg: '#bbf7d0', countColor: '#166534',
           cardBorder: '#bbf7d0', numBg: '#f0fdf4', numColor: '#15803d',
           items: [
@@ -272,7 +278,7 @@ export class WellnessHandbookComponent implements AfterViewInit, OnDestroy {
           ],
         },
         {
-          label: 'Sadvritta — Personal conduct', colIcon: 'shield', bg: '#fffbeb', headBg: '#fef3c7', iconBg: '#fde68a', iconColor: '#92400e',
+          label: 'Sadvritta (Ethical Conduct)', colIcon: 'shield', bg: '#fffbeb', headBg: '#fef3c7', iconBg: '#fde68a', iconColor: '#92400e',
           labelColor: '#92400e', countBg: '#fde68a', countColor: '#92400e',
           cardBorder: '#fde68a', numBg: '#fffbeb', numColor: '#b45309',
           items: [
@@ -287,7 +293,7 @@ export class WellnessHandbookComponent implements AfterViewInit, OnDestroy {
           ],
         },
         {
-          label: 'Mental disturbers — avoid', colIcon: 'ban', bg: '#fff1f2', headBg: '#ffe4e6', iconBg: '#fecdd3', iconColor: '#9f1239',
+          label: 'Avoid', colIcon: 'ban', bg: '#fff1f2', headBg: '#ffe4e6', iconBg: '#fecdd3', iconColor: '#9f1239',
           labelColor: '#9f1239', countBg: '#fecdd3', countColor: '#9f1239',
           cardBorder: '#fecdd3', numBg: '#fff1f2', numColor: '#be123c',
           items: [
@@ -312,15 +318,56 @@ export class WellnessHandbookComponent implements AfterViewInit, OnDestroy {
   // Flat ordered list of pin notes for the active section
   readonly notes = computed<PinNote[]>(() => {
     const s = this.sections[this.current()];
-    const multi = s.cols.length > 1;
     const out: PinNote[] = [];
     for (const c of s.cols) {
       const pal = this.PAL_MAP[c.labelColor] ?? this.DEFAULT_PAL;
       for (const it of c.items) {
-        out.push({ n: it.n, t: it.t, d: it.d, label: c.label, showLabel: multi, pal });
+        out.push({ n: it.n, t: it.t, d: it.d, label: c.label, showLabel: false, pal });
       }
     }
     return out;
+  });
+
+  // Standalone group heading labels — one per column, positioned above first card of that col
+  readonly groupHeadings = computed<{ label: string; pal: PinPalette; leftPct: number; top: number }[]>(() => {
+    const s = this.sections[this.current()];
+    if (s.cols.length < 2) return [];
+    const out: { label: string; pal: PinPalette; leftPct: number; top: number }[] = [];
+    let noteIdx = 0;
+    for (const c of s.cols) {
+      const pal = this.PAL_MAP[c.labelColor] ?? this.DEFAULT_PAL;
+      const pos = this.notePos(noteIdx);
+      out.push({ label: c.label, pal, leftPct: pos.pinXPct, top: pos.top - 70 });
+      noteIdx += c.items.length;
+    }
+    return out;
+  });
+
+  // ── Timeline rows (new vertical center-line layout) ───────────────────────
+  // Each entry is either a heading badge or a card placed left/right.
+  readonly timelineRows = computed<TimelineRow[]>(() => {
+    const s = this.sections[this.current()];
+    const isMultiCol = s.cols.length > 1;
+    const rows: TimelineRow[] = [];
+    let cardIndex = 0; // global index across all cards in the section
+
+    for (const col of s.cols) {
+      const pal = this.PAL_MAP[col.labelColor] ?? this.DEFAULT_PAL;
+
+      if (isMultiCol) {
+        rows.push({ type: 'heading', label: col.label, pal });
+      }
+
+      let colCardCount = 0; // reset side alternation per col
+      for (const item of col.items) {
+        const side: 'left' | 'right' = colCardCount % 2 === 0 ? 'left' : 'right';
+        rows.push({ type: 'card', n: item.n, t: item.t, d: item.d, pal, side, index: cardIndex });
+        colCardCount++;
+        cardIndex++;
+      }
+    }
+
+    return rows;
   });
 
   // ── Percentage-based pinboard geometry (matches reference design) ──────────
@@ -332,7 +379,7 @@ export class WellnessHandbookComponent implements AfterViewInit, OnDestroy {
   readonly CARD_W_PCT  = 29.1;
   readonly LEFT_X_PCT  = 10.2;
   readonly RIGHT_X_PCT = 56.2;
-  readonly TOP0        = 46;
+  readonly TOP0        = 80;
   readonly STEP        = 128;
   private readonly JITTER_PCT = [0, 2.0, -1.3, 2.9, -0.7, 2.4, -1.8, 1.1];
 

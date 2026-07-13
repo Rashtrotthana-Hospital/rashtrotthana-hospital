@@ -131,6 +131,10 @@ export class SwasthyaBharatiPageComponent
 
   readonly activeService = signal<ServiceTab>('assessment');
 
+  // Hero section "See more" toggle
+  readonly heroExpanded = signal<boolean>(false);
+  toggleHeroExpanded(): void { this.heroExpanded.set(!this.heroExpanded()); }
+
   // Vision / Mission toggle
   readonly vmActive = signal<'vision' | 'mission'>('vision');
   readonly vmAnimating = signal<boolean>(false);
@@ -163,8 +167,8 @@ export class SwasthyaBharatiPageComponent
       subs: [
         { n: '1',  text: 'Pratarutthana',                        detail: 'Waking up before sunrise (Brahma Muhurta)' },
         { n: '2',  text: 'Mala Mutra Visarjana',                 detail: 'Timely evacuation of bladder and bowels' },
-        { n: '3',  text: 'Dantdhavana & Jihvanirlekana',         detail: 'Oral hygiene — brushing with herbal powder & tongue scraping' },
-        { n: '4',  text: 'Ushapana',                             detail: 'Drinking one glass of water; avoid tea or coffee on empty stomach' },
+        { n: '3',  text: 'Dantadhavana & Jihvanirlekana',         detail: 'Oral hygiene — brushing with herbal powder & tongue scraping' },
+        { n: '4',  text: 'Ushapana',                             detail: 'Drinking water on empty stomach' },
         { n: '5',  text: 'Anjana and Nasya',                     detail: 'Herbal collyrium for eyes; medicated nasal drops' },
         { n: '6',  text: 'Kavala & Gandusha (Oral Detox)',       detail: 'Swishing and holding herbal oil in the mouth' },
         { n: '7',  text: 'Abhyanga and Udvarthana',              detail: 'Oil application on body before bath; dry powder massage' },
@@ -570,26 +574,26 @@ export class SwasthyaBharatiPageComponent
     },
     {
       id: 'yoga',
-      label: 'Yoga Therapies',
+      label: 'Yoga',
       caption: 'Guided practice for body, breath and mind.',
       items: [
-        { title: 'Therapeutic Yoga for various disease conditions', icon: 'yoga' },
-        { title: 'Breathing practices (Pranayama)', icon: 'breath' },
-        { title: 'Relaxation techniques', icon: 'relax' },
-        { title: 'Meditation', icon: 'meditate' },
-        { title: 'Stress reduction session', icon: 'wave' },
+        { title: 'Prenatal and Postnatal Yoga', icon: 'yoga' },
+        { title: 'Therapeutic Yoga for various disease conditions', icon: 'breath' },
+        { title: 'General Yoga Sessions – Asanas, Pranayama, Dhyana, Relaxation Techniques', icon: 'relax' },
+        // { title: 'Meditation', icon: 'meditate' },
+        // { title: 'Stress reduction session', icon: 'wave' },
       ],
     },
-    {
-      id: 'education',
-      label: 'Health Education & Awareness',
-      caption: 'Bringing prevention into homes, schools and workplaces.',
-      items: [
-        { title: 'Workshops for various sectors', icon: 'workshop' },
-        { title: 'Patient education sessions', icon: 'education' },
-        { title: 'School / Community programs', icon: 'community' },
-      ],
-    },
+    // {
+    //   id: 'education',
+    //   label: 'Health Education & Awareness',
+    //   caption: 'Bringing prevention into homes, schools and workplaces.',
+    //   items: [
+    //     { title: 'Workshops for various sectors', icon: 'workshop' },
+    //     { title: 'Patient education sessions', icon: 'education' },
+    //     { title: 'School / Community programs', icon: 'community' },
+    //   ],
+    // },
     {
       id: 'programs',
       label: 'Training',
@@ -747,10 +751,10 @@ export class SwasthyaBharatiPageComponent
       q: 'Is it safe for all ages?',
       a: 'Yes, suitable for children, adults and elderly.',
     },
-    {
-      q: 'Can it reverse diabetes or PCOS?',
-      a: 'Many patients experience significant improvement with supervised lifestyle changes.',
-    },
+    // {
+    //   q: 'Can it reverse diabetes or PCOS?',
+    //   a: 'Many patients experience significant improvement with supervised lifestyle changes.',
+    // },
   ];
 
   readonly resources = [
