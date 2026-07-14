@@ -2,7 +2,7 @@
 
   <div class="wh-wrap">
 
-    <!-- ── Sticky header: title + tab pills + active meta ── -->
+    <!-- ── Sticky header ── -->
     <div class="wh-sticky">
 
       <header class="wh-head">
@@ -10,7 +10,6 @@
         <h1 class="wh-head__title">Your guide to Ayurvedic living</h1>
       </header>
 
-      <!-- Tab pills -->
       <nav class="wh-tabs" role="tablist">
         @for (sec of sections; track sec.title; let i = $index) {
           <button
@@ -25,7 +24,6 @@
         }
       </nav>
 
-      <!-- Active section meta -->
       <div class="wh-meta">
         <div class="wh-meta__title">{{ section.title }}</div>
         <div class="wh-meta__sub">{{ section.desc }} &nbsp;·&nbsp; {{ itemCount }} notes</div>
@@ -35,68 +33,47 @@
 
     <div class="wh-spacer"></div>
 
-    <!-- ── Vertical center-line timeline ── -->
-    <div class="wh-timeline">
-      <div class="wh-tl__line"></div>
+    <!-- ── Columns: each col gets a heading pill on top, cards below ── -->
+    <div class="wh-board">
 
-      @for (row of timelineRows(); track ri; let ri = $index) {
-        @if (row.type === 'heading') {
-          <div class="wh-tl__group-head"
-               [style.color]="row.pal.label"
-               [style.background]="'color-mix(in srgb, ' + row.pal.label + ' 12%, #ffffff)'"
-               [style.border-color]="'color-mix(in srgb, ' + row.pal.label + ' 35%, transparent)'">
-            {{ row.label }}
-          </div>
-        }
-        @if (row.type === 'card') {
-          <div class="wh-tl__row"
-               [class.wh-tl__row--left]="row.side === 'left'"
-               [class.wh-tl__row--right]="row.side === 'right'"
-               [class.wh-tl__row--active]="active() === row.index"
-               (click)="setActive(row.index)">
+      @for (col of section.cols; track col.label; let ci = $index) {
+        <div class="wh-col">
 
-            <!-- Left cell: card if side=left, empty otherwise -->
-            <div class="wh-tl__cell wh-tl__cell--left">
-              @if (row.side === 'left') {
-                <div class="wh-tl__card"
-                     [style.background]="'radial-gradient(130% 130% at 90% 0%, ' + row.pal.tint + ' 0%, #ffffff 60%)'">
-                  <span class="wh-tl__badge"
-                        [style.border-color]="row.pal.pin"
-                        [style.color]="row.pal.num">{{ row.n }}</span>
-                  <div class="wh-tl__body">
-                    <div class="wh-tl__title">{{ row.t }}</div>
-                    <div class="wh-tl__desc">{{ row.d }}</div>
-                  </div>
+          <!-- heading pill with lines — only shown when multiple cols -->
+          @if (section.cols.length > 1) {
+            <div class="wh-col__head">
+              <div class="wh-col__line" [style.border-color]="'color-mix(in srgb, ' + col.labelColor + ' 30%, transparent)'"></div>
+              <div class="wh-col__pill"
+                   [style.color]="col.labelColor"
+                   [style.background]="'color-mix(in srgb, ' + col.labelColor + ' 12%, #ffffff)'"
+                   [style.border-color]="'color-mix(in srgb, ' + col.labelColor + ' 35%, transparent)'">
+                {{ col.label }}
+              </div>
+              <div class="wh-col__line" [style.border-color]="'color-mix(in srgb, ' + col.labelColor + ' 30%, transparent)'"></div>
+            </div>
+          }
+
+          <!-- cards: grid of 3 per row when single col, stacked when multi-col -->
+          <div class="wh-col__cards" [class.wh-col__cards--grid]="section.cols.length === 1">
+            @for (item of col.items; track item.n) {
+              <div class="wh-tl__card"
+                   [class.wh-tl__card--active]="active() === colCardIndex(ci, $index)"
+                   [style.background]="'radial-gradient(130% 130% at 14% 0%, ' + colTint(col.labelColor) + ' 0%, #ffffff 60%)'"
+                   (click)="setActive(colCardIndex(ci, $index))">
+                <span class="wh-tl__badge"
+                      [style.border-color]="colPin(col.labelColor)"
+                      [style.color]="colNum(col.labelColor)">{{ item.n }}</span>
+                <div class="wh-tl__body">
+                  <div class="wh-tl__title">{{ item.t }}</div>
+                  <div class="wh-tl__desc">{{ item.d }}</div>
                 </div>
-                <div class="wh-tl__connector"></div>
-              }
-            </div>
-
-            <!-- Center dot on the line -->
-            <div class="wh-tl__dot"
-                 [style.background]="'radial-gradient(circle at 34% 30%, #fff 0%, ' + row.pal.pin + ' 47%)'">
-            </div>
-
-            <!-- Right cell: card if side=right, empty otherwise -->
-            <div class="wh-tl__cell wh-tl__cell--right">
-              @if (row.side === 'right') {
-                <div class="wh-tl__connector"></div>
-                <div class="wh-tl__card"
-                     [style.background]="'radial-gradient(130% 130% at 14% 0%, ' + row.pal.tint + ' 0%, #ffffff 60%)'">
-                  <span class="wh-tl__badge"
-                        [style.border-color]="row.pal.pin"
-                        [style.color]="row.pal.num">{{ row.n }}</span>
-                  <div class="wh-tl__body">
-                    <div class="wh-tl__title">{{ row.t }}</div>
-                    <div class="wh-tl__desc">{{ row.d }}</div>
-                  </div>
-                </div>
-              }
-            </div>
-
+              </div>
+            }
           </div>
-        }
+
+        </div>
       }
+
     </div>
 
   </div>

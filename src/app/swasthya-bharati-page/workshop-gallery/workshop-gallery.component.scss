@@ -27,9 +27,8 @@
 }
 .wg-eyebrow {
   display: inline-block;
-  font-size: 0.72rem;
-  letter-spacing: 0.24em;
-  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
   font-weight: 600;
   color: rgba(255, 255, 255, 0.55);
   margin: 0 0 0.5rem;
@@ -264,7 +263,7 @@
   .wg-card-halo { inset: -12px; border-radius: 38px; &__mask { inset: 2px; border-radius: 36px; } }
   .wg-card-inner { border-radius: 26px; }
   .wg-title { font-size: 30px; }
-  .wg-eyebrow { font-size: 0.68rem; letter-spacing: 0.2em; }
+  .wg-eyebrow { font-size: 0.95rem; letter-spacing: 0.04em; }
 }
 
 @media (max-width: 600px) {
@@ -275,7 +274,7 @@
   .wg-viewport { padding: 24px 0; }
   .wg-track { gap: 16px; }
   .wg-title { font-size: 24px; }
-  .wg-eyebrow { font-size: 0.62rem; letter-spacing: 0.18em; }
+  .wg-eyebrow { font-size: 0.88rem; letter-spacing: 0.03em; }
 
   .wg-slot {
     width: calc(100vw - 100px); // leave room for prev/next + gaps

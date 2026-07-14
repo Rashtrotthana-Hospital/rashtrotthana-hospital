@@ -133,7 +133,13 @@ export class SwasthyaBharatiPageComponent
 
   // Hero section "See more" toggle
   readonly heroExpanded = signal<boolean>(false);
-  toggleHeroExpanded(): void { this.heroExpanded.set(!this.heroExpanded()); }
+  toggleHeroExpanded(): void {
+    const wasExpanded = this.heroExpanded();
+    this.heroExpanded.set(!wasExpanded);
+    if (wasExpanded) {
+      setTimeout(() => this.scrollTo('sbp-hero'), 0);
+    }
+  }
 
   // Vision / Mission toggle
   readonly vmActive = signal<'vision' | 'mission'>('vision');

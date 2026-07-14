@@ -31,9 +31,12 @@ interface PinNote {
 }
 
 // ── Timeline view-model ───────────────────────────────────────────────────────
-type TimelineRow =
-  | { type: 'heading'; label: string; pal: PinPalette }
-  | { type: 'card'; n: string; t: string; d: string; pal: PinPalette; side: 'left' | 'right'; index: number };
+interface TimelineCard { n: string; t: string; d: string; pal: PinPalette; index: number; }
+interface TimelineRow {
+  heading: string | null;
+  pal: PinPalette;
+  items: (TimelineCard | null)[]; // always 3 slots
+}
 
 
 @Component({
@@ -343,27 +346,24 @@ export class WellnessHandbookComponent implements AfterViewInit, OnDestroy {
     return out;
   });
 
-  // ── Timeline rows (new vertical center-line layout) ───────────────────────
-  // Each entry is either a heading badge or a card placed left/right.
+  // ── Timeline rows — heading + cards in the same row ─────────────────────────
   readonly timelineRows = computed<TimelineRow[]>(() => {
     const s = this.sections[this.current()];
     const isMultiCol = s.cols.length > 1;
     const rows: TimelineRow[] = [];
-    let cardIndex = 0; // global index across all cards in the section
+    let cardIndex = 0;
 
     for (const col of s.cols) {
       const pal = this.PAL_MAP[col.labelColor] ?? this.DEFAULT_PAL;
 
-      if (isMultiCol) {
-        rows.push({ type: 'heading', label: col.label, pal });
-      }
-
-      let colCardCount = 0; // reset side alternation per col
-      for (const item of col.items) {
-        const side: 'left' | 'right' = colCardCount % 2 === 0 ? 'left' : 'right';
-        rows.push({ type: 'card', n: item.n, t: item.t, d: item.d, pal, side, index: cardIndex });
-        colCardCount++;
-        cardIndex++;
+      for (let i = 0; i < col.items.length; i += 3) {
+        const chunk = col.items.slice(i, i + 3);
+        const items: (TimelineCard | null)[] = [null, null, null];
+        for (let j = 0; j < chunk.length; j++) {
+          items[j] = { n: chunk[j].n, t: chunk[j].t, d: chunk[j].d, pal, index: cardIndex++ };
+        }
+        // heading only on the first chunk of each column
+        rows.push({ heading: (isMultiCol && i === 0) ? col.label : null, pal, items });
       }
     }
 
@@ -423,6 +423,24 @@ export class WellnessHandbookComponent implements AfterViewInit, OnDestroy {
     }
     return out;
   });
+
+  // ── Column card helpers ──────────────────────────────────────────────────────
+  colCardIndex(colIdx: number, itemIdx: number): number {
+    const s = this.sections[this.current()];
+    let base = 0;
+    for (let i = 0; i < colIdx; i++) base += s.cols[i].items.length;
+    return base + itemIdx;
+  }
+
+  colTint(labelColor: string): string {
+    return (this.PAL_MAP[labelColor] ?? this.DEFAULT_PAL).tint;
+  }
+  colPin(labelColor: string): string {
+    return (this.PAL_MAP[labelColor] ?? this.DEFAULT_PAL).pin;
+  }
+  colNum(labelColor: string): string {
+    return (this.PAL_MAP[labelColor] ?? this.DEFAULT_PAL).num;
+  }
 
   goto(i: number) { this.current.set(i); this.active.set(-1); }
   prev() { if (this.current() > 0) { this.current.update(v => v - 1); this.active.set(-1); } }
