@@ -10,7 +10,7 @@
   <!-- ─────────────────────────────────────────────────────────────────
        HERO - split layout, brand mark right, content left, shloka below
        ───────────────────────────────────────────────────────────────── -->
-  <section class="sbp-hero" aria-labelledby="sbp-title">
+  <section class="sbp-hero" id="sbp-hero" aria-labelledby="sbp-title">
     <!-- Ambient decoration layer -->
     <div class="sbp-hero__decor" aria-hidden="true">
       <span class="sbp-hero__glow sbp-hero__glow--saffron"></span>
@@ -96,17 +96,18 @@
           for disease prevention, well-being and longevity.
         </p>
 
-        <!-- See more / See less toggle -->
-        <div class="sbp-hero__see-more-wrap">
-          <button type="button" class="sbp-see-more-btn" (click)="toggleHeroExpanded()" [attr.aria-expanded]="heroExpanded()">
-            <span>{{ heroExpanded() ? 'Read less' : 'Read more' }}</span>
-            <svg class="sbp-see-more-btn__icon" [class.sbp-see-more-btn__icon--open]="heroExpanded()"
-              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
-              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <polyline points="6 9 12 15 18 9"/>
-            </svg>
-          </button>
-        </div>
+        <!-- Read more button (collapsed state) -->
+        @if (!heroExpanded()) {
+          <div class="sbp-hero__see-more-wrap">
+            <button type="button" class="sbp-see-more-btn" (click)="toggleHeroExpanded()" [attr.aria-expanded]="false">
+              <span>Read more</span>
+              <svg class="sbp-see-more-btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+          </div>
+        }
 
         <!-- Expanded content block -->
         <div class="sbp-hero__expanded-content" [class.sbp-hero__expanded-content--open]="heroExpanded()">
@@ -274,6 +275,17 @@
               <li>Promotion of Indian Knowledge Systems</li>
             </ul>
             <p class="sbp-ec-highlight sbp-ec-highlight--closing">Together, let us create a society where health is preserved, disease is prevented, and every individual is empowered to lead a balanced, purposeful, and fulfilling life.</p>
+          </div>
+
+          <!-- Read less button (expanded state, at the bottom) -->
+          <div class="sbp-hero__see-more-wrap">
+            <button type="button" class="sbp-see-more-btn" (click)="toggleHeroExpanded()" [attr.aria-expanded]="true">
+              <span>Read less</span>
+              <svg class="sbp-see-more-btn__icon sbp-see-more-btn__icon--open" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
           </div>
 
           </div><!-- end expanded-inner -->
@@ -751,7 +763,7 @@
       <header class="sbp-section-head">
         <!-- <p class="sbp-eyebrow" data-reveal>Our wellness Services</p> -->
         <h2 id="sbp-services-h" class="sbp-h pt" data-reveal>
-          “Swasthyabharati Wellness Programs at Rashtrotthana Hospital”
+          Swasthyabharati Wellness Programs at Rashtrotthana Hospital
         </h2>
         <!-- <p class="sbp-lede pt" data-reveal style="--reveal-delay:0.1s">
           From early lifestyle assessment to structured drugless programs -
