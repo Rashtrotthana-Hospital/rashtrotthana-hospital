@@ -83,6 +83,7 @@ import { ApplicationFormComponent } from './application-form/application-form.co
 import { CallBackFormComponent } from './call-back-form/call-back-form.component';
 import { NewDoctorPageComponent } from './new-doctor-page/new-doctor-page.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { NewResearchPageComponent } from './new-research-page/new-research-page.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -137,6 +138,7 @@ const routes: Routes = [
   { path: 'ethical-committee', component: EthicCommitteeComponent },
   { path: 'health-package/:slug', component: HealthCheckComponent },
   { path: 'research-center', component: ResearchComponent },
+  { path: 'new-research-center', component: NewResearchPageComponent },
 
 
 
