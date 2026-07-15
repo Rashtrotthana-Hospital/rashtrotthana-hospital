@@ -2651,6 +2651,7 @@
         line-height: 22px;
         width: 222px;
         background: none;
+        padding: 10px 0;
     }
 
     .banner-para,
@@ -2960,7 +2961,7 @@
     }
 
     .publications-left img {
-        display: block;
+        display: none;
         width: 100%;
         height: auto;
         object-fit: cover;
@@ -2969,8 +2970,8 @@
 
     .publications-left-text {
         position: absolute;
-        top: -50px;
-        left: 140px;
+        top: 20px;
+        left: 10px;
         right: 0;
         bottom: 0;
         padding: 16px 16px 16px 20px;
@@ -2978,6 +2979,7 @@
         flex-direction: column;
         justify-content: center;
         gap: 6px;
+        height: 100px;
     }
 
     .publications-title {
