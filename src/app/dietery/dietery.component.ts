@@ -72,12 +72,16 @@ export class DieteryComponent {
 
 
   images = [
-    '/assets/facility/facility-img-1.jpg',
-    '/assets/facility/facility-img-4.jpg',
-    '/assets/facility/facility-img-6.jpg',
-    '/assets/facility/facility-img-8.jpg',
-    '/assets/facility/facility-img-10.jpg',
-    '/assets/facility/facility-img-13.jpg'
+    'assets/facility/dt-img-9.webp',
+    'assets/facility/dt-img-5.webp',
+    'assets/facility/dt-img-8.webp',
+    'assets/facility/dt-img-6.webp',
+    'assets/facility/dt-img-10.webp',
+    'assets/facility/dt-img-7.webp',
+    'assets/facility/dt-img-4.webp',
+    'assets/facility/dt-img-1.webp',
+    'assets/facility/dt-img-2.webp',
+    'assets/facility/dt-img-3.webp',
   ];
 
 

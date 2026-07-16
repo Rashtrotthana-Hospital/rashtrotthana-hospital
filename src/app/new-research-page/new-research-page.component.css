@@ -351,7 +351,7 @@
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
-    line-height: 50px;
+    line-height: 40px;
     /* 250% */
 }
 
@@ -676,6 +676,10 @@
     height: 257.646px;
     aspect-ratio: 386.28/257.65;
     border-radius: 20px;
+}
+
+.publications-section .sub-heading-underline {
+    display: none;
 }
 
 .areas-cards {
@@ -1300,7 +1304,7 @@
 }
 
 .future-card {
-    width: 500px;
+    width: 530px;
     min-height: 90px;
 
     display: flex;
@@ -1461,6 +1465,7 @@
     align-items: center;
     justify-content: flex-start;
     padding: 20px 60px;
+    gap: 10px;
     /* overflow-y: auto; */
 }
 
@@ -2658,6 +2663,21 @@
     .banner-para span {
         font-size: 12px;
         line-height: 17px;
+
+    }
+
+    .flex-1 {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .banner-para {
+        border-radius: 5px;
+        background: linear-gradient(90deg, #FFF 39.9%, rgba(255, 255, 255, 0.00) 100%);
+        padding: 5px 5px 5px 10px;
     }
 
     .banner-btn {
@@ -2700,7 +2720,11 @@
         /* align-items: flex-start; */
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 8px;
+        gap: 14px;
+    }
+
+    .flex {
+        gap: 10px;
     }
 
     .banner-icons svg {
@@ -2794,6 +2818,7 @@
     /* — Objectives — */
     .objectives-content {
         padding: 20px 16px;
+        gap: 10px;
     }
 
     .main-heading,
@@ -2881,7 +2906,7 @@
         height: auto;
         margin-top: -120px;
         /* overlaps up into the photo */
-        padding: 50px 14px 20px;
+        padding: 50px 14px 0px;
         /* top pad clears the icon (60px) + spacing */
         gap: 10px;
         border-radius: 10px;
@@ -2910,9 +2935,13 @@
 
     .area-content ul {
         font-size: 10px;
-        line-height: 14px;
+        line-height: 18px;
         padding-left: 16px;
         width: 100%;
+    }
+
+    .heading {
+        line-height: normal;
     }
 
     /* — Research Network — */
@@ -3082,6 +3111,7 @@
     .pub-card {
         flex: 1;
         min-width: 0;
+        height: auto;
         /* prevents flex child from overflowing */
         display: flex;
         align-items: flex-start;
@@ -3151,7 +3181,7 @@
 
     /* — Future — */
     .future-content {
-        padding: 20px 16px;
+        padding:0 20px 16px;
         gap: 20px;
     }
 
@@ -3227,13 +3257,32 @@
         line-height: 19px;
     }
 
+    .publications-section .sub-heading-underline {
+        display: block;
+    }
+
+
+    .publications-section .sub-heading-underline {
+        width: 135px;
+        height: 6px;
+        background: #008080;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .publications-section .sub-heading-underline span {
+        width: 33px;
+        height: 6px;
+        background: #FBCA51;
+    }
+
     /* ── Objectives carousel (mobile) ── */
     .objectives-carousel-wrapper {
         display: flex !important;
         align-items: center;
         justify-content: center;
         width: 100%;
-        padding: 16px 0 24px;
+        /* padding: 16px 0 24px; */
         gap: 0;
     }
 
@@ -3433,7 +3482,7 @@
         align-items: center;
         justify-content: center;
         width: 100%;
-        padding: 16px 0 20px;
+        /* padding: 16px 0 20px; */
         gap: 8px;
     }
 
