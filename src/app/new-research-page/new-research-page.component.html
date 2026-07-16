@@ -166,106 +166,109 @@
     </div>
     <div class="vo-content-stack">
 
-  <!-- OUR VISION & MISSION -->
-  <div class="vision-section">
-    <div class="vision-content">
-      <div class="vm-header">
-        <div class="sub-heading">OUR VISION & MISSION</div>
-        <div class="sub-heading-underline"><span></span></div>
-      </div>
-
-      <div class="vm-body">
-        <!-- OUR VISION Card -->
-        <div class="vision-card">
-          <div class="vision-card-label">
-            <div class="heading">OUR VISION</div>
-            <div class="vision-line"></div>
-          </div>
-          <div class="vision-heading"><span>Swastha Susthira</span> SamajaNirmana</div>
-          <div class="vision-para">Building a healthier, harmonious and sustainable society through integrative
-            healthcare and research.</div>
-          <div class="vision-decorators">
-            <div class="vision-underline-1"></div>
-            <div class="vision-underline-2"></div>
-          </div>
-        </div>
-
-        <!-- OUR MISSION Cards -->
-        <div class="mission-section">
-          <div class="mission-label">
-            <div class="heading">OUR MISSION</div>
-            <div class="vision-line"></div>
+      <!-- OUR VISION & MISSION -->
+      <div class="vision-section">
+        <div class="vision-content">
+          <div class="vm-header">
+            <div class="sub-heading">OUR VISION & MISSION</div>
+            <div class="sub-heading-underline"><span></span></div>
           </div>
 
-          <div class="mision-cards">
-            <div class="card-1">
-              <div class="card-heading">Research Innovation</div>
-              <div class="card-para">Pioneering newer therapeutic modalities through rigorous patient-centric research
-                and interdisciplinary collaboration.</div>
-            </div>
-            <div class="card-2">
-              <div class="card-heading">Integrative Healthcare</div>
-              <div class="card-para">Promoting integrated healthcare research to explore the synergy and complementarity
-                between modern and Indian medical systems and lifestyle interventions</div>
-            </div>
-            <div class="card-2">
-              <div class="card-heading">Prevention & Wellness</div>
-              <div class="card-para">Developing clinical approaches and strategies for prevention and management of a
-                wide range of diseases and conditions leading to healthier society.</div>
-            </div>
-            <div class="card-1">
-              <div class="card-heading">Public Engagement</div>
-              <div class="card-para">Dissemination of knowledge through public engagement</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- OUR OBJECTIVES -->
-  <div class="objectives-section">
-    <div class="objectives-content">
-      <div class="main-heading"> <span>OUR </span> OBJECTIVES </div>
-      <div class="objectives-underline"></div>
-      <div class="objectives-para">Focused on driving impactful research and fostering integrative healthcare for a
-        healthier tomorrow.</div>
-
-      <div class="objectives-carousel-wrapper">
-        <button class="obj-arrow obj-arrow-left" (click)="prevObjective()" [disabled]="objectiveIndex === 0">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M15 18L9 12L15 6" stroke="white" stroke-width="2.5" stroke-linecap="round"
-              stroke-linejoin="round" />
-          </svg>
-        </button>
-
-        <div class="objectives-carousel">
-          <div class="obj-carousel-card" *ngFor="let card of objectiveCards; let i = index"
-            [class.obj-center]="i === objectiveIndex" [class.obj-side]="i !== objectiveIndex"
-            [class.obj-prev]="i === objectiveIndex - 1" [class.obj-next]="i === objectiveIndex + 1"
-            [class.obj-hidden]="i < objectiveIndex - 1 || i > objectiveIndex + 1">
-            <div class="obj-card-shell" [class.obj-shell-1]="i % 2 === 0" [class.obj-shell-2]="i % 2 !== 0">
-              <div class="obj-icon-wrap">
-                <img [src]="card.img" alt="">
+          <div class="vm-body">
+            <!-- OUR VISION Card -->
+            <div class="vision-card">
+              <div class="vision-card-label">
+                <div class="heading">OUR VISION</div>
+                <div class="vision-line"></div>
               </div>
-              <div [class]="i % 2 === 0 ? 'objective-card-1 obj-inner-card' : 'objective-card-2 obj-inner-card'">
-                <div class="objective-card-heading">{{ card.heading }}</div>
-                <div class="objective-card-para">{{ card.para }}</div>
+              <div class="vision-heading"><span>Swastha Susthira</span> SamajaNirmana</div>
+              <div class="vision-para">Building a healthier, harmonious and sustainable society through integrative
+                healthcare and research.</div>
+              <div class="vision-decorators">
+                <div class="vision-underline-1"></div>
+                <div class="vision-underline-2"></div>
+              </div>
+            </div>
+
+            <!-- OUR MISSION Cards -->
+            <div class="mission-section">
+              <div class="mission-label">
+                <div class="heading">OUR MISSION</div>
+                <div class="vision-line"></div>
+              </div>
+
+              <div class="mision-cards">
+                <div class="card-1">
+                  <div class="card-heading">Research Innovation</div>
+                  <div class="card-para">Pioneering newer therapeutic modalities through rigorous patient-centric
+                    research
+                    and interdisciplinary collaboration.</div>
+                </div>
+                <div class="card-2">
+                  <div class="card-heading">Integrative Healthcare</div>
+                  <div class="card-para">Promoting integrated healthcare research to explore the synergy and
+                    complementarity
+                    between modern and Indian medical systems and lifestyle interventions</div>
+                </div>
+                <div class="card-2">
+                  <div class="card-heading">Prevention & Wellness</div>
+                  <div class="card-para">Developing clinical approaches and strategies for prevention and management of
+                    a
+                    wide range of diseases and conditions leading to healthier society.</div>
+                </div>
+                <div class="card-1">
+                  <div class="card-heading">Public Engagement</div>
+                  <div class="card-para">Dissemination of knowledge through public engagement</div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-
-        <button class="obj-arrow obj-arrow-right" (click)="nextObjective()"
-          [disabled]="objectiveIndex === objectiveCards.length - 1">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M9 18L15 12L9 6" stroke="white" stroke-width="2.5" stroke-linecap="round"
-              stroke-linejoin="round" />
-          </svg>
-        </button>
       </div>
-    </div>
-  </div>
+
+      <!-- OUR OBJECTIVES -->
+      <div class="objectives-section">
+        <div class="objectives-content">
+          <div class="main-heading"> <span>OUR </span> OBJECTIVES </div>
+          <div class="objectives-underline"></div>
+          <div class="objectives-para">Focused on driving impactful research and fostering integrative healthcare for a
+            healthier tomorrow.</div>
+
+          <div class="objectives-carousel-wrapper">
+            <button class="obj-arrow obj-arrow-left" (click)="prevObjective()" [disabled]="objectiveIndex === 0">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 18L9 12L15 6" stroke="white" stroke-width="2.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+
+            <div class="objectives-carousel">
+              <div class="obj-carousel-card" *ngFor="let card of objectiveCards; let i = index"
+                [class.obj-center]="i === objectiveIndex" [class.obj-side]="i !== objectiveIndex"
+                [class.obj-prev]="i === objectiveIndex - 1" [class.obj-next]="i === objectiveIndex + 1"
+                [class.obj-hidden]="i < objectiveIndex - 1 || i > objectiveIndex + 1">
+                <div class="obj-card-shell" [class.obj-shell-1]="i % 2 === 0" [class.obj-shell-2]="i % 2 !== 0">
+                  <div class="obj-icon-wrap">
+                    <img [src]="card.img" alt="">
+                  </div>
+                  <div [class]="i % 2 === 0 ? 'objective-card-1 obj-inner-card' : 'objective-card-2 obj-inner-card'">
+                    <div class="objective-card-heading">{{ card.heading }}</div>
+                    <div class="objective-card-para">{{ card.para }}</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button class="obj-arrow obj-arrow-right" (click)="nextObjective()"
+              [disabled]="objectiveIndex === objectiveCards.length - 1">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 18L15 12L9 6" stroke="white" stroke-width="2.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
 
     </div><!-- end vo-content-stack -->
   </div><!-- end vision-objectives-wrapper -->
@@ -431,6 +434,7 @@
       <img src="assets/research-page/Publications-bg.png" alt="Publications">
       <div class="publications-left-text">
         <div class="publications-title">Publications</div>
+        <div class="sub-heading-underline"><span></span></div>
         <div class="publications-desc">Contributing to evidence-based healthcare through peer-reviewed scientific
           research.</div>
       </div>
