@@ -155,6 +155,12 @@ export class NutritionComponent {
 
   doctors = [
     {
+      doctor_image: 'assets/Ms-Archana-Karthick.png',
+      doctor_name: 'Ms. Archana Karthick',
+      experience: "19+",
+      docalt: 'Ms. Archana Karthick | Best Clinical Dietitian in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore'
+    },
+    {
       doctor_image: 'assets/new-doctor-imgs/JMRH-Dr-dharanika-img.png',
       doctor_name: 'Ms. Dharanika Devaraj',
       experience: "3+",
