@@ -441,6 +441,156 @@ body:has(.sbp-root) {
 }
 
 // ─────────────────────────────────────────────────────────────────────
+// ALTERNATING CONTENT SECTIONS — standalone full-bleed page sections
+// ─────────────────────────────────────────────────────────────────────
+.sbp-rm-section {
+  width: 100%;
+  padding-block: clamp(3rem, 6vw, 5rem);
+
+  &--odd  { background: var(--sbp-ivory); }
+  &--even { background: var(--sbp-cream); }
+}
+
+.sbp-rm-section__inner {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: clamp(1.5rem, 4vw, 3rem);
+  align-items: center;
+  max-width: 1440px;
+  margin-inline: auto;
+  padding-inline: clamp(1rem, 2.5vw, 1.75rem);
+
+  // default: content left, image right
+  .sbp-rm-section__content { order: 1; }
+  .sbp-rm-section__image   { order: 2; }
+
+  &--full {
+    grid-template-columns: 1fr;
+    max-width: 860px;
+  }
+
+  // image-left: flip — image col 1, content col 2, ratio also flips to 2fr 3fr
+  &--reversed {
+    grid-template-columns: 2fr 3fr;
+    .sbp-rm-section__image   { order: 1; }
+    .sbp-rm-section__content { order: 2; }
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+
+    // always show image first on mobile
+    .sbp-rm-section__image  { order: 1; }
+    .sbp-rm-section__content { order: 2; }
+  }
+}
+
+.sbp-rm-section__heading {
+  font-size: 1.4rem;
+  font-weight: 800;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: -0.01em;
+  margin-bottom: 1.5rem;
+  width: fit-content;
+  padding: 0.4rem 1.4rem 0.4rem 1.1rem;
+  border-left: 5px solid #e8b339;
+  border-radius: 0 3rem 3rem 0;
+  box-shadow: 0 2px 16px 0 rgba(9, 121, 105, 0.10);
+  background: linear-gradient(90deg, rgba(9,121,105,0.13) 0%, rgba(232,179,57,0.07) 100%);
+  color: #008080;
+
+  span {
+    font-size: inherit;
+    background: linear-gradient(110deg, #005f5f 0%, #097969 35%, #d4a017 75%, #e8b339 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+    padding: 0.35rem 1rem 0.35rem 0.8rem;
+  }
+}
+
+#sbp-services-h.sbp-rm-section__heading,
+#sbp-benefits-h.sbp-rm-section__heading,
+#sbp-team-h.sbp-rm-section__heading,
+#sbp-flipbook-h.sbp-rm-section__heading {
+  margin-inline: auto;
+}
+
+.sbp-rm-section__para {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: var(--sbp-text);
+  margin: 0;
+}
+
+.sbp-rm-section__shloka {
+  background: rgba(9, 121, 105, 0.05);
+  border-left: 3px solid var(--sbp-gold);
+  border-radius: 0 var(--sbp-r-sm) var(--sbp-r-sm) 0;
+  padding: 0.85rem 1rem;
+  margin-top: 0.85rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.sbp-rm-section__content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.sbp-rm-section__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+
+  li {
+    padding-left: 1.1rem;
+    position: relative;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--sbp-text-soft);
+
+    &::before {
+      content: '•';
+      position: absolute;
+      left: 0;
+      color: var(--sbp-teal);
+      font-weight: 700;
+    }
+  }
+
+}
+
+.sbp-rm-section__image {
+  border-radius: var(--sbp-r-md);
+  overflow: hidden;
+  box-shadow: var(--sbp-shadow-md);
+  // aspect-ratio: 4 / 3;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s var(--sbp-ease);
+  }
+
+  &:hover img {
+    transform: scale(1.04);
+  }
+}
+
+// ─────────────────────────────────────────────────────────────────────
 // HERO — split layout (copy left, brand visual right) with shloka below
 // ─────────────────────────────────────────────────────────────────────
 .sbp-hero {
@@ -542,6 +692,74 @@ body:has(.sbp-root) {
       font-size: clamp(0.88rem, 1.5vw, 0.98rem);
       line-height: 24px;
       em { font-style: italic; }
+    }
+
+    .sbp-hero__text-block {
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .sbp-hero__section-heading {
+      font-family: 'Poppins', sans-serif;
+      font-size: 2.4rem;
+      font-weight: 800;
+      letter-spacing: -0.01em;
+      margin: 0 0 1.25rem;
+      width: fit-content;
+      padding: 0.4rem 1.4rem 0.4rem 1.1rem;
+      border-left: 5px solid #e8b339;
+      border-radius: 0 3rem 3rem 0;
+      box-shadow: 0 2px 16px 0 rgba(9, 121, 105, 0.10);
+      background: linear-gradient(90deg, rgba(9,121,105,0.13) 0%, rgba(232,179,57,0.07) 100%);
+
+      span {
+        background: linear-gradient(110deg, #005f5f 0%, #097969 35%, #d4a017 75%, #e8b339 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        filter: drop-shadow(0 1px 2px rgba(9,121,105,0.18));
+      }
+
+      @media (max-width: 768px) {
+        font-size: 1.4rem;
+        padding: 0.35rem 1rem 0.35rem 0.8rem;
+      }
+    }
+
+    .sbp-hero__shloka {
+      background: rgba(9, 121, 105, 0.05);
+      border-left: 3px solid var(--sbp-gold);
+      border-radius: 0 var(--sbp-r-sm) var(--sbp-r-sm) 0;
+      padding: 0.75rem 1rem;
+      margin-block: 0.75rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+    }
+
+    .sbp-hero__list {
+      list-style: none;
+      padding: 0;
+      margin: 0.5rem 0 0.75rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+
+      li {
+        padding-left: 1.1rem;
+        position: relative;
+        font-size: clamp(0.85rem, 1.4vw, 0.95rem);
+        line-height: 1.7;
+        color: var(--sbp-text-soft);
+
+        &::before {
+          content: '•';
+          position: absolute;
+          left: 0;
+          color: var(--sbp-teal);
+          font-weight: 700;
+        }
+      }
     }
 
     .sbp-hero__cta {
@@ -794,6 +1012,8 @@ body:has(.sbp-root) {
     .sbp-hero__lede { margin-inline: auto; }
     .sbp-hero__cta { justify-content: center; }
     .sbp-hero__chips { justify-content: center; }
+    .sbp-hero__section-heading { text-align: center; }
+    .sbp-hero__list { text-align: left; max-width: 360px; margin-inline: auto; }
 
     // Center all shloka/paragraph content outside .banner-left
     .sbp-shloka__sanskrit,
@@ -3692,7 +3912,7 @@ body:has(.sbp-root) {
 
   &__grid {
     display: grid;
-    grid-template-columns: repeat(3, 180px);
+    grid-template-columns: repeat(4, 180px);
     justify-content: center;
     gap: 20px;
     padding: 0 clamp(1rem, 4vw, 3rem);
@@ -3701,10 +3921,16 @@ body:has(.sbp-root) {
     max-width: 1200px;
     margin-inline: auto;
 
+    // Center the 2 remaining cards on the second row
+    li:nth-child(5) { grid-column: 2; }
+    li:nth-child(6) { grid-column: 3; }
+
     @media (max-width: 680px) {
       grid-template-columns: repeat(2, 1fr);
       gap: 16px;
       padding: 0 1.25rem;
+      li:nth-child(5),
+      li:nth-child(6) { grid-column: auto; }
     }
     @media (max-width: 480px) {
       grid-template-columns: 1fr;
