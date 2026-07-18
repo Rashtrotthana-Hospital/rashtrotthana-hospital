@@ -18,7 +18,6 @@ import { Router, RouterLink } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
 import { HeroBannerComponent } from './hero-banner/hero-banner.component';
 import { DinacharyaTimelineComponent } from './dinacharya-timeline/dinacharya-timeline.component';
-import { OrbitServicesComponent } from './orbit-services/orbit-services.component';
 import { WellnessHandbookComponent } from './wellness-handbook/wellness-handbook.component';
 import { WorkshopGalleryComponent } from './workshop-gallery/workshop-gallery.component';
 
@@ -73,7 +72,7 @@ interface DailyAnchor {
 @Component({
   selector: 'app-swasthya-bharati-page',
   standalone: true,
-  imports: [CommonModule, RouterLink, HeroBannerComponent, DinacharyaTimelineComponent, OrbitServicesComponent, WellnessHandbookComponent, WorkshopGalleryComponent],
+  imports: [CommonModule, RouterLink, HeroBannerComponent, DinacharyaTimelineComponent, WellnessHandbookComponent, WorkshopGalleryComponent],
   templateUrl: './swasthya-bharati-page.component.html',
   styleUrls: ['./swasthya-bharati-page.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,

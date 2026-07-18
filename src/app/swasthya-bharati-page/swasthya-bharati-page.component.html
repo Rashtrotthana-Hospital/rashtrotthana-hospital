@@ -36,260 +36,25 @@
       <!-- Left column: all scrollable content -->
       <div class="sbp-hero__copy">
         <p class="sbp-eyebrow hero-card" data-reveal>Lifestyle &amp; Wellness Unit</p>
-        <div class="banner-left">
-          <p class="sbp-shloka__sanskrit" lang="sa">
-            "समदोषः समाग्निश्च समधातुमलक्रियाः । प्रसन्नात्मेन्द्रियमनाः स्वस्थ इत्यभिधीयते।।
-          </p>
-          <p class="sbp-shloka__translit">
-            Samadoṣaḥ samāgniśca samadhātu malaḥkriyā |<br />
-            Prasannātmendriya manaḥ svastha ityabhidhīyate ||
-          </p>
-          <p class="sbp-shloka__source-line">— Sushruta Samhita · Sutra Sthana · 15.38</p>
 
-          <p class="sbp-banner__body pt">
-            According to Ayurveda, true health is a state of complete harmony within the body, mind, senses and spirit.
-          </p>
-
-          <p class="sbp-banner__body sbp-banner__body--italic">
-            It exists when the three doshas, Vata, Pitta and Kapha, are in balance; digestion, metabolism and
-            assimilation function efficiently; the body's tissues (Dhatus) are well nourished and maintained; waste
-            elimination occurs properly; and the mind, senses and inner self remain calm, content and joyful. Such a
-            state of dynamic balance is known as Swasthya (health).
-          </p>
+        <div class="sbp-hero__text-block" data-reveal style="--reveal-delay:0.1s">
+          <h2 class="sbp-hero__section-heading"><span>What is Health?</span></h2>
+          <p class="sbp-banner__body">Ayurveda defines health as much more than the absence of disease.</p>
+          <div class="sbp-hero__shloka">
+            <p class="sbp-shloka__sanskrit" lang="sa">समदोषः समाग्निश्च समधातुमलक्रियाः ।<br>प्रसन्नात्मेन्द्रियमनाः स्वस्थ इत्यभिधीयते ॥</p>
+            <p class="sbp-shloka__translit">Samadoṣaḥ Samāgniśca Samadhātu-Malakriyāḥ ।<br>Prasannātmendriya-Manāḥ Swastha Ityabhidhīyate ॥</p>
+            <p class="sbp-shloka__source-line">— Sushruta Samhita · Sutra Sthana · 15.38</p>
+          </div>
+          <p class="sbp-banner__body">According to Ayurveda, a person is healthy when:</p>
+          <ul class="sbp-hero__list">
+            <li>The three Doshas (Vata, Pitta, and Kapha) are in balance;</li>
+            <li>Digestion and metabolism (Agni) function efficiently;</li>
+            <li>The body tissues (Dhatus) are properly nourished;</li>
+            <li>Waste products (Malas) are eliminated normally; and</li>
+            <li>The mind, senses, and self remain peaceful and content.</li>
+          </ul>
+          <p class="sbp-banner__body">This harmonious state is known as <strong>Swasthya</strong>.</p>
         </div>
-
-        <p class="sbp-banner__body">
-          An individual's health is largely determined by their lifestyle.
-        </p>
-
-        <p class="sbp-banner__body wt">
-          Lifestyle encompasses the habits, attitudes, interests, values and behaviours that shape daily living. It
-          includes dietary practices, physical activity, sleep patterns, emotional well-being, social relationships and
-          spiritual pursuits.
-        </p>
-
-        <p class="sbp-banner__body">
-          <strong>Holistic health</strong> is achieved by adopting a balanced and disciplined way of life:
-        </p>
-
-        <p class="sbp-shloka__sanskrit" lang="sa">
-          नित्यं हिताहारविहारसेवी समीक्ष्यकारी विषयेष्वसक्तः ।<br />
-          दाता समः सत्यपरः क्षमावान् आप्तोपसेवी च भवत्यरोगः ॥
-        </p>
-        <p class="sbp-shloka__translit">
-          Nityaṃ hitāhāra-vihāra-sevī samīkṣya-kārī viṣayeṣv asaktaḥ |<br />
-          dātā samaḥ satya-paraḥ kṣamāvān āptopasevī ca bhavaty arogah ||
-        </p>
-        <p class="sbp-shloka__source-line">— Ashtanga Sangraha · Sutra Sthana · 5.63</p>
-
-        <figcaption class="sbp-shloka__caption">
-          <em>
-            A person who always follows a wholesome diet and lifestyle, thinks before acting, is not
-            attached to sense pleasures, is generous, calm, truthful, forgiving and keeps the company of
-            wise people remains free from disease.
-          </em>
-        </figcaption>
-
-        <p class="sbp-banner__body">
-          This verse highlights that health is not merely a physical state but the result of wise choices, emotional
-          balance, ethical conduct and healthy relationships. Ayurveda thus views a healthy lifestyle as the foundation
-          for disease prevention, well-being and longevity.
-        </p>
-
-        <!-- Read more button (collapsed state) -->
-        @if (!heroExpanded()) {
-          <div class="sbp-hero__see-more-wrap">
-            <button type="button" class="sbp-see-more-btn" (click)="toggleHeroExpanded()" [attr.aria-expanded]="false">
-              <span>Read more</span>
-              <svg class="sbp-see-more-btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <polyline points="6 9 12 15 18 9"/>
-              </svg>
-            </button>
-          </div>
-        }
-
-        <!-- Expanded content block -->
-        <div class="sbp-hero__expanded-content" [class.sbp-hero__expanded-content--open]="heroExpanded()">
-          <div class="sbp-hero__expanded-inner">
-
-          <div class="sbp-ec-block">
-            <h3 class="sbp-ec-heading">What is Health?</h3>
-            <p>Ayurveda defines health as much more than the absence of disease.</p>
-            <div class="sbp-shloka-block">
-              <p class="sbp-shloka__sanskrit" lang="sa">
-                समदोषः समाग्निश्च समधातुमलक्रियाः ।<br>
-                प्रसन्नात्मेन्द्रियमनाः स्वस्थ इत्यभिधीयते ॥
-              </p>
-              <p class="sbp-ec-source">SUSHRUTA SAMHITA · SUTRA STHANA · 15.38</p>
-              <p class="sbp-shloka__translit">
-                Samadoṣaḥ Samāgniśca Samadhātu-Malakriyāḥ ।<br>
-                Prasannātmendriya-Manāḥ Swastha Ityabhidhīyate ॥
-              </p>
-            </div>
-            <p>According to Ayurveda, a person is healthy when:</p>
-            <ul class="sbp-ec-list">
-              <li>the three Doshas (Vata, Pitta, and Kapha) are in balance;</li>
-              <li>digestion and metabolism (Agni) function efficiently;</li>
-              <li>the body tissues (Dhatus) are properly nourished;</li>
-              <li>waste products (Malas) are eliminated normally; and</li>
-              <li>the mind, senses, and self remain peaceful and content.</li>
-            </ul>
-            <p class="sbp-ec-kannada">ದೇಹದ ದೋಷಗಳು, ಧಾತುಗಳು ಸಮತೋಲನದಲ್ಲಿದ್ದು, ಜೀರ್ಣಕ್ರಿಯೆ ಸರಿಯಾಗಿದ್ದು, ಮಲವಿಸರ್ಜನೆ ಸಮರ್ಪಕವಾಗಿ ನಡೆಯುತ್ತಿದ್ದು, ಆತ್ಮ, ಇಂದ್ರಿಯಗಳು ಮತ್ತು ಮನಸ್ಸು ಸಂತೋಷ ಹಾಗೂ ಶಾಂತ ಸ್ಥಿತಿಯಲ್ಲಿದ್ದರೆ ಆ ವ್ಯಕ್ತಿಯೇ ನಿಜವಾದ ಆರೋಗ್ಯವಂತ.</p>
-            <p class="sbp-ec-highlight">This harmonious state is known as <strong>Swasthya</strong>.</p>
-          </div>
-
-          <div class="sbp-ec-block">
-            <h3 class="sbp-ec-heading">Understanding the Human Body:</h3>
-            <p>Ayurveda teaches that everything in the universe, including the human body, is composed of the five great elements (Panchamahabhutas):</p>
-            <ul class="sbp-ec-list">
-              <li>Akasha (Space)</li>
-              <li>Vayu (Air)</li>
-              <li>Agni (Fire)</li>
-              <li>Jala (Water)</li>
-              <li>Prithvi (Earth)</li>
-            </ul>
-            <p>The human body is a reflection of nature itself. Every organ, tissue, function, and physiological process depends upon the harmonious interaction of these five elements.</p>
-            <p>Likewise, the food we consume is also composed of these elements. When properly digested, it nourishes the body and supports physical and mental health.</p>
-            <p>When unhealthy food, poor lifestyle, disturbed sleep, emotional stress, or environmental pollution disturb this elemental balance, disease develops.</p>
-            <p>Thus, health is maintained by preserving harmony among these elemental forces.</p>
-          </div>
-
-          <div class="sbp-ec-block">
-            <h3 class="sbp-ec-heading">What is Life?</h3>
-            <p>Ayurveda explains life as the harmonious integration of four essential components.</p>
-            <div class="sbp-shloka-block">
-              <p class="sbp-shloka__sanskrit" lang="sa">
-                शरीरेन्द्रियसत्त्वात्मसंयोगो धारि जीवितम् ॥
-              </p>
-              <p class="sbp-ec-source">CHARAKA SAMHITA · SUTRA STHANA · 1.42</p>
-              <p class="sbp-shloka__translit">Śarīrendriya-Sattvātma-Saṁyogo Dhāri Jīvitam ॥</p>
-            </div>
-            <p>Life is sustained through the union of:</p>
-            <ul class="sbp-ec-list">
-              <li>Body (Sharira)</li>
-              <li>Sense Organs (Indriyas)</li>
-              <li>Mind (Manas)</li>
-              <li>Self (Atman)</li>
-            </ul>
-            <p class="sbp-ec-kannada">ಶರೀರ, ಇಂದ್ರಿಯ, ಮನಸ್ಸು ಮತ್ತು ಆತ್ಮಗಳ ಸಂಯೋಗವೇ ಜೀವನ.</p>
-            <p class="sbp-ec-highlight">True health requires balance among all four dimensions.</p>
-          </div>
-
-          <div class="sbp-ec-block">
-            <h3 class="sbp-ec-heading">The Key to Health:</h3>
-            <p>Our lifestyle determines our health. Healthy living includes:</p>
-            <ul class="sbp-ec-list">
-              <li>healthy food</li>
-              <li>physical activity</li>
-              <li>sound sleep</li>
-              <li>emotional balance</li>
-              <li>healthy relationships</li>
-              <li>ethical conduct</li>
-              <li>spiritual growth</li>
-            </ul>
-            <p>Healthy choices preserve the balance of the Panchamahabhutas. Unhealthy habits gradually disturb this balance and contribute to disease.</p>
-          </div>
-
-          <div class="sbp-ec-block">
-            <h3 class="sbp-ec-heading">Qualities of a Healthy Person:</h3>
-            <p>Ayurveda beautifully summarizes the qualities of a healthy individual.</p>
-            <div class="sbp-shloka-block">
-              <p class="sbp-shloka__sanskrit" lang="sa">
-                नित्यं हिताहारविहारसेवी समीक्ष्यकारी विषयेष्वसक्तः ।<br>
-                दाता समः सत्यपरः क्षमावान् आप्तोपसेवी च भवत्यरोगः ॥
-              </p>
-              <p class="sbp-ec-source">ASHTANGA SANGRAHA · SUTRA STHANA · 5.63</p>
-              <p class="sbp-shloka__translit">
-                Nityaṃ hitāhāra-vihāra-sevī samīkṣya-kārī viṣayeṣv asaktaḥ |<br>
-                dātā samaḥ satya-paraḥ kṣamāvān āptopasevī ca bhavaty arogah ||
-              </p>
-            </div>
-            <p>A healthy person:</p>
-            <ul class="sbp-ec-list">
-              <li>follows wholesome food and lifestyle,</li>
-              <li>thinks before acting,</li>
-              <li>avoids excessive attachment to sensory pleasures,</li>
-              <li>is generous,</li>
-              <li>remains calm,</li>
-              <li>speaks the truth,</li>
-              <li>forgives others, and</li>
-              <li>associates with wise people.</li>
-            </ul>
-            <p class="sbp-ec-highlight">Such a person remains free from disease.</p>
-          </div>
-
-          <div class="sbp-ec-block">
-            <h3 class="sbp-ec-heading">The Mind and Health:</h3>
-            <p>The mind is one of the greatest determinants of health. Ayurveda identifies six inner tendencies that require regulation:</p>
-            <ul class="sbp-ec-list">
-              <li>Desire (Kama)</li>
-              <li>Anger (Krodha)</li>
-              <li>Greed (Lobha)</li>
-              <li>Attachment (Moha)</li>
-              <li>Ego/Pride (Mada)</li>
-              <li>Jealousy (Matsarya)</li>
-            </ul>
-            <p>When these dominate the mind, stress, anxiety, and unhealthy behaviours arise.</p>
-            <p>Swasthyabharati promotes mental well-being through education, research, counselling, and practical lifestyle interventions.</p>
-          </div>
-
-          <div class="sbp-ec-block">
-            <h3 class="sbp-ec-heading">Living in Harmony with Nature:</h3>
-            <p>Human health and environmental health are inseparable. The quality of the air we breathe, the water we drink, the food we eat, the soil we cultivate, and the environment in which we live directly influence our health.</p>
-            <p>Protecting nature is therefore an essential part of protecting ourselves. By living responsibly and sustainably, we preserve the Panchamahabhutas both within us and around us.</p>
-          </div>
-
-          <div class="sbp-ec-block">
-            <h3 class="sbp-ec-heading">Health Through the Indian Perspective:</h3>
-            <p>Indian Knowledge Tradition teaches that the purpose of life is not merely to live longer, but to live meaningfully. Health includes:</p>
-            <ul class="sbp-ec-list">
-              <li>Physical well-being</li>
-              <li>Mental balance</li>
-              <li>Ethical conduct</li>
-              <li>Social responsibility</li>
-              <li>Spiritual growth</li>
-            </ul>
-            <p>Every action influences our future. Healthy food, good thoughts, compassionate actions, and responsible living contribute not only to personal well-being but also to the welfare of society.</p>
-            <div class="sbp-shloka-block">
-              <p class="sbp-shloka__sanskrit" lang="sa">परोपकारार्थम् इदं शरीरम् ॥</p>
-              <p class="sbp-ec-source">Rigveda</p>
-              <p class="sbp-shloka__translit">Paropakārārtham Idaṁ Śarīram ॥</p>
-            </div>
-            <p>This body is meant for the service of others.</p>
-            <p class="sbp-ec-kannada">ಈ ದೇಹವು ಪರೋಪಕಾರಕ್ಕಾಗಿ ಮೀಸಲಾಗಿದೆ.</p>
-            <p>A healthy society is built upon compassion, cooperation, and service.</p>
-          </div>
-
-          <div class="sbp-ec-block sbp-ec-block--commitment">
-            <h3 class="sbp-ec-heading">Our Commitment:</h3>
-            <p>At Swasthyabharati, we are committed to building a healthier society through:</p>
-            <ul class="sbp-ec-list">
-              <li>Health education</li>
-              <li>Lifestyle awareness programmes</li>
-              <li>Workshops and Wellness guidance</li>
-              <li>Research</li>
-              <li>Community outreach</li>
-              <li>Capacity building</li>
-              <li>Environmental responsibility</li>
-              <li>Promotion of Indian Knowledge Systems</li>
-            </ul>
-            <p class="sbp-ec-highlight sbp-ec-highlight--closing">Together, let us create a society where health is preserved, disease is prevented, and every individual is empowered to lead a balanced, purposeful, and fulfilling life.</p>
-          </div>
-
-          <!-- Read less button (expanded state, at the bottom) -->
-          <div class="sbp-hero__see-more-wrap">
-            <button type="button" class="sbp-see-more-btn" (click)="toggleHeroExpanded()" [attr.aria-expanded]="true">
-              <span>Read less</span>
-              <svg class="sbp-see-more-btn__icon sbp-see-more-btn__icon--open" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <polyline points="6 9 12 15 18 9"/>
-              </svg>
-            </button>
-          </div>
-
-          </div><!-- end expanded-inner -->
-        </div><!-- end expanded content -->
 
         <div class="sbp-hero__cta" data-reveal style="--reveal-delay:0.25s">
           <button type="button" class="sbp-btn sbp-btn--primary" (click)="bookConsultation()">
@@ -329,6 +94,209 @@
         d="M0 40 Q 75 10 150 40 T 300 40 T 450 40 T 600 40 T 750 40 T 900 40 T 1050 40 T 1200 40" fill="none"
         stroke="url(#sbp-prana-grad)" stroke-width="2" />
     </svg>
+  </section>
+
+  <!-- ─────────────────────────────────────────────────────────────────
+       ALTERNATING CONTENT SECTIONS — Body, Life, etc.
+       ───────────────────────────────────────────────────────────────── -->
+
+  <!-- Section 1: Understanding the Human Body — image LEFT, content RIGHT -->
+  <section class="sbp-rm-section sbp-rm-section--odd" aria-labelledby="sbp-rm-h2">
+    <div class="sbp-rm-section__inner sbp-rm-section__inner--reversed">
+      <div class="sbp-rm-section__image">
+        <img src="assets/swastya-page/Understanding-the-Human-Body.webp" alt="The five elements of the human body" loading="lazy" />
+      </div>
+      <div class="sbp-rm-section__content">
+        <div class="sbp-rm-section__heading" id="sbp-rm-h2"><span>Understanding the Human Body:</span></div>
+        <p class="sbp-rm-section__para">Ayurveda teaches that everything in the universe, including the human body, is composed of the five great elements (Panchamahabhutas):</p>
+        <ul class="sbp-rm-section__list">
+          <li>Akasha (Space)</li>
+          <li>Vayu (Air)</li>
+          <li>Agni (Fire)</li>
+          <li>Jala (Water)</li>
+          <li>Prithvi (Earth)</li>
+        </ul>
+        <p class="sbp-rm-section__para">The human body is a reflection of nature itself.</p>
+        <p class="sbp-rm-section__para">Every organ, tissue, function, and physiological process depends upon the harmonious interaction of these five elements.</p>
+        <p class="sbp-rm-section__para">Likewise, the food we consume is also composed of these elements. When properly digested, it nourishes the body and supports physical and mental health.</p>
+        <p class="sbp-rm-section__para">When unhealthy food, poor lifestyle, disturbed sleep, emotional stress, or environmental pollution disturb this elemental balance, disease develops.</p>
+        <p class="sbp-rm-section__para">Thus, health is maintained by preserving harmony among these elemental forces.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: What is Life? — content LEFT, image RIGHT -->
+  <section class="sbp-rm-section sbp-rm-section--even" aria-labelledby="sbp-rm-h3">
+    <div class="sbp-rm-section__inner">
+      <div class="sbp-rm-section__content">
+        <div class="sbp-rm-section__heading" id="sbp-rm-h3"><span>What is Life?</span></div>
+        <p class="sbp-rm-section__para">Ayurveda explains life as the harmonious integration of four essential components.</p>
+        <div class="sbp-rm-section__shloka">
+          <p class="sbp-shloka__sanskrit" lang="sa">शरीरेन्द्रियसत्त्वात्मसंयोगो धारि जीवितम् ॥</p>
+          <p class="sbp-ec-source">CHARAKA SAMHITA · SUTRA STHANA · 1.42</p>
+          <p class="sbp-shloka__translit">Śarīrendriya-Sattvātma-Saṁyogo Dhāri Jīvitam ॥</p>
+        </div>
+        <p class="sbp-rm-section__para">Life is sustained through the union of:</p>
+        <ul class="sbp-rm-section__list">
+          <li>Body (Sharira)</li>
+          <li>Sense Organs (Indriyas)</li>
+          <li>Mind (Manas)</li>
+          <li>Self (Atman)</li>
+        </ul>
+        <p class="sbp-ec-kannada">ಶರೀರ, ಇಂದ್ರಿಯ, ಮನಸ್ಸು ಮತ್ತು ಆತ್ಮಗಳ ಸಂಯೋಗವೇ ಜೀವನ.</p>
+        <p class="sbp-rm-section__para">True health requires balance among all four dimensions.</p>
+      </div>
+      <div class="sbp-rm-section__image">
+        <img src="assets/swastya-page/What-is-Life.webp" alt="Four components of life in Ayurveda" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: The Key to Health — image LEFT, content RIGHT -->
+  <section class="sbp-rm-section sbp-rm-section--odd" aria-labelledby="sbp-rm-h4">
+    <div class="sbp-rm-section__inner sbp-rm-section__inner--reversed">
+      <div class="sbp-rm-section__image">
+        <img src="assets/swastya-page/The-Key-to-Health.webp" alt="Healthy lifestyle practices" loading="lazy" />
+      </div>
+      <div class="sbp-rm-section__content">
+        <div class="sbp-rm-section__heading" id="sbp-rm-h4"><span>The Key to Health:</span></div>
+        <p class="sbp-rm-section__para">Our lifestyle determines our health.</p>
+        <p class="sbp-rm-section__para">Healthy living includes:</p>
+        <ul class="sbp-rm-section__list">
+          <li>Healthy food</li>
+          <li>Physical activity</li>
+          <li>Sound sleep</li>
+          <li>Emotional balance</li>
+          <li>Healthy relationships</li>
+          <li>Ethical conduct</li>
+          <li>Spiritual growth</li>
+        </ul>
+        <p class="sbp-rm-section__para">Healthy choices preserve the balance of the Panchamahabhutas.</p>
+        <p class="sbp-rm-section__para">Unhealthy habits gradually disturb this balance and contribute to disease.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Qualities of a Healthy Person — content LEFT, image RIGHT -->
+  <section class="sbp-rm-section sbp-rm-section--even" aria-labelledby="sbp-rm-h5">
+    <div class="sbp-rm-section__inner">
+      <div class="sbp-rm-section__content">
+        <div class="sbp-rm-section__heading" id="sbp-rm-h5"><span>Qualities of a Healthy Person:</span></div>
+        <p class="sbp-rm-section__para">Ayurveda beautifully summarizes the qualities of a healthy individual.</p>
+        <div class="sbp-rm-section__shloka">
+          <p class="sbp-shloka__sanskrit" lang="sa">नित्यं हिताहारविहारसेवी समीक्ष्यकारी विषयेष्वसक्तः ।<br>दाता समः सत्यपरः क्षमावान् आप्तोपसेवी च भवत्यरोगः ॥</p>
+          <p class="sbp-ec-source">ASHTANGA SANGRAHA · SUTRA STHANA · 5.63</p>
+          <p class="sbp-shloka__translit">Nityaṃ hitāhāra-vihāra-sevī samīkṣya-kārī viṣayeṣv asaktaḥ |<br>dātā samaḥ satya-paraḥ kṣamāvān āptopasevī ca bhavaty arogah ||</p>
+        </div>
+        <p class="sbp-rm-section__para">A healthy person:</p>
+        <ul class="sbp-rm-section__list">
+          <li>Follows wholesome food and lifestyle,</li>
+          <li>Thinks before acting,</li>
+          <li>Avoids excessive attachment to sensory pleasures,</li>
+          <li>Is generous,</li>
+          <li>Remains calm,</li>
+          <li>Speaks the truth,</li>
+          <li>Forgives others,</li>
+          <li>And associates with wise people.</li>
+        </ul>
+        <p class="sbp-rm-section__para">Such a person remains free from disease.</p>
+      </div>
+      <div class="sbp-rm-section__image">
+        <img src="assets/swastya-page/Qualities-of-a-Healthy-Person.webp" alt="Qualities of a healthy person" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5: The Mind and Health — image LEFT, content RIGHT -->
+  <section class="sbp-rm-section sbp-rm-section--odd" aria-labelledby="sbp-rm-h6">
+    <div class="sbp-rm-section__inner sbp-rm-section__inner--reversed">
+      <div class="sbp-rm-section__image">
+        <img src="assets/swastya-page/The-Mind-and-Health.webp" alt="Mind and mental health" loading="lazy" />
+      </div>
+      <div class="sbp-rm-section__content">
+        <div class="sbp-rm-section__heading" id="sbp-rm-h6"><span>The Mind and Health:</span></div>
+        <p class="sbp-rm-section__para">The mind is one of the greatest determinants of health.</p>
+        <p class="sbp-rm-section__para">Ayurveda identifies six inner tendencies that require regulation:</p>
+        <ul class="sbp-rm-section__list">
+          <li>Desire (Kama)</li>
+          <li>Anger (Krodha)</li>
+          <li>Greed (Lobha)</li>
+          <li>Attachment (Moha)</li>
+          <li>Ego/Pride (Mada)</li>
+          <li>Jealousy (Matsarya)</li>
+        </ul>
+        <p class="sbp-rm-section__para">When these dominate the mind, stress, anxiety, and unhealthy behaviours arise.</p>
+        <p class="sbp-rm-section__para">Swasthyabharati promotes mental well-being through education, research, counselling, and practical lifestyle interventions.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 6: Living in Harmony with Nature — content LEFT, image RIGHT -->
+  <section class="sbp-rm-section sbp-rm-section--even" aria-labelledby="sbp-rm-h7">
+    <div class="sbp-rm-section__inner">
+      <div class="sbp-rm-section__content">
+        <div class="sbp-rm-section__heading" id="sbp-rm-h7"><span>Living in Harmony with Nature:</span></div>
+        <p class="sbp-rm-section__para">Human health and environmental health are inseparable.</p>
+        <p class="sbp-rm-section__para">The quality of the air we breathe, the water we drink, the food we eat, the soil we cultivate, and the environment in which we live directly influence our health.</p>
+        <p class="sbp-rm-section__para">Protecting nature is therefore an essential part of protecting ourselves.</p>
+        <p class="sbp-rm-section__para">By living responsibly and sustainably, we preserve the Panchamahabhutas both within us and around us.</p>
+      </div>
+      <div class="sbp-rm-section__image">
+        <img src="assets/swastya-page/Living-in-Harmony-with-Nature.webp" alt="Living in harmony with nature" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 7: Health Through the Indian Perspective — image LEFT, content RIGHT -->
+  <section class="sbp-rm-section sbp-rm-section--odd" aria-labelledby="sbp-rm-h8">
+    <div class="sbp-rm-section__inner sbp-rm-section__inner--reversed">
+      <div class="sbp-rm-section__image">
+        <img src="assets/swastya-page/Health-Through-the-Indian-Perspective.webp" alt="Indian knowledge tradition and health" loading="lazy" />
+      </div>
+      <div class="sbp-rm-section__content">
+        <div class="sbp-rm-section__heading" id="sbp-rm-h8"><span>Health Through the Indian Perspective:</span></div>
+        <p class="sbp-rm-section__para">Indian Knowledge Tradition teaches that the purpose of life is not merely to live longer, but to live meaningfully.</p>
+        <p class="sbp-rm-section__para">Health includes:</p>
+        <ul class="sbp-rm-section__list">
+          <li>Physical well-being</li>
+          <li>Mental balance</li>
+          <li>Ethical conduct</li>
+          <li>Social responsibility</li>
+          <li>Spiritual growth</li>
+        </ul>
+        <p class="sbp-rm-section__para">Every action influences our future.</p>
+        <p class="sbp-rm-section__para">Healthy food, good thoughts, compassionate actions, and responsible living contribute not only to personal well-being but also to the welfare of society.</p>
+        <div class="sbp-rm-section__shloka">
+          <p class="sbp-shloka__sanskrit" lang="sa">परोपकारार्थम् इदं शरीरम् ॥</p>
+          <p class="sbp-ec-source">Rigveda</p>
+          <p class="sbp-shloka__translit">Paropakārārtham Idaṁ Śarīram ॥</p>
+        </div>
+        <p class="sbp-rm-section__para">This body is meant for the service of others.</p>
+        <p class="sbp-ec-kannada">ಈ ದೇಹವು ಪರೋಪಕಾರಕ್ಕಾಗಿ ಮೀಸಲಾಗಿದೆ.</p>
+        <p class="sbp-rm-section__para">A healthy society is built upon compassion, cooperation, and service.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 8: Our Commitment — full content, no image -->
+  <section class="sbp-rm-section sbp-rm-section--even" aria-labelledby="sbp-rm-h9">
+    <div class="sbp-rm-section__inner sbp-rm-section__inner--full">
+      <div class="sbp-rm-section__content">
+        <div class="sbp-rm-section__heading" id="sbp-rm-h9"><span>Our Commitment:</span></div>
+        <p class="sbp-rm-section__para">At Swasthyabharati, we are committed to building a healthier society through:</p>
+        <ul class="sbp-rm-section__list">
+          <li>Health education</li>
+          <li>Lifestyle awareness programmes</li>
+          <li>Workshops and Wellness guidance</li>
+          <li>Research</li>
+          <li>Community outreach</li>
+          <li>Capacity building</li>
+          <li>Environmental responsibility</li>
+          <li>Promotion of Indian Knowledge Systems</li>
+        </ul>
+        <p class="sbp-rm-section__para">Together, let us create a society where health is preserved, disease is prevented, and every individual is empowered to lead a balanced, purposeful, and fulfilling life.</p>
+      </div>
+    </div>
   </section>
 
   <!-- ─────────────────────────────────────────────────────────────────
@@ -540,7 +508,7 @@
 
       <!-- LEFT: sticky copy -->
       <div class="sbp-why__copy">
-        <h2 id="sbp-why-h" class="sbp-h" data-reveal>Why Swasthya Bharati</h2>
+        <div class="sbp-rm-section__heading" id="sbp-why-h" data-reveal><span>Why Swasthya Bharati</span></div>
         <p data-reveal style="--reveal-delay:0.1s">
           Ayurveda defines its primary purpose in a profound statement:
         </p>
@@ -654,7 +622,7 @@
       <!-- RIGHT: Content -->
       <div class="sbp-flipbook__copy">
         <p class="sbp-eyebrow" data-reveal>Handbook of Wellness</p>
-        <h2 id="sbp-flipbook-h" class="sbp-h" data-reveal>Your complete guide to a healthier life.</h2>
+        <div class="sbp-rm-section__heading" id="sbp-flipbook-h" data-reveal><span>Your complete guide to a healthier life.</span></div>
         <p data-reveal style="--reveal-delay:0.1s">
           Explore our curated Handbook of Wellness — a comprehensive resource that brings together ancient Ayurvedic
           wisdom
@@ -692,7 +660,7 @@
     <div class="sbp-container">
       <header class="sbp-section-head">
         <!-- <p class="sbp-eyebrow" data-reveal>How patients benefit</p> -->
-        <h2 id="sbp-benefits-h" class="sbp-h" data-reveal>Outcomes you can feel - and measure.</h2>
+        <div class="sbp-rm-section__heading" id="sbp-benefits-h" data-reveal><span>Outcomes you can feel - and measure.</span></div>
       </header>
 
       <div class="sbp-benefits__grid">
@@ -762,9 +730,7 @@
       <!-- TOP: section heading -->
       <header class="sbp-section-head">
         <!-- <p class="sbp-eyebrow" data-reveal>Our wellness Services</p> -->
-        <h2 id="sbp-services-h" class="sbp-h pt" data-reveal>
-          Swasthyabharati Wellness Programs at Rashtrotthana Hospital
-        </h2>
+        <div class="sbp-rm-section__heading" id="sbp-services-h" data-reveal><span>Swasthyabharati Wellness Programs at Rashtrotthana Hospital</span></div>
         <!-- <p class="sbp-lede pt" data-reveal style="--reveal-delay:0.1s">
           From early lifestyle assessment to structured drugless programs -
           designed to meet you where you are and walk with you to where you
@@ -1060,9 +1026,7 @@
     <div class="sbp-container">
       <header class="sbp-section-head">
         <p class="sbp-eyebrow" data-reveal>Our team</p>
-        <h2 id="sbp-team-h" class="sbp-h" data-reveal>
-          Doctors who walk this path with you.
-        </h2>
+        <div class="sbp-rm-section__heading" id="sbp-team-h" data-reveal><span>Doctors who walk this path with you.</span></div>
       </header>
 
       <ul class="sbp-team__grid">
