@@ -80,8 +80,7 @@ interface DailyAnchor {
   host: { class: 'sbp-root' },
 })
 export class SwasthyaBharatiPageComponent
-  implements OnInit, AfterViewInit, OnDestroy
-{
+  implements OnInit, AfterViewInit, OnDestroy {
   private readonly title = inject(Title);
   private readonly meta = inject(Meta);
   private readonly router = inject(Router);
@@ -212,21 +211,21 @@ export class SwasthyaBharatiPageComponent
       title: 'Dinacharya (Daily Regimen)',
       desc: 'Ayurvedic structured daily routines for health and vitality',
       subs: [
-        { n: '1',  text: 'Pratarutthana',                        detail: 'Waking up before sunrise (Brahma Muhurta)' },
-        { n: '2',  text: 'Mala Mutra Visarjana',                 detail: 'Timely evacuation of bladder and bowels' },
-        { n: '3',  text: 'Dantadhavana & Jihvanirlekana',         detail: 'Oral hygiene — brushing with herbal powder & tongue scraping' },
-        { n: '4',  text: 'Ushapana',                             detail: 'Drinking water on empty stomach' },
-        { n: '5',  text: 'Anjana and Nasya',                     detail: 'Herbal collyrium for eyes; medicated nasal drops' },
-        { n: '6',  text: 'Kavala & Gandusha (Oral Detox)',       detail: 'Swishing and holding herbal oil in the mouth' },
-        { n: '7',  text: 'Abhyanga and Udvarthana',              detail: 'Oil application on body before bath; dry powder massage' },
-        { n: '8',  text: 'Vyayama and Yogasana',                 detail: 'Stretching and physical exercise after oil massage' },
-        { n: '9',  text: 'Snana',                                detail: 'Bathing with warm water using herbal powders; avoid very hot head showers' },
-        { n: '10', text: 'Prarthana',                            detail: 'Offering prayers to the Almighty' },
-        { n: '11', text: 'Bhojana',                              detail: 'Eat only when truly hungry; home-cooked traditional meals with all six tastes' },
-        { n: '12', text: 'Tambula sevana',                       detail: 'Chewing betel leaf preparation with areca nut, lime, clove, cardamom' },
-        { n: '13', text: 'Dhoomapana',                           detail: 'Inhalation of medicated smoke from nose or mouth' },
-        { n: '14', text: 'Padabhyanga',                          detail: 'Massaging the feet with ghee or sesame oil before bedtime' },
-        { n: '15', text: 'Nidra',                                detail: 'Sleep before 11 pm; 6–12 hours depending on age, season, and health' },
+        { n: '1', text: 'Pratarutthana', detail: 'Waking up before sunrise (Brahma Muhurta)' },
+        { n: '2', text: 'Mala Mutra Visarjana', detail: 'Timely evacuation of bladder and bowels' },
+        { n: '3', text: 'Dantadhavana & Jihvanirlekana', detail: 'Oral hygiene — brushing with herbal powder & tongue scraping' },
+        { n: '4', text: 'Ushapana', detail: 'Drinking water on empty stomach' },
+        { n: '5', text: 'Anjana and Nasya', detail: 'Herbal collyrium for eyes; medicated nasal drops' },
+        { n: '6', text: 'Kavala & Gandusha (Oral Detox)', detail: 'Swishing and holding herbal oil in the mouth' },
+        { n: '7', text: 'Abhyanga and Udvarthana', detail: 'Oil application on body before bath; dry powder massage' },
+        { n: '8', text: 'Vyayama and Yogasana', detail: 'Stretching and physical exercise after oil massage' },
+        { n: '9', text: 'Snana', detail: 'Bathing with warm water using herbal powders; avoid very hot head showers' },
+        { n: '10', text: 'Prarthana', detail: 'Offering prayers to the Almighty' },
+        { n: '11', text: 'Bhojana', detail: 'Eat only when truly hungry; home-cooked traditional meals with all six tastes' },
+        { n: '12', text: 'Tambula sevana', detail: 'Chewing betel leaf preparation with areca nut, lime, clove, cardamom' },
+        { n: '13', text: 'Dhoomapana', detail: 'Inhalation of medicated smoke from nose or mouth' },
+        { n: '14', text: 'Padabhyanga', detail: 'Massaging the feet with ghee or sesame oil before bedtime' },
+        { n: '15', text: 'Nidra', detail: 'Sleep before 11 pm; 6–12 hours depending on age, season, and health' },
       ],
     },
     {
@@ -235,10 +234,10 @@ export class SwasthyaBharatiPageComponent
       title: 'Shishira Ritu (Late Winter)',
       desc: 'Seasonal foods and practices for late winter',
       subs: [
-        { n: '→', text: 'Recommended foods',       detail: 'Sour-taste foods, cereals, pulses, wheat, corn, ginger, garlic, haritaki, milk products' },
-        { n: '→', text: 'Foods to avoid',           detail: 'Pungent, bitter, astringent foods; light foods; cold foods' },
-        { n: '→', text: 'Recommended practices',   detail: 'Oil/powder/paste massage; lukewarm bath; sunlight exposure; warm clothing' },
-        { n: '→', text: 'Practices to avoid',       detail: 'Cold wind exposure; excessive walking and exercise; late-night sleep; travelling' },
+        { n: '→', text: 'Recommended foods', detail: 'Sour-taste foods, cereals, pulses, wheat, corn, ginger, garlic, haritaki, milk products' },
+        { n: '→', text: 'Foods to avoid', detail: 'Pungent, bitter, astringent foods; light foods; cold foods' },
+        { n: '→', text: 'Recommended practices', detail: 'Oil/powder/paste massage; lukewarm bath; sunlight exposure; warm clothing' },
+        { n: '→', text: 'Practices to avoid', detail: 'Cold wind exposure; excessive walking and exercise; late-night sleep; travelling' },
       ],
     },
     {
@@ -247,10 +246,10 @@ export class SwasthyaBharatiPageComponent
       title: 'Vasanta Ritu (Spring)',
       desc: 'Seasonal foods and practices for spring',
       subs: [
-        { n: '→', text: 'Recommended foods',       detail: 'Easily digestible foods, old barley, wheat, rice, lentil, green gram, honey, bitter-pungent foods' },
-        { n: '→', text: 'Foods to avoid',           detail: 'Hard-to-digest, cold, heavy, oily, sour, sweet foods; new grains; curd; cold drinks' },
-        { n: '→', text: 'Recommended practices',   detail: 'Warm water bath, regular exercise, Udvartana, Kavala, Dhooma, Anjana, Vamana and Nasya' },
-        { n: '→', text: 'Practices to avoid',       detail: 'Day sleep' },
+        { n: '→', text: 'Recommended foods', detail: 'Easily digestible foods, old barley, wheat, rice, lentil, green gram, honey, bitter-pungent foods' },
+        { n: '→', text: 'Foods to avoid', detail: 'Hard-to-digest, cold, heavy, oily, sour, sweet foods; new grains; curd; cold drinks' },
+        { n: '→', text: 'Recommended practices', detail: 'Warm water bath, regular exercise, Udvartana, Kavala, Dhooma, Anjana, Vamana and Nasya' },
+        { n: '→', text: 'Practices to avoid', detail: 'Day sleep' },
       ],
     },
     {
@@ -259,10 +258,10 @@ export class SwasthyaBharatiPageComponent
       title: 'Grishma Ritu (Summer)',
       desc: 'Seasonal foods and practices for summer',
       subs: [
-        { n: '→', text: 'Recommended foods',       detail: 'Light, easily digestible, sweet-tasting foods; rice, lentils, cold water, buttermilk, fruit juices, mango juice, milk' },
-        { n: '→', text: 'Foods to avoid',           detail: 'Salty, pungent, sour, hot, and warm foods' },
-        { n: '→', text: 'Recommended practices',   detail: 'Stay in cool places; apply sandalwood paste; wear light clothing; daytime sleep; enjoy moonlight and cool breeze at night' },
-        { n: '→', text: 'Practices to avoid',       detail: 'Excessive exercise; hard physical work; excess sexual indulgence; alcohol consumption' },
+        { n: '→', text: 'Recommended foods', detail: 'Light, easily digestible, sweet-tasting foods; rice, lentils, cold water, buttermilk, fruit juices, mango juice, milk' },
+        { n: '→', text: 'Foods to avoid', detail: 'Salty, pungent, sour, hot, and warm foods' },
+        { n: '→', text: 'Recommended practices', detail: 'Stay in cool places; apply sandalwood paste; wear light clothing; daytime sleep; enjoy moonlight and cool breeze at night' },
+        { n: '→', text: 'Practices to avoid', detail: 'Excessive exercise; hard physical work; excess sexual indulgence; alcohol consumption' },
       ],
     },
     {
@@ -271,10 +270,10 @@ export class SwasthyaBharatiPageComponent
       title: 'Varsha Ritu (Rainy Season)',
       desc: 'Seasonal foods and practices for the monsoon',
       subs: [
-        { n: '→', text: 'Recommended foods',       detail: 'Sour and salty foods; old barley, rice, wheat; meat soup and vegetable soups; drinking water must be medicated or boiled' },
-        { n: '→', text: 'Foods to avoid',           detail: 'River water; excessive liquid and wine; heavy and hard-to-digest meat; fried and processed foods' },
-        { n: '→', text: 'Recommended practices',   detail: 'Boiled water for bath; rub body with oil after bath; traditional Abyanga; aromatic herbs; cooling drinks' },
-        { n: '→', text: 'Practices to avoid',       detail: 'Getting wet in rain; day sleep; exercise and hard work; sexual indulgence; wind exposure; staying at river-bank' },
+        { n: '→', text: 'Recommended foods', detail: 'Sour and salty foods; old barley, rice, wheat; meat soup and vegetable soups; drinking water must be medicated or boiled' },
+        { n: '→', text: 'Foods to avoid', detail: 'River water; excessive liquid and wine; heavy and hard-to-digest meat; fried and processed foods' },
+        { n: '→', text: 'Recommended practices', detail: 'Boiled water for bath; rub body with oil after bath; traditional Abyanga; aromatic herbs; cooling drinks' },
+        { n: '→', text: 'Practices to avoid', detail: 'Getting wet in rain; day sleep; exercise and hard work; sexual indulgence; wind exposure; staying at river-bank' },
       ],
     },
     {
@@ -283,10 +282,10 @@ export class SwasthyaBharatiPageComponent
       title: 'Sharat Ritu (Autumn)',
       desc: 'Seasonal foods and practices for autumn',
       subs: [
-        { n: '→', text: 'Recommended foods',       detail: 'Sweet and bitter-tasting, light and cooling foods; wheat, green gram, sugar candy, honey, pointed gourd; meat of dry land animals' },
-        { n: '→', text: 'Foods to avoid',           detail: 'Hot foods; bitter, sweet, astringent taste foods; fatty foods and oils; meat of aquatic animals; curds' },
-        { n: '→', text: 'Recommended practices',   detail: 'Eat only when hungry; drink sun- and moon-purified water; bathe with purified water; wear flower garlands; apply sandalwood paste; enjoy moonlight in early night' },
-        { n: '→', text: 'Practices to avoid',       detail: 'Day sleep; excessive eating; excess sun exposure' },
+        { n: '→', text: 'Recommended foods', detail: 'Sweet and bitter-tasting, light and cooling foods; wheat, green gram, sugar candy, honey, pointed gourd; meat of dry land animals' },
+        { n: '→', text: 'Foods to avoid', detail: 'Hot foods; bitter, sweet, astringent taste foods; fatty foods and oils; meat of aquatic animals; curds' },
+        { n: '→', text: 'Recommended practices', detail: 'Eat only when hungry; drink sun- and moon-purified water; bathe with purified water; wear flower garlands; apply sandalwood paste; enjoy moonlight in early night' },
+        { n: '→', text: 'Practices to avoid', detail: 'Day sleep; excessive eating; excess sun exposure' },
       ],
     },
     {
@@ -295,10 +294,10 @@ export class SwasthyaBharatiPageComponent
       title: 'Hemanta Ritu (Late Autumn / Early Winter)',
       desc: 'Seasonal foods and practices for early winter',
       subs: [
-        { n: '→', text: 'Recommended foods',       detail: 'Unctuous, sweet, sour, salty foods; new rice, flour preparations, green and black gram, various meats, oils, fats, milk products, sugarcane products, fermented preparations, sesame' },
-        { n: '→', text: 'Foods to avoid',           detail: 'Light, cold, dry foods; cold drinks' },
-        { n: '→', text: 'Recommended practices',   detail: 'Regular exercise; body and head massage; bathing with warm water; sunbathing; application of aromatic substances; wearing light clothing; staying in warm places' },
-        { n: '→', text: 'Practices to avoid',       detail: 'Exposure to strong cold wind; day sleep' },
+        { n: '→', text: 'Recommended foods', detail: 'Unctuous, sweet, sour, salty foods; new rice, flour preparations, green and black gram, various meats, oils, fats, milk products, sugarcane products, fermented preparations, sesame' },
+        { n: '→', text: 'Foods to avoid', detail: 'Light, cold, dry foods; cold drinks' },
+        { n: '→', text: 'Recommended practices', detail: 'Regular exercise; body and head massage; bathing with warm water; sunbathing; application of aromatic substances; wearing light clothing; staying in warm places' },
+        { n: '→', text: 'Practices to avoid', detail: 'Exposure to strong cold wind; day sleep' },
       ],
     },
     {
@@ -307,20 +306,20 @@ export class SwasthyaBharatiPageComponent
       title: 'Ahara (Food) — guidelines for healthy eating',
       desc: 'Food as the foundation of physical, mental, and spiritual well-being',
       subs: [
-        { n: '1',  text: 'Choose food according to season and health condition',            detail: 'Select based on Ritu, time of day, age, digestion strength, and health condition' },
-        { n: '2',  text: 'Eat freshly prepared food',                                       detail: 'Freshly cooked and warm; avoid stale, refrigerated, reheated, or previous-day food' },
-        { n: '3',  text: 'Maintain purity in preparation',                                  detail: 'Method of procuring ingredients, cleanliness of utensils, place of cooking, and cook\'s mental state all matter' },
-        { n: '4',  text: 'Avoid incompatible food combinations (Viruddha Ahara)',           detail: 'Do not mix foods with opposite qualities — e.g. milk should not be combined with salty or sour substances' },
-        { n: '5',  text: 'Respect regional staples',                                        detail: 'Prefer unpolished, locally grown grains and produce' },
-        { n: '6',  text: 'Consume a balanced meal',                                         detail: 'Include all six tastes in each meal' },
-        { n: '7',  text: 'Follow proper eating conduct',                                    detail: 'Eat mindfully without distractions; chew food properly' },
-        { n: '8',  text: 'Eat only after proper digestion',                                 detail: 'Do not eat again until the previous meal is digested' },
-        { n: '9',  text: 'Maintain proper quantity',                                        detail: 'Stomach division rule — leave space; solids and liquids in right proportion' },
-        { n: '10', text: 'Include milk and ghee',                                           detail: 'Ethically sourced; ghee is one of the best fats for daily consumption in proper quantity' },
-        { n: '11', text: 'Consume local and seasonal produce',                              detail: 'Eat what grows in your region and season' },
-        { n: '12', text: 'Cook food properly',                                              detail: 'Avoid overcooked or undercooked food' },
-        { n: '13', text: 'Eat with mindfulness and gratitude',                              detail: 'Mental state during eating influences digestion and assimilation' },
-        { n: '14', text: 'Avoid processed foods; prefer organic',                           detail: 'Highly processed and artificial items harm long-term health' },
+        { n: '1', text: 'Choose food according to season and health condition', detail: 'Select based on Ritu, time of day, age, digestion strength, and health condition' },
+        { n: '2', text: 'Eat freshly prepared food', detail: 'Freshly cooked and warm; avoid stale, refrigerated, reheated, or previous-day food' },
+        { n: '3', text: 'Maintain purity in preparation', detail: 'Method of procuring ingredients, cleanliness of utensils, place of cooking, and cook\'s mental state all matter' },
+        { n: '4', text: 'Avoid incompatible food combinations (Viruddha Ahara)', detail: 'Do not mix foods with opposite qualities — e.g. milk should not be combined with salty or sour substances' },
+        { n: '5', text: 'Respect regional staples', detail: 'Prefer unpolished, locally grown grains and produce' },
+        { n: '6', text: 'Consume a balanced meal', detail: 'Include all six tastes in each meal' },
+        { n: '7', text: 'Follow proper eating conduct', detail: 'Eat mindfully without distractions; chew food properly' },
+        { n: '8', text: 'Eat only after proper digestion', detail: 'Do not eat again until the previous meal is digested' },
+        { n: '9', text: 'Maintain proper quantity', detail: 'Stomach division rule — leave space; solids and liquids in right proportion' },
+        { n: '10', text: 'Include milk and ghee', detail: 'Ethically sourced; ghee is one of the best fats for daily consumption in proper quantity' },
+        { n: '11', text: 'Consume local and seasonal produce', detail: 'Eat what grows in your region and season' },
+        { n: '12', text: 'Cook food properly', detail: 'Avoid overcooked or undercooked food' },
+        { n: '13', text: 'Eat with mindfulness and gratitude', detail: 'Mental state during eating influences digestion and assimilation' },
+        { n: '14', text: 'Avoid processed foods; prefer organic', detail: 'Highly processed and artificial items harm long-term health' },
       ],
     },
     {
@@ -329,15 +328,15 @@ export class SwasthyaBharatiPageComponent
       title: 'Sadvritta (Code of Conduct for Complete Well-being)',
       desc: 'True wellness includes mental, emotional, and spiritual well-being',
       subs: [
-        { n: '→', text: 'Give equal importance to all life spheres',      detail: 'Professional, personal, family, social, and spiritual life' },
-        { n: '→', text: 'Follow a planned daily routine',                  detail: 'Avoid last-minute pressure with a prepared timetable' },
-        { n: '→', text: 'Prepare comprehensive plans',                     detail: 'Daily timetable, weekly plan, monthly/yearly roadmap' },
-        { n: '→', text: 'Write down your goals and thoughts',              detail: 'Clarity in planning reduces confusion and stress' },
-        { n: '→', text: 'Choose work that gives satisfaction',             detail: 'Not just financial gain — engage in meaningful work' },
-        { n: '→', text: 'Pursue activities beyond your profession',        detail: 'Art, travel, music, social activities for happiness' },
-        { n: '→', text: 'Spend quality time with family daily',            detail: 'Without television or mobile phones' },
-        { n: '→', text: 'Follow a spiritual path',                         detail: 'Self-reflection reduces inner conflicts and stress' },
-        { n: '→', text: 'Negative traits to control',                      detail: 'Greed, uncontrolled anger, wrong desires, jealousy, ego, excessive attachment' },
+        { n: '→', text: 'Give equal importance to all life spheres', detail: 'Professional, personal, family, social, and spiritual life' },
+        { n: '→', text: 'Follow a planned daily routine', detail: 'Avoid last-minute pressure with a prepared timetable' },
+        { n: '→', text: 'Prepare comprehensive plans', detail: 'Daily timetable, weekly plan, monthly/yearly roadmap' },
+        { n: '→', text: 'Write down your goals and thoughts', detail: 'Clarity in planning reduces confusion and stress' },
+        { n: '→', text: 'Choose work that gives satisfaction', detail: 'Not just financial gain — engage in meaningful work' },
+        { n: '→', text: 'Pursue activities beyond your profession', detail: 'Art, travel, music, social activities for happiness' },
+        { n: '→', text: 'Spend quality time with family daily', detail: 'Without television or mobile phones' },
+        { n: '→', text: 'Follow a spiritual path', detail: 'Self-reflection reduces inner conflicts and stress' },
+        { n: '→', text: 'Negative traits to control', detail: 'Greed, uncontrolled anger, wrong desires, jealousy, ego, excessive attachment' },
       ],
     },
     {
@@ -346,10 +345,10 @@ export class SwasthyaBharatiPageComponent
       title: 'Rutusrava Paricharya (Guidelines during Menstruation)',
       desc: 'Dietary and lifestyle practices during menstruation',
       subs: [
-        { n: '…', text: 'Overview',           detail: 'Natural monthly process; bleeding lasts 3–8 days; occurs every 21–35 days' },
-        { n: '→', text: 'Diet — eat',         detail: 'Simple, freshly prepared, warm foods; slightly more ghee; plenty of warm fluids' },
-        { n: '→', text: 'Diet — avoid',       detail: 'Heavy meals, overeating, non-vegetarian food, curd, coffee, tea, chocolates, baked and processed foods' },
-        { n: '→', text: 'Rest and activity',  detail: 'Minimise physical and mental exertion; gentle deep breathing is acceptable; sleep adequately' },
+        { n: '…', text: 'Overview', detail: 'Natural monthly process; bleeding lasts 3–8 days; occurs every 21–35 days' },
+        { n: '→', text: 'Diet — eat', detail: 'Simple, freshly prepared, warm foods; slightly more ghee; plenty of warm fluids' },
+        { n: '→', text: 'Diet — avoid', detail: 'Heavy meals, overeating, non-vegetarian food, curd, coffee, tea, chocolates, baked and processed foods' },
+        { n: '→', text: 'Rest and activity', detail: 'Minimise physical and mental exertion; gentle deep breathing is acceptable; sleep adequately' },
         { n: '→', text: 'Activities to avoid', detail: 'Strenuous workouts, gym, yoga asanas, pranayama, swimming, or long walks' },
       ],
     },
@@ -359,12 +358,12 @@ export class SwasthyaBharatiPageComponent
       title: 'Circadian Rhythm — the body\'s internal clock',
       desc: 'Science behind waking before dawn and biological rhythm',
       subs: [
-        { n: '…', text: 'Melatonin',                                detail: 'Released by the pineal gland at night; helps initiate sleep; increases in darkness' },
-        { n: '…', text: 'Body temperature',                         detail: 'Lowest around 5 am, a few hours before natural wake time' },
-        { n: '…', text: 'Cortisol',                                 detail: 'Life-protecting stress hormone; usually highest in the morning; helps alertness' },
-        { n: '→', text: 'Cognition',                                detail: 'Early cortisol spike improves focus, alertness, and problem-solving (Brahma Muhurta benefit)' },
-        { n: '→', text: 'Entrainment',                              detail: 'Consistent early waking + morning light synchronises the biological clock, improving energy, digestion, and sleep quality' },
-        { n: '→', text: 'Appetite hormones (Ghrelin & Leptin)',     detail: 'Ghrelin (hunger hormone) suppressed during sleep; Leptin (satiety hormone) rises at night; aligned rhythm supports weight management' },
+        { n: '…', text: 'Melatonin', detail: 'Released by the pineal gland at night; helps initiate sleep; increases in darkness' },
+        { n: '…', text: 'Body temperature', detail: 'Lowest around 5 am, a few hours before natural wake time' },
+        { n: '…', text: 'Cortisol', detail: 'Life-protecting stress hormone; usually highest in the morning; helps alertness' },
+        { n: '→', text: 'Cognition', detail: 'Early cortisol spike improves focus, alertness, and problem-solving (Brahma Muhurta benefit)' },
+        { n: '→', text: 'Entrainment', detail: 'Consistent early waking + morning light synchronises the biological clock, improving energy, digestion, and sleep quality' },
+        { n: '→', text: 'Appetite hormones (Ghrelin & Leptin)', detail: 'Ghrelin (hunger hormone) suppressed during sleep; Leptin (satiety hormone) rises at night; aligned rhythm supports weight management' },
       ],
     },
   ] as const;
@@ -604,15 +603,6 @@ export class SwasthyaBharatiPageComponent
 
   readonly services2: ServiceGroup[] = [
     {
-      id: 'programs',
-      label: 'Training',
-      caption: '',
-      items: [
-        { title: 'Curriculum: Swasthya Bharati Lifestyle Program', sub: 'Download curriculum →', icon: 'curriculum', link: 'assets/swastya-page/Curriculum Details of Swasthya Bharati ( Life style program) Training_.pdf', download: 'Swasthya-Bharati-Curriculum.pdf' },
-        { title: 'Enrollment', sub: 'Apply via Google Form →', icon: 'enrol', link: 'https://docs.google.com/forms/d/e/1FAIpQLSf7FpOaIjUTkOFD_g0xoTjSugkY_O4-QNvmhP4cYPEDojHyhg/viewform', linkTarget: '_blank' },
-      ],
-    },
-    {
       id: 'education',
       label: 'Health Education & Awareness',
       caption: '',
@@ -620,6 +610,15 @@ export class SwasthyaBharatiPageComponent
         { title: 'Health and Wellness Sessions', icon: 'workshop' },
         { title: 'Workshops for Educational Institutions, Workplaces, Community Organizations, and the General Public', icon: 'education' },
         // { title: 'Community Organizations, and the General Public', icon: 'community' },
+      ],
+    },
+    {
+      id: 'programs',
+      label: 'Training',
+      caption: '',
+      items: [
+        { title: 'Curriculum: Swasthya Bharati Lifestyle Program', sub: 'Download curriculum →', icon: 'curriculum', link: 'assets/swastya-page/Curriculum Details of Swasthya Bharati ( Life style program) Training_.pdf', download: 'Swasthya-Bharati-Curriculum.pdf' },
+        { title: 'Enrollment', sub: 'Apply via Google Form →', icon: 'enrol', link: 'https://docs.google.com/forms/d/e/1FAIpQLSf7FpOaIjUTkOFD_g0xoTjSugkY_O4-QNvmhP4cYPEDojHyhg/viewform', linkTarget: '_blank' },
       ],
     },
   ];
@@ -800,11 +799,11 @@ export class SwasthyaBharatiPageComponent
   ];
 
   readonly doctors: Doctor[] = [
-    { name: 'Dr. Sindu',    role: 'Lifestyle Physician',  initial: 'S', dept: 'Lifestyle',  color: '#3ddba8', bg: 'linear-gradient(135deg,#3ddba8,#1faf82)' },
-    { name: 'Dr. Varsha',   role: 'Yoga & Lifestyle',     initial: 'V', dept: 'Yoga',        color: '#a78bfa', bg: 'linear-gradient(135deg,#a78bfa,#7c3aed)' },
-    { name: 'Dr. Rachana',  role: 'Ayurveda & Wellness',  initial: 'R', dept: 'Ayurveda',    color: '#f59e0b', bg: 'linear-gradient(135deg,#f59e0b,#b45309)' },
+    { name: 'Dr. Sindu', role: 'Lifestyle Physician', initial: 'S', dept: 'Lifestyle', color: '#3ddba8', bg: 'linear-gradient(135deg,#3ddba8,#1faf82)' },
+    { name: 'Dr. Varsha', role: 'Yoga & Lifestyle', initial: 'V', dept: 'Yoga', color: '#a78bfa', bg: 'linear-gradient(135deg,#a78bfa,#7c3aed)' },
+    { name: 'Dr. Rachana', role: 'Ayurveda & Wellness', initial: 'R', dept: 'Ayurveda', color: '#f59e0b', bg: 'linear-gradient(135deg,#f59e0b,#b45309)' },
     { name: 'Dr. Shamantha', role: 'Integrative Medicine', initial: 'S', dept: 'Integrative', color: '#38bdf8', bg: 'linear-gradient(135deg,#38bdf8,#0369a1)' },
-    { name: 'Dr. Ramya',    role: 'Preventive Health',    initial: 'R', dept: 'Preventive',  color: '#fb7185', bg: 'linear-gradient(135deg,#fb7185,#be123c)' },
+    { name: 'Dr. Ramya', role: 'Preventive Health', initial: 'R', dept: 'Preventive', color: '#fb7185', bg: 'linear-gradient(135deg,#fb7185,#be123c)' },
   ];
 
   readonly faqs: Faq[] = [
@@ -926,7 +925,7 @@ export class SwasthyaBharatiPageComponent
 
     // Orbit auto-rotation: attach hover listeners then start loop
     const orbitEls = this.host.nativeElement.querySelectorAll<HTMLElement>('.sbp-orbit');
-    this.orbitEl  = orbitEls[0] ?? undefined;
+    this.orbitEl = orbitEls[0] ?? undefined;
     this.orbitEl2 = orbitEls[1] ?? undefined;
     if (this.orbitEl) {
       this.orbitEl.addEventListener('mouseenter', this.handleOrbitEnter);

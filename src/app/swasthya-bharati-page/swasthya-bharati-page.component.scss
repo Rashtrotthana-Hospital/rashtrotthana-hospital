@@ -250,6 +250,9 @@ body:has(.sbp-root) {
 .sbp-title-tagline {
   display: inline-flex;
   align-items: center;
+  font-family: "Tiro Devanagari Sanskrit", "Poppins", serif;
+  font-style: italic;
+  font-weight: 700;
   font-size: 0.85rem;
   letter-spacing: 0.2em;
   color: var(--sbp-saffron-deep);
@@ -427,7 +430,11 @@ body:has(.sbp-root) {
   gap: 0.4rem;
 }
 
+
+
 .sbp-ec-source {
+  font-family: "Tiro Devanagari Sanskrit", "Poppins", serif;
+  font-style: italic;
   font-size: 0.72rem;
   font-weight: 600;
   letter-spacing: 0.06em;
@@ -548,7 +555,8 @@ body:has(.sbp-root) {
 .sbp-rm-section__heading {
   font-size: 1.4rem;
   font-weight: 800;
-  font-family: "Poppins", sans-serif;
+  font-family: "Tiro Devanagari Sanskrit", "Poppins", serif;
+  font-style: italic;
   letter-spacing: -0.01em;
   margin-bottom: 1.5rem;
   width: fit-content;
@@ -753,7 +761,7 @@ body:has(.sbp-root) {
     text-align: left;
     position: relative;
     z-index: 1;
-    padding-bottom: clamp(3rem, 6vw, 5rem);
+    // padding-bottom: clamp(3rem, 6vw, 5rem);
 
     .sbp-eyebrow {
       margin-bottom: 1rem;
@@ -800,7 +808,8 @@ body:has(.sbp-root) {
     }
 
     .sbp-hero__section-heading {
-      font-family: "Poppins", sans-serif;
+      font-family: "Tiro Devanagari Sanskrit", "Poppins", serif;
+      font-style: italic;
       font-size: 2.4rem;
       font-weight: 800;
       letter-spacing: -0.01em;
@@ -2205,6 +2214,8 @@ body:has(.sbp-root) {
 
 .sbp-vm2__tag {
   display: inline-block;
+  font-family: "Tiro Devanagari Sanskrit", "Poppins", serif;
+  font-style: italic;
   font-size: 0.7rem;
   font-weight: 700;
   letter-spacing: 0.16em;
@@ -2232,6 +2243,8 @@ body:has(.sbp-root) {
 }
 
 .sbp-vm2__body {
+  font-family: "Tiro Devanagari Sanskrit", "Poppins", serif;
+  font-style: italic;
   font-size: 0.92rem;
   line-height: 1.8;
   color: var(--sbp-text-soft);
@@ -2259,6 +2272,8 @@ body:has(.sbp-root) {
 }
 
 .sbp-vm2__seemore {
+  font-family: "Tiro Devanagari Sanskrit", "Poppins", serif;
+  font-style: italic;
   margin-top: 0.75rem;
   flex-shrink: 0;
   align-self: flex-start;
@@ -2287,6 +2302,8 @@ body:has(.sbp-root) {
   display: inline-flex;
   align-items: center;
   gap: 0.55rem;
+  font-family: "Tiro Devanagari Sanskrit", "Poppins", serif;
+  font-style: italic;
   font-size: 0.9rem;
   font-weight: 600;
   color: #fff;
@@ -3099,6 +3116,9 @@ body:has(.sbp-root) {
 
   .sbp-section-head {
     margin-bottom: clamp(1.5rem, 3vw, 2.25rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -3117,7 +3137,7 @@ body:has(.sbp-root) {
   display: flex;
   justify-content: center;
   overflow: visible;
-  padding: clamp(60px, 8vw, 100px) clamp(40px, 6vw, 80px);
+  padding: clamp(46px, 8vw, 0px) clamp(40px, 6vw, 35px);
 }
 
 .sbp-services__content-col {
@@ -5159,6 +5179,8 @@ body:has(.sbp-root) {
   list-style: disc;
   margin-left: 20px;
   padding-left: 4px;
+  font-style: normal;
+  font-family: "Poppins", sans-serif;
 }
 
 // Duplicate services section — 2 satellites spaced 180° apart instead of 120°
