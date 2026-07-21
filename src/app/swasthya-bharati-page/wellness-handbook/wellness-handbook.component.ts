@@ -86,7 +86,7 @@ export class WellnessHandbookComponent implements AfterViewInit, OnDestroy {
           items: [
             { n: '1',  t: 'Pratarutthana',               d: 'Waking up before sunrise (Brahma Muhurta)' },
             { n: '2',  t: 'Mala Mutra Visarjana',         d: 'Timely evacuation of bladder and bowels' },
-            { n: '3',  t: 'Dantadhavana & Jihvanirlekana', d: 'Oral hygiene — herbal brushing & tongue scraping' },
+            { n: '3',  t: 'Dantadhavana and Jihvanirle khana', d: 'Oral hygiene — herbal brushing & tongue scraping' },
             { n: '4',  t: 'Ushapana',                     d: 'Drinking water on empty stomach' },
             { n: '5',  t: 'Anjana and Nasya',             d: 'Herbal collyrium to eyes; medicated nasal drops' },
             { n: '6',  t: 'Kavala & Gandusha',            d: 'Oral Detox — swishing herbal oil in the mouth' },
