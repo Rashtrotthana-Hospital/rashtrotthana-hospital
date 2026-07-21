@@ -125,10 +125,46 @@ export class SwasthyaBharatiPageComponent
   private cardHovered = false;
   private orbitResumeTimeout?: ReturnType<typeof setTimeout>;
   private orbitEl?: HTMLElement;
+  private orbitEl2?: HTMLElement;
   private readonly handleOrbitEnter = () => { this.orbitPaused = true; };
   private readonly handleOrbitLeave = () => { if (!this.cardHovered) { this.orbitPaused = false; this.lastOrbitTime = 0; } };
 
   readonly activeService = signal<ServiceTab>('assessment');
+
+  // Second independent services section signals
+  readonly activeService2 = signal<ServiceTab>('programs');
+  readonly cardPage2 = signal<number>(0);
+  readonly isFlipping2 = signal<boolean>(false);
+  private flipTimeout2?: ReturnType<typeof setTimeout>;
+
+  setService2(id: ServiceTab): void {
+    this.activeService2.set(id);
+    this.cardPage2.set(0);
+    this.isFlipping2.set(false);
+  }
+
+  getPagedItems2(group: ServiceGroup): { title: string; sub?: string; icon?: string; link?: string; linkTarget?: string; download?: string }[] {
+    if (this.isMobile()) return group.items;
+    if (group.id !== this.activeService2()) return group.items.slice(0, this.CARDS_PER_PAGE);
+    const start = this.cardPage2() * this.CARDS_PER_PAGE;
+    return group.items.slice(start, start + this.CARDS_PER_PAGE);
+  }
+
+  getTotalPages2(group: ServiceGroup): number {
+    if (this.isMobile()) return 1;
+    return Math.ceil(group.items.length / this.CARDS_PER_PAGE);
+  }
+
+  navigateCards2(dir: 1 | -1): void {
+    if (this.isFlipping2()) return;
+    const total = Math.ceil((this.services2.find(s => s.id === this.activeService2())?.items.length ?? 0) / this.CARDS_PER_PAGE);
+    const newPage = this.cardPage2() + dir;
+    if (newPage < 0 || newPage >= total) return;
+    this.isFlipping2.set(true);
+    clearTimeout(this.flipTimeout2);
+    this.flipTimeout2 = setTimeout(() => { this.cardPage2.set(newPage); }, 300);
+    setTimeout(() => { this.isFlipping2.set(false); }, 600);
+  }
 
   // Hero section "See more" toggle
   readonly heroExpanded = signal<boolean>(false);
@@ -140,19 +176,25 @@ export class SwasthyaBharatiPageComponent
     }
   }
 
-  // Vision / Mission toggle
-  readonly vmActive = signal<'vision' | 'mission'>('vision');
+  // Vision / Mission / Commitment tabs
+  readonly vmActive = signal<'vision' | 'mission' | 'commitment'>('mission');
   readonly vmAnimating = signal<boolean>(false);
   readonly vmExpanded = signal<boolean>(false);
   private vmTimeout?: ReturnType<typeof setTimeout>;
 
-  toggleVm(): void {
-    if (this.vmAnimating()) return;
+  vmNext(): 'vision' | 'mission' | 'commitment' {
+    const order = ['mission', 'vision', 'commitment'] as const;
+    const idx = order.indexOf(this.vmActive());
+    return order[(idx + 1) % order.length];
+  }
+
+  switchVm(tab: 'vision' | 'mission' | 'commitment'): void {
+    if (this.vmAnimating() || this.vmActive() === tab) return;
     this.vmAnimating.set(true);
     this.vmExpanded.set(false);
     clearTimeout(this.vmTimeout);
     this.vmTimeout = setTimeout(() => {
-      this.vmActive.set(this.vmActive() === 'vision' ? 'mission' : 'vision');
+      this.vmActive.set(tab);
       setTimeout(() => this.vmAnimating.set(false), 350);
     }, 300);
   }
@@ -560,6 +602,28 @@ export class SwasthyaBharatiPageComponent
     },
   ];
 
+  readonly services2: ServiceGroup[] = [
+    {
+      id: 'programs',
+      label: 'Training',
+      caption: '',
+      items: [
+        { title: 'Curriculum: Swasthya Bharati Lifestyle Program', sub: 'Download curriculum →', icon: 'curriculum', link: 'assets/swastya-page/Curriculum Details of Swasthya Bharati ( Life style program) Training_.pdf', download: 'Swasthya-Bharati-Curriculum.pdf' },
+        { title: 'Enrollment', sub: 'Apply via Google Form →', icon: 'enrol', link: 'https://docs.google.com/forms/d/e/1FAIpQLSf7FpOaIjUTkOFD_g0xoTjSugkY_O4-QNvmhP4cYPEDojHyhg/viewform', linkTarget: '_blank' },
+      ],
+    },
+    {
+      id: 'education',
+      label: 'Health Education & Awareness',
+      caption: '',
+      items: [
+        { title: 'Health and Wellness Sessions', icon: 'workshop' },
+        { title: 'Workshops for Educational Institutions, Workplaces, Community Organizations, and the General Public', icon: 'education' },
+        // { title: 'Community Organizations, and the General Public', icon: 'community' },
+      ],
+    },
+  ];
+
   readonly services: ServiceGroup[] = [
     {
       id: 'assessment',
@@ -599,15 +663,15 @@ export class SwasthyaBharatiPageComponent
     //     { title: 'School / Community programs', icon: 'community' },
     //   ],
     // },
-    {
-      id: 'programs',
-      label: 'Training',
-      caption: 'Structured training programmes in lifestyle health.',
-      items: [
-        { title: 'Curriculum: Swasthya Bharati Lifestyle Program', sub: 'Download curriculum →', icon: 'curriculum', link: 'assets/swastya-page/Curriculum Details of Swasthya Bharati ( Life style program) Training_.pdf', download: 'Swasthya-Bharati-Curriculum.pdf' },
-        { title: 'Enrollment', sub: 'Apply via Google Form →', icon: 'enrol', link: 'https://docs.google.com/forms/d/e/1FAIpQLSf7FpOaIjUTkOFD_g0xoTjSugkY_O4-QNvmhP4cYPEDojHyhg/viewform', linkTarget: '_blank' },
-      ],
-    },
+    // {
+    //   id: 'programs',
+    //   label: 'Training',
+    //   caption: 'Structured training programmes in lifestyle health.',
+    //   items: [
+    //     { title: 'Curriculum: Swasthya Bharati Lifestyle Program', sub: 'Download curriculum →', icon: 'curriculum', link: 'assets/swastya-page/Curriculum Details of Swasthya Bharati ( Life style program) Training_.pdf', download: 'Swasthya-Bharati-Curriculum.pdf' },
+    //     { title: 'Enrollment', sub: 'Apply via Google Form →', icon: 'enrol', link: 'https://docs.google.com/forms/d/e/1FAIpQLSf7FpOaIjUTkOFD_g0xoTjSugkY_O4-QNvmhP4cYPEDojHyhg/viewform', linkTarget: '_blank' },
+    //   ],
+    // },
     // {
     //   id: 'ayurveda',
     //   label: 'Ayurveda-Based',
@@ -861,7 +925,9 @@ export class SwasthyaBharatiPageComponent
 
 
     // Orbit auto-rotation: attach hover listeners then start loop
-    this.orbitEl = this.host.nativeElement.querySelector<HTMLElement>('.sbp-orbit') ?? undefined;
+    const orbitEls = this.host.nativeElement.querySelectorAll<HTMLElement>('.sbp-orbit');
+    this.orbitEl  = orbitEls[0] ?? undefined;
+    this.orbitEl2 = orbitEls[1] ?? undefined;
     if (this.orbitEl) {
       this.orbitEl.addEventListener('mouseenter', this.handleOrbitEnter);
       this.orbitEl.addEventListener('mouseleave', this.handleOrbitLeave);
@@ -901,8 +967,9 @@ export class SwasthyaBharatiPageComponent
       const idx = this.services.findIndex((s) => s.id === id);
       if (idx >= 0) {
         // Solve for orbitAngle where effectiveAngle of idx === 0° (top):
-        // idx * 90 - 90 + orbitAngle = 0 → orbitAngle = 90 - idx * 90
-        this.orbitAngle = ((90 - idx * 90) % 360 + 360) % 360;
+        // idx * step - 90 + orbitAngle = 0 → orbitAngle = 90 - idx * step
+        const step = 360 / this.services.length;
+        this.orbitAngle = ((90 - idx * step) % 360 + 360) % 360;
       }
       this.lastOrbitTime = 0;
       if (!this.cardHovered) this.orbitPaused = false;
@@ -994,6 +1061,7 @@ export class SwasthyaBharatiPageComponent
         const delta = this.lastOrbitTime ? (now - this.lastOrbitTime) / 1000 : 0;
         this.orbitAngle = (this.orbitAngle + this.ORBIT_SPEED * delta) % 360;
         this.orbitEl?.style.setProperty('--orbit-angle', `${this.orbitAngle}deg`);
+        this.orbitEl2?.style.setProperty('--orbit-angle', `${this.orbitAngle}deg`);
         this.checkOrbitActiveService();
       }
       this.lastOrbitTime = now;
@@ -1005,8 +1073,9 @@ export class SwasthyaBharatiPageComponent
   private checkOrbitActiveService(): void {
     let minDiff = Infinity;
     let activeIdx = 0;
+    const step = 360 / this.services.length; // matches CSS: 120° for 3 items
     for (let i = 0; i < this.services.length; i++) {
-      const effectiveAngle = ((i * 90 - 90 + this.orbitAngle) % 360 + 360) % 360;
+      const effectiveAngle = ((i * step - 90 + this.orbitAngle) % 360 + 360) % 360;
       // Distance to 0° (top-center) - wraps around correctly
       const diff = Math.min(effectiveAngle, 360 - effectiveAngle);
       if (diff < minDiff) { minDiff = diff; activeIdx = i; }
