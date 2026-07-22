@@ -28,13 +28,6 @@ onButtonClick() {
   this.buttonClick.emit();
 }
 
-// onMouseOver(key: string) {
-// if(this.screenWidth > 600)
-//   this.showImage =  key;
-//   this.closeBox = false;
-//   console.log('key',key)
-// };
-
 hover_image:any ={
   'default': 'assets/sheild_num.png',
   'In patient facility': 'assets/hover-facility-1.png',

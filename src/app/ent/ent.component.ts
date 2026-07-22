@@ -47,20 +47,6 @@ export class ENTComponent {
       image: '../../assets/Dr-Sunil-Kumar-C.png',
       slug: '/doctor/dr-sunil-kumar-c',
     },
-    // {
-    //   id: 2,
-    //   name: 'Dr. Narendranath A',
-    //   experience: '11+ Years',
-    //   image: '../../assets/Dr-Narendranath-A.png',
-    //   slug: '/doctor/dr-narendranath-a',
-    // },
-    // {
-    //   id: 3,
-    //   name: 'Dr. Manasa N. A',
-    //   experience: '16+ Years',
-    //   image: '../../assets/Dr-Manasa-N-A.png',
-    //   slug: '/doctor/dr-manasa-n-a',
-    // },
     {
       id: 4,
       name: 'Dr. Sandhya S. Patil',
@@ -72,8 +58,6 @@ export class ENTComponent {
 
   formDoctors = [
     'Dr. Sunil Kumar C',
-    // 'Dr. Narendranath A',
-    // 'Dr. Manasa N. A',
     'Dr. Sandhya S. Patil',
   ];
 

@@ -4472,6 +4472,42 @@ body:has(.sbp-root) {
   }
 }
 
+@media (min-width: 1201px) {
+  .sbp-why__shloka-line {
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 1200px) {
+  .sbp-why__shloka-line {
+    white-space: normal;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 881px) {
+  .sbp-why__inner {
+    align-items: stretch;
+    gap: 1.5rem;
+  }
+  .sbp-why__copy {
+    flex: 0 0 50%;
+    max-width: 50%;
+    min-width: 0;
+    position: static;
+    top: auto;
+    align-self: stretch;
+  }
+  .sbp-why__points-wrap {
+    flex: 0 0 50%;
+    max-width: 50%;
+    min-width: 0;
+  }
+  .sbp-why__points {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
 @media (max-width: 880px) {
   .sbp-why__inner {
     flex-direction: column;

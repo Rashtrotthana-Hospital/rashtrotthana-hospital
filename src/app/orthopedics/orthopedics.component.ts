@@ -58,13 +58,7 @@ export class OrthopedicsComponent {
       image: '../../assets/dr-sandeep-k-m-doc-page.png',
       slug: '/doctor/dr-sandeep-k-m'
     },
-    // {
-    //   id: 4,
-    //   name: 'Dr. Hemanth Kumar Venkatesh',
-    //   experience: '20 Years',
-    //   image: '../../assets/Dr-Hemanth-kumar-Venkatesh.png',
-    //   slug: '/doctor/dr-hemanth-kumar-venkatesh'
-    // }
+   
   ];
 
 

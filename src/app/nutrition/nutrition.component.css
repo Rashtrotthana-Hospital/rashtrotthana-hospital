@@ -184,13 +184,21 @@
 
 .care-para {
     color: #FFF;
-    text-align: left;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
     font-family: Inter;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 26px;
     width: 1100px;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .choose-part {

@@ -174,13 +174,7 @@
       justify-content: center;
       align-items: center;
     }
-  
-    /* .popup-content {
-      background: white;
-      padding: 20px;
-      border-radius: 8px;
-      position: relative;
-    } */
+
   .group-child {
       position: absolute;
       top: 23.22px;

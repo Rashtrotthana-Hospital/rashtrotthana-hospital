@@ -10,14 +10,6 @@ import { filter } from 'rxjs/operators';
 export class PopupImageComponent {
   showPopup: boolean = true;
   imageList: string[] = [
-    // '../../assets/healthy-feet.jpeg',
-    // '../../assets/old-people.jpeg',
-    // '../../assets/popup3.jpeg',
-    // '../../assets/popup4.jpeg'
-    // '../../assets/nabh-website-popup.jpeg'
-    // '../../assets/diabetic-popup-2026.png'
-    // '../../assets/summer-camp-rash.jpeg'
-    // '../../assets/homeopathy-consultation.png'
     'assets/Integrated-diabetic.png'
   ];
   currentImage = '';

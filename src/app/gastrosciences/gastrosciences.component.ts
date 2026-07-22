@@ -24,12 +24,7 @@ export class GastrosciencesComponent {
   }
 
   doctors = [
-    // {
-    //   doctor_image:'../../assets/Dr-Ajay-N.png',
-    //   doctor_name:'Dr. Ajay N',
-    //   experience : "2",
-    //   docalt : 'Dr. Ajay N | Best Gastro Doctor in Bangalore | Rashtrotthana Hospital'
-    // },
+   
     {
       doctor_image : '../../assets/Dr-Man-Mohan-U-S.png',
       doctor_name : 'Dr. Man Mohan U. S',
@@ -95,18 +90,3 @@ export class GastrosciencesComponent {
   
 
 }
-
-
-
-// {
-//   name: "Dr ManMohan",
-//   image : "assets/Dr-Man-Mohan-U-S.png",
-//   desgination : "Gastroenterologist",
-//   about : "Dr. Man Mohan U.S. is a highly qualified gastroenterologist with extensive experience in managing complex gastrointestinal and hepatology conditions. Currently serving as an Assistant Professor at the Institute of Gastroenterology and Organ Transplant (IGOT), he has a keen interest in clinical research, with multiple publications and presentations at prestigious national and international conferences. He specializes in advanced diagnostic and therapeutic procedures, focusing on patient-centered care and innovative treatments in medical gastroenterology.",
-//   speciality : "Medical Gastroenterology and Hepatology",
-//   areasOfExpertise : ["Acid reflux/GERD","Gastritis and peptic ulcers","Celiac disease","Crohn's diseaseIrritable Bowel Syndrome (IBS)","Colitis and colon polyps","Fatty liver disease and hepatitis","Cirrhosis and liver fibrosis","Pancreatitis","Gallstones and bile duct infections","Abdominal pain, bloating and nausea","Rectal bleeding","Chronic constipation/diarrhea"],
-//   expertise : "",
-//   qualification : "MBBS, MD in General Medicine, Dr.N.B in Medical Gastroenterology",
-//   time : "",
-//   date : ""
-// },

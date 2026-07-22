@@ -31,18 +31,7 @@
     height: 310px;
 }
 
-/* .video video {
-    width: 336px;
-    height: 336px;
-    border-radius: 50%;
-    object-fit: cover;
-    padding: 10px; 
 
-    background: 
-      linear-gradient(255deg, #01AFB8 0.94%, #004B5F 100.59%) border-box;
-    
-    border: 10px solid transparent;
-} */
 
 .gradient-ring {
     padding: 12px;

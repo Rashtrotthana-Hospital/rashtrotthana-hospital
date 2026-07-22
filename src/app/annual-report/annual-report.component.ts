@@ -35,12 +35,6 @@ export class AnnualReportComponent implements AfterViewInit {
       content:
         'Explore the Annual Report of Rashtrotthana Hospital, Bangalore, highlighting healthcare services, achievements, initiatives and community impact.',
     });
-
-    // this.metaService.updateTag({
-    //   name: 'keywords',
-    //   content:
-    //     'anesthesiology hospital near me, spinal anesthesia, general anesthesia drugs, local anesthesia, pain medicine, intensive care medicine, critical emergency medicine',
-    // });
   }
 
   ngAfterViewInit() {

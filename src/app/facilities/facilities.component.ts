@@ -26,13 +26,6 @@ export class FacilitiesComponent implements OnInit {
   }
   isMobile: boolean = false;
   ngOnInit(): void {
-
-    // this.router.events
-    //   .pipe(filter((event) => event instanceof NavigationEnd))
-    //   .subscribe(() => {
-    //     this.checkIfChildRouteActive();
-    //   });
-  
     this.observeLaptopSizeChanges();
 
     this.titleService.setTitle('Hospital Facilities | Rashtrotthana Hospital Bangalore');
@@ -153,6 +146,15 @@ export class FacilitiesComponent implements OnInit {
     {
       name: 'card',
       image:
+        '../../assets/rashtrotthana_hospital_nutrition_dietetics-services_bangalore.png',
+      title: 'Clinical Nutrition & Dietetics',
+      button_text: 'Read More',
+      route: 'nutrition-dietetics-services-bangalore',
+      alt: 'Rashtrotthana Hospital | Best Nutrition Dietetics Services Bangalore',
+    },
+    {
+      name: 'card',
+      image:
         '../../assets/rashtrotthana_hospital_physiotherapy_facility_bengaluru.png',
       title: 'Physiotherapy',
       button_text: 'Read More',
@@ -176,15 +178,6 @@ export class FacilitiesComponent implements OnInit {
       button_text: 'Read More',
       route: 'endoscopy-services-bangalore',
       alt: 'Rashtrotthana Hospital | Best Endoscopy Services Bengaluru',
-    },
-    {
-      name: 'card',
-      image:
-        '../../assets/rashtrotthana_hospital_nutrition_dietetics-services_bangalore.png',
-      title: 'Clinical Nutrition & Dietetics',
-      button_text: 'Read More',
-      route: 'nutrition-dietetics-services-bangalore',
-      alt: 'Rashtrotthana Hospital | Best Nutrition Dietetics Services Bangalore',
     },
   ];
   hoverBoxes = [
@@ -226,10 +219,10 @@ export class FacilitiesComponent implements OnInit {
     return this.childRouteActive;
   }
 
-private checkIfChildRouteActive() {
-  // This will be truthy if there is an active child route
-  this.childRouteActive = !!this.route.firstChild;
-}
+  private checkIfChildRouteActive() {
+    // This will be truthy if there is an active child route
+    this.childRouteActive = !!this.route.firstChild;
+  }
 
 
   onMouseOut() {

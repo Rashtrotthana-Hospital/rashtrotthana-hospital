@@ -39,14 +39,6 @@ constructor(private titleService: Title, private metaService: Meta, private sani
       slug: '/doctor/dr-suhas-raj-s',
       docalt: 'Dr. Suhas Raj S | Best Cardiologist in Bangalore | Rashtrotthana Hospital'
     },
-    // {
-    //   id: 2,
-    //   name: 'Dr. Vinod Kolla',
-    //   experience: '10+ Years',
-    //   image: '../../assets/Dr-Vinod-Kolla.png',
-    //   slug: '/doctor/dr-vinod-kolla',
-    //   docalt: 'Dr. Vinod Kolla | Pulmonologist & Sleep Medicine Specialist | Rashtrotthana Hospital'
-    // }
   ];
 
   faqs = [

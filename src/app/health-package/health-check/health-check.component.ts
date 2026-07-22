@@ -47,12 +47,6 @@ export class HealthCheckComponent {
         });
       }
     });
-
-
-    // Auto slide every 3 seconds (optional)
-    // this.interval = setInterval(() => {
-    //   this.nextSlide();
-    // }, 3000);
   }
 
   ngOnDestroy() {

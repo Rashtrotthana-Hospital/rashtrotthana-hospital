@@ -453,29 +453,6 @@ ol {
   height: 40px;
   background-image: url('../../assets/Yellow\ Arrow.png');
 }
-
-/* .bg-care img {
-  width: 476px;
-  height: 153px;
-  display: block;
-  cursor: pointer;
-  /* max-width: 100%;
-  height: auto; */
-/* }
-.bg-care .secondary {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  object-fit: contain;
-  opacity: 0;
-  transition: opacity 1.5s ease;
-}
-.bg-care:hover .secondary {
-  opacity: 1;
-} */
-
 .bg-features {
   position: relative;
   max-width: 100%;
@@ -866,13 +843,6 @@ li {
   padding-bottom: 5rem;
 }
 
-/* .ninth-container {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  padding: 4rem;
-} */
 .specialities {
   display: flex;
   width: 50%;
@@ -1387,10 +1357,6 @@ li {
   /* object-fit: cover; */
 }
 
-/* .icon {
-  font-size: 32px;
-  margin-bottom: 8px;
-} */
 
 .scroll-up .vertical-track {
   animation: scrollUp 60s linear infinite;
@@ -2003,33 +1969,6 @@ li {
     opacity: 1;
   }
 
-  /* .icons{
-  display: grid;
-  grid-template-columns: 51% 25%;
-  gap: 47px;
-}
-.homeopathy:nth-child(5){
-  grid-column: span 2;
-      justify-self: center;
-}
-  .icon{
-    margin-right: 0;
-  }
-  .yoga{
-    margin-top:0;
-  }
-  .naturopathy{
-    margin-bottom: 0;
-  }
-  .modern-medicine{
-    margin-bottom: 0;
-  }
-  .ayurveda{
-    margin-bottom: 0;
-  }
-  .homeopathy{
-    margin-top:0;
-  } */
   .icons {
     margin-right: 113px;
     gap: 39px;
@@ -2171,11 +2110,6 @@ li {
     /* Adjust as needed */
     margin-bottom: 5px;
   }
-
-  /* .bg-service .third{
-    width: 140px;
-    height: 186px;
-  } */
 
   .bg-service p {
     font-size: 12px;
@@ -2931,19 +2865,6 @@ li {
   color: var(--primary-color);
   margin-bottom: 1rem;
 }
-
-/* .image-placeholder-box {
-      width: 100px;
-      height: 100px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 1rem;
-      background-color: var(--white);
-      border-radius: 50%;
-      box-shadow: var(--shadow-medium);
-    } */
-
 
 .image-placeholder-box img {
   width: 300px;

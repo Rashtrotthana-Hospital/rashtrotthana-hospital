@@ -22,13 +22,7 @@ export class PopupFormDonationComponent {
 
   ngOnInit(): void {}
 
-  // onSubmit() {
-  //   console.log('User Details:', this.user);
-  //   this.http.post('http://localhost:3000/donate', this.user).subscribe((response: any) => {
-  //     console.log('Donation response:', response);
-  //     this.showPopup = false; 
-  //   });
-  // }
+  
   isSubmitting = false;
 
 onSubmit() {
