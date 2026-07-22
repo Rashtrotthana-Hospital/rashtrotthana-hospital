@@ -12,10 +12,6 @@
   background-color: #fff;
   border-radius: 15px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  /* display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start; */
   width: 433px;
   display: inline-flex;
   padding: 26px 116px 39px 50px;
@@ -280,14 +276,6 @@ line-height: normal;
   z-index: 10;
 }
 
-/* .doctor-details {
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    width: 60%;
-    max-width: 800px;
-  } */
-
 .doctor-card {
   cursor: pointer;
 }
@@ -300,9 +288,7 @@ line-height: normal;
   font-size: 24px;
   cursor: pointer;
 }
-/* button {
-    margin-top: 20px;
-  } */
+
 .doctors-left {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -310,7 +296,6 @@ line-height: normal;
   border-radius: 25px;
   cursor: pointer;
   max-height: 130vh;
-  /* overflow-y: scroll; */
 }
 .doctor-image {
   width: 200px;
@@ -325,7 +310,6 @@ line-height: normal;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
-  /* line-height: 35px; */
   background-color: #fff;
   text-align: center;
   display: flex;
@@ -353,8 +337,6 @@ line-height: normal;
   position: relative;
   top: 4px;
   right: 100px;
-  /* justify-content: flex-end;
-  align-items: flex-end; */
 }
 @media only screen and (max-width:1390px){
   .doctor-details{
@@ -411,7 +393,6 @@ line-height: normal;
     grid-template-columns: 50% 50%;
     gap: 1px;
     display: grid;
-    /* grid-template-columns: 33% 33% 33%; */
     justify-content: space-around;
     padding: 1rem;
     row-gap: 76px;
@@ -434,7 +415,6 @@ line-height: normal;
     grid-template-columns: 50% 50%;
     gap: 1px;
     display: grid;
-    /* grid-template-columns: 33% 33% 33%; */
     justify-content: space-around;
     padding: 1rem;
     row-gap: 76px;

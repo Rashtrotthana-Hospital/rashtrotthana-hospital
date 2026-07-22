@@ -30,30 +30,7 @@ export interface FaqItem {
   styleUrl: './proctology.component.css'
 })
 export class ProctologyComponent {
-  // constructor(private titleService: Title,
-  //   private metaService: Meta,
-  //   private router: Router) { }
-
-
-  // ngOnInit() {
-  //   this.titleService.setTitle(
-  //     'Piles Surgery in Bangalore | Laser Piles Treatment'
-  //   );
-
-  //   // Set the meta description
-  //   this.metaService.updateTag({
-  //     name: 'description',
-  //     content:
-  //       "Get advanced piles surgery in Bangalore at Rashtrotthana Hospital. Laser treatment, minimal pain, faster recovery & trusted surgical care.",
-  //   });
-
-  //   // Optionally set other meta tags
-  //   this.metaService.updateTag({
-  //     name: 'keywords',
-  //     content:
-  //       'knee replacement surgery orthopedic care, best knee surgery Bangalore',
-  //   });
-  // }
+ 
   // ── Modal ────────────────────────────────────────────────
   isModalOpen = false;
  

@@ -33,30 +33,7 @@ export interface FaqItem {
   styleUrl: './gallstone-removal-surgery.component.css'
 })
 export class GallstoneRemovalSurgeryComponent {
-  // constructor(private titleService: Title,
-  //   private metaService: Meta,
-  //   private router: Router) { }
-
-
-  // ngOnInit() {
-  //   this.titleService.setTitle(
-  //     'Gall Stone Removal Surgery in Bangalore | Rashtrotthana Hospitall'
-  //   );
-
-  //   // Set the meta description
-  //   this.metaService.updateTag({
-  //     name: 'description',
-  //     content:
-  //       "Get safe and advanced gall stone removal surgery in Bangalore at Rashtrotthana Hospital. Experienced surgeons, minimally invasive care & faster recovery.",
-  //   });
-
-  //   // Optionally set other meta tags
-  //   this.metaService.updateTag({
-  //     name: 'keywords',
-  //     content:
-  //       'knee replacement surgery, orthopedic care, best knee surgery Bangalore',
-  //   });
-  // }
+ 
   
    // ── FAQ accordion state ──────────────────────────────────
   isModalOpen = false;

@@ -63,39 +63,7 @@ export class NewResearchPageComponent {
       description: "",
       role_2: "Research Manager"
     },
-    // {
-    //   image : "../../assets/member_15.png",
-    //   name : "Dr. Kavyashree Kulamarva",
-    //   qualification : "BAMS, MD",
-    //   designation : "Research Officer",
-    //   address : "Former Senior Resident, NIMHANS, Bengaluru",
-    //   role : "",
-    //   roleDesv : "Former Senior Research Fellow, CCRAS",
-    //   description : "",
-    //   role_2 : "Research Officer"
-    // },
-    // {
-    //   image : "../../assets/member_16.png",
-    //   name : "Dr. Sooraj Mohan R",
-    //   qualification : "BAMS",
-    //   designation : "Research Officer",
-    //   address : "Former Senior Research fellow, National ayurveda Research Institute for Panchakarma",
-    //   role : "",
-    //   roleDesv : "Former Research Fellow, Dept. of  Ethno medicine, JNTBGRI",
-    //   description : "",
-    //   role_2 : "Research Officer"
-    // },
-    // {
-    //   image : "../../assets/member_14.png",
-    //   name : "Dr. Rohith K. R",
-    //   qualification : "BAMS",
-    //   designation : "Research Co-ordinator",
-    //   address : "",
-    //   role : "",
-    //   roleDesv : "",
-    //   description : "",
-    //   role_2 : "Research Co-ordinator"
-    // }
+    
     {
       image: "../../assets/vrinda.png",
       name: "Dr. Vrinda",
@@ -107,17 +75,7 @@ export class NewResearchPageComponent {
       description: "",
       role_2: "Research Officer"
     },
-    // {
-    //   image : "../../assets/vairamuthu.png",
-    //   name : "Dr. Vairamuthu. K",
-    //   qualification : "BAMS, MA (Sanskrit)",
-    //   designation : "Research Assistant",
-    //   address : "Former Senior Research Fellow, CCRAS-National Institute of Indian Medical Heritage, Hyderabad",
-    //   role : "",
-    //   roleDesv : "",
-    //   description : "",
-    //   role_2 : "Research Assistant"
-    // },
+    
     {
       image: "../../assets/Chaitra.png",
       name: "Dr. Chaithra Rao P",

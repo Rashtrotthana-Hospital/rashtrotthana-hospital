@@ -96,16 +96,7 @@ export class KidneyStoneComponent {
           `,
       color: '#008080',
     },
-    // {
-    //   icon: '⚕️',
-    //   title: 'Open Gall Bladder Surgery',
-    //   description: `
-    //         <ul>
-    //           <li> Recommended in select complex cases where laparoscopic surgery is not suitable. Provides safe access in advanced gall bladder conditions.</li>
-    //         </ul>
-    //       `,
-    //   color: '#00a0a0',
-    // },
+
   ];
 
   @ViewChild('formSection') formSection!: ElementRef;

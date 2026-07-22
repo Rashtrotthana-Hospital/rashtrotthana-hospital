@@ -109,15 +109,13 @@
 .detail-label {
     font-weight: 600;
     color: #34495e;
-    font-size: 0.9rem;
-    /* text-align: center; */
+    font-size: 0.9rem;    
 }
 
 .detail-value {
     color: #5d6d7e;
     font-size: 0.9rem;
     line-height: 1.4;
-    /* text-align: center; */
 }
 
 .buttons{
@@ -133,7 +131,6 @@
     background: linear-gradient(135deg, #3498db, #2980b9);
     color: white;
     border: none;
-    /* padding: 12px 0; */
     border-radius: 50%;
     font-size: 18px;
     font-weight: 600;
@@ -153,7 +150,6 @@
     border: 2px solid #2980b9;
     color: #2980b9;
     background-color: transparent;
-    /* padding: 12px 0; */
     border-radius: 8px;
     font-size: 12px;
     font-weight: 700;

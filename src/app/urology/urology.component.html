@@ -64,7 +64,6 @@
                             <h3 class="service-card-title">{{ service.title }}</h3>
                             <p class="service-card-desc">{{ service.description }}</p>
                         </div>
-                        <!-- <div class="service-arrow">→</div> -->
                     </div>
                 </div>
             </div>
@@ -173,11 +172,6 @@
 
             <!-- Left Layout (Icon Left) -->
             <div *ngIf="i % 2 === 0" class="layout-container layout-left">
-                <!-- <div class="icon-column" [style.background]="section.color">
-            <div class="number-badge">{{ section.number }}</div>
-            <div class="main-icon">{{ section.icon }}</div>
-            <div class="vertical-text">{{ section.title.split('.')[1]?.trim() || section.title }}</div>
-          </div> -->
 
                 <div class="content-column">
                     <h3 class="section-title" [style.color]="section.color">{{ section.title }}</h3>
@@ -225,12 +219,6 @@
                         <em>{{ section.highlightText }}</em>
                     </div>
                 </div>
-
-                <!-- <div class="icon-column" [style.background]="section.color">
-            <div class="number-badge">{{ section.number }}</div>
-            <div class="main-icon">{{ section.icon }}</div>
-            <div class="vertical-text">{{ section.title.split('.')[1]?.trim() || section.title }}</div>
-          </div> -->
             </div>
 
             <!-- Separator Line -->
@@ -263,7 +251,6 @@
 
 
     <div class="container-2 container_margin">
-        <!-- <h2 class="s_h1 text-center heading-margin">Our Other services</h2> -->
         <app-speciality-carousel />
     </div>
 

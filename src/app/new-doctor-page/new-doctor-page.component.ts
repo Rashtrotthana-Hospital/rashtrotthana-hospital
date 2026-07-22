@@ -604,37 +604,7 @@ export class NewDoctorPageComponent {
       happyPatients: '10000+'
 
     },
-    // {
-    //   name: 'Dr. Rajeev Vijayakumar',
-    //   image: 'assets/Doc-Inv-Page/Dr-Rajeev-Vijayakumar.png',
-    //   department: 'Oncologist',
-    //   about: 'Dr. Rajeev, the very senior consultant whose expertise in Medical Oncology, Hemato Oncology and Bone Marrow Transplant ensures that your confidence in his ...',
-    //   speciality: 'ONCOLOGY',
-    //   areasOfExpertise: ['Medical Oncology', 'Hemato- Oncology', 'Bone Marrow Transplant'],
-    //   expertise: 'Years of Experience: 20',
-    //   qualification: 'MBBS, DNB (Gen Medicine) DNB (Medical Oncology) MRCP (UK)',
-    //   time: '10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00',
-    //   date: 'Monday and Wednesday',
-    //   alt: 'Dr. Rajeev Vijayakumar | Best Medical Oncologist in Bangalore | Rashtrotthana Hospital | RR Nagar Bangalore',
-    //   id: 53,
-    //   title:'Dr. Rajeev Vijayakumar | Medical Oncologist in RR Nagar Bangalore',
-    //   description:'Book with Dr. Rajeev Vijayakumar, oncologist in RR Nagar with 20+ years of experience in medical oncology, hemato-oncology and bone marrow transplant care.'
-    // },
-    // {
-    //   name: 'Dr. Shashidhar',
-    //   image: 'assets/Doc-Inv-Page/Dr-Shashidhar.png',
-    //   department: 'Anaesthesia',
-    //   about: ' Dr. Shashidhar, our esteemed anesthesiologist with over 20 years of dedicated experience in the field. With qualifications including MBBS and DA, Dr. Shashidhar specializes in intensive care, emergency care and anesthesiology. His expertise ensures the safe and effective management of anesthesia for various medical procedures, providing essential support in critical and emergency situations. Trust him for expert care in anesthesia at every stage of your medical journey.',
-    //   speciality: 'ANAESTHESIOLOGY',
-    //   expertise: 'Years of Experience: 20+',
-    //   time: 'No-slot',
-    //   date: 'Monday-Saturday',
-    //   qualification: 'MBBS, DA',
-    //   areasOfExpertise: ['Intensive Care', 'Emergency Care', 'Anesthesiology'],
-    //   alt: 'Dr. Shashidhar | Best Anesthesiologist in Bangalore | Rashtrotthana Hospital | RR Nagar Bangalore',
-    //   title:'Dr. Shashidhar | Anesthesiologist & ICU Care in RR Nagar',
-    //   description:'Consult Dr. Shashidhar, anesthesiologist in RR Nagar with 20+ years’ experience in intensive care, emergency management and safe anesthesia procedures.'
-    // },
+   
 
     {
       name: 'Dr. Mahesh Kulkarni',
@@ -1113,24 +1083,6 @@ export class NewDoctorPageComponent {
 
     },
 
-    // {
-    //   name: 'Dr. Sindhu P. Madanshetty',
-    //   image: 'assets/Doc-Inv-Page/Dr-Sindhu-P-Madanshetty.png',
-    //   department: 'INTERNAL MEDICINE',
-    //   about: 'Dr Sindhu has built a reputable career as a recognised expert with superb patient care and medical knowledge. She completed her MBBS from Hubli, then MD in general medicine from Bangalore Medical College and research institute in 2018. She has been a gold medallist in her undergraduate. She has worked in both Internal Medicine and Intensive care and contributed in patient care at BGS global hospitals. Special interest is in critical care, Infection diseases, diabetology, metabolic diseases.',
-    //   speciality: 'INTERNAL MEDICINE',
-    //   areasOfExpertise: ['Critical Care', 'Diabetology', 'Hypertensions', 'Thyroid illness', 'Infectious diseases like Dengue', 'pneumonia', 'UTI'],
-    //   expertise: 'Years of Experience: 7',
-    //   qualification: 'MBBS, MD INTERNAL MEDICINE, IDCCM',
-    //   time: '10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00',
-    //   date: 'Monday-Saturday',
-    //   alt: 'Dr. Sindhu P. Madanshetty | Best Physician in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
-    //   id: 1,
-    //   title:'Dr. Sindhu P. Madanshetty | Internal Medicine in RR Nagar',
-    //   description:'Book with Dr. Sindhu P. Madanshetty, RR Nagar-based internal medicine doctor with 7+ years’ experience in critical care, diabetes, thyroid and infections.'
-    // },
-
-
     {
       name: 'Dr. Sujayendra D. M',
       image: 'assets/Doc-Inv-Page/Dr-Sujayendra-D-M.png',
@@ -1188,64 +1140,6 @@ export class NewDoctorPageComponent {
       happyPatients: '5000+'
 
     },
-
-
-    // {
-    //   name: 'Dr. Manasa N. A',
-    //   image: 'assets/Doc-Inv-Page/Dr-Manasa-N-A.png',
-    //   department: 'ENT, HEAD & NECK SURGERY',
-    //   about: 'Dr. Manasa. N. A Consultant ENT, Head & Neck Surgeon comes with a vast experience of 10 years. She has done her MBBS from the prestigious M.S. Ramaiah Medical College. She did her post-graduation from JJM medical college, Davangere. She procured her higher studies from Tata Main Hospital.She is immensely knowledgeable, compassionate and skilled in her field of expertise. She is your one stop solutions to all your Ear, nose, throat and Head & Neck related issues. Other than the routine ENT work she also specialises in endoscopic adenoidectomy and endoscopic endonasal sinus surgeries, microscopic hearing restoration surgeries, voice restoration surgery and Head and tumour surgeries.',
-    //   speciality: 'ENT SPECIALITY',
-    //   areasOfExpertise: ['Tonsillectomy', 'Adenoidectomy', 'Myringotomy', 'Septoplasty', 'Endoscopic sinus surgery', 'Management of vocal cord and voice disorders', 'Diagnosis and treatment of Head and neck tumors', 'Tracheotomy and airway surgeries', 'Polytrauma management', 'Snoring evaluation and Management of Obstructive sleep apnea', 'Micro ear surgery for hearing restoration',],
-    //   expertise: '16+',
-    //   qualification: 'MBBS, DLO, DNB(ENT)',
-    //   time: '10:30-10:50,10:50-11:10,11:10-11:30,11:30-11:50,11:50-12:10,12:10-12:30',
-    //   date: 'Monday,Wednesday,Friday and Saturday',
-    //   alt: 'Dr. Manasa N. A | Best ENT Consultant in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
-    //   id: 32,
-    //   title: 'Dr. Manasa N. A | ENT Head & Neck Surgeon in RR Nagar Bangalore',
-    //   description: 'Consult Dr. Manasa N. A, expert ENT doctor in RR Nagar, Bangalore. Skilled in endoscopic sinus surgery, tonsillectomy, voice & sleep apnea treatment.',
-    //   faqs: [
-    //     {
-    //       question: 'Who is Dr. Manasa N. A and what is her specialty at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-    //       answer: 'Dr. Manasa N. A is an experienced ENT and Head & Neck Surgeon at Rashtrotthana Hospital, RR Nagar, Bangalore. She specialises in ear, nose, throat, voice, airway and head-neck tumour management with a strong surgical background.'
-    //     },
-    //     {
-    //       question: 'Does Dr. Manasa N. A perform micro ear surgery for hearing loss at Rashtrotthana Hospital?',
-    //       answer: 'Yes, Dr. Manasa N. A performs micro ear surgery for hearing restoration, including procedures like myringotomy and middle ear surgeries. These surgeries aim to improve hearing while preserving ear structure and function.'
-    //     },
-    //     {
-    //       question: 'When is septoplasty or endoscopic sinus surgery recommended by Dr. Manasa N. A?',
-    //       answer: 'Septoplasty is recommended for deviated nasal septum causing breathing difficulty, while endoscopic sinus surgery is advised for chronic sinusitis not responding to medication. Dr. Manasa N. A uses minimally invasive techniques for faster recovery and better outcomes.'
-    //     },
-    //     {
-    //       question: 'Can Dr. Manasa N. A treat voice problems and vocal cord disorders?',
-    //       answer: 'Yes, Dr. Manasa N. A diagnoses and manages vocal cord and voice disorders such as hoarseness, voice strain and vocal cord lesions. Treatment may include medical management, voice therapy or surgery depending on the cause.'
-    //     },
-    //     {
-    //       question: 'Does Dr. Manasa N. A treat head and neck tumors at Rashtrotthana Hospital?',
-    //       answer: 'Dr. Manasa N. A is experienced in the diagnosis and surgical management of head and neck tumours, including throat, neck and oral region growths. Early evaluation helps in accurate diagnosis and timely treatment planning.'
-    //     },
-    //     {
-    //       question: 'Is snoring and sleep apnea treatment available with Dr. Manasa N. A in Bangalore?',
-    //       answer: 'Yes, Dr. Manasa N. A provides snoring evaluation and management of obstructive sleep apnea, including airway assessment and surgical options when required. Proper treatment helps improve sleep quality and overall health.'
-    //     },
-    //     {
-    //       question: 'How can I book an appointment with Dr. Manasa N. A at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-    //       answer: `You can book an appointment with Dr. Manasa N. A by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception or booking online through the official Rashtrotthana Hospital website.`
-    //     }
-    //   ],
-    //   departmentSlug: '/specialities/best-ent-hospital-in-bangalore',
-    //   expertiseIcons: [
-    //     'assets/icons/ENT-1.png',
-    //     'assets/icons/ENT-2.png',
-    //     'assets/icons/ENT-3.png',
-    //     'assets/icons/ENT-4.png',
-    //     'assets/icons/ENT-5.png'
-    //   ],
-    //   happyPatients: '7000+'
-
-    // },
 
 
     {
@@ -1481,18 +1375,7 @@ export class NewDoctorPageComponent {
       happyPatients: '4000+'
 
     },
-    // {
-    //   name: 'Dr. Valli Kiran',
-    //   image: 'assets/Dr-Latha-Venkataram7.png',
-    //   department: 'PSYCHIATRY',
-    //   speciality: 'PSYCHIATRY',
-    //   about: 'Dr. Valli Kiran M is graduate from MYSORE UNIVERSITY in 2001. He did DIPLOMA IN PSYCHIATRY in 2005',
-    //   areasOfExpertise: ['Entire Spectrum of Psychological Disorders'],
-    //   expertise: 'Years of Experience: 20',
-    //   qualification:'MBBS, DPM',
-    //   time:'16:30-16:50,16:50-17:10,17:10-17:30,17:30-17:50,17:50-18:10',
-    //   date:'Tuesday,Thursday,Saturday'
-    // },
+   
     {
       name: 'Dr. Vishnuvardhan V',
       image: 'assets/Doc-Inv-Page/Dr-Vishnuvardhan-V.png',
@@ -1938,62 +1821,7 @@ export class NewDoctorPageComponent {
       happyPatients: '4000+'
 
     },
-    // {
-    //   name: 'Dr. Ashwitha Gundmi',
-    //   image: 'assets/Doc-Inv-Page/Dr-Ashwitha-Gundmi.png',
-    //   department: 'OBSTETRICS & GYNECOLOGY',
-    //   speciality: 'OBSTETRICS & GYNECOLOGY',
-    //   about: 'Working as a consultant in WMN private Ltd. With MS ObGyn and MRCOG (UK), her qualifications reflect her dedication to patient well-being.  She is an experienced Obstetrics and gynaecology Consultant with expertise in managing various pregnancy-related disorders, including medical, genetic conditions, promoting vaginal birth to ensure optimal maternal and foetal health.She is a Gynaecologist with expertise in colposcopy for early detection and intervention of cervical abnormalities, awareness about cervical cancer vaccination and cervical screening, gynaecological surgeries including Minimally Invasive Surgeries including Laparoscopy and Hysteroscopy. Focusing on improving patients\' quality of life by addressing diverse gynaecological conditions.Has worked as faculty in medical College with active participation in research activities and academics of UG and PG students. Played a key role in medical camps and health awareness programmes .Believes in Evidence based practice. Is excellent in verbal and written communication. ',
-    //   areasOfExpertise: ['High Risk Obstetrics', 'Protocol based management', 'Gynaecological Surgeries - MIS', 'Fertility Related issues', 'Family planning & Contraception'],
-    //   expertise: '9+',
-    //   qualification: 'MBBS, MS OBG, MRCOG(London)',
-    //   time: '10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00',
-    //   date: 'Monday-Saturday',
-    //   alt: 'Dr. Ashwitha Gundmi | Best Obstetrics & Gynaecologist in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
-    //   id: 17,
-    //   title: 'Dr. Ashwitha Gundmi | High-Risk Pregnancy & MIS Specialist',
-    //   description: 'Dr. Ashwitha Gundmi is an experienced gynecologist skilled in high-risk obstetrics, MIS surgeries, cervical care and fertility solutions.',
-    //   faqs: [
-    //     {
-    //       question: 'Who is Dr. Ashwitha Gundmi and what is her specialty at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-    //       answer: 'Dr. Ashwitha Gundmi is an experienced Obstetrician and Gynaecologist at Rashtrotthana Hospital, RR Nagar, Bangalore. She is known for managing high-risk pregnancies, performing minimally invasive gynaecological surgeries and providing protocol-based women’s healthcare.'
-    //     },
-    //     {
-    //       question: 'Does Dr. Ashwitha Gundmi manage high-risk pregnancies at Rashtrotthana Hospital?',
-    //       answer: 'Yes, Dr. Ashwitha Gundmi specialises in high-risk obstetrics, including pregnancies complicated by diabetes, hypertension, thyroid disorders, previous pregnancy complications and advanced maternal age. Her care focuses on close monitoring and safe maternal–fetal outcomes.'
-    //     },
-    //     {
-    //       question: 'What is protocol-based pregnancy and gynaecology management?',
-    //       answer: 'Protocol-based management follows standardised, evidence-based clinical guidelines to ensure safe and consistent care. Dr. Ashwitha Gundmi uses this approach to minimise risks and improve outcomes during pregnancy and gynaecological treatment.'
-    //     },
-    //     {
-    //       question: 'What gynaecological surgeries does Dr. Ashwitha Gundmi perform?',
-    //       answer: 'Dr. Ashwitha Gundmi performs minimally invasive (MIS) gynaecological surgeries, including laparoscopic procedures for uterine, ovarian and pelvic conditions. These techniques offer smaller incisions, less pain and faster recovery.'
-    //     },
-    //     {
-    //       question: 'Can I consult Dr. Ashwitha Gundmi for fertility-related issues?',
-    //       answer: 'Yes, Dr. Ashwitha Gundmi evaluates and treats fertility-related concerns, including irregular cycles, ovulation issues and hormonal imbalances. She provides personalised guidance and treatment planning based on individual needs.'
-    //     },
-    //     {
-    //       question: 'Does Dr. Ashwitha Gundmi provide family planning and contraception counselling?',
-    //       answer: 'Yes, she offers comprehensive family planning and contraception services, helping women choose suitable birth-control options based on health, lifestyle and future pregnancy plans. Counselling ensures informed and safe decision-making.'
-    //     },
-    //     {
-    //       question: 'How can I book an appointment with Dr. Ashwitha Gundmi at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-    //       answer: `You can book an appointment with Dr. Ashwitha Gundmi by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception or booking online through the official Rashtrotthana Hospital website.`
-    //     }
-    //   ],
-    //   departmentSlug: '/specialities/best-obstetrics-and-gynecologist-hospital-in-bangalore',
-    //   expertiseIcons: [
-    //     'assets/icons/OG-1.png',
-    //     'assets/icons/OG-2.png',
-    //     'assets/icons/OG-3.png',
-    //     'assets/icons/OG-4.png',
-    //     'assets/icons/OG-5.png'
-    //   ],
-    //   happyPatients: '10000+'
-
-    // },
+   
     {
       name: 'Dr. Vinita Udupa',
       image: 'assets/Doc-Inv-Page/Dr-Vinita-Udupa.png',
@@ -2246,74 +2074,7 @@ export class NewDoctorPageComponent {
       happyPatients: '3000+'
 
     },
-    // {
-    //   name: 'Dr. Alekhya R',
-    //   image: 'assets/doctor-40.png',
-    //   department: 'AYURVEDA',
-    //   speciality: 'AYURVEDA',
-    //   qualification:'BAMS',
-    //   about: 'Dr. Alekhya R is graduate from INDIAN INSITUTE OF AYURVEDIC MEDICINE AND RESEARCH in 2021',
-    //   areasOfExpertise: ['Gastric related issues','Sinusitis, Allergic rhinitis','Vatavyadi'],
-    //   expertise: 'Years of Experience: 2',
-    //   time:'09:30-09:50,09:50-10:10,10:10-10:30,10:30-10:50,10:50-11:10,11:10-11:30,11:30-11:50,11:50-12:10,12:10-12:30,12:30-12:50,12:50-13:10,13:10-13:30,13:30-13:50,13:50-14:10,14:10-14:30,14:30-14:50,14:50-15:10,15:10-15:30,15:30-15:50,15:50-16:10,16:10-16:30,16:30-16:50,16:50-17:00',
-    //   date:'Monday-Saturday'
-    // },
-    // {
-    //   name: 'Dr. Narendranath A',
-    //   image: 'assets/Doc-Inv-Page/Dr-Narendranath-A.png',
-    //   department: 'Consultant, ENT Head & Neck surgery',
-    //   speciality: 'ENT SPECIALITY',
-    //   about: 'Dr. Narendranath A is graduate from RAJAH MUTHIAH MEDICAL COLLEGE,TAMIL NADU in 2010. He completed his post graduation MS (ENT) from vijayanagar insititute of medical sciences, bellary in 2015.Otology/ tympanoplasty and mastoidectomy surgeries, myringotomy and grommet surgery, FESS (nasal polyp surgery)/sinus surgeries, nasal septum correction surgery, Adenoid and tonsil surgeries, surgeries related to vocal cords (voice box), thyroid and parotid surgeries, tracheostomy.   ',
-    //   areasOfExpertise: ['Otology and rhinology', 'Otology/ tympanoplasty', 'Mastoidectomy surgeries', 'Myringotomy and grommet surgery', 'Thyroid and parotid surgeries', 'FESS (nasal polyp surgery)/sinus surgeries', 'Nasal septum correction surgery', 'Adenoid and tonsil surgeries, surgeries related to vocal cords (voice box)', '* Tracheostomy'],
-    //   expertise: '11+',
-    //   qualification: 'MBBS, MS(ENT)',
-    //   time: '13:30-13:50,13:50-14:10,14:10-14:30,14:30-14:50,14:50-15:10,15:10-15:30',
-    //   date: 'Monday,Wednesday,Thursday and Friday',
-    //   alt: 'Dr. Narendranath A | Best ENT Doctor in Bangalore | Rashtrotthana Hospita | Rajarajeshwari Nagar Bangalore',
-    //   id: 31,
-    //   title: 'Dr. Narendranath A | ENT Head & Neck Surgeon Bangalore',
-    //   description: 'Dr. Narendranath A is an ENT and Head & Neck Surgeon with 10+ years of experience in advanced ENT surgeries, sinus, voice box and thyroid procedures.',
-    //   faqs: [
-    //     {
-    //       question: 'Who is Dr. Narendranath A and what is his specialty at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-    //       answer: 'Dr. Narendranath A is an experienced ENT (Otorhinolaryngology) Surgeon at Rashtrotthana Hospital, RR Nagar, Bangalore. He specialises in otology and rhinology, managing complex ear, nose, throat and airway conditions with advanced surgical care.'
-    //     },
-    //     {
-    //       question: 'What ear surgeries does Dr. Narendranath A perform at Rashtrotthana Hospital?',
-    //       answer: 'Dr. Narendranath A performs tympanoplasty, mastoidectomy, myringotomy and grommet insertion surgeries for chronic ear infections and hearing problems. These procedures aim to control infection, restore hearing and prevent complications.'
-    //     },
-    //     {
-    //       question: 'Does Dr. Narendranath A treat sinus problems and nasal polyps?',
-    //       answer: 'Yes, Dr. Narendranath A performs FESS (functional endoscopic sinus surgery) for chronic sinusitis and nasal polyps not responding to medication. He also treats nasal blockage through nasal septum correction (septoplasty) to improve breathing.'
-    //     },
-    //     {
-    //       question: 'When is nasal septum correction surgery recommended by Dr. Narendranath A?',
-    //       answer: 'Nasal septum correction is recommended for patients with deviated nasal septum causing breathing difficulty, snoring, recurrent sinus infections or headaches. Surgery helps restore proper airflow and nasal function.'
-    //     },
-    //     {
-    //       question: 'Does Dr. Narendranath A perform tonsil, adenoid and voice box surgeries?',
-    //       answer: 'Yes, he performs adenoidectomy, tonsillectomy and surgeries related to the vocal cords (voice box) for conditions like recurrent throat infections, sleep-related breathing issues and voice disorders. Early treatment helps prevent long-term complications.'
-    //     },
-    //     {
-    //       question: 'Are thyroid, parotid and tracheostomy procedures handled by Dr. Narendranath A?',
-    //       answer: 'Dr. Narendranath A is experienced in thyroid and parotid gland surgeries, as well as tracheostomy procedures for airway management in emergency or long-term breathing conditions. These surgeries require precise planning and specialised ENT expertise.'
-    //     },
-    //     {
-    //       question: 'How can I book an appointment with Dr. Narendranath A at Rashtrotthana Hospital, RR Nagar, Bangalore?',
-    //       answer: `You can book an appointment with Dr. Narendranath A by calling Rashtrotthana Hospital’s appointment helpline at <a href="tel:+918069239999">080 6923 9999</a>, visiting the hospital reception or booking online through the official Rashtrotthana Hospital website.`
-    //     }
-    //   ],
-    //   departmentSlug: '/specialities/best-ent-hospital-in-bangalore',
-    //   expertiseIcons: [
-    //     'assets/icons/ENT-1.png',
-    //     'assets/icons/ENT-2.png',
-    //     'assets/icons/ENT-3.png',
-    //     'assets/icons/ENT-4.png',
-    //     'assets/icons/ENT-5.png'
-    //   ],
-    //   happyPatients: '5000+'
-
-    // },
+    
     {
       name: "Dr. Harshith K. S",
       image: "assets/Dr-Harshith-K-S-doc-page.png",
@@ -2370,48 +2131,7 @@ export class NewDoctorPageComponent {
       happyPatients: '4000+'
 
     },
-    // {
-    //   name: 'Dr. Ashika Bagaria',
-    //   image: 'assets/doctor-34.png',
-    //   department: 'ENT and head and neck',
-    //   speciality: 'ENT SPECIALITY',
-    //   about: 'Dr Ashika Bagaria has completed her MBBS from Rajarajeshwari medical college and Hospital in 2019 and then pursued her MS in Otolarhinoyngology from Kempegowda Institute of Medical Sciences. She also has a specialised expertise in diagnosing and managing conditions related to vertigo and balance disorder which is crucial for comprehensive ENT care.',
-    //   areasOfExpertise: ['Vertigo related disorders', 'Septoplasty', 'fess', 'tympanolasty', 'tracheostomy', 'Adenoidectomy', 'tonsillectomy'],
-    //   expertise: 'Years of Experience: 4',
-    //   qualification:'MBBS, MS(ENT)',
-    //   time:'10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00',
-    //   date:'Tuesday,Thursday and Saturday'
-    // },
-    // {
-    //   name: 'Dr. Harshitha R',
-    //   image: 'assets/doctor-46.png',
-    //   department: 'Consultant Internal Medicine',
-    //   about: 'Internal medicine specialist. Finished undergraduation from Sri devaraj urs medical college with a university gold medal and postgraduate from JSS University. A strong believer of prevention is better than cure with keen interest in lifestyle diseases , diabetes , obesity , women health and adult vaccination. Good communication skills with efficient patient education skills. Holistic approach towards  patient\'s health and medical conditions.',
-    //   speciality: 'INTERNAL MEDICINE',
-    //   areasOfExpertise: ['Diabetes, dyslipidemia and other metabolic diseases','Thyroid disorders',' Hypertension','  Infectious diseases','Adult vaccination','Diabetes and life style patient education'],
-    //   expertise: 'Years of Experience: 3',
-    //   qualification:'MBBS, MD',
-    //   time:'10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00',
-    //   date:'Sunday'
-    // },
-
-    // {
-    //   name: 'Dr. Bhavya',
-    //   image: 'assets/Doc-Inv-Page/Dr-Bhavya.png',
-    //   department: 'Consultant Internal Medicine',
-    //   about: 'Dr. Bhavya N is a consultant physician and Diabetologist with practicing experience of 7 years in the field of Internal Medicine. She is a gold medalist and state rank holder in MD Internal medicine in RGUHS. She has sound knowledge in her field and practices evidence-based medicine providing patient centred care. Being a female physician she has an extra mile of interest in women and family health care. She has keen interest in research and is updated on newer aspects and recent advancements in treatment modalities.',
-    //   speciality: 'INTERNAL MEDICINE',
-    //   areasOfExpertise: ['Diabetes', 'Diabetes Reversal', 'Thyroid related illness', 'Blood related disorders', 'Critical illness', 'Hypertension', 'Infectious disease'],
-    //   expertise: 'Years of Experience: 9',
-    //   qualification: 'MBBS, MD',
-    //   time: '09:00-09:20,09:20-09:40,09:40-10:00,10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,13:00-13:20,13:20-13:40,13:40-14:00,14:00-14:20,14:20-14:40,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00,16:00-16:20,16:20-16:40,16:40-17:00',
-    //   date: 'Monday-Saturday',
-    //   alt: 'Dr. Bhavya | Best Diabetologist in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
-    //   id: 2,
-    //   title:'Dr. Bhavya N | Consultant Physician & Diabetologist Bangalore',
-    //   description:'Dr. Bhavya N is a gold medalist physician and diabetologist in Bangalore, experienced in diabetes reversal, thyroid care and internal medicine.'
-    // },
-
+    
     {
       name: 'Dr. Shamantha S',
       image: 'assets/Doc-Inv-Page/Dr-Shamantha-S.png',
@@ -2452,22 +2172,7 @@ export class NewDoctorPageComponent {
 
       happyPatients: '2000+'
     },
-    // {
-    //   name: 'Dr. Kavyashree Kulamarva',
-    //   image: 'assets/Doc-Inv-Page/Dr-Kavyashree-Kulamarva.png',
-    //   department: 'Ayurvedic Psychiatry Consultant',
-    //   about: 'Dr. Kavyashree is a seasoned researcher specializing in Ayurveda, Integrative Medicine and Neurology. With a robust background in clinical practice and research, Doctor has published several papers in reputed international journals. She served as a Senior Resident at the National Institute of Mental Health and Neurosciences (NIMHANS) for 3.5 years, contributing significantly to mental health and neurological research. Additionally, she worked as a Senior Research Fellow at the Central Council for Research in Ayurvedic Sciences (CCRAS), which involved several community health surveys and medical camps. Her work aims to bridge ancient wisdom with contemporary science for holistic patient care.',
-    //   speciality: 'AYURVEDA',
-    //   qualification: 'MD, PDF',
-    //   areasOfExpertise: [' Anxiety disorder and Depression', 'Child psychiatric disorders (ASD, ADHD)', 'Add on Ayurveda for Schizophrenia', 'Motor Neuron Disease', 'Parkinson s disease', 'Muscular dystrophy', 'Stroke rehab', 'Multiple Sclerosis', 'Dementia'],
-    //   expertise: 'Years of Experience: 6',
-    //   time: '09:30-09:50,09:50-10:10,10:10-10:30,10:30-10:50,10:50-11:10,11:10-11:30,11:30-11:50,11:50-12:10,12:10-12:30,12:30-12:50,12:50-13:10,13:10-13:30,14:30-14:50,14:50-15:10,15:10-15:30,15:30-15:50,15:50-16:10,16:10-16:30,16:30-16:50,16:50-17:10',
-    //   date: 'Monday-Saturday',
-    //   alt: 'Dr. Kavyashree Kulamarva | Ayurvedic Psychiatry Consultant in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
-    //   id: 40,
-    //   title: 'Dr. Kavyashree Kulamarva | Ayurvedic Psychiatry Expert',
-    //   description: 'Dr. Kavyashree Kulamarva is an Ayurvedic Psychiatry Consultant with expertise in integrative care for mental health and neurological disorders.'
-    // },
+    
     {
       name: 'Ms. Archana Karthick',
       image: 'assets/Doc-Inv-Page/Ms-Archana-Karthick.png',
@@ -2585,21 +2290,7 @@ export class NewDoctorPageComponent {
       happyPatients: '3000+'
 
     },
-    // {
-    //   name: 'Dr. Nishitha A',
-    //   image: 'assets/Doc-Inv-Page/Dr-Nishitha-A.png',
-    //   department: 'Radiologist',
-    //   about: 'Dr. Nishitha A is a recent addition to our  dedicated team of radiologists with a special interest in  women\'s imaging . She graduated summa cum laude in her  M.D Radio-Diagnosis(2023) examinations. Dr. Nishitha has completed her Senior Residency at BGS GIMS Hospital and is currently,  pursuing a fellowship in Fetal Medicine at ADI Advanced Care for Fetal Studies, Bangalore . Dr. Nishitha has  numerous paper presentations at State, national and international conferences to her credit with a Gold medal for the best paper in KCACON-2013 . Outside of her professional work, she is a trained Carnatic vocalist and Bharatanatyam dancer, reflecting her diverse talents and interests.',
-    //   speciality: 'RADIOLOGY',
-    //   areasOfExpertise: ['Women\'s Imaging'],
-    //   expertise: 'Years of Experience: 1+',
-    //   qualification: 'MBBS, MD',
-    //   time: '16:30-16:50,16:50-17:10,17:10-17:30,17:30-17:50,17:50-18:00',
-    //   date: 'Monday-Thursday',
-    //   alt: 'Dr. Nishitha A | Radiologist in Bangalore | Rashtrotthana Hospital | Rajarajeshwari Nagar Bangalore',
-    //   title: 'Dr. Nishitha A | Women’s Imaging Radiologist Bangalore',
-    //   description: 'Dr. Nishitha A is a radiologist in Bangalore with expertise in women’s imaging and fetal medicine, currently pursuing a fellowship in fetal studies.'
-    // },
+   
     {
       name: 'Dr. Nagesh R',
       image: 'assets/Doc-Inv-Page/dr-nagesh.png',
@@ -3074,35 +2765,7 @@ export class NewDoctorPageComponent {
       happyPatients: '4000+'
 
     },
-    // {
-    //   name: "Dr. Sunil Shenvi",
-    //   image : "assets/Dr-Sunil-Shenvi.png",
-    //   department: 'General Sugery',
-    //   speciality: 'GASTRO SCIENCES',
-    //   about : "Dr. Sunil Shenvi is a distinguished Senior Consultant in Hepato-Biliary-Pancreatic (HPB) Surgery and Multiorgan Transplantation, offering his expertise at Jayadev Memorial Rashtrotthana Hospital and Research Centre in Bengaluru. With extensive experience, he specializes in liver transplantation, including living and deceased donor transplants, blood group-incompatible transplants and positive cross-match transplants. He is also skilled in pancreas transplantation, surgeries for benign pancreatic conditions like acute and chronic pancreatitis and advanced procedures for cancers of the bile duct and gallbladder. Additionally, he performs complex vascular access surgeries for hemodialysis, providing comprehensive care for patients with organ failure and related complications.",
-    //   areasOfExpertise : ["Jaundice","Hepatitis","Liver Fibrosis","Acute Liver Failure","Alcoholic Liver Disease","Autoimmune Liver Disease","Blood Vomiting","Ascites (Swelling in Abdomen & Feet)","Portal Hypertension","Wilson’s Disease","Biliary Atresia","Pancreas","Bile Duct Gastro Cancer","Liver Cirrhosis","Liver Cancer"],
-    //   expertise : "Years of Experience: 15+",
-    //   qualification : "MBBS, MS - General Sugery, MCh - Surgical Gastroenterology, FASTS (Fellow of American Society of Transplant Surgeons)",
-    //   time : "",
-    //   date : "",
-    //   alt : 'Dr. Sunil Shenvi | Best General Surgery and Gastroenterology doctor in Bngalore | Rajarajeshwari Nagar'
-    // },
-    // {
-    //   name: "Dr. Hemanth Kumar Venkatesh",
-    //   image: "assets/Doc-Inv-Page/Dr-Hemanth-kumar-Venkatesh.png",
-    //   department: 'ORTHOPEDICS',
-    //   speciality: 'ORTHOPEDICS',
-    //   about: "<p>With over 20 years of experience in Trauma and Orthopaedics, Dr. Hemanth Kumar Venkatesh is a highly skilled consultant orthopaedic surgeon specializing in hip and knee joint replacement surgeries, robotic arthroplasty, knee sports surgery and joint preservation techniques. He provides comprehensive care for a wide range of musculoskeletal conditions.</p><p>He is adept at managing complex cases, including primary and revision arthroplasty, shoulder and ankle sports injuries, diabetic foot limb salvage and hand and wrist surgeries. His expertise is complemented by contributions to research and leadership roles in healthcare projects.</p><p>Having worked at renowned institutions like University Hospitals of Plymouth NHS Trust and North West Anglia Foundation Trust, he brings advanced knowledge and a patient-centered approach to his practice. His dedication to exceptional care is supported by extensive training and fellowship experience in both the UK and India.</p>",
-    //   areasOfExpertise: ["Primary & Revision joint replacement surgery of Hip  & Knee", "Robotic Joint Replacement Surgery", "Soft Tissue Knee Surgery - ACL reconstruction / multi-ligament reconstruction surgery / Meniscus repair/cartilage preservation surgery", "Joint preservation surgery of Knee", "Sports surgery of Shoulder & Ankle", "Complex Diabetic foot limb salvage surgery", "Elective Foot & ankle surgery, Hand & Wrist surgery", "Chronic pain management and Elective Spine Surgery", "Limb Reconstruction surgery"],
-    //   expertise: "Years of Experience: 20",
-    //   qualification: "MBBS, DNB Ortho, FRCS Edin T&O, MCh Ortho UK, CCT UK",
-    //   time: "",
-    //   date: 'Monday-Saturday',
-    //   alt: 'Dr. Hemanth Kumar Venkatesh | Best Orthopaedic Consultant in Bangalore | Rashtrotthana Hospital',
-    //   id: 56,
-    //   title:'Dr. Hemanth Kumar Venkatesh | Orthopaedic Surgeon',
-    //   description:'Expert in joint replacement, robotic surgery, ACL reconstruction, sports injuries, diabetic limb salvage, spine care and limb reconstruction with 20+ years experience.'
-    // },
+   
     {
       name: "Dr. Matam Sri Anusha",
       image: "assets/dummy-doc-female.svg",
@@ -3272,19 +2935,7 @@ export class NewDoctorPageComponent {
       ],
       happyPatients: '5000+'
     },
-    // {
-    //   name: "Dr. S K Ranjani",
-    //   image : "assets/dummy-doc-female.svg",
-    //   department: 'ENT (Ear, Nose and Throat) ',
-    //   speciality: 'ENT SPECIALITY',
-    //   about : "Dr. S K Ranjani specializes in both general and complex ENT conditions, with a particular focus on airway disorders in children. She is committed to providing comprehensive care for a range of airway issues, including allergies, obstructive sleep apnea and voice alterations.",
-    //   areasOfExpertise : ["Airway disorders, particularly in the pediatric age group","Allergy-related airway issues","Obstructive sleep apnea","Altered voice conditions","General ear, nose and throat complaints (both medical and surgical treatment)"],
-    //   expertise : "Years of Experience: 2",
-    //   qualification : "MBBS, MS ENT, Fellowship in Pediatric Otolaryngology (RGUHS)  ",
-    //   time : "",
-    //   date : "Tuesday,Thursday and Saturday",
-    //   alt : ''
-    // },
+    
     {
       name: "Dr. G. V. Giri",
       image: "assets/Doc-Inv-Page/Dr-Giri.png",
@@ -3797,8 +3448,8 @@ export class NewDoctorPageComponent {
       desgination: 'Clinical Psychologist',
       about: "Ms. Samarchitha S is a trained clinical psychologist with over six years of experience, specializing in the assessment and treatment of a wide range of psychological and neuropsychological conditions. Her professional journey includes working with diverse patient populations across age groups - including children, adults and the elderly - in both psychiatric and neurological settings.",
       areasOfExpertise: ["Mood disorders", "Obsessive-compuslive disorder", "Anxiety disorders", "Dissociative and conversion disorders", "Sleep disorders", "Personality disorders", "Substance-related disorders", "Neurodevelopmental disorders (Autism, ADHD,IDD)", "Neurodegenerative disorders"],
-      expertise: "7+",
-      qualification: "MSc. Clinical Psychology, M.Phil Clinical Psychology, Fellowship in Clinical Neuropsychology(NIMHANS)",
+      expertise: "5",
+      qualification: `MSc. Clinical Psychology, M.Phil Clinical Psychology, <br> Fellowship in Clinical Neuropsychology(NIMHANS)`,
       time: "",
       date: "",
       id: 84,
@@ -4836,7 +4487,6 @@ export class NewDoctorPageComponent {
 
 
   filterAvailableTimes(bookedSlots: string[], selectedDate: Date) {
-    // let allTimes = this.filteredDoctor.time.split(',').map((time: string) => ({ name: time }));
 
     if (selectedDate.toDateString() === new Date().toDateString()) {
       console.log('availableTime', this.availableTimes)

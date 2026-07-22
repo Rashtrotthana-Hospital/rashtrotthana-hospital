@@ -41,7 +41,7 @@ export class PsychiatryComponent {
     {
       doctor_image:'../../assets/ms-samarchitha-s-doc-page.png',
       doctor_name:'Ms. Samarchitha S',
-      experience : "6+",
+      experience : "5",
       docalt : "Ms. Samarchitha S | Best Psychology Hospital in Bangalore | Rashtrotthana Hospital"
     },
   ];

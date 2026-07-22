@@ -32,34 +32,6 @@ export interface FaqItem {
   styleUrl: './hernia.component.css'
 })
 export class HerniaComponent implements OnInit {
-
-  //  constructor(
-  //   private titleService: Title,
-  //   private metaService: Meta,
-  //   private sanitizer: DomSanitizer
-  // ) {}
-  // sanitizedContent: SafeHtml = '';
-  // sanitizedContent1: SafeHtml = '';
-  // specialities: any[] = [];
-
-  // ngOnInit(): void {
-  //   this.titleService.setTitle(
-  //     'Hernia Surgery in Bangalore | Rashtrotthana Hospital'
-  //   );
-  //   this.metaService.updateTag({
-  //     name: 'description',
-  //     content:
-  //       'Get safe, advanced hernia surgery in Bangalore at Rashtrotthana Hospital. Expert surgeons, minimally invasive treatment & trusted care.',
-  //   });
-
-  //   this.sanitizedContent = this.sanitizer.bypassSecurityTrustHtml(
-  //     this.specialities[0].content
-  //   );
-  //   this.sanitizedContent1 = this.sanitizer.bypassSecurityTrustHtml(
-  //     this.specialities[0].content_1
-  //   );
-  // }
-
     // ── FAQ accordion state ──────────────────────────────────────
   isModalOpen = false;
  

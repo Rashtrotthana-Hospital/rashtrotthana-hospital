@@ -1239,31 +1239,6 @@
     gap: 16px;
 }
 
-/* .future-card {
-    width: 350px;
-    height: auto;
-    border-radius: 10px;
-    border: 2px solid transparent;
-    background: linear-gradient(rgba(255,255,255,0.55), rgba(255,255,255,0.55)) padding-box,
-                linear-gradient(135deg, #FBCA51 0%, #3FB0CE 100%) border-box;
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 14px 16px;
-    gap: 16px;
-}
-
-.future-card .card-icon {
-    flex-shrink: 0;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
-
 .future-card .card-icon img,
 .future-card .card-icon svg {
     width: 44px;
@@ -1317,15 +1292,6 @@
     border: 1px solid #0E3672;
     background: linear-gradient(90deg, rgba(196, 235, 242, 0.23) 0%, rgba(113, 136, 140, 0.00) 100%);
     backdrop-filter: blur(2px);
-
-    /* Only 3 borders */
-    /* border-top: 1.5px solid #6A8EC8;
-    border-left: 1.5px solid #6A8EC8;
-    border-bottom: 1.5px solid #6A8EC8;
-    border-right: none; */
-
-    /* border-radius: 10px 0 0 10px; */
-
     position: relative;
 
     box-shadow: 0 8px 20px rgba(22, 52, 92, .08);
@@ -1333,23 +1299,6 @@
     transition: .35s;
 }
 
-/* .future-card::after {
-
-    content: "";
-
-    position: absolute;
-
-    top: -1.5px;
-    right: -35px;
-
-    width: 40px;
-    height: calc(100% + 3px);
-
-    background: white;
-
-    border-top-right-radius: 12px;
-    border-bottom-right-radius: 12px;
-} */
 
 .future-card:hover {
 
@@ -1907,8 +1856,7 @@
     }
 
     /* — About — */
-    /* .about-section { flex-direction: column; padding: 30px; } */
-    /* .about-img img { width: 100%; height: auto; } */
+ 
     .about-heading,
     .about-heading span {
         font-size: 28px;
@@ -1925,7 +1873,6 @@
     .objectives-carousel-wrapper .obj-card-shell.obj-shell-2 .objective-card-para,
     .objectives-carousel-wrapper .obj-card-shell.obj-shell-1 .objective-card-para {
         width: 100%;
-        /* height: 100%; */
     }
 
     /* — Shared: bg-image sections —
@@ -2091,21 +2038,6 @@
         flex-direction: column;
         gap: 10px;
     }
-
-    /* .text-1 {
-        left: 490px;
-        bottom: 210px;
-    }
-
-    .text-2 {
-        left: 111px;
-        bottom: 40px;
-    }
-
-    .text-3 {
-        left: 590px;
-        bottom: 20px;
-    } */
 
     .text-2 .network-heading,
     .text-2 .network-para,
@@ -2364,16 +2296,6 @@
         position: absolute;
     }
 
-    /* .research-network-content {
-        height: 926px;
-    } */
-    /* 
-    .text-3 {
-        left: 340px;
-        bottom: 0;
-        top: 430px;
-    } */
-
     .text-1,
     .text-3,
     .text-2 {
@@ -2384,12 +2306,7 @@
         width: 100%;
     }
 
-    /* 
-    .text-2 {
-        left: -39px;
-        bottom: 0;
-        top: 280px;
-    } */
+
 
     .network-bg-img {
         display: none;
@@ -2430,11 +2347,6 @@
         line-height: 36px;
     }
 
-    /* Publications */
-    /* .publications-left img {
-        height: 200px;
-    } */
-
     .publications-right {
         padding: 16px 16px 16px 0;
     }
@@ -2467,24 +2379,12 @@
     }
 }
 
-/* ============================================================
-   MOBILE  (≤480px)
-   Strategy: ALL bg-image sections → img stays position:absolute
-   stretched behind content. Content is position:relative so it
-   drives the section height and the bg fills behind it.
-   ============================================================ */
 @media (max-width: 767px) {
 
     .research-container {
         margin-top: 108px;
     }
 
-    /* ── bg-image sections on mobile ──
-       Problem: desktop <img> is in normal flow (drives section height),
-       content is position:absolute on top.
-       Fix: hide the bg <img> entirely, use CSS background-image on the
-       section itself — section height is then driven by the content div
-       (which we switch back to position:relative). */
 
     .research-network-section,
     .features-section,
@@ -2495,16 +2395,6 @@
         background-position: center top;
         background-repeat: no-repeat;
     }
-
-    /* hide the inline <img> bg — CSS background-image takes over */
-    /* .vision-section>img:first-child,
-    .objectives-section>img:first-child,
-    .research-network-section>img:first-child,
-    .features-section>img:first-child,
-    .future-section>img:first-child,
-    .seminars-section>img:first-child {
-        display: none;
-    } */
 
     .banner-img {
         display: none;
@@ -2537,19 +2427,6 @@
         top: -18px;
     }
 
-    /* .text-3 {
-        left: 160px;
-        bottom: 0px;
-        top: 40px;
-
-    }
-
-    .text-2 {
-        left: -12px;
-        bottom: 0px;
-        top: -18px;
-    } */
-
     .text-1 .network-para {
         width: 100%;
         height: auto;
@@ -2574,31 +2451,7 @@
 
     }
 
-    /* bind CSS background-image per section */
-    /* .vision-section {
-        background-image: url('../../assets/research-page/vision-banner.png');
-    }
-
-    .objectives-section {
-        background-image: url('../../assets/research-page/objective-bg.png');
-    }
-
-    .research-network-section {
-        background-image: url('../../assets/research-page/network-bg.png');
-    }
-
-    .features-section {
-        background-image: url('../../assets/research-page/features-bg.png');
-    }
-
-    .future-section {
-        background-image: url('../../assets/research-page/future-endeavors-bg.png');
-    }
-
-    .seminars-section {
-        background-image: url('../../assets/research-page/seminares-bg.png');
-    } */
-
+    
     /* Key Areas: bg hidden, each card has its own photo */
     .key-areas-section>img:first-child {
         display: none;
@@ -2856,9 +2709,6 @@
         width: auto;
     }
 
-    /* — Key Areas — Figma exact layout —
-       Photo is full-width. White card overlaps UP into the photo
-       (large negative margin-top). Icon sits at the overlap boundary. */
     .kay-areas-content {
         padding: 20px 16px;
         align-items: center;
@@ -2899,8 +2749,7 @@
         height: 3px;
     }
 
-    /* white content card pulls UP over the photo by ~120px
-       so the card top is roughly 2/3 down the image */
+    
     .area-content {
         width: calc(100% - 20px);
         height: auto;
@@ -2914,13 +2763,11 @@
         z-index: 1;
     }
 
-    /* icon sits centred at the very top of the card,
-       pulled up by half its height so it straddles image & card */
+    
     .area-content .icon {
         width: 60px;
         height: 60px;
         margin-top: -80px;
-        /* half of 60px above card top + gap */
         padding: 8px;
         position: relative;
         z-index: 2;

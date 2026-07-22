@@ -46,10 +46,6 @@ export class EmergencyMedicineComponent {
             doctor_name:'Col (Dr) Anand Shankar K',
             experience : '32+'
           }
-          // {
-          //   doctor_image:'Dr.Geethanjali K G.png',
-          //   doctor_name:'Dr. Geethanjali K G'
-          // }
         ],
       },
     ];

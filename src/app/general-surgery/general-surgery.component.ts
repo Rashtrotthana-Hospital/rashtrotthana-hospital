@@ -40,12 +40,6 @@ export class GeneralSurgeryComponent implements OnInit {
       experience: "10+",
       docalt: 'Dr. Nishanth Lakshmikantha | Best General & GI Surgeon in Bangalore | Rashtrotthana Hospital'
     },
-    // {
-    //   doctor_image: '../../assets/doctor-65.png',
-    //   doctor_name: 'Dr. Vivekanand',
-    //   experience: " 25+",
-    //   docalt: 'Dr. Nishanth Lakshmikantha | Best General & GI Surgeon in Bangalore | Rashtrotthana Hospital'
-    // },
   ]
 
   formDoctors: any = ['Dr. Atmaram D. C', 'Dr. Nishanth Lakshmikanth']

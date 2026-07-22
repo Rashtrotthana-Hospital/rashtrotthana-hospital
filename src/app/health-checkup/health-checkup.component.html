@@ -76,16 +76,6 @@
         </p-accordion>
 
     </div>
-    <!-- <div class="modal-overlay" *ngIf="showBookingForm">
-        <div class="modal">
-          <button class="close-btn" (click)="closeBookingForm()">×</button>
-          <app-package-form
-            [selectedPackage]="selectedPackage"
-            (closeForm)="closeBookingForm()"
-            (formSubmit)="handleFormSubmission($event)">
-          </app-package-form>
-        </div>
-      </div> -->
     <div class="modal-overlay" *ngIf="showBookingForm">
         <app-package-form [selectedPackage]="selectedPackage" (closeForm)="closeBookingForm()"
             (formSubmit)="handleFormSubmission($event)">

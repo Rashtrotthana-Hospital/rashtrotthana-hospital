@@ -16,17 +16,6 @@ export class AyurvedhaDoctorsCarouselComponent {
       Department : "Agnivesha Institute Of Ayurveda",
       experience : "3"
     },
-
-    // {
-    //   image : '../../assets/Ayurveda-doctors/Dr.Alekhya.png',
-    //   name : "Dr. Alekhya R",
-    //   section : "BAMS",
-    //   designation : "Resident Medical Officer",
-    //   Department : "Agnivesha Institute Of Ayurveda",
-    //   experience : "2"
-    // },
-
-
     {
       image: '../../assets/Dr-Venkatesh-H-S.jpg',
       name: "Dr. H. S Venkatesh",
@@ -36,14 +25,5 @@ export class AyurvedhaDoctorsCarouselComponent {
       experience: "26+",
       alt : 'Dr. Venkatesh H. S | Best Ayurveda Endocrinologist in Bangalore | Rashtrotthana Hospital'
     },
-    // {
-    //   image: '../../assets/dr-sapna-dr-page.jpg',
-    //   name: "Dr. Sapna S",
-    //   section: "MD (Ayu) in Rasa Shastra and Bhaishajya Kalpana, PG Dip (Yoga) Diploma in Medical Astrology",
-    //   designation: "Ayurveda Specialist",
-    //   Department: "Agnivesha Institute Of Ayurveda",
-    //   experience: "20",
-    //   alt : 'Dr. Sapna S | Best Ayurveda Specialist in Bangalore | Rashtrotthana Hospital'
-    // },
   ]
 }

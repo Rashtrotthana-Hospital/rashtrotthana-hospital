@@ -74,15 +74,7 @@ export class HysterectomySurgeryComponent {
       slug: '/doctor/dr-vinita-udupa',
       experience: '10+'
     },
-    // {
-    //   image: '../../assets/Dr-Ashwitha-Gundmi.png',
-    //   name: 'Dr. Ashwitha Gundmi',
-    //   // designation: 'Orthopaedics',
-    //   alt: 'Dr. Ashwitha Gundmi | Best Obstetrics & Gynaecologist in Bangalore | Rashtrotthana Hospital',
-    //   slug: '/doctor/dr-ashwitha-gundmi',
-    //   experience: '9+'
-    // },
-
+   
   ];
 
 
