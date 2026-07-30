@@ -554,7 +554,7 @@ export class DoctorLayoutComponent {
         "Abdominal Pain, Bloating & Nausea, Hepatitis & Liver Disorders"
       ],
 
-      expertise: "Years of Experience: 8+",
+      expertise: "Years of Experience: 10+",
       qualification: "MBBS, MD in General Medicine, Dr.N.B in Medical Gastroenterology",
       time: "",
       date: "Monday, Wednesday and Saturday",
@@ -810,7 +810,7 @@ export class DoctorLayoutComponent {
       desgination: 'Consultant - Orthopaedic Surgeon',
       about: "Dr. Sandeep K M is an experienced orthopedic surgeon with over a decade of clinical expertise in trauma care, joint replacement (arthroplasty) and arthroscopy. He completed his MBBS from Mysore Medical College and MS in Orthopedics from Bangalore Medical College & Research Institute. He further specialized with a Fellowship in Joint Replacement at Sparsh Hospital, Bangalore. Dr. Sandeep has previously worked at Apollo Hospital, Bangalore and currently serves as an Associate Professor at RajaRajeswari Medical College, alongside his clinical practice.",
       areasOfExpertise: ["Trauma", "Arthroplasty", "Arthroscopy"],
-      expertise: "Years of Experience: 11+",
+      expertise: "Years of Experience: 13+",
       qualification: "MBBS, MS (Orthopedics), Fellowship in Joint Replacemen",
       time: "",
       date: "",

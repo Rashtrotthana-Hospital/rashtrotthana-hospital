@@ -66,7 +66,7 @@ export class EmergencyMedicineComponent {
     {
       id: 1,
       name: 'Col (Dr) Anand Shankar K',
-      experience: '31+ Years',
+      experience: '32+ Years',
       image: 'assets/Dr-Anand-Shankar.png',
       slug: '/doctor/col-dr-anand-shankar-k',
     },
