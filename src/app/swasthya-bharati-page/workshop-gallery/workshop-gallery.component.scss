@@ -167,7 +167,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 110px clamp(16px, 4vw, 48px) clamp(24px, 4vw, 48px);
+  // Tight padding — the arrows sit in the side gutter, image fills the rest.
+  padding: 40px clamp(88px, 8vw, 120px);
   background: rgba(0, 0, 0, 0.88);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
@@ -183,8 +184,11 @@
 .wg-lb__figure {
   position: relative;
   margin: 0;
-  max-width: min(1100px, 92vw);
+  // Allow the image to grow up to the available viewport width, minus the
+  // side padding reserved for the arrow buttons.
+  max-width: min(1600px, calc(100vw - 200px));
   max-height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -199,15 +203,52 @@
 }
 
 .wg-lb__img {
+  // Fill the figure width but never exceed the viewport height. `contain`
+  // preserves aspect ratio when the intrinsic size differs from the box.
+  width: 100%;
+  height: auto;
   max-width: 100%;
-  max-height: calc(100vh - 110px - 40px);
+  max-height: calc(100vh - 80px);
   object-fit: contain;
   border-radius: 12px;
   box-shadow:
     0 30px 80px rgba(0, 0, 0, 0.55),
     0 4px 20px rgba(0, 0, 0, 0.30);
   background: #0a1626;
-  margin-top: 35px;
+  margin-top: 105px;
+}
+
+// ── Lightbox nav arrows (only visible while the lightbox is open) ───────────
+.wg-lb__nav {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1100;
+  width: 56px;
+  height: 56px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  border: 1.5px solid rgba(255, 255, 255, 0.55);
+  background: rgba(15, 25, 40, 0.72);
+  color: #ffffff;
+  cursor: pointer;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: background 0.18s, transform 0.18s, border-color 0.18s;
+
+  svg { width: 26px; height: 26px; }
+
+  &:hover {
+    background: rgba(220, 38, 38, 0.92);
+    border-color: #ffffff;
+    transform: translateY(-50%) scale(1.06);
+  }
+
+  &--prev { left: clamp(12px, 3vw, 32px); }
+  &--next { right: clamp(12px, 3vw, 32px); }
 }
 
 .wg-lb__close {
@@ -264,6 +305,23 @@
   .wg-card-inner { border-radius: 26px; }
   .wg-title { font-size: 30px; }
   .wg-eyebrow { font-size: 0.95rem; letter-spacing: 0.04em; }
+
+  // Trim the tall desktop top-padding + image top-margin so the preview uses
+  // the tablet viewport height instead of leaving dead space above.
+  .wg-lb { padding: 24px clamp(56px, 8vw, 88px); }
+  .wg-lb__figure { max-width: 100%; width: 100%; }
+  .wg-lb__img {
+    max-width: 100%;
+    max-height: calc(100vh - 48px);
+    margin-top: 0;
+  }
+  .wg-lb__nav {
+    width: 48px;
+    height: 48px;
+    svg { width: 22px; height: 22px; }
+    &--prev { left: 12px; }
+    &--next { right: 12px; }
+  }
 }
 
 @media (max-width: 600px) {
@@ -289,7 +347,17 @@
   .wg-card-halo { inset: -10px; border-radius: 32px; &__mask { inset: 2px; border-radius: 30px; } }
   .wg-card-inner { border-radius: 22px; }
 
-  .wg-lb { padding: 80px 12px 16px; }
+  // On phones the image should fill the viewport — trim padding and
+  // remove the desktop top-margin so it isn't shoved into a small strip.
+  .wg-lb { padding: 16px 8px; }
+  .wg-lb__figure { max-width: 100%; width: 100%; }
+  .wg-lb__img {
+    max-width: 100%;
+    max-height: calc(100vh - 32px);
+    width: auto;
+    margin-top: 0;
+    border-radius: 8px;
+  }
   .wg-lb__close {
     top: 70px; right: 12px;
     padding: 8px 14px 8px 10px;
@@ -297,5 +365,14 @@
     gap: 6px;
     svg { width: 15px; height: 15px; }
   }
-  .wg-lb__img { max-height: calc(100vh - 80px - 40px); }
+  // Overlay arrows on top of the image edges — no side gutter needed.
+  .wg-lb__nav {
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.55);
+    border-width: 1px;
+    svg { width: 18px; height: 18px; }
+    &--prev { left: 6px; }
+    &--next { right: 6px; }
+  }
 }
