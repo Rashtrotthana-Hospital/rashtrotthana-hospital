@@ -69,7 +69,7 @@ export class KidneyStoneComponent {
       designation: 'UROLOGY',
       alt: 'Dr. Chaithanya J | Best Urology Doctor in Bangalore | Rashtrotthana Hospital',
       slug: '/doctor/dr-chaithanya-j',
-      experience: '15+'
+      experience: '11+'
     },
     {
       image: 'assets/Doc-Inv-Page/dhruva-sq.png',
@@ -77,7 +77,7 @@ export class KidneyStoneComponent {
       designation: 'UROLOGY',
       alt: 'Dr. Dhruva G. Prakash | Best Urology Doctor in Bangalore | Rashtrotthana Hospital',
       slug: '/doctor/dr-dhruva-g-prakash',
-      experience: '15+'
+      experience: '11+'
     },
 
   ];
