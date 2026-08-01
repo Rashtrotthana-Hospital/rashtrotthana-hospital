@@ -322,6 +322,7 @@ body:has(.sbp-root) {
   background: var(--sbp-grad-warm);
   color: #fff;
   box-shadow: var(--sbp-shadow-saffron);
+  height: 66px;
 
   &:hover {
     transform: translateY(-2px);
