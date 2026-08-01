@@ -540,8 +540,12 @@
     left: 11px;
   }
 
-  .special-para {
+  /* .special-para {
     width: 206px;
+  } */
+
+  .pa{
+    margin-left: 10px;
   }
 
   .res-button {
