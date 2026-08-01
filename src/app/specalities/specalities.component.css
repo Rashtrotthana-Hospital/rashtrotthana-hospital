@@ -90,6 +90,22 @@
   background-image: url('../../assets/Rashtrotthana research-center.png');
 }
 
+.image-7 {
+  background-image: url('../../assets/swastya-page/swsthyabharathi-logo.png');
+  background-size: contain;
+  /* background-position: center;/ */
+  background-repeat: no-repeat;
+  /* width: 185px;
+  height: 185px; */
+  left: 0px;
+  top: 0;
+}
+
+.bt{
+  position: relative;
+  bottom: 30px;
+}
+
 .card-1:hover {
   background: linear-gradient(105deg, #fbca51 -40.25%, #008080 98.67%);
   ;
@@ -336,12 +352,20 @@
     padding-top: 15vh;
   }
 
+  .specialities {
+    padding-bottom: 2rem;
+  }
+
   .section-1 {
     display: flex;
     flex-direction: column;
     /* gap: 30px; */
     padding: 0 10px;
 
+  }
+
+  .section-1:last-of-type {
+    padding-bottom: 1.5rem;
   }
 
   .card-1 {
@@ -523,5 +547,50 @@
   .res-button {
     position: relative;
     bottom: 0px;
+  }
+}
+
+/* Swasthya Bharati card — responsive-only overrides so the logo doesn't
+   overflow into the text column. Desktop layout is intentionally untouched. */
+@media only screen and (max-width: 1030px) {
+  .image-7 {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 38%;
+    max-width: none;
+    left: 0;
+    top: 20px;
+    /* margin-right: 20px; */
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .image-7 {
+    width: 46%;
+    max-width: none;
+    left: 12px;
+    top: 15px;
+  }
+}
+
+/* Mobile: match the Homeopathy card layout — logo left, text right,
+   both driven by the shared .image / .content 50/50 flex row. */
+@media only screen and (max-width: 600px) {
+  .image-7 {
+    width: 46%;
+    max-width: none;
+    left: 0;
+    top: 0;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .image-7 {
+    width: 36%;
+    left: 11px;
   }
 }
