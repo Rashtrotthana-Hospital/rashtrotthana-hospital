@@ -281,7 +281,7 @@
 
 // ── Mobile (≤720px): single-column timeline, cards always on right ────────────
 @media (max-width: 720px) {
-  .wh-root { padding: 22px 12px 50px; }
+  .wh-root { padding: 22px 12px 0px; }
 
   .wh-sticky {
     top: -150px;
