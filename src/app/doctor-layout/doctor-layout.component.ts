@@ -1093,6 +1093,32 @@ export class DoctorLayoutComponent {
       title: 'Dr. Surabhi H. S | Consultant Urologist in Bengaluru',
       description: ''
     },
+    {
+      name: "Dr. Priyanka K P",
+      image: "",
+      department: 'Consultant Paediatrician',
+      desgination: 'Consultant Paediatrician',
+      speciality: 'PAEDIATRICS AND NEONATOLOGY',
+      about: "",
+      areasOfExpertise: ['General Paediatrics',
+        'Neonatal & Newborn Care',
+        'Sick Newborn Management (NICU)',
+        'Preterm Baby Care',
+        'Lactation Support & Kangaroo Mother Care (KMC)',
+        'Child Growth & Development Monitoring',
+        'Infant & Young Child Feeding (IYCF) & Nutrition',
+        'Immunization',
+        'Developmental Assessment',
+        'Paediatric & Neonatal Resuscitation'
+      ],
+      expertise: "Years Of Experience: 8+",
+      qualification: "MBBS, MD (Paediatrics)",
+      time: "",
+      date: "",
+      alt: '',
+      title: 'Dr. Surabhi H. S | Consultant Urologist in Bengaluru',
+      description: ''
+    },
 
 
     // {
