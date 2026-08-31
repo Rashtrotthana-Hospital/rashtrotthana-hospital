@@ -46,7 +46,7 @@ export class PaediatricsComponent {
       docalt: 'Dr. Surabhi H. S | Best Pediatrician in Bangalore | Rashtrotthana Hospital'
     },
     {
-      doctor_image: '',
+      doctor_image: 'assets/new-doctor-imgs/dr-priyanka-k-p.png',
       doctor_name: 'Dr. Priyanka K P',
       experience: "8+",
       docalt: 'Dr. Priyanka K P | Best Pediatrician in Bangalore | Rashtrotthana Hospital'
