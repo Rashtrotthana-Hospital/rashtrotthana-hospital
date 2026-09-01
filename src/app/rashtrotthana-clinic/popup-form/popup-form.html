@@ -51,14 +51,7 @@
                 </div>
 
                 <div class="form-row ">
-                    <!-- <select formControlName="doctor">
-                <option value="">Select Doctor</option>
-                <option *ngFor="let doc of doctor" [value]="doc">{{ doc }}</option>
-            </select> -->
                     <input type="text" [placeholder]="doctorName" readonly>
-                    <!-- <div *ngIf="appointmentForm.get('doctor')?.touched && appointmentForm.get('doctor')?.invalid">
-                    <small>Please select a doctor.</small>
-                </div> -->
                 </div>
 
                 <textarea placeholder="Your Message...." formControlName="message" rows="4"></textarea>

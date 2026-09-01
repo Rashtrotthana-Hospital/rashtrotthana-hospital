@@ -20,11 +20,7 @@ export class TieUpPageComponent {
 
   // elfsightUrl: SafeResourceUrl;
 
-  constructor(private renderer: Renderer2) {
-    // this.elfsightUrl = this.sanitizer.bypassSecurityTrustResourceUrl(
-    //   'https://apps.elfsight.com/p/platform/?p=delay&app=7759e6bd-a4b0-4835-bad7-66c88fc58ec3'
-    // );
-  }
+  constructor(private renderer: Renderer2) { }
 
 
   ngOnInit() {

@@ -14,7 +14,7 @@ export const MS_SAMARCHITHA_S_SCHEMA = {
       medicalSpecialty: 'Clinical Psychology',
 
       description:
-        'Ms. Samarchitha S is a clinical psychologist with over 7 years of experience in the assessment and treatment of psychological and neuropsychological disorders across children, adults and elderly patients.',
+        'Ms. Samarchitha S is a clinical psychologist with over 5 years of experience in the assessment and treatment of psychological and neuropsychological disorders across children, adults and elderly patients.',
 
       hasCredential: [
         'MSc Clinical Psychology',

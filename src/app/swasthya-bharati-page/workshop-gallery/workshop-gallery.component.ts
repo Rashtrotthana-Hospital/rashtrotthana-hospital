@@ -26,73 +26,94 @@ export class WorkshopGalleryComponent implements AfterViewInit, OnDestroy {
   @ViewChild('viewport', { static: true }) viewportEl!: ElementRef<HTMLDivElement>;
   @ViewChild('track',    { static: true }) trackEl!:    ElementRef<HTMLDivElement>;
 
-  // Flat list of every image across S1–S4 folders, with old jpgs and new pngs interleaved
+  // Flat list of every image from the consolidated Gallery folder, ordered by img number
   readonly images: GalleryImage[] = [
-    // ── S1 (old jpgs and new pngs mixed) ──
-    { src: 'assets/swastya-page/S1/20250327_123157PMByGPSMapCamera.jpg', alt: 'Session One — photo 1' },
-    { src: 'assets/swastya-page/S1/img-1.png', alt: 'Session One — photo 2' },
-    { src: 'assets/swastya-page/S1/img-2.png', alt: 'Session One — photo 3' },
-    { src: 'assets/swastya-page/S1/IMG20250327100408.jpg', alt: 'Session One — photo 4' },
-    { src: 'assets/swastya-page/S1/img-3.png', alt: 'Session One — photo 5' },
-    { src: 'assets/swastya-page/S1/img-4.png', alt: 'Session One — photo 6' },
-    { src: 'assets/swastya-page/S1/IMG20250327100504.jpg', alt: 'Session One — photo 7' },
-    { src: 'assets/swastya-page/S1/img-5.png', alt: 'Session One — photo 8' },
-    { src: 'assets/swastya-page/S1/img-6.png', alt: 'Session One — photo 9' },
-    { src: 'assets/swastya-page/S1/IMG20250327102616.jpg', alt: 'Session One — photo 10' },
-    { src: 'assets/swastya-page/S1/img-7.png', alt: 'Session One — photo 11' },
-    { src: 'assets/swastya-page/S1/img-8.png', alt: 'Session One — photo 12' },
-    { src: 'assets/swastya-page/S1/IMG20250327102714.jpg', alt: 'Session One — photo 13' },
-    { src: 'assets/swastya-page/S1/img-9.png', alt: 'Session One — photo 14' },
-    { src: 'assets/swastya-page/S1/img-10.png', alt: 'Session One — photo 15' },
-    { src: 'assets/swastya-page/S1/IMG20250327103452.jpg', alt: 'Session One — photo 16' },
-    { src: 'assets/swastya-page/S1/img-11.png', alt: 'Session One — photo 17' },
-    { src: 'assets/swastya-page/S1/img-12.png', alt: 'Session One — photo 18' },
-    { src: 'assets/swastya-page/S1/Photo from Ramyashree.jpg', alt: 'Session One — group photo' },
-    { src: 'assets/swastya-page/S1/img-13.png', alt: 'Session One — photo 19' },
-    { src: 'assets/swastya-page/S1/img-14.png', alt: 'Session One — photo 20' },
-    { src: 'assets/swastya-page/S1/img-15.png', alt: 'Session One — photo 21' },
-    { src: 'assets/swastya-page/S1/img-16.png', alt: 'Session One — photo 22' },
-    { src: 'assets/swastya-page/S1/img-17.png', alt: 'Session One — photo 23' },
-    { src: 'assets/swastya-page/S1/img-19.png', alt: 'Session One — photo 24' },
-    { src: 'assets/swastya-page/S1/img-20.png', alt: 'Session One — photo 26' },
-    { src: 'assets/swastya-page/S1/img-21.png', alt: 'Session One — photo 27' },
-    { src: 'assets/swastya-page/S1/img-22.png', alt: 'Session One — photo 28' },
-    { src: 'assets/swastya-page/S1/img-23.png', alt: 'Session One — photo 29' },
-    { src: 'assets/swastya-page/S1/img-24.png', alt: 'Session One — photo 30' },
-    { src: 'assets/swastya-page/S1/img-25.png', alt: 'Session One — photo 31' },
-    { src: 'assets/swastya-page/S1/img-26.png', alt: 'Session One — photo 32' },
-    { src: 'assets/swastya-page/S1/img-27.png', alt: 'Session One — photo 32' },
-    { src: 'assets/swastya-page/S1/img-29.png', alt: 'Session One — photo 33' },
-    { src: 'assets/swastya-page/S1/img-30.png', alt: 'Session One — photo 36' },
-    { src: 'assets/swastya-page/S1/img-31.png', alt: 'Session One — photo 37' },
-    { src: 'assets/swastya-page/S1/img-32.png', alt: 'Session One — photo 38' },
-    { src: 'assets/swastya-page/S1/img-33.png', alt: 'Session One — photo 39' },
-    { src: 'assets/swastya-page/S1/img-34.png', alt: 'Session One — photo 40' },
-    { src: 'assets/swastya-page/S1/img-35.png', alt: 'Session One — photo 41' },
-    { src: 'assets/swastya-page/S1/img-36.png', alt: 'Session One — photo 42' },
-    { src: 'assets/swastya-page/S1/img-37.png', alt: 'Session One — photo 43' },
-
-    // ── S2 ──
-    { src: 'assets/swastya-page/S2/20250327_123228PMByGPSMapCamera.jpg', alt: 'Session Two — photo 1' },
-    { src: 'assets/swastya-page/S2/20250327_124931PMByGPSMapCamera.jpg', alt: 'Session Two — photo 2' },
-    { src: 'assets/swastya-page/S2/20250327_21914PMByGPSMapCamera.jpg', alt: 'Session Two — photo 3' },
-    { src: 'assets/swastya-page/S2/IMG-20250327-WA0019.jpg', alt: 'Session Two — photo 4' },
-
-    // ── S3 ──
-    { src: 'assets/swastya-page/S3/20250327_22146pmByGPSMapCamera.jpg', alt: 'Session Three — photo 1' },
-    { src: 'assets/swastya-page/S3/20250327_22801PMByGPSMapCamera.jpg', alt: 'Session Three — photo 2' },
-    { src: 'assets/swastya-page/S3/20250327_22847pmByGPSMapCamera.jpg', alt: 'Session Three — photo 3' },
-    { src: 'assets/swastya-page/S3/20250327_22913pmByGPSMapCamera.jpg', alt: 'Session Three — photo 4' },
-    { src: 'assets/swastya-page/S3/20250327_24346pmByGPSMapCamera.jpg', alt: 'Session Three — photo 5' },
-    { src: 'assets/swastya-page/S3/20250327_24402pmByGPSMapCamera.jpg', alt: 'Session Three — photo 6' },
-
-    // ── S4 ──
-    { src: 'assets/swastya-page/S4/20250327_40025PMByGPSMapCamera.jpg', alt: 'Session Four — photo 1' },
-    { src: 'assets/swastya-page/S4/img-1.jpeg', alt: 'Session Four — photo 2' },
-    { src: 'assets/swastya-page/S4/img-2.jpeg', alt: 'Session Four — photo 3' },
-    { src: 'assets/swastya-page/S4/img-3.jpeg', alt: 'Session Four — photo 4' },
-    { src: 'assets/swastya-page/S4/img-4.jpg', alt: 'Session Four — photo 5' },
-    { src: 'assets/swastya-page/S4/Photo from Ramyashree.jpg', alt: 'Session Four — group photo' },
+    { src: 'assets/swastya-page/Gallery/img-1.png', alt: 'Workshop gallery — photo 1' },
+    { src: 'assets/swastya-page/Gallery/img-2.png', alt: 'Workshop gallery — photo 2' },
+    { src: 'assets/swastya-page/Gallery/img-3.png', alt: 'Workshop gallery — photo 3' },
+    { src: 'assets/swastya-page/Gallery/img-4.png', alt: 'Workshop gallery — photo 4' },
+    { src: 'assets/swastya-page/Gallery/img-5.png', alt: 'Workshop gallery — photo 5' },
+    { src: 'assets/swastya-page/Gallery/img-6.png', alt: 'Workshop gallery — photo 6' },
+    { src: 'assets/swastya-page/Gallery/img-7.png', alt: 'Workshop gallery — photo 7' },
+    { src: 'assets/swastya-page/Gallery/img-8.png', alt: 'Workshop gallery — photo 8' },
+    { src: 'assets/swastya-page/Gallery/img-9.png', alt: 'Workshop gallery — photo 9' },
+    { src: 'assets/swastya-page/Gallery/img-10.png', alt: 'Workshop gallery — photo 10' },
+    { src: 'assets/swastya-page/Gallery/img-11.png', alt: 'Workshop gallery — photo 11' },
+    { src: 'assets/swastya-page/Gallery/img-12.png', alt: 'Workshop gallery — photo 12' },
+    { src: 'assets/swastya-page/Gallery/img-13.png', alt: 'Workshop gallery — photo 13' },
+    { src: 'assets/swastya-page/Gallery/img-14.png', alt: 'Workshop gallery — photo 14' },
+    { src: 'assets/swastya-page/Gallery/img-15.png', alt: 'Workshop gallery — photo 15' },
+    { src: 'assets/swastya-page/Gallery/img-16.png', alt: 'Workshop gallery — photo 16' },
+    { src: 'assets/swastya-page/Gallery/img-17.png', alt: 'Workshop gallery — photo 17' },
+    { src: 'assets/swastya-page/Gallery/img-19.png', alt: 'Workshop gallery — photo 19' },
+    { src: 'assets/swastya-page/Gallery/img-20.png', alt: 'Workshop gallery — photo 20' },
+    { src: 'assets/swastya-page/Gallery/img-21.png', alt: 'Workshop gallery — photo 21' },
+    { src: 'assets/swastya-page/Gallery/img-22.png', alt: 'Workshop gallery — photo 22' },
+    { src: 'assets/swastya-page/Gallery/img-23.png', alt: 'Workshop gallery — photo 23' },
+    { src: 'assets/swastya-page/Gallery/img-24.png', alt: 'Workshop gallery — photo 24' },
+    { src: 'assets/swastya-page/Gallery/img-25.png', alt: 'Workshop gallery — photo 25' },
+    { src: 'assets/swastya-page/Gallery/img-26.png', alt: 'Workshop gallery — photo 26' },
+    { src: 'assets/swastya-page/Gallery/img-27.png', alt: 'Workshop gallery — photo 27' },
+    { src: 'assets/swastya-page/Gallery/img-29.png', alt: 'Workshop gallery — photo 29' },
+    { src: 'assets/swastya-page/Gallery/img-30.png', alt: 'Workshop gallery — photo 30' },
+    { src: 'assets/swastya-page/Gallery/img-31.png', alt: 'Workshop gallery — photo 31' },
+    { src: 'assets/swastya-page/Gallery/img-32.png', alt: 'Workshop gallery — photo 32' },
+    { src: 'assets/swastya-page/Gallery/img-33.png', alt: 'Workshop gallery — photo 33' },
+    { src: 'assets/swastya-page/Gallery/img-34.png', alt: 'Workshop gallery — photo 34' },
+    { src: 'assets/swastya-page/Gallery/img-35.png', alt: 'Workshop gallery — photo 35' },
+    { src: 'assets/swastya-page/Gallery/img-36.png', alt: 'Workshop gallery — photo 36' },
+    { src: 'assets/swastya-page/Gallery/img-37.png', alt: 'Workshop gallery — photo 37' },
+    { src: 'assets/swastya-page/Gallery/img-38.jpg', alt: 'Workshop gallery — photo 38' },
+    { src: 'assets/swastya-page/Gallery/img-39.jpg', alt: 'Workshop gallery — photo 39' },
+    { src: 'assets/swastya-page/Gallery/img-40.jpg', alt: 'Workshop gallery — photo 40' },
+    { src: 'assets/swastya-page/Gallery/img-41.jpg', alt: 'Workshop gallery — photo 41' },
+    { src: 'assets/swastya-page/Gallery/img-42.jpg', alt: 'Workshop gallery — photo 42' },
+    { src: 'assets/swastya-page/Gallery/img-43.jpg', alt: 'Workshop gallery — photo 43' },
+    { src: 'assets/swastya-page/Gallery/img-44.jpg', alt: 'Workshop gallery — photo 44' },
+    { src: 'assets/swastya-page/Gallery/img-45.jpg', alt: 'Workshop gallery — photo 45' },
+    { src: 'assets/swastya-page/Gallery/img-46.jpg', alt: 'Workshop gallery — photo 46' },
+    { src: 'assets/swastya-page/Gallery/img-47.jpg', alt: 'Workshop gallery — photo 47' },
+    { src: 'assets/swastya-page/Gallery/img-48.jpg', alt: 'Workshop gallery — photo 48' },
+    { src: 'assets/swastya-page/Gallery/img-49.jpg', alt: 'Workshop gallery — photo 49' },
+    { src: 'assets/swastya-page/Gallery/img-50.jpg', alt: 'Workshop gallery — photo 50' },
+    { src: 'assets/swastya-page/Gallery/img-51.jpg', alt: 'Workshop gallery — photo 51' },
+    { src: 'assets/swastya-page/Gallery/img-52.jpg', alt: 'Workshop gallery — photo 52' },
+    { src: 'assets/swastya-page/Gallery/img-53.jpg', alt: 'Workshop gallery — photo 53' },
+    { src: 'assets/swastya-page/Gallery/img-54.jpg', alt: 'Workshop gallery — photo 54' },
+    { src: 'assets/swastya-page/Gallery/img-55.jpeg', alt: 'Workshop gallery — photo 55' },
+    { src: 'assets/swastya-page/Gallery/img-56.jpeg', alt: 'Workshop gallery — photo 56' },
+    { src: 'assets/swastya-page/Gallery/img-57.jpeg', alt: 'Workshop gallery — photo 57' },
+    { src: 'assets/swastya-page/Gallery/img-58.jpg', alt: 'Workshop gallery — photo 58' },
+    { src: 'assets/swastya-page/Gallery/img-59.jpg', alt: 'Workshop gallery — photo 59' },
+    { src: 'assets/swastya-page/Gallery/img-60.webp', alt: 'Workshop gallery — photo 60' },
+    { src: 'assets/swastya-page/Gallery/img-61.webp', alt: 'Workshop gallery — photo 61' },
+    { src: 'assets/swastya-page/Gallery/img-62.webp', alt: 'Workshop gallery — photo 62' },
+    { src: 'assets/swastya-page/Gallery/img-63.webp', alt: 'Workshop gallery — photo 63' },
+    { src: 'assets/swastya-page/Gallery/img-64.webp', alt: 'Workshop gallery — photo 64' },
+    { src: 'assets/swastya-page/Gallery/img-65.webp', alt: 'Workshop gallery — photo 65' },
+    { src: 'assets/swastya-page/Gallery/img-66.webp', alt: 'Workshop gallery — photo 66' },
+    { src: 'assets/swastya-page/Gallery/img-67.webp', alt: 'Workshop gallery — photo 67' },
+    { src: 'assets/swastya-page/Gallery/img-68.webp', alt: 'Workshop gallery — photo 68' },
+    { src: 'assets/swastya-page/Gallery/img-69.webp', alt: 'Workshop gallery — photo 69' },
+    { src: 'assets/swastya-page/Gallery/img-70.webp', alt: 'Workshop gallery — photo 70' },
+    { src: 'assets/swastya-page/Gallery/img-71.webp', alt: 'Workshop gallery — photo 71' },
+    { src: 'assets/swastya-page/Gallery/img-72.webp', alt: 'Workshop gallery — photo 72' },
+    { src: 'assets/swastya-page/Gallery/img-73.webp', alt: 'Workshop gallery — photo 73' },
+    { src: 'assets/swastya-page/Gallery/img-74.webp', alt: 'Workshop gallery — photo 74' },
+    { src: 'assets/swastya-page/Gallery/img-75.webp', alt: 'Workshop gallery — photo 75' },
+    { src: 'assets/swastya-page/Gallery/img-76.webp', alt: 'Workshop gallery — photo 76' },
+    { src: 'assets/swastya-page/Gallery/img-77.webp', alt: 'Workshop gallery — photo 77' },
+    { src: 'assets/swastya-page/Gallery/img-78.webp', alt: 'Workshop gallery — photo 78' },
+    { src: 'assets/swastya-page/Gallery/img-79.webp', alt: 'Workshop gallery — photo 79' },
+    { src: 'assets/swastya-page/Gallery/img-80.webp', alt: 'Workshop gallery — photo 80' },
+    { src: 'assets/swastya-page/Gallery/img-81.webp', alt: 'Workshop gallery — photo 81' },
+    { src: 'assets/swastya-page/Gallery/img-82.webp', alt: 'Workshop gallery — photo 82' },
+    { src: 'assets/swastya-page/Gallery/img-83.webp', alt: 'Workshop gallery — photo 83' },
+    { src: 'assets/swastya-page/Gallery/img-84.webp', alt: 'Workshop gallery — photo 84' },
+    { src: 'assets/swastya-page/Gallery/img-85.webp', alt: 'Workshop gallery — photo 85' },
+    { src: 'assets/swastya-page/Gallery/img-86.webp', alt: 'Workshop gallery — photo 86' },
+    { src: 'assets/swastya-page/Gallery/img-87.webp', alt: 'Workshop gallery — photo 87' },
+    { src: 'assets/swastya-page/Gallery/img-88.webp', alt: 'Workshop gallery — photo 88' },
   ];
 
   // Duplicate the list once so the auto-loop is seamless — when the track
@@ -125,6 +146,19 @@ export class WorkshopGalleryComponent implements AfterViewInit, OnDestroy {
   }
   closeLightbox()         { this.lightboxIdx.set(null); }
   stopProp(e: Event)      { e.stopPropagation(); }
+
+  nextLightbox(e?: Event) {
+    e?.stopPropagation();
+    const i = this.lightboxIdx();
+    if (i === null) return;
+    this.lightboxIdx.set((i + 1) % this.images.length);
+  }
+  prevLightbox(e?: Event) {
+    e?.stopPropagation();
+    const i = this.lightboxIdx();
+    if (i === null) return;
+    this.lightboxIdx.set((i - 1 + this.images.length) % this.images.length);
+  }
 
   // Pause / resume the auto-scroll on hover
   onHover(paused: boolean) { this.paused = paused; }
@@ -176,6 +210,9 @@ export class WorkshopGalleryComponent implements AfterViewInit, OnDestroy {
 
   @HostListener('document:keydown', ['$event'])
   onKeydown(e: KeyboardEvent) {
-    if (this.lightboxOpen() && e.key === 'Escape') this.closeLightbox();
+    if (!this.lightboxOpen()) return;
+    if (e.key === 'Escape') this.closeLightbox();
+    else if (e.key === 'ArrowRight') this.nextLightbox();
+    else if (e.key === 'ArrowLeft')  this.prevLightbox();
   }
 }

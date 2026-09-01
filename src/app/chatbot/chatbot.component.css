@@ -274,21 +274,6 @@
     cursor: pointer;
 } 
 
-/* ::ng-deep .p-datepicker{
-    width: 290px !important;
-    height: 290px !important;
-    text-align: center;
-}
-
-::ng-deep .p-datepicker td span {
-    width: 20px;
-    height: 20px; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 12px;
-} */
-
 .hide{
     transform: translateY(300px);
 }

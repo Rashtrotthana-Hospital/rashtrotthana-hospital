@@ -120,7 +120,6 @@ import { RheumatologyComponent } from './rheumatology/rheumatology.component';
 import { CareerComponent } from './career/career.component';
 import { MuthrubhavaComponent } from './muthrubhava/muthrubhava.component';
 import { CareerPagePopupComponent } from './career-page-popup/career-page-popup.component';
-import { NewDocPageComponent } from './new-doc-page/new-doc-page.component';
 import { TermsAndConditionsComponent } from './terms-and-conditions/terms-and-conditions.component';
 import { SamrakshaComponent } from './samraksha/samraksha.component';
 import { ThankYouComponent } from './thank-you/thank-you.component';
@@ -246,7 +245,6 @@ import { NewResearchPageComponent } from './new-research-page/new-research-page.
     CareerComponent,
     MuthrubhavaComponent,
     CareerPagePopupComponent,
-    NewDocPageComponent,
     TermsAndConditionsComponent,
     SamrakshaComponent,
     ThankYouComponent,

@@ -72,7 +72,7 @@ export const PSYCHIATRY_SCHEMA = {
     {
       '@type': 'Psychologist',
       name: 'Ms. Samarchitha S',
-      yearsOfExperience: '6',
+      yearsOfExperience: '5',
       affiliation: {
         '@type': 'Hospital',
         name: 'Rashtrotthana Hospital',

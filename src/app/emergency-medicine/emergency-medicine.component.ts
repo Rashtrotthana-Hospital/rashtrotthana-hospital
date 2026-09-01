@@ -46,10 +46,6 @@ export class EmergencyMedicineComponent {
             doctor_name:'Col (Dr) Anand Shankar K',
             experience : '32+'
           }
-          // {
-          //   doctor_image:'Dr.Geethanjali K G.png',
-          //   doctor_name:'Dr. Geethanjali K G'
-          // }
         ],
       },
     ];
@@ -70,7 +66,7 @@ export class EmergencyMedicineComponent {
     {
       id: 1,
       name: 'Col (Dr) Anand Shankar K',
-      experience: '31+ Years',
+      experience: '32+ Years',
       image: 'assets/Dr-Anand-Shankar.png',
       slug: '/doctor/col-dr-anand-shankar-k',
     },

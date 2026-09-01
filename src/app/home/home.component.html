@@ -2,7 +2,6 @@
     <video class="video" controls autoplay muted poster="../../assets/video-thumbnail.png">
         <source src="../../assets/Rastrotthana_Hospital.mp4" type="video/mp4">
     </video>
-    <!-- <img src="../../assets/h_banner.jpeg" alt="" class="home_banner"> -->
 </div>
 
 <div class="second-container">
@@ -28,40 +27,6 @@
         </div>
     </div>
 </div>
-<!-- <div class="third-container">
-    <div class="form-container">
-        <form #filterForm="ngForm" (ngSubmit)="onSubmit(filterForm)">
-            <select
-              class="form-input custom-select"
-              name="specialty"
-              [(ngModel)]="selectedSpecialty"
-              (change)="onSpecialtyChange()"
-              required
-            >
-              <option value="" disabled selected>Select Specialties</option>
-              <option value="generalMedicine">General Medicine</option>
-              <option value="yoga">Yoga</option>
-              <option value="ayurveda">Ayurveda</option>
-            </select>
-          
-            <select
-              class="form-input custom-select"
-              name="department"
-              [(ngModel)]="selectedDepartment"
-              [disabled]="isDepartmentDisabled"
-              required
-            >
-              <option value="" disabled selected>Select Department</option>
-              <option value="generalSurgery" *ngIf="selectedSpecialty === 'generalMedicine'">General Surgery</option>
-              <option value="gynaecology" *ngIf="selectedSpecialty === 'generalMedicine'">Gynaecology</option>
-            </select>
-            <div type="submit" class="submit-button-form">
-                <app-read-more-btn [text]="'Submit'"></app-read-more-btn>
-            </div>
-          </form>
-          
-    </div>
-</div> -->
 <div class="fourth-container">
     <p-card class="card">
         <div class="card-header">Specialty OPD - Mon to Sun</div>
@@ -209,11 +174,6 @@
 </div>
 <div style="background-color: #fbfff4;">
     <div class="seventh-container" #counterSection>
-        <!-- <img class="count" src="../../assets/100.png">
-    <img class="count"src="../../assets/20000.png">
-    <img class="count"src="../../assets/2022.png">
-    <img class="count"src="../../assets/150.png">
-    <img class="count"src="../../assets/25.png"> -->
         <div class="box" *ngFor="let box of box">
             <div class="count-image">
                 <img [src]="'../../assets/'+ box.icon" alt="best multispeciality hospital in bangalore">
@@ -222,42 +182,10 @@
                 <div class="number">{{box.number}}<span *ngIf="box.showPlus">+</span></div>
                 <div class="statement">{{box.statement}}</div>
             </div>
-            <!-- <iframe src="https://f6af4034b85c499390712afdeb6dc728.elf.site" width="100%" height="300px"></iframe> -->
-            <!-- <iframe src="https://a9c97b49dfbe4e78afda169a3f6298e6.elf.site" class="box-animation"></iframe> -->
         </div>
 
     </div>
 
-
-    <!-- <div class="eight-container">
-        <div class="achieve-content">
-            <div class="achieve-heading">
-                Achievements
-            </div>
-            <div class="acheive-points">
-                <ul style="list-style-type: disc;">
-                    <li>In the very first month of the inauguration of hospital we catered our services to 2500+
-                        patients.
-                    </li>
-                    <li>We started our IP services from the month of January 2023 within 1 month we crossed 100+
-                        In-Patient's Admissions.</li>
-                    <li>Our hospital has performed 1000+ Surgeries till date.</li>
-                    <li>Specialty Clinics like Ano-rectal, Hernia & Liver clinics once a week</li>
-                    <li>Sunday Clinics to benefit the community</li>
-                    <li>Insurance empanelment with corporate & TPA's.</li>
-                    <li>School Health Program launched and has been continuously conducting awareness sessions.</li>
-                    <li class="last-li">As the part of Social Responsibility we are continuously catering free medical
-                        camps
-                        in different localities benefitting nearly 18,000+ needy people so far that includes orphanages,
-                        old
-                        age homes & schools.</li>
-                </ul>
-            </div>
-        </div>
-        <div class="achieve-image">
-            <img class="NABH" src="../../assets/NABH.png" alt="best multispeciality hospital in bangalore">
-        </div>
-    </div> -->
 
     <div class="card-wrapper">
         <div class="nabh-card">
@@ -316,14 +244,6 @@
                     </section>
                 </div>
 
-                <!-- Column 2: NABH Image/Placeholder -->
-                <!-- <div class="image-column">
-            <div class="nabh-image-container">
-              <div class="image-placeholder-box">
-                <img src="../../assets/new-nabh-logo.png" alt="">
-              </div>
-            </div>
-          </div> -->
             </div>
 
 
@@ -437,34 +357,7 @@
             </div>
         </div>
     </div>
-    <!-- <div class="free-div free">
-    <div class="free-text"></div>
-    <div class="free-1">Testinomial</div>
-</div>
-<div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div *ngFor="let slide of slidearray; let i = index" [ngClass]="{'carousel-item': true, 'active': i === 0}">
-        <div class="card_item">
-          <img src="{{ slide.img }}" alt="" class="testinomial_image" />
-          <p class="review">
-            {{ slide.review }}
-          </p>
-          <p class="name">{{ slide.name }}</p>
-          <p class="place">{{ slide.place }}</p>
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-<app-programms></app-programms> -->
-
+   
     <div class="tie-up-container">
         <div class="tie-up-right">
             <div class="tie-up-heading">Corporate Tie-Ups</div>

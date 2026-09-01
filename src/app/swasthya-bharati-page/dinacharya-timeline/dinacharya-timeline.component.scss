@@ -1,19 +1,11 @@
-// ──────────────────────────────────────────────────────────────────────────────
-// Dinacharya Timeline — cinematic premium sky + perfectly centred cards
-// Single SVG coordinate space  viewBox="0 0 1400 560"
-// ──────────────────────────────────────────────────────────────────────────────
+
 
 .dt-section {
   position: relative;
   isolation: isolate;
   overflow: hidden;
-  // Section height scales with viewport so the SVG (1400×560) never gets
-  // clipped on ultra-wide / 4K screens. Capped so it doesn't grow huge on TVs.
-  // 1400×560 = aspect-ratio 2.5:1, but we add ~80px for the header.
   height: clamp(540px, 42vw, 760px);
   padding-bottom: 0;
-  // Lighter background — soft slate/sky tone so the colored cards and
-  // season particles read brightly without competing with deep navy.
   background:
     radial-gradient(120% 80% at 50% 12%, #d8e6ef 0%, #b8cfe0 45%, #93b3cc 100%),
     #b8cfe0;
@@ -120,11 +112,9 @@
   position: relative;
   z-index: 10;
   width: 100%;
-  // Cap the wrapper width so the SVG doesn't blow up on 4K monitors and clip
-  // the section. 1700px is enough for the cards to stay readable.
+  
   max-width: 1700px;
   margin: 0 auto;
-  // padding-top locks the wrapper to the same 1400:560 aspect ratio as the SVG
   padding-top: min(calc(560 / 1400 * 100%), 680px);
   height: 0;
 }
@@ -239,21 +229,15 @@
   opacity: 0.85;
 }
 
-// ── BACK face — real content, crisp text via 2× scale trick ──────────────────
-// The foreignObject is CW×CH (165×190 px in SVG coords). Because SVG scales
-// everything down (~0.65×), text at normal sizes becomes blurry.
-// Fix: render the back at 2× CW × 2× CH, then scale(0.5) → text renders at
-// true device pixels and is perfectly sharp.
 .dt-flip-face--back {
   transform: rotateY(180deg);
   background: #ffffff;
   border: 1.5px solid #cbd5e1;
   border-radius: 16px;
-  // Overflow visible so the 2× inner can be seen before scale
+
   overflow: visible;
 }
 
-// 2× container: double the foreignObject size, then scaled back to fit
 .dt-back-inner {
   width: 200%;
   height: 200%;
@@ -357,9 +341,7 @@
   }
 }
 
-// ── Card text ─────────────────────────────────────────────────────────────────
-// foreignObject x = cardX (left edge), width = CW (full card width)
-// text-align: center here → all text is perfectly horizontally centred
+
 .dt-inner {
   display: flex;
   flex-direction: column;
@@ -441,6 +423,9 @@
     min-height: 520px;
     padding-bottom: 60px;
     padding-top: 0;
+  }
+  .dt-svg-wrap{
+    padding: 0;
   }
 
   // Switch: hide SVG, show mobile HTML layout

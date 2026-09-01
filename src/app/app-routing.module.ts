@@ -59,7 +59,6 @@ import { AyurvedaThyroidComponent } from './ayurveda-thyroid/ayurveda-thyroid.co
 import { RheumatologyComponent } from './rheumatology/rheumatology.component';
 import { CareerComponent } from './career/career.component';
 import { MuthrubhavaComponent } from './muthrubhava/muthrubhava.component';
-import { NewDocPageComponent } from './new-doc-page/new-doc-page.component';
 import { TermsAndConditionsComponent } from './terms-and-conditions/terms-and-conditions.component';
 import { SamrakshaComponent } from './samraksha/samraksha.component';
 import { ThankYouComponent } from './thank-you/thank-you.component';
@@ -84,6 +83,7 @@ import { CallBackFormComponent } from './call-back-form/call-back-form.component
 import { NewDoctorPageComponent } from './new-doctor-page/new-doctor-page.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { NewResearchPageComponent } from './new-research-page/new-research-page.component';
+import { SwasthyaBharatiPageComponent } from './swasthya-bharati-page/swasthya-bharati-page.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -125,6 +125,7 @@ const routes: Routes = [
       { path: 'ayurvedic-treatment-bangalore', component: AyurvedaComponent },
       { path: 'homeopathy-treatment-bangalore', component: HomeopathyComponent },
       { path: 'lifestyle-medicine-bangalore', component: NaturopathyComponent },
+      { path: 'swasthya-bharati', component: SwasthyaBharatiPageComponent },
       { path: 'research-center', component: ResearchComponent },
       { path: "popup", component: PopupForm },
     ]
@@ -139,7 +140,14 @@ const routes: Routes = [
   { path: 'health-package/:slug', component: HealthCheckComponent },
   // { path: 'research-center', component: ResearchComponent },
   { path: 'research-center', component: NewResearchPageComponent },
-  // { path: 'new-research-center', component: NewResearchPageComponent },
+  { path: 'swasthya-bharati', component: SwasthyaBharatiPageComponent },
+  // {
+  //   path: 'swasthya-bharati',
+  //   loadComponent: () =>
+  //     import('./swasthya-bharati-page/swasthya-bharati-page.component').then(
+  //       (m) => m.SwasthyaBharatiPageComponent
+  //     ),
+  // },
 
 
 
@@ -219,13 +227,7 @@ const routes: Routes = [
   { path: 'blog', component: BlogComponent },
   { path: 'blog/:slug', component: BlogPostComponent },
 
-  {
-    path: 'swasthya-bharati',
-    loadComponent: () =>
-      import('./swasthya-bharati-page/swasthya-bharati-page.component').then(
-        (m) => m.SwasthyaBharatiPageComponent
-      ),
-  },
+
   { path: '**', component: NotFoundComponent },
 
 ];

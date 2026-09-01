@@ -1,9 +1,8 @@
 <section class="wg-root" aria-labelledby="wg-title">
 
   <header class="wg-head">
-    <div id="wg-title" class="wg-title pt">Health Education and Awareness </div>
-    <p class="wg-eyebrow pt">Health and Wellness Sessions and Workshops for Educational Institutions, Workplaces, Community
-      Organizations, and the General Public</p>
+    <p class="wg-eyebrow">Workshops &amp; programs</p>
+    <div id="wg-title" class="wg-title pt">Gallery</div>
   </header>
 
   <div class="wg-stage" (mouseenter)="onHover(true)" (mouseleave)="onHover(false)">
@@ -43,9 +42,23 @@
         <span>Close</span>
       </button> -->
 
+    <button class="wg-lb__nav wg-lb__nav--prev" type="button" aria-label="Previous image"
+            (click)="prevLightbox($event)">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="15 6 9 12 15 18"/>
+      </svg>
+    </button>
+
     <figure class="wg-lb__figure" (click)="stopProp($event)">
       <img class="wg-lb__img" [src]="lightboxImg()" alt="Preview" draggable="false" />
     </figure>
+
+    <button class="wg-lb__nav wg-lb__nav--next" type="button" aria-label="Next image"
+            (click)="nextLightbox($event)">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="9 6 15 12 9 18"/>
+      </svg>
+    </button>
   </div>
   }
 </section>

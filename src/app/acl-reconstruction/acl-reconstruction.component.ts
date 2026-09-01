@@ -104,17 +104,6 @@ export class AclReconstructionComponent {
   ];
 
   @ViewChild('formSection') formSection!: ElementRef;
-
-  // scrollToForm() {
-  //   if (this.formSection) {
-  //     this.formSection.nativeElement.scrollIntoView({
-  //       // behavior: 'smooth',
-  //       block: 'start',
-  //       inline: 'nearest',
-  //     });
-  //   }
-  // }
-
   trackPhoneClick() {
     if (typeof gtag === 'function') {
       gtag('event', 'conversion', {

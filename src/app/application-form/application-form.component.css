@@ -10,13 +10,6 @@
     font-weight: 700;
 }
 
-/* .card:focus-within,
-.card:focus-within input,
-.card:focus-within select{
- background: white;
- color: black;
-} */
-
 .heading {
     font-size: 32px;
     font-weight: 800;
@@ -48,23 +41,12 @@ select {
     color: black;
 }
 
-/* input:focus-within,
-select:focus-within{
-  color: black;
-} */
-
 .card input::placeholder,
 .card textarea::placeholder {
     color: white;
     font-weight: 500;
 }
 
-
-
-/* .card:focus-within input::placeholder,
-.card:focus-within textarea::placeholder{
-  color: black;
-} */
 
 textarea {
     width: 517px;

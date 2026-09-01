@@ -18,15 +18,7 @@
 
       <div class="form-group">
         <label>Name*</label>
-        <!-- <input
-          type="text"
-          name="name"
-          required
-          minlength="3"
-          [(ngModel)]="formData.name"
-          #name="ngModel"
-          class="form-control"
-        /> -->
+
         <div class="error" *ngIf="name.invalid && (name.dirty || name.touched)">
           <small *ngIf="name.errors?.['required']">Name is required.</small>
           <small *ngIf="name.errors?.['minlength']">Minimum 3 characters.</small>
@@ -35,32 +27,11 @@
 
       <div class="form-group">
         <label>Mobile Number*</label>
-        <!-- <input
-          type="tel"
-          name="mobile"
-          required
-          pattern="^[6-9][0-9]{9}$"
-          [(ngModel)]="formData.mobile"
-          #mobile="ngModel"
-          class="form-control"
-        /> -->
         <div class="error" *ngIf="mobile.invalid && (mobile.dirty || mobile.touched)">
           <small *ngIf="mobile.errors?.['required']">Mobile is required.</small>
           <small *ngIf="mobile.errors?.['pattern']">Enter valid 10-digit number.</small>
         </div>
       </div>
-
-      <!-- CAPTCHA REMOVED (DESIGN PRESERVED) -->
-      <!-- <ng-hcaptcha> removed -->
-
-      <!-- <button
-        type="button"
-        class="submit-btn"
-        [disabled]="!callbackForm.valid || isSending"
-        (click)="sendOtp(callbackForm)"
-      >
-        {{ isSending ? 'Sending OTP...' : 'Send OTP' }}
-      </button> -->
 
     </form>
 
@@ -68,16 +39,6 @@
     <div *ngIf="showOTP && !otpVerified && !successMessage" class="otp-section">
       <h3>Enter OTP</h3>
       <p>We sent an OTP to your mobile. It expires in 2 minutes.</p>
-
-      <!-- <input
-        type="text"
-        maxlength="6"
-        minlength="6"
-        [(ngModel)]="formData.otp"
-        placeholder="Enter OTP"
-        class="otp-input"
-      /> -->
-
       <div class="otp-actions">
         <button (click)="verifyOtp()" [disabled]="isVerifying">
           {{ isVerifying ? 'Verifying...' : 'Verify OTP' }}
@@ -85,7 +46,6 @@
 
         <button (click)="resendOtp()" [disabled]="resendTimer > 0">
           Resend OTP
-          <!-- <span *ngIf="resendTimer > 0">({{ formattedResendTime }})</span> -->
         </button>
       </div>
     </div>

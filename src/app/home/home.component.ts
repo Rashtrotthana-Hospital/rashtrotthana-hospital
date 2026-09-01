@@ -69,13 +69,6 @@ export class HomeComponent implements OnInit {
   showTitle: any = 'default'
   showImage: any = 'default';
 
-  // counter:number= 0;
-  // stopcounter:any=setInterval(()=>{
-  // this.counter++;
-  // if(this.counter==100){
-  //   clearInterval(this.stopcounter);
-  // }
-  // },10);
   features = [
     {
       name: 'Yoga',
@@ -164,16 +157,6 @@ export class HomeComponent implements OnInit {
     'ayurveda': 'assets/ayurveda-outline.png',
     'homeopathy': 'assets/homeopathy-outline.png'
   }
-  // <div class="box">
-  //         <img src="../../assets/doctor-icon.png">
-  //         <div class="number">
-  //             {{counter}}
-  //         </div>
-  //         <div class="statement">
-  //             Doctors At Work
-  //         </div>
-  //     </div>
-
 
   onSubmit(form: any) {
     console.log("form")

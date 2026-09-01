@@ -28,18 +28,6 @@ export class GeneralMedicineComponent {
       alttext : 'Dr. H. M. Krishnamurthy | Best General Physicians in RR Nagar Bangalore | Rashtrotthana Hospital',
       image : '../../assets/Dr-H-M-Krishnamurthy.png'
     },
-    // {
-    //   name : 'Dr. Sindhu P. Madanshetty',
-    //   experience : '7',
-    //   alttext : 'Dr. Sindhu P. Madanshetty | Best General Physicians in RR Nagar Bangalore | Rashtrotthana Hospital',
-    //   image : '../../assets/Dr-Sindhu-P-Madanshetty.png'
-    // },
-    // {
-    //   name : 'Dr. Bhavya',
-    //   experience : '9',
-    //   alttext : 'Dr. Bhavya | Best General Physicians in RR Nagar Bangalore | Rashtrotthana Hospital',
-    //   image : '../../assets/Dr-Bhavya.png'
-    // },
     {
       name : 'Dr. C Rajendran',
       experience : '29+',

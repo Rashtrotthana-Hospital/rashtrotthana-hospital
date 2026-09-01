@@ -1,7 +1,6 @@
 .banner-img {
     width: 100%;
     height: 100%;
-    /* position: absolute; */
     margin-top: 120px;
 }
 
@@ -748,12 +747,6 @@ a {
     .treatment-para {
         width: 100%;
     }
-
-    /* .contact-heading,
-    .contact-heading span{
-        font-size: 20px;
-    } */
-
     .bannercontent {
         /* margin-left: 50px; */
         display: flex;

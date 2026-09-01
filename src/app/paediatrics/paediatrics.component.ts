@@ -26,18 +26,7 @@ export class PaediatricsComponent {
   }
 
   doctors = [
-    // {
-    //   doctor_image: '../../assets/Dr-Vishwanath-Sanagoudar.png',
-    //   doctor_name: 'Dr. Vishwanath Sanagoudar',
-    //   experience: "8",
-    //   docalt: 'Dr. Vishwanath Sanagoudar | Best Paediatrician and Neonatologist in Bangalore | Rashtrotthana Hospital'
-    // },
-    // {
-    //   doctor_image: '../../assets/Dr-Niveditha-C.png',
-    //   doctor_name: 'Dr. Niveditha C',
-    //   experience: "7",
-    //   docalt: 'Dr. Niveditha C | Best Pediatrician in Bangalore | Rashtrotthana Hospital'
-    // },
+   
     {
       doctor_image: '../../assets/Dr-Dhanyatha-Muninarayan.png',
       doctor_name: 'Dr. Dhanyatha Muninarayan',
@@ -55,6 +44,12 @@ export class PaediatricsComponent {
       doctor_name: 'Dr. Surabhi H. S',
       experience: "4",
       docalt: 'Dr. Surabhi H. S | Best Pediatrician in Bangalore | Rashtrotthana Hospital'
+    },
+    {
+      doctor_image: 'assets/new-doctor-imgs/dr-priyanka-k-p.png',
+      doctor_name: 'Dr. Priyanka K P',
+      experience: "8+",
+      docalt: 'Dr. Priyanka K P | Best Pediatrician in Bangalore | Rashtrotthana Hospital'
     }
   ]
 

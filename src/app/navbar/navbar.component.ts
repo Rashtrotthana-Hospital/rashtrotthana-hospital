@@ -20,10 +20,6 @@ interface City {
 
 export class NavbarComponent {
   visible: boolean = false;
-
-  // showDialog() {
-  //     this.visible = true;
-  // }
   close(){
     this.visible= false;
   }

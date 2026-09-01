@@ -32,6 +32,9 @@ export class SpecalitiesComponent {
   homeopathy(){
     this.router.navigate(['homeopathy-treatment-bangalore'], {relativeTo:this.route});
   }
+  swasthyabharati(){
+    this.router.navigate(['swasthya-bharati'], {relativeTo:this.route});
+  }
   naturopathy(){
     this.router.navigate(['lifestyle-medicine-bangalore'], {relativeTo:this.route});
   }
