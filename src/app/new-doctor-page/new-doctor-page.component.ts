@@ -1713,7 +1713,7 @@ export class NewDoctorPageComponent {
       name: 'Dr. Nikhil Hegde',
       image: 'assets/new-doctor-imgs/JMRH-Dr-nikhil-hegde-png.png',
       department: 'ORTHOPEDICS',
-      about: 'Dr. Nikhil Hegde is a consultant orthopaedic surgeon with over 10 years of experience in the field of orthopaedics, trauma care, joint replacement and sports injuries. He completed his orthopaedic training from Kasturba Medical College (KMC), Manipal , where he received comprehensive exposure to general orthopaedics and various orthopaedic subspecialties. Following his graduation, he continued at KMC, Manipal as a Senior Resident and was subsequently appointed as Assistant Professor in the Department of Orthopaedics. During his tenure at KMC, he underwent focused subspecialty training in arthroplasty, complex joint replacements, arthroscopy, and sports medicine. His clinical practice involves the management of fractures, ligament injuries, arthritis, sports-related conditions and degenerative joint disorders, with an emphasis on evidence-based treatment and patient-centered care. Dr. Nikhil Hegde is known for his approachable nature, clear communication and commitment to helping patients return safely and confidently to their daily activities and active lifestyles.',
+      about: 'Dr. Nikhil Hegde is a consultant orthopaedic surgeon with over 10 years of experience in the field of orthopaedics, trauma care, joint replacement and sports injuries. He completed his orthopaedic training from Kasturba Medical College (KMC), Manipal , where he received comprehensive exposure to general orthopaedics and various orthopaedic subspecialties. Following his graduation, he continued at KMC, Manipal as a Senior Resident and was subsequently appointed as Assistant Professor in the Department of Orthopaedics. During his tenure at KMC, he underwent focused subspecialty training in arthroplasty, complex joint replacements, arthroscopy and sports medicine. His clinical practice involves the management of fractures, ligament injuries, arthritis, sports-related conditions and degenerative joint disorders, with an emphasis on evidence-based treatment and patient-centered care. Dr. Nikhil Hegde is known for his approachable nature, clear communication and commitment to helping patients return safely and confidently to their daily activities and active lifestyles.',
       speciality: 'ORTHOPEDICS',
       areasOfExpertise: ['Arthroscopy', 'Joint Replacement ', 'Sports Medicine',],
       expertise: '10',
@@ -4264,7 +4264,7 @@ export class NewDoctorPageComponent {
       faqs: [
         {
           question: 'Who is Dr. K Nishanth Pai and what is his specialty at Rashtrotthana Hospital, Bangalore?',
-          answer: 'Dr. K Nishanth Pai is a Consultant Ayurveda Physician at Rashtrotthana Hospital, Bangalore, with 15 years of experience in Ayurvedic medicine. He specialises in Panchakarma, Rasayana (rejuvenation therapy), chronic disease management, and metabolic disorders.'
+          answer: 'Dr. K Nishanth Pai is a Consultant Ayurveda Physician at Rashtrotthana Hospital, Bangalore, with 15 years of experience in Ayurvedic medicine. He specialises in Panchakarma, Rasayana (rejuvenation therapy), chronic disease management and metabolic disorders.'
         },
         {
           question: 'What conditions does Dr. K Nishanth Pai treat using Ayurveda?',
@@ -4275,7 +4275,7 @@ export class NewDoctorPageComponent {
           answer: 'Yes, Dr. K Nishanth Pai specialises in Panchakarma, a traditional Ayurvedic detoxification therapy designed to eliminate toxins and restore balance in the body. Treatment is customised based on the individual\'s health condition and constitution.'
         },
         {
-          question: 'Can Dr. K Nishanth Pai help with joint pain, arthritis, and musculoskeletal disorders?',
+          question: 'Can Dr. K Nishanth Pai help with joint pain, arthritis and musculoskeletal disorders?',
           answer: 'Yes, he provides Ayurvedic management for joint pain, arthritis, back pain and other musculoskeletal disorders. Treatment may include Panchakarma therapies, herbal medications, dietary guidance and lifestyle modifications.'
         },
         {
@@ -4307,7 +4307,7 @@ export class NewDoctorPageComponent {
       name: "Dr. Surabhi H. S",
       image: 'assets/new-doctor-imgs/JMRH-Dr-Surabhi-png.png',
       department: 'Consultant Paediatrician',
-      about: `Dr. Surabhi H. S is a dedicated Consultant Paediatrician and Neonatologist at Rashtrotthana Hospital, Bangalore, with expertise in the care of newborns, preterm babies, infants and children. She specialises in neonatal intensive care, newborn emergencies, jaundice management, respiratory distress, infections, growth and developmental monitoring, and preventive paediatric care.
+      about: `Dr. Surabhi H. S is a dedicated Consultant Paediatrician and Neonatologist at Rashtrotthana Hospital, Bangalore, with expertise in the care of newborns, preterm babies, infants and children. She specialises in neonatal intensive care, newborn emergencies, jaundice management, respiratory distress, infections, growth and developmental monitoring and preventive paediatric care.
       With fellowship training in Perinatal Medicine (Neonatology), Dr. Surabhi is skilled in managing high-risk newborns and providing comprehensive child healthcare. She is committed to delivering compassionate, evidence-based care that supports healthy growth, development and long-term wellbeing for children.`,
       speciality: 'PAEDIATRICS AND NEONATOLOGY',
       areasOfExpertise: ['Newborn & Preterm Baby Care',
@@ -4342,7 +4342,7 @@ export class NewDoctorPageComponent {
           answer: 'Yes, she manages neonatal jaundice, respiratory distress, infections and other newborn emergencies. Early diagnosis and timely treatment are essential for ensuring healthy development in newborns.'
         },
         {
-          question: 'Can I consult Dr. Surabhi H. S for childhood asthma, allergies, and recurrent infections?',
+          question: 'Can I consult Dr. Surabhi H. S for childhood asthma, allergies and recurrent infections?',
           answer: 'Absolutely. Dr. Surabhi H. S treats paediatric asthma, allergies, respiratory infections, fever and other common childhood illnesses. She focuses on both treatment and prevention to support long-term child health.'
         },
         {
@@ -4350,12 +4350,86 @@ export class NewDoctorPageComponent {
           answer: 'Yes, she offers vaccination services and preventive paediatric care according to recommended immunisation schedules. Regular vaccinations help protect children from serious infectious diseases.'
         },
         {
-          question: 'Can Dr. Surabhi H. S help monitor my child’s growth, nutrition, and development?',
+          question: 'Can Dr. Surabhi H. S help monitor my child’s growth, nutrition and development?',
           answer: 'Yes, Dr. Surabhi H. S provides comprehensive growth, developmental and nutrition assessments for infants and children. Early identification of developmental concerns helps ensure timely intervention and support.'
         },
         {
           question: 'Why choose Dr. Surabhi H. S at Rashtrotthana Hospital for paediatric and newborn care?',
-          answer: `Dr. Surabhi H. S combines expertise in paediatrics and neonatology with a compassionate, family-centred approach to care. At Rashtrotthana Hospital, children and newborns benefit from comprehensive medical support, preventive care, and specialised neonatal services.`
+          answer: `Dr. Surabhi H. S combines expertise in paediatrics and neonatology with a compassionate, family-centred approach to care. At Rashtrotthana Hospital, children and newborns benefit from comprehensive medical support, preventive care and specialised neonatal services.`
+        }
+      ],
+      departmentSlug: '',
+      expertiseIcons: [
+        'assets/icons/PN-1.png',
+        'assets/icons/PN-2.png',
+        'assets/icons/PN-3.png',
+        'assets/icons/PN-4.png',
+        'assets/icons/PN-5.png'
+      ],
+      happyPatients: '1000+'
+
+    },
+    {
+      name: "Dr. Priyanka K P",
+      image: 'assets/new-doctor-imgs/dr-priyanka-k-p-sq.png',
+      department: 'Consultant Paediatrician',
+      about: `Dr. Priyanka K P is an experienced Paediatrician with over 8 years of expertise in the diagnosis and management of newborns, infants, children and adolescents. She completed her MBBS and MD in Paediatrics from Bangalore Medical College, Rajiv Gandhi University of Health Sciences. Her clinical interests include neonatal and newborn care, preterm baby care, immunization, child growth and development, infant nutrition, lactation support and Kangaroo Mother Care. She is committed to providing compassionate, evidence-based care to ensure the healthy growth and well-being of every child.`,
+      speciality: 'PAEDIATRICS AND NEONATOLOGY',
+      areasOfExpertise: ['Immunization',
+        'Infections',
+        'General Paediatrics',
+        'Preschool Check-Up',
+        'Neonatal & Newborn Care',
+        'Emergencies',
+        'Sick Newborn Management (NICU)',
+        'Burns & Accidental Poisoning',
+        'Preterm Baby Care',
+        'Adolescent Health',
+        'Developmental Assessment',
+        'Child Growth & Development Monitoring',
+        'Well-Baby Check-Up',
+        'Infant & Young Child Feeding (IYCF) & Nutrition',
+        'Neonatal Jaundice',
+        'Lactation Support & Kangaroo Mother Care (KMC)',
+        'Lactation Assessment',
+        'Paediatric & Neonatal Resuscitation'
+      ],
+      expertise: '8+',
+      qualification: `MBBS, MD (Paediatrics)`,
+      time: '',
+      date: '',
+      alt: 'Dr. Priyanka K P | Top Paediatrician and Neonatologist in Bangalore | Rashtrotthana Hospital | RR Nagar Bangalore',
+      id: '',
+      title: 'Dr. Priyanka K P | Paediatrician and Neonatologist Expert in RR Nagar Bangalore',
+      description: 'Consult Dr. K Nishanth Pai, senior Ayurveda physician in RR Nagar with experience in advanced Ayurvedic care, detoxification therapies and chronic disease management at Rashtrotthana Hospital.',
+      faqs: [
+        {
+          question: 'Who is Dr. Priyanka K P and what is her specialty at Rashtrotthana Hospital, Bangalore?',
+          answer: 'Dr. Priyanka K P is a Consultant Paediatrician at Rashtrotthana Hospital, Bangalore, with 8+ years of experience in caring for newborns, infants, children and adolescents. She specialises in general paediatrics, neonatal care, preterm baby management, immunization and child growth and development.'
+        },
+        {
+          question: 'Can Dr. Priyanka K P provide care for newborn and premature babies?',
+          answer: 'Yes, Dr. Priyanka K P has expertise in neonatal and newborn care, including the management of preterm and sick newborns in the NICU. She focuses on providing specialised care to support healthy growth and recovery.'
+        },
+        {
+          question: 'Does Dr. Priyanka K P provide lactation support and Kangaroo Mother Care (KMC)?',
+          answer: 'Yes, Dr. Priyanka K P offers lactation counselling and Kangaroo Mother Care (KMC) guidance for newborns, especially premature and low birth weight babies. These approaches promote breastfeeding, bonding and healthy infant development.'
+        },
+        {
+          question: 'Can I consult Dr. Priyanka K P for my child\s growth, nutrition and developmental milestones?',
+          answer: 'Absolutely. Dr. Priyanka K P provides growth monitoring, developmental assessments and Infant & Young Child Feeding (IYCF) counselling. Early evaluation helps ensure children achieve healthy physical and developmental milestones.'
+        },
+        {
+          question: 'Does Dr. Priyanka K P provide childhood vaccination and preventive healthcare?',
+          answer: 'Yes, she offers routine childhood immunization and preventive paediatric care according to recommended vaccination schedules. Regular immunization helps protect children from serious infectious diseases.'
+        },
+        {
+          question: 'What childhood illnesses does Dr. Priyanka K P treat at Rashtrotthana Hospital?',
+          answer: 'Dr. Priyanka K P treats a wide range of common childhood illnesses, including fever, infections, respiratory conditions, digestive problems, allergies and nutritional concerns. She provides personalised treatment based on each child\s age and medical needs.'
+        },
+        {
+          question: 'Why choose Dr. Priyanka K P at Rashtrotthana Hospital for paediatric care?',
+          answer: `With 8+ years of experience, Dr. Priyanka K P combines expertise in general paediatrics and neonatal care with a compassionate, family-centred approach. At Rashtrotthana Hospital, she provides evidence-based care focused on the healthy growth, development and overall wellbeing of every child.`
         }
       ],
       departmentSlug: '',
