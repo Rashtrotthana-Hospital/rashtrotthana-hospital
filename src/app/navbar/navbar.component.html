@@ -2,25 +2,41 @@
 <div class="menu-bar">
   <div class="contact-nav">
     <div class="d-flex flex-column flex-lg-row contact">
-      <div class="links-container">
-        <div class="each-link">
-          <a href="mailto:info@rashtrotthanahospital.com">
-            <img src="../../assets/mail-logo.png" alt="best multispeciality hospital in bangalore">
-            info&#64;rashtrotthanahospital.com
-          </a>
+      <div class="submit-button nav-enquiry d-flex align-items-center" (click)="showDialog()">
+        <div class="submit-text">Enquiry/Appointment</div>
+        <div class="submit-arrow">
+          <!-- <div class="arrow"><img style="margin-top:3px;margin-left:-6px" src="../../assets/Appointment Scheduling.png" alt=""></div> -->
+          <i class="fa-solid fa-user"></i>
         </div>
-        <div class="each-link">
-          <a href="tel:+918069239999" (click)="trackPhoneClick()">
-            <img class="call-icon" src="../../assets/nav-call-icon.png"
-              alt="best multispeciality hospital in bangalore">
-            080 6923 9999
-          </a>
+      </div>
+      <div class="links-container">
+        <div class="each-link nav-email">
+          <!-- <a href="mailto:info@rashtrotthanahospital.com" title="info@rashtrotthanahospital.com">
+            <img src="../../assets/mail-logo.png" alt="best multispeciality hospital in bangalore">
+            <span class="nav-email-text">info&#64;rashtrotthanahospital.com</span>
+          </a> -->
+        </div>
+        <div class="each-link nav-phones">
+          <img class="call-icon" src="../../assets/nav-call-icon.png"
+            alt="best multispeciality hospital in bangalore">
+          <span class="nav-phone-list">
+            <!-- <span class="nav-phone-label">General Enquiry:</span> -->
+            <a href="tel:+918035239999" (click)="trackPhoneClick()">080 3523 9999</a>
+            <span class="nav-phone-sep">/</span>
+            <a href="tel:+918069239999" (click)="trackPhoneClick()">080 6923 9999</a>
+            <span class="nav-phone-sep">/</span>
+            <a href="tel:+917026262020" (click)="trackPhoneClick()">70262 62020</a>
+            <span class="nav-phone-sep">/</span>
+            <a href="tel:+918904943673" (click)="trackPhoneClick()">89049 43673</a>
+            <span class="nav-phone-sep">/</span>
+            <a href="tel:+918951243005" (click)="trackPhoneClick()">89512 43005</a>
+          </span>
         </div>
       </div>
     </div>
     <div class="button d-flex align-items-center">
-      <a href="tel:+918069239999">
-        <div class="submit-button me-3 d-flex align-items-center">
+      <a href="tel:+918904943666" (click)="trackPhoneClick()">
+        <div class="submit-button d-flex align-items-center">
           <div class="submit-text">Emergency</div>
           <div class="submit-arrow">
             <div class="arrow">
@@ -30,13 +46,12 @@
           </div>
         </div>
       </a>
-
-      <div class="submit-button d-flex align-items-center" (click)="showDialog()">
-        <div class="submit-text">Enquiry/Appointment</div>
-        <div class="submit-arrow">
-          <!-- <div class="arrow"><img style="margin-top:3px;margin-left:-6px" src="../../assets/Appointment Scheduling.png" alt=""></div> -->
-          <i class="fa-solid fa-user"></i>
-        </div>
+      <div class="each-link nav-phones nav-emergency-text">
+        <!-- <i class="fa-solid fa-truck-medical call-icon-fa"></i> -->
+        <span class="nav-phone-list">
+          <!-- <span class="nav-phone-label">Emergency:</span> -->
+          <a href="tel:+918904943666" (click)="trackPhoneClick()">89049 43666</a>
+        </span>
       </div>
       <app-appoint-form [isVisible]="isIframeVisible" (close)="closeIframe()"></app-appoint-form>
     </div>
@@ -144,6 +159,29 @@
           </li>
 
         </ul>
+
+        <div class="mobile-contact">
+          <div class="mc-block">
+            <div class="mc-label">General Enquiry</div>
+            <div class="mc-list">
+              <a href="tel:+918035239999" (click)="trackPhoneClick()">080 3523 9999</a>
+              <span class="mc-sep">/</span>
+              <a href="tel:+918069239999" (click)="trackPhoneClick()">080 6923 9999</a>
+              <span class="mc-sep">/</span>
+              <a href="tel:+917026262020" (click)="trackPhoneClick()">70262 62020</a>
+              <span class="mc-sep">/</span>
+              <a href="tel:+918904943673" (click)="trackPhoneClick()">89049 43673</a>
+              <span class="mc-sep">/</span>
+              <a href="tel:+918951243005" (click)="trackPhoneClick()">89512 43005</a>
+            </div>
+          </div>
+          <div class="mc-block">
+            <div class="mc-label">Emergency Services</div>
+            <div class="mc-list">
+              <a href="tel:+918904943666" (click)="trackPhoneClick()">89049 43666</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

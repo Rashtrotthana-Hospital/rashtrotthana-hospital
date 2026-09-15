@@ -206,6 +206,20 @@
   .otp{
     background-color: #008080;
     color: white;
+    cursor: pointer;
+  }
+
+  /* "Didn't receive OTP?" — continues without verification */
+  .skip_otp{
+    background-color: transparent;
+    border: 1px solid #008080;
+    color: #008080;
+    margin-top: 6px;
+  }
+
+  .skip_otp:hover{
+    background-color: #008080;
+    color: white;
   }
 /* input section */
 

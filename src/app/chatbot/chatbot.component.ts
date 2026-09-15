@@ -42,6 +42,9 @@ export class ChatbotComponent implements OnInit {
   errorMessage: string | undefined;
   locationErrormsg: any;
   otpExpireTime: any = null
+  // true  -> user entered the correct OTP
+  // false -> user chose "Didn't receive OTP?" and continued without verification
+  otpVerified: boolean = false
   serviceChoosen: string = ''
   minDate: Date = new Date();
   minDateString: string = '';
@@ -705,7 +708,8 @@ export class ChatbotComponent implements OnInit {
         department: "",
         date: "",
         timeslot: "",
-        rensendOtp: "Resend OTP"
+        rensendOtp: "Resend OTP",
+        skipOtp: "Didn't receive OTP?"
       }
       this.responseStructure.push(newEntry)
 
@@ -735,26 +739,9 @@ export class ChatbotComponent implements OnInit {
   // confirming appointment
   async confirmAppointment(): Promise<void> {
     const usersOtp = this.userInput
-    const options = ["Yes, proceed with the booking.", "No, I need to make changes."]
     if (usersOtp === this.otp) {
-      const newEntry = {
-        heading: `Thanks you for the verification.`,
-        getmsg: "Here are your booking details. Kindly confirm,",
-        options: options,
-        notemsg: "",
-        input: this.otp,
-        emergency: "",
-        patientName: `${this.userInfo.firstName} ${this.userInfo.lastName}`,
-        doctorName: this.selectedDoctor.name,
-        department: this.capitalizeName(this.selectedDepartment.name),
-        date: this.selectedDate,
-        timeslot: this.selectedTimeSlot,
-        rensendOtp: ""
-      }
-      this.responseStructure.push(newEntry)
-
-      this.step = 8
-      this.userInput = ''
+      this.otpVerified = true
+      this.proceedToAppointmentConfirmation()
     }
     else {
       const newEntry = {
@@ -769,11 +756,53 @@ export class ChatbotComponent implements OnInit {
         department: "",
         date: "",
         timeslot: "",
-        rensendOtp: "Resend OTP"
+        rensendOtp: "Resend OTP",
+        skipOtp: "Didn't receive OTP?"
       }
       this.responseStructure.push(newEntry)
     }
 
+  }
+
+  // shows the booking summary — reached either after a correct OTP or after
+  // the user clicked "Didn't receive OTP?"
+  proceedToAppointmentConfirmation(): void {
+    const options = ["Yes, proceed with the booking.", "No, I need to make changes."]
+    const newEntry = {
+      heading: this.otpVerified
+        ? `Thanks you for the verification.`
+        : `No problem, we will proceed without OTP verification.`,
+      getmsg: "Here are your booking details. Kindly confirm,",
+      options: options,
+      notemsg: this.otpVerified ? "" : "(Note : Your mobile number is not OTP verified)",
+      input: this.otpVerified ? this.otp : "Didn't receive OTP?",
+      emergency: "",
+      patientName: `${this.userInfo.firstName} ${this.userInfo.lastName}`,
+      doctorName: this.selectedDoctor.name,
+      department: this.capitalizeName(this.selectedDepartment.name),
+      date: this.selectedDate,
+      timeslot: this.selectedTimeSlot,
+      rensendOtp: ""
+    }
+    this.responseStructure.push(newEntry)
+
+    this.step = 8
+    this.userInput = ''
+  }
+
+  // "Didn't receive OTP?" — continue the flow without verification
+  skipOtpVerification(): void {
+    this.otpVerified = false
+    this.userInput = ''
+
+    // appointment flow is waiting on the OTP
+    if (this.step === 7) {
+      this.proceedToAppointmentConfirmation()
+    }
+    // doorstep flow is waiting on the OTP
+    else if (this.step === 19) {
+      this.proceedToPrescriptionUpload()
+    }
   }
 
 
@@ -784,6 +813,8 @@ export class ChatbotComponent implements OnInit {
     if (userconfirm === "1" || userconfirm === "Yes, proceed with the booking." || userconfirm === "yeah" || userconfirm === "yes") {
 
       this.userInput = ''
+      const otpStatus = this.otpVerified ? 'Verified' : 'Not Verified'
+
       const formdata = {
         to: "patientservices@rashtrotthanahospital.com",
         status: "frontofficechatbot",
@@ -793,7 +824,9 @@ export class ChatbotComponent implements OnInit {
           patientName: `${this.userInfo.firstName} ${this.userInfo.lastName}`,
           patientContact: this.userInfo.phone,
           appointmentDate: this.selectedDate,
-          appointmentTime: this.selectedTimeSlot
+          // the backend mail template has no OTP field, so the status is printed
+          // on its own line right below "Appointment Time:"
+          appointmentTime: `${this.selectedTimeSlot}\n\n          OTP Status: ${otpStatus}`
         },
         recipientType: "frontoffice"
       }
@@ -1283,7 +1316,8 @@ export class ChatbotComponent implements OnInit {
         department: "",
         date: "",
         timeslot: "",
-        rensendOtp: "Resend OTP"
+        rensendOtp: "Resend OTP",
+        skipOtp: "Didn't receive OTP?"
       }
       this.responseStructure.push(newEntry)
 
@@ -1314,24 +1348,8 @@ export class ChatbotComponent implements OnInit {
   // getting prescription
   async getPrescription(): Promise<void> {
     if (this.userInput === this.otp) {
-      const newEntry = {
-        heading: `Thanks you for the verification.`,
-        getmsg: " Please upload your prescription to proceed.",
-        options: "",
-        notemsg: "",
-        input: this.otp,
-        emergency: "",
-        patientName: "",
-        doctorName: "",
-        department: "",
-        date: "",
-        timeslot: "",
-        rensendOtp: ""
-      }
-      this.responseStructure.push(newEntry)
-      this.userInput = ''
-      this.step = 20
-      this.userInput = ''
+      this.otpVerified = true
+      this.proceedToPrescriptionUpload()
     }
     else if (this.userInput !== this.otp) {
       const newEntry = {
@@ -1346,7 +1364,8 @@ export class ChatbotComponent implements OnInit {
         department: "",
         date: "",
         timeslot: "",
-        rensendOtp: "Resend OTP"
+        rensendOtp: "Resend OTP",
+        skipOtp: "Didn't receive OTP?"
       }
       this.responseStructure.push(newEntry)
       this.userInput = ''
@@ -1369,6 +1388,30 @@ export class ChatbotComponent implements OnInit {
       this.responseStructure.push(newEntry)
       this.userInput = ''
     }
+  }
+
+  // asks for the prescription — reached either after a correct OTP or after
+  // the user clicked "Didn't receive OTP?"
+  proceedToPrescriptionUpload(): void {
+    const newEntry = {
+      heading: this.otpVerified
+        ? `Thanks you for the verification.`
+        : `No problem, we will proceed without OTP verification.`,
+      getmsg: " Please upload your prescription to proceed.",
+      options: "",
+      notemsg: this.otpVerified ? "" : "(Note : Your mobile number is not OTP verified)",
+      input: this.otpVerified ? this.otp : "Didn't receive OTP?",
+      emergency: "",
+      patientName: "",
+      doctorName: "",
+      department: "",
+      date: "",
+      timeslot: "",
+      rensendOtp: ""
+    }
+    this.responseStructure.push(newEntry)
+    this.step = 20
+    this.userInput = ''
   }
 
   //saving Prescription
@@ -1450,7 +1493,10 @@ export class ChatbotComponent implements OnInit {
     const formdata = new FormData
     formdata.append('name', this.userInfo.firstName);
     formdata.append('contact', this.userInfo.phone);
-    formdata.append('address', this.address ? this.address : '');
+    // the backend mail template has no OTP field, so the status is printed
+    // on its own line right below "Address:"
+    const otpStatus = this.otpVerified ? 'Verified' : 'Not Verified'
+    formdata.append('address', `${this.address ? this.address : ''}\n                OTP Status: ${otpStatus}`);
     formdata.append('file', this.selectedfile ? this.selectedfile : '');
     formdata.append('service', this.serviceChoosen);
 
@@ -1609,6 +1655,8 @@ export class ChatbotComponent implements OnInit {
       this.selectedDate = '';
       this.selectedfile = null
       this.date = ''
+      this.otp = ''
+      this.otpVerified = false
 
       const newEntry = {
         heading: '',
@@ -1645,6 +1693,8 @@ export class ChatbotComponent implements OnInit {
   generateOtp(): void {
     // Generate a 6-digit OTP
     this.otp = Math.floor(100000 + Math.random() * 900000).toString();
+    // a freshly issued OTP is always unverified
+    this.otpVerified = false;
     // console.log('Generated OTP:', this.otp);
 
     // Clear any existing expiration timer

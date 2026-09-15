@@ -49,7 +49,7 @@
             </div>
 
             <!-- hCaptcha -->
-            <div class="captcha-box">
+            <div class="captcha-box" *ngIf="!isLocalhost">
                 <ng-hcaptcha [siteKey]="hsiteKey" (verify)="onCaptchaVerify($event)" (expired)="onCaptchaExpire()"
                     (error)="onCaptchaError($event)">
                 </ng-hcaptcha>
@@ -88,7 +88,17 @@
                         ({{ formattedResendTime }})
                     </span>
                 </button>
+
+                <!-- Submit without OTP verification -->
+                <button class="skip-btn" (click)="skipOtpVerification()" [disabled]="isSending || isVerifying">
+                    Didn't receive OTP?
+                </button>
             </div>
+
+            <p class="skip-note">
+                If you did not receive the OTP, click <strong>“Didn't receive OTP?”</strong> to submit your request
+                without verification. Our team will still call you back.
+            </p>
         </div>
 
         <!-- STEP 3 : SUCCESS -->

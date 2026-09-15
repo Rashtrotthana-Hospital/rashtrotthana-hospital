@@ -45,10 +45,34 @@
 .contact_us_flex i{
     font-size: 23px;
     margin-right: 12px;
+    /* fixed box so every row's text starts at the same x, regardless of
+       how wide the individual glyph is */
+    width: 24px;
+    flex-shrink: 0;
+    text-align: center;
 }
 .contact_us_flex a{
     text-decoration: none;
     color: #000;
+}
+.phone-group {
+    display: flex;
+    flex-direction: column;
+}
+.phone-label {
+    font-weight: 600;
+}
+.phone-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 6px;
+    row-gap: 2px;
+}
+.phone-list a:hover {
+    text-decoration: underline;
+}
+.phone-sep {
+    opacity: 0.6;
 }
 .form {
     width: 660px;

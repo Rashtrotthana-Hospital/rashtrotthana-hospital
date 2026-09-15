@@ -42,6 +42,7 @@
 							<div class="heading" [ngClass]="{'hidden' : response.emergency === ''}"><a href="tel:+91-8904943666">{{response.emergency}}</a>
 							</div>
                             <div class="heading otp" [ngClass]="{'hidden' : response.rensendOtp === ''}" (click)="resendOtp()">{{response.rensendOtp}}</div>
+                            <div class="heading otp skip_otp" [ngClass]="{'hidden' : !response.skipOtp}" (click)="skipOtpVerification()">{{response.skipOtp}}</div>
 							<div class="heading" [ngClass]= "{'hidden' : response.patientName === ''}">
 								<div class="details">
 									<span class="ec_txt key">Patient name :</span>

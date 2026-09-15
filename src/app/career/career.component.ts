@@ -90,8 +90,8 @@ export class CareerComponent {
       description: 'From human resources to finance, IT and facility management, our support staff plays a crucial role in the smooth operation of our hospital.'
     },
     {
-      title: 'Volunteer Opportunities:',
-      description: 'Give back to the community by volunteering your time and skills. Our volunteers are an integral part of our team, helping us enhance the patient experience.'
+      title: 'Internship | Volunteer:',
+      description: 'Explore opportunities to learn, contribute, and make a difference. Join us as an intern or volunteer and gain meaningful experience while supporting our mission of compassionate, patient-centred care.'
     },
     {
       title: 'Employee Benefits:',

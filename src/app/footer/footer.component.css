@@ -99,6 +99,31 @@ ul {
   margin-bottom: 1rem;
   align-items: flex-start;
 }
+.phone-group {
+  display: flex;
+  flex-direction: column;
+}
+.phone-label {
+  font-weight: 600;
+  line-height: 24px;
+}
+.phone-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 6px;
+  row-gap: 2px;
+  line-height: 26px;
+}
+.phone-list a {
+  color: white;
+  text-decoration: none;
+}
+.phone-list a:hover {
+  text-decoration: underline;
+}
+.phone-sep {
+  opacity: 0.6;
+}
 .links{
   display: flex;
   justify-content: space-between;

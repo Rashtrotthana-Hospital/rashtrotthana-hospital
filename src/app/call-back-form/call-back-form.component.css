@@ -137,6 +137,32 @@ label {
   cursor: not-allowed;
 }
 
+/* ✅ "Didn't receive OTP?" — submits the request as Not Verified */
+.otp-actions .skip-btn {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.otp-actions .skip-btn:hover:not(:disabled) {
+  background-color: #ffffff;
+  color: #013243;
+}
+
+/* scoped under .otp-section so it wins over `.otp-section p { color: #333 }` */
+.otp-section .skip-note {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 12px;
+  line-height: 18px;
+  margin-top: 14px;
+  margin-bottom: 0;
+}
+
+.otp-section .skip-note strong {
+  color: #ffffff;
+}
+
 .success-message {
   background-color: #c8f7c5;
   color: #1b5e20;

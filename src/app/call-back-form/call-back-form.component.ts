@@ -33,13 +33,21 @@ export class CallBackFormComponent {
   otpSent = false;
   otpVerified = false;
 
+  // 'Verified'     -> user entered the correct OTP
+  // 'Not Verified' -> user clicked "Didn't receive OTP?" and submitted without verifying
+  otpStatus: 'Verified' | 'Not Verified' = 'Not Verified';
+
   isSending = false;
   isVerifying = false;
 
   resendTimer = 0;
   resendInterval: any;
   captchaResponse: string | null = null;
-  captchaVerified = false;
+  // hCaptcha refuses to load on localhost, so the captcha step is skipped when running locally.
+  // The live site's hostname never matches, so real visitors still have to solve the captcha.
+  readonly isLocalhost =
+    typeof window !== 'undefined' && ['localhost', '127.0.0.1'].includes(window.location.hostname);
+  captchaVerified = this.isLocalhost;
   captchaSession: string | null = null;
   captchaToken: string | null = null;
 
@@ -225,13 +233,34 @@ export class CallBackFormComponent {
     if (this.formData.otp === savedOtp) {
       this.otpVerified = true;
       this.showOTP = false;
-      localStorage.clear();
-      // ✅ SAVE CALLBACK REQUEST
-      this.saveCallbackRequest();
-      this.sendEmail();
+      this.clearOtpStorage();
+      this.submitRequest('Verified');
     } else {
       alert('Invalid OTP');
     }
+  }
+
+  // "Didn't receive OTP?" -> submit the request anyway, flagged as Not Verified
+  skipOtpVerification() {
+    this.otpVerified = false;
+    this.showOTP = false;
+    this.resendTimer = 0;
+    clearInterval(this.resendInterval);
+    this.clearOtpStorage();
+    this.submitRequest('Not Verified');
+  }
+
+  // single submit path for both verified and unverified requests
+  private submitRequest(otpStatus: 'Verified' | 'Not Verified') {
+    this.otpStatus = otpStatus;
+    // ✅ SAVE CALLBACK REQUEST
+    this.saveCallbackRequest();
+    this.sendEmail();
+  }
+
+  private clearOtpStorage() {
+    localStorage.removeItem('callback_otp');
+    localStorage.removeItem('callback_otp_expiry');
   }
 
   resendOtp() {
@@ -261,7 +290,9 @@ export class CallBackFormComponent {
     const appointmentDetails = {
       name: this.formData.name,
       phone: this.formData.mobile,
-      address: this.userAddress,
+      // the backend mail template has no OTP field, so the status is printed
+      // on its own line right below "Location:"
+      address: `${this.userAddress}\n          OTP Status: ${this.otpStatus}`,
       page: this.pageName
     };
 
