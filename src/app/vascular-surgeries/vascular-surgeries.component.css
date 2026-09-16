@@ -215,6 +215,10 @@
     justify-content: center;
 }
 
+.call-back{
+    width: 100%;
+}
+
 .mobile {
     display: none;
 }

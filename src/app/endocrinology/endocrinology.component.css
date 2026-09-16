@@ -177,6 +177,10 @@
     flex-wrap: wrap;
 }
 
+.call-back{
+    width: 100%;
+}
+
 .videos iframe {
     border-radius: 10px;
 }

@@ -209,6 +209,10 @@
     justify-content: center;
 }
 
+.form{
+    width: 100%;
+}
+
 .form-image {
     width: 50%;
     display: flex;
