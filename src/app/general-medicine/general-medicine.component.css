@@ -204,8 +204,7 @@
     border-radius: 10px;
 }
 
-.form-container .form {
-    width: 50%;
+.form-container {
     display: flex;
     justify-content: center;
 }
@@ -235,10 +234,6 @@
 @media (max-width : 1200px) {
     .sidebar {
         display: none;
-    }
-
-    .s_image {
-        flex-direction: column;
     }
 
     .videos {
