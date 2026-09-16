@@ -205,7 +205,6 @@
 }
 
 .form-container .form {
-    width: 50%;
     display: flex;
     justify-content: center;
 }
@@ -214,6 +213,10 @@
     width: 50%;
     display: flex;
     justify-content: center;
+}
+
+.call-back{
+    width: 100%;
 }
 
 .mobile {

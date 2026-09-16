@@ -215,9 +215,13 @@
 }
 
 .form-image {
-    width: 50%;
+    width: 100%;
     display: flex;
     justify-content: center;
+}
+
+.call-back{
+    width: 100%;
 }
 
 .form-image a{
@@ -265,7 +269,7 @@
     .form-container {
         flex-direction: column;
         gap: 40px;
-        margin-top: 60px;
+        /* margin-top: 60px; */
     }
 
     .form-container .form {

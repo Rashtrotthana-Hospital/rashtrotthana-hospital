@@ -204,10 +204,13 @@
     border-radius: 10px;
 }
 
-.form-container .form {
-    width: 50%;
+.form-container {
     display: flex;
     justify-content: center;
+}
+
+.form{
+    width: 100%;
 }
 
 .form-image {
@@ -235,10 +238,6 @@
 @media (max-width : 1200px) {
     .sidebar {
         display: none;
-    }
-
-    .s_image {
-        flex-direction: column;
     }
 
     .videos {
