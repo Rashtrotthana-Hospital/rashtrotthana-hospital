@@ -1657,14 +1657,8 @@ li {
   gap: 17px;
 
   background-image:
-    linear-gradient(to right,
-      #FFFAF7 0%,
-      #FFFAF7 25%,
-      rgba(255, 250, 247, 0.9) 35%,
-      rgba(255, 250, 247, 0.4) 48%,
-      transparent 60%),
-    url("/assets/care-bg.png");
-  background-size: 100% 100%, 55% auto;
+    url("/assets/home-collection-bg.png");
+  background-size: 647px 434px;;
 
   background-position: center, right center;
   background-repeat: no-repeat;
@@ -2273,7 +2267,7 @@ li {
   .care-right {
     width: 83%;
     height: 392.897px;
-    background-image: linear-gradient(to right, #FFFAF7 0%, #FFFAF7 25%, rgba(255, 250, 247, 0.9) 35%, rgba(255, 250, 247, 0.4) 48%, transparent 60%), url(/assets/care-bg.png);
+    background-image: url("/assets/home-collection-bg.png");
     background-size: 100% 100%, 55% auto;
     background-position: center, right center;
     background-repeat: no-repeat;
