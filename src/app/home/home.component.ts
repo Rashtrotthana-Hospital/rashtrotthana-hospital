@@ -302,6 +302,9 @@ export class HomeComponent implements OnInit {
     { name: 'LCIS', image: 'assets/tie-up-page/LCIS.png' },
     { name: 'Durga Parameshwari Welfare Association', image: 'assets/tie-up-page/Durga-parameshwari-welfare-association.jpeg' },
     { name: 'Britania', image: 'assets/tie-up-page/Britania.jpeg' },
+    { name: 'Canara Syndicate Bank Retired Staff organisation (CSBRSO)', image: 'assets/tie-up-page/canara.png' },
+    { name: 'Prarthana.in.World School', image:'assets/tie-up-page/prarthana.png'},
+    { name: 'Toyota Kirloskar Motor Private Ltd.', image:'assets/tie-up-page/tkap.png'},
 
   ];
 
@@ -315,7 +318,8 @@ export class HomeComponent implements OnInit {
     { name: 'RNS', image: 'assets/tie-up-page/RNS.jpeg' },
     { name: 'RRWA', image: 'assets/tie-up-page/RRWA.jpeg' },
     { name: 'Malenadu Janashakthi Vedike', image: 'assets/tie-up-page/malenadu-janashakthi-vedike.png' },
-    
+    { name: 'Kodava Samaja (R)', image: 'assets/tie-up-page/kodava_samaja.png' },
+    { name: 'Sri RR Temple', image: 'assets/tie-up-page/ohm.png' },
 
   ]
 
@@ -328,8 +332,19 @@ export class HomeComponent implements OnInit {
     { name: 'TKG', image: 'assets/tie-up-page/TKG.png' },
     { name: 'Tata Promont', image: 'assets/tie-up-page/Tata-promont.jpeg' },
     { name: 'NCC', image: 'assets/tie-up-page/NCC.jpeg' },
+    { name: 'Vidyashekhtra Vidyapeeth Trust.', image: 'assets/tie-up-page/vidyakshetra.png' },
+    { name: 'Hiriya Nagareekara Vedika (R)', image: 'assets/tie-up-page/hiriya-nagarika.png' },
+
     
   ]
 
 
+  goToPhysio(){
+    this.router.navigate(['/facility/physiotherapy-services-bangalore']);
+    console.log("clicked");
+  }
+
+  goToContact(){
+    this.router.navigate(['/contact-us-bangalore']);
+  }
 }

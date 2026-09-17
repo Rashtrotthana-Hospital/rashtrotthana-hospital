@@ -96,7 +96,10 @@ export class TieUpPageComponent {
     { name: 'Lalith Castle International School', image: 'assets/tie-up-page/LCIS.png' },
     { name: 'Sri Durga Parameshwari Layout Owner Welfare Association (SDPLOWA)', image: 'assets/tie-up-page/Durga-parameshwari-welfare-association.jpeg' },
     { name: 'Britannia Industries', image: 'assets/tie-up-page/Britania.jpeg' },
-
+    { name: 'Canara Syndicate Bank Retired Staff organisation (CSBRSO)', image: 'assets/tie-up-page/canara.png' },
+    { name: 'Prarthana.in.World School', image:'assets/tie-up-page/prarthana.png'},
+    { name: 'Toyota Kirloskar Motor Private Ltd.', image:'assets/tie-up-page/tkap.png'},
+    { name: 'Hiriya Nagareekara Vedika (R)', image: 'assets/tie-up-page/hiriya-nagarika.png' },
   ];
 
 
@@ -115,6 +118,9 @@ export class TieUpPageComponent {
     { name: 'RR Nagar Welfare Association', image: "assets/tie-up-page/RRWA.jpeg" },
     { name: 'RNS First Grade College', image: 'assets/tie-up-page/RNS.jpeg' },
     { name: 'Malenadu Janashakthi Vedike', image: 'assets/tie-up-page/malenadu-janashakthi-vedike.png' },
+    { name: 'Kodava Samaja (R)', image: 'assets/tie-up-page/kodava_samaja.png' },
+    { name: 'Sri RR Temple', image: 'assets/tie-up-page/ohm.png' },
+    { name: 'Vidyashekhtra Vidyapeeth Trust.', image: 'assets/tie-up-page/vidyakshetra.png' },
   ];
 
 

@@ -172,306 +172,450 @@
         </div>
     </div>
 </div>
-<div style="background-color: #fbfff4;">
-    <div class="seventh-container" #counterSection>
-        <div class="box" *ngFor="let box of box">
-            <div class="count-image">
-                <img [src]="'../../assets/'+ box.icon" alt="best multispeciality hospital in bangalore">
-            </div>
-            <div class="count-text">
-                <div class="number">{{box.number}}<span *ngIf="box.showPlus">+</span></div>
-                <div class="statement">{{box.statement}}</div>
-            </div>
+<!-- <div style="background-color: #fbfff4;"> -->
+<div class="seventh-container" #counterSection>
+    <div class="box" *ngFor="let box of box">
+        <div class="count-image">
+            <img [src]="'../../assets/'+ box.icon" alt="best multispeciality hospital in bangalore">
         </div>
-
+        <div class="count-text">
+            <div class="number">{{box.number}}<span *ngIf="box.showPlus">+</span></div>
+            <div class="statement">{{box.statement}}</div>
+        </div>
     </div>
 
+</div>
 
-    <div class="card-wrapper">
-        <div class="nabh-card">
 
-            <!-- Header: Uses Gradient and Highlights TOP 7 Achievement -->
-            <header class="header-banner">
-                <h1 class="text-3xl font-extrabold mb-2">
-                    A New Era of Excellence at Rashtrotthana Hospital!
-                </h1>
-                <p class="text-xl font-light mx-auto max-w-3xl">
-                    Jayadev Memorial Rashtrotthana Hospital and Research Centre has achieved a remarkable milestone.
+<div class="card-wrapper">
+    <div class="nabh-card">
+
+        <!-- Header: Uses Gradient and Highlights TOP 7 Achievement -->
+        <header class="header-banner">
+            <h1 class="text-3xl font-extrabold mb-2">
+                A New Era of Excellence at Rashtrotthana Hospital!
+            </h1>
+            <p class="text-xl font-light mx-auto max-w-3xl">
+                Jayadev Memorial Rashtrotthana Hospital and Research Centre has achieved a remarkable milestone.
+            </p>
+            <div class="top-7-badge">
+                <span class="" style="color: #FBCA51;">TOP 7 HOSPITALS IN INDIA</span>
+                <span class="font-semibold block sm:inline-block sm:ml-2 text-sm">to receive full NABH 6th Edition
+                    Accreditation!</span>
+            </div>
+        </header>
+
+        <!-- Main Content Area: Grid for Text and Image -->
+        <div class="main-content-grid">
+
+            <!-- Column 1: Accreditation Details and Metrics -->
+            <div class="details-section">
+
+                <!-- Introductory Text -->
+                <p class="intro-paragraph">
+                    From humble beginnings to setting new benchmarks in healthcare, we are proud to announce that we
+                    are among the <b>TOP 7 HOSPITALS IN INDIA</b> to receive full NABH 6th Edition Accreditation!
                 </p>
-                <div class="top-7-badge">
-                    <span class="" style="color: #FBCA51;">TOP 7 HOSPITALS IN INDIA</span>
-                    <span class="font-semibold block sm:inline-block sm:ml-2 text-sm">to receive full NABH 6th Edition
-                        Accreditation!</span>
-                </div>
-            </header>
-
-            <!-- Main Content Area: Grid for Text and Image -->
-            <div class="main-content-grid">
-
-                <!-- Column 1: Accreditation Details and Metrics -->
-                <div class="details-section">
-
-                    <!-- Introductory Text -->
-                    <p class="intro-paragraph">
-                        From humble beginnings to setting new benchmarks in healthcare, we are proud to announce that we
-                        are among the <b>TOP 7 HOSPITALS IN INDIA</b> to receive full NABH 6th Edition Accreditation!
-                    </p>
 
 
 
-                    <!-- Built on Values, Guided by Vision -->
-                    <section class="values-section">
-                        <div class="value-content">
-                            <h2 class="section-title">Built on Values, Guided by Vision</h2>
-                            <p class="values-text">
-                                At Rashtrotthana Hospital, our foundation rests on compassion, respect, dignity and
-                                ethical practice. Guided by our vision -
-                                <span class="font-bold text-teal-800">Swastha-Susthira Samājanirmāṇam</span> (To build a
-                                healthy and sustainable society) - we strive to deliver care that nurtures both body and
-                                spirit.
-                            </p>
-                            <p class="values-conclusion">
-                                Achieving Full NABH 6th Edition Accreditation is not just a recognition of quality
-                                standards, but a reflection of our relentless commitment, teamwork and shared purpose.
-                                Every doctor, nurse and staff member contributes to making excellence a way of life,
-                                ensuring that every patient experiences care with warmth, safety and integrity.
-                            </p>
-                        </div>
-                        <div class="image-placeholder-box">
-                            <img src="../../assets/new-nabh-logo.png" alt="">
-                        </div>
+                <!-- Built on Values, Guided by Vision -->
+                <section class="values-section">
+                    <div class="value-content">
+                        <h2 class="section-title">Built on Values, Guided by Vision</h2>
+                        <p class="values-text">
+                            At Rashtrotthana Hospital, our foundation rests on compassion, respect, dignity and
+                            ethical practice. Guided by our vision -
+                            <span class="font-bold text-teal-800">Swastha-Susthira Samājanirmāṇam</span> (To build a
+                            healthy and sustainable society) - we strive to deliver care that nurtures both body and
+                            spirit.
+                        </p>
+                        <p class="values-conclusion">
+                            Achieving Full NABH 6th Edition Accreditation is not just a recognition of quality
+                            standards, but a reflection of our relentless commitment, teamwork and shared purpose.
+                            Every doctor, nurse and staff member contributes to making excellence a way of life,
+                            ensuring that every patient experiences care with warmth, safety and integrity.
+                        </p>
+                    </div>
+                    <div class="image-placeholder-box">
+                        <img src="../../assets/new-nabh-logo.png" alt="">
+                    </div>
 
-                    </section>
-                </div>
-
+                </section>
             </div>
 
+        </div>
 
-            <!-- Our Journey of Excellence -->
-            <section class="journey-section">
-                <h2 class="section-title">Our Journey of Excellence</h2>
-                <ul class="journey-list">
 
-                    <li class="journey-item" *ngFor="let item of journeyData">
-                        <span class="item-label">{{ item.title }}</span>
-                        <span class="item-value">{{ item.description }}</span>
-                    </li>
+        <!-- Our Journey of Excellence -->
+        <section class="journey-section">
+            <h2 class="section-title">Our Journey of Excellence</h2>
+            <ul class="journey-list">
 
-                </ul>
-            </section>
+                <li class="journey-item" *ngFor="let item of journeyData">
+                    <span class="item-label">{{ item.title }}</span>
+                    <span class="item-value">{{ item.description }}</span>
+                </li>
+
+            </ul>
+        </section>
+    </div>
+</div>
+
+
+<div class="care-section">
+    <div class="care-top">
+        <div class="care-top-line">CONVENIENT CARE SERVICES</div>
+        <div class="care-mid-line">More Care. Closer to You.</div>
+        <div class="care-last-line">Quality healthcare services, at the hospital and at your doorstep.</div>
+    </div>
+    <div class="care-bottom">
+        <div class="care-left">
+            <div class="left-top">
+                <div class="care-icon">
+                    <img src="/assets/care-icon.svg" alt="care-icon">
+                </div>
+                <div class="left-head">
+                    <div class="head-1">Physiotherapy Services</div>
+                    <div class="head-2">Move Better. Live Better.</div>
+                </div>
+            </div>
+            <div class="left-bottom">
+                <div class="bottom-top">
+                    Expert physiotherapy care for pain management, mobility, rehabilitation and recovery — tailored
+                    to
+                    your needs.
+                </div>
+                <div class="bottom-mid">
+
+                    <div class="one">
+                        <div class="mid-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                                <path d="M0 0h24v24H0z" fill="none" />
+                                <path fill="none" stroke="#008080" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="1.5"
+                                    d="M8.86 14.454c.386-.386.87-.615 1.372-.686m0 0a2.425 2.425 0 1 1-.724 4.58c-.397-.195-.901-.21-1.214.102L4.744 22m5.488-8.232q0 0 0 0m0 0a2.425 2.425 0 1 0-4.58.724c.195.397.21.901-.102 1.214L2 19.256m13.14-9.71c-.386.386-.87.615-1.372.686m0 0a2.425 2.425 0 1 1 .724-4.58c.397.195.901.21 1.214-.102L19.256 2m-5.488 8.232a2.425 2.425 0 1 0 4.58-.724c-.195-.397-.21-.901.102-1.214L22 4.744M16 18v2m2-4h2M8 6V4M6 8H4" />
+                            </svg>
+
+                        </div>
+                        <div class="bottom-mid-para">Pain Management</div>
+                    </div>
+
+                    <div class="one">
+                        <div class="mid-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 640 640">
+                                <path d="M0 0h640v640H0z" fill="none" />
+                                <path fill="#008080"
+                                    d="M320 144c30.9 0 56-25.1 56-56s-25.1-56-56-56s-56 25.1-56 56s25.1 56 56 56m-86.6 147.9l22.6-22.6v69.3c0 28 12.2 54.7 33.5 72.9l71.4 61.2c5.9 5.1 9.8 12.1 10.9 19.8l12.6 88.1c2.5 17.5 18.7 29.7 36.2 27.2s29.7-18.7 27.2-36.2l-12.6-88.1c-3.3-23.1-14.9-44.1-32.6-59.3l-34.5-29.6V279.4l3.8 4.7c18.2 22.8 45.8 36 75 36h33.2c17.7 0 32-14.3 32-32s-14.3-32-32-32h-33.2c-9.7 0-18.9-4.4-25-12L404 221.7c-23-28.8-57.9-45.6-94.8-45.6c-32.2 0-63.1 12.8-85.8 35.6l-35.3 34.9c-18 18-28.1 42.4-28.1 67.9V352c0 17.7 14.3 32 32 32s32-14.3 32-32v-37.5c0-8.5 3.4-16.6 9.4-22.6m12.4 179.4c-1.5 5.2-4.3 10-8.1 13.8l-68.3 68.3c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l68.3-68.3c11.5-11.5 19.9-25.8 24.4-41.5l2.2-7.6l-46-39.4c-2.5-2.2-5-4.4-7.4-6.8z" />
+                            </svg>
+
+                        </div>
+                        <div class="bottom-mid-para">Rehabilation</div>
+                    </div>
+
+                    <div class="one">
+                        <div class="mid-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 256">
+                                <path d="M0 0h256v256H0z" fill="none" />
+                                <path fill="#008080"
+                                    d="M245.83 121.63a15.53 15.53 0 0 0-9.52-7.33a73.5 73.5 0 0 0-22.17-2.22c4-19.85 1-35.55-2.06-44.86a16.15 16.15 0 0 0-18.79-10.88a85.5 85.5 0 0 0-28.55 12.12a94.6 94.6 0 0 0-27.11-33.25a16.05 16.05 0 0 0-19.26 0a94.5 94.5 0 0 0-27.11 33.25a85.5 85.5 0 0 0-28.55-12.12a16.15 16.15 0 0 0-18.79 10.88c-3 9.31-6 25-2.06 44.86a73.5 73.5 0 0 0-22.17 2.22a15.53 15.53 0 0 0-9.52 7.33a16 16 0 0 0-1.6 12.27c3.39 12.57 13.8 36.48 45.33 55.32S113.13 208 128.05 208s42.67 0 74-18.78c31.53-18.84 41.94-42.75 45.33-55.32a16 16 0 0 0-1.55-12.27M59.14 72.14a.2.2 0 0 1 .23-.15a70.4 70.4 0 0 1 25.81 11.67A118.7 118.7 0 0 0 80 119.17c0 18.74 3.77 34 9.11 46.28A123.6 123.6 0 0 1 69.57 140C51.55 108.62 55.3 84 59.14 72.14m3 103.35C35.47 159.57 26.82 140.05 24 129.7a59.8 59.8 0 0 1 22.5-1.17a129 129 0 0 0 9.15 19.41a142.3 142.3 0 0 0 34 39.56a115 115 0 0 1-27.55-12.01ZM128 190.4c-9.33-6.94-32-28.23-32-71.23C96 76.7 118.38 55.24 128 48c9.62 7.26 32 28.72 32 71.19c0 42.98-22.67 64.27-32 71.21m42.82-106.74A70.4 70.4 0 0 1 196.63 72a.2.2 0 0 1 .23.15c3.84 11.85 7.59 36.47-10.43 67.85a123.3 123.3 0 0 1-19.54 25.48c5.34-12.26 9.11-27.54 9.11-46.28a118.7 118.7 0 0 0-5.18-35.54M232 129.72c-2.77 10.25-11.4 29.81-38.09 45.77a115 115 0 0 1-27.55 12a142.3 142.3 0 0 0 34-39.56a129 129 0 0 0 9.15-19.41a59.7 59.7 0 0 1 22.49 1.19Z" />
+                            </svg>
+
+                        </div>
+                        <div class="bottom-mid-para">Mobility & Recovery</div>
+                    </div>
+                </div>
+                <div class="bottom-btn">
+                    <button (click)="goToPhysio()">Explore Physiotherapy <svg xmlns="http://www.w3.org/2000/svg"
+                            width="18" height="16" viewBox="0 0 18 16" fill="none">
+                            <path d="M17 8L1 8M10 1L17 8L10 15" stroke="white" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg></button>
+                </div>
+            </div>
+            <div class="left-image">
+                <img src="/assets/care-bg1.png" alt="">
+            </div>
+        </div>
+        <div class="care-right">
+            <div class="right-top">
+                <div class="home-icon">
+                    <img src="/assets/home-collection-icon.png" alt="care-icon">
+                </div>
+                <div class="right-head">
+                    <div class="head-1">Home Sample Collection</div>
+                    <div class="head-3">Lab Tests, Right at Your Doorstep.</div>
+                </div>
+            </div>
+
+            <div class="right-bottom">
+                <div class="bottom-top">
+                    Get your diagnostic samples collected from the comfort of your home by trained professionals.
+                </div>
+
+                <div class="bottom-middle">
+                    <div class="two">
+                        <div  class="middle-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="2621" viewBox="0 0 24 24">
+                                <path d="M0 0h24v24H0z" fill="none" />
+                                <path fill="none" stroke="#ee5814" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="1.5"
+                                    d="m14.5 2.5l7 7m-1-1L8.536 20.465a3.536 3.536 0 0 1-5-5L15.5 3.5m-9 9h10" />
+                            </svg>
+
+                        </div>
+                        <div class="bottom-middle-para">
+                            All type of sample collection
+                        </div>
+                    </div>
+                    <div class="two">
+                        <div class="middle-icon"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="26"
+                                viewBox="0 0 21 26" fill="none">
+                                <path
+                                    d="M10.5 0C7.71624 0.00319472 5.04743 1.08037 3.07901 2.99522C1.11059 4.91008 0.00329067 7.50627 6.59035e-06 10.2143C-0.00255287 12.4272 0.740454 14.5799 2.11528 16.3429C2.11528 16.3429 2.40164 16.7096 2.44841 16.7626L10.5 26L18.5554 16.7579C18.5974 16.7087 18.8847 16.3429 18.8847 16.3429L18.8857 16.3401C20.2596 14.5777 21.0022 12.4261 21 10.2143C20.9967 7.50627 19.8894 4.91008 17.921 2.99522C15.9526 1.08037 13.2838 0.00319472 10.5 0ZM10.5 13.9286C9.74484 13.9286 9.00663 13.7107 8.37873 13.3026C7.75084 12.8945 7.26145 12.3144 6.97246 11.6357C6.68347 10.957 6.60786 10.2102 6.75519 9.48966C6.90251 8.76916 7.26616 8.10734 7.80014 7.58789C8.33412 7.06844 9.01446 6.71468 9.75511 6.57137C10.4958 6.42805 11.2635 6.50161 11.9612 6.78273C12.6588 7.06386 13.2552 7.53993 13.6747 8.15074C14.0942 8.76155 14.3182 9.47967 14.3182 10.2143C14.3169 11.199 13.9142 12.143 13.1985 12.8393C12.4827 13.5356 11.5123 13.9273 10.5 13.9286Z"
+                                    fill="#EE5814" />
+                            </svg></div>
+                        <div class="bottom-middle-para">Within 5 km radius</div>
+                    </div>
+                </div>
+
+                <div class="bottom-btn">
+                    <button (click)="goToContact()">Book Home Collection <svg xmlns="http://www.w3.org/2000/svg"
+                            width="18" height="16" viewBox="0 0 18 16" fill="none">
+                            <path d="M17 8L1 8M10 1L17 8L10 15" stroke="white" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg></button>
+                </div>
+                <div class="logo"><img src="/assets/JMRH new logo 3.png" alt=""></div>
+            </div>
         </div>
     </div>
 
+    <div class="care-footer">
+        <div class="footer-line"> <span></span></div>
 
-    <div class="department">
-        <div class="title-container">
-            <app-title-button text='Our Departments'></app-title-button>
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
+                <circle cx="17.5" cy="17.5" r="17.5" fill="#D1F6F6" />
+                <path
+                    d="M23.6943 17.3073H25.5406C25.5406 12.5716 21.9653 9 17.2231 9V10.8463C20.9729 10.8463 23.6943 13.5631 23.6943 17.3073Z"
+                    fill="#008080" />
+                <path
+                    d="M17.2316 14.5384C19.173 14.5384 20.001 15.3664 20.001 17.3078H21.8473C21.8473 14.3307 20.2087 12.6921 17.2316 12.6921V14.5384ZM20.3906 19.563C20.2133 19.4015 19.9802 19.3154 19.7405 19.3228C19.5008 19.3302 19.2735 19.4306 19.1065 19.6027L16.8974 21.8745C16.3657 21.773 15.2967 21.4397 14.1963 20.3421C13.096 19.2408 12.7627 18.1691 12.6639 17.641L14.9339 15.431C15.106 15.2641 15.2064 15.0367 15.2138 14.797C15.2212 14.5574 15.1351 14.3242 14.9736 14.147L11.5626 10.3963C11.4011 10.2184 11.1767 10.1105 10.9369 10.0956C10.6971 10.0806 10.461 10.1596 10.2786 10.3159L8.27535 12.0339C8.11575 12.1941 8.0205 12.4073 8.00765 12.633C7.9938 12.8638 7.72978 18.3306 11.9688 22.5715C15.6669 26.2686 20.2992 26.5391 21.575 26.5391C21.7614 26.5391 21.8759 26.5336 21.9064 26.5317C22.1319 26.5184 22.3448 26.4228 22.5046 26.2631L24.2216 24.259C24.378 24.0767 24.4573 23.8406 24.4424 23.6008C24.4276 23.3611 24.3199 23.1365 24.1422 22.9749L20.3906 19.563Z"
+                    fill="#008080" />
+            </svg>
         </div>
-        <div class="ninth-container">
+        <div>080 6923 9999 | 080 3523 9999</div>
+        <div class="footer-line"> <span></span></div>
+    </div>
+</div>
 
-            <div class="specialities">
-                <h2 class="about-us-heading">
-                    Our Specialities: Patient-Centered Integrated Approach at Bangalore’s Best Multispeciality Hospital,
-                    all under one roof!
-                </h2>
-                <div class="care-image">
-                    <div class="bg-care">
-                        <div class="meno surgery-package">
-                            <img class="meno-img" src="../../assets/surgery.png"
-                                alt="best multispeciality hospital in bangalore">
-                            <div class="meno-content">Integrated Speciality Clinics
-                                <ol type="1" class="Surgey_Packages_list">
-                                    <a (click)="allergyClinic()">
-                                        <li class="surgery">Allergy Clinic</li>
-                                    </a>
-                                    <a (click)="diabeticFoot()">
-                                        <li class="surgery proctology">Diabetic Foot & Limb Salvage Centre</li>
-                                    </a>
-                                </ol>
-                            </div>
-                            <div class="meno-arrow">
-                                <!--  -->
-                            </div>
-                        </div>
-                        <div class="meno"
-                            routerLink="/blog/integrated-diabetic-clinic-at-rashtrotthana-hospital-where-comfort-meets-diabetes-care">
-                            <img class="meno-img" src="../../assets/diabetic.png"
-                                alt="best multispeciality hospital in bangalore">
-                            <div class="meno-content" routerLink="/health-check-up-packages-bangalore">Integrated
-                                Diabetic Care</div>
-                            <div class="meno-arrow">
 
-                            </div>
-                        </div>
-                        <div class="meno maternity-package" routerLink="/maternity-care"
+<div class="department">
+    <div class="title-container">
+        <app-title-button text='Our Departments'></app-title-button>
+    </div>
+    <div class="ninth-container">
+
+        <div class="specialities">
+            <h2 class="about-us-heading">
+                Our Specialities: Patient-Centered Integrated Approach at Bangalore’s Best Multispeciality Hospital,
+                all under one roof!
+            </h2>
+            <div class="care-image">
+                <div class="bg-care">
+                    <div class="meno surgery-package">
+                        <img class="meno-img" src="../../assets/surgery.png"
                             alt="best multispeciality hospital in bangalore">
-                            <img class="meno-img" src="../../assets/mater.png">
-                            <div class="meno-content">Integrated Maternity Care
-                                <div class="meno-content-2">
-                                    At Rashtrotthana Hospital, we offer high-quality maternity services with...
-                                </div>
-                            </div>
-
-                            <div class="meno-arrow">
-
-                            </div>
+                        <div class="meno-content">Integrated Speciality Clinics
+                            <ol type="1" class="Surgey_Packages_list">
+                                <a (click)="allergyClinic()">
+                                    <li class="surgery">Allergy Clinic</li>
+                                </a>
+                                <a (click)="diabeticFoot()">
+                                    <li class="surgery proctology">Diabetic Foot & Limb Salvage Centre</li>
+                                </a>
+                            </ol>
                         </div>
-                        <div class="meno surgery-package">
-                            <img class="meno-img" src="../../assets/surgery.png"
-                                alt="best multispeciality hospital in bangalore">
-                            <div class="meno-content">Surgery Packages
-                                <ol type="1" class="Surgey_Packages_list">
-                                    <a (click)="tkr()">
-                                        <li class="surgery">Total Knee Replacement</li>
-                                    </a>
-                                    <a (click)="hernia()">
-                                        <li class="surgery proctology">Hernia</li>
-                                    </a>
-                                    <a (click)="proctology()">
-                                        <li class="surgery proctology">Proctology</li>
-                                    </a>
-                                </ol>
-                            </div>
-                            <div class="meno-arrow">
-                                <!--  -->
-                            </div>
+                        <div class="meno-arrow">
+                            <!--  -->
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="four">
-                <div>
-                    <img class="four-image" src="../../assets/four.png"
+                    <div class="meno"
+                        routerLink="/blog/integrated-diabetic-clinic-at-rashtrotthana-hospital-where-comfort-meets-diabetes-care">
+                        <img class="meno-img" src="../../assets/diabetic.png"
+                            alt="best multispeciality hospital in bangalore">
+                        <div class="meno-content" routerLink="/health-check-up-packages-bangalore">Integrated
+                            Diabetic Care</div>
+                        <div class="meno-arrow">
+
+                        </div>
+                    </div>
+                    <div class="meno maternity-package" routerLink="/maternity-care"
                         alt="best multispeciality hospital in bangalore">
-                </div>
-                <div class="hospital">
-                    <img src="../../assets/best_multispeciality_hospital_in_rrnagar.png"
-                        alt="best multispeciality hospital in rrnagar">
-                    <img src="../../assets/affordable_multispeciality_hospital_in_rrnagar.png"
-                        alt="affordable multispeciality hospital in  rrnagar">
-                    <img src="../../assets/top_multispeciality_hospital_in_rrnagar.png"
-                        alt="top multispeciality hospital in rrnagar">
-                    <img src="../../assets/best_multispeciality_hospital_in_rrnagar.png"
-                        alt="best multispeciality hospital in rrnagar">
-                </div>
-            </div>
-        </div>
-    </div>
-   
-    <div class="tie-up-container">
-        <div class="tie-up-right">
-            <div class="tie-up-heading">Corporate Tie-Ups</div>
-            <div class="tie-up-para">At Rashtrotthana Hospital, we believe that employee health directly impacts
-                productivity, morale and long-term organizational success. At Rashtrotthana Hospital, we believe that
-                employee health directly impacts productivity, morale and long-term organizational success. </div>
-            <button class="tie-up-btn" [routerLink]="'/tie-up-page'">Know More</button>
-        </div>
-        <div class="tie-up-left">
-            <div class="vertical-cards-wrapper">
-
-                <div class="vertical-row scroll-up">
-                    <div class="vertical-track">
-
-                        <div class="surgery-card" *ngFor="let card of cards">
-                            <img [src]="card.image" [alt]="card.name" />
+                        <img class="meno-img" src="../../assets/mater.png">
+                        <div class="meno-content">Integrated Maternity Care
+                            <div class="meno-content-2">
+                                At Rashtrotthana Hospital, we offer high-quality maternity services with...
+                            </div>
                         </div>
-                        <div class="surgery-card" *ngFor="let card of cards">
-                            <img [src]="card.image" [alt]="card.name" />
+
+                        <div class="meno-arrow">
+
+                        </div>
+                    </div>
+                    <div class="meno surgery-package">
+                        <img class="meno-img" src="../../assets/surgery.png"
+                            alt="best multispeciality hospital in bangalore">
+                        <div class="meno-content">Surgery Packages
+                            <ol type="1" class="Surgey_Packages_list">
+                                <a (click)="tkr()">
+                                    <li class="surgery">Total Knee Replacement</li>
+                                </a>
+                                <a (click)="hernia()">
+                                    <li class="surgery proctology">Hernia</li>
+                                </a>
+                                <a (click)="proctology()">
+                                    <li class="surgery proctology">Proctology</li>
+                                </a>
+                            </ol>
+                        </div>
+                        <div class="meno-arrow">
+                            <!--  -->
                         </div>
                     </div>
                 </div>
-
-                <div class="vertical-row scroll-down line-2" >
-                    <div class="vertical-track">
-
-                        <div class="surgery-card" *ngFor="let card of cards1">
-                            <img [src]="card.image" [alt]="card.name" />
-                        </div>
-                        <div class="surgery-card" *ngFor="let card of cards1">
-                            <img [src]="card.image" [alt]="card.name" />
-                        </div>
-                    </div>
-                </div>
-
-                <div class="vertical-row scroll-up line-3">
-                    <div class="vertical-track">
-                        <div class="surgery-card" *ngFor="let card of cards2">
-                             <img [src]="card.image" [alt]="card.name" />
-                        </div>
-                        <div class="surgery-card" *ngFor="let card of cards2">
-                             <img [src]="card.image" [alt]="card.name" />
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-
-
-
-        </div>
-    </div>
-
-
-
-
-
-    <div class="tenth-container">
-        <div class="empty">
-
-        </div>
-        <div class="free-div free">
-            <div class="free-text"></div>
-            <div class="free-1">Our Free Service</div>
-        </div>
-        <div class="corporate">
-            Corporate Social Responsibility
-        </div>
-        <div class="hope">
-            "Give Hope, <a routerLink="/donate-to-hospital-bangalore">Donate</a> to Heal: Supporting<br> Our Hospital,
-            Saving Lives!"
-        </div>
-        <div class="benefit">
-            50+<br>
-            <p class="text-benefit">DONORS</p>
-        </div>
-        <div class="button">
-            <div class="donate-button" (click)="donate()">
-                <div class="donate-text">DONATE HERE</div>
-                <div class="donate-arrow">
-                    <div class="arrow">></div>
-                </div>
             </div>
         </div>
-        <div class="empty-1">
-
+        <div class="four">
+            <div>
+                <img class="four-image" src="../../assets/four.png" alt="best multispeciality hospital in bangalore">
+            </div>
+            <div class="hospital">
+                <img src="../../assets/best_multispeciality_hospital_in_rrnagar.png"
+                    alt="best multispeciality hospital in rrnagar">
+                <img src="../../assets/affordable_multispeciality_hospital_in_rrnagar.png"
+                    alt="affordable multispeciality hospital in  rrnagar">
+                <img src="../../assets/top_multispeciality_hospital_in_rrnagar.png"
+                    alt="top multispeciality hospital in rrnagar">
+                <img src="../../assets/best_multispeciality_hospital_in_rrnagar.png"
+                    alt="best multispeciality hospital in rrnagar">
+            </div>
         </div>
     </div>
-    <div class="title-container testimonials" id="reviews-section">
-        <app-title-button text='TESTIMONIALS'></app-title-button>
-    </div>
-    <div class="google_review_container">
-        <iframe src="https://ff8d2e543552450d9bd758b916d9b828.elf.site" frameborder="0" class="google_reviews"></iframe>
-    </div>
+</div>
 
-    <div class="youtube">
-        <iframe src="https://948c697a441e445aa9d091fee92d06e3.elf.site" frameborder="0"
-            class="youtube_testimonials"></iframe>
+<div class="tie-up-container">
+    <div class="tie-up-right">
+        <div class="tie-up-heading">Corporate Tie-Ups</div>
+        <div class="tie-up-para">At Rashtrotthana Hospital, we believe that employee health directly impacts
+            productivity, morale and long-term organizational success. At Rashtrotthana Hospital, we believe that
+            employee health directly impacts productivity, morale and long-term organizational success. </div>
+        <button class="tie-up-btn" [routerLink]="'/tie-up-page'">Know More</button>
     </div>
+    <div class="tie-up-left">
+        <div class="vertical-cards-wrapper">
 
-    <div class="title-container">
-        <app-title-button text='Our Latest Programs'></app-title-button>
-    </div>
+            <div class="vertical-row scroll-up">
+                <div class="vertical-track">
 
-    <div class="news_and_events">
-        <iframe src="https://87cf471594394c9a9a3f4f1592b7e5f5.elf.site" frameborder="0" class="instagram_feed"></iframe>
-    </div>
+                    <div class="surgery-card" *ngFor="let card of cards">
+                        <img [src]="card.image" [alt]="card.name" />
+                    </div>
+                    <div class="surgery-card" *ngFor="let card of cards">
+                        <img [src]="card.image" [alt]="card.name" />
+                    </div>
+                </div>
+            </div>
 
-    <div class="title-container">
-        <app-title-button text='PATIENT EDUCATION'></app-title-button>
-    </div>
+            <div class="vertical-row scroll-down line-2">
+                <div class="vertical-track">
 
-    <div class="youtube_patient_education">
-        <iframe src="https://1593291664e54b3d9ff8a727d8e4fe41.elf.site" frameborder="0"
-            class="youtube_testimonials"></iframe>
+                    <div class="surgery-card" *ngFor="let card of cards1">
+                        <img [src]="card.image" [alt]="card.name" />
+                    </div>
+                    <div class="surgery-card" *ngFor="let card of cards1">
+                        <img [src]="card.image" [alt]="card.name" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="vertical-row scroll-up line-3">
+                <div class="vertical-track">
+                    <div class="surgery-card" *ngFor="let card of cards2">
+                        <img [src]="card.image" [alt]="card.name" />
+                    </div>
+                    <div class="surgery-card" *ngFor="let card of cards2">
+                        <img [src]="card.image" [alt]="card.name" />
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
     </div>
+</div>
+
+
+<div class="tenth-container">
+    <div class="empty">
+
+    </div>
+    <div class="free-div free">
+        <div class="free-text"></div>
+        <div class="free-1">Our Free Service</div>
+    </div>
+    <div class="corporate">
+        Corporate Social Responsibility
+    </div>
+    <div class="hope">
+        "Give Hope, <a routerLink="/donate-to-hospital-bangalore">Donate</a> to Heal: Supporting<br> Our Hospital,
+        Saving Lives!"
+    </div>
+    <div class="benefit">
+        50+<br>
+        <p class="text-benefit">DONORS</p>
+    </div>
+    <div class="button">
+        <div class="donate-button" (click)="donate()">
+            <div class="donate-text">DONATE HERE</div>
+            <div class="donate-arrow">
+                <div class="arrow">></div>
+            </div>
+        </div>
+    </div>
+    <div class="empty-1">
+
+    </div>
+</div>
+<div class="title-container testimonials" id="reviews-section">
+    <app-title-button text='TESTIMONIALS'></app-title-button>
+</div>
+<div class="google_review_container">
+    <iframe src="https://ff8d2e543552450d9bd758b916d9b828.elf.site" frameborder="0" class="google_reviews"></iframe>
+</div>
+
+<div class="youtube">
+    <iframe src="https://948c697a441e445aa9d091fee92d06e3.elf.site" frameborder="0"
+        class="youtube_testimonials"></iframe>
+</div>
+
+<div class="title-container">
+    <app-title-button text='Our Latest Programs'></app-title-button>
+</div>
+
+<div class="news_and_events">
+    <iframe src="https://87cf471594394c9a9a3f4f1592b7e5f5.elf.site" frameborder="0" class="instagram_feed"></iframe>
+</div>
+
+<div class="title-container">
+    <app-title-button text='PATIENT EDUCATION'></app-title-button>
+</div>
+
+<div class="youtube_patient_education">
+    <iframe src="https://1593291664e54b3d9ff8a727d8e4fe41.elf.site" frameborder="0"
+        class="youtube_testimonials"></iframe>
+</div>
