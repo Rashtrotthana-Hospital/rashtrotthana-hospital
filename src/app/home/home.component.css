@@ -1416,9 +1416,9 @@ li {
 .care-left {
   display: flex;
   flex-direction: column;
-  gap: 17px;
+  /* gap: 17px; */
   width: 639.371px;
-  height: 422.897px;
+  height: auto;
   border-radius: 6px;
   background: #F3FBF8;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.10);
@@ -1432,10 +1432,6 @@ li {
   align-items: center;
   padding-top: 26px;
   padding-left: 30px;
-}
-
-.logo img {
-  display: block;
 }
 
 .head-1 {
@@ -1486,10 +1482,17 @@ li {
   height: 41.173px;
 }
 
-.left-bottom {
+.left-bottom{
+  display: flex;
+  /* gap: 15px; */
+  justify-content: center;
+  align-items: center;
+}
+
+.left-content {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 15px;
   padding-left: 38px;
 }
 
@@ -1498,6 +1501,7 @@ li {
   flex-direction: column;
   gap: 22px;
   padding-left: 38px;
+  padding-bottom: 13px;
 }
 
 .left-head,
@@ -1515,7 +1519,11 @@ li {
   font-weight: 500;
   line-height: normal;
   width: 316px;
-  height: 73px;
+}
+
+.left-image img{
+      width: 299px;
+    height: 300px;
 }
 
 .bottom-mid {
@@ -1532,7 +1540,7 @@ li {
   gap: 10px;
   justify-content: center;
   align-items: center;
-  width: 14%;
+  width: 30%;
 }
 
 .two {
@@ -1653,7 +1661,7 @@ li {
   border-radius: 6px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.10);
   width: 639.371px;
-  height: 422.897px;
+  height: auto;
   display: flex;
   flex-direction: column;
   gap: 17px;
@@ -1673,13 +1681,6 @@ li {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-}
-
-.left-image img {
-  left: 302px;
-  position: relative;
-  bottom: 350px;
-
 }
 
 .care-footer {
@@ -2271,7 +2272,7 @@ li {
 
   .care-left {
     width: 82%;
-    height: 413.897px;
+    height: auto;
   }
 
   .care-right {
@@ -2298,7 +2299,7 @@ li {
   }
 
   .bottom-top{
-    width: 60%
+    width: 100%
   }
 
   .bottom-middle{
@@ -2830,6 +2831,11 @@ li {
     width: 90%;
     height: auto;
     padding: 20px 15px;
+    gap: 15px;
+  }
+
+  .left-content{
+    padding-left: 12px;
   }
 
   .left-top,
@@ -2909,7 +2915,7 @@ li {
   }
 
   .bottom-mid {
-    gap: 60px;
+    gap: 30px;
     justify-content: center;
   }
 
