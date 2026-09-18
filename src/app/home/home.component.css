@@ -1520,7 +1520,7 @@ li {
 
 .bottom-mid {
   display: flex;
-  gap: 15px;
+  gap: 22px;
   justify-content: flex-start;
   align-items: center;
   color: #000;
@@ -1597,6 +1597,7 @@ li {
   line-height: normal;
   border-radius: 12px;
   text-align: center;
+  height: 40px;
 }
 
 .bottom-middle-para {
@@ -1607,6 +1608,7 @@ li {
   line-height: normal;
   border-radius: 12px;
   text-align: center;
+  height: 45px;
 }
 
 
@@ -1676,7 +1678,7 @@ li {
 .left-image img {
   left: 302px;
   position: relative;
-  bottom: 344px;
+  bottom: 350px;
 
 }
 
@@ -2251,8 +2253,16 @@ li {
   }
 
   .left-image img {
-    bottom: 346px;
-    left: 270px;
+         bottom: 351px;
+        left: 306px;
+  }
+
+  .bottom-mid-para{
+    height: 31px;
+  }
+
+  .bottom-middle-para{
+    height: 30px;
   }
 
   .left-image {
@@ -2268,7 +2278,7 @@ li {
     width: 83%;
     height: 392.897px;
     background-image: url("/assets/home-collection-bg.png");
-    background-size: 100% 100%, 55% auto;
+        background-size: 651px 434px;
     background-position: center, right center;
     background-repeat: no-repeat;
   }
@@ -2279,7 +2289,7 @@ li {
   }
 
   .bottom-mid{
-    gap: 15px;
+    gap: 30px;
     justify-content: flex-start;
   }
 
