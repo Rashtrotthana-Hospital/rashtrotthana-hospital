@@ -1,0 +1,214 @@
+.tender_root {
+  overflow-x: hidden;
+  background: #FBFFF5;
+  font-family: Poppins, sans-serif;
+  padding-bottom: 60px;
+}
+
+/* hero - padding-top clears the fixed header */
+.tender_hero {
+  background: linear-gradient(90deg, #008080 0%, #07ccec 100%);
+  padding: 170px 20px 60px;
+  text-align: center;
+}
+
+.tender_hero_inner {
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.tender_eyebrow {
+  display: inline-block;
+  color: #013243;
+  background: #FBCA51;
+  border-radius: 30px;
+  padding: 5px 18px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.tender_heading {
+  color: #ffffff;
+  font-size: 44px;
+  font-weight: 700;
+  margin: 16px 0 12px;
+}
+
+.tender_sub {
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 17px;
+  line-height: 28px;
+  margin: 0;
+}
+
+/* list */
+.tender_section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 55px 20px 0;
+}
+
+.tender_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.tender_card {
+  background: #ffffff;
+  border: 1px solid #d9ecec;
+  border-radius: 14px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-shadow: 0 4px 14px rgba(1, 50, 67, 0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.tender_card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(1, 50, 67, 0.14);
+}
+
+.tender_card_top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.tender_icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 128, 128, 0.1);
+  color: #008080;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.tender_no {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #6b8a91;
+}
+
+.tender_card_title {
+  color: #013243;
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 28px;
+  margin: 0;
+  /* keeps every card the same height whether the title wraps or not */
+  flex-grow: 1;
+}
+
+.tender_card_btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 11px 18px;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #022b50 0%, #279797 100%);
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: opacity 0.25s ease;
+}
+
+.tender_card_btn:hover {
+  opacity: 0.9;
+  color: #ffffff;
+}
+
+.tender_card_btn i {
+  font-size: 13px;
+}
+
+.tender_note {
+  margin: 36px 0 0;
+  padding: 16px 20px;
+  border-radius: 10px;
+  background: rgba(0, 128, 128, 0.07);
+  color: #013243;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.tender_note i {
+  color: #008080;
+  margin-right: 8px;
+}
+
+.tender_note a {
+  color: #008080;
+  font-weight: 600;
+}
+
+/* responsive */
+@media screen and (max-width: 1200px) {
+  .tender_hero {
+    padding-top: 150px;
+  }
+  .tender_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .tender_hero {
+    padding: 130px 18px 50px;
+  }
+  .tender_heading {
+    font-size: 36px;
+  }
+  .tender_sub {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .tender_hero {
+    padding: 110px 16px 42px;
+  }
+  .tender_heading {
+    font-size: 30px;
+  }
+  .tender_section {
+    padding-top: 40px;
+  }
+  .tender_grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  .tender_card {
+    padding: 20px;
+  }
+  .tender_card_title {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .tender_heading {
+    font-size: 26px;
+  }
+  .tender_sub {
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .tender_card_btn {
+    width: 100%;
+  }
+}

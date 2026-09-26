@@ -12,7 +12,8 @@
                 <app-read-more-btn [text]="'Donate Here'"
                     [background]="'linear-gradient(90deg, #FBCA51 -22.35%, #07CCEC 118.82%)'"
                     [boxShadow]="' 3px 4px 15px 0px rgba(63, 176, 206, 0.65)'"
-                    [iconClass]="'fa-solid fa-angle-right'" />
+                    [iconClass]="'fa-solid fa-angle-right'"
+                    (click)="donateNow('Donation Page - Top')" />
                 <button class="con_btn explore_more_btn_con_1" (click)="scrollToSection()">Explore More</button>
             </div>
         </div>
@@ -152,7 +153,7 @@
             </div>
             <!-- donate here button -->
             <div class="donate_here">
-                <button class="donate_here_btn">Donate Here <i class="fa-solid fa-chevron-right"></i></button>
+                <button class="donate_here_btn" (click)="donateNow('Donation Page - Bottom')">Donate Here <i class="fa-solid fa-chevron-right"></i></button>
             </div>
         </div>
         <div class="con_3_right_side">

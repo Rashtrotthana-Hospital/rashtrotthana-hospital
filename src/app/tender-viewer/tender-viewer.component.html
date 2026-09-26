@@ -1,0 +1,27 @@
+<div class="viewer_root" (contextmenu)="blockContextMenu($event)">
+
+  <div class="viewer_bar">
+    <div class="viewer_titles">
+      <span class="viewer_label">Tender Document</span>
+      <h1 class="viewer_title">{{ tender ? tender.title : 'Document not available' }}</h1>
+    </div>
+
+    <a class="viewer_back" routerLink="/tenders">
+      <i class="fa-solid fa-arrow-left"></i>
+      <span>All Tenders</span>
+    </a>
+  </div>
+
+  <div class="viewer_frame_wrap" *ngIf="safeUrl; else notFound">
+    <iframe class="viewer_frame" [src]="safeUrl" title="Tender document"></iframe>
+  </div>
+
+  <ng-template #notFound>
+    <div class="viewer_missing">
+      <i class="fa-solid fa-triangle-exclamation"></i>
+      <p>This tender document is not available.</p>
+      <a class="viewer_missing_btn" routerLink="/tenders">Back to all tenders</a>
+    </div>
+  </ng-template>
+
+</div>

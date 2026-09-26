@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { Title, Meta, DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { ActivatedRoute } from '@angular/router';
 import { ViewportScroller } from '@angular/common';
+import { DonationClickTrackerService } from '../donation-click-tracker.service';
 
 @Component({
   selector: 'app-home',
@@ -12,7 +13,8 @@ import { ViewportScroller } from '@angular/common';
 export class HomeComponent implements OnInit {
   constructor(private router: Router, private titleService: Title,
     private metaService: Meta,
-    private route: ActivatedRoute, private viewportScroller: ViewportScroller) { }
+    private route: ActivatedRoute, private viewportScroller: ViewportScroller,
+    private donationTracker: DonationClickTrackerService) { }
   @ViewChild('counterSection', { static: true }) counterSection!: ElementRef;
   stopcounters: any[] = [];
   doctors: number = 0;
@@ -31,8 +33,8 @@ export class HomeComponent implements OnInit {
     console.log('About Us');
   }
   donate() {
-
-    this.router.navigate(['/donate-to-hospital-bangalore']);
+    // opens the donation portal and logs the click to the Google Sheet
+    this.donationTracker.openDonatePage('Home Page - Donate Here');
   }
   emergency() {
     this.router.navigate(['best-emergency-trauma-multispeciality-hospital-bangalore']);

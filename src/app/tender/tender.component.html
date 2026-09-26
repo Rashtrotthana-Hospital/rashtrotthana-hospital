@@ -1,0 +1,42 @@
+<div class="tender_root">
+
+  <!-- hero -->
+  <section class="tender_hero">
+    <div class="tender_hero_inner">
+      <span class="tender_eyebrow">Procurement</span>
+      <h1 class="tender_heading">Tenders</h1>
+      <p class="tender_sub">
+        Rashtrotthana Hospital invites qualified suppliers to review the equipment tender
+        notices listed below. Select a tender to read the document in a new tab.
+      </p>
+    </div>
+  </section>
+
+  <!-- tender list -->
+  <section class="tender_section">
+    <div class="tender_grid">
+      <article class="tender_card" *ngFor="let tender of tenders; let i = index; trackBy: trackBySlug">
+        <div class="tender_card_top">
+          <div class="tender_icon">
+            <i class="fa-solid fa-file-pdf"></i>
+          </div>
+          <span class="tender_no">Tender {{ i + 1 }}</span>
+        </div>
+
+        <h2 class="tender_card_title">{{ tender.title }}</h2>
+
+        <a class="tender_card_btn" [routerLink]="['/tenders/view', tender.slug]" target="_blank" rel="noopener">
+          <span>View Document</span>
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+      </article>
+    </div>
+
+    <p class="tender_note">
+      <i class="fa-solid fa-circle-info"></i>
+      Tender documents are provided for viewing only. For any queries, please write to
+      <a href="mailto:info@rashtrotthanahospital.com">info&#64;rashtrotthanahospital.com</a>.
+    </p>
+  </section>
+
+</div>

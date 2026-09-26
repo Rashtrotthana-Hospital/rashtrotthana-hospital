@@ -3,7 +3,8 @@ import { Router } from '@angular/router';
 import { ViewportScroller } from '@angular/common';
 import * as AOS from 'aos';
 
-import { Title, Meta,DomSanitizer,SafeHtml } from '@angular/platform-browser'; 
+import { Title, Meta,DomSanitizer,SafeHtml } from '@angular/platform-browser';
+import { DonationClickTrackerService } from '../donation-click-tracker.service';
 declare let gtag: Function;
 
 @Component({
@@ -14,7 +15,13 @@ declare let gtag: Function;
 
 export class DonationComponent implements OnInit {
   constructor(private router: Router,
-    private viewportScroller: ViewportScroller,private titleService: Title, private metaService: Meta) { }
+    private viewportScroller: ViewportScroller,private titleService: Title, private metaService: Meta,
+    private donationTracker: DonationClickTrackerService) { }
+
+  // opens the donation portal and logs the click to the Google Sheet
+  donateNow(source: string) {
+    this.donationTracker.openDonatePage(source);
+  }
   ngOnInit() {
     AOS.init();
     this.titleService.setTitle("Support Healthcare | Donate to Rashtrotthana Hospital");  

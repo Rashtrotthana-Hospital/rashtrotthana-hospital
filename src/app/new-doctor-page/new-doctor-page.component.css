@@ -916,7 +916,7 @@ select::-ms-expand {
 }
 
 .whatsapp-icon {
-    position: relative;
+    /* position: relative; */
     top: 10px;
     left: 100px;
     background: #25D366;
@@ -1132,7 +1132,7 @@ select::-ms-expand {
     }
 
     .whatsapp-icon {
-        position: relative;
+        /* position: relative; */
         top: 420px;
         left: 120px;
     }
@@ -1236,7 +1236,7 @@ select::-ms-expand {
 
 
     .whatsapp-icon {
-        position: relative;
+        /* position: relative; */
         top: 280px;
         left: 120px;
     }

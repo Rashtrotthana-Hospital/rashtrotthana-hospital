@@ -80,6 +80,8 @@ import { SurgeryTreatmentCardComponent } from './surgery-treatment-card/surgery-
 import { TieUpPageComponent } from './tie-up-page/tie-up-page.component';
 import { ApplicationFormComponent } from './application-form/application-form.component';
 import { CallBackFormComponent } from './call-back-form/call-back-form.component';
+import { TenderComponent } from './tender/tender.component';
+import { TenderViewerComponent } from './tender-viewer/tender-viewer.component';
 import { NewDoctorPageComponent } from './new-doctor-page/new-doctor-page.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { NewResearchPageComponent } from './new-research-page/new-research-page.component';
@@ -227,6 +229,9 @@ const routes: Routes = [
   { path: 'blog', component: BlogComponent },
   { path: 'blog/:slug', component: BlogPostComponent },
 
+
+  { path: 'tenders', component: TenderComponent },
+  { path: 'tenders/view/:slug', component: TenderViewerComponent },
 
   { path: '**', component: NotFoundComponent },
 
