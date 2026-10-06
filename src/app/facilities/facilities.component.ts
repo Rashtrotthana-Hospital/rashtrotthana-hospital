@@ -203,10 +203,10 @@ export class FacilitiesComponent implements OnInit {
         'assets/best-ambulance-service-rashtrotthana-hospital-bangalore.png',
     },
     { image: 'assets/dietary-services-bangalore.png' },
-    { image: 'assets/physiotherapy-services-bangalore.png' },
-    { image: 'assets/endoscopy-services-bangalore.png' },
-    { image: 'assets/laboratory-services-bangalore.png' },
     { image: 'assets/nutrition-dietetics-services-bangalore.png' },
+    { image: 'assets/physiotherapy-services-bangalore.png' },
+    { image: 'assets/laboratory-services-bangalore.png' },
+    { image: 'assets/endoscopy-services-bangalore.png' },
   ];
   activeHoverIndex: number | null = null;
 
