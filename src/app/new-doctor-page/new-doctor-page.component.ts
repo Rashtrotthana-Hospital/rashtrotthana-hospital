@@ -1037,7 +1037,7 @@ export class NewDoctorPageComponent {
       qualification: "CCPT, PGCPK, BAMS",
       time: "",
       date: "",
-      id: '',
+      id: 67,
       alt: 'Dr. Kishan G. N – Ayurveda, Rashtrotthana Hospital Bangalore',
       title: 'Dr. Kishan G. N - Expert in Ayurveda & Panchakarma Care',
       description: 'Consult Dr. Kishan G. N for holistic healing, detox therapies and lifestyle care rooted in Ayurveda.',
@@ -3962,7 +3962,7 @@ export class NewDoctorPageComponent {
       time: '',
       date: '',
       alt: 'Dr. Reshma L | Top Obstetrics & Gynaecologist in banaglore | Rashtrotthana Hospital | RR Nagar Bangalore',
-      id: '',
+      id: 110,
       title: 'Dr. Reshma L | High-Risk Pregnancy & Delivery Expert in RR Nagar Bangalore',
       description: 'Consult Dr. Reshma L, senior gynecologist in RR Nagar with 4+ years of experience in high-risk pregnancy, delivery and women’s health care.',
       faqs: [
@@ -4021,7 +4021,7 @@ export class NewDoctorPageComponent {
       time: '',
       date: '',
       alt: 'Dr. Sharath C Mouli | Top Radiologist in banaglore | Rashtrotthana Hospital | RR Nagar Bangalore',
-      id: '',
+      id: 109,
       title: 'Dr. Sharath C Mouli | Radiologist Expert in RR Nagar Bangalore',
       description: 'Consult Dr. Sharath C Mouli, senior radiologist in RR Nagar with experience in advanced imaging, diagnostic reporting and image-guided procedures at Rashtrotthana Hospital.',
       faqs: [
@@ -4080,7 +4080,7 @@ export class NewDoctorPageComponent {
       time: '',
       date: '',
       alt: 'Dr. Saicharan Ganesh Chitrak | Top Nephrologist in banaglore | Rashtrotthana Hospital | RR Nagar Bangalore',
-      id: '',
+      id: 104,
       title: 'Dr. Saicharan Ganesh Chitrak | Nephrologist Expert in RR Nagar Bangalore',
       description: 'Consult Dr. Saicharan Ganesh Chitrak, senior nephrologist in RR Nagar with experience in advanced kidney care, dialysis therapies and renal transplantation at Rashtrotthana Hospital.',
       faqs: [
@@ -4137,7 +4137,7 @@ export class NewDoctorPageComponent {
       time: '',
       date: '',
       alt: 'Dr. Dhruva G. Prakash | Top Urologist in Bangalore | Rashtrotthana Hospital | RR Nagar Bangalore',
-      id: '',
+      id: 107,
       title: 'Dr. Dhruva G. Prakash | Urologist Expert in RR Nagar Bangalore',
       description: 'Consult Dr. Dhruva G. Prakash, senior urologist in RR Nagar with experience in advanced urological care, dialysis therapies and renal transplantation at Rashtrotthana Hospital.',
       faqs: [
@@ -4194,7 +4194,7 @@ export class NewDoctorPageComponent {
       time: '',
       date: '',
       alt: 'Dr. Chaithanya J | Top Urologist in Bangalore | Rashtrotthana Hospital | RR Nagar Bangalore',
-      id: '',
+      id: 106,
       title: 'Dr. Chaithanya J | Urologist Expert in RR Nagar Bangalore',
       description: 'Consult Dr. Chaithanya J, senior urologist in RR Nagar with experience in advanced urological care, dialysis therapies and renal transplantation at Rashtrotthana Hospital.',
       faqs: [
@@ -4258,7 +4258,7 @@ export class NewDoctorPageComponent {
       time: '',
       date: '',
       alt: 'Dr. K Nishanth Pai | Top Ayurveda Physician in Bangalore | Rashtrotthana Hospital | RR Nagar Bangalore',
-      id: '',
+      id: 100,
       title: 'Dr. K Nishanth Pai | Ayurveda Physician Expert in RR Nagar Bangalore',
       description: 'Consult Dr. K Nishanth Pai, senior Ayurveda physician in RR Nagar with experience in advanced Ayurvedic care, detoxification therapies and chronic disease management at Rashtrotthana Hospital.',
       faqs: [
@@ -4325,7 +4325,7 @@ export class NewDoctorPageComponent {
       time: '',
       date: '',
       alt: 'Dr. Surabhi H. S | Top Paediatrician and Neonatologist in Bangalore | Rashtrotthana Hospital | RR Nagar Bangalore',
-      id: '',
+      id: 93,
       title: 'Dr. Surabhi H. S | Paediatrician and Neonatologist Expert in RR Nagar Bangalore',
       description: 'Consult Dr. K Nishanth Pai, senior Ayurveda physician in RR Nagar with experience in advanced Ayurvedic care, detoxification therapies and chronic disease management at Rashtrotthana Hospital.',
       faqs: [
@@ -4399,7 +4399,7 @@ export class NewDoctorPageComponent {
       time: '',
       date: '',
       alt: 'Dr. Priyanka K P | Top Paediatrician and Neonatologist in Bangalore | Rashtrotthana Hospital | RR Nagar Bangalore',
-      id: '',
+      id: 113,
       title: 'Dr. Priyanka K P | Paediatrician and Neonatologist Expert in RR Nagar Bangalore',
       description: 'Consult Dr. K Nishanth Pai, senior Ayurveda physician in RR Nagar with experience in advanced Ayurvedic care, detoxification therapies and chronic disease management at Rashtrotthana Hospital.',
       faqs: [
