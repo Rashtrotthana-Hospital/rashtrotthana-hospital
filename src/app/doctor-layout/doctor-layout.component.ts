@@ -1291,7 +1291,11 @@ export class DoctorLayoutComponent {
     this.filteredDoctors = this.doctors;
   }
   private normalizeName(name: string): string {
-    return name.toLowerCase().replace(/^(dr\.|ms\.)\s*/, '');
+    return (name || '')
+      .toLowerCase()
+      .replace(/^(col\s*\(dr\)|dr\.?|ms\.?|mr\.?)\s*/, '')
+      .replace(/[.\s]+/g, ' ')
+      .trim();
   }
 
   filterDoctors(): void {
@@ -1303,9 +1307,9 @@ export class DoctorLayoutComponent {
       : this.doctors;
 
 
-    const normalizedValue = this.nameFilter.toLowerCase();
+    const normalizedValue = this.normalizeName(this.nameFilter);
     this.filteredDoctors = filteredBySpeciality.filter(doctor =>
-      this.normalizeName(doctor.name).startsWith(normalizedValue)
+      this.normalizeName(doctor.name).includes(normalizedValue)
     );
   }
 
