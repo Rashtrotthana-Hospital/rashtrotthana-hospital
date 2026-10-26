@@ -11,7 +11,7 @@ export class PopupImageComponent {
   showPopup: boolean = true;
   imageList: string[] = [
     'assets/pop-up/Integrated-diabetic.png',
-    'assets/pop-up/Ayurveda camp at rashtrotthana hospital in september 2026.png',
+    /*'assets/pop-up/Ayurveda camp at rashtrotthana hospital in september 2026.png',*/
     'assets/pop-up/Ayurveda Cosmetology Clinic at Rashtrotthana hospital bangalore.png',
     'assets/pop-up/Evening OPD now available at Rashtrotthana Hospital RRNagar bangalore.png',
     'assets/pop-up/JMRH _ Health Check Package.png'
